@@ -1,0 +1,10 @@
+{
+ "n_papers": 1489,
+ "n_batches": 100,
+ "size": 15,
+ "files": [
+  "www-2026-papers.json",
+  "wsdm-2026-papers.json",
+  "sigir-2026-papers.json"
+ ]
+}

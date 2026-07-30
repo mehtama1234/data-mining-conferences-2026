@@ -1,0 +1,107 @@
+import json, os, html
+HERE = os.path.dirname(os.path.abspath(__file__))
+A = json.load(open(os.path.join(HERE, "data", "analysis.json")))
+def esc(s): return html.escape(str(s or ""))
+
+# compact records for client-side search
+recs = []
+for p in A["papers"]:
+    recs.append({
+        "t": p["title"], "v": p["venue"].split()[0],
+        "th": p.get("primary_theme") or "", "m": p.get("methods") or [],
+        "pr": p.get("problem") or "", "ap": p.get("approach") or "", "co": p.get("contribution") or "",
+        "u": p.get("url") or (("https://doi.org/" + p["doi"]) if p.get("doi") else ""),
+    })
+DATA = json.dumps(recs, ensure_ascii=False)
+
+P = f"""<meta charset="utf-8">
+<title>Data Mining 2026 · paper explorer</title>
+<style>
+:root{{--bg:#0E1420;--bg2:#141D2C;--ink:#EAEEF4;--soft:#B4BFD0;--dim:#8493A8;--faint:#5A6577;
+--line:rgba(150,170,205,.14);--accent:#4FA8B8;--amber:#E3A63A;--rose:#E0748A;--viol:#9B8CE0;--serif:"Iowan Old Style",Palatino,Georgia,serif;
+--sans:-apple-system,system-ui,"Segoe UI",Roboto,Arial,sans-serif;--mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;}}
+*{{box-sizing:border-box}}body{{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.55;font-size:16px}}
+.wrap{{max-width:920px;margin:0 auto;padding:0 20px 60px}}
+a{{color:var(--accent)}}
+.top{{position:sticky;top:0;background:linear-gradient(180deg,#0E1420,#0E1420f0);padding:18px 0 12px;border-bottom:1px solid var(--line);z-index:5}}
+h1{{font-family:var(--serif);font-size:26px;margin:0 0 4px;color:#fff}}
+.sub{{font-family:var(--mono);font-size:12px;color:var(--dim);margin-bottom:12px}}.sub a{{text-decoration:none}}
+.controls{{display:flex;gap:10px;flex-wrap:wrap;align-items:center}}
+#q{{flex:1;min-width:220px;background:#0C1119;border:1px solid var(--line);border-radius:9px;color:var(--ink);padding:9px 12px;font-size:14px;font-family:var(--sans)}}
+.chip{{font-family:var(--mono);font-size:12px;color:var(--dim);background:#0C1119;border:1px solid var(--line);border-radius:20px;padding:5px 12px;cursor:pointer;user-select:none}}
+.chip.on{{color:#0E1420;background:var(--accent);border-color:var(--accent);font-weight:600}}
+#count{{font-family:var(--mono);font-size:12px;color:var(--faint);margin:12px 0 4px}}
+.card{{background:var(--bg2);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:10px 0}}
+.ct{{font-family:var(--serif);font-size:17px;color:#fff;line-height:1.3}}
+.cmeta{{font-family:var(--mono);font-size:11px;color:var(--dim);margin:5px 0 9px;display:flex;gap:8px;flex-wrap:wrap;align-items:center}}
+.vtag{{color:#0E1420;background:var(--accent);border-radius:5px;padding:1px 6px;font-weight:600}}
+.vtag.WSDM{{background:var(--viol)}}.vtag.SIGIR{{background:var(--amber)}}
+.thtag{{color:var(--soft);border:1px solid var(--line);border-radius:5px;padding:1px 6px}}
+.mtag{{color:var(--faint)}}
+.pac{{display:grid;grid-template-columns:auto 1fr;gap:3px 10px;font-size:13.5px;margin-top:4px}}
+.pac .k{{font-family:var(--mono);font-size:10.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--dim);padding-top:2px}}
+.pac .k.pr{{color:var(--rose)}}.pac .k.ap{{color:var(--accent)}}.pac .k.co{{color:var(--amber)}}
+.pac .val{{color:var(--soft)}}
+.more{{text-align:center;margin:20px 0}}.more button{{font-family:var(--mono);font-size:13px;color:var(--accent);background:none;border:1px solid var(--line);border-radius:9px;padding:8px 20px;cursor:pointer}}
+</style>
+<div class="wrap">
+<div class="top">
+  <h1>Data-mining 2026 · paper explorer</h1>
+  <div class="sub"><a href="index.html">← the landscape</a> · {len(recs):,} papers from WWW · WSDM · SIGIR, each read by an LLM for its problem, approach &amp; contribution</div>
+  <div class="controls">
+    <input id="q" placeholder="search titles, problems, methods…  (e.g. 'cold start', 'diffusion', 'privacy')" autocomplete="off">
+    <span class="chip on" data-v="ALL">all</span>
+    <span class="chip" data-v="WWW">WWW</span>
+    <span class="chip" data-v="WSDM">WSDM</span>
+    <span class="chip" data-v="SIGIR">SIGIR</span>
+  </div>
+  <div id="count"></div>
+</div>
+<div id="list"></div>
+<div class="more"><button id="more">show more</button></div>
+</div>
+<script>
+const DATA = {DATA};
+let venue = "ALL", query = "", shown = 0, filtered = DATA, PAGE = 40;
+const list = document.getElementById("list"), countEl = document.getElementById("count"), moreBtn = document.getElementById("more");
+function esc(s){{return (s||"").replace(/[&<>]/g, c=>({{'&':'&amp;','<':'&lt;','>':'&gt;'}}[c]));}}
+function card(r){{
+  const m = (r.m||[]).slice(0,5).map(x=>esc(x)).join(" · ");
+  return `<div class="card">
+    <div class="ct">${{r.u?`<a href="${{r.u}}" target="_blank" style="text-decoration:none;color:#fff">${{esc(r.t)}}</a>`:esc(r.t)}}</div>
+    <div class="cmeta"><span class="vtag ${{r.v}}">${{r.v}}</span>${{r.th?`<span class="thtag">${{esc(r.th)}}</span>`:""}}<span class="mtag">${{m}}</span></div>
+    <div class="pac">
+      <span class="k pr">problem</span><span class="val">${{esc(r.pr)}}</span>
+      <span class="k ap">approach</span><span class="val">${{esc(r.ap)}}</span>
+      <span class="k co">gives</span><span class="val">${{esc(r.co)}}</span>
+    </div></div>`;
+}}
+function apply(){{
+  const q = query.toLowerCase().split(/\\s+/).filter(Boolean);
+  filtered = DATA.filter(r=>{{
+    if(venue!=="ALL" && r.v!==venue) return false;
+    if(!q.length) return true;
+    const hay = (r.t+" "+r.th+" "+r.pr+" "+r.ap+" "+r.co+" "+(r.m||[]).join(" ")).toLowerCase();
+    return q.every(w=>hay.includes(w));
+  }});
+  shown = 0; list.innerHTML = "";
+  countEl.textContent = filtered.length.toLocaleString() + " papers" + (venue!=="ALL"?" · "+venue:"") + (query?` · "${{query}}"`:"");
+  render();
+}}
+function render(){{
+  const next = filtered.slice(shown, shown+PAGE);
+  list.insertAdjacentHTML("beforeend", next.map(card).join(""));
+  shown += next.length;
+  moreBtn.style.display = shown < filtered.length ? "" : "none";
+}}
+document.getElementById("q").addEventListener("input", e=>{{query=e.target.value; apply();}});
+document.querySelectorAll(".chip").forEach(c=>c.addEventListener("click", ()=>{{
+  document.querySelectorAll(".chip").forEach(x=>x.classList.remove("on")); c.classList.add("on");
+  venue = c.dataset.v; apply();
+}}));
+moreBtn.addEventListener("click", render);
+apply();
+</script>
+"""
+open(os.path.join(HERE, "site", "explorer.html"), "w", encoding="utf-8").write(P)
+print("wrote site/explorer.html ·", len(P)//1024, "KB ·", len(recs), "papers · FFFD:", P.count("�"))

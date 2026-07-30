@@ -1,0 +1,171 @@
+{
+ "n_analyzed": 1487,
+ "methods": [
+  {
+   "tag": "LLM",
+   "n": 292
+  },
+  {
+   "tag": "retrieval/ranking",
+   "n": 181
+  },
+  {
+   "tag": "graph neural nets",
+   "n": 115
+  },
+  {
+   "tag": "multimodal",
+   "n": 105
+  },
+  {
+   "tag": "benchmark/eval",
+   "n": 100
+  },
+  {
+   "tag": "contrastive learning",
+   "n": 92
+  },
+  {
+   "tag": "RAG",
+   "n": 89
+  },
+  {
+   "tag": "recommendation",
+   "n": 81
+  },
+  {
+   "tag": "attention",
+   "n": 73
+  },
+  {
+   "tag": "reasoning",
+   "n": 68
+  },
+  {
+   "tag": "reinforcement learning",
+   "n": 63
+  },
+  {
+   "tag": "embeddings",
+   "n": 53
+  },
+  {
+   "tag": "agents",
+   "n": 51
+  },
+  {
+   "tag": "adversarial",
+   "n": 49
+  },
+  {
+   "tag": "fine-tuning/PEFT",
+   "n": 44
+  },
+  {
+   "tag": "distillation",
+   "n": 39
+  },
+  {
+   "tag": "fairness",
+   "n": 39
+  },
+  {
+   "tag": "diffusion",
+   "n": 37
+  },
+  {
+   "tag": "federated learning",
+   "n": 36
+  },
+  {
+   "tag": "transformer",
+   "n": 34
+  },
+  {
+   "tag": "mixture-of-experts",
+   "n": 31
+  },
+  {
+   "tag": "prompting",
+   "n": 26
+  },
+  {
+   "tag": "clustering",
+   "n": 26
+  },
+  {
+   "tag": "knowledge graph",
+   "n": 14
+  }
+ ],
+ "theme_families": [
+  {
+   "family": "Other",
+   "n": 445
+  },
+  {
+   "family": "Retrieval & Ranking",
+   "n": 232
+  },
+  {
+   "family": "Recommendation",
+   "n": 216
+  },
+  {
+   "family": "Graph learning",
+   "n": 128
+  },
+  {
+   "family": "LLM methods & training",
+   "n": 118
+  },
+  {
+   "family": "RAG & knowledge",
+   "n": 61
+  },
+  {
+   "family": "Security & robustness",
+   "n": 45
+  },
+  {
+   "family": "Multimodal",
+   "n": 44
+  },
+  {
+   "family": "Fairness & responsible",
+   "n": 43
+  },
+  {
+   "family": "Time series & anomaly",
+   "n": 42
+  },
+  {
+   "family": "LLM agents",
+   "n": 30
+  },
+  {
+   "family": "Misinformation & social",
+   "n": 26
+  },
+  {
+   "family": "Reasoning & QA",
+   "n": 22
+  },
+  {
+   "family": "Evaluation & benchmarks",
+   "n": 21
+  },
+  {
+   "family": "Efficiency",
+   "n": 11
+  },
+  {
+   "family": "Recsys: cold-start/cross-domain",
+   "n": 2
+  },
+  {
+   "family": "Recsys: sequential/session",
+   "n": 1
+  }
+ ]
+}

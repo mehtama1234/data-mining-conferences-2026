@@ -1,0 +1,805 @@
+{
+ "venues": {
+  "WWW 2026": 989,
+  "WSDM 2026": 128,
+  "SIGIR 2026": 685
+ },
+ "n_papers": 1802,
+ "with_abstract": 1489,
+ "n_uncategorized": 93,
+ "multi_theme": 1419,
+ "themes": [
+  {
+   "theme": "LLMs & Language Models",
+   "n": 714,
+   "pct": 39.6,
+   "by_venue": {
+    "WWW 2026": 385,
+    "WSDM 2026": 51,
+    "SIGIR 2026": 278
+   },
+   "examples": [
+    {
+     "title": "Reconstructing Training Data from Adapter-based Federated Large Language Models",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "Neuro-Sym Supporter: A Thoughtful Emotion Support Agent Integrating Neural and Symbolic Policy Learning",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "PerQA: A Benchmark for Temporally Sensitive Questions on Heterogeneous Personal Data",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "Embedding Enhancement via Fine-Tuned Language Models for Learner-Item Cognitive Modeling",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "PLIKD: Prompt Learning with Instance-aware Knowledge Distillation for Web-scale Semantic Image Classification",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "Conflict-Aware RAG: Multi-Stage Learning with Conflict Signals for Robust Retrieval-Augmented Generation",
+     "venue": "WWW 2026"
+    }
+   ]
+  },
+  {
+   "theme": "Efficiency & Scalability",
+   "n": 623,
+   "pct": 34.6,
+   "by_venue": {
+    "WWW 2026": 347,
+    "WSDM 2026": 34,
+    "SIGIR 2026": 242
+   },
+   "examples": [
+    {
+     "title": "Reconstructing Training Data from Adapter-based Federated Large Language Models",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "PLIKD: Prompt Learning with Instance-aware Knowledge Distillation for Web-scale Semantic Image Classification",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "VarParser: Unleashing the Neglected Power of Variables for LLM-based Log Parsing",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "Diversifying Differentiable Graph Retrieval with Topic-Adaptive Multi-Intent Learning",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "A Fact-Checking Framework with Denoising Evidence Retrieval and LLM-Based Debate Verification",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "Social Event Prediction via Fourier Graph Learning",
+     "venue": "WWW 2026"
+    }
+   ]
+  },
+  {
+   "theme": "Information Retrieval & Search",
+   "n": 461,
+   "pct": 25.6,
+   "by_venue": {
+    "WWW 2026": 138,
+    "WSDM 2026": 26,
+    "SIGIR 2026": 297
+   },
+   "examples": [
+    {
+     "title": "Conflict-Aware RAG: Multi-Stage Learning with Conflict Signals for Robust Retrieval-Augmented Generation",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "Diversifying Differentiable Graph Retrieval with Topic-Adaptive Multi-Intent Learning",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "D-Models and E-Models: Diversity-Stability Trade-offs in the Sampling Behavior of Large Language Models",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "Modeling Cascaded Delay Feedback for Online Net Conversion Rate Prediction: Benchmark, Insights and Solutions",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "RobustExplain: Evaluating Robustness of LLM-Based Explanation Agents for Recommendation",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "OpenDecoder: Open Large Language Model Decoding to Incorporate Document Quality in RAG",
+     "venue": "WWW 2026"
+    }
+   ]
+  },
+  {
+   "theme": "Recommender Systems",
+   "n": 436,
+   "pct": 24.2,
+   "by_venue": {
+    "WWW 2026": 169,
+    "WSDM 2026": 44,
+    "SIGIR 2026": 223
+   },
+   "examples": [
+    {
+     "title": "Multi-view Semantic Contrastive Alignment for Multimodal Recommendation",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "PLIKD: Prompt Learning with Instance-aware Knowledge Distillation for Web-scale Semantic Image Classification",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "AgenticShop: Benchmarking Agentic Product Curation for Personalized Web Shopping",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "D-Models and E-Models: Diversity-Stability Trade-offs in the Sampling Behavior of Large Language Models",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "Modeling Cascaded Delay Feedback for Online Net Conversion Rate Prediction: Benchmark, Insights and Solutions",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "RobustExplain: Evaluating Robustness of LLM-Based Explanation Agents for Recommendation",
+     "venue": "WWW 2026"
+    }
+   ]
+  },
+  {
+   "theme": "Social Networks & Influence",
+   "n": 273,
+   "pct": 15.1,
+   "by_venue": {
+    "WWW 2026": 170,
+    "WSDM 2026": 32,
+    "SIGIR 2026": 71
+   },
+   "examples": [
+    {
+     "title": "Multi-view Semantic Contrastive Alignment for Multimodal Recommendation",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "PerQA: A Benchmark for Temporally Sensitive Questions on Heterogeneous Personal Data",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "Revisiting Graph-Level Anomaly Detection: From Partially to Fully Unsupervised Learning",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "WebAndTheCity 12th International Smart City Workshop - Data-Driven Smart Cities",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "A Fact-Checking Framework with Denoising Evidence Retrieval and LLM-Based Debate Verification",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "RobustExplain: Evaluating Robustness of LLM-Based Explanation Agents for Recommendation",
+     "venue": "WWW 2026"
+    }
+   ]
+  },
+  {
+   "theme": "Self-Supervised & Contrastive",
+   "n": 226,
+   "pct": 12.5,
+   "by_venue": {
+    "WWW 2026": 133,
+    "WSDM 2026": 16,
+    "SIGIR 2026": 77
+   },
+   "examples": [
+    {
+     "title": "Structure-Semantic Synergized Deep Contrastive Graph Clustering",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "Multi-view Semantic Contrastive Alignment for Multimodal Recommendation",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "UTAG: Leveraging LLM as a Unified Embedding Generator for Text-Attributed Graphs",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "Causal Pre-training Under the Fairness Lens: An Empirical Study of TabPFN",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "A Fact-Checking Framework with Denoising Evidence Retrieval and LLM-Based Debate Verification",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "Decoding Web Memorization: A Semantic Membership Inference Attack on LLMs",
+     "venue": "WWW 2026"
+    }
+   ]
+  },
+  {
+   "theme": "Generative & Diffusion",
+   "n": 212,
+   "pct": 11.8,
+   "by_venue": {
+    "WWW 2026": 98,
+    "WSDM 2026": 20,
+    "SIGIR 2026": 94
+   },
+   "examples": [
+    {
+     "title": "Conflict-Aware RAG: Multi-Stage Learning with Conflict Signals for Robust Retrieval-Augmented Generation",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "Conditional Information Extraction with Diffusion Model on Fact-Condition Star Graph",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "The Verification Crisis: Expert Perceptions of GenAI Disinformation and the Case for Reproducible Provenance",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "Facilitating Generative Retrieval with Logical Denoising for Interpretable Conversational Search",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "Evolving Notions of Success on the Web: From Retrieval to Experience",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "OMGRec: One-time Matching-based Generative Rerank with Permutation-level Modeling in E-commerce",
+     "venue": "WWW 2026"
+    }
+   ]
+  },
+  {
+   "theme": "LLM Agents & Tool Use",
+   "n": 202,
+   "pct": 11.2,
+   "by_venue": {
+    "WWW 2026": 119,
+    "WSDM 2026": 11,
+    "SIGIR 2026": 72
+   },
+   "examples": [
+    {
+     "title": "Neuro-Sym Supporter: A Thoughtful Emotion Support Agent Integrating Neural and Symbolic Policy Learning",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "WebAndTheCity 12th International Smart City Workshop - Data-Driven Smart Cities",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "AgenticShop: Benchmarking Agentic Product Curation for Personalized Web Shopping",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "D-Models and E-Models: Diversity-Stability Trade-offs in the Sampling Behavior of Large Language Models",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "A Fact-Checking Framework with Denoising Evidence Retrieval and LLM-Based Debate Verification",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "RobustExplain: Evaluating Robustness of LLM-Based Explanation Agents for Recommendation",
+     "venue": "WWW 2026"
+    }
+   ]
+  },
+  {
+   "theme": "Explainability & Interpretability",
+   "n": 198,
+   "pct": 11.0,
+   "by_venue": {
+    "WWW 2026": 134,
+    "WSDM 2026": 17,
+    "SIGIR 2026": 47
+   },
+   "examples": [
+    {
+     "title": "Neuro-Sym Supporter: A Thoughtful Emotion Support Agent Integrating Neural and Symbolic Policy Learning",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "Social Event Prediction via Fourier Graph Learning",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "Quantum-Safe, Efficient, and AI-Enhanced Blockchains for the Web: A Cooperative Tutorial on Quantum Computing, Blockchain Applications, and Data Standards",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "Facilitating Generative Retrieval with Logical Denoising for Interpretable Conversational Search",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "From Navigation to Intention: Reframing the Web Experience through Goal-Driven Interfaces",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "RPO-RAG: Aligning Small LLMs with Relation-aware Preference Optimization for Knowledge Graph Question Answering",
+     "venue": "WWW 2026"
+    }
+   ]
+  },
+  {
+   "theme": "Fairness, Bias & Responsible AI",
+   "n": 195,
+   "pct": 10.8,
+   "by_venue": {
+    "WWW 2026": 118,
+    "WSDM 2026": 21,
+    "SIGIR 2026": 56
+   },
+   "examples": [
+    {
+     "title": "Too Much Sharing, Too Little Security: Authentication Cookie Theft At Scale",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "Causal Pre-training Under the Fairness Lens: An Empirical Study of TabPFN",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "Modeling Cascaded Delay Feedback for Online Net Conversion Rate Prediction: Benchmark, Insights and Solutions",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "Beyond Item-Level Prediction: Fine-Grained CVR Modeling with Price SKU in E-Commerce Recommendation",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "Xemis: Fair and Robust Privacy-Preserving Data Trading based on Distributed Noise Sharing",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "Quantum-Safe, Efficient, and AI-Enhanced Blockchains for the Web: A Cooperative Tutorial on Quantum Computing, Blockchain Applications, and Data Standards",
+     "venue": "WWW 2026"
+    }
+   ]
+  },
+  {
+   "theme": "Multimodal & Vision-Language",
+   "n": 193,
+   "pct": 10.7,
+   "by_venue": {
+    "WWW 2026": 117,
+    "WSDM 2026": 11,
+    "SIGIR 2026": 65
+   },
+   "examples": [
+    {
+     "title": "Multi-view Semantic Contrastive Alignment for Multimodal Recommendation",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "PLIKD: Prompt Learning with Instance-aware Knowledge Distillation for Web-scale Semantic Image Classification",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "Safeguarding Children at Scale: Cost-Effective Multimodal LLM Detection of Inappropriate YouTube Advertising",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "The Verification Crisis: Expert Perceptions of GenAI Disinformation and the Case for Reproducible Provenance",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "ToxiTwitch: Toward Emote-Aware Hybrid Moderation for Live Streaming Platforms",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "SketchMind: Understanding Abstract Sketches with MLLMs for Fine-Grained Sketch-Based Image Retrieval",
+     "venue": "WWW 2026"
+    }
+   ]
+  },
+  {
+   "theme": "Retrieval-Augmented (RAG)",
+   "n": 178,
+   "pct": 9.9,
+   "by_venue": {
+    "WWW 2026": 67,
+    "WSDM 2026": 8,
+    "SIGIR 2026": 103
+   },
+   "examples": [
+    {
+     "title": "Conflict-Aware RAG: Multi-Stage Learning with Conflict Signals for Robust Retrieval-Augmented Generation",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "Diversifying Differentiable Graph Retrieval with Topic-Adaptive Multi-Intent Learning",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "Rethinking MoE with Retrieval-Memory Synergy: Towards Efficient Expert Coordination",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "OpenDecoder: Open Large Language Model Decoding to Incorporate Document Quality in RAG",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "(wt) GC-DPG: Graph-Constrained Dual-Phase Generation for Safe and Verifiable Chinese Medical Question Answering",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "PruneRAG: Confidence-Guided Query Decomposition Trees for Efficient Retrieval-Augmented Generation",
+     "venue": "WWW 2026"
+    }
+   ]
+  },
+  {
+   "theme": "Graph Learning & Mining",
+   "n": 166,
+   "pct": 9.2,
+   "by_venue": {
+    "WWW 2026": 122,
+    "WSDM 2026": 19,
+    "SIGIR 2026": 25
+   },
+   "examples": [
+    {
+     "title": "Diversifying Differentiable Graph Retrieval with Topic-Adaptive Multi-Intent Learning",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "Long-Tailed Recognition of Evidential Experts for Graph-level Classification",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "Social Event Prediction via Fourier Graph Learning",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "Topology-Aware Feature Sorting Enables Universal Modeling on Homophilic and Heterophilic Graphs",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "Delay-Aware Graph Neural Stochastic Differential Equations for Financial Time Series Modeling and Forecasting",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "Multi-Modal Enhanced Graph Transfer Learning for Digital Finance Fraud Detection",
+     "venue": "WWW 2026"
+    }
+   ]
+  },
+  {
+   "theme": "Time Series & Spatiotemporal",
+   "n": 157,
+   "pct": 8.7,
+   "by_venue": {
+    "WWW 2026": 110,
+    "WSDM 2026": 12,
+    "SIGIR 2026": 35
+   },
+   "examples": [
+    {
+     "title": "TravelReasoner: Leveraging Large Reasoning Models to Address Mobility Data Gap",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "Social Event Prediction via Fourier Graph Learning",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "Modeling Cascaded Delay Feedback for Online Net Conversion Rate Prediction: Benchmark, Insights and Solutions",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "Accurate Trajectory Recovery in Underserved Areas via Location Inference from Web Crowdsourced Data",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "BeeQoS: A Cloud-Native QoS System for Adaptive and Scalable Multi-Priority Bandwidth Guarantees",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "Delay-Aware Graph Neural Stochastic Differential Equations for Financial Time Series Modeling and Forecasting",
+     "venue": "WWW 2026"
+    }
+   ]
+  },
+  {
+   "theme": "Privacy, Federated & Security",
+   "n": 156,
+   "pct": 8.7,
+   "by_venue": {
+    "WWW 2026": 131,
+    "WSDM 2026": 6,
+    "SIGIR 2026": 19
+   },
+   "examples": [
+    {
+     "title": "Reconstructing Training Data from Adapter-based Federated Large Language Models",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "Too Much Sharing, Too Little Security: Authentication Cookie Theft At Scale",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "Fast or Secure? Push the Limit of Privacy Leakage Threat via Charging Side-Channel Attacks",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "pFedDKS: Detached Knowledge Sharing for Personalized Federated Learning",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "Xemis: Fair and Robust Privacy-Preserving Data Trading based on Distributed Noise Sharing",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "Quantum-Safe, Efficient, and AI-Enhanced Blockchains for the Web: A Cooperative Tutorial on Quantum Computing, Blockchain Applications, and Data Standards",
+     "venue": "WWW 2026"
+    }
+   ]
+  },
+  {
+   "theme": "Advertising & E-commerce",
+   "n": 150,
+   "pct": 8.3,
+   "by_venue": {
+    "WWW 2026": 66,
+    "WSDM 2026": 11,
+    "SIGIR 2026": 73
+   },
+   "examples": [
+    {
+     "title": "AgenticShop: Benchmarking Agentic Product Curation for Personalized Web Shopping",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "Understanding Strategic Platform Entry and Seller Exploration: A Stackelberg Model",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "Safeguarding Children at Scale: Cost-Effective Multimodal LLM Detection of Inappropriate YouTube Advertising",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "Beyond Item-Level Prediction: Fine-Grained CVR Modeling with Price SKU in E-Commerce Recommendation",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "LiquidityPool: Game-Theoretic Analysis of Stakeholder Revenue in Ranking-Dependent DeFi",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "Towards Automated Brand-Safety Detection: A Novel Dataset and Comparative Analysis of Language Models",
+     "venue": "WWW 2026"
+    }
+   ]
+  },
+  {
+   "theme": "Misinformation & Trust",
+   "n": 138,
+   "pct": 7.7,
+   "by_venue": {
+    "WWW 2026": 105,
+    "WSDM 2026": 9,
+    "SIGIR 2026": 24
+   },
+   "examples": [
+    {
+     "title": "A Fact-Checking Framework with Denoising Evidence Retrieval and LLM-Based Debate Verification",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "RobustExplain: Evaluating Robustness of LLM-Based Explanation Agents for Recommendation",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "Quantum-Safe, Efficient, and AI-Enhanced Blockchains for the Web: A Cooperative Tutorial on Quantum Computing, Blockchain Applications, and Data Standards",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "The Verification Crisis: Expert Perceptions of GenAI Disinformation and the Case for Reproducible Provenance",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "ToxiTwitch: Toward Emote-Aware Hybrid Moderation for Live Streaming Platforms",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "TrueLens: Video Fake News Detection with Dual Level Evidence Gathering and Consolidation",
+     "venue": "WWW 2026"
+    }
+   ]
+  },
+  {
+   "theme": "Text Mining & NLP",
+   "n": 132,
+   "pct": 7.3,
+   "by_venue": {
+    "WWW 2026": 73,
+    "WSDM 2026": 7,
+    "SIGIR 2026": 52
+   },
+   "examples": [
+    {
+     "title": "PerQA: A Benchmark for Temporally Sensitive Questions on Heterogeneous Personal Data",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "Conflict-Aware RAG: Multi-Stage Learning with Conflict Signals for Robust Retrieval-Augmented Generation",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "Diversifying Differentiable Graph Retrieval with Topic-Adaptive Multi-Intent Learning",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "Resisting Manipulative Bots in Meme Coin Copy Trading: A Multi-Agent Approach with Chain-of-Thought Reasoning",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "SketchMind: Understanding Abstract Sketches with MLLMs for Fine-Grained Sketch-Based Image Retrieval",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "(wt) GC-DPG: Graph-Constrained Dual-Phase Generation for Safe and Verifiable Chinese Medical Question Answering",
+     "venue": "WWW 2026"
+    }
+   ]
+  },
+  {
+   "theme": "Knowledge Graphs",
+   "n": 115,
+   "pct": 6.4,
+   "by_venue": {
+    "WWW 2026": 72,
+    "WSDM 2026": 14,
+    "SIGIR 2026": 29
+   },
+   "examples": [
+    {
+     "title": "Diversifying Differentiable Graph Retrieval with Topic-Adaptive Multi-Intent Learning",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "Conditional Information Extraction with Diffusion Model on Fact-Condition Star Graph",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "Language Model Representations for Efficient Few-Shot Tabular Classification",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "(wt) GC-DPG: Graph-Constrained Dual-Phase Generation for Safe and Verifiable Chinese Medical Question Answering",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "Better Negatives, Better Predictions: Negative Sample Selection Strategies for Enhancing Biomedical KG Edge Classification",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "Unveiling and Mitigating Untargeted Poisoning Attacks on Federated Knowledge Graph Embedding",
+     "venue": "WWW 2026"
+    }
+   ]
+  },
+  {
+   "theme": "Reinforcement Learning",
+   "n": 105,
+   "pct": 5.8,
+   "by_venue": {
+    "WWW 2026": 57,
+    "WSDM 2026": 7,
+    "SIGIR 2026": 41
+   },
+   "examples": [
+    {
+     "title": "Understanding Strategic Platform Entry and Seller Exploration: A Stackelberg Model",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "PAOSC: Plug-and-play Attention Optimization for Semantic Consistency in LLMs",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "EcoTune: Edge-Cloud Collaborative Model Adaptation for Budget-Constrained On-Device SLM Personalization",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "FeedGuard: Online Critic-Guided Reinforcement Learning with Privacy-Preserving Feedback for Recommendation",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "PolicySim: An LLM-Based Agent Social Simulation Sandbox for Proactive Policy Optimization",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "How Graphs Can Help You Stay Informed in an Evolving World",
+     "venue": "WWW 2026"
+    }
+   ]
+  },
+  {
+   "theme": "Causal Inference",
+   "n": 86,
+   "pct": 4.8,
+   "by_venue": {
+    "WWW 2026": 42,
+    "WSDM 2026": 14,
+    "SIGIR 2026": 30
+   },
+   "examples": [
+    {
+     "title": "Causal Pre-training Under the Fairness Lens: An Empirical Study of TabPFN",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "Macro-Micro Collaborative Learning for Logical Data Center Microservice Indicators Forecasting",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "Bridging Semantic Understanding and Popularity Bias with LLMs",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "Dir-GD: Directed Graph Distillation",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "C-HyPOD: Causal Hyperbolic Representation Learning with Prototype Orthogonal Disentanglement for Graph Out-of-Distribution Recommendation",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "Counterfactual Augmented Causal Reasoning for Aspect-Based Sentiment Analysis",
+     "venue": "WWW 2026"
+    }
+   ]
+  },
+  {
+   "theme": "Fraud & Anomaly Detection",
+   "n": 68,
+   "pct": 3.8,
+   "by_venue": {
+    "WWW 2026": 59,
+    "WSDM 2026": 3,
+    "SIGIR 2026": 6
+   },
+   "examples": [
+    {
+     "title": "VarParser: Unleashing the Neglected Power of Variables for LLM-based Log Parsing",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "Revisiting Graph-Level Anomaly Detection: From Partially to Fully Unsupervised Learning",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "Multi-Modal Enhanced Graph Transfer Learning for Digital Finance Fraud Detection",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "Dir-GD: Directed Graph Distillation",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "Cross-Type Semantic Alignment for Multi-Type Anomaly Detection in Heterogeneous Graphs",
+     "venue": "WWW 2026"
+    },
+    {
+     "title": "Collusion-Aware Set-level Learning Framework for Detecting Spamming Activities",
+     "venue": "WWW 2026"
+    }
+   ]
+  }
+ ]
+}

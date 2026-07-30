@@ -1,0 +1,543 @@
+{
+ "venues": [
+  "WWW 2026",
+  "WSDM 2026",
+  "SIGIR 2026"
+ ],
+ "profiles": {
+  "WWW 2026": {
+   "n_papers": 989,
+   "n_analyzed": 866,
+   "top_themes": [
+    {
+     "theme": "LLMs & Language Models",
+     "n": 385,
+     "pct": 38.9
+    },
+    {
+     "theme": "Efficiency & Scalability",
+     "n": 347,
+     "pct": 35.1
+    },
+    {
+     "theme": "Social Networks & Influence",
+     "n": 170,
+     "pct": 17.2
+    },
+    {
+     "theme": "Recommender Systems",
+     "n": 169,
+     "pct": 17.1
+    },
+    {
+     "theme": "Information Retrieval & Search",
+     "n": 138,
+     "pct": 14.0
+    },
+    {
+     "theme": "Explainability & Interpretability",
+     "n": 134,
+     "pct": 13.5
+    },
+    {
+     "theme": "Self-Supervised & Contrastive",
+     "n": 133,
+     "pct": 13.4
+    },
+    {
+     "theme": "Privacy, Federated & Security",
+     "n": 131,
+     "pct": 13.2
+    }
+   ],
+   "distinct_themes": [
+    {
+     "theme": "Fraud & Anomaly Detection",
+     "n": 59,
+     "rate": 0.05965621840242669,
+     "lift": 1.58
+    },
+    {
+     "theme": "Privacy, Federated & Security",
+     "n": 131,
+     "rate": 0.13245702730030334,
+     "lift": 1.53
+    },
+    {
+     "theme": "Misinformation & Trust",
+     "n": 105,
+     "rate": 0.10616784630940344,
+     "lift": 1.39
+    },
+    {
+     "theme": "Graph Learning & Mining",
+     "n": 122,
+     "rate": 0.12335692618806876,
+     "lift": 1.34
+    },
+    {
+     "theme": "Time Series & Spatiotemporal",
+     "n": 110,
+     "rate": 0.11122345803842265,
+     "lift": 1.28
+    },
+    {
+     "theme": "Explainability & Interpretability",
+     "n": 134,
+     "rate": 0.13549039433771487,
+     "lift": 1.23
+    }
+   ],
+   "top_methods": [
+    {
+     "tag": "LLM",
+     "n": 166,
+     "lift": 0.98
+    },
+    {
+     "tag": "graph neural nets",
+     "n": 87,
+     "lift": 1.3
+    },
+    {
+     "tag": "multimodal",
+     "n": 67,
+     "lift": 1.1
+    },
+    {
+     "tag": "retrieval/ranking",
+     "n": 56,
+     "lift": 0.53
+    },
+    {
+     "tag": "contrastive learning",
+     "n": 54,
+     "lift": 1.01
+    },
+    {
+     "tag": "attention",
+     "n": 49,
+     "lift": 1.15
+    },
+    {
+     "tag": "benchmark/eval",
+     "n": 45,
+     "lift": 0.77
+    },
+    {
+     "tag": "RAG",
+     "n": 41,
+     "lift": 0.79
+    },
+    {
+     "tag": "recommendation",
+     "n": 38,
+     "lift": 0.81
+    },
+    {
+     "tag": "adversarial",
+     "n": 38,
+     "lift": 1.33
+    }
+   ],
+   "distinct_methods": [
+    {
+     "tag": "federated learning",
+     "n": 34,
+     "lift": 1.62
+    },
+    {
+     "tag": "adversarial",
+     "n": 38,
+     "lift": 1.33
+    },
+    {
+     "tag": "graph neural nets",
+     "n": 87,
+     "lift": 1.3
+    },
+    {
+     "tag": "mixture-of-experts",
+     "n": 21,
+     "lift": 1.16
+    },
+    {
+     "tag": "transformer",
+     "n": 23,
+     "lift": 1.16
+    },
+    {
+     "tag": "attention",
+     "n": 49,
+     "lift": 1.15
+    },
+    {
+     "tag": "fairness",
+     "n": 26,
+     "lift": 1.14
+    },
+    {
+     "tag": "prompting",
+     "n": 17,
+     "lift": 1.12
+    }
+   ]
+  },
+  "WSDM 2026": {
+   "n_papers": 128,
+   "n_analyzed": 127,
+   "top_themes": [
+    {
+     "theme": "LLMs & Language Models",
+     "n": 51,
+     "pct": 39.8
+    },
+    {
+     "theme": "Recommender Systems",
+     "n": 44,
+     "pct": 34.4
+    },
+    {
+     "theme": "Efficiency & Scalability",
+     "n": 34,
+     "pct": 26.6
+    },
+    {
+     "theme": "Social Networks & Influence",
+     "n": 32,
+     "pct": 25.0
+    },
+    {
+     "theme": "Information Retrieval & Search",
+     "n": 26,
+     "pct": 20.3
+    },
+    {
+     "theme": "Fairness, Bias & Responsible AI",
+     "n": 21,
+     "pct": 16.4
+    },
+    {
+     "theme": "Generative & Diffusion",
+     "n": 20,
+     "pct": 15.6
+    },
+    {
+     "theme": "Graph Learning & Mining",
+     "n": 19,
+     "pct": 14.8
+    }
+   ],
+   "distinct_themes": [
+    {
+     "theme": "Causal Inference",
+     "n": 14,
+     "rate": 0.109375,
+     "lift": 2.29
+    },
+    {
+     "theme": "Knowledge Graphs",
+     "n": 14,
+     "rate": 0.109375,
+     "lift": 1.71
+    },
+    {
+     "theme": "Social Networks & Influence",
+     "n": 32,
+     "rate": 0.25,
+     "lift": 1.65
+    },
+    {
+     "theme": "Graph Learning & Mining",
+     "n": 19,
+     "rate": 0.1484375,
+     "lift": 1.61
+    },
+    {
+     "theme": "Fairness, Bias & Responsible AI",
+     "n": 21,
+     "rate": 0.1640625,
+     "lift": 1.52
+    },
+    {
+     "theme": "Recommender Systems",
+     "n": 44,
+     "rate": 0.34375,
+     "lift": 1.42
+    }
+   ],
+   "top_methods": [
+    {
+     "tag": "LLM",
+     "n": 31,
+     "lift": 1.24
+    },
+    {
+     "tag": "recommendation",
+     "n": 16,
+     "lift": 2.31
+    },
+    {
+     "tag": "retrieval/ranking",
+     "n": 13,
+     "lift": 0.84
+    },
+    {
+     "tag": "graph neural nets",
+     "n": 11,
+     "lift": 1.12
+    },
+    {
+     "tag": "multimodal",
+     "n": 10,
+     "lift": 1.12
+    },
+    {
+     "tag": "diffusion",
+     "n": 9,
+     "lift": 2.85
+    },
+    {
+     "tag": "contrastive learning",
+     "n": 8,
+     "lift": 1.02
+    },
+    {
+     "tag": "reasoning",
+     "n": 7,
+     "lift": 1.21
+    },
+    {
+     "tag": "embeddings",
+     "n": 6,
+     "lift": 1.33
+    },
+    {
+     "tag": "reinforcement learning",
+     "n": 6,
+     "lift": 1.12
+    }
+   ],
+   "distinct_methods": [
+    {
+     "tag": "diffusion",
+     "n": 9,
+     "lift": 2.85
+    },
+    {
+     "tag": "recommendation",
+     "n": 16,
+     "lift": 2.31
+    },
+    {
+     "tag": "embeddings",
+     "n": 6,
+     "lift": 1.33
+    },
+    {
+     "tag": "LLM",
+     "n": 31,
+     "lift": 1.24
+    },
+    {
+     "tag": "reasoning",
+     "n": 7,
+     "lift": 1.21
+    },
+    {
+     "tag": "multimodal",
+     "n": 10,
+     "lift": 1.12
+    },
+    {
+     "tag": "reinforcement learning",
+     "n": 6,
+     "lift": 1.12
+    },
+    {
+     "tag": "graph neural nets",
+     "n": 11,
+     "lift": 1.12
+    }
+   ]
+  },
+  "SIGIR 2026": {
+   "n_papers": 685,
+   "n_analyzed": 494,
+   "top_themes": [
+    {
+     "theme": "Information Retrieval & Search",
+     "n": 297,
+     "pct": 43.4
+    },
+    {
+     "theme": "LLMs & Language Models",
+     "n": 278,
+     "pct": 40.6
+    },
+    {
+     "theme": "Efficiency & Scalability",
+     "n": 242,
+     "pct": 35.3
+    },
+    {
+     "theme": "Recommender Systems",
+     "n": 223,
+     "pct": 32.6
+    },
+    {
+     "theme": "Retrieval-Augmented (RAG)",
+     "n": 103,
+     "pct": 15.0
+    },
+    {
+     "theme": "Generative & Diffusion",
+     "n": 94,
+     "pct": 13.7
+    },
+    {
+     "theme": "Self-Supervised & Contrastive",
+     "n": 77,
+     "pct": 11.2
+    },
+    {
+     "theme": "Advertising & E-commerce",
+     "n": 73,
+     "pct": 10.7
+    }
+   ],
+   "distinct_themes": [
+    {
+     "theme": "Information Retrieval & Search",
+     "n": 297,
+     "rate": 0.4335766423357664,
+     "lift": 1.69
+    },
+    {
+     "theme": "Retrieval-Augmented (RAG)",
+     "n": 103,
+     "rate": 0.15036496350364964,
+     "lift": 1.52
+    },
+    {
+     "theme": "Recommender Systems",
+     "n": 223,
+     "rate": 0.32554744525547447,
+     "lift": 1.35
+    },
+    {
+     "theme": "Advertising & E-commerce",
+     "n": 73,
+     "rate": 0.10656934306569343,
+     "lift": 1.28
+    },
+    {
+     "theme": "Generative & Diffusion",
+     "n": 94,
+     "rate": 0.13722627737226278,
+     "lift": 1.17
+    },
+    {
+     "theme": "Text Mining & NLP",
+     "n": 52,
+     "rate": 0.07591240875912408,
+     "lift": 1.04
+    }
+   ],
+   "top_methods": [
+    {
+     "tag": "retrieval/ranking",
+     "n": 112,
+     "lift": 1.86
+    },
+    {
+     "tag": "LLM",
+     "n": 95,
+     "lift": 0.98
+    },
+    {
+     "tag": "benchmark/eval",
+     "n": 51,
+     "lift": 1.54
+    },
+    {
+     "tag": "RAG",
+     "n": 43,
+     "lift": 1.45
+    },
+    {
+     "tag": "contrastive learning",
+     "n": 30,
+     "lift": 0.98
+    },
+    {
+     "tag": "multimodal",
+     "n": 28,
+     "lift": 0.8
+    },
+    {
+     "tag": "reasoning",
+     "n": 27,
+     "lift": 1.2
+    },
+    {
+     "tag": "recommendation",
+     "n": 27,
+     "lift": 1.0
+    },
+    {
+     "tag": "reinforcement learning",
+     "n": 25,
+     "lift": 1.19
+    },
+    {
+     "tag": "attention",
+     "n": 21,
+     "lift": 0.87
+    }
+   ],
+   "distinct_methods": [
+    {
+     "tag": "retrieval/ranking",
+     "n": 112,
+     "lift": 1.86
+    },
+    {
+     "tag": "benchmark/eval",
+     "n": 51,
+     "lift": 1.54
+    },
+    {
+     "tag": "distillation",
+     "n": 19,
+     "lift": 1.47
+    },
+    {
+     "tag": "RAG",
+     "n": 43,
+     "lift": 1.45
+    },
+    {
+     "tag": "reasoning",
+     "n": 27,
+     "lift": 1.2
+    },
+    {
+     "tag": "reinforcement learning",
+     "n": 25,
+     "lift": 1.19
+    },
+    {
+     "tag": "agents",
+     "n": 20,
+     "lift": 1.18
+    },
+    {
+     "tag": "clustering",
+     "n": 10,
+     "lift": 1.16
+    }
+   ]
+  }
+ }
+}
