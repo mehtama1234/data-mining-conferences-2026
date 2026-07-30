@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 1455,
+    "math_tags": ["ranking things by a learned score"],
+    "math_plain": "Rank documents by a statistical score of how well they match query terms, adapted for low-bandwidth search.",
+    "why_math": "Ranking works because you don't need the exact score values, only their order. A fast statistical score that correctly ranks which documents are more relevant gets the best results on top, and this ranking is robust even when computed cheaply on limited devices."
+  },
+  {
+    "gid": 1456,
+    "math_tags": ["measuring similarity as nearness in a space", "ranking things by a learned score"],
+    "math_plain": "Place legal cases and statutes in a learned space where similar ones sit near each other; rank by distance; refine ranking using citation network structure.",
+    "why_math": "It works because if you arrange documents so that similar ones are placed close together, finding similar items becomes simply finding nearby neighbors, which is cheap to compute. Citation structure adds a second signal: documents frequently linked together are genuinely related, so incorporating network edges into ranking improves precision."
+  },
+  {
+    "gid": 1457,
+    "math_tags": ["learning a function from examples"],
+    "math_plain": "Learn to translate between low-resource ethnic languages and Kiswahili using parallel sentences and speech recordings.",
+    "why_math": "It works because function learning from examples captures the systematic correspondence between languages: when you see enough pairs of sentences in both languages expressing the same meaning, the function naturally learns which words and phrases map to each other, enabling translation without hand-crafted rules."
+  },
+  {
+    "gid": 1458,
+    "math_tags": [],
+    "math_plain": "Track where users look on a screen and measure how their eye movements differ when AI summaries appear alongside search results.",
+    "why_math": "Eye tracking reveals cognitive effort and attention allocation because the human eye fixes on information that is being processed; where someone looks reveals what they are interpreting as relevant or surprising, allowing inference about how the presence of AI changes information-seeking behavior."
+  },
+  {
+    "gid": 1459,
+    "math_tags": ["ranking things by a learned score", "separating cause from coincidence"],
+    "math_plain": "Rank scientific papers by whether they actually support or refute a claim, not just by word similarity; distinguish supporting evidence from coincidental mentions.",
+    "why_math": "It works because simply finding papers with overlapping words misses the distinction between papers that actually address the claim versus papers that mention related terms by chance. Scoring based on evidence structure—whether the paper's logic actually connects to the claim—separates true support from false positives."
+  },
+  {
+    "gid": 1460,
+    "math_tags": ["predicting the next item in a sequence", "ranking things by a learned score"],
+    "math_plain": "Infer what information the user will need next in a conversation by predicting their future queries, then rank documents for those predicted needs before they ask.",
+    "why_math": "It works because multi-turn conversations have coherent goal sequences: users refine or explore related subtopics in predictable patterns. If you model what comes next in that sequence, you can surface relevant information before the user explicitly asks, reducing wasted turns."
+  },
+  {
+    "gid": 1461,
+    "math_tags": ["ranking things by a learned score", "weighting the parts that are most relevant"],
+    "math_plain": "Learn when to personalize each query using a classifier; weight past interactions differently for different users; blend rankings based on user intent.",
+    "why_math": "It works because not every query benefits from personalization—sometimes a generic search is better—and user history is noisy. A classifier learns which queries actually benefit from historical context, while weighted blending lets personalization help only when it actually improves precision, avoiding the trap of applying personalization uniformly."
+  },
+  {
+    "gid": 1462,
+    "math_tags": ["learning a function from examples", "separating cause from coincidence"],
+    "math_plain": "Ground AI answers in retrieved evidence and learn to distinguish citations that actually support the answer from fabricated or unsupported claims.",
+    "why_math": "It works because models learn spurious correlations when trained on data containing hallucinations. By explicitly training on task of separating supported claims from unsupported ones, the model learns the structure of genuine logical support versus plausible-sounding fabrication."
+  },
+  {
+    "gid": 1463,
+    "math_tags": ["learning a function from examples"],
+    "math_plain": "Learn to predict search behavior patterns from eye-tracking and interaction data, conditioned on user knowledge level and cognitive processing ability.",
+    "why_math": "It works because cognitive level and knowledge determine how users process information: an expert scans differently than a novice, and attention patterns reveal understanding. Modeling these patterns from data automatically learns how knowledge and cognition shape behavior without manual encoding."
+  },
+  {
+    "gid": 1464,
+    "math_tags": ["following the slope downhill to improve", "keeping only the few dimensions that matter"],
+    "math_plain": "Update AI search models continuously as corpus grows, selecting which old knowledge to keep and which to discard to prevent catastrophic forgetting.",
+    "why_math": "It works because incremental model updates on new documents tend to overwrite old knowledge unless you deliberately preserve important dimensions. By selecting which parts of past knowledge matter most for current performance, you retain skills on old documents while learning new ones."
+  },
+  {
+    "gid": 1465,
+    "math_tags": ["measuring similarity as nearness in a space", "combining many weak signals into a strong one"],
+    "math_plain": "Aggregate federated user updates using similarity of user behavior patterns rather than uniform averaging; weight similar users' updates higher in collaboration.",
+    "why_math": "It works because averaging all users equally in federated settings dilutes signals: users with different preferences corrupt each other's models. Grouping similar users and averaging within groups preserves collaborative patterns while filtering out noise from dissimilar users."
+  },
+  {
+    "gid": 1466,
+    "math_tags": ["measuring similarity as nearness in a space", "ranking things by a learned score"],
+    "math_plain": "Chunk multimodal evidence (text, tables, images) into fine-grained retrievable units and rank by relevance to the question across all modalities.",
+    "why_math": "It works because retrieval precision improves when units are smaller and more focused: a single paragraph is easier to judge relevant than a whole document. With multimodal content, breaking into modality-aware chunks (a table as one unit, a figure as another) lets ranking systems score each piece independently based on its relevance."
+  },
+  {
+    "gid": 1467,
+    "math_tags": ["ranking things by a learned score"],
+    "math_plain": "Adapt search pipeline components to handle AI-generated queries, which have different statistical patterns than human queries.",
+    "why_math": "It works because AI generates queries with different structure (more reformulations, faster sequences, different syntax) than humans. Ranking and filtering functions trained on human query patterns fail on AI queries; retraining on AI query distributions aligns system behavior to actual traffic."
+  },
+  {
+    "gid": 1468,
+    "math_tags": ["learning a function from examples", "separating cause from coincidence"],
+    "math_plain": "Learn how human information-seeking changes when AI agents participate in discussions; distinguish AI influence from natural social conformity effects.",
+    "why_math": "It works because social conformity and AI effects both influence behavior, but untangling them requires controlled observation. By measuring behavior in mixed and unmixed settings and modeling the interaction, you isolate AI's true causal effect from confounding social mechanisms."
+  },
+  {
+    "gid": 1469,
+    "math_tags": ["weighting the parts that are most relevant", "learning a function from examples"],
+    "math_plain": "Weight heuristic signals for relevance based on their reliability as a function of where documents sit in the citation network.",
+    "why_math": "It works because citation topology reveals trustworthiness: papers heavily cited by peers in a topic are more likely to be truly relevant. Heuristic signals' reliability varies by position (central papers have stronger signals), so using network position to adjust signal weights improves weak supervision quality."
+  }
+]

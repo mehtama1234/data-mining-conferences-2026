@@ -1,0 +1,92 @@
+[
+ {
+  "gid": 495,
+  "math_tags": ["measuring surprise and information", "following the slope downhill to improve", "estimating probabilities from data"],
+  "math_plain": "Measures how uncertain the model is about which token comes next, especially at line starts, then refines predictions by reducing that uncertainty.",
+  "why_math": "At decision points where structure matters most, high uncertainty signals the model has competing plausible next tokens. Reducing that uncertainty there sharpens the model's choice and improves correctness, because the model itself already contains the knowledge—it just needs less divided attention."
+ },
+ {
+  "gid": 496,
+  "math_tags": ["separating cause from coincidence", "learning a function from examples", "weighting the parts that are most relevant"],
+  "math_plain": "Learns which features actually cause correct predictions versus which are misleading noise, then trains to predict using only the true causal features.",
+  "why_math": "Confounding features mislead classifiers by happening to co-occur with the right answer in one domain but not another. By explicitly separating causal from spurious features and forcing the model to ignore spurious ones, predictions stay true when the domain shifts."
+ },
+ {
+  "gid": 497,
+  "math_tags": ["combining many weak signals into a strong one", "learning a function from examples", "measuring surprise and information"],
+  "math_plain": "Breaks down feedback evaluation into multiple independent judges, each scoring one aspect, then combines their judgments instead of asking one judge to evaluate everything at once.",
+  "why_math": "A single judge overwhelmed by many criteria at once makes inconsistent or generic judgments and amplifies biases from early errors. Separate judges each focus clearly on one criterion, so each makes reliable judgments; combining independent reliable signals produces better aggregate quality."
+ },
+ {
+  "gid": 498,
+  "math_tags": ["measuring similarity as nearness in a space", "combining many weak signals into a strong one", "learning a function from examples"],
+  "math_plain": "Fuses spatial geometry (where things are) with visual appearance (what they look like) into a single unified representation, then finds matches by measuring nearness.",
+  "why_math": "Spatial structure and appearance give different kinds of clues about whether two views match. Fusing both into one space means 'find similar' becomes 'find nearby'—and two views that are geometrically and visually aligned will sit close together by both measures."
+ },
+ {
+  "gid": 499,
+  "math_tags": ["ranking things by a learned score", "combining many weak signals into a strong one", "measuring surprise and information"],
+  "math_plain": "Ranks memes by engagement potential using both image novelty and text emotion signals, discovering that image uniqueness and sentiment both matter, but affect different meme types differently.",
+  "why_math": "Engagement results from multiple independent factors. Scoring by their combination ranks items by what actually drives attention. Novelty and emotion are weak signals separately, but together they predict which memes will spread because people share things that are both fresh and emotionally resonant."
+ },
+ {
+  "gid": 500,
+  "math_tags": ["estimating probabilities from data", "measuring surprise and information", "finding the settings with least error"],
+  "math_plain": "Quantifies the model's uncertainty about each diagnosis, then for high-uncertainty ones, uses multiple-choice reasoning to confirm or replace the prediction.",
+  "why_math": "High uncertainty means the model's top guess might be wrong. By quantifying that doubt and drilling down on uncertain cases with structured reasoning, you catch corrections you'd miss by trusting a confident wrong answer. Uncertainty itself is information about when to scrutinize more."
+ },
+ {
+  "gid": 501,
+  "math_tags": ["ranking things by a learned score", "measuring similarity as nearness in a space", "separating cause from coincidence"],
+  "math_plain": "Maps natural-language deletion requests to concrete graph targets using a hybrid ranking score (BM25 and nearness), then selects a small representative subset of requests for reproducible evaluation.",
+  "why_math": "Text-based requests are ambiguous; hybrid scoring combines lexical match (BM25) and semantic nearness (embeddings) so most requests map correctly. Sampling by a deterministic score ensures the evaluation subset is actionable and reproducible across different unlearning methods."
+ },
+ {
+  "gid": 502,
+  "math_tags": ["separating cause from coincidence", "combining many weak signals into a strong one", "learning a function from examples"],
+  "math_plain": "Breaks question answering into three sequential decision steps—each agent decides whether to refine or move forward—using graph structure to verify facts and prevent hallucination.",
+  "why_math": "Complex reasoning needs checkpoints. By having agents explicitly decide at each stage what to retrieve next and then verify answers against the graph, you catch errors early rather than letting wrong evidence compound through multiple reasoning steps."
+ },
+ {
+  "gid": 503,
+  "math_tags": ["measuring similarity as nearness in a space", "ranking things by a learned score", "weighting the parts that are most relevant"],
+  "math_plain": "Adjusts the similarity score between query and candidate images by subtracting a penalty that measures how much the modification text relied on the reference image, reducing noise from semantic bias.",
+  "why_math": "Semantic bias happens when the description misses or misweights what makes the target unique. By explicitly modeling the reference image's contribution and subtracting it from the score, you penalize candidates that match only the biased parts and reward those that match the true target."
+ },
+ {
+  "gid": 504,
+  "math_tags": ["finding the settings with least error", "learning a function from examples", "measuring similarity as nearness in a space"],
+  "math_plain": "Converts delivery-time prediction from direct regression to ordinal ranking, then aligns short-hop predictions with long-haul predictions to create a self-supervised signal that improves temporal reasoning.",
+  "why_math": "Delivery times are ordered (earlier is better), so ranking captures structure that raw regression misses. Enforcing consistency between the sum of hops and the total time gives the model internal redundancy: multiple ways to get right, so it learns more robust representations than from the target alone."
+ },
+ {
+  "gid": 505,
+  "math_tags": ["finding the settings with least error", "learning a function from examples", "smart random sampling and averaging"],
+  "math_plain": "Searches for neural architectures that perform well even after compression, by embedding quantization into the search space and using tree-based random sampling to explore efficiently.",
+  "why_math": "Standard architecture search finds models that are small but not well-designed for compression. By quantizing models during search, you discover architectures that compress well. Tree-based sampling with many parallel workers explores the huge space of models and quantizations without exhaustive evaluation."
+ },
+ {
+  "gid": 506,
+  "math_tags": ["measuring similarity as nearness in a space", "learning a function from examples", "combining many weak signals into a strong one"],
+  "math_plain": "Models topics as directional patterns in a shared space where images and text both live, using spherical geometry instead of flat space to capture how things point the same direction.",
+  "why_math": "Words and images both have direction (which way do they lean?), not just magnitude. By putting both in a sphere where direction is all that matters, you align topics across modalities. Spherical geometry also prevents posterior collapse where the model ignores structure."
+ },
+ {
+  "gid": 507,
+  "math_tags": ["learning a function from examples", "combining many weak signals into a strong one", "separating cause from coincidence"],
+  "math_plain": "Reasons back and forth from items to users to groups iteratively, with individual preferences directly shaping group patterns and vice versa, to infer both explicit and hidden interests.",
+  "why_math": "User interests exist at two levels: what each person explicitly shows, and implicit patterns in their peer groups. Reasoning between them in a loop lets explicit signals refine group patterns while group membership context clarifies what each person truly wants, avoiding both isolation and herd behavior."
+ },
+ {
+  "gid": 508,
+  "math_tags": ["ranking things by a learned score", "separating cause from coincidence", "finding the settings with least error"],
+  "math_plain": "Scores and prioritizes stages of a coordinated network attack, poisoning discovery tables, infiltrating DNS rankings, and hijacking idle slots to isolate blockchain nodes completely.",
+  "why_math": "Isolation requires blocking all paths to honest peers. By scoring stages by achievability (DNS needs only 28 IPs, slots hijacking raises success 45% to 95%), the attack prioritizes the most leverage; multi-stage coordination ensures each step feeds the next for complete isolation."
+ },
+ {
+  "gid": 509,
+  "math_tags": ["separating cause from coincidence", "measuring surprise and information", "combining many weak signals into a strong one"],
+  "math_plain": "Compares platform data collection practices across ad-free and ad-based models, and measures the gap between what users expect and what platforms claim actually happens.",
+  "why_math": "Expectation mismatches reveal when platforms have incentive to mislead. By measuring both actual data retention and user beliefs separately, you isolate which platforms are honest and which exploit the opacity between payment model and data use, exposing the true cause of data collection."
+ }
+]

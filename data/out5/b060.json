@@ -1,0 +1,92 @@
+[
+ {
+  "gid": 900,
+  "math_tags": ["learning a function from examples", "learning by comparison of similar and different", "following the slope downhill to improve"],
+  "math_plain": "Learn a recommendation model on few new-user examples that also remembers old patterns, avoiding forgetting or mixing up what different users like.",
+  "why_math": "It works because you can keep important past knowledge separate from new knowledge by replaying examples, and you can update carefully by checking that old users still stay satisfied."
+ },
+ {
+  "gid": 901,
+  "math_tags": ["learning a function from examples", "following the slope downhill to improve", "weighting the parts that are most relevant"],
+  "math_plain": "Train a language model to choose the right tool by starting with easy tool-choices first, then harder ones, while down-weighting bad training examples.",
+  "why_math": "It works because easier tasks build foundational understanding that helps with harder tasks, and discarding noisy training examples prevents learning false patterns that lead to wrong choices."
+ },
+ {
+  "gid": 902,
+  "math_tags": ["learning by comparison of similar and different", "measuring similarity as nearness in a space", "combining many weak signals into a strong one"],
+  "math_plain": "Find new social events by treating similar images and text as close neighbors, learning which ones belong together without any labeled event names.",
+  "why_math": "It works because if you arrange multimodal data so similar ones sit near each other in a space, finding groups becomes finding clusters of nearby points; cross-modal alignment lets you compare images and text fairly."
+ },
+ {
+  "gid": 903,
+  "math_tags": ["learning a function from examples", "following the slope downhill to improve", "weighting the parts that are most relevant"],
+  "math_plain": "Predict which users will buy during sales by learning stable patterns from past data, then using different expert models to adapt for each sale season.",
+  "why_math": "It works because user behavior has both unchanging patterns and sale-specific shifts; separating stable from temporary patterns lets you reuse past knowledge while adapting to new seasons."
+ },
+ {
+  "gid": 904,
+  "math_tags": ["ranking things by a learned score", "combining many weak signals into a strong one", "weighting the parts that are most relevant"],
+  "math_plain": "Rank items to recommend by focusing on finding new items that previous models missed, avoiding recommending the same things twice.",
+  "why_math": "It works because if multiple models already retrieved some items, recommending those again wastes ranking power; focusing on truly new items makes each model's contribution distinct and valuable."
+ },
+ {
+  "gid": 905,
+  "math_tags": ["measuring similarity as nearness in a space", "learning a function from examples", "keeping only the few dimensions that matter"],
+  "math_plain": "Learn item descriptions as feature vectors by separating words that matter for one domain from words shared across domains, preventing confusion between domains.",
+  "why_math": "It works because mixing domain-specific and domain-shared meanings leads to negative transfer; by explicitly separating these, you avoid applying rules learned in one domain wrongly to another."
+ },
+ {
+  "gid": 906,
+  "math_tags": ["smart random sampling and averaging", "ranking things by a learned score", "combining many weak signals into a strong one"],
+  "math_plain": "Rank nodes by importance using random walks that approximate a weighted path count, averaging many random samples to speed up the calculation.",
+  "why_math": "It works because random walks converge to true importance scores given enough samples, and averaging many cheap samples is faster than exact calculation; you get ranking order right even if magnitudes are approximate."
+ },
+ {
+  "gid": 907,
+  "math_tags": ["learning a function from examples", "separating cause from coincidence", "ranking things by a learned score"],
+  "math_plain": "Rank items on complex 2D search layouts by learning which combinations of position and item features lead to long-term user satisfaction, not just clicks.",
+  "why_math": "It works because causal frameworks separate correlation from actual influence; by using quasi-experiments, you avoid false signals like confounding that short-term clicks might hide."
+ },
+ {
+  "gid": 908,
+  "math_tags": ["keeping only the few dimensions that matter", "learning a function from examples", "predicting the next item in a sequence"],
+  "math_plain": "Predict what users will want next by remembering only the most important categories from their long history instead of every past click.",
+  "why_math": "It works because categories already aggregate similar items; throwing away redundant history details keeps only the signal, so the model trains faster and focuses on what matters."
+ },
+ {
+  "gid": 909,
+  "math_tags": ["separating cause from coincidence", "learning a function from examples", "keeping only the few dimensions that matter"],
+  "math_plain": "Estimate individual treatment effects on a network by learning three types of hidden factors: which help assign treatment, which confuse treatment with outcome, and which adjust for networks.",
+  "why_math": "It works because treatment effects are biased by confounders and spillover; separating hidden factors lets you identify which are true confounders versus which are just network side effects."
+ },
+ {
+  "gid": 910,
+  "math_tags": ["following the slope downhill to improve", "weighting the parts that are most relevant", "measuring similarity as nearness in a space"],
+  "math_plain": "Find anomalies in time-series data by training on one target feature at a time and including its similar neighbors, letting the model focus deeply.",
+  "why_math": "It works because focusing training on one target feature avoids diluting error signals across many unrelated features; neighbors with similar patterns provide relevant context without adding noise."
+ },
+ {
+  "gid": 911,
+  "math_tags": ["learning a function from examples", "keeping only the few dimensions that matter", "combining many weak signals into a strong one"],
+  "math_plain": "Extract entities and events from text without seeing the specific schema by first finding spans and assigning concepts, then separately aligning concepts to different schemas.",
+  "why_math": "It works because general understanding (finding spans) is separate from schema-specific mapping; by splitting these tasks, each one uses only the knowledge it needs, avoiding conflicting pressures."
+ },
+ {
+  "gid": 912,
+  "math_tags": ["learning a function from examples", "weighting the parts that are most relevant", "combining many weak signals into a strong one"],
+  "math_plain": "Label new text for named entities by training on confidence scores from a language model, combined with calibration adjustments, to find high-quality pseudo-labels.",
+  "why_math": "It works because language models have rich knowledge that can judge whether labels are trustworthy; combining confidence with calibration reduces both false certainty and random hallucinations."
+ },
+ {
+  "gid": 913,
+  "math_tags": ["measuring similarity as nearness in a space", "combining many weak signals into a strong one", "learning a function from examples"],
+  "math_plain": "Retrieve knowledge in structured forms (tables, graphs, trees) and feed it to generation models safely by understanding how structure shapes both retrieval quality and security.",
+  "why_math": "It works because different knowledge structures expose different patterns and vulnerabilities; modeling structure explicitly prevents both missed context and dangerous information leaks."
+ },
+ {
+  "gid": 914,
+  "math_tags": ["keeping only the few dimensions that matter", "learning a function from examples", "smart random sampling and averaging"],
+  "math_plain": "Decompose matrices by peeling off rank-1 slices using a language model to generate decompositions and a vision model to approve them, without preset stopping thresholds.",
+  "why_math": "It works because vision models can recognize when remaining structure is noise versus signal better than fixed thresholds; by using learned judgment instead of thresholds, you adapt to the data's inherent rank."
+ }
+]

@@ -1,0 +1,92 @@
+[
+ {
+  "gid": 1245,
+  "math_tags": ["ranking things by a learned score", "weighting the parts that are most relevant"],
+  "math_plain": "Rank search results by combining word-frequency scores from both the original query and AI-generated expansions, weighting each contribution.",
+  "why_math": "Word frequency captures which documents best match what people searched for; AI-generated answers help identify synonyms and related concepts, so combining their signals captures more search intent."
+ },
+ {
+  "gid": 1246,
+  "math_tags": ["ranking things by a learned score", "learning a function from examples", "weighting the parts that are most relevant"],
+  "math_plain": "Learn to rank items by their predicted rating (1-5 stars), using the strength of past preferences to align recommendations with users' actual taste.",
+  "why_math": "Strong preferences (5 stars) and weak ones (2 stars) reveal different patterns; including this strength makes the learner distinguish truly loved items from merely acceptable ones."
+ },
+ {
+  "gid": 1247,
+  "math_tags": ["finding the settings with least error"],
+  "math_plain": "Divide a geographic query region into blocks aligned with a grid so that each block perfectly matches the database's spatial index, minimizing extra unwanted lookups.",
+  "why_math": "When query borders align with index boundaries, the database can fetch entire blocks without any overlap; misaligned borders force the database to fetch blocks and then discard boundary points."
+ },
+ {
+  "gid": 1248,
+  "math_tags": ["measuring similarity as nearness in a space", "keeping only the few dimensions that matter"],
+  "math_plain": "Compare documents by measuring how many words they share, using separate upper and lower bounds to skip candidates that can never be similar enough.",
+  "why_math": "If two documents must share a threshold number of words to be similar, then documents with too few possible overlaps can be pruned without full comparison; tighter bounds mean fewer candidates to check."
+ },
+ {
+  "gid": 1249,
+  "math_tags": ["keeping only the few dimensions that matter", "smart random sampling and averaging"],
+  "math_plain": "Encode frequent items with short codes and rare items with long codes, then compress the lookup table by using these variable-length codes instead of fixed-width entries.",
+  "why_math": "Frequently accessed items benefit from short codes; rarely accessed items can afford long codes. Overall storage shrinks because the average code length is shorter than storing every item with the same width."
+ },
+ {
+  "gid": 1250,
+  "math_tags": ["learning a function from examples", "combining many weak signals into a strong one", "predicting the next item in a sequence"],
+  "math_plain": "When a user has few interactions, generate multiple diverse facets of each item's appeal and use those to fill gaps, so the recommendation model sees richer behavior patterns.",
+  "why_math": "Repeating the same item many times wastes capacity; creating diverse sub-preferences from real items trains the model on meaningful variations without adding artificial noise."
+ },
+ {
+  "gid": 1251,
+  "math_tags": ["combining many weak signals into a strong one", "learning a function from examples"],
+  "math_plain": "Merge the weights of a single-query search model and a conversation-aware search model so one model does both tasks without retraining.",
+  "why_math": "Two trained models each captured patterns the other missed; blending their weights preserves both because the shared foundation makes their parameters complementary."
+ },
+ {
+  "gid": 1252,
+  "math_tags": ["measuring similarity as nearness in a space", "spreading information across a network"],
+  "math_plain": "Extract named entities from documents, then smooth document representations using a network of entity similarity so nearby documents in the network are treated as similar.",
+  "why_math": "Documents sharing the same company or location are contextually related even if their words differ; spreading this entity-level signal as smoothness makes the metric capture human-meaningful similarity."
+ },
+ {
+  "gid": 1253,
+  "math_tags": ["ranking things by a learned score", "weighting the parts that are most relevant"],
+  "math_plain": "Learn to score each available search method for a given question, then route each question to the search method predicted to retrieve the best answer.",
+  "why_math": "No single search method works best for all questions; learning per-question routing exploits that different questions favor different retrieval strategies."
+ },
+ {
+  "gid": 1254,
+  "math_tags": ["learning a function from examples", "measuring surprise and information"],
+  "math_plain": "Measure how much each recommendation model relies on item attributes by randomizing those attributes and observing how much the predictions change.",
+  "why_math": "If predictions change dramatically when attributes are scrambled, the model is using them; if predictions stay the same, the model ignores them. The change size reveals true dependence."
+ },
+ {
+  "gid": 1255,
+  "math_tags": ["combining many weak signals into a strong one", "learning a function from examples"],
+  "math_plain": "Store past decisions and their reasoning, retrieve similar cases at test time, and verify consistency between retrieved reasoning and new predictions to catch errors.",
+  "why_math": "Earlier decisions contain valid reasoning you can reuse; checking consistency between memory and current verdict catches when the model contradicts itself, signaling error."
+ },
+ {
+  "gid": 1256,
+  "math_tags": ["weighting the parts that are most relevant", "learning a function from examples"],
+  "math_plain": "Replace learned importance weights with uniform weights in a recommendation model and measure whether the predictions change, revealing if the model truly uses the weights.",
+  "why_math": "If uniform weights produce similar results to learned weights, the model is not exploiting importance ranking; if results differ, it shows learned weighting is functionally important."
+ },
+ {
+  "gid": 1257,
+  "math_tags": ["ranking things by a learned score", "weighting the parts that are most relevant", "combining many weak signals into a strong one"],
+  "math_plain": "Rank news articles by combining simple signals (user history, article popularity, topic) with fixed weights, no model training required.",
+  "why_math": "Fixed simple rules can outrank learned models when they capture the dominant signals; rules scale faster and are easier to deploy than updating trained models constantly."
+ },
+ {
+  "gid": 1258,
+  "math_tags": ["measuring similarity as nearness in a space", "measuring surprise and information"],
+  "math_plain": "When evaluating if a search method retrieved the best results, only count misses where the missed result was actually relevant to the query, ignoring irrelevant nearby results.",
+  "why_math": "Search databases often contain irrelevant items close to relevant ones; penalizing all misses overstates failure. Only penalizing semantic misses shows true retrieval quality."
+ },
+ {
+  "gid": 1259,
+  "math_tags": ["ranking things by a learned score", "combining many weak signals into a strong one", "measuring similarity as nearness in a space"],
+  "math_plain": "For a query photo, combine results from database lookup, web search, and image matching to retrieve candidate locations, then use a language model to vote on the most likely GPS coordinates.",
+  "why_math": "Different search methods find different clues; voting on the result lets methods specialize: web search finds text context, database finds visually similar photos, matching verifies alignment."
+ }
+]

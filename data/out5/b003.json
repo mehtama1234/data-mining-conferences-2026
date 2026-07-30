@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 45,
+    "math_tags": ["weighting the parts that are most relevant", "learning a function from examples", "combining many weak signals into a strong one"],
+    "math_plain": "Route different features to specialized sub-networks that predict multiple urban indicators simultaneously, weighting which network handles which region.",
+    "why_math": "By letting each sub-network specialize on different feature types and urban patterns, the system exploits the fact that diverse predictions share underlying structure. Weighting their contributions allows correlated urban indicators to reinforce each other, improving accuracy across all tasks at once."
+  },
+  {
+    "gid": 46,
+    "math_tags": ["measuring surprise and information", "separating cause from coincidence"],
+    "math_plain": "Establish reproducible benchmarks and data provenance standards that measure how well you can detect and track different types of synthetic media.",
+    "why_math": "Provenance tracking works because information has a history; if you record where text, images, and video come from, you can audit that history to distinguish genuine content from generated. Standardized measurement lets you compare detection methods fairly and know when one approach truly outperforms another."
+  },
+  {
+    "gid": 47,
+    "math_tags": ["combining many weak signals into a strong one", "learning a function from examples"],
+    "math_plain": "Store personalized knowledge in a small model and general knowledge in a large model, then blend their predictions using a learned fusion network for each client.",
+    "why_math": "By keeping two separate models, general patterns stay shared across clients while personalized quirks stay private and local. Fusion learns how to weight each model's contribution for the specific user and inference task, achieving the best of both without exposing individual data."
+  },
+  {
+    "gid": 48,
+    "math_tags": ["weighting the parts that are most relevant", "learning a function from examples"],
+    "math_plain": "Generate feature representations of both text and emotes, then train a classifier that scores which combinations indicate toxic behavior.",
+    "why_math": "Toxic meaning depends on context and emoji intent, which text classifiers alone miss. Extracting features from both channels separately lets the learner discover which emote-text pairs signal toxicity, and weighting their joint signal is more robust than text alone because it captures the full intent."
+  },
+  {
+    "gid": 49,
+    "math_tags": ["measuring similarity as nearness in a space", "separating cause from coincidence"],
+    "math_plain": "Generate diverse rewrites of training data samples, extract hidden patterns from the model's attention layers, and train a classifier to distinguish members from non-members using similarity scores.",
+    "why_math": "Semantic similarity works because if you teach the model to produce the same output for different phrasings of the same fact, membership detection that relies on exact surface form fails. By measuring nearness in attention space instead of word matching, you catch memorization even when the model has seen reformulated versions."
+  },
+  {
+    "gid": 50,
+    "math_tags": ["learning a function from examples", "combining many weak signals into a strong one"],
+    "math_plain": "Pre-train geographic features from points-of-interest and mobility patterns, then fine-tune a language model with external events to forecast ride demand.",
+    "why_math": "Geographic areas have stable semantic character (restaurants, parks, transit) and dynamic mobility patterns that evolve together. Pre-training captures this shared structure before forecasting, so the model starts from a representation that already knows urban spaces, making fine-tuning with new events more efficient and robust."
+  },
+  {
+    "gid": 51,
+    "math_tags": ["separating cause from coincidence", "learning a function from examples"],
+    "math_plain": "Disentangle molecule structure into independent factors, ensuring each factor stays consistent even when instructions are rephrased, then assign specialized experts to each factor.",
+    "why_math": "Drug properties depend on true chemical structure, not how you describe the task. By learning factors that remain unchanged across different ways of asking for the same edit, you capture what actually matters in the molecule. Specializing one expert per factor means each one learns a reliable structure-property rule."
+  },
+  {
+    "gid": 52,
+    "math_tags": ["measuring similarity as nearness in a space", "weighting the parts that are most relevant"],
+    "math_plain": "Generate text descriptions of sketches, build a graph linking sketch to text, then use attention to selectively weight which descriptions help match each sketch to the right image.",
+    "why_math": "Sketches are ambiguous; different people see different details in the same lines. Generating multiple textual interpretations gives alternative readings. Treating these as nearby nodes in a graph and using attention to suppress noise means the system treats valid descriptions as close and learns which combination best retrieves the actual image."
+  },
+  {
+    "gid": 53,
+    "math_tags": ["spreading information across a network", "weighting the parts that are most relevant"],
+    "math_plain": "Each shard predicts future cross-shard interactions using a graph algorithm, broadcasts low-dimensional signals, then prioritizes transactions by popularity.",
+    "why_math": "Conflicts happen when shards make decisions independently. By predicting what other shards will do and sharing compact signals, each shard learns its neighbors' likely moves without full data. Popularity-driven packing exploits the fact that hot items create predictable patterns; handling them first stabilizes the rest."
+  },
+  {
+    "gid": 54,
+    "math_tags": ["weighting the parts that are most relevant", "separating cause from coincidence"],
+    "math_plain": "Identify low-value tokens using a learned scorer, then adjust attention weights to emphasize tokens that improve the model's semantic meaning and loss.",
+    "why_math": "Not all tokens matter equally for the right answer; some are just filler. By distinguishing signal tokens from noise and reweighting attention, you preserve semantic meaning (which tokens actually contribute to coherent output) while eliminating wasted computation on low-value words."
+  },
+  {
+    "gid": 55,
+    "math_tags": ["learning by comparison of similar and different", "matching and allocating who gets what"],
+    "math_plain": "Build positive and negative pairs of sessions, compute a loss that pulls similar sessions close and pushes dissimilar ones apart, then use the result for next-item prediction.",
+    "why_math": "When many sessions share the same last item, they look identical but may be entirely different users. By creating pairs of genuinely similar sessions (same user, different paths) and dissimilar sessions (same last item, opposite intents), you teach the model to ignore shallow similarity and learn deep differences."
+  },
+  {
+    "gid": 56,
+    "math_tags": ["smart random sampling and averaging", "weighting the parts that are most relevant"],
+    "math_plain": "Select the most informative user interactions for cloud annotation using a multi-armed bandit, then fine-tune only the most critical model layers on-device.",
+    "why_math": "Not all interactions teach the model equally; selecting the informative ones lets you learn from fewer labels. Similarly, not all model parameters matter for personalization; updating only critical layers saves memory and computation. Both strategies exploit sparsity in what actually drives improvement."
+  },
+  {
+    "gid": 57,
+    "math_tags": ["separating cause from coincidence", "finding the settings with least error"],
+    "math_plain": "Maximize the information between auxiliary behaviors and target behavior while minimizing variance in predictions across different behavior types.",
+    "why_math": "Auxiliary signals like clicks are noisy because users may click for many reasons unrelated to purchase intent. By maximizing useful information shared between them and purchases, you isolate the true cause of buying. Minimizing variance across behavior types ensures that rules learned from one behavior type hold across others."
+  },
+  {
+    "gid": 58,
+    "math_tags": ["measuring similarity as nearness in a space", "combining many weak signals into a strong one"],
+    "math_plain": "Project diverse graph domains into a shared semantic space, then learn a distribution that guides how to train on all graphs together.",
+    "why_math": "Different graphs (social, citation, molecular) have different feature scales and meanings. By projecting them into a common space, you align their semantics so the model can extract shared patterns. A shared latent distribution acts as a summary of useful knowledge across all domains, letting each downstream task benefit from the full corpus."
+  },
+  {
+    "gid": 59,
+    "math_tags": ["matching and allocating who gets what", "combining many weak signals into a strong one"],
+    "math_plain": "Retrieve similar real and fake videos as reference evidence, use contrasts between them to reason about the query, then fuse all multimodal signals into a binary fake-or-real verdict.",
+    "why_math": "Whether a video is fake depends on how it differs from known examples. By finding the closest real and fake references and measuring contrasts explicitly, the model grounds its judgment in concrete precedent. Fusing text, vision, and audio signals together ensures no modality is ignored and contradictions between them are resolved."
+  }
+]

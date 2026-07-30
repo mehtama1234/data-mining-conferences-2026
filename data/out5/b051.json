@@ -1,0 +1,143 @@
+[
+  {
+    "gid": 765,
+    "math_tags": [
+      "measuring similarity as nearness in a space",
+      "separating cause from coincidence"
+    ],
+    "math_plain": "Compute a score showing how much each sample contributed to the model's decisions, anchored to verifiable checkpoints.",
+    "why_math": "It works because when you track how each data point flows through the system and compute its specific contribution score at known checkpoints, you can later verify whether the data was used and was unchanged, making the flow auditable rather than opaque."
+  },
+  {
+    "gid": 766,
+    "math_tags": [
+      "finding the settings with least error",
+      "weighting the parts that are most relevant",
+      "smart random sampling and averaging"
+    ],
+    "math_plain": "Dynamically assign the computation budget to each query based on quality estimates and remaining budget, minimizing total regret.",
+    "why_math": "It works because allocating more budget where quality matters most and less where queries are simple balances response quality against total cost; sublinear regret means the allocation strategy learns to spread resources optimally over time."
+  },
+  {
+    "gid": 767,
+    "math_tags": [
+      "measuring similarity as nearness in a space",
+      "separating cause from coincidence"
+    ],
+    "math_plain": "Classify videos by analyzing both content and external evidence to determine whether manipulation, AI-generation, or out-of-context reuse caused the misinformation.",
+    "why_math": "It works because cross-checking video features against retrieved evidence reveals gaps and contradictions that unmask specific types of deception; different deception types leave distinct fingerprints in content and context."
+  },
+  {
+    "gid": 768,
+    "math_tags": [
+      "measuring similarity as nearness in a space",
+      "keeping only the few dimensions that matter",
+      "combining many weak signals into a strong one"
+    ],
+    "math_plain": "Build hierarchical graph summaries that fuse both chunk context and entity relationships, then retrieve by searching all abstraction levels.",
+    "why_math": "It works because fusing context and relationships into summaries creates richer intermediate representations; searching multiple levels exploits how users reason at different scales, from details to overviews to themes."
+  },
+  {
+    "gid": 769,
+    "math_tags": [
+      "finding the settings with least error",
+      "weighting the parts that are most relevant",
+      "learning by comparison of similar and different"
+    ],
+    "math_plain": "Adaptively split the privacy budget across training and recovery phases, then detect anomalies to recover the model while minimizing both privacy leakage and overhead.",
+    "why_math": "It works because different phases need different privacy protection levels; anomaly detection identifies when attacks occur so recovery can happen selectively, letting you use your privacy budget where it matters most."
+  },
+  {
+    "gid": 770,
+    "math_tags": [
+      "learning by comparison of similar and different",
+      "combining many weak signals into a strong one"
+    ],
+    "math_plain": "Generate opposing reasoning pairs (agree and disagree) for headlines, then train a detector using contrastive learning on the reasoning to spot clickbait.",
+    "why_math": "It works because forcing the model to reason from both sides reveals cracks in the clickbait framing; comparing how agree and disagree reasoning differ highlights exaggeration and manipulation that single-sided reasoning would miss."
+  },
+  {
+    "gid": 771,
+    "math_tags": [
+      "measuring similarity as nearness in a space",
+      "separating cause from coincidence"
+    ],
+    "math_plain": "Quantify how similar unwanted recommendations are to content users explicitly rejected, measuring whether feedback controls actually prevent similar items.",
+    "why_math": "It works because similarity is a meaningful proxy for whether a recommendation actually honors user feedback; if controls fail to prevent similar content reappearing, the gap between user expectation and platform behavior is quantifiable."
+  },
+  {
+    "gid": 772,
+    "math_tags": [
+      "matching and allocating who gets what",
+      "weighting the parts that are most relevant"
+    ],
+    "math_plain": "Eliminate arms and build a bipartite match between users and remaining arms that preserves privacy while minimizing regret.",
+    "why_math": "It works because successive elimination narrows choices without revealing which arms each user prefers, and greedy matching then allocates fairly; the algorithm bounds total regret because it never keeps bad arms long."
+  },
+  {
+    "gid": 773,
+    "math_tags": [
+      "measuring similarity as nearness in a space",
+      "learning by comparison of similar and different",
+      "weighting the parts that are most relevant"
+    ],
+    "math_plain": "Weight layers and temporal frames hierarchically, then use contrastive learning to push real speech and synthetic speech apart in a shared space.",
+    "why_math": "It works because real and fake speech leave distinct patterns across layers and time; hierarchical weighting finds which layers matter for each artifact type, and comparing embeddings directly encodes the subtle differences that fool simple detectors."
+  },
+  {
+    "gid": 774,
+    "math_tags": [
+      "matching and allocating who gets what",
+      "separating cause from coincidence"
+    ],
+    "math_plain": "Implement fine-grained access control on websites so AI agents can be granted permissions for specific delegated tasks without exposing full account access.",
+    "why_math": "It works because granting capability by task rather than by account scope ensures agents can only perform actions their delegation authorizes; this separates what users allow from what agents attempt."
+  },
+  {
+    "gid": 775,
+    "math_tags": [
+      "spreading information across a network",
+      "matching and allocating who gets what"
+    ],
+    "math_plain": "Design registries, protocols, and reputation systems so AI agents can discover and coordinate with each other in a decentralized network.",
+    "why_math": "It works because registries make agents findable, protocols enable them to communicate reliably despite differences, and reputation systems ensure agents learn whom to trust; together these create conditions where distributed agents can cooperate."
+  },
+  {
+    "gid": 776,
+    "math_tags": [
+      "measuring similarity as nearness in a space",
+      "learning by comparison of similar and different"
+    ],
+    "math_plain": "Prepend a safety prefix to prompts and compare attention distributions to detect whether a prompt is adversarial or benign.",
+    "why_math": "It works because adversarial prompts distort attention in ways benign ones do not; when you compare how the model focuses on different parts with and without safety guidance, attacks create measurable divergence that benign queries avoid."
+  },
+  {
+    "gid": 777,
+    "math_tags": [
+      "combining many weak signals into a strong one",
+      "weighting the parts that are most relevant",
+      "learning by comparison of similar and different"
+    ],
+    "math_plain": "Compute a metacognitive state vector measuring self-awareness across five psychology dimensions, then route queries to system-1 or system-2 processing based on complexity.",
+    "why_math": "It works because the five dimensions (emotion, correctness, experience match, conflict, importance) together reveal query difficulty; using these signals to route automatically matches processing power to need, making the ensemble more reliable."
+  },
+  {
+    "gid": 778,
+    "math_tags": [
+      "measuring similarity as nearness in a space",
+      "ranking things by a learned score"
+    ],
+    "math_plain": "Define distance metrics for multi-reference queries where you find vectors similar to all or any of multiple reference vectors, then search efficiently on graph indexes.",
+    "why_math": "It works because extending nearest-neighbor search from one reference to multiple references by properly defining what 'all-match' and 'any-match' distance means preserves the efficiency of graph search while enabling richer queries."
+  },
+  {
+    "gid": 779,
+    "math_tags": [
+      "combining many weak signals into a strong one",
+      "weighting the parts that are most relevant",
+      "separating cause from coincidence"
+    ],
+    "math_plain": "Organize agents into auditors, coordinators, and a decision-maker that hierarchically aggregate specialized views to highlight anomaly cues in misinformation.",
+    "why_math": "It works because misinformation hides in noise; when agents look at different feature subsets and coordinators blend their views hierarchically rather than flooding all input to one processor, anomalies emerge from the aggregated perspectives."
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 1155,
+    "math_tags": ["ranking things by a learned score", "separating cause from coincidence"],
+    "math_plain": "Learn to rank documents by scoring how relevant entities are to the query, but detect when the model is secretly using knowledge it shouldn't have.",
+    "why_math": "Ranking by relevance score works because good scores put matching items first. But the deeper issue here is telling whether the score comes from the document text itself or from seeing which entities appear in known-relevant examples—separating the real signal from data leakage."
+  },
+  {
+    "gid": 1156,
+    "math_tags": ["measuring similarity as nearness in a space", "weighting the parts that are most relevant"],
+    "math_plain": "Look inside a large language model layer-by-layer to find which internal attention signals show relevance, then use only the strongest layers to rank documents faster.",
+    "why_math": "It works because relevance signals don't spread evenly through all layers—some layers concentrate the useful information while others add noise. Finding and using only the peaked layers cuts waste without losing accuracy."
+  },
+  {
+    "gid": 1157,
+    "math_tags": ["separating cause from coincidence", "finding the settings with least error"],
+    "math_plain": "Use frequency-space filtering to separate true preferences from noise in user-item histories, then test if those improvements really hold under fair conditions.",
+    "why_math": "Frequency filtering works because user preferences and random noise occupy different frequency bands—high frequency = noise, low frequency = true preference patterns. But the study reveals some published results inflated this benefit through metric errors, showing the method only truly works in certain conditions."
+  },
+  {
+    "gid": 1158,
+    "math_tags": ["ranking things by a learned score", "learning a function from examples"],
+    "math_plain": "Let a hypernetwork generate custom scoring weights for each query instead of using fixed inner-product scoring, enabling a learned neural function that judges relevance.",
+    "why_math": "It works because one fixed scoring rule (inner product) is too rigid to capture all the ways a query can match a document. A query-specific scoring function learned from examples can express richer relevance patterns while still encoding queries and documents separately."
+  },
+  {
+    "gid": 1159,
+    "math_tags": ["ranking things by a learned score", "measuring similarity as nearness in a space"],
+    "math_plain": "Represent documents with multiple weighted vectors and score matching by taking the maximum similarity between any pair, but this architectural choice limits handling of long queries.",
+    "why_math": "Maximum-of-similarities ranking works for short contexts because token matches are decisive. But on long narrative queries, this uniform weighting cannot distinguish real clues from filler—it plateaus because the maximum operation treats all tokens equally."
+  },
+  {
+    "gid": 1160,
+    "math_tags": ["ranking things by a learned score", "measuring similarity as nearness in a space"],
+    "math_plain": "Compare two search engine strategies: Score-at-a-Time (generate scores in ranked order) versus Document-at-a-Time (score all documents), examining latency and compression trade-offs.",
+    "why_math": "Score-at-a-Time works because scoring documents in high-to-low order stops early once you've found enough—it exploits the fact that you only need the top K, not all scores. It trades off which compression method fits best on each hardware setup."
+  },
+  {
+    "gid": 1161,
+    "math_tags": ["predicting the next item in a sequence", "learning a function from examples"],
+    "math_plain": "Chain language-model steps to retrieve, critique, and refine answers, using the model's self-reflection to decide when enough information has been gathered to answer.",
+    "why_math": "It works because large language models can critique their own reasoning when shown what they retrieved. The model learns to recognize when its critique signals sufficient information, making the stopping decision data-driven rather than fixed."
+  },
+  {
+    "gid": 1162,
+    "math_tags": ["ranking things by a learned score", "predicting the next item in a sequence"],
+    "math_plain": "Predict which movie to recommend in a conversation by learning from dialogue history, but measure success carefully to avoid inflated scores from recommending the same items.",
+    "why_math": "Ranking by relevance works because prior preferences are the strongest signal. But traditional recall metrics reward repeating popular items, so incorporating novelty measures reveals when systems succeed at genuine conversation versus exploiting shortcuts in the data."
+  },
+  {
+    "gid": 1163,
+    "math_tags": ["keeping only the few dimensions that matter", "learning a function from examples"],
+    "math_plain": "Split embedding dimensions into groups, assign each group to nearby center points, then retrain the centers and the query encoder jointly to minimize retrieval error.",
+    "why_math": "It works because most dimensions in embeddings carry redundant or weak signals. Compressing to cluster centers loses little while cutting storage dramatically. Joint retraining adapts the centers to the actual data, recovering most of the lost precision."
+  },
+  {
+    "gid": 1164,
+    "math_tags": ["learning a function from examples", "separating cause from coincidence"],
+    "math_plain": "Test whether adding random irrelevant text to retrieval-augmented generation actually helps question-answering, or whether the effect vanishes under different settings and model versions.",
+    "why_math": "The claimed benefit of noise hinges on specific prompt formats and decoding constraints in older models. Changing prompts or allowing longer outputs makes the effect disappear, showing the benefit wasn't a deep property of the retrieval-generation interaction but an artifact of those particular experimental choices."
+  },
+  {
+    "gid": 1165,
+    "math_tags": ["ranking things by a learned score", "learning a function from examples"],
+    "math_plain": "Recommend products by learning from user histories while explicitly incorporating price as a core feature, comparing three neural graph architectures on multiple datasets.",
+    "why_math": "It works because price is a strong predictor of purchase behavior. Learning price jointly with preference patterns lets the model express trade-offs like 'recommend expensive when high-quality signals are weak, cheap when quantity matters.' The hypergraph architecture captures these trade-offs best."
+  },
+  {
+    "gid": 1166,
+    "math_tags": ["ranking things by a learned score", "predicting the next item in a sequence"],
+    "math_plain": "Generate document identifiers by autoregressively predicting one symbol at a time, using a look-ahead scorer to plan which branches to explore, but test robustness under small query variations.",
+    "why_math": "Look-ahead planning works because it simulates future decoding steps to avoid local traps—it finds the high-scoring path before committing. But the planning signal relies on exact prefix matching, so even small typos or reorderings can shift which prefixes look promising, making the plan fragile."
+  },
+  {
+    "gid": 1167,
+    "math_tags": ["ranking things by a learned score", "separating cause from coincidence"],
+    "math_plain": "Explain a recommendation by finding the smallest changes to user-item history that would flip the recommendation, testing if these explanations hold across different recommender models.",
+    "why_math": "Counterfactual explanations work because they isolate causation: if changing X flips the outcome, then X is causal. Finding minimal changes avoids spurious correlations. Testing across model types reveals whether the explanation truly points to causes or just artifacts of one model's quirks."
+  },
+  {
+    "gid": 1168,
+    "math_tags": ["weighting the parts that are most relevant", "learning a function from examples"],
+    "math_plain": "Learn which terms are useful for retrieval by assigning learned weights to vocabulary words, investigating why some weights point to unrelated words and how sparsity regularization affects this.",
+    "why_math": "Learned term weighting works because the model can learn the true predictive power of each term from training data. But larger vocabularies and loose regularization let the model assign weight to terms that happen to correlate with queries in the training set without being semantically meaningful."
+  },
+  {
+    "gid": 1169,
+    "math_tags": ["weighting the parts that are most relevant", "finding the settings with least error"],
+    "math_plain": "Reduce computational cost in multi-vector retrieval by pruning vectors based on learned importance weights or statistical rarity, testing effectiveness-efficiency trade-offs.",
+    "why_math": "It works because most vectors contribute little to the final score—pruning removes redundant ones. Weighted pruning learns which tokens actually aid discrimination, while simple pruning based on statistics still removes enough noise to keep top results intact when the model is trained with pruning in mind."
+  }
+]

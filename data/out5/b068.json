@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 1020,
+    "math_tags": ["ranking things by a learned score", "finding the settings with least error"],
+    "math_plain": "Fix ranking bias that over-weights sequence edges by masking during training and adjusting scores afterward to remove positional artifacts.",
+    "why_math": "It works because the bias is systematic and predictable: edges capture real signals but also artificial position-only signals. Removing those false signals lets the learner rank by genuine preference patterns, not boundary artifacts. Testing this directly via controlled perturbations proves the bias is architectural, not accidental."
+  },
+  {
+    "gid": 1021,
+    "math_tags": ["measuring similarity as nearness in a space", "weighting the parts that are most relevant"],
+    "math_plain": "Learn fine and coarse visual-text alignments, downweight unreliable image-text pairs, and verify cross-modal agreement to match person descriptions to images.",
+    "why_math": "It works because identity has multiple scales: broad appearance and fine detail both matter, and some training examples are corrupted or inconsistent. By learning at both scales and trusting only reliable examples, the model captures genuine correspondence patterns that generalize across unseen scenarios."
+  },
+  {
+    "gid": 1022,
+    "math_tags": ["spreading information across a network", "keeping only the few dimensions that matter"],
+    "math_plain": "Decompose user interests into popular and niche frequency bands, then spread each through separate graphs to balance recommendation diversity.",
+    "why_math": "It works because user interests naturally cluster at different scales: some people love blockbusters, others seek obscure gems. Frequency decomposition isolates these bands cleanly. Propagating each band separately prevents popular signals from drowning niche ones, so the model ranks diverse items fairly."
+  },
+  {
+    "gid": 1023,
+    "math_tags": ["measuring similarity as nearness in a space", "combining many weak signals into a strong one"],
+    "math_plain": "Represent tables as hybrid structures linking semantic and structural information, then blend dense semantic search, sparse keyword matching, and graph traversal to find relevant tables without labeled query data.",
+    "why_math": "It works because table semantics hide in structure: column order, relationships, and entities all encode meaning. By fusing multiple weak signals—each captures different aspects of relevance—the system avoids over-reliance on any one signal and generalizes to unseen queries."
+  },
+  {
+    "gid": 1024,
+    "math_tags": ["ranking things by a learned score", "finding the settings with least error"],
+    "math_plain": "Combine retrieval and reranking in one model sharing parameters, then suppress phantom high scores on irrelevant documents using hard negative examples and entropy regularization.",
+    "why_math": "It works because the phantom-hit problem stems from the model over-confident on irrelevant items. Explicitly including pure negatives and penalizing unjustified confidence forces the model to reserve high scores for genuinely relevant documents, improving both early retrieval and final ranking."
+  },
+  {
+    "gid": 1025,
+    "math_tags": ["keeping only the few dimensions that matter", "finding the settings with least error"],
+    "math_plain": "Compress recommendation graphs by partitioning node embeddings into chunks and applying low-bitwidth quantization to each chunk, adapting chunk boundaries during training.",
+    "why_math": "It works because node embeddings are redundant: many dimensions carry correlated signals. Chunking groups similar dimensions together and quantizes each chunk independently, so low precision affects only redundant information while preserving the few patterns that drive ranking decisions."
+  },
+  {
+    "gid": 1026,
+    "math_tags": ["measuring similarity as nearness in a space", "spreading information across a network"],
+    "math_plain": "Align decision boundaries across 2D and 3D domains using adversarial regularization, then propagate semantic neighborhood structure across modalities via graph message passing.",
+    "why_math": "It works because the gap between 2D and 3D spaces is partly artificial: there exists a shared semantic structure that both modalities should respect. Aligning boundaries forces both sides to agree on what 'similar' means. Propagating neighborhoods afterward ensures the model treats similar shapes as near regardless of view modality."
+  },
+  {
+    "gid": 1027,
+    "math_tags": ["learning by comparison of similar and different", "weighting the parts that are most relevant"],
+    "math_plain": "Predict depression risk by building a graph of visual and audio similarities, then weighting each modality's contribution adaptively based on what the graph reveals about complementary information.",
+    "why_math": "It works because mental distress shows across multiple modalities in overlapping but distinct ways: voice tone and facial expression both signal depression, yet neither alone is complete. Building a shared graph forces the model to find where modalities align versus diverge, and weighting by that structure preserves both unique and overlapping signals."
+  },
+  {
+    "gid": 1028,
+    "math_tags": ["keeping only the few dimensions that matter", "finding the settings with least error"],
+    "math_plain": "Model short and long-term preferences in separate branches by decomposing frequencies, suppress low-energy noise, and combine branches via learned gating to improve ranking.",
+    "why_math": "It works because user behavior operates at multiple timescales: immediate context and long patterns matter differently. Decomposing by frequency isolates these scales naturally. Low-energy components are typically noise. Routing signals through separate pathways then gating them prevents fast and slow patterns from interfering with each other."
+  },
+  {
+    "gid": 1029,
+    "math_tags": ["weighting the parts that are most relevant"],
+    "math_plain": "Correct outdated knowledge in large multimodal models by identifying the specific neurons responding to a fact, then injecting context-aware corrections directly into those neurons.",
+    "why_math": "It works because knowledge localizes: specific neurons handle specific facts. By pinpointing and updating only those neurons rather than retraining everything, the model applies precise corrections without disrupting unrelated knowledge. Neuron-level surgery is surgical—it avoids collateral damage to other capabilities."
+  },
+  {
+    "gid": 1030,
+    "math_tags": ["combining many weak signals into a strong one", "weighting the parts that are most relevant"],
+    "math_plain": "Disambiguate entity mentions in multimodal text by learning separate expert models for different features, then weighting and merging them hierarchically across semantic levels.",
+    "why_math": "It works because entity identity depends on multiple factors—text, image, and semantic context—each expert model learns one perspective, avoiding dominance by any single signal. Hierarchical weighting lets coarse context guide fine details, so the model integrates evidence systematically rather than hoping one signal alone suffices."
+  },
+  {
+    "gid": 1031,
+    "math_tags": ["ranking things by a learned score", "combining many weak signals into a strong one"],
+    "math_plain": "Decompose complex search queries into subtasks, assign each to a specialized agent with tools, reason and integrate results hierarchically to synthesize information across sources.",
+    "why_math": "It works because complex reasoning has structure: high-level planning (what questions to ask) is distinct from low-level execution (how to answer each). Separating them prevents execution details from confusing the plan. Specialized agents exploit domain-specific tools and knowledge, so each step reaps expertise gains rather than one model spreading itself thin."
+  },
+  {
+    "gid": 1032,
+    "math_tags": ["ranking things by a learned score", "separating cause from coincidence"],
+    "math_plain": "Rank tables by relevance when users include both topic constraints and fine-grained schema requirements like column semantics and value ranges, not topic alone.",
+    "why_math": "It works because relevance is multidimensional: a table may be topically perfect but structurally wrong (wrong columns, wrong granularity). By ranking jointly on topic and schema satisfaction, the model distinguishes topical matches that are useless from those that actually fit the user's intent. Instructions reveal causal constraints, not coincidental patterns."
+  },
+  {
+    "gid": 1033,
+    "math_tags": ["learning by comparison of similar and different", "ranking things by a learned score"],
+    "math_plain": "Generate personalized rankings by applying contrastive learning to intermediate model representations rather than to final scores, allowing shared preferences without false repulsion.",
+    "why_math": "It works because contrastive learning separates, but output rankings should separate users only when their preferences differ. By contrasting at an intermediate layer, the model learns distinct representations while allowing different users with overlapping tastes to produce identical final rankings. This avoids forcing users apart when they should naturally agree."
+  },
+  {
+    "gid": 1034,
+    "math_tags": ["ranking things by a learned score", "combining many weak signals into a strong one"],
+    "math_plain": "Find the right tool servers by analyzing their code automatically, generating clear function-focused documentation, and ranking candidate servers by match to user requirements.",
+    "why_math": "It works because unstructured documentation hides function semantics: you cannot rank what you cannot understand. Extracting tool inventory from code and refining descriptions with implementation context produces retrieval-ready documents that capture actual capabilities. Clear function-level documents fuse multiple signals—tool names, descriptions, and expected behaviors—into a strong relevance signal."
+  }
+]

@@ -1,0 +1,134 @@
+[
+  {
+    "gid": 0,
+    "math_tags": [
+      "separating cause from coincidence",
+      "learning by comparison of similar and different"
+    ],
+    "math_plain": "Reconstructs training text from the gradients that flow through low-rank adapters, exploiting the unique leakage channels they create.",
+    "why_math": "Low-rank adapters concentrate information into fewer dimensions, and attention patterns in frozen layers still reveal which tokens were present. This makes the hidden data recoverable despite the apparent privacy protections, because information doesn't disappear—it just channels through different paths."
+  },
+  {
+    "gid": 1,
+    "math_tags": [
+      "learning by comparison of similar and different",
+      "weighting the parts that are most relevant"
+    ],
+    "math_plain": "Clusters graph nodes by contrasting reliable structural neighbors against hard negatives, weighted by how much each node's connections and cross-view agreement reveal its true category.",
+    "why_math": "When you force a model to say 'this structure is similar to good examples and different from bad ones', it learns to recognize true patterns. Weighting by confidence focuses learning on the clearest cases, letting genuine signals drown out noise."
+  },
+  {
+    "gid": 2,
+    "math_tags": [
+      "measuring similarity as nearness in a space",
+      "learning by comparison of similar and different"
+    ],
+    "math_plain": "Aligns user-item relationships learned from behavior against enriched item relationships learned from images, text, and links by maximizing their mutual consistency.",
+    "why_math": "Different views of the same items should tell the same story about who likes what. When you force them to agree, you extract the true signal that appears across all views, filtering out the noise that only shows up in one."
+  },
+  {
+    "gid": 3,
+    "math_tags": [
+      "separating cause from coincidence",
+      "combining many weak signals into a strong one"
+    ],
+    "math_plain": "Supports users by reasoning through emotional cues using logic-based rules, combining rational inference with empathetic understanding for stable, explainable decisions.",
+    "why_math": "Symbolic reasoning is brittle alone, and pure learning misses causal structure. Combining them lets the system follow actual emotional support rules (why comfort helps) while learning when each rule applies from examples, creating interpretable and reliable guidance."
+  },
+  {
+    "gid": 4,
+    "math_tags": [
+      "smart random sampling and averaging",
+      "weighting the parts that are most relevant"
+    ],
+    "math_plain": "Answers questions about personal data by aggregating events over time, where many questions require filtering by dates and summing counts or patterns.",
+    "why_math": "Personal data is temporal—what happened matters less than when it happened. By building aggregation and filtering directly into the question-answering task, the system learns to weight recent events differently than old ones, capturing how time shapes meaning."
+  },
+  {
+    "gid": 5,
+    "math_tags": [
+      "learning a function from examples",
+      "measuring similarity as nearness in a space"
+    ],
+    "math_plain": "Enhances student-item embeddings by using language model representations, aligning them to match the cognitive diagnostic task rather than the language model's original training goals.",
+    "why_math": "Language models encode rich semantics, but they optimize for text prediction, not educational diagnosis. Realigning their representations to match educational labels transfers their semantic knowledge to the right goal—like turning a compass needle from north toward your target."
+  },
+  {
+    "gid": 6,
+    "math_tags": [
+      "learning a function from examples",
+      "combining many weak signals into a strong one"
+    ],
+    "math_plain": "Learns prompts for image classification that work on new classes by distilling knowledge from language models into the prompt, balancing multi-modal signals.",
+    "why_math": "A single prompt that saw only dogs and cats will overfit to their specific shapes. Adding knowledge from external models gives the prompt a richer understanding of general visual concepts, so it recognizes unseen animals as instances of 'things with fur' rather than 'unknown'."
+  },
+  {
+    "gid": 7,
+    "math_tags": [
+      "separating cause from coincidence",
+      "weighting the parts that are most relevant"
+    ],
+    "math_plain": "Detects when authentication cookies leak to compromised subdomains by simulating attacks and tracking which sensitive credentials flow across domain boundaries.",
+    "why_math": "Cookies work by trusting that parent domain boundaries mean parent domain security. When any subdomain can see parent credentials, one weak link breaks everything. The vulnerability exists because scope rules don't match the actual trust model."
+  },
+  {
+    "gid": 8,
+    "math_tags": [
+      "separating cause from coincidence",
+      "learning by comparison of similar and different"
+    ],
+    "math_plain": "Trains a retrieval system to detect when sources conflict and to prefer answers supported across multiple sources over those relying on only one conflicting source.",
+    "why_math": "When web sources contradict each other, the model can sense that disagreement signals danger. By training on pairs where consistent sources are better than conflicting ones, the system learns that real knowledge should agree with itself—it's the fundamental signature of truth."
+  },
+  {
+    "gid": 9,
+    "math_tags": [
+      "weighting the parts that are most relevant",
+      "smart random sampling and averaging"
+    ],
+    "math_plain": "Parses logs by sampling and caching based on variable parts (IDs, numbers, paths), not just constant text, reducing the amount of text sent to language models.",
+    "why_math": "In logs, variables carry unique information—an error ID might appear once in a million logs. Focusing on variables finds the true needle-in-haystack without bloating context with repeated words. It's like searching for your car by license plate instead of color."
+  },
+  {
+    "gid": 10,
+    "math_tags": [
+      "estimating probabilities from data",
+      "learning a function from examples"
+    ],
+    "math_plain": "Detects abnormal graphs by modeling uncertainty around predictions, allowing the system to down-weight ambiguous samples that might be anomalies during training.",
+    "why_math": "Normal training assumes the data is clean, but real data mixes normal and anomalous. By learning both a prediction and how uncertain to feel about it, you can ignore the ambiguous cases during learning, letting the system focus on clear examples of normalcy."
+  },
+  {
+    "gid": 11,
+    "math_tags": [
+      "measuring similarity as nearness in a space",
+      "keeping only the few dimensions that matter"
+    ],
+    "math_plain": "Represents text-attributed graphs using a language model that was pretrained to transfer across domains, then dimensionally reduced to preserve both semantic and structural meaning.",
+    "why_math": "Language models trained on many domains learn general patterns of language and structure. Reducing dimensions with constraints that preserve both semantic (word) meaning and structure (how nodes connect) keeps the essential shared knowledge while dropping domain noise."
+  },
+  {
+    "gid": 12,
+    "math_tags": [
+      "combining many weak signals into a strong one",
+      "ranking things by a learned score"
+    ],
+    "math_plain": "Retrieves multiple complementary graph subsets by modeling latent topics in queries, using end-to-end feedback to rank triples that actually help the final answer.",
+    "why_math": "A single query often has multiple meanings and needs multiple pieces of the graph to answer fully. By learning which topic each retrieval should focus on and scoring triples by whether they improve the final answer, you naturally find the diverse evidence that matters."
+  },
+  {
+    "gid": 13,
+    "math_tags": [],
+    "math_plain": "Workshop overview on data-driven smart cities; focuses on how web and AI technologies transform urban decision-making.",
+    "why_math": "Not a research paper with a specific mathematical method; this is a workshop description."
+  },
+  {
+    "gid": 14,
+    "math_tags": [
+      "combining many weak signals into a strong one",
+      "estimating probabilities from data"
+    ],
+    "math_plain": "Classifies long-tailed graphs using multiple expert models whose predictions are combined via belief functions that capture both their confidence and uncertainty.",
+    "why_math": "Tail classes are rare, so any single model sees them poorly. Multiple experts disagree in useful ways—some see true signals, others make mistakes. Combining their beliefs via logic that weighs agreement gives you a robust answer: if they agree, it's likely true; if they conflict, you're uncertain."
+  }
+]

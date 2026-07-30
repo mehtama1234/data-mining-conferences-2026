@@ -1,0 +1,152 @@
+[
+  {
+    "gid": 615,
+    "math_tags": [
+      "following the slope downhill to improve",
+      "predicting the next item in a sequence",
+      "finding the settings with least error"
+    ],
+    "math_plain": "A new optimizer avoids getting stuck at bad points while training a model to predict future time series values and segment images.",
+    "why_math": "Time-series forecasting and image segmentation work because finding lower prediction error through careful optimization reaches better models. Avoiding flat regions and saddle points means the downhill search doesn't waste time in misleading directions, so gradual improvement finds genuinely better settings faster."
+  },
+  {
+    "gid": 616,
+    "math_tags": [
+      "spreading information across a network",
+      "measuring similarity as nearness in a space",
+      "weighting the parts that are most relevant"
+    ],
+    "math_plain": "Enrich entities and relations with semantic tags, then spread information across connected graphs to fill missing facts about evolving relationships.",
+    "why_math": "Knowledge graphs work because relationships follow patterns in connected structures. Passing information between neighbors captures how entities interact indirectly. Semantic tags anchor those patterns to concrete meanings, so the model learns which connections matter for predicting what's missing."
+  },
+  {
+    "gid": 617,
+    "math_tags": [
+      "finding the settings with least error",
+      "matching and allocating who gets what",
+      "learning a function from examples"
+    ],
+    "math_plain": "Modify a decoder's weights to map new internal states to correct document identifiers for unseen documents without retraining the entire model.",
+    "why_math": "Retrieval works when you can tell which documents answer a query. The decoder learns a mapping from internal thought-states to document IDs. Updating only critical parameters lets you insert the right mapping for new documents without erasing old ones, solving the catastrophic forgetting problem."
+  },
+  {
+    "gid": 618,
+    "math_tags": [
+      "learning a function from examples",
+      "finding the settings with least error",
+      "measuring surprise and information"
+    ],
+    "math_plain": "Label named entities in README files to teach models to recognize artifact names, dataset descriptions, and code implementation details.",
+    "why_math": "Information extraction works because specific patterns mark where important entities appear. Marking examples trains a model to recognize that same pattern elsewhere. Named entity recognition works because once you see ''dataset X was stored at location Y'' repeated across examples, the model learns that pattern signals an entity boundary."
+  },
+  {
+    "gid": 619,
+    "math_tags": [
+      "spreading information across a network",
+      "measuring similarity as nearness in a space",
+      "predicting the next item in a sequence"
+    ],
+    "math_plain": "Model traffic flow by building hypergraphs capturing high-order spatial groupings and temporal correlations, then pass information through to predict future counts.",
+    "why_math": "Traffic patterns repeat because roads and time have structure. Organizing data so similar roads cluster together and similar times group together lets you spot what influences a location's future. Hypergraphs capture how one road's flow affects many neighbors at once, not just pairs, revealing how congestion spreads."
+  },
+  {
+    "gid": 620,
+    "math_tags": [
+      "measuring similarity as nearness in a space",
+      "weighting the parts that are most relevant",
+      "separating cause from coincidence"
+    ],
+    "math_plain": "Separate vehicle identity features from appearance variations by focusing attention on the most distinctive parts while filtering irrelevant details.",
+    "why_math": "Matching the same vehicle across cameras works because identity is stable even when appearance changes. Attention learns which features stay consistent across viewpoint and occlusion. By isolating the distinctive parts from redundant ones, a model can match the same car even when it looks different, treating identity as what genuinely varies least."
+  },
+  {
+    "gid": 621,
+    "math_tags": [
+      "spreading information across a network",
+      "measuring similarity as nearness in a space",
+      "learning a function from examples"
+    ],
+    "math_plain": "Build a knowledge graph linking fraudulent keywords to fraud tactics, then use it to highlight suspicious patterns and guide language models toward secure responses.",
+    "why_math": "Fraud defense works because fraudulent text shares recognizable patterns with known deception tactics. Structuring those patterns in a graph lets you spot when new text resembles fraud you've seen before. Showing the model those similarities forces it to acknowledge the danger before responding, triggering more careful output."
+  },
+  {
+    "gid": 622,
+    "math_tags": [
+      "separating cause from coincidence",
+      "measuring similarity as nearness in a space",
+      "learning a function from examples"
+    ],
+    "math_plain": "Redefine insider threats to include AI agents by monitoring for role drift, emergent misuse, and emergent behaviors not predicted by original intent.",
+    "why_math": "Detecting insider misuse works because legitimate and malicious behavior differ in patterns. With human actors, intent and trust frame analysis. With autonomous agents, behavior patterns alone must signal threat, because agents lack human intent. The true insider signal is detecting when an agent acts outside its authorized scope, regardless of 'why.'"
+  },
+  {
+    "gid": 623,
+    "math_tags": [
+      "finding the settings with least error",
+      "following the slope downhill to improve",
+      "weighting the parts that are most relevant"
+    ],
+    "math_plain": "Identify which internal dimensions get activated by backdoor triggers, then unlearn and recover those dimensions to remove poisoned behaviors.",
+    "why_math": "Poisoned models work because backdoor triggers exploit specific internal pathways. Identifying which internal features activate tells you the attack's mechanism. Unlearning those features removes the attack's grip without erasing all learning. Restoring clean versions of those features recovers the model's ability to behave honestly."
+  },
+  {
+    "gid": 624,
+    "math_tags": [
+      "predicting the next item in a sequence",
+      "learning by comparison of similar and different",
+      "weighting the parts that are most relevant"
+    ],
+    "math_plain": "For tail users and items, use semantic similarities from language models to inherit features from popular head items and align sparse signals across similar users.",
+    "why_math": "Recommendation works best when you have rich interaction history, but tail users and items are sparse. Semantic similarity reveals which tail items are conceptually close to popular ones, so rare items can borrow patterns from abundant ones. Alignment across similar users pools their weak signals into one stronger one, turning scarcity into strength."
+  },
+  {
+    "gid": 625,
+    "math_tags": [
+      "learning by comparison of similar and different",
+      "combining many weak signals into a strong one",
+      "finding the settings with least error"
+    ],
+    "math_plain": "Build a mixture of experts that model different distribution shifts in dynamic graphs, producing invariant representations that work across train-test variations.",
+    "why_math": "Dynamic graphs change over time in ways training data doesn't fully capture. A mixture of experts handles multiple shift scenarios simultaneously, learning which one applies to each case. Invariance works because features robust across multiple shifts stay robust when the world shifts in new ways, generalizing to unseen conditions."
+  },
+  {
+    "gid": 626,
+    "math_tags": [
+      "learning by comparison of similar and different",
+      "finding the settings with least error",
+      "measuring similarity as nearness in a space"
+    ],
+    "math_plain": "Learn representations from semantically valid graph views that preserve causal structure, using contrastive learning to detect anomalies even when attackers manipulate graphs.",
+    "why_math": "Anomaly detection works because normal and malicious behavior differ. Contrastive learning finds what's stable and what changes. If you augment views that preserve causal meaning, normal activity stays stable across views while attacks don't, letting the model distinguish them without needing to know what attack looks like."
+  },
+  {
+    "gid": 627,
+    "math_tags": [
+      "separating cause from coincidence",
+      "matching and allocating who gets what",
+      "measuring similarity as nearness in a space"
+    ],
+    "math_plain": "Use sharding and domain-hiding signatures to let users prove membership in trusted domain sets without revealing their home domain, scaling accountability across Web3.",
+    "why_math": "Decentralized identity works because users must prove they belong somewhere without exposing themselves. Ring signatures hide a user in a group while preserving traceability if they misbehave. Sharding scales this by partitioning the global system, so no single authority becomes a bottleneck, yet each domain still trusts the others' accountability."
+  },
+  {
+    "gid": 628,
+    "math_tags": [
+      "spreading information across a network",
+      "measuring similarity as nearness in a space",
+      "learning by comparison of similar and different"
+    ],
+    "math_plain": "Model social event detection using wave-based message propagation and force-like attractions within events, repulsions between events, to cluster related messages.",
+    "why_math": "Real events form because messages reinforce and interfere with each other, like waves. Using wave equations captures how information bounces between similar messages. Force-based attraction pulls related messages together while repulsion pushes unrelated ones apart, so the model naturally clusters messages from the same event."
+  },
+  {
+    "gid": 629,
+    "math_tags": [
+      "ranking things by a learned score",
+      "learning a function from examples",
+      "combining many weak signals into a strong one"
+    ],
+    "math_plain": "This is a workshop on technology-assisted review systems that combine human judgment with AI to find and rank relevant documents at Web scale with transparency.",
+    "why_math": "Large-scale retrieval works when you rank by combining multiple signals: text matching, human feedback, and model confidence. Transparency means knowing why a document ranked high. Human-in-the-loop works because humans catch blind spots in pure algorithms, and algorithms scale what humans can individually review, making fair and reliable retrieval possible together."
+  }
+]

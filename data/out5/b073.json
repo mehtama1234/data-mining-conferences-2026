@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 1095,
+    "math_tags": ["measuring similarity as nearness in a space", "estimating probabilities from data"],
+    "math_plain": "Maps individual thinking styles to neural brain activation patterns to predict how people interact with search results.",
+    "why_math": "It works because consistent thinking styles produce consistent brain activity and search behaviors, so measuring one lets you reliably predict the other without needing a perfect causal chain."
+  },
+  {
+    "gid": 1096,
+    "math_tags": ["learning a function from examples", "keeping only the few dimensions that matter"],
+    "math_plain": "Uses a language model's compressed knowledge of user preferences to guide what dimensions a recommendation system should learn.",
+    "why_math": "It works because language models capture rich patterns about what people want, and steering the recommendation model's learning toward those patterns focuses it on meaningful user interests rather than noise."
+  },
+  {
+    "gid": 1097,
+    "math_tags": ["measuring similarity as nearness in a space", "weighting the parts that are most relevant"],
+    "math_plain": "Learns which parts of a document matter most for answering a question, then pools only those regions into compact tokens.",
+    "why_math": "It works because most of a document is irrelevant clutter; identifying and keeping only the relevant bits preserves the signal needed to answer while throwing away everything that distracts."
+  },
+  {
+    "gid": 1098,
+    "math_tags": ["learning a function from examples", "learning by comparison of similar and different", "weighting the parts that are most relevant"],
+    "math_plain": "Combines product descriptions and user behavior to learn which items are interchangeable and which complement each other.",
+    "why_math": "It works because items recommended together or by the same people tend to be substitutes or complements; weighting clean signals more than noisy ones extracts that true relationship."
+  },
+  {
+    "gid": 1099,
+    "math_tags": ["following the slope downhill to improve", "ranking things by a learned score"],
+    "math_plain": "Directly optimizes the total quality of a ranked recommendation list by computing how to nudge each item position.",
+    "why_math": "It works because the quality score itself is a smooth function you can differentiate with respect to item positions, so you can follow the gradient to improve the whole list at once instead of approximating indirectly."
+  },
+  {
+    "gid": 1100,
+    "math_tags": ["estimating probabilities from data", "separating cause from coincidence", "weighting the parts that are most relevant"],
+    "math_plain": "Learns drug recommendations by reasoning through patient cases, then adjusts to balance cure likelihood against each person's individual drug risks.",
+    "why_math": "It works because showing the reasoning path grounds recommendations in clinical logic, and personalizing safety tolerances respects that different patients have different risk profiles that affect what counts as safe."
+  },
+  {
+    "gid": 1101,
+    "math_tags": ["separating cause from coincidence", "measuring similarity as nearness in a space"],
+    "math_plain": "Identifies which connections between nodes in a graph are real causal relationships versus accidental correlations caused by misleading subpatterns.",
+    "why_math": "It works because some subgraph patterns appear frequently but mislead the model; explicitly tracing causal paths versus spurious paths lets you ignore the false correlations and learn only from genuine signal."
+  },
+  {
+    "gid": 1102,
+    "math_tags": ["ranking things by a learned score", "weighting the parts that are most relevant"],
+    "math_plain": "Refines search rankings by adding new query terms chosen from top results, keeping only the most informative expansions.",
+    "why_math": "It works because the top-ranked results already contain relevant ideas; extracting and amplifying rare high-value query terms found there sharpens the search without adding noise from common irrelevant terms."
+  },
+  {
+    "gid": 1103,
+    "math_tags": ["ranking things by a learned score", "learning a function from examples"],
+    "math_plain": "Learns to sort items optimally by directly training on ranking order rather than individual scores, handling ties in relevance.",
+    "why_math": "It works because you only care about the final ranking order, not the exact scores; learning the permutation directly captures that structure and handles incomplete labels by allowing multiple valid orderings."
+  },
+  {
+    "gid": 1104,
+    "math_tags": ["learning by comparison of similar and different", "separating cause from coincidence"],
+    "math_plain": "Reconstructs why someone feels an emotion in conversation by tracking what the speaker knows, perceives, and reasons through.",
+    "why_math": "It works because emotions don't come from nowhere; modeling the speaker's knowledge and mental steps lets you trace the actual causal chain from situation to feeling."
+  },
+  {
+    "gid": 1105,
+    "math_tags": ["separating cause from coincidence", "ranking things by a learned score"],
+    "math_plain": "Detects web search results that conflict with trusted internal knowledge and prevents them from overriding the verified facts.",
+    "why_math": "It works because truth has a source; when web content contradicts known-good internal sources, the contradiction itself signals danger, and blocking those results preserves accuracy."
+  },
+  {
+    "gid": 1106,
+    "math_tags": ["predicting the next item in a sequence", "following the slope downhill to improve"],
+    "math_plain": "Predicts next items by modeling how preferences evolve through time, mixing in temporal patterns at each step.",
+    "why_math": "It works because user preferences drift over time; explicitly representing how the past state influences the next state captures real temporal dynamics better than treating time as a static condition."
+  },
+  {
+    "gid": 1107,
+    "math_tags": ["learning a function from examples", "estimating probabilities from data"],
+    "math_plain": "Generates synthetic tabular data that preserves both the statistics of the original data and the logical relationships between fields.",
+    "why_math": "It works because real data has structure; enforcing that synthetic samples obey the same conditional rules as the original makes them realistic and usable for downstream tasks."
+  },
+  {
+    "gid": 1108,
+    "math_tags": ["ranking things by a learned score", "measuring similarity as nearness in a space"],
+    "math_plain": "Discovers phrases in documents that retrieval models rank poorly, then uses those phrases to construct challenging queries.",
+    "why_math": "It works because every model has blind spots; if a phrase that appears in a document is ranked low by the model's internal scoring, queries built around that phrase reveal the retrieval model's failure mode."
+  },
+  {
+    "gid": 1109,
+    "math_tags": ["estimating probabilities from data", "predicting the next item in a sequence"],
+    "math_plain": "Tests whether models can find all answers to a temporal question, not just the first one, from long unstructured text.",
+    "why_math": "It works because exhaustiveness requires different logic than existence; once you find one answer, you must keep searching for others, which current models fail at because they stop after the first match."
+  }
+]

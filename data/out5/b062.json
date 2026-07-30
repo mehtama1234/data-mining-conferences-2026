@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 930,
+    "math_tags": ["learning a function from examples", "finding the settings with least error"],
+    "math_plain": "Automatically partition features into groups, then use one group to adjust network weights while the other predicts purchase likelihood.",
+    "why_math": "It works because different users follow different decision patterns. By identifying which features naturally group users together, you can tune the prediction model separately for each group, reducing error for each rather than forcing one model to work for everyone."
+  },
+  {
+    "gid": 931,
+    "math_tags": ["separating cause from coincidence"],
+    "math_plain": "Generate raw diverse data first, then label it, versus the reversed approach of baking labels into generation prompts.",
+    "why_math": "The causal order mirrors real data creation: facts exist first, then we label them. This avoids the backward approach where labels distort generation, which makes the model overfit to label-specific patterns instead of learning genuine variety."
+  },
+  {
+    "gid": 932,
+    "math_tags": ["separating cause from coincidence", "learning a function from examples"],
+    "math_plain": "Learn when a language model should trust its built-in knowledge versus external evidence, then build reasoning chains that prevent conflicting knowledge from derailing fact-checking.",
+    "why_math": "It works because confidence is not truth. By identifying where a model's internal knowledge is reliable versus where it's overconfident, you can rely on evidence when the model is weak and trust itself when the evidence is weak, rather than always fighting between them."
+  },
+  {
+    "gid": 933,
+    "math_tags": ["separating cause from coincidence", "learning a function from examples"],
+    "math_plain": "Fill in missing attributes and estimate treatment effects by modeling how entities influence each other in the knowledge graph structure.",
+    "why_math": "It works because missing data and causal effects are not independent problems. Using the relational structure to infer missing attributes helps the model understand connections between entities, which then allows it to account for how one entity's treatment ripples through related entities."
+  },
+  {
+    "gid": 934,
+    "math_tags": ["ranking things by a learned score", "combining many weak signals into a strong one"],
+    "math_plain": "Score URLs as likely phishing or legitimate using both advanced language models and traditional classification methods, then combine their outputs.",
+    "why_math": "It works because different methods exploit different signals: language models see semantic patterns, while traditional methods see structural features. Combining both types catches phishing attempts that would fool each approach alone."
+  },
+  {
+    "gid": 935,
+    "math_tags": ["predicting the next item in a sequence", "learning a function from examples"],
+    "math_plain": "Generate recommendations by mixing implicit knowledge of user behavior patterns with explicit signals about what users actually clicked, both embedded in a denoising process.",
+    "why_math": "It works because user behavior has two layers: surface patterns (what they clicked) and deeper preferences (why they click). Embedding both guides generation to stay faithful to real behavior while preserving individual preference nuance that gets lost if you compress everything into one summary."
+  },
+  {
+    "gid": 936,
+    "math_tags": [],
+    "math_plain": "This is a workshop announcement calling for benchmarks and metrics to compare causal discovery and inference methods fairly.",
+    "why_math": "Benchmarks work because they force agreement on what success looks like. Without shared test data and metrics, different teams optimize for different invisible targets, making progress invisible. Standardized benchmarks reveal which ideas actually solve the problem versus which just optimize a lab's pet metric."
+  },
+  {
+    "gid": 937,
+    "math_tags": ["measuring similarity as nearness in a space", "ranking things by a learned score"],
+    "math_plain": "Rank papers by learned similarity scores computed from multiple different representations (embeddings from different methods), allowing users to mix and match.",
+    "why_math": "It works because papers can be similar in multiple ways that rank differently: citations reveal expert judgment, abstract content reveals direct relevance, graph structure reveals invisible connections. No single view is complete, so combining views from different lenses ranks papers by richer, more nuanced similarity."
+  },
+  {
+    "gid": 938,
+    "math_tags": ["separating cause from coincidence", "learning a function from examples"],
+    "math_plain": "Measure whether unlearning methods actually remove a specific person's influence from image captions or just hide it with false information.",
+    "why_math": "It works because true unlearning is different from obfuscation. If you test with varied captions, controlled presence and absence of names, and measure both generation quality and susceptibility to membership attacks, you can tell if the model genuinely forgot versus just learned to deny."
+  },
+  {
+    "gid": 939,
+    "math_tags": ["spreading information across a network"],
+    "math_plain": "This is a workshop on reasoning over networks and graphs to detect misinformation and build trustworthy systems.",
+    "why_math": "Graph reasoning works because false claims spread differently than true ones: false claims trigger outrage and jump communities quickly, true claims spread through trusted dense clusters more slowly. Tracking how information flows through the graph structure reveals its origin and nature."
+  },
+  {
+    "gid": 940,
+    "math_tags": ["learning by comparison of similar and different", "combining many weak signals into a strong one"],
+    "math_plain": "Learn bundle recommendations by contrasting what users actually buy together against different view of relations (user-item, bundle-item, item-item), especially for new bundles.",
+    "why_math": "It works because new bundles have no history. But items within them appeared before. By learning what makes users like items and how items relate to bundles, you infer which new bundle a user will like without needing the bundle itself to exist historically."
+  },
+  {
+    "gid": 941,
+    "math_tags": ["learning by comparison of similar and different", "smart random sampling and averaging"],
+    "math_plain": "Generate increasingly difficult negative examples using diffusion to improve the ranking model, rather than using random negatives.",
+    "why_math": "It works because random negatives are too easy: the model learns to distinguish obvious non-fits and never builds strong discrimination. Progressively harder negatives force the model to refine its distinctions, learning subtle features that separate close calls, leading to better taxonomy predictions."
+  },
+  {
+    "gid": 942,
+    "math_tags": ["predicting the next item in a sequence", "learning a function from examples"],
+    "math_plain": "Predict next interactions by refining denoising through shaped attention patterns and enforcing that predictions stay on the manifold of user preference geometry.",
+    "why_math": "It works because user preferences live in a lower-dimensional space. Constraining the denoising to stay on that manifold prevents the model from drifting into unrealistic regions during generation. The shaped attention focuses learning on the most predictive behavior patterns."
+  },
+  {
+    "gid": 943,
+    "math_tags": ["spreading information across a network", "estimating probabilities from data"],
+    "math_plain": "Track how emotions and moral sentiments spread through online networks, shaping polarization, trust, and collective behavior.",
+    "why_math": "It works because emotion is contagious in ways logic is not. When you measure what emotions accompany statements and which groups see which emotions, you can trace how affect organizes social fragmentation. Emotional dynamics reveal invisible social forces that rational arguments alone cannot explain."
+  },
+  {
+    "gid": 944,
+    "math_tags": ["learning a function from examples", "finding the settings with least error"],
+    "math_plain": "Rewrite medical records using language models trained specifically to improve downstream predictions by focusing on clinically relevant rewrites.",
+    "why_math": "It works because medical records are incomplete and contain irrelevant details. By training the rewriter end-to-end with the predictor, guided by which rewrites actually improve decisions, the model learns to amplify what matters and suppress noise, improving clinical performance over generic improvements."
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 975,
+    "math_tags": ["ranking things by a learned score", "weighting the parts that are most relevant"],
+    "math_plain": "Learn a scoring function that ranks podcast ads and promotions by predicted user interest, using feedback on streams, clicks, and follows to weight which signals matter most.",
+    "why_math": "It works because user actions reveal what truly matters: if someone clicks or streams after seeing an ad, that interaction teaches the system which features predict genuine interest. Weighted scoring captures this—emphasizing the signals that actually drive behavior."
+  },
+  {
+    "gid": 976,
+    "math_tags": ["estimating probabilities from data", "separating cause from coincidence"],
+    "math_plain": "Quantify uncertainty in network predictions by estimating how much unknown structure, noisy parameters, and random fluctuations change the system's future behavior.",
+    "why_math": "It works because real networks have hidden pieces and noise; uncertainty quantification asks 'how wrong could we be?' By measuring how sensitive predictions are to what we don't know, we learn which unknowns actually matter and build stronger forecasts."
+  },
+  {
+    "gid": 977,
+    "math_tags": ["keeping only the few dimensions that matter", "learning a function from examples"],
+    "math_plain": "Compress a large graph into a much smaller one by discretizing features and preserving local structure via low-rank approximation, then learn which smaller patterns matter most.",
+    "why_math": "It works because graphs have redundancy: many nodes behave similarly, and you only need a few patterns to explain the whole structure. Discretization removes noise, and low-rank approximation captures the dominant patterns—keeping what predicts behavior while throwing away the rest."
+  },
+  {
+    "gid": 978,
+    "math_tags": ["following the slope downhill to improve", "weighting the parts that are most relevant"],
+    "math_plain": "Use reinforcement learning to select attack strategies that maximize deception while avoiding detection, guided by a learned policy that reuses past decisions to adapt to defenses.",
+    "why_math": "It works because adversarial attack success requires balancing two goals: fooling the system and staying hidden. Reinforcement learning finds the path downhill toward both goals simultaneously. Reusing past attack memories teaches the learner which moves work against specific defenses."
+  },
+  {
+    "gid": 979,
+    "math_tags": ["ranking things by a learned score", "learning a function from examples"],
+    "math_plain": "Discover hidden retrieval rules by iteratively selecting high-value patterns, then learn scoring functions that rank candidates according to those rules, guided by task feedback.",
+    "why_math": "It works because humans reason in patterns—'to find papers by an author, first find co-authors, then find their papers.' By coupling pattern discovery with scoring refinement, the system learns both what paths to follow and how to rank results along those paths, improving with each correction."
+  },
+  {
+    "gid": 980,
+    "math_tags": ["measuring similarity as nearness in a space", "learning by comparison of similar and different"],
+    "math_plain": "Generate two different views of the user-item graph via diffusion-based noise, then train the system to recognize when two views show the same information, emphasizing structure and long-tail items.",
+    "why_math": "It works because learning thrives on recognizing what stays true despite change. By adding noise in two ways and training the system to say 'these still match,' you force it to understand the core pattern. Long-tail items benefit because the conditional diffusion uses global structure to guide their cleanup."
+  },
+  {
+    "gid": 981,
+    "math_tags": ["measuring similarity as nearness in a space", "learning a function from examples"],
+    "math_plain": "Align and merge semantic meanings from images, text, and interaction data into one unified identifier that ranks recommendation candidates in order of relevance.",
+    "why_math": "It works because different data types carry the same underlying meaning—a video, its description, and how creators interact all describe similar things. Alignment makes these meanings live in the same measurement space, so a single identifier can capture what matters across all sources at once."
+  },
+  {
+    "gid": 982,
+    "math_tags": ["weighting the parts that are most relevant", "learning a function from examples"],
+    "math_plain": "Identify which words drive fake-news detection decisions, then prompt a language model to write human-like comments using those influential words, crafted to flip the classifier's judgment.",
+    "why_math": "It works because classifiers have weak spots: certain features carry outsized influence on the decision. By spotlighting those features and generating text around them, the attack exploits the model's own reasoning against it. Feature importance shows which words the detector trusts most, making those the target."
+  },
+  {
+    "gid": 983,
+    "math_tags": ["learning a function from examples", "separating cause from coincidence"],
+    "math_plain": "Make minimal, targeted edits to news stories that subtly change causal claims and qualifying facts, shifting perceived credibility while avoiding obvious tampering.",
+    "why_math": "It works because humans evaluate credibility through causal reasoning—does the evidence support the claim? Removing a qualifier or reversing causality breaks that chain invisibly. Small changes fool readers because they alter the logical structure beneath the surface, not the words themselves."
+  },
+  {
+    "gid": 984,
+    "math_tags": ["learning a function from examples", "measuring surprise and information"],
+    "math_plain": "Evaluate code generation in four phases—understanding examples, choosing algorithms, describing solutions, and writing code—measuring how well models perform at each step, then correlate performance across steps.",
+    "why_math": "It works because coding is sequential reasoning: you cannot write correct code without understanding the problem and picking the right algorithm first. By measuring each phase, you reveal where models actually fail. Correlation shows that earlier reasoning directly enables later success, exposing the true bottleneck."
+  },
+  {
+    "gid": 985,
+    "math_tags": ["learning a function from examples", "weighting the parts that are most relevant"],
+    "math_plain": "Assign personality traits to language models and measure how different personalities change their susceptibility to biased labeling, then use high-performing personalities to reduce bias in relevance judgments.",
+    "why_math": "It works because bias is a learned pattern: models absorb it from training data. Personality prompting changes which learned patterns activate, suppressing biases in some personality profiles. High-Openness personalities, for instance, activate reasoning patterns that question first impressions rather than anchoring to them."
+  },
+  {
+    "gid": 986,
+    "math_tags": ["learning a function from examples", "weighting the parts that are most relevant"],
+    "math_plain": "Simulate diverse user personas over time, trace their YouTube recommendations, log the results in a database, then analyze which features and behaviors drive algorithmic personalization and filter bubbles.",
+    "why_math": "It works because personalization leaves traces: each user action feeds back into the algorithm. By simulating many personas, you observe the full feedback loop. Logging and tracing reveal which user signals the system weighs most and how recommendations drift as personas interact, making the invisible algorithm visible."
+  },
+  {
+    "gid": 987,
+    "math_tags": ["following the slope downhill to improve", "learning a function from examples"],
+    "math_plain": "Sample candidate portfolios from a learned distribution, then use a diffusion process with risk guidance to iteratively improve portfolios toward a user's specified risk tolerance.",
+    "why_math": "It works because portfolio quality and risk are linked: better portfolios tend to exist where risk matches preference. Diffusion allows direct sampling instead of forecasting entire time series. Risk guidance steers the cleanup process toward portfolios matching the user's appetite, so you get diverse, realistic options fast."
+  },
+  {
+    "gid": 988,
+    "math_tags": ["learning a function from examples", "ranking things by a learned score"],
+    "math_plain": "Use language models to generate fake user profiles and reviews that mimic human behavior, then strategically inject these profiles to manipulate recommender systems toward chosen targets.",
+    "why_math": "It works because recommender systems learn from user behavior, and language models are now fluent enough to forge that behavior convincingly. By generating reviews that exploit known patterns in recommendation scoring, the attack injects fake signals the system cannot distinguish from real ones."
+  },
+  {
+    "gid": 989,
+    "math_tags": ["learning a function from examples", "weighting the parts that are most relevant"],
+    "math_plain": "Prompt a language model to explain its recommendation reasoning step-by-step, then learn a modifier that weighs how much to trust each reasoning step based on uncertainty, balancing explanation with prediction accuracy.",
+    "why_math": "It works because language models contain rich reasoning but sometimes generate plausible-sounding nonsense. Uncertainty quantification identifies shaky reasoning steps. By weighting down uncertain explanations while keeping good ones, the system extracts the true reasoning the model learned, connecting predictions to trustworthy logic."
+  }
+]

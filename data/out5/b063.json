@@ -1,0 +1,92 @@
+[
+ {
+  "gid": 945,
+  "math_tags": ["combining many weak signals into a strong one", "learning a function from examples"],
+  "math_plain": "Select evidence from multiple sources to form a summary that captures diverse opinions and explains their differences.",
+  "why_math": "Combining evidence from multiple viewpoints creates a more complete picture than any single perspective. When you weight and select evidence by how much it represents different opinions, you capture the full spectrum of sentiment rather than just averaging them away."
+ },
+ {
+  "gid": 946,
+  "math_tags": ["measuring surprise and information", "finding the settings with least error"],
+  "math_plain": "Detect anomalies by measuring when data points deviate most from expected patterns in time series.",
+  "why_math": "An anomaly is simply something that deviates from what you'd expect to see. By measuring how surprising or unusual each point is compared to normal behavior patterns, you identify things that don't fit the pattern, making detection a direct measurement of deviation."
+ },
+ {
+  "gid": 947,
+  "math_tags": ["learning a function from examples", "separating cause from coincidence"],
+  "math_plain": "Plan structured queries over a knowledge graph by reasoning about which constraints and connections matter for answering a question.",
+  "why_math": "Real-world knowledge is connected through relationships — knowing which relationships matter and in what order to follow them turns a chaotic search into a directed path. Planning first ensures you only retrieve what actually answers the question, filtering out coincidental connections."
+ },
+ {
+  "gid": 948,
+  "math_tags": ["learning a function from examples", "keeping only the few dimensions that matter"],
+  "math_plain": "Preserve both detailed features and connection patterns when combining neighboring node information in a network structure.",
+  "why_math": "When you combine many neighbors' information, unique details and patterns get erased. By actively preserving what makes each feature distinct and what makes each connection pattern important, you retain the signal that was getting lost in the averaging."
+ },
+ {
+  "gid": 949,
+  "math_tags": ["learning a function from examples", "weighting the parts that are most relevant"],
+  "math_plain": "Select which items to recommend and then select their key features through step-by-step reasoning to filter out irrelevant knowledge.",
+  "why_math": "Information retrieval returns both relevant and irrelevant passages. By forcing the system to explicitly choose which item matters first, then which features of that item matter, you create checkpoints that filter noise at each stage rather than trying to separate them all at once."
+ },
+ {
+  "gid": 950,
+  "math_tags": ["measuring similarity as nearness in a space", "smart random sampling and averaging"],
+  "math_plain": "Spread labels through a graph by working in the compressed embedding space rather than with explicit edges, scaling to millions of nodes.",
+  "why_math": "Low-rank graphs are secretly compressed — they can be represented by a smaller set of dimensions without losing the connections. Computing label spreading in that smaller space costs far less but gets the same answer, because the connections are all there, just encoded differently."
+ },
+ {
+  "gid": 951,
+  "math_tags": ["learning a function from examples", "combining many weak signals into a strong one"],
+  "math_plain": "Personalization is evolving from predicting what users want toward reasoning and creating recommendations that surface unexpected discoveries.",
+  "why_math": "Traditional recommendation works by observing past behavior. Reasoning-based systems can instead model what would actually help a user grow or learn, enabling discovery of things they never imagined wanting because the system understands the underlying intent better than habit patterns do."
+ },
+ {
+  "gid": 952,
+  "math_tags": ["learning a function from examples", "combining many weak signals into a strong one"],
+  "math_plain": "Fuse available modalities into a shared space early, then skip missing ones, using a collaborative filtering backbone to combine signals.",
+  "why_math": "Late fusion fails when pieces are missing because alignment breaks down. Early fusion leverages the fact that available modalities already sit in a shared semantic space — you can combine them directly without reconstructing missing pieces, and missing modalities simply contribute nothing rather than breaking the whole system."
+ },
+ {
+  "gid": 953,
+  "math_tags": ["learning a function from examples", "weighting the parts that are most relevant"],
+  "math_plain": "Capture both code structure and hidden semantic patterns using joint feature extraction, then focus on vulnerability paths during detection.",
+  "why_math": "Real vulnerabilities hide in combinations of structure and meaning that simple patterns miss. By mining latent patterns jointly with visible structure, you find weaknesses that surface-level syntax won't catch. Tracking paths during detection lets the model explain why each vulnerability matters."
+ },
+ {
+  "gid": 954,
+  "math_tags": ["ranking things by a learned score", "matching and allocating who gets what"],
+  "math_plain": "Route users to either a personalized ranking model or a semantic discovery model based on whether they are established or new.",
+  "why_math": "New users have no history, so ranking-based approaches fail. Established users have rich history that makes ranking work well. Since these two cases require opposite strategies, the key insight is simply to detect which situation you're in and apply the right tool — routing is more important than any single algorithm."
+ },
+ {
+  "gid": 955,
+  "math_tags": ["weighting the parts that are most relevant", "smart random sampling and averaging"],
+  "math_plain": "Dynamically choose whether to retrieve evidence and how much, using multiple retrieval experts balanced by learning which source generated each piece of content.",
+  "why_math": "LLM-generated and human-written false information have different patterns — what looks like a lie in one context looks normal in another. Rather than using one retrieval strategy for everything, training multiple experts and letting the source characteristics determine which expert to use adapts to what actually needs to be verified."
+ },
+ {
+  "gid": 956,
+  "math_tags": ["learning a function from examples", "smart random sampling and averaging"],
+  "math_plain": "Generate synthetic data through noise and augmentation, then train a copy that mimics a black-box model's outputs.",
+  "why_math": "You can't steal a model directly, but you can teach a new model to behave identically by observing outputs on many inputs. Since the model always gives the same output for the same input, a well-trained copy becomes functionally identical even without seeing the internals."
+ },
+ {
+  "gid": 957,
+  "math_tags": ["separating cause from coincidence", "weighting the parts that are most relevant"],
+  "math_plain": "Analyze search results across locations and time to measure how geographic personalization, local events, and topic traits shape filter bubbles.",
+  "why_math": "Filter bubbles aren't random — they're systematic patterns caused by specific factors. By controlling which factors vary (location one time, topic another time) and measuring the result each time, you isolate what actually causes each bubble, separating real effects from coincidence."
+ },
+ {
+  "gid": 958,
+  "math_tags": ["combining many weak signals into a strong one", "finding the settings with least error"],
+  "math_plain": "Extract market insights from web data, generate trading hypotheses as candidate strategies, then test and refine them against historical prices.",
+  "why_math": "Markets are complex and no single signal predicts perfectly. Combining signals from many sources gives a stronger prediction than any alone. Testing strategies against historical data then keeping the ones that worked best is how you find patterns that generalize — you only keep strategies that actually reduced error when measured on real data."
+ },
+ {
+  "gid": 959,
+  "math_tags": ["combining many weak signals into a strong one", "smart random sampling and averaging"],
+  "math_plain": "Gather user preferences across multiple AI models in parallel, aggregate rankings from diverse user populations, and let the strongest signals emerge.",
+  "why_math": "No single model is best for everyone. By collecting opinions from many users across many models, patterns emerge — the models that consistently rank high across diverse preferences truly are better. Aggregating across populations filters out noise and reveals the genuine strong performers."
+ }
+]

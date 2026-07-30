@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 585,
+    "math_tags": ["finding the settings with least error", "learning a function from examples", "following the slope downhill to improve"],
+    "math_plain": "Learn actions for deciding production and transport on graphs by imitating expert decisions while respecting capacity limits.",
+    "why_math": "It works because expert demonstrations already encode which decisions respect constraints while maximizing profit. By learning to imitate those decisions, the system avoids the hardness of solving the optimization from scratch and inherits correctness from the examples."
+  },
+  {
+    "gid": 586,
+    "math_tags": ["measuring similarity as nearness in a space", "predicting the next item in a sequence"],
+    "math_plain": "Predict future values in long time series by finding the strongest repeating patterns across both time steps and different variables.",
+    "why_math": "It works because real time series contain recurring structures—seasonal patterns, cyclical trends—that repeat at regular intervals. By detecting which past moments most resemble the present, you can predict what comes next based on what happened then."
+  },
+  {
+    "gid": 587,
+    "math_tags": ["spreading information across a network", "ranking things by a learned score", "weighting the parts that are most relevant"],
+    "math_plain": "Retrieve answers from huge graph structures by filtering down from broad communities to specific entities, scoring each stage to keep the best candidates.",
+    "why_math": "It works because large graphs have hierarchical structure: related entities cluster into communities, communities cluster into regions. By searching levels from coarse to fine and re-ranking at each stage, you prune dead ends early and focus compute on promising paths."
+  },
+  {
+    "gid": 588,
+    "math_tags": ["measuring similarity as nearness in a space", "matching and allocating who gets what", "learning by comparison of similar and different"],
+    "math_plain": "Match images to text descriptions by aligning specific image patches to specific text words and learning what features discriminate different people.",
+    "why_math": "It works because real people differ in fine details—clothing style, body shape, distinctive marks. By forcing the model to precisely align image regions with words and explicitly penalize when it confuses different identities, it learns the subtle distinctions that matter."
+  },
+  {
+    "gid": 589,
+    "math_tags": ["combining many weak signals into a strong one", "separating cause from coincidence", "learning by comparison of similar and different"],
+    "math_plain": "Detect fraud nodes by combining two separate signals: how nodes propagate information differently than normal, and what structural patterns clusters of fraudsters form.",
+    "why_math": "It works because fraud is multifaceted—fraudsters both deviate from normal information flow and coordinate suspicious topologies. By capturing both local anomalies and global structural oddities, the system avoids false alarms that a single signal would trigger."
+  },
+  {
+    "gid": 590,
+    "math_tags": ["learning a function from examples", "measuring similarity as nearness in a space"],
+    "math_plain": "Fill missing values in time series by converting sequences into image patterns and using an image-filler trained on general visual data.",
+    "why_math": "It works because time series and images share structure: repetition, smoothness, local correlation. When you represent time data as a heatmap, generic image inpainting—trained once on millions of images—knows which patterns are likely to complete the picture."
+  },
+  {
+    "gid": 591,
+    "math_tags": ["learning a function from examples", "ranking things by a learned score"],
+    "math_plain": "Build machine learning workflows from natural language by breaking requests into hierarchical steps and scoring which tools best fit each step.",
+    "why_math": "It works because complex tasks decompose naturally into subtasks, and each subtask has a small set of appropriate tools. By ranking tools based on task intent rather than guessing from raw text, the system avoids dead ends and picks genuinely useful operations."
+  },
+  {
+    "gid": 592,
+    "math_tags": ["combining many weak signals into a strong one", "estimating probabilities from data", "weighting the parts that are most relevant"],
+    "math_plain": "Predict sentiment across text, audio, and video by estimating strength of positive and negative signals from each modality and weighting them by reliability.",
+    "why_math": "It works because each modality (text, audio, video) carries partial truth about emotion, but some signals are noisy or missing. By treating each modality as providing evidence with a confidence score, then letting confidence guide how much to trust each signal, you handle noise gracefully."
+  },
+  {
+    "gid": 593,
+    "math_tags": ["measuring similarity as nearness in a space", "weighting the parts that are most relevant", "ranking things by a learned score"],
+    "math_plain": "Retrieve tables by grouping similar rows, generating varied synthetic queries per group, and weighting how much table and query embeddings should contribute.",
+    "why_math": "It works because tables have internal structure that one global embedding flattens away. By clustering rows into topics and assigning cluster-specific queries, you surface diverse aspects of the table's meaning. Weighting the final blend lets you fine-tune how much structural form versus query content matters."
+  },
+  {
+    "gid": 594,
+    "math_tags": ["learning by comparison of similar and different", "learning a function from examples", "following the slope downhill to improve"],
+    "math_plain": "Improve a vision-language model's web clicking accuracy by teaching it to verify element location and state after each action instead of assuming success.",
+    "why_math": "It works because vision errors compound: if the model guesses wrong about where an element is, the next action fails predictably. By inserting verification after each step—explicit checking of whether the action succeeded—the model catches and corrects errors before they cascade."
+  },
+  {
+    "gid": 595,
+    "math_tags": ["predicting the next item in a sequence", "ranking things by a learned score", "matching and allocating who gets what"],
+    "math_plain": "Answer complex questions by converting documents once into fine-grained question-answer pairs, then decomposing and rewriting queries to find matching pairs.",
+    "why_math": "It works because most complex questions consist of simpler sub-questions whose answers exist or can be inferred from nearby text. By pre-processing the corpus into atomic facts and preserving entity names during decomposition, you avoid the overhead of re-reading documents at each hop while staying grounded."
+  },
+  {
+    "gid": 596,
+    "math_tags": ["learning by comparison of similar and different", "separating cause from coincidence", "ranking things by a learned score"],
+    "math_plain": "Diagnose disease by extracting fine-grained medical concepts from images, building a relationship graph of concepts, and inferring which causal paths lead to disease.",
+    "why_math": "It works because disease diagnosis is fundamentally causal reasoning: symptoms cause observations, disease causes symptoms. By explicitly modeling concept relationships and tracing causal chains—not just tallying concept presence—the model mirrors clinical reasoning and explains its conclusions."
+  },
+  {
+    "gid": 597,
+    "math_tags": ["weighting the parts that are most relevant", "combining many weak signals into a strong one"],
+    "math_plain": "Add invisible watermarks to generated images by varying watermark strength across image regions and using multiple specialized networks to preserve quality.",
+    "why_math": "It works because different image regions have different robustness to degradation: busy textures hide marks better than smooth areas. By varying watermark intensity spatially and pooling diverse specialized models, you distribute the quality cost across the image and reduce visible artifacts."
+  },
+  {
+    "gid": 598,
+    "math_tags": ["measuring similarity as nearness in a space", "finding the settings with least error", "matching and allocating who gets what"],
+    "math_plain": "Find minimal tree structures connecting many groups of nodes by approximating the solution with algorithms that scale well both with graph size and number of groups.",
+    "why_math": "It works because the Group Steiner Tree problem is a generalization of connecting points with minimum total distance. Approximation algorithms trade optimality for speed, and by re-engineering them to handle many groups instead of few, they unlock scalability that exact methods cannot achieve."
+  },
+  {
+    "gid": 599,
+    "math_tags": ["spreading information across a network", "ranking things by a learned score", "separating cause from coincidence"],
+    "math_plain": "Identify influential agents in networks of autonomous systems by measuring how effectively information spreads through each agent while degrading over distance.",
+    "why_math": "It works because agent networks differ from human social networks: agents care about information utility, not just passing it along. By modeling information decay along paths and valuing throughput and semantic preservation—not just connection count—you rank nodes by actual utility in the new paradigm."
+  }
+]

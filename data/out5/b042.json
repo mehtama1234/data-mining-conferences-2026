@@ -1,0 +1,80 @@
+[
+  {
+    "gid": 630,
+    "math_tags": ["measuring similarity as nearness in a space"],
+    "math_plain": "Computes multiple quality measurements of knowledge graphs at different levels: how well connected they are, how deep their structures go, and how cohesive their parts fit together.",
+    "why_math": "It works because you can reduce any graph's structural quality to a set of measurable numbers: connection strength tells you navigability, inheritance depth reveals organizational structure, and cohesion shows whether related elements cluster together. These numbers summarize complex patterns humans use to judge graph quality."
+  },
+  {
+    "gid": 631,
+    "math_tags": ["finding the settings with least error"],
+    "math_plain": "Routes data traffic through datacenter paths that have the least congestion and measures latency in real time to choose which memory locations to use and when to prioritize requests.",
+    "why_math": "It works because latency is directly measurable, and once you know which paths are slow, you can steer traffic to avoid them. Since different requests have different urgency, prioritizing the critical ones first while using the fast paths for all traffic minimizes the worst delays anyone experiences."
+  },
+  {
+    "gid": 632,
+    "math_tags": ["learning a function from examples"],
+    "math_plain": "Uses a small number of labeled examples and one unlabeled image of the target environment to adjust a pre-trained model's internal weights so it performs better on new tasks in that specific setting.",
+    "why_math": "It works because a pre-trained model already knows general visual patterns; you only need to fine-tune its internal settings to match your specific environment. With even one environment image to guide adaptation, the cloud can calculate small weight adjustments that eliminate environment mismatch without retraining from scratch."
+  },
+  {
+    "gid": 634,
+    "math_tags": ["estimating probabilities from data", "separating cause from coincidence"],
+    "math_plain": "Agents maintain probabilistic beliefs about each other's skills and iteratively update these beliefs using game theory, choosing whether to cooperate or debate based on which strategy is most rational given the current belief state.",
+    "why_math": "It works because under incomplete information, sequentially rational decisions require agents to track what they know and don't know about each other. By modeling uncertainty as beliefs and using game equilibrium—where no agent can improve by unilaterally changing strategy—you ensure coordination that converges rather than deadlocks."
+  },
+  {
+    "gid": 635,
+    "math_tags": ["measuring similarity as nearness in a space"],
+    "math_plain": "Organizes document elements into a hierarchical structure that mirrors human reading patterns, then uses this structure to retrieve and reason about related content when answering questions.",
+    "why_math": "It works because documents have intrinsic logical relationships—sections belong to chapters, figures are cited by text, tables answer specific questions. When you organize by these relationships instead of treating text as separate chunks, similarity becomes structural proximity, and retrieval naturally follows the paths humans trace through documents."
+  },
+  {
+    "gid": 636,
+    "math_tags": ["estimating probabilities from data", "matching and allocating who gets what"],
+    "math_plain": "Learns what each user will respond to using probabilistic sampling, then uses those learned response probabilities to solve an optimization puzzle that fairly allocates which emails to send within budget and business constraints.",
+    "why_math": "It works because Thompson Sampling explores efficiently—each draw from your belief about response rates explores actions that might be optimal. Once you have good probability estimates, linear optimization lets you allocate actions subject to real-world constraints without manual rule-setting, guaranteeing fairness across stakeholders."
+  },
+  {
+    "gid": 638,
+    "math_tags": ["predicting the next item in a sequence"],
+    "math_plain": "Embeds time series by capturing dependencies that skip across multiple time steps rather than treating each moment independently, then feeds these richer patterns into a hybrid model that combines two different function-learning approaches.",
+    "why_math": "It works because real time series have repeating rhythms and trends that span multiple steps—daily patterns that repeat every 24 hours, weekly cycles, seasonal changes. Independent time-step embeddings destroy these long-range patterns, while capturing skip relationships preserves the structure the system uses to predict forward."
+  },
+  {
+    "gid": 639,
+    "math_tags": ["measuring similarity as nearness in a space", "ranking things by a learned score"],
+    "math_plain": "Finds users with similar preference histories to the target user, extracts their most informative past behaviors from multi-modal content, and ranks new items by how well they match the patterns those similar users acted on.",
+    "why_math": "It works because users with similar tastes tend to like similar new items, and some past behaviors signal preference strength more than others. By focusing on informative behaviors of truly similar users—not spurious neighbors—you reduce noise in the signal and rank new items according to the strongest preference patterns you can detect."
+  },
+  {
+    "gid": 640,
+    "math_tags": ["predicting the next item in a sequence", "spreading information across a network"],
+    "math_plain": "Captures both nearby relationships and distant multi-step connections between entities in a knowledge graph, then predicts future events by weighting the contribution of each type of connection based on a gating mechanism.",
+    "why_math": "It works because future events depend on both immediate neighbors and distant entities reachable through multiple hops. Gating mechanisms let the model learn which connection distance matters most for each entity pair, balancing local details against global context to forecast accurately."
+  },
+  {
+    "gid": 641,
+    "math_tags": ["learning a function from examples", "keeping only the few dimensions that matter"],
+    "math_plain": "Uses efficient binary spike signals to represent graph structure while adding selective real-valued adjustments at both fine and coarse scales, then simplifies the model by using only the number of processing steps each graph actually needs.",
+    "why_math": "It works because brains use sparse spike signals instead of dense arithmetic, which is inherently efficient. The dual-scale modulation preserves the selective amplification and suppression needed for expressiveness while staying in the efficient spiking regime. Adaptive latency removes computational waste on simple graphs that converge quickly."
+  },
+  {
+    "gid": 642,
+    "math_tags": ["weighting the parts that are most relevant"],
+    "math_plain": "Evaluates whether a recommendation policy is good by reweighting historical logs so they represent what would have happened if the new policy had been used, using probability scores to correct for the original policy's choices.",
+    "why_math": "It works because logged data only shows actions the old policy took, but you need to know how people would have responded to the new policy. Inverse propensity weighting corrects for bias by up-weighting rare actions the new policy favors and down-weighting common actions it avoids, making the log representative of the counterfactual."
+  },
+  {
+    "gid": 643,
+    "math_tags": ["measuring information", "combining many weak signals into a strong one"],
+    "math_plain": "Decomposes multi-modal information about items into three types—unique to each modality, shared across modalities, and synergistic patterns visible only in combinations—then adaptively weights each type based on individual user preferences.",
+    "why_math": "It works because modalities interact in non-additive ways; the synergy between text and images can convey meaning neither alone captures. Information decomposition reveals what each modality contributes uniquely versus redundantly. Personalizing the weights lets users whose preferences align with synergistic combinations get those gains."
+  },
+  {
+    "gid": 644,
+    "math_tags": ["learning a function from examples", "measuring similarity as nearness in a space"],
+    "math_plain": "Generates unified interest representations that combine explicit search queries and implicit behavioral signals, then uses these unified interests to guide which knowledge gets shared or kept separate between search and recommendation tasks.",
+    "why_math": "It works because search intent and recommendation intent are two views of the same underlying user need. By fusing them into a shared latent representation, you align them at the source; then using this unified interest to allocate attention prevents one task from sabotaging the other by forcing competing feature allocations."
+  }
+]

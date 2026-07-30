@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 420,
+    "math_tags": ["finding the settings with least error", "measuring surprise and information"],
+    "math_plain": "Minimize the worst-case gap between what an optimal decision-maker in hindsight could have achieved and what a decision-making policy achieves on average when hiring from a random-order stream.",
+    "why_math": "This works because the regret metric penalizes both being too conservative and too aggressive in the right way: policies that miss good candidates (high regret) and policies that hire bad ones (high regret) must balance the two, which naturally finds strategies that capture most of what's possible without requiring perfect timing. The additive gap is also robust—it scales fairly across different problem sizes."
+  },
+  {
+    "gid": 421,
+    "math_tags": ["separating cause from coincidence", "weighting the parts that are most relevant"],
+    "math_plain": "Measure how easily a model confuses one class with another, then shield the most vulnerable class pairs by pushing them farther apart in the model's learned feature space.",
+    "why_math": "This works because classes that the model already finds hard to distinguish are easiest targets for label flipping—their representations overlap, so swapping labels causes minimal learned change. By actively separating these confusable pairs, the model learns features where the classes occupy regions so different that label-flipped training examples fight less against the correct pattern, making the model more resistant."
+  },
+  {
+    "gid": 422,
+    "math_tags": ["measuring surprise and information", "learning a function from examples"],
+    "math_plain": "Create a shrunk dataset by minimizing mutual information between the synthetic data and the specific architecture used to build it, turning it into a two-player game where one side erases architecture-specific bias.",
+    "why_math": "This works because when you reduce information shared between the dataset and the model's identity (CNN vs ViT shape), you force the synthetic data to encode only the problem's true structure, not just shortcuts that one architecture happened to exploit. A dataset with minimal architecture-specific signal must rely on genuine patterns, so it trains any architecture well without re-distillation."
+  },
+  {
+    "gid": 423,
+    "math_tags": ["matching and allocating who gets what"],
+    "math_plain": "Frame fairness in information retrieval as an economic system with producers and consumers, using three economic dimensions (macro/micro, supply/demand, short/long-term) to organize all fairness strategies.",
+    "why_math": "This works because economic theory has spent centuries studying how to allocate scarce goods when different players have different values and power. Information retrieval is exactly that: ranking pages allocates user attention; showing results allocates visibility to content creators. Economics provides tested frameworks for thinking through whose gain comes at whose cost, making fairness assumptions explicit rather than hidden."
+  },
+  {
+    "gid": 424,
+    "math_tags": ["measuring similarity as nearness in a space", "spreading information across a network"],
+    "math_plain": "Measure how shared-opinion contributors rate a fact-check note differently from opposite-opinion contributors after the note becomes visible, and predict note disappearance from polarization patterns.",
+    "why_math": "This works because fact-check systems survive only if their communities can reach rough agreement across viewpoint divides. When viewpoint-similar raters cluster toward approval and dissimilar raters cluster toward rejection, the ratings become a proxy for the fundamental disagreement—if the note can't bridge the gap once exposed to both sides, it fails. Measuring this post-display shift predicts which notes lack real consensus."
+  },
+  {
+    "gid": 425,
+    "math_tags": ["combining many weak signals into a strong one", "separating cause from coincidence"],
+    "math_plain": "Split anomaly detection between lightweight edge screening and cloud-based verification, combining sensor signals with language-model-generated diagnostic text to explain what went wrong.",
+    "why_math": "This works because edge devices catch anomalies fast but cheaply, reducing false alarms before cloud resources. Cloud models then refine borderline cases with full accuracy, avoiding both the latency of pure cloud and the blind spots of pure edge. By combining multiple signal paths (sensor + diagnosis text), the system separates real failures (where all signals align) from noise (where they conflict)."
+  },
+  {
+    "gid": 426,
+    "math_tags": ["measuring similarity as nearness in a space", "keeping only the few dimensions that matter"],
+    "math_plain": "Compress a graph-with-text dataset by selecting representative text chunks that preserve information (via mutual information) and aligning similarity scores between the original and compressed versions.",
+    "why_math": "This works because information-theoretic selection picks text that carries signal about the downstream task, discarding noise without losing capability. By aligning similarity matrices (distances between nodes in the original and compressed versions stay proportional), you preserve the model's ability to learn from relationship structure even when the data shrinks. Stable similarity alignment defeats high-variance training, which is why most compression fails."
+  },
+  {
+    "gid": 427,
+    "math_tags": ["predicting the next item in a sequence", "learning by comparison of similar and different"],
+    "math_plain": "Generate search queries from news posts using a continually-learning model, score them by engagement and author authority, and use preference learning to prevent forgetting during online updates.",
+    "why_math": "This works because posts with rising engagement signal emerging trends before search volume forms, giving real-time signal unavailable to keyword-frequency methods. By pairing preference learning with continuous updates, the system learns to rank trending queries higher without catastrophic forgetting—comparison-based learning lets the model update on new preferences while retaining old knowledge, staying aligned with changing real-world trends."
+  },
+  {
+    "gid": 428,
+    "math_tags": ["measuring similarity as nearness in a space", "learning a function from examples"],
+    "math_plain": "Build a weighted graph connecting video, text, and semantic concept nodes; generate caption text by diffusing under graph-structure guidance, then prune low-quality nodes to refine the structure.",
+    "why_math": "This works because diffusion models are strong at iterative refinement under constraints. By conditioning on the multimodal graph structure, the model learns which semantic concepts are reachable from the video and text, guiding the caption toward meaningful cross-modal correlations rather than surface patterns. Pruning weak nodes tightens the structural signal, forcing the diffusion process to rely on genuine relationships rather than spurious ones."
+  },
+  {
+    "gid": 429,
+    "math_tags": ["estimating probabilities from data", "learning a function from examples"],
+    "math_plain": "Predict user transitions and survival in a blockchain platform using 16 survival prediction tasks on 21.8 million transactions, capturing temporal censoring and non-stationary patterns.",
+    "why_math": "This works because survival tasks directly model what matters in blockchain ecosystems: whether a user stays active or churns, accounting for the fact that some users drop out (censored) and market conditions shift over time. Real temporal data with these properties is rarer than simpler benchmarks, so learning robust methods on it transfers to other Web domains where behavior also censors and drifts. Building a shared benchmark lets researchers compete on same ground, improving generality."
+  },
+  {
+    "gid": 430,
+    "math_tags": ["learning a function from examples", "combining many weak signals into a strong one"],
+    "math_plain": "Summarize travel blogs with a finetuned model, generate multi-day itineraries via a language model, and let users weight historical/natural/cultural/amusement preferences via interactive sliders.",
+    "why_math": "This works because a finetuned summarizer distills key attractions from verbose blog text, reducing noise. The user-controlled preference sliders act as human-in-the-loop weights—humans specify what aspects matter to them, making the model's generative output locally optimized for real preferences instead of globally averaged. Combining summarization, generation, and preference sliders lets the pipeline catch signal (which attractions matter) that keyword search or generic chatbots would miss."
+  },
+  {
+    "gid": 431,
+    "math_tags": ["measuring similarity as nearness in a space", "weighting the parts that are most relevant"],
+    "math_plain": "Estimate how many distinct peers a host connects to, weighted by shared IP subnet prefix, using lightweight segment hashing to infer whether connections cluster locally or spread widely.",
+    "why_math": "This works because attackers and victims often talk to hosts in the same subnet (same network block) more than they do to random internet hosts. Standard cardinality counting treats all IPs equally, missing that signal. By weighting subnet-local connections higher, the method detects when a host's connections are tightly clustered (attack or intrusion pattern) versus dispersed (normal client). Lightweight hashing keeps memory low while capturing the structure that matters."
+  },
+  {
+    "gid": 432,
+    "math_tags": ["learning a function from examples", "learning by comparison of similar and different"],
+    "math_plain": "Fine-tune a language model on labeled node examples and unlabeled neighbors iteratively, using the model's predictions on unlabeled nodes to generate new training examples without expert annotation.",
+    "why_math": "This works because graph edges encode genuine correlation—if two nodes connect, they're likely similar in the task you're solving. Self-training leverages this structure: the model's early predictions on unlabeled neighbors provide noisy but correlated training signal, especially when those neighbors live near confident labeled nodes. Multiple iterations refine the signal by forcing the model to learn from nodes whose neighborhood structure matches labeled examples, so errors stay local rather than spreading."
+  },
+  {
+    "gid": 433,
+    "math_tags": ["separating cause from coincidence", "measuring similarity as nearness in a space"],
+    "math_plain": "Catalog how NFTs store their data (on-chain vs off-chain), classify storage vulnerabilities into access failure, tampering, and forgery defects, and measure severity using a standard vulnerability scoring system.",
+    "why_math": "This works because promised decentralization (immutable on-chain storage) conflicts with reality (centralized off-chain data)—the promise only holds if both the contract and the content are kept. By separating defect types (can the data disappear vs can it be corrupted vs can fakes replace it) and scoring systematically, the analysis reveals which assets are actually centralized and exposed to which real risks. Cataloging defects gives developers concrete targets to fix, not vague warnings."
+  },
+  {
+    "gid": 434,
+    "math_tags": ["learning a function from examples", "learning by comparison of similar and different"],
+    "math_plain": "Detect ads and trackers using learned features from code and URL that resist adversarial perturbation; maintain accuracy over time using low-cost pseudo-labeling without human re-labeling.",
+    "why_math": "This works because adversaries try small perturbations (a few URL characters) hoping the model fails, but latent code/URL features are harder to twist than raw text—the model learns invariant patterns. Pseudo-labeling for maintenance works because most ads remain ads; high-confidence predictions on new data stay correct, so retraining on predictions alone captures drift without expert overhead. Learning from perturbation-resistant features + comparison of predicted vs actual labels keeps the system robust and economical long-term."
+  }
+]

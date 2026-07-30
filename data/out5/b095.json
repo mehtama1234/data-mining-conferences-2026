@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 1425,
+    "math_tags": ["learning a function from examples"],
+    "math_plain": "Adjust a general-purpose language model to Tetun by teaching it language-specific patterns through prompting.",
+    "why_math": "It works because language models are flexible functions that adjust their outputs based on training examples and instructions; showing the model Tetun patterns teaches it to recognize and produce the language correctly."
+  },
+  {
+    "gid": 1426,
+    "math_tags": ["measuring similarity as nearness in a space", "combining many weak signals into a strong one"],
+    "math_plain": "Retrieve relevant professional examples and combine them to generate unique marketing ideas instead of averaging toward generic output.",
+    "why_math": "It works because retrieving real examples grounds the generation process in specific information rather than statistical averages; combining diverse examples pushes the output away from the statistical mean where most training text clusters."
+  },
+  {
+    "gid": 1427,
+    "math_tags": ["smart random sampling and averaging", "following the slope downhill to improve"],
+    "math_plain": "Run many agent instances in parallel on similar tasks and measure how many pass, then optimize routing across different models to improve success rates.",
+    "why_math": "It works because parallel runs on identical tasks reveal whether improvements come from the approach or chance, and routing to the best model for each step finds the steepest improvement path without running all models every time."
+  },
+  {
+    "gid": 1428,
+    "math_tags": ["ranking things by a learned score", "measuring similarity as nearness in a space"],
+    "math_plain": "Find and rank search results by relevance, then apply learned scoring models to reorder them, grounded in the language model's understanding of the question.",
+    "why_math": "It works because ranking first narrows the candidates before expensive scoring, and language models can learn to rank by comparing how closely each result aligns with the question's meaning through similarity in a learned space."
+  },
+  {
+    "gid": 1429,
+    "math_tags": ["measuring similarity as nearness in a space", "separating cause from coincidence"],
+    "math_plain": "Extract claims from reviews, find evidence in the paper, and check if the evidence supports each claim using natural language reasoning.",
+    "why_math": "It works because written claims and supporting evidence, when found, should align in meaning; failing to align signals the claim is unsupported or incorrect, isolating reviewers' subjective opinions from factual statements."
+  },
+  {
+    "gid": 1430,
+    "math_tags": ["combining many weak signals into a strong one", "following the slope downhill to improve"],
+    "math_plain": "Generate video ad clips across themes, verify each stage to find visual errors, then refine inputs based on feedback before assembling the final video.",
+    "why_math": "It works because testing and feedback at intermediate stages catches errors early when they are cheap to fix; cascading verification and refinement guides the system toward quality outputs by iterating toward fewer defects."
+  },
+  {
+    "gid": 1431,
+    "math_tags": ["measuring similarity as nearness in a space", "spreading information across a network"],
+    "math_plain": "Query graph data using set constraints to find groups of related objects and retrieve structures like communities where items cluster together.",
+    "why_math": "It works because real-world entities form natural clusters; representing them in a graph and querying for cohesive subgroups finds these patterns efficiently, treating the graph structure itself as a index on which clusters exist."
+  },
+  {
+    "gid": 1432,
+    "math_tags": ["measuring similarity as nearness in a space", "separating cause from coincidence"],
+    "math_plain": "Organize museum objects and metadata into a typed network, then answer questions by finding entities related to the question and retrieving their connected evidence.",
+    "why_math": "It works because museum data is inherently relational—objects connect through people, events, and places; representing these connections explicitly lets similarity become reachability, so finding related objects becomes following edges in the graph."
+  },
+  {
+    "gid": 1433,
+    "math_tags": ["ranking things by a learned score", "combining many weak signals into a strong one"],
+    "math_plain": "Score and rank recipes by personalized preference and healthiness, then explain each recommendation using natural language to persuade users toward healthier choices.",
+    "why_math": "It works because combining nutritional data with personal taste preference creates two competing signals; explaining the healthy trade-off in natural language makes the reasoning transparent, letting users trust and adopt the recommendation."
+  },
+  {
+    "gid": 1434,
+    "math_tags": ["measuring similarity as nearness in a space", "smart random sampling and averaging"],
+    "math_plain": "Infer the reader's research interests from their reading behavior and background, then search and retrieve papers similar to what they are reading but tailored to their specialization.",
+    "why_math": "It works because a reader's background and current paper implicitly define their interests as points in a knowledge space; retrieving other papers nearby in that space produces relevant results personalized to that researcher's needs."
+  },
+  {
+    "gid": 1435,
+    "math_tags": ["measuring similarity as nearness in a space", "separating cause from coincidence"],
+    "math_plain": "Compare legal document paragraphs by semantic meaning rather than word-level matching to detect inconsistencies, rewrites, and paraphrased contradictions.",
+    "why_math": "It works because paraphrased text has the same meaning even with different words; semantic comparison groups paragraphs by what they actually say, so contradictions that survive paraphrasing become detectable without character-level fragility."
+  },
+  {
+    "gid": 1436,
+    "math_tags": ["ranking things by a learned score", "combining many weak signals into a strong one"],
+    "math_plain": "Predict missing relations between entities using embeddings, retrieve Wikipedia evidence for each candidate, then score which candidates are supported by that evidence.",
+    "why_math": "It works because knowledge graph embeddings capture plausible relations efficiently but without external grounding; retrieving and scoring against real evidence filters predictions to only those supported by documented facts, removing false positives."
+  },
+  {
+    "gid": 1437,
+    "math_tags": ["estimating probabilities from data", "separating cause from coincidence"],
+    "math_plain": "Extract atomic facts from long text, search multiple sources to find supporting evidence, aggregate evidence across sources, then estimate what fraction of facts are correct.",
+    "why_math": "It works because hallucinations stand out when facts are broken into small claims checked against real sources; multi-source aggregation amplifies signals from true facts while errors in one source are contradicted by others, revealing the true factuality rate."
+  },
+  {
+    "gid": 1438,
+    "math_tags": ["ranking things by a learned score", "combining many weak signals into a strong one"],
+    "math_plain": "Retrieve trademark candidates, simulate adversarial examination across appearance, sound, and meaning dimensions, then aggregate conflict scores to prioritize review.",
+    "why_math": "It works because trademark confusion involves multiple independent criteria—none alone suffices; simulating an adversarial exchange explores all dimensions, and aggregating dimension-specific scores into conflict risk captures the multi-criteria nature of real legal judgment."
+  },
+  {
+    "gid": 1439,
+    "math_tags": ["measuring similarity as nearness in a space", "combining many weak signals into a strong one"],
+    "math_plain": "Extract mathematical formulas and text from PDFs, then combine formula matching and text similarity in a single ranking to retrieve math-heavy content.",
+    "why_math": "It works because math documents encode meaning in both symbols and words; treating them as separate retrieval channels and combining rankings lets users find content where either the math structure or explanation matches their query."
+  }
+]

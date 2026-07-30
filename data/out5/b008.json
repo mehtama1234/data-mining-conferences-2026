@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 120,
+    "math_tags": ["ranking things by a learned score", "separating cause from coincidence"],
+    "math_plain": "Score the expected profit a validator coalition gains from hiding blocks versus adopting the standard honest strategy.",
+    "why_math": "Miners only care about which choice earns more; by calculating exact expected payoffs, you can find which strategy dominates. If profit exceeds the honest payout, that strategy is adopted."
+  },
+  {
+    "gid": 121,
+    "math_tags": ["finding the settings with least error", "following the slope downhill to improve"],
+    "math_plain": "Craft malicious documents that are semantically similar to user queries yet maximize token consumption during inference.",
+    "why_math": "The attack works by poisoning retrieval so the model fetches long, complex documents; optimizing document tokens directly targets the resource bottleneck. Learning agents can discover which phrases trigger maximum token explosion."
+  },
+  {
+    "gid": 122,
+    "math_tags": ["matching and allocating who gets what"],
+    "math_plain": "Select vertices with limited lifespans to cover edges, where a vertex at time t covers edges until time t plus duration minus one.",
+    "why_math": "This is a temporal matching problem: you match protective coverage to dangerous edges, but coverage expires. The lifespan constraint turns static vertex cover into a scheduling problem solvable via layer-by-layer approximation."
+  },
+  {
+    "gid": 123,
+    "math_tags": ["finding the settings with least error", "smart random sampling and averaging"],
+    "math_plain": "Solve the fractional allocation online, then round to integers using controlled randomness to preserve the cost guarantee.",
+    "why_math": "Rounding works because fractional solutions are easier to compute and remain feasible; randomized rounding spreads the fractional excess to integers while keeping expected cost unchanged."
+  },
+  {
+    "gid": 124,
+    "math_tags": ["learning a function from examples"],
+    "math_plain": "Train language models on historical character biographies to generate authentic role-playing dialogue.",
+    "why_math": "Character behavior patterns exist in historical texts; learning these patterns allows models to predict plausible responses consistent with documented lives."
+  },
+  {
+    "gid": 125,
+    "math_tags": ["learning a function from examples", "following the slope downhill to improve"],
+    "math_plain": "Test whether AI repair systems can match ground-truth output by iteratively applying fixes until code execution succeeds.",
+    "why_math": "Repairs work by exploiting the structure of common failures: missing dependencies, path issues, logic gaps. A system that learns these patterns can address each type. Success requires output equivalence, not just execution."
+  },
+  {
+    "gid": 126,
+    "math_tags": ["measuring similarity as nearness in a space", "separating cause from coincidence"],
+    "math_plain": "Score how well the model's extracted graph structure matches the correct relationship directions between entities.",
+    "why_math": "Hallucinations show up as wrong edge directions; by treating the correct graph and extracted graph as two configurations and measuring their alignment distance, you separate correct from corrupted structures."
+  },
+  {
+    "gid": 127,
+    "math_tags": ["spreading information across a network", "measuring surprise and information"],
+    "math_plain": "Model opinion propagation as a point process where opinions flow at rates determined by emotional context and hierarchical position.",
+    "why_math": "Opinion spreads in bursts when emotions align, modeled as time-clustered events; the rates reveal how hierarchy and feeling drive adoption. This captures that propagation speed depends on both content and audience readiness."
+  },
+  {
+    "gid": 128,
+    "math_tags": ["learning a function from examples"],
+    "math_plain": "Standardize preprocessing and evaluation across multiple foundation models on structured tabular data.",
+    "why_math": "Different models use different formats; unifying them reveals which algorithm genuinely works best on a given task by removing implementation noise."
+  },
+  {
+    "gid": 129,
+    "math_tags": ["measuring similarity as nearness in a space", "learning by comparison of similar and different"],
+    "math_plain": "Map images and text to a shared space where groups of semantically similar samples sit close together, then retrieve across modalities.",
+    "why_math": "Hypergraphs capture that many images share one concept with many texts; placing such groups close makes retrieval exact—finding one similar sample finds the whole related group."
+  },
+  {
+    "gid": 130,
+    "math_tags": ["learning by comparison of similar and different", "weighting the parts that are most relevant"],
+    "math_plain": "Learn which tools best match user intent by optimizing a reward signal from successful tool calls on diverse queries.",
+    "why_math": "Tool selection is a ranking problem; trial-and-error with reward feedback discovers which features of a query predict tool match. Reinforcement learning works because success/failure is directly observable."
+  },
+  {
+    "gid": 131,
+    "math_tags": ["predicting the next item in a sequence", "weighting the parts that are most relevant"],
+    "math_plain": "Recommend intermediate articles that balance current interest alignment with gradual drift toward a target topic, weighted by the user's openness.",
+    "why_math": "Users resist radical shifts but accept gradual ones; weighting by openness prevents rejection. Intermediate articles act as stepping stones, each one slightly closer to the target than the last."
+  },
+  {
+    "gid": 132,
+    "math_tags": ["separating cause from coincidence", "matching and allocating who gets what"],
+    "math_plain": "Ask targeted clarification questions to eliminate competing interpretations of an ambiguous query.",
+    "why_math": "Ambiguous queries map to multiple solution subgraphs; each question collapses possibilities by revealing which graph region the user meant. Efficient probing asks only questions that split remaining hypotheses."
+  },
+  {
+    "gid": 133,
+    "math_tags": ["finding the settings with least error", "following the slope downhill to improve"],
+    "math_plain": "Train networks in regions where small input changes cause small output changes, measured by the flatness of the loss landscape.",
+    "why_math": "Sharp valleys predict poor generalization: a network tuned to a narrow optimum breaks when data shifts slightly. Flat minima are stable—small perturbations barely change the loss, so the network generalizes."
+  },
+  {
+    "gid": 134,
+    "math_tags": ["measuring surprise and information"],
+    "math_plain": "Identify visual design choices—color, layout, symbolic encoding—that do not directly represent data yet improve insight and engagement.",
+    "why_math": "Visual properties work because they exploit how humans process information: color evokes emotion, layout guides attention, symbols encode meaning. These channels communicate beyond the numbers alone."
+  }
+]

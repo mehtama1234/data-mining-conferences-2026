@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 315,
+    "math_tags": ["following the slope downhill to improve", "learning by comparison of similar and different", "estimating probabilities from data"],
+    "math_plain": "The system learns to act by assigning rewards based on three human drives (autonomy, competence, relatedness), then improves choices by descending toward better behavior.",
+    "why_math": "These three drives match how humans actually learn and stay motivated. Rewarding actions that feed each drive naturally guides the agent toward both competent behavior and smart exploration, and the direction-descent process guarantees steady improvement."
+  },
+  {
+    "gid": 316,
+    "math_tags": ["separating cause from coincidence"],
+    "math_plain": "The attack identifies confusions between security checks and backend servers by manipulating message priorities in ways that rearrange how payloads travel but leave content unchanged.",
+    "why_math": "Security checks and backend servers parse the same protocol, but if they disagree on which messages matter most, malicious content can slip past the check while the backend still processes it. The reordering is invisible to the check but visible to different parsing choices."
+  },
+  {
+    "gid": 317,
+    "math_tags": ["measuring similarity as nearness in a space", "learning a function from examples"],
+    "math_plain": "The system learns which radio frequencies are in use by treating all frequencies as a connected graph where each device only observes its nearby frequencies, then shares learned patterns across the network.",
+    "why_math": "Frequencies that behave similarly sit naturally close in graph space. When each device learns only from its local neighborhood but the graph connects everything, shared structure means a device seeing only fragments can infer the whole by following connections to neighbors' observations."
+  },
+  {
+    "gid": 318,
+    "math_tags": ["learning a function from examples", "estimating probabilities from data"],
+    "math_plain": "The detector retrieves similar dangerous code examples from a knowledge base, then uses reasoning to assess whether new code's purpose matches its behavior.",
+    "why_math": "Malicious code follows patterns. By comparing new code against past harmful examples, you inherit centuries of expert judgment compressed into those examples. If the new code matches a dangerous pattern's shape, the odds it is dangerous rise sharply."
+  },
+  {
+    "gid": 319,
+    "math_tags": ["combining many weak signals into a strong one", "learning a function from examples"],
+    "math_plain": "The system learns personalized recommendations across different private domains by sharing only the direction of each local improvement, not its size, to prevent overfitting to one domain's style.",
+    "why_math": "When domains differ, the magnitude of updates scales differently. By normalizing to direction alone, you average together signals from domains at equal weight regardless of noise, like taking the compass bearing instead of the raw compass needle reading."
+  },
+  {
+    "gid": 320,
+    "math_tags": ["keeping only the few dimensions that matter", "learning a function from examples"],
+    "math_plain": "The system learns graph representations by deliberately destroying low-frequency features and forcing the model to reconstruct them from high-frequency remnants, enriching how it captures important local structure.",
+    "why_math": "Deleting low-frequency patterns forces the model to extract and preserve local detail, the high-frequency signals that matter. When reconstruction demands both types of signals work together, the model learns to blend them effectively instead of ignoring one."
+  },
+  {
+    "gid": 321,
+    "math_tags": ["following the slope downhill to improve", "estimating probabilities from data"],
+    "math_plain": "The system plans budget allocation across ad channels by sampling many plausible allocation paths from past patterns, then refining them in real-time as new outcomes arrive.",
+    "why_math": "Past budgets and outcomes show which allocations worked. Sampling from that distribution generates good starting guesses for today. Real-time refinement adjusts guesses when today's market differs, avoiding both rigid pre-planned budgets and algorithms that forget yesterday's lessons."
+  },
+  {
+    "gid": 322,
+    "math_tags": [],
+    "math_plain": "The literature review does not present a mathematical method; it surveys how data and algorithms shape policy negotiation by altering what options decision-makers perceive as feasible.",
+    "why_math": "No mathematical principle applies; this is a qualitative social science analysis of how analytical tools change power dynamics in negotiations by pre-selecting visible options before deliberation begins."
+  },
+  {
+    "gid": 323,
+    "math_tags": [],
+    "math_plain": "This is a track introduction about the history of web technologies, not a mathematical research contribution.",
+    "why_math": "No mathematics is involved; the abstract frames historical patterns in web development and the recurring tensions between competing values like openness versus control."
+  },
+  {
+    "gid": 324,
+    "math_tags": ["measuring surprise and information"],
+    "math_plain": "The system verifies quantum computation results using zero-knowledge proof protocols that confirm correctness without revealing the circuit's structure or proprietary noise models.",
+    "why_math": "Zero-knowledge proofs work because the verifier can check a commitment matches an execution without ever seeing the secret. Here, the quantum provider can prove the result follows from the submitted circuit without exposing that circuit, protecting intellectual property on both sides."
+  },
+  {
+    "gid": 325,
+    "math_tags": ["matching and allocating who gets what"],
+    "math_plain": "The algorithm assigns papers to reviewers as chores where each reviewer either bids to accept a paper (zero cost) or gets assigned it anyway (high cost), then finds an allocation that is fair and minimizes total cost.",
+    "why_math": "Bids reveal who genuinely wants which paper. Assigning to volunteers first costs nothing and respects preference. Assigning unwilling reviewers a high cost forces the algorithm to minimize waste, and fairness rules prevent any one reviewer from bearing all the burden."
+  },
+  {
+    "gid": 326,
+    "math_tags": ["ranking things by a learned score"],
+    "math_plain": "The study measures what products AI shopping agents choose given different layouts, prices, and reviews, revealing how agents rank and weigh options differently than humans or each other.",
+    "why_math": "Agents learn rankings from their training data, but different agents prioritize different signals. By varying one feature at a time and watching choice change, you identify what ranking rule each agent actually learned, exposing hidden biases and assumptions baked into them."
+  },
+  {
+    "gid": 327,
+    "math_tags": ["learning a function from examples", "combining many weak signals into a strong one"],
+    "math_plain": "The system adapts a graph model across new domains by maintaining separate learned pieces for each domain whose directions stay mathematically perpendicular, preventing interference while sharing knowledge.",
+    "why_math": "Orthogonal directions don't interfere; when task-specific adapters point in perpendicular directions, one task's update does not undo another's. A routing mechanism then decides which pieces to activate per domain, letting the model accumulate different strengths without forgetting."
+  },
+  {
+    "gid": 328,
+    "math_tags": ["following the slope downhill to improve", "estimating probabilities from data"],
+    "math_plain": "The system finds a community around a seed user by learning a vector field that smoothly transforms a generic distribution into the target community's shape in curved space, starting from a refined seed.",
+    "why_math": "Curved space geometry captures hierarchy in networks; radius encodes depth and angle encodes type. Learning to flow between distributions in this space lets you generate new community members that respect both local geometry and the anchor points, avoiding seed misguidence."
+  },
+  {
+    "gid": 329,
+    "math_tags": [],
+    "math_plain": "This is a workshop overview on multimodal content analysis for social responsibility, not a mathematical research contribution.",
+    "why_math": "No mathematical principle; the abstract describes interdisciplinary collaboration on content moderation, ethics, and large vision-language models as tools for reasoning about multimodal media at scale."
+  }
+]

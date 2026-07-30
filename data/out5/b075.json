@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 1125,
+    "math_tags": ["ranking things by a learned score", "weighting the parts that are most relevant"],
+    "math_plain": "Rank retrieved documents by their political stance balance, then weight which ones go to the language model based on fairness criteria rather than just relevance.",
+    "why_math": "When you score documents by multiple fairness dimensions and weight the balanced ones higher, you push the final answer toward representing more perspectives. The system works because it catches bias at the retrieval stage before it gets amplified during generation."
+  },
+  {
+    "gid": 1126,
+    "math_tags": ["measuring similarity as nearness in a space", "weighting the parts that are most relevant"],
+    "math_plain": "Match images and text by computing their nearness in a shared space, then retrieve the most similar structured knowledge graph entries to feed into question answering.",
+    "why_math": "When you align images and text into the same geometric space where similar things sit close, retrieval becomes a simple nearest-neighbor search. Adding structure via knowledge graphs helps because it lets you follow meaningful relationships rather than just grabbing isolated facts."
+  },
+  {
+    "gid": 1127,
+    "math_tags": ["ranking things by a learned score", "measuring surprise and information"],
+    "math_plain": "Store individual atomic facts with validity timestamps and confidence, then rank them by freshness and conflict-free status before returning them as retrieval results.",
+    "why_math": "It works because you're separating the signal (individual facts) from noise (contradictions and stale information). By tracking each fact's lifetime and filtering expired ones before ranking, you prevent the system from returning answers that are outdated or contradict themselves."
+  },
+  {
+    "gid": 1128,
+    "math_tags": ["measuring similarity as nearness in a space", "estimating probabilities from data"],
+    "math_plain": "Estimate how confident a person-image match is by checking if image-to-person and person-to-image retrievals both rank it highly, then retrain the model only on high-confidence matches.",
+    "why_math": "When two independent rankings agree, that agreement signals genuine alignment rather than noise. The system works because disagreement between directions reveals uncertainty, and low-uncertainty matches are more reliable as targets for retraining."
+  },
+  {
+    "gid": 1129,
+    "math_tags": ["ranking things by a learned score", "following the slope downhill to improve"],
+    "math_plain": "Rank vertices by how much information spreads outward from them, then extract subgraphs that maintain a minimum density threshold of connections.",
+    "why_math": "It works because vertices that spread information widely sit near tightly-connected clusters. By ranking by diffusion strength and extracting subgraphs that sustain density, you find natural cohesive groups even in sparse graphs."
+  },
+  {
+    "gid": 1130,
+    "math_tags": ["learning by comparison of similar and different", "measuring similarity as nearness in a space"],
+    "math_plain": "Build separate graphs for collaborative signals and semantic signals in Q&A pairs, score matches in each graph, then merge the scores to rank pairs.",
+    "why_math": "It works because collaborative patterns (who likes what) and semantic patterns (what topics relate) are governed by different rules. Keeping them separate lets each scoring method exploit its own structure, then combining them captures the full picture."
+  },
+  {
+    "gid": 1131,
+    "math_tags": ["learning a function from examples", "weighting the parts that are most relevant"],
+    "math_plain": "Learn which user preferences matter most for each content type separately, then convert those learned weights into discrete tokens that control text and image generation.",
+    "why_math": "It works because different content types (text vs. image) matter differently to users. Learning separate preference models lets you capture modal-specific signals, and quantizing into tokens makes preferences actionable for generators that consume discrete input."
+  },
+  {
+    "gid": 1132,
+    "math_tags": ["ranking things by a learned score", "separating cause from coincidence"],
+    "math_plain": "Extract matching rules from limited labeled examples, cluster rules into reusable patterns, then retrieve the most relevant pattern for each new entity pair to guide scoring.",
+    "why_math": "It works because explicit rules are more transferable than learned weights alone. Grouping rules by pattern lets you identify which rule actually applies to a new case, and rule-guided scoring is more robust than hoping fine-tuning captured the right behavior from scarce data."
+  },
+  {
+    "gid": 1133,
+    "math_tags": ["ranking things by a learned score", "separating cause from coincidence"],
+    "math_plain": "Iteratively rank image-entity matches using multiple scoring signals, enforce that related entities get consistent matches, and only call expensive reasoning for ambiguous pairs.",
+    "why_math": "It works because global consistency (enforcing that related items match coherently) catches mistakes that local ranking would miss. The system exploits the constraint that if item A matches product X and item B is related to A, then B should relate to X too."
+  },
+  {
+    "gid": 1134,
+    "math_tags": ["ranking things by a learned score", "measuring similarity as nearness in a space"],
+    "math_plain": "Extract subgraph patterns and temporal windows from questions, retrieve the subgraph from the knowledge base that matches those patterns, then compress and feed to language model.",
+    "why_math": "It works because structured subgraphs preserve the relational patterns that question answering needs. Instead of losing structure by converting to plain text, you keep the skeleton of how facts relate and when they were true, making reasoning more direct."
+  },
+  {
+    "gid": 1135,
+    "math_tags": ["following the slope downhill to improve", "smart random sampling and averaging"],
+    "math_plain": "Learn expected future value of bids using a score function, generate candidate bids by sampling from a learned bid distribution, and reweight samples by a learned fallback policy to reduce financial risk.",
+    "why_math": "It works because you're balancing exploration (trying new bid levels) with safety (falling back to known-good policies when learning is uncertain). The score function guides exploration toward higher returns, while the fallback prevents catastrophic bids."
+  },
+  {
+    "gid": 1136,
+    "math_tags": ["learning a function from examples", "following the slope downhill to improve"],
+    "math_plain": "Train a language model to reason and call tools with parallel decoding, improve it via preference learning, then reuse intermediate reasoning steps across multiple tool calls.",
+    "why_math": "It works because the model can generate multiple candidate reasoning paths in parallel instead of one at a time, then select the best trajectory. Preference learning tunes the model to favor reasoning that leads to correct tool calls, and reusing steps amortizes computation."
+  },
+  {
+    "gid": 1137,
+    "math_tags": ["ranking things by a learned score", "separating cause from coincidence"],
+    "math_plain": "Train separate expert models for recommendation quality and fairness, route each input to the appropriate expert via a learned router, and optimize both objectives jointly.",
+    "why_math": "It works because fairness and utility compete when baked into a single model, but separate experts let you suppress sensitive attributes in one expert without corrupting preference learning in the other. The router learns when to trust each expert."
+  },
+  {
+    "gid": 1138,
+    "math_tags": ["spreading information across a network", "smart random sampling and averaging"],
+    "math_plain": "Ensemble multiple click prediction models using a diffusion process that spread weights across user behavior sequences, applying structure-aware smoothing to preserve item dependencies.",
+    "why_math": "It works because diffusion across a behavior graph lets information from related items influence the prediction without destroying what we know about item connections. Structure-aware noise injection (from the graph) is smarter than isotropic noise because it respects actual relationships."
+  },
+  {
+    "gid": 1139,
+    "math_tags": ["separating cause from coincidence", "measuring surprise and information"],
+    "math_plain": "Extract privacy practices from policy text, classify violations into types (inherent vs. contextual), then compare practices against patterns mined from compliant policies to flag anomalies.",
+    "why_math": "It works because compliance patterns from many compliant policies form a baseline of what practices typically match a stated purpose. Violations are contexts where a practice deviates significantly from the baseline or contradicts what the service needs, which becomes detectable when you have the pattern."
+  }
+]

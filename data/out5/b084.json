@@ -1,0 +1,139 @@
+[
+  {
+    "gid": 1260,
+    "math_tags": [
+      "keeping only the few dimensions that matter",
+      "learning a function from examples",
+      "measuring similarity as nearness in a space"
+    ],
+    "math_plain": "Maps user and model fingerprints into a shared low-dimension space where finding the best model becomes finding the nearest point to the user.",
+    "why_math": "Once you rotate high-dimensional data into a space where less important directions are removed, finding the nearest neighbor in that space is fast and direct. Projecting both users and models through the same lens means 'similar in important ways' becomes 'close together,' letting exact geometric nearness solve the matching problem."
+  },
+  {
+    "gid": 1261,
+    "math_tags": [
+      "separating cause from coincidence",
+      "measuring similarity as nearness in a space"
+    ],
+    "math_plain": "Measures when summaries match or contradict their cited sources by scoring agreement between summary content and source text similarities.",
+    "why_math": "If evidence truly supports a summary, the main ideas in both should be saying the same things and appearing in the same order. When you measure how much summaries and sources align point-by-point, mismatches reveal where claims drift from what the sources actually say."
+  },
+  {
+    "gid": 1262,
+    "math_tags": [
+      "finding the settings with least error",
+      "measuring similarity as nearness in a space",
+      "weighting the parts that are most relevant"
+    ],
+    "math_plain": "Learns how much to downweight or amplify each dimension when compressing high-dimensional text representations, based on how much signal versus noise each dimension carries at different sizes.",
+    "why_math": "Useful dimensions have strong signals; noisy ones amplify garbage. By measuring the ratio of real signal to noise in each direction, you can reweight before compression—dimensions with worse ratios get suppressed, preserving what matters while discarding clutter."
+  },
+  {
+    "gid": 1263,
+    "math_tags": [
+      "ranking things by a learned score",
+      "learning by comparison of similar and different"
+    ],
+    "math_plain": "Learns when feedback will hurt or help by comparing user reactions to rankings with and without query expansion, scoring harm-avoidance higher than benefit-gain.",
+    "why_math": "Users explicitly show what they like or dislike by their clicks and dwell time. Collecting enough paired comparisons (expansion vs. no expansion) reveals the true probability expansion helps that user on that query. Avoiding losses matters more than chasing gains because the cost of one bad result outweighs many mediocre gains."
+  },
+  {
+    "gid": 1264,
+    "math_tags": [
+      "measuring similarity as nearness in a space",
+      "combining many weak signals into a strong one"
+    ],
+    "math_plain": "Groups texts by computing shared pseudo-labels for each, then pooling text embeddings with the average of labels that describe it, weighting by overlap.",
+    "why_math": "When many texts share the same thematic label, averaging their label embeddings creates a stable centroid. Texts close to that centroid are likely similar. Pooling each text's embedding toward shared labels amplifies the signal from labels many texts agree on, drowning out noise."
+  },
+  {
+    "gid": 1265,
+    "math_tags": [
+      "ranking things by a learned score",
+      "separating cause from coincidence"
+    ],
+    "math_plain": "Counts excessive retrieval and reasoning steps in agent trajectories, then assigns penalty scores to discourage wasteful patterns and guide trajectories toward efficiency.",
+    "why_math": "By measuring exactly what kinds of steps lead to waste (redundant documents, circular reasoning), you can assign a cost that makes those choices less attractive. Agents optimize what you measure; measuring waste directly makes them optimize it away."
+  },
+  {
+    "gid": 1266,
+    "math_tags": [
+      "measuring similarity as nearness in a space",
+      "keeping only the few dimensions that matter"
+    ],
+    "math_plain": "Adapts Euclidean text-image embeddings to hyperbolic space (where hierarchy is native) for similarity scoring, preserving Euclidean training while adding hierarchy awareness.",
+    "why_math": "Hyperbolic geometry naturally encodes hierarchies: moving from coarse to fine detail corresponds to moving outward radially, distances expand exponentially. By computing similarity in hyperbolic geometry while keeping all training Euclidean, you get hierarchy for free at matching time without retraining."
+  },
+  {
+    "gid": 1267,
+    "math_tags": [
+      "learning by comparison of similar and different",
+      "measuring similarity as nearness in a space"
+    ],
+    "math_plain": "Trains models to map brain signals (EEG) close to text passages with matching meaning, comparing modalities under controlled sample sizes and vocabularies.",
+    "why_math": "If the model pulls brain signals and text together in a shared space only when they convey the same meaning, later 'nearness to a query' becomes 'finding passages the brain recognizes.' Controlling data and vocabulary isolates real neural differences from artifacts."
+  },
+  {
+    "gid": 1268,
+    "math_tags": [
+      "measuring similarity as nearness in a space",
+      "weighting the parts that are most relevant"
+    ],
+    "math_plain": "Trains a content encoder to map new items into a space where item-to-item similarity predicts user preference, using sharpened loss to ignore uninformative candidate items.",
+    "why_math": "If you build a space where items users prefer sit close together, then 'find recommendations' becomes 'find neighbors.' Sharpening the loss (zeroing gradients for obviously wrong items) focuses learning on hard distinctions, ignoring noise that doesn't change rankings."
+  },
+  {
+    "gid": 1269,
+    "math_tags": [
+      "learning by comparison of similar and different",
+      "combining many weak signals into a strong one"
+    ],
+    "math_plain": "Identifies documents whose inclusion in feedback sets degrades retrieval results, analyzing interactions showing that harmful documents can combine to form helpful sets.",
+    "why_math": "Feedback documents act as a system: each reweights what's important, and their combined effect depends on how they steer together. Some documents hurt alone but help in combination because their weaknesses cancel or their signals reinforce differently than in isolation."
+  },
+  {
+    "gid": 1270,
+    "math_tags": [
+      "weighting the parts that are most relevant",
+      "ranking things by a learned score"
+    ],
+    "math_plain": "Selects decay weights for ranking comparisons using power-law distributions, choosing parameters so top results receive emphasis matching experimental goals.",
+    "why_math": "Comparisons only need to order results correctly, not score them truly. A carefully chosen decay weight can boost top items while ignoring tail differences. Finding the right weight shape means top-ranking results dominate the signal while irrelevant details stay quiet."
+  },
+  {
+    "gid": 1271,
+    "math_tags": [
+      "measuring similarity as nearness in a space",
+      "combining many weak signals into a strong one"
+    ],
+    "math_plain": "Selects passages by measuring how much each sentence eliminates wrong answers, then orders sentences by elimination power, improving reasoning over cosine-similarity selection.",
+    "why_math": "A sentence that strongly rules out many bad answers is more informative for reasoning than a sentence merely similar to the question. By measuring elimination power (how much narrower the possibility space becomes), you select and order evidence by its actual reasoning value, not surface similarity."
+  },
+  {
+    "gid": 1272,
+    "math_tags": [
+      "separating cause from coincidence",
+      "estimating probabilities from data"
+    ],
+    "math_plain": "Measures how many times entities appear in training data (exposure) and compares it to both real-world popularity and the model's stated preferences, showing they align more with exposure than ground truth.",
+    "why_math": "Models learn what the training data emphasizes. If an entity appears frequently in pretraining, the model learns strong associations with it regardless of reality. Exposure captures what's statistically regular in data; aligning to exposure means the model is doing exactly what training shaped it to do."
+  },
+  {
+    "gid": 1273,
+    "math_tags": [
+      "measuring similarity as nearness in a space",
+      "combining many weak signals into a strong one"
+    ],
+    "math_plain": "Ranks retrieval candidates by blending semantic closeness with hyperbolic structural similarity, using query-level hierarchy alignment to adjust structural weight.",
+    "why_math": "Semantic closeness alone misleads on multi-hop questions by ranking semantically similar but structurally irrelevant results first. Hyperbolic distance captures hierarchical structure naturally. Combining both and adapting the mix per query lets structural evidence override semantics when the query needs multi-hop reasoning."
+  },
+  {
+    "gid": 1274,
+    "math_tags": [
+      "combining many weak signals into a strong one",
+      "learning a function from examples"
+    ],
+    "math_plain": "Applies personalized low-rank changes to a language model's parameters for each user, producing separate behavioral and semantic adaptations that fuse into unified recommendations.",
+    "why_math": "A single model backbone can learn to behave differently per user if you route through user-specific tweaks. Small per-user perturbations are efficient (low-rank, quick updates) yet powerful because they operate in the full learned feature space. Two separate adaptations fused together capture both user history and meaning."
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 1290,
+    "math_tags": ["ranking things by a learned score", "weighting the parts that are most relevant"],
+    "math_plain": "Score each user-item pair using a learned model that weights different factors—genuine interest vs social influence—differently for each one.",
+    "why_math": "By learning to separate what users actually want from what they're doing because others do it, you can score predictions more accurately. Weighting the true factors more heavily pushes good recommendations to the top."
+  },
+  {
+    "gid": 1291,
+    "math_tags": ["finding the settings with least error", "learning by comparison of similar and different"],
+    "math_plain": "Train a small search model via reinforcement learning to pick which code snippets matter for a solver, using feedback on whether retrieved code actually helps patch generation.",
+    "why_math": "It works because you're optimizing directly against what the solver needs: code that leads to a working patch. Learning from successful vs failed retrieval attempts builds a searcher that knows what actually matters downstream."
+  },
+  {
+    "gid": 1292,
+    "math_tags": ["ranking things by a learned score"],
+    "math_plain": "Score click-through likelihood using encrypted computation that computes feature interactions efficiently without ever exposing the raw data.",
+    "why_math": "The math works inside the encrypted domain by packing related calculations together so you can do pairwise interactions without the expensive quadratic blowup. The ranking stays accurate because the core scoring formula is unchanged."
+  },
+  {
+    "gid": 1293,
+    "math_tags": ["spreading information across a network", "weighting the parts that are most relevant"],
+    "math_plain": "Model emotion as information flowing across a graph of speakers and modalities, where edges capture who influences whom, then weight the paths by which ones matter most.",
+    "why_math": "Emotion spreads through conversation via who speaks to whom and which signals (voice, text, face) carry the most weight. By flowing information along those edges with learnable importance, you capture the real dependencies."
+  },
+  {
+    "gid": 1294,
+    "math_tags": ["grouping similar things together", "combining many weak signals into a strong one"],
+    "math_plain": "Group short queries into clusters that represent coherent search sessions, then combine them into a single long narrative that mimics human search behavior.",
+    "why_math": "People's actual searches form natural clusters where one question triggers the next. By discovering those clusters and synthesizing them into a single narrative, you get a representative query that a human might write."
+  },
+  {
+    "gid": 1295,
+    "math_tags": ["grouping similar things together", "measuring similarity as nearness in a space"],
+    "math_plain": "Cluster retrieved documents to find core object concepts, then use those cluster centers as expansion terms that make dense retrieval better.",
+    "why_math": "Cluster centers represent the shared essence of similar documents. Using them as new search terms works because they capture generalizable patterns that similar documents shared, expanding coverage beyond the original query."
+  },
+  {
+    "gid": 1296,
+    "math_tags": ["measuring similarity as nearness in a space", "weighting the parts that are most relevant"],
+    "math_plain": "Break images into patches, retrieve similar patches from elsewhere, extract objects found near them, then weight which retrieved objects matter most when generating captions.",
+    "why_math": "Small regions of an image often match small regions in other images with different objects. By searching at that finer grain and weighting objects by how often they appear with your patches, you find rare things that whole-image search would miss."
+  },
+  {
+    "gid": 1297,
+    "math_tags": ["learning a function from examples", "weighing the parts that are most relevant"],
+    "math_plain": "Train small models to output step-by-step reasoning (task understanding, tool assessment, risk evaluation) before deciding whether to call a tool, weighting each reasoning stage.",
+    "why_math": "Breaking a decision into explicit stages makes the model learn the true factors that matter for refusing tools: understanding the task, assessing if any tool fits, and catching when calling would hallucinate. The stages internalize the real decision logic."
+  },
+  {
+    "gid": 1298,
+    "math_tags": ["finding the settings with least error", "weighting the parts that are most relevant"],
+    "math_plain": "Identify which neurons matter for old tasks and preserve them with distillation loss, while replaying memories of past entities to balance learning new ones without forgetting.",
+    "why_math": "Important neurons encode core patterns that transfer across tasks. By constraining them to stay stable during new learning, you prevent catastrophic forgetting. Memory replay adds back old examples so gradients don't fully erase them."
+  },
+  {
+    "gid": 1299,
+    "math_tags": ["measuring similarity as nearness in a space", "estimating probabilities from data"],
+    "math_plain": "Estimate how reliable each imputed modality is via uncertainty, then down-weight imputed features when fusing multimodal evidence for entity matching based on that uncertainty.",
+    "why_math": "Features generated by imputation carry estimation error. By quantifying that error (uncertainty) and using it to suppress noise during fusion, you prevent bad imputations from swamping the signal from real data."
+  },
+  {
+    "gid": 1300,
+    "math_tags": ["weighting the parts that are most relevant", "smart random sampling and averaging"],
+    "math_plain": "Learn which agents to include in each simulation round by assigning adaptive importance weights that minimize computational cost while preserving interaction intensity.",
+    "why_math": "Not all agents are equally informative at every step. By learning which ones drive the dynamics and sampling them preferentially, you cut computation without losing the emergent social behavior."
+  },
+  {
+    "gid": 1301,
+    "math_tags": ["matching and allocating who gets what", "combining many weak signals into a strong one"],
+    "math_plain": "Answer music questions by chaining multiple symbolic analysis operators together to extract evidence from sheet music, aggregating results into a single answer.",
+    "why_math": "A single musical fact requires looking at multiple features of the score—note pitch, timing, harmonic context. By combining multiple independent analyses, each weak in isolation, into one reasoned path, you extract implicit meaning."
+  },
+  {
+    "gid": 1302,
+    "math_tags": ["finding the settings with least error", "following the slope downhill to improve"],
+    "math_plain": "Treat meme interpretation as minimizing semantic inconsistency: iteratively compute inconsistency scores, then refine explanations by following the gradient of that score downward.",
+    "why_math": "A good interpretation is one where all the clues—image, text, context—reinforce each other. By quantifying how much they clash (semantic energy) and stepping downhill in that landscape, you find interpretations where everything fits together."
+  },
+  {
+    "gid": 1303,
+    "math_tags": ["measuring similarity as nearness in a space", "following the slope downhill to improve"],
+    "math_plain": "Convert agent memory traces into a timeline, select key timepoints, and suppress outdated claims—treating validity adjudication as finding the most recent, consistent version of each fact.",
+    "why_math": "Memory is non-monotonic: claims get revised, retracted, resurfaced. The truth is the final, most recent version supported by evidence. By mapping changes onto a timeline and downweighting old claims, you extract what's actually true now."
+  },
+  {
+    "gid": 1304,
+    "math_tags": ["ranking things by a learned score", "finding the settings with least error"],
+    "math_plain": "Score all possible next item identifiers in a single forward pass, then use A* search through the space of valid sequences to find the best recommendation without backtracking.",
+    "why_math": "Computing scores once instead of iteratively avoids error propagation from early greedy choices. A* search guarantees you find the optimal sequence because it explores only valid paths, weighted by one-pass scores that are consistent across all positions."
+  }
+]

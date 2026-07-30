@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 1410,
+    "math_tags": ["combining many weak signals into a strong one", "matching and allocating who gets what"],
+    "math_plain": "Different tasks are routed to different specialized experts which share learned knowledge but stay orthogonal to reduce redundancy and improve efficiency.",
+    "why_math": "When tasks pull a model in different directions, letting each task have its own expert prevents them from interfering. Regularization forces experts to be diverse and complementary, so they can be reused efficiently across tasks. This directly reduces the total model size and computation needed."
+  },
+  {
+    "gid": 1411,
+    "math_tags": ["ranking things by a learned score", "finding the settings with least error"],
+    "math_plain": "Two competing models take turns as reference and target, with the target learning to surpass the reference, creating a moving benchmark that drives continuous improvement.",
+    "why_math": "Pure external competition for single best score gets stuck in local optima. An internal dual-model setup where they compete with each other creates constant evolving pressure: the target always has a fresh opponent to beat, preventing stagnation and guiding both toward better solutions."
+  },
+  {
+    "gid": 1412,
+    "math_tags": ["learning a function from examples", "weighting the parts that are most relevant"],
+    "math_plain": "A learned policy selects which user behaviors to amplify and which feedback signals to trust, rejecting noisy click signals to reduce reward hacking and improve stability.",
+    "why_math": "Noisy feedback leads to unstable gradients and the model exploits the noise rather than learning real patterns. By learning to upweight high-confidence signals and downweight low-signal data, you reduce variance in the gradient updates, stabilizing learning toward the true reward."
+  },
+  {
+    "gid": 1413,
+    "math_tags": ["predicting the next item in a sequence", "learning a function from examples"],
+    "math_plain": "Language models are fine-tuned to transform unstructured text into structured question-answer pairs, with code-based models proving surprisingly effective on Chinese text.",
+    "why_math": "Language models have already learned patterns of how questions and answers relate through pretraining on billions of examples. Fine-tuning narrows this broad knowledge to the specific extraction task, and code-trained models transfer well because code and Chinese text both require precise syntactic understanding."
+  },
+  {
+    "gid": 1414,
+    "math_tags": ["matching and allocating who gets what", "measuring similarity as nearness in a space"],
+    "math_plain": "Ads are matched to available page slots by solving a bipartite graph problem that balances meeting advertiser contracts while respecting page space constraints.",
+    "why_math": "The slot-filling problem is fundamentally a matching problem: assign each ad to a slot such that constraints are satisfied and value is maximized. Casting it as a graph algorithm guarantees finding allocations that scale linearly without missing feasible high-value assignments that greedy approaches would overlook."
+  },
+  {
+    "gid": 1415,
+    "math_tags": ["ranking things by a learned score", "weighting the parts that are most relevant"],
+    "math_plain": "Streamers are ranked by estimated relevance to viewers, but the score is adjusted downward if the streamer is near capacity, balancing matching quality with fair traffic distribution.",
+    "why_math": "Pure relevance ranking concentrates all viewers on popular streamers, degrading their experience. When you embed capacity as a hard constraint in the ranking objective, you force the system to find the best match for each viewer that the servers can actually handle, improving overall experience across all streamers and viewers."
+  },
+  {
+    "gid": 1416,
+    "math_tags": ["predicting the next item in a sequence", "learning a function from examples"],
+    "math_plain": "A mobile language model learns to predict what query a user will type next based on their recent item interactions.",
+    "why_math": "User behavior is sequential: recent actions carry strong signal about intent. A language model trained on behavior sequences learns to complete that sequence by inferring latent intent. Running inference on-device catches rapid intent shifts in real time, improving recency without cloud latency."
+  },
+  {
+    "gid": 1417,
+    "math_tags": ["learning a function from examples", "combining many weak signals into a strong one"],
+    "math_plain": "A hybrid system uses a slow language model to reason about user intent, extracting instructions that guide a fast encoder-decoder model to generate recommendations.",
+    "why_math": "Language models reason deeply but are slow and expensive per-query. Encoder-decoders are fast but less deep. The hybrid uses the slow model to extract high-value reasoning signals (instructions) once, then trains the fast model to follow those signals at scale. This splits cost and latency: expensive reasoning offline, cheap inference online."
+  },
+  {
+    "gid": 1418,
+    "math_tags": ["predicting the next item in a sequence", "learning a function from examples"],
+    "math_plain": "User interests are predicted through multiple refinement steps: first broad attributes like brand, then fine-grained exact items, then order-level behavior.",
+    "why_math": "Predicting the final answer directly is hard because intermediate steps contain rich information. Breaking prediction into a chain of refinements preserves all behavior data while giving the model intermediate waypoints to steer learning. Each step constrains the next, reducing variance and improving interpretability."
+  },
+  {
+    "gid": 1419,
+    "math_tags": ["spreading information across a network", "weighting the parts that are most relevant"],
+    "math_plain": "Signals about low-value ads are passed backward from later ranking stages to earlier stages, preventing computation on ads destined for rejection.",
+    "why_math": "Multi-stage pipelines compute sequentially, wasting resources on ads later stages will filter out anyway. Backward signal propagation tells earlier stages which ads have historically been rejected downstream, so they can skip computation on those. This trades a small signal-passing overhead for large savings on useless computation."
+  },
+  {
+    "gid": 1420,
+    "math_tags": ["measuring similarity as nearness in a space", "learning a function from examples"],
+    "math_plain": "A multimodal language model generates descriptive captions from images and videos, which are then tokenized as categorical features in the recommendation model.",
+    "why_math": "Raw images are high-dimensional and hard to reason about. A pretrained language model trained on billions of image-caption pairs already knows how to extract semantic meaning. Converting images to captions transforms the problem into text, which recommendation systems handle well, while preserving semantic signal."
+  },
+  {
+    "gid": 1421,
+    "math_tags": ["measuring similarity as nearness in a space", "ranking things by a learned score"],
+    "math_plain": "Products are ranked by relevance computed over structured attributes extracted from product text, reducing token cost by using structured representations instead of raw text.",
+    "why_math": "Raw text is high-dimensional and variable; structured attributes are compact and normalized. Extracting attributes first removes noise and redundancy, then ranking on attributes is faster and cleaner. The semantic meaning is preserved in the structured schema while reducing per-product cost by 57%."
+  },
+  {
+    "gid": 1422,
+    "math_tags": ["matching and allocating who gets what", "measuring similarity as nearness in a space"],
+    "math_plain": "Historical successful keyword-to-item pairs are used to suggest related queries for item-targeted ads by finding queries semantically similar to the original target query.",
+    "why_math": "Keyword campaigns reveal which queries truly convert for items. Item targeting uses similarity to reach new queries but misses unexplored ones. Borrowing proven keywords as seeds and then extending via semantic similarity to find nearby unexplored queries combines both precision (proven) and coverage (expanded)."
+  },
+  {
+    "gid": 1423,
+    "math_tags": ["learning a function from examples", "separating cause from coincidence"],
+    "math_plain": "Recommendations balance relevance with environmental impact by eliciting user sustainability preferences through conversation and generating counterfactual explanations showing greener alternatives.",
+    "why_math": "Users often default to popular choices without considering impact. By extracting latent sustainability preferences through conversation, the system learns what users actually value, not just what they initially ask for. Counterfactual explanations show what would change if they chose greener alternatives, helping users see the causal link between choices and outcomes."
+  },
+  {
+    "gid": 1424,
+    "math_tags": ["weighting the parts that are most relevant", "following the slope downhill to improve"],
+    "math_plain": "Neural ranking models are analyzed by computing which neurons contribute most to each ranking decision through integrated gradient analysis and targeted ablations.",
+    "why_math": "Neural models compute via thousands of intermediate states; you cannot see ranking logic by reading weights. Integrated gradients trace how much each neuron causally impacts the output by computing the sum of gradients along a path from zero to the actual input. This reveals cause-and-effect in the model, enabling diagnosis and improvement."
+  }
+]

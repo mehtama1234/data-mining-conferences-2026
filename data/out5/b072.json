@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 1080,
+    "math_tags": ["ranking things by a learned score", "learning by comparison of similar and different", "weighting the parts that are most relevant"],
+    "math_plain": "Learns to rank recommended items by mixing how likely the model thinks they are with how well they match the user's stated preferences, adjusting confidence per example.",
+    "why_math": "It works because user signals vary in how strongly they indicate true preference—some signals are clear intent, others are noisy. Weighting each signal by its confidence focuses learning on the trustworthy patterns and avoids overfitting to ambiguous feedback."
+  },
+  {
+    "gid": 1081,
+    "math_tags": ["estimating probabilities from data", "measuring surprise and information", "separating cause from coincidence"],
+    "math_plain": "Estimates ranges of uncertainty around click probabilities by modeling how strongly relevance and screen position each influence whether a user clicks.",
+    "why_math": "It works because observed clicks are shaped by two separate forces: how good the item really is and where it appeared on screen. Uncertainty ranges reveal which factors are well-understood versus which are guesses, making predictions more trustworthy."
+  },
+  {
+    "gid": 1082,
+    "math_tags": ["learning by comparison of similar and different", "weighting the parts that are most relevant", "spreading information across a network"],
+    "math_plain": "Learns to recommend by comparing what users clicked before with images and text of items, iteratively pruning weak signals and keeping only connections to truly similar items.",
+    "why_math": "It works because most signal in the data comes from a few true relationships; weak connections add noise. By strengthening only the edges the model is confident about and aligning image/text meaning across views, it captures reliable patterns that transfer to new users."
+  },
+  {
+    "gid": 1083,
+    "math_tags": ["learning a function from examples", "learning by comparison of similar and different", "measuring similarity as nearness in a space"],
+    "math_plain": "Recommends math papers by learning which aspects of proof techniques, logical chains, and author lineage make papers similar, even when they share few words or citations.",
+    "why_math": "It works because mathematical relatedness is conceptual—papers can be connected through ideas and reasoning paths rather than vocabulary. By fusing textual meaning with author history and citation structure, it captures the true relational fabric mathematicians recognize."
+  },
+  {
+    "gid": 1084,
+    "math_tags": ["ranking things by a learned score", "spreading information across a network", "finding the settings with least error"],
+    "math_plain": "Creates short, meaningful item labels by learning which collaborative signals and attributes belong together, then organizing them hierarchically to balance label length against prediction quality.",
+    "why_math": "It works because meaningful labels encode genuine structure in how users interact with items. Short hierarchical labels let language models rapidly identify items without ambiguity, and organizing by collaborative patterns ensures the encoding preserves what matters for recommendations."
+  },
+  {
+    "gid": 1085,
+    "math_tags": ["separating cause from coincidence", "learning a function from examples"],
+    "math_plain": "Silences misleading background knowledge in language models by replacing entity names with abstract type labels before generation, so the model must rely on provided context rather than learned prior associations.",
+    "why_math": "It works because language models have strong learned associations between names and facts from training data, which can overpower new information. Replacing names with generic labels blocks those spurious lexical paths while preserving the relational structure needed to reason about the new scenario."
+  },
+  {
+    "gid": 1086,
+    "math_tags": ["learning a function from examples", "finding the settings with least error", "predicting the next item in a sequence"],
+    "math_plain": "Injects knowledge of new items into a recommendation model by identifying where in its reasoning each item code appears, then updating those specific locations without full retraining.",
+    "why_math": "It works because each item that a recommender predicts shares specific reasoning steps with others in the sequence. By updating only the internal connection points relevant to new items, you inject knowledge efficiently, avoiding the noise and cost of retraining on sparse new feedback."
+  },
+  {
+    "gid": 1087,
+    "math_tags": ["separating cause from coincidence", "weighting the parts that are most relevant", "learning by comparison of similar and different"],
+    "math_plain": "Identifies which past searches genuinely reveal recommendation intent by filtering noisy signals in a learned latent space, then using only those reliable searches to recommend items.",
+    "why_math": "It works because users search for many things—some show true preference for item types, others are outdated or off-topic. By learning to recognize which signals align with genuine recommendation needs, it avoids spurious correlations that would degrade predictions."
+  },
+  {
+    "gid": 1088,
+    "math_tags": ["predicting the next item in a sequence", "following the slope downhill to improve", "smart random sampling and averaging"],
+    "math_plain": "Plans ad spending over time by generating coarse-then-fine budget trajectories with compressed internal states, learning from sparse feedback by aggregating at multiple timescales.",
+    "why_math": "It works because feedback arrives aggregated over time, not instantly for each decision. By planning at multiple scales—coarse scales give dense reward signals to learn from, fine scales let the model adjust tactically—it transforms sparse feedback into dense learning signals across resolutions."
+  },
+  {
+    "gid": 1089,
+    "math_tags": ["learning a function from examples", "separating cause from coincidence", "estimating probabilities from data"],
+    "math_plain": "Fills missing user features using learned feature patterns and graph structure, then corrects distribution shift at test time by projecting distorted features back onto the true learned pattern.",
+    "why_math": "It works because missing values can be inferred from neighbors and learned patterns, but the model may overfit to structural peculiarities during training. By learning the true underlying feature manifold and realigning at test time, you recover natural semantic diversity and handle new graph structures correctly."
+  },
+  {
+    "gid": 1090,
+    "math_tags": ["learning a function from examples", "separating cause from coincidence"],
+    "math_plain": "Classifies relationships between events in text by first determining point relationships between time boundaries, then decoding those point relationships into interval relationships.",
+    "why_math": "It works because interval relationships are complex and rare in data, making direct learning hard. Point relationships between endpoints are simpler and more frequent, so learning those first provides reliable intermediate structure that combines naturally into the final answer."
+  },
+  {
+    "gid": 1091,
+    "math_tags": ["ranking things by a learned score", "learning by comparison of similar and different", "combining many weak signals into a strong one"],
+    "math_plain": "Re-ranks search results by identifying documents that both keyword and semantic search agree on, then expands the query through those trusted anchors while suppressing drift from the original intent.",
+    "why_math": "It works because keyword search and semantic search make complementary errors—one misses paraphrases, the other catches false topical matches. Where both agree, they've confirmed relevance; expanding through those proven anchors adds coverage while rejecting the errors each makes alone."
+  },
+  {
+    "gid": 1092,
+    "math_tags": ["learning a function from examples", "weighting the parts that are most relevant", "measuring similarity as nearness in a space"],
+    "math_plain": "Recommends across different scenarios by learning global reference points and mapping each scenario's representations around them, measuring how far each scenario's distributions diverge.",
+    "why_math": "It works because users behave differently across scenarios (home, local, live) but those behaviors share common underlying preferences. Using shared reference points as anchors, then mapping scenario-specific variations around them, separates global signals from local distribution shifts, enabling knowledge transfer."
+  },
+  {
+    "gid": 1093,
+    "math_tags": ["weighting the parts that are most relevant", "measuring similarity as nearness in a space"],
+    "math_plain": "Nudges news readers toward balanced consumption by calibrating recommendations based on topic and geography, showing personalized previews that highlight article relevance to prior reads.",
+    "why_math": "It works because people follow familiar patterns; highlighting how new articles connect to what they've already read both feels relevant and gently expands their boundaries. By calibrating topic-geography balance at the system level, you reshape consumption gradually without resistance."
+  },
+  {
+    "gid": 1094,
+    "math_tags": ["predicting the next item in a sequence", "learning a function from examples", "smart random sampling and averaging"],
+    "math_plain": "Recommends new items by learning from synthetic data that mimics real causal patterns, then applying that learned pattern to real sequences in a single forward pass without updating weights.",
+    "why_math": "It works because the true causal structure of how users interact with items is similar across domains—choices follow consistent patterns even if the items differ. By learning that structure from diverse synthetic examples first, the model amortizes the learning and can instantly adapt to new domains with few real examples."
+  }
+]

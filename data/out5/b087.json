@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 1305,
+    "math_tags": ["learning by comparison of similar and different", "weighting the parts that are most relevant", "following the slope downhill to improve"],
+    "math_plain": "Learning to pick hard negative examples during training by scoring items from two angles (user and item perspectives) while keeping gradients flowing through the selection process.",
+    "why_math": "The method works because using multiple viewpoints catches negatives that any single perspective would miss, and keeping gradients flowing means the model can adjust its negative choices as it improves, creating a feedback loop that tightens the training signal."
+  },
+  {
+    "gid": 1306,
+    "math_tags": ["learning a function from examples", "estimating probabilities from data", "combining many weak signals into a strong one"],
+    "math_plain": "A language model learns to reason about emotions and sentiments across multiple related tasks simultaneously, using examples in context to handle different labeling styles from different datasets.",
+    "why_math": "It works because emotional reasoning follows shared underlying patterns across tasks, so learning them together lets the model borrow strength from related problems, and seeing examples helps it map different annotation styles to the same underlying concept."
+  },
+  {
+    "gid": 1307,
+    "math_tags": ["weighting the parts that are most relevant", "finding the settings with least error", "learning a function from examples"],
+    "math_plain": "For a chatbot with a long memory, the system decides which memory facts to write, update, or keep by retrieving similar past entries and scoring them based on how important they are to the current conversation.",
+    "why_math": "It works because facts that keep appearing across conversations reveal what is truly important to the person; by checking what already exists before adding new facts, redundancy goes down, and by weighing importance, the memory stays compact for fast retrieval."
+  },
+  {
+    "gid": 1308,
+    "math_tags": ["keeping only the few dimensions that matter", "measuring similarity as nearness in a space", "learning a function from examples"],
+    "math_plain": "A document search index compresses the tiny meaning-indicators from each word in a document using a mathematical squashing technique so the index becomes a true search structure instead of a heavy compressed archive.",
+    "why_math": "Squashing meaning-indicators into compact codes works because the real information that tells whether a document matches a query lives in which indicators light up, not their exact values, so aggressive compression loses almost nothing."
+  },
+  {
+    "gid": 1309,
+    "math_tags": ["learning a function from examples", "weighting the parts that are most relevant", "matching and allocating who gets what"],
+    "math_plain": "A smaller model learns from a larger one how to rank documents by matching not just the absolute score each document gets but the pattern of score differences between candidates, with special care for the hardest negatives.",
+    "why_math": "It works because ranking only needs the right ordering, not the exact scores; by copying the score patterns between documents rather than raw scores, the smaller model learns the essential structure; focusing on hard negatives matters because those are where false rankings create problems."
+  },
+  {
+    "gid": 1310,
+    "math_tags": ["weighting the parts that are most relevant", "combining many weak signals into a strong one", "learning a function from examples"],
+    "math_plain": "For personalizing answers, search both the user's profile and a general knowledge source, then combine results to handle cases where the user's profile comes from a different topic area than their question.",
+    "why_math": "It works because user profiles are noisy indicators of their true interests, so when the profile comes from a different area, the general source fills the gap; combining two weak signals is stronger than either alone because each compensates for the other's blind spots."
+  },
+  {
+    "gid": 1311,
+    "math_tags": ["spreading information across a network", "measuring similarity as nearness in a space", "matching and allocating who gets what"],
+    "math_plain": "For finding cell types from a list of genes, find genes that act as hubs in a knowledge network: places where many input genes converge, revealing which cell types they collectively point toward.",
+    "why_math": "It works because individual genes are noisy, but when many genes all reach the same cell-type node through the network, that convergence is a strong signal of identity; thinking about network paths lets you find consensus without asking the language model to pick the answer."
+  },
+  {
+    "gid": 1312,
+    "math_tags": ["combining many weak signals into a strong one", "learning a function from examples", "weighting the parts that are most relevant"],
+    "math_plain": "To fact-check a news article, generate investigative questions, search for evidence multiple ways, filter and rank that evidence, and decide when you have enough before writing a trustworthiness report with citations.",
+    "why_math": "It works because systematic questioning mirrors how humans check facts: ask what to look for, search in multiple ways to avoid missing true information, and rank by reliability; stopping when you have enough prevents wasting effort chasing ever more distant clues."
+  },
+  {
+    "gid": 1313,
+    "math_tags": ["separating cause from coincidence", "measuring similarity as nearness in a space", "weighting the parts that are most relevant"],
+    "math_plain": "When retrieving for multi-perspective generation, model how different opinions relate as clusters of agreement so you can tell the difference between a real disagreement and an attack designed to bias the system.",
+    "why_math": "It works because real perspectives on an issue form clusters where many documents agree, while an attack tries to inject a document with hidden bias that stands alone; seeing which documents naturally cluster together reveals the true topology of legitimate disagreement."
+  },
+  {
+    "gid": 1314,
+    "math_tags": ["combining many weak signals into a strong one", "weighting the parts that are most relevant", "smart random sampling and averaging"],
+    "math_plain": "To build training data in many languages, pick examples that score well for quality and that are spread out in meaning-space so you capture the range of things the model should learn.",
+    "why_math": "It works because a model learns best from examples that cover the full range of the problem space; by deliberately spacing examples far apart in meaning, you ensure coverage; by checking quality, you avoid learning from wrong examples."
+  },
+  {
+    "gid": 1315,
+    "math_tags": ["learning a function from examples", "weighting the parts that are most relevant", "keeping only the few dimensions that matter"],
+    "math_plain": "For adapting a frozen graph model with few examples, score edges by how well they connect to learned prototypes from the examples, then keep only the highest-scoring edges per node.",
+    "why_math": "It works because the prototypes capture what the frozen model has already learned to recognize as important; by only creating edges to high-prototype-matching neighbors, you inject signal that the frozen model can use; per-node budgets prevent dense local rewiring that drowns out signal."
+  },
+  {
+    "gid": 1316,
+    "math_tags": ["learning a function from examples", "measuring similarity as nearness in a space", "keeping only the few dimensions that matter"],
+    "math_plain": "Instead of putting retrieved text into the prompt or encoding it as model weights, compress each document into a tiny meaning-summary and blend those summaries into the model's hidden thoughts as it generates.",
+    "why_math": "It works because meaning lives in the semantic space that the model already thinks in; by working in that space rather than forcing knowledge through token bottlenecks or parameter updates, knowledge integrates more naturally and uses less space."
+  },
+  {
+    "gid": 1317,
+    "math_tags": ["combining many weak signals into a strong one", "estimating probabilities from data", "weighting the parts that are most relevant"],
+    "math_plain": "When multiple language models give answers to a question, trust an answer more if other models agree on it, and less if they disagree, using this agreement as a signal to adjust each model's confidence.",
+    "why_math": "It works because agreement among independent models is a strong signal of truth: if multiple systems that learned differently all reach the same conclusion, something real is driving them; disagreement means at least one is wrong, so staying cautious is wise."
+  },
+  {
+    "gid": 1318,
+    "math_tags": ["learning a function from examples", "following the slope downhill to improve", "weighting the parts that are most relevant"],
+    "math_plain": "For questions with multiple hops, first explore broadly to understand what the question is really asking and find key entities, then focus retrieval on gathering evidence that chains together to answer it.",
+    "why_math": "It works because complex questions are ambiguous: you can interpret them multiple ways, and each interpretation retrieves different things; exploring first resolves the ambiguity by checking what entities and concepts the question connects to, then focused retrieval avoids wasting effort on wrong paths."
+  },
+  {
+    "gid": 1319,
+    "math_tags": ["learning a function from examples", "estimating probabilities from data", "following the slope downhill to improve"],
+    "math_plain": "When a large student model learns from a smaller teacher model, the teacher's capacity limits how much the student can learn; a larger teacher lets the larger student actually improve.",
+    "why_math": "It works because the student can only learn patterns that the teacher can express; if the teacher is too small to capture all the patterns a large model could use, the teacher becomes a bottleneck and the student stops improving even if it has more capacity to learn."
+  }
+]

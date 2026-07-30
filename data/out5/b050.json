@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 750,
+    "math_tags": ["ranking things by a learned score", "learning by comparison of similar and different"],
+    "math_plain": "Rank images and text by learning which pairs belong together and which don't, then putting look-alike pairs close in a shared space.",
+    "why_math": "When you place things so that ones people treat alike sit close together, finding similar ones becomes finding nearby ones, which is fast and reliable. Contrasting good matches against bad ones teaches the system which patterns matter most."
+  },
+  {
+    "gid": 751,
+    "math_tags": ["estimating probabilities from data", "separating cause from coincidence"],
+    "math_plain": "Separate sarcasm signals from straightforward signals by tracking how sentiment flips across different types of content—text, audio, video.",
+    "why_math": "Sarcasm flips the meaning but only certain parts of the input carry this flip. By keeping sentiment signals separate instead of mixing them, you can see which parts genuinely oppose each other, revealing where sarcasm hides."
+  },
+  {
+    "gid": 752,
+    "math_tags": ["learning by comparison of similar and different", "separating cause from coincidence"],
+    "math_plain": "Learn what nodes belong in the same group by comparing which nodes look alike to each other and which hyperedges hold them together.",
+    "why_math": "When you learn from comparisons—nodes that should cluster together sit near each other—the geometry of similarity directly guides where the clusters form, so clustering becomes reading off natural gaps in that learned space."
+  },
+  {
+    "gid": 753,
+    "math_tags": ["weighting the parts that are most relevant", "finding the settings with least error"],
+    "math_plain": "Remove targeted knowledge from language models by heavily weighting the hardest samples to forget, finding parameter changes that erase them without breaking everything else.",
+    "why_math": "Hard-to-forget samples need more emphasis or they slip through; focusing on the worst-case samples forces the model to handle them, and optimizing against that worst case prevents the easy samples from being over-erased."
+  },
+  {
+    "gid": 754,
+    "math_tags": ["separating cause from coincidence"],
+    "math_plain": "Foundation models used on the web need causal reasoning to separate real cause-and-effect from coincidental patterns, ensuring they act trustworthy.",
+    "why_math": "Causal reasoning reveals which relationships are real versus accidental; this distinguishes genuine insights from spurious correlations that can mislead the system into unfair or fragile decisions."
+  },
+  {
+    "gid": 755,
+    "math_tags": ["ranking things by a learned score", "matching and allocating who gets what"],
+    "math_plain": "Decide which ads to show where on screen by ranking options while accounting for how nearby ads hurt each other's effectiveness.",
+    "why_math": "Ad value depends on location and neighbors; treating slots as points in space and modeling interference as proximity-based lets you reason about the actual value trade-offs before assigning ads."
+  },
+  {
+    "gid": 756,
+    "math_tags": ["smart random sampling and averaging"],
+    "math_plain": "Quickly shuffle network structures by sampling which pairs to swap, processing data almost in one pass without repeatedly scanning.",
+    "why_math": "Reservoir sampling lets you pick random swaps without knowing how many total options exist; framing swaps as sampling problems means you compute only what you absolutely need, cutting passes from multiple down to one."
+  },
+  {
+    "gid": 757,
+    "math_tags": ["learning a function from examples"],
+    "math_plain": "Test whether question answerers understand both the visual layout of tables and the logical steps needed to answer questions about them.",
+    "why_math": "By varying layout complexity and reasoning steps independently across benchmarks, you can measure which skills the model actually has versus which ones hide because the task was too easy or too hard on both dimensions at once."
+  },
+  {
+    "gid": 758,
+    "math_tags": ["predicting the next item in a sequence"],
+    "math_plain": "Estimate radio signal strength maps by breaking them into layers from coarse to fine, then predicting each finer layer one step at a time.",
+    "why_math": "Large-scale variations (path loss) and tiny details (multipath) live at different scales; building from coarse to fine lets early layers focus on the big pattern while later layers concentrate only on what was missed, so each step is simpler."
+  },
+  {
+    "gid": 759,
+    "math_tags": ["weighting the parts that are most relevant"],
+    "math_plain": "Fix popularity bias in recommendations by identifying which internal neurons fire for popular items, then damping those specific neurons.",
+    "why_math": "Each neuron encodes one type of signal; if you can see which ones encode popularity and turn them down, recommendations shift toward fairness without having to redesign the whole system."
+  },
+  {
+    "gid": 760,
+    "math_tags": ["estimating probabilities from data", "separating cause from coincidence"],
+    "math_plain": "Forecast misinformation by tracking how sentiment diverges rapidly within emerging topics, using that divergence as an early warning signal.",
+    "why_math": "Polarization creates an echo chamber where misinformation spreads; high divergence means opposing camps, which correlates with how unverified claims propagate, so measuring divergence gives you a predictive edge before false claims take hold."
+  },
+  {
+    "gid": 761,
+    "math_tags": ["learning a function from examples"],
+    "math_plain": "Extract and organize information from news and documents by grounding it to specific times and places, with language models filling in the structure.",
+    "why_math": "Space and time are universal anchors; anchoring all extracted facts to where and when they occurred aligns information that would otherwise be scattered, making downstream tasks like search and reasoning far more reliable."
+  },
+  {
+    "gid": 762,
+    "math_tags": ["predicting the next item in a sequence"],
+    "math_plain": "Generate new molecules step-by-step, gradually adjusting molecular structure to match multiple desired properties at once.",
+    "why_math": "Breaking generation into small steps lets each step steer toward the target properties; this iterative refinement better matches the true distribution of molecules that satisfy all conditions together."
+  },
+  {
+    "gid": 763,
+    "math_tags": [],
+    "math_plain": "No specific mathematical method; workshop on how to write better instructions for language models.",
+    "why_math": "This is a workshop announcement, not a research paper with a mathematical contribution."
+  },
+  {
+    "gid": 764,
+    "math_tags": ["measuring surprise and information", "weighting the parts that are most relevant"],
+    "math_plain": "Evaluate research agents not just by whether they got the answer right, but by measuring the quality and efficiency of their reasoning steps, with adjustable difficulty.",
+    "why_math": "A right answer with bad reasoning may fail on harder variants or in new contexts; weighing the reasoning process itself—how grounded the evidence is, how many steps were wasted—reveals true capability."
+  }
+]

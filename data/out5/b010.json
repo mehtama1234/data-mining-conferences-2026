@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 150,
+    "math_tags": ["measuring similarity as nearness in a space", "weighting the parts that are most relevant"],
+    "math_plain": "Score web pages by relevance and freshness, then retrieve the top-scoring results that match the user's chosen scope.",
+    "why_math": "Scoring works because it converts the question of which pages matter most into a single number per page, letting you simply pick the highest numbers. Freshness matters because old information contradicts new facts, so pages that changed recently contain the most current truth."
+  },
+  {
+    "gid": 151,
+    "math_tags": ["keeping only the few dimensions that matter", "finding the settings with least error"],
+    "math_plain": "Reorder thousands of time-series channels into groups so that dependencies cluster locally, then separate local from global patterns to minimize prediction error.",
+    "why_math": "This works because real dependencies have structure—some variables influence only nearby ones, others affect everything. Sorting them this way lets you use simpler methods on each group instead of one huge complex one, which cuts computation and noise simultaneously."
+  },
+  {
+    "gid": 152,
+    "math_tags": ["keeping only the few dimensions that matter", "measuring surprise and information"],
+    "math_plain": "Partition high-dimensional features into strong signals, weak signals, and noise using decomposition, then amplify the strong signals that carry task-relevant meaning.",
+    "why_math": "It works because features collapse into narrow cones, wasting dimensions. By sorting features by importance (how much they vary), you focus on the true pattern and ignore noise, which improves generalization because real knowledge fits simpler than noise does."
+  },
+  {
+    "gid": 153,
+    "math_tags": ["learning by comparison of similar and different", "combining many weak signals into a strong one"],
+    "math_plain": "Blend user history, item properties, and what similar users liked into multiple views, then learn by comparing similar and different examples to recommend items.",
+    "why_math": "It works because if you show the model that Alice and Bob both like movies about space, and then show Bob a new space movie, the model recognizes the pattern and predicts Alice will like it too. Comparing what goes together versus what doesn't teach structure faster than predicting in isolation."
+  },
+  {
+    "gid": 154,
+    "math_tags": ["predicting the next item in a sequence"],
+    "math_plain": "Identify what the user wants—translation, explanation, or summary—then generate the matching response tailored to their background and preferences.",
+    "why_math": "It works because intent recognition reduces the problem: instead of one model trying to do everything, you classify what you're solving for first, so the right specialized logic runs. And tracking what the user likes lets you personalize by remembering their style."
+  },
+  {
+    "gid": 155,
+    "math_tags": ["matching and allocating who gets what", "learning a function from examples"],
+    "math_plain": "Encode different connection patterns in a graph into a codebook, then mix these patterns in weights to adapt to rare and out-of-distribution patterns in node classification.",
+    "why_math": "It works because patterns you rarely see during training crash the model when they appear at test time. By storing all pattern types in a codebook and learning to mix them in new ways, the model recognizes out-of-distribution examples as blends of known pieces, not entirely alien."
+  },
+  {
+    "gid": 156,
+    "math_tags": ["learning a function from examples", "separating cause from coincidence"],
+    "math_plain": "Score whether moderation decisions are correct by comparing to trained models, then diagnose which rules caused errors and generate clearer rules.",
+    "why_math": "It works because models trained on thousands of decisions learn what correct removal looks like; inconsistency means human error. And asking why the error happened (which rule was cited) finds the root cause, not the symptom, so fixes stick."
+  },
+  {
+    "gid": 157,
+    "math_tags": ["measuring similarity as nearness in a space", "combining many weak signals into a strong one"],
+    "math_plain": "Retrieve social media posts similar to a user's history that match mental health symptoms, then route them through multiple reasoning methods to predict depression with explainability.",
+    "why_math": "It works because symptom patterns are learned from real posts, so finding similar posts in a user's history grounds the model in their actual language and concerns. Multiple reasoning paths then vote, and the most common path shows why—transparency builds trust."
+  },
+  {
+    "gid": 158,
+    "math_tags": ["estimating probabilities from data", "combining many weak signals into a strong one"],
+    "math_plain": "Model player spending across games as a mixture of payment patterns—some players spend nothing, others spend a lot—then predict who will spend and how much.",
+    "why_math": "It works because spending data is lumpy: many zeros (free players), then a few huge spenders. One smooth curve fits neither. Mixing different curves for each group lets each capture its own truth, and weighting them by game type handles cross-game differences."
+  },
+  {
+    "gid": 159,
+    "math_tags": ["finding the settings with least error", "measuring surprise and information"],
+    "math_plain": "Test models on five tasks of rising difficulty and measure how much their accuracy drops, then compute a sensitivity score to rank robustness under stress.",
+    "why_math": "It works because stress reveals true robustness: a model that works on easy tasks but fails on hard ones is fragile. The drop in performance is the right signal—you're seeing what breaks first, which tells you where the model is weakest and most likely to fail in deployment."
+  },
+  {
+    "gid": 160,
+    "math_tags": ["measuring similarity as nearness in a space", "measuring surprise and information"],
+    "math_plain": "Match text descriptions to motion using optimal transport, then measure discrepancy without assuming a fixed shape of distribution, to evaluate generation quality.",
+    "why_math": "It works because optimal transport finds the most efficient coupling between text and motion—the minimum cost to transform one into the other. This captures global matching better than local methods. And avoiding the Gaussian assumption catches real data that's spiky or multimodal."
+  },
+  {
+    "gid": 161,
+    "math_tags": ["predicting the next item in a sequence", "combining many weak signals into a strong one"],
+    "math_plain": "Understand conversational context and search intent across multiple turns, then retrieve and rank relevant information flexibly through dialogue.",
+    "why_math": "It works because each conversation turn adds context that narrows the search. By remembering what was said before, the system infers what the user really wants even if they ask vaguely. Planning retrieval steps (instead of one lookup) handles complex multi-step needs."
+  },
+  {
+    "gid": 162,
+    "math_tags": ["learning a function from examples", "combining many weak signals into a strong one"],
+    "math_plain": "Summarize conversations, cluster them by unsupervised topic, label via human feedback, then train a lightweight classifier for fast topic prediction on new conversations.",
+    "why_math": "It works because summaries compress noise while keeping substance, so clustering finds true themes. Human labels then teach the model what matters, and training a simple final classifier speeds inference. The feedback loop refines topics because humans spot what automated methods missed."
+  },
+  {
+    "gid": 163,
+    "math_tags": ["finding the settings with least error", "matching and allocating who gets what"],
+    "math_plain": "Split training data into shards, retrain only the affected shard after a sample deletion request, then aggregate predictions to detect ransomware while respecting privacy.",
+    "why_math": "It works because privacy is achievable if you isolate deletion impact: when one sample must be forgotten, only rebuild the shard containing it, not the entire model. Aggregating shards gives the same answer as retraining from scratch, but vastly faster."
+  },
+  {
+    "gid": 164,
+    "math_tags": ["weighting the parts that are most relevant", "learning by comparison of similar and different"],
+    "math_plain": "Reweight graph substructures at two levels—hop-level to focus on informative patterns, graph-level to suppress ambiguous unlabeled examples—for classification with only positive and unlabeled data.",
+    "why_math": "It works because without negative labels, the model must infer what looks wrong by finding patterns unique to positive examples. Dual reweighting focuses attention: first on the subgraph parts that discriminate, then on confident examples, shrinking the space of noise."
+  }
+]

@@ -1,0 +1,147 @@
+[
+  {
+    "gid": 570,
+    "math_tags": [
+      "separating cause from coincidence",
+      "measuring surprise and information",
+      "estimating probabilities from data"
+    ],
+    "math_plain": "Uses privacy math to prove noise was applied correctly, verified through cryptographic proofs without revealing internals.",
+    "why_math": "Privacy works when each person's data has minimal impact on any answer; proving this via cryptographic proof makes it verifiable without exposing the system. The math guarantees no individual is harmed by joining."
+  },
+  {
+    "gid": 571,
+    "math_tags": [
+      "predicting the next item in a sequence",
+      "learning a function from examples"
+    ],
+    "math_plain": "Trains sequence models to compress long meeting records into short summaries by learning which words appear before summaries.",
+    "why_math": "Long documents repeat ideas across sentences; models learn that certain early patterns (topic words, repeated themes) predict what summaries will mention, so they copy and compress those phrases."
+  },
+  {
+    "gid": 572,
+    "math_tags": [
+      "matching and allocating who gets what",
+      "measuring surprise and information"
+    ],
+    "math_plain": "Creates a tamper-evident log where each video segment gets a unique cryptographic fingerprint recorded on blockchain, making edits detectable.",
+    "why_math": "Hashes change completely if any bit changes; once logged publicly, anyone can recompute a video's hash and compare it to the log, instantly catching tampering. The math exploits one-way functions—easy to compute, impossible to reverse."
+  },
+  {
+    "gid": 573,
+    "math_tags": [
+      "separating cause from coincidence",
+      "weighting the parts that are most relevant",
+      "ranking things by a learned score"
+    ],
+    "math_plain": "Identifies which user behaviors truly cause others (view leads to buy) versus which happen together by chance, then weights each chain by causal strength.",
+    "why_math": "Confounders like sales make unrelated things appear linked; causal inference filters these out by asking 'what would happen if we broke this link?' revealing true cause-effect. Real causes explain behavior chains better than coincidence."
+  },
+  {
+    "gid": 574,
+    "math_tags": [
+      "learning a function from examples",
+      "following the slope downhill to improve",
+      "weighting the parts that are most relevant"
+    ],
+    "math_plain": "Tunes a language model by injecting language structure hints early, then uses error signals to dynamically adjust what the model learns at each training step.",
+    "why_math": "Language has hidden structure (word order, grammar rules) that constrains meaning; injecting these patterns early creates a robust foundation. Feedback-guided curriculum focuses on hard examples, avoiding wasted effort on easy ones."
+  },
+  {
+    "gid": 575,
+    "math_tags": [
+      "smart random sampling and averaging",
+      "weighting the parts that are most relevant",
+      "predicting the next item in a sequence"
+    ],
+    "math_plain": "Predicts which parts of long documents the model will actually need to read, then loads only those parts instead of storing everything in memory.",
+    "why_math": "Attention over long texts is sparse—the model only looks at a few important parts. Predicting which parts matter ahead of time saves memory; the model can still understand the full meaning from key pieces."
+  },
+  {
+    "gid": 576,
+    "math_tags": [
+      "combining many weak signals into a strong one",
+      "following the slope downhill to improve",
+      "weighting the parts that are most relevant"
+    ],
+    "math_plain": "Combines facial expression and eye-movement signals to measure user cognitive load in real-time, then adjusts how reasoning agents collaborate based on load.",
+    "why_math": "Each signal alone is noisy (pupils dilate for many reasons), but combined they reveal true mental effort. Adapting interaction depth prevents overwhelming users; the math exploits redundancy in weak signals to recover a strong estimate."
+  },
+  {
+    "gid": 577,
+    "math_tags": [
+      "spreading information across a network",
+      "matching and allocating who gets what"
+    ],
+    "math_plain": "Maps an underground three-tier supply chain (data sellers to operators to buyers) by analyzing message flows and linking patterns across channels.",
+    "why_math": "Money and data flow in repeating patterns; tracing who messages whom reveals hierarchy. Persistent channels and coordinated advertising show organizational structure; high-volume contact networks reveal backbone operators."
+  },
+  {
+    "gid": 578,
+    "math_tags": [
+      "separating cause from coincidence",
+      "following the slope downhill to improve",
+      "weighting the parts that are most relevant"
+    ],
+    "math_plain": "Exploits a mismatch: guardrails split text one way but the model reconstructs intent from noise differently, so perturbed text bypasses filters but reaches the model.",
+    "why_math": "Models trained on diverse, noisy text learn resilient patterns that recover meaning from fragments. Guardrails use brittle exact-matching on characters. The model's learned robustness defeats the filter's precision."
+  },
+  {
+    "gid": 579,
+    "math_tags": [
+      "finding the settings with least error",
+      "learning a function from examples",
+      "smart random sampling and averaging"
+    ],
+    "math_plain": "Guides a language model to explore chemical space by scoring candidate molecules and focusing on unexplored regions to avoid missing better designs.",
+    "why_math": "Unexplored regions likely contain better molecules than thoroughly searched areas. Balancing exploration vs refinement avoids local traps; scoring (binding affinity) directs the search toward useful molecules."
+  },
+  {
+    "gid": 580,
+    "math_tags": [
+      "estimating probabilities from data",
+      "spreading information across a network",
+      "weighting the parts that are most relevant"
+    ],
+    "math_plain": "Treats each drone as making probabilistic decisions based on local energy (cost, service balance, interference), with a temperature parameter tuning exploration.",
+    "why_math": "In physics, temperature controls how particles explore; low temperature locks in coordinated states, high temperature allows escape. This principle transfers to agents naturally balancing individual efficiency against collective goals."
+  },
+  {
+    "gid": 581,
+    "math_tags": [
+      "estimating probabilities from data",
+      "weighting the parts that are most relevant",
+      "separating cause from coincidence"
+    ],
+    "math_plain": "Breaks claims into atomic facts, estimates confidence in each fact via embedding similarity, and triggers web search only when internal evidence is uncertain.",
+    "why_math": "High-confidence facts from strong evidence need no external check; low-confidence facts need corroboration. Selective external search saves cost while catching hallucinations; confidence acts as a filter for which facts need verification."
+  },
+  {
+    "gid": 582,
+    "math_tags": [
+      "estimating probabilities from data",
+      "predicting the next item in a sequence",
+      "finding the settings with least error"
+    ],
+    "math_plain": "Models cryptocurrency price changes as hidden states with transition probabilities, fitting parameters to blockchain data to predict profitable arbitrage moments.",
+    "why_math": "Prices follow temporal patterns (high followed by low correlation); hidden states capture unobserved market conditions. Fitting a hidden model to real data reveals which state-transitions predict profitable price gaps between exchanges."
+  },
+  {
+    "gid": 583,
+    "math_tags": [
+      "learning by comparison of similar and different",
+      "following the slope downhill to improve",
+      "combining many weak signals into a strong one"
+    ],
+    "math_plain": "Fine-tunes a reasoning model by jointly optimizing classification accuracy and explanation quality via reinforcement learning, rewarding both right answers and good reasoning steps.",
+    "why_math": "Teaching a model to explain forces step-by-step decomposition of intent; rewarding both accuracy and explanation quality exploits both signals, making the model better at understanding multimodal harm."
+  },
+  {
+    "gid": 584,
+    "math_tags": [
+      "combining many weak signals into a strong one"
+    ],
+    "math_plain": "Proposes that historical Semantic Web abstractions and methods can improve modern agentic AI architecture and solve remaining challenges.",
+    "why_math": "Historical formalisms (ontologies, service descriptions) capture domain structure; reusing these insights in agent design builds on decades of knowledge rather than starting from scratch, improving reliability and interoperability."
+  }
+]

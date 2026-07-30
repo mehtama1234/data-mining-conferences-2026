@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 855,
+    "math_tags": ["measuring similarity as nearness in a space", "estimating probabilities from data"],
+    "math_plain": "Compares sentences year-to-year using learned sentence representations to classify which sentences were kept, deleted, or added, then measures sentiment difference between added and deleted portions.",
+    "why_math": "Learned representations embed similar sentences close together in a space, so semantic matching finds true rewrites versus genuine changes. Sentiment difference isolates real content shifts because boilerplate repeats identically, making deletion-to-addition ratios reveal what management actually changed its stance on."
+  },
+  {
+    "gid": 856,
+    "math_tags": ["spreading information across a network"],
+    "math_plain": "Combines knowledge graphs (structured relationship networks) with language models to reason over web data while maintaining explicit logical constraints and connections between facts.",
+    "why_math": "Knowledge graphs encode ground truth relationships, so reasoning that respects those links stays grounded in fact. Language models can flexibly interpret natural language, but constrained by graph structure they cannot hallucinate unsupported claims."
+  },
+  {
+    "gid": 857,
+    "math_tags": ["weighting the parts that are most relevant", "finding the settings with least error"],
+    "math_plain": "Trains a selector to extract only the parts of a document most relevant to the user's query, rather than compressing the entire document equally, and learns weights through training on question-answer pairs.",
+    "why_math": "Full compression forces the system to preserve all information, including irrelevant details, diluting signal. Selective extraction weights query-relevant content high, so the compressed output concentrates only what the language model needs to answer correctly."
+  },
+  {
+    "gid": 858,
+    "math_tags": ["separating cause from coincidence"],
+    "math_plain": "Detects anomalous text at the word level by learning to assign each word an anomaly score, locating the specific parts of a text that deviate from expected patterns.",
+    "why_math": "Anomalies are words that appear in combinations or contexts the model learned are rare or wrong. Scoring each word independently lets you find exactly which parts break the learned pattern, whereas document-level scoring obscures which words caused the signal."
+  },
+  {
+    "gid": 859,
+    "math_tags": ["ranking things by a learned score", "separating cause from coincidence"],
+    "math_plain": "Manipulates rankings submitted by a corrupted participant to steer a global ranking system toward attacker-chosen outcomes while preserving the statistical appearance of normal convergence.",
+    "why_math": "Ranking systems aggregate discrete orderings, which appear opaque to change detection. By strategically flipping which items rank above or below others, an attacker can shift the aggregate consensus without changing the magnitude of any single update, evading statistical guardrails."
+  },
+  {
+    "gid": 860,
+    "math_tags": ["keeping only the few dimensions that matter", "learning a function from examples"],
+    "math_plain": "Compresses medical concepts into short discrete code sequences that align with the multi-level hierarchy of medical ontologies, learned from labeled healthcare data.",
+    "why_math": "Medical ontologies encode genuine hierarchical relationships (e.g., 'aspirin' is a 'pain reliever' is a 'drug'). Quantization that respects those levels forces codes to cluster consistently with real medical knowledge, so fewer codes capture the same semantic distinctions humans recognize."
+  },
+  {
+    "gid": 861,
+    "math_tags": ["ranking things by a learned score", "weighting the parts that are most relevant"],
+    "math_plain": "Ranks items for a user by scoring each based on its interaction patterns with similar items, then personalizes the scoring function to weight what matters most to that specific user.",
+    "why_math": "Item-to-item similarity is stable across users (people who buy X also buy Y). Personalizing which similarities count for each user (weighting some edges high, others low) lets you adapt a universal structure to individual taste without retraining from scratch."
+  },
+  {
+    "gid": 862,
+    "math_tags": ["combining many weak signals into a strong one"],
+    "math_plain": "Integrates text, images, audio, and video into a unified visualization and decision interface, using each modality to verify and clarify signals from the others.",
+    "why_math": "Each modality captures different aspects of reality with different noise. Combining them so one confirms the other (e.g., speech content matches transcript tone) filters out noise specific to any single modality, surfacing the signal present in all of them."
+  },
+  {
+    "gid": 863,
+    "math_tags": ["measuring similarity as nearness in a space", "separating cause from coincidence", "combining many weak signals into a strong one"],
+    "math_plain": "Builds a shared knowledge graph from text and signal embeddings that each participant shares, sanitized to hide individual patterns, then reasons over this combined graph to detect faults across different types of data.",
+    "why_math": "Knowledge graphs make relationships explicit, so sanitized versions preserve causal connections while hiding private signals. Multimodal embeddings aligned in a shared space mean signals reinforce across modalities, so faults visible in one domain propagate reliably to others."
+  },
+  {
+    "gid": 864,
+    "math_tags": ["measuring surprise and information"],
+    "math_plain": "Analyzes how the web evolves over time by tracking changes to content, structure, and relationships at temporal scales ranging from hours to years.",
+    "why_math": "Temporal analysis reveals causality and impact—which changes led to which outcomes. Information gain increases when you know not just what changed but when, because timing patterns disambiguate correlation from causation."
+  },
+  {
+    "gid": 865,
+    "math_tags": ["finding the settings with least error", "following the slope downhill to improve"],
+    "math_plain": "Uses a language model to construct features expressed in a domain-specific language, then searches locally for small edits to features that reduce prediction error while preserving semantic structure.",
+    "why_math": "Domain-specific languages encode valid transformation rules, so editing within that language guarantees features remain interpretable. Local search with small steps converges reliably because you can evaluate each tiny change's effect before committing, avoiding getting stuck far from good solutions."
+  },
+  {
+    "gid": 866,
+    "math_tags": ["learning by comparison of similar and different", "separating cause from coincidence"],
+    "math_plain": "Trains retrieval models to be robust by comparing documents where relevant passages are altered against versions where irrelevant passages are altered, measuring sensitivity to changes in what actually matters.",
+    "why_math": "Causality says relevant passages cause the relevance judgment. If a model's output barely changes when you alter irrelevant passages but shifts dramatically when you alter key passages, the model has learned which parts actually matter. This causality-grounded robustness resists tricks that fake relevance."
+  },
+  {
+    "gid": 867,
+    "math_tags": ["separating cause from coincidence"],
+    "math_plain": "Discovers and reasons about cause-effect relationships directly from knowledge graphs by respecting their ontological structure and handling incomplete information.",
+    "why_math": "Knowledge graphs encode what entities are known to be related. Causal reasoning requires knowing what was actually measured versus what is simply missing. Ontologies clarify semantic categories, so causal inference respects real distinctions (a 'side effect' is different from an 'unrelated symptom') instead of treating all relationships alike."
+  },
+  {
+    "gid": 868,
+    "math_tags": ["estimating probabilities from data", "separating cause from coincidence"],
+    "math_plain": "Evaluates whether language models can assess the quality and factual accuracy of peer reviews by checking if reviewer claims are actually supported by the paper being reviewed.",
+    "why_math": "Review quality depends on whether a reviewer's criticisms point to real claims in the paper. Verification requires checking which statements in the review are grounded in the paper versus which are unsupported opinions. Models succeed when they distinguish what the paper actually says from what a reviewer claimed it says."
+  },
+  {
+    "gid": 869,
+    "math_tags": ["separating cause from coincidence", "combining many weak signals into a strong one"],
+    "math_plain": "Discovers cause-effect relationships in time series by enriching raw data with semantic context from language models, aligning temporal patterns with conceptual meaning.",
+    "why_math": "Raw time series alone cannot distinguish true causality from spurious correlation. Adding semantic priors (e.g., 'when you see pattern X in the data, it means Y is happening') helps the model ignore coincidences and recognize when one variable truly drives another. Multimodal alignment ensures temporal and semantic signals reinforce rather than contradict."
+  }
+]

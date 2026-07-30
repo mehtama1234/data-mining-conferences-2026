@@ -1,0 +1,143 @@
+[
+  {
+    "gid": 915,
+    "math_tags": [
+      "weighting the parts that are most relevant",
+      "measuring similarity as nearness in a space",
+      "learning by comparison of similar and different"
+    ],
+    "math_plain": "Score how well a meme interpretation ranks by how much it relies on relevant documents while avoiding misleading false-similar ones.",
+    "why_math": "It works because ranking answers by relevance to actual evidence naturally pushes correct interpretations to the top, while penalizing answers drawn from misleading distractors forces the model to distinguish between things that feel similar but point in wrong directions."
+  },
+  {
+    "gid": 916,
+    "math_tags": [
+      "finding the settings with least error",
+      "measuring surprise and information"
+    ],
+    "math_plain": "Track how much error a chemistry prediction model makes as it forecasts material behavior step-by-step through a simulation.",
+    "why_math": "It works because watching errors accumulate over time reveals whether a trained model truly understands the underlying physics or merely fits patterns that break when conditions change, separating real knowledge from overfitting."
+  },
+  {
+    "gid": 917,
+    "math_tags": [
+      "following the slope downhill to improve",
+      "weighting the parts that are most relevant"
+    ],
+    "math_plain": "Improve question-answering by cycling between breaking complex questions into simpler steps and fetching evidence, where each cycle uses what was learned before to ask better questions.",
+    "why_math": "It works because the two halves feed each other: better evidence helps you ask better subquestions, and better subquestions pull in better evidence, so alternating creates a spiral that reaches deeper understanding than either alone."
+  },
+  {
+    "gid": 918,
+    "math_tags": [
+      "keeping only the few dimensions that matter",
+      "weighting the parts that are most relevant",
+      "finding the settings with least error"
+    ],
+    "math_plain": "Preserve a knowledge graph's structure as it grows by adaptively weighting old facts against new ones based on their relative importance.",
+    "why_math": "It works because knowledge graphs grow unevenly—some facts matter more than others—so weighting lets you lock in the core structure while integrating newcomers without forgetting what shaped the whole system."
+  },
+  {
+    "gid": 919,
+    "math_tags": [
+      "measuring similarity as nearness in a space",
+      "weighting the parts that are most relevant",
+      "ranking things by a learned score"
+    ],
+    "math_plain": "Rank candidate entities for a knowledge graph link by scoring how well they align with both the graph's structure and the text descriptions, with weight tuned by the query context.",
+    "why_math": "It works because graphs and text carry different truths about relationships—structure shows how facts connect, text reveals why—so aligning both and letting the query decide their balance captures complementary signals that neither alone provides."
+  },
+  {
+    "gid": 920,
+    "math_tags": [
+      "measuring similarity as nearness in a space",
+      "learning by comparison of similar and different"
+    ],
+    "math_plain": "Build representations of human behavior and social networks that align across different languages, cultures, and professional contexts.",
+    "why_math": "It works because humans express intent through multiple channels—language, images, behavior—and across cultural boundaries they share underlying meanings even if surface forms differ, so unified representations capture the core intent rather than surface variation."
+  },
+  {
+    "gid": 921,
+    "math_tags": [
+      "finding the settings with least error",
+      "separating cause from coincidence",
+      "weighting the parts that are most relevant"
+    ],
+    "math_plain": "Estimate whether a user will convert after clicking by treating un-clicked items and clicked-but-not-converted items differently, since they have different meanings.",
+    "why_math": "It works because un-clicked items are merely unknown while clicked-non-conversions are true negatives, so treating them as the same misleads the model into thinking absence of action means the same thing as action-followed-by-rejection."
+  },
+  {
+    "gid": 922,
+    "math_tags": [
+      "ranking things by a learned score",
+      "separating cause from coincidence"
+    ],
+    "math_plain": "Rank financial assets by expected value accounting for risk and how likely a user is to take each recommendation, then adjust to trade a little ranking quality for better real-world returns.",
+    "why_math": "It works because a perfect ranking that users ignore is worthless and a ranking that delivers losses is harmful—balancing adoption probability and risk tolerance yields real value, not theoretical rank order."
+  },
+  {
+    "gid": 923,
+    "math_tags": [
+      "learning a function from examples",
+      "measuring similarity as nearness in a space"
+    ],
+    "math_plain": "Explain graph neural network decisions by tracing how inputs flow through layers and identifying which parts of the input mattered most, in ways humans at different levels of expertise understand.",
+    "why_math": "It works because decision logic is inherited from layer to layer—each transforms the previous output—so tracing flow backward reveals where a mistake was born and allows users to verify the path matches what they'd expect."
+  },
+  {
+    "gid": 924,
+    "math_tags": [
+      "measuring similarity as nearness in a space",
+      "learning by comparison of similar and different"
+    ],
+    "math_plain": "Transfer user preferences from one domain to another by finding similar items across domains, then assuming users will like target-domain items similar to items they liked in the source domain.",
+    "why_math": "It works because preference patterns are tied to item characteristics, not domains—so if two items are similar enough, a preference shown for one transfers to the other regardless of which domain is familiar."
+  },
+  {
+    "gid": 925,
+    "math_tags": [
+      "predicting the next item in a sequence",
+      "learning by comparison of similar and different"
+    ],
+    "math_plain": "Predict what a user will want next by learning their intent from both past browsing history and search queries they've entered.",
+    "why_math": "It works because search queries reveal intent directly—they say what the user is hunting for—while browsing shows what they actually consider, so combining both captures both aspiration and behavior for richer prediction."
+  },
+  {
+    "gid": 926,
+    "math_tags": [
+      "ranking things by a learned score",
+      "measuring similarity as nearness in a space"
+    ],
+    "math_plain": "Improve item ranking for recommendations by encoding the position of recent interactions so similar items from the same moment rank higher than distant matches.",
+    "why_math": "It works because user tastes shift over time—items clicked close together often appeal for the same reason—so encoding recency and proximity lets you catch temporal coherence in preference without manual time features."
+  },
+  {
+    "gid": 927,
+    "math_tags": [
+      "learning by comparison of similar and different",
+      "weighting the parts that are most relevant",
+      "finding the settings with least error"
+    ],
+    "math_plain": "Teach a small model to mimic a larger graph model's behavior by using contrast—pushing it to match the teacher's answer on correct cases and learn its own good representations on the side.",
+    "why_math": "It works because small models learn faster from examples than from theory, so showing them high-performing teacher outputs as targets plus letting them build confidence through internal contrast prevents copying errors."
+  },
+  {
+    "gid": 928,
+    "math_tags": [
+      "finding the settings with least error",
+      "separating cause from coincidence"
+    ],
+    "math_plain": "Make a machine learning model fair by rewriting its training data to come from a synthetic fair dataset instead of changing the model itself.",
+    "why_math": "It works because unfairness lives in the data—historical bias encoded in patterns—so fixing data upstream of any model makes all downstream models fair by default, whereas model-specific fixes break portability."
+  },
+  {
+    "gid": 929,
+    "math_tags": [
+      "learning a function from examples",
+      "measuring similarity as nearness in a space",
+      "smart random sampling and averaging"
+    ],
+    "math_plain": "Classify nodes with no labels by learning what text and graph structure mean, then creating fake examples for each class and using them as prompts to guide classification.",
+    "why_math": "It works because generating synthetic examples from class names preserves class semantics even without real data—the generation model understands what each class represents—so synthetic examples carry the essence of real labels."
+  }
+]

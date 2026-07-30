@@ -1,0 +1,131 @@
+[
+  {
+    "gid": 480,
+    "math_tags": [
+      "learning a function from examples",
+      "measuring similarity as nearness in a space"
+    ],
+    "math_plain": "Analyze the geometric structures (simplices) in an input knowledge graph to learn patterns, then use those patterns to generate synthetic graphs of any desired size.",
+    "why_math": "It works because the higher-dimensional structures in a graph reveal how entities truly cluster and relate; capturing these patterns ensures the synthetic graph mimics the real one's organization, not just its individual facts."
+  },
+  {
+    "gid": 481,
+    "math_tags": [
+      "finding the settings with least error",
+      "separating cause from coincidence"
+    ],
+    "math_plain": "Find the largest subset of a network where edges are tightly connected above a threshold, by reformulating it as a sequence of simpler subproblems that allow aggressive pruning.",
+    "why_math": "It works because breaking a hard problem into hereditary subproblems lets you eliminate branches early—if a subproblem has no solution, all larger problems containing it fail too, cutting the search space exponentially."
+  },
+  {
+    "gid": 482,
+    "math_tags": [
+      "spreading information across a network",
+      "predicting the next item in a sequence"
+    ],
+    "math_plain": "Predict the next event in a time sequence by explicitly modeling how each event type influences others, using separate channels for within-type patterns and cross-type influences.",
+    "why_math": "It works because real event sequences have two hidden forces: regular rhythms within each type and unexpected cascades between types; exposing both lets the model capture the true drivers of what happens next."
+  },
+  {
+    "gid": 483,
+    "math_tags": [
+      "ranking things by a learned score",
+      "weighting the parts that are most relevant"
+    ],
+    "math_plain": "Rank candidate websites by how long their links persist and how often they publish new content, then greedily select the best ones that add the most new coverage.",
+    "why_math": "It works because persistence and productivity are signals of value—websites that keep their URLs stable and publish frequently will yield the most new discoveries per crawl, so targeting them first maximizes coverage fastest."
+  },
+  {
+    "gid": 484,
+    "math_tags": [
+      "learning by comparison of similar and different",
+      "separating cause from coincidence"
+    ],
+    "math_plain": "Generate code through structured debate between three agents with opposing views, then stress-test the plan with intentional perturbations to catch logical flaws.",
+    "why_math": "It works because adversarial scrutiny from multiple angles exposes weak reasoning that one agent alone would miss; stress-testing with opposite scenarios ensures the plan survives edge cases, not just the common path."
+  },
+  {
+    "gid": 485,
+    "math_tags": [
+      "finding the settings with least error",
+      "matching and allocating who gets what"
+    ],
+    "math_plain": "Split a decision tree into critical and normal parts, then optimally allocate them across network hardware to keep accuracy high while minimizing overhead.",
+    "why_math": "It works because not all parts of a decision tree matter equally—putting critical branches on the network's fastest paths keeps accuracy high, while normal branches can tolerate latency or pruning, balancing performance and cost."
+  },
+  {
+    "gid": 486,
+    "math_tags": [
+      "combining many weak signals into a strong one",
+      "learning a function from examples"
+    ],
+    "math_plain": "Continuously update a toxicity detector by enriching corrupted text with semantic clues and learning robustly across changing perturbation types.",
+    "why_math": "It works because semantic meaning is more stable than surface text—recovering the original meaning behind evasive tricks lets the detector learn what 'toxic' truly means, not just which typos mask it, so it adapts as tricks evolve."
+  },
+  {
+    "gid": 487,
+    "math_tags": [],
+    "math_plain": "This is a workshop announcement, not a research paper with a mathematical method.",
+    "why_math": "No underlying mathematical principle applies; the description is organizational scope."
+  },
+  {
+    "gid": 488,
+    "math_tags": [
+      "measuring similarity as nearness in a space",
+      "separating cause from coincidence"
+    ],
+    "math_plain": "Use sparse autoencoders to find the specific features responsible for learned information, then steer those features at inference time to test whether information is truly deleted or merely hidden.",
+    "why_math": "It works because information can hide at different representation levels—even if a model's output looks 'forgotten', the underlying features might remain; steering those features directly reveals what was actually erased versus suppressed."
+  },
+  {
+    "gid": 489,
+    "math_tags": [
+      "learning by comparison of similar and different",
+      "weighting the parts that are most relevant"
+    ],
+    "math_plain": "For conversational recommendations, debate which historical conversations help and which hurt the current decision, then weight only the helpful ones into the preference model.",
+    "why_math": "It works because old conversations can mislead—a debate mechanism identifies which past exchanges are truly relevant to today's intent versus which are noise; selective weighting then amplifies signal and mutes interference."
+  },
+  {
+    "gid": 490,
+    "math_tags": [
+      "predicting the next item in a sequence",
+      "learning a function from examples"
+    ],
+    "math_plain": "Model long user purchase sequences efficiently using polynomial basis functions for smooth long-term trends and gated convolutions for sudden behavioral bursts, avoiding quadratic cost.",
+    "why_math": "It works because Legendre polynomials are a compact basis—they express smooth functions with few terms, capturing long-term patterns cheaply; gating mechanisms then toggle attention to sudden spikes, achieving both scales in linear time."
+  },
+  {
+    "gid": 491,
+    "math_tags": [
+      "spreading information across a network",
+      "combining many weak signals into a strong one"
+    ],
+    "math_plain": "Build an AI agent that accumulates experiences in structured memory and retrieves them through graph spreading, enabling the agent to reason coherently and personalize over months.",
+    "why_math": "It works because associative retrieval through network spreading mimics how human memory works—related ideas reinforce each other, so asking about one experience awakens connected ones, building rich context for smarter decisions without retraining."
+  },
+  {
+    "gid": 492,
+    "math_tags": [
+      "ranking things by a learned score",
+      "finding the settings with least error"
+    ],
+    "math_plain": "Design a recommendation network whose forward pass directly optimizes the top-K ranking metric by using a smooth approximation of which items rank in the top K.",
+    "why_math": "It works because recommenders usually optimize loss functions that don't match the actual goal (top-K accuracy); aligning the network architecture with top-K gradients means the model naturally learns to put the best items first, not just rank them well on average."
+  },
+  {
+    "gid": 493,
+    "math_tags": [
+      "predicting the next item in a sequence",
+      "weighting the parts that are most relevant"
+    ],
+    "math_plain": "Predict click-through rates by first generating clusters of immediate user intent, then using those clusters as context to score candidates, balancing long-term preference with current needs.",
+    "why_math": "It works because users' true intent shifts moment-to-moment but follows patterns—generating intent clusters from recent behavior captures this moment's priority, while cross-attention to history prevents swinging from long-established preferences."
+  },
+  {
+    "gid": 494,
+    "math_tags": [],
+    "math_plain": "This is a position paper on governance, not a research paper with a mathematical method.",
+    "why_math": "No mathematical technique is described; the work focuses on socio-technical frameworks and design constraints for ethical AI use in civic systems."
+  }
+]

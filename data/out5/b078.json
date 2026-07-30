@@ -1,0 +1,152 @@
+[
+  {
+    "gid": 1170,
+    "math_tags": [
+      "ranking things by a learned score",
+      "combining many weak signals into a strong one",
+      "measuring similarity as nearness in a space"
+    ],
+    "math_plain": "Rank documents by combining term weights with fusion methods; BM25Q applies statistical word importance to queries themselves, not just documents.",
+    "why_math": "It works because ranking only needs to get the order right, not exact scores. Weighting by how much a word matters to distinguish topics automatically surfaces the most relevant documents first. Fusion combines independent signals so their weaknesses cancel out while agreement amplifies."
+  },
+  {
+    "gid": 1171,
+    "math_tags": [
+      "estimating probabilities from data",
+      "measuring similarity as nearness in a space",
+      "learning by comparison of similar and different"
+    ],
+    "math_plain": "Model user preferences from conversation history and profile data; predict which responses best match each user's information needs.",
+    "why_math": "It works because past behavior reveals what users value: if a user repeatedly asks certain types of questions or accepts certain answers, that pattern generalizes to future requests from the same user. Personalization exploits the stability of individual preference."
+  },
+  {
+    "gid": 1172,
+    "math_tags": [
+      "learning a function from examples",
+      "ranking things by a learned score",
+      "measuring similarity as nearness in a space"
+    ],
+    "math_plain": "Learn a mapping from technical scientific abstracts to plain-language summaries by example, capturing discourse structure across sentence and document levels.",
+    "why_math": "It works because aligned pairs of complex and simple texts reveal the systematic patterns of what makes writing hard: jargon, sentence length, implicit concepts. By learning these patterns from examples, the model can apply the transformation to new texts."
+  },
+  {
+    "gid": 1173,
+    "math_tags": [
+      "ranking things by a learned score",
+      "measuring similarity as nearness in a space",
+      "separating cause from coincidence"
+    ],
+    "math_plain": "Rank legal cases by combining factual similarity to the query case with legal reasoning principles, using expert-annotated relevance judgments.",
+    "why_math": "It works because legal relevance depends on two separable things: does this case involve similar facts, and does the legal reasoning apply? Scoring each independently then combining them captures both the similarity that matters and the reasoning connection."
+  },
+  {
+    "gid": 1174,
+    "math_tags": [
+      "spreading information across a network",
+      "measuring similarity as nearness in a space",
+      "separating cause from coincidence"
+    ],
+    "math_plain": "Represent open-source collaboration as a network of users connected to repositories; analyze patterns of contribution and code reuse diffusion through the network structure.",
+    "why_math": "It works because contribution patterns form a network where proximity (users in the same organization or sharing repos) predicts future collaboration. Information and code spread along edges; analyzing the network structure reveals how influence and reuse propagate."
+  },
+  {
+    "gid": 1175,
+    "math_tags": [
+      "measuring similarity as nearness in a space",
+      "learning a function from examples",
+      "separating cause from coincidence"
+    ],
+    "math_plain": "Measure how well language models align meanings across languages by placing Ehugbo queries and English documents in a shared space; compare global vs. regional models.",
+    "why_math": "It works because if two meanings are equivalent across languages, they should occupy the same region in a carefully trained space. Models trained on diverse language pairs learn this alignment; regional models, despite understanding each language well, lack the translation bridges to map between them."
+  },
+  {
+    "gid": 1176,
+    "math_tags": [
+      "ranking things by a learned score",
+      "measuring similarity as nearness in a space",
+      "combining many weak signals into a strong one"
+    ],
+    "math_plain": "Evaluate automated LLM judges by comparing their scores to human judgments; measure correlation across diverse evaluation tasks and diagnose failure modes.",
+    "why_math": "It works because human judgment is the ground truth we can measure against. Comparing judge predictions to human ratings reveals both accuracy and systematic biases. Testing across multiple tasks and known vulnerabilities isolates which types of evaluation a judge handles well."
+  },
+  {
+    "gid": 1177,
+    "math_tags": [
+      "estimating probabilities from data",
+      "learning by comparison of similar and different",
+      "smart random sampling and averaging"
+    ],
+    "math_plain": "Simulate how users select query suggestions by training a model to predict selection based on relevance to search intent; use simulated selection to evaluate suggestion quality.",
+    "why_math": "It works because real users follow a predictable decision process: they choose suggestions aligned with what they're searching for. A model trained on real selection patterns can approximate future user behavior, enabling offline evaluation that captures the interactive dynamics of actual query refinement."
+  },
+  {
+    "gid": 1178,
+    "math_tags": [
+      "estimating probabilities from data",
+      "ranking things by a learned score",
+      "measuring similarity as nearness in a space"
+    ],
+    "math_plain": "Benchmark language models across 18,357 understanding and generation tasks in Traditional Mongolian; measure reasoning, knowledge, and linguistic proficiency through test accuracy.",
+    "why_math": "It works because test performance on diverse tasks reveals both what a model knows and where it fails. Grading on multiple dimensions captures different aspects of language ability. Comparing across models with the same benchmark isolates which systems advance the field."
+  },
+  {
+    "gid": 1179,
+    "math_tags": [
+      "separating cause from coincidence",
+      "measuring similarity as nearness in a space",
+      "learning by comparison of similar and different"
+    ],
+    "math_plain": "Analyze Wikipedia edit pairs to detect subtle narrative shifts in cultural attribution and agency; identify cumulative patterns of framing change.",
+    "why_math": "It works because comparing before-and-after text reveals intentional changes: what words were added, removed, or reframed. Subtle manipulation appears as consistent directional changes across many edits. Aggregating patterns across revisions exposes coordinated narrative shifts that individual edits might hide."
+  },
+  {
+    "gid": 1180,
+    "math_tags": [
+      "estimating probabilities from data",
+      "spreading information across a network",
+      "learning by comparison of similar and different"
+    ],
+    "math_plain": "Provide API middleware to simplify running user simulators in shared tasks; record interactions uniformly so conversational search systems can be evaluated consistently.",
+    "why_math": "It works because standardized evaluation infrastructure removes technical barriers, enabling researchers to focus on improving their systems rather than wrestling with infrastructure. Uniform run recording makes systems directly comparable since they all generate output in the same format."
+  },
+  {
+    "gid": 1181,
+    "math_tags": [
+      "ranking things by a learned score",
+      "measuring similarity as nearness in a space",
+      "separating cause from coincidence"
+    ],
+    "math_plain": "Rank real-estate listings using geo-temporal price clusters combined with transport accessibility; use linear attribution to separate location value from intrinsic property quality.",
+    "why_math": "It works because real-estate price depends on separable factors: intrinsic property features and location premium. A linear model that explains price variation via these factors lets you isolate how much value comes from each. Ranking by combined features surfaces listings matching buyer preferences."
+  },
+  {
+    "gid": 1182,
+    "math_tags": [
+      "smart random sampling and averaging",
+      "learning a function from examples",
+      "estimating probabilities from data"
+    ],
+    "math_plain": "Generate synthetic financial transaction data and fraud patterns configured by scenario parameters; create realistic tabular and graph data for anomaly detection research.",
+    "why_math": "It works because fraud detection models need diverse examples to learn patterns, but real bank data is locked away. Synthetic data generated from known fraud scenarios (money mule, structuring, etc.) provides labeled examples that capture the essential statistical signatures of real fraud without exposing private transactions."
+  },
+  {
+    "gid": 1183,
+    "math_tags": [
+      "estimating probabilities from data",
+      "learning by comparison of similar and different",
+      "smart random sampling and averaging"
+    ],
+    "math_plain": "Generate tip-of-the-tongue queries across four languages by simulating user memory recall from documents; validate simulated queries against real user search behavior.",
+    "why_math": "It works because tip-of-the-tongue queries follow patterns: users remember fragments of meaning, not exact wording. A model trained on that pattern and validated against real users can generate synthetic queries that behave like human queries, enabling multilingual benchmark construction without extensive human search logs."
+  },
+  {
+    "gid": 1184,
+    "math_tags": [
+      "combining many weak signals into a strong one",
+      "ranking things by a learned score",
+      "spreading information across a network"
+    ],
+    "math_plain": "Integrate query reformulation, ranking, and response generation as modular components; combine component outputs to produce end-to-end conversational search results.",
+    "why_math": "It works because conversational search is a pipeline where each stage refines or reweights the previous one: reformulation clarifies intent, ranking surfaces relevant information, generation shapes it for the user. Modularity lets researchers contribute better stages independently while reusing others' work."
+  }
+]

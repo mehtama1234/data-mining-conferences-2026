@@ -1,0 +1,141 @@
+[
+  {
+    "gid": 1365,
+    "math_tags": [
+      "finding the settings with least error",
+      "measuring similarity as nearness in a space",
+      "spreading information across a network"
+    ],
+    "math_plain": "Learns how people influence each other in the network, then splits users into groups to measure true experiment effects more accurately.",
+    "why_math": "It works because when you treat interference as a learned pattern rather than a fixed guess, you get better groups. Then when you measure effects within groups instead of globally, you remove the noise from people affecting each other. CUPED further reduces random wobble by using data collected before the experiment started."
+  },
+  {
+    "gid": 1366,
+    "math_tags": [
+      "learning a function from examples",
+      "estimating probabilities from data",
+      "measuring surprise and information"
+    ],
+    "math_plain": "Uses language models to create clean user interest profiles, then removes noise while preserving signal about what each person really wants to watch.",
+    "why_math": "It works because language models capture semantic meaning that raw click sequences miss. By explicitly denoising at both user and item levels, you keep true preferences while discarding random clicks. This is grounded in information theory—you maximize signal while suppressing noise."
+  },
+  {
+    "gid": 1367,
+    "math_tags": [
+      "ranking things by a learned score",
+      "separating cause from coincidence",
+      "weighting the parts that are most relevant"
+    ],
+    "math_plain": "Scores videos using both exact ID memorization and semantic meaning, with a learned gate that decides which to trust based on whether the item is popular or rare.",
+    "why_math": "It works because memorization excels on frequent items (you've seen them often) while semantic similarity helps on rare items (you see patterns instead). The gate learns when each approach is trustworthy. For rare items, semantic patterns are reliable; for common ones, exact history is."
+  },
+  {
+    "gid": 1368,
+    "math_tags": [
+      "estimating probabilities from data",
+      "measuring similarity as nearness in a space"
+    ],
+    "math_plain": "Splits user activity prediction into two parts: first detecting whether a user is at an extreme (completely inactive or fully active), then modeling the distribution for everyone else.",
+    "why_math": "It works because the data has two peaks at the extremes. Treating the extremes separately prevents those outliers from warping the model for the middle users. Each part can now assume a simpler distribution shape."
+  },
+  {
+    "gid": 1369,
+    "math_tags": [
+      "weighting the parts that are most relevant",
+      "learning by comparison of similar and different",
+      "separating cause from coincidence"
+    ],
+    "math_plain": "Learns how treatments affect different people by sharing knowledge across treatment groups and anchoring the representations to stabilize learning.",
+    "why_math": "It works because sharing signals between treatment groups borrows strength when data is sparse. Anchoring representations prevents them from drifting differently per mini-batch. Using RCT data adds unbiased ground truth, which pulls the model toward correct causal effects."
+  },
+  {
+    "gid": 1370,
+    "math_tags": [
+      "learning a function from examples",
+      "finding the settings with least error"
+    ],
+    "math_plain": "Creates specialized agent skills by grounding them in support documents, then automatically detects failures and rewrites skills to fix the underlying problems.",
+    "why_math": "It works because grounding skills in a knowledge base ensures they align with real requirements from the start. Failure analysis traces execution errors back to skill flaws. This feedback loop iteratively removes one class of defects per cycle, improving skill quality."
+  },
+  {
+    "gid": 1371,
+    "math_tags": [
+      "ranking things by a learned score",
+      "combining many weak signals into a strong one"
+    ],
+    "math_plain": "Uses a language model as a judge to compare recommendation options: first filtering weak candidates, then picking the best by pairwise comparison.",
+    "why_math": "It works because language models understand user preferences expressed in product text and metadata. Pairwise comparison is more stable than absolute scoring—you don't need accurate scores, just which option is better. This avoids position bias and is more robust."
+  },
+  {
+    "gid": 1372,
+    "math_tags": [
+      "predicting the next item in a sequence",
+      "estimating probabilities from data"
+    ],
+    "math_plain": "Models three sequential probabilities: likelihood of a like, a match given a like, and a conversation given a match, using a shared learned representation.",
+    "why_math": "It works because the dating journey is actually a chain of events with increasing commitment. Modeling the chain structure captures that conversations are far rarer but more meaningful than likes. Sharing embeddings lets the model learn representations that predict all three stages well."
+  },
+  {
+    "gid": 1373,
+    "math_tags": [
+      "ranking things by a learned score",
+      "learning a function from examples"
+    ],
+    "math_plain": "Routes customer requests to specialized retrieval, reasoning, and tool-calling systems, optimizing for accuracy, speed, cost, and reliability at massive scale.",
+    "why_math": "It works because each subtask (product search, Q&A, actions) has different optimal strategies. Routing to specialized components lets each solve its problem cheaply and accurately. Production constraints force this modularity rather than a single end-to-end model."
+  },
+  {
+    "gid": 1374,
+    "math_tags": [
+      "ranking things by a learned score",
+      "learning a function from examples"
+    ],
+    "math_plain": "Learns to rank content within browse categories using actual user browsing session data instead of treating the category name as a search query.",
+    "why_math": "It works because browsing is different from searching: users explore without clear intent. Category names are imperfect proxies for what users actually want to see. Learning from click sessions directly captures true preferences within each curated collection."
+  },
+  {
+    "gid": 1375,
+    "math_tags": [
+      "spreading information across a network",
+      "separating cause from coincidence"
+    ],
+    "math_plain": "Combines semantic search with power-grid topology: uses semantic retrieval but constrains it to respect electrical system physical laws, with explicit reasoning chains.",
+    "why_math": "It works because power grids have rigid physical constraints that pure semantic matching misses. Symbolic patterns match abstract intentions to technical entities, while subgraph encoding ensures physical feasibility. The two together prevent hallucinations that violate safety rules."
+  },
+  {
+    "gid": 1376,
+    "math_tags": [
+      "following the slope downhill to improve",
+      "weighting the parts that are most relevant"
+    ],
+    "math_plain": "Processes long user histories using bidirectional linear-time attention that forgets old events gradually and gates output, avoiding quadratic slowdown.",
+    "why_math": "It works because softmax attention has to process every past event equally, so long histories explode in cost. Linear attention with forgetting gates keeps the cost flat while mimicking bidirectional bidirectional attention's quality. Conv1D mixes local context, RMSNorm stabilizes gradients."
+  },
+  {
+    "gid": 1377,
+    "math_tags": [
+      "measuring similarity as nearness in a space",
+      "ranking things by a learned score"
+    ],
+    "math_plain": "Encodes music tracks and queries into a shared semantic space using a language model, then re-ranks candidates with a cross-encoder to find matching playlists.",
+    "why_math": "It works because semantic distance in the shared space now captures subjective similarity. Tracks with similar meaning sit nearby even if they share no keywords. Re-ranking refines the rough ranking cheaply, and distilling its signals into the encoder reduces cost at serving time."
+  },
+  {
+    "gid": 1378,
+    "math_tags": [
+      "finding the settings with least error",
+      "weighting the parts that are most relevant"
+    ],
+    "math_plain": "Routes retrieved sensitive content through one of three handling modes: quote verbatim, blend while minimizing exposure, or synthesize without using sensitive parts.",
+    "why_math": "It works because different use cases need different trade-offs between utility and compliance. Metadata tags let the system make mode decisions before generating. Auditing the final output catches slips. This separates routing (which requires context) from enforcement (which can be checked mechanically)."
+  },
+  {
+    "gid": 1379,
+    "math_tags": [
+      "keeping only the few dimensions that matter",
+      "following the slope downhill to improve"
+    ],
+    "math_plain": "Learns which input features matter during rapid retraining by using discrete binary masks, then relaxes them to continuous importance scores for serving.",
+    "why_math": "It works because online data changes fast, so features become obsolete. Learning masks during training (with straight-through estimators) lets gradient descent decide what to keep. Relaxing to probabilities at serving time gives both a deterministic score and interpretability without extra computation."
+  }
+]

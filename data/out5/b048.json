@@ -1,0 +1,92 @@
+[
+ {
+  "gid": 720,
+  "math_tags": ["learning a function from examples", "learning by comparison of similar and different"],
+  "math_plain": "Generate artificial anomalies by step-wise corruption of node attributes and connections, then train to separate real anomalies from progressively degraded normal nodes.",
+  "why_math": "Works because anomalies of different severity levels exist in the real world, so training on a spectrum from mild to extreme makes the model recognize subtle deviations that a single-step method would miss. The progressive constraint forces learned scores to rank corruption levels properly."
+ },
+ {
+  "gid": 721,
+  "math_tags": ["predicting the next item in a sequence", "weighting the parts that are most relevant"],
+  "math_plain": "Split user interaction history into two time-scale views: long-term stable preferences and recent short-term trends, then weight and combine them to predict which news article to recommend.",
+  "why_math": "Works because users have two independent interests: consistent habits from months of reading plus immediate reactions to today's events. Treating them separately lets each view track its own signal without noise, then combining them captures both stability and responsiveness."
+ },
+ {
+  "gid": 722,
+  "math_tags": ["ranking things by a learned score", "measuring similarity as nearness in a space", "smart random sampling and averaging"],
+  "math_plain": "Learn which distance measures and how many reference nodes to use for encoding node positions, then pick the most representative nodes and encode each node as distances to them.",
+  "why_math": "Works because nodes with similar connection patterns to far-away reference points must themselves be structurally similar, so distances to anchors become searchable coordinates. Automating the anchor count and metric selection avoids manual tuning while adapting to each graph's shape."
+ },
+ {
+  "gid": 723,
+  "math_tags": ["learning a function from examples", "learning by comparison of similar and different", "weighting the parts that are most relevant"],
+  "math_plain": "Predict total purchase spending after a click by routing examples through separate models for single-purchase and repeat-purchase paths, with adaptive target calibration to handle incomplete labels arriving over time.",
+  "why_math": "Works because repeat buyers and one-time buyers follow different spending patterns, so a shared model would average them out incorrectly. Separate paths let each learn its true distribution, and dynamic target recalibration corrects for the fact that labels keep arriving after training."
+ },
+ {
+  "gid": 724,
+  "math_tags": ["separating cause from coincidence", "learning by comparison of similar and different"],
+  "math_plain": "Find the actual hateful semantic units hidden in obfuscated text by mining candidates then debating their meaning, separating false surface cues from real harmful intent.",
+  "why_math": "Works because implicit hate uses misdirection — surface words seem innocent but underlying components carry the true message. Mining broadly then deliberating with reasoning separates noise from genuine signal, mimicking how humans detect what wasn't meant to be obvious."
+ },
+ {
+  "gid": 725,
+  "math_tags": ["ranking things by a learned score", "learning a function from examples"],
+  "math_plain": "Encode raw time series using a pre-trained model, extract repeating temporal patterns as features, then classify each series to recommend which forecasting method works best for it.",
+  "why_math": "Works because different forecasting algorithms excel on different data characteristics: one handles trend, another handles cycles, another handles noise. Learning to classify series by their true patterns lets you pick the specialist best suited to each, rather than training every method then comparing."
+ },
+ {
+  "gid": 726,
+  "math_tags": ["learning a function from examples", "separating cause from coincidence"],
+  "math_plain": "Unlearn sensitive information by simultaneously pushing three separate goals: lower decision confidence on protected content, force refusals when asked about it, and suppress recall under both image and text prompts.",
+  "why_math": "Works because sensitive information is learned at multiple layers and gets triggered by different input types. Hitting it from three angles — decision making, generation, and recall — ensures no hidden path lets it leak out, and balances forgetting across all the behaviors the model learned."
+ },
+ {
+  "gid": 727,
+  "math_tags": ["measuring similarity as nearness in a space", "weighting the parts that are most relevant", "smart random sampling and averaging"],
+  "math_plain": "Detect anomalies in high-dimensional time streams by finding neighbors of each observation in a fast hierarchical index, then score based on neighbor statistics weighted by relevance, with adaptive retraining as patterns shift.",
+  "why_math": "Works because anomalies are isolated points: normal data clusters together in high dimensions while abnormal points sit far from any dense region. Neighbor-based scoring captures this without learning a model, and the hierarchical index makes querying fast. Adaptive retraining handles concept drift as normal behavior evolves."
+ },
+ {
+  "gid": 728,
+  "math_tags": ["learning a function from examples", "following the slope downhill to improve"],
+  "math_plain": "Correct obfuscated harmful text by aligning characters bidirectionally and using a specialized attention mechanism to fix each position, trained to handle visual tricks and emoji substitution.",
+  "why_math": "Works because obfuscation exploits character-level confusion (is that zero or oh? is that L or I?) and token boundaries. Bidirectional alignment and character-level attention let the small model fix these tricks precisely without the latency of large auto-regressive models, while handling out-of-vocabulary symbols naturally."
+ },
+ {
+  "gid": 729,
+  "math_tags": ["measuring similarity as nearness in a space", "learning by comparison of similar and different"],
+  "math_plain": "Infer missing sensor values by using attention to dynamically learn which other sensors are similar to each unknown node, then progressively refine guesses by spreading information through the refined graph.",
+  "why_math": "Works because a sensor's unknown value depends most on nearby similar sensors, not distant ones or predefined connections. Dynamic attention finds true similarity from the data, and diffusion-style progressive refinement ensures corrections from multiple correlated sources combine smoothly without oscillation."
+ },
+ {
+  "gid": 730,
+  "math_tags": ["keeping only the few dimensions that matter", "learning by comparison of similar and different", "combining many weak signals into a strong one"],
+  "math_plain": "Compress nodes and graph structure into discrete codes in a first stage, then perform attention at the level of these codes rather than individual nodes, reducing computation while improving generalization.",
+  "why_math": "Works because nodes within a code cluster are similar, so attention between clusters captures the essential relationships while filtering noise from individual node variation. Discrete codes create a bottleneck that forces the model to learn robust semantic groups, making predictions stable when test data differs from training."
+ },
+ {
+  "gid": 731,
+  "math_tags": ["separating cause from coincidence", "weighting the parts that are most relevant"],
+  "math_plain": "Improve recommendations by denoising the knowledge graph to remove false associations, then reweight edges to highlight the ones that actually matter for the recommendation task.",
+  "why_math": "Works because real-world knowledge graphs contain spurious connections that add noise and mislead the recommendation model. Denoising removes false correlations, and task-specific reweighting emphasizes edges that distinguish good recommendations from bad ones, focusing signal on what matters for predicting user preferences."
+ },
+ {
+  "gid": 732,
+  "math_tags": ["learning by comparison of similar and different", "finding the settings with least error"],
+  "math_plain": "Train fraud detection robust to emotional manipulation by adversarially injecting realistic noise into emotion signals during training, drawn from actual patterns in user behavior.",
+  "why_math": "Works because adversaries can subtly modulate facial expressions, voice tone, and word choice to mimic honesty while committing fraud. Training against realistic emotional perturbations teaches the model to ignore emotion-based tricks and rely on deeper behavioral patterns that fraudsters cannot easily fake."
+ },
+ {
+  "gid": 733,
+  "math_tags": ["estimating probabilities from data", "measuring surprise and information"],
+  "math_plain": "Detect when a graph model becomes unreliable by iteratively comparing predictions to actual graph behavior and exposing the internal errors that signal a distribution shift.",
+  "why_math": "Works because out-of-distribution examples create mismatches between what the model expects and what it observes in the graph. Spiking error signals reveal these mismatches before bad predictions happen, and iterative correction exposes uncertainty in the mismatch itself, making reliability interpretable."
+ },
+ {
+  "gid": 734,
+  "math_tags": ["combining many weak signals into a strong one", "learning a function from examples"],
+  "math_plain": "Answer questions from continuous egocentric video by compressing long context into hierarchical summaries, combining speech and gaze into structured commands, and orchestrating specialized tools via reasoning.",
+  "why_math": "Works because a human's first-person experience spans minutes or hours but a single reasoning step fits a much shorter window. Hierarchical compression summarizes the long past while keeping important details, and tool orchestration lets weak individual signals (noisy speech, gaze drift) combine through reasoning to yield reliable decisions."
+ }
+]

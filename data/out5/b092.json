@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 1380,
+    "math_tags": ["measuring similarity as nearness in a space", "ranking things by a learned score"],
+    "math_plain": "Find and return images and videos from documentation that are most similar to what the user is asking about.",
+    "why_math": "It works because when you represent both the question and the multimedia content in a shared space where similar ideas sit close together, finding the nearest neighbors gives you the most relevant artifacts. This way, procedural videos and diagrams naturally bubble up when they match the user's intent."
+  },
+  {
+    "gid": 1381,
+    "math_tags": ["finding the settings with least error", "smart random sampling and averaging"],
+    "math_plain": "Reduce the variability in revenue metrics by grouping similar users and subtracting out their known pre-experiment differences.",
+    "why_math": "It works because revenue data has extreme outliers that wash out real effects. By separating users into strata with similar earning potential and measuring within each group, you amplify the true signal and ignore the noise from random variation in who happens to be in your test group."
+  },
+  {
+    "gid": 1382,
+    "math_tags": ["learning by comparison of similar and different", "measuring similarity as nearness in a space"],
+    "math_plain": "Learn item representations that group similar things close together, especially for new items, by contrasting what users engage with against what they ignore.",
+    "why_math": "It works because when you push items users interacted with closer together and pull apart items they ignored, the geometry of the space encodes real collaborative signals. New items inherit predictive power from their semantic neighbors without needing existing engagement data."
+  },
+  {
+    "gid": 1383,
+    "math_tags": ["finding the settings with least error", "matching and allocating who gets what"],
+    "math_plain": "Simultaneously maximize both user satisfaction and creator earnings by setting constraints that keep creator payoff above a threshold while ranking results.",
+    "why_math": "It works because you separate the two competing goals into a primary objective (user satisfaction) and secondary hard constraints (creator earnings). The optimization algorithm decouples the global fairness constraint into independent real-time decisions, ensuring creators get minimum exposure without requiring coordination across all requests."
+  },
+  {
+    "gid": 1384,
+    "math_tags": ["learning by comparison of similar and different", "measuring similarity as nearness in a space"],
+    "math_plain": "Determine which visual features matter for each pairing of products by learning where text and images align, treating compatibility as conditional retrieval.",
+    "why_math": "It works because fashion compatibility is context-dependent; a sofa-table pairing looks for different features than sofa-curtain. By conditioning which visual features to examine based on the relational text context, you capture nuanced style rules that rigid global features miss."
+  },
+  {
+    "gid": 1385,
+    "math_tags": ["ranking things by a learned score", "measuring similarity as nearness in a space"],
+    "math_plain": "Rank content policies by relevance to each product listing using dense retrieval, reducing computational cost by filtering to likely-matching policies first.",
+    "why_math": "It works because enforcement is a retrieval problem: find policies that a product might violate. Ranking policies by how close their semantic meaning is to the product description gives a fast filter that catches most violations, letting expensive verification focus on genuine suspects."
+  },
+  {
+    "gid": 1386,
+    "math_tags": ["learning a function from examples", "learning by comparison of similar and different"],
+    "math_plain": "Align an answer-generating system to produce factually correct responses by learning from examples where correct and incorrect answers are annotated with their reasoning.",
+    "why_math": "It works because understanding why an answer is right or wrong teaches the system the causal structure of the data. Standard preference learning ignores this reasoning, missing the underlying principles. Reason-aware alignment uses these explanations to generalize better to unseen queries."
+  },
+  {
+    "gid": 1387,
+    "math_tags": ["predicting the next item in a sequence", "ranking things by a learned score"],
+    "math_plain": "Predict what a user will do next, and use that prediction to improve the ranking of intent suggestions for their immediate need.",
+    "why_math": "It works because current intent is not independent from future actions; they are coupled. By predicting the next behavior and propagating that signal backward, you capture the trajectory of user goals, making intent recommendations more aligned with what users actually intend to accomplish next."
+  },
+  {
+    "gid": 1388,
+    "math_tags": ["learning a function from examples", "ranking things by a learned score"],
+    "math_plain": "Generate and refine product attribute schemas from scratch by iteratively generating attributes, checking quality, and collecting human feedback to improve prompts.",
+    "why_math": "It works because attributes are domain knowledge. Bootstrapping via iterative human-in-the-loop refinement progressively tightens the definition of what attributes are valid, so each round learns from error patterns. Human annotation anchors the semantic space, guiding the system toward marketplace reality."
+  },
+  {
+    "gid": 1389,
+    "math_tags": ["ranking things by a learned score"],
+    "math_plain": "Test how well different vision-language models extract fashion attributes and product information, measuring which models and prompts work best per task.",
+    "why_math": "It works because operational deployment requires task-specific assessment. General-purpose benchmarks miss fashion nuances. Testing multiple models and prompts reveals that best performance is task-dependent and error patterns are model-specific, so continuous monitoring is necessary for reliability."
+  },
+  {
+    "gid": 1390,
+    "math_tags": ["ranking things by a learned score", "finding the settings with least error"],
+    "math_plain": "Reorder search results to maximize revenue from paid placements while keeping relevance and fraud risk within acceptable bounds using discrete optimization.",
+    "why_math": "It works because reranking is a constrained optimization problem: change the order to improve one metric (revenue) without breaking others (relevance, fraud). A fast approximation algorithm that swaps neighboring items greedily reaches most of the ideal revenue gain within the latency budget required by live serving."
+  },
+  {
+    "gid": 1391,
+    "math_tags": ["measuring similarity as nearness in a space", "predicting the next item in a sequence"],
+    "math_plain": "Represent videos by their semantic category hierarchies and compress ultra-long user watch histories using a specialized attention that folds time efficiently.",
+    "why_math": "It works because atomic video IDs are sparse and wasteful; semantic hierarchies compress the embedding space and generalize to new content via shared prefixes. Temporal folding reduces the quadratic explosion of attention, letting you model much longer histories without exploding memory or latency costs."
+  },
+  {
+    "gid": 1392,
+    "math_tags": ["learning by comparison of similar and different", "measuring similarity as nearness in a space"],
+    "math_plain": "Train a recommendation model to encode fine-grained user-item interactions during learning, then deploy in a fast two-tower form by injecting user profile guidance and discretized interest spaces.",
+    "why_math": "It works because two-tower models are fast but lose rich interactions. Training with target-item guidance teaches the model to capture nuance, then compressing interests into discrete semantic clusters preserves expressiveness while keeping inference decoupled and efficient."
+  },
+  {
+    "gid": 1393,
+    "math_tags": ["learning a function from examples", "predicting the next item in a sequence"],
+    "math_plain": "Break down novelty recommendation into stages (novelty direction, interest, list construction) and train them jointly using reinforcement learning optimized at both sequence and item levels.",
+    "why_math": "It works because relevance and diversity are at odds; a single reward signal cannot capture both. Decomposing into stages lets each stage specialize, and optimizing at two granularities (sequence and item) catches both the big-picture coherence and the fine-grained redundancy that simple sequence rewards miss."
+  },
+  {
+    "gid": 1394,
+    "math_tags": ["ranking things by a learned score", "finding the settings with least error"],
+    "math_plain": "Predict purchase conversion by learning how item discount rates trend over time and correcting for bias in which users see which discounts.",
+    "why_math": "It works because discounts drive purchasing decisions but their effect is entangled with selection bias (some users always get discounts, others never do) and time trends (holidays spike discounts). Separating the true discount signal from these confounds lets the model learn how discounts truly influence purchase likelihood."
+  }
+]

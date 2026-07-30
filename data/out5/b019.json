@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 285,
+    "math_tags": ["following the slope downhill to improve"],
+    "math_plain": "Simulating urban systems forward in time to find which policy changes reduce emissions most effectively.",
+    "why_math": "It works because running a simulation from today through future years with each proposed policy lets you see which ones actually cause the outcomes you want (lower emissions, better livability), rather than guessing."
+  },
+  {
+    "gid": 286,
+    "math_tags": ["separating cause from coincidence", "learning a function from examples"],
+    "math_plain": "Learning to distinguish real news from fake by teaching a system which patterns of tone and emotion always appear in real articles, even when an attacker changes those emotions.",
+    "why_math": "It works because truly false content has patterns deeper than just tone—if a detector learns only from tone it fails against tone-switching attacks. By identifying the irreducible core patterns of falsehood independent of emotional spin, the system gets genuinely robust."
+  },
+  {
+    "gid": 287,
+    "math_tags": ["keeping only the few dimensions that matter", "measuring similarity as nearness in a space"],
+    "math_plain": "Removing points from a cloud by detecting which ones sit in high-frequency dimensions (rough/noisy directions in the data), because attackers hide fake points there.",
+    "why_math": "It works because true geometry lives in smooth low-frequency patterns—if you remove rough noisy dimensions the genuine points stay clean. Attackers must distort high-frequency channels to stay imperceptible, so filtering those out restores the true shape."
+  },
+  {
+    "gid": 288,
+    "math_tags": ["matching and allocating who gets what"],
+    "math_plain": "Designing standards and rules so that AI agents, publishers, platforms, and advertisers all have clear incentives to cooperate instead of blocking or suing each other.",
+    "why_math": "It works because when everyone has conflicting incentives (publishers lose ad money, platforms get overloaded, agents need access) the system jams. Transparent shared rules and agreements align incentives so all parties gain from participating fairly."
+  },
+  {
+    "gid": 289,
+    "math_tags": ["separating cause from coincidence", "measuring surprise and information"],
+    "math_plain": "Building tools to detect when AI is being used to spread lies or attack systems, and building other AI tools to defend against those attacks.",
+    "why_math": "It works because understanding the two-sided nature—that the same techniques enable both harm and defense—lets you build both detection and resilience. You cannot defend against threats you don't comprehend, and cannot deploy defense if you only see malice."
+  },
+  {
+    "gid": 290,
+    "math_tags": ["estimating probabilities from data", "following the slope downhill to improve"],
+    "math_plain": "Teaching a system to notice when a user's question has multiple meanings and ask for clarification, by detecting ambiguity directly from the system's internal thought-patterns.",
+    "why_math": "It works because ambiguity leaves a measurable fingerprint in how the system computes—if you learn to read that fingerprint early (from hidden computation stages) you can ask for help before giving a wrong answer, avoiding the error entirely."
+  },
+  {
+    "gid": 291,
+    "math_tags": ["learning a function from examples"],
+    "math_plain": "Using a language model to translate a person's informal description of what information they need into formal machine-readable construction-industry data format.",
+    "why_math": "It works because language models have learned from billions of examples how human descriptions map to formal specifications—they can generalize the pattern from simple requests to complex ones without anyone manually writing all the rules."
+  },
+  {
+    "gid": 292,
+    "math_tags": ["following the slope downhill to improve", "smart random sampling and averaging"],
+    "math_plain": "Adjusting computer resource requests for tasks by combining cluster-wide trends with sliding-window patterns specific to each task's recent history.",
+    "why_math": "It works because tasks are not random—they show repeatable seasonal patterns (time of day, day of week) that a sliding window captures, while the broad cluster trend prevents over-fitting to one task's quirks. Together they predict what each task actually needs next."
+  },
+  {
+    "gid": 293,
+    "math_tags": ["predicting the next item in a sequence", "weighting the parts that are most relevant"],
+    "math_plain": "Converting traffic sensor readings into image-like patterns, then finding which places and time-scales matter most for predicting traffic flow a few hours ahead.",
+    "why_math": "It works because traffic flow has both fast (minute-to-minute) and slow (daily cycle) rhythms that mix together—treating data as images lets vision techniques extract both local and global patterns at once. Granular-ball clustering finds which regions truly influence each other."
+  },
+  {
+    "gid": 294,
+    "math_tags": ["separating cause from coincidence", "learning a function from examples"],
+    "math_plain": "Finding which node features are stable across changes in real-world networks (distribution-shift invariant) by learning what spurious patterns are misleading and ignoring them.",
+    "why_math": "It works because a pattern that depends on the current data collection setup (spurious) fails when the setup changes. By finding only patterns stable across inferred sub-environments, you keep what's truly causal and discard environment-specific noise."
+  },
+  {
+    "gid": 295,
+    "math_tags": ["predicting the next item in a sequence", "following the slope downhill to improve"],
+    "math_plain": "Reconstructing missing GPS points in sparse trajectories by iteratively denoising fragments while remembering intermediate results from prior steps.",
+    "why_math": "It works because trajectory segments follow smooth motion rules—as you gradually reduce noise from the denoised version, a memory mechanism holds and refines partial recoveries so complex hard-to-fill gaps don't collapse back to noise."
+  },
+  {
+    "gid": 296,
+    "math_tags": ["separating cause from coincidence", "estimating probabilities from data"],
+    "math_plain": "Letting a user ask conversational questions about why a machine-learning model's predictions changed when the data shifted, getting explanations at their understanding level.",
+    "why_math": "It works because drift is itself a causal shift—by letting the model reason through detect/explain/adapt stages interactively, users see which input factors actually caused the performance drop, not just that something broke."
+  },
+  {
+    "gid": 297,
+    "math_tags": ["ranking things by a learned score", "combining many weak signals into a strong one"],
+    "math_plain": "Ranking product descriptions by how accurately they sort into the right commodity category, using signals from the description text, prior customs decisions, and rule-based checks.",
+    "why_math": "It works because each signal (what the text says, what category similar past descriptions were, what rules allow) is imperfect alone. Fusing them ranks descriptions by true category membership much better than any single signal—weak signals add up to a strong predictor."
+  },
+  {
+    "gid": 298,
+    "math_tags": ["ranking things by a learned score", "weighting the parts that are most relevant"],
+    "math_plain": "Scoring videos daily for problematic content using behavior patterns plus author metadata plus fast algorithm outputs, updated each day to catch new issues immediately.",
+    "why_math": "It works because content issues evolve weekly or daily (new videos, new exploits), so a system that updates monthly misses them. By combining user behavior feedback (which shows real harm immediately) with video-side signals, you detect genuine issues while they're still small."
+  },
+  {
+    "gid": 299,
+    "math_tags": ["learning by comparison of similar and different", "combining many weak signals into a strong one"],
+    "math_plain": "Clustering both individual nodes and whole graphs at once, by comparing node-level clusters to graph-level groupings and refining both to fit each other.",
+    "why_math": "It works because nodes near each other should belong to the same graph, and graphs with similar nodes should cluster together—this bidirectional constraint is stronger than running each separately. Comparing similar pairs versus different pairs reveals the true cluster boundaries both levels share."
+  }
+]

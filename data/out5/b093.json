@@ -1,0 +1,137 @@
+[
+  {
+    "gid": 1395,
+    "math_tags": [
+      "measuring similarity as nearness in a space",
+      "learning a function from examples"
+    ],
+    "math_plain": "Place queries and category names near each other in space when they mean similar things, then find nearby categories for new queries.",
+    "why_math": "It works because if you position things so that semantically similar items sit close in space, then 'find the right category' becomes simply 'find what's nearest', and nearness is fast to compute and meaningful. This lets the model generalize to new categories it has never seen before."
+  },
+  {
+    "gid": 1396,
+    "math_tags": [
+      "estimating probabilities from data",
+      "learning by comparison of similar and different"
+    ],
+    "math_plain": "Strengthen relevance judgments by comparing each result to a record of how users actually clicked on similar queries and results before.",
+    "why_math": "It works because real user behavior is ground truth for what relevance means in context. Grounding judgments in this empirical history resolves ambiguity more reliably than reasoning alone, especially on edge cases where multiple answers seem plausible."
+  },
+  {
+    "gid": 1397,
+    "math_tags": [
+      "ranking things by a learned score",
+      "learning a function from examples"
+    ],
+    "math_plain": "Score each source on factors like relevance and recency, then measure which factor predicts being cited first when two sources compete for the first reference.",
+    "why_math": "It works because you never need exact scores, only their order. A learned scoring function that correctly ranks which source matters more is enough to put the most citable source first. This means partial, learned signals are sufficient."
+  },
+  {
+    "gid": 1398,
+    "math_tags": [
+      "weighting the parts that are most relevant",
+      "learning by comparison of similar and different"
+    ],
+    "math_plain": "Attend to query-relevant user behaviors, then learn from dense domains and transfer the patterns to sparse domains using contrastive comparison.",
+    "why_math": "It works because attention focuses resources on signals that matter most for the query, reducing wasted computation. Contrastive transfer works because dense domains already have strong patterns that, when properly aligned, teach the model to recognize similar patterns in sparse data."
+  },
+  {
+    "gid": 1399,
+    "math_tags": [
+      "finding the settings with least error",
+      "learning a function from examples"
+    ],
+    "math_plain": "Train a teacher model with rewards that penalize ranking errors, then copy its reasoning logic to a smaller model that can run in production.",
+    "why_math": "It works because optimizing explicitly for ranking accuracy forces the teacher to learn what actually matters for relevance judgments. Copying this optimized logic to a smaller model preserves the learned priorities, so the compact version still makes sound decisions despite having less capacity."
+  },
+  {
+    "gid": 1400,
+    "math_tags": [
+      "following the slope downhill to improve",
+      "weighting the parts that are most relevant"
+    ],
+    "math_plain": "Train the model to suppress attention to early documents regardless of content and redirect focus to semantic relevance signals instead.",
+    "why_math": "It works because models learn what they are trained to do. If you explicitly train the model to align attention weights with semantic relevance rather than position, the model internalizes this behavior. The bias gets baked into parameters, not requiring expensive correction at test time."
+  },
+  {
+    "gid": 1401,
+    "math_tags": [
+      "combining many weak signals into a strong one",
+      "finding the settings with least error"
+    ],
+    "math_plain": "Simultaneously optimize multiple goals—diversity, faithfulness, and click rate—by treating them all as weighted rewards in a single training objective.",
+    "why_math": "It works because optimizing all goals together forces trade-offs to resolve naturally. The model learns which combinations of features satisfy multiple objectives, producing headlines that are diverse yet coherent and clickable, rather than gaming one goal at the expense of others."
+  },
+  {
+    "gid": 1402,
+    "math_tags": [
+      "learning by comparison of similar and different",
+      "learning a function from examples"
+    ],
+    "math_plain": "Train the model to reason about which query terms are satisfied by text versus images, step by step, then teach a fast model to replicate this term-aware reasoning.",
+    "why_math": "It works because decomposing reasoning into term-level steps grounds the model's logic in concrete query parts. This prevents the model from relying on spurious correlations. When you transfer step-by-step reasoning to a smaller model, you preserve the interpretable logic that made the larger model reliable."
+  },
+  {
+    "gid": 1403,
+    "math_tags": [
+      "matching and allocating who gets what",
+      "learning a function from examples"
+    ],
+    "math_plain": "Learn the user's preference patterns from content-consumption behavior, then adapt those patterns to predict which topics the user wants to discuss.",
+    "why_math": "It works because preference patterns are universal: if a user likes certain content types, that taste translates across domains. The model learns what makes something appealing to this specific user, then applies that knowledge to rank discussion topics, solving the allocation problem of 'which topic suits this user now'."
+  },
+  {
+    "gid": 1404,
+    "math_tags": [
+      "finding the settings with least error",
+      "learning by comparison of similar and different"
+    ],
+    "math_plain": "Train the model to learn from comparing outcomes when using external context versus not using it, so it knows when external knowledge helps.",
+    "why_math": "It works because the comparison is direct evidence. By seeing which approach (parametric only or with context) produces better results on specific queries, the model learns a reliable signal about context trustworthiness. This learned discrimination is better than any fixed rule."
+  },
+  {
+    "gid": 1405,
+    "math_tags": [
+      "ranking things by a learned score",
+      "measuring similarity as nearness in a space"
+    ],
+    "math_plain": "Retrieve candidate facets using semantic similarity, then score each candidate using learned patterns to rank which facet best matches the user's current query and context.",
+    "why_math": "It works because facets and queries naturally form a semantic space where similar ideas sit close. Scoring candidates within that space exploits learned patterns of which attributes help disambiguate common query types. Ranking by learned score puts the most relevant facet on top."
+  },
+  {
+    "gid": 1406,
+    "math_tags": [
+      "learning a function from examples",
+      "combining many weak signals into a strong one"
+    ],
+    "math_plain": "Teach a model to extract job attributes by training it on many synthetic examples that include step-by-step reasoning, using multiple related tasks simultaneously.",
+    "why_math": "It works because multi-task training forces the model to learn underlying patterns that are useful across many related problems. Adding reasoning traces teaches the model to explain its decisions, which makes the learned function more robust. Learning from many examples, even synthetic ones, generalizes better than memorizing individual cases."
+  },
+  {
+    "gid": 1407,
+    "math_tags": [
+      "finding the settings with least error",
+      "following the slope downhill to improve"
+    ],
+    "math_plain": "Generate product summaries by training the model to maximize downstream relevance scores, which are computed after ranking, so summaries are optimized for the real goal.",
+    "why_math": "It works because the summary is now optimized for the actual objective: making products rank higher. Intermediate representations (summaries) that are aligned with final outcomes produce better results than optimizing them in isolation. The reward signal flows directly from the ranking goal back to summary generation."
+  },
+  {
+    "gid": 1408,
+    "math_tags": [
+      "learning a function from examples",
+      "combining many weak signals into a strong one"
+    ],
+    "math_plain": "Train a model on many synthetic instruction examples, each with reasoning traces, to extract structured opinions and build knowledge graphs from noisy customer feedback.",
+    "why_math": "It works because instruction tuning teaches the model patterns from diverse examples. Reasoning traces show the model how to decompose messy text into structured output. Multiple similar examples reinforce the same underlying pattern, so the model learns robust behavior rather than brittle rules."
+  },
+  {
+    "gid": 1409,
+    "math_tags": [
+      "learning a function from examples",
+      "measuring similarity as nearness in a space"
+    ],
+    "math_plain": "Train an encoder to place similar queries and products close together using a large, diverse set of negative examples, then transfer learned knowledge to a more powerful encoder.",
+    "why_math": "It works because diverse negatives force the encoder to make finer distinctions, so the learned space reflects true similarity more accurately. Transferring to a new encoder preserves this hard-won knowledge: the new model inherits the domain-specific refinements from the old model, starting it ahead rather than relearning from scratch."
+  }
+]

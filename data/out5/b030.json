@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 450,
+    "math_tags": ["measuring similarity as nearness in a space", "learning a function from examples"],
+    "math_plain": "Align short queries and long legal documents by learning which document segments matter most for each query, placing semantically similar ones nearby in learned space.",
+    "why_math": "It works because when you place things that answer the same query close together in a learned space, finding relevant documents becomes finding nearby points, which is fast and captures semantic meaning. Learning segment importance lets the model focus on the parts that actually matter for each query rather than wasting effort on irrelevant boilerplate."
+  },
+  {
+    "gid": 451,
+    "math_tags": ["combining many weak signals into a strong one", "learning a function from examples", "weighting the parts that are most relevant"],
+    "math_plain": "Predict click-through rate by training multiple branch networks that each learn different feature interactions, then combine their signals with learned weights, allowing branches to teach and stabilize each other.",
+    "why_math": "It works because different feature-interaction approaches each capture different patterns; combined with adaptive weights, they cover more ground than any single method. Teaching between branches forces weak performers to learn from strong ones, reducing overfitting to spurious patterns."
+  },
+  {
+    "gid": 452,
+    "math_tags": ["weighting the parts that are most relevant", "measuring similarity as nearness in a space"],
+    "math_plain": "Represent knowledge graph entities by fusing text and visual information with entity-specific weights that change for each entity, placing similar entities nearby in a shared semantic space.",
+    "why_math": "It works because different modalities carry different signal for different entities; allowing weights to vary per entity captures which modality actually helps predict relations for that entity. Nearby placement in shared space makes relational reasoning a local neighborhood operation, which preserves structure."
+  },
+  {
+    "gid": 453,
+    "math_tags": ["measuring surprise and information", "ranking things by a learned score"],
+    "math_plain": "Evaluate recommendation systems not by engagement metrics alone, but by human-centered outcomes—trust, transparency, agency, satisfaction—to align ranking strategies with what users actually value.",
+    "why_math": "It works because engagement metrics optimize what's observable but not what matters: clicking a misleading result 'works' for engagement but harms users. Grounding evaluation in human values like transparency and trust creates accountability to actual user welfare, not just platform goals."
+  },
+  {
+    "gid": 454,
+    "math_tags": ["finding the settings with least error", "weighting the parts that are most relevant"],
+    "math_plain": "Balance prediction errors across different ad targeting fields by finding the best mix of weights that minimizes errors simultaneously on all fields—never perfect on one but good on all.",
+    "why_math": "It works because different fields have different error patterns; a single global fix helps some users but harms others. Finding the non-dominated middle ground (Pareto frontier) ensures no field gets systematically cheated, and forces honest trade-offs rather than hiding bias in one direction."
+  },
+  {
+    "gid": 455,
+    "math_tags": ["measuring surprise and information", "spreading information across a network"],
+    "math_plain": "Explain social recommendations by identifying subgraphs where pieces of information amplify each other—parts that together tell you more than they would separately—and tracing paths through those subgraphs.",
+    "why_math": "It works because synergy means the information-gain is real: when two signals together predict better than either alone, it reveals actual interaction in the data. Maximizing information gain finds genuine coordination rather than coincidence, so explanations ground in what actually drives the recommendation."
+  },
+  {
+    "gid": 456,
+    "math_tags": ["combining many weak signals into a strong one", "learning a function from examples"],
+    "math_plain": "Train a unified model across many devices by having each client learn lightweight adapters, then averaging adapter updates on a central server while keeping the large shared model frozen.",
+    "why_math": "It works because averaging many small updates (each from diverse data) converges to a model that generalizes: the diversity in client data means errors in one direction cancel with errors in another. Keeping the base model frozen lets each client's adapter focus on correcting its own data distribution."
+  },
+  {
+    "gid": 457,
+    "math_tags": ["measuring similarity as nearness in a space", "learning a function from examples"],
+    "math_plain": "Recommend items to users in a new domain by using language models to create domain-agnostic semantic descriptions, then placing users and items with similar behaviors and descriptions close in shared space.",
+    "why_math": "It works because semantic descriptions from language models capture meaning independent of domain specifics (a 'laptop' is similar across stores); nearness in this domain-agnostic space lets knowledge from one domain transfer to another. Similar behaviors + similar descriptions = high confidence the transfer is meaningful."
+  },
+  {
+    "gid": 458,
+    "math_tags": ["weighting the parts that are most relevant", "learning a function from examples"],
+    "math_plain": "Predict fieldwork duration for land surveying by weighting spatial and tabular information differently per location, using periodic patterns and network-of-connections to capture what matters locally.",
+    "why_math": "It works because different locations have different terrain types and task difficulties; allowing spatial attention to weight information per location captures local variation. Periodic encoding captures cyclical workload patterns, and network connections let similar locations help each other's predictions."
+  },
+  {
+    "gid": 459,
+    "math_tags": ["separating cause from coincidence", "learning a function from examples"],
+    "math_plain": "Extract functional scene knowledge from lab photos by identifying which object and hand interactions are physically possible, then connecting them with natural-language descriptions of what each part does.",
+    "why_math": "It works because physics causality is real: if a hand reaches toward a container and liquid flows, it's not coincidence—there's a causal mechanism. Grounding descriptions in physical possibility (can hands actually reach? can liquid actually flow?) separates real affordances from visual noise or mistaken patterns."
+  },
+  {
+    "gid": 460,
+    "math_tags": ["combining many weak signals into a strong one", "smart random sampling and averaging"],
+    "math_plain": "Train a shared model with devices that have different computing power by having powerful devices create synthetic training data and mixing it with real data, letting weak devices learn from fewer samples.",
+    "why_math": "It works because averaging many weak learners—each trained on real or synthetic data—converges when data sources are diverse. Synthetic data fills gaps weak devices can't sample, and the heterogeneous mix forces the shared model to be robust to distribution shifts, which improves generalization."
+  },
+  {
+    "gid": 461,
+    "math_tags": ["finding the settings with least error", "following the slope downhill to improve"],
+    "math_plain": "Auto-tune a blockchain's performance by learning which parameter settings maximize throughput and minimize latency at each stage of the consensus protocol, adjusting continuously as workload changes.",
+    "why_math": "It works because performance metrics are differentiable with respect to parameter settings: adjusting one knob causes measurable change in throughput or latency. Hierarchical learning lets different stages optimize their own metrics then coordinate, finding compound improvements without manual trial-and-error."
+  },
+  {
+    "gid": 462,
+    "math_tags": ["measuring surprise and information", "separating cause from coincidence"],
+    "math_plain": "Detect health misinformation by measuring whether users check multiple sources (lateral reading) versus spending time on one source; lateral reading measurably improves accuracy independent of user bias.",
+    "why_math": "It works because information from independent sources reduces noise: if multiple sources agree, it's unlikely to be pure noise or coincidence. Laterally gathered information reveals discrepancies that trigger skepticism, creating a causal pathway from diverse reading to better decisions—even when users start biased."
+  },
+  {
+    "gid": 463,
+    "math_tags": ["following the slope downhill to improve", "spreading information across a network"],
+    "math_plain": "Find the source of information spread by solving an inverse equation: given how information flowed over time in a network, learn what initial state and rates would produce that observed flow.",
+    "why_math": "It works because information flow follows deterministic patterns (like heat diffusion); if you know the pattern, solving backward reveals the source. Filtering network noise lets the model focus on real structure, and treating time continuously captures the actual dynamics—discrete steps miss gradual spreading."
+  },
+  {
+    "gid": 464,
+    "math_tags": ["measuring similarity as nearness in a space", "weighting the parts that are most relevant"],
+    "math_plain": "Learn personalized graph representations across federated clients by mapping each client's graph data to its own geometric space—choosing the right curvature for that client's structure—then combining via weighted message-passing.",
+    "why_math": "It works because different graph structures have different natural geometry: tree-like graphs fit hyperbolic space, clusters fit Euclidean, hierarchies fit spheres. Letting each client choose its own geometry means distance metrics capture actual structure. Adaptive gating weighs how much to trust each neighbor's signal based on local topology."
+  }
+]

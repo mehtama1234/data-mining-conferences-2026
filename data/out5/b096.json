@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 1440,
+    "math_tags": ["ranking things by a learned score", "weighting the parts that are most relevant"],
+    "math_plain": "Re-weight importance of facets (genre, character, pacing) based on user interaction signals to reorder search results.",
+    "why_math": "Users clarify intent through subtle actions; weighting facets by feedback adapts the ranking to match each person's evolving goals, making results more relevant than a one-size-fits-all score."
+  },
+  {
+    "gid": 1441,
+    "math_tags": ["measuring similarity as nearness in a space"],
+    "math_plain": "Index scenes, objects, faces, and speech as points in space so searching means finding nearby points in that space.",
+    "why_math": "When you represent different modalities (images, audio, text) as positions in the same space, similarity naturally becomes distance: closer things are more alike, and distance queries become fast lookups."
+  },
+  {
+    "gid": 1442,
+    "math_tags": ["ranking things by a learned score", "separating cause from coincidence"],
+    "math_plain": "Score patents by disruptive potential and evolution using network citation patterns and clustering to surface high-impact technologies.",
+    "why_math": "Citation networks reveal which patents influence others; grouping patents by topic shows where breakthroughs cluster. Combining these separates genuinely transformative work from one-off contributions."
+  },
+  {
+    "gid": 1443,
+    "math_tags": ["ranking things by a learned score", "smart random sampling and averaging"],
+    "math_plain": "Pool many small vector scores across a page into summary scores at coarser tile scale, then rerank using full detail.",
+    "why_math": "You only need the rough order for candidate generation, not exact scores; averaging coarser patches gives that order fast. Only the top candidates need exact rescoring, so the two-stage approach cuts work quadratically."
+  },
+  {
+    "gid": 1444,
+    "math_tags": ["ranking things by a learned score", "learning a function from examples"],
+    "math_plain": "Rank and combine retrieved passages by learned scores to feed most relevant sources into response generation.",
+    "why_math": "Learned ranking assigns higher scores to passages that actually help models generate correct answers. Reranking before generation lets the model focus on gold-signal facts rather than processing all possibilities."
+  },
+  {
+    "gid": 1445,
+    "math_tags": ["ranking things by a learned score", "measuring similarity as nearness in a space"],
+    "math_plain": "Score and rank Nepali documents against queries using learned embeddings that capture morphological structure.",
+    "why_math": "Words with similar roots should place near each other in embedding space; learnable scoring of that nearness ranks relevant documents highest despite morphological variation in the language."
+  },
+  {
+    "gid": 1446,
+    "math_tags": ["ranking things by a learned score"],
+    "math_plain": "Rerank and expand queries using large models to improve search for low-resource languages (Hausa, Fongbe).",
+    "why_math": "Large models encode multilingual knowledge even for rare languages; reranking candidates with learned scores from that knowledge surface relevant results despite sparse training data for the language itself."
+  },
+  {
+    "gid": 1447,
+    "math_tags": ["combining many weak signals into a strong one", "weighting the parts that are most relevant"],
+    "math_plain": "Score and fuse query classification outputs from the same model prompted in three languages, weighting by confidence.",
+    "why_math": "A single language may misclassify due to ambiguity; prompting in typologically different languages surfaces different signal strengths. Confidence-weighted fusion combines these signals so strong votes outweigh weak ones."
+  },
+  {
+    "gid": 1448,
+    "math_tags": ["ranking things by a learned score", "learning a function from examples"],
+    "math_plain": "Score and rank retrieval results to feed relevant schema snippets into models that map natural language to SQL.",
+    "why_math": "Models make fewer mistakes when shown similar past queries and schemas; ranking retrieval results by relevance puts gold examples first, improving in-context learning and reducing hallucinated SQL."
+  },
+  {
+    "gid": 1449,
+    "math_tags": ["ranking things by a learned score"],
+    "math_plain": "Benchmark systems that score and rank agricultural answers for drought-prone Telugu-speaking farmers.",
+    "why_math": "A standardized ranking benchmark with human judgments lets researchers measure whether scoring functions improve real-world information access for farmers without benchmarks, enabling fair comparison of methods."
+  },
+  {
+    "gid": 1450,
+    "math_tags": ["ranking things by a learned score"],
+    "math_plain": "Score web results retrieved by LLMs to measure accuracy of Marathi information retrieval, analyzing search depth effects.",
+    "why_math": "Scored rankings reveal whether shallow or deep search ranks correct answers highest; measuring score distributions exposes failure modes and cost-accuracy tradeoffs, guiding deployment strategy."
+  },
+  {
+    "gid": 1451,
+    "math_tags": ["ranking things by a learned score", "spreading information across a network"],
+    "math_plain": "Rank sentences using learned embeddings plus graph message-passing over discourse structure to select for summarization.",
+    "why_math": "Sentences interact via discourse (earlier sentences set context for later ones); spreading information through that graph captures which sentences are central to meaning. Ranking by this network-aware score selects faithful summaries."
+  },
+  {
+    "gid": 1452,
+    "math_tags": ["ranking things by a learned score", "separating cause from coincidence"],
+    "math_plain": "Score text patterns to distinguish LLM-generated agricultural answers from human-authored ones.",
+    "why_math": "LLMs produce consistent patterns (length, diversity, similarity) that differ from human text; scoring and classification separate true signal from noise, revealing detectability as a diagnostic for evaluating generated content."
+  },
+  {
+    "gid": 1453,
+    "math_tags": ["ranking things by a learned score", "weighting the parts that are most relevant"],
+    "math_plain": "Score and rank in-domain examples from translation memory and glossaries to weight LLM post-editing and improve machine translation.",
+    "why_math": "Domain-specific terminology matters most; ranking retrieved examples by relevance to current phrase and weighting their influence over the baseline translation focuses the model on high-confidence domain knowledge."
+  },
+  {
+    "gid": 1454,
+    "math_tags": ["ranking things by a learned score", "measuring similarity as nearness in a space"],
+    "math_plain": "Score and rank Shona documents by learning embeddings that preserve morphological relationships to improve retrieval.",
+    "why_math": "Morphologically related words should score as similar; learning that structure places documents with related word forms near the query in embedding space, retrieval by proximity then ranks them highest."
+  }
+]

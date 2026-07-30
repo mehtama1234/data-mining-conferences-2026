@@ -1,0 +1,144 @@
+[
+  {
+    "gid": 735,
+    "math_tags": [
+      "measuring similarity as nearness in a space",
+      "estimating probabilities from data",
+      "learning a function from examples"
+    ],
+    "math_plain": "Combines a structured community-detection model with sparse attention scoring to predict missing links in networks by learning which pairs of nodes should be connected.",
+    "why_math": "It works because community structure genuinely explains network connectivity: nodes in the same group connect more often, so learning this structure lets you predict unobserved links. The attention mechanism captures which long-range patterns matter without checking every possible pair."
+  },
+  {
+    "gid": 736,
+    "math_tags": [
+      "separating cause from coincidence",
+      "estimating probabilities from data",
+      "learning by comparison of similar and different"
+    ],
+    "math_plain": "Measures how peer comments change the likelihood that a user shares a sensitive photo, separately for different user types and comment mixes.",
+    "why_math": "It works because randomized comment variants isolate what caused the sharing decision. Comparing outcomes when only the comment changes reveals which factors actually drive behavior versus what merely appears correlated."
+  },
+  {
+    "gid": 737,
+    "math_tags": [
+      "keeping only the few dimensions that matter",
+      "measuring similarity as nearness in a space",
+      "estimating probabilities from data"
+    ],
+    "math_plain": "Decomposes event streams with mixed categorical and numeric attributes into latent components tracking group structure and temporal trends to flag unusual group-level patterns.",
+    "why_math": "It works because real event data clusters naturally: similar events come from the same underlying group activity. Modeling each attribute type's true statistical shape lets you detect when a group's behavior shifts or becomes unusual, rather than losing signal by forcing all attributes into one shape."
+  },
+  {
+    "gid": 738,
+    "math_tags": [],
+    "math_plain": "Not a mathematical research paper; focuses on tutorial design for making research code reproducible and executable via computational environments.",
+    "why_math": "Not applicable to this tutorial contribution."
+  },
+  {
+    "gid": 739,
+    "math_tags": [
+      "ranking things by a learned score",
+      "matching and allocating who gets what",
+      "smart random sampling and averaging"
+    ],
+    "math_plain": "Clusters phishing URLs by similarity, ranks their dissemination leverage across decentralized gateways, and estimates impact of blocking small dominant clusters.",
+    "why_math": "It works because real-world attacks concentrate: blocking the few most-used dissemination channels removes availability for most phishing content. Clustering by behavior finds which attacks are coordinated variants of the same campaign, so you target root causes instead of chasing copies."
+  },
+  {
+    "gid": 740,
+    "math_tags": [
+      "separating cause from coincidence",
+      "weighting the parts that are most relevant",
+      "learning by comparison of similar and different"
+    ],
+    "math_plain": "Identifies which training examples cause bias in recommendations, then removes their influence on the model to improve fairness without full retraining.",
+    "why_math": "It works because removing the true bias-causing examples fixes the model at its core. You don't need to retrain from scratch; small adjustments that undo the influence of those few examples efficiently flip wrong predictions back to fair ones."
+  },
+  {
+    "gid": 741,
+    "math_tags": [
+      "learning a function from examples",
+      "weighting the parts that are most relevant",
+      "combining many weak signals into a strong one"
+    ],
+    "math_plain": "Extracts measurable linguistic patterns from emotion datasets and adds them as features to neural models to boost emotion classification accuracy.",
+    "why_math": "It works because humans recognize emotion partly through specific word choices and grammar patterns that reliably appear together. Adding these explicit signals lets the model see what matters faster and stays robust when the neural patterns encounter new data."
+  },
+  {
+    "gid": 742,
+    "math_tags": [
+      "learning by comparison of similar and different",
+      "keeping only the few dimensions that matter",
+      "learning a function from examples"
+    ],
+    "math_plain": "Simulates diverse unusual graph variants using learned prompts and filters graph substructures to keep only those that distinguish normal from anomalous graphs.",
+    "why_math": "It works because rare anomalies are too scarce to learn from alone; generating synthetic variants broadens your view of what abnormal looks like. Filtering substructures keeps the signal for abnormality while noise-substructures from normal graphs stop misleading you."
+  },
+  {
+    "gid": 743,
+    "math_tags": [],
+    "math_plain": "Hardware accelerator designs specialized circuitry to implement bit-wise matrix operations and Hadamard transforms sharing reusable adder structures.",
+    "why_math": "Not a mathematical research contribution; primarily a computer-architecture engineering work on hardware optimization."
+  },
+  {
+    "gid": 744,
+    "math_tags": [
+      "learning a function from examples",
+      "learning by comparison of similar and different",
+      "estimating probabilities from data"
+    ],
+    "math_plain": "Diagnoses rewriting problems in search queries, then learns human-like fixes through supervised training and preference-aligned beam search ranking.",
+    "why_math": "It works because humans rewrite queries systematically: certain problems map to certain fixes. Learning this mapping directly from human examples, then using ranked search to pick rewrites that match both human and retrieval-system preferences, produces more natural and effective query corrections."
+  },
+  {
+    "gid": 745,
+    "math_tags": [
+      "learning by comparison of similar and different",
+      "measuring similarity as nearness in a space",
+      "combining many weak signals into a strong one"
+    ],
+    "math_plain": "Groups table instances into clusters, generates synthetic query examples for partial tables across clusters, and fine-tunes embedding models using hard-negative contrastive pairs.",
+    "why_math": "It works because diverse training examples teach the model to handle semantic variation. Grouping tables ensures you see the full semantic range. Hard-negative pairs force the model to push apart genuinely different cases, so it learns precise, robust distance metrics for table-query matching."
+  },
+  {
+    "gid": 746,
+    "math_tags": [
+      "combining many weak signals into a strong one",
+      "learning a function from examples",
+      "measuring similarity as nearness in a space"
+    ],
+    "math_plain": "Extracts visual patterns from satellite imagery and combines them with spatial and temporal patterns to jointly score traffic predictions node by node.",
+    "why_math": "It works because real traffic depends on overlapping factors: road layout, weather, events, congestion. Treating each modality separately loses their interactions; combining visual context with spatial neighbors and time history captures the full cause, so predictions account for all factors simultaneously."
+  },
+  {
+    "gid": 747,
+    "math_tags": [
+      "measuring similarity as nearness in a space",
+      "weighting the parts that are most relevant",
+      "combining many weak signals into a strong one"
+    ],
+    "math_plain": "Converts graph anomaly detection into a tabular problem by enriching node features with structural summaries, then applies pre-trained tabular models for cross-domain generalization.",
+    "why_math": "It works because tabular models already solve the hard parts: handling diverse feature types and generalizing to new domains via synthetic pre-training. Structure itself is just another feature; once you express it as numbers alongside node attributes, tabular models see it naturally and transfer across graphs."
+  },
+  {
+    "gid": 748,
+    "math_tags": [
+      "estimating probabilities from data",
+      "separating cause from coincidence",
+      "weighting the parts that are most relevant"
+    ],
+    "math_plain": "Detects when demographic-related variation in toxicity judgments is likely to occur, then applies targeted refinement to reduce group-level disparities in model outputs.",
+    "why_math": "It works because unfairness concentrates: certain inputs consistently produce biased outputs. Identifying these risky cases and applying corrective scrutiny at inference time stops bias before it propagates, without needing expensive retraining or model changes."
+  },
+  {
+    "gid": 749,
+    "math_tags": [
+      "combining many weak signals into a strong one",
+      "learning a function from examples",
+      "weighting the parts that are most relevant"
+    ],
+    "math_plain": "Learns multi-scale features of human behavior, objects, and background context from video, then adaptively weights them to predict threat location and explain threat causes.",
+    "why_math": "It works because threats arise from interactions of multiple elements: a person's action, an object involved, and the setting all matter. Modeling each scale separately captures these interactions. Adaptive weighting lets the model emphasize whichever factor most strongly signals the specific threat occurring."
+  }
+]

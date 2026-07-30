@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 210,
+    "math_tags": ["learning a function from examples", "measuring similarity as nearness in a space"],
+    "math_plain": "Quantum operations learn to score and match user preferences and items by encoding them in ways that preserve closeness of similar things.",
+    "why_math": "Quantum superposition can explore many feature encodings simultaneously and interference patterns can highlight which encodings keep similar items near; matching then reduces to finding nearest neighbors, making it fast and trustworthy."
+  },
+  {
+    "gid": 211,
+    "math_tags": ["keeping only the few dimensions that matter", "measuring similarity as nearness in a space"],
+    "math_plain": "Find the most stable recurring patterns across time-snapshots of a network by treating them as waves and keeping only the lowest-frequency modes.",
+    "why_math": "Low-frequency modes persist across time, while noise and short-lived quirks vanish at high frequency; keeping them captures what actually matters and removes everything that's redundant, shrinking the network without losing the true story."
+  },
+  {
+    "gid": 212,
+    "math_tags": ["measuring similarity as nearness in a space", "spreading information across a network"],
+    "math_plain": "Pass information through hypergraph bottlenecks using curved space geometry that locally adapts how tightly or loosely to let signals flow, so nearby nodes stay distinguishable even after many rounds of sharing.",
+    "why_math": "Curved geometry lets you expand space where signals need breathing room and contract it where they should squeeze together; this prevents the blurring that flat geometry causes, so each node's learned fingerprint remains unique and meaningful across many passes."
+  },
+  {
+    "gid": 213,
+    "math_tags": ["separating cause from coincidence"],
+    "math_plain": "A greedy attack exploits the finality mechanism's validation process to show that honest blocks get finalized with predictable low probability instead of near-certainty.",
+    "why_math": "The blockchain assumes validators act honestly and block finality requires threshold agreement; the attack shows that under the current rules, even an honest proposer's blocks fall below the threshold too often, proving the mechanism's guarantees are weaker than claimed."
+  },
+  {
+    "gid": 214,
+    "math_tags": ["following the slope downhill to improve", "weighting the parts that are most relevant"],
+    "math_plain": "Learn which data transformations help each client by tuning a policy that predicts how a transformation will help unseen local data, then apply personalized transformations to each client separately.",
+    "why_math": "Blind transformations fail because each client's data is different; by estimating the policy on each client's own data without sending it, you can predict what will help, and personalizing per-client accounts for their unique quirks without sharing sensitive information."
+  },
+  {
+    "gid": 215,
+    "math_tags": ["separating cause from coincidence", "smart random sampling and averaging"],
+    "math_plain": "Defend against poisoned retrieved documents by checking for agreement and redundancy across multiple retrieval passes, isolating which facts come from trusted consensus.",
+    "why_math": "If an attacker poisons a few documents, those come up consistently in poisoned queries but honest facts appear across many varied retrievals; redundancy acts as a fingerprint of truth, so averaging across diverse retrievals strips out the poisoned signal."
+  },
+  {
+    "gid": 216,
+    "math_tags": ["measuring similarity as nearness in a space", "spreading information across a network"],
+    "math_plain": "Predict restaurant survival by measuring how deeply each restaurant sits in its network of customers and peer restaurants, then track how that position changes over time.",
+    "why_math": "Well-connected restaurants that sit at the center of customer and peer networks get more support and word-of-mouth; tracking this position over time shows whether a restaurant is gaining or losing ground, making survival predictable."
+  },
+  {
+    "gid": 217,
+    "math_tags": ["learning a function from examples", "separating cause from coincidence"],
+    "math_plain": "Use a knowledge graph as the backbone and interface so language models retrieve facts by following relation chains, constraining answers to only facts that are explicitly connected.",
+    "why_math": "Language models hallucinate when they guess; by forcing retrieval to walk explicit graph edges, every answer must trace a real path through known facts, making false answers impossible because there is no path to them."
+  },
+  {
+    "gid": 218,
+    "math_tags": ["ranking things by a learned score", "learning a function from examples"],
+    "math_plain": "Score webpage energy consumption by learning a pattern from webpage structure features that predicts how much device battery a page will drain, without measuring actual power during browsing.",
+    "why_math": "Energy use correlates with page complexity and content type; by learning which structure features predict high energy on test devices, you can score any page instantly from its design, avoiding the need for expensive real-time measurement."
+  },
+  {
+    "gid": 219,
+    "math_tags": ["learning a function from examples", "measuring similarity as nearness in a space"],
+    "math_plain": "Learn shared representations of incomplete graphs by estimating missing structure from available data, then compare nodes using similarity across these reconstructed learned patterns.",
+    "why_math": "Missing data breaks standard methods, but if you estimate the gaps as probable edges and reconstruct locally, nodes can still be compared fairly; similarity learned from reconstructed graphs captures meaningful patterns even when pieces are missing."
+  },
+  {
+    "gid": 220,
+    "math_tags": ["learning a function from examples", "separating cause from coincidence"],
+    "math_plain": "Convert security detection rules between vendor languages by learning an intermediate neutral logic layer, retrieving documentation to resolve ambiguities, then checking correctness by running both versions.",
+    "why_math": "Each vendor's language is a different way to express the same detection logic; by distilling to a vendor-neutral intermediate form, you capture the intent, and by validating both versions yield the same results on test cases, you guarantee the conversion preserved the original meaning."
+  },
+  {
+    "gid": 221,
+    "math_tags": ["measuring similarity as nearness in a space", "learning a function from examples"],
+    "math_plain": "Detect harmful memes by learning one shared representation space where text and image features live together, so you can compare them even when one modality is missing.",
+    "why_math": "Text and images are different modalities, so standard comparisons fail when one is gone; projecting both into a shared space means you can still measure closeness and compare against harmful patterns using whatever modality remains."
+  },
+  {
+    "gid": 222,
+    "math_tags": ["learning a function from examples", "weighting the parts that are most relevant"],
+    "math_plain": "Build model and data documentation cards by iteratively refining extraction queries to find richer information from papers, then filling gaps by borrowing relevant content from similar existing cards.",
+    "why_math": "Static queries miss information because papers vary in structure; iterative refinement discovers what matters for each paper, and borrowing from semantically similar cards fills gaps without having to re-extract everything, reusing what you already learned."
+  },
+  {
+    "gid": 223,
+    "math_tags": ["ranking things by a learned score", "separating cause from coincidence"],
+    "math_plain": "Improve retrieval-augmented answers by finding chains of evidence where each document points to the next, then ranking chains by how well they support the final answer.",
+    "why_math": "Single facts can be wrong or irrelevant, but chains where each document cites or builds on the previous one form a traceable argument; ranking chains by their contribution to reasoning quality ensures you retrieve facts that actually matter, not just statistically close matches."
+  },
+  {
+    "gid": 224,
+    "math_tags": ["matching and allocating who gets what", "finding the settings with least error"],
+    "math_plain": "Select representative points from a continuous stream while ensuring each demographic group contributes a fair number, minimizing the farthest distance any point is from its nearest representative.",
+    "why_math": "Fair clustering requires both group representation and geometric efficiency; by streaming and maintaining bounds per group while optimizing distance, you guarantee that underrepresented groups aren't left far from their representative, satisfying fairness and coverage."
+  }
+]

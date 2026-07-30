@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 30,
+    "math_tags": ["ranking things by a learned score", "finding the settings with least error", "smart random sampling and averaging"],
+    "math_plain": "Learn a threshold that separates top-ranked items from the rest, then score and rank items against that threshold.",
+    "why_math": "Ranking positions are expensive to compute directly, but you only need to know which items beat a cutoff score. By learning the threshold smartly from random samples, you avoid ranking the entire catalog while still getting the correct top-K items."
+  },
+  {
+    "gid": 31,
+    "math_tags": [],
+    "math_plain": "This tutorial synthesizes quantum computing principles with blockchain cryptography and distributed consensus mechanisms.",
+    "why_math": "This is a survey/tutorial paper covering frameworks rather than a specific mathematical method. It does not propose a core mathematical technique but rather contextualizes quantum and blockchain together."
+  },
+  {
+    "gid": 32,
+    "math_tags": ["measuring similarity as nearness in a space", "keeping only the few dimensions that matter", "learning a function from examples"],
+    "math_plain": "Build multi-scale spatial grids to reconstruct missing trajectory positions by sampling and refining details from coarse global patterns to fine local ones.",
+    "why_math": "It works because trajectories have structure at multiple scales: far-away context shapes broad movement direction, while nearby grid cells refine exact positions. Sampling around observed points and progressively refining captures both global and local patterns efficiently."
+  },
+  {
+    "gid": 33,
+    "math_tags": ["ranking things by a learned score", "matching and allocating who gets what"],
+    "math_plain": "Analyze how fund size rankings in DeFi create competition equilibria where pooling resources shifts outcomes toward monopoly rather than fragmented competition.",
+    "why_math": "The revenue function grows faster as you pool more capital, creating economies of scale. This mathematical property means large pools outperform many small competitors more than classical competition theory predicts, making aggregation rational."
+  },
+  {
+    "gid": 34,
+    "math_tags": ["weighting the parts that are most relevant", "finding the settings with least error"],
+    "math_plain": "Dynamically measure real-time flow demand and reallocate bandwidth weights across priority tiers, adjusting per-packet shaping rules to minimize latency violations.",
+    "why_math": "Bandwidth allocation is a resource-rationing problem: giving more to high-priority flows reduces their wait time exponentially more than taking it from low-priority flows hurts theirs. By sensing demand and adapting weights continuously, you maximize the reduction in worst-case latency."
+  },
+  {
+    "gid": 35,
+    "math_tags": ["ranking things by a learned score", "learning a function from examples"],
+    "math_plain": "Learn personalized debiasing scores that downrank familiar content by estimating how much each user overfavors content they already know.",
+    "why_math": "Users are predictably biased toward the familiar even when it's not optimal. By learning this bias for each user and subtracting it from recommendation scores, you flatten the ranking so that novel content can compete fairly and still emerge if it's truly relevant."
+  },
+  {
+    "gid": 36,
+    "math_tags": [],
+    "math_plain": "This paper demonstrates deploying conversational agents in group settings; it is primarily an engineering study of agent coordination and deployment.",
+    "why_math": "This is an application paper focused on architecture and user interface design rather than a core mathematical method. The underlying techniques are standard conversational AI; the novelty is in multi-party coordination, which is algorithmic rather than mathematical."
+  },
+  {
+    "gid": 37,
+    "math_tags": ["keeping only the few dimensions that matter", "measuring similarity as nearness in a space"],
+    "math_plain": "Sort features by their local topology pattern, then model both homophilic and heterophilic structures using dual-channel networks that handle features independently.",
+    "why_math": "Homophily and heterophily exist not just between nodes but within individual feature dimensions. By sorting features before processing them, you align the computation to the actual structure, letting the model learn which features behave homophilically and which heterophilically."
+  },
+  {
+    "gid": 38,
+    "math_tags": ["learning a function from examples", "separating cause from coincidence"],
+    "math_plain": "Fine-tune a language model to reason over system traces and predict faults by learning causal patterns between events in microservice logs.",
+    "why_math": "Trace analysis is a reasoning task where causality matters more than pattern matching: event A causing B is different from them merely coinciding. Fine-tuned language models learn to weigh temporal and dependency signals that distinguish true causation from spurious correlation."
+  },
+  {
+    "gid": 39,
+    "math_tags": ["predicting the next item in a sequence", "measuring similarity as nearness in a space", "weighting the parts that are most relevant"],
+    "math_plain": "Predict the next item by decoupling user preferences over time from the items themselves, then weight cross-domain information by comparing temporal densities.",
+    "why_math": "User preferences drift over time, and this drift is domain-specific. By separating the time pattern (which is universal) from the content pattern (which is domain-specific), you can transfer time-aware preference structure across domains without forcing domain-specific biases."
+  },
+  {
+    "gid": 40,
+    "math_tags": ["learning a function from examples", "separating cause from coincidence", "learning by comparison of similar and different"],
+    "math_plain": "Align multi-modal fraud patterns (graph, temporal, text) across blockchain networks by learning shared representations that ignore domain-specific distribution shifts.",
+    "why_math": "Fraud schemes repeat across networks with consistent structure but different background noise. By learning to recognize the core fraud pattern and ignore the varying noise, transfer learning finds the signal that's portable: the behavioral signature remains the same even when market conditions shift."
+  },
+  {
+    "gid": 41,
+    "math_tags": ["measuring similarity as nearness in a space", "weighting the parts that are most relevant"],
+    "math_plain": "Model microservice dependencies as a hierarchy and forecast each indicator using causal relationships between indicators within services, weighted by interaction strength.",
+    "why_math": "Forecasting works better when you model the causal path: workload drives resource usage which drives latency. By explicitly modeling this causality and weighting the strongest causal links, you reduce noise and improve accuracy compared to treating all correlations equally."
+  },
+  {
+    "gid": 42,
+    "math_tags": ["learning a function from examples", "estimating probabilities from data"],
+    "math_plain": "Use a reasoning model to estimate the probability that a copy-trade target is manipulated, combining signals across chat sentiment, trading patterns, and bot behavior.",
+    "why_math": "Manipulation leaves traces across multiple channels: price patterns, social signals, order timing. By combining these signals with reasoning about causality (does the price move precede sentiment, or vice versa?), you estimate the probability more accurately than any single signal allows."
+  },
+  {
+    "gid": 43,
+    "math_tags": ["measuring similarity as nearness in a space", "learning a function from examples"],
+    "math_plain": "Classify rows in unknown tables by converting them to fixed semantic representations, removing shared components, and learning a temperature parameter to calibrate confidence.",
+    "why_math": "Pre-trained representations encode meaning but not confidence: what seems similar in embedding space may or may not be the true class boundary. Removing shared components sharpens separation, and learning per-table temperature (how to scale similarity into confidence) adapts to each new table's difficulty."
+  },
+  {
+    "gid": 44,
+    "math_tags": ["learning a function from examples"],
+    "math_plain": "Generate lesson plans by orchestrating multiple agents with complementary expertise who iteratively refine structure, content, and pedagogy.",
+    "why_math": "Lesson planning requires multiple types of knowledge: structure (flow), content (curriculum details), and method (what actually teaches). Each agent type learns one specialization; iteration lets them correct each other, producing better results than any single agent because diverse perspectives catch errors the others miss."
+  }
+]

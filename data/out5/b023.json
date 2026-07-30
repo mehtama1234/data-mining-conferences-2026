@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 345,
+    "math_tags": ["smart random sampling and averaging", "weighting the parts that are most relevant"],
+    "math_plain": "Aggregate labels from multiple pathologists into a single quality judgment about each cell.",
+    "why_math": "When experts disagree, taking a weighted average of their judgments exploits the fact that real signals align across independent observers, while random mistakes cancel out. Gold-standard ground truth confirms which averaged labels capture the true pattern."
+  },
+  {
+    "gid": 346,
+    "math_tags": ["ranking things by a learned score", "following the slope downhill to improve"],
+    "math_plain": "Adjust the retrieval ranker to match both semantic relevance and the downstream language model's generation quality.",
+    "why_math": "The retriever and language model are chained; aligning the retriever to the model's likelihoods directly optimizes end-to-end quality rather than just local retrieval accuracy. Small updates to embedding weights compound into better ranking."
+  },
+  {
+    "gid": 347,
+    "math_tags": ["measuring surprise and information", "estimating probabilities from data"],
+    "math_plain": "Measure how much information each data use leaks and account for cumulative privacy loss across repeated queries.",
+    "why_math": "Privacy loss is proportional to information revealed; repeated uses amplify individual leaks because each query constrains future possibilities. Aggregating these bounds prevents privacy guarantees from degrading as data is reused."
+  },
+  {
+    "gid": 348,
+    "math_tags": ["weighting the parts that are most relevant", "finding the settings with least error"],
+    "math_plain": "Weight the connections between users based on graph structure to control how much changing one user's data can shift the model.",
+    "why_math": "In graphs, changing one node's data can propagate through connections to affect distant predictions. Weighting edges to bound this propagation lets you prove how much noise is needed to hide individual changes, without cutting edges."
+  },
+  {
+    "gid": 349,
+    "math_tags": ["predicting the next item in a sequence", "smart random sampling and averaging"],
+    "math_plain": "Model how archive size, quality, human skill, model skill, and question volume co-evolve through inflows and feedback loops.",
+    "why_math": "Collective knowledge emerges from competing inflows (humans vs. machines) and learning pathways that reinforce or weaken each other. Simple differential equations capture steady states and instabilities, predicting when quality rises or collapses."
+  },
+  {
+    "gid": 350,
+    "math_tags": ["measuring similarity as nearness in a space", "smart random sampling and averaging"],
+    "math_plain": "Count how many dense bicliques pass through each edge to weight edges, then cluster nodes by high-weight edge adjacency.",
+    "why_math": "In a bipartite graph, edges that sit in many dense bicliques are central to the structure; weighting by count lets you use simple clustering to find cohesive groups without expensive enumeration. Counting is linear; enumeration is exponential."
+  },
+  {
+    "gid": 351,
+    "math_tags": ["measuring similarity as nearness in a space", "learning a function from examples"],
+    "math_plain": "Fine-tune a text encoder on sparse language-model labels so texts about related topics sit close in embedding space.",
+    "why_math": "When a few labeled samples mark topic boundaries, retraining the encoder to push similar texts together and far-apart texts apart reshapes the entire space so that clustering in that new geometry separates topics cleanly and locally."
+  },
+  {
+    "gid": 352,
+    "math_tags": ["predicting the next item in a sequence", "measuring surprise and information"],
+    "math_plain": "Extract emotion distributions from social media posts and forecast their intensity and volume in future posts.",
+    "why_math": "Emotions have inertia and respond predictably to external events; modeling past sequences as a mixture of emotions lets you forecast when sentiment will shift, enabling early detection of discourse changes."
+  },
+  {
+    "gid": 353,
+    "math_tags": ["measuring similarity as nearness in a space", "ranking things by a learned score"],
+    "math_plain": "Visualize the model's internal signals and reasoning patterns so users can see and score which behaviors to trust.",
+    "why_math": "Hidden alignment and reasoning are opaque; making them visible lets users rank model outputs by understanding the signals behind them, converting black-box interaction into informed judgment."
+  },
+  {
+    "gid": 354,
+    "math_tags": ["keeping only the few dimensions that matter", "separating cause from coincidence"],
+    "math_plain": "Select a small set of stable causal features and filter out spurious correlations that don't generalize to new data.",
+    "why_math": "Most features are noise that happened to correlate in training; a gating mechanism identifies which few features stay predictive across different environments. Discarding the rest removes brittle shortcuts and exposes the real causal signal."
+  },
+  {
+    "gid": 355,
+    "math_tags": ["ranking things by a learned score", "learning a function from examples"],
+    "math_plain": "Use a language model to reason about citation chains, then distill those reasoning patterns into a graph neural network for fast detection.",
+    "why_math": "Language models are slow but understand semantic nuance; graph networks are fast but miss context. Distilling the model's reasoning into the network captures the best of both: semantic accuracy without per-citation cost."
+  },
+  {
+    "gid": 356,
+    "math_tags": ["finding the settings with least error", "keeping only the few dimensions that matter"],
+    "math_plain": "Decompose time-varying dependencies between many variables into separate mode-specific networks multiplied together via Kronecker product.",
+    "why_math": "Entangling all dependencies creates exponential complexity; a Kronecker factorization forces the dependencies to split into independent pieces per mode. This reduces parameters and computation while making each network interpretable."
+  },
+  {
+    "gid": 357,
+    "math_tags": ["separating cause from coincidence", "measuring similarity as nearness in a space"],
+    "math_plain": "Split embeddings into public and private parts, then compensate for the private part so the model trains identically.",
+    "why_math": "An attacker seeing only public embeddings cannot invert to the raw input if the private part holds the invertible information. Perfect compensation ensures no utility loss, so privacy is free—you gain security with no accuracy cost."
+  },
+  {
+    "gid": 358,
+    "math_tags": ["ranking things by a learned score", "measuring similarity as nearness in a space"],
+    "math_plain": "Trace resolution paths through DNS chains to link dynamic results and detect when responses deviate from expected patterns.",
+    "why_math": "Legitimate DNS chains follow predictable patterns; anomalies in CNAME chains and intermediate nodes signal manipulation. Linking via chain structure works even when the same domain resolves to different servers."
+  },
+  {
+    "gid": 359,
+    "math_tags": ["predicting the next item in a sequence", "keeping only the few dimensions that matter"],
+    "math_plain": "Record absolute XPath positions of DOM nodes over time to detect structural changes and predict evolution patterns.",
+    "why_math": "Web layout changes in predictable ways; capturing node positions as a sequence lets you model which elements move, appear, or vanish. This abstraction ignores content noise and focuses on structural signal."
+  }
+]

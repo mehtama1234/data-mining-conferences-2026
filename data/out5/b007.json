@@ -1,0 +1,92 @@
+[
+ {
+  "gid": 105,
+  "math_tags": ["separating cause from coincidence", "finding the settings with least error"],
+  "math_plain": "Detect anomalies in tool behaviors by finding which operations are most likely root causes of failure, then mask those causes and re-run to verify the fix.",
+  "why_math": "It works because anomalies leave traces in what the system pays attention to—if you mask the actual problem cause, the system will re-infer without that corruption, proving you found the real culprit. Rollback to safe checkpoints beforehand ensures you can always retry without compounding errors."
+ },
+ {
+  "gid": 106,
+  "math_tags": ["measuring similarity as nearness in a space", "learning a function from examples"],
+  "math_plain": "Retrieve relevant evidence chunks from a database and a knowledge graph, then learn to classify claims as greenwashing or not by comparing the claim against evidence.",
+  "why_math": "It works because grouping similar evidence together in a searchable store makes finding relevant facts fast and reliable. Combining two retrieval sources (database and knowledge graph) gives more angles to catch false claims—if one source misses context, the other often catches it."
+ },
+ {
+  "gid": 107,
+  "math_tags": ["weighting the parts that are most relevant", "measuring similarity as nearness in a space"],
+  "math_plain": "Weight different parts of an image by importance to the user's intent, then align those weighted parts with target images in a shared space where similar images sit close together.",
+  "why_math": "It works because the user intent is hidden—only certain image details matter to their modified request. Weighting by relevance lets you ignore visual noise. Placing results in a unified space where similarity is closeness makes matching target images tractable; nearby images are truly similar by user perception."
+ },
+ {
+  "gid": 108,
+  "math_tags": ["learning a function from examples", "combining many weak signals into a strong one"],
+  "math_plain": "Learn to classify a person's age group from body outline alone by training two prediction tasks together and comparing similar pairs of people.",
+  "why_math": "It works because age leaves structural patterns in posture and silhouette even without faces. Teaching two related tasks at once forces the model to learn shared features that both tasks need. Comparing similar pairs teaches the model what small changes in body shape mean for age; if two people look similar but have different ages, the model learns to spot subtle differences."
+ },
+ {
+  "gid": 109,
+  "math_tags": ["separating cause from coincidence", "measuring surprise and information"],
+  "math_plain": "Prove your identity by showing membership in a secret group without revealing who you are or disclosing any personal information about yourself.",
+  "why_math": "It works because a zero-knowledge proof lets you convince others a fact is true without showing the evidence. The cryptographic math guarantees that if you pass the proof, you must actually belong to that group—there's no way to fake it. No personal data is revealed, so attackers cannot steal or breach your identity."
+ },
+ {
+  "gid": 110,
+  "math_tags": ["keeping only the few dimensions that matter", "learning a function from examples"],
+  "math_plain": "Represent nodes as two separate parts—one capturing their structural role (hub, bridge, etc.) and another capturing their cluster membership—then use learned role archetypes to explain why clusters formed.",
+  "why_math": "It works because roles and clusters are independent properties; a hub node matters structurally whether it sits in cluster A or B. Splitting them into separate subspaces prevents confusion. Using five archetypal role anchors lets a language model discuss nodes in human terms ('this hub connects three groups'), making clusters interpretable."
+ },
+ {
+  "gid": 111,
+  "math_tags": ["estimating probabilities from data", "matching and allocating who gets what"],
+  "math_plain": "Compute voting outcomes when agents hold private beliefs about an unknown truth, can coordinate in groups of size k or less, and must be characterized by equilibrium conditions.",
+  "why_math": "It works because limiting coordination to k-sized coalitions reflects reality—large groups cannot conspire. Equilibrium means no group small enough to conspire can improve their outcome by deviating, so the prediction is stable. The math exactly characterizes when majority voting survives this constraint, revealing coordination power's true effect on truthful decisions."
+ },
+ {
+  "gid": 112,
+  "math_tags": ["measuring similarity as nearness in a space", "learning a function from examples"],
+  "math_plain": "Create vector representations of real-world concepts by encoding graph structure directly, then inject these vectors into a language model's internal space to ground it in structured knowledge.",
+  "why_math": "It works because a knowledge graph's topology encodes relationships and meaning—by representing nodes as vectors that capture this structure, you give the model access to organized world knowledge. Injecting these vectors into the language model's native vector space means it can now reason with structured facts alongside learned text patterns, improving factual accuracy without rewriting the model."
+ },
+ {
+  "gid": 113,
+  "math_tags": ["keeping only the few dimensions that matter", "measuring similarity as nearness in a space"],
+  "math_plain": "Filter out noisy graph edges and learn robust hidden representations, then explain decisions by balancing how much of the true signal you keep versus how much you compress.",
+  "why_math": "It works because noise in graph structure compounds through message passing—each layer amplifies perturbations. Filtering recovers the true underlying graph. The information bottleneck principle ensures explanations are both faithful to the model's decision and compact; you keep just enough information to explain, discarding noise and irrelevant details that bloat but don't clarify."
+ },
+ {
+  "gid": 114,
+  "math_tags": ["finding the settings with least error", "learning by comparison of similar and different"],
+  "math_plain": "Optimize model parameters to find loss landscape minima that are flat and consistent across both cold-start and warm-start recommendation domains.",
+  "why_math": "It works because flat minima generalize better—small changes in data don't large changes in predictions. By forcing the loss landscape to be equally flat in both cold and warm domains, the model's learned patterns must work universally, not exploit domain-specific quirks. This shared flatness across domains naturally transfers knowledge from warm to cold items."
+ },
+ {
+  "gid": 115,
+  "math_tags": ["matching and allocating who gets what", "estimating probabilities from data"],
+  "math_plain": "Reallocate items among agents by maximizing total profit subject to each agent receiving fair value, when each agent individually values items differently.",
+  "why_math": "It works because agents only care about their own profit, not absolute equality. By maximizing total profit and guaranteeing each agent non-negative value, you create a deal everyone wants. Private valuations are different, but any reallocation that sums profit and keeps individuals above zero satisfies all parties—no one loses, and most gain."
+ },
+ {
+  "gid": 116,
+  "math_tags": ["finding the settings with least error", "following the slope downhill to improve"],
+  "math_plain": "Optimize multiple competing recommendation objectives (accuracy, diversity, fairness) per user by learning which objectives matter to each person and their uncertain relationships.",
+  "why_math": "It works because users rarely want one thing only—accuracy without diversity feels robotic; fairness without accuracy feels unfair to them. By tuning objectives per person and capturing uncertainty in how they interact, the system adapts to real preferences. Using orthogonal meta-learning exploits shared patterns across users to speed convergence while keeping objectives from fighting each other."
+ },
+ {
+  "gid": 117,
+  "math_tags": ["separating cause from coincidence", "measuring surprise and information"],
+  "math_plain": "Convert neural network models to hardened binary code that is difficult to reverse-engineer, making model weights and computation graphs hard to extract.",
+  "why_math": "It works because obscuring code raises the cost of attack. Converting from readable scripts to binary machine code, then applying obfuscation layers (randomizing operator order, mangling weight access), means attackers cannot easily read or extract the model. High cyclomatic complexity makes control flow hard to follow; high Halstead effort means reverse-engineering requires much more work."
+ },
+ {
+  "gid": 118,
+  "math_tags": ["ranking things by a learned score", "keeping only the few dimensions that matter"],
+  "math_plain": "Rank all documents at once using a language model's full context window; use hierarchical position encoding to tell the model where each document is, and prune attention to skip irrelevant documents.",
+  "why_math": "It works because ranking listwise (comparing all at once) beats sliding-window ranking (comparing subsets)—documents interact and contextualize each other. Pruning attention to keep only the query and top-k documents eliminates wasted computation on irrelevant documents while preserving the documents that actually matter for ranking. Hierarchical encoding efficiently tells the model document order and within-document token positions."
+ },
+ {
+  "gid": 119,
+  "math_tags": ["learning a function from examples", "predicting the next item in a sequence"],
+  "math_plain": "Build recommendation models from a massive dataset of user interactions with short videos, training on sequential feedback to predict which video a user will watch next.",
+  "why_math": "It works because users' interests change rapidly with short videos—each watch influences the next choice. Modeling sequences lets the system learn those rapid shifts from real user behavior. Scale matters: with 40 billion interactions, patterns in interest evolution become statistically clear, and cold-start (new users or videos) can be addressed by finding similar users or content in the large corpus."
+ }
+]

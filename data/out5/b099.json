@@ -1,0 +1,26 @@
+[
+  {
+    "gid": 1485,
+    "math_tags": ["ranking things by a learned score", "separating cause from coincidence"],
+    "math_plain": "Identifying and measuring failure modes in generative systems used for information retrieval.",
+    "why_math": "It works because vulnerabilities are patterns that emerge when you actually run the system against adversarial or biased inputs—testing whether the system's behavior matches its intended function reveals when it fails."
+  },
+  {
+    "gid": 1486,
+    "math_tags": ["ranking things by a learned score", "matching and allocating who gets what"],
+    "math_plain": "Scoring agents by their relevance across multiple criteria—capabilities, behaviors, constraints—and ranking to surface the best fit for each task.",
+    "why_math": "It works because you only need to order agents correctly by fitness, not predict perfect scores; a rough multi-criterion ranking that gets the best agents on top already solves the discovery problem."
+  },
+  {
+    "gid": 1487,
+    "math_tags": ["estimating probabilities from data", "measuring similarity as nearness in a space", "weighting the parts that are most relevant"],
+    "math_plain": "Extracting user preferences and intents as summaries from language, then using them to personalize search results and recommendations.",
+    "why_math": "It works because users who express similar preferences tend to want similar results; if you capture what each user cares about, matching new queries to their profile becomes a nearness problem."
+  },
+  {
+    "gid": 1488,
+    "math_tags": ["measuring surprise and information", "finding the settings with least error", "combining many weak signals into a strong one"],
+    "math_plain": "Defining and measuring correctness when systems generate or retrieve content across text, images, and other modalities simultaneously.",
+    "why_math": "It works because no single metric captures all aspects of goodness; combining multiple evaluation signals—fidelity, alignment, coherence—gives a fuller picture than any one measure alone."
+  }
+]

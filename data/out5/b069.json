@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 1035,
+    "math_tags": ["measuring surprise and information", "weighting the parts that are most relevant"],
+    "math_plain": "Select the best instructions to score each atomic unit of a conversation, then aggregate scores into one overall rating.",
+    "why_math": "It works because the atomic units capture concrete details of what happened, and choosing instructions that matter most for each aspect ensures those details influence the final score proportionally to their importance."
+  },
+  {
+    "gid": 1036,
+    "math_tags": ["measuring similarity as nearness in a space", "learning a function from examples"],
+    "math_plain": "Learn to rank search results so they cover diverse fact-nuggets needed for comprehensive synthesis.",
+    "why_math": "It works because if search results are ordered by how well they add new facts rather than just relevance, synthesis has all the pieces it needs and nothing is missing or redundant."
+  },
+  {
+    "gid": 1037,
+    "math_tags": ["weighting the parts that are most relevant", "ranking things by a learned score"],
+    "math_plain": "Score each keyphrase candidate by its local importance in its segment and its generation likelihood globally.",
+    "why_math": "It works because keyphrases matter most when they represent local topics, not just when they appear often everywhere; scoring both dimensions captures which phrases actually summarize their section."
+  },
+  {
+    "gid": 1038,
+    "math_tags": ["measuring similarity as nearness in a space", "keeping only the few dimensions that matter"],
+    "math_plain": "Prune tokens by measuring how much each one's influence region overlaps with others in embedding space.",
+    "why_math": "It works because if you keep tokens whose regions matter most, you preserve the information needed to find neighbors without storing every token's details."
+  },
+  {
+    "gid": 1039,
+    "math_tags": ["spreading information across a network", "following the slope downhill to improve"],
+    "math_plain": "Organize conversation memories into a forest of trees that grow by linking related memories and using voting to decide connections.",
+    "why_math": "It works because grouping related memories together makes finding relevant context cheaper, and voting on connections ensures only meaningfully related memories are linked rather than noise."
+  },
+  {
+    "gid": 1040,
+    "math_tags": ["measuring similarity as nearness in a space", "ranking things by a learned score"],
+    "math_plain": "Score documents as relevant when full descriptions and context narratives agree, not just raw queries.",
+    "why_math": "It works because complete problem statements filter out false positives — a document matching a raw query might be irrelevant once you see the full context, so agreement across rich formulations ensures true relevance."
+  },
+  {
+    "gid": 1041,
+    "math_tags": ["learning a function from examples", "measuring similarity as nearness in a space"],
+    "math_plain": "Build user representations by treating their history as an unordered set of item-rating pairs and mixing them permutation-invariantly.",
+    "why_math": "It works because user history is naturally a set with no fixed order — the same person likes items A then B as much as B then A for building preferences — so order-invariant mixing respects this truth and is robust."
+  },
+  {
+    "gid": 1042,
+    "math_tags": ["combining many weak signals into a strong one", "estimating probabilities from data"],
+    "math_plain": "Treat conflicting recommendations from different prompts and indices as samples from a hidden choice, and learn a prior over which to trust.",
+    "why_math": "It works because different prompts reveal different facets of true preferences; modeling their disagreement as stemming from a hidden source lets you adaptively weight each facet by how relevant it is."
+  },
+  {
+    "gid": 1043,
+    "math_tags": ["ranking things by a learned score", "learning a function from examples"],
+    "math_plain": "Retrieve video moments by reconstructing the query from the video, not just matching features, and pinpoint boundaries.",
+    "why_math": "It works because if a video segment can regenerate the query linguistically, it means the model deeply understood the connection, not just surface similarity; understanding is richer than matching."
+  },
+  {
+    "gid": 1044,
+    "math_tags": ["separating cause from coincidence", "learning by comparison of similar and different"],
+    "math_plain": "Predict next POI by modeling real preferences separately from contextual behaviors, and inferring where users actually intended versus settled for.",
+    "why_math": "It works because visit data mixes genuine preference with circumstance — work locations skew behavior — so filtering out external causes leaves true preferences to predict future choices accurately."
+  },
+  {
+    "gid": 1045,
+    "math_tags": ["keeping only the few dimensions that matter", "learning a function from examples"],
+    "math_plain": "Distill distinct user interests by reconstructing interest vectors rather than aggregating them, preserving each interest's strength.",
+    "why_math": "It works because averaging interests blurs important patterns into an indistinct middle; reconstructing each vector separately forces the model to find and preserve what makes each interest distinct and strong."
+  },
+  {
+    "gid": 1046,
+    "math_tags": ["ranking things by a learned score", "learning a function from examples"],
+    "math_plain": "Predict session intent selectively with language models for uncertain cases, then learn a lightweight predictor for all sessions.",
+    "why_math": "It works because language models are powerful but expensive; using them only where uncertainty is high lets you keep the insights they provide while scaling to all data via a simpler model."
+  },
+  {
+    "gid": 1047,
+    "math_tags": ["measuring similarity as nearness in a space", "weighting the parts that are most relevant"],
+    "math_plain": "Mix compact cluster embeddings using probabilistic gates derived from diffusion patterns, not hash collisions.",
+    "why_math": "It works because diffusion spreads influence smoothly through the graph, revealing which clusters co-occur; using this structure for gating is more accurate than random hashing and respects relationships."
+  },
+  {
+    "gid": 1048,
+    "math_tags": ["learning by comparison of similar and different", "ranking things by a learned score"],
+    "math_plain": "Find informative regions by clustering nodes, then identify which clusters likely hold novel classes or unclear examples.",
+    "why_math": "It works because a dense cluster of uncertain nodes is likely to contain either hard examples of known classes or examples of new classes; finding such regions is more efficient than scoring every node individually."
+  },
+  {
+    "gid": 1049,
+    "math_tags": ["predicting the next item in a sequence", "learning a function from examples"],
+    "math_plain": "Predict short-video preference by modeling sequences of user actions in time, capturing how action timing reveals diverse interests.",
+    "why_math": "It works because when someone likes one moment and follows on another, those actions at different times reveal different intents; temporal sequence captures intent better than treating the video as one unit."
+  }
+]

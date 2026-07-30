@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 15,
+    "math_tags": ["ranking things by a learned score", "matching and allocating who gets what"],
+    "math_plain": "Rank and select products that match what each shopper wants, given their preferences and behavior.",
+    "why_math": "People's preferences form patterns in what they click and buy. If you score products by how well they fit each person's pattern, then sorting by that score puts the best matches on top, where shoppers look first. Ranking is cheap and gets right what matters: the ordering."
+  },
+  {
+    "gid": 16,
+    "math_tags": ["separating cause from coincidence", "learning by comparison of similar and different"],
+    "math_plain": "Assign colors to nodes in a hypergraph so node colors match the colors of the edges connected to them.",
+    "why_math": "When a node's color matches its edges, you've found a consistent assignment. The approximation works because each swap toward consistency brings you closer to a globally stable coloring, even if you can't reach perfection in polynomial time."
+  },
+  {
+    "gid": 17,
+    "math_tags": ["measuring similarity as nearness in a space", "following the slope downhill to improve"],
+    "math_plain": "Extract fact triples and their conditional constraints by progressively refining noisy guesses into clean quintuples.",
+    "why_math": "Starting from noise and removing it step-by-step works because each step moves toward the data you actually want. When you know the hierarchical structure (facts in the middle, conditions around them), you can focus refinement on the parts that matter, not waste effort on all possible combinations."
+  },
+  {
+    "gid": 18,
+    "math_tags": ["estimating probabilities from data", "following the slope downhill to improve"],
+    "math_plain": "Model when a platform will enter a market to compete with sellers, balancing its own profit against information it learns over time.",
+    "why_math": "The platform learns which products are profitable by watching sellers succeed. An optimal strategy must weigh the immediate profit of entering now against learning more by waiting. The math works because the best strategy trades off known profits and unknown upside in a way that maximizes what matters: total lifetime earnings."
+  },
+  {
+    "gid": 19,
+    "math_tags": ["estimating probabilities from data", "separating cause from coincidence"],
+    "math_plain": "Predict whether someone will buy something fairly, learning from synthetic data created by causal rules, then test on real data with missing values.",
+    "why_math": "Pre-training on data that respects causal rules teaches the model to see real causes, not just coincidental patterns. But causality alone doesn't guarantee fairness across groups; fairness is a separate goal. The model learns robust patterns but still needs extra work to be truly fair."
+  },
+  {
+    "gid": 20,
+    "math_tags": ["measuring surprise and information", "learning by comparison of similar and different"],
+    "math_plain": "Measure whether a language model's next-word probabilities match the true probabilities that matter for a task, revealing a trade-off between variety and stability.",
+    "why_math": "When a model samples the next word, it uses learned probabilities. If those probabilities are stable (don't bounce around) they match task requirements better. If they vary wildly, the model produces diverse outputs but unreliable ones. The math works because sampling is controlled by these probabilities, so their accuracy directly controls output quality."
+  },
+  {
+    "gid": 21,
+    "math_tags": ["combining many weak signals into a strong one", "separating cause from coincidence"],
+    "math_plain": "Verify claims by retrieving good evidence, then having multiple viewpoints debate the claim, and distilling the consensus into a confidence score.",
+    "why_math": "Debate between different reasoning paths catches errors because no single perspective is perfect. When you combine views and let them challenge each other, the strongest reasoning survives. Distilling to a lightweight model transfers this reasoning without needing the large model every time."
+  },
+  {
+    "gid": 22,
+    "math_tags": ["measuring similarity as nearness in a space", "spreading information across a network"],
+    "math_plain": "Predict future events in a social network by storing events as complex numbers that encode both what happened and when, then spreading that information across edges.",
+    "why_math": "Encoding semantic meaning in the real part and temporal patterns in the imaginary part lets you handle both at once. Multiplication in frequency space is cheaper than convolution in time, so you can process large event streams fast. Nearness in this complex space means events that are semantically similar and temporally aligned."
+  },
+  {
+    "gid": 23,
+    "math_tags": ["estimating probabilities from data", "following the slope downhill to improve"],
+    "math_plain": "Predict the net conversion rate (purchase and no refund) by modeling the two delays separately and learning patterns over time from continuous feedback.",
+    "why_math": "Refunds and purchases are linked but opposite: a refund only happens after a purchase. Modeling them separately captures this structure better than trying to predict the final outcome directly. Online learning works because shoppers' preferences drift, so yesterday's patterns matter less than fresh data today."
+  },
+  {
+    "gid": 24,
+    "math_tags": ["learning a function from examples", "weighting the parts that are most relevant"],
+    "math_plain": "Learn a shared feature processor that each client can customize locally, by identifying which layers should be global and which should be personal.",
+    "why_math": "Sharing everything causes clients' personal needs to get averaged out. Keeping some layers local lets each client's unique features shine through. The math works because the theory of neural collapse shows that too much averaging at the feature level hurts personalization, while partial sharing balances shared knowledge and individual needs."
+  },
+  {
+    "gid": 25,
+    "math_tags": ["learning by comparison of similar and different", "measuring similarity as nearness in a space"],
+    "math_plain": "Test whether language-model explanations for product recommendations stay consistent and sensible when user behavior is slightly disturbed.",
+    "why_math": "Small changes to input that don't change the right recommendation should barely change the explanation. If the explanation swings wildly, the model is relying on brittle details, not the core reason. Measuring multiple kinds of consistency (meaning, words, structure) reveals where the model is fragile."
+  },
+  {
+    "gid": 26,
+    "math_tags": ["smart random sampling and averaging", "matching and allocating who gets what"],
+    "math_plain": "Route queries to the right experts by remembering which expert teams worked well before on similar questions, and blending those memories with current signals.",
+    "why_math": "Expert routing usually throws away what it learned and starts fresh each time. By storing successful teams and retrieving them for similar inputs, you get consistency for free. When retrieved memories agree with live signals, the decision is stable. When they differ, you learn something new, so you update the memory."
+  },
+  {
+    "gid": 27,
+    "math_tags": ["ranking things by a learned score", "weighting the parts that are most relevant"],
+    "math_plain": "Predict whether someone will buy at the fine-grained price level instead of just item level, grouping variants by price to keep signal without breaking the system.",
+    "why_math": "Buyers decide at the price level: the same item at ten prices is ten different choices. Item-level models miss that. Direct price-level modeling breaks sparse data into pieces too small to learn from. Grouping by price keeps the signal that matters (this person likes this price range) while merging sparse variants."
+  },
+  {
+    "gid": 28,
+    "math_tags": ["separating cause from coincidence", "combining many weak signals into a strong one"],
+    "math_plain": "Trade data fairly by each owner adding noise to their data through a decentralized protocol, so no one reveals raw data but buyers get the signal they need.",
+    "why_math": "Secret-sharing the noise lets everyone add a piece without anyone learning the whole secret. Byzantine robustness means even if some parties cheat, the final noise is still valid. Distributing the work across parties means no single trusted authority is needed, so everyone's data stays private end-to-end."
+  },
+  {
+    "gid": 29,
+    "math_tags": ["ranking things by a learned score", "combining many weak signals into a strong one"],
+    "math_plain": "Generate answers by using scores for how relevant the retrieved documents are, so the language model knows which pieces of information to trust most.",
+    "why_math": "Retrieved documents vary in quality for any given question. If the model knows which ones are trustworthy (via explicit scores), it can focus on strong information and discount weak context. Combining relevance, ranking, and predictive power signals gives the model multiple angles on quality, making it more robust to noise."
+  }
+]

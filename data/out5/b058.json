@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 870,
+    "math_tags": ["matching and allocating who gets what"],
+    "math_plain": "Scores and aligns product entries from an e-commerce catalog against a clean brand knowledge base to repair and match them simultaneously.",
+    "why_math": "Matching works because both the catalog and the knowledge base refer to the same real products; by finding which entries correspond to which references, the method can copy accurate details and fill gaps using ground truth from the brand source."
+  },
+  {
+    "gid": 871,
+    "math_tags": ["weighting the parts that are most relevant", "combining many weak signals into a strong one"],
+    "math_plain": "Learns which items in a user's history are most informative, then aggregates predictions from two expert models via a learned gate that weights their agreement differently for popular versus rare items.",
+    "why_math": "This works because rare items need different expert knowledge than popular ones; by training gate weights specifically to recognize when each expert is trustworthy for each item type, the method puts the right expert in charge at the right time."
+  },
+  {
+    "gid": 872,
+    "math_tags": ["spreading information across a network", "separating cause from coincidence"],
+    "math_plain": "Decomposes a complex claim into simpler sub-claims, maps their dependencies as a graph, then verifies each sub-claim while propagating results through the dependency structure to catch reasoning that spans multiple steps.",
+    "why_math": "Complex claims have sub-claims that build on each other; isolating and verifying each one alone misses how earlier conclusions enable later ones. By tracking the flow of reasoning through dependencies, the method captures multi-step logic that a single claim cannot."
+  },
+  {
+    "gid": 873,
+    "math_tags": ["measuring similarity as nearness in a space"],
+    "math_plain": "Collects sensory impressions and photos tagged with subjective moods at locations, then visualizes them on a map where proximity reflects both place characteristics and personality-driven perception similarities.",
+    "why_math": "This works because two people who perceive the same location similarly will tag it with the same sensory words; placing locations near each other in visual space when their sensory profiles are close makes that similarity readable at a glance."
+  },
+  {
+    "gid": 874,
+    "math_tags": ["ranking things by a learned score", "weighting the parts that are most relevant"],
+    "math_plain": "Extracts multiple fine-grained relevance signals between a dialog query and each entity in a knowledge graph, then learns to combine and rank those signals through graph layers to score candidate answers.",
+    "why_math": "Each relevance signal captures one aspect of fit; by learning to weight and spread those signals across the entity's neighborhood in the graph, the method discovers which combinations of signals best predict the right answer."
+  },
+  {
+    "gid": 875,
+    "math_tags": ["separating cause from coincidence", "measuring surprise and information"],
+    "math_plain": "Measures how believable users find news claims, models the linguistic conflicts and mixed emotions in text, then uses both as signals in a graph model to separate false claims from true ones.",
+    "why_math": "Misinformation often contains tension between incompatible frames or emotions that signal deception; by capturing both human credibility judgments and the presence of linguistic conflict, the model exploits two independent truths that both point toward falsehood."
+  },
+  {
+    "gid": 876,
+    "math_tags": ["weighting the parts that are most relevant", "combining many weak signals into a strong one"],
+    "math_plain": "Generates separate learned embeddings tailored to each sub-network in a parallel architecture, then uses a learned gate to select which layers of information from each network to combine at each step, avoiding noise buildup.",
+    "why_math": "Different sub-networks capture different interaction patterns; shared embeddings force compromise. By letting each sub-network learn its own representation and gating which one contributes at each step, the method ensures each interaction type uses its own optimized signal."
+  },
+  {
+    "gid": 877,
+    "math_tags": ["separating cause from coincidence", "estimating probabilities from data"],
+    "math_plain": "Analyzes the political slant in a large web corpus using persona-based annotation and statistical tests, then measures whether the bias in the data propagates into model outputs through training.",
+    "why_math": "If bias enters models only through the data they learn from, then corpus bias and model bias should correlate; by checking this correlation and testing statistical equivalence, the method proves that the training data is the cause."
+  },
+  {
+    "gid": 878,
+    "math_tags": ["spreading information across a network", "weighting the parts that are most relevant"],
+    "math_plain": "Breaks down a user query into multiple sub-questions, generates pseudo-answers from different viewpoints, then filters and weights them by relevance to create a richer expanded query.",
+    "why_math": "A search query is vague; exploring it from multiple angles generates diverse candidates for relevant documents. By keeping only the highest-signal pseudo-answers and building the expanded query from weighted combinations, the method amplifies recall without adding noise."
+  },
+  {
+    "gid": 879,
+    "math_tags": [],
+    "math_plain": "Discusses future directions for building personalized assistants using multimodal models and reasoning, with a focus on user alignment and combining fast and slow cognition.",
+    "why_math": "This is a position paper describing trends rather than proposing a specific mathematical method."
+  },
+  {
+    "gid": 880,
+    "math_tags": ["learning a function from examples", "measuring similarity as nearness in a space"],
+    "math_plain": "Uses a language model to generate missing metadata for sparse citation record fields, encodes the augmented metadata with a learned text encoder, then uses the resulting features as node inputs to a graph network for author classification.",
+    "why_math": "Authors publishing together and in similar venues share research interests; by enriching sparse metadata and learning embeddings that place similar authors near each other in a learned space, the method extracts predictable patterns from the citation structure."
+  },
+  {
+    "gid": 881,
+    "math_tags": ["ranking things by a learned score", "spreading information across a network"],
+    "math_plain": "Ranks candidate knowledge-graph entities using a neural architecture that models lexical and semantic relevance while propagating signals through the entity's neighborhood in the graph structure and conditioning on dialog context.",
+    "why_math": "The correct entity often appears in the knowledge graph alongside related entities and properties; by spreading relevance signals through these local connections and learning how dialog context modulates their importance, the method finds the answer using both the graph structure and the conversation history."
+  },
+  {
+    "gid": 882,
+    "math_tags": ["weighting the parts that are most relevant", "combining many weak signals into a strong one"],
+    "math_plain": "Distills image-guided debiasing knowledge from a multimodal model into a text-only model, then trains on cleaned triples using weighted preference alignment to extract objective facts for news recommendation.",
+    "why_math": "Images are less prone to exaggeration than text; by teaching the text-only model to match predictions a multimodal model would make while seeing both image and text, the method transfers robustness without requiring images at test time."
+  },
+  {
+    "gid": 883,
+    "math_tags": [],
+    "math_plain": "This is a workshop announcement about generative AI and recommender systems; no specific mathematical method is proposed.",
+    "why_math": "This is a position paper describing a workshop topic rather than proposing a mathematical technique."
+  },
+  {
+    "gid": 884,
+    "math_tags": ["combining many weak signals into a strong one", "weighting the parts that are most relevant"],
+    "math_plain": "Trains multiple expert models each specialized to a different region of the training data identified via mixture modeling, then dynamically weights their predictions at test time based on incoming features without retraining.",
+    "why_math": "Imbalanced data has natural sub-populations with different characteristics; training separate experts for each region gives each an easier learning task. By learning at test time which region each new point belongs to and selecting the corresponding expert, the method adapts instantly to distribution shift."
+  }
+]

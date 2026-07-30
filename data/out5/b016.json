@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 240,
+    "math_tags": ["finding the settings with least error", "smart random sampling and averaging"],
+    "math_plain": "Approximates which rules in knowledge graphs are most useful by testing quick estimates instead of exact measurements, speeding up mining.",
+    "why_math": "Testing every possible rule exhaustively is impossibly slow, so a good shortcut that ranks rules by approximate scores still finds the best ones while running fast. Missing some rules is acceptable as long as the best ones still rank highest."
+  },
+  {
+    "gid": 241,
+    "math_tags": ["separating cause from coincidence", "estimating probabilities from data"],
+    "math_plain": "Measures what would really happen to total platform sales if you add one inventory item, accounting for whether hotels accept it and whether it just shifts sales between competitors.",
+    "why_math": "Simply correlating inventory changes with sales hides shifts and rejections. Separating real causes from confounding factors reveals the true effect of each inventory action, so resources go to changes that actually grow platform revenue instead of just redistributing existing sales."
+  },
+  {
+    "gid": 242,
+    "math_tags": ["learning by comparison of similar and different", "spreading information across a network"],
+    "math_plain": "Identifies suspicious groups in networks by learning which patterns appear repeatedly in normal subgraphs versus abnormal ones, using paths and cycles to sample candidate groups.",
+    "why_math": "Anomalous groups differ structurally from normal ones. By seeing which pattern combinations appear together in normal graphs, you learn what 'collaboration' looks like, so subgraphs that deviate from those learned patterns stand out as anomalies."
+  },
+  {
+    "gid": 243,
+    "math_tags": ["finding the settings with least error", "separating cause from coincidence"],
+    "math_plain": "Updates specific parts of a language model to fix wrong facts while measuring conflicts between different fix attempts to avoid erasing previously learned knowledge.",
+    "why_math": "Multiple edits can contradict each other or erase prior corrections. By quantifying which edits conflict with which, you can allocate which parts of the model each edit should touch, avoiding crashes where one fix undoes another."
+  },
+  {
+    "gid": 244,
+    "math_tags": ["finding the settings with least error", "smart random sampling and averaging"],
+    "math_plain": "Routes control messages through either fast direct calls or slower queues, automatically switching between them based on which keeps delays lowest for each situation.",
+    "why_math": "Direct routes are fast but overload the control system; queues offload burden but add latency. Measuring which path is faster right now and switching between them minimizes delay, adapting to changing load without requiring a fixed choice."
+  },
+  {
+    "gid": 245,
+    "math_tags": ["ranking things by a learned score"],
+    "math_plain": "Catalogs which cryptographic components in decentralized systems need post-quantum upgrades most urgently by ranking them by exposure, governance friction, and verification cost.",
+    "why_math": "Not all cryptographic parts pose equal risk or require equal work to upgrade. Ranking by concrete risk factors and deployment friction identifies where to spend effort first so limited resources tackle the highest-impact vulnerabilities."
+  },
+  {
+    "gid": 246,
+    "math_tags": ["estimating probabilities from data"],
+    "math_plain": "Evaluates whether people can tell apart human news from AI-generated news, testing both detection and generation to understand how well AI fools readers and vice versa.",
+    "why_math": "Detection and generation capabilities form an arms race. By measuring how well humans spot AI news right now, you see which generation techniques still fool people and which defenses work, informing the next round of improvements on both sides."
+  },
+  {
+    "gid": 247,
+    "math_tags": ["spreading information across a network"],
+    "math_plain": "Detects communities in social networks by treating emotional language (grievances, moral framing) as separate communication channels layered atop who interacts with whom.",
+    "why_math": "People cluster around shared beliefs and emotions, not just direct interactions. Adding emotional language as a separate layer reveals which groups form around common grievances or values, so communities defined by what people care about emerge more coherently."
+  },
+  {
+    "gid": 248,
+    "math_tags": ["measuring similarity as nearness in a space", "weighting the parts that are most relevant"],
+    "math_plain": "Focuses attention on the most important prior user actions by chunking behavior histories in ways matched to each person, using separate attention scorers for long-term interests, shifts, and recent actions.",
+    "why_math": "Computing attention to all prior actions is too slow and most actions are noise. By attending selectively to chunks that matter most per user and separating attention by timescale, the model sees signal without computing pointlessly over history."
+  },
+  {
+    "gid": 249,
+    "math_tags": ["matching and allocating who gets what", "measuring similarity as nearness in a space"],
+    "math_plain": "Assigns tasks to people in roles fairly and efficiently, where how much someone values a task depends on which role they hold and which positions can do which tasks form a graph constraint.",
+    "why_math": "Role position matters because resources and support differ per role, so effort and value vary. When task constraints form a graph, fair allocation respects both position-dependent value and graph structure simultaneously, balancing fairness across positions."
+  },
+  {
+    "gid": 250,
+    "math_tags": ["finding the settings with least error"],
+    "math_plain": "Adapts spiking neural network inference on phones to available memory by slicing network layers smartly, scheduling timesteps to reduce memory fragmentation, and stopping early on confident predictions.",
+    "why_math": "Memory on phones fluctuates unpredictably. By measuring available memory and adjusting which layers load, how they run, and when to quit early, the model fits what the device can hold right now while staying accurate."
+  },
+  {
+    "gid": 251,
+    "math_tags": ["separating cause from coincidence", "weighting the parts that are most relevant"],
+    "math_plain": "Selects which features matter most across multiple data sources by removing confounding factors and weighting each source to reveal shared true causes beneath source-specific noise.",
+    "why_math": "Data sources disagree due to both noise and real confounding. By upweighting sources that agree and downweighting those affected by confounds, you surface the truly causal features that matter everywhere, not spurious correlations that vary by source."
+  },
+  {
+    "gid": 252,
+    "math_tags": ["separating cause from coincidence"],
+    "math_plain": "Shows that prompting techniques that help language models reason better also sometimes make them unfairer and more prone to stereotypes than simpler approaches.",
+    "why_math": "Reasoning frameworks like chain-of-thought let models articulate more, which can amplify biases present in training. More expression gives more room for stereotypes to appear unless safety measures also scale with reasoning capability."
+  },
+  {
+    "gid": 253,
+    "math_tags": ["learning a function from examples", "combining many weak signals into a strong one"],
+    "math_plain": "Recommends items to users while keeping data on their phones by retaining past preferences as hints during training and sharing knowledge between similar users without sending data to the center.",
+    "why_math": "Users evolve over time and value privacy. Distilling past preferences into the local model helps remember what mattered before, and learning from similar peers enriches each user without centralization, balancing adaptation, retention, and privacy."
+  },
+  {
+    "gid": 254,
+    "math_tags": [],
+    "math_plain": "A workshop announcement describing emerging work combining foundation models with federated learning.",
+    "why_math": "This is a workshop description without specific mathematical contribution."
+  }
+]

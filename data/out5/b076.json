@@ -1,0 +1,143 @@
+[
+  {
+    "gid": 1140,
+    "math_tags": [
+      "ranking things by a learned score",
+      "finding the settings with least error",
+      "following the slope downhill to improve"
+    ],
+    "math_plain": "Compress images into short binary codes for fast lookup while staying robust when someone deliberately corrupts the input to fool the system.",
+    "why_math": "The method works because it protects the frequency components of the learned function that actually matter for ranking similar images together, while letting the adversarial training strip away only the unstable, noisy parts. This keeps the signal strong without breaking under attack."
+  },
+  {
+    "gid": 1141,
+    "math_tags": [
+      "separating cause from coincidence",
+      "finding the settings with least error",
+      "learning by comparison of similar and different"
+    ],
+    "math_plain": "Forget which old facts conflict with new ones in a growing knowledge base, then update entity relationships by learning what changed.",
+    "why_math": "It works because removing contradictory knowledge lets the model update its internal state of what entities are like without getting stuck in old, wrong assumptions. The progressive unlearning prevents the model from averaging together conflicting beliefs."
+  },
+  {
+    "gid": 1142,
+    "math_tags": [
+      "ranking things by a learned score",
+      "combining many weak signals into a strong one",
+      "weighting the parts that are most relevant"
+    ],
+    "math_plain": "Rerank search results by checking which ones lead to correct answers, then optimize the ranker to reward results that produce right answers downstream.",
+    "why_math": "It works because direct feedback from answer correctness is far more aligned with what we actually care about than proxy scores from annotation or language models. The method steers toward strategies that improve the end goal, not intermediate proxies."
+  },
+  {
+    "gid": 1143,
+    "math_tags": [
+      "measuring surprise and information",
+      "separating cause from coincidence"
+    ],
+    "math_plain": "Define the research questions and safeguards needed so information access systems do not leak personal data when users search and retrieve.",
+    "why_math": "It works because thinking clearly about what each privacy threat means and where data flows makes interventions concrete and measurable rather than vague. The framework exposes gaps between what we think we're protecting and what we actually are."
+  },
+  {
+    "gid": 1144,
+    "math_tags": [
+      "measuring similarity as nearness in a space",
+      "combining many weak signals into a strong one"
+    ],
+    "math_plain": "Simulate how users switch between systems, how systems compete for attention, and measure which one wins market share over repeated interactions.",
+    "why_math": "It works because realistic outcomes depend not just on accuracy but on competitive effects: early advantage, lock-in, and switching costs. Lab benchmarks on isolated systems miss these forces, but simulating them reveals which systems truly survive in practice."
+  },
+  {
+    "gid": 1145,
+    "math_tags": [
+      "learning by comparison of similar and different",
+      "measuring surprise and information"
+    ],
+    "math_plain": "Study how people think chat systems work versus what they actually do: do they assume the system read everything or only searched parts.",
+    "why_math": "It works because users bring mental models from old interfaces. When a new interface hides the search and ranking stages, people assume exhaustive work and stop verifying, leading them astray. Revealing the true stages in the interface would let users calibrate their trust."
+  },
+  {
+    "gid": 1146,
+    "math_tags": [
+      "ranking things by a learned score",
+      "estimating probabilities from data",
+      "combining many weak signals into a strong one"
+    ],
+    "math_plain": "Score documents using both a learned estimate of relevance given the query and a learned prior belief about quality regardless of query.",
+    "why_math": "It works because query-independent priors capture persistent document value that query scores alone miss. Combining them through fusion lets you shift expensive computation offline while keeping accuracy by balancing both signals at rank time."
+  },
+  {
+    "gid": 1147,
+    "math_tags": [
+      "learning by comparison of similar and different",
+      "measuring surprise and information"
+    ],
+    "math_plain": "Design systems that adapt query handling and answer clarity to each user's current cognitive level, with caregivers able to verify what was retrieved.",
+    "why_math": "It works because a single query-answer flow assumes stable comprehension, but dementia cognition fluctuates. Tracking that change over time and showing caregivers the evidence prevents misunderstanding and maintains informed oversight as the user's needs shift."
+  },
+  {
+    "gid": 1148,
+    "math_tags": [
+      "ranking things by a learned score",
+      "separating cause from coincidence",
+      "measuring surprise and information"
+    ],
+    "math_plain": "Test whether removed facts still leak into generated answers even though the documents containing them were deleted from the retrieval system.",
+    "why_math": "It works because compliance looks at two separate channels: whether forbidden documents are retrieved, and whether their facts appear in answers anyway. Checking both reveals that deleting records is not enough if the model learned the fact during training."
+  },
+  {
+    "gid": 1149,
+    "math_tags": [
+      "measuring surprise and information",
+      "separating cause from coincidence"
+    ],
+    "math_plain": "Decide whether metric improvements on benchmarks actually mean users experience better results in the real world.",
+    "why_math": "It works because not all measurement is valid: you can improve a metric while degrading the real experience if the metric measures the wrong thing. Checking that the metric correlates with what users actually want ensures progress is real, not statistical."
+  },
+  {
+    "gid": 1150,
+    "math_tags": [
+      "measuring surprise and information",
+      "estimating probabilities from data"
+    ],
+    "math_plain": "Test whether the Wilcoxon statistical test correctly identifies true differences between ranking systems, or if it makes false claims too often.",
+    "why_math": "It works because the Wilcoxon test makes assumptions that do not hold in ranking metrics: the test breaks down when applied to highly discrete scores, leading it to declare false discoveries. Switching to better tests like permutation methods preserves the real false-positive rate."
+  },
+  {
+    "gid": 1151,
+    "math_tags": [
+      "learning a function from examples",
+      "combining many weak signals into a strong one",
+      "matching and allocating who gets what"
+    ],
+    "math_plain": "Build a single agent that learns four models of situation, content, tasks, and user preferences to route people to search, recommendations, or conversation.",
+    "why_math": "It works because combining all four models lets the agent choose the mode that minimizes both the user's effort and its own work. Each model captures a different force shaping what the user needs; together they guide the agent to the right interaction for each moment."
+  },
+  {
+    "gid": 1152,
+    "math_tags": [
+      "learning a function from examples",
+      "combining many weak signals into a strong one"
+    ],
+    "math_plain": "Test eight ways to edit bundle content and nine ways to recommend bundles, measuring how replacing items creates the biggest bottleneck.",
+    "why_math": "It works because reproducibility across many methods on real data reveals which obstacles are universal, not method-specific. When nearly all approaches fail at one step like replacement, that step must be the key to improving the whole pipeline."
+  },
+  {
+    "gid": 1153,
+    "math_tags": [
+      "ranking things by a learned score",
+      "estimating probabilities from data"
+    ],
+    "math_plain": "Predict which query rewrite will produce the best final answer before running the full retrieval and generation pipeline.",
+    "why_math": "It works because most rewrites that improve ranking do not improve answers, so a cheap predictor that identifies which variant actually leads to good answers saves computation. Early lightweight predictors often match expensive post-retrieval ones because the quality they measure aligns with the goal."
+  },
+  {
+    "gid": 1154,
+    "math_tags": [
+      "learning a function from examples",
+      "combining many weak signals into a strong one"
+    ],
+    "math_plain": "Test ten language model query rewriting methods on many data sets to see which results replicate across different retrieval types and model sizes.",
+    "why_math": "It works because heterogeneous prior studies bury the real dependencies: rewriting gains depend heavily on the retrieval method (word-based versus learned) and model size. Controlling all variables reveals which improvements are robust versus artifacts of specific setup choices."
+  }
+]

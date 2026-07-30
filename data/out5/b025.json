@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 375,
+    "math_tags": ["ranking things by a learned score", "measuring similarity as nearness in a space"],
+    "math_plain": "Score videos by how closely they match a seed video's political leaning, then rank by alignment strength.",
+    "why_math": "Because people who consume certain political content tend to seek out similar viewpoints; ranking by how 'close' a video is to what you already watch identifies the content the algorithm will actually serve. The algorithm optimizes for this signal because it predicts engagement."
+  },
+  {
+    "gid": 376,
+    "math_tags": ["following the slope downhill to improve", "separating cause from coincidence"],
+    "math_plain": "Iteratively refine candidate answers by fetching facts tied to specific time periods, checking if each fact's timing aligns with others, then moving on to the next fact.",
+    "why_math": "Time-tagged facts form a causal chain; by verifying that events happen in the right sequence and within valid time windows, you eliminate answers that fit some facts but contradict their timing. Ordering and interval-checking are a cheap way to filter impossibilities without trying all combinations."
+  },
+  {
+    "gid": 377,
+    "math_tags": ["ranking things by a learned score", "finding the settings with least error"],
+    "math_plain": "Decompose the customer-value problem into an ordered ranking (low to high spender) and a precision-focused regression (fine-tune value within each tier), solving both simultaneously.",
+    "why_math": "High-value customers are extremely rare and numerically lost in standard regression; by first ranking customers into tiers and then fitting each tier separately, you give the rare 'whale' segment enough signal to train on without the low-value majority drowning them out. Structural tier separation works because tiers are inherently ordered."
+  },
+  {
+    "gid": 378,
+    "math_tags": ["measuring similarity as nearness in a space", "separating cause from coincidence"],
+    "math_plain": "Detect when search results are filled with low-quality AI-generated text by measuring how much results cluster into a narrow band of similar writing, and filter when diversity drops.",
+    "why_math": "Original diverse content comes from many independent sources with different voices; heavy AI generation produces statistically similar text across many results. Measuring the collapse of diversity—how tightly results cluster together—catches when the pipeline has been hijacked, because the lack of variation is itself the signal of synthesis."
+  },
+  {
+    "gid": 379,
+    "math_tags": ["smart random sampling and averaging", "weighting the parts that are most relevant"],
+    "math_plain": "An AI agent chooses actions by treating each option as an arm in a bandit; it learns which choices earn rewards, explores uncertain ones, and converges to the best strategies.",
+    "why_math": "Exploration-exploitation is a fundamental trade-off: pure exploitation locks in what seems best now, but misses discovery; pure exploration wastes time. Bandit algorithms balance the two by measuring uncertainty in each option and skewing effort toward high-reward AND uncertain choices. This provably converges to optimal action selection in the long run."
+  },
+  {
+    "gid": 380,
+    "math_tags": ["measuring surprise and information", "finding the settings with least error"],
+    "math_plain": "Monitor the shape of ad-ranking prediction scores over time; when the distribution shifts (fewer high bids, more low bids, or suddenly extreme values), flag it and smooth outliers.",
+    "why_math": "Healthy systems produce predictable, repeatable distributions of predictions; a sudden shift means the training data or real-world behavior has changed. By comparing today's distribution to historical baselines using divergence metrics, you catch silent failures before they ripple downstream into billing or user experience."
+  },
+  {
+    "gid": 381,
+    "math_tags": ["measuring similarity as nearness in a space", "spreading information across a network"],
+    "math_plain": "Build a knowledge graph linking canonical toxic words to their obfuscated variants using phonetic and visual similarity; traverse the graph to recognize hidden toxic expressions.",
+    "why_math": "Toxicity hides through transformation—phonetic abbreviations, symbol swaps, homoglyphs—but these transformations leave traces (similar sounds, similar shapes). By encoding variant relationships as a navigable graph, you turn variant recognition into path-following: find the transformation that connects what you see to known toxic terms."
+  },
+  {
+    "gid": 382,
+    "math_tags": ["estimating probabilities from data", "following the slope downhill to improve"],
+    "math_plain": "Predict future dengue cases by running a learned disease-spread simulator on a spatio-temporal network, with parameters optimized to match past outbreak data.",
+    "why_math": "Disease spreads by contact along geographic networks; the SEIR model captures this flow (susceptible to exposed to infected to recovered). By tuning the spread rates on historical data, the simulator learns the true pace of transmission in this region, so running it forward projects realistic futures."
+  },
+  {
+    "gid": 383,
+    "math_tags": ["measuring similarity as nearness in a space", "weighting the parts that are most relevant"],
+    "math_plain": "Segment an image into coherent color/texture regions (superpixels), weight regions by how much they match the target fashion attribute, then rank images by how well they respond.",
+    "why_math": "Fashion attributes (e.g., 'floral print', 'collar') occupy specific image regions, not the whole picture; superpixels respect those boundaries better than uniform patches. By measuring only the regions that matter for the attribute, you filter background noise and get precise similarity scores based on the right signal."
+  },
+  {
+    "gid": 384,
+    "math_tags": ["weighting the parts that are most relevant", "separating cause from coincidence"],
+    "math_plain": "Assign each worker a contribution score that can be positive (good labels) or negative (fraud); pay workers fairly based on both their ability and their real-time task results, and penalize harmful work.",
+    "why_math": "Standard payment ignores fraud because negatives are hard to model; signed contribution scores (Shapley values extended to allow negative valuations) let you measure and reward both excellence and punish toxicity with one framework. Pre-commitment stakes raise the cost of fraud without killing participation—workers self-regulate when they have skin in the game."
+  },
+  {
+    "gid": 385,
+    "math_tags": ["spreading information across a network", "smart random sampling and averaging"],
+    "math_plain": "Transform user-item recommendations into a line graph (where each node is an edge in the original graph), apply graph learning techniques to generate synthetic training examples, and feed augmented data back to the recommender.",
+    "why_math": "The line graph transformation turns the data-scarcity problem into a node-scarcity problem where mature imbalance-correction techniques apply. Generating augmented nodes in line-graph space and projecting back to user-item space creates synthetic training pairs that respect the original graph structure, boosting signal without introducing noise."
+  },
+  {
+    "gid": 386,
+    "math_tags": [],
+    "math_plain": "This is a workshop call for papers on evaluation, measurement, and critical analysis of models and datasets in web technologies and social systems.",
+    "why_math": "No core mathematical method; this is a venue/organizational announcement."
+  },
+  {
+    "gid": 387,
+    "math_tags": ["finding the settings with least error", "separating cause from coincidence"],
+    "math_plain": "Route cryptographic verification of sensor readings through fast lightweight algorithms instead of blockchain-heavy methods, reserving blockchain for non-critical layers where latency is tolerable.",
+    "why_math": "Industrial systems require near-zero latency (tens of milliseconds); blockchain consensus and heavyweight cryptography add 50-400 ms. Lattice-based authentication (LWE) performs the same verification in microseconds. By matching the right tool to each network tier's constraints, you avoid the architectural mismatch that kills safety-critical systems."
+  },
+  {
+    "gid": 388,
+    "math_tags": ["ranking things by a learned score", "measuring similarity as nearness in a space"],
+    "math_plain": "Rank results by how closely they match both the query terms and a learned 'quality' score from an AI model; test whether adversaries can create pages that fool this dual ranking.",
+    "why_math": "Traditional SEO attacks target keyword matching; AI-enhanced search adds a learned quality score. Because the AI model encodes distributional patterns of legitimate pages, it naturally suppresses outliers and highly unusual text patterns. This reduces surface area for manipulation, though new attack vectors (rewritten queries, segmented text) can still partially bypass it."
+  },
+  {
+    "gid": 389,
+    "math_tags": ["learning a function from examples", "weighting the parts that are most relevant"],
+    "math_plain": "Blend knowledge from multiple differently-shaped models through a shared fusion model on each edge server, using contrastive learning to align each fusion model with the global consensus.",
+    "why_math": "Model-heterogeneous clients can't share weights directly; a fusion model learned via distillation extracts the useful knowledge from each architecture-specific model, translating it to a common representation. Contrastive learning (pulling fusion logits close to global logits, pushing away others) ensures the fusion captures only generalizable insights, not client-specific noise."
+  }
+]

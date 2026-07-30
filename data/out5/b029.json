@@ -1,0 +1,135 @@
+[
+  {
+    "gid": 435,
+    "math_tags": [
+      "spreading information across a network",
+      "measuring similarity as nearness in a space"
+    ],
+    "math_plain": "Models how information and recommendations spread through social networks and user groups, tracking which content reaches which people and creating cohesive clusters.",
+    "why_math": "It works because people naturally form groups where they see similar content, and once you map out who connects to whom and what they receive, you can predict where information pools and where it gets cut off. Hypergraphs capture the fact that one piece of content can reach many people at once, not just pairs."
+  },
+  {
+    "gid": 436,
+    "math_tags": [
+      "measuring similarity as nearness in a space",
+      "separating cause from coincidence"
+    ],
+    "math_plain": "Finds a direction in semantic space where familiar training examples lie on one end and unfamiliar ones on the other, then scores a sample's membership by where it falls along that axis.",
+    "why_math": "It works because models that trained on data produce reasoning traces with consistent patterns and confidences on that data, while new data triggers different patterns. By mapping those traces into a space and measuring distance along a learned axis, membership becomes detectable even without seeing the model's internal scores."
+  },
+  {
+    "gid": 437,
+    "math_tags": [
+      "learning a function from examples"
+    ],
+    "math_plain": "Measures how well apps disclose and explain permissions to low-literacy users, then tests if language model summaries and visual aids can bridge the comprehension gap.",
+    "why_math": "It works because clear explanations that match how people actually understand language create better informed decisions. Simpler summaries and pictures bypass the jargon barrier that lets apps hide their true data requests."
+  },
+  {
+    "gid": 438,
+    "math_tags": [
+      "measuring similarity as nearness in a space",
+      "weighting the parts that are most relevant"
+    ],
+    "math_plain": "Learns how different relationship types between entities reinforce or weaken each other, then combines those learned patterns to score how likely connections are to form.",
+    "why_math": "It works because real networks have multiple kinds of ties between people, and those ties interact—a shared interest may strengthen a work relationship or compete with it. Learning those interaction patterns lets you predict what new connections will form better than treating each link type separately."
+  },
+  {
+    "gid": 439,
+    "math_tags": [
+      "learning a function from examples",
+      "following the slope downhill to improve"
+    ],
+    "math_plain": "Detects when drone video changes drastically and retrains the model on fresh video, then reuses or adapts past models based on how similar they were to current performance.",
+    "why_math": "It works because when camera angles or lighting shift abruptly, old patterns no longer match new images. By noticing that shift and quickly retraining on recent frames, you keep the model current. Reusing past models that faced similar shifts saves retraining time."
+  },
+  {
+    "gid": 440,
+    "math_tags": [
+      "measuring similarity as nearness in a space",
+      "learning a function from examples"
+    ],
+    "math_plain": "Learns from which users visit which businesses, then predicts detailed neighborhood income and demographics by how those visit patterns cluster in semantic space.",
+    "why_math": "It works because businesses and users in the same place share economic circumstances—a neighborhood with upscale restaurants attracts different income profiles than one with discount stores. That semantic signal encoded in visit patterns captures neighborhood character at fine granularity where census data is too coarse."
+  },
+  {
+    "gid": 441,
+    "math_tags": [
+      "separating cause from coincidence"
+    ],
+    "math_plain": "Uses causal reasoning to identify what factors actually drive humans' ability to spot fake text from language models, testing whether exposure or personality explains detection skill.",
+    "why_math": "It works because just counting who spots fakes tells you nothing about why—correlation doesn't show if exposure trains you, or if certain personalities are naturally skeptical. Causal models let you block false paths and see the true mechanism. Exposure acts as adversarial training: seeing bad fakes immunizes you."
+  },
+  {
+    "gid": 442,
+    "math_tags": [
+      "combining many weak signals into a strong one",
+      "learning a function from examples"
+    ],
+    "math_plain": "Generates both fake and real text-image pairs from limited labeled data, scores generated pairs as fake or real, and feeds high-confidence ones back into training to enlarge the dataset.",
+    "why_math": "It works because even when training data is small, generative models can imagine plausible fake examples that follow similar patterns to the real fakes you've seen. By scoring which imagined examples look most like genuine fakes, you bootstrap a larger dataset without manual labeling."
+  },
+  {
+    "gid": 443,
+    "math_tags": [
+      "following the slope downhill to improve",
+      "smart random sampling and averaging"
+    ],
+    "math_plain": "Replaces uniform noise scheduling with frequency-specific noise amounts matched to how energy is actually distributed across the frequency spectrum of time series data.",
+    "why_math": "It works because real signals concentrate their power unevenly across frequencies—some bands have more signal, others mostly noise. By adding less noise to high-energy bands and more to low-energy ones, you preserve the natural structure. This makes it easier for the model to recover the true signal during reconstruction."
+  },
+  {
+    "gid": 444,
+    "math_tags": [
+      "learning a function from examples",
+      "keeping only the few dimensions that matter"
+    ],
+    "math_plain": "Learns prototypes for each class and each possible pattern of missing data views, then decomposes their parameters using tensor factorization to avoid exponential growth.",
+    "why_math": "It works because when you have many views and many missing patterns, the number of combinations explodes exponentially. Breaking down prototypes into atomic components that can be recombined lets you handle all patterns with only linear growth in memory—you build new combinations from shared atomic pieces."
+  },
+  {
+    "gid": 445,
+    "math_tags": [
+      "measuring similarity as nearness in a space",
+      "weighting the parts that are most relevant"
+    ],
+    "math_plain": "Creates semantic codes representing items and users using a shared space, then rotates and preserves that space so the codes stay faithful to language model understanding.",
+    "why_math": "It works because when you compress items into codes for generation, you lose detail. By making sure those codes line up with how a language model naturally represents meaning, generation becomes more accurate. Orthogonal rotation preserves distances between semantically similar items, so the codes stay meaningful."
+  },
+  {
+    "gid": 446,
+    "math_tags": [
+      "measuring similarity as nearness in a space",
+      "predicting the next item in a sequence"
+    ],
+    "math_plain": "Scores recommendations by measuring how similar a user's past interactions are to candidate items, then weights the language model's prediction by that similarity score.",
+    "why_math": "It works because users reveal preferences through their past behavior. If a candidate item is semantically close to things they already chose, it's likely they'll want it. Feeding that similarity signal as a weight tells the language model to lean toward personalized predictions over generic ones."
+  },
+  {
+    "gid": 447,
+    "math_tags": [
+      "smart random sampling and averaging",
+      "keeping only the few dimensions that matter"
+    ],
+    "math_plain": "Finds rare feature combinations that a language model skips over, then uses targeted prompts and a diversity score to generate examples covering the tail of the distribution.",
+    "why_math": "It works because when language models generate data, they naturally favor common, safe examples and skip rare edge cases. By explicitly mining which features are underrepresented in embedding space and steering generation toward them with a penalty that rewards diversity, you rebuild the full natural distribution."
+  },
+  {
+    "gid": 448,
+    "math_tags": [
+      "spreading information across a network",
+      "measuring similarity as nearness in a space"
+    ],
+    "math_plain": "Discovers services in distributed edge networks by matching a requested type against available semantic types using ontology rules, replicating that registry across devices.",
+    "why_math": "It works because exact matching fails when a needed service is down but a compatible one exists. Semantic subsumption—understanding that a subtype can always do what a supertype does—lets you find substitutes. Spreading the registry across multiple copies ensures services stay discoverable even when some copies vanish."
+  },
+  {
+    "gid": 449,
+    "math_tags": [
+      "finding the settings with least error",
+      "learning a function from examples"
+    ],
+    "math_plain": "Surveys efficient methods to adapt image classification models by updating only small subsets of parameters rather than retraining the entire network.",
+    "why_math": "It works because large pretrained models already know how to see and recognize countless patterns. You only need to steer them toward your specific task, not rebuild them. By modifying just a few carefully chosen parameters or adding lightweight adapters, you get task-specific performance without recomputing millions of weight updates."
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 1065,
+    "math_tags": ["learning a function from examples", "following the slope downhill to improve", "combining many weak signals into a strong one"],
+    "math_plain": "Transfer what big models learned about reasoning into a smaller model by showing it many reasoning examples and training it step-by-step.",
+    "why_math": "It works because good reasoning can be decomposed into patterns. Once you show a small model which reasoning steps are correct via examples, it learns to recognize and repeat those patterns internally, getting the accuracy benefits without needing the big model at runtime."
+  },
+  {
+    "gid": 1066,
+    "math_tags": ["separating cause from coincidence", "weighting the parts that are most relevant", "measuring similarity as nearness in a space"],
+    "math_plain": "Identify hateful content by weighing different harmful elements (images, words, sounds) together and explaining which parts caused the decision.",
+    "why_math": "It works because hate content is multimodal—harmful elements in different forms reinforce each other. By learning which elements matter and why, you separate genuine reasons for flagging from noise, and humans can verify your reasoning is sound."
+  },
+  {
+    "gid": 1067,
+    "math_tags": ["measuring similarity as nearness in a space", "separating cause from coincidence", "learning a function from examples"],
+    "math_plain": "Match medical entity names to their true identities using learned nearness in a space, then recheck each match against logical rules that describe what's valid.",
+    "why_math": "It works because entity synonyms cluster together when you measure them as nearness; soft rule-checking then filters out candidates that logically contradict the context, eliminating ambiguity that pure similarity alone would miss."
+  },
+  {
+    "gid": 1068,
+    "math_tags": ["weighting the parts that are most relevant", "smart random sampling and averaging", "matching and allocating who gets what"],
+    "math_plain": "Store knowledge on separate edge devices, route queries to the best-matched device using compact summaries, and move knowledge between devices to fit their specialties.",
+    "why_math": "It works because specialized knowledge bases beat generic ones under compute limits. By routing queries smartly and migrating content to well-matched devices, you get high accuracy without replicating everything everywhere or needing central coordination."
+  },
+  {
+    "gid": 1069,
+    "math_tags": ["estimating probabilities from data", "separating cause from coincidence", "finding the settings with least error"],
+    "math_plain": "Predict if a user will convert after clicking by fixing the mistakes that arise when training data is corrupted by noise from multiple stages.",
+    "why_math": "It works because noise compounds across stages: noisy clicks plus noisy conversions create a mess. Explicitly modeling and correcting for this hierarchical noise makes loss estimates honest again, so the model learns true patterns instead of noise."
+  },
+  {
+    "gid": 1070,
+    "math_tags": ["ranking things by a learned score", "measuring similarity as nearness in a space", "smart random sampling and averaging"],
+    "math_plain": "Evaluate podcast search by testing many query versions, transcript versions, and ranking systems, then scoring results using multiple independent judges.",
+    "why_math": "It works because variation hides real signal. By averaging judgments across many independent raters and testing many configurations, random disagreement cancels out and true ranking quality emerges."
+  },
+  {
+    "gid": 1071,
+    "math_tags": ["learning a function from examples", "following the slope downhill to improve", "weighting the parts that are most relevant"],
+    "math_plain": "Add a memory module that stores corrections for new documents alongside an existing ranking model, freezing the model while only updating memory weights.",
+    "why_math": "It works because memory is modular—new facts can be stored in a table without overwriting old patterns. By separating knowledge storage from core learning, you retain old knowledge while efficiently absorbing new documents."
+  },
+  {
+    "gid": 1072,
+    "math_tags": ["learning by comparison of similar and different", "separating cause from coincidence", "measuring similarity as nearness in a space"],
+    "math_plain": "Simulate users during multi-turn search to test systems, varying whether the simulator remembers past interactions or forgets them.",
+    "why_math": "It works because simulated user behavior must match real patterns to produce trustworthy rankings. Memory affects how queries change across turns; capturing the right memory model makes simulation predictions match what real users would do."
+  },
+  {
+    "gid": 1073,
+    "math_tags": ["ranking things by a learned score", "following the slope downhill to improve", "measuring similarity as nearness in a space"],
+    "math_plain": "Use a diffusion process to generate small changes to a user's history that would flip a recommendation, showing what must change for a different outcome.",
+    "why_math": "It works because diffusion gradually uncovers the shape of realistic histories. By guiding the diffusion toward counterfactuals, you find minimal, semantically valid changes instead of arbitrary perturbations, making explanations actionable."
+  },
+  {
+    "gid": 1074,
+    "math_tags": ["learning a function from examples", "measuring similarity as nearness in a space", "combining many weak signals into a strong one"],
+    "math_plain": "Learn user and item profiles from interaction graphs by having a language model simulate message-passing, combining graph structure with semantic text.",
+    "why_math": "It works because collaboration and semantics are complementary signals. By letting language models mimic graph aggregation in natural language, you unify two sources of preference information without needing to bridge learned spaces and text."
+  },
+  {
+    "gid": 1075,
+    "math_tags": ["ranking things by a learned score", "predicting the next item in a sequence", "measuring similarity as nearness in a space"],
+    "math_plain": "Track how agents search multi-step by analyzing millions of real logs, measuring whether new query terms come from recently retrieved evidence.",
+    "why_math": "It works because agents learn from what they retrieve. By measuring how often new terms appear in prior results, you expose whether the agent is building iteratively on evidence or diverging; this signal improves future agent design."
+  },
+  {
+    "gid": 1076,
+    "math_tags": ["ranking things by a learned score", "measuring similarity as nearness in a space", "learning by comparison of similar and different"],
+    "math_plain": "Suggest the next search query by finding the most similar historical query among millions using learned nearness, weighted by session context.",
+    "why_math": "It works because query patterns repeat; what humans searched before is a strong signal for what they'll search next. Learning asymmetric similarity (what query predicts what suggestion) is faster and more up-to-date than generating new queries from scratch."
+  },
+  {
+    "gid": 1077,
+    "math_tags": ["combining many weak signals into a strong one", "weighting the parts that are most relevant", "learning by comparison of similar and different"],
+    "math_plain": "Select which knowledge source to retrieve from by learning which one the model needs most at each reasoning step, training via fine-grained rewards across steps.",
+    "why_math": "It works because different experts shine at different moments. By rewarding the model for using the right expert at each step rather than just the final answer, you teach it to route intelligently; diverse experts then cover more ground."
+  },
+  {
+    "gid": 1078,
+    "math_tags": ["learning a function from examples", "following the slope downhill to improve", "separating cause from coincidence"],
+    "math_plain": "Verify medical claims by fine-tuning a small model on reasoning examples from a large model, trained to mimic correct reasoning paths only.",
+    "why_math": "It works because reasoning can be distilled. If you capture the reasoning steps that lead to correct verdicts and filter out wrong ones, a smaller model learns the decision rules without needing the original large model or perfect evidence."
+  },
+  {
+    "gid": 1079,
+    "math_tags": ["estimating probabilities from data", "following the slope downhill to improve", "weighting the parts that are most relevant"],
+    "math_plain": "Iteratively retrieve evidence and reason over it to check facts, using reinforcement learning that rewards correct final verdicts and structured reasoning format.",
+    "why_math": "It works because fact-checking has structure—you must gather evidence before judging. Rewarding both format compliance and correctness teaches the model to build reasoning chains that gather relevant evidence step-by-step, avoiding hallucination."
+  }
+]

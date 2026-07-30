@@ -1,0 +1,137 @@
+[
+  {
+    "gid": 645,
+    "math_tags": [
+      "weighting the parts that are most relevant",
+      "ranking things by a learned score"
+    ],
+    "math_plain": "Assign training weights to preference pairs based on a confidence score from the reward model and whether it agrees with human labels.",
+    "why_math": "It works because noisy examples that contradict the reward model's own judgments waste training effort. Downweighting them lets the model learn only from coherent signals, like keeping only the reliable voices in a crowd voting on preferences."
+  },
+  {
+    "gid": 646,
+    "math_tags": [
+      "keeping only the few dimensions that matter",
+      "measuring similarity as nearness in a space"
+    ],
+    "math_plain": "Use two frequency bands (low and high) of graph-neighborhood information, fused adaptively per node to separate normal from unusual nodes in large networks.",
+    "why_math": "It works because normal nodes and anomalies have different signal frequencies in a network: normal ones cluster densely (low frequency), anomalies stand out (high frequency). Splitting the signal lets you weight each frequency differently for each node, and linear complexity works because you only store enough information to compute one node at a time."
+  },
+  {
+    "gid": 647,
+    "math_tags": [
+      "separating cause from coincidence",
+      "learning by comparison of similar and different"
+    ],
+    "math_plain": "Identify and categorize SQL errors by learning from synthetic data where errors are introduced systematically, then refine labels by comparing error patterns.",
+    "why_math": "It works because real SQL errors are rare and hard to label by hand. Synthesizing them lets you build training examples with known error types; then comparing mistake patterns across similar queries helps you trust which error labels are real versus which are mislabeled."
+  },
+  {
+    "gid": 648,
+    "math_tags": [
+      "separating cause from coincidence",
+      "measuring similarity as nearness in a space"
+    ],
+    "math_plain": "Learn disentangled (independent) parts of a graph's structure, embed them into a space, add watermarks to one part, then decode back to graph edits—avoiding mixed-up representations.",
+    "why_math": "It works because when you try to hide a watermark in a mixed-up graph representation, perturbations scatter the watermark everywhere and decoding becomes impossible. Pulling apart the structure first means you can control which part gets marked, then convert back to edits cleanly—like hiding a message in one wire of a bundle instead of tangling it through all wires."
+  },
+  {
+    "gid": 649,
+    "math_tags": [
+      "learning a function from examples",
+      "following the slope downhill to improve"
+    ],
+    "math_plain": "Model a user's privacy-sharing decisions over time as a game where both user and attacker learn from each other, optimize the user's strategy to minimize cumulative risk.",
+    "why_math": "It works because privacy leaks grow over time—each disclosure helps an attacker build a better profile, so you can't treat each choice as independent. Modeling it as a game lets you find the point where the user's best strategy and the attacker's best response meet, and then the user can follow that path downhill to minimize total damage."
+  },
+  {
+    "gid": 650,
+    "math_tags": [
+      "weighting the parts that are most relevant",
+      "learning by comparison of similar and different"
+    ],
+    "math_plain": "Shrink a weighted graph by removing unimportant nodes, then use learned weights to soften noisy edges so they matter less in clustering.",
+    "why_math": "It works because not all edges carry clustering signal—some are just noise. By learning which edges to trust (high weight) and which to ignore (low weight) while also removing nodes that don't help clusters form, you concentrate the signal and reduce memory. Comparing which nodes form tight clusters guides you on what to keep."
+  },
+  {
+    "gid": 651,
+    "math_tags": [
+      "learning a function from examples",
+      "matching and allocating who gets what"
+    ],
+    "math_plain": "Automatically discover which APIs solve new user intents by extracting intent patterns from queries, then match them to available APIs and generate training pairs.",
+    "why_math": "It works because intents follow patterns—users asking similar things can be routed to the same API. Extracting and matching intents is essentially a classification task where you learn which users belong to which service. Generating labeled training data from this matching lets new models learn the pattern without humans hand-labeling thousands of examples."
+  },
+  {
+    "gid": 652,
+    "math_tags": [
+      "learning by comparison of similar and different",
+      "measuring surprise and information"
+    ],
+    "math_plain": "Use a reasoning-enabled large language model on structured text chunks, measure complexity via information rank, and filter multiple candidate summaries by voting to extract patient-intervention-outcome elements reliably.",
+    "why_math": "It works because expert papers share predictable structure and the model can reason through it step-by-step, catching subtleties a quick classifier would miss. Measuring information content of each chunk tells you when to apply reasoning versus simple extraction. Consensus across multiple independent model runs filters out hallucinations—if three runs agree on a fact, it's more likely real than any single answer."
+  },
+  {
+    "gid": 653,
+    "math_tags": [
+      "measuring similarity as nearness in a space",
+      "estimating probabilities from data"
+    ],
+    "math_plain": "Generate synthetic financial data using multiple methods (autoencoders, diffusion, copulas), then measure the tradeoff between preserving privacy, maintaining utility, and handling class imbalance.",
+    "why_math": "It works because synthetic data distances itself from real data by design, breaking the direct link an attacker could exploit. Different generators make different privacy-utility tradeoffs depending on how they work: statistical copulas preserve marginals but not patterns, diffusion adds controlled noise. Testing on imbalanced data reveals which methods actually handle minority cases without leaking them."
+  },
+  {
+    "gid": 654,
+    "math_tags": [
+      "measuring similarity as nearness in a space",
+      "combining many weak signals into a strong one"
+    ],
+    "math_plain": "Build a separate retrieval store of graph structure (motifs) and text descriptions, retrieve relevant ones for each query, and combine them as contextual evidence to guide graph classification.",
+    "why_math": "It works because storing parameters can only compress so much graph knowledge, introducing conflicts. Keeping knowledge external lets you retrieve only the relevant pieces for the task at hand. Text and structure are independent signals—text captures semantic meaning, structure captures how entities relate—so combining both gives richer context than either alone."
+  },
+  {
+    "gid": 655,
+    "math_tags": [
+      "learning by comparison of similar and different",
+      "weighting the parts that are most relevant"
+    ],
+    "math_plain": "Align sentiment clues across text, image, and audio both globally and locally, fuse them with adaptive gates, then use learned sentiment prototypes to remove redundant information.",
+    "why_math": "It works because sentiment hides in fine details (a raised eyebrow matters) and overall tone (the whole is happier than parts suggest). Aligning both scales separately lets you catch what each modality contributes. Prototypes are like ideal sentiment templates—comparing to them tells you which aligned details are redundant noise versus new meaning."
+  },
+  {
+    "gid": 656,
+    "math_tags": [
+      "ranking things by a learned score",
+      "measuring surprise and information"
+    ],
+    "math_plain": "Measure search result quality using a geometric decay down the ranked list, where top positions are much more important, quantifying the measurement's own uncertainty.",
+    "why_math": "It works because users rarely scroll past a few results, so the top three matter vastly more than position fifteen. A geometric decay (each rank worth a fraction of the last) matches this behavior exactly. Uncertainty quantifies how much your measurement could change if the hidden qrels beyond what you annotated were different—bounded rather than infinite."
+  },
+  {
+    "gid": 657,
+    "math_tags": [
+      "measuring similarity as nearness in a space",
+      "combining many weak signals into a strong one"
+    ],
+    "math_plain": "Embed multimodal knowledge graphs (images, text, structure) into a unified space using vision-language model alignments, then link-predict with the combined representation.",
+    "why_math": "It works because vision-language models are already trained on millions of image-text pairs, so they know how images and words refer to similar ideas. Aligning all entities through this pre-built bridge means you inherit that knowledge without training from scratch. Combining three modalities in one space lets you predict missing links using any available information about that entity."
+  },
+  {
+    "gid": 658,
+    "math_tags": [
+      "smart random sampling and averaging",
+      "predicting the next item in a sequence"
+    ],
+    "math_plain": "Segment dialogue memory by tracking boundaries where people, times, locations, or topics change, retrieve adaptively by estimating query type to decide depth, predict the next utterance from memory.",
+    "why_math": "It works because dialogue memory is fragmented by natural event boundaries—when the topic shifts, old context becomes noise. Triggering new segments at these boundaries keeps salient context dense and recent context fresh. Adaptive retrieval depth (shallow for quick answers, deep for complex reasoning) avoids wasting computation on irrelevant old memories."
+  },
+  {
+    "gid": 659,
+    "math_tags": [
+      "predicting the next item in a sequence",
+      "learning a function from examples"
+    ],
+    "math_plain": "Model event sequences using a selective state machine that learns time-varying transitions and uses input-dependent gating to capture long-term dependencies with linear complexity.",
+    "why_math": "It works because event histories are long (months of transactions) but most of the past is irrelevant—the mechanism selectively gates which history to remember. Time-varying transitions mean the model can learn that an event depends differently on history depending on what just happened. Linear memory means you can handle thousands of past events without explosive compute—you keep only one state vector, not attention over all history."
+  }
+]

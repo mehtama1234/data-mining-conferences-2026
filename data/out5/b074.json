@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 1110,
+    "math_tags": ["learning a function from examples", "keeping only the few dimensions that matter", "weighting the parts that are most relevant"],
+    "math_plain": "The method learns which layers and features of a language model matter most for recommendations, then compresses away the rest without losing quality.",
+    "why_math": "It works because middle layers capture diverse task-relevant information while final layers specialize too narrowly. By explicitly choosing which parts to keep and how to adapt them, you preserve the general knowledge needed for good recommendations while shrinking storage costs."
+  },
+  {
+    "gid": 1111,
+    "math_tags": ["weighting the parts that are most relevant", "learning a function from examples"],
+    "math_plain": "The system learns to pick the best question strategy for each conversation stage—asking about product features early and specific items later—by scoring which strategy fits the current dialogue state.",
+    "why_math": "It works because users have different information needs at different conversation points. By learning when each strategy works best and weighting them accordingly, the system adapts its questions to match what will actually help narrow down preferences most effectively at each moment."
+  },
+  {
+    "gid": 1112,
+    "math_tags": ["spreading information across a network", "learning a function from examples", "separating cause from coincidence"],
+    "math_plain": "The system learns to explore knowledge graph paths efficiently while scoring which paths lead to correct answers, then discards paths that look right but actually contradict the facts.",
+    "why_math": "It works because reasoning is a search through possibilities. By coupling path exploration with learning what real evidence looks like and penalizing false leads, the system avoids following coincidental patterns and focuses on genuinely valid reasoning chains."
+  },
+  {
+    "gid": 1113,
+    "math_tags": ["estimating probabilities from data", "separating cause from coincidence"],
+    "math_plain": "The method estimates how likely each product-user pair is to interact, then corrects for the fact that some pairs (like distant restaurants) were never shown to users and thus never clicked—deriving bounds on correct answer probabilities.",
+    "why_math": "It works because selection bias—the data only shows what was chosen to show—breaks standard probability estimates. By identifying unrealistic pairs and deriving upper bounds on what their true interaction rates could be, you can debiase the learning without complete information."
+  },
+  {
+    "gid": 1114,
+    "math_tags": ["keeping only the few dimensions that matter", "learning a function from examples"],
+    "math_plain": "The method learns to keep only the most important words in search queries and document descriptions, using soft ranking and per-word thresholds to trim the rest.",
+    "why_math": "It works because language models produce far more words than you need for retrieval. By learning which words actually predict relevance and dropping low-value ones, you shrink vectors dramatically without losing the signal needed to find good matches."
+  },
+  {
+    "gid": 1115,
+    "math_tags": ["spreading information across a network", "combining many weak signals into a strong one"],
+    "math_plain": "The system builds a knowledge structure from video, then responds to queries by simultaneously activating all related memories and blending them into a coherent answer.",
+    "why_math": "It works because videos contain many overlapping scenes and ideas. By treating memories like parallel traces that all activate together and then integrating them—rather than picking just the top-ranked clip—you capture richer context without exceeding token limits."
+  },
+  {
+    "gid": 1116,
+    "math_tags": ["predicting the next item in a sequence", "learning a function from examples"],
+    "math_plain": "The model learns to reason through multi-step questions using only short examples, by predicting the next reasoning step and learning when to stop based on context length and evidence quality.",
+    "why_math": "It works because reasoning step patterns repeat even as paths grow longer. By training on short sequences but learning a stopping rule that adapts to question difficulty, the model generalizes to longer reasoning chains without direct long-path examples."
+  },
+  {
+    "gid": 1117,
+    "math_tags": ["weighting the parts that are most relevant", "ranking things by a learned score"],
+    "math_plain": "The system estimates from user behavior what mix of product categories users actually want on results pages, then adjusts ranking scores slightly to match that desired mix.",
+    "why_math": "It works because search results that show only top-ranked items often miss what users actually want when their intent is unclear. By learning the demand for diversity from real engagement and steering results to match it with minimal changes, you improve revenue without breaking relevance order."
+  },
+  {
+    "gid": 1118,
+    "math_tags": ["ranking things by a learned score", "learning a function from examples", "smart random sampling and averaging"],
+    "math_plain": "The system learns to quickly find top-ranked products using a unified deep learning model that combines word filtering and nearest-neighbor search on GPU.",
+    "why_math": "It works because separating indexing from scoring creates bottlenecks and wasted transfers. By building everything into one deep model on GPU, word filtering becomes free (just learned layer thresholds) and nearest-neighbor search fuses directly with scoring, cutting both memory and latency."
+  },
+  {
+    "gid": 1119,
+    "math_tags": ["spreading information across a network", "combining many weak signals into a strong one"],
+    "math_plain": "The system builds a multi-level graph from facts, then uses a graph learning model that aggregates information level-by-level, guided by the question, to find all relevant knowledge chunks.",
+    "why_math": "It works because complex questions need facts at different scales—entities, relations, passages. By explicitly modeling these levels and letting the question guide which information to combine at each level, the system filters noise and gathers richer context than single-level retrieval."
+  },
+  {
+    "gid": 1120,
+    "math_tags": ["predicting the next item in a sequence", "learning a function from examples", "learning by comparison of similar and different"],
+    "math_plain": "The model learns user preference evolution as continuous motion: capturing both steady-state preferences and velocity and acceleration of change, then blends these signals adaptively.",
+    "why_math": "It works because preferences don't jump randomly—they move smoothly. By modeling trajectory (position, speed, acceleration) instead of just snapshots, the system captures momentum and trends that predict better. Contrasting genuine trajectories against random noise reinforces these real patterns."
+  },
+  {
+    "gid": 1121,
+    "math_tags": ["learning a function from examples", "measuring similarity as nearness in a space"],
+    "math_plain": "The method learns a flexible similarity function—built from polynomial terms—that maps users and items into a space where it can represent complex preference patterns while staying fast.",
+    "why_math": "It works because standard similarity (dot product) cannot express all possible top-K patterns no matter how many dimensions you use. By learning a richer similarity kernel that acts like a transformation into an implicit higher space while keeping single-vector speed, you gain expressiveness without computation cost."
+  },
+  {
+    "gid": 1122,
+    "math_tags": ["ranking things by a learned score", "learning a function from examples"],
+    "math_plain": "The method fine-tunes a language model to rank recommended items, ensuring that high-probability items stay ranked high through each word of the sequence—not just overall.",
+    "why_math": "It works because beam search greedily prunes low-probability prefixes even if they lead to good completions. By enforcing that each token of a correct answer must rank well locally, you prevent false pruning while maintaining efficiency."
+  },
+  {
+    "gid": 1123,
+    "math_tags": ["separating cause from coincidence", "combining many weak signals into a strong one"],
+    "math_plain": "The method samples multiple reasoning paths from a language model, identifies which intermediate thoughts actually cause the answer, then averages answers weighted by valid reasoning.",
+    "why_math": "It works because language models pick up demographic shortcuts during training (e.g., 'nurse' often follows female pronouns). By intervening on intermediate reasoning as the causal step and selecting only paths with valid logic, you block spurious associations while letting genuine inference flow through."
+  },
+  {
+    "gid": 1124,
+    "math_tags": ["ranking things by a learned score", "learning a function from examples", "smart random sampling and averaging"],
+    "math_plain": "The system pre-computes small graph patterns as indices, then uses a learned graph model to test which stored patterns match the query, guiding a fast search through the data graph.",
+    "why_math": "It works because exact graph matching is expensive when done fresh for each query. By pre-indexing small patterns and using learned tests to prune candidates sharply, you trade one-time computation for dramatic query speedup without losing correctness."
+  }
+]

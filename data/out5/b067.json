@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 1005,
+    "math_tags": ["ranking things by a learned score", "keeping only the few dimensions that matter"],
+    "math_plain": "Skip large blocks of candidate items by computing quick summary scores, keeping computation efficient without losing the best matches.",
+    "why_math": "You never need to look at every candidate, just identify which blocks contain the winners. A fast approximate score that correctly ranks the blocks already saves you most of the work."
+  },
+  {
+    "gid": 1006,
+    "math_tags": ["learning a function from examples", "measuring similarity as nearness in a space"],
+    "math_plain": "Train a model to compress all semantic meaning from text and images into a single point, so things people treat alike end up close together in space.",
+    "why_math": "If you force the model to reconstruct the original input from that single point, it must pack all the important patterns there. Compression creates compactness, and compactness makes similarity mean nearness."
+  },
+  {
+    "gid": 1007,
+    "math_tags": ["learning the settings with least error", "ranking things by a learned score", "combining many weak signals into a strong one"],
+    "math_plain": "Learn what actions users prefer by studying their real logs, then score actions by how much they improve future reward, filtering out actions that lead nowhere.",
+    "why_math": "User logs show which actions worked in the past. By scoring actions by their future payoff (learned from logs), you get guidance without needing to try risky new actions live."
+  },
+  {
+    "gid": 1008,
+    "math_tags": ["spreading information across a network", "separating cause from coincidence"],
+    "math_plain": "Use a language model to spot consistent stories in how fake news spreads, then teach a graph algorithm to ignore isolated conflicting information and weight the coherent thread.",
+    "why_math": "Fake news attacks introduce noise meant to confuse the aggregator. By aligning everything to a consistent global narrative first, you make the aggregator robust to random noise."
+  },
+  {
+    "gid": 1009,
+    "math_tags": ["ranking things by a learned score", "weighting the parts that are most relevant"],
+    "math_plain": "Let the language model itself decide which retrieved documents it actually needs during generation, rather than keeping all of them.",
+    "why_math": "The model knows best which facts matter for the specific answer it is building. Self-selection cuts cost and noise without needing an external filter to guess."
+  },
+  {
+    "gid": 1010,
+    "math_tags": ["learning a function from examples", "measuring similarity as nearness in a space", "weighting the parts that are most relevant"],
+    "math_plain": "Describe images in natural language, reason about user preferences as descriptions, then clean up the graph of related items by removing low-confidence edges and fixing missing connections.",
+    "why_math": "Natural descriptions bridge the gap between visual and textual modality. Removing noise from the item graph ensures the model learns from high-confidence relations, not spurious patterns."
+  },
+  {
+    "gid": 1011,
+    "math_tags": ["smart random sampling and averaging", "learning by comparison of similar and different"],
+    "math_plain": "Sample training examples adaptively by clustering items, then grab negatives from nearby clusters (high risk of false negatives) less as training goes on, and far clusters (true hard cases) more.",
+    "why_math": "Items in the same cluster look similar, so they could easily be mislabeled as 'not liked'. By sampling them less over time, you reduce false negatives. Far clusters are genuinely different, so negatives there are trustworthy."
+  },
+  {
+    "gid": 1012,
+    "math_tags": ["learning the settings with least error", "combining many weak signals into a strong one", "ranking things by a learned score"],
+    "math_plain": "Train a model to call the right tools in the right order by practicing on generated examples, starting with easy cases, then learning from its own mistakes with rewards.",
+    "why_math": "Practice on many examples builds muscle memory for tool reasoning. Starting easy and progressing hard ensures the model learns stable patterns before tackling edge cases."
+  },
+  {
+    "gid": 1013,
+    "math_tags": ["measuring similarity as nearness in a space", "learning by comparison of similar and different"],
+    "math_plain": "Build a bank of high-confidence positive and negative pairs from a pretrained model, then pull images toward their positives and push away from negatives while anchoring to prototypes.",
+    "why_math": "A good external model gives you stable semantic truth that transcends domains. Anchoring to prototypes keeps each domain coherent while alignment forces cross-domain matching."
+  },
+  {
+    "gid": 1014,
+    "math_tags": ["ranking things by a learned score", "weighting the parts that are most relevant"],
+    "math_plain": "Use language model judges to score documents on exactness, coverage, topicality, and fit, then use those scores as features to teach a ranking model what the best results look like.",
+    "why_math": "A judge gives you multi-dimensional truth. Weak systems benefit most because they lack signal; as a system gets better, its native score already dominates, and judge signals become tie-breakers."
+  },
+  {
+    "gid": 1015,
+    "math_tags": ["keeping only the few dimensions that matter", "learning the settings with least error", "ranking things by a learned score"],
+    "math_plain": "When new items arrive, identify which existing items drift in meaning, then selectively update their codes to stay aligned with the generative model without breaking everything.",
+    "why_math": "Retraining from scratch is wasteful. Identifying true drift lets you update only what changed, preserving the model's learned alignment for stable items."
+  },
+  {
+    "gid": 1016,
+    "math_tags": ["estimating probabilities from data", "learning the settings with least error"],
+    "math_plain": "Decide when to stop reviewing search results by computing the expected benefit of finding one more relevant item versus the cost of reviewing it.",
+    "why_math": "At some point, the next document is unlikely to be relevant enough to justify the cost of reading it. Expected value tells you exactly when that crossover happens."
+  },
+  {
+    "gid": 1017,
+    "math_tags": ["separating cause from coincidence", "learning the settings with least error"],
+    "math_plain": "Test whether a model's ability to distinguish relevance from position bias is actually coming from the data by perturbing the parameters and checking if performance drops.",
+    "why_math": "A parameter that can be moved without hurting prediction is not constrained by the data; you cannot identify it. Measuring sensitivity reveals which parameters the data actually pins down."
+  },
+  {
+    "gid": 1018,
+    "math_tags": ["ranking things by a learned score", "keeping only the few dimensions that matter"],
+    "math_plain": "Map a modern model's learned patterns into a simplified, normalized vocabulary designed for keyword matching, keeping the model's geometric structure while aligning to sparsity.",
+    "why_math": "Modern models scatter related concepts across redundant tokens. Normalizing the vocabulary reduces wasted capacity, and preserving the geometry means the model's learned distance relations stay valid."
+  },
+  {
+    "gid": 1019,
+    "math_tags": ["learning a function from examples", "learning by comparison of similar and different", "spreading information across a network"],
+    "math_plain": "Train a graph model on streaming data with multiple behavior types (views, favorites, purchases), updating incrementally without forgetting what it learned about old data.",
+    "why_math": "Different behavior types reveal complementary preference signals. Incremental learning on streams avoids expensive retraining while multi-task learning ensures each behavior type's signal survives."
+  }
+]

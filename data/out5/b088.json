@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 1320,
+    "math_tags": ["ranking things by a learned score", "learning a function from examples"],
+    "math_plain": "Score items in sequences by learning textual and collaborative features together, then rank the items with highest scores.",
+    "why_math": "It works because combining multiple sources of understanding (what the item is semantically and who interacts with it) captures user preference more accurately than any single signal alone. Learning from the data teaches the scoring function to weight signals appropriately."
+  },
+  {
+    "gid": 1321,
+    "math_tags": ["ranking things by a learned score", "learning by comparison of similar and different"],
+    "math_plain": "Rank web-search steps by comparing successful paths to failed attempts, training the model to prefer actions that lead downstream to correct answers.",
+    "why_math": "It works because comparing success-and-failure pairs teaches the model which decisions matter most. By contrasting paths that work against those that don't on the same query, you isolate the causal steps that move toward truth, without needing to explore all possibilities expensively."
+  },
+  {
+    "gid": 1322,
+    "math_tags": ["learning a function from examples", "learning by comparison of similar and different"],
+    "math_plain": "Generate item identifiers using text and images together by aligning semantic meanings across both modalities so they pull toward shared concepts.",
+    "why_math": "It works because objects truly are multimodal—a chair looks and sounds a certain way. By forcing the text and image representations to be close to each other (alignment), you teach the model that they are the same thing, making both modalities contribute to one consistent identity."
+  },
+  {
+    "gid": 1323,
+    "math_tags": ["ranking things by a learned score", "following the slope downhill to improve"],
+    "math_plain": "Improve ranking by first reasoning about why a document is relevant, using reward signals from correct rankings to strengthen that reasoning.",
+    "why_math": "It works because humans rank by thinking first, so teaching the model to reason before ranking lets it discover what details actually distinguish better answers. The ranking feedback tells the model which reasoning patterns led to good decisions."
+  },
+  {
+    "gid": 1324,
+    "math_tags": ["keeping only the few dimensions that matter", "ranking things by a learned score"],
+    "math_plain": "Reduce the number of tokens to score at middle layers of the ranking model, dropping redundant text while preserving ranking quality.",
+    "why_math": "It works because most of the ranking signal is redundant—many words add no new information to the decision. Aggressively pooling tokens at deeper layers (where semantics are richer) preserves what matters while cutting noise, keeping speed gains without quality loss."
+  },
+  {
+    "gid": 1325,
+    "math_tags": ["ranking things by a learned score", "matching and allocating who gets what"],
+    "math_plain": "Score and order multiple intents for an ambiguous query by grounding predictions in available inventory and web evidence, then applying business rules.",
+    "why_math": "It works because resolving ambiguity requires anchoring to real-world facts. By checking what's actually available in the catalog and what the web confirms exists, you prevent the model from hallucinating answers. The business rules then pick the best real option for each user context."
+  },
+  {
+    "gid": 1326,
+    "math_tags": ["estimating probabilities from data", "finding the settings with least error"],
+    "math_plain": "Balance user groups in A/B tests and monitor how confident each result is, stopping early when you have enough signal to declare a winner.",
+    "why_math": "It works because random assignment isn't enough—user populations have hidden structure. By matching similar users across groups you reduce noise, and by tracking power (confidence) alongside significance you catch weak signals before declaring victory. This catches false wins early."
+  },
+  {
+    "gid": 1327,
+    "math_tags": ["ranking things by a learned score", "spreading information across a network"],
+    "math_plain": "Score which products complement each other by tallying co-purchases while penalizing popularity, then spreading this signal across similar items.",
+    "why_math": "It works because true complements are rare and drowned out by bestseller noise. By downweighting globally-frequent items, you isolate real complementary signals. Spreading that signal via a similarity graph lets you recommend complementary items even if they're never co-purchased."
+  },
+  {
+    "gid": 1328,
+    "math_tags": ["measuring similarity as nearness in a space", "learning a function from examples"],
+    "math_plain": "Compress text into small numeric codes that capture meaning, trained by making similar texts map close together and different ones far apart.",
+    "why_math": "It works because language meaning is relational—words and ideas are similar or different by degree. Placing all similar texts near each other and dissimilar ones far apart in the space means 'find similar' becomes just 'find nearby', and nearness is fast and mathematically well-behaved."
+  },
+  {
+    "gid": 1329,
+    "math_tags": ["ranking things by a learned score", "weighting the parts that are most relevant"],
+    "math_plain": "Score query-product matches by scoring individual attributes separately then combining them, focusing on attributes the query explicitly mentions.",
+    "why_math": "It works because buyers specify attributes (color, size, brand) that are non-negotiable, not soft preferences. By scoring each attribute independently you catch when a product violates one hard constraint, then combining ensures all attributes are satisfied. Weighting mentioned attributes heavily ensures they dominate."
+  },
+  {
+    "gid": 1330,
+    "math_tags": ["measuring similarity as nearness in a space", "learning a function from examples"],
+    "math_plain": "Audit peer reviews by retrieving supporting evidence from papers to check if reviewer claims are grounded, scoring similarity of review text to manuscript content.",
+    "why_math": "It works because reviewers should cite the paper they're evaluating. By finding which parts of the paper are actually mentioned or implied in the review, you can identify when reviewers are speculating unsupported. Text-to-text nearness reveals what the reviewer was responding to."
+  },
+  {
+    "gid": 1331,
+    "math_tags": ["combining many weak signals into a strong one", "learning a function from examples"],
+    "math_plain": "Score items using both exact-word matching and semantic similarity together, training them jointly so each signal strengthens the other.",
+    "why_math": "It works because exact matches miss paraphrases and synonyms while semantics alone miss precise terminology. Training both jointly teaches them to agree about what matters—when keyword importance and semantic similarity both rank something high, it's more reliable than either alone."
+  },
+  {
+    "gid": 1332,
+    "math_tags": ["ranking things by a learned score", "learning a function from examples"],
+    "math_plain": "Retrieve pre-built agent profiles matching a user query from a large repository, scoring semantic similarity to find the most appropriate agent.",
+    "why_math": "It works because good agents for a domain already exist or follow patterns. Instead of designing each agent on-the-fly (expensive and unstable), retrieving from a known set reuses proven templates. Semantic matching finds agents similar to the current task, and they transfer because agents in the same domain share structure."
+  },
+  {
+    "gid": 1333,
+    "math_tags": ["learning a function from examples", "combining many weak signals into a strong one"],
+    "math_plain": "Simulate group behavior by extracting decision policies from histories, then using those policies to align both reasoning and statistical models.",
+    "why_math": "It works because real behavior is both intentional and habitual—people follow learned patterns they don't articulate. By discovering shared policies in the data, you anchor the reasoning model (prevents over-explaining) and guide the fitting model (prevents pure statistics). Fusion corrects for biases in either approach alone."
+  },
+  {
+    "gid": 1334,
+    "math_tags": ["ranking things by a learned score", "learning a function from examples"],
+    "math_plain": "Score engagement by learning from query-item text pairs labeled with actual user engagement, capturing what buyers truly prefer.",
+    "why_math": "It works because user intent is hidden in language patterns, not historical clickrate statistics. Learning directly from text and true engagement labels teaches the model to recognize the language features that signal what will actually get added to cart. This works even on tail queries where statistical patterns don't exist."
+  }
+]

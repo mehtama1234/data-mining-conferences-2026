@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 600,
+    "math_tags": ["ranking things by a learned score", "combining many weak signals into a strong one"],
+    "math_plain": "The system learns to rank items by understanding user history in stages, incorporating more detail as recommendations are generated.",
+    "why_math": "Deeper processing catches dependencies that simple ranking misses; staged learning lets each piece inform the next."
+  },
+  {
+    "gid": 601,
+    "math_tags": ["measuring similarity as nearness in a space", "combining many weak signals into a strong one"],
+    "math_plain": "The system scores harm by treating each signal (video, audio, text) as independent evidence and weighing their agreement.",
+    "why_math": "Independent signals reveal true harm only when they align; weighting agreement filters noise and false alarms."
+  },
+  {
+    "gid": 602,
+    "math_tags": ["estimating probabilities from data", "learning a function from examples"],
+    "math_plain": "The agent learns to recognize when it lacks knowledge and retrieves documentation to fill gaps before acting.",
+    "why_math": "Uncertainty measured by curiosity score reveals exactly when and what external knowledge helps; targeted retrieval beats pre-loading all facts."
+  },
+  {
+    "gid": 603,
+    "math_tags": ["predicting the next item in a sequence", "separating cause from coincidence"],
+    "math_plain": "The system predicts future events by analyzing temporal trends and finding latent connections within time windows, then corrects errors.",
+    "why_math": "Real events follow causal chains through time and hidden correlations; checking predictions against logic catches hallucinations."
+  },
+  {
+    "gid": 604,
+    "math_tags": ["ranking things by a learned score", "learning by comparison of similar and different"],
+    "math_plain": "Adversaries craft invisible image changes that disrupt alignment between vision, language, and action, causing wrong commands.",
+    "why_math": "If small perturbations break the mapping between modalities, the alignment was brittle; the attack exploits this fragility to expose design flaws."
+  },
+  {
+    "gid": 605,
+    "math_tags": ["measuring similarity as nearness in a space", "combining many weak signals into a strong one", "weighting the parts that are most relevant"],
+    "math_plain": "Multiple sensors and communication channels are monitored; anomalies flag when fused signals deviate from normal and violate physics rules.",
+    "why_math": "Anomalies appear when multiple independent sources disagree with expected behavior; ruling out impossible states filters false alarms."
+  },
+  {
+    "gid": 606,
+    "math_tags": ["smart random sampling and averaging", "learning a function from examples"],
+    "math_plain": "The fuzzer generates random web inputs, learns from response patterns to guide exploration, and identifies bugs.",
+    "why_math": "Responses leak information about internal code paths; sampling smartly based on what responses reveal finds more paths than random tries."
+  },
+  {
+    "gid": 607,
+    "math_tags": ["ranking things by a learned score", "combining many weak signals into a strong one"],
+    "math_plain": "Items are ranked by balancing multiple goals across sequential recommendation screens, resolving conflicts between conversion, views, and engagement.",
+    "why_math": "User behavior under immersive swiping has hidden trade-offs; ranking on all signals together prevents short-sighted picks that hurt overall experience."
+  },
+  {
+    "gid": 608,
+    "math_tags": ["learning a function from examples", "learning by comparison of similar and different"],
+    "math_plain": "Devices share reusable visual patterns instead of complete class features, allowing personalized adaptation with less communication.",
+    "why_math": "Decomposing class features into common building blocks decouples sharing from class count; personalization works because blocks combine differently per device."
+  },
+  {
+    "gid": 609,
+    "math_tags": ["finding the settings with least error", "keeping only the few dimensions that matter"],
+    "math_plain": "A small controller learns how the graph environment is changing and generates custom parameters to adapt without retraining.",
+    "why_math": "Change happens in hidden patterns; a compact state space tracking these patterns lets you adapt instantly by only tweaking parameters, not rebuilding."
+  },
+  {
+    "gid": 610,
+    "math_tags": ["learning by comparison of similar and different", "measuring similarity as nearness in a space"],
+    "math_plain": "User and location embeddings are learned so that similar users and their actual locations sit close together in a learned space.",
+    "why_math": "Closeness in a learned space only works if users who match similar posts end up nearby; the loss enforces this by penalizing dissimilar pairs."
+  },
+  {
+    "gid": 611,
+    "math_tags": ["ranking things by a learned score", "combining many weak signals into a strong one"],
+    "math_plain": "The system ranks items and generates explanations by combining item text with user history through fusion in a transformer.",
+    "why_math": "Text provides human-readable detail; fusing it with user signals lets explanations cite real reasons, increasing trust over generic rankings."
+  },
+  {
+    "gid": 612,
+    "math_tags": ["predicting the next item in a sequence", "following the slope downhill to improve"],
+    "math_plain": "The model learns user preferences from long behavior sequences in segments, using future behavior as a reward signal to stay accurate.",
+    "why_math": "Future actions prove whether inferred preferences were correct; rewarding predictions that forecast the next segment prevents hallucinated preferences."
+  },
+  {
+    "gid": 613,
+    "math_tags": ["learning a function from examples", "keeping only the few dimensions that matter"],
+    "math_plain": "As facts are added to a knowledge graph, embeddings for new entities are learned and old embeddings updated without forgetting prior knowledge.",
+    "why_math": "Embeddings in low dimensions capture structural roles; careful initialization and regularization preserves learned roles while adding new entities."
+  },
+  {
+    "gid": 614,
+    "math_tags": ["predicting the next item in a sequence", "estimating probabilities from data"],
+    "math_plain": "The system learns multi-dimensional student knowledge by analyzing programming errors across test cases and predicting future problem success.",
+    "why_math": "Error root causes reveal gaps in specific reasoning skills; multi-level analysis maps errors to skills so predictions capture true knowledge, not lucky guesses."
+  }
+]

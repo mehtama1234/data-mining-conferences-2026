@@ -1,0 +1,152 @@
+[
+  {
+    "gid": 795,
+    "math_tags": [
+      "matching and allocating who gets what",
+      "spreading information across a network",
+      "separating cause from coincidence"
+    ],
+    "math_plain": "Builds a naming and certification system to make agents findable, trustworthy, and composable across networks.",
+    "why_math": "Works because DNS and certificate authorities proved that centralized trust layers enable global coordination without central control; agents need the same infrastructure."
+  },
+  {
+    "gid": 796,
+    "math_tags": [
+      "learning a function from examples",
+      "finding the settings with least error",
+      "weighting the parts that are most relevant"
+    ],
+    "math_plain": "Learns to recognize website traffic patterns in encrypted data by training on irregular bursts with smart data augmentation.",
+    "why_math": "Works because real patterns repeat even when data is noisy; augmentation makes the learner robust to variations it never exactly saw."
+  },
+  {
+    "gid": 797,
+    "math_tags": [
+      "predicting the next item in a sequence",
+      "learning a function from examples",
+      "weighting the parts that are most relevant"
+    ],
+    "math_plain": "Predicts future values by learning how patterns at different time scales interact and reinforce each other.",
+    "why_math": "Works because real time series have structure at multiple speeds; combining patterns separately then fusing them captures both detail and trend."
+  },
+  {
+    "gid": 798,
+    "math_tags": [
+      "separating cause from coincidence",
+      "learning a function from examples",
+      "matching and allocating who gets what"
+    ],
+    "math_plain": "Uses language models to detect and merge duplicate properties and standardize naming in a knowledge graph.",
+    "why_math": "Works because language understanding can recognize when different names mean the same thing; human review validates the merges."
+  },
+  {
+    "gid": 799,
+    "math_tags": [
+      "spreading information across a network",
+      "separating cause from coincidence",
+      "measuring similarity as nearness in a space"
+    ],
+    "math_plain": "Models how biases in who cites whom compound over time, concentrating recognition among some authors.",
+    "why_math": "Works because homophily and preferential attachment are well-established mechanisms; their combination explains present inequality and why representation alone won't fix it."
+  },
+  {
+    "gid": 800,
+    "math_tags": [
+      "finding the settings with least error",
+      "keeping only the few dimensions that matter",
+      "matching and allocating who gets what"
+    ],
+    "math_plain": "Finds all simple paths between nodes by pre-indexing representative paths and cycles.",
+    "why_math": "Works because while finding all paths is hard, you only need certain key ones; storing those makes queries instant."
+  },
+  {
+    "gid": 801,
+    "math_tags": [
+      "separating cause from coincidence",
+      "finding the settings with least error",
+      "learning by comparison of similar and different"
+    ],
+    "math_plain": "Assesses how hard it is to unlearn each piece of data, then adjusts the removal strategy based on difficulty.",
+    "why_math": "Works because memorization difficulty varies; easy-to-forget items need less effort, hard ones need special techniques."
+  },
+  {
+    "gid": 802,
+    "math_tags": [
+      "ranking things by a learned score",
+      "learning a function from examples",
+      "weighting the parts that are most relevant"
+    ],
+    "math_plain": "Scores live streams by tracking how users, rooms, and streamers interact moment-to-moment.",
+    "why_math": "Works because live recommendations must adapt to instant feedback; modeling interaction as a dynamic graph captures rapid shifts."
+  },
+  {
+    "gid": 803,
+    "math_tags": [
+      "predicting the next item in a sequence",
+      "learning a function from examples",
+      "weighting the parts that are most relevant"
+    ],
+    "math_plain": "Predicts future connections by learning each node's activity rhythm and which neighbor patterns matter most.",
+    "why_math": "Works because sequential graphs are driven by timing, not just identity; frequency filtering separates signal from noise."
+  },
+  {
+    "gid": 804,
+    "math_tags": [
+      "predicting the next item in a sequence",
+      "estimating probabilities from data",
+      "learning a function from examples"
+    ],
+    "math_plain": "Improves forecasts by modeling what the errors look like, then using that to adjust predictions.",
+    "why_math": "Works because systematic biases remain after initial prediction; modeling error distribution lets you correct them."
+  },
+  {
+    "gid": 805,
+    "math_tags": [
+      "learning a function from examples",
+      "weighting the parts that are most relevant",
+      "measuring similarity as nearness in a space"
+    ],
+    "math_plain": "Learns which neighbors matter for each node by examining their local structural role, not just label similarity.",
+    "why_math": "Works because in heterophilic graphs, distant neighbors matter more; detecting local structure patterns identifies true signal."
+  },
+  {
+    "gid": 806,
+    "math_tags": [
+      "learning a function from examples",
+      "learning by comparison of similar and different",
+      "weighting the parts that are most relevant"
+    ],
+    "math_plain": "Learns where to place new concepts in a hierarchy by training separately on leaf and non-leaf relations, then combining them.",
+    "why_math": "Works because leaf and non-leaf edges have different patterns; training separately captures each, then contrasting paths unifies them."
+  },
+  {
+    "gid": 807,
+    "math_tags": [
+      "matching and allocating who gets what",
+      "estimating probabilities from data",
+      "learning a function from examples"
+    ],
+    "math_plain": "Designs a trading mechanism where a broker buys from a seller and sells to a buyer using minimal information.",
+    "why_math": "Works because constant approximations are possible even with one sample; you don't need exact valuations, just reasonable estimates."
+  },
+  {
+    "gid": 808,
+    "math_tags": [
+      "separating cause from coincidence",
+      "learning a function from examples",
+      "weighting the parts that are most relevant"
+    ],
+    "math_plain": "Handles noisy labels by assigning uncertainty scores, then gradually aligns cross-domain data by trustiness.",
+    "why_math": "Works because uncertainty scores reveal which labels are likely wrong; progressively trusting aligned samples avoids compounding errors."
+  },
+  {
+    "gid": 809,
+    "math_tags": [
+      "separating cause from coincidence",
+      "learning a function from examples",
+      "learning by comparison of similar and different"
+    ],
+    "math_plain": "Detects unusual graphs by finding inconsistency between what neural and kernel methods say about structure.",
+    "why_math": "Works because in-distribution graphs show consistent structure from multiple angles; out-of-distribution breaks that agreement."
+  }
+]

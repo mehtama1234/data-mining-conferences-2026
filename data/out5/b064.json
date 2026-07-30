@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 960,
+    "math_tags": ["measuring similarity as nearness in a space", "following the slope downhill to improve"],
+    "math_plain": "Decomposes time series into a linear trend and periodic waves using learned sine and cosine components with adjusted phase offsets.",
+    "why_math": "It works because periodic phenomena repeat in predictable patterns—breaking them into sinusoidal waves lets you capture those repeating shapes efficiently. Once you know the main frequencies and their phase shifts, reconstructing the signal becomes a simple weighted sum."
+  },
+  {
+    "gid": 961,
+    "math_tags": ["estimating probabilities from data", "finding the settings with least error"],
+    "math_plain": "Predicts when clicks convert to purchases by modeling time-to-conversion as a survival curve, accounting for delays between user action and actual purchase.",
+    "why_math": "It works because conversion times are not random—they follow systematic patterns based on user type, item, and context. By modeling what fraction convert by each time point, you uncover these hidden delays and stop underestimating the true cost per conversion."
+  },
+  {
+    "gid": 962,
+    "math_tags": ["matching and allocating who gets what", "weighting the parts that are most relevant"],
+    "math_plain": "Ranks items by learning implicit relationships between users, products, and past feedback throughout data preparation, training, and ranking stages.",
+    "why_math": "It works because real product relationships form patterns—items bought together, users with similar tastes, feedback signals that predict success. Capturing these patterns early and reusing them throughout the pipeline means every stage learns from the same truth."
+  },
+  {
+    "gid": 963,
+    "math_tags": ["learning a function from examples", "measuring similarity as nearness in a space"],
+    "math_plain": "Learns node representations within local network neighborhoods using pretrained word-understanding models, capturing both network structure and feature meaning.",
+    "why_math": "It works because people in social networks behave similarly to people nearby in the graph. Pretrained models already understand human relationships and attributes; combining that understanding with local network topology lets you infer who would be good friends without processing the entire graph."
+  },
+  {
+    "gid": 964,
+    "math_tags": ["weighting the parts that are most relevant", "ranking things by a learned score"],
+    "math_plain": "Adjusts recommendation weights over time to reflect how user interests shift, ensuring the distribution of recommended topics matches the user's actual interest distribution.",
+    "why_math": "It works because recommender systems naturally amplify main interests and suppress minor ones through optimization. By explicitly tracking each interest's true weight and forcing recommendations to match that ratio, you prevent echo chambers and give users the breadth they actually want."
+  },
+  {
+    "gid": 965,
+    "math_tags": ["measuring surprise and information", "learning by comparison of similar and different"],
+    "math_plain": "Maximizes shared information between node representations from consecutive time steps, preventing knowledge of past connections from being erased when learning new ones.",
+    "why_math": "It works because node roles persist—the same nodes remain central or peripheral as the graph evolves. By forcing new representations to preserve information about old ones, you anchor learning to stable patterns rather than overwriting them entirely."
+  },
+  {
+    "gid": 966,
+    "math_tags": ["predicting the next item in a sequence", "measuring surprise and information"],
+    "math_plain": "Uses paired denoising models to predict users' next purchases by separately learning repetitive buying patterns and exploratory new-item desires, with information flow controls.",
+    "why_math": "It works because purchases come from two distinct impulses—habit and curiosity. By splitting these signals and controlling information flow between them, you let habit patterns strengthen through repetition while exploratory patterns explore freely, matching how real shopping actually works."
+  },
+  {
+    "gid": 967,
+    "math_tags": ["separating cause from coincidence", "learning a function from examples"],
+    "math_plain": "Builds a commonsense graph encoding which statements agree or conflict with a persona, then identifies and rewrites AI responses that contradict the established persona.",
+    "why_math": "It works because persona conflicts are rooted in semantic meaning, not just surface text. A knowledge graph captures which ideas logically belong together; checking responses against it catches indirect contradictions that keyword matching misses."
+  },
+  {
+    "gid": 968,
+    "math_tags": ["finding the settings with least error", "combining many weak signals into a strong one"],
+    "math_plain": "Reweights training samples to reduce bias in recommendations, but shows this regularization effect outweighs the bias-correction benefit when combined with multi-task learning.",
+    "why_math": "It works because reweighting samples forces the model to pay attention to underrepresented cases, which naturally enriches what the model learns even when bias correction alone wouldn't help. Multi-task learning amplifies this by creating diverse prediction tasks from the same reweighted data."
+  },
+  {
+    "gid": 969,
+    "math_tags": ["ranking things by a learned score", "learning a function from examples"],
+    "math_plain": "Expands user search queries using a language model trained with real-time feedback from the search engine, optimizing for both relevant matches and catalog coverage.",
+    "why_math": "It works because user intentions are ambiguous but the search engine reveals truth—which expanded queries retrieve relevant results and which don't. Learning directly from search feedback means the model optimizes for real success, not proxy metrics."
+  },
+  {
+    "gid": 970,
+    "math_tags": ["keeping only the few dimensions that matter", "finding the settings with least error"],
+    "math_plain": "Compresses large models using low-rank factorization and token-pattern smoothing, then refines each layer progressively to run recommendations on mobile devices without losing quality.",
+    "why_math": "It works because language models contain redundant parameters—many weights can be reconstructed from a small set of core dimensions. Progressive layer-by-layer refinement ensures each compression step actually works before moving forward, avoiding cascading errors."
+  },
+  {
+    "gid": 971,
+    "math_tags": ["measuring similarity as nearness in a space", "separating cause from coincidence"],
+    "math_plain": "Identifies bridge nodes that connect unlike classes in networks, then aggregates their neighborhoods differently to prevent the smoothing that causes misclassification.",
+    "why_math": "It works because bridge nodes sit at boundaries where smoothing is wrong—averaging across different classes doesn't help. By detecting these critical nodes and treating them specially, you preserve the sharp distinctions that matter for classification."
+  },
+  {
+    "gid": 972,
+    "math_tags": ["learning a function from examples", "measuring similarity as nearness in a space"],
+    "math_plain": "Aligns textual descriptions and network structure into shared representations, letting new items or users be understood from description alone when network data is sparse.",
+    "why_math": "It works because text and network encode the same reality from different angles—what text says matches what neighbors are. Learning a joint space where both views converge lets you use text to bootstrap when the graph has gaps."
+  },
+  {
+    "gid": 973,
+    "math_tags": ["predicting the next item in a sequence", "separating cause from coincidence"],
+    "math_plain": "Generates preference patterns for new users by identifying causal interactions in historical sequences, then using those patterns to initialize sequential recommendation models.",
+    "why_math": "It works because not all past interactions drive future behavior equally—some are noise. Causal analysis isolates the interactions that truly shape preference; generating representations from only those signals gives new users a head start grounded in real drivers."
+  },
+  {
+    "gid": 974,
+    "math_tags": [],
+    "math_plain": "Workshop announcement describing generative AI applications in streaming media personalization and content improvement.",
+    "why_math": "This is a workshop announcement rather than a research paper with mathematical methods."
+  }
+]

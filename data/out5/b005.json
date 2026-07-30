@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 75,
+    "math_tags": ["estimating probabilities from data", "separating cause from coincidence"],
+    "math_plain": "Measure fairness bias in language models across languages and cultures by evaluating their predictions against curated benchmarks.",
+    "why_math": "Comparing model outputs to known bias categories reveals systematic patterns in how models learn from their training data, separating genuine model failures from language-specific challenges."
+  },
+  {
+    "gid": 76,
+    "math_tags": ["learning a function from examples", "finding the settings with least error"],
+    "math_plain": "Learn flexible alignment rules between recommendation domains using few examples, then replay refined data to reduce transfer mistakes.",
+    "why_math": "By adjusting how knowledge transfers based on overlapping examples, the model avoids rigid alignment rules that fail in new scenarios and catches negative transfer before it harms recommendations."
+  },
+  {
+    "gid": 77,
+    "math_tags": ["learning by comparison of similar and different", "finding the settings with least error"],
+    "math_plain": "Select negative examples strategically when training graph classifiers, choosing cases that meaningfully distinguish true relationships from false ones.",
+    "why_math": "A model trained on hard negative cases learns the boundary between real and missing edges more sharply than random negatives, so it generalizes better to unseen edges."
+  },
+  {
+    "gid": 78,
+    "math_tags": ["finding the settings with least error", "measuring similarity as nearness in a space"],
+    "math_plain": "Stabilize item embeddings during federated training by minimizing loss at points least likely to overfit when data distributions change.",
+    "why_math": "Embeddings that remain robust when slightly perturbed generalize to new users because they exploit stable relationships rather than brittle local patterns in training data."
+  },
+  {
+    "gid": 79,
+    "math_tags": ["spreading information across a network", "smart random sampling and averaging"],
+    "math_plain": "Decide which web pages to recrawl using graph structure and learned probabilities, prioritizing updates that cascade to many downstream pages.",
+    "why_math": "When one page changes, its outbound links matter more than random updates because information flows through those connections, so prioritizing them keeps the graph fresher with fewer crawls."
+  },
+  {
+    "gid": 80,
+    "math_tags": ["estimating probabilities from data", "learning a function from examples"],
+    "math_plain": "Train a chatbot to correct misinformation by learning correction strategies, then measure how well it reduces false belief across health, science, and politics domains.",
+    "why_math": "Testing across unrelated domains reveals whether the model learned general error-correction principles or domain-specific tricks, showing if its approach generalizes or needs retuning."
+  },
+  {
+    "gid": 81,
+    "math_tags": ["ranking things by a learned score", "weighting the parts that are most relevant"],
+    "math_plain": "Build a tree of subquestions, score each node's confidence, then prune branches with low confidence and retrieve only entity-level anchors needed for reasoning.",
+    "why_math": "Confidence-guided pruning keeps only branches that retrieve truly useful evidence, reducing noise that would otherwise dilute the model's ability to combine facts into correct answers."
+  },
+  {
+    "gid": 82,
+    "math_tags": ["spreading information across a network", "weighting the parts that are most relevant"],
+    "math_plain": "Detect anomalies in graphs with multiple node types by aligning semantic features across types and weighting their contributions to balance sparse and rich nodes.",
+    "why_math": "Nodes of different types carry unequal anomaly signals; weighting by reliability spreads discriminative cues from informative nodes to sparse ones, surfacing anomalies that cross type boundaries."
+  },
+  {
+    "gid": 83,
+    "math_tags": ["predicting the next item in a sequence", "learning a function from examples"],
+    "math_plain": "Answer student questions and assess engagement by retrieving relevant educational content and personalized context from a learner's history.",
+    "why_math": "Pulling in retrieved context prevents the model from forgetting prior interactions, so it can recognize when a question connects to earlier topics and tailor answers to that student's level."
+  },
+  {
+    "gid": 84,
+    "math_tags": ["learning a function from examples", "combining many weak signals into a strong one"],
+    "math_plain": "Train large models on diverse structured data tasks simultaneously so they learn universal patterns that work across recommendation, forecasting, and user behavior prediction.",
+    "why_math": "Multi-task pretraining exploits patterns common to all structured prediction—ranking importance, spotting relationships, handling missingness—so the model transfers these insights to new tasks without retraining."
+  },
+  {
+    "gid": 85,
+    "math_tags": ["learning a function from examples", "predicting the next item in a sequence"],
+    "math_plain": "Evaluate whether chatbots remember fragmented user disclosures across sessions, extract implicit needs, spot conflicts, and personalize support over time.",
+    "why_math": "Emotional support requires the model to reconstruct a coherent user profile from scattered hints, so measuring these capabilities separately reveals which memory failures break personalization."
+  },
+  {
+    "gid": 86,
+    "math_tags": ["learning by comparison of similar and different", "measuring similarity as nearness in a space"],
+    "math_plain": "Edit image emotions by aligning semantic emotion changes while preserving emotion-neutral content through contrasting paired image versions.",
+    "why_math": "Comparing before and after helps the model learn which features control emotion versus which are incidental, so it can shift one while keeping the rest intact."
+  },
+  {
+    "gid": 87,
+    "math_tags": ["learning by comparison of similar and different", "combining many weak signals into a strong one"],
+    "math_plain": "Enrich sparse user-item graphs by adding intent nodes that summarize shared behavioral patterns, then align users and items consistently across multiple views.",
+    "why_math": "Intent nodes capture latent reasons why users like items; aligning across views forces the model to agree on these hidden intents, stabilizing recommendations when edges are sparse."
+  },
+  {
+    "gid": 88,
+    "math_tags": ["learning a function from examples", "weighting the parts that are most relevant"],
+    "math_plain": "Generate relevant documents for conversational search by denoising conversation context with logic, then learning which prior turns matter most for each turn.",
+    "why_math": "Not all conversation history helps equally; weighting turns by logical coherence and relevance ensures the model attends to clarifying context while ignoring off-topic digressions."
+  },
+  {
+    "gid": 89,
+    "math_tags": ["ranking things by a learned score", "matching and allocating who gets what"],
+    "math_plain": "Map user goals in plain language to relevant UI components by scoring which functions best match the intent, then assemble them into a custom interface.",
+    "why_math": "Scoring component relevance to goals focuses the interface on what matters for this task, reducing cognitive load by hiding irrelevant options that clutter traditional navigation menus."
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 1185,
+    "math_tags": ["ranking things by a learned score", "learning a function from examples"],
+    "math_plain": "Train classifiers to score music tracks by their therapeutic intent for children with autism.",
+    "why_math": "It works because labeled examples of music and its therapeutic effects teach the system to recognize patterns that predict which songs will help specific children, transforming subjective therapeutic judgment into a learnable scoring function."
+  },
+  {
+    "gid": 1186,
+    "math_tags": ["ranking things by a learned score", "separating cause from coincidence", "combining many weak signals into a strong one"],
+    "math_plain": "Rewrite queries to simultaneously improve retrieval ranking and reduce gender bias in results.",
+    "why_math": "It works because query reformulation changes what you ask for, and by optimizing for both relevance and fairness together, you disentangle bias in the training data from bias in the retrieval ranking, making both improve at once."
+  },
+  {
+    "gid": 1187,
+    "math_tags": ["learning a function from examples", "ranking things by a learned score"],
+    "math_plain": "Evaluate large language models on their ability to understand and reason about structured table data through 26 different reasoning tasks.",
+    "why_math": "It works because tables have hidden structure and semantics, and testing across many task types reveals which reasoning abilities models lack, exposing whether failures come from understanding tables or from reasoning itself."
+  },
+  {
+    "gid": 1188,
+    "math_tags": ["ranking things by a learned score", "learning a function from examples", "smart random sampling and averaging"],
+    "math_plain": "Score retrieval system robustness by mixing real speech with 17 types of environmental noise at varying loudness levels, then measuring rank quality degradation.",
+    "why_math": "It works because noise is random variation that degrades signal, and by controlling exactly which noise and how much, you isolate what breaks retrieval from what stays robust, revealing the true weaknesses systems will face."
+  },
+  {
+    "gid": 1189,
+    "math_tags": ["ranking things by a learned score", "matching and allocating who gets what", "learning a function from examples"],
+    "math_plain": "Retrieve correct APIs from a repository, then score and refine multi-step code that calls them correctly to build applications.",
+    "why_math": "It works because code generation is a scoring and refinement loop: retrieval finds which functions exist, scoring validates if they fit together, and iteration learns which combinations lead to working programs."
+  },
+  {
+    "gid": 1190,
+    "math_tags": ["spreading information across a network", "ranking things by a learned score", "matching and allocating who gets what"],
+    "math_plain": "Score teams of experts by modeling skill-sharing collaborations as a graph, predicting which experts work well together while removing bias toward popularity and gender.",
+    "why_math": "It works because expert teamwork is relational—success flows through connections—and by mapping those connections as a network, you can score teams by their relational position rather than only individual skill, while debiasing which connections get highlighted."
+  },
+  {
+    "gid": 1191,
+    "math_tags": ["ranking things by a learned score", "separating cause from coincidence"],
+    "math_plain": "Retrieve relevant emails while withholding ones marked as containing sensitive personal information.",
+    "why_math": "It works because relevance and sensitivity are two separate properties that must both be scored independently, and only returning results that rank high on relevance AND low on sensitivity lets you deliver useful information without exposing privacy."
+  },
+  {
+    "gid": 1192,
+    "math_tags": [],
+    "math_plain": "Catalog and standardize the naming of 143 different UI elements found on search engine results pages across six engines.",
+    "why_math": "Standardized naming makes comparison possible: when everyone calls the same element by the same name, researchers can then measure which elements users need, how they're laid out, and what works across search engines."
+  },
+  {
+    "gid": 1193,
+    "math_tags": ["learning a function from examples", "learning by comparison of similar and different"],
+    "math_plain": "Train multilingual models to recognize named entities in seven under-resourced tribal languages by learning shared features across related languages.",
+    "why_math": "It works because languages that share structure or script also share patterns in how entities are named, and by training on related languages together, the model learns features that transfer even when training data for any single language is tiny."
+  },
+  {
+    "gid": 1194,
+    "math_tags": ["ranking things by a learned score", "matching and allocating who gets what"],
+    "math_plain": "Score web agent success on complex shopping tasks across multiple simulated stores with heterogeneous product data, including price comparison and product substitution.",
+    "why_math": "It works because real shopping requires agents to find and rank across many stores, so a benchmark must simulate realistic product complexity and conflicts in pricing, exposing whether agents can match needs to options across many sources."
+  },
+  {
+    "gid": 1195,
+    "math_tags": ["predicting the next item in a sequence", "ranking things by a learned score", "learning a function from examples"],
+    "math_plain": "Predict which live streamers users will interact with next by learning from real-time engagement signals like clicks, comments, likes, and gift-giving.",
+    "why_math": "It works because live streaming is constantly changing, and by predicting the next action from recent interactions rather than static history, the model captures that user preferences evolve in real-time as content flows."
+  },
+  {
+    "gid": 1196,
+    "math_tags": ["measuring similarity as nearness in a space", "learning a function from examples"],
+    "math_plain": "Match patients to clinical trials in multiple languages by scoring how closely patient profiles align with trial inclusion criteria.",
+    "why_math": "It works because patient eligibility and trial requirements are multidimensional, and by embedding both into a shared space where similar profiles sit close together, you turn matching into simple nearness, which remains meaningful across languages."
+  },
+  {
+    "gid": 1197,
+    "math_tags": ["learning a function from examples", "separating cause from coincidence"],
+    "math_plain": "Detect whether peer review text was written by a human, an AI, or came from a hybrid collaboration where ideas are human but writing is AI.",
+    "why_math": "It works because authorship has two sources—intellectual ideas and surface writing—and by treating them as separate dimensions rather than a binary, detectors can score each independently and reveal when ideas are sound but expression is alien."
+  },
+  {
+    "gid": 1198,
+    "math_tags": ["spreading information across a network", "ranking things by a learned score"],
+    "math_plain": "Enrich dataset search by extracting relationships not just from metadata but directly from the data files themselves, then reranking results using those connections.",
+    "why_math": "It works because metadata is incomplete, but the data itself holds semantic signals—patterns and connections—and by treating those signals as a knowledge graph, you can score datasets not only by name-match but by how they relate conceptually to what you're looking for."
+  },
+  {
+    "gid": 1199,
+    "math_tags": ["ranking things by a learned score", "learning a function from examples"],
+    "math_plain": "Evaluate automated survey generation with a protocol that combines objective metrics and learned scoring from expert judgment across multiple dimensions.",
+    "why_math": "It works because survey quality is multifaceted—fluency, structure, citations, coverage—and no single metric captures it all, so combining objective measures with learned expert judgment gives a robust score that aligns with what human reviewers actually value."
+  }
+]

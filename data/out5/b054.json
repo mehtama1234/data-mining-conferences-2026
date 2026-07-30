@@ -1,0 +1,92 @@
+[
+ {
+  "gid": 810,
+  "math_tags": ["spreading information across a network", "weighting the parts that are most relevant"],
+  "math_plain": "Detects attacks by scoring how multi-entity events spread and connect across system records, paying attention to distant relationships.",
+  "why_math": "Attacks spread signals across multiple entities in patterns; by weighting connections based on their relevance to the attack signature and linking distant parts of the system together, you can spot coordinated behaviors that isolated local analysis would miss."
+ },
+ {
+  "gid": 811,
+  "math_tags": ["ranking things by a learned score", "combining many weak signals into a strong one"],
+  "math_plain": "Scores word importance by combining multiple model opinions and selects the top-ranked words to create adversarial text that fools AI systems.",
+  "why_math": "Different models have different blindnesses; averaging their agreement reveals true vulnerabilities no single model captures. Combining weak signals this way finds robust attack patterns."
+ },
+ {
+  "gid": 812,
+  "math_tags": ["finding the settings with least error", "weighting the parts that are most relevant"],
+  "math_plain": "Selects a tiny subset of the data for training by optimizing which samples matter most, while removing noisy or unreliable interactions.",
+  "why_math": "Most data points contribute equally to improving the model; identifying and keeping only the high-value samples lets you train with far less data. Removing noise ensures those kept samples actually improve rather than mislead."
+ },
+ {
+  "gid": 813,
+  "math_tags": ["measuring similarity as nearness in a space"],
+  "math_plain": "Measures open-source community health by computing network distance and activity metrics across developer collaboration platforms.",
+  "why_math": "Developers who frequently interact sit close together in collaboration space; measuring distances and densities in this space reveals community structure and health without needing to manually define what healthy means."
+ },
+ {
+  "gid": 814,
+  "math_tags": ["predicting the next item in a sequence", "combining many weak signals into a strong one"],
+  "math_plain": "Ranks items by combining probabilities from sub-rankings instead of ranking all items at once, using a structural decomposition to aggregate sub-scores.",
+  "why_math": "Predicting the full ranking order is costly; breaking it into smaller sub-rankings you can compute in one pass, then using algebraic decomposition to combine them, gives you ranking predictions without the exponential cost."
+ },
+ {
+  "gid": 815,
+  "math_tags": ["separating cause from coincidence"],
+  "math_plain": "Proves user identity by checking a mathematical signature without revealing the user's secret key, using discrete logarithm hard problems.",
+  "why_math": "If only the user knows the secret key, only they can generate signatures that pass the mathematical check; the check's security rests on a problem so hard it can't be inverted, making forgery impossible."
+ },
+ {
+  "gid": 816,
+  "math_tags": ["measuring similarity as nearness in a space", "weighting the parts that are most relevant"],
+  "math_plain": "Detects hidden personal information in text by searching a graph of words for paths that lead from explicit statements to implied sensitive facts.",
+  "why_math": "People's private information connects to what they say through inference chains; mapping these chains as a spatial graph lets you find which paths to search for to catch leaks that simple pattern matching misses."
+ },
+ {
+  "gid": 817,
+  "math_tags": ["predicting the next item in a sequence", "measuring similarity as nearness in a space"],
+  "math_plain": "Predicts user preferences by encoding the time gaps between past interactions, placing users close together if their engagement patterns match.",
+  "why_math": "How fast users act between clicks reveals their interest intensity; grouping users by similar time-gap patterns finds neighbors with matching intent, making next-item prediction accurate without needing to know absolute timestamps."
+ },
+ {
+  "gid": 818,
+  "math_tags": ["separating cause from coincidence", "learning a function from examples"],
+  "math_plain": "Trains a specialized model on expert knowledge while detecting when the model makes up false facts, accepting expert answers for uncertain cases and model answers when confident.",
+  "why_math": "Models sometimes hallucinate; if you can detect when the model is guessing versus confident, you can trust its confident answers and fall back to experts only when needed, minimizing costly expert involvement while keeping quality high."
+ },
+ {
+  "gid": 819,
+  "math_tags": ["separating cause from coincidence", "weighting the parts that are most relevant"],
+  "math_plain": "Defends against poisoned data by transforming embeddings to make poisoned samples stick out, then voting to remove them based on majority agreement.",
+  "why_math": "Poisoned samples are rare and different; transforming to make those differences obvious, then using majority voting as a robustness check, filters them out because a single poison can't outweigh the majority of clean data."
+ },
+ {
+  "gid": 820,
+  "math_tags": [],
+  "math_plain": "A workshop on standards and architectures for autonomous agents operating on the web.",
+  "why_math": "This is a position paper / workshop announcement, not a methods paper, so no core mathematical insight applies."
+ },
+ {
+  "gid": 821,
+  "math_tags": ["learning a function from examples", "predicting the next item in a sequence"],
+  "math_plain": "Finds influential spreaders in networks without knowing the actual connections, by learning hidden time-series patterns and optimizing seed selection through trial-and-error learning.",
+  "why_math": "Observable behavior encodes network structure even when links are hidden; learning this structure from time-series and using reinforcement learning to optimize seed selection works because the optimal set must be the one with the best historical influence signal."
+ },
+ {
+  "gid": 822,
+  "math_tags": ["estimating probabilities from data", "measuring surprise and information"],
+  "math_plain": "Predicts when users are surprised by search results using eye-movement patterns like how long they look and how often they refocus.",
+  "why_math": "Surprise changes attention behavior in measurable ways; looking longer at unexpected content is statistically higher than at expected content, so sustained eye metrics capture the mismatch signal reliably."
+ },
+ {
+  "gid": 823,
+  "math_tags": ["predicting the next item in a sequence", "finding the settings with least error"],
+  "math_plain": "Recommends videos by processing very long user histories efficiently, training on short sequences but applying the model to long ones with minimal computation.",
+  "why_math": "The model learns to generalize from short to long sequences; replacing expensive self-scoring with one-way lookups and batching by user reduces the math cost without losing quality because the core patterns are the same at any length."
+ },
+ {
+  "gid": 824,
+  "math_tags": ["learning a function from examples", "combining many weak signals into a strong one"],
+  "math_plain": "Infers road maps from vehicle traces by encoding adjacency two ways (as rasterized images and as serialized paths) and merging both signals into unified map predictions.",
+  "why_math": "No single representation captures all road structure; combining rasterized density and traversability paths gives you complementary signals, so merging them yields topology more accurate than either alone."
+ }
+]

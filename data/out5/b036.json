@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 540,
+    "math_tags": ["ranking things by a learned score", "measuring similarity as nearness in a space"],
+    "math_plain": "Scores user-item pairs by compressing interactions into unified representations across diverse data sources, then ranks items by similarity to user profile.",
+    "why_math": "It works because diverse recommendation data sources contain overlapping patterns about what users like; by finding a shared representation space where similar interactions sit close together, ranking becomes finding nearby items, which scales with large datasets the same way language models do."
+  },
+  {
+    "gid": 541,
+    "math_tags": ["combining many weak signals into a strong one", "estimating probabilities from data"],
+    "math_plain": "Multiple specialized experts each estimate geopolitical event outcomes from different analytical angles, then combines their predictions to forecast crisis events.",
+    "why_math": "It works because each expert captures different aspects of complex geopolitical reality; pooling their independent estimates reduces individual blind spots and leverages the wisdom that ensembles of diverse reasoning converge on truth more reliably than single views."
+  },
+  {
+    "gid": 542,
+    "math_tags": ["learning a function from examples", "measuring similarity as nearness in a space"],
+    "math_plain": "Learns to split documents into semantic chunks by optimizing whether resulting chunks align with question intent, rewarding chunks that preserve logical coherence and context.",
+    "why_math": "It works because questions reveal what information patterns matter; chunks that answer questions together naturally preserve meaning, whereas arbitrary splits fragment knowledge—questions act as ground truth for correct semantic boundaries."
+  },
+  {
+    "gid": 543,
+    "math_tags": ["finding the settings with least error", "following the slope downhill to improve"],
+    "math_plain": "Prunes network capacity while carefully preserving the ability to learn new tasks by expanding capacity temporarily at task boundaries then re-pruning.",
+    "why_math": "It works because the capacity to adapt depends on having room to store new patterns; by expanding at critical moments when learning new material and re-pruning afterward, the model keeps only essential connections while staying flexible enough to absorb new knowledge."
+  },
+  {
+    "gid": 544,
+    "math_tags": ["combining many weak signals into a strong one", "estimating probabilities from data"],
+    "math_plain": "Simulates public opinion during crises by modeling two interacting forces—immediate emotional reactions and slower-changing core beliefs—through agents that generate realistic opinion trajectories.",
+    "why_math": "It works because real opinion dynamics depend on how fast emotions fade versus how persistent beliefs are; modeling both mechanisms separately then letting them interact produces trajectories that match actual data because it captures the dual-speed nature of how humans actually change their minds."
+  },
+  {
+    "gid": 545,
+    "math_tags": ["learning a function from examples", "weighting the parts that are most relevant"],
+    "math_plain": "Models short-video addiction by learning personalized patterns from behavioral data, then weights individual user trajectories to train a simulator that predicts how users consume content.",
+    "why_math": "It works because addiction follows economic principles—people trade off short-term reward against long-term cost—and behavioral data encodes these tradeoffs implicitly; weighting by individual differences captures why some users escalate while others self-regulate."
+  },
+  {
+    "gid": 546,
+    "math_tags": ["measuring similarity as nearness in a space", "separating cause from coincidence"],
+    "math_plain": "Extracts location names from humanitarian documents using few-shot learning to recognize mentions, then resolves ambiguous place names by considering context clues.",
+    "why_math": "It works because context eliminates ambiguity—knowing 'Jerusalem' appears near 'West Bank' rather than 'Kentucky' reveals which city is meant; reasoning about nearby words in text separates real geographic references from coincidental name matches."
+  },
+  {
+    "gid": 547,
+    "math_tags": ["separating cause from coincidence", "measuring similarity as nearness in a space"],
+    "math_plain": "Finds discrepancies between WebAssembly and native code by testing both with the same inputs and measuring which ones cause different outputs, then traces root causes.",
+    "why_math": "It works because identical input sets applied to both versions reveal the boundaries of their differences; inputs that split behavior pinpoint exactly which edge cases expose the bug, eliminating false leads and showing the true source of failure."
+  },
+  {
+    "gid": 548,
+    "math_tags": ["ranking things by a learned score", "measuring similarity as nearness in a space"],
+    "math_plain": "Finds answers to multi-hop questions over knowledge graphs by ranking candidate paths by semantic relevance, encoding them in a compact space, then fuses path clues into the language model.",
+    "why_math": "It works because graphs have structure—meaningful paths cluster around relevant entities—so encoding paths as learned scores that reflect semantic fit naturally ranks true answer chains first; fusing compact path signals into reasoning preserves interpretable traces while staying efficient."
+  },
+  {
+    "gid": 549,
+    "math_tags": ["learning a function from examples", "separating cause from coincidence"],
+    "math_plain": "Examines whether language models can regulate their own behavior through internal feedback loops and embedded constraints, then distinguishes technical self-management from true moral self-governance.",
+    "why_math": "It works because true governance requires both monitoring (does the system detect errors?) and moral grounding (does it know what right looks like?); the paper separates the solvable technical parts (feedback) from the unsolvable philosophical ones (moral agency) based on what mechanisms can actually accomplish each goal."
+  },
+  {
+    "gid": 550,
+    "math_tags": ["measuring similarity as nearness in a space", "learning by comparison of similar and different"],
+    "math_plain": "Improves sticker retrieval by aligning the abstract expressive intent of queries and stickers in a shared space so that semantically matched items sit close together.",
+    "why_math": "It works because users care about what a sticker expresses, not its pixels—aligning intent across modalities means queries and stickers that convey the same feeling naturally fall near each other in the representation space, making retrieval robust to visual or textual variation."
+  },
+  {
+    "gid": 551,
+    "math_tags": ["combining many weak signals into a strong one", "learning a function from examples"],
+    "math_plain": "Aligns language models with multiple human values by filtering training data for consistency across values, then blending separate models that learned value-consistent patterns.",
+    "why_math": "It works because conflicting values in raw data force models to compromise; filtering for data where values align smoothly creates cleaner learning signals, then linearly blending these smooth models preserves all their learned trade-offs without the noise that destroys alignment."
+  },
+  {
+    "gid": 552,
+    "math_tags": ["measuring similarity as nearness in a space", "keeping only the few dimensions that matter"],
+    "math_plain": "Predicts future links in dynamic graphs by decomposing temporal patterns into multiple time scales using wavelets, then fusing local wavelet features with global temporal dependencies.",
+    "why_math": "It works because real temporal dynamics operate at multiple speeds—some changes happen fast (hours), others slow (months)—and wavelets naturally separate these scales; tracking both simultaneously gives a complete picture of what's likely to happen next in the network."
+  },
+  {
+    "gid": 553,
+    "math_tags": ["learning by comparison of similar and different", "weighting the parts that are most relevant"],
+    "math_plain": "Segments social media users into behavioral profiles by clustering session-level activity patterns, then weights groups by engagement style to explain differences in content exposure.",
+    "why_math": "It works because each user type—lurkers, creators, interactors—prioritizes different signals (visibility, participation, curation), so their information environments diverge; clustering users by behavior, then weighting by group priorities, reveals why the same platform shows different content to different types."
+  },
+  {
+    "gid": 554,
+    "math_tags": ["separating cause from coincidence", "measuring similarity as nearness in a space"],
+    "math_plain": "Measures community moderation impact by analyzing public blocking actions across millions of users, then correlates blocking patterns with account properties to distinguish signal from noise.",
+    "why_math": "It works because blocklists target specific account behaviors systematically; comparing blocked versus unblocked accounts reveals which signals (toxicity, activity, ideology) actually drive moderation decisions versus which correlations are coincidence, showing that blocking is precise but its effects are limited."
+  }
+]

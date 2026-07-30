@@ -1,0 +1,137 @@
+[
+  {
+    "gid": 180,
+    "math_tags": [
+      "ranking things by a learned score",
+      "measuring similarity as nearness in a space"
+    ],
+    "math_plain": "Scores candidate references by relevance and validates them by measuring how close their meaning is to the author's claims through paragraph-level matching.",
+    "why_math": "It works because ranking lets you put the best references first without needing perfect scores, and nearness in meaning-space lets you quickly tell if a reference actually supports a claim by checking how close their content sits together."
+  },
+  {
+    "gid": 181,
+    "math_tags": [
+      "separating cause from coincidence",
+      "estimating probabilities from data"
+    ],
+    "math_plain": "Detects which image attributes are truly tied to class labels versus accidentally co-occurring, then estimates what unbiased data would look like by generating missing samples.",
+    "why_math": "It works because true causal links between attribute and class are stable across edits, but accidental correlations break when you change an image. By finding what stays or changes, you isolate what the class actually depends on, then you can build balanced training data that breaks spurious ties."
+  },
+  {
+    "gid": 182,
+    "math_tags": [
+      "ranking things by a learned score",
+      "learning a function from examples"
+    ],
+    "math_plain": "Learns diagnostic patterns from past cases, scores how confident the model should be about each solution, and routes between fast pattern lookup and slower reasoning based on confidence.",
+    "why_math": "It works because Kubernetes failures repeat in patterns—once you score how similar a new failure is to past ones you know, fast lookup beats slow reasoning. Routing by confidence lets you spend time reasoning only when patterns don't help, balancing speed and accuracy."
+  },
+  {
+    "gid": 183,
+    "math_tags": [
+      "finding the settings with least error",
+      "learning a function from examples"
+    ],
+    "math_plain": "Optimizes how to split a budget across ad placements to maximize winning impressions, learns from just a few examples by reasoning first then refining based on feedback.",
+    "why_math": "It works because you can reason about budget trade-offs roughly without needing historical data, then feedback on your choices tells you exactly where you guessed wrong, letting you tune just the parts that mattered, so few examples go a long way."
+  },
+  {
+    "gid": 184,
+    "math_tags": [
+      "ranking things by a learned score",
+      "finding the settings with least error"
+    ],
+    "math_plain": "Scores how successfully face restoration defeats privacy protections by tuning attack settings, measures image identity consistency as the key metric to attack.",
+    "why_math": "It works because the best privacy defense is one that can't be circumvented by known attacks, so finding the attack settings that work best reveals which protections are truly robust. Measuring identity consistency directly tests whether the core defense—making faces unrecognizable—actually holds."
+  },
+  {
+    "gid": 185,
+    "math_tags": [
+      "separating cause from coincidence",
+      "learning a function from examples"
+    ],
+    "math_plain": "Models sarcasm detection and explanation as causally linked: the explanation process causes the detection outcome, jointly optimized with causal pathways guiding both tasks.",
+    "why_math": "It works because sarcasm isn't just a label but emerges from reasoning—the explanation causally generates the detection. By enforcing this causal link and checking that explanations and detections agree, you ground both in real reasoning instead of letting them drift apart independently."
+  },
+  {
+    "gid": 186,
+    "math_tags": [
+      "measuring surprise and information",
+      "estimating probabilities from data"
+    ],
+    "math_plain": "Attaches confidence scores and metadata recording how the content was generated, with verifiable credentials to estimate reliability when the same content is reused.",
+    "why_math": "It works because reusing untracked content causes errors to compound and spread. By measuring and recording confidence at generation, any downstream user can estimate the true reliability of what they're reusing, stopping bad information before it chains into hallucinations."
+  },
+  {
+    "gid": 187,
+    "math_tags": [
+      "learning a function from examples",
+      "separating cause from coincidence"
+    ],
+    "math_plain": "Learns which factors truly cause prediction failures on web graphs versus which are just coincidental features, applies robust adaptation when conditions change unexpectedly.",
+    "why_math": "It works because web data constantly shifts in adversarial and non-adversarial ways. By identifying what the model's decisions truly depend on versus spurious patterns, you can retrain only on the causal factors, making models robust when real conditions differ from training."
+  },
+  {
+    "gid": 188,
+    "math_tags": [
+      "measuring surprise and information",
+      "separating cause from coincidence"
+    ],
+    "math_plain": "Verifies preference labels using mathematical proofs that check hard constraints and safety rules without revealing the private data inside, measures information in the proofs not the data.",
+    "why_math": "It works because a proof that something satisfies a constraint doesn't need to expose what it is. By encoding rules as mathematical equations and proving satisfaction, you check causation—did this data actually violate safety?—purely from the proof structure, leaving raw data private."
+  },
+  {
+    "gid": 189,
+    "math_tags": [
+      "measuring similarity as nearness in a space",
+      "learning a function from examples"
+    ],
+    "math_plain": "Extracts property terms from text using optimized prompts, then scores each term by how close it sits to standardized vocabulary concepts, aligning to canonical definitions.",
+    "why_math": "It works because terms that mean the same thing should sit close together in a shared meaning space. By mapping extracted text to a standard vocabulary through nearness, you force consistency—different authors' similar ideas now use the same terms, making the knowledge graph machine-readable and reusable."
+  },
+  {
+    "gid": 190,
+    "math_tags": [
+      "learning a function from examples",
+      "measuring similarity as nearness in a space"
+    ],
+    "math_plain": "Generates entity embeddings via diffusion that start from a general space and are guided by multi-domain graphs, scores how close the final embeddings preserve both domain-general and domain-specific signals.",
+    "why_math": "It works because each knowledge graph is a partial view of the truth. Diffusion gradually refines embeddings from a neutral prior, and conditioning on all graphs at once means similar entities naturally sit close in the final space, while domain-specific differences are preserved because they're explicitly kept separate during refinement."
+  },
+  {
+    "gid": 191,
+    "math_tags": [
+      "predicting the next item in a sequence",
+      "learning a function from examples"
+    ],
+    "math_plain": "Predicts the next move or location in a trajectory by learning patterns from sequences of places and times, applying the learned patterns at location, trajectory, and region scales.",
+    "why_math": "It works because human movement is sequential—where you go next depends on where you've been. Learning from trajectories means you capture real patterns of motion that simple statistics miss, and applying the same learned patterns at all scales lets you use local knowledge to predict regional flows."
+  },
+  {
+    "gid": 192,
+    "math_tags": [
+      "separating cause from coincidence",
+      "measuring surprise and information"
+    ],
+    "math_plain": "Measures how much the model's confidence should drop when graphs are incomplete, using counterfactual changes to separate reliability that comes from reasoning versus from lucky retrieval.",
+    "why_math": "It works because overconfidence hides when models rely on luck rather than reasoning. By asking what happens if retrieved facts change, you isolate whether the model's confidence is truly caused by solid reasoning or just by having happened to fetch good data. Only cause-based confidence is trustworthy."
+  },
+  {
+    "gid": 193,
+    "math_tags": [
+      "finding the settings with least error",
+      "learning by comparison of similar and different"
+    ],
+    "math_plain": "Optimizes quantization parameters layer-by-layer to find settings that preserve normal token behavior while distorting weights to reprogram specific tokens into backdoor responses.",
+    "why_math": "It works because quantization naturally rounds weights—you need settings that hide the rounding from normal use but exploit it for attack. By learning what token pairs look similar and different in normal behavior, you find settings where backdoor tokens change but benign tokens don't, keeping the attack invisible."
+  },
+  {
+    "gid": 194,
+    "math_tags": [
+      "measuring similarity as nearness in a space",
+      "predicting the next item in a sequence"
+    ],
+    "math_plain": "Learns group embeddings where users adopting together sit close in a shared space, predicts the next group of adopters by finding nearby groups in long information cascades.",
+    "why_math": "It works because adoption spreads in groups, not individuals—one adopter influences many similar others. By placing users close in the embedding space when they adopt together, finding the next group becomes finding the nearest cluster of non-adopters, and nearness is cheap to compute even in massive cascades."
+  }
+]

@@ -1,0 +1,146 @@
+[
+  {
+    "gid": 465,
+    "math_tags": [
+      "ranking things by a learned score",
+      "separating cause from coincidence"
+    ],
+    "math_plain": "Measure how much a malicious instruction changes which documents retrieval returns.",
+    "why_math": "Detection works because poisoned content that influences retrieval jumps higher in the ranked list; the rank shift is the fingerprint of attack."
+  },
+  {
+    "gid": 466,
+    "math_tags": [
+      "weighting the parts that are most relevant",
+      "learning a function from examples"
+    ],
+    "math_plain": "Calibrate distilled knowledge by weighting underrepresented classes more heavily on each local device.",
+    "why_math": "Works because weighting amplifies the global knowledge for rare classes, preventing local data imbalance from drowning out what the global model learned about minority groups."
+  },
+  {
+    "gid": 467,
+    "math_tags": [
+      "spreading information across a network",
+      "weighting the parts that are most relevant",
+      "ranking things by a learned score"
+    ],
+    "math_plain": "Score items by spreading user preferences and criterion signals across a three-way graph of users, items, and evaluation criteria.",
+    "why_math": "Works because spreading respect the structure—information about what users value for each criterion flows through the graph and accumulates at items that match, producing the score."
+  },
+  {
+    "gid": 468,
+    "math_tags": [
+      "matching and allocating who gets what"
+    ],
+    "math_plain": "Model how data flows from citizens to government action without centralized mediation.",
+    "why_math": "Works as a framework because it visualizes the chain of translation from inputs to outputs, making allocation decisions explicit and auditable."
+  },
+  {
+    "gid": 469,
+    "math_tags": [
+      "combining many weak signals into a strong one",
+      "ranking things by a learned score"
+    ],
+    "math_plain": "Predict review quality by combining written-text features, language-model assessments, and a trained scoring model.",
+    "why_math": "Works because no single signal perfectly captures quality, but combining independent observations cancels random noise and highlights genuine patterns in review reliability."
+  },
+  {
+    "gid": 470,
+    "math_tags": [
+      "measuring similarity as nearness in a space",
+      "keeping only the few dimensions that matter",
+      "learning a function from examples"
+    ],
+    "math_plain": "Learn representations in a curved non-flat space where hierarchies among categories naturally fit without distortion.",
+    "why_math": "Works because hierarchies embed more faithfully in hyperbolic geometry—head categories sit near the origin and tail categories spread out, so distance captures the natural ranking."
+  },
+  {
+    "gid": 471,
+    "math_tags": [
+      "weighting the parts that are most relevant",
+      "separating cause from coincidence",
+      "combining many weak signals into a strong one"
+    ],
+    "math_plain": "Identify which recommendation benefits come from cross-domain knowledge, then redistribute those gains to historically disadvantaged groups.",
+    "why_math": "Works because you isolate the component of improvement that comes from outside knowledge, measure it information-theoretically, and deliberately route it to groups that received less."
+  },
+  {
+    "gid": 472,
+    "math_tags": [
+      "measuring surprise and information",
+      "ranking things by a learned score",
+      "separating cause from coincidence"
+    ],
+    "math_plain": "Measure how much each new edge deviates from the baseline propensity of two entities to interact.",
+    "why_math": "Works because every pair of entities has a natural interaction frequency; a large deviation from that frequency is the anomaly signal."
+  },
+  {
+    "gid": 473,
+    "math_tags": [
+      "keeping only the few dimensions that matter",
+      "weighting the parts that are most relevant",
+      "learning a function from examples"
+    ],
+    "math_plain": "Compress long sequences into brief summaries and gate the agent's memory to keep only states relevant to the current question.",
+    "why_math": "Works because only a tiny fraction of a long sequence ever matters to answer one question—compression extracts that fraction, and gating selection discards irrelevant memory."
+  },
+  {
+    "gid": 474,
+    "math_tags": [
+      "matching and allocating who gets what",
+      "measuring similarity as nearness in a space"
+    ],
+    "math_plain": "Map explicit relationships between Security Services, Mechanisms, Attacks, Vulnerabilities, and Assets in a dynamic graph.",
+    "why_math": "Works because once neighbors are explicitly linked, practitioners can trace the cause-and-effect chain from assets backward through vulnerabilities to root attackers."
+  },
+  {
+    "gid": 475,
+    "math_tags": [
+      "measuring similarity as nearness in a space",
+      "learning a function from examples",
+      "learning by comparison of similar and different"
+    ],
+    "math_plain": "Align image regions with fine-grained report details to learn a space where similar clinical content sits nearby.",
+    "why_math": "Works because fine-grained alignment (matching specific report phrases to specific image regions) preserves clinical semantics; coarse alignment loses details that matter."
+  },
+  {
+    "gid": 476,
+    "math_tags": [
+      "estimating probabilities from data",
+      "ranking things by a learned score",
+      "learning a function from examples"
+    ],
+    "math_plain": "Predict depression severity by scoring social media text according to metaphorical expressions and their psychological patterns.",
+    "why_math": "Works because metaphors are linguistic fingerprints of mental state; the way people describe abstract experiences through metaphor is a stable marker of depression level."
+  },
+  {
+    "gid": 477,
+    "math_tags": [
+      "measuring similarity as nearness in a space",
+      "learning by comparison of similar and different",
+      "keeping only the few dimensions that matter"
+    ],
+    "math_plain": "Learn a representation space with fixed class anchors by aligning incomplete multimodal views through hierarchical distillation.",
+    "why_math": "Works because anchoring prevents class prototypes from drifting when inputs are partial, and multi-level distillation ensures all views converge to the same stable geometry."
+  },
+  {
+    "gid": 478,
+    "math_tags": [
+      "separating cause from coincidence",
+      "finding the settings with least error",
+      "smart random sampling and averaging"
+    ],
+    "math_plain": "Screen out poisoned nodes from a private graph while maintaining differential privacy and recovering utility through trimming and fake-node pruning.",
+    "why_math": "Works because trimmed screening removes extreme anomalies without needing to know if they are attacks; the survivors form a robust graph and filtering adapts to privacy constraints."
+  },
+  {
+    "gid": 479,
+    "math_tags": [
+      "keeping only the few dimensions that matter",
+      "measuring similarity as nearness in a space",
+      "learning a function from examples"
+    ],
+    "math_plain": "Tokenize graph structures by embedding them in curved spaces using geometric vocabulary of trees, cycles, and sequences.",
+    "why_math": "Works because non-flat geometry naturally preserves graph structure without distortion—trees, cycles, and sequences embed distinctly as geometric primitives, so tokens transfer across domains."
+  }
+]

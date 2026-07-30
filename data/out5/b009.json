@@ -1,0 +1,92 @@
+[
+ {
+  "gid": 135,
+  "math_tags": ["ranking things by a learned score", "measuring similarity as nearness in a space"],
+  "math_plain": "Uses learned semantic alignment to rank and assign product types to campaigns based on content interpretation.",
+  "why_math": "It works because campaigns have consistent thematic intent; grounding that intent against the product taxonomy maps ambiguous language to concrete purchase patterns, so the model learns real causal structure from aligned labels."
+ },
+ {
+  "gid": 136,
+  "math_tags": ["combining many weak signals into a strong one", "learning a function from examples"],
+  "math_plain": "A single model learns to generate task-specific agent collaboration graphs by dynamically selecting relevant expert sub-networks based on task description.",
+  "why_math": "It works because different task types exhibit recurring structural patterns; by separating the task-aware selection from base graph prediction, the model captures what collaboration patterns work for different problem classes without overfitting to single tasks."
+ },
+ {
+  "gid": 137,
+  "math_tags": ["separating cause from coincidence", "learning a function from examples"],
+  "math_plain": "Federated clients cluster their graphs locally while decoupling public shared structure from private local patterns to align clusters despite mismatched cluster counts.",
+  "why_math": "It works because real cluster structure is partially shared and partially domain-specific; by modeling both explicitly and only aggregating the public side, each client remains aligned without forcing false consensus on granularity."
+ },
+ {
+  "gid": 138,
+  "math_tags": ["ranking things by a learned score", "separating cause from coincidence"],
+  "math_plain": "A lightweight pre-trained classifier learns to rank and localize rumor sources by scoring subgraph regions, then adapts via prompting rather than full retraining.",
+  "why_math": "It works because source localization is fundamentally about identifying which parts of the network exhibit source-like behavior; pre-training on synthetic diffusion data with prompting adaptation avoids re-running expensive simulations for each new outbreak."
+ },
+ {
+  "gid": 139,
+  "math_tags": ["separating cause from coincidence", "combining many weak signals into a strong one"],
+  "math_plain": "A federated forecaster decomposes time-series into global low-frequency shared patterns and client-specific high-frequency patterns, then recombines them for prediction.",
+  "why_math": "It works because real time-series have universal rhythms shared across clients and unique local variations; by splitting these and handling them separately before fusion, the model captures what generalizes across domains without forcing clients to agree on all details."
+ },
+ {
+  "gid": 140,
+  "math_tags": ["measuring similarity as nearness in a space", "learning a function from examples"],
+  "math_plain": "Represents users and items on an adaptive curved manifold where the local geometry adjusts to match graph topology, enabling similarity to be measured as shortest path distance.",
+  "why_math": "It works because real user-item graphs have varying density and structure; by letting the geometric space bend to fit the actual topology rather than forcing flat-space assumptions, distances in the manifold capture true behavioral similarity."
+ },
+ {
+  "gid": 141,
+  "math_tags": ["learning by comparison of similar and different", "weighting the parts that are most relevant"],
+  "math_plain": "A cross-level mechanism first grounds text descriptions in visual context, then uses those descriptions to focus the visual encoder on anomalous regions.",
+  "why_math": "It works because fine-grained defects require top-down linguistic guidance combined with bottom-up visual focus; by enforcing sequential alignment where vision informs text and text refocuses vision, the model grounds semantics in diagnostic reality rather than treating modalities independently."
+ },
+ {
+  "gid": 142,
+  "math_tags": ["learning a function from examples", "measuring surprise and information"],
+  "math_plain": "An LLM learns graph-to-text alignment by reconstructing graph structure from its internal token outputs, adding explicit graph supervision to language-only instruction tuning.",
+  "why_math": "It works because text-only supervision creates asymmetry where language dominates and graph context is underutilized; by requiring reconstruction of the original graph, you force the model to preserve all information, making alignment bidirectional rather than text-biased."
+ },
+ {
+  "gid": 143,
+  "math_tags": ["estimating probabilities from data", "measuring surprise and information"],
+  "math_plain": "Combines a ranking model's scores with a probability sample of documents to estimate true recall without judging the entire corpus, enabling early stopping decisions.",
+  "why_math": "It works because the ranker's scores act as an informative prior about which documents are likely relevant; updating that prior with random samples gives unbiased estimates, and confidence bounds tell you when additional sampling won't substantially improve the estimate."
+ },
+ {
+  "gid": 144,
+  "math_tags": ["measuring similarity as nearness in a space", "spreading information across a network"],
+  "math_plain": "Dynamically extracts query-relevant subgraphs by finding attributed communities that match the question, then passes these self-complementary subgraphs to the LLM.",
+  "why_math": "It works because knowledge bases have natural clusters of related facts; retrieving an entire community around query-relevant nodes captures implicit context and connections that single-node or low-order retrieval would miss, enriching the LLM's grounding."
+ },
+ {
+  "gid": 145,
+  "math_tags": ["matching and allocating who gets what", "estimating probabilities from data"],
+  "math_plain": "Determines fair prices for data by balancing supply and demand while allowing each data record to be sold to multiple buyers simultaneously.",
+  "why_math": "It works because data is non-rival but does degrade predictive performance when shared; equilibrium prices reflect both intrinsic scarcity and the marginal value each buyer extracts, settling at a price where no buyer or seller wants to deviate."
+ },
+ {
+  "gid": 146,
+  "math_tags": ["combining many weak signals into a strong one", "separating cause from coincidence"],
+  "math_plain": "A gated mixture model decomposes deepfakes into semantic content variations and forgery technique artifacts, learning separate branches for each to improve generalization.",
+  "why_math": "It works because deepfakes from different techniques have distinct failure modes; treating all fakes identically obscures these patterns, but disentangling technique-specific artifacts allows the model to learn what actually distinguishes real from fake within each generation method."
+ },
+ {
+  "gid": 147,
+  "math_tags": ["separating cause from coincidence", "keeping only the few dimensions that matter"],
+  "math_plain": "Analyzes pointer patterns to partition memory into isolated regions, then rewrites the binary to map each region to separate memory instances without adding runtime checks.",
+  "why_math": "It works because memory safety violations depend on spatial locality; by enforcing boundaries only where they matter (region transitions), you prevent exploits while avoiding the cost of checking every access."
+ },
+ {
+  "gid": 148,
+  "math_tags": ["estimating probabilities from data", "predicting the next item in a sequence"],
+  "math_plain": "Uses conditional probability of power load given the past 60 seconds of history to predict upcoming battery demand and reduce uncertainty.",
+  "why_math": "It works because driver behavior is partially predictable within short windows; conditioning on recent history removes noise from one-shot predictions and captures momentum in usage patterns, revealing true upcoming load better than static averages."
+ },
+ {
+  "gid": 149,
+  "math_tags": ["learning by comparison of similar and different", "separating cause from coincidence"],
+  "math_plain": "Mines category-specific behavior patterns from sequences and contextualizes action semantics to distinguish illicit from benign accounts even when actions look identical.",
+  "why_math": "It works because illicit actors follow regularities like benign users, but patterns differ; by extracting behavior sequences rather than profiles and adjusting action meaning by context, the model captures that the same action serves different purposes under different conditions."
+ }
+]

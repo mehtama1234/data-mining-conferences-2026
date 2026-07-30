@@ -1,0 +1,132 @@
+[
+  {
+    "gid": 90,
+    "math_tags": [
+      "weighting the parts that are most relevant",
+      "learning by comparison of similar and different"
+    ],
+    "math_plain": "Prompting uses structured instructions and examples to guide what the model generates, filtering risky outputs before deployment.",
+    "why_math": "Text generation learns statistical patterns from training data; explicit instructions and examples steer that learned pattern-matching toward safe, useful outputs."
+  },
+  {
+    "gid": 91,
+    "math_tags": [
+      "ranking things by a learned score"
+    ],
+    "math_plain": "Web success evolved from ranking documents by relevance to ranking experiences by user satisfaction over time.",
+    "why_math": "Experience metrics aggregate signals from repeated interactions; persistent value is more predictive of system utility than isolated relevance judgments."
+  },
+  {
+    "gid": 92,
+    "math_tags": [
+      "measuring similarity as nearness in a space",
+      "weighting the parts that are most relevant"
+    ],
+    "math_plain": "Combines images and product descriptions into a shared measurement space, refining similarity step-by-step from category match to specific product differences.",
+    "why_math": "When image and text representations sit close in the same space, find similar becomes find nearby; progressively forcing them into alignment ensures only truly matched items cluster."
+  },
+  {
+    "gid": 93,
+    "math_tags": [
+      "separating cause from coincidence",
+      "measuring similarity as nearness in a space"
+    ],
+    "math_plain": "Learns to score groups of accounts as potential fraud rings by optimizing to detect coordinated manipulation patterns in their collective behavior.",
+    "why_math": "Coordinated fraud creates statistical signatures—temporal alignment, mutual reinforcement—that individual-account scoring misses; group-level scoring exploits those collective patterns."
+  },
+  {
+    "gid": 94,
+    "math_tags": [
+      "separating cause from coincidence",
+      "smart random sampling and averaging"
+    ],
+    "math_plain": "Attackers inject false data to corrupt learned entity representations in a system; defense detects outlier density in representation space to identify attackers.",
+    "why_math": "Clean data produces densely clustered representations; poisoned data creates anomalous density gaps; density is a scalar that separates good clients from bad ones."
+  },
+  {
+    "gid": 95,
+    "math_tags": [
+      "keeping only the few dimensions that matter",
+      "learning by comparison of similar and different"
+    ],
+    "math_plain": "Learns separate dimensions for different user interests using curved space geometry that naturally models hierarchies without requiring labeled environments.",
+    "why_math": "Hyperbolic geometry compresses hierarchies efficiently; disentangling dimensions removes confounding, letting each dimension capture one pure interest type."
+  },
+  {
+    "gid": 96,
+    "math_tags": [
+      "ranking things by a learned score",
+      "weighting the parts that are most relevant"
+    ],
+    "math_plain": "Retrieves reasoning paths from knowledge graphs and trains the model to rank them by semantic relevance, then reasons using only the ranked useful paths.",
+    "why_math": "Explicit ranking via preference signals teaches the model to ignore noise; small models benefit from curated, organized inputs over raw unfiltered retrieval."
+  },
+  {
+    "gid": 97,
+    "math_tags": [
+      "separating cause from coincidence",
+      "learning a function from examples"
+    ],
+    "math_plain": "Uses language models to extract high-level meaning from news and user behavior, then learns domain-aware patterns that transfer to unseen news domains.",
+    "why_math": "High-level semantics like story type and user intent are more stable across domains than surface patterns; learning from semantics generalizes when raw words shift."
+  },
+  {
+    "gid": 98,
+    "math_tags": [
+      "measuring similarity as nearness in a space"
+    ],
+    "math_plain": "Measures deployment of foundational security practices across the Internet using standardized, non-invasive indicators that capture the Internet security baseline.",
+    "why_math": "Standardized metrics aggregate heterogeneous systems into comparable scores; non-invasive measurement scales to measure entire Internet populations without damage."
+  },
+  {
+    "gid": 99,
+    "math_tags": [
+      "learning a function from examples",
+      "combining many weak signals into a strong one"
+    ],
+    "math_plain": "Checks images, text, and their consistency separately as three binary decisions, then fuses them into one of eight explicit categories to classify disinformation type.",
+    "why_math": "Explicit mutual exclusivity removes ambiguity; parallel checks exploit that modality-specific truth is easier to learn than joint truth in high-dimensional space."
+  },
+  {
+    "gid": 100,
+    "math_tags": [
+      "separating cause from coincidence",
+      "learning by comparison of similar and different"
+    ],
+    "math_plain": "Generates synthetic examples where correlations flip to teach the model which patterns are causal versus accidental, then filters to causal features only.",
+    "why_math": "Counterfactuals break spurious correlations—if changing a feature breaks the label when true causation says it shouldn't, that feature is spurious; comparison isolates cause."
+  },
+  {
+    "gid": 101,
+    "math_tags": [
+      "finding the settings with least error",
+      "following the slope downhill to improve"
+    ],
+    "math_plain": "Finds the cheapest set of network nodes to remove that disconnects the giant connected component; efficiently recomputes results using tree-based index structures.",
+    "why_math": "Reverse dismantling exploits that removing high-impact nodes first is more efficient than forward trials; tree caches intermediate results to avoid redundant recomputation."
+  },
+  {
+    "gid": 102,
+    "math_tags": [],
+    "math_plain": "Workshop exploring zero-knowledge proofs, blockchain, and post-quantum cryptography for building decentralized systems with privacy-preserving identity and trust.",
+    "why_math": "Zero-knowledge protocols prove facts without revealing data; post-quantum algorithms resist cryptographic break once quantum computers arrive; decentralization removes single points of trust failure."
+  },
+  {
+    "gid": 103,
+    "math_tags": [
+      "measuring similarity as nearness in a space",
+      "combining many weak signals into a strong one"
+    ],
+    "math_plain": "Retrieves explanatory email discussions from IETF archives by matching relevance to the protocol decision, then synthesizes those scattered arguments into clear rationale.",
+    "why_math": "Email archives contain rationale; semantic similarity retrieval finds relevant context; aggregating multiple arguments from different authors into coherent explanation leverages collective reasoning."
+  },
+  {
+    "gid": 104,
+    "math_tags": [
+      "finding the settings with least error",
+      "following the slope downhill to improve"
+    ],
+    "math_plain": "Trains an agent via reinforcement learning to select a three-pool arbitrage path and trade size to maximize profit under real constraints like gas and latency.",
+    "why_math": "Exhaustive search finds true optimum but is too slow for blockchain execution; learned policies approximate quickly; reinforcement learning updates policy toward high-reward decisions."
+  }
+]

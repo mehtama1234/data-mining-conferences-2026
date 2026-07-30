@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 405,
+    "math_tags": ["measuring surprise and information", "weighting the parts that are most relevant"],
+    "math_plain": "Measures how a review system's decisions change when text, tables, and formulas are altered, revealing weak points.",
+    "why_math": "It works because small changes that don't affect true meaning (perturbations) expose whether the model is truly understanding the paper or relying on brittle patterns. If decisions flip under these changes, the system isn't robust."
+  },
+  {
+    "gid": 406,
+    "math_tags": ["ranking things by a learned score", "measuring similarity as nearness in a space"],
+    "math_plain": "Learns how to score which language model and reasoning strategy to use for each question, picking the best pair within budget.",
+    "why_math": "It works because you don't need to understand why a model is good—just recognize patterns in its behavior (cost and accuracy) on different types of queries. Close behavioral similarities in the learned space mean similar model performance."
+  },
+  {
+    "gid": 407,
+    "math_tags": ["measuring similarity as nearness in a space", "learning a function from examples"],
+    "math_plain": "Fuses visual and text features to score which cover image best matches a user's interests, from few examples.",
+    "why_math": "It works because people's visual preferences cluster; if you place images near each other when users consistently like both, then matching a new image to user preferences becomes finding the nearest neighbors in that space."
+  },
+  {
+    "gid": 408,
+    "math_tags": ["learning a function from examples", "ranking things by a learned score"],
+    "math_plain": "Learns which text segments and words belong to each label by following explicit reasoning chains, improving label assignment.",
+    "why_math": "It works because step-by-step reasoning reveals why each piece of text actually connects to a label. Making the reasoning explicit forces the model to find real justifications rather than spurious correlations."
+  },
+  {
+    "gid": 409,
+    "math_tags": ["matching and allocating who gets what", "ranking things by a learned score"],
+    "math_plain": "Chooses which item to give each user based on expected reward, but reserves high-value items for users who benefit most from them.",
+    "why_math": "It works because greedy selection (always pick the highest reward) exhausts the best items before they reach the users who need them most. Smart allocation spreads scarce resources to maximize total benefit."
+  },
+  {
+    "gid": 410,
+    "math_tags": ["learning a function from examples", "predicting the next item in a sequence"],
+    "math_plain": "Trains the model to first generate written reasoning about why a user likes items, then predict the next item based on that reasoning.",
+    "why_math": "It works because making the reasoning explicit lets the model rehearse its logic before deciding. Humans reason out loud before acting; training a model to do the same unlocks better sequential predictions."
+  },
+  {
+    "gid": 411,
+    "math_tags": ["ranking things by a learned score", "combining many weak signals into a strong one"],
+    "math_plain": "Combines multiple reasoning paths (user intent, attribute matching, business rules) to score relevance, then compresses this into a fast model.",
+    "why_math": "It works because e-commerce relevance is genuinely multi-faceted: no single view is sufficient. Combining diverse reasoning paths captures the full picture. Compression into a faster model preserves the reasoning structure so it still explains decisions."
+  },
+  {
+    "gid": 412,
+    "math_tags": ["separating cause from coincidence", "learning a function from examples"],
+    "math_plain": "Selects training examples where different models disagree most, focusing on cases that expose shortcut patterns instead of real causes.",
+    "why_math": "It works because disagreement signals confusion: when local and global models differ most, the model is likely leaning on client-specific spurious patterns. Training on these examples teaches the model to ignore the misleading signals."
+  },
+  {
+    "gid": 413,
+    "math_tags": ["measuring similarity as nearness in a space", "predicting the next item in a sequence"],
+    "math_plain": "Builds a learned graph structure from signal measurements and propagates information across it to predict indoor wireless signal strength and quality.",
+    "why_math": "It works because wireless signals don't travel in straight lines—they bounce and bend. A learned graph captures these hidden paths. Once you know which measurements are related, spreading information along those connections recovers the signal everywhere."
+  },
+  {
+    "gid": 414,
+    "math_tags": ["ranking things by a learned score", "weighting the parts that are most relevant"],
+    "math_plain": "Uses importance scores (Shapley values) to identify which edges are least important and removes them without hurting accuracy.",
+    "why_math": "It works because Shapley values fairly distribute credit: an edge that barely influences predictions gets low credit. Removing low-credit edges keeps the model's decisions intact because those edges weren't doing much work anyway."
+  },
+  {
+    "gid": 415,
+    "math_tags": ["measuring surprise and information", "combining many weak signals into a strong one"],
+    "math_plain": "Samples key messages from social streams using information entropy and augments them with retrieved knowledge to track events over time.",
+    "why_math": "It works because entropy measures surprise: high-entropy messages are genuinely informative (surprising). Filtering for high-entropy content cuts noise and focuses on real signals. Augmentation with retrieved context fills gaps that fragmented posts can't cover alone."
+  },
+  {
+    "gid": 416,
+    "math_tags": ["measuring similarity as nearness in a space", "combining many weak signals into a strong one"],
+    "math_plain": "Builds a dynamic graph with three types of relationships (timing, meaning, anomaly tendency) and propagates information across them to detect anomalies.",
+    "why_math": "It works because anomalies hide in relationships: a single event might be normal, but the pattern of when and how it appears with others is not. Multiple relationship types together capture the full context that any single view misses."
+  },
+  {
+    "gid": 417,
+    "math_tags": ["measuring similarity as nearness in a space", "ranking things by a learned score"],
+    "math_plain": "Encodes point clouds and text into the same space, then uses proximity in that space to navigate toward requested objects without training.",
+    "why_math": "It works because vision-language models already understand both scenes and goals from their training. If you place points and goals in the same space using these pre-trained scores, proximity naturally aligns: nearby points help reach goals."
+  },
+  {
+    "gid": 418,
+    "math_tags": ["ranking things by a learned score", "combining many weak signals into a strong one"],
+    "math_plain": "Routes each user or item to the best language models by similarity, then combines recommendations from all selected models.",
+    "why_math": "It works because language models have different strengths; no single model knows everything. If you measure which model is 'most similar' to each user's profile, you route them to their best-fit expert, then merge insights from all experts."
+  },
+  {
+    "gid": 419,
+    "math_tags": ["measuring surprise and information", "separating cause from coincidence"],
+    "math_plain": "Detects when the model is guessing by measuring uncertainty (entropy) about entities and statements, then fetches clarifying facts in real-time.",
+    "why_math": "It works because high entropy signals doubt: when a model is unsure about a fact, it's likely to hallucinate. Measuring uncertainty tells you exactly when to fetch real information. This beats always fetching (wasteful) and never fetching (risky)."
+  }
+]

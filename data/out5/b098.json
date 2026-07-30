@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 1470,
+    "math_tags": ["measuring similarity as nearness in a space", "weighting the parts that are most relevant", "separating cause from coincidence"],
+    "math_plain": "Finding relevant documents from scientific literature by ranking them by how closely their content matches climate evidence, accounting for geographic and temporal context.",
+    "why_math": "It works because when you treat documents as locations in a space where similar topics sit near each other, you can find what you need by measuring distance. Adding weights for geography and time ensures the most relevant evidence ranks first, filtering out noise and bias."
+  },
+  {
+    "gid": 1471,
+    "math_tags": ["ranking things by a learned score", "measuring similarity as nearness in a space", "weighting the parts that are most relevant"],
+    "math_plain": "Scoring search results and recommendations by learning which features matter for each person, while detecting and correcting bias that would unfairly rank results.",
+    "why_math": "Learning lets you fit the score function to real user behavior, and weighting lets you dampen the influence of features that encode unfair distinctions. Measuring bias and fairness directly makes it possible to catch when outcomes harm minorities."
+  },
+  {
+    "gid": 1472,
+    "math_tags": ["separating cause from coincidence", "learning a function from examples", "combining many weak signals into a strong one"],
+    "math_plain": "Moving beyond keyword matching by learning to enforce logical rules, combine multiple pieces of evidence, and perform multi-step reasoning when answering questions.",
+    "why_math": "Reasoning works because it explicitly models the logical structure of the problem—what must follow from what, which paths lead to valid conclusions, and how to combine evidence without mixing causes with accidents. Treating reasoning as a structured process, not just pattern-matching, guarantees you won't draw false conclusions."
+  },
+  {
+    "gid": 1473,
+    "math_tags": ["ranking things by a learned score", "measuring similarity as nearness in a space", "following the slope downhill to improve"],
+    "math_plain": "Personalizing search and recommendation by learning which documents and items matter for each user, at three stages: choosing what to fetch, ranking what you found, and phrasing the answer.",
+    "why_math": "Learning the user's preferences from their history lets you tailor the score function; personalizing at multiple stages compounds the effect because each stage can refine the result. This is more effective than one-size-fits-all because different users need different evidence."
+  },
+  {
+    "gid": 1474,
+    "math_tags": ["learning a function from examples", "measuring similarity as nearness in a space", "separating cause from coincidence"],
+    "math_plain": "Simulating user behavior by learning structured profiles and checking whether simulated choices match the real people they represent, to test if search and recommendation systems are fair.",
+    "why_math": "A simulator is only trustworthy if you can trace why it made each choice and verify that choice reflects the user it claims to represent, not the model's hidden biases. Auditing each component—profile, contract, execution, feedback—catches bias before it harms real users."
+  },
+  {
+    "gid": 1475,
+    "math_tags": ["ranking things by a learned score", "learning a function from examples", "combining many weak signals into a strong one"],
+    "math_plain": "Retrieving relevant documents from large collections using efficient keyword methods, reranking top results with learned scoring, and generating answer text in one unified pipeline.",
+    "why_math": "A two-stage approach works: keyword search is fast and broad, learned reranking is precise on top results, and neural generation synthesizes the final answer. Each stage compounds effectiveness because each passes only its best results forward."
+  },
+  {
+    "gid": 1476,
+    "math_tags": ["predicting the next item in a sequence", "measuring similarity as nearness in a space", "learning a function from examples"],
+    "math_plain": "Finding documents relevant at specific times by extracting when events occurred, ranking documents by temporal validity, and reasoning about time in multi-step question answering.",
+    "why_math": "Time is a crucial dimension because information changes: a fact true in 2020 may be false in 2026. When you explicitly model when something is valid and rank by temporal relevance, you avoid serving outdated or future information. Time-aware ranking makes the system adaptive to reality's evolution."
+  },
+  {
+    "gid": 1477,
+    "math_tags": ["ranking things by a learned score", "combining many weak signals into a strong one", "matching and allocating who gets what"],
+    "math_plain": "Recommending products by using multiple AI agents that reason about the user's goals, call tools to search and filter inventory, and coordinate to rank products across multiple stages of decision.",
+    "why_math": "One agent can't see everything or reason about all constraints, but multiple agents can divide the problem: one understands the user, one searches inventory, one ranks by price, one by reviews. Combining their signals beats any single score because each agent specializes in one aspect."
+  },
+  {
+    "gid": 1478,
+    "math_tags": ["learning a function from examples", "following the slope downhill to improve", "ranking things by a learned score"],
+    "math_plain": "Personalizing language model outputs by learning user memories and preferences, then adjusting the model's generation at inference time to match each person's style and goals.",
+    "why_math": "Language models are generic; personalizing them works by storing what you learn about each user and steering the model toward that user's context at each step. Learning to adapt the model to user context beats using the same generic model for everyone because context shapes what the right answer is."
+  },
+  {
+    "gid": 1479,
+    "math_tags": ["ranking things by a learned score", "measuring similarity as nearness in a space", "matching and allocating who gets what"],
+    "math_plain": "Ranking products for online shoppers by scoring item relevance and purchase intent, blending organic results with sponsored ads, and optimizing for cart additions and sales.",
+    "why_math": "Online shopping differs from web search: the signal is whether people buy, not just click. Scoring for purchase intent works because it directly optimizes for the business goal. Blending organic and sponsored results fairly is a matching problem: pairing the right product to the right user at the right rank."
+  },
+  {
+    "gid": 1480,
+    "math_tags": ["learning a function from examples", "separating cause from coincidence", "measuring surprise and information"],
+    "math_plain": "Explaining why a search result or recommendation was shown by identifying which input features influenced the score most and measuring whether the explanation helps humans trust the system.",
+    "why_math": "An explanation is trustworthy only if it points to the real reasons, not post-hoc rationalizations. Measuring cause—which features actually moved the score—requires methods that isolate each feature's effect. Information theory measures how much the explanation reduces uncertainty about the system's decision."
+  },
+  {
+    "gid": 1481,
+    "math_tags": ["ranking things by a learned score", "predicting the next item in a sequence", "learning a function from examples"],
+    "math_plain": "Answering questions asked conversationally by holding context from previous turns, retrieving relevant facts, and generating multi-turn responses that adapt to what the user just said.",
+    "why_math": "Conversation is sequence: each turn depends on all prior turns. Learning to rank and generate conditioned on conversation history works because it models the temporal dependency—you answer differently after context changes. Personalization compounds this because you also adapt to the individual user."
+  },
+  {
+    "gid": 1482,
+    "math_tags": ["finding the settings with least error", "learning a function from examples", "measuring similarity as nearness in a space"],
+    "math_plain": "Measuring and reducing the cost (latency, memory, compute) of neural retrieval models while keeping search quality high, using standardized benchmarks so different systems can be fairly compared.",
+    "why_math": "Efficiency matters because slow systems hurt real users and waste resources. Finding the settings that minimize cost while keeping quality high is a constrained optimization problem. Fair comparison requires identical hardware and metrics, so you don't accidentally favor models that happen to run on expensive machines."
+  },
+  {
+    "gid": 1483,
+    "math_tags": ["separating cause from coincidence", "measuring similarity as nearness in a space", "measuring surprise and information"],
+    "math_plain": "Evaluating search and recommendation systems in an environment where some content is made by AI, distinguishing real information from generated content, and measuring whether users can tell the difference.",
+    "why_math": "Mixed environments of real and synthetic content break traditional metrics because a system might rank generated garbage highly if it happens to match keywords. Measuring whether users trust the result requires auditing whether retrieved content is verifiable. When you know which content is synthetic, you can catch ranking failures."
+  },
+  {
+    "gid": 1484,
+    "math_tags": ["separating cause from coincidence", "measuring surprise and information", "weighting the parts that are most relevant"],
+    "math_plain": "Designing search systems that resist corporate control and support democracy by auditing whose voices get amplified, which information sources are suppressed, and how ranking choices entrench or reduce power imbalances.",
+    "why_math": "Search is political because ranking chooses whose information reaches whom. Separating truth from manipulation requires auditing the choices: which stories rise, which stay buried. Weighting voices fairly—by merit, not profit—is a design choice, not an accident. Measuring whose interests a system serves exposes whose freedom it supports or restricts."
+  }
+]

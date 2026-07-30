@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 1350,
+    "math_tags": ["ranking things by a learned score", "learning a function from examples"],
+    "math_plain": "A system learns to rewrite search queries to match mainstream search intents, scoring rewrites by how well they align with what populations search for.",
+    "why_math": "It works because population-level patterns reveal what most people actually want to find; by learning this intent from search logs, rewrites naturally align with real user goals. The learned rewriter improves on fixed rules because it discovers patterns that static templates miss."
+  },
+  {
+    "gid": 1351,
+    "math_tags": ["learning by comparison of similar and different", "separating cause from coincidence"],
+    "math_plain": "Multiple independent judges evaluate both a claim and a deliberately constructed opposite claim, then compare their reasoning to decide what is actually true.",
+    "why_math": "It works because disagreement forces each judge to defend their position against direct contradictions, revealing which arguments hold up under scrutiny. When both versions are rejected or both accepted, exchanging reasoning uncovers flawed shared assumptions that isolated judges would miss."
+  },
+  {
+    "gid": 1352,
+    "math_tags": ["ranking things by a learned score", "learning a function from examples"],
+    "math_plain": "A neural model learns to predict click rates while being trained to also predict whether its scores fairly represent different groups of items.",
+    "why_math": "It works because calibration (predicting fairness alongside predictions) prevents the model from relying on shortcuts that work for frequent items but fail for rare ones. When scoring is constrained to be honest across all groups, downstream systems that multiply scores by other factors (like auction bids) work correctly."
+  },
+  {
+    "gid": 1353,
+    "math_tags": ["learning by comparison of similar and different", "measuring similarity as nearness in a space"],
+    "math_plain": "User representations are learned by placing users close to items they engaged with and far from items they couldn't have seen due to geographic limits.",
+    "why_math": "It works because true negatives (items users genuinely cannot see) are different from false negatives (items they could see but didn't). Treating impossible items as negatives teaches the model false distinctions; using only feasible items teaches which real users differ."
+  },
+  {
+    "gid": 1354,
+    "math_tags": ["predicting the next item in a sequence", "ranking things by a learned score"],
+    "math_plain": "A system tracks the medical conversation state, retrieves question candidates filtered by what makes sense given that state, then ranks them using data on which questions users actually chose.",
+    "why_math": "It works because medical consultations follow patterns; knowing the dialogue state (what was discussed, what condition) narrows possibilities to relevant ones. Ranking by real user preferences (not guesses) ensures suggested questions actually help the conversation."
+  },
+  {
+    "gid": 1355,
+    "math_tags": ["measuring similarity as nearness in a space", "learning a function from examples"],
+    "math_plain": "Gestures (screen touches, swipes, taps) are grouped into clusters so that identity-revealing patterns in how people hold and manipulate a device become distinct signals for recommending.",
+    "why_math": "It works because gesture patterns are instant (no history needed) yet encode habit—identical twins don't swipe the same way. Clustering separates identity signals so cleanly that the main recommender receives explicit cues about who is touching the screen, enabling real-time user disentanglement."
+  },
+  {
+    "gid": 1356,
+    "math_tags": ["ranking things by a learned score", "learning a function from examples"],
+    "math_plain": "Flight rankings are scored using both relevance and user sensitivity to price changes, dynamically adjusting which flights rank high based on whether a person will tolerate fare surprises.",
+    "why_math": "It works because two people finding the same flight relevant does not mean showing both will convert equally; one might abandon if the price jumps, the other won't. Scoring by relevance times sensitivity per individual prevents wasted ranking effort on flights that will shock away price-sensitive users."
+  },
+  {
+    "gid": 1357,
+    "math_tags": ["learning a function from examples", "ranking things by a learned score"],
+    "math_plain": "Knowledge learned from precise flight searches is transferred to a smaller model for fuzzy searches using three layers of hints: feature alignment, confidence-weighted transfer, and ranking order preservation.",
+    "why_math": "It works because fuzzy search data is sparse but precise search is rich; precise search fundamentals (what makes a flight attractive) are reusable. The three alignment layers ensure the smaller model doesn't just copy rules but learns to adapt: features map correctly, weak confidence signals are filtered out, and relative preferences stay consistent."
+  },
+  {
+    "gid": 1358,
+    "math_tags": ["ranking things by a learned score", "separating cause from coincidence"],
+    "math_plain": "Ads are ranked offline using language models to filter by relevance and neural networks to rank by conversion, ensuring only high-quality candidates reach online systems.",
+    "why_math": "It works because online systems have strict latency limits, so only a tiny fraction of candidates can be scored; offline scoring with powerful models has no speed constraint and can eliminate irrelevant noise beforehand. This frees online systems to focus ranking effort on the best candidates."
+  },
+  {
+    "gid": 1359,
+    "math_tags": ["measuring similarity as nearness in a space", "learning a function from examples"],
+    "math_plain": "Long-tail (unpopular) local items are given stronger representations by aligning them with spatial attributes, so they compete fairly against popular items in recommendation.",
+    "why_math": "It works because spatial attributes anchor unpopular items to meaningful features they share; this makes their representations less dependent on sparse interaction history. When weak signals get tied to what they truly are (a restaurant in a neighborhood, a service available in a zone), recommenders find them more easily."
+  },
+  {
+    "gid": 1360,
+    "math_tags": ["ranking things by a learned score", "learning a function from examples"],
+    "math_plain": "A copilot rewrites each customer message into a complete, standalone question, retrieves relevant policies and procedures, then generates a draft response based on all three.",
+    "why_math": "It works because customer messages alone are ambiguous—rewriting makes them self-contained so context is never lost. Ranking relevant policies ensures responses align with actual company practice. The draft+edit model lets humans verify that automation hasn't hallucinated while cutting the time they spend on routine reasoning."
+  },
+  {
+    "gid": 1361,
+    "math_tags": ["learning a function from examples", "ranking things by a learned score"],
+    "math_plain": "Telecom user signals (calls, app usage, location) are converted into structured personas that are then injected into language model responses to personalize answers.",
+    "why_math": "It works because raw signals (call duration, app opens, location) are noisy; structuring them into personas (preferences, constraints, context) gives the language model semantically meaningful input. Personas act as filters: instead of the model guessing what matters, it gets explicit signals about the person it's addressing."
+  },
+  {
+    "gid": 1362,
+    "math_tags": ["learning a function from examples"],
+    "math_plain": "A model trained on a few hundred labeled examples within a specialized domain performs as well as models trained on much larger domain-adaptive pretraining.",
+    "why_math": "It works because generic pretraining teaches broad patterns but fine-tuning on domain examples teaches the specific distinctions that matter. When domain data is scarce, fine-tuning focus beats pretraining breadth because the model concentrates on exactly what the domain needs."
+  },
+  {
+    "gid": 1363,
+    "math_tags": ["separating cause from coincidence", "learning a function from examples"],
+    "math_plain": "Constraints users state in conversation are classified (identity, contextual, session) and their relevance is scored when users switch product categories, preserving only the ones that still apply.",
+    "why_math": "It works because not all constraints are equally sticky; an ingredient preference (identity) transfers across product changes, but a temporal one (needed today) doesn't. Scoring relevance per constraint type prevents over-constrained queries (zero results) while respecting user intent."
+  },
+  {
+    "gid": 1364,
+    "math_tags": ["learning a function from examples", "separating cause from coincidence"],
+    "math_plain": "Supervision for search ranking only uses query-result pairs where both click signals and language model judgments agree, filtering out pairs where they disagree.",
+    "why_math": "It works because clicks are behavioral (people are biased, multitasking) while language model judgments are semantic (pure relevance); agreement means the pair is genuinely good by both lenses. Disagreement often signals label noise, so keeping only agreements trains cleaner models despite having fewer examples."
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 60,
+    "math_tags": ["ranking things by a learned score", "separating cause from coincidence"],
+    "math_plain": "Decompose popularity bias into item-side and user-side causes, then score recommendations by how well they disentangle these causes from each other.",
+    "why_math": "It works because when you identify what drives bias separately (whether it's the item's inherent appeal or the user's tendency to like popular things), you can score recommendations that address the real cause rather than treating bias as a single monolithic problem. Separating causes from coincidence lets you fix the root issue, not just the symptom."
+  },
+  {
+    "gid": 61,
+    "math_tags": ["following the slope downhill to improve", "measuring surprise and information", "combining many weak signals into a strong one"],
+    "math_plain": "Learn what makes good recommendations by following feedback signals downhill while scrambling and blurring the feedback data itself so no one can read the individual signals.",
+    "why_math": "It works because learning from feedback only needs statistical patterns in aggregate, not individual signals. Obscuring each signal while preserving enough information to guide learning lets you improve recommendations without exposing private details—the blurring destroys the granular data while the aggregated shape still points downhill toward better decisions."
+  },
+  {
+    "gid": 62,
+    "math_tags": ["learning a function from examples", "separating cause from coincidence"],
+    "math_plain": "Train specialized models on labeled stories to recognize whether content fits different safety categories, rather than asking a general model to guess without seeing examples.",
+    "why_math": "It works because showing examples teaches a model the actual patterns that distinguish safe from unsafe content in context. General models must guess; models trained on your specific examples learn the subtle distinctions (tone, subtext, cultural context) that matter for your domain, not generic rules."
+  },
+  {
+    "gid": 63,
+    "math_tags": ["measuring similarity as nearness in a space", "weighting the parts that are most relevant"],
+    "math_plain": "Identify which objects in images and text are central to the item, then weight their representations more heavily so that core content dominates over decorative elements.",
+    "why_math": "It works because items always contain both essential and cosmetic parts, but standard methods treat them equally. Identifying and emphasizing what's truly important lets the recommendation score reflect what the item actually offers, not noise from background decoration or irrelevant context."
+  },
+  {
+    "gid": 64,
+    "math_tags": ["measuring similarity as nearness in a space", "combining many weak signals into a strong one", "predicting the next item in a sequence"],
+    "math_plain": "Break complex questions into smaller steps, gather evidence from charts, tables, and text across many documents, then combine all the partial answers into one final answer.",
+    "why_math": "It works because one document often holds only pieces of the answer. By decomposing questions into simpler parts and gathering evidence across modalities and sources, each piece becomes easier to answer correctly, and combining them bridges to the full answer. Multiple weak signals (one chart, one table, one passage) fuse into a strong signal when orchestrated across steps."
+  },
+  {
+    "gid": 65,
+    "math_tags": ["measuring surprise and information", "smart random sampling and averaging", "weighting the parts that are most relevant"],
+    "math_plain": "Estimate how hard each batch of data is to compress, then assign more experts to hard batches and simpler experts to easy ones, routing each piece to the expert best suited to it.",
+    "why_math": "It works because different data has different complexity (one video is simple, another is intricate). Matching expert capacity to complexity improves efficiency: simple data doesn't waste resources, hard data gets the attention it needs. Surprise (entropy) measures complexity directly, so it naturally tells you which expert to use."
+  },
+  {
+    "gid": 66,
+    "math_tags": ["measuring similarity as nearness in a space", "learning a function from examples"],
+    "math_plain": "Automatically adjust how the graph is drawn for each instance so that structural properties stand out visually, then train a model to recognize those properties in the pictures.",
+    "why_math": "It works because a single fixed drawing can hide properties or make them hard to see in the image. Adapting the layout to highlight the property being checked (Hamiltonian cycle looks like one route, planarity looks like no crossings) makes the property visible in the pixel patterns the model learns from. The right visualization makes the math obvious."
+  },
+  {
+    "gid": 67,
+    "math_tags": ["separating cause from coincidence", "ranking things by a learned score"],
+    "math_plain": "Plan which medical facts are safe to mention for a disease, then score the model's answer by whether it stays within the plan and doesn't invent facts not in the knowledge base.",
+    "why_math": "It works because hallucination happens when a model generates plausible-sounding text unconstrained by truth. By first enumerating which facts are permissible (grounding in a curated database), then measuring whether the answer stays within that boundary, you separate what is actually known (in the database) from what the model merely imagines to be true."
+  },
+  {
+    "gid": 68,
+    "math_tags": ["measuring similarity as nearness in a space", "combining many weak signals into a strong one"],
+    "math_plain": "Use multiple different learning mechanisms (attention, convolution, recurrence, and selective state-space models), each sensitive to different time patterns, then combine their predictions weighted by which patterns dominate each student's sequence.",
+    "why_math": "It works because student learning unfolds across multiple timescales: immediate reactions to problems, weekly habit patterns, semester-long progress. No single architecture sees all timescales equally. Combining models with different frequency sensitivities and routing based on what patterns actually appear in each student's data captures the full picture."
+  },
+  {
+    "gid": 69,
+    "math_tags": ["keeping only the few dimensions that matter", "smart random sampling and averaging", "learning a function from examples"],
+    "math_plain": "Divide a huge directed graph into smaller independent communities, train models on each piece, then compress all the pieces back into one smaller synthetic graph that still preserves the structure and direction.",
+    "why_math": "It works because full training on a billion-edge graph exhausts hardware, but small communities capture local patterns. Training on pieces and aggregating preserves topology because community structure is already the essential skeleton. The compressed synthetic graph holds the key relationships without storing every edge."
+  },
+  {
+    "gid": 70,
+    "math_tags": ["measuring surprise and information", "separating cause from coincidence"],
+    "math_plain": "Prove cryptographically that a simulation followed safety rules (no crashes, speed limits obeyed) without revealing the actual telemetry numbers, using a blockchain record no one can tamper with.",
+    "why_math": "It works because zero-knowledge proofs mathematically guarantee a statement is true without exposing the evidence. Anyone can verify the proof without seeing the raw data. Blockchain timestamps the proof immutably. This separates 'the simulation obeyed the rule' (the fact you care about) from 'your data is exposed' (the harm you want to prevent)."
+  },
+  {
+    "gid": 71,
+    "math_tags": ["measuring similarity as nearness in a space", "measuring surprise and information"],
+    "math_plain": "Measure whether emojis with different skin tones sit close together in the model's inner representation space, and whether they carry different sentiment scores even when the base emoji is identical.",
+    "why_math": "It works because if a model truly treats a smiling face emoji equally regardless of skin tone, they should sit at equal distances in the model's learned space and carry the same sentiment. Large distances or sentiment gaps reveal the model has learned to encode skin tone as distinct and meaningful in ways that shouldn't matter, exposing where bias is baked in."
+  },
+  {
+    "gid": 72,
+    "math_tags": ["predicting the next item in a sequence", "combining many weak signals into a strong one", "following the slope downhill to improve"],
+    "math_plain": "Simulate users and platform policies as agents in a virtual world, train the users to behave realistically from examples, then adjust policies to reduce harm by watching what happens in simulation before deploying.",
+    "why_math": "It works because real A/B testing on millions of users is slow and risky. Simulation with realistic agent behavior lets you predict consequences of policy changes before committing. Training agents on real behavioral data ensures your simulation predicts real-world effects; you can then optimize policies against those predictions rather than trial-and-error in production."
+  },
+  {
+    "gid": 73,
+    "math_tags": ["measuring similarity as nearness in a space", "separating cause from coincidence", "weighting the parts that are most relevant"],
+    "math_plain": "Identify protected characteristics (gender, race, etc.) and adjust the model's internal representations so that those characteristics become statistically independent from predictions, using lightweight adapters instead of retraining.",
+    "why_math": "It works because fairness means the model's decisions don't depend on protected characteristics. Statistical independence (measured by information measures) is the mathematical definition: if you can't predict a characteristic from the representation, the model isn't using it. Enforcing independence via adapters lets you fix bias without expensive retraining."
+  },
+  {
+    "gid": 74,
+    "math_tags": ["measuring similarity as nearness in a space", "weighting the parts that are most relevant"],
+    "math_plain": "Divide user preferences into coherent regions in representation space, assign new user sequences to regions with confidence scores, then update only the region-specific adapter for that user's changing tastes.",
+    "why_math": "It works because user preferences drift over time but not uniformly: one user's shift might be local (same region, slight adjustment) while another's is a major pivot (new region). Region-aware updates let you adjust what's truly changing while leaving unrelated preferences untouched. Confidence-aware assignment ensures uncertain users don't corrupt the wrong region."
+  }
+]

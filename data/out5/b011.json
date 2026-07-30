@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 165,
+    "math_tags": ["learning by comparison of similar and different", "keeping only the few dimensions that matter", "combining many weak signals into a strong one"],
+    "math_plain": "Three levels of contrast: nodes compared with nodes, subgraph chunks compared with chunks, and whole graphs compared whole. Mixing these signals teaches the system to find features that work across all scales.",
+    "why_math": "Similarity at each scale reveals different kinds of structure: local patterns from node pairs, regional patterns from subgraph groups, global patterns from whole graphs. A system trained to distinguish all three simultaneously learns richer features than focusing on any single scale, because conflicts between scales force the learning to find robust, multi-level patterns."
+  },
+  {
+    "gid": 166,
+    "math_tags": ["predicting the next item in a sequence", "measuring similarity as nearness in a space", "weighting the parts that are most relevant"],
+    "math_plain": "Compress millions of user actions into shorter chunks, weight each chunk by how related it is to the item being recommended, then combine the weighted chunks to predict what the user will choose.",
+    "why_math": "Raw histories are too long to process, but not all old events matter equally for the next choice. Weighting by relevance keeps the helpful signal and drops the noise. Compression preserves continuity (time nearby items stay nearby) and relatedness (similar items cluster), so the weighted blend captures both what the user did recently and what patterns run through their history."
+  },
+  {
+    "gid": 167,
+    "math_tags": ["estimating probabilities from data", "following the slope downhill to improve", "weighting the parts that are most relevant"],
+    "math_plain": "Estimate true available bandwidth by watching frame-by-frame network feedback, then weight the sending rate and burst pattern to match the frame bursts without overflowing the network.",
+    "why_math": "Video frames come in irregular bursts, not smoothly, so packet-level averages lie about true capacity. Frame-level feedback sees the actual congestion pattern. By tuning send rate and burst limits to that real pattern, you avoid both underuse (waiting when you could send) and overflow (sending so fast queues back up), so stalls drop."
+  },
+  {
+    "gid": 168,
+    "math_tags": ["combining many weak signals into a strong one", "weighting the parts that are most relevant", "measuring similarity as nearness in a space"],
+    "math_plain": "Align different threat-signal sources (user behavior, system logs, etc.) into one shared space, then dynamically weight them to highlight consistent danger signals others might miss, feeding the blend to a fine-tuned language model.",
+    "why_math": "Each signal source captures different threat patterns; combining them only works if they speak the same language (shared space). Weighting each source by how much its signals align with others (not by past accuracy) catches subtle but real threats that weak signals would hide. Dynamic weighting also prevents strong but noisy signals from drowning out weak but precise ones."
+  },
+  {
+    "gid": 169,
+    "math_tags": ["separating cause from coincidence", "measuring surprise and information"],
+    "math_plain": "Record and replay model responses to detect when prompts cause unsafe outputs, building a chain of evidence that proves what the model did and when.",
+    "why_math": "Causation requires seeing the same model produce different outputs under the same prompt (recording it exactly) versus different outputs under other prompts. Replay under controlled conditions proves causation: if the output changes only when you change the prompt, the prompt caused the output. A tamper-proof log of prompts, responses, and timestamps makes the causal chain accountable."
+  },
+  {
+    "gid": 170,
+    "math_tags": ["ranking things by a learned score", "combining many weak signals into a strong one", "learning by comparison of similar and different"],
+    "math_plain": "Multiple specialized agents filter and rank images: one generates what the query asks for, one finds visual matches, one checks if the results make sense. Together they narrow from candidates to the best answer.",
+    "why_math": "Single-signal filtering misses nuance: visual-only matches miss the text intent, text-only rankings ignore the image. Each agent is precise at one job but narrow. Combining agents that each veto wrong answers for different reasons (image mismatch, semantic mistake, factual wrong) catches errors no single agent would, because each error violates at least one agent's signal."
+  },
+  {
+    "gid": 171,
+    "math_tags": ["separating cause from coincidence", "learning a function from examples", "measuring similarity as nearness in a space"],
+    "math_plain": "Given clue passages that hint at an answer without stating it, learn to connect hints across passages to reconstruct the answer, separating true logical inference from random coincidence.",
+    "why_math": "Direct extraction fails when the answer is never written. Inference works because clues are chosen to point at a single true answer; if you learn a function mapping clue patterns to answers, the patterns that generalize to new clues are the ones the humans deliberately encoded, not random noise. Clues that don't point together to the same answer are less useful, so learning emphasizes convergent signals."
+  },
+  {
+    "gid": 172,
+    "math_tags": ["separating cause from coincidence", "weighting the parts that are most relevant", "following the slope downhill to improve"],
+    "math_plain": "Detect the moment when an agent has enough information to answer by comparing what happens if it keeps searching versus stops, then retrain it to know when to stop.",
+    "why_math": "Outcome-only training can't distinguish necessary search from wasted search; both end in the same final answer. Comparing factual search paths to counterfactual ones (what if it had stopped earlier?) reveals which searches actually changed the outcome. Retraining on that signal teaches the agent to recognize the moment of sufficiency, because only then does stopping versus searching produce different results."
+  },
+  {
+    "gid": 173,
+    "math_tags": ["learning by comparison of similar and different", "measuring similarity as nearness in a space", "combining many weak signals into a strong one"],
+    "math_plain": "Iteratively tighten the boundaries of community clusters by comparing within-cluster similarity, then learn by comparing similar and dissimilar node pairs to sharpen the separation.",
+    "why_math": "Network noise creates ambiguous boundaries where clashing edge signs (positive and negative) surround nodes. Iterative refinement and contrastive learning work because they exploit transitive consensus: nodes similar to many in-cluster nodes should belong; nodes surrounded by out-cluster edges should leave. Repeating this forces ambiguities to resolve toward consistent clusters."
+  },
+  {
+    "gid": 174,
+    "math_tags": ["estimating probabilities from data", "smart random sampling and averaging", "keeping only the few dimensions that matter"],
+    "math_plain": "Learn frequency-domain features from edge devices, blend them at the server to create new spectral patterns that don't exist in any device, then use them to train a model that generalizes to new devices.",
+    "why_math": "Device heterogeneity means no single client sees the full spectrum of patterns. Frequency domain is stable across device and time shifts (a pattern at 50Hz is recognizable whether sampled at 100Hz or 200Hz). Blending client-level frequency patterns generates novel combinations the federated model never saw, so it learns robust detection rather than overfitting to observed patterns."
+  },
+  {
+    "gid": 175,
+    "math_tags": ["ranking things by a learned score", "weighting the parts that are most relevant", "learning a function from examples"],
+    "math_plain": "Split users into interest groups, assign each group its own tuning module so it learns to emphasize the item features each group cares about, then apply this personalized tuning when scoring items.",
+    "why_math": "Generic tuning ranks all items by one scoring function; personalized tuning lets different user groups weight different item aspects (color-focused vs. durability-focused). Because each group's tuning module only tunes for its own group, it learns finer distinctions in the aspects that group values, while keeping the overall parameter footprint light (one small module per group, shared foundation model)."
+  },
+  {
+    "gid": 176,
+    "math_tags": ["estimating probabilities from data", "matching and allocating who gets what", "separating cause from coincidence"],
+    "math_plain": "Model how platform pricing exploits worker uncertainty about their own labor cost to suppress wages, then show how coalitions of workers commit to a minimum price to force the platform to pay more.",
+    "why_math": "Wage suppression works because workers don't know their cost of labor, so the platform can post low prices and many workers still accept (exploiting uncertainty). A coalition with perfect knowledge (they know each other's costs and commit to a floor) breaks this: when workers reject low offers in unison, the platform can't fill tasks cheaply, so it must raise wages. Causation: uncertainty enables suppression; coalition knowledge disables it."
+  },
+  {
+    "gid": 177,
+    "math_tags": ["combining many weak signals into a strong one", "keeping only the few dimensions that matter", "separating cause from coincidence"],
+    "math_plain": "Unsupervised: extract latent intents (goals behind misinformation) and route the claim to specialist sub-models, each tuned for one intent type, then predict whether the claim is false.",
+    "why_math": "Claims are often false for different reasons: one lies about effectiveness, another about harm, a third about cost. Lumping them into one detector dilutes the signal. Routing each claim to the specialist tuned for its intent concentrates evidence: that specialist saw many claims with the same false intent, so it learned that intent's typical lies. Unsupervised discovery works because fake and true claims differ in their underlying intent patterns."
+  },
+  {
+    "gid": 178,
+    "math_tags": ["combining many weak signals into a strong one", "measuring similarity as nearness in a space", "learning a function from examples"],
+    "math_plain": "Leverage knowledge from multiple source graphs by learning simple propagate-then-transform patterns at different depths, combining both to transfer to unlabeled target graphs.",
+    "why_math": "Single-source transfer misses nuance: one source may dominate noisily. Multiple sources offer redundancy (if sources disagree on a node's nature, the disagreement itself signals domain shift). Simple propagate-transform patterns work across different depths because propagation (spreading node features through edges) reveals local structure while transformation (learning new features) reveals what matters. Combining both depths ensures the model captures patterns at scales from immediate neighbors to distant influence."
+  },
+  {
+    "gid": 179,
+    "math_tags": ["combining many weak signals into a strong one", "measuring similarity as nearness in a space", "learning a function from examples"],
+    "math_plain": "Structure therapy as a multi-stage workflow with specialized agents for exploration, routing to the right therapy method, therapeutic delivery, and consolidation, all guided by structured client models.",
+    "why_math": "Therapy works because it progresses through stages: clients must explore before they act, insight must precede change. Each stage has different goals (exploration: surface issues; insight: connect patterns; action: practice skills). Specialized agents at each stage learn stage-specific signals better than a single generalist would. Structured client models let agents build on prior stages, so later stages don't restart learning; the model accumulates insight across the workflow."
+  }
+]

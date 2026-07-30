@@ -1,0 +1,137 @@
+[
+  {
+    "gid": 660,
+    "math_tags": [
+      "ranking things by a learned score",
+      "separating cause from coincidence"
+    ],
+    "math_plain": "Measures whether product offers are removed from search ranking and tracks how this affects sales visibility and rank.",
+    "why_math": "The underlying truth is that rankings are causal—changing someone's visibility directly changes customer discovery. By tracking visibility before/after removal, you isolate the effect of one change and measure its real impact on sales metrics, proving causation not just correlation."
+  },
+  {
+    "gid": 661,
+    "math_tags": [
+      "spreading information across a network",
+      "separating cause from coincidence"
+    ],
+    "math_plain": "Spreads harmful content across spatial locations so filters see incomplete patterns separately, evading detection by safety systems.",
+    "why_math": "It works because most filters analyze text globally but miss relationships that span space. By distributing pieces across locations, the attack creates information that only exists when combined spatially—the filter sees fragments but never the unified malicious intent."
+  },
+  {
+    "gid": 662,
+    "math_tags": [
+      "spreading information across a network",
+      "combining many weak signals into a strong one"
+    ],
+    "math_plain": "Merges perception data from multiple vehicles and roadside units, fusing individual views into a shared awareness with fewer blind spots.",
+    "why_math": "It works because each viewpoint sees obstacles the others miss. When you combine independent observations of the same scene, the overlaps confirm what is real and the gaps from one view get filled by another. The merged picture is more complete than any single view."
+  },
+  {
+    "gid": 663,
+    "math_tags": [
+      "separating cause from coincidence",
+      "learning a function from examples"
+    ],
+    "math_plain": "Extracts structured facts (entities, relations, events) from unstructured text using pattern recognition and learns to generalize across documents.",
+    "why_math": "It works because structured facts in text follow recurring linguistic patterns. By learning which patterns reliably signal which facts, you can then apply the same patterns to new unseen text, turning messy natural language into clean structured knowledge."
+  },
+  {
+    "gid": 664,
+    "math_tags": [
+      "learning by comparison of similar and different",
+      "following the slope downhill to improve"
+    ],
+    "math_plain": "Trains recommendation systems by progressively showing them harder negative items to contrast with liked items, improving discernment over time.",
+    "why_math": "It works because differences teach better than agreement. Easy negatives teach the model nothing new. By gradually introducing harder contrasts, the model stretches its boundaries without breaking—each stage builds on learning from the previous harder-than-before examples."
+  },
+  {
+    "gid": 665,
+    "math_tags": [
+      "combining many weak signals into a strong one",
+      "measuring similarity as nearness in a space"
+    ],
+    "math_plain": "Combines alignment scores from multiple modalities and feature granularities to match equivalent entities across different knowledge sources.",
+    "why_math": "It works because different modalities see different angles of the same entity. Image might see a logo while text sees the name—each is partial. Combining independent signals from different modalities makes matches more certain because multiple independent views converge on the same entity."
+  },
+  {
+    "gid": 666,
+    "math_tags": [
+      "estimating probabilities from data",
+      "following the slope downhill to improve"
+    ],
+    "math_plain": "Predicts whether a model will meet fairness requirements by examining early training behavior before training completes.",
+    "why_math": "It works because fairness trajectories are stable—once training starts, the direction and speed of change remain predictable. If fairness improves early, it keeps improving. This predictability lets you stop unfair models early without waiting for full training, saving computation."
+  },
+  {
+    "gid": 667,
+    "math_tags": [
+      "learning a function from examples",
+      "following the slope downhill to improve"
+    ],
+    "math_plain": "Learns procedural flowcharts from service conversations and uses them to guide small models through customer service tasks step-by-step.",
+    "why_math": "It works because flowcharts reduce ambiguity—each step tells the model exactly what decision to make next. Small models can follow clear instructions when they would fail at open-ended generation. The flowchart extracted from real conversations captures the expert path."
+  },
+  {
+    "gid": 668,
+    "math_tags": [
+      "separating cause from coincidence",
+      "learning a function from examples"
+    ],
+    "math_plain": "Analyzes online arguments and claims to detect stance, find reasoning patterns, and distinguish claims from disinformation using NLP methods.",
+    "why_math": "It works because arguments follow linguistic structures that reveal reasoning, and disinformation often uses distinctive language patterns. By learning which linguistic signals map to which argument properties, you can automatically detect them in new text—the patterns are learnable and transferable."
+  },
+  {
+    "gid": 669,
+    "math_tags": [
+      "spreading information across a network",
+      "combining many weak signals into a strong one"
+    ],
+    "math_plain": "Detects coordinated bot accounts by analyzing group patterns in networks—how accounts interact in clusters beyond just pairwise connections.",
+    "why_math": "It works because real bots coordinate in groups. Real humans interact independently, creating different patterns than orchestrated accounts. By looking at three-person and larger group signatures instead of just pairs, you see group coordination that pairwise methods miss."
+  },
+  {
+    "gid": 670,
+    "math_tags": [
+      "spreading information across a network",
+      "learning the settings with least error"
+    ],
+    "math_plain": "Jointly predicts power consumption and credit risk by modeling how credit changes and power anomalies influence each other bidirectionally.",
+    "why_math": "It works because credit and power are entangled—credit changes affect financing strategies which affect power consumption, and power anomalies signal operational stress that affects creditworthiness. Modeling both together captures this mutual causation, making each prediction better than modeling them separately."
+  },
+  {
+    "gid": 671,
+    "math_tags": [
+      "learning a function from examples",
+      "weighting the parts that are most relevant"
+    ],
+    "math_plain": "Shows users which sources a knowledge-retrieval system read before generating answers, making its reasoning transparent and verifiable.",
+    "why_math": "It works because trust requires traceability. When users see the sources, they can verify the reasoning independently. Transparency acts as a built-in fact-check—any hallucination or misinterpretation becomes visible, and good reasoning becomes independently confirmable."
+  },
+  {
+    "gid": 672,
+    "math_tags": [
+      "measuring similarity as nearness in a space",
+      "keeping only the few dimensions that matter"
+    ],
+    "math_plain": "Represents taxonomy categories as Gaussian-shaped regions where the center is the main meaning and fuzziness around edges models uncertainty.",
+    "why_math": "It works because taxonomies have asymmetric containment—a category contains its subcategories like a box contains smaller boxes. Points (traditional embeddings) cannot model containment, but regions (boxes) do. Gaussians add uncertainty naturally—categories with ambiguous boundaries get fuzzy edges."
+  },
+  {
+    "gid": 673,
+    "math_tags": [
+      "learning a function from examples",
+      "weighting the parts that are most relevant"
+    ],
+    "math_plain": "Extracts key claims from long documents by learning which claim types experts value using their annotations as examples.",
+    "why_math": "It works because expert annotations reveal exactly what claim properties matter—importance, factuality, relevance. By learning from those examples, the system learns the implicit quality criteria. Models trained on curated examples learn what makes a claim worth extracting."
+  },
+  {
+    "gid": 674,
+    "math_tags": [
+      "separating cause from coincidence",
+      "measuring surprise and information"
+    ],
+    "math_plain": "Compares persuasion techniques used in community-written versus professional fact-checks to measure which ones actually influence crowd credibility ratings.",
+    "why_math": "It works because crowdsourced ratings reveal what actually persuades people. By comparing technique frequency across sources and correlating with helpfulness scores, you separate real persuasive effects from coincidence—showing what rhetoric patterns genuinely move judgments."
+  }
+]

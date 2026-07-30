@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 270,
+    "math_tags": ["ranking things by a learned score", "weighting the parts that are most relevant"],
+    "math_plain": "Score each item's usefulness based on its internal content and how it relates to other items users have liked, then rank items by these scores.",
+    "why_math": "This works because recommendations are fundamentally about prediction: if you learn a scoring function on past behavior, the scores capture patterns of what makes items relevant. Separating item-level relationships from token-level noise lets the scorer focus on what users actually care about: items themselves, not the words inside them."
+  },
+  {
+    "gid": 271,
+    "math_tags": ["matching and allocating who gets what"],
+    "math_plain": "Match speaker segments to consistent identities, identify correct terminology, and rewrite for naturalness—each component solves a piece of the translation puzzle.",
+    "why_math": "This works because subtitling has distinct problems (who speaks when, what terms mean, how to sound natural) that each require their own solution. Treating them separately lets you optimize each against its own failure mode before combining them."
+  },
+  {
+    "gid": 272,
+    "math_tags": ["ranking things by a learned score", "combining many weak signals into a strong one"],
+    "math_plain": "Combine ranking signals from multiple large models into a single lightweight scorer that ranks search results by relevance while staying fast enough to use in real time.",
+    "why_math": "This works because multiple teachers, even if imperfect, usually vote towards the right answer—their errors cancel. Compressing that wisdom into a smaller model avoids the speed penalty while keeping the quality from the ensemble."
+  },
+  {
+    "gid": 273,
+    "math_tags": ["measuring similarity as nearness in a space", "separating cause from coincidence"],
+    "math_plain": "Split data by time and attributes, then build a graph index on each chunk so you can search for items that match both feature similarity and time constraints without redundant scanning.",
+    "why_math": "This works because time and features are separable concerns: if you enforce consistency within each partition, exact filtering no longer destroys precision. The graph index then lets you skip irrelevant chunks entirely, cutting search cost from scanning everything."
+  },
+  {
+    "gid": 274,
+    "math_tags": ["ranking things by a learned score", "matching and allocating who gets what"],
+    "math_plain": "Estimate how many clicks each ad placement position will get, then auction the positions to maximize total welfare or revenue while accounting for how ads substitute for each other.",
+    "why_math": "This works because position matters: in auctions, welfare rises when the item each bidder values most goes to them. When positions interact (ads can replace each other), you need to track substitution to avoid assigning the same attention twice."
+  },
+  {
+    "gid": 275,
+    "math_tags": ["estimating probabilities from data"],
+    "math_plain": "Measure CPU activity across millions of real web visits to estimate the energy cost that ads and tracking add to each page users browse.",
+    "why_math": "This works because energy is a physical, measurable quantity: by observing actual CPU time on actual devices with and without ads, you see the real cost, not a theoretical model. Scale and diversity of visits make the estimate robust."
+  },
+  {
+    "gid": 276,
+    "math_tags": ["matching and allocating who gets what"],
+    "math_plain": "Design agent systems and metrics to fairly allocate resources, serve multiple stakeholders (sellers, buyers, platforms), and measure long-term trust rather than just clicks.",
+    "why_math": "This works because agent coordination is fundamentally an allocation problem: which agent does what, when, for whom. Trust emerges from consistency and fairness, not just transactions—those require different metrics to measure."
+  },
+  {
+    "gid": 277,
+    "math_tags": ["keeping only the few dimensions that matter", "measuring similarity as nearness in a space"],
+    "math_plain": "Reduce the number of dimensions in vector representations and combine multiple vectors to search for relevant documents, overcoming the limitations of single dense vectors.",
+    "why_math": "This works because high-dimensional space has a curse: points spread out and become far from everything, making 'nearby' nearly meaningless. Cutting dimensions brings points back together; combining multiple vectors gives you what a single vector cannot."
+  },
+  {
+    "gid": 278,
+    "math_tags": ["measuring similarity as nearness in a space", "separating cause from coincidence"],
+    "math_plain": "Perturb image semantics in a way that looks consistent to humans and models but changes watermark signals, forcing the watermark check to fail while keeping the image coherent.",
+    "why_math": "This works because semantic watermarks bind the mark to global image meaning—but global meaning and local watermark signals live in different feature subspaces. Change the right subspace coherently and you break the binding without wrecking the image."
+  },
+  {
+    "gid": 279,
+    "math_tags": ["learning a function from examples"],
+    "math_plain": "Teach agents to plan, code, test, and review by having them learn from examples, feedback, and tool outputs, building up reliable workflows instead of one-shot generation.",
+    "why_math": "This works because software is brittle: a single pass rarely produces working code. Learning from examples of what works (working code, passing tests, good reviews) teaches the model patterns of reliability—trial, feedback, and refinement."
+  },
+  {
+    "gid": 280,
+    "math_tags": ["ranking things by a learned score", "learning by comparison of similar and different"],
+    "math_plain": "Maintain personalized short-term and server-shared long-term prompts that route queries to the most relevant user prototypes, balancing quick adaptation with stable long-term memory.",
+    "why_math": "This works because users have both session whims and stable taste: by maintaining two timescales, you adapt fast without forgetting. Tying long-term memory to a shared prototype library lets all users benefit from collective patterns while staying private."
+  },
+  {
+    "gid": 281,
+    "math_tags": ["predicting the next item in a sequence", "learning a function from examples"],
+    "math_plain": "Predict the next item a user will interact with by learning representations of items based on their ideal target audience and adjusting those representations to match actual user behavior.",
+    "why_math": "This works because item identity has two sources of truth: who the item is designed for (semantic) and who actually uses it (behavioral). Combining both grounds the model in reality rather than description alone."
+  },
+  {
+    "gid": 282,
+    "math_tags": ["separating cause from coincidence", "combining many weak signals into a strong one"],
+    "math_plain": "Score the trustworthiness of documents using a graph that updates dynamically, filtering out poisoned documents while preserving legitimate knowledge.",
+    "why_math": "This works because attacks that poison knowledge are Byzantine failures: they're hard to detect individually but easy to spot in aggregate. A graph-based credibility score uses many signals of trustworthiness to vote out outliers."
+  },
+  {
+    "gid": 283,
+    "math_tags": ["learning a function from examples"],
+    "math_plain": "Train image and language models to understand and generate across many modalities, then adapt them to new, unseen distributions by learning from new data without forgetting old knowledge.",
+    "why_math": "This works because generalization comes from learning stable patterns that transfer: if you train on broad data and then adapt carefully, the model reuses what it learned rather than restarting from scratch."
+  },
+  {
+    "gid": 284,
+    "math_tags": ["ranking things by a learned score", "weighting the parts that are most relevant"],
+    "math_plain": "Dynamically partition specialized experts into leaders and auxiliaries, then recycle auxiliary knowledge through utility, diversity, and task relatedness to strengthen recommendations across multiple goals.",
+    "why_math": "This works because expert systems work best when knowledge is reused: a task that struggles has experts with low scores but useful patterns. By classifying and recycling that latent knowledge, you get task-specific gains without rebuilding from scratch."
+  }
+]

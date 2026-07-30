@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 1230,
+    "math_tags": ["ranking things by a learned score", "learning a function from examples", "separating cause from coincidence"],
+    "math_plain": "Learn to predict how well each candidate model will perform on a new dataset by training on past datasets where we know both the model's success and the dataset's characteristics.",
+    "why_math": "This works because if different datasets have patterns in what makes them hard or easy, and models have consistent strengths and weaknesses, then studying past successes teaches you which model traits match which dataset traits. You never need to run the models—just predict from the patterns you've seen."
+  },
+  {
+    "gid": 1231,
+    "math_tags": ["measuring similarity as nearness in a space", "weighting the parts that are most relevant", "smart random sampling and averaging"],
+    "math_plain": "Create questions at different levels of detail and pick the detail level that makes answers most different from each other, so the test catches more variation between systems.",
+    "why_math": "Questions that are too coarse hide real differences; too fine and they're noisy. The sweet spot is where the spread of answer quality (standard deviation) peaks—there the test becomes most sensitive to which system is actually better."
+  },
+  {
+    "gid": 1232,
+    "math_tags": ["estimating probabilities from data", "measuring surprise and information"],
+    "math_plain": "Stop searching documents when the information gathered is confident enough to make a decision, rather than searching until a target recall number is hit.",
+    "why_math": "It works because decision-making doesn't actually require finding every relevant document—it requires enough evidence to choose with confidence. Once you've seen enough contradictory or confirming signals, more searching wastes time without changing the answer."
+  },
+  {
+    "gid": 1233,
+    "math_tags": ["measuring similarity as nearness in a space", "following the slope downhill to improve", "measuring surprise and information"],
+    "math_plain": "Predict how a retrieval system's quality will drop as the database grows larger, using the distances between top results and background results.",
+    "why_math": "When a database is small, top results stand out clearly from the rest. As it grows, more similar items enter the background, pushing the good ones down. Measuring this 'distance gap' between tops and background tells you whether the ranking will hold up."
+  },
+  {
+    "gid": 1234,
+    "math_tags": ["estimating probabilities from data", "learning by comparison of similar and different", "measuring surprise and information"],
+    "math_plain": "Compare whether language models, humans, and automatic scoring methods all agree on which system output is better, finding major mismatches in evaluation.",
+    "why_math": "It works because alignment breaks reveal what each evaluator actually cares about. If language models and humans agree, the scoring method is probably right. If they differ, one group is using information the other ignores, which means you can't trust single-method evaluation."
+  },
+  {
+    "gid": 1235,
+    "math_tags": ["ranking things by a learned score", "learning by comparison of similar and different"],
+    "math_plain": "Test whether language models rank documents differently depending on whether you ask for best first or worst first, showing sensitivity to prompt wording.",
+    "why_math": "Ranking should depend only on relevance, not instruction phrasing. If the same model produces different orderings from different prompts, it means the model is using surface-level cues (like word position) instead of true understanding, which breaks reliability."
+  },
+  {
+    "gid": 1236,
+    "math_tags": ["spreading information across a network", "weighting the parts that are most relevant", "learning a function from examples"],
+    "math_plain": "Model Bitcoin transactions as a hypergraph where transactions and addresses are players in a network, learning which ones are suspicious by how they connect across time.",
+    "why_math": "Fraud isn't about individual transactions—it's about patterns of flow. A hypergraph captures how one transaction connects many addresses together, and suspicious ones tend to have distinctive connection patterns (like unusual flows or timing). Learning these patterns finds fraud you'd miss in isolation."
+  },
+  {
+    "gid": 1237,
+    "math_tags": ["measuring similarity as nearness in a space", "weighting the parts that are most relevant", "matching and allocating who gets what"],
+    "math_plain": "Retrieve medical reports by first matching structured clinical facts exactly (presence and side of findings), then refining with semantic similarity for description details.",
+    "why_math": "Dense similarity alone retrieves reports that sound similar but are clinically wrong. Using hard constraints on facts first narrows to clinically safe options, then semantic matching picks the best description within that safe set. Two-level filtering prevents nonsense while staying specific."
+  },
+  {
+    "gid": 1238,
+    "math_tags": ["measuring similarity as nearness in a space", "keeping only the few dimensions that matter", "learning a function from examples"],
+    "math_plain": "Learn topic representations that sit on a unit sphere, using a distance measure that respects spherical geometry and a distribution-matching technique for stable learning.",
+    "why_math": "Normalized text descriptions naturally live on a sphere (each point has length one). Using sphere geometry instead of flat space means your distance measure reflects true similarity. Matching distributions with Wasserstein distance keeps training stable by penalizing mode collapse without forcing gradients to vanish."
+  },
+  {
+    "gid": 1239,
+    "math_tags": ["learning by comparison of similar and different", "weighting the parts that are most relevant", "separating cause from coincidence"],
+    "math_plain": "Detect when a language model is checking a claim by identifying whether it's actually reading the relevant evidence or just fixating on repeated words, filtering unreliable detections.",
+    "why_math": "Language models often rely on keywords instead of logic. If shuffling sentence order breaks the model but the answer stays the same, it proves the model isn't reasoning from content. Filtering those cases improves accuracy because you eliminate decisions made for wrong reasons."
+  },
+  {
+    "gid": 1240,
+    "math_tags": ["estimating probabilities from data", "learning by comparison of similar and different", "separating cause from coincidence"],
+    "math_plain": "Compare language model emotion labels to human annotations across conversation contexts, measuring agreement and studying which cases the model handles well or poorly.",
+    "why_math": "If language models are to replace annotators, they must match human judgment reliably. Measuring disagreement reveals whether the model is learning emotion recognition or just mimicking surface patterns. Context tests show whether the model understands emotional flow or treats each turn alone."
+  },
+  {
+    "gid": 1241,
+    "math_tags": ["spreading information across a network", "weighting the parts that are most relevant", "learning a function from examples"],
+    "math_plain": "Ground video clips to text sentences using game theory where video clips and text units cooperate within their own layer to highlight important features, then cooperate across layers for alignment.",
+    "why_math": "Game-theoretic cooperation models how good features support each other. Within text, important words reinforce context sentences; within video, salient clips reinforce frames. Layered cooperation ensures word-level matches feed into sentence-level matches, avoiding the noise of flat similarity."
+  },
+  {
+    "gid": 1242,
+    "math_tags": ["separating cause from coincidence", "estimating probabilities from data", "learning by comparison of similar and different"],
+    "math_plain": "Measure which queries are hard to retrieve, hard to generate answers for, and hard to judge as correct, finding that the three difficulties are mostly independent.",
+    "why_math": "If difficulty came from just query semantics, the same queries would fail everywhere. But they don't—retrieval struggles with different queries than generation, and judgment struggles differently still. This tells you each task has its own biases, so you can't fix one by fixing another."
+  },
+  {
+    "gid": 1243,
+    "math_tags": ["ranking things by a learned score", "estimating probabilities from data", "following the slope downhill to improve"],
+    "math_plain": "For each query, predict the optimal number of top results to re-rank by using a quality score of the first-stage retrieval, avoiding wasted re-ranking beyond the sweet spot.",
+    "why_math": "Re-ranking improves results until good candidates are exhausted; after that, quality stagnates or drops. Measuring the spread of quality in initial results tells you when this saturation happens. Query-specific prediction avoids re-ranking everything equally, saving compute without losing accuracy."
+  },
+  {
+    "gid": 1244,
+    "math_tags": ["estimating probabilities from data", "weighting the parts that are most relevant", "learning a function from examples"],
+    "math_plain": "Predict how many search results a specific query needs to answer properly, then dynamically fetch that many instead of always using the same top-k number.",
+    "why_math": "Queries vary in complexity and answer diversity. Simple queries need few results; complex ones need more. If you always fetch the same number, simple queries get irrelevant noise (hurting answers) and complex ones get incomplete evidence. Learning what each query needs avoids both problems."
+  }
+]

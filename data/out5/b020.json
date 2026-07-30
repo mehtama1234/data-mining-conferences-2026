@@ -1,0 +1,152 @@
+[
+  {
+    "gid": 300,
+    "math_tags": [
+      "finding the settings with least error",
+      "learning a function from examples",
+      "weighting the parts that are most relevant"
+    ],
+    "math_plain": "Score each time-series sample by how predictable it is, weight the loss penalty higher for harder-to-learn samples, and refine this weighting across training iterations.",
+    "why_math": "It works because focusing more compute on difficult examples improves the model's grasp of edge cases without abandoning them entirely. Noisy or unusual samples that mislead learning get lower weight at first, then gradually higher weight as the main model strengthens, preventing collapse into poor local solutions."
+  },
+  {
+    "gid": 301,
+    "math_tags": [
+      "measuring similarity as nearness in a space",
+      "following the slope downhill to improve",
+      "learning a function from examples"
+    ],
+    "math_plain": "Retrieve the most semantically relevant historical time-series patterns and reference documents from data-rich source cities, then use them as context clues to guide forecast predictions in data-scarce target cities.",
+    "why_math": "It works because cities with similar transportation patterns or weather dynamics tend to behave alike; if you find the right neighbors in the source data, their historical examples become valid lessons for the target. Choosing only the helpful neighbors avoids importing irrelevant or misleading patterns that would degrade the forecast."
+  },
+  {
+    "gid": 302,
+    "math_tags": [
+      "finding the settings with least error",
+      "smart random sampling and averaging",
+      "learning by comparison of similar and different"
+    ],
+    "math_plain": "Find which runtime settings matter most, reuse successful settings from past tuning runs, then quickly pick the best live configuration based on what system resources are available right now.",
+    "why_math": "It works because not all settings change performance equally—focusing on the sensitive ones saves time. Reusing old successful solutions speeds up the search, and because device resources shift during execution, dynamic adjustment ensures robustness without full re-tuning."
+  },
+  {
+    "gid": 303,
+    "math_tags": [
+      "measuring similarity as nearness in a space",
+      "learning by comparison of similar and different",
+      "weighting the parts that are most relevant"
+    ],
+    "math_plain": "Learn which input modalities (image, text, graph structure) are most trustworthy for each kind of entity, then use that trust weight to blend them adaptively when reasoning about analogies.",
+    "why_math": "It works because pictures clarify concrete objects but obscure abstract ideas; text and relationships work the opposite way. By scoring which modality aligns best with the current query context, you blend the right signals and ignore noise, making reasoning both more accurate and interpretable."
+  },
+  {
+    "gid": 304,
+    "math_tags": [
+      "measuring similarity as nearness in a space",
+      "following the slope downhill to improve",
+      "learning a function from examples"
+    ],
+    "math_plain": "Map out the true request routing paths inside device firmware, generate HTTP requests that trigger those paths, then validate if the device lets unauthorized users access them.",
+    "why_math": "It works because the firmware's internal logic routing is deterministic once you reconstruct it; you can then generate requests that exercise every path without guessing. Language model reasoning helps craft requests that actually match the communication protocol, making detection fast and thorough."
+  },
+  {
+    "gid": 305,
+    "math_tags": [
+      "measuring similarity as nearness in a space",
+      "following the slope downhill to improve",
+      "learning a function from examples"
+    ],
+    "math_plain": "Store how node features change over time, detect unusual nodes by measuring how different they are from learned similarity patterns at multiple time scales, using past snapshots as memory.",
+    "why_math": "It works because normal behavior is consistent across time; if a node's pattern suddenly diverges from what its neighbors historically looked like, that's a red flag. Keeping a memory of past states lets you spot one-off deviations cleanly and compare behavior at different speeds."
+  },
+  {
+    "gid": 306,
+    "math_tags": [
+      "smart random sampling and averaging",
+      "following the slope downhill to improve",
+      "spreading information across a network"
+    ],
+    "math_plain": "Simulate how information or epidemics spread across a graph by batch-updating many nodes in parallel, partition the graph strategically to minimize data shuffling between computers, and run many independent random simulations to average results.",
+    "why_math": "It works because spreading is a local process—each node only talks to neighbors—so you can update thousands in parallel without talking to each other. Partitioning by target node keeps the graph pieces independent and reduces network traffic, while averaging many random runs recovers the true expected outcome."
+  },
+  {
+    "gid": 307,
+    "math_tags": [
+      "separating cause from coincidence",
+      "keeping only the few dimensions that matter",
+      "learning by comparison of similar and different"
+    ],
+    "math_plain": "Disentangle stable causal user-behavior patterns from temporary noise, learn from a tiny labeled set by choosing which new examples to label based on their influence, compress user histories into low-dimensional stable components.",
+    "why_math": "It works because real anomalies follow a causal rule even when environments shift; if you strip away the noise, that rule stays the same across time. Using influence to choose which few new labels matter most maximizes learning from scarcity, and low-dimensional components ignore distracting fluctuations."
+  },
+  {
+    "gid": 308,
+    "math_tags": [
+      "estimating probabilities from data",
+      "weighting the parts that are most relevant",
+      "following the slope downhill to improve"
+    ],
+    "math_plain": "Balance competing moral frameworks by assigning weights to each ethical principle, learn which principles work best by trying arms, and dynamically adjust weights based on observed outcomes.",
+    "why_math": "It works because you never know which ethical rule is right, so you explore all of them. Assigning them weights lets you hedge between contradictory principles, and learning which bets paid off lets you gradually shift weight toward the most reliable ones."
+  },
+  {
+    "gid": 309,
+    "math_tags": [
+      "learning by comparison of similar and different",
+      "following the slope downhill to improve",
+      "matching and allocating who gets what"
+    ],
+    "math_plain": "Train a summarizer to write retrieval-friendly excerpts and train a retriever to use those excerpts, alternating between improving each one based on how well they work together.",
+    "why_math": "It works because normal training mismatches: the retriever learns on full documents but must operate on summaries at test time. By alternating improvements and measuring fit through retrieval success, you close that gap—summaries become tailored to what the retriever can actually use."
+  },
+  {
+    "gid": 310,
+    "math_tags": [
+      "finding the settings with least error",
+      "weighting the parts that are most relevant",
+      "matching and allocating who gets what"
+    ],
+    "math_plain": "Make sequential bidding and coupon-discount decisions using a trained model, adjust the model by learning from real and simulated outcomes, apply a reward bonus that favors decisions respecting budget constraints.",
+    "why_math": "It works because sequential decisions compound—early bids affect later budgets—so a pretrained model that understands long-term consequences beats hand-tuned rules. Learning from outcomes tuned to actual business metrics keeps the agent aligned with what matters; constraint-aware rewards prevent it from breaking its own rules."
+  },
+  {
+    "gid": 311,
+    "math_tags": [
+      "learning a function from examples",
+      "finding the settings with least error",
+      "keeping only the few dimensions that matter"
+    ],
+    "math_plain": "Learn flexible curved activation functions for each numerical feature individually to convert them to cleaner forms, then pass all cleaned features through layers that selectively weight and combine them into predictions.",
+    "why_math": "It works because real-world numbers often follow skewed or non-standard shapes; learning a custom curve per feature automates the tedious manual cleanup engineers usually do by hand. Once features are well-shaped, selective mixing (gating) of high-order combinations extracts only the interaction patterns that matter."
+  },
+  {
+    "gid": 312,
+    "math_tags": [
+      "following the slope downhill to improve",
+      "finding the settings with least error",
+      "weighting the parts that are most relevant"
+    ],
+    "math_plain": "Reduce the cost of secure computation for image analysis models by reusing feature representations across similar layers, approximating expensive components with cheaper stand-ins that stay accurate enough.",
+    "why_math": "It works because secure multi-party computation is expensive—every operation requires coordination—so reusing results saves rounds of communication. Approximation works because the model can tolerate small errors in expensive layers as long as the approximation is smooth and consistent; you're trading a tiny accuracy dip for huge latency savings."
+  },
+  {
+    "gid": 313,
+    "math_tags": [
+      "learning a function from examples",
+      "measuring similarity as nearness in a space",
+      "separating cause from coincidence"
+    ],
+    "math_plain": "Extract the logical chain proving an answer from a formal ontology, simplify noisy intermediate steps, and explain the result in clear language that shows why the proof is sound.",
+    "why_math": "It works because a valid proof is itself a kind of similarity—it shows how conclusion and premise sit close together in logical space. Extracting the chain, cleaning it, and explaining it in language lets large models use their strength at reasoning while producing human-readable evidence, not just a final answer."
+  },
+  {
+    "gid": 314,
+    "math_tags": [
+      "following the slope downhill to improve",
+      "keeping only the few dimensions that matter",
+      "weighting the parts that are most relevant"
+    ],
+    "math_plain": "Regularize training by penalizing loss-landscape sharpness at the item level, focusing the penalty on products that the model struggles with, to improve accuracy on rare items without hurting popular ones.",
+    "why_math": "It works because sharp loss landscapes mean tiny weight changes flip predictions wildly—a sign of brittle, overfit solutions. Item-level sharpness focuses regularization only where it helps: tail items benefit most from smoothing because they have fewer examples, while head items already have enough data to stay stable."
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 390,
+    "math_tags": ["estimating probabilities from data", "separating cause from coincidence", "combining many weak signals into a strong one"],
+    "math_plain": "Turns many unreliable signals (text, images, metadata hints) into probabilistic confidence scores that stay logically consistent when tied through shared entities.",
+    "why_math": "It works because weak signals contradict each other randomly but agree on truth systematically; averaging many noisy votes amplifies the true signal and suppresses noise. Adding entity links ensures you cannot predict one fact in isolation—contradictory scores force the system to revise its beliefs until they cohere across the whole network."
+  },
+  {
+    "gid": 391,
+    "math_tags": ["learning by comparison of similar and different", "predicting the next item in a sequence", "ranking things by a learned score"],
+    "math_plain": "Uses pairs of items (one popular tomorrow, one not) to train a model to score how viral each item will become, then explains those scores in plain language.",
+    "why_math": "It works because learning from pairs of dissimilar examples forces the model to discover what actually separates hits from misses, rather than memorizing coincidences. Comparing winners and losers directly reveals the causal signal in sparse data."
+  },
+  {
+    "gid": 392,
+    "math_tags": ["keeping only the few dimensions that matter", "finding the settings with least error", "learning a function from examples"],
+    "math_plain": "Discovers which edges in a graph are truly important (the 'rationale') by ranking edges in order from most to least significant, then builds graphs block by block along that ranking.",
+    "why_math": "It works because real-world graphs have a small core of edges that determine the outcome, and the rest is noise. By learning the true ordering of importance first, you add the meaningful parts early (when the model is uncertain) and can safely ignore noise later; this puts the model's learning effort where it matters."
+  },
+  {
+    "gid": 393,
+    "math_tags": [],
+    "math_plain": "Maps manufacturing system risks into five layers—data, models, system, organization, governance—tracking where signals misalign across audio, video, logs, and human inputs.",
+    "why_math": "It works because failures in multimodal systems don't come from any single piece but from contradictions at their boundaries; organizing risks by layer and connection reveals which misalignments will propagate damage and which can be isolated locally."
+  },
+  {
+    "gid": 394,
+    "math_tags": ["measuring similarity as nearness in a space", "learning a function from examples", "weighting the parts that are most relevant"],
+    "math_plain": "Builds a user profile from social connections and item relationships without storing individual user scores; ranks items by learned social similarity.",
+    "why_math": "It works because users in the same social circle tend to like the same things, so you can infer what someone wants by looking at their neighbors' choices. You save memory by not storing each user as a separate row; instead you compute each user on the fly from their social context."
+  },
+  {
+    "gid": 395,
+    "math_tags": ["finding the settings with least error", "estimating probabilities from data", "learning a function from examples"],
+    "math_plain": "Trains a model on ten languages simultaneously to spot Wikipedia claims that lack citations, balancing accuracy against the cost to run it at production scale.",
+    "why_math": "It works because Wikipedia editors work across languages and edit patterns are similar everywhere; training together means rare signals in one language strengthen the model for others. Balancing accuracy and cost reveals that you don't need perfection if you catch the highest-risk claims reliably."
+  },
+  {
+    "gid": 396,
+    "math_tags": ["separating cause from coincidence", "measuring similarity as nearness in a space", "learning a function from examples"],
+    "math_plain": "Splits traffic patterns into two independent parts: what is unique to each city (local dynamics) and what all cities share (global trends), then predicts by combining them.",
+    "why_math": "It works because mixing local and shared patterns makes the model learn the wrong thing—noise in one city corrupts the global signal. By forcing the two branches to carry different information (measured by information theory), each branch specializes in what it alone can explain, and combining them captures the full truth."
+  },
+  {
+    "gid": 397,
+    "math_tags": ["learning a function from examples", "finding the settings with least error", "ranking things by a learned score"],
+    "math_plain": "Trains a language model to match user questions to the right financial API by building a dataset from past queries and inventing variations to cover missing parameter types.",
+    "why_math": "It works because the model learns from examples what each parameter means; when you show it variations of the same idea stated different ways, it learns the semantic boundaries. The trained model can then generalize to phrasing it has never seen."
+  },
+  {
+    "gid": 398,
+    "math_tags": ["following the slope downhill to improve", "learning a function from examples"],
+    "math_plain": "Runs agent code inside a WebAssembly sandbox that pre-fetches context into fast memory, batches multiple actions into single round-trips, and prevents unsafe operations through isolation.",
+    "why_math": "It works because WebAssembly creates a walled-off playground: isolation stops malicious prompts from escaping, batching reduces network delays (many small round-trips become one big one), and loading context on demand means you only keep hot data in fast memory."
+  },
+  {
+    "gid": 399,
+    "math_tags": ["learning a function from examples", "measuring similarity as nearness in a space", "keeping only the few dimensions that matter"],
+    "math_plain": "Finds the invariant features in graph node data that mean the same thing across different domains, then transforms all node features into a shared unified format.",
+    "why_math": "It works because different graphs use different node features, but the underlying structure they encode is the same (e.g., 'importance' is importance whether measured as degree or centrality). Finding those invariants lets a single model work everywhere, like how pixels work for all images."
+  },
+  {
+    "gid": 400,
+    "math_tags": ["separating cause from coincidence", "weighting the parts that are most relevant", "learning a function from examples"],
+    "math_plain": "Filters out perturbations by keeping only the features that predict the label, using a independence measure to detect when noise creeps into the model's inputs.",
+    "why_math": "It works because adversarial noise is correlation without causation—it changes the input in ways that don't affect the true label, only the model's decision. By measuring dependence, you identify features the model actually needs and discard noise that only tricks it."
+  },
+  {
+    "gid": 401,
+    "math_tags": ["separating cause from coincidence", "learning by comparison of similar and different", "learning a function from examples"],
+    "math_plain": "Splits traffic into two independent channels: weather-driven changes (rain affects speed) versus underlying patterns (time of day always causes congestion), then augments training data by changing only non-causal parts.",
+    "why_math": "It works because extreme rain is rare in data, so the model overfits to the few rainy examples it sees. By augmenting data with synthetic rare-weather scenarios where you preserve true causal structure (rain still blocks roads) and vary only noise, you teach the model to generalize to unseen extremes."
+  },
+  {
+    "gid": 402,
+    "math_tags": ["measuring similarity as nearness in a space", "smart random sampling and averaging"],
+    "math_plain": "Measures the network traffic and latency cost of fetching fresh pages for each user query, comparing LLM answer engines against traditional cached search.",
+    "why_math": "It works because any system that serves answers must pay a cost in network and computation; by tracing where that cost goes (fetching versus caching, deduplication, etc.), you reveal which architectures are wasteful. Averaging costs over queries and modeling them as 'human equivalent' makes the overhead visible."
+  },
+  {
+    "gid": 403,
+    "math_tags": ["finding the settings with least error", "learning a function from examples", "weighting the parts that are most relevant"],
+    "math_plain": "Guesses which category each cluster should represent, then corrects its own training labels whenever samples disagree with their cluster's category, re-centering clusters on reliable examples.",
+    "why_math": "It works because noisy pseudo-labels steer learning in circles; by identifying the single most likely true category for each cluster, you can detect and fix labels that contradict the cluster's true identity. Fixing the worst labels each iteration ensures the model converges on semantically coherent groups."
+  },
+  {
+    "gid": 404,
+    "math_tags": ["separating cause from coincidence", "weighting the parts that are most relevant", "learning by comparison of similar and different"],
+    "math_plain": "Enriches meme understanding with external knowledge (cultural references, symbols) and tunes two independent decision branches to sharpen the line between satire and actual abuse, then explains each classification.",
+    "why_math": "It works because abuse hides behind symbols and satire that generic models don't recognize. Adding external knowledge exposes hidden meaning, while parameter-efficient tuning specializes each branch to hard cases. Dual channels force the model to commit to a decision, which eliminates ambiguous gray zones where satire and harm blur together."
+  }
+]

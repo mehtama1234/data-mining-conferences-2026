@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 690,
+    "math_tags": ["learning a function from examples"],
+    "math_plain": "Establishes shared methods and practices for researchers to reproduce computational social science findings from digital behavioral data.",
+    "why_math": "It works because reproducibility requires learning from past examples: seeing what methods worked in prior studies teaches you which practices, templates, and tools actually produce trustworthy results that others can verify and reuse."
+  },
+  {
+    "gid": 691,
+    "math_tags": ["weighting the parts that are most relevant", "learning a function from examples"],
+    "math_plain": "Weights updates from each client based on estimated noise levels to improve a shared language model while respecting each client's privacy choices.",
+    "why_math": "It works because you can estimate the noise level in an update by observing its properties, then reward low-noise contributions with higher influence on the final model. Focusing on cleaner updates automatically improves overall accuracy since better information outweighs corrupted information in any combination."
+  },
+  {
+    "gid": 692,
+    "math_tags": ["ranking things by a learned score", "learning a function from examples"],
+    "math_plain": "Scores which pairs of user behaviors should be connected in a graph structure, then learns from those behaviors to predict what a user will do next.",
+    "why_math": "It works because user actions follow patterns—clicking and buying are related, so placing them nearby in a structure lets you predict transitions. By learning which transitions matter most, you exploit the hidden rules governing how user intentions evolve."
+  },
+  {
+    "gid": 693,
+    "math_tags": ["matching and allocating who gets what", "ranking things by a learned score"],
+    "math_plain": "Splits recommendation into two agents: one optimizes accuracy while keeping hard rules satisfied, the other explores diverse options; a coordinator balances the tradeoff.",
+    "why_math": "It works because hard constraints need dedicated handling—you cannot penalize violations, only prevent them. By separating constraint-respecting accuracy from unconstrained exploration, then coordinating between them, you guarantee correctness while still discovering good alternatives."
+  },
+  {
+    "gid": 694,
+    "math_tags": ["learning a function from examples"],
+    "math_plain": "Organizes chemical compounds hierarchically with their identifiers and properties to enable reliable lookup and comparison of harmful substances.",
+    "why_math": "It works because chemical compounds have inherent structure: compounds with similar structures behave similarly. By organizing them hierarchically according to what chemists know about their properties, lookups become consistent and new data about unknown compounds can be reasoned from known relatives."
+  },
+  {
+    "gid": 695,
+    "math_tags": ["following the slope downhill to improve", "learning a function from examples"],
+    "math_plain": "Emulates quantum computation step by step to show how quantum algorithms can find the repeating pattern in the RSA encryption system, breaking it.",
+    "why_math": "It works because RSA depends on a hidden repeating pattern that is hard to find classically but quantum algorithms can find it. By tracking exactly how quantum gates manipulate the state to uncover periodicity, we see that quantum processes exploit mathematical structure that classical methods cannot touch."
+  },
+  {
+    "gid": 696,
+    "math_tags": ["estimating probabilities from data", "separating cause from coincidence"],
+    "math_plain": "Tests whether conditioning a language model with demographic information improves its ability to mimic real survey respondents or instead distorts answers.",
+    "why_math": "It works because agreement with real data is the ground truth: by comparing model answers to actual respondents across thousands of cases, you can measure whether a technique like persona prompting creates accuracy or noise. Worse performance on underrepresented groups reveals redistribution of error, not overall improvement."
+  },
+  {
+    "gid": 697,
+    "math_tags": ["predicting the next item in a sequence", "learning a function from examples"],
+    "math_plain": "Predicts what problems will occur in a city, then feeds the predictions back into decision-making and real actions, using feedback to improve predictions.",
+    "why_math": "It works because prediction without action stays theoretical. By closing the loop—predict, act, observe outcome, update model—you gain real-world ground truth. Feedback refines predictions because you now see which predictions led to correct actions, concentrating learning on what actually matters."
+  },
+  {
+    "gid": 698,
+    "math_tags": ["learning by comparison of similar and different", "combining many weak signals into a strong one"],
+    "math_plain": "Aligns semantic meaning from a language model with collaborative patterns learned from user behavior to better recommend items people rarely interact with.",
+    "why_math": "It works because semantic and behavioral signals come from different sources: language model text captures what items are about, user patterns capture how people behave. Aligning them via an energy-based framework ensures both signals pull toward the same answer, making predictions for rare items stronger than either alone."
+  },
+  {
+    "gid": 699,
+    "math_tags": ["learning by comparison of similar and different", "combining many weak signals into a strong one"],
+    "math_plain": "Extracts visual entities and captions from images, combines them with text, then checks whether image and text actually describe the same situation to spot lies.",
+    "why_math": "It works because misinformation depends on mismatch: a real image paired with false text contradicts itself when you extract what each channel actually shows. By combining visual descriptions with textual content and checking alignment, you expose inconsistency that either modality alone might miss."
+  },
+  {
+    "gid": 700,
+    "math_tags": ["measuring similarity as nearness in a space"],
+    "math_plain": "Represents the network structure of a social graph using principal eigenvector direction to evaluate whether recommendations treat people fairly when sensitive information is missing.",
+    "why_math": "It works because the principal eigenvector captures the dominant structure of a network—how things flow through it most strongly. Using spectral structure to measure fairness avoids reconstructing missing attributes (which would create bias), instead directly checking whether the model's decisions favor some groups through the network's inherent geometry."
+  },
+  {
+    "gid": 701,
+    "math_tags": ["learning a function from examples", "combining many weak signals into a strong one"],
+    "math_plain": "Collects and standardizes images of medicinal plants across multiple languages and sources, linking them to global biodiversity identifiers.",
+    "why_math": "It works because learning from examples requires consistent data: by matching Vietnamese plant names to both scientific names and global identifiers, you create a training set that works across languages and regions. Metadata diversity strengthens learning because models see the same plants described multiple ways."
+  },
+  {
+    "gid": 702,
+    "math_tags": ["learning a function from examples"],
+    "math_plain": "Zooms out to find clusters of similar patterns in unstructured data, then zooms in to verify which patterns are real and build consistent categories.",
+    "why_math": "It works because pattern discovery has two parts: finding candidates (wide view) and confirming they are consistent (close inspection). Cycling between these discovers what actually recurs in data without needing ground truth labels. Rough candidates guide where to look closely; detailed validation confirms which candidates truly repeat."
+  },
+  {
+    "gid": 703,
+    "math_tags": ["measuring similarity as nearness in a space", "separating cause from coincidence"],
+    "math_plain": "Identifies balanced paths through a network with both positive and negative connections to explain when the model predicts an edge will be good or bad.",
+    "why_math": "It works because in networks with positive and negative edges, a balanced path—one where positive and negative multiply to form a stable pattern—reveals why edges should exist. By generating balanced paths as explanations, you expose the causal structure the model learned: certain sequences of interactions naturally lead to positive or negative relationships."
+  },
+  {
+    "gid": 704,
+    "math_tags": ["weighting the parts that are most relevant", "learning a function from examples"],
+    "math_plain": "Measures which input features matter most to a recommendation model by correcting for biases that cause rankings to depend on only some layers, samples, or gradient directions.",
+    "why_math": "It works because importance should reflect all the model's layers equally, not just the ones that happen to have large gradients. By regularizing importance estimates across all layers and using a baseline near the decision boundary, you measure how much each feature truly matters to the final prediction, not an artifact of how the model is structured."
+  }
+]

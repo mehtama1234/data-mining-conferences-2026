@@ -1,0 +1,131 @@
+[
+  {
+    "gid": 885,
+    "math_tags": [
+      "predicting the next item in a sequence",
+      "measuring similarity as nearness in a space"
+    ],
+    "math_plain": "Predict how deep water will flood at a location by learning patterns from rainfall, terrain, and geographic features over time.",
+    "why_math": "This works because water accumulation follows physical laws that repeat: similar past rainfall and terrain shape always lead to similar flooding outcomes. If you arrange locations in a space where geographically similar ones sit close, nearby predictions become reliable."
+  },
+  {
+    "gid": 886,
+    "math_tags": [
+      "learning by comparison of similar and different"
+    ],
+    "math_plain": "Train an AI to simulate emergency calls by comparing trainee responses against right and wrong actions, then flag when they drift from good practice.",
+    "why_math": "It works because learning by contrast—seeing what trainees did versus what experts would do—tells the AI which moves matter for good performance. Real-time nudges exploit this difference signal to steer learning."
+  },
+  {
+    "gid": 887,
+    "math_tags": [
+      "finding the settings with least error",
+      "combining many weak signals into a strong one"
+    ],
+    "math_plain": "Search for a graph of conditions that predicts a number (like price or yield) with smallest error by guiding the search with language clues.",
+    "why_math": "It works because you're chaining two truths: (1) the search finds the structure that makes fewest mistakes, and (2) language hints prune the search space so you find good answers fast instead of exploring forever."
+  },
+  {
+    "gid": 888,
+    "math_tags": [
+      "spreading information across a network"
+    ],
+    "math_plain": "Find and map food-sharing groups by searching the web, refining queries with language rewriting, and updating the map as new groups emerge.",
+    "why_math": "It works because rewriting queries in multiple languages spreads your reach across the web, and periodic re-crawling keeps the map aligned with reality as groups start, move, or dissolve."
+  },
+  {
+    "gid": 889,
+    "math_tags": [
+      "separating cause from coincidence"
+    ],
+    "math_plain": "Show which concepts inside a language model actually drive its answers, instead of pointing to correlations that happen to co-occur but don't cause output.",
+    "why_math": "It works because intervening on true causal concepts (changing what the model thinks, not just its activation patterns) proves what actually steers the answer. Correlations vanish under intervention but causes remain."
+  },
+  {
+    "gid": 890,
+    "math_tags": [
+      "learning by comparison of similar and different",
+      "finding the settings with least error"
+    ],
+    "math_plain": "Improve language transfer by pushing apart overly clustered word meanings and aligning how languages weight their attention, reducing error on unseen data.",
+    "why_math": "It works because languages encode meaning differently—spreading them apart in the space prevents one language from drowning out others. Consistent attention across languages makes the learned space robust to noisy or missing data."
+  },
+  {
+    "gid": 891,
+    "math_tags": [
+      "ranking things by a learned score"
+    ],
+    "math_plain": "Score and rank enterprise documents by how well they align with brand voice and legal rules, then use top-scoring ones to shape language model outputs.",
+    "why_math": "It works because scoring documents by alignment allows you to retrieve only the best context before generating, making the language model inherently compliant and brand-true without full retraining."
+  },
+  {
+    "gid": 892,
+    "math_tags": [
+      "predicting the next item in a sequence",
+      "finding the settings with least error"
+    ],
+    "math_plain": "Predict traffic flow by learning normal patterns first, filtering out unusual events, then modeling how congestion spreads across roads and time with memory of past anomalies.",
+    "why_math": "It works because normal and anomalous traffic follow different rules. Filtering anomalies first means your model learns the true underlying flow pattern; memory of anomalies teaches what triggers breakdowns without poisoning normal predictions."
+  },
+  {
+    "gid": 893,
+    "math_tags": [
+      "separating cause from coincidence",
+      "matching and allocating who gets what"
+    ],
+    "math_plain": "Remove one specific object from an image while keeping the scene and remaining objects intact, using the scene structure to guide which parts to forget.",
+    "why_math": "It works because the scene structure tells you which pixels causally depend on the object and which don't. Forgetting only the causal descendants preserves everything semantically unrelated to what you're erasing."
+  },
+  {
+    "gid": 894,
+    "math_tags": [
+      "combining many weak signals into a strong one"
+    ],
+    "math_plain": "Hide a secret mark inside a shared model where each client can verify ownership independently, and the mark survives removal attacks like fine-tuning.",
+    "why_math": "It works because embedding the watermark in a way that spreads across many model weights means no single attack (pruning, retraining, distilling) can erase all of it simultaneously—enough traces survive to prove ownership."
+  },
+  {
+    "gid": 895,
+    "math_tags": [
+      "finding the settings with least error",
+      "smart random sampling and averaging"
+    ],
+    "math_plain": "Design better traffic layouts by training a model to gradually build valid road networks from noise, guided by predictions of how each layout performs.",
+    "why_math": "It works because gradual building respects real constraints (roads must connect, follow zones) at each step, while the performance model steers toward layouts that reduce congestion. This outperforms random search in huge spaces."
+  },
+  {
+    "gid": 896,
+    "math_tags": [
+      "separating cause from coincidence",
+      "combining many weak signals into a strong one"
+    ],
+    "math_plain": "Detect stolen or manipulated videos by breaking the analysis into specialized tasks—one extracts visual clues, one retrieves similar videos, one weighs them together to judge if content is truly original.",
+    "why_math": "It works because manipulation requires coordinating across text, images, audio, and metadata. Specialists in each modality catch what a single model misses, and combining their signals reveals inconsistencies that prove theft."
+  },
+  {
+    "gid": 897,
+    "math_tags": [
+      "measuring similarity as nearness in a space",
+      "weighting the parts that are most relevant"
+    ],
+    "math_plain": "Recommend apps to new users by learning user attributes and behavior separately, then weighing each signal's importance based on how much it predicts the actual choice.",
+    "why_math": "It works because new users lack behavior history, so attributes must carry weight initially. But attributes and behavior encode different kinds of information—separating them prevents one from overwhelming the other, then balancing their signals."
+  },
+  {
+    "gid": 898,
+    "math_tags": [
+      "learning by comparison of similar and different",
+      "combining many weak signals into a strong one"
+    ],
+    "math_plain": "Improve recommendations by tuning a language model on both item IDs (collaborative signals showing what items users actually picked) and text descriptions, weighting text more but boosting it with ID signals.",
+    "why_math": "It works because text is semantically richer but ID signals capture real user behavior. Keeping text as primary avoids noise while letting ID patterns fill in what text misses—the two views compensate for each other's blind spots."
+  },
+  {
+    "gid": 899,
+    "math_tags": [
+      "matching and allocating who gets what"
+    ],
+    "math_plain": "Retrieve relevant documents in multiple languages when given an English query, treating each language version of a document as a separate match to rank.",
+    "why_math": "It works because the same document in different languages encodes the same meaning but different surface words. Matching across languages finds relevance that language-specific search would miss, improving coverage for global queries."
+  }
+]

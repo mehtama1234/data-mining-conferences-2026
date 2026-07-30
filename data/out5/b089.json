@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 1335,
+    "math_tags": ["predicting the next item in a sequence", "learning a function from examples", "following the slope downhill to improve"],
+    "math_plain": "A model learns to forecast what users secretly want before they ask, by distilling hints from a powerful language model into a fast scoring function.",
+    "why_math": "This works because powerful reasoning can be compressed—the deep model's intuitions about hidden desires can be captured in a smaller student model through carefully chosen examples. Once compressed, the student runs fast enough to operate in real time."
+  },
+  {
+    "gid": 1336,
+    "math_tags": ["ranking things by a learned score", "learning a function from examples", "weighting the parts that are most relevant"],
+    "math_plain": "The system learns a single rich description of each product using multiple signals at once, then uses that description to rank items and understand users.",
+    "why_math": "Products have multiple facets—their image, text, and how users interact with them—and a single shared model can learn from all these signals together. One complete description is more efficient and more accurate than treating each signal separately, because shared understanding reveals patterns no single signal shows alone."
+  },
+  {
+    "gid": 1337,
+    "math_tags": ["ranking things by a learned score", "combining many weak signals into a strong one", "following the slope downhill to improve"],
+    "math_plain": "The ranker scores items on a scale from irrelevant to highly relevant, then balances this against user engagement signals to return items people both want and will click.",
+    "why_math": "Engagement alone can promote mediocre popular items. By scoring true relevance separately—even with a lightweight language model—and then combining both signals, the system can favor items that genuinely match intent while still rewarding engagement. The ordering of relevance levels is crucial: the relative ranks matter more than exact scores."
+  },
+  {
+    "gid": 1338,
+    "math_tags": ["ranking things by a learned score", "learning a function from examples", "measuring similarity as nearness in a space"],
+    "math_plain": "A model first samples what items the system can actually retrieve right now, then reasons about how to rewrite the query, ensuring the plan matches reality instead of guessing blind.",
+    "why_math": "Query rewriting fails when it ignores what the system can retrieve. By peeking at the retrieval landscape first—a cheap probe—the planner reasons with ground truth about what's possible, avoiding impossible requests and latency-killing corrections."
+  },
+  {
+    "gid": 1339,
+    "math_tags": ["learning a function from examples", "following the slope downhill to improve", "weighting the parts that are most relevant"],
+    "math_plain": "The system learns when personalization helps and how to rewrite queries in a way that matches the retrieval system, trained on examples mined from real user logs.",
+    "why_math": "Most rewrites hurt; personalizing too much adds noise. By mining examples where users explicitly reformulated queries themselves, the model learns the signal from the noise. Training jointly with both supervised and reinforcement learning ensures outputs align with what the retrieval system actually needs."
+  },
+  {
+    "gid": 1340,
+    "math_tags": ["learning by comparison of similar and different", "keeping only the few dimensions that matter", "weighting the parts that are most relevant"],
+    "math_plain": "Instead of treating all past clicks as one messy list, the model untangles them into separate coherent themes and learns from each theme independently.",
+    "why_math": "A user's history is chaotic—clicks on shoes, then recipes, then hiking gear come from different underlying wants. One sequence model drowns the signal. By untangling history into pure strands (each theme separate), each strand becomes clear and focused, letting the model learn genuine intent patterns instead of averaging across noise."
+  },
+  {
+    "gid": 1341,
+    "math_tags": ["predicting the next item in a sequence", "learning by comparison of similar and different", "weighting the parts that are most relevant"],
+    "math_plain": "The model learns when a purchase signals satisfaction (the intent is done) versus hunger for more, then suppresses related items after purchase and gradually re-activates them as replenishment time nears.",
+    "why_math": "A purchase is fundamentally different from a click—it closes an intent, not opens one. The model learns the lifecycle of each product type by measuring time until repurchase. After purchase, suppressing related items reflects reality: someone who just bought shampoo doesn't want more shampoo ads today. Gradual re-awakening reflects the true rhythm of need."
+  },
+  {
+    "gid": 1342,
+    "math_tags": ["learning a function from examples", "following the slope downhill to improve", "combining many weak signals into a strong one"],
+    "math_plain": "The system maintains a stable base model trained on old data and a fresh model trained on new data, routing active users to the fresh model and others to the stable one.",
+    "why_math": "Full retraining on every new batch is expensive and can flip old patterns that still matter. Fine-tuning on recent data alone forgets the old patterns. By running both in parallel and routing smartly, active users get fresh understanding while stable users stay grounded in proven knowledge—lower cost, no catastrophic forgetting."
+  },
+  {
+    "gid": 1343,
+    "math_tags": ["ranking things by a learned score", "learning a function from examples", "combining many weak signals into a strong one"],
+    "math_plain": "The model generates recommendations by learning a mapping from users and their intents to item codes, using a single model to predict clicks, dwell time, and engagement all at once.",
+    "why_math": "Each prediction task (clicks, time spent, engagement) reflects different facets of the same user intent. Training one model for all three lets them share learned patterns about what users want, then apply those shared patterns to each prediction. This is cheaper than three separate models and more accurate because the tasks reveal each other's signal."
+  },
+  {
+    "gid": 1344,
+    "math_tags": ["estimating probabilities from data", "smart random sampling and averaging", "learning by comparison of similar and different"],
+    "math_plain": "A language model reads new content and gives a confidence score for quality before any user sees it; this score seeds exploration so the system efficiently allocates early views.",
+    "why_math": "Brand-new content has zero user data. A language model can judge quality and appeal from the content itself, alone—reading text and images like a human would. Using this as a starting belief (a Bayesian prior) lets the system explore confidently with early users, guided by semantic judgment rather than blind chance. As real user data arrives, it updates the belief."
+  },
+  {
+    "gid": 1345,
+    "math_tags": ["ranking things by a learned score", "learning a function from examples", "measuring similarity as nearness in a space"],
+    "math_plain": "When users search broadly, the system reasons through their purchase history to rewrite the query more precisely, using pre-computed candidate lists for speed.",
+    "why_math": "A broad query (e.g., 'blue jacket') is ambiguous. Past purchases reveal the user's actual style, size, and price range. Reasoning through this history and rewriting the query to be specific ('waterproof hiking jacket, size M, under 150') converts ambiguity to clarity. Pre-computing top rewrites for each query makes this instant."
+  },
+  {
+    "gid": 1346,
+    "math_tags": ["predicting the next item in a sequence", "measuring similarity as nearness in a space", "learning by comparison of similar and different"],
+    "math_plain": "The model views user intent as a path through a high-dimensional space, learning smooth continuous paths that evolve naturally over time instead of jumping between discrete categories.",
+    "why_math": "User interests do not change in discrete jumps; they flow smoothly—from casual to committed, shifting gradually between domains. Modeling this as continuous motion through a space (not discrete symbols) preserves the real topology of how interests actually change. Smoothness constraints (geodesic regularization) enforce that evolution is gradual, capturing the true structure of human need."
+  },
+  {
+    "gid": 1347,
+    "math_tags": ["measuring similarity as nearness in a space", "keeping only the few dimensions that matter", "learning a function from examples"],
+    "math_plain": "The system converts dense float vectors into short binary codes that preserve neighbor relationships, enabling 4-6x faster search with only modest accuracy loss.",
+    "why_math": "Dense vectors are slow to search at scale. Binary codes are fast—a computer can compare them in a few machine cycles. Learning a projection that keeps neighbors neighbors ensures that a fast binary search returns almost the same top results as slow float search. Moderate bit-widths (3000 bits instead of millions) prove sufficient because you only need enough precision to preserve ordering, not exact distances."
+  },
+  {
+    "gid": 1348,
+    "math_tags": ["matching and allocating who gets what", "ranking things by a learned score", "learning a function from examples"],
+    "math_plain": "The system rewrites user queries by mapping informal product names to official ones, then restricts retrieval to known documented products, dramatically improving what gets found.",
+    "why_math": "Users call products by many names; the index uses only official names. A hand-crafted normalization layer (users say 'NetApp filer', the system searches 'NetApp ONTAP') closes this vocabulary gap without retraining anything. Restricting to known products eliminates false positives. These lightweight rule-based improvements often beat expensive model retraining on retrieval tasks."
+  },
+  {
+    "gid": 1349,
+    "math_tags": ["measuring similarity as nearness in a space", "learning a function from examples", "keeping only the few dimensions that matter"],
+    "math_plain": "The system learns short token patterns (at most 3 characters) that are robust to misspellings and phonetic drift, pre-computes them offline, and searches them online with no delay.",
+    "why_math": "Misspellings (searching 'Beyonce' for 'Beyoncé') and phonetic variations ('Beatles' vs 'The Beatles') break traditional word matching. By learning sparse patterns on very short tokens, the model captures fuzzy surface-form similarity without memorizing exact spellings. Pre-computing all patterns during indexing makes online queries instant, fitting strict latency budgets for music search at scale."
+  }
+]

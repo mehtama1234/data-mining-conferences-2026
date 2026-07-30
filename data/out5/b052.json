@@ -1,0 +1,152 @@
+[
+  {
+    "gid": 780,
+    "math_tags": [
+      "predicting the next item in a sequence",
+      "learning a function from examples",
+      "weighting the parts that are most relevant"
+    ],
+    "math_plain": "Compress example information into a learnable code that you inject into each layer of a frozen language model to improve time-series forecasting.",
+    "why_math": "It works because compressing examples into a focused code lets you steer the model's existing knowledge toward a new task without retraining. The model already learned general patterns; you just show it which examples matter for this specific forecast."
+  },
+  {
+    "gid": 781,
+    "math_tags": [
+      "measuring similarity as nearness in a space",
+      "learning a function from examples",
+      "learning by comparison of similar and different"
+    ],
+    "math_plain": "Use a similarity score (cosine) to measure how close a generated voice is to a reference voice, optimizing until they sound the same.",
+    "why_math": "It works because voices that sound alike to humans also sit close together in acoustic space—the same properties that make them audibly similar also make their numbers geometrically close. Measuring distance is faster and more reliable than human listening."
+  },
+  {
+    "gid": 782,
+    "math_tags": [
+      "learning a function from examples",
+      "learning by comparison of similar and different",
+      "ranking things by a learned score"
+    ],
+    "math_plain": "Iteratively rewrite news queries to retrieve better evidence for fact-checking, optimizing queries based on feedback from a detector.",
+    "why_math": "It works because the query that retrieves the most useful evidence is usually not the original words. By learning to translate news into effective search terms—using feedback on which evidence actually helped—you align retrieval with verification needs."
+  },
+  {
+    "gid": 783,
+    "math_tags": [
+      "ranking things by a learned score",
+      "separating cause from coincidence",
+      "matching and allocating who gets what"
+    ],
+    "math_plain": "Score node importance in a network, then craft fake identities to hide a true node's importance—evading detection based on network structure.",
+    "why_math": "It works because network importance measures rely on connection patterns; an adversary can exploit this by creating many fake identities and distributing connections in ways that obscure their true network position. The ranking algorithm cannot tell real influence from orchestrated noise."
+  },
+  {
+    "gid": 784,
+    "math_tags": [
+      "measuring surprise and information",
+      "smart random sampling and averaging",
+      "finding the settings with least error"
+    ],
+    "math_plain": "Select the most informative log patterns under a false-alarm budget, then grind them into rules that catch anomalies with minimal false alarms.",
+    "why_math": "It works because anomalies are rare and distinctive—the patterns that help you catch them are also the ones that reduce confusion. By optimizing which patterns matter most while keeping false positives bounded, you trade recall against reliability in a controlled way."
+  },
+  {
+    "gid": 785,
+    "math_tags": [
+      "learning a function from examples",
+      "smart random sampling and averaging",
+      "measuring similarity as nearness in a space"
+    ],
+    "math_plain": "Cluster new short videos by similarity, then infer what policy rules would govern them, automating discovery of emerging content issues.",
+    "why_math": "It works because new issues on social platforms share common visual and textual patterns. By grouping similar cases and extracting their common features, you reveal what rules are missing—clustering acts as a data-driven lens to see gaps in policy coverage."
+  },
+  {
+    "gid": 786,
+    "math_tags": [
+      "learning a function from examples",
+      "weighting the parts that are most relevant",
+      "measuring similarity as nearness in a space"
+    ],
+    "math_plain": "Blend guidance from images, text, and geometric shape to generate material properties (albedo, roughness) that look right under any lighting.",
+    "why_math": "It works because multiple sources of truth—a reference image, a verbal description, and structural geometry—each catch different details. Fusing them ensures the final material respects texture hints from the image, intent from language, and spatial consistency from shape."
+  },
+  {
+    "gid": 787,
+    "math_tags": [
+      "learning a function from examples",
+      "predicting the next item in a sequence",
+      "combining many weak signals into a strong one"
+    ],
+    "math_plain": "Generate synthetic fake transaction patterns to rehearse spotting old fraud types, preventing a model from forgetting as new patterns emerge.",
+    "why_math": "It works because streaming fraud detection faces catastrophic forgetting—as new scams arise, models unlearn old ones. Replaying synthetic historical fraud patterns keeps the old detectors sharp without storing real data, which is impossible at scale."
+  },
+  {
+    "gid": 788,
+    "math_tags": [
+      "learning a function from examples",
+      "measuring similarity as nearness in a space",
+      "separating cause from coincidence"
+    ],
+    "math_plain": "Test how well hate-detection models work across different cultures and languages, revealing bias toward Western interpretations.",
+    "why_math": "It works because models trained on Western data absorb Western meanings. By measuring performance separately per culture and prompting in native languages, you expose how much detection relies on cultural cues the model never saw, revealing when translation erases meaning."
+  },
+  {
+    "gid": 789,
+    "math_tags": [
+      "measuring similarity as nearness in a space",
+      "combining many weak signals into a strong one",
+      "predicting the next item in a sequence"
+    ],
+    "math_plain": "Measure how much information each modality (text, audio, video) shares with others, then pick the best pairs for fusion and track emotion over time.",
+    "why_math": "It works because emotions reveal themselves differently across modalities—speech tone and facial expression sometimes disagree with words. Measuring what information each modality shares with the others tells you which pairs are trustworthy, and tracking changes over time respects that emotions evolve within a conversation."
+  },
+  {
+    "gid": 790,
+    "math_tags": [
+      "learning a function from examples",
+      "measuring similarity as nearness in a space",
+      "separating cause from coincidence"
+    ],
+    "math_plain": "Learn user representations that separate what behavior is shared across platforms from what is unique to each, preserving privacy while enabling transfer.",
+    "why_math": "It works because users behave consistently across platforms in some ways and consistently differently in others. Teasing apart shared patterns from domain-specific ones lets you transfer knowledge—cross-platform insights—without leaking domain-specific data or trusting dishonest servers."
+  },
+  {
+    "gid": 791,
+    "math_tags": [
+      "finding the settings with least error",
+      "weighting the parts that are most relevant",
+      "matching and allocating who gets what"
+    ],
+    "math_plain": "Adjust how stubborn individuals are toward their own beliefs so that different groups end up with fair influence over the crowd's final opinion.",
+    "why_math": "It works because the more a person clings to their own opinion, the more weight it carries in the group consensus. By tweaking how much each person sticks to their view, you reshape who influences the crowd—targeting minimal changes that rebalance power between groups."
+  },
+  {
+    "gid": 792,
+    "math_tags": [
+      "finding the settings with least error",
+      "measuring similarity as nearness in a space",
+      "combining many weak signals into a strong one"
+    ],
+    "math_plain": "Reroute satellite traffic during radiation bursts to minimize battery drain while maintaining service—balancing energy cost against uptime.",
+    "why_math": "It works because radiation damage and battery depletion compound over time—the energy spent rerouting now prevents larger problems later. By measuring the energy cost of different rerouting choices against the battery's remaining capacity, you optimize a tradeoff that only appears when you account for the full system."
+  },
+  {
+    "gid": 793,
+    "math_tags": [
+      "finding the settings with least error",
+      "weighting the parts that are most relevant",
+      "learning a function from examples"
+    ],
+    "math_plain": "Train once on a data representation, then insert different fairness adapters at test time to tune fairness level without retraining.",
+    "why_math": "It works because fairness is a tuning knob, not a fixed property. By learning a shared representation once and plugging in different fairness tweaks later, you avoid the cost of retraining while guaranteeing that fairness improves smoothly as you adjust the dial—each step is strictly more fair than the last."
+  },
+  {
+    "gid": 794,
+    "math_tags": [
+      "learning a function from examples",
+      "measuring similarity as nearness in a space",
+      "separating cause from coincidence"
+    ],
+    "math_plain": "Extract structured concepts (symbols representing visual and rhetorical ideas) from images, then train a transparent model on those concepts to detect vaccine misinfo.",
+    "why_math": "It works because concepts are interpretable—you can see exactly which visual cues (a syringe plus angry face plus text warning) triggered a detection. By grounding detection in human-understandable concepts rather than opaque scores, you get decisions you can audit and explain, making mistakes obvious and correctable."
+  }
+]

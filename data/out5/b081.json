@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 1215,
+    "math_tags": ["learning a function from examples", "ranking things by a learned score"],
+    "math_plain": "Learn interpretable guidelines for what counts as evidence for each depression symptom, then use those guidelines to classify text.",
+    "why_math": "It works because annotators and models apply inconsistent criteria when classifying rare symptoms. By extracting what the labeled examples actually mean into explicit rules, the model can apply those rules consistently to new text, even for symptoms with few training examples."
+  },
+  {
+    "gid": 1216,
+    "math_tags": ["learning by comparison of similar and different", "measuring similarity as nearness in a space", "spreading information across a network"],
+    "math_plain": "Learn what normal node behavior looks like by comparing similar nodes and finding similar exemplars in the graph, then flag nodes that deviate from this normal pattern.",
+    "why_math": "It works because anomalies are rare and similar normal examples far outweigh anomalies. By retrieving genuinely similar normal nodes and using them as the baseline, deviations become obvious and the method avoids false alarms from isolated normal nodes."
+  },
+  {
+    "gid": 1217,
+    "math_tags": ["learning by comparison of similar and different", "predicting the next item in a sequence"],
+    "math_plain": "Predict student performance by comparing them to other students with similar skill profiles, using natural examples from other learners as positive and negative contrasts.",
+    "why_math": "It works because students with similar skills develop similar patterns. Real contrasts between comparable learners are richer and more realistic than synthetic augmentations, so the model learns the actual trajectory patterns that generalize across sparse data."
+  },
+  {
+    "gid": 1218,
+    "math_tags": ["ranking things by a learned score"],
+    "math_plain": "Rank recommendation candidates with stable scores that don't change when the input order changes, using special attention masking and position encoding.",
+    "why_math": "It works because the best item shouldn't depend on whether you listed it first or last. By blocking attention across candidates and using rotation-based positions, the model scores each item based on its merit alone, not its position in the prompt sequence."
+  },
+  {
+    "gid": 1219,
+    "math_tags": ["keeping only the few dimensions that matter", "finding the settings with least error"],
+    "math_plain": "Shrink search embeddings to fewer dimensions as query traffic increases, trading some accuracy for speed to avoid query backlog.",
+    "why_math": "It works because query traffic is unpredictable and full precision isn't always necessary. By reducing dimensions under load rather than dropping queries, the system guarantees service while losing minimal accuracy since the largest-signal dimensions stay intact."
+  },
+  {
+    "gid": 1220,
+    "math_tags": ["measuring similarity as nearness in a space", "separating cause from coincidence"],
+    "math_plain": "Cluster sparse documents efficiently using a balanced K-means-guided bisection that groups similar vectors together.",
+    "why_math": "It works because similar vectors (measured by proximity in the sparse space) tend to be relevant for the same queries. Clustering groups these naturally-similar documents so retrieval only needs to search a few clusters instead of all documents, cutting search time dramatically."
+  },
+  {
+    "gid": 1221,
+    "math_tags": ["finding the settings with least error", "following the slope downhill to improve"],
+    "math_plain": "Learn which data preprocessing steps to use by optimizing retrieval performance end-to-end, treating step selection as a differentiable choice.",
+    "why_math": "It works because good preprocessing depends on the retrieval model and dataset, so there's no universal best pipeline. By directly optimizing which steps to use based on retrieval errors, the system finds the combination that actually helps this specific model and data."
+  },
+  {
+    "gid": 1222,
+    "math_tags": ["learning from examples by resolving uncertainty", "estimating probabilities from data"],
+    "math_plain": "Treat noisy implicit feedback as having multiple possible labels, then learn to disambiguate which feedback is true signal versus noise.",
+    "why_math": "It works because clicks and views are genuinely ambiguous—a click might be a misclick or an unsatisfactory item. By modeling the ambiguity explicitly as a set of possible labels rather than forcing a hard choice, the model learns to recognize which signals are reliable while handling uncertainty gracefully."
+  },
+  {
+    "gid": 1223,
+    "math_tags": ["learning a function from examples", "weighting the parts that are most relevant"],
+    "math_plain": "Learn per-parameter weights to combine domain-specific knowledge (from pretraining) with reranking objectives, keeping all weights fixed.",
+    "why_math": "It works because different parts of the model contribute differently to domain adaptation. By learning which parts of the pretrained knowledge matter most for each domain and weighting them individually, the model transfers domain expertise smoothly without catastrophic forgetting."
+  },
+  {
+    "gid": 1224,
+    "math_tags": ["keeping only the few dimensions that matter", "measuring similarity as nearness in a space"],
+    "math_plain": "Jointly re-align user and item embeddings in a low-rank factorized space by preserving angular structure while reinforcing high-confidence preferences.",
+    "why_math": "It works because embeddings were originally trained as a pair under the assumption they span a low-dimensional subspace. If you refine one side only, you break that alignment. Jointly refactoring restores the pairing while keeping what was learned about which users and items are close."
+  },
+  {
+    "gid": 1225,
+    "math_tags": ["predicting the next item in a sequence", "spreading information across a network"],
+    "math_plain": "Predict next interactions by routing information across multiple time lags in a dynamic graph, accounting for delays in when logs arrive.",
+    "why_math": "It works because real logs often lag behind user actions by hours or days, creating a shifted history. By learning which lags matter and routing information across them, the model aligns its hidden state with the true timeline rather than the delayed visible timeline, fixing temporal misalignment."
+  },
+  {
+    "gid": 1226,
+    "math_tags": ["measuring similarity as nearness in a space"],
+    "math_plain": "Match entities by computing similarity between mention and entity using compact fixed-size representations combining text and visual information.",
+    "why_math": "It works because fixed-size representations trade some richness for speed and storage. By carefully compressing both modalities into compact vectors, the system keeps the core similarity signal that humans use to recognize the same entity in images and text, while cutting storage and lookup time dramatically."
+  },
+  {
+    "gid": 1227,
+    "math_tags": ["weighting the parts that are most relevant", "measuring surprise and information"],
+    "math_plain": "Build evaluation question banks by extracting contrastive differences between good and bad system responses, focusing on what actually separates winners.",
+    "why_math": "It works because generic questions don't reveal which systems are better; contrastive questions do. By grounding nuggets in actual response pairs and examining what distinguishes winners from losers—topicality, detail, evidence—you extract questions that strongly correlate with actual system quality."
+  },
+  {
+    "gid": 1228,
+    "math_tags": ["ranking things by a learned score", "weighting the parts that are most relevant"],
+    "math_plain": "Rank search results adaptively: use fast similarity-based scoring for simple queries and generated instructions for complex constraint-heavy queries.",
+    "why_math": "It works because query complexity varies. Instruction-following is powerful but slow and prone to noise on simple queries. By routing queries based on complexity and only invoking instruction-following when constraints are present, the system gets guidance exactly where it helps without wasting time on straightforward queries."
+  },
+  {
+    "gid": 1229,
+    "math_tags": ["separating cause from coincidence", "matching and allocating who gets what"],
+    "math_plain": "Predict hotel and room demand by modeling the two-stage booking funnel and how price changes for one room type shift demand to others.",
+    "why_math": "It works because booking is two-stage (hotel then room type) and room choices affect each other. By decomposing into stages and explicitly modeling substitution—when a price rises, some customers switch to competing rooms—the model captures real causal structure instead of treating all interactions the same."
+  }
+]

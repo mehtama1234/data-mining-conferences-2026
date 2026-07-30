@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 825,
+    "math_tags": ["estimating probabilities from data", "learning a function from examples"],
+    "math_plain": "Measures how much a response depends on conversation history using information theory to quantify engagement.",
+    "why_math": "It works because coherent, engaging conversations have responses that naturally follow from context. When responses tightly depend on history, the conversation shows real engagement rather than random replies."
+  },
+  {
+    "gid": 826,
+    "math_tags": ["ranking things by a learned score", "learning a function from examples"],
+    "math_plain": "Assigns each image a category score using learned patterns to identify spam across eight classes.",
+    "why_math": "It works because spam images share consistent visual features. Learning finds those patterns, so images with similar visual markers to known spam rank high and get caught."
+  },
+  {
+    "gid": 827,
+    "math_tags": ["measuring surprise and information", "smart random sampling and averaging"],
+    "math_plain": "Identifies network flows with high variability in packet timing by filtering stable flows and reporting unstable ones.",
+    "why_math": "It works because flows with bad timing stand out statistically from normal flows. The variability itself is the signal—large deviations from steady patterns directly measure timing problems."
+  },
+  {
+    "gid": 828,
+    "math_tags": ["ranking things by a learned score", "learning a function from examples"],
+    "math_plain": "Scores news headlines on toxicity, sentiment, and framing patterns to classify LLM-generated versus human-written articles.",
+    "why_math": "It works because LLMs have consistent linguistic quirks that differ systematically from human writing. These measurable features form a reliable fingerprint that classifiers can learn and recognize."
+  },
+  {
+    "gid": 829,
+    "math_tags": ["following the slope downhill to improve", "weighting the parts that are most relevant"],
+    "math_plain": "Routes simple queries to lightweight draft experts and complex ones to full verification, adaptively choosing when to compute deeply.",
+    "why_math": "It works because query difficulty varies hugely. Most queries are simple facts requiring no reasoning, so skipping expensive reasoning for easy cases saves time without sacrificing answers."
+  },
+  {
+    "gid": 830,
+    "math_tags": ["ranking things by a learned score", "matching and allocating who gets what"],
+    "math_plain": "Refines book retrieval through dialogue-based clarification, keyword search, and multi-turn expert evaluation to pick top results.",
+    "why_math": "It works because retrieval fails when users lack vocabulary or experts lack metadata. Splitting the problem—clarify needs, search broadly, then evaluate with domain knowledge—solves coordination bottlenecks independently."
+  },
+  {
+    "gid": 831,
+    "math_tags": ["weighting the parts that are most relevant", "combining many weak signals into a strong one"],
+    "math_plain": "Adjusts penalties for each data view based on feature ambiguity and source reliability to balance imperfect evidence.",
+    "why_math": "It works because different data sources vary in quality and clarity. Weighting constraints by confidence prevents bad sources from pulling equally—reliable views drive the answer more."
+  },
+  {
+    "gid": 832,
+    "math_tags": ["ranking things by a learned score", "separating cause from coincidence"],
+    "math_plain": "Crafts graph and text perturbations that fool both neural network and language model detectors simultaneously.",
+    "why_math": "It works because shared reasoning patterns exist between different architectures. Finding perturbations that exploit those shared patterns breaks multiple models at once by targeting their common knowledge."
+  },
+  {
+    "gid": 833,
+    "math_tags": ["following the slope downhill to improve", "ranking things by a learned score"],
+    "math_plain": "Routes queries by estimated complexity: simple ones skip reasoning, hard ones get full reasoning—adaptive routing cuts computation.",
+    "why_math": "It works because question complexity is skewed. The majority are simple facts needing only lookup, so bypassing reasoning for them cuts emissions massively without hurting accuracy on legitimate hard cases."
+  },
+  {
+    "gid": 834,
+    "math_tags": ["learning a function from examples", "combining many weak signals into a strong one"],
+    "math_plain": "Gathers image and text evidence, then refines reasoning through reinforcement learning to verify multimodal claims.",
+    "why_math": "It works because multimodal claims need both semantic search (find relevant proof) and logic (reason through it). Separately optimizing each improves both—better evidence makes reasoning clearer, and reasoning guides which evidence matters."
+  },
+  {
+    "gid": 835,
+    "math_tags": ["combining many weak signals into a strong one", "learning a function from examples"],
+    "math_plain": "Combines GNN and LLM expert judgments with one-class classification and pseudo-labels to detect fake news with sparse labels.",
+    "why_math": "It works because two imperfect experts disagree only on borderline cases—their consensus is stronger than either alone. One-class boundaries define the normal region, and pseudo-labels amplify agreement safely."
+  },
+  {
+    "gid": 836,
+    "math_tags": ["learning a function from examples", "following the slope downhill to improve"],
+    "math_plain": "Generates relational features through schema reasoning and iterative validation, filtering infeasible combinations before testing.",
+    "why_math": "It works because the feature space is huge but sparse. Agents prune impossibilities early using schema knowledge, then empirically validate survivors—this combination avoids testing billions of invalid features."
+  },
+  {
+    "gid": 837,
+    "math_tags": ["weighting the parts that are most relevant", "combining many weak signals into a strong one"],
+    "math_plain": "Enriches sparse user embeddings through sharing auxiliary representations with similar users and selecting diverse training clients.",
+    "why_math": "It works because inactive users and rare items need signals from neighbors. Sharing auxiliary embeddings safely pools knowledge across federated partners without exposing raw data."
+  },
+  {
+    "gid": 838,
+    "math_tags": ["measuring surprise and information", "ranking things by a learned score"],
+    "math_plain": "Identifies influential node groups by measuring how much model output drops when each node is removed.",
+    "why_math": "It works because truly important nodes break the model when removed—the performance damage quantifies importance. Graph structure and node attributes together determine which nodes matter most."
+  },
+  {
+    "gid": 839,
+    "math_tags": ["combining many weak signals into a strong one", "weighting the parts that are most relevant"],
+    "math_plain": "Balances user recommendations by reasoning through multiple sentiment pathways then aggregating them to counteract preference bias.",
+    "why_math": "It works because confirming existing preferences feels natural—it needs active opposition to resist. Explicit multi-step reasoning through contrary sentiments, then aggregating, overcomes the bias through deliberation."
+  }
+]

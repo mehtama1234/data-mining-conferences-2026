@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 1050,
+    "math_tags": ["ranking things by a learned score", "finding the settings with least error"],
+    "math_plain": "Predict the optimal subsidy amount for each customer using their purchase behavior and an asymmetric loss function that penalizes errors differently above and below the true threshold.",
+    "why_math": "It works because the asymmetric loss pays more attention to getting the decision boundary right than to the exact score value, and ranking customers by their subsidy-improvement potential puts the highest-impact ones first. The two-stage refinement ensures the critical threshold is accurate where it matters most for profit."
+  },
+  {
+    "gid": 1051,
+    "math_tags": ["matching and allocating who gets what"],
+    "math_plain": "Detect objects by first identifying semantic parts, then assembling those parts into structurally consistent wholes instead of classifying objects directly.",
+    "why_math": "It works because humans see objects as collections of meaningful pieces, and fitting those pieces together enforces that the final detection actually looks like a real object. This structural constraint eliminates confusion between part fragments and complete instances."
+  },
+  {
+    "gid": 1052,
+    "math_tags": ["measuring surprise and information"],
+    "math_plain": "Maximize the shared information between learned user intent patterns and actual conversion events to infer when a user was interested but hesitated.",
+    "why_math": "It works because high mutual information means the intent patterns genuinely capture what makes conversions happen. When intent is high but conversion didn't occur, that gap reveals hesitation rather than genuine disinterest, letting you recover the true signal hidden in missing conversions."
+  },
+  {
+    "gid": 1053,
+    "math_tags": ["measuring similarity as nearness in a space"],
+    "math_plain": "Convert both 3D scenes and text queries into aligned textual descriptions, then find matches by measuring how close those text representations sit together.",
+    "why_math": "It works because text embedding models already know how to place semantically related statements near each other. By expressing both sides in the same language and using the same embedding model, you can leverage that learned nearness without needing paired training data."
+  },
+  {
+    "gid": 1054,
+    "math_tags": ["measuring similarity as nearness in a space", "smart random sampling and averaging"],
+    "math_plain": "Compute user-item similarity at group levels and across multi-hop paths by using a sketch-based hash method that estimates complex combinatorial similarities with linear cost.",
+    "why_math": "It works because you don't need exact similarity values, only their relative ordering. The hash sketches capture enough information to preserve ranking, so a cheap approximation that respects the order already captures everything needed to find good neighbors without the exponential cost."
+  },
+  {
+    "gid": 1055,
+    "math_tags": ["learning a function from examples"],
+    "math_plain": "Learn a single graph representation model on source graphs that generalizes to unseen target graphs by aligning features across domains and using diffusion-based refinement.",
+    "why_math": "It works because you train on multiple source graphs to see many graph styles, then the alignment step learns to translate between any graph's features. The diffusion refinement smooths out distribution shifts, so the function learned from training generalizes even when it encounters new graph structures."
+  },
+  {
+    "gid": 1056,
+    "math_tags": ["spreading information across a network"],
+    "math_plain": "Model user mental states as a connected graph, then spread activation through it to retrieve the states relevant to the current query, with activation fading over time.",
+    "why_math": "It works because mental states are interconnected—thinking of one thing naturally activates related thoughts. By modeling this as network activation that weakens with time, you capture how recent events influence current understanding more strongly than distant history, just as the brain does."
+  },
+  {
+    "gid": 1057,
+    "math_tags": ["measuring similarity as nearness in a space"],
+    "math_plain": "Compare how users assess and select search engines versus chatbots by measuring the distance between their stated tool preferences and actual usage patterns.",
+    "why_math": "It works because user choice is fundamentally a similarity judgment—they pick the tool that best matches their current task. Measuring the gap between preference and actual behavior reveals when the tool they expect to use differs from the one they actually choose, exposing hidden task-specific tradeoffs."
+  },
+  {
+    "gid": 1058,
+    "math_tags": ["weighting the parts that are most relevant", "combining many weak signals into a strong one"],
+    "math_plain": "Route recommendations through task-specific experts weighted by domain and scenario, then combine their outputs using a learned gating function that aligns multimodal features.",
+    "why_math": "It works because each domain and task has different priorities—what matters in video differs from gaming. By learning which experts to trust for each situation and weighting their votes accordingly, you capture cross-domain patterns without forcing one model to do everything equally well."
+  },
+  {
+    "gid": 1059,
+    "math_tags": ["learning a function from examples"],
+    "math_plain": "Detect social bots by learning to distinguish between a node's core identity and what its neighborhood looks like, rather than assuming they should match.",
+    "why_math": "It works because real users and bots differ in how their declared attributes relate to their social surroundings. By explicitly modeling this gap rather than smoothing it away, you preserve the discriminative signal: genuine accounts have neighborhoods that reflect them, while bots exhibit systematic misalignment."
+  },
+  {
+    "gid": 1060,
+    "math_tags": ["ranking things by a learned score"],
+    "math_plain": "Score document relevance by reasoning directly over pixel-level image evidence from retrieved pages, then output the exact location of supporting visual details.",
+    "why_math": "It works because visual layout and diagrams carry irreplaceable information that text extraction loses. By scoring and citing pixel locations directly, you preserve spatial reasoning and let users verify the evidence themselves, making the ranking both better and trustworthy."
+  },
+  {
+    "gid": 1061,
+    "math_tags": ["finding the settings with least error"],
+    "math_plain": "Minimize prediction errors on video moment retrieval by actively testing the model under adversarial interference and learning to suppress unreliable predictions.",
+    "why_math": "It works because errors due to confusing similar moments are the real risk. By adversarially amplifying interference during training, you force the model to learn robust features that distinguish true relevance from distraction. Testing stability under these worst cases predicts which decisions will hold up in practice."
+  },
+  {
+    "gid": 1062,
+    "math_tags": ["learning a function from examples", "combining many weak signals into a strong one"],
+    "math_plain": "Recommend items by decomposing user-item interactions using a special function approximator, then contrasting multiple views of the graph to find the strongest patterns.",
+    "why_math": "It works because user preferences are complex functions of many weak signals—one graph view emphasizes structure, another emphasizes denoising. By learning complementary representations and comparing them, you extract the durable preference patterns that appear across multiple perspectives, filtering out noise."
+  },
+  {
+    "gid": 1063,
+    "math_tags": ["weighting the parts that are most relevant"],
+    "math_plain": "Inject evidence tokens into the model during decoding with learned weights, prioritizing tokens that are critical to the answer and suppressing ones that distract.",
+    "why_math": "It works because evidence matters differently depending on where in the reasoning you are. By learning to weight each evidence token's contribution based on the task and where you are in decoding, you boost the most critical clues at each step while cutting noise. Different tasks need different evidence emphasized."
+  },
+  {
+    "gid": 1064,
+    "math_tags": ["separating cause from coincidence"],
+    "math_plain": "Score retrieved documents by how well they steer a model toward correct answers even when queries are adversarially biased, using causal intervention to identify true evidence.",
+    "why_math": "It works because causal intervention reveals which documents genuinely cause correct answers versus which only happen to be similar. By testing documents against perturbed queries that contain cognitive biases, you identify evidence that works for the right reasons, not just cases where the bias and truth align."
+  }
+]

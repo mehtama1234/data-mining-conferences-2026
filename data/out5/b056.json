@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 840,
+    "math_tags": ["separating cause from coincidence", "weighting the parts that are most relevant", "measuring similarity as nearness in a space"],
+    "math_plain": "Remove a person's influence from a network graph while ensuring protected characteristics stay fair and accurate.",
+    "why_math": "When you delete someone from a graph, their connections vanish—the method works by carefully rewiring what remains so that sensitive attributes don't accidentally become over-represented or exposed. Fairness protection requires identifying what would have happened naturally versus what shifted only because they left, then adjusting for that difference."
+  },
+  {
+    "gid": 841,
+    "math_tags": ["separating cause from coincidence", "following the slope downhill to improve", "measuring surprise and information"],
+    "math_plain": "Test network protocols by finding rule-breaking test cases and checking if responses match what the rules say should happen.",
+    "why_math": "Protocol rules are written in language; when you extract rules precisely and then generate test cases that break them on purpose, violations become obvious—you spot bugs because expected output mismatches actual output. The method works because deep semantic flaws show up as discrepancies, not just crashes."
+  },
+  {
+    "gid": 842,
+    "math_tags": ["keeping only the few dimensions that matter", "separating cause from coincidence", "measuring similarity as nearness in a space"],
+    "math_plain": "Predict future time series values from incomplete data by decomposing patterns into steady parts and changing parts, then handling each separately.",
+    "why_math": "Real time series split into two layers: correlations between sensors that stay stable over months, and sudden shifts within each sensor across windows. By decomposing these, you can impute the stable part reliably while treating volatility honestly—the steady correlations guide missing values, and the volatile parts adjust for shifts independently."
+  },
+  {
+    "gid": 843,
+    "math_tags": ["learning by comparison of similar and different", "measuring similarity as nearness in a space", "learning a function from examples"],
+    "math_plain": "Predict stance toward new topics by pulling similar examples closer together and pushing different ones apart, then updating prototypes as you learn.",
+    "why_math": "Pulling similar stances together and pushing dissimilar ones apart creates regions in space where each stance clusters. When a new topic arrives, similarity to stored prototypes reveals its stance instantly. Dynamically updating prototypes lets the model learn new patterns without forgetting old ones."
+  },
+  {
+    "gid": 844,
+    "math_tags": ["ranking things by a learned score", "learning a function from examples", "predicting the next item in a sequence"],
+    "math_plain": "From product images and text, generate sales copy and answer viewer questions about products in real time during a livestream.",
+    "why_math": "Structured product data extracted offline becomes a lookup table during the stream—when a viewer question arrives, you rank stored answers and product facts by relevance and blend them into a coherent response. This works because static preparation eliminates latency, and ranking-then-blending is faster than generating from scratch."
+  },
+  {
+    "gid": 845,
+    "math_tags": ["separating cause from coincidence", "combining many weak signals into a strong one", "weighting the parts that are most relevant"],
+    "math_plain": "Score user preferences from multiple behavior types—views, clicks, purchases—by building a causal model to untangle confounding and weighting behaviors smartly.",
+    "why_math": "User habits and item popularity both influence behavior, creating confounding—a click might come from discovery or habit. By modeling cause-and-effect relationships explicitly, interventions isolate true preference from noise. Adaptive weighting then fuses behavior types by learning which ones are reliable for each user-item pair."
+  },
+  {
+    "gid": 846,
+    "math_tags": ["learning a function from examples", "ranking things by a learned score", "separating cause from coincidence"],
+    "math_plain": "Evaluate whether AI systems can reliably interpret children's drawings as mental health screening by testing consistency across psychological constructs and drawing samples.",
+    "why_math": "Construct validity means the system measures what it claims to measure—if an AI says a drawing shows anxiety, that conclusion should hold across different drawings of the same child and match human experts. Testing consistency and construct alignment reveals whether the system has learned real psychological patterns or just surface correlations."
+  },
+  {
+    "gid": 847,
+    "math_tags": ["estimating probabilities from data", "smart random sampling and averaging", "separating cause from coincidence"],
+    "math_plain": "Pool multiple fairness audits using Bayesian inference to produce interval-based fairness claims that express uncertainty and align with regulatory thresholds.",
+    "why_math": "Different audits disagree due to sampling noise and metric choice—Bayesian pooling treats each audit as an imperfect measurement and combines them into a posterior distribution, which gives intervals capturing true uncertainty. Soft constraints ensure that fine-grained and coarse-grained audits stay consistent, and uncertainty quantifies the auditor's collective confidence."
+  },
+  {
+    "gid": 848,
+    "math_tags": ["combining many weak signals into a strong one", "keeping only the few dimensions that matter", "weighting the parts that are most relevant"],
+    "math_plain": "Predict the next item a user will interact with from long sequences by extracting theme-specific subsequences and routing them to specialized predictors.",
+    "why_math": "Long sequences contain interest shifts and session hops—users care about recent trends within sessions but lose interest across sessions. Routing sequences by theme isolates coherent patterns, filtering noise, so each predictor sees only relevant history. Mixture-of-experts then blends these specialized views to forecast accurately."
+  },
+  {
+    "gid": 849,
+    "math_tags": ["following the slope downhill to improve", "learning a function from examples", "separating cause from coincidence"],
+    "math_plain": "Improve logical reasoning in language models by representing reasoning as a matrix plan that can be verified and repaired when steps are wrong.",
+    "why_math": "Chain-of-thought reasoning is fragile—parsing breaks when wording shifts slightly. A matrix representation makes dependencies explicit and queryable, so verification can spot missing or circular steps. Feedback-driven replanning then rewrites the matrix to fix errors, replacing brittle parsing with editable structure."
+  },
+  {
+    "gid": 850,
+    "math_tags": ["ranking things by a learned score", "separating cause from coincidence", "learning a function from examples"],
+    "math_plain": "Detect malicious miniapps that fake the report interface to prevent users from reporting them by learning what legitimate reporting interfaces look like.",
+    "why_math": "A legitimate report interface has consistent visual and behavioral patterns that differ from fakes; malicious ones either discard reports silently or redirect them. Identifying these patterns from millions of interface examples lets the system score and flag lookalikes before they deceive users."
+  },
+  {
+    "gid": 851,
+    "math_tags": ["measuring similarity as nearness in a space", "learning a function from examples", "predicting the next item in a sequence"],
+    "math_plain": "Track how user queries to ChatGPT shift in purpose, tone, and personalization over months to understand evolving human-AI interaction patterns.",
+    "why_math": "User behavior with AI systems is non-stationary—it drifts over time as users learn what the system can do and how to interact with it. By clustering queries and measuring shifts in their properties (topic, emotional disclosure, system suggestions), you can quantify how the relationship deepens from functional to social."
+  },
+  {
+    "gid": 852,
+    "math_tags": ["learning by comparison of similar and different", "separating cause from coincidence", "estimating probabilities from data"],
+    "math_plain": "Derive ethical principles for autonomous systems and human behavior by formalizing the Golden Rule—treating others as you wish to be treated—in game theory.",
+    "why_math": "The Golden Rule works because reciprocity creates stable equilibria: if everyone treats others as they wish to be treated, betrayal becomes costly and cooperation thrives. Game theory formalizes this—mutual fairness and honesty emerge as solutions that maximize collective welfare while respecting individual preferences."
+  },
+  {
+    "gid": 853,
+    "math_tags": ["ranking things by a learned score", "estimating probabilities from data", "learning a function from examples"],
+    "math_plain": "Predict how Telegram post content will influence audience sentiment, toxicity, and humor by extracting linguistic and semantic features and scoring them as classifiers.",
+    "why_math": "Post features correlate with comment patterns—word choice, tone, and emotional signals carry information about likely audience reaction. Training classifiers on these features works because readers respond to the same signals the system extracts; ranking feature importance reveals which signals matter most for each reaction type."
+  },
+  {
+    "gid": 854,
+    "math_tags": ["smart random sampling and averaging", "weighting the parts that are most relevant", "learning a function from examples"],
+    "math_plain": "Boost recommendations for unpopular items and users by augmenting their sequences with similar items while keeping popular items performing well.",
+    "why_math": "Tail items suffer from sparse data—few users buy them. By augmenting their sequences with related items that co-occur, you provide the model more signal without creating fake interactions. Selective substitution and insertion preserve head performance because the method only adds synthetic data where sparsity hurts most."
+  }
+]

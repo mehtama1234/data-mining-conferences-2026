@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 510,
+    "math_tags": ["learning by comparison of similar and different", "smart random sampling and averaging", "weighting the parts that are most relevant"],
+    "math_plain": "Learns which pairs of network nodes are truly anomalies by comparing how similar they are and what's unusual about them.",
+    "why_math": "Comparing similar things reveals anomalies because normal nodes cluster together in their patterns, while anomalies sit alone. Weighting the hard-to-distinguish pairs heavily forces the method to get those right."
+  },
+  {
+    "gid": 511,
+    "math_tags": ["smart random sampling and averaging", "following the slope downhill to improve"],
+    "math_plain": "Tries different strategies for removing graph edges and learns which works best as the data distribution changes over time.",
+    "why_math": "It works because you can try strategies in small batches, measure which reduces error most, and adapt when data shifts. Regular sampling and averaging helps estimate which strategy is truly best."
+  },
+  {
+    "gid": 512,
+    "math_tags": ["predicting the next item in a sequence", "combining many weak signals into a strong one"],
+    "math_plain": "Predicts future traffic flow by combining patterns from past flows with visual information across multiple cities privately.",
+    "why_math": "It works because traffic at one time step depends on the immediate past, and visual data adds independent clues about what's happening. Combining weak signals (flow alone, images alone) into one model makes both stronger."
+  },
+  {
+    "gid": 513,
+    "math_tags": ["measuring similarity as nearness in a space", "following the slope downhill to improve"],
+    "math_plain": "Places entities and relationships in a space so that correct connections sit nearby, scaling how far apart incorrect ones should be by how many wrong answers exist.",
+    "why_math": "It works because keeping correct answers near and wrong ones far apart makes the ranking right. Scaling the boundary by candidate count is crucial—when there are many wrong options, push them further away."
+  },
+  {
+    "gid": 514,
+    "math_tags": [],
+    "math_plain": "Survey paper analyzing recent advances in detecting and tracking objects across images and video, synthesizing over one hundred research works.",
+    "why_math": "This is a survey, not a method paper, so it does not present a single mathematical approach but rather reviews many techniques used in computer vision."
+  },
+  {
+    "gid": 515,
+    "math_tags": ["measuring surprise and information", "separating cause from coincidence"],
+    "math_plain": "Measures how much predictions change when you perturb inputs or protected attributes, using causal reasoning to distinguish real robustness from coincidence.",
+    "why_math": "It works because robustness means predictions should only depend on what causes them, not accidental correlations. Measuring change under perturbation reveals what predictions truly depend on."
+  },
+  {
+    "gid": 516,
+    "math_tags": ["predicting the next item in a sequence", "following the slope downhill to improve"],
+    "math_plain": "Gradually corrupts user-item interaction records into noise-free blur, then recovers them to predict what new users will want across domains.",
+    "why_math": "It works because gradual corruption without random noise preserves structure longer than adding noise would. Reversing the corruption from blur back to sharp preferences means you can borrow structure from related domains."
+  },
+  {
+    "gid": 517,
+    "math_tags": ["predicting the next item in a sequence", "learning by comparison of similar and different"],
+    "math_plain": "Tracks how a user's suicide risk evolves over time, learning whether comment support reduces risk and harmful comments increase it.",
+    "why_math": "It works because risk trajectory has two sources: the user's stable traits and external feedback effects. Separating them means you learn true feedback influence, not just that users who receive support differ overall."
+  },
+  {
+    "gid": 518,
+    "math_tags": ["finding the settings with least error", "keeping only the few dimensions that matter"],
+    "math_plain": "Removes the influence of specific deleted data from a trained model by pruning away connections and projecting learned weights away from that data.",
+    "why_math": "It works because many connections in a model are redundant. Pruning them first disconnects deleted data, then projecting pushes remaining weights away so they no longer respond to it."
+  },
+  {
+    "gid": 519,
+    "math_tags": ["learning a function from examples", "combining many weak signals into a strong one"],
+    "math_plain": "Rewerites user-interaction sequences by borrowing structure from other domains, so standard recommenders can learn hidden cross-domain patterns without complex architectures.",
+    "why_math": "It works because cross-domain information that alone is weak becomes strong when fused into the target-domain sequences themselves. Simple models then outlearn the fused data better than complex models learning separately."
+  },
+  {
+    "gid": 520,
+    "math_tags": ["learning by comparison of similar and different", "weighting the parts that are most relevant"],
+    "math_plain": "Detects deepfakes by learning temporal patterns in facial muscle movements and weighting which temporal and semantic features matter most for spotting synthesis artifacts.",
+    "why_math": "It works because real faces have consistent muscle coordination over time; deepfakes synthesize inconsistently. Weighting relevant features heavily focuses on exactly where synthesis fails."
+  },
+  {
+    "gid": 521,
+    "math_tags": ["learning a function from examples", "weighting the parts that are most relevant"],
+    "math_plain": "Strengthens neural networks for graphs by slightly shifting messages toward or away from neighbors—sharpening distinctive ones and softening noisy ones—during learning.",
+    "why_math": "It works because messages carrying strong unique signals should be amplified and noise suppressed. Contextual shifting toward neighbors for similar messages smooths noise; away for divergent ones sharpens."
+  },
+  {
+    "gid": 522,
+    "math_tags": ["predicting the next item in a sequence", "combining many weak signals into a strong one"],
+    "math_plain": "Predicts which items users will interact with next across multiple behavior types by learning shared preference patterns plus behavior-specific gates that mix them.",
+    "why_math": "It works because different behaviors (purchase, favorite, click) share underlying taste but express it differently. Gating lets purchase influence favorite without forcing them identical, exploiting shared signal while respecting differences."
+  },
+  {
+    "gid": 523,
+    "math_tags": ["following the slope downhill to improve", "spreading information across a network"],
+    "math_plain": "Learns how dengue transmissions spread between city neighborhoods by modeling how infection hotspots in one area influence neighboring regions over weeks.",
+    "why_math": "It works because infections spread through networks—locally between nearby mosquito habitats, and long-distance through people commuting. Learning this network from case data reveals the hidden transmission paths."
+  },
+  {
+    "gid": 524,
+    "math_tags": ["learning a function from examples", "ranking things by a learned score"],
+    "math_plain": "Trains a retriever to rank and extract the most relevant pages from domain documents, then uses them to ground a large language model's answers to questions.",
+    "why_math": "It works because a language model on its own hallucinates facts; ranking pages lets it only say what documents actually contain. Retrieval grounds the model in truth."
+  }
+]

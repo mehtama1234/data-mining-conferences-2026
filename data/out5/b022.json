@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 330,
+    "math_tags": ["learning a function from examples", "predicting the next item in a sequence", "weighting the parts that are most relevant"],
+    "math_plain": "Score recommendations by combining signals from users' past choices with signals from predicting the next token in text.",
+    "why_math": "It works because user preference patterns and text prediction patterns contain complementary information: one shows what items people actually liked, the other captures semantic understanding of content. Fusing both gives richer recommendations than either alone."
+  },
+  {
+    "gid": 331,
+    "math_tags": ["learning a function from examples", "measuring similarity as nearness in a space", "weighting the parts that are most relevant"],
+    "math_plain": "Route different types of information through specialized pathways based on which task is being solved, so each task gets only relevant signals.",
+    "why_math": "It works because different tasks (link prediction, entity alignment, entity linking) have conflicting needs for how information flows. Routing lets each task ignore noise and contradictions that would confuse a single universal path."
+  },
+  {
+    "gid": 332,
+    "math_tags": ["finding the settings with least error", "separating cause from coincidence"],
+    "math_plain": "Identify which nodes look suspicious, then adaptively choose defense actions that reduce the likelihood of attack success.",
+    "why_math": "It works because backdoored nodes show patterns different from clean ones when examined closely. Once you identify suspicious nodes, applying targeted defenses there removes the attack's influence without requiring knowledge of how the attack was constructed."
+  },
+  {
+    "gid": 333,
+    "math_tags": ["measuring similarity as nearness in a space", "learning a function from examples"],
+    "math_plain": "Convert text and information into locations in a space where similar things are nearby, then use those spatial relationships to find and predict answers.",
+    "why_math": "It works because measuring nearness in a well-designed space is far cheaper and faster than parsing text word-by-word, and the space preserves semantic meaning as distance. Once you can measure similarity cheaply, search and prediction become tractable."
+  },
+  {
+    "gid": 334,
+    "math_tags": ["measuring surprise and information", "weighting the parts that are most relevant"],
+    "math_plain": "Combine three uncertainty signals at each step to decide when to fetch external information, triggering retrieval for multi-hop reasoning.",
+    "why_math": "It works because uncertainty has multiple sources: the model's internal confusion, disagreement across multiple runs, and conflict between different signals. Fusing all three captures the true ambiguity better than any single signal, so retrieval triggers precisely when needed."
+  },
+  {
+    "gid": 335,
+    "math_tags": ["learning a function from examples", "separating cause from coincidence"],
+    "math_plain": "Generate realistic transaction data with behavioral patterns, then train supervised models to predict which addresses belong together in mixing services.",
+    "why_math": "It works because supervised learning from labeled transactions can discover patterns in fund movement that heuristic rules miss. Rules are brittle; learned patterns adapt to complex mixing strategies because they extract the true signal of behavior correlation from data."
+  },
+  {
+    "gid": 336,
+    "math_tags": ["finding the settings with least error", "separating cause from coincidence"],
+    "math_plain": "Map a target's endpoints and attack surface, then systematically probe and exploit security weaknesses without authentication or access.",
+    "why_math": "It works because most deployed systems have configuration choices that trade security for convenience. By modeling the attack graph and testing common misconfigurations, you can find the weak points that were left open, revealing real-world vulnerabilities."
+  },
+  {
+    "gid": 337,
+    "math_tags": ["learning a function from examples", "weighting the parts that are most relevant"],
+    "math_plain": "Break down ambiguous user goals into logical dependencies, then ask clarifying questions in an order that respects those dependencies.",
+    "why_math": "It works because human intent is hierarchical: some questions must be answered before others make sense. By respecting logical order instead of asking randomly, you reduce cognitive load and get better answers faster, because each question builds on prior clarity."
+  },
+  {
+    "gid": 338,
+    "math_tags": ["following the slope downhill to improve", "measuring similarity as nearness in a space"],
+    "math_plain": "Model how graphs change over time using differential equations on curved spaces that respect the graph's natural geometry.",
+    "why_math": "It works because many real graphs have hidden geometry (hierarchies, cycles, clusters) that Euclidean space distorts. Curved spaces preserve this geometry as distance, so differential equations solved on the curve capture dynamics faithfully without stretching or compressing the structure."
+  },
+  {
+    "gid": 339,
+    "math_tags": ["measuring surprise and information", "weighting the parts that are most relevant"],
+    "math_plain": "Score model confidence by analyzing patterns in the internal hidden states across multiple scales, without needing extra computations.",
+    "why_math": "It works because a model's internal layers show stability and coherence patterns before the model produces its final answer. These patterns correlate with correctness better than surface-level signals like likelihood or similarity, and they cost nothing extra to compute."
+  },
+  {
+    "gid": 340,
+    "math_tags": ["learning a function from examples", "finding the settings with least error"],
+    "math_plain": "Craft adversarial examples by exploiting how models process in-context prompts, then train defenses to harden prompts against these attacks.",
+    "why_math": "It works because the attacks expose real failure modes in how models handle context: they don't integrate examples rationally, can be distracted by structure, and prioritize later examples over earlier ones. Defenses mitigate these modes by fixing how prompts are constructed."
+  },
+  {
+    "gid": 341,
+    "math_tags": ["matching and allocating who gets what"],
+    "math_plain": "Allocate chores so that all but one person get their fair share, and the last person gets a guaranteed approximation of fairness.",
+    "why_math": "It works because pure fairness for all is often impossible, but satisfying most people is both achievable and practical. This relaxation reflects real-world goals: keeping user retention high matters more than perfect fairness for everyone."
+  },
+  {
+    "gid": 342,
+    "math_tags": ["predicting the next item in a sequence", "learning a function from examples", "weighting the parts that are most relevant"],
+    "math_plain": "Predict the next item by fusing three separate signals about collaborative patterns, semantic meaning, and past ratings, weighted by preference.",
+    "why_math": "It works because users' next choice is influenced by all three factors simultaneously: who they are like (collaborative), what the items mean (semantic), and how much they've enjoyed similar things (ratings). Fusing all three captures more nuance than any single signal."
+  },
+  {
+    "gid": 343,
+    "math_tags": ["keeping only the few dimensions that matter", "learning a function from examples"],
+    "math_plain": "Learn embeddings where most dimensions are zero, keeping only a few active dimensions per item to cut storage and serving cost dramatically.",
+    "why_math": "It works because recommendation patterns are sparse: each item matters for only a few user segments. By forcing embeddings to use only active dimensions, you automatically encode an interpretable index where active dimensions reveal which segment an item belongs to."
+  },
+  {
+    "gid": 344,
+    "math_tags": ["measuring similarity as nearness in a space", "learning a function from examples"],
+    "math_plain": "Classify emotions in video thumbnails and titles by learning from human-labeled examples, then measure which emotions drive engagement.",
+    "why_math": "It works because emotional framing leaves detectable signals in both images and text: chosen colors, selected words, focal composition all express emotion. Learning these patterns from examples lets you classify at scale, then correlating emotions with engagement reveals which ones drive behavior."
+  }
+]

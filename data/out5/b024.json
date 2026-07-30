@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 360,
+    "math_tags": ["learning by comparison of similar and different", "combining many weak signals into a strong one"],
+    "math_plain": "Augment and align class prototypes (compressed summaries) from devices and servers to train both models without sharing raw data.",
+    "why_math": "Prototypes capture what each class looks like in distilled form. Comparing and aligning prototypes lets models learn from the same class boundaries without exposing the original data. Mixing prototypes with noise creates diverse training signals that prevent overfitting."
+  },
+  {
+    "gid": 361,
+    "math_tags": ["following the slope downhill to improve", "learning a function from examples"],
+    "math_plain": "Reinforce planning decisions that maximize satisfaction across stakeholders by learning a policy that maps land data and preferences to layouts.",
+    "why_math": "Reinforcement learning finds actions that yield high rewards through repeated trial and error. Language models provide structured reasoning about what actions look reasonable, which guides the search toward good decisions faster than random exploration alone."
+  },
+  {
+    "gid": 362,
+    "math_tags": ["measuring similarity as nearness in a space", "weighting the parts that are most relevant"],
+    "math_plain": "Align audio and visual features layer-by-layer so they sit close in the same space, then use a state-space model to route guidance between modalities.",
+    "why_math": "When audio and video features start far apart, they're hard to compare. Bringing them closer lets patterns emerge clearly. Routing guidance at each layer compounds the alignment effect, so later layers see progressively better-aligned signals."
+  },
+  {
+    "gid": 363,
+    "math_tags": ["measuring similarity as nearness in a space", "weighting the parts that are most relevant"],
+    "math_plain": "Reweight weak edges in the recommendation graph to improve how information spreads, strengthening the backbone network connectivity.",
+    "why_math": "Graph filters that smooth information across recommendations work best when the graph structure is well-connected. Weak edges act as bottlenecks that block good recommendations. Strengthening them lets signals propagate further and recommendations reach users better."
+  },
+  {
+    "gid": 364,
+    "math_tags": ["separating cause from coincidence"],
+    "math_plain": "Anchor model versions and input data to an immutable append-only log, then issue cryptographic proofs that let anyone verify what a model did.",
+    "why_math": "Immutable logs create a permanent ground truth that no party can alter retroactively. Cryptographic proofs let anyone verify claims about what actually happened, independently of who is making the claim. This separates genuine behavior from denial or revisionism."
+  },
+  {
+    "gid": 365,
+    "math_tags": ["measuring similarity as nearness in a space", "combining many weak signals into a strong one"],
+    "math_plain": "Project images and text into a shared safety space using frozen encoders, then apply a single classifier to any non-empty subset of modalities.",
+    "why_math": "A unified space lets different modalities speak the same language about safety. One decision boundary in that space works for all combinations because safety signals that apply to text also apply to images when they sit together. Missing modalities simply contribute zero to the aggregation."
+  },
+  {
+    "gid": 366,
+    "math_tags": ["learning a function from examples"],
+    "math_plain": "Decompose natural language instructions into simpler sub-tasks using multiple agents, then generate realistic 3D layouts from the refined plan.",
+    "why_math": "Complex language is hard to interpret in one pass. Breaking it into smaller sub-problems lets each agent focus on something simpler and reason about partial results. Robustness comes from agents catching and correcting errors before they compound into the final design."
+  },
+  {
+    "gid": 367,
+    "math_tags": ["ranking things by a learned score"],
+    "math_plain": "Benchmark legal language models across diverse scenarios using a unified evaluation framework that standardizes task definitions and scoring.",
+    "why_math": "Legal tasks are heterogeneous. A shared scoring methodology makes comparisons fair and reproducible. Standardized benchmarks reveal which models perform best at the tasks that matter, guiding real-world deployment."
+  },
+  {
+    "gid": 368,
+    "math_tags": ["separating cause from coincidence"],
+    "math_plain": "Infer Starlink's network architecture and security from DNS records, passive traffic patterns, and active scanning of exposed services.",
+    "why_math": "DNS records and traffic patterns leak details about the network's structure. By correlating these observations, you can separate real infrastructure signals from noise and rebuild a picture of internal organization that the provider tries to hide."
+  },
+  {
+    "gid": 369,
+    "math_tags": ["combining many weak signals into a strong one", "learning by comparison of similar and different"],
+    "math_plain": "Split understanding into literal and metaphorical experts, each scoring an idiom's fit separately, then blend their scores based on context.",
+    "why_math": "Chinese idioms have dual meanings that can confuse a single model. Separate experts can each specialize in one semantic layer and avoid interference. Combining their signals lets the system reason that an idiom makes sense both literally and figuratively."
+  },
+  {
+    "gid": 370,
+    "math_tags": ["separating cause from coincidence"],
+    "math_plain": "Inject poisoned knowledge into the graph by forging fake evolution paths from true facts, misleading the model into treating fabricated nodes as authoritative.",
+    "why_math": "Language models reason about graph structure as if edges represent real causality and evolution. By planting fake but coherent paths, attackers exploit the model's trust that structured knowledge is vetted. The model sees logical links and treats them as established truth."
+  },
+  {
+    "gid": 371,
+    "math_tags": ["keeping only the few dimensions that matter", "learning by comparison of similar and different"],
+    "math_plain": "Decompose graphs into tree structures, compute importance scores for nodes at each level, then contrast nodes that co-occur in tree bags.",
+    "why_math": "Trees reveal the essential backbone structure that drives information flow. Nodes that sit together in multiple decomposition contexts are likely structurally similar. Contrasting co-occurring nodes against distant ones teaches the model which patterns matter for the graph's actual topology."
+  },
+  {
+    "gid": 372,
+    "math_tags": ["measuring surprise and information"],
+    "math_plain": "Measure the quantitative impact of reincarnation on audience size, revenue, harassment, and industry ripple effects using 728K livestream sessions.",
+    "why_math": "Aggregate statistics across many events reveal patterns that single cases cannot. The volume of data allows real effects to emerge from noise, showing how individual career transitions translate into measurable shifts in audience behavior and creator welfare."
+  },
+  {
+    "gid": 373,
+    "math_tags": ["learning by comparison of similar and different", "measuring similarity as nearness in a space"],
+    "math_plain": "Mix synthetic out-of-distribution nodes with in-distribution ones, then contrast nodes of the same known class across different graph neighborhoods.",
+    "why_math": "Contrasting similar nodes makes them cluster tightly; contrasting dissimilar nodes pushes them apart. Negative mixup creates harder examples that sharpen the boundary between known and unknown classes. Cross-layer contrast compounds the signal by enforcing similarity across topological distances."
+  },
+  {
+    "gid": 374,
+    "math_tags": ["weighting the parts that are most relevant", "combining many weak signals into a strong one"],
+    "math_plain": "Route most streaming timestamps to a lightweight encoder; escalate hard cases to a vision-language expert; defer when evidence is insufficient.",
+    "why_math": "Not all decisions require equal expertise. Lightweight models handle routine cases cheaply. Routing expertise to borderline cases concentrates compute where error is most likely. Deferral acknowledges that some decisions are premature, reducing harmful confident mistakes."
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 525,
+    "math_tags": ["estimating probabilities from data", "following the slope downhill to improve", "learning by comparison of similar and different"],
+    "math_plain": "Teach the language model to output word-based probability scores by rewarding it with feedback from expert math-based models trained on tabular data.",
+    "why_math": "Expert models encode reliable ordering and confidence in probabilities. When you reward the language model for matching those signals, it learns to produce calibrated confidence estimates. Dense, fine-grained rewards guide learning much faster than simple right-or-wrong signals."
+  },
+  {
+    "gid": 526,
+    "math_tags": ["measuring similarity as nearness in a space", "following the slope downhill to improve", "smart random sampling and averaging"],
+    "math_plain": "Predict training time on mixed GPU hardware by modeling peak compute speed per GPU type and per-link communication costs, then simulating overlaps between compute and data movement.",
+    "why_math": "Each GPU type has a maximum throughput ceiling determined by its architecture. By measuring actual message sizes and link speeds, you can forecast exactly when communication will bottleneck compute. This prediction requires no full simulation—only the roofline ceiling and observed traffic patterns."
+  },
+  {
+    "gid": 527,
+    "math_tags": ["measuring surprise and information", "combining many weak signals into a strong one"],
+    "math_plain": "Identify deceptive campaigns by measuring how much of the campaign's total volume comes from mass-produced shallow variants of a few core templates, versus genuinely new semantic content.",
+    "why_math": "Organic content producers create many truly different messages. Deceptive operations reuse templates for speed and cost. The ratio of template variants to semantic novelty reveals which is happening. When decoys vastly outnumber new content, automation is driving the campaign."
+  },
+  {
+    "gid": 528,
+    "math_tags": ["learning by comparison of similar and different", "measuring surprise and information"],
+    "math_plain": "Generate hostile text variants that keep the harmful stance constant but soften the language, then measure how many detectors miss the reframed version versus the overt one.",
+    "why_math": "Detectors trained only on explicit hostility learn surface patterns, not underlying intent. By controlling what changes and what stays fixed, you isolate whether the detector catches reasoning-based hostility or only crude slurs. Systematic reframing exposes this gap."
+  },
+  {
+    "gid": 529,
+    "math_tags": ["measuring similarity as nearness in a space", "learning a function from examples"],
+    "math_plain": "Decompose emotion from text, video, and audio into a shared semantic space plus per-modality offsets; combine them by penalizing inconsistency across modes and deviation from expected structure.",
+    "why_math": "Fiber bundle structure lets each modality 'live' on its own layer while maintaining alignment through a common base. When you penalize both inconsistency (modes disagreeing) and disorder (offsets deviating from geometric structure), each modality pulls the others toward coherent emotion signals."
+  },
+  {
+    "gid": 530,
+    "math_tags": ["measuring similarity as nearness in a space", "learning a function from examples"],
+    "math_plain": "Project graphs onto curved spaces where local structure is preserved via curvature measures; share a common subspace across clients while each learns their own task.",
+    "why_math": "Ollivier-Ricci curvature encodes how tightly nodes cluster locally. Projecting to manifolds with known curvature ensures that similar nodes stay near each other. When all clients aggregate updates in this geometry-aware space, each can specialize without breaking shared structure."
+  },
+  {
+    "gid": 531,
+    "math_tags": ["ranking things by a learned score", "learning by comparison of similar and different", "weighting the parts that are most relevant"],
+    "math_plain": "Score each item by combining a ranking built from historical user behaviors as a graph, visual features, and text features; weight each source by attention to balance their influence.",
+    "why_math": "Historical behavior graphs reveal what users actually do (the signal). Text and images reveal intent. Attention learns which matters most per user-item pair—some users care most about product images, others about recommendations from similar users. Separate scores fused by learned weights beat fusing raw features."
+  },
+  {
+    "gid": 532,
+    "math_tags": ["measuring similarity as nearness in a space", "combining many weak signals into a strong one"],
+    "math_plain": "Compress thousands of similar items into one learned token by aggregating their embeddings and training to preserve fine-grained differences across multiple prediction tasks.",
+    "why_math": "Redundant items can be summarized without loss because the aggregation learns inter-item relationships. Multi-task training ensures the summary token still contains enough information to discriminate subtle variations. Training on multiple tasks prevents the token from collapsing to the centroid."
+  },
+  {
+    "gid": 533,
+    "math_tags": ["separating cause from coincidence", "learning a function from examples", "combining many weak signals into a strong one"],
+    "math_plain": "Infer hidden confounding factors by finding a game-theoretic equilibrium among candidate factors suggested by language reasoning; validate the result by checking if it reconstructs causal relationships in real data.",
+    "why_math": "When reasoning is incomplete (players don't know everything), equilibrium strategies are robust to missing information. If an inferred confounder explains the observed causal graph under statistical assumptions, it is likely true. Multiple agreement signals (LLM collaboration, causal reconstruction, data validation) compound confidence."
+  },
+  {
+    "gid": 534,
+    "math_tags": ["learning a function from examples", "weighting the parts that are most relevant"],
+    "math_plain": "Maintain multiple expert models, each specialized to a historical periodic pattern; dynamically route each forecast to the expert whose pattern best matches the current condition, or to a stable baseline if no pattern matches.",
+    "why_math": "Time series often repeat seasonal cycles and weekly patterns. Experts trained on past cycles recognize and forecast their own pattern well. When a genuinely new pattern arrives, no expert matches; routing to a stable baseline prevents experts from extrapolating wrongly. Dynamic selection exploits repetition without being fooled by novelty."
+  },
+  {
+    "gid": 535,
+    "math_tags": ["predicting the next item in a sequence", "keeping only the few dimensions that matter"],
+    "math_plain": "Predict time series values step-by-step by first generating coarse patterns, then refining at finer time scales; separate trend from seasonal patterns to prevent one from drowning out the other.",
+    "why_math": "Coarse patterns need fewer examples to learn and are more stable. Fine patterns are local refinements of coarse ones. By predicting coarse-first, you ground fine predictions in stable structure. Separating trend and seasonality prevents the trend (slow drift) from absorbing seasonal variation as noise."
+  },
+  {
+    "gid": 536,
+    "math_tags": ["ranking things by a learned score", "predicting the next item in a sequence"],
+    "math_plain": "Rank retrieved information by both topical relevance score AND validity over time; adapt retrieval when knowledge changes to reflect current rather than historical truth.",
+    "why_math": "On a changing web, recency matters as much as topical match. A document can be relevant but outdated. Temporal ranking accounts for when the document was true. Adaptation ensures systems track concept drift in the world, not memorize stale patterns."
+  },
+  {
+    "gid": 537,
+    "math_tags": ["measuring surprise and information", "smart random sampling and averaging"],
+    "math_plain": "Compute the false-positive rate of detecting censorship by measuring when independent observers disagree on transaction presence; show that timing (transactions separated by 30+ seconds) dramatically reduces false alarms.",
+    "why_math": "If a transaction exists, all observers should eventually see it; discrepancies are evidence of blocking. But network delays cause false alarms. Waiting longer ensures propagation is complete, so discrepancies become rare unless true censorship occurs. Time-separation filters out transient delays."
+  },
+  {
+    "gid": 538,
+    "math_tags": ["ranking things by a learned score", "following the slope downhill to improve"],
+    "math_plain": "Find the best multi-step reasoning path through n-ary facts by scoring and ranking candidate paths using both structural reasoning and guidance from the language model's internal knowledge.",
+    "why_math": "N-ary facts (e.g., 'who did what to whom when') preserve semantic coherence better than binary triples, so fewer hops are needed. Fewer hops mean fewer chances for errors to accumulate. LLM guidance learns which facts are actually true, so beam search prioritizes coherent factual paths over plausible noise."
+  },
+  {
+    "gid": 539,
+    "math_tags": ["estimating probabilities from data", "learning by comparison of similar and different", "separating cause from coincidence"],
+    "math_plain": "Generate pseudo-labels for social messages via language model; filter out hallucinated labels by selecting only those whose semantic similarity is high along meaningful graph-based relationship paths.",
+    "why_math": "Language models produce labels containing real signal mixed with hallucination. Graph meta-paths encode 'who talks to whom about topics'; if an event label has high similarity along these paths, it reflects true collaboration, not just superficial word overlap. Real social signals are more cohesive than hallucinations."
+  }
+]

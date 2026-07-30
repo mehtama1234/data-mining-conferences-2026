@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 255,
+    "math_tags": ["measuring similarity as nearness in a space", "finding the settings with least error", "learning a function from examples"],
+    "math_plain": "Maps clues extracted from web pages into geographic coordinates by measuring how closely patterns match known locations.",
+    "why_math": "Geographic inference works because places have consistent, repeating patterns in language and layout. Measuring how similar unknown content is to known reference locations reveals the most likely position, just as finding what existing thing is most similar to a new thing tells you what category it belongs to."
+  },
+  {
+    "gid": 256,
+    "math_tags": ["learning a function from examples", "combining many weak signals into a strong one", "finding the settings with least error"],
+    "math_plain": "Predicts polymer properties by learning relationships between molecular structure inputs and measured property outputs, combining the learned function with workflow automation.",
+    "why_math": "Learning properties from molecular structure works because chemistry is deterministic: specific arrangements of atoms produce specific measurable results. By showing the system many examples of 'this structure gives this property', it finds the hidden rules connecting them, then applies those rules to new structures."
+  },
+  {
+    "gid": 257,
+    "math_tags": ["predicting the next item in a sequence", "measuring similarity as nearness in a space", "weighting the parts that are most relevant"],
+    "math_plain": "Predicts which items users want by learning hierarchical session structure and using focused attention only on the most relevant past interactions instead of considering everything equally.",
+    "why_math": "User preferences follow hierarchical patterns: sessions contain meaningful units, and not all past events matter equally for the next choice. By recognizing this structure and focusing computation on signal-rich moments, the model avoids noise that would cloud the true preference pattern, making predictions more accurate."
+  },
+  {
+    "gid": 258,
+    "math_tags": ["learning a function from examples", "measuring surprise and information", "combining many weak signals into a strong one"],
+    "math_plain": "Survey analyzing which data, methods, and quality measures drive progress in generating realistic video of talking heads from audio and images.",
+    "why_math": "Progress happens through accumulated refinement across many dimensions: better input data (audio-visual, emotional), better learned functions (diffusion models), and better ways to measure success (naturalness, sync, alignment). By tracking how each dimension changed, the survey reveals what actually drives improvement in the field."
+  },
+  {
+    "gid": 259,
+    "math_tags": ["learning a function from examples", "finding the settings with least error", "measuring similarity as nearness in a space"],
+    "math_plain": "Removes unwanted concepts from language models by adjusting only the output layer to reorient the mapping between internal meanings and output words.",
+    "why_math": "The core layers of a language model learn general meaning and reasoning. The output layer learns which internal meanings should produce which words. By only adjusting that output layer, you block undesired outputs without disturbing the reasoning underneath, preserving what the model knows while controlling what it says."
+  },
+  {
+    "gid": 260,
+    "math_tags": ["measuring similarity as nearness in a space", "learning a function from examples", "separating cause from coincidence"],
+    "math_plain": "Predicts how central each node is in temporal networks by learning graph structure with contrastive learning to separate nodes of different importance levels.",
+    "why_math": "Importance in temporal networks is rare: most nodes are unimportant, which drowns out the signal about truly central nodes. By actively pushing nodes of different importance into different regions of the learned space, the model stops wasting capacity on the obvious negatives and focuses on what makes central nodes actually special."
+  },
+  {
+    "gid": 261,
+    "math_tags": ["measuring similarity as nearness in a space", "separating cause from coincidence", "learning a function from examples"],
+    "math_plain": "Explains predictions from graph models by finding causal multi-node patterns and contrasting meaningful cause-effect pathways against spurious coincidences.",
+    "why_math": "Real causes produce consistent relationships that hold across different contexts; spurious coincidences appear only in specific, accidental situations. By looking for patterns that remain stable as the graph changes while discarding patterns that vanish, the method distinguishes true causation from noise."
+  },
+  {
+    "gid": 262,
+    "math_tags": ["ranking things by a learned score", "measuring similarity as nearness in a space", "learning a function from examples"],
+    "math_plain": "Predicts which existing papers a new paper should cite by ranking them using a retrieval-augmented pipeline that finds similar papers then generates explanations.",
+    "why_math": "Citation is fundamentally about relevance: papers cited are those that share methods, problems, or ideas with the new work. By first retrieving papers similar in content and then re-ranking them through generation, the system exploits two truths: retrieval finds the neighborhood to search in, and generation refines which neighbors matter most."
+  },
+  {
+    "gid": 263,
+    "math_tags": ["separating cause from coincidence", "learning the settings with least error"],
+    "math_plain": "Studies auction design for blockchains to determine what level of collusion resistance is actually achievable and necessary.",
+    "why_math": "In auction design, robustness is about eliminating opportunities, not absolute prevention. The proof shows that if a mechanism is vulnerable to any collusion size, there exists a small collusion that exploits it: focusing defense on preventing small coordinated attack is sufficient because larger collu, by economic logic, would encounter diminishing returns to coordination."
+  },
+  {
+    "gid": 264,
+    "math_tags": ["learning a function from examples", "finding the settings with least error", "measuring similarity as nearness in a space"],
+    "math_plain": "Tests when fine-tuning tabular foundation models improves performance and calibration versus using zero-shot or simpler adjustment methods.",
+    "why_math": "Foundation models trained on diverse data learn general patterns that often transfer well to new problems. Fine-tuning adjusts those patterns for specificity, but risks overfitting to small quirks of the new task. The study reveals that when diversity and task similarity are high, zero-shot works; when the task is very specific, carefully-tuned adjustments help."
+  },
+  {
+    "gid": 265,
+    "math_tags": ["measuring similarity as nearness in a space", "learning by comparison of similar and different", "combining many weak signals into a strong one"],
+    "math_plain": "Recommends items by learning item relationships through language model descriptions and contrastive learning, without storing per-user patterns.",
+    "why_math": "Personalization is usually stored in user embeddings, but this wastes memory and breaks on unseen users. By replacing user storage with on-the-fly scoring from augmented item comparisons using contrastive learning, the system discovers which items relate to which others. A new user's preferences emerge from which similar items they interact with, not from storage."
+  },
+  {
+    "gid": 266,
+    "math_tags": ["combining many weak signals into a strong one", "finding the settings with least error", "measuring similarity as nearness in a space"],
+    "math_plain": "Coordinates learning across drone networks to identify flood damage without sending full image data, only compressed semantic summaries.",
+    "why_math": "Communication is expensive in disaster drones. Raw images are wasteful; only the semantic meaning (water, debris, damage severity) matters. By each drone learning locally and sharing only high-level semantic summaries compressed in feature space, the network learns a better global model while cutting communication by 99.5%, proving that meaning compresses far smaller than data."
+  },
+  {
+    "gid": 267,
+    "math_tags": ["learning a function from examples", "learning by comparison of similar and different", "finding the settings with least error"],
+    "math_plain": "Translates text for low-resource Southeast Asian languages by using a learning agent to select high-quality, culturally relevant training examples instead of training on all noisy data.",
+    "why_math": "Translation to low-resource languages fails on massive noisy data because culture-specific meaning gets drowned out. By training a selection agent to recognize which examples preserve cultural intent, then fine-tuning on those few high-signal examples, the model learns precise, culturally grounded translation without carbon-intensive brute-force training."
+  },
+  {
+    "gid": 268,
+    "math_tags": ["measuring similarity as nearness in a space", "learning a function from examples", "finding the settings with least error"],
+    "math_plain": "Identifies which websites Tor users visit by learning a robust description of traffic patterns that stays accurate as websites change and network conditions vary.",
+    "why_math": "Traffic patterns drift: websites update, network conditions differ, users take new subpages. Real-world fingerprinting fails because patterns learned on old traffic don't match new traffic. By fine-tuning on diverse, unlabeled real traffic and learning representations that capture essential patterns regardless of superficial change, the method finds the core signature that survives evolution."
+  },
+  {
+    "gid": 269,
+    "math_tags": ["measuring similarity as nearness in a space", "separating cause from coincidence", "learning a function from examples"],
+    "math_plain": "Survey of methods to visually distinguish between objects that look nearly identical but have different labels, and how language and multimodal data improve this task.",
+    "why_math": "Fine-grained visual distinction is hard because small appearance differences matter, but many irrelevant changes also shift pixels. Adding language context works because it grounds what differences actually matter: a model learns which pixel changes reflect real semantic difference (a species name) versus accidental variation (lighting, angle). Multimodal fusion exploits complementary signals: vision captures fine detail, language clarifies what counts."
+  }
+]

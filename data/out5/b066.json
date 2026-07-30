@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 990,
+    "math_tags": ["ranking things by a learned score", "separating cause from coincidence"],
+    "math_plain": "Score items to rank them, but learn to prioritize examples with low errors while gradually introducing harder cases, reducing gender bias without explicit demographic labels.",
+    "why_math": "It works because easier examples teach the model the right patterns first, and gradually adding harder cases prevents it from memorizing biased shortcuts. By filtering through how confidently the model scores each example, you can detect when gender bias is causing errors and correct it."
+  },
+  {
+    "gid": 991,
+    "math_tags": ["separating cause from coincidence", "learning a function from examples"],
+    "math_plain": "Build causal relationships between time-series variables at two scales (whole sequences and local segments), modeling hidden confounders with dedicated variables rather than assuming all causes are observed.",
+    "why_math": "It works because real data has unmeasured causes affecting multiple variables at once. By explicitly representing these hidden causes with special variables, then solving for what they must be from the patterns you see, you can untangle which relationships are truly causal versus merely correlated."
+  },
+  {
+    "gid": 992,
+    "math_tags": ["spreading information across a network", "learning a function from examples"],
+    "math_plain": "Clean up noisy knowledge graphs by learning their underlying true distribution, then generate a cleaner version aligned with what the recommendation task actually cares about.",
+    "why_math": "It works because real knowledge graphs have errors and gaps, but they still reflect a distribution you can learn. By fitting that distribution and regenerating the graph from it, you remove noise while preserving the semantic structure humans would accept, focusing on recommendation-relevant parts."
+  },
+  {
+    "gid": 993,
+    "math_tags": [],
+    "math_plain": "Critical examination of how information retrieval systems perpetuate or resist societal power imbalances and the limits of fairness-focused approaches.",
+    "why_math": "This is a theoretical essay, not a math-based method. It argues that formal fairness metrics alone cannot address the structural problem of systems designed to surveil and control."
+  },
+  {
+    "gid": 994,
+    "math_tags": [],
+    "math_plain": "Overview of how language generation and user modeling historically addressed the problem of delivering appropriate answers to different audiences and information needs.",
+    "why_math": "This is a survey talk tracing historical approaches; it does not present a novel mathematical technique, but rather reflects on lessons learned about what matters in human-machine dialogue."
+  },
+  {
+    "gid": 995,
+    "math_tags": ["ranking things by a learned score", "learning a function from examples"],
+    "math_plain": "Retrieve evidence greedily when needed, then feed it to a reasoning model to generate answers and plan which questions to ask next, iterating to refine search strategy.",
+    "why_math": "It works because reasoning models are expensive, so you only invoke them when retrieval surfaces relevant evidence, then let them ask what to search for next. This closed loop between searching and reasoning prevents expensive reasoning on irrelevant facts while keeping search focused on what the reasoning step actually needs."
+  },
+  {
+    "gid": 996,
+    "math_tags": ["learning a function from examples", "learning by comparison of similar and different"],
+    "math_plain": "Extract latent search dimensions from how different demographic groups formulate queries and interact, then use those dimensions to explain and predict query behavior.",
+    "why_math": "It works because demographic differences in search are not random; they reflect underlying strategies and preferences. By finding the latent dimensions that separate behavior, you capture the true drivers rather than confusing correlation with cause, enabling fair comparison across groups."
+  },
+  {
+    "gid": 997,
+    "math_tags": ["learning by comparison of similar and different", "weighting the parts that are most relevant"],
+    "math_plain": "Learn item similarities by contrasting user preferences, weighting the contrast loss to align embeddings with emotional meaning (valence and arousal) extracted from language models.",
+    "why_math": "It works because items users treat similarly should sit close in learned space. By weighting similarity comparisons according to the emotional tone users assign to items, you ensure the learned closeness reflects what matters to the user, not just structure."
+  },
+  {
+    "gid": 998,
+    "math_tags": ["learning a function from examples"],
+    "math_plain": "Track where people's eyes look on search result pages when generative summaries appear above traditional blue links, measuring engagement to understand changing attention patterns.",
+    "why_math": "It works because eye tracking directly reveals where attention flows. Comparing gaze distribution when generative content is present versus absent isolates its causal effect on search behavior, avoiding self-report bias."
+  },
+  {
+    "gid": 999,
+    "math_tags": ["ranking things by a learned score", "combining many weak signals into a strong one"],
+    "math_plain": "Generate many different reasoning paths inside the model using controlled randomness, then select and combine the highest-quality paths to produce diverse, accurate recommendations.",
+    "why_math": "It works because a single reasoning path risks missing better alternatives. By generating multiple paths in parallel and picking the best ones, you explore the model's reasoning space more thoroughly, then aggregating them balances diversity and accuracy."
+  },
+  {
+    "gid": 1000,
+    "math_tags": ["finding the settings with least error", "learning a function from examples"],
+    "math_plain": "Optimize a tokenizer (item encoder) and a recommender jointly: the recommender learns to rank items given tokens, while the tokenizer learns which tokens make the recommender's job easiest.",
+    "why_math": "It works because item tokens and the recommender depend on each other—tokens chosen by the optimizer should help the recommender rank well. Solving both simultaneously prevents the tokenizer from generating tokens that are cheap to compute but useless for ranking."
+  },
+  {
+    "gid": 1001,
+    "math_tags": ["learning a function from examples", "separating cause from coincidence"],
+    "math_plain": "Predict student mastery by analyzing not just right or wrong, but which specific answer students chose, using language models to infer what misconception each wrong answer represents.",
+    "why_math": "It works because different wrong answers reveal different misconceptions. By mapping each answer to the specific idea gap it represents, you move from a crude right/wrong signal to precise diagnosis, enabling targeted teaching rather than generic feedback."
+  },
+  {
+    "gid": 1002,
+    "math_tags": ["ranking things by a learned score", "finding the settings with least error"],
+    "math_plain": "Prevent ranking models from learning unreasonably large confidence scores by adding temperature controls during training and suppressing gradients that push scores unnecessarily high.",
+    "why_math": "It works because ranking only needs scores in the right order, not arbitrary magnitude. By bounding how large scores can grow relative to that ordering, you prevent overconfidence while maintaining ranking quality, yielding predictions you can trust numerically."
+  },
+  {
+    "gid": 1003,
+    "math_tags": ["ranking things by a learned score", "combining many weak signals into a strong one"],
+    "math_plain": "Retrieve top candidates on CPU using exact filtering, then score and rerank them on GPU in parallel, coordinating work to hide synchronization delays.",
+    "why_math": "It works because filtering is sequential and CPU-friendly while scoring is parallelizable and GPU-friendly. By doing filtering on CPU and scoring on GPU in a pipeline, neither waits idle; CPU filters while GPU scores, and overlapping hides latency."
+  },
+  {
+    "gid": 1004,
+    "math_tags": ["ranking things by a learned score", "learning a function from examples"],
+    "math_plain": "Build database queries one hop at a time, correcting each intermediate result using knowledge base facts before moving to the next step, assembling the final query from validated fragments.",
+    "why_math": "It works because complex queries have many steps, and early mistakes cascade. By validating each hop against actual knowledge base content and only continuing with feasible paths, you catch and fix errors incrementally rather than producing unsalvageable final queries."
+  }
+]

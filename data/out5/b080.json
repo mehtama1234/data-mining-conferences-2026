@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 1200,
+    "math_tags": ["measuring similarity as nearness in a space"],
+    "math_plain": "Ranks documents by how similar their meaning is to a search query, using distance in a high-dimensional space.",
+    "why_math": "It works because when you position documents so that ones with the same meaning sit close together, searching becomes finding what is nearest, and nearness is fast and cheap to measure."
+  },
+  {
+    "gid": 1201,
+    "math_tags": ["ranking things by a learned score"],
+    "math_plain": "Scores items from different categories by how well they answer a user's question, then ranks them together in one unified list.",
+    "why_math": "It works because you never need the exact scores, only their correct order, so a rough relevance score that gets the ranking right already puts the most useful results on top."
+  },
+  {
+    "gid": 1202,
+    "math_tags": ["predicting the next item in a sequence", "separating cause from coincidence"],
+    "math_plain": "Predicts what event comes next in a story and infers which events cause which, tracing the path of one incident across multiple documents.",
+    "why_math": "It works because causality has structure: causes come before effects and appear in related documents, so showing how one event reliably triggers others reveals the true causal chain."
+  },
+  {
+    "gid": 1203,
+    "math_tags": ["learning a function from examples"],
+    "math_plain": "Learns to find answers by practicing on chains of reasoning, starting with weak examples then improving through reward signals.",
+    "why_math": "It works because good answers build on good intermediate steps; practicing on real reasoning paths teaches the system which intermediate steps actually lead to correct answers."
+  },
+  {
+    "gid": 1204,
+    "math_tags": ["measuring similarity as nearness in a space", "estimating probabilities from data"],
+    "math_plain": "Extracts what a person likes from their chat history, stores it, then retrieves it when needed to personalize future responses.",
+    "why_math": "It works because consistent person traits appear repeatedly in their messages; capturing what shows up often in conversation creates a stable profile that predicts what they will prefer."
+  },
+  {
+    "gid": 1205,
+    "math_tags": ["separating cause from coincidence", "ranking things by a learned score"],
+    "math_plain": "Learns to detect when product text or images are trying to hide rule violations through disguise, scoring how likely each piece is hiding something.",
+    "why_math": "It works because intent leaves traces: words chosen to deceive follow patterns, and images cropped to hide things show consistent cropping marks; these patterns reveal what is intentionally obscured."
+  },
+  {
+    "gid": 1206,
+    "math_tags": ["measuring similarity as nearness in a space", "learning a function from examples"],
+    "math_plain": "Searches old news articles for mentions of weather events and assesses how society reacted, combining retrieval and question answering on messy historical text.",
+    "why_math": "It works because relevant historical stories use similar language and describe related impacts; finding articles using that language finds eyewitness accounts, which directly answer questions about societal response."
+  },
+  {
+    "gid": 1207,
+    "math_tags": ["learning a function from examples", "measuring similarity as nearness in a space"],
+    "math_plain": "Records step-by-step reasoning traces as an agent searches documents, building ground truth examples of good problem-solving paths.",
+    "why_math": "It works because reasoning is reproducible: when a model's intermediate steps match reality, those steps become trustworthy training data showing exactly what kind of reasoning leads to correct answers."
+  },
+  {
+    "gid": 1208,
+    "math_tags": ["learning a function from examples"],
+    "math_plain": "Builds a visual workshop where users design and run experiments simulating how people search, then share and reproduce their setup.",
+    "why_math": "It works because reproducibility requires capturing every choice; when all setup choices are explicit and versioned, the same experiment always gives the same outcome, enabling trust and reuse."
+  },
+  {
+    "gid": 1209,
+    "math_tags": ["measuring similarity as nearness in a space", "separating cause from coincidence"],
+    "math_plain": "Tests fake users by how realistically they click on results and how accurately their behavior predicts which search system is better.",
+    "why_math": "It works because realistic behavior and valid system rankings are separate properties; resemblance to real clicks is only useful if it actually identifies which system truly works better."
+  },
+  {
+    "gid": 1210,
+    "math_tags": ["measuring similarity as nearness in a space"],
+    "math_plain": "Scores whether Arabic documents match a search question by comparing semantic meaning, then checks if those scores correctly order search systems.",
+    "why_math": "It works because language does not change the core idea: if your relevance scores put the best results first, they correctly rank which system performed best, regardless of the language used."
+  },
+  {
+    "gid": 1211,
+    "math_tags": ["learning a function from examples", "keeping only the few dimensions that matter"],
+    "math_plain": "Represents each query as a small neural network that scores documents, using fewer parameters when speed matters than when accuracy matters.",
+    "why_math": "It works because the most important scoring patterns are the same at all sizes; discarding the least-important details still preserves the strongest signals, trading almost nothing in accuracy for big speed gains."
+  },
+  {
+    "gid": 1212,
+    "math_tags": ["ranking things by a learned score", "predicting the next item in a sequence"],
+    "math_plain": "Analyzes search sessions to find when people switch from looking for a specific expert to exploring a topic, predicting mode changes from clicks.",
+    "why_math": "It works because interactions reveal intent: clicks indicate successful searches, and successful searches precede mode changes more often, so recent success is a signal that curiosity will shift."
+  },
+  {
+    "gid": 1213,
+    "math_tags": ["learning a function from examples", "following the slope downhill to improve"],
+    "math_plain": "Plans daily advertising budgets using an AI system that reads campaign content, then adjusts individual bid prices hourly to stay on budget.",
+    "why_math": "It works because planning and control work together: a high-level plan from understanding campaign content gives long-term direction, while hourly adjustments fine-tune to follow it despite unpredictable customer activity."
+  },
+  {
+    "gid": 1214,
+    "math_tags": ["matching and allocating who gets what", "following the slope downhill to improve"],
+    "math_plain": "Updates the unique labels assigned to products as user preferences shift over time, keeping them consistent with the old system while reflecting new behavior.",
+    "why_math": "It works because identifiers only matter if they capture current meaning; aligning new identifiers to old ones preserves a working system while updating what those identifiers actually mean."
+  }
+]

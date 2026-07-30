@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 195,
+    "math_tags": ["ranking things by a learned score", "finding the settings with least error", "separating cause from coincidence"],
+    "math_plain": "Learns to score videos by their long-term value to users, adjusting for the position they appear in and which elements actually caused engagement.",
+    "why_math": "Position bias distorts scores because users see results in order, so items on top look more popular than they are. By normalizing for position and using causal attribution to isolate which parts truly drove engagement, the score becomes an honest estimate of how much value each video delivers, making ranking correct even when users can't see all options."
+  },
+  {
+    "gid": 196,
+    "math_tags": ["measuring similarity as nearness in a space", "separating cause from coincidence", "matching and allocating who gets what"],
+    "math_plain": "Splits a muddy mixture of network traffic from many websites into separate, clear signals so each website can be identified from its own isolated stream.",
+    "why_math": "When multiple websites send data simultaneously through Tor, their packets get mixed together like overlapping voices in a crowded room. By mapping each packet to a space where similar websites sit near each other, the method can untangle which packets belong to which site. Clustering nearby signals recovers the original unmixed sources, making hidden websites visible even in noise."
+  },
+  {
+    "gid": 197,
+    "math_tags": ["learning a function from examples", "separating cause from coincidence", "following the slope downhill to improve"],
+    "math_plain": "Trains a fraud detector to work across banks with little data by learning shared patterns, while simultaneously defending against attackers who embed hidden triggers that would trick it.",
+    "why_math": "Fraud detection fails when each bank has tiny datasets; learning across all banks together gets more signal. An attacker wants to craft triggers that slip past this detector undetected, so the system plays a two-player game: attacker optimizes hidden patterns to fool detection while defender adjusts to catch them. Neither side can win permanently, so both improve incrementally, producing a robust detector that catches both normal fraud and crafted attacks."
+  },
+  {
+    "gid": 198,
+    "math_tags": ["measuring similarity as nearness in a space", "learning by comparison of similar and different", "keeping only the few dimensions that matter"],
+    "math_plain": "Learns which words and which image patches best explain a humanitarian label, transferring visual clues from text rationales so one mode teaches the other.",
+    "why_math": "Humans explain text decisions by pointing to key words, which costs time to annotate. Images need the same explanation effort. By learning which words matter, then finding image patches that sit near similar words in a shared space, the method reuses text annotation to teach image explanation without extra labeling. Similar pieces cluster together, so image regions near text explanations are likely relevant too."
+  },
+  {
+    "gid": 199,
+    "math_tags": ["learning a function from examples", "finding the settings with least error", "smart random sampling and averaging"],
+    "math_plain": "Reduces how much energy a language model consumes by storing only a few important numbers in full precision while storing the rest as binary counts, avoiding expensive arithmetic during use.",
+    "why_math": "Large models use enormous energy because every computation multiplies and sums thousands of numbers. Some numbers (salient values) matter far more than others. Spiking networks exploit this: they replace math with binary spikes and accumulation, which is cheap to compute and consume little power. By storing important values at full precision and rest as binary counts, the method keeps accuracy while dropping energy, because you only compute precisely what matters."
+  },
+  {
+    "gid": 200,
+    "math_tags": ["predicting the next item in a sequence", "following the slope downhill to improve", "weighting the parts that are most relevant"],
+    "math_plain": "Rewrites a user's search query to better match their personal intent by training a fast model to reason like a language model but without the reasoning overhead.",
+    "why_math": "Large reasoning models take too long for real-time search, but chain-of-thought helps them pick the right query. The method first teaches a smaller model to mimic reasoning outputs, then trains it to skip the reasoning steps and jump straight to the answer. Since the small model learned to replicate reasoning results, it keeps the accuracy gains without the latency, exploiting the fact that you need reasoning's output, not its speed."
+  },
+  {
+    "gid": 201,
+    "math_tags": ["measuring similarity as nearness in a space", "smart random sampling and averaging", "weighting the parts that are most relevant"],
+    "math_plain": "Analyzes scam ad campaigns by decomposing them into persuasion templates, variants, and rotation schedules to understand how scammers scale and evade detection.",
+    "why_math": "Scammers don't send one ad; they send thousands of near-copies, swapping details and timing to avoid detection systems that spot identical content. By treating campaigns as multi-layer structures—templates plus variations—the analysis reveals that effective mitigation must detect patterns at the campaign level, not just individual ads. Campaign structure reveals intent and operation, which one-off detection misses; the pattern of coordination is the signal."
+  },
+  {
+    "gid": 202,
+    "math_tags": ["learning a function from examples", "following the slope downhill to improve", "finding the settings with least error"],
+    "math_plain": "Improves low-rank adaptation by initializing the adapter matrices differently and using a better algorithm to train them, making fine-tuning faster and more stable.",
+    "why_math": "Standard low-rank adaptation struggles when the embedding dimension is huge because it spreads learning effort across many useless directions. By seeding one matrix with noise scaled to the embedding size and solving both matrices jointly rather than treating one as fixed, the method explores more meaningful directions and converges faster. This works because it balances how much each matrix learns instead of letting one stay stuck."
+  },
+  {
+    "gid": 203,
+    "math_tags": ["learning by comparison of similar and different", "finding the settings with least error", "smart random sampling and averaging"],
+    "math_plain": "Discovers new categories by using a probabilistic model to soft-identify which samples belong to novel categories, then pulls similar samples close and pushes apart ambiguous ones.",
+    "why_math": "When a model learns only known categories, it biases everything toward them, so novel categories get misclassified. Using expectation-maximization to estimate which samples are likely novel (without requiring labels) lets the method assign soft probability to novelty. Then, contrasting samples within the same estimated category (pulling them close) while separating edge cases (pushing them apart) reinforces those assignments, so the model learns to separate categories it never saw."
+  },
+  {
+    "gid": 204,
+    "math_tags": ["matching and allocating who gets what", "separating cause from coincidence", "combining many weak signals into a strong one"],
+    "math_plain": "Automatically matches AI vulnerabilities discovered by tools to attack techniques and mitigations from multiple security standards by representing them in a unified logical format.",
+    "why_math": "Different security tools and standards use different languages (MITRE, OWASP, NIST), so correlating findings between them is manual and fragile. By translating all findings into a single logical ontology that machines can reason over, queries can ask 'find all vulnerabilities that lead to this attack' and automatically retrieve matching mitigations across all sources. The unified logic lets a computer do correlation work that humans otherwise repeat."
+  },
+  {
+    "gid": 205,
+    "math_tags": ["learning by comparison of similar and different", "measuring similarity as nearness in a space", "combining many weak signals into a strong one"],
+    "math_plain": "Combines a graph of user-item interactions with a language model by aligning them in a shared space so the model can recommend items using both collaborative patterns and semantic knowledge.",
+    "why_math": "Language models know what items are semantically related but miss user-to-user patterns; graphs capture who bought what but lack world knowledge. Neither alone is enough. By embedding both into the same space and minimizing the gap between their predictions, the method forces both to agree and learn from each other. When two sources must align, each corrects the other's blindness: graphs teach models about user behavior, models teach graphs about semantic meaning."
+  },
+  {
+    "gid": 206,
+    "math_tags": ["learning by comparison of similar and different", "keeping only the few dimensions that matter", "combining many weak signals into a strong one"],
+    "math_plain": "Learns bag-level and graph-level representations from unlabeled bags-of-graphs by contrasting across hierarchy levels and using careful augmentation that preserves structure.",
+    "why_math": "Graphs are hard to represent at two levels (individual graph, bag of graphs) without labeled examples. The method learns by pulling together two augmentations of the same structure (which should be similar) while pushing apart different structures—but does this simultaneously at both levels so they reinforce each other. Because augmentation respects graph structure, the learned representations preserve what matters; because contrast works at both levels, each level teaches the other."
+  },
+  {
+    "gid": 207,
+    "math_tags": ["measuring similarity as nearness in a space", "spreading information across a network", "matching and allocating who gets what"],
+    "math_plain": "Simulates how Manhattan's power grid and traffic network interact in real time, showing how to route electric vehicles to inject power back into the grid when blackouts threaten.",
+    "why_math": "Power flows through a network and affects traffic; traffic creates power demand and can supply it. Simulating both together as coupled systems reveals how failure cascades through one network destabilizes the other, and how strategic allocation of vehicle charging can prevent blackouts. The system works because deploying resources (vehicles) at the right location and time breaks the cascade of failure before it spreads."
+  },
+  {
+    "gid": 208,
+    "math_tags": ["measuring similarity as nearness in a space", "smart random sampling and averaging", "separating cause from coincidence"],
+    "math_plain": "Traces stolen tokens across Ethereum transactions to uncover money laundering patterns: which behaviors reliably indicate funds are being hidden.",
+    "why_math": "Launderers must move money through many small steps to hide its origin; this creates a behavioral signature different from normal trading. By measuring things like how fast funds move, how shallow the transfer chain, and how widely they disperse, patterns emerge that distinguish laundering from legitimate activity. These patterns are reliable because they reflect the fundamental tension: evade detection (requires hiding) versus escape with money (requires movement and eventual cash-out)."
+  },
+  {
+    "gid": 209,
+    "math_tags": ["measuring similarity as nearness in a space", "keeping only the few dimensions that matter", "following the slope downhill to improve"],
+    "math_plain": "Hides large images inside QR codes by compressing them to a semantic representation that can be stored as binary data and reconstructed with high fidelity.",
+    "why_math": "Images are huge but QR codes are tiny. A diffusion model learns the semantic features that matter for a class of images, not every pixel. Compressing to these features drops 400 pixels to 1 bit of information while keeping 'what the image is for' intact. Binary data embeds seamlessly into QR structure, and reconstruction retrieves the semantic version of the original, which serves the downstream task even if pixels differ—the essence survived the compression."
+  }
+]

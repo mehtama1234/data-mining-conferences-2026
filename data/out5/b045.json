@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 675,
+    "math_tags": ["matching and allocating who gets what", "measuring similarity as nearness in a space"],
+    "math_plain": "Partition accounts into migration batches that maximize connections within each batch to reduce cross-shard communication.",
+    "why_math": "Accounts that interact frequently should migrate together; keeping them in the same batch eliminates the cross-shard overhead for those interactions. The more densely connected a batch is internally, the more communication overhead you save."
+  },
+  {
+    "gid": 676,
+    "math_tags": ["measuring surprise and information", "separating cause from coincidence", "keeping only the few dimensions that matter"],
+    "math_plain": "Minimize conditional mutual information to split representation into strongly related, weakly related, and task-irrelevant components.",
+    "why_math": "Mutual information measures dependence; minimizing it forces the model to break the signal into independent pieces. Irrelevant information becomes maximally independent from the task, so it gets squeezed out, leaving only what genuinely predicts the task."
+  },
+  {
+    "gid": 677,
+    "math_tags": ["learning a function from examples", "separating cause from coincidence"],
+    "math_plain": "Extract attack components from forum posts and track their availability over time to reveal emerging threats and attack methodologies.",
+    "why_math": "Components that suddenly become available signal new attack capability; components that disappear show declining risk. Observing longitudinal trends exposes cause-and-effect between ecosystem changes and real attacks."
+  },
+  {
+    "gid": 678,
+    "math_tags": ["learning a function from examples", "combining many weak signals into a strong one"],
+    "math_plain": "Use language models to understand task requirements and assemble modular pieces into complete traffic prediction architectures.",
+    "why_math": "Each module solves one aspect of traffic prediction; a language model acts as a coordinator that understands which pieces to combine based on the specific dataset. Combining weak specialists through semantic understanding produces a strong generalist."
+  },
+  {
+    "gid": 679,
+    "math_tags": ["keeping only the few dimensions that matter", "finding the settings with least error"],
+    "math_plain": "Decompose source dataset into principal components, weight them by singular values, and project onto the direction that best separates classes to score transferability.",
+    "why_math": "Principal components capture the main structure of the source dataset cheaply; projecting onto the class-separating direction tells you whether that structure aligns with the target's class boundaries. High alignment means the model learned patterns that transfer."
+  },
+  {
+    "gid": 680,
+    "math_tags": ["learning by comparison of similar and different", "measuring similarity as nearness in a space"],
+    "math_plain": "Learn representations where subgraph patterns that appear together are pushed close and patterns that never appear together are pushed far apart.",
+    "why_math": "Patterns co-occur for a reason—they are parts of the same higher-order structure. Making co-occurring patterns nearby forces the representation to capture that structure. Non-occurring patterns pushed apart prevent false similarities."
+  },
+  {
+    "gid": 681,
+    "math_tags": ["keeping only the few dimensions that matter", "measuring surprise and information"],
+    "math_plain": "Minimize information bottleneck within each modality and across modalities to extract minimal sufficient representations for recommendations.",
+    "why_math": "Bottleneck forces each modality to discard everything except what predicts recommendations, and forces different modalities to agree only on what matters. This squeezes out modality-specific noise and redundancy between modalities."
+  },
+  {
+    "gid": 682,
+    "math_tags": ["combining many weak signals into a strong one", "spreading information across a network"],
+    "math_plain": "Iteratively refine inferred network structures by sharing information across multiple similar networks, guiding each network's inference with patterns from others.",
+    "why_math": "When networks are similar, patterns learned from one network's sparse data constrain guesses about others. This reduces individual uncertainty by pooling weak signals; the networks essentially teach each other what shared structures should look like."
+  },
+  {
+    "gid": 683,
+    "math_tags": ["smart random sampling and averaging", "finding the settings with least error"],
+    "math_plain": "Monitor exploration randomness in rollouts and policy updates to balance branch sampling budget and penalize consecutive high-entropy actions that cause training collapse.",
+    "why_math": "Randomness drives exploration and discovers good actions, but too much causes the model to jump erratically. Monitoring entropy pre-emptively detects when exploration goes excessive and local penalties prevent cascading failures from high-entropy decisions."
+  },
+  {
+    "gid": 684,
+    "math_tags": ["measuring similarity as nearness in a space", "separating cause from coincidence"],
+    "math_plain": "Measure recommender trustworthiness directly through human-centered metrics like agency and transparency, not through engagement proxies.",
+    "why_math": "Engagement (clicks, dwell time) is a side effect of trustworthiness, not a cause. Measuring engagement confuses correlation with causation; measuring trust and agency directly reveals what genuinely satisfies users in the long run."
+  },
+  {
+    "gid": 685,
+    "math_tags": ["ranking things by a learned score", "matching and allocating who gets what"],
+    "math_plain": "Use Shapley values to measure each participant's marginal contribution to model improvement and allocate training rewards proportionally.",
+    "why_math": "Shapley values measure each player's fair share by averaging their impact across all possible team compositions. This captures how much that player's data improved the global model compared to removing them, creating an incentive-compatible allocation."
+  },
+  {
+    "gid": 686,
+    "math_tags": ["smart random sampling and averaging", "learning a function from examples"],
+    "math_plain": "Simulate diverse model families across multiple real datasets and distribution settings to generate benchmark instances for evaluating service selection.",
+    "why_math": "Testing selection strategies on many realistic scenarios reveals which generalizes best. Averaging performance across diverse conditions filters out luck; if a strategy wins on most scenarios, it has discovered something robust."
+  },
+  {
+    "gid": 687,
+    "math_tags": ["keeping only the few dimensions that matter", "spreading information across a network"],
+    "math_plain": "Decompose missing sensor readings as products of hidden factors, learned in federated way where each sensor only sends gradient updates, not raw data.",
+    "why_math": "Hidden factors capture patterns in partial data; transmitting only gradient updates spreads the learning signal while hiding sensor readings. Gradients reveal which factors matter without exposing sensitive measurements themselves."
+  },
+  {
+    "gid": 688,
+    "math_tags": ["learning a function from examples", "ranking things by a learned score"],
+    "math_plain": "Train a language model classifier to label narrative paragraphs by tension level, then place ads in low-tension paragraphs.",
+    "why_math": "Readers are least immersed during low-tension passages, so ads interrupt less and annoy less. Placing ads by learned tension rank minimizes disruption to reading experience relative to random placement."
+  },
+  {
+    "gid": 689,
+    "math_tags": ["spreading information across a network", "separating cause from coincidence", "measuring surprise and information"],
+    "math_plain": "Extract precursor events as mediators via information-theoretic routing, then model observed events, mediators, and rare events in hierarchical graph layers.",
+    "why_math": "Past events that carry the most information about rare events are the true precursors; routing by mutual information finds them automatically. Hierarchical layering lets the model learn what precursors matter and how they combine to trigger rare events."
+  }
+]

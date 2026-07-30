@@ -1,0 +1,134 @@
+[
+  {
+    "gid": 1275,
+    "math_tags": [
+      "ranking things by a learned score",
+      "matching and allocating who gets what"
+    ],
+    "math_plain": "Combine term-based and learned scores through ranking fusion so older indexes stay useful when query encoders change.",
+    "why_math": "When you shift to a new query encoder, the old index was built from a different scoring method. By blending the word-matching scores (which don't change) with new learned scores, you anchor to something stable and preserve the old ranking information, letting it guide decisions even as the encoder improves."
+  },
+  {
+    "gid": 1276,
+    "math_tags": [
+      "estimating probabilities from data",
+      "measuring surprise and information"
+    ],
+    "math_plain": "Estimate how showing versus hiding content changes customer revenue, then suppress content only when uncertainty is small enough.",
+    "why_math": "Showing bad content hurts revenue; suppressing good content also hurts it. You need to know both the effect size and how confident you are. Only suppress when the prediction is sure, because uncertain predictions are likely wrong and hiding based on a guess is worse than taking the risk."
+  },
+  {
+    "gid": 1277,
+    "math_tags": [
+      "learning by comparison of similar and different",
+      "weighting the parts that are most relevant"
+    ],
+    "math_plain": "Teach models to reason step by step through documents and refuse to answer when evidence is absent, using rewards that mark correct refusals highly.",
+    "why_math": "Models naturally output answers because they're trained to be helpful. By rewarding refusals as much as correct answers, you reweight what the model learns is valuable—refusal becomes the right move when documents don't support the claim, because that's now the praised outcome."
+  },
+  {
+    "gid": 1278,
+    "math_tags": [
+      "weighting the parts that are most relevant",
+      "learning a function from examples"
+    ],
+    "math_plain": "Weight recent ratings more heavily and detect when rating patterns genuinely change versus when they're just noise, without storing user profiles.",
+    "why_math": "Old ratings should matter less because preferences drift. By applying exponential decay, recent signals get more say. Change detection distinguishes real shifts from random variation—making adaptation possible without ever storing who rated what, so no privacy or bias issues arise."
+  },
+  {
+    "gid": 1279,
+    "math_tags": [
+      "weighting the parts that are most relevant",
+      "learning a function from examples"
+    ],
+    "math_plain": "Align images and text to preserve internal structure, then learn separate learning paths for each modality to prevent one mode from hijacking the gradient.",
+    "why_math": "A large pretrained model knows both images and text, but domain-specific items look different from web images it learned on. By using image structure as a guide for text alignment, you remind the model what the domain looks like. Separate learning paths prevent the gradient from one mode drowning out the other, so each signals gets heard."
+  },
+  {
+    "gid": 1280,
+    "math_tags": [
+      "measuring surprise and information",
+      "learning by comparison of similar and different"
+    ],
+    "math_plain": "Detect poisoned documents by watching how attention spreads—benign answers have scattered attention while attacked answers concentrate it on the poisoned doc.",
+    "why_math": "When a model is genuinely uncertain, it spreads attention across many relevant pieces. When an attack tricks it into trusting a poisoned doc, attention collapses onto that doc because it confidently follows the manipulation. The internal attention pattern betrays the attack even when the output looks confident."
+  },
+  {
+    "gid": 1281,
+    "math_tags": [
+      "matching and allocating who gets what",
+      "following the slope downhill to improve"
+    ],
+    "math_plain": "Search through nested document sections iteratively, deepening only when current evidence is insufficient, with a bound that guarantees coverage.",
+    "why_math": "Dense vectors lose entity names and numbers—facts get buried. Plain text preserves identity signals. By searching shallowly first and only drilling deeper when needed, you find answers fast. The deterministic contraction bound ensures you won't miss information—you progress through progressively wider contexts until evidence appears."
+  },
+  {
+    "gid": 1282,
+    "math_tags": [
+      "learning by comparison of similar and different"
+    ],
+    "math_plain": "Ask participants to rate information they created themselves versus identical information framed as someone else's creation.",
+    "why_math": "When you create something, you understand the effort and reasoning behind it, making it feel more credible and higher quality. This bias toward self-created work is cognitive—your own reasoning feels trustworthy even when the output is the same, because you know it came from your intent."
+  },
+  {
+    "gid": 1283,
+    "math_tags": [
+      "measuring surprise and information",
+      "separating cause from coincidence"
+    ],
+    "math_plain": "Compute a score from model's internal confidence and semantic overlap with retrieved context to predict whether retrieval will help or hurt output.",
+    "why_math": "A model's internal logits reveal true confidence separate from text it produces. When retrieved context aligns semantically with logit confidence, the model genuinely trusts the context. When they diverge, the model is torn—a sign that retrieval contradicts its learned knowledge. This internal signal detects conflict faster than checking the output."
+  },
+  {
+    "gid": 1284,
+    "math_tags": [
+      "following the slope downhill to improve",
+      "learning a function from examples"
+    ],
+    "math_plain": "Learn the gain values and temperature for ranking accuracy by treating NDCG itself as a learnable function, optimizing it end-to-end with the ranker.",
+    "why_math": "Standard surrogate losses are rigid—they don't adapt to your data. By making the NDCG formula itself learnable, you let the model discover what gain and discount values actually work for your relevance patterns. The model learns to match its data instead of forcing data to match a hand-designed formula."
+  },
+  {
+    "gid": 1285,
+    "math_tags": [
+      "ranking things by a learned score",
+      "learning a function from examples"
+    ],
+    "math_plain": "Model satisfaction as a balance between response quality and interaction cost, where users trade off better answers against effort spent.",
+    "why_math": "Users want good answers but also want to spend minimal time and effort. These trade off—a perfect answer that takes five searches is worse than a good answer that takes one. By measuring both quality gain and cost together, you capture what users actually optimize for in their behavior."
+  },
+  {
+    "gid": 1286,
+    "math_tags": [
+      "ranking things by a learned score"
+    ],
+    "math_plain": "Instruct-tune an open model to rank candidate entities for biomedical linking, treating multiple candidates as a set to choose from.",
+    "why_math": "Large pretrained models work well at ranking when you teach them what ranking means through instruction tuning. Set-wise tuning lets the model see multiple candidates together, so it can compare them directly. This is faster and more accurate than scoring them independently."
+  },
+  {
+    "gid": 1287,
+    "math_tags": [
+      "measuring surprise and information",
+      "separating cause from coincidence"
+    ],
+    "math_plain": "Detect when retrieval-augmented answers invent numbers by checking if generated numbers appear in retrieved documents, flagging fabrications.",
+    "why_math": "Numbers are discrete and traceable—either they're in the source or they're made up. This is different from text hallucinations, which can be paraphrases or rephrasing. A simple check for number presence catches pure fabrication with perfect recall because a made-up number leaves no shadow in the source."
+  },
+  {
+    "gid": 1288,
+    "math_tags": [
+      "learning by comparison of similar and different"
+    ],
+    "math_plain": "Test two agent personas—one that mirrors user preferences back and one that offers social guidance—and measure their effect on shopping engagement.",
+    "why_math": "Interaction style shapes how users think. A mirroring agent helps users clarify their own preferences by reflecting them back; a peer agent creates social trust that relaxes scrutiny. Different conversation frames activate different cognitive modes, showing that how the system talks changes how users reason."
+  },
+  {
+    "gid": 1289,
+    "math_tags": [
+      "separating cause from coincidence",
+      "learning a function from examples"
+    ],
+    "math_plain": "Use historical pre-promotion behavior to predict which customers will buy during a promotion, accounting for the fact that pre-purchase browsing shifts to buying later.",
+    "why_math": "Pre-promotion and promotion periods have different user behaviors—before the sale, people add to carts but don't buy. On sale day, they convert. This is a distribution shift that previous models ignore. By learning from historical pre-promotion data that captures this exact shift pattern, the model learns when cart-adding signals future conversion, not immediate purchase."
+  }
+]

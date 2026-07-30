@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 555,
+    "math_tags": ["predicting the next item in a sequence", "spreading information across a network"],
+    "math_plain": "Predicts how many people will engage with misinformation by treating each action as part of an evolving sequence shaped by emotional rewards and platform design.",
+    "why_math": "When you model a person's choices as a sequence of negotiated exchanges (effort given for reward received), past actions reveal the pattern of what will come next. Platform design and emotions shift this pattern over time, so tracking how that evolution unfolds predicts the next engagement."
+  },
+  {
+    "gid": 556,
+    "math_tags": ["measuring similarity as nearness in a space", "weighting the parts that are most relevant", "smart random sampling and averaging"],
+    "math_plain": "Learns compact summaries that score how similar each new data point is to important historical ones, then selects new data to learn from and old data to keep.",
+    "why_math": "If you represent your model's state as a compact summary (fingerprint), you can cheaply measure whether a new data point is similar to important ones you've already learned. Keeping similar data wastes effort; selecting only dissimilar or hard data accelerates learning and prevents forgetting old patterns."
+  },
+  {
+    "gid": 557,
+    "math_tags": ["learning by comparison of similar and different", "separating cause from coincidence"],
+    "math_plain": "Detects unusual nodes and subgraphs by learning which features reliably predict normal behavior, then flags things where features behave differently than expected.",
+    "why_math": "Normal patterns recur reliably; anomalies deviate. When you learn what features make something normal, you can test new examples against that knowledge. Things that don't match the normal pattern are rare, so you can also artificially create fake anomalies to teach the system what unusual looks like."
+  },
+  {
+    "gid": 558,
+    "math_tags": ["ranking things by a learned score", "combining many weak signals into a strong one"],
+    "math_plain": "A two-layer system first reasons about auction conditions in words, then converts that reasoning into precise bid amounts by scoring how good each bid choice is.",
+    "why_math": "Language helps you think through trade-offs (auction competition, budget limits, goals); once you've reasoned about the situation, scoring candidate bids numerically grounds that reasoning in precise action. Fusing words and numbers together leverages both kinds of knowledge."
+  },
+  {
+    "gid": 559,
+    "math_tags": ["measuring similarity as nearness in a space", "learning by comparison of similar and different", "combining many weak signals into a strong one"],
+    "math_plain": "Represents events using multiple geometric spaces (curved, straight, complex) to capture different kinds of relationships, then fuses these representations over time to predict future events.",
+    "why_math": "Different types of information (visual, text, structure, time) have different natural geometries. Euclidean space works for quantities; hyperbolic works for hierarchies; complex numbers for cycles. Measuring in the right space for each modality, then learning how their contributions change over time, extracts what truly predicts what comes next."
+  },
+  {
+    "gid": 560,
+    "math_tags": ["predicting the next item in a sequence", "measuring similarity as nearness in a space"],
+    "math_plain": "Predicts traffic flow by learning which time patterns matter and which road locations interact, then uses both to estimate flow at each location.",
+    "why_math": "Traffic flow has two structures: temporal (patterns repeat at certain times) and spatial (nearby roads affect each other). Separating these structures—preserving learned temporal reasoning while adapting spatial interactions—lets you reuse old time knowledge while flexibly updating for new traffic topology."
+  },
+  {
+    "gid": 561,
+    "math_tags": ["learning by comparison of similar and different", "measuring similarity as nearness in a space"],
+    "math_plain": "Identifies which sub-graphs are reliable markers of normal or abnormal graphs, then measures distance in the space of these reliable markers to detect outliers in new graphs.",
+    "why_math": "Real-world graph data mixes two types of shift: the rules change (semantic shift) and the input distribution changes (covariate shift). Learning which sub-graph patterns are stable across both types of shift lets you find reliable markers. Measuring distance in that stable marker space is robust to both kinds of shift."
+  },
+  {
+    "gid": 562,
+    "math_tags": ["separating cause from coincidence", "combining many weak signals into a strong one"],
+    "math_plain": "Adds special regulatory layers and signatures to diffusion models so an external auditor can steer the generation process away from unsafe outputs at intermediate steps.",
+    "why_math": "Once you've deployed a model, you lose control over how it's used. But if you tightly couple trainable regulatory signatures to the model's internal layers during training, an external regulator can later use those signatures to intervene mid-generation, steering away from harmful outputs without retraining."
+  },
+  {
+    "gid": 563,
+    "math_tags": ["measuring surprise and information"],
+    "math_plain": "Compares how fast two types of proofs (SNARKs and STARKs) generate, verify, and shrink themselves on real hardware, measuring which trade-offs suit which use cases.",
+    "why_math": "Proof systems make different architectural choices: SNARKs assume a trusted setup and optimize for speed and size; STARKs skip trusted setup but are larger and slower. Measuring both on the same platform with the same workload reveals which choice costs more for each real-world constraint (speed, size, trust, security)."
+  },
+  {
+    "gid": 564,
+    "math_tags": ["learning a function from examples"],
+    "math_plain": "Fine-tunes a small model on therapy examples so it learns to respond with therapist-like empathy and clinical accuracy.",
+    "why_math": "Therapist behavior is consistent and learnable: certain responses to certain situations reliably help. When you show a model many examples of good therapeutic responses alongside the situations they answer, it learns the mapping from situation to response. Adding retrieval (looking up relevant clinical knowledge) grounds responses in fact."
+  },
+  {
+    "gid": 565,
+    "math_tags": ["learning by comparison of similar and different", "measuring similarity as nearness in a space"],
+    "math_plain": "Detects fraud by finding cross-transaction conflicts that don't fit neighborhood patterns and measuring how much each transaction deviates from what neighbors predict.",
+    "why_math": "In a transaction network, each legitimate transaction fits the expected pattern of its neighbors' behavior; fraud camouflages itself by mimicking that pattern. By measuring surprise (deviation from neighbor expectations) and detecting conflicts across different views of the same transaction, you catch fraud even when it looks locally normal."
+  },
+  {
+    "gid": 566,
+    "math_tags": ["predicting the next item in a sequence", "measuring similarity as nearness in a space"],
+    "math_plain": "Models how user interests evolve as a drift toward content they care about over time, then generates personalized trajectories through item and user space to predict next engagement.",
+    "why_math": "User interests don't drift randomly—they trend toward things that match past choices. Modeling this drift as a directed equation (not random diffusion) lets you predict the trajectory. Tracking movement across both temporal time and relational space (how items relate to users and to each other) captures the full story of interest evolution."
+  },
+  {
+    "gid": 567,
+    "math_tags": ["measuring similarity as nearness in a space", "combining many weak signals into a strong one"],
+    "math_plain": "Detects fake news by extracting visual features at both local (fine detail) and global (overall structure) scales, fusing them with text, and measuring alignment between image regions and text claims.",
+    "why_math": "Fake images have two types of telltale signs: local forgeries (artifacts at small scale) and global anomalies (things that don't fit together). Text explains what the image should show. Measuring whether image details align with the text explanation, across both scales, catches both crude and subtle fabrications."
+  },
+  {
+    "gid": 568,
+    "math_tags": ["weighting the parts that are most relevant", "finding the settings with least error"],
+    "math_plain": "Separates easy and hard items to rank, uses simple models for easy ones and stronger models for hard ones, balancing ranking accuracy with computational cost.",
+    "why_math": "Hard items teach the model more; easy items teach little but cost the same to process. By spending budget where you learn most (on hard cases) and skipping hard processing on easy cases, you reach the same accuracy faster. Routing samples intelligently instead of treating all equally reduces wasted computation."
+  },
+  {
+    "gid": 569,
+    "math_tags": ["predicting the next item in a sequence", "ranking things by a learned score"],
+    "math_plain": "Boosts visibility of unpopular items by predicting which users will click them AND how much future natural growth they'll generate, then targets users where both scores are high.",
+    "why_math": "A click on a cold item helps twice: immediate revenue and seeding future organic discovery. By forecasting both impacts for each user-item pair, you can rank users not just by likelihood to click, but by long-term value they unlock. Balancing growth with immediate clicks sustains ecosystem health."
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "gid": 225,
+    "math_tags": ["learning a function from examples", "combining many weak signals into a strong one", "ranking things by a learned score"],
+    "math_plain": "Routes high-frequency requests to a small on-device model and complex ones to a cloud model, scheduling task-specific parameter sets to maximize cost and latency savings.",
+    "why_math": "It works because different tasks have different accuracy requirements: simple requests can be handled cheaply on-device while complex ones need the larger model, and pre-loading relevant parameters avoids the cost of switching between tasks."
+  },
+  {
+    "gid": 226,
+    "math_tags": ["finding the settings with least error", "smart random sampling and averaging"],
+    "math_plain": "Searches for optimal deployment settings (batch size, parallelism) by testing configurations intelligently across multiple hardware setups to maximize throughput.",
+    "why_math": "It works because the best settings depend on specific hardware, and intelligent sampling that learns from each trial gets to better configurations faster than random guessing, while parallelizing trials prevents exploring one bad path forever."
+  },
+  {
+    "gid": 227,
+    "math_tags": ["learning a function from examples", "separating cause from coincidence", "combining many weak signals into a strong one"],
+    "math_plain": "Combines three age-detection signals (face shape, body proportions, sexual development) into one classifier to identify which age group appears in harmful images.",
+    "why_math": "It works because age reveals itself through multiple independent biological markers; combining them reduces false alarms from any single signal and mirrors how human experts naturally assess age by triangulating multiple clues."
+  },
+  {
+    "gid": 228,
+    "math_tags": ["finding the settings with least error", "learning a function from examples", "estimating probabilities from data"],
+    "math_plain": "Optimizes marketing spending when the budget itself depends on how well campaigns perform, learning the reinvestment rate that balances reward with risk of running out of money.",
+    "why_math": "It works because spending more when performance is good creates a feedback loop; tracking the coupling between rewards and remaining budget ensures you never make decisions that lead to certain ruin, unlike fixed-budget approaches."
+  },
+  {
+    "gid": 229,
+    "math_tags": ["predicting the next item in a sequence", "learning a function from examples"],
+    "math_plain": "Compares how well language models predict the time until a user's next purchase versus statistical models that learned the time patterns directly.",
+    "why_math": "It works because language models are trained on text prediction but not number prediction; statistical models built for time intervals exploit the mathematical structure of the data (how long until next event) whereas language models must convert numbers to text and back, losing precision."
+  },
+  {
+    "gid": 230,
+    "math_tags": ["predicting the next item in a sequence", "learning a function from examples", "measuring similarity as nearness in a space"],
+    "math_plain": "Retraces a user's interaction history in reverse chronological order and restores embeddings to their original context, capturing how preferences shift over time for better recommendations.",
+    "why_math": "It works because users change; restoring each past interaction to its original time-specific embedding prevents current preferences from overwriting historical patterns, so you see the true trajectory of preference evolution rather than a blended average."
+  },
+  {
+    "gid": 231,
+    "math_tags": ["combining many weak signals into a strong one", "learning a function from examples", "learning by comparison of similar and different"],
+    "math_plain": "Distills knowledge from multiple teacher models into one smaller student by comparing similar and different examples, letting the student learn what's similar across teachers and diverge when they disagree.",
+    "why_math": "It works because multiple teachers capture different aspects of structure; comparing examples where teachers agree (easy truths) versus disagree (hard distinctions) teaches the student robust patterns without forcing it to blindly copy any single teacher."
+  },
+  {
+    "gid": 232,
+    "math_tags": [],
+    "math_plain": "Organizes papers on analyzing multimodal social media (text, images, audio, video) using large models and evaluates their safety and quality for real-world deployment.",
+    "why_math": "This is a workshop summary with no specific mathematical method; it describes a venue for research rather than a mathematical technique."
+  },
+  {
+    "gid": 233,
+    "math_tags": ["measuring similarity as nearness in a space", "estimating probabilities from data", "separating cause from coincidence"],
+    "math_plain": "Reranks retrieved documents for language models by balancing the benefit of promoting correct documents against the risk of amplifying misleading ones.",
+    "why_math": "It works because reranking shifts document type distributions in ways that can hurt even when accuracy metrics improve; tracking the full distribution (not just what's on top) reveals when the fix creates a new problem, letting you choose reranking strategies that minimize harm."
+  },
+  {
+    "gid": 234,
+    "math_tags": ["learning a function from examples", "measuring similarity as nearness in a space", "weighting the parts that are most relevant"],
+    "math_plain": "Classifies websites and their specific subpages from network traffic by treating it as a hierarchical multi-label problem, weighting which features distinguish pages at each level.",
+    "why_math": "It works because websites have structure (homepage contains all subpages, subpages inherit parent features); modeling this hierarchy lets you share what's common while isolating what's unique at each level, reducing the features needed to separate fine-grained pages."
+  },
+  {
+    "gid": 235,
+    "math_tags": ["predicting the next item in a sequence", "learning a function from examples", "keeping only the few dimensions that matter"],
+    "math_plain": "Detects anomalies in streaming time series by evolving a small proxy summary of historical data and selecting lightweight parameters relevant to the current distribution.",
+    "why_math": "It works because full historical data grows too large; a proxy that evolves with new patterns gives you representative historical knowledge without storing everything, and sparse parameter activation lets you adapt to new anomaly types without retraining the whole model."
+  },
+  {
+    "gid": 236,
+    "math_tags": [],
+    "math_plain": "Brings together research on harmful content moderation across platforms, languages, and topics including misinformation, cyberbullying, and hate speech.",
+    "why_math": "This is a workshop description with no specific mathematical method; it outlines a venue for research on content moderation rather than a mathematical technique."
+  },
+  {
+    "gid": 237,
+    "math_tags": ["measuring similarity as nearness in a space", "weighting the parts that are most relevant"],
+    "math_plain": "Aggregates information on networks by weighting connections based on their curvature (geometric influence), combining node features, topology, and label information.",
+    "why_math": "It works because network curvature measures how 'bent' the space is between nodes; high curvature connections are unexpected (contradicting the network's natural geometry), so down-weighting them removes noisy edges while keeping structurally consistent ones."
+  },
+  {
+    "gid": 238,
+    "math_tags": ["predicting the next item in a sequence", "measuring surprise and information", "combining many weak signals into a strong one"],
+    "math_plain": "Forecasts future time series by tracking both subtle gradual changes and prominent repeating cycles, combining them to predict what comes next.",
+    "why_math": "It works because time series contain two signals: slow trends and fast cycles; splitting them into separate paths prevents strong cycles from drowning out weak trends, and aligning them back ensures both the fast and slow patterns inform the final prediction."
+  },
+  {
+    "gid": 239,
+    "math_tags": ["measuring similarity as nearness in a space", "finding the settings with least error", "keeping only the few dimensions that matter"],
+    "math_plain": "Securely learns low-dimensional embeddings from datasets held by multiple parties without revealing their data by using shared secrets and fast shortest-path protocols.",
+    "why_math": "It works because manifold learning finds the simplest low-dimensional space where distance is preserved; computing this securely is hard, but exploiting the specific properties of the shortest-path algorithm lets you skip expensive computations, and shared secrets let parties compute together without seeing each other's data."
+  }
+]
