@@ -1,0 +1,62 @@
+[
+  {
+    "gid": 1035,
+    "deep_why": "FACE scores many small units of dialogue rather than a single score, then combines them. The mathematical principle is that averaging independent quality signals reduces noise—when you ask about story coherence, relevance, and clarity separately and combine answers, errors in one judgment don't drag down the whole score, and the combined signal becomes more stable. This works because conversation quality actually IS multi-faceted: a response can be relevant but off-topic, or clear but incomplete. By splitting the problem into parts and reconvening, FACE captures what human judges see naturally, letting it reliably identify which system conversations work and which ones fail."
+  },
+  {
+    "gid": 1036,
+    "deep_why": "CoveR trains to recognize which documents cover diverse parts of a user's question by learning from pairs of questions and documents marked with coverage signals. The principle: if you show a learning system many examples where a document is good precisely because it covers something the summary needs, the system builds a model that weights documents by their coverage, not just relevance. This works because coverage and relevance are measurably different things in the data—the system can learn the distinction from examples. Capturing both lets long-form synthesis access more complete information, avoiding gaps that a relevance-only system would miss."
+  },
+  {
+    "gid": 1037,
+    "deep_why": "MUDY computes two independent importance scores for each phrase—one from whether the model would generate it, another from where attention lights up in the document—then combines them. The principle is that importance has two separate sources: global semantic fit (would this word summarize the whole paper?) and local context (does the model focus on this phrase in specific sections?). By measuring both independently and merging their signals, MUDY captures keyphrases that matter locally and globally, rather than missing the phrases that are critical to one subtopic because they're rare overall."
+  },
+  {
+    "gid": 1038,
+    "deep_why": "The method interprets each token as owning a region of influence around itself in the embedding space—a Voronoi cell. Tokens with small regions are discardable because their influence is limited; tokens with large regions matter because many queries will be closest to them. The principle is that deletion should preserve the coverage of the space: if you keep tokens whose regions cover the query landscape densely, you won't lose retrieval quality, even if you throw away tokens with small regions. This works because retrieval fundamentally depends on having close neighbors in the embedding space, and Voronoi geometry precisely measures which tokens are neighbors to which queries."
+  },
+  {
+    "gid": 1039,
+    "deep_why": "DMF organizes conversation history into a tree forest, where sessions become nodes that get grafted together when their topics connect. The principle mirrors human memory: when you think about related ideas, your brain links them, making recollection more precise. By dynamically grouping related sessions and forming connections, the system can retrieve the exact memory thread needed for a query without losing older associations. This works because conversation themes cluster naturally—related topics benefit from being connected—so organizing memory by those clusters lets retrieval target the right part of history efficiently."
+  },
+  {
+    "gid": 1040,
+    "deep_why": "The method compares two ways to tell a language model what kind of relevance to judge: a query alone, or a formal description with narrative context. When evaluators are given richer context, they agree more with each other and make fewer false-positive judgments. The principle is that clearer instructions reduce ambiguity—a judge with vague instructions invents their own interpretation, leading to disagreement. Formalizing information needs ensures all judges use the same mental frame. This works because relevance judgments are subjective, and consistency depends on shared understanding; spelled-out expectations create that shared ground."
+  },
+  {
+    "gid": 1041,
+    "deep_why": "SetCDR learns user profiles by treating their full history as an unordered set and letting the learning system operate on it without assuming an order. The principle is that set operations are permutation-invariant: summing items in any order gives the same result. Because user histories genuinely don't have a meaningful order (only a temporal one, which isn't relevant for profiling), using an order-independent method avoids the waste of learning about false patterns from the order itself. This lets the model scale efficiently and remain consistent regardless of how you shuffle the history."
+  },
+  {
+    "gid": 1042,
+    "deep_why": "MVIGER treats the choice of which prompt or item indexing scheme to use as a hidden variable that the model learns. It trains to recognize that different phrasings and indices extract different preference signals from the same user history, then learns to weight or blend them. The principle is that model uncertainty should be captured as a learned distribution, not suppressed—if multiple valid interpretations exist, a learnable mixture is more powerful than picking one. This works because inconsistency across prompts reflects real ambiguity in user signals, and modeling that ambiguity explicitly makes predictions more robust."
+  },
+  {
+    "gid": 1043,
+    "deep_why": "Video-GAR trains a helper decoder to reconstruct the query from the retrieved moment—forcing the model to learn whether it truly understood the query or just matched shallow features. The principle is that reconstruction loss is a strong form of supervision: if your model must reverse the operation (turn the video segment back into words), it must capture meaning, not just surface similarity. This works because reconstruction requires preserving all semantic content; a model that passes this test provably understands the relationship, not just correlations, so retrieval becomes more precise."
+  },
+  {
+    "gid": 1044,
+    "deep_why": "MPDC models user preferences from two angles: what they actually choose (behavior) and where they intended to go (spatial intention). It then learns to distinguish which check-ins reflect true preference versus external pressure or practicality. The principle is that mixing signals reduces bias—when you measure both what happened and what the user likely wanted, the gap between them reveals confounding factors. Removing those confounders from the preference signal makes the learned model more predictive of future genuine choices, not just repeating past patterns that were partly forced."
+  },
+  {
+    "gid": 1045,
+    "deep_why": "DMI reconstructs the user's full interest vectors from fragmented history rather than averaging them into a single smooth representation. The principle is that reconstruction via iterative diffusion preserves fine structure: averaging interests together blurs boundaries and loses the intensity of niche preferences, but reconstructing them layer-by-layer keeps sharp peaks. This works because user interests genuinely do vary in intensity—one preference may be strong and specific while another is weak and broad—and smoothing destroys that variation. Preserving it makes multi-interest retrieval actually capture diversity."
+  },
+  {
+    "gid": 1046,
+    "deep_why": "SPRINT uses a language model to infer user intent from history only when the system is uncertain, then trains a smaller, cheaper model to predict those intents for all cases. The principle is that uncertainty should be expensive to resolve: pay the computational cost only where needed, then generalize the learned pattern cheaply. This works because intent is learnable from interaction patterns—once the expensive model teaches what intents look like, a lightweight model can spot them—so selective expensive computation doesn't sacrifice accuracy while cutting inference cost drastically."
+  },
+  {
+    "gid": 1047,
+    "deep_why": "GDE precomputes similarity kernels from a small seed set and uses them to mix learned embeddings instead of storing a full embedding for every item. The principle is that if you choose seeds that reach the whole graph, linear combinations of their embeddings can approximate any node's representation—and mixing is learned via probabilistic gates. This works because graphs have structure: neighbors are similar to each other, so you don't need independent storage for each node. Learning which seeds matter most for each node gives compression without losing personalization."
+  },
+  {
+    "gid": 1048,
+    "deep_why": "The algorithm clusters nodes in feature space to find informative regions (either uncertain known-class regions or likely novel-class regions), then sub-clusters within the chosen region to find the single most informative example. The principle is that regional informativeness is a proxy for example-level informativeness: if a cluster is uncertain or likely novel, one node in it is probably worth labeling. This works because annotation is expensive but patterns repeat—labeling one node in an informative cluster teaches the model about many neighbors. It splits the search space hierarchically, making selection practical for large graphs."
+  },
+  {
+    "gid": 1049,
+    "deep_why": "A2Gen models user actions (like, follow, etc.) as sequences unfolding over time, with each action reflecting a different intent at different moments. The principle is that timing creates meaning: the same video viewed at different points in a user's browsing reveals different preferences. By learning temporal patterns of actions, the model captures which preferences matter at which moments, making recommendations context-sensitive. This works because consumption is truly dynamic—a user who starts by watching music may shift to comedy—and sequences preserve that trajectory where static profiles would miss it."
+  }
+]

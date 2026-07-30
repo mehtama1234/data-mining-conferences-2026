@@ -1,0 +1,62 @@
+[
+  {
+    "gid": 690,
+    "deep_why": "Computational social science research on digital data faces a credibility crisis because different teams use incompatible methods, data collection practices, and analysis pipelines, making results hard to verify or reuse. The workshop builds this by establishing shared guidelines, templates, and community-run services that standardize research workflows. When all teams follow the same checklist and use the same documented platform, others can audit their work step-by-step; this transparency is the only way to detect errors and builds trust in findings that will inform policy."
+  },
+  {
+    "gid": 691,
+    "deep_why": "In federated model adaptation, clients add different amounts of privacy noise to their updates, so some uploads carry weak signal while others are clean. The core idea is to estimate how much noise each client added by looking at their submitted model changes, then reward lower-noise contributions with higher influence on the global update. This works because noisier updates mathematically degrade the combined model more; down-weighting them preserves accuracy while respecting each client's chosen privacy level, aligning individual incentives with the collective goal."
+  },
+  {
+    "gid": 692,
+    "deep_why": "User behavior on e-commerce sites unfolds as sequences—click, add to cart, purchase—and transitions between behaviors reveal intent more than any single action does. The method constructs a sparse graph of only the informative transitions across items, categories, and neighbors, then computes attention only over that graph. This reduces computation from quadratic to linear because most behavior pairs are noise; by identifying which transitions carry signal and ignoring the rest, the model captures the true sequential pattern without the overhead of comparing every possible pair."
+  },
+  {
+    "gid": 693,
+    "deep_why": "Real recommendation systems face a fundamental conflict: maximizing accuracy and maximizing diversity are often at odds, and simultaneously satisfying hard constraints like including multiple seller categories makes the problem even more intractable. DualAgent-Rec solves this by partitioning the problem into two agents—one pursuing accuracy under strict constraints, one exploring unconstrained Pareto tradeoffs—coordinated by an orchestrator that balances their contributions. This works because it breaks an infeasible single optimization into two tractable sub-problems; the orchestrator then reconciles them, guaranteeing that final solutions satisfy all hard constraints."
+  },
+  {
+    "gid": 694,
+    "deep_why": "Chemical knowledge about PFAS is scattered across hundreds of databases, each using different naming systems and missing pieces of each other's data. By building a single ontology that defines PFAS hierarchically and links to authoritative identifiers from the EPA, researchers can map their data to standardized entity references. When a dataset says 'DTXSID 1234', every other system immediately knows what chemical is meant, enabling queries and integration across sources that would otherwise be impossible to reconcile."
+  },
+  {
+    "gid": 695,
+    "deep_why": "RSA security depends on the difficulty of factoring large numbers; if an attacker could find the period of a repeated modular exponentiation function, they could recover the prime factors and break the encryption. Quantum computers can search all possible periods simultaneously via superposition, testing them in parallel, whereas classical computers must try each period one at a time. Once the period is found, fast classical factoring algorithms finish the attack; this is why quantum computers pose a long-term threat to RSA despite its current security."
+  },
+  {
+    "gid": 696,
+    "deep_why": "This work tests whether adding demographic context to LLM prompts improves survey response accuracy or instead biases them. The authors measure alignment by comparing thousands of synthetic responses (from persona-prompted models) against real survey data, and find that personas often degrade performance for minority subgroups. This is important because demographic conditioning redistributes error in ways that are hard to predict; what looks good on average masks hidden distortions for underrepresented populations."
+  },
+  {
+    "gid": 697,
+    "deep_why": "Smart cities that predict problems but never act on those predictions see no improvement in outcomes; predictions decay without feedback about whether they were right or wrong. A closed-loop architecture connects prediction to decision-making to action to observation of results, completing a feedback cycle. This matters because real outcomes—whether an intervention actually worked—teach the system what predictions were accurate and what went wrong, enabling continuous refinement instead of stagnation."
+  },
+  {
+    "gid": 698,
+    "deep_why": "Long-tail items in e-commerce receive so few clicks that collaborative models learn nearly nothing about them. Large language models provide semantic knowledge (e.g., 'this is a rare hiking boot') that compensates for missing interaction data. The challenge is that collaborative and semantic representations evolve independently during training, leading to misalignment. The method uses an energy-based formulation to explicitly align them, ensuring that semantic and collaborative signals reinforce rather than contradict each other, so both sources of knowledge contribute to accurate predictions."
+  },
+  {
+    "gid": 699,
+    "deep_why": "Out-of-context misinformation pairs an image with a caption that distorts what the image shows. Detecting this requires checking whether they mean the same thing. The method extracts visual entities and captions from the image, then checks if they align with the text caption. The principle is simple: real images and captions should be semantically consistent; if a separately-trained model (CLIP) thinks they misalign, and if the entities extracted from the image differ from what the caption claims, then the mismatch is likely real."
+  },
+  {
+    "gid": 700,
+    "deep_why": "Social networks have missing demographic attributes due to privacy concerns, and filling them in by guessing introduces new biases. Instead, FairGE avoids reconstruction entirely by using spectral graph theory: the principal eigenvector of the graph captures structural information about the network that is independent of missing attributes. By using only this principal component, the method suppresses all the spurious correlations that would arise from guessing demographics; this theoretically guarantees fairness without violating privacy."
+  },
+  {
+    "gid": 701,
+    "deep_why": "Vietnamese medicinal plant knowledge is vast but scattered across local sources using inconsistent names and disconnected from global taxonomy systems. This dataset bridges the gap by matching Vietnamese plant names to scientific names, collecting images, and linking each to GBIF's global identifier system. Once local knowledge is anchored to global unique identifiers, other researchers can reference the same plants, datasets can merge, and tools designed for global biodiversity work on Vietnamese data too."
+  },
+  {
+    "gid": 702,
+    "deep_why": "Discovering patterns in unfamiliar data without labels is hard because rough patterns look plausible but may not be extractable or real. Pattern Insights Explorer alternates between wide-lens views (where do similar examples cluster?) and sharp-focus views (can we precisely extract that pattern consistently?). This works because width reveals where signal concentrates, but signal needs precision to be actionable; iterating between these perspectives ensures that discovered patterns are both frequent and actually measurable."
+  },
+  {
+    "gid": 703,
+    "deep_why": "Signed graph networks predict whether an edge will be positive or negative by learning complex representations, but black-box predictions are untrustworthy. SGExplainer uses balanced paths—sequences of edges where positive and negative signs alternate to reach a consistent conclusion—to explain each prediction. This is sound because balanced path theory from graph mathematics guarantees that such alternating-sign paths represent coherent logical arguments; enforcing this structure ensures explanations are both faithful to the model's reasoning and interpretable to humans."
+  },
+  {
+    "gid": 704,
+    "deep_why": "Estimating which input features matter for recommendation requires computing importance scores, but naive approaches introduce hidden biases: the score can differ depending on which model layer you measure, which baseline you compare against, or how you approximate the score. FairFS fixes this by measuring importance identically across all layers, using a baseline close to the decision boundary, and aggregating approximations. By eliminating these three sources of artifact, the final importance estimate is no longer distorted by measurement choices, yielding accurate feature rankings."
+  }
+]

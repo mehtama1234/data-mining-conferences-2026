@@ -8,6 +8,8 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 MATH = json.load(open(os.path.join(HERE, "data", "math.json")))
 _wm = os.path.join(HERE, "data", "whymath.json")
 WHYMATH = json.load(open(_wm)) if os.path.exists(_wm) else {}
+_dw = os.path.join(HERE, "data", "deepwhy.json")
+DEEPWHY = json.load(open(_dw)) if os.path.exists(_dw) else {}
 analysis = json.load(open(os.path.join(HERE, "data", "analysis.json")))["papers"]
 def esc(s): return html.escape(str(s or ""))
 title_of = {str(a.get("gid")): a["title"] for a in analysis}
@@ -75,6 +77,7 @@ def concept_html(c):
         rows += (f"<div class='pr'><div class='pt'>{esc(title_of.get(gid,''))}<span class='vt {esc(v)}'>{esc(v)}</span></div>"
                  f"<div class='mp'><span class='pk'>uses</span> {esc(mv['plain'])}</div>"
                  + (f"<div class='mp wy'><span class='pk wk'>why it works</span> {esc(why)}</div>" if why else "")
+                 + (f"<details class='dw'><summary>the deeper reason</summary><div class='dwb'>{esc(DEEPWHY.get(gid,''))}</div></details>" if DEEPWHY.get(gid) else "")
                  + "</div>")
     return (f"<section><div class='anum'>{len(ps)} papers</div><h2>{esc(c['title'])}</h2>"
             f"<p class='intro'>{c['intro']}</p>"
@@ -109,6 +112,8 @@ h2{{font-family:var(--serif);font-size:29px;margin:0 0 12px;color:#fff}}
 .vt{{font-family:var(--mono);font-size:9px;color:#0E1420;background:var(--accent);border-radius:4px;padding:1px 5px;margin-left:6px;vertical-align:1px}}.vt.WSDM{{background:var(--viol)}}.vt.SIGIR{{background:var(--amber)}}
 .mp{{font-size:13.5px;color:var(--dim);margin-top:3px;padding-left:82px;text-indent:-82px}}.mp.wy{{color:var(--soft)}}
 .pk{{display:inline-block;width:74px;font-family:var(--mono);font-size:9px;letter-spacing:.04em;text-transform:uppercase;color:var(--faint);text-align:right;margin-right:8px}}.pk.wk{{color:var(--accent)}}
+.dw{{margin:5px 0 0 82px}}.dw summary{{font-family:var(--mono);font-size:10.5px;letter-spacing:.03em;color:var(--accent);cursor:pointer;list-style:none}}.dw summary::-webkit-details-marker{{display:none}}.dw summary::before{{content:'▸ ';color:var(--faint)}}.dw[open] summary::before{{content:'▾ '}}
+.dwb{{font-size:13.5px;color:var(--soft);margin-top:6px;padding:10px 14px;background:rgba(79,168,184,.05);border-left:2px solid var(--line);border-radius:0 8px 8px 0;line-height:1.6}}
 .bar{{display:flex;align-items:center;gap:12px;margin:5px 0;font-family:var(--mono);font-size:12px}}
 .bl{{width:300px;color:var(--soft);text-align:right;flex:0 0 auto}}.bt{{flex:1;height:14px;background:rgba(150,170,205,.06);border-radius:4px;overflow:hidden}}.bf{{display:block;height:100%;background:#4FA8B8}}.bv{{width:40px;color:var(--ink)}}
 @media(max-width:640px){{.bl{{width:150px;font-size:10.5px}}.mp{{padding-left:0;text-indent:0}}}}

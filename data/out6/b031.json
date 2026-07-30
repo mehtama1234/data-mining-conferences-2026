@@ -1,0 +1,62 @@
+[
+  {
+    "gid": 465,
+    "deep_why": "This work evaluates whether defenses against prompt injection and content poisoning actually stop malicious instructions from influencing text generation. The soundness principle is that a reproducible benchmark with known attacks reveals which mitigations (sanitization, normalization, attribution checks) truly block influence by measuring rank shifts and attack success at generation time. This works because the benchmark pairs specific threats with their countermeasures, so gaps between expected and actual rank changes expose real vulnerabilities that survive ingestion."
+  },
+  {
+    "gid": 466,
+    "deep_why": "The core challenge is transferring knowledge from a global model to devices with skewed, incomplete data without amplifying class imbalance. The principle is that decoupling knowledge into global patterns and local data priors, then adaptively recalibrating which knowledge to distill, prevents under-represented classes from losing critical information. This works because asymmetric forgetting arises when a single distillation objective fights local data bias; separate calibration per class ensures globally important patterns survive local corruption."
+  },
+  {
+    "gid": 467,
+    "deep_why": "This system predicts user satisfaction from multi-criterion ratings by jointly modeling users, items, and criteria in a tripartite graph with personalized criterion weights. The soundness guarantee is that the prediction decomposition satisfies formal multi-criteria decision properties: balancing contradictory preferences without forcing them into a single score. This works because explicit criterion weights and item-criterion performance signals let the system respect the real structure of choice theory rather than collapsing preferences into an artificial single dimension."
+  },
+  {
+    "gid": 468,
+    "deep_why": "This tool models how citizen input flows through liquid democracy and governance mechanisms to produce policy decisions. The principle is that structured diagramming makes the path from data to government action transparent and traceable, eliminating opacity. This works because explicit mapping of linkages between participation nodes, voting flows, and outcomes reveals where data gets lost or distorted, enabling practitioners to see exactly how input influences decisions."
+  },
+  {
+    "gid": 469,
+    "deep_why": "Assessing peer review quality requires combining multiple signals: structured rubric dimensions, language patterns analyzed by fine-tuned reasoning, and supervised predictions trained on historical reviews. The principle is that no single metric captures quality; triangulation across criteria, interpretation, and patterns detects failures that any one approach misses. This works because reviewers fail in different ways—shallow reasoning, factual errors, missing scope—and each type leaves distinct traces across the suite of assessment methods."
+  },
+  {
+    "gid": 470,
+    "deep_why": "Extracting information from text and images when encountering unseen object or relation types requires learning representations that generalize across the train-test gap. The principle is that hyperbolic geometry naturally encodes hierarchical relationships: general concepts sit closer to the origin, specific ones farther out, mirroring how categories relate to each other. This works because hierarchical space automatically reduces the distribution mismatch between seen and unseen categories, letting models transfer structure rather than memorizing category names."
+  },
+  {
+    "gid": 471,
+    "deep_why": "Cross-domain recommendation improves accuracy but risks amplifying group-level unfairness by transferring source-domain disparities and unevenly distributing cross-domain gains. The principle is that by identifying which groups suffer disparity transfer and which gain less from new knowledge, the framework can rebalance training signals and use information theory to redistribute benefits equitably. This works because addressing root causes—where signal imbalance harms groups—lets cross-domain knowledge improve everyone without sacrificing overall performance."
+  },
+  {
+    "gid": 472,
+    "deep_why": "Real-time anomaly detection in streaming graphs must flag unusual interactions using constant per-edge time and memory. The principle is that interaction willingness quantifies the normal propensity for entities to interact, and Count-Min Sketch provides a compact probabilistic encoding of streaming edge counts with estimation guarantees. This works because the sketch separates dense-type and counter-type anomalies from baseline patterns without storing the full graph, so comparisons to willingness thresholds remain fast and bounded."
+  },
+  {
+    "gid": 473,
+    "deep_why": "Agentic AI over biological sequences or time series becomes expensive because the model consumes enormous token counts from raw data it cannot interpret. The principle is that external tools extract semantically meaningful features cheaper than the language model can process raw tokens; gated memory then selectively retains relevant intermediate states based on the current goal. This works because compressing sequences before feeding them to the agent and filtering redundant context across steps both reduce token throughput without losing necessary information."
+  },
+  {
+    "gid": 474,
+    "deep_why": "Cybersecurity practitioners face a semantic gap: compliance standards describe what to protect, but operational systems describe how threats exploit vulnerabilities. The principle is that a dynamic, interoperable platform bridging security services, mechanisms, attacks, vulnerabilities, and assets makes the causal chain explicit and updatable. This works because homonym-aware editing and community feedback let the ontology evolve as attacks and defenses change, replacing static read-only standards with living structure that reflects actual threat landscapes."
+  },
+  {
+    "gid": 475,
+    "deep_why": "Generating accurate medical reports requires the retriever to find clinically similar prior reports, not just image-similar ones. The principle is that fine-grained semantic alignment between images and reports, guided by multi-granularity similarity learned from report relationships, teaches the retriever hierarchical pathological patterns. This works because report text encodes subtle clinical distinctions (severity, progression, related findings) that isolated images cannot convey; using these rich relationships as supervision refines the shared space to clinical semantics."
+  },
+  {
+    "gid": 476,
+    "deep_why": "Depression manifests in abstract emotional states that sufferers express through metaphor—concrete source domains map to internal feeling. The principle is that by annotating metaphorical expressions and their source domain mappings in depression-related posts, language models learn which figurative patterns correlate with mental health states. This works because metaphors reveal implicit semantics that surface statistics (word frequency, sentiment scores) miss; depression-specific metaphorical patterns become reliable features the model can ground its predictions in."
+  },
+  {
+    "gid": 477,
+    "deep_why": "Learning from incomplete multimodal data risks drifting class prototypes between complete and partial observations, distorting the shared representation. The principle is that anchoring to both global prototypes (from reasoning models) and local exemplars, then aligning all three levels (unimodal, fused, and prompt-completed features) within that anchor space, stabilizes the geometry. This works because dual-level anchoring prevents any single modality or inference path from dominating; the shared anchor keeps class structure stable even when inputs miss key modalities."
+  },
+  {
+    "gid": 478,
+    "deep_why": "Graph learning under local differential privacy protects user privacy but becomes vulnerable to coordinated data poisoning that degrades node classification. The principle is that poisoning attacks require simultaneous, coordinated manipulation across multiple submissions; trimmed screening filters outliers, privacy-aware pruning removes sophisticated fake nodes, and utility recovery amplifies the signal from clean data. This works because coordinated attacks leave statistical traces (outlying submissions, anomalous network patterns); removing these traces recovers a clean enough signal to rebuild utility within privacy constraints."
+  },
+  {
+    "gid": 479,
+    "deep_why": "Foundation models need tokenizers that respect graph structure, yet graphs live in non-Euclidean spaces where standard quantization fails. The principle is that Riemannian geometry captures intrinsic structural patterns (trees, cycles, sequences) as a geometric vocabulary; a Riemannian quantizer converts these patterns to discrete tokens, then projects them into a unified tangent space. This works because Riemannian geometry preserves relationships within each domain's manifold, so when tokens are mapped to the shared space, structural semantics remain consistent across domains, enabling genuine transfer."
+  }
+]

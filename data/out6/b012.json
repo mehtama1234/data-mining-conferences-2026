@@ -1,0 +1,62 @@
+[
+  {
+    "gid": 180,
+    "deep_why": "CiteLLM retrieves scientific references by matching author claims to real papers stored in trusted repositories, then validates matches by comparing paragraphs word-by-word. The soundness rests on a simple truth: if two texts share substantial semantic overlap, they're likely to be about the same research idea. By using the language model only to generate focused search queries and rank candidates—not to fabricate answers—the system avoids the core failure mode of hallucination. The queries steer retrieval toward relevant papers, and semantic paragraph matching acts as a mechanical check that the retrieved paper genuinely supports the claim being grounded. Because validation happens via direct comparison rather than model reasoning, the system can guarantee that every reference it returns is both real and relevant."
+  },
+  {
+    "gid": 181,
+    "deep_why": "BiasEdit detects hidden spurious correlations in image datasets by measuring how much visual features depend on class labels, using statistical tests of independence. The method works because truly spurious links follow a detectable pattern: when most images of class A have attribute X but few of class B have it, the statistics reveal this asymmetry. Once detected, the framework regenerates realistic images without the bias attribute, forcing the dataset to balance samples with and without the attribute for each class. This balance is essential—it breaks the spurious association because no attribute now dominates any class. When models train on balanced data, they must learn class-defining features instead of relying on the shortcut attribute."
+  },
+  {
+    "gid": 182,
+    "deep_why": "MetaKube learns from past Kubernetes failures by abstracting recurring diagnostic patterns and storing them with confidence scores, allowing rapid retrieval of similar previous problems. The approach works because most system faults follow recognizable sequences—a configuration error or resource leak produces the same symptoms across different contexts. By building a memory indexed by problem signatures and confidence calibration, the system can quickly match new failures to past resolutions rather than reasoning from scratch. The meta-cognitive routing layer further exploits this by choosing fast pattern matching for high-confidence familiar scenarios and slower causal reasoning only when the problem is truly novel, balancing speed against depth."
+  },
+  {
+    "gid": 183,
+    "deep_why": "DARA optimizes ad spending by decomposing budget decisions into two stages: first, an initial coarse plan generated from few examples of past allocations, then fine refinement using numeric feedback. The insight is that language models capture high-level strategic reasoning from examples—how to allocate budgets across channels—but lack precision for exact amounts. By separating reasoning from optimization, the framework leverages in-context learning for generalization from sparse data while layering numeric feedback-driven adjustment on top. This two-stage design ensures the system benefits from both the pattern-matching strength of language models and the mathematical exactness needed for real budget control."
+  },
+  {
+    "gid": 184,
+    "deep_why": "Blind face restoration reverses privacy-protective perturbations by reconstructing high-quality faces from corrupted images—a task that works because perturbations are shallow modifications layered on top of face geometry. The attack succeeds because restoring a face requires capturing the same underlying facial structure that privacy noise obscured. The framework's strength lies in learnable restoration models, which can be fine-tuned to exploit specific patterns in how privacy perturbations degrade images, achieving better performance than fixed algorithms. This demonstrates a fundamental asymmetry: perturbations that are weak enough to preserve usability remain vulnerable to adaptive restoration."
+  },
+  {
+    "gid": 185,
+    "deep_why": "MuVaC models sarcasm detection and explanation generation as causally linked: explaining sarcasm requires reasoning about why the literal interpretation clashes with context, and this reasoning naturally produces the detection decision. By formulating this as a structural causal model, the framework enforces logical consistency—the explanation must support the detection outcome. Multimodal alignment then ensures visual and textual features are harmonized before fusion, preventing mismatches where tone and facial expression conflict. This causal coupling prevents the model from detecting sarcasm without reasoning about it, improving both detection accuracy and explanation quality."
+  },
+  {
+    "gid": 186,
+    "deep_why": "AI-generated content becomes reusable when its provenance is transparent—what model, prompt, and settings produced it, plus confidence in the output. This metadata enables downstream agents to assess whether reusing content is safe by checking if conditions match their own context and verifying credentials. The soundness rests on the principle that identical inputs from the same model with the same settings will produce similar outputs. By attaching this structured context envelope, the framework makes content reliability assessable without requiring re-execution, preventing chained hallucinations where bad outputs are propagated through agent pipelines."
+  },
+  {
+    "gid": 187,
+    "deep_why": "Graph learning on the web fails when assumptions about data quality are violated—a problem solved not by a single method but by a taxonomy of failure modes and defenses. The tutorial maps threats (adversarial manipulation, distribution shift, incomplete data) to mitigation strategies operating at different levels: data cleaning, model robustness, and adaptation mechanisms. The organizing principle is that each threat class has characteristic signatures and targeted fixes—corrupt edge patterns can be detected and filtered, sudden shifts can trigger retraining, missing nodes can be inferred. Understanding this structure lets engineers choose appropriate defenses for their specific deployment context."
+  },
+  {
+    "gid": 188,
+    "deep_why": "Trustless Feedback uses zero-knowledge proofs to verify that expert feedback satisfies hard constraints (drug safety, geometric feasibility) without revealing the underlying sensitive data. The method works because constraints can be encoded as mathematical circuits—arithmetic operations on the data—that a proof system can verify without accessing the actual values. By formalizing expert evaluation as circuit checking, the framework guarantees data quality (no poisoned annotations pass) while keeping raw data private. This separation between checking and seeing is the core guarantee: safety rules can be enforced mechanically without human privacy exposure."
+  },
+  {
+    "gid": 189,
+    "deep_why": "LOPE extracts structured knowledge from scientific papers by optimizing prompts to elicit consistent terminology, then aligning all extracted terms to a standardized vocabulary. Consistency improves because multiple ways of saying the same idea now map to one canonical term, making the knowledge graph machine-readable. By using semantic matching to a shared ontology, the method enforces alignment without requiring human review—equivalent but differently-phrased terms are unified. This standardization step is crucial because it transforms free-form extraction into interoperable structured data that downstream systems can reliably query."
+  },
+  {
+    "gid": 190,
+    "deep_why": "Multi-domain knowledge graph completion improves predictions by treating each domain as a partial view of the true underlying entity information. The generative approach uses diffusion models to synthesize complete entity descriptions conditioned on multi-domain evidence, initializing from domain-agnostic prior embeddings that are unbiased toward any single source. By conditioning on support graphs while preserving domain-specific context, the model generates informative representations that integrate complementary signals across domains. The diffusion process ensures the generated embeddings are both predictive across graphs and true to the prior, balancing knowledge transfer against domain preservation."
+  },
+  {
+    "gid": 191,
+    "deep_why": "Spatio-temporal intelligence from web data improves by treating human mobility—check-ins, location history, transportation—as layered signals revealing behavior at location, trajectory, and region scales. Each scale captures different phenomena: location-level reveals local patterns, trajectory-level models individual movement coherence, region-level exposes aggregate flows. Language models excel at this hierarchical reasoning because they can process descriptions at multiple abstraction levels simultaneously, from individual actions to city-wide phenomena. By organizing analysis around these natural scales, systems can ask questions appropriate to each level without flattening rich behavior into a single representation."
+  },
+  {
+    "gid": 192,
+    "deep_why": "Knowledge graph-based retrieval-augmented generation improves by making models aware of their own uncertainty about retrieved information. Counterfactual prompting exposes this by asking what changes if retrieved facts were modified or missing, revealing how much predictions depend on specific pieces of evidence. Models can become overconfident when subgraphs are incomplete, treating weak evidence as strong certainty. By measuring prediction variance across interventions and rescoring based on this stability, the framework recalibrates confidence to match actual reliability. This approach is sound because counterfactual variation directly measures sensitivity to information quality."
+  },
+  {
+    "gid": 193,
+    "deep_why": "LLMQuA implants backdoors in quantized language models by distorting the weights that map token meanings to their numerical representations. Quantization restricts precision globally, but layer-wise quantization allows local adversarial adjustment of weight distributions. The attack works because token semantics can be reprogrammed through weight perturbation without requiring gradient access—directly modifying quantized values shifts the learned associations. Data-efficient knowledge editing with few token pairs bootstraps the attack from minimal poisoning data. This demonstrates that quantization's efficiency gains come at a security cost when adversarial access to parameters is possible."
+  },
+  {
+    "gid": 194,
+    "deep_why": "Information diffusion prediction scales to massive cascades by modeling group-level rather than individual influence. Computing one-to-one influence for ten thousand users requires quadratic comparisons, becoming intractable. By identifying influence groups and modeling inter-group dynamics, the method reduces complexity to linear in cascade size. The group identification uses information bottleneck theory to amplify key influence pathways, ensuring groups capture genuine structural patterns rather than arbitrary clustering. This reformulation preserves accuracy within provable error bounds while enabling prediction of cascades thousands of users long—a fundamental shift from individual to collective reasoning."
+  }
+]

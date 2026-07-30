@@ -1,0 +1,62 @@
+[
+  {
+    "gid": 750,
+    "deep_why": "The core task is finding which images match which text snippets by scoring how similar they are in a shared space. The method works because extracting details at multiple scales (both big picture and fine local regions) captures all the evidence present in the data—a fine-grained representation cannot lose information that was visible at coarser levels. When ranking candidates, enforcing that similar pairs stay close and different pairs stay far apart across three stages ensures the ranking respects the actual similarity structure. This is guaranteed because progressively tightening the spacing penalties forces the learned representation to reflect true semantic closeness rather than false similarities, which directly solves the core retrieval goal."
+  },
+  {
+    "gid": 751,
+    "deep_why": "Sarcasm detection requires separating true sentiment from surface-level wording—the opposite of what the words literally say. The method works by keeping video modalities (visual, audio, text) separate during analysis, each feeding its own sentiment signal, rather than averaging them first. This preserves the distinct polarities each modality detects, so sarcasm (where visual content contradicts text) becomes visible as disagreement between modalities. Using these disagreements as guides to untangle sarcasm from the merged signal is sound because the contradictions cannot exist unless genuine opposing sentiment information flows through, making the guides structurally reliable."
+  },
+  {
+    "gid": 752,
+    "deep_why": "The task is partitioning nodes in a hypergraph into meaningful groups. The method works by learning node representations while simultaneously assigning clusters, using both node relationships and hyperedge structure. This is mathematically sound because node embeddings trained under clustering supervision cannot encode noise—the learned space must preserve the block structure of the actual clusters, or the clustering loss remains high. By optimizing both embedding and cluster assignment end-to-end, the space is shaped directly for the clustering objective rather than indirectly through a separate algorithm, which guarantees the final clusters reflect the true group boundaries encoded in the hypergraph."
+  },
+  {
+    "gid": 753,
+    "deep_why": "Unlearning means erasing specific knowledge from a trained model while keeping the rest intact. The core insight is that different forgotten concepts have different difficulty—some examples are easy to erase, others are stubborn. The method works by identifying the hardest cases to unlearn and focusing effort there, since erasing the hardest items automatically erases everything easier. This is guaranteed by a min-supremum game: the inner search finds data reweightings that maximize loss on the forget set, and the outer step updates the model against those worst-case reweightings, which forces balanced forgetting across all difficulty levels."
+  },
+  {
+    "gid": 754,
+    "deep_why": "This is a workshop overview paper on building trustworthy foundation models for web applications. The mathematical principle is that causal reasoning lets you prove why a model decision happened—not just that it did—by separating true causes from confounding factors. Causal methods are sound because they encode independence assumptions about how causes actually flow through data, preventing spurious correlations from masking real mechanisms. When you can prove causality, you gain interpretability and control, which directly enables fairness audits, robustness verification, and responsible deployment at web scale."
+  },
+  {
+    "gid": 755,
+    "deep_why": "Ad placement allocation must balance the bidder's payment with reduced value when neighboring ads compete for attention. The method models slot value as a bid multiplied by a discount from nearby ads, making allocation an optimization problem. This is mathematically sound for the nearest-neighbor model because the discount depends only on distance to the closest competitor—a property that makes ranking-based algorithms work. The monotonicity of the allocation rule (higher bids get better slots) is preserved, and truthfulness is guaranteed because bidders cannot gain by lying about their value when positions are allocated by the proven monotone rule."
+  },
+  {
+    "gid": 756,
+    "deep_why": "Null modeling tests whether observed network patterns are statistically meaningful by generating random reference networks with the same constraints. The Curveball trade preserves degree sequences and other structural properties while randomizing connectivity. The method is sound because it processes data in a single linear pass using reservoir sampling, which statistically guarantees uniform randomization without storing all candidate pairs. The speedup comes from bounding possible outcomes mathematically so you skip expensive computations that cannot affect the final result, reducing work while maintaining the same random distribution."
+  },
+  {
+    "gid": 757,
+    "deep_why": "Table question answering requires interpreting both the spatial layout of cells and the reasoning needed to connect rows and columns into an answer. The benchmark works by measuring each capability separately—layout complexity and reasoning complexity as orthogonal axes. This is sound because decomposing the task reveals which models struggle with what: a model weak on complex layouts but strong on reasoning requires different fixes than vice versa. Separating these factors lets you trace capability gaps to their source, which is necessary for building models that truly understand tables rather than exploiting spurious correlations."
+  },
+  {
+    "gid": 758,
+    "deep_why": "Radio map estimation needs to reconstruct a field with both slow large-scale variation (path loss) and rapid fine-scale ripples (multipath effects). The method builds predictions from coarse to fine resolution using residual pyramid decomposition, so each stage only learns the details its level needs. This is sound because coarse prediction has fewer degrees of freedom and easier optimization, while finer stages inherit the stable coarse foundation and focus only on local variation. The hierarchical structure guarantees you capture big patterns before chasing noise, which is why multi-scale autoregressive generation produces accurate maps without quantization artifacts."
+  },
+  {
+    "gid": 759,
+    "deep_why": "Popularity bias means common items are recommended too often, crowding out less known items. The method trains a sparse autoencoder to identify individual neurons that fire for popular items, then dampens those neurons at test time. This works because neurons in recommendation models do specialize—each encodes a distinct signal like popularity, recency, or user preference. By identifying which neurons carry popularity signals and reducing their contribution, you mathematically reduce the popularity factor in the final score while preserving other reasoning. The interpretability is guaranteed because sparse autoencoders force each neuron to do one job, making the steering transparent."
+  },
+  {
+    "gid": 760,
+    "deep_why": "Misinformation spreads faster when topics become polarized—people share content matching their existing views. The method continuously tracks topics in real time and measures how split sentiment becomes around each topic using sentiment divergence. This is sound because polarization is a measurable divergence in topic-specific emotion that forms before false claims fully propagate. By detecting topics where sentiment splits dramatically, you identify the conditions under which misinformation flourishes: topics with polarized audiences are fertile ground. The predictive power comes from this temporal lead—polarization rises before viral spread, giving you time to intervene."
+  },
+  {
+    "gid": 761,
+    "deep_why": "Extracting structured knowledge from text is hard because entities belong to places and times—coordinates that ground meaning. The system uses space and time as universal organizing principles: all information naturally has a location and timestamp, unlike domain-specific ontologies. This is mathematically sound because spatiotemporal indices partition data into cells where similar entities cluster, reducing the search space for reasoning and retrieval. By anchoring extraction to geography and chronology, you get free structure that improves both accuracy and generalization, since these coordinates apply the same way across any domain."
+  },
+  {
+    "gid": 762,
+    "deep_why": "Generating molecules with multiple constraints (potency, safety, manufacturability) requires satisfying all conditions simultaneously. The method frames generation as a Markov chain where each step slightly alters molecular structure while steering toward the joint target distribution. This is sound because Markov chains converge to stable distributions—by designing transitions that bias toward the target, the trajectory naturally concentrates on valid molecules meeting all conditions. The two-stage training approximates this by learning to predict intermediate steps, which is necessary because the true joint distribution requires seeing how all constraints interact during generation, not treating them independently."
+  },
+  {
+    "gid": 763,
+    "deep_why": "This workshop abstract discusses practical prompt engineering for large language models. The core principle is that language model behavior depends sensitively on input phrasing—same request, different wording, different output. This is sound because language models learn conditional probability over text, so changing conditioning text changes the probability distribution substantially. The workshop gathers practitioners to exchange best practices and novel paradigms because prompt design is fundamentally a learning problem: you discover effective phrasings through structured experimentation, not through theory alone."
+  },
+  {
+    "gid": 764,
+    "deep_why": "Evaluating research agents requires capturing not just final answers but the quality of reasoning steps taken. The method scores the entire solution trajectory using a utility function measuring both accuracy and reasoning quality, then adds a secondary assessment of robustness by testing how much guidance agents need to succeed. This is sound because a correct answer with weak reasoning may fail on similar problems, whereas sound reasoning reliably transfers. The hierarchical trajectory utility forces evaluation to penalize inefficient paths even with correct outcomes, preventing the 'high-score illusion' where crude solutions accidentally succeed, ensuring agents truly master the capability rather than lucking into answers."
+  }
+]

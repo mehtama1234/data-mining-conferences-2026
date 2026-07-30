@@ -1,0 +1,62 @@
+[
+  {
+    "gid": 1110,
+    "deep_why": "The core task is finding the right layer inside a language model whose output works best for recommending products. The principle is that different parts of a model specialize in different jobs: middle layers learn to spot which items are similar and good, while final layers get forced into doing the model's original training job instead. Because language models develop this natural split of labor, middle layers often hold better information for recommendations. By explicitly adding separate modules that prevent the final layer from hoarding everything, the method frees the middle-layer knowledge to be compressed and used without losing the signal that makes predictions accurate."
+  },
+  {
+    "gid": 1111,
+    "deep_why": "The goal is deciding what question to ask a user at each turn of a conversation to learn their preferences faster. The soundness rests on a simple fact: the best question depends on what stage of learning you are in. Early on, asking about broad traits of items (color, price) teaches you how to narrow down the space, but once preferences are refined, asking about specific items you have actually seen works better because it exploits what you already learned. By training a system to recognize conversation stages and switch strategies accordingly, the method mirrors how human conversations evolve, ensuring each question is as informative as possible given what you know so far."
+  },
+  {
+    "gid": 1112,
+    "deep_why": "The challenge is answering complicated questions by hopping through facts stored in a knowledge graph, using a language model to decide which facts to follow. The problem that ruins naive methods is computational waste and getting led astray by false paths. The fix works because it splits the job: first, use the language model to understand what the question means, then use a separate learned agent to do fast, focused exploration of the graph. Penalizing paths that contradict the graph's actual structure ensures the agent learns to trust the facts and not chase hallucinations, making reasoning both fast and accurate."
+  },
+  {
+    "gid": 1113,
+    "deep_why": "Predicting whether a user will convert after clicking requires learning from clicks, but clicks come only from the users and items the ranking system chose to show. Some user-item pairs never appear at all, so the system has no way to know their true probabilities. Standard methods assume every pair has some chance, but in reality blockers exist: a restaurant ten kilometers away will never be shown. The fix is identifying these blocked pairs and bounding what you can learn about them, then teaching the model only the weaker constraint its data actually supports. This allows learning fairly even when the data itself has hard limits on what's observable."
+  },
+  {
+    "gid": 1114,
+    "deep_why": "Fast document retrieval requires sparse, short representations, but language models generate long, dense ones. The approach balances keeping enough words to capture meaning while dropping noise words the model relied on. The principle is that words vary in importance: a few carry most of the signal for ranking, while many add clutter. By learning which words genuinely matter for each query and document, then enforcing sparsity, the method cuts storage and speed without losing the semantic understanding language models provide, trading redundancy for efficiency."
+  },
+  {
+    "gid": 1115,
+    "deep_why": "Understanding long videos requires retrieving relevant segments, but searching for single best matches misses that human memory integrates multiple related moments. The approach simulates how human memory works: when a question activates one memory, it automatically recalls related episodes in parallel. By building a knowledge graph of video events, generating search signals that activate all stored traces at once, and weaving them together into coherent answers, the method mirrors cognitive psychology and captures connections a single segment cannot. This parallel recall is more faithful to how understanding actually works."
+  },
+  {
+    "gid": 1116,
+    "deep_why": "Models trained only on simple questions with few reasoning steps fail on hard questions needing many steps because the distribution shifts. The approach uses a recursive strategy: take knowledge learned from simple reasoning and reapply it step by step, with learning about when enough evidence has accumulated. The soundness is that if a single step works well, repeating it many times should eventually reach complex answers, provided the model learns to stop at the right time. By modeling both velocity (am I making progress?) and acceleration (is my pace changing?), the system can build confidence about when to halt before noise ruins the answer."
+  },
+  {
+    "gid": 1117,
+    "deep_why": "Search results often crowd toward one item category, ignoring diversity users actually want. The approach measures from real user sessions how much diversity different user groups seek, then steers the ranking to match. The principle is that user behavior (what they click and convert on) reveals their true preferences; if they explore across categories, the system should show variety. By adjusting scores slightly on the first page to hit a diversity target derived from observed behavior, the method aligns the results with what users actually demand, not what maximizes engagement in isolation."
+  },
+  {
+    "gid": 1118,
+    "deep_why": "Serving recommendation models at scale requires fast nearest-neighbor search and filtering, which are usually done separately on different machines, wasting time and memory. The fix is fusing both operations into one model, optimized together on shared hardware. This works because the model now knows what it is filtering for when it searches: it can build indices and design the search kernel together, each making the other better. Co-design eliminates redundant copying, lets the processor cache better, and lets complex scoring happen inside the model itself instead of after retrieval, dramatically cutting latency and cost."
+  },
+  {
+    "gid": 1119,
+    "deep_why": "Complex questions need retrieving multiple related pieces of knowledge and fusing them. The insight is that knowledge exists at multiple granularities: words, entity relationships, and entire topics all matter. The approach builds a graph capturing all these levels, then processes it so that information flows in two directions within each level and between levels. Most importantly, each update is guided by the question, filtering out irrelevant noise early. By integrating information at multiple scales while keeping focus on what the question actually asks, the method retrieves richer, more complete answers."
+  },
+  {
+    "gid": 1120,
+    "deep_why": "Recommending the next item depends on how user preferences are evolving, not just what they bought before. The method models this evolution using mechanics: velocity (direction of preference shift) and acceleration (whether that shift is speeding up). By capturing these using Taylor series—a way to predict smooth changes using their rate of change—the system explicitly tracks momentum. The principle is that preferences move smoothly, so knowing the speed and its derivative lets prediction continue the trajectory. Balancing this kinematic view with stable long-term patterns ensures both stability and responsiveness."
+  },
+  {
+    "gid": 1121,
+    "deep_why": "Single-item representations can only capture so much because they are finite-dimensional; no matter how smart, they cannot represent all possible top combinations. The approach replaces simple dot-product scoring with a learnable kernel—a more flexible scoring function built from polynomials. The principle is that polynomials can approximate any smooth function, so a rich polynomial family can learn scoring rules the simple model cannot. By combining this expressiveness with contrastive learning that penalizes getting rankings wrong, the system learns scoring that captures complex preferences without abandoning single-item efficiency."
+  },
+  {
+    "gid": 1122,
+    "deep_why": "Recommending with language models means generating word sequences where each word is a ranked item. Beam search greedily prunes unlikely prefixes, but this can kill good items if their early words seem weak even though the full item is strong. The fix is training so that every word in a good item ranks in the top-B candidates at each step. The principle is that if you guarantee this constraint, beam search cannot prune the item early. By enforcing this during training without simulating the full expensive search procedure, the method ensures the training and inference both agree on what looks promising."
+  },
+  {
+    "gid": 1123,
+    "deep_why": "Language models answer questions through chains of reasoning influenced by demographic biases in their training. The approach treats reasoning as the mechanism through which bias flows: by intervening on reasoning paths, you break the bias channel. The method samples many reasoning traces, groups similar ones, and weights their answers carefully. The principle is that if you force the model to consider many different justifications, and weight them fairly, incorrect stereotypes cancel out while correct reasoning rises. This works because bias is brittle—it repeats the same flawed reasoning, while correct reasoning is robust across multiple perspectives."
+  },
+  {
+    "gid": 1124,
+    "deep_why": "Finding all exact occurrences of a small graph inside a large one requires checking many possible matches, which is slow online. The approach builds permanent indices of common small subgraph patterns offline, converting the problem into fast lookups. The principle is trading storage for speed: by indexing once and reusing many times, each query becomes retrieving candidates from pre-built lists instead of searching from scratch. Using a learning model to filter candidates by checking if they truly match ensures both speed and correctness, converting exponential search into practical index lookups."
+  }
+]

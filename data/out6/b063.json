@@ -1,0 +1,62 @@
+[
+  {
+    "gid": 945,
+    "deep_why": "The core task is capturing and explaining diverging opinions in a document collection. The soundness rests on a simple principle: partition documents by relevance first, then select evidence from each partition. This works because opinions cluster — documents backing the same position tend to cite similar reasons, so grouping by relevance to the majority view naturally isolates dissenters. By anchoring to the majority, the system creates a stable reference point that makes minority views comparatively easy to find and explain. This let them produce summaries where each claim has concrete evidence attached, solving the real problem that generic summaries hide where disagreement actually lives."
+  },
+  {
+    "gid": 946,
+    "deep_why": "The task is detecting when time series behave strangely—spikes, drops, or shifts that signal problems. The approach covers detection algorithms ranging from 1980s methods to modern approaches, plus a hard insight: most automated model selection fails to beat random guessing, which means the field lacks a principled way to choose the right detector for each dataset. This matters because time series anomalies have many sources—sensor faults, supply shocks, fraud—and no single algorithm suits all. By reviewing both classic and modern methods alongside this sobering lesson about selection, they provide a foundation for future work to build detectors that actually know which tool fits which problem."
+  },
+  {
+    "gid": 947,
+    "deep_why": "The core problem is retrieving facts from a knowledge graph reliably to answer questions. The soundness lies in treating retrieval as planned search, not heuristic guessing. By analyzing the question first to infer what paths through the graph matter, the system constrains exploration—it asks only the questions that matter and stops when constraints are satisfied. This works because knowledge graphs are structured: facts link in predictable ways, and knowing what to look for lets you avoid exploring dead ends. This transforms RAG from a fuzzy matching game into auditable reasoning, solving the real problem that current systems generate answers that look plausible but can't explain how they arrived there."
+  },
+  {
+    "gid": 948,
+    "deep_why": "Graph neural networks combine a node's features with its neighbors' features by averaging them together—aggregation. The problem is that averaging erases detail: if features start diverse, averaging makes them similar, and if neighbors have different importance, averaging treats them the same. The fix has two parts: before averaging, reshape the features to stay diverse; after averaging, add back information about neighbors' importance. This works because the loss comes from the averaging step itself, and both fixes directly counteract that. By solving information loss, they preserve the detailed structure of the graph, solving the real problem that networks were losing track of important differences in how connected each node truly is."
+  },
+  {
+    "gid": 949,
+    "deep_why": "The task is recommending items and explaining why. When a language model retrieves passages about an item, many are irrelevant noise. The solution uses chain-of-thought reasoning to filter: first identify the item that fits the user's needs, then identify which features of that item justify the recommendation. This works because breaking the selection into steps lets the model focus at each stage—first deciding what to recommend, then justifying it—rather than guessing which retrieved facts matter all at once. By staging the selection, they reduce the noise each step must handle, solving the real problem that retrieved knowledge helps only if the model knows which pieces actually support the recommendation."
+  },
+  {
+    "gid": 950,
+    "deep_why": "Label propagation spreads labels through a graph by diffusing them along edges until they stop changing. When the graph is dense but low-rank—meaning its structure arises from a small set of hidden coordinates—storing all edges wastes memory. The insight is that diffusion in this embedding space is mathematically identical to diffusion in the full graph, but computing in the embedding space avoids ever building the edge list. This works because matrix algebra guarantees that the diffusion process depends only on the eigenvectors of the adjacency, which the embedding captures exactly. By computing in the embedding space, they make label propagation tractable for graphs with millions of nodes, solving the real problem that dense graphs are too large to fit in memory."
+  },
+  {
+    "gid": 951,
+    "deep_why": "This is a position paper on how personalization is evolving from predicting what users want to reasoning about what users should discover. The soundness rests on an observation: prediction-based systems reinforce existing habits, but reasoning-based systems can surface insights users miss. This shift matters because prediction works well when behavior is stable, but it fails when the goal is growth or surprise. By combining reasoning with multi-modal and speech understanding, systems can infer not just what users like, but what they might value learning. This opens a path toward personalization that doesn't trap users in filter bubbles, solving the real problem that recommendation has historically made the world narrower, not wider."
+  },
+  {
+    "gid": 952,
+    "deep_why": "Multimodal recommendation systems usually process images, text, and audio separately, then blend their signals. When modalities go missing, this design breaks—alignment fails and imputation adds noise. The solution projects all available modalities into a shared semantic space early, then aggregates only what's present. This works because pretrained models already understand cross-modal meaning, so two modalities can align without a third, and a single modality alone provides useful signal. By fusing early and ignoring what's missing, the system remains robust to incomplete data, solving the real problem that real-world content is messy and recommenders built for perfect data fail in deployment."
+  },
+  {
+    "gid": 953,
+    "deep_why": "Code vulnerability detection aims to find bugs that attackers can exploit. Sequence-based models miss the deep structure of code; graph methods capture syntax trees but miss semantic meaning. The solution combines three ideas: represent code as a graph to preserve control flow, use unsupervised learning to find latent patterns in that graph structure, and enrich nodes with semantic embeddings from a language model. This works because vulnerabilities depend on both structure (where execution can go wrong) and semantics (what the code intends). By layering all three, the model learns both the dangerous patterns and their meanings. This lets them trace vulnerabilities precisely, solving the real problem that shallow features miss the intricate ways real exploits work."
+  },
+  {
+    "gid": 954,
+    "deep_why": "Recommender systems work well for returning users but fail for newcomers—cold-start problem. The solution uses a manager agent that routes new users to semantic search and returning users to personalized ranking. This works because the two populations have opposite needs: returning users have history and benefit from personalization, while newcomers need diverse, discoverable recommendations where collaborative history doesn't exist. By routing to the right method for each user state, the system avoids forcing one approach to solve two different problems. This trades some accuracy for discovery on cold-start, solving the real problem that monolithic recommenders can't serve both groups well simultaneously."
+  },
+  {
+    "gid": 955,
+    "deep_why": "Detecting false information is harder when large language models generate it fluently and persuasively. Different sources—humans versus LLMs—need different retrieval strategies to find contradicting evidence. The solution trains a mixture-of-experts network via reinforcement learning to decide when and how much to retrieve for each input, without knowing its source. This works because the network learns to recognize semantic patterns that signal when retrieval helps: uncertain human claims need different evidence than confident LLM hallucinations. By adapting dynamically to each input, the system avoids a fixed strategy that works poorly for some sources. This improves accuracy while keeping search cost low, solving the real problem that veracity assessment must handle both human and synthetic falsehoods."
+  },
+  {
+    "gid": 956,
+    "deep_why": "A trained hyperdimensional computing model is intellectual property worth protecting, yet attackers can steal it by querying it and observing outputs. The approach generates synthetic data matching HDC's natural biases, queries the target model on that data to get output labels, then trains a copy that mimics those labels. This works because the synthetic data ensures the stolen model learns the same decision boundaries as the original—if the copy agrees with the target on the generated data, it will generalize the same way. This transforms a black-box stealing problem into supervised learning on synthetic examples. This demonstrates a real security risk: even data-free attacks can replicate proprietary models, solving the problem that model theft was thought to need training data."
+  },
+  {
+    "gid": 957,
+    "deep_why": "Search engines show different results to different locations, creating filter bubbles where users see only local viewpoints. The analysis uses language models to annotate search results from multiple geographic perspectives, then compares what results users in different regions see. This works because language models can represent diverse interpretations of a topic—right-wing, left-wing, neutral—and label results accordingly. By applying multiple perspectives consistently, the analysis reveals whether personalization algorithms hide disagreement or surface it. This systematic comparison, repeated across locations and topics, builds evidence of where filter bubbles form. This exposes how search engines shape what people discover, solving the real problem that algorithmic curation is usually invisible."
+  },
+  {
+    "gid": 958,
+    "deep_why": "Financial markets are driven by unstructured web data—news, regulatory filings, social media—but extracting actionable hypotheses is slow and subjective. The framework combines information extraction and knowledge graphs to identify factual claims, retrieves relevant claims for a user's question, and tests trading rules against historical data. This works because each stage removes noise: extraction finds claims, retrieval filters to relevant ones, and backtesting validates that the claim predicts price moves. By chaining these stages, the system turns messy text into quantifiable hypotheses. This automation lets humans test thousands of ideas instead of dozens, solving the real problem that financial insight is locked in text that markets move too fast to read."
+  },
+  {
+    "gid": 959,
+    "deep_why": "Different AI models have different strengths and blind spots—one excels at reasoning, another at factual recall, another at creativity. Showing multiple models side-by-side lets users choose perspectives that fit their needs and vote on which they prefer. This works because diverse models collectively see more than any single one, and aggregating user votes reveals which models actually help people make better decisions. By structuring the choice explicitly, the system shifts from comparing models on benchmarks to comparing them on real-world value. This crowdsourced ranking exposes model trade-offs, solving the real problem that leaderboards based on fixed datasets miss how models perform on the questions people actually care about."
+  }
+]

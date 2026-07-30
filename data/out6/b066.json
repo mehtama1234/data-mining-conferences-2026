@@ -1,0 +1,62 @@
+[
+ {
+  "gid": 990,
+  "deep_why": "The method computes a fairness score by monitoring how consistently a ranker assigns low loss to examples across demographic groups. The underlying principle is that loss magnitude serves as a reliable measure of data quality and encoding reliability — harder, more ambiguous examples naturally produce higher loss. By starting with only low-loss examples and gradually incorporating higher-loss ones, the model learns to rank reliably on clean cases before tackling noisy, bias-prone ones. This ordering prevents the model from absorbing societal biases that hide in harder cases, letting it solve the real problem: building fair rankings without needing explicit demographic labels."
+ },
+ {
+  "gid": 991,
+  "deep_why": "The method estimates true causal relationships among time-series variables by explicitly modeling hidden confounders that affect multiple measured quantities. The soundness comes from causal sufficiency: if all confounding factors are properly represented, the remaining dependence between variables reflects true causal influence. By separating confounders into persistent (slow-changing) and transient (fast-changing) types at multiple time scales, the model disentangles their different effects. This design lets researchers understand which variable actually caused which outcome, not just which were correlated, solving the critical problem in complex systems where hidden factors cloud every measurement."
+ },
+ {
+  "gid": 992,
+  "deep_why": "The method rebuilds cleaner knowledge graphs by learning and then inverting a diffusion process, which denoises data by fitting it to underlying true structure. Diffusion models work because they learn smooth transitions from clean to noisy data, making the reverse path recover cleanliness. Spectral graph methods exploit the fact that real structure has geometric regularity, which diffusion can capture. By baking recommendation-relevant knowledge into the diffusion, the method ensures it denoise toward useful structure, not just generic cleanliness, solving the practical problem that noisy facts corrupt downstream recommendations."
+ },
+ {
+  "gid": 993,
+  "deep_why": "This is a position paper arguing for critical theory in information retrieval, not a technical method with core computational mechanics. It calls for reimagining retrieval systems to support human emancipation and justice rather than only efficiency, and for incorporating insights from critical social theory into research design."
+ },
+ {
+  "gid": 994,
+  "deep_why": "This is a historical perspective on question-answering research spanning symbolic AI through large language models, synthesizing decades of work in natural language generation and user modeling. It does not present a new technical method but rather reviews what made human-machine question-answering effective across eras."
+ },
+ {
+  "gid": 995,
+  "deep_why": "This keynote surveys the evolution of information access from document retrieval to agentic reasoning and execution, using concrete systems like FlashRAG and WebThinker as illustrations. It outlines new research problems emerging when coupling large reasoning models with active search and tool use, rather than proposing a single unified method."
+ },
+ {
+  "gid": 996,
+  "deep_why": "The method identifies why people search differently by measuring how demographics and tasks correlate with observable query and interaction patterns, then extracting interpretable latent dimensions that explain these variations as strategy differences. The principle is that stable behavioral differences reflect underlying variation in how people approach searching — not just random noise or engagement swings. By revealing these latent dimensions, the work enables fair evaluation systems that account for heterogeneous user behavior, solving the fairness problem that benchmarks often assume all searchers are alike."
+ },
+ {
+  "gid": 997,
+  "deep_why": "The method learns item representations by enforcing that the learned space aligns with both graph structure and human-interpretable affective meaning, then uses this alignment to weight which comparisons should influence learning. The principle is that semantic meaning should guide structure: items with similar emotional character should map near each other, and this constraint prevents the graph from exchanging information between structurally close but semantically distant items. This solves the real problem that naive graph-based learning confuses proximity with relevance, yielding recommendations that are structurally plausible but semantically nonsensical."
+ },
+ {
+  "gid": 998,
+  "deep_why": "This is an empirical eye-tracking study examining how users interact with search results when generative summaries appear above traditional links. The study measures attention patterns and engagement with different result types, but does not propose a technical algorithm or mathematical principle."
+ },
+ {
+  "gid": 999,
+  "deep_why": "The method generates recommendations by encouraging the language model to explore many different reasoning paths, then selecting and combining the best ones, rather than committing to one path. The principle comes from cognitive science: exploring diverse possibilities then converging on quality beats locking into a single strategy early. Controlled randomness in the reasoning space forces this exploration, preventing the model from collapsing onto one narrow path. This solves the core problem that a single reasoning thread misses superior alternatives, limiting both accuracy and recommendation diversity."
+ },
+ {
+  "gid": 1000,
+  "deep_why": "The method optimizes an item tokenizer and a recommender jointly by treating them as interdependent components where the upper-level optimization adjusts the tokenizer based on the final recommendation performance. The principle is that interdependent components create a structural problem: one component can become misaligned with the other's true objective. Bi-level optimization forces alignment by making one component's update directly depend on the other's output quality. This solves the practical problem that separate optimization leaves tokenizers producing identifiers that are internally coherent but poorly suited to the recommendation task."
+ },
+ {
+  "gid": 1001,
+  "deep_why": "The method infers student mastery by capturing which specific answer option was selected, not just whether it was correct, enabling the system to distinguish qualitatively different types of errors and misconceptions. The principle is that error type carries diagnostic information: a student choosing a particular wrong answer reveals a specific misconception, not just a generic knowledge gap. By semantically analyzing what each answer option represents, the model recovers this information. This solves the critical problem in education that binary correctness labels destroy the signal needed for interpretable diagnosis and personalized guidance."
+ },
+ {
+  "gid": 1002,
+  "deep_why": "The method analyzes why ranking models produce inflated relevance scores by showing that the mathematical objective structure inherently accumulates score drift as optimization proceeds. The principle is that certain loss functions have built-in asymmetries that cause gradients to push scores ever higher even after achieving correct ordering, leading to overconfident predictions that defy calibration. Temperature scaling and position-dependent dampening counteract these structural forces. This solves the practical problem that ranking systems produce scores too extreme to trust for downstream decisions, even when ranking order is correct."
+ },
+ {
+  "gid": 1003,
+  "deep_why": "The method accelerates multi-vector retrieval by organizing computation so the GPU can process many candidate comparisons in parallel while using smart scheduling to reduce synchronization delays. The principle is that massive parallelism beats sequential optimization when coordinated efficiently: GPUs excel at handling thousands of tasks simultaneously if communication overhead is minimized. By keeping candidates flowing without synchronization bottlenecks, the system achieves both speed and accuracy. This solves the scaling problem where high-accuracy retrieval methods become impractically slow, making them viable for real applications."
+ },
+ {
+  "gid": 1004,
+  "deep_why": "The method generates database queries from natural language by decomposing the construction into incremental steps, validating each step against the knowledge base, and assembling the final query from verified parts. The principle is divide-and-conquer: complex structures are easier to generate correctly when built step-by-step with intermediate checking, because errors caught early prevent cascading. Knowledge-base grounding at each step acts as a regularizer against hallucination. This solves the core problem that end-to-end query generation often produces syntactically plausible but semantically invalid structures, making step-wise assembly with validation essential."
+ }
+]

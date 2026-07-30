@@ -1,0 +1,62 @@
+[
+  {
+    "gid": 405,
+    "deep_why": "The core challenge is measuring how reliably an AI review system makes the same judgment when content is slightly altered—like when formulas or tables are changed. The method works because perturbations applied to different parts of a paper (text, tables, formulas) reveal which kinds of information the reviewer actually relies on; if the system gives wildly different scores after a small table change, that signals fragility. By systematically testing across all content types rather than just text, they capture whether the reviewer truly understands the full work or has fooled itself by finding shortcuts in readable prose alone. This matters for deploying AI reviewers in conferences, since a fragile reviewer might recommend papers it doesn't actually understand."
+  },
+  {
+    "gid": 406,
+    "deep_why": "The problem is choosing which AI model and which thinking strategy to use for each question to balance answer quality against the cost paid per query. The core principle is that different models and strategies have predictable trade-offs—a simple fast approach works well for straightforward questions, while expensive deep reasoning is only necessary when queries are complex. By learning patterns of when each model-strategy pair succeeds or wastes money, the system builds a lookup table that ensures every dollar spent pulls its weight. During inference, consulting this table before committing to expensive computation avoids paying for thinking power you don't need, which is why the method achieves comparable accuracy with far fewer tokens used."
+  },
+  {
+    "gid": 407,
+    "deep_why": "The task is predicting which cover image will make users want to click on or buy a book or product, using only limited interaction history—a hard cold-start problem. The insight is that the image itself carries meaning about style, mood, and subject matter that can be read independently of user clicking history; combined with what you know of the user's interests from text descriptions, you can infer whether the visual design will appeal to them. By using two-channel models that separately understand both visual design and textual taste, then merging those signals, the system grounds image selection in learnable features rather than waiting for users to interact with it. This lets the system make confident picks even for entirely new cover designs or new users."
+  },
+  {
+    "gid": 408,
+    "deep_why": "When a text has multiple labels, the challenge is knowing which words belong to which label—a single sentence might discuss both 'machine learning' and 'privacy law,' and mixing those up destroys interpretability. The method uses step-by-step reasoning to guide the model to focus on label-relevant words in sequence; once the model is prompted to think through the connection between a phrase and a label before assigning it, it catches cases where a word superficially matches but actually belongs to a different label. By making reasoning explicit and visual, the system builds more reliable internal maps of which tokens matter to which labels, which both improves accuracy and lets humans verify the model's logic."
+  },
+  {
+    "gid": 409,
+    "deep_why": "The core issue is inventory: in real coupon or e-commerce systems, picking the highest-reward item for one user can deplete it, leaving worse options for the next user. The insight is that greedy ranking by expected reward alone ignores supply constraints—a high-quality item should be saved for users who have fewer good alternatives. By comparing each user's options to the average pool of users and preferring items that are relatively good for this user but not universally scarce, the system avoids wasteful depletion and reserves high-value inventory for high-value matches. This fundamental rebalancing ensures that total long-term reward across all users increases, not just the immediate gain."
+  },
+  {
+    "gid": 410,
+    "deep_why": "When recommending items, AI models usually hide their reasoning—they just output a list—which makes recommendations feel opaque and wastes the model's ability to think step-by-step. The method works by asking the model to first state what it notices about the user's history, then explicitly say why certain items fit, then finally rank them; this chain of thought mirrors how humans recommend and lets the model's reasoning abilities fully engage. By training on examples where the model provides both reasoning and items together, the system learns to generate trustworthy ranked lists backed by legible justification. Users then see not just predictions but explanations, and the model itself becomes more accurate because it forces internal consistency between its stated reasoning and its final pick."
+  },
+  {
+    "gid": 411,
+    "deep_why": "E-commerce search faces queries with many possible interpretations—'running shoes' could mean athletic footwear, stability support, or brand prestige—and no single viewpoint captures them all. The method uses multiple reasoning perspectives (user intent, attribute matching, business rules) to generate different plausible explanations for why an item matches, creating a richer signal than any single reasoning path. Instead of discarding these varied explanations during deployment, the system compresses them into a simpler model that preserves their reasoning structure—so at inference time, the fast model still implicitly considers multiple viewpoints without paying their full cost. This multi-perspective distillation ensures both accuracy and speed."
+  },
+  {
+    "gid": 412,
+    "deep_why": "In federated graph learning (where data stays on separate client devices), models can cheat by finding spurious shortcuts—patterns specific to one client that don't generalize. The method identifies these shortcuts by looking for cases where the local model and the global model disagree; large disagreements signal that at least one is relying on unreliable shortcuts. By selecting problematic cases and augmenting them intelligently—adjusting data to remove spurious features while preserving true causal ones—the system forces all models toward learning patterns that actually transfer between clients. This targeted curation ensures the learned subgraph explanations are robust across the federated setting rather than locally brittle."
+  },
+  {
+    "gid": 413,
+    "deep_why": "Predicting indoor 5G signal strength from sparse outdoor drone measurements is fundamentally underconstrained—you're inverting a system with more unknowns than data points. The insight is that signal strength obeys physical laws (walls block signals similarly, distance degrades strength consistently), so you can learn this structure implicitly by building a graph where closeness means 'signals propagate similarly between these points.' By using dynamic graph attention to discover this learned connectivity (rather than assuming Euclidean distance), the system adapts to the actual propagation paths in each building. This learned physics then constrains the reconstruction, making it possible to fill in interior values from boundary measurements."
+  },
+  {
+    "gid": 414,
+    "deep_why": "Graph sparsification removes edges to speed up models while keeping accuracy intact—but which edges actually matter? The method uses Shapley values, which distribute credit for model predictions fairly among all edges, so edges scoring low provably contribute little to correct predictions. Unlike greedy pruning which can accidentally remove important bridges, Shapley values are inherently robust because they account for all possible subsets; an edge that seems redundant in isolation but is crucial in combination ranks higher. This principled attribution ensures removed edges are truly redundant, enabling aggressive sparsification without accuracy loss."
+  },
+  {
+    "gid": 415,
+    "deep_why": "Social media carries millions of messages daily, most of them noise; finding meaningful events in this stream is like finding signal in static. The method reduces noise by sampling representative messages intelligently—keeping diverse messages that capture the breadth of discussion—rather than random sampling. Once key messages are extracted, treating event detection as a retrieval-augmented generation task (searching a growing knowledge base of known events) lets the model recognize patterns even when messages are fragmented or repetitive. Using information-theoretic principles to model event evolution ensures the system captures how topics genuinely shift and branch, not just raw message volume."
+  },
+  {
+    "gid": 416,
+    "deep_why": "System logs arrive irregularly and carry multiple types of meaning (timing relationships, semantic patterns, error causality), which breaks fixed-window models that assume uniform dense data. The method builds a graph where each log entry is a node, and edges encode its relationships to others across three dimensions: temporal proximity, semantic similarity, and anomaly tendency. This multi-relational graph adapts its structure to log density and timing—sparse logs create looser connectivity, bursts create tighter clusters—so the model naturally handles variability. Memory injection across time steps ensures patterns learned from the past inform current anomaly detection, which is critical in real systems where today's normal depends on yesterday's baseline."
+  },
+  {
+    "gid": 417,
+    "deep_why": "A robot navigating an unfamiliar building must find a target (like 'a coffee maker') without any prior map or training—a zero-shot problem. The method works by recognizing that pre-trained models already understand point clouds (3D shapes) and language; by mapping both into a shared semantic space, the robot can ask 'what places in this space match both my 3D surroundings and the description coffee maker?' A cost-utility balance then guides exploration—moving toward high-probability target regions while avoiding expensive backtracking. This unified reasoning avoids requiring 3D training data or task-specific fine-tuning."
+  },
+  {
+    "gid": 418,
+    "deep_why": "Different AI models excel at different recommendation strengths: one understands user semantics better, another reasons about product attributes more reliably. The method creates a routing mechanism that compares each recommendation scenario to learned prototypes of different model strengths and picks the best fit. Instead of relying on a single model, lightweight selection and fusion ensure each recommendation draws on whichever model's specialty applies. By not requiring model fine-tuning, the system stays agile—swapping new models in just changes the prototype embeddings, not the entire pipeline."
+  },
+  {
+    "gid": 419,
+    "deep_why": "When AI language models retrieve facts from external sources, they sometimes confidently state things that contradict the sources—hallucinating—which shatters user trust. The method probes what the model is uncertain about by observing the model's own internal signals: when asked to rate confidence in a specific entity or claim, high uncertainty signals likely hallucination. By ranking retrieved sources on how much they reduce this uncertainty and re-generating answers grounded in those sources, the system avoids hallucination before it happens. This training-free approach works because it directly addresses the root cause—misalignment between what the model generates and what its sources support."
+  }
+]

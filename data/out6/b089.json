@@ -1,0 +1,62 @@
+[
+  {
+    "gid": 1335,
+    "deep_why": "The system must inject latent user desires into recommendation rankings before users explicitly search for them. The core principle is that a lightweight model distilled from stronger reasoning can predict what users will want by learning patterns from past behavior and future purchases. This distillation works because implicit demand has consistent signals—users who bought similar items in the past show predictable future needs. By grounding these predictions in actual user actions and using reinforcement learning to align the generated candidates with true interests while avoiding exploitation collapse, the system can surface demand that hasn't yet appeared as a search query, solving the cold-start problem where systems only react to explicit signals."
+  },
+  {
+    "gid": 1336,
+    "deep_why": "When ranking products in search, using multiple types of user signals at once—clicks, purchases, engagement time—is more powerful than using them separately because they measure different aspects of satisfaction. The system learns a shared visual and textual representation of each product by training on all these signals together, then derives task-specific user profiles for each signal type using search behavior sequences. This works because the underlying multimodal product features (image, title, price, reviews) genuinely affect different behaviors in predictable ways, so modeling them once with signal-specific output heads captures those dependencies more efficiently and accurately than fitting separate models."
+  },
+  {
+    "gid": 1337,
+    "deep_why": "Search rankings optimized only for clicks or purchases systematically favor items that sell well but may not match what users actually searched for, diluting quality. The core fix is to optimize two things at once: semantic relevance (does this answer the search intent?) and engagement (do users interact with it?). Using ordinal relevance levels—irrelevant, moderate, highly relevant—preserves the natural ordering of quality, making the ranking model aware that \"highly relevant\" is fundamentally different from \"moderately relevant,\" not just a stronger signal. Balancing these competing objectives through a unified scoring function lets the system preserve both dimensions, ensuring high-quality results that also keep users engaged."
+  },
+  {
+    "gid": 1338,
+    "deep_why": "Search planning with language models is fast but blind to what's actually in the inventory and what the retrieval system can find, leading to invalid plans. The fix is to probe the retrieval environment first, exposing what items are available, then plan based on that ground truth. This works because search planning is fundamentally a reasoning task about *constraints*—the planner must know the inventory landscape to generate executable plans. By generating training data from a teacher that sees this environment and learns to diagnose gaps, then fine-tuning a smaller planner on that supervised data, the system makes informed decisions at sub-second latency, solving the core tension between reasoning quality and speed."
+  },
+  {
+    "gid": 1339,
+    "deep_why": "Video search benefits from personalizing rewrites—turning generic queries into specific ones using user history—but only in cases where the user's history is actually relevant to the query. The system learns to identify those moments using a posterior-based mining strategy that finds cases where personalization reduces ambiguity or adds value. It then trains a language model to generate personalized rewrites using supervised learning plus reinforcement learning to align outputs with what the retrieval system can find. This compounds benefits: the system learns *when* personalization helps (reducing noise), *how* to write for that system's strengths (alignment), and operates with low latency (parallel lightweight recall), collectively boosting relevance and reducing reformulations."
+  },
+  {
+    "gid": 1340,
+    "deep_why": "User histories in recommendations are treated as single sequences like sentences in text, but they fundamentally differ: user behavior is fragmented across many unrelated interests, so a single sequence lets irrelevant items hijack attention meant for related ones. The system solves this by disentangling history into multiple coherent sub-sequences in an internal learned space, each capturing a thematic strand of interests. Using a linear attention mechanism on these pure strands is fast and interpretable because each strand has strong internal coherence, unlike the noisy original sequence. This works because user behavior truly does have this multi-faceted structure—purchases cluster by theme—so separating that structure before modeling makes the attention mechanism focus on high-signal patterns."
+  },
+  {
+    "gid": 1341,
+    "deep_why": "Recommendation models treat all purchases as signals to keep recommending similar items, but a purchase often means the user's need for that product is *satisfied*, not amplified. The system models interest lifecycles explicitly: after a purchase, it suppresses recommendations for the satisfied intent while learning the repurchase rhythm from long-term history, then gradually re-awakens interest as the predicted repurchase time approaches. This works because purchases and interests are asymmetric—a purchase *ends* an intent rather than reinforcing it. By modeling the temporal decay and revival of interests using self-supervised learning on time-to-next-purchase, the system captures this true structure, eliminating post-purchase redundancy."
+  },
+  {
+    "gid": 1342,
+    "deep_why": "Generative recommendation models must stay current, but full retraining is slow and expensive while fine-tuning on recent data can overfit or forget old patterns. The solution is to maintain two models: a stable base trained on long-term history and a lightweight updated model trained on fresh interactions, then route users at serving time based on whether they have recent signals. This works because user behavior has two timescales—long-term preference structure is stable and should not be forgotten, while recent actions provide quick adaptation for active users. By routing strategically, the system avoids distributional mismatch and catastrophic forgetting while remaining responsive, achieving both stability and freshness at lower cost."
+  },
+  {
+    "gid": 1343,
+    "deep_why": "Generative retrieval maps items to semantic identifiers then generates candidate sets as sequences, but most systems optimize only for clicks while ignoring dwell time and engagement, forcing separate models for each task. The system uses a single model with task-specific tokens and output heads to learn all three tasks jointly, sharing the underlying semantic identifier mapping. This works because click, dwell time, and engagement all depend on the same fundamental item properties—relevance, quality, fit to the user's interests—so a shared semantic space captures those properties once, then task-specific layers adapt them. This unified approach reduces compute overhead while improving multi-task coverage."
+  },
+  {
+    "gid": 1344,
+    "deep_why": "When new content emerges constantly and most items have almost no user interaction history, traditional learning from behavioral signals fails due to extreme sparsity. The system uses a language model to assess content quality and engagement potential from the text or media alone, before any user has seen it, producing a Bayesian prior. This prior is integrated into an uncertainty-aware exploration policy that allocates initial impressions based on semantic quality while gradually shifting toward observed user feedback as data accumulates. This works because semantic quality from content analysis genuinely correlates with engagement, providing a useful initial belief that the policy can refine. The framework balances exploration efficiency with the scale constraints of ultra-recency platforms."
+  },
+  {
+    "gid": 1345,
+    "deep_why": "E-commerce searches often fail because users state broad queries but search systems expect specific ones, creating an intent gap. The system uses agentic reasoning to analyze a user's purchase history, understand their typical product preferences, and rewrite broad queries into specific, personalized ones. This works because purchase history is a compressed signal of true preferences—a user who frequently buys running shoes needs shoe advice, not generic athletic gear advice. By applying reasoning over this historical context without needing to redesign the underlying search system, the approach bridges the gap between what users say and what retrieves relevant products, improving both ranking and engagement."
+  },
+  {
+    "gid": 1346,
+    "deep_why": "Click prediction models optimize local decision boundaries for each item, missing the global structure of how user interests evolve over time across all categories. The system models user intent as a continuous flow through a high-dimensional interest space, applying mathematical constraints—diversity via tangent space decomposition and smoothness via geodesic regularization—to preserve the true topology of how interests change. This works because user interests genuinely form continuous trajectories with underlying structure: related interests cluster together, and interests shift smoothly over time. By capturing this geometric structure during pre-training then aligning it with the discrete prediction task, the system learns richer patterns than local optimization alone, improving both training and serving."
+  },
+  {
+    "gid": 1347,
+    "deep_why": "Dense float-valued retrieval for millions of news articles is slow and memory-intensive, but binary projections lose too much information. The system learns to map dense embeddings into binary codes using a contrastive loss that preserves neighborhood structure—items that were close in the original space should stay close in the binary space. This works because neighborhood preservation is the core requirement for retrieval: if nearby items in dense space stay nearby in binary space, a fast binary search can shortlist candidates that a lightweight float reranker can refine. By using learned projections instead of random ones, the system exploits the actual structure of embeddings, achieving 95%+ recall at moderate bit-widths with 4-6× speedup, meeting latency and accuracy constraints."
+  },
+  {
+    "gid": 1348,
+    "deep_why": "Enterprise search systems fail when users call products by nicknames, abbreviations, or legacy names that differ from the official taxonomy, creating a vocabulary mismatch. The system uses curated product-name knowledge to rewrite user queries, mapping informal mentions to official names and version identifiers, then constructs structured filters from a product catalog. This works because the retrieval gap is primarily a vocabulary problem: the user's intent is clear but expressed in unfamiliar terms. By aligning terminology without retraining models and ensuring retrieval stays within valid documented products, the system fixes relevance at query time. Curated knowledge is maintainable and directly addresses the mismatch, improving mean reciprocal rank substantially."
+  },
+  {
+    "gid": 1349,
+    "deep_why": "Music search fails when queries contain typos, phonetic variations, or transpositions because traditional n-gram matching is too brittle and semantic models are too slow for millisecond latency. The system learns sparse neural representations where each token captures both surface-form robustness (handling typos) and semantic meaning, using short token constraints to force the model to learn fuzzy matching rather than memorizing lexical variations. This works because typos and phonetic variations follow patterns—repeated mistakes cluster together, and the model can learn those patterns. By pre-computing embeddings offline and reducing online processing to tokenization and weighting, the system achieves zero latency overhead while recovering 91% of neighbors that a dense system would find, enabling both robustness and speed for large-scale music catalogs."
+  }
+]

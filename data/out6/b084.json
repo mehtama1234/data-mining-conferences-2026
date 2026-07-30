@@ -1,0 +1,62 @@
+[
+  {
+    "gid": 1260,
+    "deep_why": "PEARL solves finding which compact language model fits each user by computing a match score between the user's interaction pattern and each model's behavioral signature. The method works because when you decompose both user and model signals into independent, uncorrelated dimensions, you can compare them directly without noise from correlated traits confusing the match. This applies here because user preferences and model strengths genuinely vary across separable domains—some users care about genre, others need step-by-step reasoning. By organizing these domains into a clean independent space, PEARL can confidently say which model serves which user best and explain exactly why."
+  },
+  {
+    "gid": 1261,
+    "deep_why": "This paper audits whether search summaries with citations actually ground their claims in the sources they cite. The work reveals a mismatch: summaries look trustworthy by virtue of their structure and citations, but 32% are simply wrong—and this persists even when correct evidence sits in the cited sources. The finding matters because user trust follows appearance, not accuracy. Appearance comes cheap: good formatting and citing sources takes minimal effort but fools readers. Measuring the actual link between each claim and its source is what catches this gap and forces better practices."
+  },
+  {
+    "gid": 1262,
+    "deep_why": "Spectral Tempering addresses the core trade-off in shrinking dense search embeddings to fit in memory: which dimensions matter most? Simply removing noise-dominated dimensions loses useful signal; preserving all dimensions amplifies noise instead. The paper shows that the right balance between signal and noise shifts depending on your target size—no single setting works everywhere. By analyzing the noise-to-signal ratio in each dimension and adapting the balance to match your target size, the method keeps good signal and discards bad noise without requiring expensive tuning or labeled data."
+  },
+  {
+    "gid": 1263,
+    "deep_why": "Pseudo-Relevance Feedback improves search by reusing top results to find better terms, but it sometimes makes queries worse—query drift—with asymmetric harm across different search intents. The paper asks the crucial question: does this harm actually affect real users? By deploying a careful grid-based study where users chose between original and refined results without bias, they found that harm avoidance beats harm amplification two-to-one. This matters because offline metrics miss what users genuinely prefer; participatory measurement with real queries grounds research in actual experience."
+  },
+  {
+    "gid": 1264,
+    "deep_why": "LUMI clusters short conversational intents by generating multiple possible labels for each text and pooling those labels to measure similarity, rather than forcing each text into one label. This works because similarity is not binary—texts share multiple meanings. By collecting all possible labels per text and averaging them, then checking which labels two texts share, the method captures graded similarity rather than hard membership. This is more robust because a single wrong label cannot derail an entire cluster; shared labels act as multiple confirmations of relatedness."
+  },
+  {
+    "gid": 1265,
+    "deep_why": "Search agents that can iteratively fetch documents and reason often retrieve redundant information and take excessive reasoning steps, wasting cost. The paper formalizes these inefficiencies and studies how they scale with model size. By measuring how much retrieval is wasted and how many reasoning steps loop unproductively, the work identifies the precise behaviors to target. It then proposes feedback signals that convert these measurements into rewards, giving the agent explicit guidance to prune wasteful steps. This grounds cost control in measurement rather than guesswork."
+  },
+  {
+    "gid": 1266,
+    "deep_why": "HALO equips standard image-text models with awareness of semantic hierarchy—the fact that 'dog' is above 'golden retriever' is above 'sleeping on couch'—without expensive retraining. Hyperbolic geometry naturally encodes hierarchies because distances grow in a cone-like way, so ancestors are far and children are close. The trick is to keep all learning in regular space but measure similarity in hyperbolic space only at ranking time, avoiding the geometry mismatch cost. This lets the model respect hierarchical structure while leveraging pretraining, combining theoretical soundness with practical efficiency."
+  },
+  {
+    "gid": 1267,
+    "deep_why": "Brain-based retrieval maps brain signals to text meaning, but prior work claimed audio signals were superior without controlling for data differences—sample size, vocabulary, and corpus all varied. This paper repeats the comparison on balanced datasets and finds complementary strengths: audio excels at recalling many relevant results, visual excels at precise ranking. This matters because the real win is not one modality over the other but understanding their orthogonal strengths. Interface design can exploit these trade-offs by fusing what each brain signal does best."
+  },
+  {
+    "gid": 1268,
+    "deep_why": "Cold-start recommendation for new items relies on mapping item content into the learned embedding space, but this forces alignment between content features and collaborative signals—an unnatural mismatch. The paper proposes learning pure content similarity to user preference without that alignment, using a sharper version of standard ranking loss that ignores obviously irrelevant items. Ignoring irrelevant negatives reduces noise in the gradient, focusing learning on meaningful distinctions. This makes sense because content features are rich in their own right; forcing them through a CF filter only adds a bottleneck."
+  },
+  {
+    "gid": 1269,
+    "deep_why": "Relevance feedback can worsen retrieval when the chosen documents are 'poison pills'—they mislead the model away from good results. The paper expands this to sets of documents and studies both traditional term-based and neural feedback. Neural methods give better average performance but are more fragile: single bad documents hurt more, yet combinations of poisons can sometimes help. This matters because understanding these interactions reveals that feedback is not simply good or bad—it depends on the ensemble, analogous to how one bad witness misleads but contradictory witnesses can clarify truth."
+  },
+  {
+    "gid": 1270,
+    "deep_why": "Rank-biased metrics weight early results more heavily to match user attention, using a geometric decay. This paper proposes a two-parameter weighting scheme with both decay strength and shape, allowing inverse power-law functions beyond geometric. More parameters bring more flexibility to match different experimental goals and user behaviors. The principle is that human attention does not follow a single universal curve; different retrieval contexts have different decay patterns. Providing principled ways to select parameters lets researchers match their measurement to their actual user model."
+  },
+  {
+    "gid": 1271,
+    "deep_why": "For questions requiring inference—deriving an answer from hints rather than finding it stated—passage quality depends on whether sentences eliminate wrong answers, not just matching keywords. The paper measures convergence: how many incorrect candidate answers a sentence rules out. Building passages from high-convergence sentences focuses the model on information that narrows possibility space. This works because inference is fundamentally about constraint satisfaction; sentences that eliminate many wrong paths guide faster reasoning. Ordering by convergence strength emphasizes early constraints, which language models weight most."
+  },
+  {
+    "gid": 1272,
+    "deep_why": "Language models favor well-known entities, and this paper asks: is it real-world popularity or just exposure during pretraining? Using an open model with its full training corpus, they measure how many times each entity appeared during training and compare to Wikipedia popularity. Pretraining exposure and real popularity correlate strongly, but model preferences align more tightly with exposure. This matters because it shows that model bias is not a separate phenomenon—it is the direct imprint of training data. What seems like a model flaw is actually accurate calibration to what it has seen."
+  },
+  {
+    "gid": 1273,
+    "deep_why": "Graph-based retrieval using semantic embeddings ranks answers by similarity alone, ignoring the graph structure needed for multi-hop reasoning. StAR adds structural scoring by embedding the query and candidate subgraphs in hyperbolic space, where hierarchical distance naturally emerges. It then uses a query-level signal to decide how much structural information to trust. This works because multi-hop paths form hierarchies—you must travel down specificity levels—and hyperbolic distance makes those paths visible. Adaptive weighting ensures structure helps when needed without overriding flat retrieval when hierarchy is weak."
+  },
+  {
+    "gid": 1274,
+    "deep_why": "Language models handle both behavioral data (what users clicked) and semantic meaning (what text means), but integrating them at input or output level creates alignment gaps. L2Rec instead applies personalized perturbations to the model's parameters, creating separate behavioral and semantic branches that share a backbone. Each branch learns from the view it understands best, then they fuse their outputs. This works because shared parameters can encode both views if given view-specific adjustment—like having one translator who shifts tone depending on context. End-to-end learning without intermediate alignment prevents meaning drift."
+  }
+]

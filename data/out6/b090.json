@@ -1,0 +1,62 @@
+[
+  {
+    "gid": 1350,
+    "deep_why": "The system learns to rewrite queries by clustering what the general population searches for, capturing the dominant intent shared across millions of users. Because the most common search pattern reflects what works best in the system's ranking model, aligning a query toward this popular center makes it more likely to match results the ranking system considers high-quality. This works mathematically because high-volume queries have already been optimized: the system has learned which results satisfy them. When an unusual or ambiguous query gets rewritten to resemble a popular intent, it drops into a well-worn path where the ranking system is confident."
+  },
+  {
+    "gid": 1351,
+    "deep_why": "The method generates a claim that directly contradicts the input and asks separate judges to evaluate both, which forces independent reasoning paths rather than shared overconfidence. Because true claims usually defeat false contradictions while false claims often fall to legitimate contradictions, disagreement between judges signals unreliability. The system only updates judgments when it can exchange specific counterarguments, making corrections evidence-based. This works because contradiction creates asymmetry: truth stands when challenged but fiction often crumbles when forced to defend against direct opposition."
+  },
+  {
+    "gid": 1352,
+    "deep_why": "The system trains models to predict click-through rate with equal accuracy across all items, not just overall accuracy. When predicted rates match actual rates item-by-item, the model faithfully represents how each item will perform when combined downstream with bids or other multipliers. This works because miscalibration compounds: if a low-value item gets overestimated, it steals ranking position from a high-value item that was underestimated, breaking the final scoring. Forcing the model to be honest about every single item prevents these distortions from stacking up."
+  },
+  {
+    "gid": 1353,
+    "deep_why": "The system learns by comparing each user only to items that could actually reach them, not to impossibly distant items that the platform would never show. Because learning from impossible comparisons teaches the model false preferences, filtering negatives to only realistic alternatives makes the learned ranking signal trustworthy. This works mathematically because the learning signal is now drawn from the true distribution of exposure: the model optimizes for a world it will actually operate in, not an imaginary one."
+  },
+  {
+    "gid": 1354,
+    "deep_why": "The system tracks the medical conversation state so it knows what has already been discussed, then retrieves follow-up questions tuned to the current situation rather than generic questions for the topic. Because medical reasoning builds sequentially, a good follow-up question depends critically on context; asking an off-state question wastes the doctor and patient's time. The system ranks these context-aware candidates using preference judgments from real consultations, aligning the model with actual medical workflows rather than static quality scores."
+  },
+  {
+    "gid": 1355,
+    "deep_why": "The system first clusters gesture patterns to discover which hand motions consistently belong to the same person, then uses these clean clusters to tell users apart. Because gesture habits are personal and stable while raw gesture values are noisy, clustering separates signal from noise before the main model sees it. This works because the clustering step isolates the identity-bearing patterns independently, then the main recommendation model receives clear identity cues instead of muddled signals that it tries to untangle while learning relevance."
+  },
+  {
+    "gid": 1356,
+    "deep_why": "The system maintains a cache of prices but detects when inventory changes might make those prices stale, using live inventory signals to flag which prices need rechecking. Because stale prices cause trust erosion and failed bookings, alerting the ranking model to price volatility lets it avoid showing deals that will break by checkout time. This works by treating price consistency as a real constraint: when the model knows a price is uncertain, it can deprioritize that option in favor of more stable choices, preventing the experience cliff that users see between listing and payment."
+  },
+  {
+    "gid": 1357,
+    "deep_why": "The system trains a precise-search model on exact itineraries where intent is clear, then distills that knowledge into a model for fuzzy searches where intent is ambiguous. Because fuzzy queries mix competing goals while precise queries solve single goals, the precise model has learned a cleaner signal; teaching the fuzzy model to mimic that signal helps it navigate the messier case. This works because the fuzzy model now inherits structures and feature relationships that the precise model discovered, giving it a head start on the much harder fuzzy problem."
+  },
+  {
+    "gid": 1358,
+    "deep_why": "The system retrieves a large pool of candidate ads offline using embeddings and then filters them with a language model to identify truly relevant ones, keeping only the strongest for the online ranking stage. Because online latency constraints prevent running a powerful model on all candidates, pre-filtering offline lets the online system spend its limited compute budget on the hardest decisions. This works because precision earlier in the pipeline compounds: removing clearly irrelevant ads before ranking ensures the ranker only compares genuinely competitive candidates."
+  },
+  {
+    "gid": 1359,
+    "deep_why": "The system strengthens the representation of long-tail items using contrastive learning guided by spatial boundaries, so that weak signals from rare items get aligned with the geographic areas where they're actually available. Because long-tail items see few interactions and suffer from poor learned representations, anchoring them to their known spatial zone provides a stable signal. This works because spatial semantics acts as an external anchor: the model learns that a long-tail restaurant should cluster near its neighborhood context, borrowing stability from geography when behavior data is sparse."
+  },
+  {
+    "gid": 1360,
+    "deep_why": "The system writes draft responses grounded in the company's procedures and order history so human agents can review and refine them in seconds rather than reconstructing context from memory. Because agents spend energy rebuilding context on each message, providing a policy-consistent draft front-loaded saves cognitive load at the moment of decision. This works because the system externalizes the mechanical parts of response composition: retrieving procedures, factoring in order state, matching tone. When agents only edit and approve, they focus purely on judgment, not memory."
+  },
+  {
+    "gid": 1361,
+    "deep_why": "The system builds a description of each user from call transcripts, app behavior, and location patterns, then injects this profile into the language model so it tailors responses to that person's situation. Because users have different needs and preferences that appear across their data traces, building a unified profile lets the model reason about them coherently. This works because the model can now condition on concrete facts about the user rather than generic defaults; personalization works when the system has actual signals to condition on."
+  },
+  {
+    "gid": 1362,
+    "deep_why": "The system asks whether domain-specific pretraining helps rerankers in specialized fields where labeled data is scarce, testing against simpler approaches that just fine-tune on a few hundred labeled examples. The finding suggests that when labeled training data is truly limited, simple in-domain fine-tuning absorbs as much signal as the domain-specialized pretraining requires, so the extra complexity may not be justified. This works because with few examples, the model's learning capacity is the bottleneck; sophisticated pretraining strategies help when data is abundant but become overkill when the model can already memorize the limited labeled set."
+  },
+  {
+    "gid": 1363,
+    "deep_why": "The system classifies each user constraint as identity-based, contextual, or session-level, then decides which constraints stay valid when the user switches to a different product category. Because carryover constraints often become impossible to satisfy across categories, keeping the wrong ones leads to zero results; the system learns which constraints genuinely apply across boundaries. This works because constraint lifecycle is a classification task: whether a price filter makes sense for laptops after searching phones, or whether a room-count preference applies to flight hotels, depends on semantic compatibility that the model can learn from reasoning examples."
+  },
+  {
+    "gid": 1364,
+    "deep_why": "The system labels a query-result pair as relevant only when both click-based signals and language model judgment agree it is, filtering out noisy labels where one signal contradicts the other. Because clicks can be misleading due to position bias or fast clicks on non-relevant results, requiring agreement with semantic judgment removes that noise; the result is supervision that reflects true relevance rather than clickthrough noise. This works because agreement acts as a conservative filter: only labels with genuine evidence from two independent sources survive, making the training data cleaner and more reliable."
+  }
+]

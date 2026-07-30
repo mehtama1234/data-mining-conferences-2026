@@ -1,0 +1,62 @@
+[
+  {
+    "gid": 195,
+    "deep_why": "The core problem is estimating how much lifetime value a user will generate from watching a video, but position in the feed warps this signal unfairly. The mathematical guarantee is that quantile-based distributions capture the true spread of engagement at each position, and normalizing by this spread removes the artificial boost that appearing early creates. This principle works because the underlying engagement patterns genuinely follow different distributions based on where the video appears—early positions get disproportionate clicks regardless of quality. By learning these position-specific distributions and then adjusting each signal accordingly, the system recovers the true user preference hidden beneath the positional noise, enabling fair comparison of long-term value across all videos."
+  },
+  {
+    "gid": 196,
+    "deep_why": "The core task is identifying which websites a user visited when multiple browser tabs create overlapping network traffic. The mathematical guarantee comes from blind source separation, which proves that mixed signals can be decomposed back into individual components if they follow different statistical patterns—like separating one person's voice from a crowd. This principle applies because different websites produce distinctive network fingerprints over time and frequency, so even when traffic from multiple tabs is jumbled together, each website's signature remains recoverable. By decomposing the mixed traffic first and then classifying each separated component, the attack avoids needing to guess how many tabs are open and becomes robust to noise and defenses."
+  },
+  {
+    "gid": 197,
+    "deep_why": "The core challenge is detecting fraud in a federated system where small banks hold sparse, imbalanced data, while adversaries plant hidden triggers that poison the model. The mathematical guarantee is that a min-max game between attacker and defender reaches equilibrium where neither can unilaterally improve their payoff—the attacker designs maximally stealthy triggers while the defender adapts detection to catch them. This equilibrium works because the attacker's goal (blend in) directly conflicts with maximizing fraud success, forcing a realistic tradeoff that a detector can exploit. By modeling this as a closed-loop dynamic process where the defender continuously adapts after observing attack patterns, the system prevents the attacker from finding a single static trigger that works forever."
+  },
+  {
+    "gid": 198,
+    "deep_why": "The core task is classifying crisis images and determining which image regions matter for each class, without needing to manually label image parts. The mathematical guarantee is that if text rationales and image patches share a common semantic meaning (both describing the same crisis concept), then mapping between them preserves this meaning—the text explanation teaches what to look for in images. This transfer principle applies because crisis-related language and imagery both refer to concrete concepts like infrastructure damage or stranded persons, so finding text explanations implicitly identifies which image regions convey the same concepts. By learning this cross-modal mapping, the system extracts interpretable image evidence from text annotations alone, reducing annotation burden while preserving classification accuracy."
+  },
+  {
+    "gid": 199,
+    "deep_why": "The core problem is fitting large models onto edge devices while keeping them fast and energy-efficient. The mathematical guarantee is that spiking neural networks replace expensive multiply-add operations with simple counting over time—accumulating binary spike pulses requires only addition, not multiplication. This efficiency principle applies because the Integrate-and-Fire mechanism naturally handles thresholds as part of its core operation, so quantization scales can be embedded in the firing threshold rather than computed separately. By converting important values into mixed-precision spike counts and skipping explicit dequantization, the system cuts both memory and computation burden, making energy-intensive matrix operations unnecessary."
+  },
+  {
+    "gid": 200,
+    "deep_why": "The core problem is rewriting search queries to match what users actually want without adding reasoning delay. The mathematical guarantee is that a model can be trained to produce the reasoning-enhanced output directly without showing intermediate reasoning steps—the model learns to internalize the reasoning process during training. This is sound because reasoning-guided training provides the correct signal about what the final output should be, teaching the model to perform the right inference in one step. By using supervised training that teaches the model the correct outputs without showing working, then reinforcement learning to refine this, the system achieves accuracy gains from reasoning without the computational cost of reasoning at query time."
+  },
+  {
+    "gid": 201,
+    "deep_why": "The core insight is understanding how generative scams operate at scale by recognizing that campaigns reuse production templates and deployment patterns. The mathematical guarantee is that template-based generation creates detectable structural similarities across variants—if many ads are generated from the same template with small modifications, statistical analysis of their structure will reveal this commonality. This principle applies because systematic generation inherently leaves traces: repeated cloaking strategies, consistent audio-to-visual ratios, predictable rotation schedules. By shifting detection from individual assets to campaign-level patterns and production dynamics, defenders can track which templates attackers favor and block entire families rather than chasing infinite variants."
+  },
+  {
+    "gid": 202,
+    "deep_why": "The core problem is training a parameter update matrix efficiently when the embedding dimension is very large. The mathematical guarantee is that careful initialization and iterative refinement can achieve exponentially faster convergence than standard methods—starting with variance-scaled Gaussian initialization guides the optimization toward good solutions faster. This works because the Gauss-Seidel iteration method systematically refines one variable at a time, allowing each update to benefit from the previous updates, which is provably more efficient than updating all variables simultaneously. By tailoring the initialization and iteration order to the structure of the low-rank adaptation problem, convergence speed increases dramatically."
+  },
+  {
+    "gid": 203,
+    "deep_why": "The core challenge is distinguishing novel categories (unseen during training) from known categories when most data came from known categories. The mathematical guarantee is that treating novel-category identification as a latent variable estimation problem allows expectation-maximization to iteratively reveal which samples belong to novel categories and which are known. This principle applies because hidden category labels can be recovered through repeated cycles of guessing membership and improving those guesses with real training data. By explicitly modeling the disentanglement as a soft assignment problem rather than a hard clustering, the system discovers novel categories even when they are scarce, using contrastive learning to separate novel and known samples at decision boundaries."
+  },
+  {
+    "gid": 204,
+    "deep_why": "The core problem is linking vulnerability findings from many security tools to appropriate mitigations scattered across multiple standards. The mathematical guarantee is that formal ontology-based reasoning can automatically match vulnerability patterns to attack techniques and defenses when those concepts are defined in a unified machine-readable language. This works because formal logic enables systematic querying across heterogeneous data—once vulnerabilities, attacks, and mitigations are represented in a shared ontology, logical relationships can be computed automatically without manual correlation. By centralizing diverse security knowledge into one structured format, the system makes correlation systematic and scalable."
+  },
+  {
+    "gid": 205,
+    "deep_why": "The core problem is recommending items when large language models understand world knowledge but miss the user-specific interaction patterns. The mathematical guarantee is that graph-based representations capture collaborative patterns (which users like similar items) that word-based models cannot express directly, and alignment between the two representations combines their strengths. This principle applies because user-item interactions form a graph structure that inherently captures similarity relationships that text descriptions miss. By learning mutual alignment between graph-based and language-based representations, the system bridges the gap—the graph captures collaboration, the language model captures semantics, and alignment ensures they agree on recommendations."
+  },
+  {
+    "gid": 206,
+    "deep_why": "The core problem is learning representations from multiple graphs per object when labeled data is scarce. The mathematical guarantee is that self-supervised contrastive learning can discover patterns without labels by learning what makes two views of the same data similar—if you create two versions of a graph and force the model to recognize them as equivalent, it learns meaningful structure. This principle applies because despite graph and bag structure variation across different versions, fundamental properties remain stable, allowing contrastive learning to identify invariant features. By using hierarchical objectives that align graph-level and bag-level semantics simultaneously, the system learns discriminative representations that respect both structural levels."
+  },
+  {
+    "gid": 207,
+    "deep_why": "The core problem is showing how power grids and traffic networks affect each other in real time. The mathematical guarantee is that coupling two simulations and allowing vehicle power to feed back into the grid creates a physically consistent state where energy conservation and network constraints are satisfied. This principle works because real-world power systems obey the laws of physics—energy must flow from generation to demand through the network, and vehicles can either consume power or inject it. By running a coupled simulation that enforces these constraints interactively, the demonstration lets users see actual dynamics including cascading failures and recovery strategies grounded in physical reality."
+  },
+  {
+    "gid": 208,
+    "deep_why": "The core challenge is recognizing money laundering patterns by tracking how stolen funds move on Ethereum. The mathematical guarantee is that laundering behavior leaves measurable traces in the transaction graph—rapid movement, shallow transfer depth, and dispersion across many addresses are statistically distinct from normal fund transfers. This principle applies because laundering serves a specific goal: mixing funds to hide their origin, which requires speed and branching that ordinary transactions do not. By defining behavioral metrics that capture these dynamics and showing they regularize into patterns, the analysis reveals that laundering is not random but follows predictable strategies that detection systems can exploit."
+  },
+  {
+    "gid": 209,
+    "deep_why": "The core problem is hiding a large image inside a QR code while preserving its meaning. The mathematical guarantee is that diffusion models can compress images by representing them as positions on a learned semantic structure where similar-meaning images lie close together, so slight degradation preserves function. This principle applies because for downstream tasks, what matters is semantic content not pixel perfection—a slightly blurry crisis photo still communicates the crisis. By compressing visual information into semantic coordinates rather than pixel values, and embedding those in the QR data region, the system achieves extreme compression while keeping reconstructed images functionally equivalent to originals."
+  }
+]

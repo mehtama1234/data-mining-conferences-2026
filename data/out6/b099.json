@@ -1,0 +1,18 @@
+[
+  {
+    "gid": 1485,
+    "deep_why": "The core task is identifying and cataloging failure modes in systems that generate text for search. The soundness rests on this principle: when many independent researchers study the same systems from different angles—adversarial, behavioral, fairness—they uncover different slices of real harm that no single perspective catches. This works because generative systems fail in surprising, non-obvious ways that only become visible when you combine attack intuition, empirical testing, and domain knowledge from security and social science. By synthesizing these views, the community builds a shared map of what can go wrong, which is essential for preventing deployment disasters where an untested vulnerability leads to user harm at scale."
+  },
+  {
+    "gid": 1486,
+    "deep_why": "The core problem is matching executable agents to user needs in a world where agents can fail, behave unpredictably, or have hidden constraints. The key insight is that traditional ranking methods—which score documents by relevance—fail here because agents are dynamic: their usefulness depends on what the user actually wants them to do, what they're capable of, and whether they'll complete the task correctly. By building systems that index agents by their stated capabilities and observed behaviors, then re-score them according to multi-dimensional criteria (accuracy, speed, cost, safety), retrieval becomes possible. This works because it shifts focus from treating agents as passive information to treating them as systems with measurable, comparable properties that can be checked before deployment."
+  },
+  {
+    "gid": 1487,
+    "deep_why": "The core task is learning what a user wants from their interactions and language, then using that learned profile to improve future recommendations. This is powerful because large language models can summarize and reason about user history in natural language—they extract patterns humans can understand (this user likes papers on robotics by authors from MIT) instead of opaque numbers. The method works because language-based reasoning lets you combine explicit signals (what the user said), implicit signals (what they clicked), and external knowledge (what's currently relevant) in the same reasoning step. This soundness matters: a profile you can read and debug is far safer and more trustworthy than a black-box alternative, especially when privacy and fairness questions arise."
+  },
+  {
+    "gid": 1488,
+    "deep_why": "The core task is judging whether a system successfully generated or retrieved content that matches a user's request across text, images, audio, or video. The challenge is that no single evaluation metric works: human ratings disagree, automatic metrics miss subtle failures, and the right definition of success depends on whether you're building search, recommendation, or knowledge-driven tasks. This workshop's approach works because it brings together specialists in language, vision, and evaluation who each understand where their single discipline's metrics break down. By pooling these views and running shared benchmarks, the community can move toward evaluation standards that actually predict whether a multimodal system will satisfy real users, rather than optimizing for a metric that looks good on paper."
+  }
+]

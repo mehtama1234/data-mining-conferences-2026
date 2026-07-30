@@ -1,0 +1,62 @@
+[
+  {
+    "gid": 1275,
+    "deep_why": "Learned sparse retrieval preserves backward compatibility by anchoring results to explicit terms present in documents. When a new query encoder is deployed but the index remains unchanged, dense systems fail because they rely entirely on coordinate spaces that shift between encoder versions; sparse systems degrade gracefully because they still match on the actual words themselves, which remain stable anchors. This works because term presence is invariant to which encoder produced the ranking decision—even a different encoder still identifies the same terms in the document. By keeping this lexical foundation intact while only adapting how query terms are selected, the method preserves the retrieval signal across model versions without full re-indexing."
+  },
+  {
+    "gid": 1276,
+    "deep_why": "Suppressing content should depend on the actual causal effect of showing it—that is, how much showing versus hiding actually changes customer outcomes—not just how confident the system is. The key mathematical insight is that confidence alone creates false confidence: a suppression system that trusts a wrong prediction is worse than one that acknowledges uncertainty. By wrapping the causal effect estimate with explicit bounds around its uncertainty and only suppressing when the causal effect remains positive even at worst-case confidence levels, the system avoids over-suppressing. This works because quantifying uncertainty forces the decision to absorb the cost of being wrong before suppressing, preserving content visibility when predictions lack solid backing."
+  },
+  {
+    "gid": 1277,
+    "deep_why": "Small language models default to answering even when evidence is absent because they were trained to be helpful, but helpfulness without grounding in provided documents leads to fabrication. Reward shaping retrains the model by incrementally rewarding it for refusing when documents are insufficient and for reasoning step-by-step through multiple pieces of evidence. This works because the model's decision function can be reshaped toward a new objective without changing its fundamental architecture—the weights that once said yes-even-without-evidence are adjusted to eventually compute no when evidence is sparse. By explicitly rewarding refusal and reasoning together, the method builds a new decision boundary in the model's internal representations that respects document boundaries."
+  },
+  {
+    "gid": 1278,
+    "deep_why": "Ranking systems usually profile users by assigning them persistent reputation scores, but this creates privacy and bias risks. A user-agnostic system avoids profiling by ranking items based only on current and recent item evaluations, using exponential decay to weight recent ratings more heavily and adaptive change-point detection to distinguish signal from noise. This works because item evaluations carry temporal signal on their own—a spike in ratings for one item becomes evidence that tastes shifted, not evidence about the person—allowing ranking to adapt to genuinely changing conditions without maintaining a persistent user profile. The decay window itself becomes the temporal memory, requiring no stored user state."
+  },
+  {
+    "gid": 1279,
+    "deep_why": "Large vision-language models encode visual and textual signals in unified spaces, but recommendation systems need to align those spaces to the specific items and users at hand. Structural alignment teaches the model to use the internal visual structure of items as a teacher—if two items look similar in the model's own visual processing, they should remain similar in the adapted space. Disentangled adaptation routes updates through separate paths for each modality so that improving visual understanding doesn't interfere with textual understanding. This works because the model's original spatial organization already contains useful structure; preserving internal relationships while adapting the overall scale ensures the adapted space retains discriminative power for ranking decisions."
+  },
+  {
+    "gid": 1280,
+    "deep_why": "When poisoned documents are injected into retrieval-augmented generation, they can trick the language model into false confidence by appearing to answer the question definitively. Rather than checking outputs after generation, this method monitors internal attention patterns during generation: when a document poisons the output, the model's attention concentrates heavily on that document, collapsing from a spread attention pattern to a focused one. This works because poisoned documents typically contain specific phrases that precisely match the query, causing the model's attention mechanism to lock onto them; benign documents, even highly relevant ones, distribute attention more naturally across multiple sources. Measuring entropy of attention directly reveals when this unnatural concentration occurs."
+  },
+  {
+    "gid": 1281,
+    "deep_why": "Dense embeddings compress document content into coordinate spaces, losing explicit entity names, units, and sources—information critical for accurate question answering over enterprise archives. Using plain-text Markdown indices preserves all explicit information while keeping retrieval efficient through iterative progressive search with a mathematical contraction bound. This works because plain text is exactly what language models process naturally; by staying in the text domain rather than transforming to geometric space, the system avoids a lossy representation step. The contraction bound ensures the iterative search terminates, and adaptive depth escalation escalates precision only when initial results lack sufficient evidence."
+  },
+  {
+    "gid": 1282,
+    "deep_why": "Users tend to rate their own creations more favorably than identical outputs from others, a classic self-generated content bias. This phenomenon occurs because users invest effort in creating their own answers, and sunk effort biases quality judgment upward even when outputs are objectively equivalent. The bias appears in quality ratings but not trust—skepticism about hallucinations constrains how much confidence a user places even in their own results. Understanding this split is important because it means users select for their own content even while doubting it, so system designers cannot rely on trust alone to guide content selection decisions."
+  },
+  {
+    "gid": 1283,
+    "deep_why": "Large language models contain internal parametric knowledge from pretraining, but retrieval augmentation brings external evidence; when these conflict, the model is uncertain which to follow. Instead of running expensive supervised probes, this method detects conflict by measuring how confident the model's internal logits are about its parametric answer versus how much that answer aligns semantrically with the retrieved context. When conflict exists, logits and semantic alignment diverge—high logit confidence but low alignment signals tension. This works because the model's decision computation, revealed through logits, becomes a reliable indicator of internal disagreement before the model generates any text, enabling fast conflict prediction."
+  },
+  {
+    "gid": 1284,
+    "deep_why": "Ranking models are trained with substitute losses because the true ranking metric, NDCG, measures ranking quality but has no smooth derivative. Instead of using a hand-designed smooth approximation, this method learns what gain, discount, and temperature parameters of NDCG best adapt to a specific dataset, making the metric itself differentiable. This works because NDCG is a mathematical composition of components—gain determines how much credit each correct rank earns, discount penalizes lower positions, and temperature controls smoothness—and these parameters can be learned by the same gradient descent that trains the ranker. Jointly optimizing ranker and metric parameters unifies the two problems that were previously addressed separately."
+  },
+  {
+    "gid": 1285,
+    "deep_why": "User satisfaction in generative IR results from balancing response quality against the cognitive effort and cost to obtain it—a user values a good answer but not if they spend excessive time reformulating queries or parsing lengthy interactions. Rather than using an external judge, this method models satisfaction as a direct trade-off between measured response quality and measurable interaction costs, learning how each contributes to satisfaction from actual user data. This works because satisfaction is fundamentally about subjective utility, and utility theory teaches that choices reflect trade-offs between desirable attributes; by quantifying both gain and cost, the model captures how users actually weight these dimensions in practice."
+  },
+  {
+    "gid": 1286,
+    "deep_why": "Biomedical entity linking involves linking mentions in text to correct medical entities, a problem where many candidate entities could match a mention. Re-ranking candidates with a generative model works because the model can reason about which candidate best fits the full context of the mention and surrounding text. Instruction-tuning teaches the model to score candidates as a set rather than individually, exploiting the fact that comparing multiple candidates together often makes the correct one obvious—context that disambiguates one mention often eliminates wrong candidates immediately. This approach is faster than dense ranking because set-wise selection is more efficient than pairwise comparisons."
+  },
+  {
+    "gid": 1287,
+    "deep_why": "Language models sometimes fabricate numbers that sound plausible but have no grounding in retrieved documents, a failure mode that standard similarity-based and LLM-judge methods miss because they focus on overall semantic match. A number-aware heuristic checks whether the actual numbers in the generated output appear explicitly or can be directly computed from numbers in the source documents. This works because hallucinated numbers almost never appear in sources—fabrication means the model invented a number—while correctly grounded numbers by definition originate in or flow from source text. Detecting the absence of this source grounding is far simpler and more reliable than judging semantic correctness."
+  },
+  {
+    "gid": 1288,
+    "deep_why": "Shopping behavior depends on interaction style: when an agent mirrors the user's own thinking process, it prompts deeper reflection and critical evaluation of products; when an agent acts as a knowledgeable peer, it builds social comfort but reduces explicit comparison behavior. These effects appear because different interaction styles activate different cognitive and social processing modes in users. A mirroring style works by prompting the user to articulate preferences themselves, and self-articulation strengthens critical thinking; a peer style works by reducing social distance and uncertainty, which decreases the felt need to verify alternatives. Interaction style thus shapes not just comfort but the depth of reasoning users apply."
+  },
+  {
+    "gid": 1289,
+    "deep_why": "Before promotional events, users browse and add items to carts, then convert on the promotion day—a delayed conversion pattern absent from regular time periods. Converting rates appear low before the promotion because the delayed conversions haven't occurred yet, not because the pre-promotion phase is fundamentally different. Using counterfactual reasoning, the method learns from pre-promotion data what users are likely to convert later, accounting for the shifted distribution where delayed conversions cluster on a single future date rather than spreading across the continuous period. This works because counterfactual logic lets the model predict future conversion outcomes for pre-promotion behavior by disentangling the actual behavior from when conversion happens to occur."
+  }
+]

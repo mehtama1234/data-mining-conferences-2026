@@ -1,0 +1,62 @@
+[
+  {
+    "gid": 1290,
+    "deep_why": "The paper separates two conflicting forces shaping what users click: their true preferences and their tendency to follow the crowd. The underlying principle is that these two sources of signal can be isolated if you model them in separate views and then learn which view to trust in each situation. This works because genuine preference and social conformity produce distinguishable patterns in behavior—one person might always click popular items regardless of personal taste, while another ignores trends. By having language understanding examine each view independently and then using a gate to decide which view matters most for each user, the system avoids the false confidence that comes from naive attention weights. This lets recommendations become truly personalized rather than averaging out into what everyone buys."
+  },
+  {
+    "gid": 1291,
+    "deep_why": "The system optimizes for the actual bottleneck in fixing code: searching the repository to find relevant files wastes more tokens than writing the fix itself. The insight is that a smaller search model can be trained specifically to retrieve context that a frozen large model will find actionable, rather than just relevant by general similarity. This works through feedback that directly measures whether retrieved context led to successful patches, not whether it ranked high in isolation. By treating the searcher as a tool that serves the solver's fixed interface, rather than tuning both together, you can distill a lightweight model that understands what counts as useful context in this specific task, dramatically cutting wasted exploration."
+  },
+  {
+    "gid": 1292,
+    "deep_why": "The core challenge is computing pairwise feature interactions for CTR scoring while keeping data encrypted. Factorization Machines normally require O(F squared) operations to combine every pair of features, which becomes prohibitively slow under encryption. The solution exploits SIMD packing: encrypting multiple feature values into one ciphertext slot and computing them in parallel. When these packed slots are multiplied, the mathematics automatically computes all the pairwise products you need in a single encrypted operation, collapsing what would be quadratic work into near-linear work. By redesigning the FM operator to pack features strategically, the system can predict ad clicks on sensitive data without decrypting it, unlocking privacy-preserving personalization."
+  },
+  {
+    "gid": 1293,
+    "deep_why": "Conversation emotion involves three sequential steps: first recognizing what emotion is present, then finding what caused it, then responding helpfully. Most systems treat these as separate problems, missing that understanding causes reinforces emotion recognition, and both inform better responses. By modeling them as a chain where each stage builds on the previous one's learned representations, plus using graph attention to capture which speaker and which modality (text or tone or face) matters for each inference, the system leverages the natural structure of the problem. This structured progression ensures that early errors in emotion recognition are refined by the causal analysis step before generating a response, avoiding the cascade where weak recognition leads to tone-deaf support."
+  },
+  {
+    "gid": 1294,
+    "deep_why": "Real people search by clustering related questions together and expanding them into longer narratives that reflect how a person would actually explore a topic. The method mimics this by grouping short queries semantically to form search sessions, then synthesizing plausible long-form narratives from these groups. This works because short queries from a single user reveal a hidden intent that a narrative can make explicit. By building synthetic sessions that respect the natural clustering of user search behavior, the system generates long-form queries that are indistinguishable from human-written ones, providing realistic benchmarks for measuring whether language models can actually answer complex questions end-to-end rather than snippet-matching."
+  },
+  {
+    "gid": 1295,
+    "deep_why": "When you retrieve candidate documents for a query, their content can hint at what you should search for next. The technique pools these candidates and extracts cluster centroids as new search terms. This works because clusters identify themes within the top results, and centroids represent the core of each theme. Rather than hand-picking terms by surface form, clustering automatically finds what patterns actually matter in the results you got. When extended to multilingual retrieval where surface-form statistics vanish, the method still works by relying on the geometric structure of the embedding space itself—clusters form even when you cannot see the original words, making the approach more general and robust."
+  },
+  {
+    "gid": 1296,
+    "deep_why": "Whole-image retrieval misses small or unusual objects because it optimizes for overall scene similarity, not object coverage. The fix decomposes images into patches and retrieves based on patches, so rare objects get their own search signal. This works because many small objects contribute too little to global image similarity to influence retrieval, but they matter for caption accuracy. By treating patches as independent retrieval units and fusing their retrieved tags with the original full image, the system avoids losing objects to the averaging effect of global similarity. The result is captions that mention discovered objects that would otherwise be invisible to the retriever."
+  },
+  {
+    "gid": 1297,
+    "deep_why": "Small models trained on many tool-calling examples improve at calling tools correctly but degrade at refusing unnecessary calls, especially in weak multilingual settings. The solution teaches the model to reason explicitly through tool-invocation decisions using structured schemas that decompose the choice into understandable stages: understanding the task, assessing available tools, evaluating risks. By internalizing this reasoning rather than just memorizing when to call, the model learns the underlying logic of refusal. This works because the reasoning process exposes inconsistencies—when a tool cannot solve the problem, that contradiction becomes visible in the structured reasoning, not hidden in an opaque weight decision. Explicit reasoning scaffolds the decision-making for languages where training data is scarce."
+  },
+  {
+    "gid": 1298,
+    "deep_why": "When learning new entity types incrementally, the model forgets old types because it overwrites previously learned features. The solution preserves critical neurons through gradient-based importance scoring and constrains them during new task training, while also replaying old examples mixed with new ones. This works because not all neurons matter equally for each task—some encode general knowledge useful for all entities, others are task-specific. By identifying and protecting the general neurons while allowing new neurons to specialize, you balance stability and plasticity. The replay buffer ensures the model regularly re-encounters old entity patterns, preventing them from being overwritten by the push toward new types."
+  },
+  {
+    "gid": 1299,
+    "deep_why": "Multi-modal entity alignment requires features from multiple modalities, but real-world data is incomplete, forcing you to impute missing modalities. The danger is treating all imputed features the same when some imputations are far more trustworthy than others. The solution estimates uncertainty in each imputed feature, then uses that uncertainty to weight how much each imputed feature influences the alignment decision. This works through a mathematical principle: when combining signals of varying quality, the optimally weighted combination gives high weight to reliable signals and low weight to noisy ones. Rather than blindly fusing all modalities equally, the system learns which imputed features are worth trusting, preventing weak imputations from drowning out clean structural and visual signals."
+  },
+  {
+    "gid": 1300,
+    "deep_why": "Large multi-agent simulations require running every agent each round, incurring massive computational cost. The insight is that not all agents matter equally for each simulation step—some are peripheral to current dynamics. The method learns to identify which agents are informative by optimizing for two goals: minimizing computational cost while preserving the social dynamics that emerge. This works because agent interactions follow power-law distributions: a few agents drive most interactions. By learning to sample informative subsets that maintain interaction intensity, the system keeps the emergent behavior realistic while cutting token usage and execution time. The importance weights adapt per round, concentrating compute on agents whose actions matter most for each phase of the simulation."
+  },
+  {
+    "gid": 1301,
+    "deep_why": "Answering questions about musical scores requires chaining multiple analytical steps—finding a chord progression, recognizing its function, connecting it to emotional meaning—rather than a single lookup. The method builds a framework that uses deterministic symbolic analysis tools built from music notation software, orchestrated by a reasoning agent that decides which analysis step to take next. This works because symbolic music is structured: every note, duration, and harmonic function is explicit in the score. By grounding the reasoning in concrete analyses rather than free-form language generation, the system avoids hallucinating false musical claims. The chain-of-thought reasoning lets the agent break complex questions into atomic operations on the actual notation."
+  },
+  {
+    "gid": 1302,
+    "deep_why": "Understanding memes requires reconciling conflicting interpretations—visual elements suggest one meaning, social context suggests another, and resolving tension between them reveals the joke. The system models this as an energy minimization problem: each hypothesis about the meme's meaning has an energy score measuring internal inconsistency, and the goal is to find the lowest-energy stable interpretation. This works because energy-based reasoning is a proven mathematical framework for finding stable states in systems with competing constraints. By iteratively refining candidate interpretations and calculating gradients of semantic inconsistency, the system drives toward explanations that cohere across all modalities. Unstable or hallucinated interpretations naturally have high energy and get rejected, while coherent ones converge to low energy."
+  },
+  {
+    "gid": 1303,
+    "deep_why": "When multiple agents update their memories over time, facts get revised, retracted, and sometimes resurfaced, creating a non-monotonic record where later claims may contradict earlier ones. Simply summarizing this mess conflates conflicting versions. The solution treats memory aggregation as a validity-adjudication problem: select salient timepoints where change happened, summarize each one to show what was updated or retracted, then suppress outdated claims by tracking which versions are current. This works because the timeline structure explicitly models when claims were valid rather than treating all evidence equally. By preserving the evolution of beliefs rather than collapsing them into a single answer, the system avoids false confidence in outdated information."
+  },
+  {
+    "gid": 1304,
+    "deep_why": "Generative recommendation predicts the next item by generating item identifiers, but iterative decoding forces locally greedy choices that lead to suboptimal sequences. The solution computes all position-wise item scores in one forward pass and searches over them using A* guided by a finite-state machine that enforces valid item sequences. This works because the finite-state machine encodes constraints—items must follow valid transitions in the user's purchase history—and A* uses these constraints to prune impossible branches. Computing scores in a single pass means no early decision can trap later choices, and A* guarantees that the path found is optimal under the constraint. The result is globally coherent item sequences instead of locally greedy predictions."
+  }
+]

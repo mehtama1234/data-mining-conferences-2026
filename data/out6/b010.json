@@ -1,0 +1,62 @@
+[
+  {
+    "gid": 150,
+    "deep_why": "OwlerLite ranks web pages for answer-building by fusing three factors: how well a page matches the question, whether it falls within the user's chosen trusted sources, and how fresh its information is. The soundness rests on a principle: answers become trustworthy when built from a combination of relevant, vetted, and current sources. By monitoring pages for semantic changes and re-indexing only what genuinely shifted, the system avoids returning stale answers while keeping costs reasonable. This matters for real users because the web changes constantly, and outdated information in an answer can erode confidence—especially when the user has explicitly said which sources to trust."
+  },
+  {
+    "gid": 151,
+    "deep_why": "This work tackles prediction of thousands of time series by reorganizing channels first, then modeling local and global relationships separately. The key insight: when channels are scrambled, the algorithm wastes effort on many weak connections and squanders its capacity on finding patterns that don't repeat. By reordering into a low-energy state—grouping channels whose values cluster together—the model surfaces real structure and dramatically cuts the number of channel pairs it must examine. Separating local clusters from global trends then ensures each learning path is uncluttered. This efficiency gain lets forecasters handle industrial datasets that were previously too wide to run through existing methods."
+  },
+  {
+    "gid": 152,
+    "deep_why": "High-dimensional feature spaces often suffer from an imbalance where a few dimensions carry signal while most are noise, causing models to generalize poorly. This method uses spectral decomposition to separate the strong, medium, and weak dimensions, then amplifies the strong ones according to a schedule that keeps training stable. The principle: if you can identify and amplify the subspace where task-relevant patterns actually live, you reduce the confusion from noise without breaking the model's learning trajectory. The dual loss—comparing features both as usual and also in their spectral profile—ensures the model learns to represent the world in a cleaner, more organized way, making predictions on fresh data more reliable."
+  },
+  {
+    "gid": 153,
+    "deep_why": "Recommending items gets harder when you have sparse user history and rich item side-information but little structured user-side context. This method infers user interest profiles from behavior, then generates two contrastive views by treating user-side and item-side signals separately through diffusion, a process that gradually transforms noisy data into cleaner patterns. The reasoning: by separately aligning user interests and item attributes to a shared collaborative space through controlled diffusion, the system avoids mixing signals that pull in different directions. This separation lets the model learn robust features for users with few interactions, because it focuses on the genuine structure in each modality rather than forcing all views to agree upfront."
+  },
+  {
+    "gid": 154,
+    "deep_why": "Users waste time switching applications and rewording questions when they encounter unfamiliar content. This assistant detects the intent behind a selected text—is the user asking for translation, explanation, or summary?—then calls the appropriate prompt and retrieves answers tailored to the user's learned preferences and background. The soundness: intent is usually recoverable from context and word choice, and people develop stable answer preferences. By building a profile over time and matching intent to past successful explanations, the system can give better answers faster than a generic prompt would, reducing the friction that makes people abandon tools."
+  },
+  {
+    "gid": 155,
+    "deep_why": "Graphs vary in whether connected nodes have similar attributes (homophily) or opposite ones (heterophily). Existing methods fail on heterophilic graphs because they cannot handle the different structural patterns that heterophily introduces—some neighborhoods are homophilic, others heterophilic, and the training and test sets have different distributions of these patterns. This method pre-trains a codebook of diverse connection patterns, treating each as an orthogonal basis. During fine-tuning, it selects and combines these bases to adapt to rare or unseen patterns. The principle: when you can decompose any pattern as a weighted combination of known pure patterns, you can generalize to new mixtures even if they weren't seen during training, because the combinatorial space is much larger than the training set."
+  },
+  {
+    "gid": 156,
+    "deep_why": "Moderation rules are often ambiguous, and human moderators sometimes misapply them, leading to inconsistent decisions. This system first verifies that a language model can replicate human judgments, then uses that alignment to audit moderator decisions: where the model and human disagree, the error is usually a wrong rule citation rather than genuine ambiguity. RuleSharpener then generates clearer rule statements targeted at the specific failure modes. The principle: clarity in rules is achievable when you have a consistent oracle to highlight where current rules fail. By concentrating feedback on the rules that cause the most errors, the system can rapidly improve consistency without retraining moderators extensively."
+  },
+  {
+    "gid": 157,
+    "deep_why": "Depression screening from social media is unreliable because training data and symptoms vary widely, and a single fixed model cannot adapt to these differences. This method retrieves posts from a user's history that match representative symptom expressions from training data, then uses a mixture-of-routers mechanism to select which reasoning strategy and which language model best fit those posts. The reasoning: depression manifests differently across people and over time, so the system must flexibly switch its analytical lens rather than forcing all users through the same pipeline. By grounding retrieval in collected examples of how symptoms appear in real language, and routing to the best-fit analyzer for each batch, the approach handles variability without requiring new training."
+  },
+  {
+    "gid": 158,
+    "deep_why": "Player lifetime value in games is hard to predict because the distribution is zero-inflated (many players spend nothing), heavy-tailed (a few whales spend enormously), and multimodal (different game types produce different spending patterns). A single model cannot capture all these shapes. This method uses a mixture of lognormal distributions weighted to handle zero-inflation, a game expert to adapt across titles, and hierarchical losses to balance finding high-value players with accurate overall prediction. The principle: when reality is a mixture of distinct patterns, modeling each separately and learning to weight them correctly gives you both global accuracy and the ability to reliably identify the rare, valuable cases."
+  },
+  {
+    "gid": 159,
+    "deep_why": "Language models are evaluated in relaxed, open-ended settings, but real deployment involves time pressure, incomplete information, and strict constraints—conditions where models often fail. This paper stress-tests three models across escalating difficulty and measures a Stress Sensitivity Index: how much each model's performance drops as pressure increases. The principle: robustness cannot be measured in comfortable conditions because degradation only emerges under load. By deliberately creating realistic stress scenarios and measuring the slope of degradation, practitioners can predict which model will remain reliable in production, and researchers can identify failure modes that comfortable benchmarks miss."
+  },
+  {
+    "gid": 160,
+    "deep_why": "Metrics like FID and R-Precision for motion-generation are biased: FID assumes a Gaussian distribution when motion is not, and R-Precision ignores the global alignment. This work proposes Optimal Transport Matching (treating text-motion pairs as an assignment problem to find the best global pairing) and Maximum Mean Discrepancy (measuring distributional distance without assuming any shape). The principle: when comparing distributions, if you avoid restrictive shape assumptions and focus on true alignment between text and motion, you get evaluations that correlate with human perception. By grounding metrics in transport theory and empirical divergence rather than Gaussianity, the evaluation becomes an honest reflection of whether the generated motions actually match the requests."
+  },
+  {
+    "gid": 161,
+    "deep_why": "Conversational search requires systems to understand evolving intent across multiple turns and retrieve relevant information dynamically. Language models excel at reasoning, retrieval, and generation, and when given agency to plan strategies—deciding when to retrieve more information, when to reason, when to respond—they can handle the complex, multi-step interactions that fixed pipelines cannot. The soundness: conversation is a planning problem, and models that can step back, diagnose what they lack, and decide their next move outperform models that run preset retrieval-then-answer sequences. Agency lets systems ask clarifying questions, explore multiple search angles, and synthesize diverse sources naturally."
+  },
+  {
+    "gid": 162,
+    "deep_why": "Understanding what workers use AI assistants for requires summarizing multi-turn conversations into coherent topics, yet unsupervised methods often produce incoherent clusters. This framework summarizes using language models, then clusters summaries non-parametrically so it can discover new topics as they emerge. Crucially, humans then refine clusters interactively, providing feedback that the system uses to improve future inference. The principle: ground truth for workplace topics is only knowable with domain insight, and human feedback can teach a model what coherence means in context. By combining model-driven discovery with human validation in a loop, the system produces topics that are both statistically sound and practically meaningful."
+  },
+  {
+    "gid": 163,
+    "deep_why": "Ransomware detectors trained on past attacks may need to forget certain training samples for privacy or regulatory reasons, but retraining the entire model is expensive. This method partitions training data into isolated shards, trains them separately, and aggregates predictions. When deletion is requested, only the affected shard is retrained. The soundness rests on isolation: because shards are independent during training, retraining one does not require recomputing all others. This efficiency comes without sacrificing detection quality, because the aggregated ensemble recovers performance of the full model. The approach lets organizations comply with data deletion requests in hours rather than weeks, making privacy practical at scale."
+  },
+  {
+    "gid": 164,
+    "deep_why": "Graph classification with only positive and unlabeled examples is hard because the model has no examples of confirmed negatives—it must infer which unlabeled cases are truly negative from distributional assumptions alone. This method performs dual reweighting: at the sub-graph level, it emphasizes substructures that are informative for discrimination, and at the graph level, it reduces the weight of ambiguous unlabeled cases. The principle: unlabeled graphs range from likely negative to uncertain, and giving equal weight to all of them confuses learning. By learning to identify which unlabeled cases are most likely negatives and focusing on discriminative sub-patterns, the model progressively separates true positives from negatives without ever seeing a negative label."
+  }
+]

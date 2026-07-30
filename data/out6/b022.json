@@ -1,0 +1,62 @@
+[
+  {
+    "gid": 330,
+    "deep_why": "The core problem is bridging two incompatible training signals: collaborative filtering learns which items users like overall, but language model generation predicts the next word one at a time. The method works by converting item-level preference scores into word-level probability distributions that align with language model token space, then combining these with standard prediction targets. This matters because both signals carry real information—collaborative data shows what users actually choose, while language models capture semantic understanding—and forcing them through the same token-level optimization means the model learns from both simultaneously rather than in separate stages where information gets lost."
+  },
+  {
+    "gid": 331,
+    "deep_why": "Knowledge graphs with multimodal data—images, text, structured links—have three sources of mismatch: representations differ across domains, graph structures vary between datasets, and different tasks need different information. The framework solves this by learning to route only task-relevant information through each layer, rather than blindly averaging all signals. This works because tasks do in fact have different priorities—entity linking needs stronger text, entity alignment needs stronger visual patterns—and by letting the model learn which modality matters for which task, it can reuse the same architecture across new graphs that might have different structures or data types without retraining from scratch."
+  },
+  {
+    "gid": 332,
+    "deep_why": "Graph neural networks are attacked by inserting hidden triggers into specific nodes, then poisoning edges to activate them at test time. Standard defenses fail because they're tuned to one trigger type and don't generalize. This defense selects suspicious nodes by finding outliers in the trained model's internal patterns, then applies adaptive strategies based on structural anomalies rather than prior assumptions. The key insight is that any poisoning pattern, no matter the attack type, leaves detectable traces in how nodes behave within the graph—the suspicious selection finds nodes that don't fit typical patterns, and adaptive strategies work because backdoor-poisoned regions have distinctive structural signatures that differ from natural variation."
+  },
+  {
+    "gid": 333,
+    "deep_why": "This is a position paper tracing the technical evolution from keyword matching through semantic similarity to generative answer prediction. It examines the mathematical foundations of each era—lexical matching is approximate string containment, semantic search uses geometric closeness in meaning space, retrieval-augmented generation adds external facts—and raises philosophical questions about whether letting machines guess answers actually serves users well. The paper's core argument is that each generation gains expressiveness but loses interpretability and verifiability, so the real question is whether predictive accuracy is the right goal when users need to trust the answers they receive."
+  },
+  {
+    "gid": 334,
+    "deep_why": "Language models generate text step-by-step, but deciding when to stop and retrieve external knowledge is hard because uncertainty comes from multiple sources: disagreement about what word comes next, and disagreement between different sampling attempts at the same step. The method quantifies both sources separately using entropy within a local window and consensus across multiple samples, then combines them into a single score using information divergence. This works because real uncertainty has structure—local entropy captures what the model's immediate confidence is, consensus captures whether running the model again gives the same answer—and fusion of both signals provides a more complete picture than either alone."
+  },
+  {
+    "gid": 335,
+    "deep_why": "Money laundering through blockchain mixing services is hard to study because real datasets are small or unlabeled. The paper synthetically generates massive labeled training data by running the mixing protocol end-to-end in a simulator, then adding realistic details like behavior patterns to match real behavior. This works because mixing is a deterministic process with known rules—if you simulate the protocol correctly and add realistic randomness—so any mixing service must follow those rules, making simulated data valid for learning which transactions are connected. The key finding is that supervised learning methods can exploit patterns in this data while heuristic rules fail, suggesting real de-anonymization requires learning rather than hand-coded patterns."
+  },
+  {
+    "gid": 336,
+    "deep_why": "Self-hosted language model deployments span many platforms and configurations, each with different security risks. Rather than checking for one known vulnerability, this work maps the space of possible attacks by profiling all discovered services, building knowledge of their APIs, and modeling how attacks propagate through system components. This works because security vulnerabilities follow predictable patterns—weak authentication, injection through unvalidated input, default passwords—and by systematically checking for these patterns across all targets, the researchers can measure how widespread problems are. The key insight is that pervasive vulnerabilities like missing authentication aren't one-off bugs but systematic weaknesses in deployment architecture."
+  },
+  {
+    "gid": 337,
+    "deep_why": "Users asking language models often have vague goals with many moving parts, and asking clarification questions one-at-a-time is inefficient. The method decomposes complex intents into smaller pieces, identifies which clarifications logically depend on others, then asks them in logical order. This works because clarification questions have dependencies—some answers make other questions irrelevant—and organizing them logically reduces total questions needed. The framework learns good clarification orderings by simulating many user-model conversations, assigning rewards based on whether the final understood intent matches what the user wanted, so the model discovers that certain orderings are more efficient than others."
+  },
+  {
+    "gid": 338,
+    "deep_why": "Graph neural networks on continuous-time data work by solving differential equations that describe how node states evolve. However, real-world graphs have curved structure—hierarchies, cycles—that cannot be faithfully represented in flat space without distortion. By formulating the differential equations directly on curved surfaces instead, the model captures the true geometry of the graph while still handling irregular time samples. This works because curved geometry is the right language for describing graphs with inherent non-Euclidean structure, and the stability theorems for flat continuous-time dynamics extend to curved spaces, guaranteeing the learning process remains stable and interpretable even in this more complex setting."
+  },
+  {
+    "gid": 339,
+    "deep_why": "Existing confidence scores for language model outputs use single signals like token probability or similarity to reference answers, but these fail under distribution shift because the model's internal behavior changes. The method instead examines structural patterns in the model's internal state trajectory—shapes and oscillations in hidden layers—which capture how stable the computation was. This works because confidence should reflect whether the model executed a consistent computation, not just the probability of the final token. Structural features are model-agnostic because any model learning the same task develops consistent internal patterns for correct versus incorrect reasoning, making these patterns robust across different architectures and domains."
+  },
+  {
+    "gid": 340,
+    "deep_why": "In-context learning, where models classify text based on examples in the prompt, seems robust because the model reads the full prompt. But adversarial examples can exploit how models process long contexts by either injecting fake claims that contradict training, swamping real examples with irrelevant text, or hiding bad examples in padding. These attacks work without querying the model because they exploit fundamental limits in how language models handle prompt structure. The paper then shows that defending requires multiple techniques—rephrasing examples, removing noise, adding metacommands—because each attack exploits a different weakness in prompt processing, and combining defenses closes most loopholes."
+  },
+  {
+    "gid": 341,
+    "deep_why": "Fair allocation of chores—tasks everyone dislikes, unlike goods—must prevent one person from being overburdened while satisfying others. The maximin share concept guarantees everyone gets a fair portion by comparison to what they'd get if they could divide optimally. However, exact fairness is often impossible. The paper proposes satisfying n-1 agents fully while allowing the last agent a small approximation gap, which works because this small gap is much fairer than the traditional approach of satisfying everyone partially. The mathematics proves such allocations always exist by constructing them inductively, and the approximation ratios shrink as more agents are involved because spreading burden across more people naturally improves fairness."
+  },
+  {
+    "gid": 342,
+    "deep_why": "Sequential recommenders predict future items by learning patterns in user behavior, but existing methods use one signal at a time—either collaborative preference history, or semantic item descriptions. By learning three separate embedding representations—one capturing collaborative patterns, one from raw item descriptions, and one from language model understanding—and fusing them in a sequence model, the system captures complementary information. This works because each representation type reveals different patterns: collaboration shows what users actually choose, semantics show item properties, and language models show conceptual connections. Using soft labels weighted by predicted future preferences instead of hard one-hot labels during training lets the model learn that some future items are more predictable than others."
+  },
+  {
+    "gid": 343,
+    "deep_why": "Recommendation systems need compact embeddings for fast serving, but compact dense representations lose expressive power. Sparse embeddings—where only a few dimensions are active per item—achieve compression through selecting which dimensions to use, rather than shrinking all dimensions equally. This works because recommendation patterns have structure: many items might use the same five dimensions, so most dimensions stay zero. Learning sparse representations through regularization that penalizes active dimensions forces the model to find this structure. The active dimensions reveal an interpretable index where groups of items cluster naturally, enabling the retrieval stage to support higher-level features like layout tiles directly without retraining."
+  },
+  {
+    "gid": 344,
+    "deep_why": "News videos on YouTube contain images and titles that convey emotion, and stronger emotional framing can increase viewer engagement. By training a combined image-text model on human-labeled moral emotion data from both Korea and the US, the paper measures how specific emotional rhetoric—particularly outrage condemning others—correlates with views, likes, and comments. This works because emotion detection in multimodal data is learnable when given labeled examples, and the correlations reveal that users engage more intensely with outrage-framed content. The insight matters because it shows that emotional manipulation isn't just increasing passive attention, but actively driving participation, which suggests platform design might inadvertently reward polarizing rhetoric."
+  }
+]

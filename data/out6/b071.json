@@ -1,0 +1,62 @@
+[
+  {
+    "gid": 1065,
+    "deep_why": "The method compresses reasoning ability from large to small models by capturing concrete reasoning steps. When a large model solves a recommendation problem by reasoning through why a user likes something, that reasoning follows real patterns about preference logic. A smaller model can learn those patterns directly from examples rather than deriving them from scratch, making it faster. The annealing schedule gradually removes the explicit reasoning text, forcing the small model to bake that logic into its internal computations. This works because the reasoning steps are a faithful compression of the large model's real decision process, so internalizing them transfers genuine understanding."
+  },
+  {
+    "gid": 1066,
+    "deep_why": "Hateful videos contain harmful meaning spread across sound, visuals, and text that must all be considered together. The method chains evidence from each modality into a unified explanation, showing how visual cues plus words plus tone combine to establish harm. Direct Preference Optimization steers the model toward reasoning chains that correctly combine this evidence and away from ones that miss it, penalizing contradictory conclusions. This works because the optimal reasoning path through multimodal evidence is the one that actually explains the decision correctly, and training on correct versus incorrect reasoning paths teaches the model to reliably follow sound logic."
+  },
+  {
+    "gid": 1067,
+    "deep_why": "Medical entity linking must resolve ambiguous mentions using both surface similarity and ontological constraints—the formal rules that govern which concepts logically belong together. Fuzzy logic provides a mathematical bridge: it scores soft consistency between a candidate and the ontological rules without requiring the Boolean all-or-nothing match that breaks on real messy data. Classical reasoners handle the structural rules exactly, while soft evaluation captures grey cases. This works because the true entity is the one most consistent with both the learned surface representations and the logical constraints simultaneously; scoring both grounds the retrieval in real meaning, not just coincidental word overlap."
+  },
+  {
+    "gid": 1068,
+    "deep_why": "Edge servers have limited storage and must serve both specialized queries (well-matched to their domain) and mismatched ones. Maintaining domain-specialized knowledge bases works because domain-aligned information compresses better and retrieves faster when queries fit that domain. A metadata-based router can identify mismatched queries cheaply and redirect them to better-equipped servers, avoiding full replication. This works because the cost to identify a mismatch is far lower than the cost of storing and searching irrelevant data, so lightweight routing plus distributed specialization beats monolithic systems in resource-constrained settings."
+  },
+  {
+    "gid": 1069,
+    "deep_why": "Conversion prediction must estimate user intent from noisy click labels feeding into noisier conversion labels stacked hierarchically. The method corrects the loss function mathematically by accounting for noise at each level, ensuring the optimizer receives an unbiased signal about true user preferences underneath the label corruption. Forward correction avoids numerical instability by working with the data as observed rather than trying to invert the noise model. This works because correcting for known bias sources makes each training step point toward the true decision boundary, even when the labels themselves are unreliable—the unbiased loss guarantees convergence to the right classifier."
+  },
+  {
+    "gid": 1070,
+    "deep_why": "Podcast search ranking depends on query phrasing, which transcript version gets indexed, and which human judges assessed relevance—all sources of variation that mask the true ranking signal. By generating many query versions, testing multiple retrieval systems, and using multiple judges, the analysis isolates which variations matter. If a result ranks high across many versions, it genuinely matches the information need; if it changes wildly, the ranking is brittle. This works because signal that is robust to variation is real, while noise that disappears under different conditions was an artifact of a particular choice, so aggregating across variation reveals the stable underlying ranking."
+  },
+  {
+    "gid": 1071,
+    "deep_why": "A generative model that decodes document identifiers must stay accurate on old documents when adding new ones. Full retraining causes catastrophic forgetting because the entire neural network rewires. A modular memory head attached to a frozen backbone avoids this: new documents are stored in the memory module's weights, while old knowledge stays locked in the backbone. The prefix-trie decoder ensures only valid document names can be produced. This works because modularity isolates new learning from old, treating new documents as residual corrections rather than wholesale rewiring, so the model can expand without erasing."
+  },
+  {
+    "gid": 1072,
+    "deep_why": "Simulated search users must behave realistically enough that system rankings measured from simulation match those from real users. Long-term memory helps simulators track what they learned across an entire search session, so their later queries naturally build on earlier findings. Short-term memory of just the last action adds noise without helping the simulator reason about the search goal. This works because true system quality emerges from users who remember their search intent and adapt their queries, not from users forgetting constantly; simulators that remember align their behavior with actual user mental models."
+  },
+  {
+    "gid": 1073,
+    "deep_why": "Counterfactual explanations find minimal changes to a user's history that flip a recommendation. Denoising diffusion models learn the true distribution of realistic user interaction histories by gradually removing noise from random profiles until they look natural. A guided denoising trajectory that also satisfies the counterfactual goal (flip the recommendation) generates explanations that feel authentic because they respect real distribution patterns. This works because the diffusion prior ensures proposed counterfactuals are plausible and coherent in the same way real histories are, so minimal changes that satisfy both realism and the goal are guaranteed to be meaningful."
+  },
+  {
+    "gid": 1074,
+    "deep_why": "Collaborative filtering captures user-item affinity as numerical embeddings that pretrained language models cannot interpret natively. The method encodes collaborative signals as text—user and item profiles built from interaction graphs—so language models can reason about recommendations in plain language. Message passing in the original graph becomes chain-of-thought prompting that aggregates neighborhood signals through natural reasoning. This works because language models are optimized to compress meaningful patterns in text, and interaction signals that can be phrased coherently are exactly the ones the model can reason about soundly."
+  },
+  {
+    "gid": 1075,
+    "deep_why": "Multi-step search sessions unfold with agents iteratively retrieving evidence and reformulating queries. Most queries contain terms traceable to previous retrieval results, meaning agents ground themselves in evidence rather than hallucinating. Fact-seeking raises repetition as agents zero in on answers, while reasoning-heavy search expands vocabulary to explore ideas. This works because behavior that is evidence-grounded is intentional and sensible, while random drift would show no traceability; by measuring whether new terms come from the evidence, we can distinguish real search progress from noise."
+  },
+  {
+    "gid": 1076,
+    "deep_why": "Query suggestion can be framed as finding the most similar historical query given a session context. An asymmetric dual encoder learns separate representations for current queries and suggestions so that the matching score measures actual follow-up likelihood rather than superficial word overlap. Session context fed into the encoder weights the similarity to reward suggestions coherent with the conversation. This works because dense retrieval over a large index of real queries is faster and fresher than generation—the system retrieves actual queries users have submitted, which are guaranteed to be natural—and the asymmetry lets the model learn what makes a suggestion contextually appropriate."
+  },
+  {
+    "gid": 1077,
+    "deep_why": "Multimodal question answering benefits from multiple retrieval experts each specializing in different knowledge types, yet no single expert works for every question. A gating mechanism learns to route to the right expert(s) conditioned on the reasoning state, so the model dynamically picks which knowledge to consult. Stepwise reward training teaches the model to coordinate all experts by giving fine-grained feedback on each retrieval step. This works because different questions need different evidence sources, and learning to choose adaptively based on ongoing reasoning is more flexible than committing to one rigid retrieval strategy upfront."
+  },
+  {
+    "gid": 1078,
+    "deep_why": "Biomedical claim verification requires sound reasoning chains backed by evidence, yet inference-time evidence is often incomplete and scaling LLMs is expensive. Reasoning distillation transfers reasoning traces from a powerful model into a smaller one by teaching it to follow the same logical steps. The data pipeline filters for traces leading to correct answers and mixes web and gold evidence during training so the small model learns to reason robustly with imperfect sources. This works because reasoning is a learnable skill separable from model size—once reasoning steps are made explicit and filtered for correctness, a smaller model can internalize them and apply them efficiently to new claims."
+  },
+  {
+    "gid": 1079,
+    "deep_why": "Complex fact-checking requires iteratively retrieving evidence and reasoning over it to verify multi-hop claims. Reinforcement learning trains a model to make both retrieval and reasoning decisions using only final correctness labels and structural rewards, without explicit reasoning annotations. A two-stage curriculum first trains reasoning on gold evidence, then jointly trains retrieval and reasoning on real evidence, reducing harmful interference between the two objectives. This works because the model can learn to decompose verification into sensible retrieval and reasoning steps by optimizing for final correctness, and staging the learning lets each component stabilize before coupling introduces complexity."
+  }
+]

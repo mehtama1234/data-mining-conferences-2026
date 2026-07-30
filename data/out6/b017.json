@@ -1,0 +1,62 @@
+[
+  {
+    "gid": 255,
+    "deep_why": "The core task is finding geographic coordinates from web pages without relying on fixed page layouts. The method works because clues scattered across different unstructured pages still follow a consistent statistical pattern: pages from the same location tend to mention related place names, weather details, or service configurations. By clustering pages and comparing them against search results, the system identifies these signals reliably. This statistical consistency holds because real-world infrastructure reveals its location through repeated contextual hints that search engines can verify, letting precise geolocation become possible from noisy fragments."
+  },
+  {
+    "gid": 256,
+    "deep_why": "The core problem is predicting chemical properties of polymers without requiring experts to manually configure complex data workflows. The method works because a conversational agent orchestrates step-by-step data handling and feeds structured molecular descriptions to a model trained on multiple related chemical properties simultaneously. By learning shared patterns across many properties at once, the model generalizes better than training separate predictors, since polymer structures influence their properties through common underlying chemistry. This multi-task sharing lets non-experts obtain accurate predictions while keeping the system accessible through natural language instructions."
+  },
+  {
+    "gid": 257,
+    "deep_why": "The task is ranking items for users based on long sequences of their past interactions, filtering out noise to surface true preferences. The method works because user behavior naturally has hierarchical structure: sessions group related clicks together, and within sessions some items matter more than others. By first learning representations that respect this session structure through masked item modeling, then focusing attention only on items identified as truly relevant, the system reduces computation and amplifies real preference signals. This two-stage approach succeeds because the underlying user behavior genuinely contains exploitable temporal and semantic organization."
+  },
+  {
+    "gid": 258,
+    "deep_why": "The task is understanding how talking-head research has evolved and what methods work. The insight is that by analyzing published works and datasets over time, patterns emerge showing what the field priorities shifted from: initial focus on realistic individual frames evolved toward synchronizing speech with motion and expressing emotion authentically. This pattern holds because the choice of what problems to solve and how to measure success reflects fundamental tradeoffs—early realism constraints gave way to naturalness and temporal coherence as cameras and animation improved. Tracking these shifts provides a roadmap for future work by showing which obstacles were overcome and which remain."
+  },
+  {
+    "gid": 259,
+    "deep_why": "The goal is removing specific information from language models while preserving their general abilities. The method works by adjusting only the output layer's word representations, which acts as a translation between abstract model thinking and output words. This targeting succeeds because harmful concepts exist in the model's internal transformations, and by preventing certain words from being selected at output time, you block expression of that concept without corrupting the rest of the model's knowledge. The approach is sound because this semantic-to-word mapping is the final step where the model chooses what to say, making it an efficient point to intervene."
+  },
+  {
+    "gid": 260,
+    "deep_why": "The task is estimating how central each node is in temporal networks—how often it appears on fastest paths. The core challenge is that in real networks, most nodes have zero centrality, overwhelming any learning system toward always predicting zero. The method works by using contrast: grouping nodes by their true centrality levels in representation space pushes different groups apart, so the model learns to discriminate between them despite extreme imbalance. This clustering-based separation works because it forces the system to find features that distinguish central nodes from non-central ones, rather than defaulting to the majority class."
+  },
+  {
+    "gid": 261,
+    "deep_why": "The task is explaining predictions made by graph neural networks on evolving knowledge graphs. The method works by identifying causal subgraphs—the actual graph structures that drove the prediction—rather than just correlations. This is sound because knowledge graphs encode true semantic relationships, so subgraphs representing causality must respect both the graph structure and semantic meaning. By using a structural causal model that captures multi-step knowledge dependencies and contrastive learning that separates real causal paths from spurious correlations, the system isolates genuine explanations. This works because causal explanations and semantic coherence should align in well-constructed knowledge graphs."
+  },
+  {
+    "gid": 262,
+    "deep_why": "The goal is recommending citations for papers—predicting which prior works should be referenced. The method works by retrieving relevant papers from a large corpus and generating citation suggestions, where both retrieval and generation are tuned using contrastive learning on examples of real citation relationships. This succeeds because citations follow discoverable patterns: papers reference works solving related problems or building on similar techniques. By learning these relationship patterns through contrastive training, the system can match new papers to appropriate prior work. The two-level structure (list-level and position-specific) succeeds because citation decisions operate at both granularities in real writing."
+  },
+  {
+    "gid": 263,
+    "deep_why": "The question is whether blockchain auction mechanisms can resist collusion among miners and multiple users. The result shows that any mechanism vulnerable to two-person collusion is also vulnerable to larger collusions under consistent tie-breaking rules. This is sound because if three parties can always coordinate better outcomes than two, then a mechanism robust to two-party coalitions would allow three to break it by choosing which two coordinate at each step. The mathematical structure of collusion opportunities means small collusions demonstrate the fundamental weakness; deterring only large coalitions leaves exploitable gaps."
+  },
+  {
+    "gid": 264,
+    "deep_why": "The task is fine-tuning large tabular models—systems trained on massive data that already perform well without adjustment. The finding is that improving these models further depends heavily on the specific model and data characteristics, and often full fine-tuning actually hurts performance. This makes sense because these models already capture general patterns, so adjustment risks overfitting on small datasets or degrading well-calibrated confidence estimates. Successful fine-tuning requires matching the adjustment method to data properties: meta-learning helps with tiny datasets, while parameter-efficient adjustment works under specific conditions. The core insight is that more training is not inherently beneficial when starting from an already-capable foundation."
+  },
+  {
+    "gid": 265,
+    "deep_why": "The task is recommending items without storing per-user embeddings, ID-based features, or graph networks. The method works by replacing traditional per-user representations with language model representations of items and dynamically computing preferences from item similarities. This succeeds because language models encode semantic meaning—items with similar descriptions serve similar purposes—and user preferences emerge from patterns in which items they interact with. By avoiding stored user embeddings, the system eliminates memory costs; by using pre-trained language representations instead of raw IDs, it handles new items naturally; and contrastive learning finds which item combinations reflect user taste. This design works because user preferences are fundamentally about matching items they like, not memorized user profiles."
+  },
+  {
+    "gid": 266,
+    "deep_why": "The task is semantic segmentation for flood damage assessment on drones with limited network bandwidth. The method works by having each drone process its own images locally, then sharing only high-level semantic summaries and key features instead of raw pixel data, reducing transmitted information vastly. This succeeds because semantic meaning—what objects are present and their locations—survives aggressive compression and dimensionality reduction better than raw image detail. By adaptively weighting these lightweight summaries when combining knowledge from multiple drones, the system builds accurate flood risk maps. This approach works because semantic-level information carries the decision-relevant content while consuming fraction the bandwidth."
+  },
+  {
+    "gid": 267,
+    "deep_why": "The goal is translating Southeast Asian languages accurately despite scarce training data and high computational costs. The method works by using an intelligent agent to identify the most valuable training examples from available data—focusing on those culturally appropriate and linguistically representative—rather than using everything. This succeeds because targeted training on high-quality, expert-validated examples teaches models faster and more reliably than noise-filled massive datasets. By filtering for cultural fit and linguistic correctness upfront, the model learns proper language nuances efficiently. This approach is sound because model learning is fundamentally about pattern quality, not volume; the right few examples outweigh misdirected millions."
+  },
+  {
+    "gid": 268,
+    "deep_why": "The task is inferring which websites Tor users visited from encrypted network traffic patterns. The core challenge is that real traffic is highly variable—different subpages of the same website look different, and network conditions constantly change. The method works by learning flexible representations that capture the essential fingerprint of each website despite this variation, using large-scale training on diverse unlabeled traffic. This succeeds because while surface details change, the underlying traffic signature of accessing specific website infrastructure remains recognizable. By fine-tuning these learned representations with a lightweight classifier, the system adapts to new traffic patterns efficiently. The approach works because stable structural signatures persist beneath surface variability."
+  },
+  {
+    "gid": 269,
+    "deep_why": "The task is distinguishing very similar objects that differ semantically—recognizing fine visual distinctions that matter for classification. The challenge is that such distinctions often require seeing subtle feature differences and understanding context from surrounding information. The method works because modern vision systems with transformer architectures can localize attention to small discriminative regions, and by combining visual analysis with language descriptions and metadata, ambiguity resolves through multiple signal sources. Data augmentation, especially generative augmentation, helps by showing these distinctions from varied perspectives. This approach succeeds because true visual understanding emerges from combining precise spatial attention with semantic context, not raw pixel-level accuracy."
+  }
+]

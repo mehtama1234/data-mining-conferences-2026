@@ -1,0 +1,62 @@
+[
+  {
+    "gid": 120,
+    "deep_why": "The core question is whether malicious validators can secretly accumulate blocks without detection, then reveal them to gain unfair rewards. The method works because in Polkadot's hybrid predictability model, some validators know their selection timing in advance, creating a window to act selfishly while their identity remains hidden from other validators making concurrent decisions. This predictability gap means honest validators proceed assuming the selfish pool is behaving, so when the pool suddenly publishes withheld blocks, the ledger accepts them as valid since they satisfy the consensus rules. The attack succeeds because it exploits a fundamental trade-off: predictability that helps the system run smoothly also lets informed actors temporarily hide their true intentions."
+  },
+  {
+    "gid": 121,
+    "deep_why": "The cost of running a retrieval system comes from token processing—each document fetched and analyzed consumes computation. The attack works by poisoning the knowledge base with documents that are semantically related enough to be retrieved when users ask normal questions, but once retrieved, force the model to consume vastly more tokens to process them or fail safely. This exploits the mismatch between retrieval relevance, which is optimized for topical match, and inference cost, which depends on document length and complexity. The vulnerability exists because the retrieval stage is designed to maximize recall of potentially useful information, not to filter for computational efficiency."
+  },
+  {
+    "gid": 122,
+    "deep_why": "The problem computes the smallest set of monitoring nodes that can cover all edges throughout a window of time, where each monitor remains active for only a limited duration. The approach is sound because vertex cover on static graphs has well-understood approximation limits, and this temporal version adds a second dimension: the lifespan constraint creates an additional scheduling layer. By analyzing this as a layered problem where each time slot has independent coverage requirements, yet monitors can be reused across slots, the algorithm leverages the fact that any temporal covering solution can be decomposed into static coverings for each time window. This lets them apply classical hardness results and approximation techniques to a dynamic setting."
+  },
+  {
+    "gid": 123,
+    "deep_why": "The system must decide online when to allocate shared units to rental requests, where each allocation incurs an immediate cost and a variable duration before the unit becomes free. The fractional relaxation computes the ideal cost if units could be continuously divided and reused with perfect foresight, then rounding converts this ideal plan into whole-number decisions. The rounding works because the price-based fractional solution respects budget constraints that remain valid after discretization, and the online rounding scheme ensures that when a request must be answered with incomplete information, the decision still maintains competitive guarantees. The method succeeds because it separates the planning problem—finding optimal fractional costs—from the commitment problem—rounding decisions irrevocably."
+  },
+  {
+    "gid": 124,
+    "deep_why": "The platform assembles comprehensive profiles of historical figures by consolidating fragmented textual records into structured biographical data, then uses this to guide language models to respond in character during role-playing interactions. The approach works because role-playing is fundamentally a retrieval and conditioning problem: when a model has access to biographical, familial, and event-based details about a historical figure, it can ground its responses in documented facts rather than hallucinating, making the interaction both more accurate and more engaging. The improvement over baseline models reflects that better conditioning—via structured context—reduces the model's uncertainty about what response is appropriate for a given character."
+  },
+  {
+    "gid": 125,
+    "deep_why": "The core question is whether automated systems can repair broken scientific code by diagnosing failures and applying fixes that restore correct output. The method works by separating two repair strategies: prompting the model with increasingly rich context at each step, and giving an agent the ability to inspect files, make edits, and re-run the code to verify success. Repair succeeds when the output matches ground truth, not merely when code executes, because this forces the system to reason causally about which failures matter. The prompt-based approach succeeds by escalating from basic error messages to full code structure, while the agent approach succeeds by creating a feedback loop where each failed repair attempt informs the next action."
+  },
+  {
+    "gid": 126,
+    "deep_why": "Hallucinations in knowledge graph answers occur when facts are correct but relationships are inverted or misdirected. The method treats this as a graph alignment problem: it extracts the claimed facts into a graph structure and compares them against reference knowledge using structural scoring rather than generating new text. For simple cases, pattern matching rapidly converts text to graph form and checks structural consistency by scoring how well entities align when mapped correctly versus incorrectly. For complex cases, a learned energy function measures the consistency of a proposed alignment, training it to assign low energy to correct directions and high energy to reversed ones. This approach wins because structural properties are checkable without generation, eliminating latency and interpretability costs."
+  },
+  {
+    "gid": 127,
+    "deep_why": "Opinion spread follows temporal patterns where emotions and hierarchical depth interact—some sentiments propagate faster at reply level versus root comments, and earlier posts create memory effects on later ones. The method models this using Hawkes processes combined with graph networks: a Hawkes process quantifies how past events increase the likelihood of future similar events, parameterized by emotional and structural dimensions. The framework works because Hawkes processes have interpretable rate parameters that directly represent propagation strength and temporal decay, and graph networks add structure by only allowing influence along comment hierarchies. By decomposing propagation into these interpretable pieces, they can measure the actual mechanisms driving opinion spread rather than just predicting outcomes."
+  },
+  {
+    "gid": 128,
+    "deep_why": "Different tabular models use incompatible input formats and preprocessing steps, forcing practitioners to rewrite code for each one or give up entirely. The library solves this by standardizing interfaces: all models accept the same structured input specification and outputs, so a single training loop works across different backends. The value comes from the fact that model selection and hyperparameter choices are already hard problems; fragmenting this further by requiring model-specific code makes good practice nearly impossible. By hiding implementation differences behind a unified API, practitioners can swap models and compare fairly using consistent evaluation metrics."
+  },
+  {
+    "gid": 129,
+    "deep_why": "Cross-modal retrieval must match images to text by aligning their meaning, but real data shows many-to-many relationships where multiple samples share similar semantics. The method constructs hypergraphs where multiple samples connect via shared labels, creating group-level semantic associations beyond pairwise comparisons. This works because pairwise matching treats each item as independent, missing that three images of 'dogs' should be jointly closer to the word 'dogs' than any single image alone; hyperedges capture this collective structure. Bidirectional cross-attention lets both images and text drive the alignment, avoiding the asymmetry of traditional methods, ensuring that semantic meaning flows symmetrically between modalities."
+  },
+  {
+    "gid": 130,
+    "deep_why": "Large language models struggle to select tools from huge repositories because retrieval systems match user queries to tool documentation, but documentation may use different vocabulary than the query or miss user intent. The method uses reinforcement learning to jointly optimize query rewriting and tool selection: it learns to rephrase user requests to better match tool descriptions, and learns which tools to try given a description. This works because RL rewards successful tool invocations, creating a feedback signal on the entire pipeline rather than just the retrieval ranking. The agent autonomously discovers strategies like broadening queries to catch related tools or narrowing them to avoid noise, generalizing to out-of-domain queries."
+  },
+  {
+    "gid": 131,
+    "deep_why": "News recommendation normally ranks articles by similarity to past preferences, but proactive recommendation must guide users toward a target topic while maintaining engagement. The approach quantifies each user's openness—their tolerance for novelty based on reading patterns—then selects intermediary articles that blend target relevance with immediate interest satisfaction. This works because user receptiveness is not all-or-nothing; measuring it empirically from history reveals who can accept a wider range of topics and who prefers comfort. By modulating the balance between matching current interest and steering toward the target according to openness, the system makes gradual guidance feel natural rather than jarring."
+  },
+  {
+    "gid": 132,
+    "deep_why": "Users asking conversational questions often phrase them ambiguously—'my application is slow' could mean network, memory, or configuration issues, each requiring different diagnostic steps. The system models this as a hypothesis space: multiple interpretations of the question map to different regions in a knowledge graph, each implying different solutions. It queries the user by selecting questions that most efficiently eliminate hypotheses, continuing until only one interpretation remains plausible. This approach works because the ambiguity is structural, rooted in which subgraph of the knowledge base applies, not merely linguistic variety; targeted probing collects the minimum information needed to narrow that structure."
+  },
+  {
+    "gid": 133,
+    "deep_why": "Graph neural networks fail badly on out-of-distribution inputs when the decision boundary becomes sharp—small input changes flip predictions. The method diagnoses this as a loss landscape sharpness problem: sharp regions mean the model learned brittle decision rules that do not generalize. Sharpness-aware minimization finds flatter regions where small perturbations do not change predictions, implying the learned rules are robust. The approach works because flat minima generally contain decision boundaries that are stable to input shifts; an energy-based formulation makes this intuition tractable by measuring the cost to perturb any input into misclassification, which correlates with landscape sharpness."
+  },
+  {
+    "gid": 134,
+    "deep_why": "Static data visualizations convey facts but miss latent visual properties that trigger insight and creativity—things like cognitive patterns, color emotional associations, or design space that viewers can reinterpret. The study reveals that engagement grows when designers explicitly craft these hidden properties: ignorance mapping signals what you do not know to reduce cognitive overload, creative unblocking uses filtering and interactivity to encourage exploration, and symbolic representation uses color or shape to evoke emotion and empathy. These properties work because they address how humans actually interpret visualizations—not just as literal data encodings, but as tools for sense-making and reflection."
+  }
+]

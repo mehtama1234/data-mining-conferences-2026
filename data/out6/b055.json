@@ -1,0 +1,62 @@
+[
+  {
+    "gid": 825,
+    "deep_why": "PMIScore estimates how much a response reveals about conversation history by measuring the surprise reduction when conditioning is revealed. The underlying principle is that truly engaged responses are less surprising given prior context—they follow naturally—while disengaged or generic ones remain surprising. This works because dialogue coherence depends on responses being shaped by their history; a coherent conversation contains less mutual redundancy than a random pairing. By learning this score via a dual form of divergence without computing the intractable probability directly, they sidestep the explosion of possible dialogue combinations while still capturing whether each response is appropriately responsive to its history."
+  },
+  {
+    "gid": 826,
+    "deep_why": "A pre-trained model learned on broad image understanding can be adapted to a narrower domain—MMS spam detection—because the underlying visual features that distinguish spam categories (malicious content types) overlap with features the model learned on general image data. Fine-tuning concentrates the model's decision boundary around those specific categories while preserving the rich visual representations already captured. This works because the visual patterns marking inappropriate images—composition, color, object presence—are concrete and recognizable once the model attends to spam-specific examples; the adaptation is efficient because the hard work of learning what makes images distinguishable is already done."
+  },
+  {
+    "gid": 827,
+    "deep_why": "JitterSketch filters flows in three stages to isolate jittery ones by removing noise from stable and infrequent flows, which dominate most traffic but carry no jitter signal. The principle is that sketching algorithms handle streaming data by maintaining compact summaries that proportionally represent rare, high-variance events while safely discarding common, predictable ones. This works for network jitter because jittery flows are the minority; the three-stage structure efficiently separates this signal by progressively tightening thresholds, so measurement effort concentrates on flows where it matters for Quality of Service."
+  },
+  {
+    "gid": 828,
+    "deep_why": "LLM-generated fake news headlines exhibit consistent linguistic patterns—higher toxicity, negative sentiment, heavier reliance on authority framing—because generative models optimize for plausibility and emotional impact within fixed word budgets, leading them to favor extreme lexical choices. These patterns are mathematically reliable across generations because they reflect the underlying statistical biases the model learned, not random variation. Detectors can exploit these consistent markers by treating them as stable distinguishing features; the more robust the linguistic signal, the better few-shot and guided classification performs, since the underlying model can anchor decisions to these recurring patterns."
+  },
+  {
+    "gid": 829,
+    "deep_why": "Speculative decoding works by having a small, fast model draft candidate next tokens, then checking them against a large model. When the fast model handles easy cases correctly—which it does for many tokens in simpler queries—verification is quick, netting speedup. For sparse mixture-of-experts, the insight is that only a small subset of routing decisions matter for most tokens; using few routers as a draft still captures correctness for straightforward inputs. GPU memory becomes a cache for expert weights; adaptively accepting draft results when confidence is high avoids verification overhead, and this works because the draft model's uncertainty correlates with whether verification will accept or reject."
+  },
+  {
+    "gid": 830,
+    "deep_why": "A user-needs agent clarifies ambiguous queries; a librarian agent retrieves candidates; a domain-expert proxy agent ranks results by discussing them with the librarian. This pipeline works because each agent solves the part of the problem it's designed for: disambiguation reduces vocabulary mismatch, retrieval explores the space efficiently, and expert-proxy evaluation leverages knowledge the user lacks. The multi-turn discussion between librarian and proxy agents is key—it surfaces whether a candidate truly matches the refined need by reasoning over domain criteria that the user couldn't articulate alone."
+  },
+  {
+    "gid": 831,
+    "deep_why": "Multi-view classification extracts evidence from multiple views and combines it, but different views have different reliability: some views contain confusable classes (intra-view ambiguity), others are noisier than peers (inter-view quality gaps). An adaptive regularization that reflects these disparities is sounder than uniform regularization, because it avoids over-penalizing inherent uncertainty in poor-quality views while tightening constraints where evidence is reliable. This works because the classification loss already captures which views disagree; weighting regularization by these disagreement patterns aligns the objective with the true trade-off between conformity and confidence in each view's contribution."
+  },
+  {
+    "gid": 832,
+    "deep_why": "Text-attributed graphs combine topology and semantics, creating two surfaces for adversarial attack—structure and text. Existing attacks target one backbone at a time, but universal attacks must fool both GNNs and language models, a much harder constraint. The insight is to use language models themselves to reason about graph knowledge and generate perturbations that are semantically natural yet globally disruptive: the model understands both what makes graphs coherent and what language sounds convincing. This works because a perturbation that a language model finds natural is more likely to transfer across architectures than raw noise, since naturality is a shared objective."
+  },
+  {
+    "gid": 833,
+    "deep_why": "Chain-of-Thought reasoning burns computation on many queries that don't need it—factoid lookups, simple classification—wasting energy and cost. EcoThink trains a lightweight router to assess query complexity and skip reasoning for easy cases, keeping it only for logic requiring deliberation. This works because query complexity is predictable from structure and content: factoid queries have different patterns than reasoning queries. By routing early and accepting the small router's modest error rate, the framework trades negligible accuracy loss for major energy savings since most web queries are actually simple."
+  },
+  {
+    "gid": 834,
+    "deep_why": "Multimodal fact-checking must reason over both images and text to evaluate claims; existing methods treat images and text separately, missing cross-modal evidence. The framework retrieves semantically relevant evidence images and text, then refines both through reasoning and reinforcement feedback from correct fact-checks. This works because evidence is most useful when diverse (images + text) and semantically aligned (related to the claim). Reinforcement tuning on broad datasets exploits the signal in correct vs. incorrect predictions to steer reasoning toward explanations that actually improve verification, amplifying reasoning power without manual annotation."
+  },
+  {
+    "gid": 835,
+    "deep_why": "Fake news uses both semantic camouflage (writing style mimicry) and structural manipulation (altered propagation). No single detector—GNN or language model alone—catches both tactics; they are complementary experts. One-class classification constrains true news to a compact region, identifying outliers as fake without needing many labeled fake examples, solving the scarcity problem. Consensus between independent experts builds pseudo-labels for unlabeled data with high confidence. This works because the two experts are differently fooled; their disagreement signals something suspicious even without labels, and their agreement on unlabeled data is reliable because both must independently judge it."
+  },
+  {
+    "gid": 836,
+    "deep_why": "Prediction on relational databases requires discovering features across multiple tables without labels. A schema-selection agent identifies relevant tables, a generation agent creates candidate features, and a filtering agent ranks them by validation or reasoning. This iterative approach works because feature discovery in relational data is a guided search: starting with plausible tables narrows the space, generating diverse candidates explores it, and validation-based filtering keeps only features that actually improve prediction. The loop terminates when no new useful features emerge, a principled way to balance exploration against overfitting in an unlabeled setting."
+  },
+  {
+    "gid": 837,
+    "deep_why": "Federated recommendation systems preserve privacy by training locally, but suffer when users have few interactions (sparse data) locally and items have few ratings globally. The method enriches sparse user embeddings by aggregating auxiliary embeddings from similar users, since similar users likely value similar items; poor-quality items are boosted by selecting clients with diverse item embeddings, ensuring the global model sees multiple perspectives. This works because similarity in user space correlates with complementary item knowledge, and client diversity ensures global training doesn't miss items; both exploit the structure of collaborative data without sharing raw user interactions."
+  },
+  {
+    "gid": 838,
+    "deep_why": "Graph neural networks capture both structure and node attributes by propagating information across layers. Explanations reveal which nodes or features drive a model's decisions by perturbing them. For influence maximization, the insight is that influential groups are those whose removal most harms network function or learning; explanation-based ranking identifies such groups by showing what the learned model found most predictive. Relaxing the combinatorial optimization problem with performance guarantees finds an efficient solution; this works because explanation gradients correlate strongly with true influence—the model learned to weight actually important nodes."
+  },
+  {
+    "gid": 839,
+    "deep_why": "Language models tend toward confirmation bias, over-emphasizing prior user interests and ignoring diverse perspectives. Chain-of-thought reasoning can counteract this by explicitly simulating sentiment-aware decision paths that consider multiple viewpoints. The method extracts sentiment from reviews, then tracks sentiment-based reasoning chains with human-like operations: backtracking (reconsidering), discarding (rejecting biased conclusions), retaining (keeping sound ones), aggregating (combining viewpoints). This works because reasoning steps make bias visible and correctable; by explicitly modeling sentiment from multiple sources, the process forces consideration of contradictory signals that the model might otherwise ignore, mechanically reducing the tendency to reinforce existing preferences."
+  }
+]

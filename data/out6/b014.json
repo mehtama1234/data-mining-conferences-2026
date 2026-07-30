@@ -1,0 +1,62 @@
+[
+  {
+    "gid": 210,
+    "deep_why": "Quantum computers can explore superpositions of candidate recommendations simultaneously, collapsing to the best match when measured. Unlike classical search that checks candidates one-by-one, quantum superposition lets the system evaluate many possibilities in parallel. This is sound because quantum interference amplifies correct answers and cancels noise. When encoding user preferences and item features in quantum states, this interference naturally surfaces the strongest matches—solving the real problem of sifting through millions of items fast enough to recommend timely."
+  },
+  {
+    "gid": 211,
+    "deep_why": "Real temporal networks repeat similar structures across many snapshots, creating hidden redundancy that wastes storage and computation. The method extracts the common backbone by finding shared frequency components across time—the stable modes that appear consistently rather than noise. This works because stable structural patterns genuinely recur: communities don't dissolve and reform randomly each day. Identifying and keeping only these durable patterns compresses the graph while preserving who-connects-to-whom relationships, enabling efficient analysis of evolving networks without losing the essential social structure."
+  },
+  {
+    "gid": 212,
+    "deep_why": "Hypergraph neural networks face a dilemma: spreading information far enough to see long-range connections risks blurring everyone into the same representation. Curved geometric spaces (Riemannian geometry) let message-passing change behavior locally—bending the rules differently in different regions. This works because Riemannian spaces allow natural adaptation without globally uniform assumptions. By locally adjusting how information flows through bottlenecks in each neighborhood, the system balances the need for distant communication in some areas against preventing representation collapse in others, handling both tightly-connected and loosely-connected hypergraph patterns."
+  },
+  {
+    "gid": 213,
+    "deep_why": "Blockchain finality gadgets lock transactions irreversibly, but this VeChain attack exploits a gap in their voting protocol. When an honest block can only finalize with 19% probability despite meeting requirements, the consensus mechanism has failed to properly weight validator stakes or vote thresholds. The attack works because the protocol's mathematical guarantee—that sufficient honest stake makes finality certain—breaks down in their implementation. This critical weakness lets adversaries reverse finalized blocks, violating the foundational property blockchain users depend on: once you confirm a transaction, it stays confirmed."
+  },
+  {
+    "gid": 214,
+    "deep_why": "Federated learning trains models across clients with mismatched data without sharing raw information, but data augmentation designed for one client's data shape breaks another's. The method learns a shared policy that anticipates unseen local variations by guiding augmentation choices toward robustness before testing. This works because local policy search can measure impact on held-back client data, catching harmful augmentations before they spread globally. Personalizing the policy for each client's actual data distribution closes the gap between what helps globally and what helps locally, preserving accuracy while keeping privacy intact."
+  },
+  {
+    "gid": 215,
+    "deep_why": "Poisoning attacks inject fake knowledge into retrieval systems, then those retrieved fakes contaminate the language model's output. Defenses separate suspicious from trusted retrieval results using redundancy: if multiple independent sources all agree, they're likely clean. This is sound because false injected content rarely survives cross-checking—adversaries can't poison every source everywhere. By isolating contamination through consensus among retrieved items, the system rejects isolated poisoned snippets while trusting broadly-witnessed facts. This protects downstream reasoning against coordinated attacks, restoring reliability even in open environments."
+  },
+  {
+    "gid": 216,
+    "deep_why": "Restaurant survival depends on how embedded the business is in the local review network—central positions with many connections signal stability, while isolated restaurants fail more often. The method scores each restaurant's structural position in the evolving customer-review graph and tracks how that position changes over time. This works because network position is a causal factor: central nodes get more visibility, repeat business, and word-of-mouth boost, directly improving odds of survival. Temporal evolution matters because persistent embededness predicts staying power, while sudden isolation signals trouble. Combining position with time dynamics lets models forecast survival more reliably."
+  },
+  {
+    "gid": 217,
+    "deep_why": "Language models sometimes invent plausible-sounding false facts when facts lie outside their training. Knowledge graphs store explicit true relationships, grounding answers in real data rather than hallucination. The system uses the graph as a factual anchor: retrieving relevant knowledge-graph paths narrows what the language model can say to actual documented relations. This works because constraining output to follow verified relationships kills the freedom to confabulate. For medical knowledge where accuracy is critical, adding graph guidance forces transparency—users see which facts came from the graph versus reasoning—catching errors before harm."
+  },
+  {
+    "gid": 218,
+    "deep_why": "Web energy consumption doesn't always correlate with loading time—a slow browser action and a power-hungry computation feel different but both drain batteries. The method predicts energy tier directly from page structure and content features rather than relying on performance scores alone. This is sound because structural choices (layout complexity, animation frequency, script volume) mechanically consume power independent of perceived speed. Measuring energy from design features rather than timing gives more accuracy because the underlying cause—how hard the device works—appears directly in the code structure. Developers get actionable insight: which design choices truly save energy."
+  },
+  {
+    "gid": 219,
+    "deep_why": "Semantic graphs in decentralized systems have two problems: missing node attributes and incomplete edges. Standard federated learning assumes complete data, so incomplete graphs degrade learning badly. The method estimates structural gaps privately across clients using rate-distortion theory, then fills missing edges while leaving attributes private. This works because rate-distortion mathematically balances reconstruction accuracy against information leakage—it provably generates plausible relations without revealing sensitive details. By pooling estimates of the incomplete structure shape without sharing raw data, clients can collaboratively improve local representations while maintaining privacy, solving both incompleteness and privacy together."
+  },
+  {
+    "gid": 220,
+    "deep_why": "Security rules vary radically across vendors (Splunk, Microsoft, Google use different syntax for the same logic), making rules hard to port. The method creates an intermediate neutral representation capturing the detection logic, then checks that converted rules behave identically to originals on test data. This is sound because if two rules fire on the same threat in controlled experiments, they're functionally equivalent despite syntax differences. Adding automated retrieval of vendor documentation addresses schema mismatches directly. By verifying behavior rather than trusting syntax conversion alone, the system ensures converted rules catch threats reliably, letting organizations reuse rules across platforms."
+  },
+  {
+    "gid": 221,
+    "deep_why": "Multimodal meme detection uses both images and text, but real data often has broken text (bad OCR or missing captions). Standard methods collapse when half the input vanishes. The solution projects image and text independently into a shared representation space, so each modality can contribute even alone. This works because shared space guarantees compatibility: an image-only embedding can still activate the correct category because the training built the space to align modalities. Text absence becomes less damaging because visual features can fully activate harmful-content decisions. Robustness emerges naturally when modalities don't rigidly depend on each other but instead converge to the same meaning."
+  },
+  {
+    "gid": 222,
+    "deep_why": "Automated documentation (model cards, dataset cards) fails because templates are static while paper structures vary wildly, and metadata in repositories is often incomplete. The method refines extraction queries iteratively, asking increasingly specific questions to capture context-dependent information. This works because documents discuss similar concepts in different sections; asking smarter follow-up questions surfaces hidden details. Cross-referencing similar cards fills missing fields by copying semantically-close content from completed examples. Iteration and borrowing transform sparse, scattered information into complete standardized documentation, giving AI systems transparent, trustworthy descriptions."
+  },
+  {
+    "gid": 223,
+    "deep_why": "Better retrieval doesn't automatically improve reasoning—sometimes extra retrieved passages confuse rather than help. The method chains evidence: finding documents that directly support each other rather than isolated facts. This is sound because a chain of references (document A supports claim in B, B cites C) forms a coherent argument that reasoning systems can follow. Isolated facts might be true but irrelevant or contradictory; chained evidence creates a path from question to answer. Optimizing for evidence chains lowers irrelevant noise while strengthening the reasoning link, turning retrieval improvement into actual reasoning accuracy."
+  },
+  {
+    "gid": 224,
+    "deep_why": "Clustering seeks to minimize maximum distance from points to nearest cluster center, but naive algorithms may pick all centers from one demographic group, leaving others unrepresented. The fairness constraint requires balanced group representation among centers. The streaming algorithm achieves this by maintaining dual invariants: covering point distances well while respecting group quotas as data arrives. This works because Euclidean geometry lets the algorithm pack points efficiently while satisfying constraints—curved spaces have slack that allows tighter bounds than abstract metric spaces. Approximation ratio 4.46 proves the trade-off is unavoidable but quantified, guaranteeing both good coverage and demographic fairness even on massive real-time social network data."
+  }
+]

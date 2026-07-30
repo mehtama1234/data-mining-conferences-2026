@@ -1,0 +1,62 @@
+[
+  {
+    "gid": 435,
+    "deep_why": "Information cocoons emerge from the mutual reinforcement of social sharing and algorithmic ranking working together. When both forces act in tandem—your friends share articles, algorithms show similar ones, others see and share them too—the feedback loop amplifies faster than either mechanism alone could manage. This feedback is mathematically guaranteed to intensify when one person's view becomes another's feed. The key insight is that heterogeneous systems (social plus algorithmic) produce emergent effects through this mutual reinforcement. Understanding why filter bubbles worsen when both forces act together is crucial for policy and designing interventions."
+  },
+  {
+    "gid": 436,
+    "deep_why": "Large reasoning models produce characteristic output patterns depending on whether they encountered training data previously. When reasoning traces reveal familiar content, the model generates confident, structured thinking; on unfamiliar content, it backtracks and hedges more. These traces lie in measurable space where the path from hesitant to confident is continuous. The attack locates a query's position along this recall-to-inference axis. This membership signal is mathematically sound because training exposure genuinely shapes the internal consistency of reasoning—it must, since training adjusts how the model thinks. This privacy risk lets attackers detect data reuse without accessing the model's internal scores."
+  },
+  {
+    "gid": 437,
+    "deep_why": "Informed consent is only valid when people actually comprehend what they agree to; comprehension depends directly on how clearly information is presented and whether they can read it. A user study measuring what low-literacy participants understand reveals the barrier precisely. When 85% don't grasp basic permissions, that gap is real, not assumed. This principle applies here because consent validity is not theoretical—it stands on measurable human understanding. The reason this matters is that predatory apps exploit this comprehension gap to extract permissions and exploit financial vulnerability."
+  },
+  {
+    "gid": 438,
+    "deep_why": "Multiple relationships between two entities interact—some amplify each other, others inhibit. Combining them requires capturing these interactions, not just averaging independently. Two nodes connected by multiple relationship types experience effects that depend on whether those types reinforce or suppress each other, which a simple sum would miss. This principle is mathematically sound because interaction is real: people who share interests often interact socially (amplification), while buying and returning inhibit each other. The prediction problem—whether a link will form or an item will convert—requires knowing how adding a new relationship type shifts the overall strength."
+  },
+  {
+    "gid": 439,
+    "deep_why": "Keeping lightweight models accurate on moving drones depends on detecting when vision accuracy degrades, then rapidly retraining or switching to a better prior model. This adaptive strategy is guaranteed to maintain performance because it acts on measured confidence loss. As drones move through new scenes constantly, detecting when the model fails signals when retraining will help; avoiding retraining when the model still works conserves battery. This principle applies because the drift is real and measurable in each frame. Devices with limited power and computation need to stay accurate without constantly retraining from scratch."
+  },
+  {
+    "gid": 440,
+    "deep_why": "Where people spend time and money reveals their income and circumstances; aggregating these patterns across people in an area reconstructs fine-grained demographic details. This approach is mathematically sound because behavior choices correlate with income: expensive restaurants and boutique shopping cluster in high-income areas, budget stores in low-income areas. The principle works because these patterns repeat within neighborhoods—homophily in location and spending is real. Instead of costly census updates, analyzing business-interaction graphs provides current, detailed information for urban planning without new data collection."
+  },
+  {
+    "gid": 441,
+    "deep_why": "Understanding why humans fall for AI-generated text or misinformation requires separating cause from correlation using causal reasoning. Testing humans with different AI outputs and measuring which factors predict error reveals the true mechanism. The finding that exposure to fake news correlates with better detection (r=0.35) shows that prior experience is the active ingredient, not political affiliation. This principle works because causal models test competing hypotheses against evidence rather than assuming plausible stories. Interventions based on the true cause—cognitive source monitoring—will succeed where demographic targeting would fail."
+  },
+  {
+    "gid": 442,
+    "deep_why": "Generating synthetic text-image pairs that preserve the inconsistencies real fakes have expands the training distribution without manual curation. Generative models learn which patterns of misalignment characterize fake news; generating new examples of these combinations teaches detectors to recognize the mistake patterns, not just the specific fakes in the original data. This is mathematically sound because diversity in training examples reduces overfitting to particulars. The principle applies because fake news mixes text and images in systematic ways; new synthetic examples fill gaps and prevent collapse to the biases in limited real datasets."
+  },
+  {
+    "gid": 443,
+    "deep_why": "Time-series data concentrate energy at certain time scales (slow drift, daily cycles) and sparsely elsewhere; filling gaps incorrectly corrupts this structure. The noise-injection process succeeds by adding less noise to scales with strong existing signals, preserving fine detail. This is mathematically sound because energy distribution across frequencies is invariant—disturbing it differently at each scale destroys information. The principle applies because real sensor data strictly follows this multiresolution structure. Filling gaps incorrectly corrupts anomaly detection and monitoring downstream."
+  },
+  {
+    "gid": 444,
+    "deep_why": "Learning to classify with multiple labels from incomplete views while new labels appear requires avoiding the exponential explosion of missing-view patterns. Decomposing any pattern from a small set of atomic components converts exponential parameter overhead into linear growth. This is mathematically sound because any missing-view scenario can be expressed as combinations of basic patterns; representing these as simple components avoids learning separate full models for each combination. The principle works because web applications demand handling incomplete data across constantly changing categories without retraining."
+  },
+  {
+    "gid": 445,
+    "deep_why": "Creating short codes standing for rich concepts and aligning them to user-rating patterns ensures recommendations reflect real taste. Collaboration signals reveal what users actually prefer; making codes capture this ground truth prevents them from drifting into semantically sophisticated but predictively useless space. This principle is sound because user-item interactions are the true signal—codes aligned to this ground truth steer generation toward what people genuinely want. Quick recommendation generation needs dense meaningful codes; codes trained only on language patterns miss user-preference patterns."
+  },
+  {
+    "gid": 446,
+    "deep_why": "Predicting user preferences by weighing semantic similarity to historical choices adapts the model's general knowledge. When past choices resemble the current item, historical taste dominates; when they don't, general knowledge dominates. This is mathematically sound because semantic similarity measures actual conceptual likeness—high similarity means the person's experience applies; low similarity means the model's training corpus is more relevant. The principle works because preferences are fundamentally personal; similar-past signals identify when general knowledge and individual taste align versus conflict."
+  },
+  {
+    "gid": 447,
+    "deep_why": "Synthetic text reuse converges—rare patterns disappear, distribution homogenizes—unless you explicitly generate toward underrepresented regions. Finding rare cases in embedding space and steering generation toward those gaps enriches the tail in the next generation, combating collapse. This is mathematically sound because rare patterns, if ignored in generation, vanish in retraining cycles; explicit gap-filling prevents this compounding loss. The principle applies because synthetic reuse is feedback: each generation must maintain the tail or it shrinks. Preserving tail coverage prevents model collapse and maintains ability to handle unusual inputs."
+  },
+  {
+    "gid": 448,
+    "deep_why": "Maintaining service discovery during network outages uses semantic type relationships to find functional substitutes and gossip-based spreading to survive node failures. If the exact service isn't available but a compatible alternative exists, the query succeeds anyway. This is mathematically sound because service hierarchies (a specialized sensor is a kind of sensor) are real; epidemic gossip ensures replicas drift minimally. The principle applies because edge networks partition frequently; static registries fail. Gossiping replicas and semantic matching keep orchestration working despite disruption."
+  },
+  {
+    "gid": 449,
+    "deep_why": "Large pretrained image models encode broad visual knowledge; adapting them to new tasks requires only small parameter adjustments, not full retraining. Most learned features are task-general; only final decision-making and task-specific details need adjustment. This is mathematically sound because pretraining discovers features (edges, textures, shapes, objects) that transfer across visual domains—these don't need to be relearned. The principle applies because the bulk of useful representation is already learned. Deploying powerful models across many downstream tasks demands fast, cheap adaptation without the memory cost of retraining everything."
+  }
+]

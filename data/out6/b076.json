@@ -1,0 +1,62 @@
+[
+  {
+    "gid": 1140,
+    "deep_why": "The core problem is finding compact codes that remain discriminative when facing deliberate attacks. The key insight is that good retrieval codes need diverse frequency patterns in their learned features, but adversarial training forces the model toward only low-frequency patterns. By analyzing the spectral composition, they can identify which frequencies matter for retrieval and which are vulnerable, then selectively preserve the robust ones while removing unstable ones. This lets them defend against attacks without losing the rich information needed for accurate image matching."
+  },
+  {
+    "gid": 1141,
+    "deep_why": "When learning new relationships with few examples, models over-rely on old knowledge, causing confusion. The insight is that not all prior knowledge helps—some directly contradicts new facts at structural or semantic levels. By identifying conflicting patterns and selectively forgetting them, the model's internal representations stay consistent and don't get pulled in opposite directions by old and new data simultaneously. This targeted forgetting works because removing contradictions unblocks the model to learn new patterns clearly with minimal examples."
+  },
+  {
+    "gid": 1142,
+    "deep_why": "Standard reranking optimizes for proxy signals like human labels, but those don't align with whether answers are actually correct. The method models the downstream reader as an environment and optimizes for final answer quality directly through reward signals. This works because you now train the ranker on the ground truth objective—what matters is whether the information ranked first helps generate correct answers. By aligning the training goal with the actual task success, ranking decisions naturally improve end-to-end performance."
+  },
+  {
+    "gid": 1143,
+    "deep_why": "This is a position paper defining research pillars and gaps in privacy-preserving information retrieval. It surveys existing defenses and identifies where they fall short—data leakage through generation pipelines, incomplete protection across system stages, and evolving threat models. The paper's reasoning is that systematic gaps exist between what privacy mechanisms promise and what they actually protect, and closing these gaps requires grounding research in user needs, regulatory requirements, and end-to-end system design rather than isolated components."
+  },
+  {
+    "gid": 1144,
+    "deep_why": "The core insight is that traditional benchmarks measure systems in isolation, but deployed systems compete in ecosystems with user switching and market dynamics. Market forces like early-adoption advantages and switching costs shape outcomes differently than pure accuracy does. By simulating repeated interactions with evolving user preferences, they can measure metrics like market share and retention that reveal how systems perform under real competitive pressure. This captures effects invisible in static benchmarks but critical for predicting deployment success."
+  },
+  {
+    "gid": 1145,
+    "deep_why": "The central observation is that synthesis-based systems hide exploration, comparison, and source inspection from users, compressing multiple search stages into a single response. Many users import mental models of exhaustive, perfect systems rather than retrieval-ranked systems. This systematic mismatch causes users to minimize query reformulation and trust system completeness without verification. Understanding these faulty assumptions explains observed behavior—users act rationally given their wrong mental model of what the system is actually doing."
+  },
+  {
+    "gid": 1146,
+    "deep_why": "The core computation is decomposing relevance into query-specific likelihood and query-independent document utility instead of computing it all at query time. The principle is that posteriors factor into components when conditions are met, allowing offline precomputation of what doesn't change between queries. By learning priors reflecting document quality independent of the current question, they can fuse those offline scores with online signals, shifting expensive computation away from query time. This preserves ranking quality while reducing inference cost."
+  },
+  {
+    "gid": 1147,
+    "deep_why": "Standard retrieval systems assume stable queries and reliable interpretation, but dementia causes cognitive fluctuation, unstable signals, and multi-user involvement. The paper argues that temporal modeling of cognitive decline, caregiver oversight, consent-aware disclosure, and adaptive complexity are functional requirements, not optional features. Why this matters: current systems systematically fail for this population because they ignore the core constraint—cognition varies within sessions. Addressing it requires redesign, not adding features to systems built on wrong assumptions."
+  },
+  {
+    "gid": 1148,
+    "deep_why": "The problem is that record-level revocation (deleting documents) can appear to work while still disclosing the prohibited fact in generated answers—a compliance gap invisible to single metrics. The audit mechanism runs before-and-after comparisons and separates retrieval suppression from answer-level leakage, measuring both compliance and collateral damage to legitimate utility. This works because paired testing isolates whether revocation actually prevents disclosure in practice, revealing failures where individual metrics only measure fragments of compliance."
+  },
+  {
+    "gid": 1149,
+    "deep_why": "Retrieval evaluation assumes that metric improvements correspond to real-world user benefit, but most evaluations drastically abstract from actual information seeking experience. The central question is validity: do observed metric gains predict actual effectiveness in practice? The paper argues for examining this assumption directly through user studies and alignment checks, because optimizing solely for current metrics can inadvertently degrade the actual experience. Validity matters because without it, benchmark improvements become decoupled from the goal of serving users well."
+  },
+  {
+    "gid": 1150,
+    "deep_why": "The Wilcoxon test assumes metric scores are paired and each pair's difference can be ranked, treating it as non-parametric. But in retrieval evaluation, the critical assumption that ranks can meaningfully compare across different topics fails—a difference of five ranks means different things on different queries. When this assumption breaks, the test's Type I error control collapses, yielding false positives that appear statistically safe. The paper shows through TREC data that the test regularly fails in IR settings, making continued use methodologically unsound."
+  },
+  {
+    "gid": 1151,
+    "deep_why": "The vision is a single agent unifying search, recommendation, and conversation by modeling the user's situation, content relevance, task structure, and preferences jointly. The principle is that minimizing user effort and system cost requires understanding how each mode serves the current context—when to search versus recommend, how to adapt based on feedback. By formalizing this as probabilistic inference and a decision process, they can derive optimal interaction strategies that adapt mode selection to what users actually need, rather than implementing isolated systems."
+  },
+  {
+    "gid": 1152,
+    "deep_why": "Bundle recommendation combines bundle creation (editing) and selection (recommendation), and they mutually influence each other. The reproducibility study implements both stages and reveals that edited bundles are often low quality, item replacement is a bottleneck, and performance degrades when both stages run together. The core finding is systematic limitation: neither stage is designed for the pipeline as a whole, only for isolation. Success requires redesigning bundle creation to anticipate recommendation needs and vice versa, not treating them separately."
+  },
+  {
+    "gid": 1153,
+    "deep_why": "Query reformulation generates multiple variants, but executing full retrieval and generation for all is expensive. Query performance prediction traditionally estimates difficulty; here it discriminates among variants of the same question. The method works because lightweight pre-retrieval predictors can rank variants without running full pipelines, saving computation. However, variants optimal for ranking metrics often fail for answer generation—a utility gap meaning retrieval quality doesn't guarantee answer quality. Predictors must learn to anticipate generation fidelity, not just ranking scores."
+  },
+  {
+    "gid": 1154,
+    "deep_why": "Many LLM-based query reformulation methods report gains, but under heterogeneous experimental conditions, making it unclear which findings are robust. This reproducibility study controls all variables and evaluates ten methods across LLM sizes, retrieval paradigms, and datasets. Key findings: gains depend heavily on retrieval type—methods work with one retriever but not another—and larger models don't uniformly help. This matters because reported improvements were actually artifacts of experimental setup choices, not general principles, misleading the field about which techniques actually transfer."
+  }
+]

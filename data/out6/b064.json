@@ -1,0 +1,62 @@
+[
+  {
+    "gid": 960,
+    "deep_why": "The method decomposes time series into trend and periodic oscillations using sums of sines and cosines. This works because these trigonometric functions form a complete mathematical basis—meaning any smooth periodic signal can be expressed as a weighted combination of them, a principle from harmonic analysis. The key insight is that real physical phenomena like climate cycles genuinely ARE built from underlying oscillations at different frequencies that repeat predictably. By learning which frequencies are present and how strong each one is, plus accounting for time shifts unique to each frequency, the model directly captures the repeating pattern structure that explains the data. This lets the system make accurate forecasts for new time periods without needing complex learned rules."
+  },
+  {
+    "gid": 961,
+    "deep_why": "Advertising platforms face a timing mismatch: they decide bids immediately after clicks but only observe true purchase outcomes hours or days later, forcing them to guess about delayed conversions. Survival analysis models the probability that a purchase will eventually occur, given how much time has passed since the click—it naturally handles incomplete information about future events. The mathematical guarantee is that survival curves respect monotonicity and properly account for the passage of time as information arrives. By accurately predicting which delayed clicks will convert before they actually do, the platform can set bid prices correctly upfront instead of learning through costly mistakes. This transforms guesswork into principled forecasting."
+  },
+  {
+    "gid": 962,
+    "deep_why": "Real recommendation systems operate in stages that influence each other: how items are collected as candidates affects what models learn, and what the model learns changes what gets ranked and shown. The method treats all three stages as a connected whole instead of independently optimized pieces. The soundness principle is that implicit relationships between users, products, and actions carry predictive signal—if you capture these structured relationships once during preparation, condition training on them consistently, and adapt them at serving time, the system converges toward choices that cohere across the full pipeline. This avoids the costly situation where each stage second-guesses the previous one, instead building mutual reinforcement."
+  },
+  {
+    "gid": 963,
+    "deep_why": "Friend recommendation in massive social graphs requires handling millions of users and connections, which traditional graph algorithms cannot scale through. The approach borrows a proven technique from language understanding: treating local subgraphs (friends' friends) as sequences to process through specialized text-understanding models. This works because both domains have the same structure—entities in context, relationships between nearby elements—and pre-trained models learn transferable reasoning about \"who connects to whom\" from scale. The guarantee is that transformer models excel at capturing contextual relationships in sequences, and a social network is exactly that: a sequence of local connections. Efficiency follows because these models are built for handling large-scale sequential patterns."
+  },
+  {
+    "gid": 964,
+    "deep_why": "Recommendation systems naturally narrow recommendations to a user's primary interests because optimizing only for accuracy rewards showing more of what users definitely like. Calibration enforces a constraint: recommendations should match the actual proportion of user interests across categories, preventing over-concentration. The mathematical foundation is that user preferences are genuinely multi-faceted—users care about multiple topics in different amounts—and ignoring the lesser interests is missing real intent even if it temporarily boosts engagement metrics. By requiring output proportions to match input proportions, the system respects the user's actual interest distribution. Over time, this honest representation prevents filter bubbles and captures the full range of what users actually want to discover."
+  },
+  {
+    "gid": 965,
+    "deep_why": "Graphs change over time as new users join and relationships form, yet models trained once forget old patterns when learning from new data—a catastrophic erosion called catastrophic forgetting. The method maximizes mutual information between representations learned in consecutive time periods, ensuring they stay aligned. The principle is that representations capturing overlapping information preserve understanding of stable structures in the graph. By keeping embeddings from different time periods mutually informative, the model maintains continuity: new information refines old insights rather than erasing them. This built-in continuity constraint prevents the collapse that occurs when learning ignores what came before."
+  },
+  {
+    "gid": 966,
+    "deep_why": "Users bundle items for strategic reasons—adding filler to meet shipping thresholds—creating patterns that existing methods confuse with genuine preferences. The framework uses diffusion models, which build up complex patterns by starting with noise and gradually adding structure, to learn purchasing behavior across space and time. Information bottleneck theory then acts as a mathematical sieve: it enforces which signals flow through and which get filtered out, letting the system learn exploratory versus repetitive patterns separately. The guarantee is that information theory quantifies information flow precisely, so constraining flows forces specific decomposition. By explicitly separating these two behavior types mathematically, the model understands the actual drivers behind purchases rather than treating all items as equally intentional."
+  },
+  {
+    "gid": 967,
+    "deep_why": "Conversational AI systems often contradict themselves implicitly—saying something now that conflicts with earlier statements or commonsense rules about a stated persona—but catching these requires understanding what should be true about a consistent character. Building a commonsense knowledge graph about personas creates an explicit map of which statements align with which personas. The method then recognizes responses that violate this map and rewrites them into consistency. The soundness principle is logical coherence: if a system's outputs all respect the same implicit rules, they will appear consistent. By making rules explicit and measurable, the system can detect and fix violations before they confuse users. This transforms persona consistency from an implicit hope into an explicit, verifiable property."
+  },
+  {
+    "gid": 968,
+    "deep_why": "Inverse propensity scoring reweights training data to correct for selection bias—situations where certain items are shown more often to certain users than the true data distribution warrants. However, reweighting can harm performance if some items become overweighted, and the real benefit often comes from the learning richer representations across multiple tasks simultaneously. The analysis reveals that the actual mechanism isn't just unbiased risk reduction but rather the diversity of learning signals created by trying to predict multiple things at once. This multi-task diversity organically improves how well the model generalizes. Understanding the true mechanism matters because it suggests focusing directly on learning diverse representations rather than chasing the promise of unbiasedness alone, avoiding reweighting pitfalls."
+  },
+  {
+    "gid": 969,
+    "deep_why": "E-commerce queries are ambiguous and product catalogs constantly change, making static expansion rules fail. The system trains a language model through a loop: propose query expansions, watch which results users click on from the expanded search, and adjust predictions based on real system feedback. The mathematical principle is reinforcement learning: if a choice produces a reward, increase the probability of making that choice again. The guarantee holds because the search engine provides unambiguous feedback—users interact with retrieved results, showing which expansions actually worked. By iteratively improving choices based on real-world outcomes rather than guessing from training data alone, the system converges toward expansions that match current products and user behavior. This eliminates the gap between offline training and production reality."
+  },
+  {
+    "gid": 970,
+    "deep_why": "Language models work well for sequential recommendation but are too large and slow for devices with limited memory and computational power. Singular value decomposition breaks down model parameters into a small set of core components that capture most of the original information while discarding redundancy—achieving compression mathematically proven to retain essential structure. Combined with tokenization normalization that prepares the remaining parameters to work smoothly together, this significantly shrinks the model. Progressive alignment then refines compressed layers one by one, maintaining accuracy as compression increases. The guarantee is that most redundancy in large models is noise; removing it carefully preserves the core functionality. This lets powerful sequential reasoning run on phones without rebuilding from scratch."
+  },
+  {
+    "gid": 971,
+    "deep_why": "Graph neural networks assume connected nodes share similar properties (homophily), but real networks have bridge nodes—connectors between different groups—where neighbors have opposing properties, violating this assumption and breaking the model. The approach identifies these critical nodes and applies a different aggregation rule that prevents smoothing away important differences. The principle is that information smoothing, which works well among similar nodes, becomes harmful when neighbors actually disagree. By measuring which nodes are bridges using graph structure alone and treating them specially, the system avoids the mathematical pathology that sinks standard models. Preserving differences where they matter prevents the false consensus that kills performance on heterogeneous networks."
+  },
+  {
+    "gid": 972,
+    "deep_why": "New users with no history pose a cold-start problem: traditional graph and sequence methods have nothing to learn from. The approach combines text descriptions with graph structure—both describe the same entities from different angles. Transformer models excel at extracting meaning from language, so treating product descriptions as sequences to understand alongside their graph positions creates multiple views of each entity. The principle is that the same entity looks similar in both text space and structure space if you've learned good representations, and forcing alignment between views amplifies the shared signal. This redundancy provides signal even when interaction history is absent, grounding the system in inherent properties rather than behavioral history."
+  },
+  {
+    "gid": 973,
+    "deep_why": "Cold-start sequential recommendation breaks when users lack history because models have no behavioral patterns to learn. The system first isolates the user's interactions most likely to reveal true preferences, filtering noise from accidental clicks. Then it uses causal inference to identify which factors actually drive purchasing behavior versus which just correlate, and conditions a diffusion model on these true drivers to generate realistic synthetic behavior. The guarantee from causal logic is that conditioning on causes, not mere correlations, produces realistic predictions because causes are the generative mechanism. By identifying true preference drivers and using them to seed behavior generation, the model creates believable cold-start user profiles. This transforms missing history into generated-but-grounded alternatives."
+  },
+  {
+    "gid": 974,
+    "deep_why": "This is a workshop, not a research paper with a technical contribution, so no deep mathematical \"why\" applies—it's a venue announcement. The workshop aims to connect researchers and industry practitioners working on generative AI applications in streaming media services, facilitating knowledge exchange rather than proposing a novel method with mathematical guarantees."
+  }
+]

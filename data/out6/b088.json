@@ -1,0 +1,62 @@
+[
+  {
+    "gid": 1320,
+    "deep_why": "The core problem is learning user preferences when item interactions are sparse. The method works by combining two complementary signals: ID-based collaborative patterns, which reveal what people frequently bought together in dense regions of the catalog, and semantic features from a language model, which generalize across items using world knowledge. Where ID signals fade because an item is new or rarely purchased, semantic features carry meaning forward; where collaboration is strong and reliable, ID patterns are more trustworthy. Blending both sources lets the system use frequency signals where they're strongest and reasoning signals where data is thin, improving recommendations for both popular and novel items."
+  },
+  {
+    "gid": 1321,
+    "deep_why": "The core challenge is training web agents to browse and answer questions when real training data is scarce. The method works by generating questions from a knowledge graph grounded in actual web-verifiable evidence chains, then training with step-level feedback. Each reasoning step gets feedback based on whether that action led to eventual success, providing dense process supervision instead of just terminal outcomes. Because every intermediate choice is evaluated, the agent learns which actions tend to cascade toward answers, without the expense and brittleness of online trial-and-error. This dense feedback is mathematically sound because it directly optimizes for actions that correlate with success."
+  },
+  {
+    "gid": 1322,
+    "deep_why": "The core task is combining images, text, and audio into unified item codes for retrieval. The method works because each modality carries unique information: text may describe function, audio may reveal tone, images reveal appearance. When combined naively, one modality dominates the representation space, drowning out others. Cross-modal alignment forces the learned codes to respect each modality's signal equally by making codes from different inputs agree. This balance preserves all three viewpoints in the final representation, so retrieval decisions benefit from the full, diverse signal rather than a narrow slice."
+  },
+  {
+    "gid": 1323,
+    "deep_why": "The core problem is ranking documents by relevance when the criteria are complex and implicit. The method works by learning to write an intermediate reasoning step before the ranking decision. Relevance is not purely syntactic matching; human judges apply tacit knowledge about why a document answers a question. Reinforcement learning discovers reasoning patterns that correlate with high relevance scores, allowing the model to articulate the logic before committing to a ranking. This works because reasoning steps that predict ground-truth relevance must capture genuine criteria, making the ranking itself more robust to distribution shift and out-of-domain queries."
+  },
+  {
+    "gid": 1324,
+    "deep_why": "The core problem is reducing computation time during ranking without losing ranking quality. Token compression removes redundant tokens early, but early layers still contain raw syntactic details needed to assess relevance. The method applies compression at mid-layers where tokens have absorbed semantic meaning from their context, so information loss is minimized. This works because by this point, redundant tokens no longer carry unique information; removing them preserves the semantic signals needed for ranking while cutting computation. The result is faster inference with rankings intact."
+  },
+  {
+    "gid": 1325,
+    "deep_why": "The core challenge is resolving ambiguous queries like 'Wildflower' which denote restaurant, product, and flower simultaneously. The method works by grounding the language model in external sources: a catalog of available inventory and live web search results. When a query is ambiguous, the language model alone generates hallucinated guesses; external grounding removes this hallucination by anchoring interpretation in facts. Different sources disambiguate different meanings, so the system surfaces multiple valid interpretations rather than forcing a single guess. This external verification is mathematically sound because it replaces speculation with evidence."
+  },
+  {
+    "gid": 1326,
+    "deep_why": "The core challenge is conducting reliable online experiments when user populations are heterogeneous and many experiments run in parallel. The method works through three mechanisms: stratification balances demographic differences across test groups so treatment effects are cleanly isolated; power monitoring exposes underpowered tests before false positives spread; orthogonal assignment ensures concurrent experiments do not interfere with one another. Each mechanism addresses a specific noise source. By reducing noise and interference, the experiments yield trustworthy conclusions with higher precision, reducing costly wrong decisions."
+  },
+  {
+    "gid": 1327,
+    "deep_why": "The core problem is discovering product complements when co-purchase data is biased by visibility and popularity. The method works by removing popularity artifacts from raw co-purchase signals, then propagating evidence over a graph of similar items. Popular items appear together in many baskets regardless of complementarity due to exposure; debiasing filters this noise to reveal genuine complements. Graphs connect rare items to similar ones, letting co-purchase evidence flow across neighborhoods, so newly launched or infrequent items inherit signals from analogous products. This dual approach uncovers true complements across the long tail."
+  },
+  {
+    "gid": 1328,
+    "deep_why": "The core problem is building small embedding models that work across many different retrieval tasks. The method works by distillation, where a large model teaches a small one by example, and task-specific losses that emphasize matching examples relevant to each task. The large model has seen many patterns; distillation concentrates the most useful patterns into the compact model. Quantization regularization ensures embeddings remain robust when compressed to low-bit integers for deployment. Together, these techniques let a small model retain knowledge from large-scale training without the size overhead."
+  },
+  {
+    "gid": 1329,
+    "deep_why": "The core problem is matching query intent to products when users specify explicit attribute constraints like brand and color. Overall semantic similarity can mismatch these constraints; a product may be topically related but violate key attributes. The method works by resolving attributes in both query and products, then matching at the aspect level before aggregating. This fine-grained matching catches attribute violations that whole-item similarity misses. The system remains efficient because aspect resolution and matching reuse sparse, structured data; this preserves two-tower retrieval speed while gaining attribute awareness."
+  },
+  {
+    "gid": 1330,
+    "deep_why": "The core challenge is auditing peer review quality at scale when humans and language models collaborate in writing reviews. The method works through retrieval and authorship analysis: retrieval-based systems verify that reviewer claims are grounded in the submitted paper's actual content, catching unsupported assertions; authorship disentanglement traces reasoning ideas and writing text to their origins in human or model contribution. These mechanisms reveal transparency by showing whether reviews are substantive and whose work they represent. Auditing at scale via retrieval is sound because it directly checks whether claims have evidentiary support."
+  },
+  {
+    "gid": 1331,
+    "deep_why": "The core problem is combining keyword and semantic retrieval signals without forcing a hard choice between efficiency and relevance. The method works by co-training lexical and semantic representations in a shared backbone, then using consistency distillation to align their scores. Keyword retrieval captures exact intent through explicit terms; semantic retrieval captures meaning beyond keywords. Joint training ensures both signals cooperate; consistency distillation synchronizes their rankings so they agree on which documents score high. This alignment makes hybrid scoring stable and more powerful than either signal alone, since both are voting in concert rather than conflict."
+  },
+  {
+    "gid": 1332,
+    "deep_why": "The core problem is deploying language model agents efficiently when designing them on-the-fly for each request is expensive and unstable. The method works by retrieving pre-built agent profiles from a repository of twenty thousand proven agents instead of generating agents dynamically. Retrieval is fast and deterministic; each profile is vetted and reusable. For speed-critical systems, a small model can be trained to predict which agent to use directly. This approach works because agent construction is a retrieval problem not a generation problem—most queries benefit from one of the existing agents rather than a bespoke one."
+  },
+  {
+    "gid": 1333,
+    "deep_why": "The core problem is simulating merchant decisions at group level without costly online experiments while capturing both reasoned choices and implicit statistical regularities. The method works by mining behavioral policies from past decision sequences, then using these policies as a shared alignment layer for two parallel branches: an LLM-based reasoning branch and an ML-based fitting branch. Policies are observable decision rules that both branches respect, preventing the reasoning branch from over-inventing missing details and keeping the fitting branch interpretable. Fusing predictions from both branches combines reasoned adjustments with learned regularities, improving simulation accuracy."
+  },
+  {
+    "gid": 1334,
+    "deep_why": "The core problem is predicting which products users find engaging for a given query when historical engagement data is noisy and sparse for tail queries. The method works by learning directly from query-product text pairs labeled with actual engagement, rather than relying on historical statistics. Text pairs capture the real semantic match between what users asked for and what they found; this direct coupling removes noise from visibility bias and other confounds. Because the training signal is the actual semantic query-item relationship, not indirect engagement history, the model learns genuine preference signals that generalize to both sparse tail queries and broad intent discovery."
+  }
+]
