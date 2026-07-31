@@ -1,49 +1,49 @@
 {
- "n_analyzed": 1487,
+ "n_analyzed": 1537,
  "methods": [
   {
    "tag": "LLM",
-   "n": 292
+   "n": 298
   },
   {
    "tag": "retrieval/ranking",
-   "n": 181
+   "n": 182
   },
   {
    "tag": "graph neural nets",
-   "n": 115
+   "n": 124
   },
   {
    "tag": "multimodal",
-   "n": 105
+   "n": 107
   },
   {
    "tag": "benchmark/eval",
-   "n": 100
+   "n": 102
   },
   {
    "tag": "contrastive learning",
-   "n": 92
+   "n": 96
   },
   {
    "tag": "RAG",
-   "n": 89
+   "n": 91
   },
   {
    "tag": "recommendation",
-   "n": 81
+   "n": 82
   },
   {
    "tag": "attention",
-   "n": 73
+   "n": 76
   },
   {
    "tag": "reasoning",
-   "n": 68
+   "n": 69
   },
   {
    "tag": "reinforcement learning",
-   "n": 63
+   "n": 68
   },
   {
    "tag": "embeddings",
@@ -55,7 +55,7 @@
   },
   {
    "tag": "adversarial",
-   "n": 49
+   "n": 51
   },
   {
    "tag": "fine-tuning/PEFT",
@@ -63,81 +63,81 @@
   },
   {
    "tag": "distillation",
-   "n": 39
+   "n": 41
+  },
+  {
+   "tag": "diffusion",
+   "n": 41
   },
   {
    "tag": "fairness",
    "n": 39
   },
   {
-   "tag": "diffusion",
-   "n": 37
-  },
-  {
    "tag": "federated learning",
-   "n": 36
+   "n": 38
   },
   {
    "tag": "transformer",
-   "n": 34
+   "n": 37
   },
   {
    "tag": "mixture-of-experts",
-   "n": 31
-  },
-  {
-   "tag": "prompting",
-   "n": 26
+   "n": 33
   },
   {
    "tag": "clustering",
-   "n": 26
+   "n": 28
+  },
+  {
+   "tag": "prompting",
+   "n": 27
   },
   {
    "tag": "knowledge graph",
-   "n": 14
+   "n": 17
   }
  ],
  "theme_families": [
   {
    "family": "Other",
-   "n": 445
+   "n": 457
   },
   {
    "family": "Retrieval & Ranking",
-   "n": 232
+   "n": 235
   },
   {
    "family": "Recommendation",
-   "n": 216
+   "n": 223
   },
   {
    "family": "Graph learning",
-   "n": 128
+   "n": 133
   },
   {
    "family": "LLM methods & training",
-   "n": 118
+   "n": 125
   },
   {
    "family": "RAG & knowledge",
    "n": 61
   },
   {
+   "family": "Time series & anomaly",
+   "n": 53
+  },
+  {
    "family": "Security & robustness",
-   "n": 45
+   "n": 46
   },
   {
    "family": "Multimodal",
-   "n": 44
+   "n": 45
   },
   {
    "family": "Fairness & responsible",
    "n": 43
-  },
-  {
-   "family": "Time series & anomaly",
-   "n": 42
   },
   {
    "family": "LLM agents",
@@ -145,7 +145,7 @@
   },
   {
    "family": "Misinformation & social",
-   "n": 26
+   "n": 28
   },
   {
    "family": "Reasoning & QA",
@@ -157,7 +157,7 @@
   },
   {
    "family": "Efficiency",
-   "n": 11
+   "n": 12
   },
   {
    "family": "Recsys: cold-start/cross-domain",

@@ -1,0 +1,112 @@
+[
+ {
+  "gid": 2039,
+  "venue": "KDD 2026",
+  "title": "Nip Rumors in the Bud: Retrieval-Guided Topic-Level Adaptation for Test-Time Fake News Video Detection",
+  "abstract": "Fake News Video Detection (FNVD) is critical for social stability. Existing methods typically assume consistent news topic distribution between training and test phases, failing to detect fake news videos tied to emerging events and unseen topics. To bridge this gap, we introduce RADAR, the first framework that enables test-time adaptation to unseen news videos. RADAR pioneers a new retrieval-guided adaptation paradigm that leverages stable (source-close) videos from the target domain to guide robust adaptation of semantically related but unstable instances. Specifically, we propose an Entropy Selection-Based Retrieval mechanism that provides videos with stable (low-entropy), relevant references for adaptation. We also introduce a Stable Anchor-Guided Alignment module that explicitly aligns unstable instances' representations to the source domain via distribution-level matching with their stable references, mitigating severe domain discrepancies. Finally, our novel Target-Domain Aware Self-Training paradigm can generate informative pseudo-labels augmented by stable references, capturing varying and imbalanced category distributions in the target domain and enabling RADAR to adapt to the fast-changing label distributions. Extensive experiments demonstrate that RADAR achieves superior performance for test-time FNVD, enabling strong on-the-fly adaptation to unseen fake news video ",
+  "doi": "10.1145/3770854.3780211",
+  "url": "https://www.semanticscholar.org/paper/b4093d56ef22dab9de8968bcfee11d13cee6f766",
+  "pdf": null,
+  "arxiv": "2601.11981"
+ },
+ {
+  "gid": 2040,
+  "venue": "KDD 2026",
+  "title": "MixTTE: Multi-Level Mixture-of-Experts for Scalable and Adaptive Travel Time Estimation",
+  "abstract": "Accurate Travel Time Estimation (TTE) is critical for ride-hailing platforms, where errors directly impact user experience and operational efficiency. While existing production systems excel at holistic route-level dependency modeling, they struggle to capture city-scale traffic dynamics and long-tail scenarios, leading to unreliable predictions in large urban networks. In this paper, we propose \\model, a scalable and adaptive framework that synergistically integrates link-level modeling with industrial route-level TTE systems. Specifically, we propose a spatio-temporal external attention module to capture global traffic dynamic dependencies across million-scale road networks efficiently. Moreover, we construct a stabilized graph mixture-of-experts network to handle heterogeneous traffic patterns while maintaining inference efficiency. Furthermore, an asynchronous incremental learning strategy is tailored to enable real-time and stable adaptation to dynamic traffic distribution shifts. Experiments on real-world datasets validate MixTTE significantly reduces prediction errors compared to seven baselines. MixTTE has been deployed in DiDi, substantially improving the accuracy and stability of the TTE service.",
+  "doi": "10.1145/3770854.3783940",
+  "url": "https://www.semanticscholar.org/paper/bc11192caa850769b4ccbc8d395447f1768b79b9",
+  "pdf": null,
+  "arxiv": "2601.02943"
+ },
+ {
+  "gid": 2041,
+  "venue": "KDD 2026",
+  "title": "FilDeep: Learning Large Deformations of Elastic-Plastic Solids with Multi-Fidelity Data",
+  "abstract": "The scientific computation of large deformations in elastic-plastic solids is crucial in various manufacturing applications. Traditional numerical methods exhibit several inherent limitations, prompting Deep Learning (DL) as a promising alternative. The effectiveness of current DL techniques typically depends on the availability of high-quantity and high-accuracy datasets, which are yet difficult to obtain in large deformation problems. During the dataset construction process, a dilemma stands between data quantity and data accuracy, leading to suboptimal performance in the DL models. To address this challenge, we focus on a representative application of large deformations, the stretch bending problem, and propose FilDeep, a Fidelity-based Deep Learning framework for large Deformation of elastic-plastic solids. Our FilDeep aims to resolve the quantity-accuracy dilemma by simultaneously training with both low-fidelity and high-fidelity data, where the former provides greater quantity but lower accuracy, while the latter offers higher accuracy but in less quantity. In FilDeep, we provide meticulous designs for the practical large deformation problem. Particularly, we propose attention-enabled cross-fidelity modules to effectively capture long-range physical interactions across MF data. To the best of our knowledge, our FilDeep presents the first DL framework for large deformation",
+  "doi": "10.1145/3770854.3783959",
+  "url": "https://www.semanticscholar.org/paper/c1645c9c8dde15f56448595fb85d4025d4ea489f",
+  "pdf": null,
+  "arxiv": "2601.10031"
+ },
+ {
+  "gid": 2042,
+  "venue": "KDD 2026",
+  "title": "SynSym: A Synthetic Data Generation Framework for Psychiatric Symptom Identification",
+  "abstract": "Psychiatric symptom identification on social media aims to infer fine-grained mental health symptoms from user-generated posts, allowing a detailed understanding of users' mental states. However, the construction of large-scale symptom-level datasets remains challenging due to the resource-intensive nature of expert labeling and the lack of standardized annotation guidelines, which in turn limits the generalizability of models to identify diverse symptom expressions from user-generated text. To address these issues, we propose SynSym, a synthetic data generation framework for constructing generalizable datasets for symptom identification. Leveraging large language models (LLMs), SynSym constructs high-quality training samples by (1) expanding each symptom into sub-concepts to enhance the diversity of generated expressions, (2) producing synthetic expressions that reflect psychiatric symptoms in diverse linguistic styles, and (3) composing realistic multi-symptom expressions, informed by clinical co-occurrence patterns. We validate SynSym on three benchmark datasets covering different styles of depressive symptom expression. Experimental results demonstrate that models trained solely on the synthetic data generated by SynSym perform comparably to those trained on real data, and benefit further from additional fine-tuning with real data. These findings underscore the potential of",
+  "doi": "10.1145/3770854.3785698 10.1145/3770854.3785698 10.1145/3770854.3785698",
+  "url": "https://www.semanticscholar.org/paper/c99785e24f5019c1f6f605fee624b48abf482da4",
+  "pdf": null,
+  "arxiv": "2603.21529"
+ },
+ {
+  "gid": 2043,
+  "venue": "KDD 2026",
+  "title": "Holistic Data Scheduler for LLM Pre-training via Multi-Objective Reinforcement Learning",
+  "abstract": "The composition of training data, governed by the diversity of sources and their mixing strategy, is a cornerstone of Large Language Model (LLM) pre-training. Online Data Mixing (ODM), the technique of adaptively adjusting data mixtures during training, has emerged as a promising direction to improve efficiency. However, existing methods are constrained by their reliance on a singular optimization perspective, which fundamentally overlooks the need for complex LLM pre-training to consider the dynamic data composition from multiple dimensions. To overcome this limitation, we introduce the Holistic Data Scheduler (HDS), a novel online data mixing framework. HDS formulates the data scheduling challenge as a reinforcement learning problem in a continuous control space and leverages the Soft Actor-Critic (SAC) algorithm for its stability and sample efficiency in exploring the high-dimensional policy space. At the core of HDS lies a novel multi-objective, holistic reward function that integrates three critical perspectives: a data-driven reward for quality, a loss-driven reward capturing inter-domain influence, and a model-driven reward based on weight norms. To validate our design and determine its optimal configuration, we conducted systematic experiments on LLMs of various sizes. On The Pile benchmark, HDS reaches the final validation perplexity of the next best method with 44% fe",
+  "doi": "10.1145/3770854.3780325",
+  "url": "https://www.semanticscholar.org/paper/ca3650bdda9a9ccb14cbbcb278dfbd7086331c4c",
+  "pdf": null,
+  "arxiv": "2606.24133"
+ },
+ {
+  "gid": 2044,
+  "venue": "KDD 2026",
+  "title": "Vistar: Enhancing the Perception Capability of LLMs under Imprecise IMU-Text Alignment",
+  "abstract": "This paper introduces Vistar, a novel self-supervised framework for inertial measurement unit (IMU) signal perception designed for large language models (LLMs). Unlike visual data, IMU signals are high-frequency time series with low interpretability, making manual annotation with natural language particularly challenging. Even when using vision-language models (VLMs) to describe events in videos synchronized with IMU signals, a semantic gap remains between high-level visual semantics and low-level IMU vibrations. The core idea of Vistar is to achieve accurate IMU signal perception through collaborations between offline cross-modal alignment and online retrieval-augmented generation. During offline training, Vistar uses pretrained vision and language encoders as anchors to learn IMU encoders via hierarchical cross-modal contrastive learning, establishing both inter- and intra-sample alignment. Given that the enhanced training strategy still fails to achieve precise alignment between IMU and text, during online inference, Vistar further employs a retrieval-augmented generation mechanism to generate distilled textual descriptions from similar text filtered based on structural relations of their paired IMU samples. Extensive evaluations on three multimodal datasets demonstrate that Vistar consistently outperforms state-of-the-art (SOTA) baselines by up to 57.45% in IMU-to-text retr",
+  "doi": "10.1145/3770854.3780181",
+  "url": "https://www.semanticscholar.org/paper/cf1fa7718d6ee0961a7adc7ccc19cb302be0a049",
+  "pdf": null,
+  "arxiv": null
+ },
+ {
+  "gid": 2045,
+  "venue": "KDD 2026",
+  "title": "AHA: Scalable Alternative History Analysis for Operational Timeseries Applications",
+  "abstract": "Many operational systems collect high-dimensional timeseries data about users/systems on key performance metrics. For instance, ISPs, content distribution networks, and video delivery services collect quality of experience metrics for user sessions associated with metadata (e.g., location, device, ISP). Over such historical data, operators and data analysts often need to run retrospective analysis; e.g., analyze anomaly detection algorithms, experiment with different configurations for alerts, evaluate new algorithms, and so on. We refer to this class of workloads as alternative history analysis for operational datasets. We show that in such settings, traditional data processing solutions (e.g., data warehouses, sampling, sketching, big-data systems) either pose high operational costs or do not guarantee accurate replay. We design and implement a system, called AHA (Alternative History Analytics), that overcomes both challenges to provide cost efficiency and fidelity for high-dimensional data. The design of AHA is based on analytical and empirical insights about such workloads: 1) the decomposability of underlying statistics; 2) sparsity in terms of active number of subpopulations over attribute-value combinations; and 3) efficiency structure of aggregation operations in modern analytics databases. Using multiple real-world datasets and as well as case-studies on production pip",
+  "doi": "10.1145/3770854.3783945",
+  "url": "https://www.semanticscholar.org/paper/e0247eb674fc9a122bad555da10d07899f665482",
+  "pdf": null,
+  "arxiv": "2601.04432"
+ },
+ {
+  "gid": 2046,
+  "venue": "KDD 2026",
+  "title": "Retain to Refine: Adaptive Online Question Answering via Query Routing and Long-Short Memory",
+  "abstract": "Large Language Models (LLMs) have shown strong capabilities in open-domain question answering (QA), but deploying them in real-world online systems introduces critical challenges. These include: (1) handling both simple and complex queries with appropriate levels of reasoning, (2) minimizing latency without compromising answer quality, and (3) maintaining answer consistency under evolving and noisy retrieval contexts. To address these challenges, we propose Retain-to-Refine (<i>R</i><sup>2</sup><i>R</i>), an adaptive agent-based QA framework designed for practical deployment. <i>R</i><sup>2</sup><i>R </i>integrates a Query Critic Agent (<i>QCA</i>) to assess query difficulty and route it accordingly: simple queries are answered directly using fast, prompt-based LLM calls, while complex queries are handled by a Memory Augmented Agent (<i>MAA</i>). <i>MAA </i>performs iterative reasoning guided by a unique <i>long-short memory mechanism</i>. Long-term memory retains and consolidates stable, core facts to ground the reasoning process, while short-term memory identifies transient information gaps to formulate highly focused subsequent queries. To ensure evidence quality, a <i>Supervised Retrospection </i>module validates and filters retrieved documents at each step. This agent-based design enables <i>R</i><sup>2</sup><i>R </i>to dynamically allocate computation based on question co",
+  "doi": "10.1145/3770854.3783919",
+  "url": "https://www.semanticscholar.org/paper/e991fbd43b77e98c1415690b8b1383ef7fb7a870",
+  "pdf": null,
+  "arxiv": null
+ },
+ {
+  "gid": 2047,
+  "venue": "KDD 2026",
+  "title": "Accelerating Storage-based Training for Graph Neural Networks",
+  "abstract": "Graph neural networks (GNNs) have achieved breakthroughs in various real-world downstream tasks due to their powerful expressiveness. As the scale of real-world graphs has been continuously growing, a storage-based approach to GNN training has been studied, which leverages external storage (e.g., NVMe SSDs) to handle such web-scale graphs on a single machine. Although such storage-based GNN training methods have shown promising potential in large-scale GNN training, we observed that they suffer from a severe bottleneck in data preparation since they overlook a critical challenge: how to handle a large number of small storage I/Os. To address the challenge, in this paper, we propose a novel storage-based GNN training framework, named AGNES, that employs a method of block-wise storage I/O processing to fully utilize the I/O bandwidth of high-performance storage devices. Moreover, to further enhance the efficiency of each storage I/O, AGNES employs a simple yet effective strategy, hyperbatch-based processing based on the characteristics of real-world graphs. Comprehensive experiments on five real-world graphs reveal that AGNES consistently outperforms four state-of-the-art methods, up to 4.1\u00d7 faster than the best competitor.",
+  "doi": "10.1145/3770854.3780309",
+  "url": "https://www.semanticscholar.org/paper/f2e8b63722ffbc0f84b0a7823e177a2df3365ae2",
+  "pdf": null,
+  "arxiv": "2601.01473"
+ },
+ {
+  "gid": 2048,
+  "venue": "KDD 2026",
+  "title": "RUQuant: Towards Refining Uniform Quantization for Large Language Models",
+  "abstract": "The increasing size and complexity of large language models (LLMs) have raised significant challenges in deployment efficiency, particularly under resource constraints. Post-training quantization (PTQ) has emerged as a practical solution by compressing models without requiring retraining. While existing methods focus on uniform quantization schemes for both weights and activations, they often suffer from substantial accuracy degradation due to the non-uniform nature of activation distributions. In this work, we revisit the activation quantization problem from a theoretical perspective grounded in the Lloyd-Max optimality conditions. We identify the core issue as the non-uniform distribution of activations within the quantization interval, which causes the optimal quantization point under the Lloyd-Max criterion to shift away from the midpoint of the interval. To address this issue, we propose a two-stage orthogonal transformation method, RUQuant. In the first stage, activations are divided into blocks. Each block is mapped to uniformly sampled target vectors using composite orthogonal matrices, which are constructed from Householder reflections and Givens rotations. In the second stage, a global Householder reflection is fine-tuned to further minimize quantization error using Transformer output discrepancies. Empirical results show that our method achieves near-optimal quantiza",
+  "doi": "10.1145/3770854.3780259",
+  "url": "https://www.semanticscholar.org/paper/f6d10d5b39a4600b4ebadd8573f1f6bf785cbe36",
+  "pdf": null,
+  "arxiv": "2604.04013"
+ },
+ {
+  "gid": 2049,
+  "venue": "KDD 2026",
+  "title": "AbFlow: End-to-end Paratope-Centric Antibody Design by Interaction Enhanced Flow Matching",
+  "abstract": "Antigen-antibody binding is a critical process in the immune response. Although recent progress has advanced antibody design, current methods lack a generative framework for end-to-end modeling of full-atom antibody structures and struggle to fully exploit antigen-specific geometric information for optimizing local binding interfaces and global structures. To overcome these limitations, we introduce AbFlow, a flow-matching framework that leverages optimal transport to design full-atom antibodies end-to-end. AbFlow incorporates an extended velocity field network featuring an equivariant Surface Multi-channel Encoder, which uses surface-level antigen interaction data to refine the antibody structure, particularly the CDR-H3 region. Extensive experiments in paratoep-centric antibody design, multi-CDRs and full-atom antibody design, binding affinity optimization, and complex structure prediction show that AbFlow produces superior antigen-antibody complexes, especially at the contact interface, and markedly improves the binding affinity of generated antibodies.",
+  "doi": "10.1145/3770854.3780296",
+  "url": "https://www.semanticscholar.org/paper/f8c9eb99faa8ba32d1d60f2b4233dc4317e93b38",
+  "pdf": null,
+  "arxiv": "2602.07084"
+ }
+]

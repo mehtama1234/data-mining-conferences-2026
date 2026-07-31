@@ -1,0 +1,502 @@
+{
+ "2000": {
+  "gid": 2000,
+  "venue": "KDD 2026",
+  "title": "CREAM: Continual Retrieval on Dynamic Streaming Corpora with Adaptive Soft Memory",
+  "abstract": "Information retrieval (IR) in dynamic data streams is a crucial task, as shifts in data distribution degrade the performance of AI-powered IR systems. To mitigate this issue, memory-based continual learning has been widely adopted for IR. However, existing methods rely on a fixed set of queries with ground-truth documents, which limits generalization to unseen data, making them impractical for real-world applications. To enable more effective learning with unseen topics of a new corpus without ground-truth labels, we propose CREAM, a self-supervised framework for memory-based continual retrieval. CREAM captures the evolving semantics of streaming queries and documents into dynamically structured soft memory and leverages it to adapt to both seen and unseen topics in an unsupervised setting. We realize this through three key techniques: fine-grained similarity estimation, regularized cluster prototyping, and stratified coreset sampling. Experiments on two benchmark datasets demonstrate that CREAM exhibits superior adaptability and retrieval accuracy, outperforming the strongest method in a label-free setting by 27.79% in Success@5 and 44.5% in Recall@10 on average, and achieving performance comparable to or even exceeding that of supervised methods.",
+  "doi": "10.1145/3770854.3780281",
+  "url": "https://www.semanticscholar.org/paper/006a9f5b8180244df4a69b4577b744bfc68624e4",
+  "pdf": null,
+  "arxiv": "2601.02708"
+ },
+ "2001": {
+  "gid": 2001,
+  "venue": "KDD 2026",
+  "title": "KAN-FIF: Spline-Parameterized Lightweight Physics-based Tropical Cyclone Estimation on Meteorological Satellite",
+  "abstract": "Tropical cyclones (TC) are among the most destructive natural disasters, causing catastrophic damage to coastal regions through extreme winds, heavy rainfall, and storm surges. Timely monitoring of tropical cyclones is crucial for reducing loss of life and property, yet it is hindered by the computational inefficiency and high parameter counts of existing methods on resource-constrained edge devices. Current physics-guided models suffer from linear feature interactions that fail to capture high-order polynomial relationships between TC attributes, leading to inflated model sizes and hardware incompatibility. To overcome these challenges, this study introduces the Kolmogorov\u2013Arnold Network-based Feature Interaction Framework (KAN-FIF), a lightweight multimodal architecture that integrates MLP and CNN layers with spline-parameterized KAN layers. For Maximum Sustained Wind (MSW) prediction, experiments demonstrate that the KAN-FIF framework achieves a 94.8% reduction in parameters (0.99MB vs 19MB) and 68.7% faster inference per sample (2.3ms vs 7.35ms) compared to baseline model Phy-CoCo, while maintaining superior accuracy with 32.5% lower MAE. The offline deployment experiment of the FY-4 series meteorological satellite processor on the Qingyun-1000 development board achieved a 14.41ms per-sample inference latency with the KAN-FIF framework, demonstrating promising feasibility f",
+  "doi": "10.1145/3770854.3783929",
+  "url": "https://www.semanticscholar.org/paper/00a198ba73b3dadd86037a50f4eb62c86a40d33a",
+  "pdf": null,
+  "arxiv": "2602.12117"
+ },
+ "2002": {
+  "gid": 2002,
+  "venue": "KDD 2026",
+  "title": "KFTD: Koopman-Fourier Time-Differentiable Network for Continuous Ocean Spatiotemporal Forecasting",
+  "abstract": "Accurate oceanic forecasting is critical for climate monitoring and disaster early-warning. However, ocean spatiotemporal forecasting encounters the double challenges of modeling complex dynamical systems and ensuring computational efficiency. We present Koopman\u2013Fourier Time-Differentiable (KFTD) Network, a time-continuous two-stage paradigm that decouples interpolation from prediction to achieve efficient and scalable spatiotemporal modeling. We map complex nonlinear dynamics into the Koopman linear space and exploit Fourier analysis to enable continuous-time interpolation at arbitrary sub-steps. A lightweight residual network consumes the high-fidelity intermediate states to yield the final forecast. Unlike diffusion models, KFTD eliminates multi-step noise sampling and directly evolves the system in continuous time, yielding a 4\u00d7 computational speed-up. We further introduce a D-PP Loss that supports arbitrary PDE constraints in an end-to-end manner, breaking the physical-consistency bottleneck of pure data-driven approaches. Empirical results on four ocean datasets confirm that our continuous-time framework reduces MSE by an average of 5.6% (up to 12.7% for SST) and improves efficiency over MCVD by 76.25%.",
+  "doi": "10.1145/3770854.3780278",
+  "url": "https://www.semanticscholar.org/paper/082cbf0ae49e5eee584befaa66e4f3e4cebc37b6",
+  "pdf": null,
+  "arxiv": "2606.17070"
+ },
+ "2003": {
+  "gid": 2003,
+  "venue": "KDD 2026",
+  "title": "SEW: Strengthening Robustness of Black-box DNN Watermarking via Specificity Enhancement",
+  "abstract": "To ensure the responsible distribution and use of open-source deep neural networks (DNNs), DNN watermarking has become a crucial technique to trace and verify unauthorized model replication or misuse. In practice, black-box watermarks manifest as specific predictive behaviors for specially crafted samples. However, due to the generalization nature of DNNs, the keys to extracting the watermark message are not unique, which would provide attackers with more opportunities. Advanced attack techniques can reverse-engineer approximate replacements for the original watermark keys, enabling subsequent watermark removal. In this paper, we explore black-box DNN watermarking specificity, which refers to the accuracy of a watermark's response to a key. Using this concept, we introduce Specificity-Enhanced Watermarking (SEW), a new method that improves specificity by reducing the association between the watermark and approximate keys. Through extensive evaluation using three popular watermarking benchmarks, we validate that enhancing specificity significantly contributes to strengthening robustness against removal attacks. SEW effectively defends against six state-of-the-art removal attacks, while maintaining model usability and watermark verification performance.",
+  "doi": "10.1145/3770854.3780272",
+  "url": "https://www.semanticscholar.org/paper/0abdaffef0027061a7eb873b188e26d0a73b3c99",
+  "pdf": null,
+  "arxiv": "2602.03377"
+ },
+ "2004": {
+  "gid": 2004,
+  "venue": "KDD 2026",
+  "title": "Fast Mining and Dynamic Time-to-Event Prediction over Multi-sensor Data Streams",
+  "abstract": "Given real-time sensor data streams obtained from machines, how can we continuously predict when a machine failure will occur? This work aims to continuously forecast the timing of future events by analyzing multi-sensor data streams. A key characteristic of real-world data streams is their dynamic nature, where the underlying patterns evolve over time. To address this, we present TimeCast, a dynamic prediction framework designed to adapt to these changes and provide accurate, real-time predictions of future event time. Our proposed method has the following properties: (a) Dynamic: it identifies the distinct time-evolving patterns (i.e., stages) and learns individual models for each, enabling us to make adaptive predictions based on pattern shifts. (b) Practical: it finds meaningful stages that capture time-varying interdependencies between multiple sensors and improve prediction performance; (c) Scalable: our algorithm scales linearly with the input size and enables online model updates on data streams. Extensive experiments on real datasets demonstrate that TimeCast provides higher prediction accuracy than state-of-the-art methods while finding dynamic changes in data streams with a great reduction in computational time.",
+  "doi": "10.1145/3770854.3780164",
+  "url": "https://www.semanticscholar.org/paper/0b1a463a59ee2b7b95a6eba9a1199e3a7cda7381",
+  "pdf": null,
+  "arxiv": "2601.04741"
+ },
+ "2005": {
+  "gid": 2005,
+  "venue": "KDD 2026",
+  "title": "EviCare: Enhancing Diagnosis Prediction with Deep Model-Guided Evidence for In-Context Reasoning",
+  "abstract": "Recent advances in large language models (LLMs) have enabled promising progress in diagnosis prediction from electronic health records (EHRs). However, existing LLM-based approaches tend to overfit to historically observed diagnoses, often overlooking novel yet clinically important conditions that are critical for early intervention. To address this, we propose EviCare, an in-context reasoning framework that integrates deep model guidance into LLM-based diagnosis prediction. Rather than prompting LLMs directly with raw EHR inputs, EviCare performs (1) deep model inference for candidate selection, (2) evidential prioritization for set-based EHRs, and (3) relational evidence construction for novel diagnosis prediction. These signals are then composed into an adaptive in-context prompt to guide LLM reasoning in an accurate and interpretable manner. Extensive experiments on two real-world EHR benchmarks (MIMIC-III and MIMIC-IV) demonstrate that EviCare achieves significant performance gains, which consistently outperforms both LLM-only and deep model-only baselines by an average of 20.65% across precision and accuracy metrics. The improvements are particularly notable in challenging novel diagnosis prediction, yielding average improvements of 30.97%.",
+  "doi": "10.1145/3770854.3780257",
+  "url": "https://www.semanticscholar.org/paper/0bf6fa5415f3ce41d4737c9847087cb1a0c7dcff",
+  "pdf": "https://doi.org/10.1145/3770854.3780257",
+  "arxiv": "2604.10455"
+ },
+ "2006": {
+  "gid": 2006,
+  "venue": "KDD 2026",
+  "title": "Exploring Recommender System Evaluation: A Multi-Modal LLM Agent Framework for A/B Testing",
+  "abstract": "diningIn recommender systems, online A/B testing is a crucial method for evaluating the performance of different models. However, conducting online A/B testing often presents significant challenges, including substantial economic costs, user experience degradation, and considerable time requirements. With the Large Language Models' powerful capacity, LLM-based agent shows great potential to replace traditional online A/B testing. Nonetheless, current agents fail to simulate the perception process and interaction patterns, due to the lack of real environments and visual perception capability. To address these challenges, we introduce a multi-modal user agent for A/B testing (A/B Agent). Specifically, we construct a recommendation sandbox environment for A/B testing, enabling multimodal and multi-page interactions that align with real user behavior on online platforms. The designed agent leverages multimodal information perception, fine-grained user preferences, and integrates profiles, action memory retrieval, and a fatigue system to simulate complex human decision-making. We validated the potential of the agent as an alternative to traditional A/B testing from three perspectives: model, data, and features. Furthermore, we found that the data generated by A/B Agent can effectively enhance the capabilities of recommendation models. Our code is publicly available at https://github",
+  "doi": "10.1145/3770854.3785688",
+  "url": "https://www.semanticscholar.org/paper/0ec205bf349b0b4cd73db6f40bd061784c100811",
+  "pdf": null,
+  "arxiv": "2601.04554"
+ },
+ "2007": {
+  "gid": 2007,
+  "venue": "KDD 2026",
+  "title": "Advanced Global Wildfire Activity Modeling with Hierarchical Graph ODE",
+  "abstract": "Wildfires, as an integral component of the Earth system, are governed by a complex interplay of atmospheric, oceanic, and terrestrial processes spanning a vast range of spatiotemporal scales. Modeling their global activity on large timescales is therefore a critical yet challenging task. While deep learning has recently achieved significant breakthroughs in global weather forecasting, its potential for global wildfire behavior prediction remains underexplored. In this work, we reframe this problem and introduce the Hierarchical Graph ODE (HiGO), a novel framework designed to learn the multi-scale, continuous-time dynamics of wildfires. Specifically, we represent the Earth system as a multi-level graph hierarchy and propose an adaptive filtering message passing mechanism for both intra- and inter-level information flow, enabling more effective feature extraction and fusion. Furthermore, we incorporate GNN-parameterized Neural ODE modules at multiple levels to explicitly learn the continuous dynamics inherent to each scale. Through extensive experiments on the SeasFire Cube dataset, we demonstrate that HiGO significantly outperforms state-of-the-art baselines on long-range wildfire forecasting. Moreover, its continuous-time predictions exhibit strong observational consistency, highlighting its potential for real-world applications.",
+  "doi": "10.1145/3770854.3780193",
+  "url": "https://www.semanticscholar.org/paper/118414814561d7694b6aa37812995de3670d3e56",
+  "pdf": null,
+  "arxiv": "2601.01501"
+ },
+ "2008": {
+  "gid": 2008,
+  "venue": "KDD 2026",
+  "title": "Improving Enzyme Prediction with Chemical Reaction Equations by Hypergraph-Enhanced Knowledge Graph Embeddings",
+  "abstract": "Predicting enzyme-substrate interactions has long been a fundamental problem in biochemistry and metabolic engineering. While existing methods could leverage databases of expert-curated enzyme-substrate pairs for models to learn from known pair interactions, the databases are often sparse, i.e., there are only limited and incomplete examples of such pairs, and also labor-intensive to maintain. This lack of sufficient training data significantly hinders the ability of traditional enzyme prediction models to generalize to unseen interactions. In this work, we try to exploit chemical reaction equations from domain-specific databases, given their easier accessibility and denser, more abundant data. However, interactions of multiple compounds, e.g., educts and products, with the same enzymes create complex relational data patterns that traditional models cannot easily capture. To tackle that, we represent chemical reaction equations as triples of (educt, enzyme, product) within a knowledge graph, such that we can take advantage of knowledge graph embedding (KGE) to infer missing enzyme-substrate pairs for graph completion. Particularly, in order to capture intricate relationships among compounds, we propose our knowledge-enhanced hypergraph model for enzyme prediction, i.e., Hyper-Enz, which integrates a hypergraph transformer with a KGE model to learn representations of the hyper-e",
+  "doi": "10.1145/3770854.3780178",
+  "url": "https://www.semanticscholar.org/paper/121cc7deca2d00c73e66dbebc90f78d8ea77e0e9",
+  "pdf": null,
+  "arxiv": "2601.05330"
+ },
+ "2009": {
+  "gid": 2009,
+  "venue": "KDD 2026",
+  "title": "Deep Hierarchical Knowledge Loss for Fault Intensity Diagnosis",
+  "abstract": "Fault intensity diagnosis (FID) plays a pivotal role in intelligent manufacturing while neglecting dependencies among target classes hinders its practical deployment. This paper introduces a novel and general framework with deep hierarchical knowledge loss (DHK) to achieve hierarchical consistent representation and prediction. We develop a novel hierarchical tree loss to enable a holistic mapping of same-attribute classes, leveraging tree-based positive and negative hierarchical knowledge constraints. We further design a focal hierarchical tree loss to enhance its extensibility and devise two adaptive weighting schemes based on tree height. In addition, we propose a group tree triplet loss with hierarchical dynamic margin by incorporating hierarchical group concepts and tree distance to model boundary structural knowledge across classes. The joint two losses significantly improve the recognition of subtle faults. Extensive experiments are performed on four real-world datasets from various industrial domains (three cavitation datasets from SAMSON AG and one publicly available dataset) for FID, all showing superior results and outperforming recent state-of-the-art FID methods.",
+  "doi": "10.1145/3770854.3780290",
+  "url": "https://www.semanticscholar.org/paper/150a5f0ee19c9e4b0e11dcfe09f1bde97dce8152",
+  "pdf": null,
+  "arxiv": "2604.16459"
+ },
+ "2010": {
+  "gid": 2010,
+  "venue": "KDD 2026",
+  "title": "Bayesian Robust Financial Trading with Adversarial Synthetic Market Data",
+  "abstract": "Algorithmic trading relies on machine learning models to make trading decisions. Despite strong in-sample performance, these models often degrade when confronted with evolving real-world market regimes, which can shift dramatically due to macroeconomic changes\u2014e.g., monetary policy updates or unanticipated fluctuations in participant behavior. We identify two core challenges that perpetuate this mismatch: (1) insufficient robustness in existing policy against uncertainties in high-level market fluctuations, and (2) the absence of a realistic and diverse simulation environment for training, leading to policy overfitting. To address these issues, we propose a Bayesian Robust Framework that systematically integrates a macro-conditioned generative model with robust policy learning. On the data side, to generate realistic and diverse data, we propose a macro-conditioned GAN-based generator that leverages macroeconomic indicators as primary control variables, synthesizing data with faithful temporal, cross-instrument, and macro correlations. On the policy side, to learn robust policy against market fluctuations, we cast the trading process as a two-player zero-sum Bayesian Markov game, wherein an adversarial agent simulates shifting regimes by perturbing macroeconomic indicators in the macro-conditioned generator, while the trading agent\u2014guided by a quantile belief network\u2014maintains ",
+  "doi": "10.1145/3770854.3780175",
+  "url": "https://www.semanticscholar.org/paper/1935d01cd1c9970cec7a4af9c6ec41f12a964e8f",
+  "pdf": null,
+  "arxiv": "2601.17008"
+ },
+ "2011": {
+  "gid": 2011,
+  "venue": "KDD 2026",
+  "title": "LitBench: A Graph-Centric Large Language Model Benchmarking Tool For Literature Tasks",
+  "abstract": "While large language models (LLMs) have become the de facto framework for literature-related tasks, they still struggle to function as domain-specific literature agents due to their inability to connect pieces of knowledge and reason across domain-specific contexts, terminologies, and nomenclatures. This challenge underscores the need for a tool that facilitates such domain-specific adaptation and enables rigorous benchmarking across literature tasks. To that end, we introduce LitBench, a benchmarking tool designed to enable the development and evaluation of domain-specific LLMs tailored to literature-related tasks. At its core, LitBench uses a data curation process that generates domain-specific literature sub-graphs and constructs training and evaluation datasets based on the textual attributes of the resulting nodes and edges. The tool is designed for flexibility, supporting the curation of literature graphs across any domain chosen by the user, whether high-level fields or specialized interdisciplinary areas. In addition to dataset curation, LitBench defines a comprehensive suite of literature tasks, ranging from node and edge level analyses to advanced applications such as related work generation. These tasks enable LLMs to internalize domain-specific knowledge and relationships embedded in the curated graph during training, while also supporting rigorous evaluation of mod",
+  "doi": "10.1145/3770854.3785679",
+  "url": "https://www.semanticscholar.org/paper/24425a9c777d2b633f9678ee057f9aed68f00e20",
+  "pdf": null,
+  "arxiv": "2603.00051"
+ },
+ "2012": {
+  "gid": 2012,
+  "venue": "KDD 2026",
+  "title": "GenHAR: Generalizing Cross-domain Human Activity Recognition for Last-mile Delivery",
+  "abstract": "Human Activity Recognition (HAR) has shown remarkable effectiveness in various applications, such as smart healthcare and intelligent manufacturing. However, a major challenge faced by HAR is the distribution shift across different sensor data domains, which often leads to decreased performance when deployed for real-world applications. To address this issue, this paper introduces GenHAR, a novel framework designed to mitigate the domain gap by learning domain-invariant sensor representations. GenHAR aims to enhance the generalization capabilities of HAR on target domains purely with data from the source domain. The key novelty of GenHAR lies in two aspects. Firstly, GenHAR tokenizes sensor data and learns correlations among frequency sensor channel dimensions to improve the robustness of HAR models. Secondly, GenHAR improves the efficiency via selective masking and an efficient attention mechanism. We conduct a systematic analysis of GenHAR by comparing it with state-of-the-art HAR methods on real-world human activity datasets. Results show that GenHAR outperforms state-of-the-art methods by 9.97% in accuracy, and reduces Floating Point Operations by 6.4 times. Moreover, we deploy GenHAR at a leading logistics company in 4 cities, and have detected 2.15 billion real-time activities. We release our code at: https://github.com/Sensor-Foundation-Model/GenHAR.",
+  "doi": "10.1145/3770854.3783921",
+  "url": "https://www.semanticscholar.org/paper/2d1e5b1d7593e99b9ee9c9c645fb2f130e51f278",
+  "pdf": null,
+  "arxiv": "2605.22086"
+ },
+ "2013": {
+  "gid": 2013,
+  "venue": "KDD 2026",
+  "title": "Live or Lie: Action-Aware Capsule Multiple Instance Learning for Risk Assessment in Live Streaming Platforms",
+  "abstract": "Live streaming has become a cornerstone of today's internet, enabling massive real-time social interactions. However, it faces severe risks arising from sparse, coordinated malicious behaviors among multiple participants, which are often concealed within normal activities and challenging to detect timely and accurately. In this work, we provide a pioneering study on risk assessment in live streaming rooms, characterized by weak supervision where only room-level labels are available. We formulate the task as a Multiple Instance Learning (MIL) problem, treating each room as a bag and defining structured user\u2013timeslot capsules as instances. These capsules represent subsequences of user actions within specific time windows, encapsulating localized behavioral patterns. Based on this formulation, we propose AC-MIL, an Action-aware Capsule MIL framework that models both individual behaviors and group-level coordination patterns. AC-MIL captures multi-granular semantics and behavioral cues through a serial and parallel architecture that jointly encodes temporal dynamics and cross-user dependencies. These signals are integrated for robust room-level risk prediction, while also offering interpretable evidence at the behavior segment level. Extensive experiments on large-scale industrial datasets from Douyin demonstrate that AC-MIL significantly outperforms MIL and sequential baselines, e",
+  "doi": "10.1145/3770854.3780246",
+  "url": "https://www.semanticscholar.org/paper/31d8ab00fe9006cc2e47017c58c960af55fcd55a",
+  "pdf": null,
+  "arxiv": "2602.03520"
+ },
+ "2014": {
+  "gid": 2014,
+  "venue": "KDD 2026",
+  "title": "From Memorization to Creation: Evaluating the Cognitive Depth of LLM?Generated Educational Questions",
+  "abstract": "While LLMs show promise in automating educational content creation, their ability to generate questions that stimulate higher-order thinking remains understudied. This work evaluates six widely used LLMs through a Bloom's Taxonomy lens, focusing on their capacity to transcend rote memorization and achieve cognitive leaps. Using a hybrid human-AI evaluation protocol, we generate and analyze 20,700 questions across computer science, K-12 math, and social-science domains. Key contributions include: (1) a fine-grained prompting strategy that reduces question repetitiveness by 24.45% for Qwen2.5-7B-Instruct, and increases the proportion of higher-order cognitive-level outputs by 11.53% for InternLM3-8B-Instruct; (2) quantitative metrics for cognitive shift intensity (CogShift) and category drift, revealing InternLM3's superior performance in multi-level transitions; (3) an interpretability analysis revealing metric-level correlations that enhance the transparency of Chain-of-Thought prompting. Our findings highlight the importance of cognitive-aware prompt design and provide benchmarks for deploying LLMs in personalized learning systems.",
+  "doi": "10.1145/3770854.3785686",
+  "url": "https://www.semanticscholar.org/paper/3482ea5477a858dd56fe6fb69b766fb29e2d06bc",
+  "pdf": null,
+  "arxiv": "2606.18257"
+ },
+ "2015": {
+  "gid": 2015,
+  "venue": "KDD 2026",
+  "title": "Four-Cycle Counting in Low-Degeneracy Graph Streams",
+  "abstract": "We study the problem of (1+\u03b5)-approximating the number of four-cycles in graphs given as arbitrary order edge streams. We propose two new algorithms based on sampling induced subgraphs. Our first contribution is a two-pass algorithm that uses \u00d5(\u03bam / \u221aT) space, where m is the number of edges, T is the number of four-cycles, and \u03ba is the graph's degeneracy. This algorithm improves upon existing theoretical bounds and is provably optimal for constant-degeneracy graphs, matching the known \u03a9(m/\u221aT) lower bound up to lower-order factors. Our second contribution is a one-pass algorithm that remains accurate when four-cycles are not highly concentrated on individual nodes, edges, or wedges; this structural property is common in sparse social and collaboration networks. We evaluate both algorithms on a variety of real-world graph streams. The two-pass algorithm consistently outperforms state-of-the-art methods, using substantially less space to achieve a desired accuracy. The one-pass algorithm is competitive when four cycles are evenly distributed, matching our theoretical analysis. Unlike several recent works, our algorithms perform well even on non-bipartite graphs such as social networks.",
+  "doi": "10.1145/3770854.3780199",
+  "url": "https://www.semanticscholar.org/paper/389e39c09787fe953861b5f7675e85cbfe01df42",
+  "pdf": null,
+  "arxiv": "2606.17732"
+ },
+ "2016": {
+  "gid": 2016,
+  "venue": "KDD 2026",
+  "title": "From Agnostic to Specific: Latent Preference Diffusion for Multi-Behavior Sequential Recommendation",
+  "abstract": "Multi-behavior sequential recommendation (MBSR) aims to learn the dynamic and heterogeneous interactions of users' multi-behavior sequences, so as to capture user preferences under target behavior for the next interacted item prediction. Unlike previous methods that adopt unidirectional modeling by mapping auxiliary behaviors to target behavior, recent concerns are shifting from behavior-fixed to behavior-specific recommendation. However, these methods still ignore the user's latent preference that underlying decision-making, leading to suboptimal solutions. Meanwhile, due to the asymmetric deterministic between items and behaviors, discriminative paradigm based on preference scoring is unsuitable to capture the uncertainty from low-entropy behaviors to high-entropy items, failing to provide efficient and diverse recommendation. To address these challenges, we propose FatsMB, a framework based diffusion model that guides preference generation From Behavior-Agnostic To Behavior-Specific in latent spaces, enabling diverse and accurate Multi-Behavior Sequential Recommendation. Specifically, we design a Multi-Behavior AutoEncoder (MBAE) to construct a unified user latent preference space, facilitating interaction and collaboration across Behaviors, within Behavior-aware RoPE (BaRoPE) employed for multiple information fusion. Subsequently, we conduct target behavior-specific prefere",
+  "doi": "10.1145/3770854.3780285",
+  "url": "https://www.semanticscholar.org/paper/3b2aff479b9632d1e13581e9633c4967a143ef06",
+  "pdf": null,
+  "arxiv": "2602.23132"
+ },
+ "2017": {
+  "gid": 2017,
+  "venue": "KDD 2026",
+  "title": "Hitcher: Efficient GPU-based Vector Search via Cluster-Centric Kernel and Hitch-Ride Ordering",
+  "abstract": "Similarity-based vector search, which retrieves the most similar vectors to a given query vector from a large vector dataset, underlies many applications such as search, recommendation, and Large Language Models (LLMs). Some systems run vector search on GPUs to enjoy GPU's high parallelism, but we observe that they are limited in query throughput and latency. In particular, their query-centric GPU kernel conducts computation independently for each query, failing to reuse data loaded to the GPU shared memory across queries and leading to a low GPU compute utilization. While their batch-based task reordering rearranges computation for queries in a batch to reduce CPU-GPU data transfer, but latency is prolonged since each query needs to wait for its slowest task. To tackle these problems, we propose Hitcher. Specifically, to reuse data across queries and improve GPU utilization, Hitcher implements a cluster-centric GPU kernel to batch computation on the same data for multiple queries. To reduce query latency, Hitcher adopts the hitch-ride ordering, which preserves the arrival order for query processing while batching computation across queries to improve efficiency. Hitcher can also offload computation tasks to the CPU to reduce CPU-GPU data transfer and utilize multiple GPUs. Experimental results show that Hitcher achieves up to 22\u00d7 lower P99 query latency and 9\u00d7 higher query thr",
+  "doi": "10.1145/3770854.3780212",
+  "url": "https://www.semanticscholar.org/paper/3b9a49f0982279b592260dbb80c05e55dcfe7403",
+  "pdf": null,
+  "arxiv": null
+ },
+ "2018": {
+  "gid": 2018,
+  "venue": "KDD 2026",
+  "title": "Learning Hierarchical Knowledge in Text-Rich Networks with Taxonomy-Informed Representation Learning",
+  "abstract": "Hierarchical knowledge structures are ubiquitous across real-world domains and play a vital role in organizing information from coarse to fine semantic levels. While such structures have been widely used in taxonomy systems, biomedical ontologies, and retrieval-augmented generation, their potential remains underexplored in the context of Text-Rich Networks (TRNs), where each node contains rich textual content and edges encode semantic relationships. Existing methods for learning on TRNs often focus on flat semantic modeling, overlooking the inherent hierarchical semantics embedded in textual documents. To this end, we propose TIER (Hierarchical Taxonomy-Informed Representation Learning on Text-Rich Networks), which first constructs an implicit hierarchical taxonomy and then integrates it into the learned node representations. Specifically, TIER employs similarity-guided contrastive learning to build a clustering-friendly embedding space, upon which it performs hierarchical K-Means followed by LLM-powered clustering refinement to enable semantically coherent taxonomy construction. Leveraging the resulting taxonomy, TIER introduces a cophenetic correlation coefficient-based regularization loss to align the learned embeddings with the hierarchical structure. By learning representations that respect both fine-grained and coarse-grained semantics, TIER enables more interpretable and",
+  "doi": "10.1145/3770854.3780260",
+  "url": "https://www.semanticscholar.org/paper/42fd45a57bdd86dc2e423c4f62ca203f717b16ab",
+  "pdf": null,
+  "arxiv": "2603.08159"
+ },
+ "2019": {
+  "gid": 2019,
+  "venue": "KDD 2026",
+  "title": "Incident-Guided Spatiotemporal Traffic Forecasting",
+  "abstract": "Recent years have witnessed the rapid development of deep-learning-based, graph-neural-network-based forecasting methods for modern intelligent transportation systems. However, most existing work focuses exclusively on capturing spatio-temporal dependencies from historical traffic data, while overlooking the fact that suddenly occurring transportation incidents, such as traffic accidents and adverse weather, serve as external disturbances that can substantially alter temporal patterns. We argue that this issue has become a major obstacle to modeling the dynamics of traffic systems and improving prediction accuracy, but the unpredictability of incidents makes it difficult to observe patterns from historical sequences. To address these challenges, this paper proposes a novel framework named the Incident-Guided Spatiotemporal Graph Neural Network (IGSTGNN). IGSTGNN explicitly models the incident's impact through two core components: an Incident-Context Spatial Fusion (ICSF) module to capture the initial heterogeneous spatial influence, and a Temporal Incident Impact Decay (TIID) module to model the subsequent dynamic dissipation. To facilitate research on the spatio-temporal impact of incidents on traffic flow, a large-scale dataset is constructed and released, featuring incident records that are time-aligned with traffic time series. On this new benchmark, the proposed IGSTGNN fr",
+  "doi": "10.1145/3770854.3780215",
+  "url": "https://www.semanticscholar.org/paper/4aaa1c41f4eb806e41ee13aa6bf6756762344a42",
+  "pdf": null,
+  "arxiv": "2602.02528"
+ },
+ "2020": {
+  "gid": 2020,
+  "venue": "KDD 2026",
+  "title": "Enriching Semantic Profiles into Knowledge Graph for Recommender Systems Using Large Language Models",
+  "abstract": "Rich and informative profiling to capture user preferences is essential for improving recommendation quality. However, there is still no consensus on how best to construct and utilize such profiles. To address this, we revisit recent profiling-based approaches in recommender systems along four dimensions: 1) knowledge base, 2) preference indicator, 3) impact range, and 4) subject. We argue that large language models (LLMs) are effective at extracting compressed rationales from diverse knowledge sources, while knowledge graphs (KGs) are better suited for propagating these profiles to extend their reach. Building on this insight, we propose a new recommendation model, called SPiKE. SPiKE consists of three core components: i) Entity profile generation, which uses LLMs to generate semantic profiles for all KG entities; ii) Profile-aware KG aggregation, which integrates these profiles into the KG; and iii) Pairwise profile preference matching, which aligns LLM- and KG-based representations during training. In experiments, we demonstrate that SPiKE consistently outperforms state-of-the-art KG- and LLM-based recommenders in real-world settings.",
+  "doi": "10.1145/3770854.3780324",
+  "url": "https://www.semanticscholar.org/paper/557ccc4e6ae350d46d37282f551a5836b22763b3",
+  "pdf": null,
+  "arxiv": "2601.08148"
+ },
+ "2021": {
+  "gid": 2021,
+  "venue": "KDD 2026",
+  "title": "Communication-efficient Federated Graph Classification via Generative Diffusion Modeling",
+  "abstract": "Graph Neural Networks (GNNs) unlock new ways of learning from graph-structured data, proving highly effective in capturing complex relationships and patterns. Federated GNNs (FGNNs) have emerged as a prominent distributed learning paradigm for training GNNs over decentralized data. However, FGNNs face two significant challenges: high communication overhead from multiple rounds of parameter exchanges and non-IID data characteristics across clients. To address these issues, we introduce CeFGC, a novel FGNN paradigm that facilitates efficient GNN training over non-IID data by limiting communication between the server and clients to three rounds only. The core idea of CeFGC is to leverage generative diffusion models to minimize direct client-server communication. Each client trains a generative diffusion model that captures its local graph distribution and shares this model with the server, which then redistributes it back to all clients. Using these generative models, clients generate synthetic graphs combined with their local graphs to train local GNN models. Finally, clients upload their model weights to the server for aggregation into a global GNN model. We theoretically analyze the I/O complexity of communication volume to show that CeFGC reduces to a constant of three communication rounds only. Extensive experiments on several real graph datasets demonstrate the effectiveness",
+  "doi": "10.1145/3770854.3780262",
+  "url": "https://www.semanticscholar.org/paper/5f06013ae15bb77642da9472efec93a2fdea525d",
+  "pdf": null,
+  "arxiv": "2601.15722"
+ },
+ "2022": {
+  "gid": 2022,
+  "venue": "KDD 2026",
+  "title": "Breaking Robustness Barriers in Cognitive Diagnosis: A One-Shot Neural Architecture Search Perspective",
+  "abstract": "With the advancement of network technologies, intelligent tutoring systems(ITS) have emerged to deliver increasingly precise and tailored personalized learning services. Cognitive diagnosis(CD) has emerged as a core research task in ITS, aiming to infer learners' mastery of specific knowledge concepts by modeling the mapping between learning behavior data and knowledge states. However, existing research prioritizes model performance enhancement while neglecting the pervasive noise contamination in observed response data, significantly hindering practical deployment. Furthermore, current cognitive diagnosis models(CDMs) rely heavily on researchers' domain expertise for structural design, which fails to exhaustively explore architectural possibilities, thus leaving model architectures' full potential untapped. To address this issue, we propose OSCD, an evolutionary multi-objective One-Shot neural architecture search method for Cognitive Diagnosis, designed to efficiently and robustly improve the model's capability in assessing learner proficiency. Specifically, OSCD operates through two distinct stages: training and searching. During the training stage, we construct a search space encompassing diverse architectural combinations and train a weight-sharing supernet represented via the complete binary tree topology, enabling comprehensive exploration of potential architectures beyon",
+  "doi": "10.1145/3770854.3780159",
+  "url": "https://www.semanticscholar.org/paper/61bfa2ff745530610935ce77bc70ccffcd15c376",
+  "pdf": null,
+  "arxiv": "2601.04918"
+ },
+ "2023": {
+  "gid": 2023,
+  "venue": "KDD 2026",
+  "title": "Effective and Robust Multimodal Medical Image Analysis",
+  "abstract": "Multimodal Fusion Learning ( MFL ), leveraging disparate data from various imaging modalities (e.g., MRI, CT, SPECT ), has shown great potential for addressing medical problems such as skin cancer and brain tumor prediction. However, existing MFL methods face three key limitations: a) they often specialize in specific modalities, and overlooks effective shared complementary information across diverse modalities, hence limiting their generalizability for multi-disease analysis; b) they rely on computationally expensive models, restricting their applicability in resource-limited settings; and c) they lack robustness against adversarial attacks, compromising reliability in medical AI applications. To address these limitations, we propose a novel Multi-Attention Integration Learning ( MAIL ) network, incorporating two key components: a) an efficient residual learning attention block for capturing refined modality-specific multi-scale patterns and b) an efficient multimodal cross-attention module for learning enriched complementary shared representations across diverse modalities. Furthermore, to ensure adversarial robustness, we extend MAIL network to design Robust-MAIL by incorporating random projection filters and modulated attention noise. Extensive evaluations on 20 public datasets show that both MAIL and Robust-MAIL outperform existing methods, achieving performance gains of u",
+  "doi": "10.1145/3770854.3780331",
+  "url": "https://www.semanticscholar.org/paper/62e6e39cbc592e3ac5e02a91bb4070c5afdc9063",
+  "pdf": null,
+  "arxiv": "2602.15346"
+ },
+ "2024": {
+  "gid": 2024,
+  "venue": "KDD 2026",
+  "title": "PSQE: A Theoretical-Practical Approach to Pseudo Seed Quality Enhancement for Unsupervised Multimodal Entity Alignment",
+  "abstract": "Multimodal Entity Alignment (MMEA) aims to identify equivalent entities across different data modalities, enabling structural data integration that in turn improves the performance of various large language model applications. To lift the requirement of labeled seed pairs that are difficult to obtain, recent methods shifted to an unsupervised paradigm using pseudo-alignment seeds. However, unsupervised entity alignment in multimodal settings remains underexplored, mainly because the incorporation of multimodal information often results in imbalanced coverage of pseudo-seeds within the knowledge graph. To overcome this, we propose PSQE (Pseudo-Seed Quality Enhancement) to improve the precision and graph coverage balance of pseudo seeds via multimodal information and clustering-resampling. Theoretical analysis reveals the impact of pseudo seeds on existing contrastive learning-based MMEA models. In particular, pseudo seeds can influence the attraction and the repulsion terms in contrastive learning at once, whereas imbalanced graph coverage causes models to prioritize high-density regions, thereby weakening their learning capability for entities in sparse regions. Experimental results validate our theoretical findings and show that PSQE as a plug-and-play module can improve the performance of baselines by considerable margins.",
+  "doi": "10.1145/3770854.3780249",
+  "url": "https://www.semanticscholar.org/paper/65cc5e08d629533cc9dd71e14f2e2e7bd0aec0fb",
+  "pdf": null,
+  "arxiv": "2602.22903"
+ },
+ "2025": {
+  "gid": 2025,
+  "venue": "KDD 2026",
+  "title": "When Deepfake Detection Meets Graph Neural Network: A Unified and Lightweight Framework",
+  "abstract": "The proliferation of generative video models has made detecting AI-generated and manipulated videos an urgent challenge. Existing detection approaches often fail to generalize across diverse manipulation types due to their reliance on isolated spatial, temporal, or spectral information, and typically require large models to perform well. This paper introduces SSTGNN, a lightweight Spatial-Spectral-Temporal Graph Neural Network framework that represents videos as structured graphs, enabling joint reasoning over spatial inconsistencies, temporal artifacts, and spectral distortions. SSTGNN incorporates learnable spectral filters and spatial-temporal differential modeling into a unified graph-based architecture, capturing subtle manipulation traces more effectively. Extensive experiments on diverse benchmark datasets demonstrate that SSTGNN not only achieves superior performance in both in-domain and cross-domain settings, but also offers strong efficiency and resource allocation. Remarkably, SSTGNN accomplishes these results with up to 42\u00d7 fewer parameters than state-of-the-art models, making it highly lightweight and resource-friendly for real-world deployment.",
+  "doi": "10.1145/3770854.3780219",
+  "url": "https://www.semanticscholar.org/paper/67c5bf4c2869691f2cb936b72fa433a25b2b6f30",
+  "pdf": null,
+  "arxiv": null
+ },
+ "2026": {
+  "gid": 2026,
+  "venue": "KDD 2026",
+  "title": "Signed Proximity Matters in Graph-based Recommendation",
+  "abstract": "Graph-based models are a powerful technique for recommendation systems, which seek to leverage the graph structure created by user-item interactions for elevated performance. The majority of them are designed for unsigned graphs, which fail to exploit negative interactions (e.g., dislikes, returns) from users, and hence, incur compromised effectiveness. To tap into such negative signals, in recent years, a number of efforts have been invested towards extending graph neural networks (GNNs) and Transformer models to signed graphs. Unfortunately, the former approaches produce sub-par results due to the lack of access to global information, whereas the latter achieve superior performance for recommendation but suffer from severe over-globalizing problems and substantial computational overhead. To bridge this gap, this paper presents SPGNN, which significantly unleashes the capabilities of GNNs and advances its performance for top-K recommendation in signed graphs through two non-trivial technical contributions. Firstly, we propose to upgrade the neighborhood aggregation scheme in GNNs with two novel notions of signed local proximity (SLP) and signed global proximity (SGP) based on weak balance theory, which can accurately capture sign-aware multi-scale relations between nodes in signed graphs. On top of that, SPGNN includes a theoretically-grounded module for effective feature init",
+  "doi": "10.1145/3770854.3780298",
+  "url": "https://www.semanticscholar.org/paper/69beccd6cd0ee695631e71be20bd69c91209984e",
+  "pdf": null,
+  "arxiv": null
+ },
+ "2027": {
+  "gid": 2027,
+  "venue": "KDD 2026",
+  "title": "HumanLLM: Towards Personalized Understanding and Simulation of Human Nature",
+  "abstract": "Motivated by the remarkable progress of large language models (LLMs) in objective tasks like mathematics and coding, there is growing interest in their potential to simulate human behavior\u2014a capability with profound implications for transforming social science research and customer-centric business insights. However, LLMs often lack a nuanced understanding of human cognition and behavior, limiting their effectiveness in social simulation and personalized applications. We posit that this limitation stems from a fundamental misalignment: standard LLM pretraining on vast, uncontextualized web data does not capture the continuous, situated context of an individual's decisions, thoughts, and behaviors over time. To bridge this gap, we introduce HumanLLM, a foundation model designed for personalized understanding and simulation of individuals. We first construct the Cognitive Genome Dataset, a large-scale corpus curated from real-world user data on platforms like Reddit, Twitter, Blogger, and Amazon. Through a rigorous, multi-stage pipeline involving data filtering, synthesis, and quality control, we automatically extract over 5.5 million user logs to distill rich profiles, behaviors, and thinking patterns. We then formulate diverse learning tasks and perform supervised fine-tuning to empower the model to predict a wide range of individualized human behaviors, thoughts, and experienc",
+  "doi": "10.1145/3770854.3780294",
+  "url": "https://www.semanticscholar.org/paper/6a1b0d8801a0c4c8e4161f0d272ec29707873c4b",
+  "pdf": null,
+  "arxiv": "2601.15793"
+ },
+ "2028": {
+  "gid": 2028,
+  "venue": "KDD 2026",
+  "title": "Q-Regularized Generative Auto-Bidding: From Suboptimal Trajectories to Optimal Policies",
+  "abstract": "With the rapid development of e-commerce, auto-bidding has become a key asset in optimizing advertising performance under diverse advertiser environments. The current approaches focus on reinforcement learning (RL) and generative models. These efforts imitate offline historical behaviors by utilizing a complex structure with expensive hyperparameter tuning. The suboptimal trajectories further exacerbate the difficulty of policy learning. To address these challenges, we proposes QGA, a novel Q-value regularized Generative Auto-bidding method. In QGA, we propose to plug a Q-value regularization with double Q-learning strategy into the Decision Transformer backbone. This design enables joint optimization of policy imitation and action-value maximization, allowing the learned bidding policy to both leverage experience from the dataset and alleviate the adverse impact of the suboptimal trajectories. Furthermore, to safely explore the policy space beyond the data distribution, we propose a Q-value guided dual-exploration mechanism, in which the DT model is conditioned on multiple return-to-go targets and locally perturbed actions. This entire exploration process is dynamically guided by the aforementioned Q-value module, which provides principled evaluation for each candidate action. Experiments on public benchmarks and simulation environments demonstrate that QGA consistently achiev",
+  "doi": "10.1145/3770854.3783950",
+  "url": "https://www.semanticscholar.org/paper/6b6f05c148428b6b44066c391c5e95502678290a",
+  "pdf": null,
+  "arxiv": "2601.02754"
+ },
+ "2029": {
+  "gid": 2029,
+  "venue": "KDD 2026",
+  "title": "Balanced Anomaly-guided Ego-graph Diffusion Model for Inductive Graph Anomaly Detection",
+  "abstract": "Graph anomaly detection (GAD) is crucial in applications like fraud detection and cybersecurity. Despite recent advancements using graph neural networks (GNNs), two major challenges persist. At the model level, most methods adopt a transductive learning paradigm, which assumes static graph structures, making them unsuitable for dynamic, evolving networks. At the data level, the extreme class imbalance, where anomalous nodes are rare, leads to biased models that fail to generalize to unseen anomalies. These challenges are interdependent: static transductive frameworks limit effective data augmentation, while imbalance exacerbates model distortion in inductive learning settings. To address these challenges, we propose a novel data-centric framework that integrates dynamic graph modeling with balanced anomaly synthesis. Our framework features: (1) a discrete ego-graph diffusion model, which captures the local topology of anomalies to generate ego-graphs aligned with anomalous structural distribution, and (2) a curriculum anomaly augmentation mechanism, which dynamically adjusts synthetic data generation during training, focusing on underrepresented anomaly patterns to improve detection and generalization. Experiments on five datasets demonstrate that the effectiveness of our framework.",
+  "doi": "10.1145/3770854.3780240",
+  "url": "https://www.semanticscholar.org/paper/6dd36a2ea995ac82bd628bd6c7ba5db13ba4c0b8",
+  "pdf": null,
+  "arxiv": "2602.05232"
+ },
+ "2030": {
+  "gid": 2030,
+  "venue": "KDD 2026",
+  "title": "Enhancing Multimodal Recommendation via Multimodal Representation Calibration in Spectral Domain",
+  "abstract": "Multimodal recommendation, which integrates user-item interactions with rich item multimodal features to infer user preferences, has emerged as one of the state-of-the-art recommendation paradigms. However, most existing multimodal recommendation methods focus solely on the multimodal fusion process of items, overlooking the impact of modality-specific noise characteristics and inter-modal distribution shifts on the fusion process. As a result, noise from specific modalities may be inadvertently amplified during the fusion of multimodal representations, thereby degrading the quality of fused representations and ultimately undermining recommendation accuracy. To address this issue, we propose a novel framework, DAMPS, which Denoises and cAlibrates multimodal representations in the spectral domain from the perspectives of both aMplitude and Phase Spectrum. Specifically, we first apply the Fast Fourier Transform to decompose multimodal representations into amplitude spectrum and phase spectrum components. We then propose the adaptive phase calibrator, which resolves the phase distribution shift between modalities through the optimal minimum variance unbiased estimate of phase offset and adaptive phase rotation. We further develop the amplitude variance-ratio filter, which suppresses modality-specific amplitude noise while preserving prominent modality-specific representations. Fin",
+  "doi": "10.1145/3770854.3780208",
+  "url": "https://www.semanticscholar.org/paper/70331fc19bf79d6f789cd072d09c1cefbf77da17",
+  "pdf": "https://doi.org/10.1145/3770854.3780208",
+  "arxiv": null
+ },
+ "2031": {
+  "gid": 2031,
+  "venue": "KDD 2026",
+  "title": "Minimizing Total Biharmonic Distance in Large Graphs via Link Recommendation",
+  "abstract": "The total biharmonic distance, which is the sum of the biharmonic distance between every pair of nodes in a network, is a key metric for evaluating network connectivity and robustness. In this paper, we study the problem of minimizing the total biharmonic distance by adding k nonexistent edges for a given graph G and budget k. The problem is computationally challenging. We show that the objective function of the problem is monotone but not supermodular. To solve this problem, we propose simple greedy algorithms with cubic time complexity. To mitigate the high time complexity of these greedy algorithms, we apply several techniques, including the projection method, the Laplacian solver, and convex hull approximation. These techniques reduce the time complexity of our proposed algorithms from cubic to nearly linear while providing error guarantees. Finally, extensive experiments on real datasets demonstrate both the efficiency and effectiveness of our proposed algorithms.",
+  "doi": "10.1145/3770854.3780204",
+  "url": "https://www.semanticscholar.org/paper/711aeb7520f09f45861c68f368185633892ec38c",
+  "pdf": null,
+  "arxiv": "2606.17703"
+ },
+ "2032": {
+  "gid": 2032,
+  "venue": "KDD 2026",
+  "title": "FedKDMR: Robust Federated Learning via Joint Knowledge Distillation & Model Recombination",
+  "abstract": "Federated Learning (FL) presents a compelling distributed learning paradigm that enables resource-constrained clients to collaboratively train machine learning models while preserving data privacy. However, inter-client data heterogeneity poses fundamental challenges to federated optimization efficacy. Although Knowledge Distillation (KD) effectively addresses model performance alignment under heterogeneity, its inherent constraints restrict client parameter exploration capacity, thus, inducing confinement to suboptimal basins. To reconcile this trade-off, we introduce FedKDMR, a novel FL paradigm unifying KD constraints with exploration via model recombination. FedKDMR imposes global model consistency and robustness in training through dynamic KD while sufficiently harnessing model recombination-induced perturbations for diverse parameter exploration. We establish convergence guarantees for strongly convex and smooth objectives. Extensive experiments on FL benchmark datasets demonstrate that FedKDMR achieves a superior accuracy-robustness trade-off against state-of-the-art methods when tackling non-independent and identically distributed and heterogeneous data in FL environments.",
+  "doi": "10.1145/3770854.3780160",
+  "url": "https://www.semanticscholar.org/paper/75792b84dd769fb889691a9ce8468f91f3e6b502",
+  "pdf": null,
+  "arxiv": null
+ },
+ "2033": {
+  "gid": 2033,
+  "venue": "KDD 2026",
+  "title": "Debiased Negative Mining Improves Out-of-distribution Detection with Pre-trained Vision-Language Models",
+  "abstract": "Aiming at identifying unexpected inputs from unknown classes, out-of-distribution (OOD) detection has emerged as a pivotal approach to enhancing the reliability of machine learning models. This paper focuses on the burgeoning paradigm of post-hoc OOD detection with pre-trained vision-language models (VLMs), where a popular pipeline is to detect OOD inputs by examining their affinities between ID labels and negative labels, i.e., those semantically different from ID labels. Due to the unavailability of target OOD labels, existing works predominantly rely on heuristic rules to mine negative labels from unlabeled wild corpus data. Despite the empirical success, we argue that the power of VLM-based OOD detection has yet to be fully unleashed since the notorious false negative problem is far from addressed in the literature. With this motivation, we are interested in addressing the challenge of mining true negative labels for OOD scoring. To this end, we develop a theoretical framework for correcting the sampling bias of negatives labels by indirectly approximating the distribution of negative labels. Perhaps surprisingly, we show that the debiased negative mining can be naturally converted into Monte-Carlo sampling based on ID labels and the unlabeled wild corpus data. Extensive experiments empirically manifest that our method establishes a new state-of-the-art in a variety of OOD ",
+  "doi": "10.1145/3770854.3780169",
+  "url": "https://www.semanticscholar.org/paper/76823e1e996eb4e48559cb8389318de91e834aa1",
+  "pdf": null,
+  "arxiv": "2605.23797"
+ },
+ "2034": {
+  "gid": 2034,
+  "venue": "KDD 2026",
+  "title": "HyFunc: Accelerating LLM-based Function Calls for Agentic AI through Hybrid-Model Cascade and Dynamic Templating",
+  "abstract": "While agentic AI systems rely on LLMs to translate user intent into structured function calls, this process is fraught with computational redundancy, leading to high inference latency that hinders real-time applications. This paper identifies and addresses three key redundancies: (1) the redundant processing of a large library of function descriptions for every request; (2) the redundant use of a large, slow model to generate an entire, often predictable, token sequence; and (3) the redundant generation of fixed, boilerplate parameter syntax. We introduce HyFunc, a novel framework that systematically eliminates these inefficiencies. HyFunc employs a hybrid-model cascade where a large model distills user intent into a single ''soft token.'' This token guides a lightweight retriever to select relevant functions and directs a smaller, prefix-tuned model to generate the final call, thus avoiding redundant context processing and full-sequence generation by the large model. To eliminate syntactic redundancy, our ''dynamic templating'' technique injects boilerplate parameter syntax on-the-fly within an extended vLLM engine. To avoid potential limitations in generalization, we evaluate HyFunc on an unseen benchmark dataset, BFCL. Experimental results demonstrate that HyFunc achieves an excellent balance between efficiency and performance. It achieves an inference latency of 0.828 secon",
+  "doi": "10.1145/3770854.3780283",
+  "url": "https://www.semanticscholar.org/paper/89cbd97c351c414acccd29237376faa902b796d6",
+  "pdf": null,
+  "arxiv": "2602.13665"
+ },
+ "2035": {
+  "gid": 2035,
+  "venue": "KDD 2026",
+  "title": "Effective Online 3D Bin Packing with Lookahead Parcels Using Monte Carlo Tree Search",
+  "abstract": "Online 3D Bin Packing (3D-BP) with robotic arms is crucial for reducing transportation and labor costs in modern logistics. While Deep Reinforcement Learning (DRL) has shown strong performance, it often fails to adapt to real-world short-term distribution shifts, which arise as different batches of goods arrive sequentially, causing performance drops. We argue that the short-term lookahead information available in modern logistics systems is key to mitigating this issue, especially during distribution shifts. We formulate online 3D-BP with lookahead parcels as a Model Predictive Control (MPC) problem and adapt the Monte Carlo Tree Search (MCTS) framework to solve it. Our framework employs a dynamic exploration prior that automatically balances a learned RL policy and a robust random policy based on the lookahead characteristics. Additionally, we design an auxiliary reward to penalize long-term spatial waste from individual placements. Extensive experiments on real-world datasets show that our method consistently outperforms state-of-the-art baselines, achieving over 10% gains under distributional shifts, 4% average improvement in online deployment, and up to more than 8% in the best case--demonstrating the effectiveness of our framework.",
+  "doi": "10.1145/3770854.3783946",
+  "url": "https://www.semanticscholar.org/paper/8b9e02ec4d2ada7821a4197a974d42b41bf655ef",
+  "pdf": null,
+  "arxiv": "2601.02649"
+ },
+ "2036": {
+  "gid": 2036,
+  "venue": "KDD 2026",
+  "title": "Unleashing the Potential of Neighbors: Diffusion-based Latent Neighbor Generation for Session-based Recommendation",
+  "abstract": "Session-based recommendation aims to predict the next item that anonymous users may be interested in, based on their current session interactions. Recent studies have demonstrated that retrieving neighbor sessions to augment the current session can effectively alleviate the data sparsity issue and improve recommendation performance. However, existing methods typically rely on explicitly observed session data, neglecting latent neighbors - not directly observed but potentially relevant within the interest space - thereby failing to fully exploit the potential of neighbor sessions in recommendation. To address the above limitation, we propose a novel model of diffusion-based latent neighbor generation for session-based recommendation, named DiffSBR. Specifically, DiffSBR leverages two diffusion modules, including retrieval-augmented diffusion and self-augmented diffusion, to generate high-quality latent neighbors. In the retrieval-augmented diffusion module, we leverage retrieved neighbors as guiding signals to constrain and reconstruct the distribution of latent neighbors. Meanwhile, we adopt a training strategy that enables the retriever to learn from the feedback provided by the generator. In the self-augmented diffusion module, we explicitly guide the generation of latent neighbors by injecting the current session's multi-modal signals through contrastive learning. After obta",
+  "doi": "10.1145/3770854.3780280",
+  "url": "https://www.semanticscholar.org/paper/8f02ca9bfd6569caddf2573767e2a43f7c46e7e5",
+  "pdf": null,
+  "arxiv": "2601.03903"
+ },
+ "2037": {
+  "gid": 2037,
+  "venue": "KDD 2026",
+  "title": "MergeRec: Model Merging for Data-Isolated Cross-Domain Sequential Recommendation",
+  "abstract": "Modern recommender systems trained on domain-specific data often struggle to generalize across multiple domains. Cross-domain sequential recommendation has emerged as a promising research direction to address this challenge; however, existing approaches face fundamental limitations, such as reliance on overlapping users or items across domains, or unrealistic assumptions that ignore privacy constraints. In this work, we propose a new framework, MergeRec, based on model merging under a new and realistic problem setting termed data-isolated cross-domain sequential recommendation, where raw user interaction data cannot be shared across domains. MergeRec consists of three key components: (1) merging initialization, (2) pseudo-user data construction, and (3) collaborative merging optimization. First, we initialize a merged model using training-free merging techniques. Next, we construct pseudo-user data by treating each item as a virtual sequence in each domain, enabling the synthesis of meaningful training samples without relying on real user interactions. Finally, we optimize domain-specific merging weights through a joint objective that combines a recommendation loss, which encourages the merged model to identify relevant items, and a distillation loss, which transfers collaborative filtering signals from the fine-tuned source models. Extensive experiments demonstrate that MergeR",
+  "doi": "10.1145/3770854.3780264",
+  "url": "https://www.semanticscholar.org/paper/9b112ef24108f75cade65efda4bf767fd4d6b185",
+  "pdf": null,
+  "arxiv": "2601.01753"
+ },
+ "2038": {
+  "gid": 2038,
+  "venue": "KDD 2026",
+  "title": "FaST: Efficient and Effective Long-Horizon Forecasting for Large-Scale Spatial-Temporal Graphs via Mixture-of-Experts",
+  "abstract": "Spatial-Temporal Graph (STG) forecasting on large-scale networks has garnered significant attention. However, existing models predominantly focus on short-horizon predictions and suffer from notorious computational costs and memory consumption when scaling to long-horizon predictions and large graphs. Targeting the above challenges, we present FaST, an effective and efficient framework based on heterogeneity-aware Mixture-of-Experts (MoEs) for long-horizon and large-scale STG forecasting, which unlocks oneweek-ahead (672 steps at a 15-minute granularity) prediction with thousands of nodes. FaST is underpinned by two key innovations. First, an adaptive graph agent attention mechanism is proposed to alleviate the computational burden inherent in conventional graph convolution and self-attention modules when applied to large-scale graphs. Second, we propose a new parallel MoE module that replaces traditional feed-forward networks with Gated Linear Units (GLUs), enabling an efficient and scalable parallel structure. Extensive experiments on real-world datasets demonstrate that FaST not only delivers superior long-horizon predictive accuracy but also achieves remarkable computational efficiency compared to state-of-the-art baselines. Source code is publicly available at: https://github.com/yijizhao/FaST.",
+  "doi": "10.1145/3770854.3780165",
+  "url": "https://www.semanticscholar.org/paper/a42b7c038e2d958c44656a8953b45489206d7e9f",
+  "pdf": "https://arxiv.org/pdf/2601.05174",
+  "arxiv": "2601.05174"
+ },
+ "2039": {
+  "gid": 2039,
+  "venue": "KDD 2026",
+  "title": "Nip Rumors in the Bud: Retrieval-Guided Topic-Level Adaptation for Test-Time Fake News Video Detection",
+  "abstract": "Fake News Video Detection (FNVD) is critical for social stability. Existing methods typically assume consistent news topic distribution between training and test phases, failing to detect fake news videos tied to emerging events and unseen topics. To bridge this gap, we introduce RADAR, the first framework that enables test-time adaptation to unseen news videos. RADAR pioneers a new retrieval-guided adaptation paradigm that leverages stable (source-close) videos from the target domain to guide robust adaptation of semantically related but unstable instances. Specifically, we propose an Entropy Selection-Based Retrieval mechanism that provides videos with stable (low-entropy), relevant references for adaptation. We also introduce a Stable Anchor-Guided Alignment module that explicitly aligns unstable instances' representations to the source domain via distribution-level matching with their stable references, mitigating severe domain discrepancies. Finally, our novel Target-Domain Aware Self-Training paradigm can generate informative pseudo-labels augmented by stable references, capturing varying and imbalanced category distributions in the target domain and enabling RADAR to adapt to the fast-changing label distributions. Extensive experiments demonstrate that RADAR achieves superior performance for test-time FNVD, enabling strong on-the-fly adaptation to unseen fake news video ",
+  "doi": "10.1145/3770854.3780211",
+  "url": "https://www.semanticscholar.org/paper/b4093d56ef22dab9de8968bcfee11d13cee6f766",
+  "pdf": null,
+  "arxiv": "2601.11981"
+ },
+ "2040": {
+  "gid": 2040,
+  "venue": "KDD 2026",
+  "title": "MixTTE: Multi-Level Mixture-of-Experts for Scalable and Adaptive Travel Time Estimation",
+  "abstract": "Accurate Travel Time Estimation (TTE) is critical for ride-hailing platforms, where errors directly impact user experience and operational efficiency. While existing production systems excel at holistic route-level dependency modeling, they struggle to capture city-scale traffic dynamics and long-tail scenarios, leading to unreliable predictions in large urban networks. In this paper, we propose \\model, a scalable and adaptive framework that synergistically integrates link-level modeling with industrial route-level TTE systems. Specifically, we propose a spatio-temporal external attention module to capture global traffic dynamic dependencies across million-scale road networks efficiently. Moreover, we construct a stabilized graph mixture-of-experts network to handle heterogeneous traffic patterns while maintaining inference efficiency. Furthermore, an asynchronous incremental learning strategy is tailored to enable real-time and stable adaptation to dynamic traffic distribution shifts. Experiments on real-world datasets validate MixTTE significantly reduces prediction errors compared to seven baselines. MixTTE has been deployed in DiDi, substantially improving the accuracy and stability of the TTE service.",
+  "doi": "10.1145/3770854.3783940",
+  "url": "https://www.semanticscholar.org/paper/bc11192caa850769b4ccbc8d395447f1768b79b9",
+  "pdf": null,
+  "arxiv": "2601.02943"
+ },
+ "2041": {
+  "gid": 2041,
+  "venue": "KDD 2026",
+  "title": "FilDeep: Learning Large Deformations of Elastic-Plastic Solids with Multi-Fidelity Data",
+  "abstract": "The scientific computation of large deformations in elastic-plastic solids is crucial in various manufacturing applications. Traditional numerical methods exhibit several inherent limitations, prompting Deep Learning (DL) as a promising alternative. The effectiveness of current DL techniques typically depends on the availability of high-quantity and high-accuracy datasets, which are yet difficult to obtain in large deformation problems. During the dataset construction process, a dilemma stands between data quantity and data accuracy, leading to suboptimal performance in the DL models. To address this challenge, we focus on a representative application of large deformations, the stretch bending problem, and propose FilDeep, a Fidelity-based Deep Learning framework for large Deformation of elastic-plastic solids. Our FilDeep aims to resolve the quantity-accuracy dilemma by simultaneously training with both low-fidelity and high-fidelity data, where the former provides greater quantity but lower accuracy, while the latter offers higher accuracy but in less quantity. In FilDeep, we provide meticulous designs for the practical large deformation problem. Particularly, we propose attention-enabled cross-fidelity modules to effectively capture long-range physical interactions across MF data. To the best of our knowledge, our FilDeep presents the first DL framework for large deformation",
+  "doi": "10.1145/3770854.3783959",
+  "url": "https://www.semanticscholar.org/paper/c1645c9c8dde15f56448595fb85d4025d4ea489f",
+  "pdf": null,
+  "arxiv": "2601.10031"
+ },
+ "2042": {
+  "gid": 2042,
+  "venue": "KDD 2026",
+  "title": "SynSym: A Synthetic Data Generation Framework for Psychiatric Symptom Identification",
+  "abstract": "Psychiatric symptom identification on social media aims to infer fine-grained mental health symptoms from user-generated posts, allowing a detailed understanding of users' mental states. However, the construction of large-scale symptom-level datasets remains challenging due to the resource-intensive nature of expert labeling and the lack of standardized annotation guidelines, which in turn limits the generalizability of models to identify diverse symptom expressions from user-generated text. To address these issues, we propose SynSym, a synthetic data generation framework for constructing generalizable datasets for symptom identification. Leveraging large language models (LLMs), SynSym constructs high-quality training samples by (1) expanding each symptom into sub-concepts to enhance the diversity of generated expressions, (2) producing synthetic expressions that reflect psychiatric symptoms in diverse linguistic styles, and (3) composing realistic multi-symptom expressions, informed by clinical co-occurrence patterns. We validate SynSym on three benchmark datasets covering different styles of depressive symptom expression. Experimental results demonstrate that models trained solely on the synthetic data generated by SynSym perform comparably to those trained on real data, and benefit further from additional fine-tuning with real data. These findings underscore the potential of",
+  "doi": "10.1145/3770854.3785698 10.1145/3770854.3785698 10.1145/3770854.3785698",
+  "url": "https://www.semanticscholar.org/paper/c99785e24f5019c1f6f605fee624b48abf482da4",
+  "pdf": null,
+  "arxiv": "2603.21529"
+ },
+ "2043": {
+  "gid": 2043,
+  "venue": "KDD 2026",
+  "title": "Holistic Data Scheduler for LLM Pre-training via Multi-Objective Reinforcement Learning",
+  "abstract": "The composition of training data, governed by the diversity of sources and their mixing strategy, is a cornerstone of Large Language Model (LLM) pre-training. Online Data Mixing (ODM), the technique of adaptively adjusting data mixtures during training, has emerged as a promising direction to improve efficiency. However, existing methods are constrained by their reliance on a singular optimization perspective, which fundamentally overlooks the need for complex LLM pre-training to consider the dynamic data composition from multiple dimensions. To overcome this limitation, we introduce the Holistic Data Scheduler (HDS), a novel online data mixing framework. HDS formulates the data scheduling challenge as a reinforcement learning problem in a continuous control space and leverages the Soft Actor-Critic (SAC) algorithm for its stability and sample efficiency in exploring the high-dimensional policy space. At the core of HDS lies a novel multi-objective, holistic reward function that integrates three critical perspectives: a data-driven reward for quality, a loss-driven reward capturing inter-domain influence, and a model-driven reward based on weight norms. To validate our design and determine its optimal configuration, we conducted systematic experiments on LLMs of various sizes. On The Pile benchmark, HDS reaches the final validation perplexity of the next best method with 44% fe",
+  "doi": "10.1145/3770854.3780325",
+  "url": "https://www.semanticscholar.org/paper/ca3650bdda9a9ccb14cbbcb278dfbd7086331c4c",
+  "pdf": null,
+  "arxiv": "2606.24133"
+ },
+ "2044": {
+  "gid": 2044,
+  "venue": "KDD 2026",
+  "title": "Vistar: Enhancing the Perception Capability of LLMs under Imprecise IMU-Text Alignment",
+  "abstract": "This paper introduces Vistar, a novel self-supervised framework for inertial measurement unit (IMU) signal perception designed for large language models (LLMs). Unlike visual data, IMU signals are high-frequency time series with low interpretability, making manual annotation with natural language particularly challenging. Even when using vision-language models (VLMs) to describe events in videos synchronized with IMU signals, a semantic gap remains between high-level visual semantics and low-level IMU vibrations. The core idea of Vistar is to achieve accurate IMU signal perception through collaborations between offline cross-modal alignment and online retrieval-augmented generation. During offline training, Vistar uses pretrained vision and language encoders as anchors to learn IMU encoders via hierarchical cross-modal contrastive learning, establishing both inter- and intra-sample alignment. Given that the enhanced training strategy still fails to achieve precise alignment between IMU and text, during online inference, Vistar further employs a retrieval-augmented generation mechanism to generate distilled textual descriptions from similar text filtered based on structural relations of their paired IMU samples. Extensive evaluations on three multimodal datasets demonstrate that Vistar consistently outperforms state-of-the-art (SOTA) baselines by up to 57.45% in IMU-to-text retr",
+  "doi": "10.1145/3770854.3780181",
+  "url": "https://www.semanticscholar.org/paper/cf1fa7718d6ee0961a7adc7ccc19cb302be0a049",
+  "pdf": null,
+  "arxiv": null
+ },
+ "2045": {
+  "gid": 2045,
+  "venue": "KDD 2026",
+  "title": "AHA: Scalable Alternative History Analysis for Operational Timeseries Applications",
+  "abstract": "Many operational systems collect high-dimensional timeseries data about users/systems on key performance metrics. For instance, ISPs, content distribution networks, and video delivery services collect quality of experience metrics for user sessions associated with metadata (e.g., location, device, ISP). Over such historical data, operators and data analysts often need to run retrospective analysis; e.g., analyze anomaly detection algorithms, experiment with different configurations for alerts, evaluate new algorithms, and so on. We refer to this class of workloads as alternative history analysis for operational datasets. We show that in such settings, traditional data processing solutions (e.g., data warehouses, sampling, sketching, big-data systems) either pose high operational costs or do not guarantee accurate replay. We design and implement a system, called AHA (Alternative History Analytics), that overcomes both challenges to provide cost efficiency and fidelity for high-dimensional data. The design of AHA is based on analytical and empirical insights about such workloads: 1) the decomposability of underlying statistics; 2) sparsity in terms of active number of subpopulations over attribute-value combinations; and 3) efficiency structure of aggregation operations in modern analytics databases. Using multiple real-world datasets and as well as case-studies on production pip",
+  "doi": "10.1145/3770854.3783945",
+  "url": "https://www.semanticscholar.org/paper/e0247eb674fc9a122bad555da10d07899f665482",
+  "pdf": null,
+  "arxiv": "2601.04432"
+ },
+ "2046": {
+  "gid": 2046,
+  "venue": "KDD 2026",
+  "title": "Retain to Refine: Adaptive Online Question Answering via Query Routing and Long-Short Memory",
+  "abstract": "Large Language Models (LLMs) have shown strong capabilities in open-domain question answering (QA), but deploying them in real-world online systems introduces critical challenges. These include: (1) handling both simple and complex queries with appropriate levels of reasoning, (2) minimizing latency without compromising answer quality, and (3) maintaining answer consistency under evolving and noisy retrieval contexts. To address these challenges, we propose Retain-to-Refine (<i>R</i><sup>2</sup><i>R</i>), an adaptive agent-based QA framework designed for practical deployment. <i>R</i><sup>2</sup><i>R </i>integrates a Query Critic Agent (<i>QCA</i>) to assess query difficulty and route it accordingly: simple queries are answered directly using fast, prompt-based LLM calls, while complex queries are handled by a Memory Augmented Agent (<i>MAA</i>). <i>MAA </i>performs iterative reasoning guided by a unique <i>long-short memory mechanism</i>. Long-term memory retains and consolidates stable, core facts to ground the reasoning process, while short-term memory identifies transient information gaps to formulate highly focused subsequent queries. To ensure evidence quality, a <i>Supervised Retrospection </i>module validates and filters retrieved documents at each step. This agent-based design enables <i>R</i><sup>2</sup><i>R </i>to dynamically allocate computation based on question co",
+  "doi": "10.1145/3770854.3783919",
+  "url": "https://www.semanticscholar.org/paper/e991fbd43b77e98c1415690b8b1383ef7fb7a870",
+  "pdf": null,
+  "arxiv": null
+ },
+ "2047": {
+  "gid": 2047,
+  "venue": "KDD 2026",
+  "title": "Accelerating Storage-based Training for Graph Neural Networks",
+  "abstract": "Graph neural networks (GNNs) have achieved breakthroughs in various real-world downstream tasks due to their powerful expressiveness. As the scale of real-world graphs has been continuously growing, a storage-based approach to GNN training has been studied, which leverages external storage (e.g., NVMe SSDs) to handle such web-scale graphs on a single machine. Although such storage-based GNN training methods have shown promising potential in large-scale GNN training, we observed that they suffer from a severe bottleneck in data preparation since they overlook a critical challenge: how to handle a large number of small storage I/Os. To address the challenge, in this paper, we propose a novel storage-based GNN training framework, named AGNES, that employs a method of block-wise storage I/O processing to fully utilize the I/O bandwidth of high-performance storage devices. Moreover, to further enhance the efficiency of each storage I/O, AGNES employs a simple yet effective strategy, hyperbatch-based processing based on the characteristics of real-world graphs. Comprehensive experiments on five real-world graphs reveal that AGNES consistently outperforms four state-of-the-art methods, up to 4.1\u00d7 faster than the best competitor.",
+  "doi": "10.1145/3770854.3780309",
+  "url": "https://www.semanticscholar.org/paper/f2e8b63722ffbc0f84b0a7823e177a2df3365ae2",
+  "pdf": null,
+  "arxiv": "2601.01473"
+ },
+ "2048": {
+  "gid": 2048,
+  "venue": "KDD 2026",
+  "title": "RUQuant: Towards Refining Uniform Quantization for Large Language Models",
+  "abstract": "The increasing size and complexity of large language models (LLMs) have raised significant challenges in deployment efficiency, particularly under resource constraints. Post-training quantization (PTQ) has emerged as a practical solution by compressing models without requiring retraining. While existing methods focus on uniform quantization schemes for both weights and activations, they often suffer from substantial accuracy degradation due to the non-uniform nature of activation distributions. In this work, we revisit the activation quantization problem from a theoretical perspective grounded in the Lloyd-Max optimality conditions. We identify the core issue as the non-uniform distribution of activations within the quantization interval, which causes the optimal quantization point under the Lloyd-Max criterion to shift away from the midpoint of the interval. To address this issue, we propose a two-stage orthogonal transformation method, RUQuant. In the first stage, activations are divided into blocks. Each block is mapped to uniformly sampled target vectors using composite orthogonal matrices, which are constructed from Householder reflections and Givens rotations. In the second stage, a global Householder reflection is fine-tuned to further minimize quantization error using Transformer output discrepancies. Empirical results show that our method achieves near-optimal quantiza",
+  "doi": "10.1145/3770854.3780259",
+  "url": "https://www.semanticscholar.org/paper/f6d10d5b39a4600b4ebadd8573f1f6bf785cbe36",
+  "pdf": null,
+  "arxiv": "2604.04013"
+ },
+ "2049": {
+  "gid": 2049,
+  "venue": "KDD 2026",
+  "title": "AbFlow: End-to-end Paratope-Centric Antibody Design by Interaction Enhanced Flow Matching",
+  "abstract": "Antigen-antibody binding is a critical process in the immune response. Although recent progress has advanced antibody design, current methods lack a generative framework for end-to-end modeling of full-atom antibody structures and struggle to fully exploit antigen-specific geometric information for optimizing local binding interfaces and global structures. To overcome these limitations, we introduce AbFlow, a flow-matching framework that leverages optimal transport to design full-atom antibodies end-to-end. AbFlow incorporates an extended velocity field network featuring an equivariant Surface Multi-channel Encoder, which uses surface-level antigen interaction data to refine the antibody structure, particularly the CDR-H3 region. Extensive experiments in paratoep-centric antibody design, multi-CDRs and full-atom antibody design, binding affinity optimization, and complex structure prediction show that AbFlow produces superior antigen-antibody complexes, especially at the contact interface, and markedly improves the binding affinity of generated antibodies.",
+  "doi": "10.1145/3770854.3780296",
+  "url": "https://www.semanticscholar.org/paper/f8c9eb99faa8ba32d1d60f2b4233dc4317e93b38",
+  "pdf": null,
+  "arxiv": "2602.07084"
+ }
+}

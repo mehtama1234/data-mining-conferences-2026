@@ -178,6 +178,7 @@ h2{{font-family:var(--serif);font-size:30px;margin:0 0 14px;color:#fff}}
 .vt.WWW{{background:var(--accent)}}
 .vt.WSDM{{background:var(--viol)}}
 .vt.SIGIR{{background:var(--amber)}}
+.vt.KDD{{background:#6FCF97}}
 .pc{{font-size:14px;color:var(--soft);flex:1 1 100%}}
 .ppa{{font-size:13.5px;color:var(--soft);margin-top:3px;padding-left:70px;text-indent:-70px;line-height:1.5;flex:1 1 100%}}
 .pk{{display:inline-block;width:62px;font-family:var(--mono);font-size:9.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--rose);text-align:right;margin-right:8px}}.pk.ap{{color:var(--accent)}}

@@ -1,6 +1,6 @@
 {
- "n_papers": 1489,
- "n_analyzed": 1487,
+ "n_papers": 1537,
+ "n_analyzed": 1537,
  "coverage_pct": 99.9,
  "bad_batches": [],
  "papers": [
@@ -24057,6 +24057,830 @@
     "multimodal",
     "evaluation",
     "rag"
+   ]
+  },
+  {
+   "venue": "KDD 2026",
+   "title": "CREAM: Continual Retrieval on Dynamic Streaming Corpora with Adaptive Soft Memory",
+   "doi": "10.1145/3770854.3780281",
+   "url": "https://www.semanticscholar.org/paper/006a9f5b8180244df4a69b4577b744bfc68624e4",
+   "gid": 2000,
+   "problem": "Retrieval systems degrade on streaming data without ground-truth labels for unseen topics.",
+   "approach": "Self-supervised continual learning framework with dynamic soft memory and clustering.",
+   "contribution": "27.79% improvement in retrieval without labels; adaptive memory captures evolving semantics.",
+   "primary_theme": "Information retrieval",
+   "methods": [
+    "continual learning",
+    "self-supervised learning",
+    "memory-based adaptation"
+   ]
+  },
+  {
+   "venue": "KDD 2026",
+   "title": "KAN-FIF: Spline-Parameterized Lightweight Physics-based Tropical Cyclone Estimation on Meteorological Satellite",
+   "doi": "10.1145/3770854.3783929",
+   "url": "https://www.semanticscholar.org/paper/00a198ba73b3dadd86037a50f4eb62c86a40d33a",
+   "gid": 2001,
+   "problem": "Tropical cyclone forecasting on edge devices requires both physical accuracy and tiny model size.",
+   "approach": "Spline-parameterized Kolmogorov-Arnold networks reduce parameters while capturing nonlinear TC physics.",
+   "contribution": "94.8% smaller model, 68.7% faster inference, 32.5% lower prediction error on cyclone winds.",
+   "primary_theme": "Time series forecasting",
+   "methods": [
+    "neural network architecture",
+    "physics-guided learning",
+    "spline learning"
+   ]
+  },
+  {
+   "venue": "KDD 2026",
+   "title": "KFTD: Koopman-Fourier Time-Differentiable Network for Continuous Ocean Spatiotemporal Forecasting",
+   "doi": "10.1145/3770854.3780278",
+   "url": "https://www.semanticscholar.org/paper/082cbf0ae49e5eee584befaa66e4f3e4cebc37b6",
+   "gid": 2002,
+   "problem": "Ocean spatiotemporal forecasting must balance nonlinear dynamics with computational cost and continuous-time accuracy.",
+   "approach": "Map dynamics to linear Koopman space, use Fourier analysis for continuous interpolation, solve via residual networks.",
+   "contribution": "5.6% MSE reduction, 76% faster than diffusion methods, maintains physical constraints in latent space.",
+   "primary_theme": "Time series forecasting",
+   "methods": [
+    "neural ODE",
+    "koopman theory",
+    "fourier analysis"
+   ]
+  },
+  {
+   "venue": "KDD 2026",
+   "title": "SEW: Strengthening Robustness of Black-box DNN Watermarking via Specificity Enhancement",
+   "doi": "10.1145/3770854.3780272",
+   "url": "https://www.semanticscholar.org/paper/0abdaffef0027061a7eb873b188e26d0a73b3c99",
+   "gid": 2003,
+   "problem": "DNN watermarks are vulnerable to removal: attackers reverse-engineer approximate keys, stripping copyright markers.",
+   "approach": "Enhance watermark specificity by decoupling watermark response from approximate keys via adversarial training.",
+   "contribution": "Robust defense against six removal attacks; watermark remains unforgeably specific to original keys.",
+   "primary_theme": "Model security",
+   "methods": [
+    "adversarial robustness",
+    "neural network security",
+    "watermarking"
+   ]
+  },
+  {
+   "venue": "KDD 2026",
+   "title": "Fast Mining and Dynamic Time-to-Event Prediction over Multi-sensor Data Streams",
+   "doi": "10.1145/3770854.3780164",
+   "url": "https://www.semanticscholar.org/paper/0b1a463a59ee2b7b95a6eba9a1199e3a7cda7381",
+   "gid": 2004,
+   "problem": "Industrial machines fail; predicting *when* failure occurs is hard because sensor patterns evolve over time.",
+   "approach": "Identify dynamic stages in sensor streams, learn separate predictive models per stage, update online.",
+   "contribution": "Higher accuracy, discovers evolving failure patterns, linear-time scalable online learning.",
+   "primary_theme": "Time series forecasting",
+   "methods": [
+    "online learning",
+    "stage detection",
+    "dynamic adaptation"
+   ]
+  },
+  {
+   "venue": "KDD 2026",
+   "title": "EviCare: Enhancing Diagnosis Prediction with Deep Model-Guided Evidence for In-Context Reasoning",
+   "doi": "10.1145/3770854.3780257",
+   "url": "https://www.semanticscholar.org/paper/0bf6fa5415f3ce41d4737c9847087cb1a0c7dcff",
+   "gid": 2005,
+   "problem": "LLMs predict common diagnoses well but miss rare, clinically urgent conditions; they overfit to historical EHR data.",
+   "approach": "Use deep models to prescreen candidates, then guide LLM reasoning with prioritized evidence from structured EHR.",
+   "contribution": "20.65% average gain vs. LLM/deep-only baselines; 30.97% improvement on novel diagnoses.",
+   "primary_theme": "Healthcare AI",
+   "methods": [
+    "large language models",
+    "hybrid reasoning",
+    "evidence prioritization"
+   ]
+  },
+  {
+   "venue": "KDD 2026",
+   "title": "Exploring Recommender System Evaluation: A Multi-Modal LLM Agent Framework for A/B Testing",
+   "doi": "10.1145/3770854.3785688",
+   "url": "https://www.semanticscholar.org/paper/0ec205bf349b0b4cd73db6f40bd061784c100811",
+   "gid": 2006,
+   "problem": "A/B testing recommenders is expensive and slow; replacing it with simulation could accelerate evaluation.",
+   "approach": "Build a multimodal LLM agent that simulates users browsing recommendations in a sandbox, replacing live A/B tests.",
+   "contribution": "Agent outputs correlate with A/B test results; synthetic data improves downstream recommendation models.",
+   "primary_theme": "Recommender systems",
+   "methods": [
+    "large language models",
+    "agent simulation",
+    "user behavior modeling"
+   ]
+  },
+  {
+   "venue": "KDD 2026",
+   "title": "Advanced Global Wildfire Activity Modeling with Hierarchical Graph ODE",
+   "doi": "10.1145/3770854.3780193",
+   "url": "https://www.semanticscholar.org/paper/118414814561d7694b6aa37812995de3670d3e56",
+   "gid": 2007,
+   "problem": "Global wildfire prediction requires multi-scale spatiotemporal modeling; standard architectures miss long-range dynamics.",
+   "approach": "Hierarchical graph ODE: represent Earth as multi-level graph, learn continuous dynamics per scale level.",
+   "contribution": "Outperforms state-of-the-art on long-range forecasting; predictions align with observations.",
+   "primary_theme": "Spatiotemporal modeling",
+   "methods": [
+    "graph neural networks",
+    "neural ODE",
+    "hierarchical learning"
+   ]
+  },
+  {
+   "venue": "KDD 2026",
+   "title": "Improving Enzyme Prediction with Chemical Reaction Equations by Hypergraph-Enhanced Knowledge Graph Embeddings",
+   "doi": "10.1145/3770854.3780178",
+   "url": "https://www.semanticscholar.org/paper/121cc7deca2d00c73e66dbebc90f78d8ea77e0e9",
+   "gid": 2008,
+   "problem": "Enzyme-substrate data is sparse; knowledge graphs of chemical reactions are denser but their complex interactions are hard to model.",
+   "approach": "Represent reactions as hypergraphs (multi-way relationships), embed via hypergraph transformer + knowledge graph embeddings.",
+   "contribution": "Predicts unseen enzyme-substrate pairs by capturing compound interactions in reactions.",
+   "primary_theme": "Graph learning",
+   "methods": [
+    "knowledge graph embedding",
+    "hypergraph learning",
+    "transformer architecture"
+   ]
+  },
+  {
+   "venue": "KDD 2026",
+   "title": "Deep Hierarchical Knowledge Loss for Fault Intensity Diagnosis",
+   "doi": "10.1145/3770854.3780290",
+   "url": "https://www.semanticscholar.org/paper/150a5f0ee19c9e4b0e11dcfe09f1bde97dce8152",
+   "gid": 2009,
+   "problem": "Fault intensity diagnosis must recognize subtle faults; treating all classes equally misses hierarchical dependencies.",
+   "approach": "Deep hierarchical knowledge loss: tree-structured soft labels + triplet loss with hierarchical margins.",
+   "contribution": "Superior fault recognition on industrial datasets; hierarchical knowledge improves robustness.",
+   "primary_theme": "Anomaly detection",
+   "methods": [
+    "metric learning",
+    "hierarchical classification",
+    "loss functions"
+   ]
+  },
+  {
+   "venue": "KDD 2026",
+   "title": "Bayesian Robust Financial Trading with Adversarial Synthetic Market Data",
+   "doi": "10.1145/3770854.3780175",
+   "url": "https://www.semanticscholar.org/paper/1935d01cd1c9970cec7a4af9c6ec41f12a964e8f",
+   "gid": 2010,
+   "problem": "Trading models overfit to historical regimes and fail when macroeconomic conditions shift; they need robustness to market regime change.",
+   "approach": "Train robust policy via adversarial Bayesian Markov game; generate diverse, realistic market data with macro-conditioned GAN.",
+   "contribution": "Trading agent maintains performance across regime shifts; learns from synthetic market data.",
+   "primary_theme": "Financial time series",
+   "methods": [
+    "generative models",
+    "robust reinforcement learning",
+    "bayesian inference"
+   ]
+  },
+  {
+   "venue": "KDD 2026",
+   "title": "LitBench: A Graph-Centric Large Language Model Benchmarking Tool For Literature Tasks",
+   "doi": "10.1145/3770854.3785679",
+   "url": "https://www.semanticscholar.org/paper/24425a9c777d2b633f9678ee057f9aed68f00e20",
+   "gid": 2011,
+   "problem": "LLMs struggle with domain-specific literature tasks: connecting knowledge across papers, understanding jargon, reasoning within context.",
+   "approach": "Curate domain-specific literature graphs, define literature-centric tasks (node/edge analysis, related-work generation).",
+   "contribution": "Benchmarking tool enabling development of domain-specific LLMs; flexible graph curation.",
+   "primary_theme": "LLM evaluation",
+   "methods": [
+    "graph-based learning",
+    "benchmark design",
+    "domain adaptation"
+   ]
+  },
+  {
+   "venue": "KDD 2026",
+   "title": "GenHAR: Generalizing Cross-domain Human Activity Recognition for Last-mile Delivery",
+   "doi": "10.1145/3770854.3783921",
+   "url": "https://www.semanticscholar.org/paper/2d1e5b1d7593e99b9ee9c9c645fb2f130e51f278",
+   "gid": 2012,
+   "problem": "Activity recognition for delivery logistics fails when deploying across cities/sensors; domain shift hurts accuracy.",
+   "approach": "Tokenize sensor streams, learn domain-invariant representations via selective masking and efficient attention.",
+   "contribution": "9.97% accuracy gain over baselines, 6.4x fewer operations, deployed across 4 cities on 2.15B real activities.",
+   "primary_theme": "Human activity recognition",
+   "methods": [
+    "domain adaptation",
+    "transformer architecture",
+    "sensor tokenization"
+   ]
+  },
+  {
+   "venue": "KDD 2026",
+   "title": "Live or Lie: Action-Aware Capsule Multiple Instance Learning for Risk Assessment in Live Streaming Platforms",
+   "doi": "10.1145/3770854.3780246",
+   "url": "https://www.semanticscholar.org/paper/31d8ab00fe9006cc2e47017c58c960af55fcd55a",
+   "gid": 2013,
+   "problem": "Malicious actors coordinate covertly within live streams, evading detection while appearing normal.",
+   "approach": "Model rooms as bags and action-timeslot sequences as instances within a Multiple Instance Learning framework capturing behavioral patterns.",
+   "contribution": "AC-MIL framework outperforms baselines on real Douyin data, offering both risk scores and interpretable behavioral evidence.",
+   "primary_theme": "Anomaly detection",
+   "methods": [
+    "multiple instance learning",
+    "capsule networks",
+    "temporal modeling",
+    "graph neural networks"
+   ]
+  },
+  {
+   "venue": "KDD 2026",
+   "title": "From Memorization to Creation: Evaluating the Cognitive Depth of LLM?Generated Educational Questions",
+   "doi": "10.1145/3770854.3785686",
+   "url": "https://www.semanticscholar.org/paper/3482ea5477a858dd56fe6fb69b766fb29e2d06bc",
+   "gid": 2014,
+   "problem": "LLMs generate educational questions at low cognitive levels, favoring recall over deep thinking.",
+   "approach": "Evaluate and improve six LLMs via Bloom's Taxonomy through prompt design and measure cognitive shift intensity.",
+   "contribution": "Refined prompts reduce repetitiveness by 24.45% and boost higher-order cognition by 11.53% on diverse subjects.",
+   "primary_theme": "LLM evaluation and applications",
+   "methods": [
+    "prompt engineering",
+    "human-AI evaluation",
+    "cognitive taxonomy",
+    "interpretability analysis"
+   ]
+  },
+  {
+   "venue": "KDD 2026",
+   "title": "Four-Cycle Counting in Low-Degeneracy Graph Streams",
+   "doi": "10.1145/3770854.3780199",
+   "url": "https://www.semanticscholar.org/paper/389e39c09787fe953861b5f7675e85cbfe01df42",
+   "gid": 2015,
+   "problem": "Efficiently counting four-cycles in massive streaming graphs is hard; prior bounds don't leverage graph sparsity.",
+   "approach": "Two streaming algorithms using induced subgraph sampling, tailored to degeneracy and cycle distribution.",
+   "contribution": "Two-pass algorithm achieves optimal bounds for sparse graphs; one-pass works on real sparse/social networks.",
+   "primary_theme": "Graph algorithms and streaming",
+   "methods": [
+    "sampling",
+    "streaming algorithms",
+    "degeneracy",
+    "approximation theory"
+   ]
+  },
+  {
+   "venue": "KDD 2026",
+   "title": "From Agnostic to Specific: Latent Preference Diffusion for Multi-Behavior Sequential Recommendation",
+   "doi": "10.1145/3770854.3780285",
+   "url": "https://www.semanticscholar.org/paper/3b2aff479b9632d1e13581e9633c4967a143ef06",
+   "gid": 2016,
+   "problem": "Multi-behavior recommendations ignore latent user preferences and suffer from low-entropy behaviors to high-entropy items asymmetry.",
+   "approach": "Generative diffusion model from agnostic to behavior-specific latent preferences via multimodal autoencoders and RoPE.",
+   "contribution": "FatsMB framework learns diverse, accurate recommendations on multi-behavior sequences.",
+   "primary_theme": "Recommender systems",
+   "methods": [
+    "diffusion models",
+    "autoencoder",
+    "multi-behavior learning",
+    "generative modeling"
+   ]
+  },
+  {
+   "venue": "KDD 2026",
+   "title": "Hitcher: Efficient GPU-based Vector Search via Cluster-Centric Kernel and Hitch-Ride Ordering",
+   "doi": "10.1145/3770854.3780212",
+   "url": "https://www.semanticscholar.org/paper/3b9a49f0982279b592260dbb80c05e55dcfe7403",
+   "gid": 2017,
+   "problem": "GPU-based vector search suffers low throughput and high P99 latency due to query-centric kernels and inefficient batching.",
+   "approach": "Cluster-centric GPU kernel and hitch-ride ordering preserve query order while batching computation across queries.",
+   "contribution": "22\u00d7 lower P99 latency and 9\u00d7 higher throughput via data reuse and smart task reordering.",
+   "primary_theme": "Vector search and indexing",
+   "methods": [
+    "GPU optimization",
+    "kernel design",
+    "data parallelism",
+    "scheduling"
+   ]
+  },
+  {
+   "venue": "KDD 2026",
+   "title": "Learning Hierarchical Knowledge in Text-Rich Networks with Taxonomy-Informed Representation Learning",
+   "doi": "10.1145/3770854.3780260",
+   "url": "https://www.semanticscholar.org/paper/42fd45a57bdd86dc2e423c4f62ca203f717b16ab",
+   "gid": 2018,
+   "problem": "Text-Rich Networks ignore hierarchical semantics in node documents; flat models miss coarse and fine semantic structure.",
+   "approach": "Build implicit hierarchical taxonomy via similarity-guided contrastive learning and LLM refinement, then regularize embeddings to align with it.",
+   "contribution": "TIER learns hierarchical representations for nodes, improving interpretability and downstream task performance.",
+   "primary_theme": "Graph learning and representation learning",
+   "methods": [
+    "contrastive learning",
+    "hierarchical clustering",
+    "taxonomy-informed regularization",
+    "large language models"
+   ]
+  },
+  {
+   "venue": "KDD 2026",
+   "title": "Incident-Guided Spatiotemporal Traffic Forecasting",
+   "doi": "10.1145/3770854.3780215",
+   "url": "https://www.semanticscholar.org/paper/4aaa1c41f4eb806e41ee13aa6bf6756762344a42",
+   "gid": 2019,
+   "problem": "Traffic forecasting ignores sudden incidents (accidents, weather) that dramatically alter flow patterns unpredictably.",
+   "approach": "Incident-Guided Spatiotemporal GNN with modules for heterogeneous incident impact and decay dynamics.",
+   "contribution": "IGSTGNN with incident dataset significantly improves prediction accuracy during anomalous periods.",
+   "primary_theme": "Time series forecasting",
+   "methods": [
+    "graph neural networks",
+    "spatiotemporal modeling",
+    "incident detection",
+    "deep learning"
+   ]
+  },
+  {
+   "venue": "KDD 2026",
+   "title": "Enriching Semantic Profiles into Knowledge Graph for Recommender Systems Using Large Language Models",
+   "doi": "10.1145/3770854.3780324",
+   "url": "https://www.semanticscholar.org/paper/557ccc4e6ae350d46d37282f551a5836b22763b3",
+   "gid": 2020,
+   "problem": "Recommender profiles lack richness; unclear how to construct and propagate them for diverse knowledge sources.",
+   "approach": "Use LLMs to extract semantic profiles for KG entities, integrate via knowledge graph, match at training.",
+   "contribution": "SPiKE recommendation model combining LLM profiles with KG propagation consistently beats baselines.",
+   "primary_theme": "Recommender systems",
+   "methods": [
+    "large language models",
+    "knowledge graphs",
+    "entity profiles",
+    "contrastive learning"
+   ]
+  },
+  {
+   "venue": "KDD 2026",
+   "title": "Communication-efficient Federated Graph Classification via Generative Diffusion Modeling",
+   "doi": "10.1145/3770854.3780262",
+   "url": "https://www.semanticscholar.org/paper/5f06013ae15bb77642da9472efec93a2fdea525d",
+   "gid": 2021,
+   "problem": "Federated GNNs face high communication costs and non-IID data across decentralized clients.",
+   "approach": "Generative diffusion models on each client capture local graph distributions, shared with server, then generate synthetic graphs.",
+   "contribution": "CeFGC reduces communication to three rounds via generative models, handling non-IID data and proving constant-round complexity.",
+   "primary_theme": "Federated learning",
+   "methods": [
+    "federated learning",
+    "diffusion models",
+    "graph neural networks",
+    "generative modeling"
+   ]
+  },
+  {
+   "venue": "KDD 2026",
+   "title": "Breaking Robustness Barriers in Cognitive Diagnosis: A One-Shot Neural Architecture Search Perspective",
+   "doi": "10.1145/3770854.3780159",
+   "url": "https://www.semanticscholar.org/paper/61bfa2ff745530610935ce77bc70ccffcd15c376",
+   "gid": 2022,
+   "problem": "Cognitive diagnosis models are brittle to noise in learner response data and rely on hand-tuned architecture design.",
+   "approach": "Evolutionary multi-objective NAS to search architecture space while training a weight-sharing supernet robust to noise.",
+   "contribution": "OSCD improves cognitive diagnosis robustness via architecture search; validated on intelligent tutoring systems.",
+   "primary_theme": "Neural architecture search and online learning",
+   "methods": [
+    "neural architecture search",
+    "multi-objective optimization",
+    "weight sharing",
+    "education mining"
+   ]
+  },
+  {
+   "venue": "KDD 2026",
+   "title": "Effective and Robust Multimodal Medical Image Analysis",
+   "doi": "10.1145/3770854.3780331",
+   "url": "https://www.semanticscholar.org/paper/62e6e39cbc592e3ac5e02a91bb4070c5afdc9063",
+   "gid": 2023,
+   "problem": "Multimodal medical image fusion lacks generalizability, is computationally expensive, and vulnerable to adversarial attacks.",
+   "approach": "Efficient attention blocks for modality-specific patterns and cross-attention for complementary shared representations; extend with adversarial robustness.",
+   "contribution": "MAIL and Robust-MAIL networks achieve superior performance on 20 datasets with 42\u00d7 fewer parameters than state-of-the-art.",
+   "primary_theme": "Medical image analysis",
+   "methods": [
+    "multi-modal fusion",
+    "attention mechanisms",
+    "adversarial robustness",
+    "deep learning"
+   ]
+  },
+  {
+   "venue": "KDD 2026",
+   "title": "PSQE: A Theoretical-Practical Approach to Pseudo Seed Quality Enhancement for Unsupervised Multimodal Entity Alignment",
+   "doi": "10.1145/3770854.3780249",
+   "url": "https://www.semanticscholar.org/paper/65cc5e08d629533cc9dd71e14f2e2e7bd0aec0fb",
+   "gid": 2024,
+   "problem": "Unsupervised multimodal entity alignment suffers imbalanced pseudo-seed coverage, limiting contrastive learning across sparsely-connected entities.",
+   "approach": "Quality enhancement of pseudo-seeds via clustering-resampling; theoretical analysis of pseudo-seed impact on contrastive learning.",
+   "contribution": "PSQE plug-and-play module improves baseline precision and coverage balance, validated with theoretical guarantees.",
+   "primary_theme": "Entity alignment and knowledge graphs",
+   "methods": [
+    "contrastive learning",
+    "clustering",
+    "resampling",
+    "knowledge graph integration"
+   ]
+  },
+  {
+   "venue": "KDD 2026",
+   "title": "When Deepfake Detection Meets Graph Neural Network: A Unified and Lightweight Framework",
+   "doi": "10.1145/3770854.3780219",
+   "url": "https://www.semanticscholar.org/paper/67c5bf4c2869691f2cb936b72fa433a25b2b6f30",
+   "gid": 2025,
+   "problem": "Deepfake detection methods generalize poorly; they rely on isolated spatial, temporal, or spectral cues without joint reasoning.",
+   "approach": "Lightweight spatial-spectral-temporal GNN that represents videos as structured graphs with learnable spectral filters.",
+   "contribution": "SSTGNN achieves superior cross-domain detection with 42\u00d7 fewer parameters than state-of-the-art models.",
+   "primary_theme": "Deepfake detection and video forensics",
+   "methods": [
+    "graph neural networks",
+    "spectral analysis",
+    "temporal modeling",
+    "lightweight architecture"
+   ]
+  },
+  {
+   "venue": "KDD 2026",
+   "title": "Signed Proximity Matters in Graph-based Recommendation",
+   "doi": "10.1145/3770854.3780298",
+   "url": "https://www.semanticscholar.org/paper/69beccd6cd0ee695631e71be20bd69c91209984e",
+   "gid": 2026,
+   "problem": "Graph-based recommendation systems ignore negative user signals like dislikes, missing critical preference information.",
+   "approach": "SPGNN extends GNNs with signed local/global proximity metrics rooted in weak balance theory to capture sign-aware multi-scale node relations.",
+   "contribution": "Significantly improves top-K recommendation accuracy in signed graphs by unlocking sign-aware neighborhood aggregation and feature initialization.",
+   "primary_theme": "Recommender systems",
+   "methods": [
+    "graph neural networks",
+    "signed graphs",
+    "weak balance theory"
+   ]
+  },
+  {
+   "venue": "KDD 2026",
+   "title": "HumanLLM: Towards Personalized Understanding and Simulation of Human Nature",
+   "doi": "10.1145/3770854.3780294",
+   "url": "https://www.semanticscholar.org/paper/6a1b0d8801a0c4c8e4161f0d272ec29707873c4b",
+   "gid": 2027,
+   "problem": "LLMs simulate human behavior poorly because pretraining on static web data lacks situated individual context spanning time.",
+   "approach": "HumanLLM builds a Cognitive Genome Dataset from 5.5M user logs on Reddit/Twitter/Amazon, fine-tunes an LLM to predict personalized thoughts and behaviors.",
+   "contribution": "Foundation model for individual-level human simulation and personalization, enabling social science insights and customer behavior prediction.",
+   "primary_theme": "LLM agents",
+   "methods": [
+    "large language models",
+    "personalization",
+    "behavioral data synthesis"
+   ]
+  },
+  {
+   "venue": "KDD 2026",
+   "title": "Q-Regularized Generative Auto-Bidding: From Suboptimal Trajectories to Optimal Policies",
+   "doi": "10.1145/3770854.3783950",
+   "url": "https://www.semanticscholar.org/paper/6b6f05c148428b6b44066c391c5e95502678290a",
+   "gid": 2028,
+   "problem": "Offline RL for auto-bidding learns from suboptimal historical data, limiting policy improvement despite expensive hyperparameter tuning.",
+   "approach": "QGA combines Q-value regularized Decision Transformer with dual-exploration mechanism, using Q-guidance to balance imitation and optimization.",
+   "contribution": "Improves bidding policies by joint optimization of experience imitation and action-value maximization, with principled exploration beyond data distribution.",
+   "primary_theme": "Reinforcement learning",
+   "methods": [
+    "reinforcement learning",
+    "decision transformer",
+    "q-learning"
+   ]
+  },
+  {
+   "venue": "KDD 2026",
+   "title": "Balanced Anomaly-guided Ego-graph Diffusion Model for Inductive Graph Anomaly Detection",
+   "doi": "10.1145/3770854.3780240",
+   "url": "https://www.semanticscholar.org/paper/6dd36a2ea995ac82bd628bd6c7ba5db13ba4c0b8",
+   "gid": 2029,
+   "problem": "Graph anomaly detection fails on dynamic networks and rare anomalies due to transductive-only models and extreme class imbalance.",
+   "approach": "Framework with discrete ego-graph diffusion model for anomaly generation and curriculum augmentation to balance data during training.",
+   "contribution": "Inductive anomaly detection on evolving graphs via anomaly-aware data synthesis and progressive underrepresented sample focusing.",
+   "primary_theme": "Anomaly detection",
+   "methods": [
+    "graph neural networks",
+    "diffusion models",
+    "data augmentation"
+   ]
+  },
+  {
+   "venue": "KDD 2026",
+   "title": "Enhancing Multimodal Recommendation via Multimodal Representation Calibration in Spectral Domain",
+   "doi": "10.1145/3770854.3780208",
+   "url": "https://www.semanticscholar.org/paper/70331fc19bf79d6f789cd072d09c1cefbf77da17",
+   "gid": 2030,
+   "problem": "Multimodal recommendation fuses text, images, video naively, amplifying modality-specific noise and missing distribution shifts between modalities.",
+   "approach": "DAMPS uses Fast Fourier Transform to decompose multimodal representations into amplitude and phase, then denoises and calibrates both spectra.",
+   "contribution": "Cleaner fused multimodal representations via spectral domain analysis, improving recommendation accuracy by suppressing modality noise.",
+   "primary_theme": "Recommender systems",
+   "methods": [
+    "multimodal learning",
+    "spectral analysis",
+    "noise suppression"
+   ]
+  },
+  {
+   "venue": "KDD 2026",
+   "title": "Minimizing Total Biharmonic Distance in Large Graphs via Link Recommendation",
+   "doi": "10.1145/3770854.3780204",
+   "url": "https://www.semanticscholar.org/paper/711aeb7520f09f45861c68f368185633892ec38c",
+   "gid": 2031,
+   "problem": "Adding edges to reduce total biharmonic distance (network robustness metric) is computationally hard; greedy methods scale cubically.",
+   "approach": "Greedy algorithms with projection methods, Laplacian solvers, and convex hull approximation to reduce cubic complexity to nearly linear.",
+   "contribution": "Nearly linear-time link recommendation maintaining error guarantees while preserving network connectivity efficiency at scale.",
+   "primary_theme": "Graph learning",
+   "methods": [
+    "convex optimization",
+    "graph algorithms",
+    "approximation algorithms"
+   ]
+  },
+  {
+   "venue": "KDD 2026",
+   "title": "FedKDMR: Robust Federated Learning via Joint Knowledge Distillation & Model Recombination",
+   "doi": "10.1145/3770854.3780160",
+   "url": "https://www.semanticscholar.org/paper/75792b84dd769fb889691a9ce8468f91f3e6b502",
+   "gid": 2032,
+   "problem": "Federated learning on heterogeneous data fails: knowledge distillation ensures consistency but limits exploration; models get stuck in bad local optima.",
+   "approach": "FedKDMR combines dynamic knowledge distillation with model recombination to enable both consistency and diverse parameter exploration.",
+   "contribution": "Superior accuracy-robustness trade-off in federated learning via joint KD and model perturbation, with convergence guarantees.",
+   "primary_theme": "Federated learning",
+   "methods": [
+    "federated learning",
+    "knowledge distillation",
+    "model merging"
+   ]
+  },
+  {
+   "venue": "KDD 2026",
+   "title": "Debiased Negative Mining Improves Out-of-distribution Detection with Pre-trained Vision-Language Models",
+   "doi": "10.1145/3770854.3780169",
+   "url": "https://www.semanticscholar.org/paper/76823e1e996eb4e48559cb8389318de91e834aa1",
+   "gid": 2033,
+   "problem": "OOD detection with vision-language models relies on heuristic negative label mining, causing false negatives and missing true out-of-distribution cases.",
+   "approach": "Theoretical framework correcting sampling bias in negative label selection via approximating negative distribution using Monte Carlo sampling.",
+   "contribution": "Debiased negative mining improves OOD detection by correcting false negatives; state-of-the-art results across multiple OOD benchmarks.",
+   "primary_theme": "Out-of-distribution detection",
+   "methods": [
+    "vision-language models",
+    "monte carlo sampling",
+    "bias correction"
+   ]
+  },
+  {
+   "venue": "KDD 2026",
+   "title": "HyFunc: Accelerating LLM-based Function Calls for Agentic AI through Hybrid-Model Cascade and Dynamic Templating",
+   "doi": "10.1145/3770854.3780283",
+   "url": "https://www.semanticscholar.org/paper/89cbd97c351c414acccd29237376faa902b796d6",
+   "gid": 2034,
+   "problem": "LLM-based function calling for agents incurs redundant processing of function libraries, full-sequence generation, and boilerplate syntax for every call.",
+   "approach": "HyFunc uses hybrid-model cascade (large model to soft token \u2192 retriever \u2192 small prefix-tuned model) plus dynamic templating for on-the-fly syntax.",
+   "contribution": "Inference latency cut by eliminating redundant computation while maintaining accuracy on unseen function-calling benchmarks.",
+   "primary_theme": "LLM agents",
+   "methods": [
+    "model distillation",
+    "model cascade",
+    "dynamic templating"
+   ]
+  },
+  {
+   "venue": "KDD 2026",
+   "title": "Effective Online 3D Bin Packing with Lookahead Parcels Using Monte Carlo Tree Search",
+   "doi": "10.1145/3770854.3783946",
+   "url": "https://www.semanticscholar.org/paper/8b9e02ec4d2ada7821a4197a974d42b41bf655ef",
+   "gid": 2035,
+   "problem": "Deep RL for 3D bin packing fails under real-world distribution shifts as batches of goods arrive with different characteristics.",
+   "approach": "Frames packing as Model Predictive Control solved with MCTS; lookahead parcels inform exploration balance between learned RL and robust random policies.",
+   "contribution": "10% gains under distribution shift, 4-8% average online improvement by leveraging available lookahead information via MCTS.",
+   "primary_theme": "Reinforcement learning",
+   "methods": [
+    "reinforcement learning",
+    "monte carlo tree search",
+    "model predictive control"
+   ]
+  },
+  {
+   "venue": "KDD 2026",
+   "title": "Unleashing the Potential of Neighbors: Diffusion-based Latent Neighbor Generation for Session-based Recommendation",
+   "doi": "10.1145/3770854.3780280",
+   "url": "https://www.semanticscholar.org/paper/8f02ca9bfd6569caddf2573767e2a43f7c46e7e5",
+   "gid": 2036,
+   "problem": "Session-based recommendation ignores latent neighbors\u2014sessions not directly observed but semantically similar\u2014limiting performance under data sparsity.",
+   "approach": "DiffSBR generates latent neighbor sessions using retrieval-augmented and self-augmented diffusion modules to synthesize high-quality augmented data.",
+   "contribution": "Improved session-based recommendation by generating semantically relevant latent neighbors, addressing data sparsity via diffusion-based synthesis.",
+   "primary_theme": "Recommender systems",
+   "methods": [
+    "diffusion models",
+    "session-based recommendation",
+    "data augmentation"
+   ]
+  },
+  {
+   "venue": "KDD 2026",
+   "title": "MergeRec: Model Merging for Data-Isolated Cross-Domain Sequential Recommendation",
+   "doi": "10.1145/3770854.3780264",
+   "url": "https://www.semanticscholar.org/paper/9b112ef24108f75cade65efda4bf767fd4d6b185",
+   "gid": 2037,
+   "problem": "Cross-domain recommendation requires either shared users/items or unrealistic data sharing; existing methods fail under privacy and domain isolation constraints.",
+   "approach": "MergeRec merges domain-specific models using training-free initialization, pseudo-user data synthesis, and collaborative merging weight optimization.",
+   "contribution": "Cross-domain sequential recommendation under data isolation via model merging, enabling transfer without sharing raw interactions.",
+   "primary_theme": "Recommender systems",
+   "methods": [
+    "model merging",
+    "transfer learning",
+    "pseudo-data synthesis"
+   ]
+  },
+  {
+   "venue": "KDD 2026",
+   "title": "FaST: Efficient and Effective Long-Horizon Forecasting for Large-Scale Spatial-Temporal Graphs via Mixture-of-Experts",
+   "doi": "10.1145/3770854.3780165",
+   "url": "https://www.semanticscholar.org/paper/a42b7c038e2d958c44656a8953b45489206d7e9f",
+   "gid": 2038,
+   "problem": "Long-horizon forecasting on large spatial-temporal graphs incurs prohibitive computational costs and memory consumption for deep models.",
+   "approach": "FaST uses adaptive graph agent attention for efficient convolution and parallel Mixture-of-Experts with GLUs to replace feed-forward networks.",
+   "contribution": "One-week-ahead predictions on thousand-node graphs via efficient long-horizon spatial-temporal forecasting with strong accuracy-speed trade-offs.",
+   "primary_theme": "Time series",
+   "methods": [
+    "mixture of experts",
+    "graph neural networks",
+    "spatial-temporal forecasting"
+   ]
+  },
+  {
+   "venue": "KDD 2026",
+   "title": "Nip Rumors in the Bud: Retrieval-Guided Topic-Level Adaptation for Test-Time Fake News Video Detection",
+   "doi": "10.1145/3770854.3780211",
+   "url": "https://www.semanticscholar.org/paper/b4093d56ef22dab9de8968bcfee11d13cee6f766",
+   "gid": 2039,
+   "problem": "Existing fake news video detectors fail on emerging events with unseen topics not in training data.",
+   "approach": "Leverage stable source-domain reference videos to guide test-time adaptation of unstable target-domain instances.",
+   "contribution": "RADAR framework enables zero-shot test-time adaptation to fake news videos on new topics via retrieval-guided alignment.",
+   "primary_theme": "Misinformation detection",
+   "methods": [
+    "domain adaptation",
+    "retrieval",
+    "self-training",
+    "entropy-based selection"
+   ]
+  },
+  {
+   "venue": "KDD 2026",
+   "title": "MixTTE: Multi-Level Mixture-of-Experts for Scalable and Adaptive Travel Time Estimation",
+   "doi": "10.1145/3770854.3783940",
+   "url": "https://www.semanticscholar.org/paper/bc11192caa850769b4ccbc8d395447f1768b79b9",
+   "gid": 2040,
+   "problem": "Large-scale urban traffic is heterogeneous; production TTE systems miss city-wide dynamics and long-tail scenarios.",
+   "approach": "Combine link-level spatio-temporal modeling with route-level learning using mixture-of-experts and incremental adaptation.",
+   "contribution": "MixTTE deployed at DiDi, reducing TTE errors significantly via scalable multi-scale integration and online learning.",
+   "primary_theme": "Spatio-temporal prediction",
+   "methods": [
+    "mixture of experts",
+    "external attention",
+    "graph neural networks",
+    "incremental learning"
+   ]
+  },
+  {
+   "venue": "KDD 2026",
+   "title": "FilDeep: Learning Large Deformations of Elastic-Plastic Solids with Multi-Fidelity Data",
+   "doi": "10.1145/3770854.3783959",
+   "url": "https://www.semanticscholar.org/paper/c1645c9c8dde15f56448595fb85d4025d4ea489f",
+   "gid": 2041,
+   "problem": "Deep learning for large deformations in elastic-plastic solids requires high-accuracy data, which is expensive to simulate.",
+   "approach": "Use fidelity-based learning: train jointly on cheap low-fidelity and expensive high-fidelity simulation data with attention-based cross-fidelity modules.",
+   "contribution": "FilDeep framework solves quantity-accuracy tradeoff for large deformation problems, demonstrated on stretch-bending application.",
+   "primary_theme": "Multi-fidelity learning",
+   "methods": [
+    "transfer learning",
+    "cross-fidelity attention",
+    "multi-fidelity regression",
+    "domain knowledge integration"
+   ]
+  },
+  {
+   "venue": "KDD 2026",
+   "title": "SynSym: A Synthetic Data Generation Framework for Psychiatric Symptom Identification",
+   "doi": "10.1145/3770854.3785698 10.1145/3770854.3785698 10.1145/3770854.3785698",
+   "url": "https://www.semanticscholar.org/paper/c99785e24f5019c1f6f605fee624b48abf482da4",
+   "gid": 2042,
+   "problem": "Psychiatric symptom datasets are scarce; expert labeling is resource-intensive and symptom expression varies widely across users.",
+   "approach": "Use LLMs to generate synthetic training data with clinical plausibility: expand symptoms into sub-concepts, vary linguistic style, and respect co-occurrence patterns.",
+   "contribution": "SynSym produces synthetic data that trains models as well as real data, with further gains from real-data fine-tuning.",
+   "primary_theme": "Mental health NLP",
+   "methods": [
+    "synthetic data generation",
+    "large language models",
+    "data augmentation",
+    "clinical knowledge integration"
+   ]
+  },
+  {
+   "venue": "KDD 2026",
+   "title": "Holistic Data Scheduler for LLM Pre-training via Multi-Objective Reinforcement Learning",
+   "doi": "10.1145/3770854.3780325",
+   "url": "https://www.semanticscholar.org/paper/ca3650bdda9a9ccb14cbbcb278dfbd7086331c4c",
+   "gid": 2043,
+   "problem": "LLM pre-training data mixing is typically static; online adaptation methods ignore multiple objectives (quality, domain influence, model stability).",
+   "approach": "Formulate data scheduling as a multi-objective reinforcement learning problem with a holistic reward combining data, loss, and model-driven signals.",
+   "contribution": "HDS reaches comparable final perplexity with 44% fewer tokens on The Pile benchmark using SAC-based adaptive mixing.",
+   "primary_theme": "LLM pre-training",
+   "methods": [
+    "reinforcement learning",
+    "actor-critic",
+    "multi-objective optimization",
+    "online data mixing"
+   ]
+  },
+  {
+   "venue": "KDD 2026",
+   "title": "Vistar: Enhancing the Perception Capability of LLMs under Imprecise IMU-Text Alignment",
+   "doi": "10.1145/3770854.3780181",
+   "url": "https://www.semanticscholar.org/paper/cf1fa7718d6ee0961a7adc7ccc19cb302be0a049",
+   "gid": 2044,
+   "problem": "IMU sensor data (accelerometer, gyroscope) is hard to interpret for language models; manual IMU-text alignment is impractical due to semantic gap.",
+   "approach": "Use cross-modal contrastive learning (anchored by vision) offline, then retrieval-augmented generation online to bridge IMU and language.",
+   "contribution": "Vistar improves IMU-to-text retrieval by up to 57.45% over baselines via aligned multimodal encoders.",
+   "primary_theme": "Multimodal learning",
+   "methods": [
+    "contrastive learning",
+    "retrieval augmented generation",
+    "self-supervised learning",
+    "cross-modal alignment"
+   ]
+  },
+  {
+   "venue": "KDD 2026",
+   "title": "AHA: Scalable Alternative History Analysis for Operational Timeseries Applications",
+   "doi": "10.1145/3770854.3783945",
+   "url": "https://www.semanticscholar.org/paper/e0247eb674fc9a122bad555da10d07899f665482",
+   "gid": 2045,
+   "problem": "Operational systems need fast retrospective analysis of high-dimensional timeseries with metadata (QoE, user location, device); traditional data platforms are inefficient or inaccurate.",
+   "approach": "Build AHA, a specialized system exploiting decomposability, sparsity, and modern database efficiency to enable cost-effective, accurate alternative-history queries.",
+   "contribution": "AHA reduces operational cost and guarantees fidelity for alternative-history analysis on production timeseries data.",
+   "primary_theme": "Timeseries analytics",
+   "methods": [
+    "approximate query processing",
+    "data decomposition",
+    "sparse aggregation",
+    "columnar databases"
+   ]
+  },
+  {
+   "venue": "KDD 2026",
+   "title": "Retain to Refine: Adaptive Online Question Answering via Query Routing and Long-Short Memory",
+   "doi": "10.1145/3770854.3783919",
+   "url": "https://www.semanticscholar.org/paper/e991fbd43b77e98c1415690b8b1383ef7fb7a870",
+   "gid": 2046,
+   "problem": "Deploying LLMs for online QA is latency-sensitive and must handle both simple and complex queries while maintaining consistent reasoning over noisy retrieval context.",
+   "approach": "Route simple queries to fast direct inference; handle complex queries via iterative reasoning with a long-short memory mechanism and supervised document validation.",
+   "contribution": "R2R framework adapts computation dynamically, achieving latency-accuracy tradeoff via query difficulty routing and memory-guided reasoning.",
+   "primary_theme": "LLM QA systems",
+   "methods": [
+    "query routing",
+    "reinforcement learning agents",
+    "retrieval augmented generation",
+    "memory mechanisms"
+   ]
+  },
+  {
+   "venue": "KDD 2026",
+   "title": "Accelerating Storage-based Training for Graph Neural Networks",
+   "doi": "10.1145/3770854.3780309",
+   "url": "https://www.semanticscholar.org/paper/f2e8b63722ffbc0f84b0a7823e177a2df3365ae2",
+   "gid": 2047,
+   "problem": "Training GNNs on billion-node graphs using external storage (NVMe SSDs) is I/O-bottlenecked by small random accesses, limiting throughput.",
+   "approach": "Use block-wise I/O processing and hyperbatch-based minibatching to amortize overhead and fully utilize storage bandwidth.",
+   "contribution": "AGNES achieves up to 4.1\u00d7 speedup over state-of-the-art storage-based GNN training via I/O-aware batch scheduling.",
+   "primary_theme": "Graph neural networks",
+   "methods": [
+    "graph sampling",
+    "I/O optimization",
+    "batching strategies",
+    "storage systems"
+   ]
+  },
+  {
+   "venue": "KDD 2026",
+   "title": "RUQuant: Towards Refining Uniform Quantization for Large Language Models",
+   "doi": "10.1145/3770854.3780259",
+   "url": "https://www.semanticscholar.org/paper/f6d10d5b39a4600b4ebadd8573f1f6bf785cbe36",
+   "gid": 2048,
+   "problem": "Post-training quantization of LLMs degrades accuracy due to non-uniform activation distributions that violate uniform quantization assumptions.",
+   "approach": "Apply orthogonal transformations (Householder reflections, Givens rotations) to map non-uniform activations to uniform target distributions, then fine-tune globally.",
+   "contribution": "RUQuant achieves near-optimal quantization by correcting non-uniformity in activation distributions using principled orthogonal transforms.",
+   "primary_theme": "Model compression",
+   "methods": [
+    "quantization",
+    "orthogonal transforms",
+    "post-training compression",
+    "numerical optimization"
+   ]
+  },
+  {
+   "venue": "KDD 2026",
+   "title": "AbFlow: End-to-end Paratope-Centric Antibody Design by Interaction Enhanced Flow Matching",
+   "doi": "10.1145/3770854.3780296",
+   "url": "https://www.semanticscholar.org/paper/f8c9eb99faa8ba32d1d60f2b4233dc4317e93b38",
+   "gid": 2049,
+   "problem": "Antibody design lacks generative frameworks for full-atom structures that exploit antigen-specific geometric information for local binding interfaces.",
+   "approach": "Use flow-matching with equivariant surface encoders to end-to-end design antibodies, leveraging antigen interaction data to refine CDR-H3 and global structure.",
+   "contribution": "AbFlow generates high-quality antibodies with improved binding affinity by incorporating antigen surface geometry into diffusion-based design.",
+   "primary_theme": "Molecular design",
+   "methods": [
+    "flow matching",
+    "optimal transport",
+    "equivariant neural networks",
+    "generative modeling"
    ]
   }
  ]

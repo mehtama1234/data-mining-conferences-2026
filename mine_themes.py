@@ -11,7 +11,7 @@ import json, os, re
 from collections import Counter, defaultdict
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-FILES = [("WWW 2026", "www-2026-papers.json"), ("WSDM 2026", "wsdm-2026-papers.json"), ("SIGIR 2026", "sigir-2026-papers.json")]
+FILES = [("WWW 2026", "www-2026-papers.json"), ("WSDM 2026", "wsdm-2026-papers.json"), ("SIGIR 2026", "sigir-2026-papers.json"), ("KDD 2026", "kdd-2026-papers.json")]
 
 THEMES = {
  "LLMs & Language Models": [r"\bllm\b", r"large language model", r"\bgpt\b", r"language model", r"instruction[- ]?tun", r"prompt", r"in[- ]?context learn", r"chatgpt", r"\bfoundation model"],

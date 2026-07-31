@@ -1,0 +1,132 @@
+[
+ {
+  "gid": 2026,
+  "venue": "KDD 2026",
+  "title": "Signed Proximity Matters in Graph-based Recommendation",
+  "abstract": "Graph-based models are a powerful technique for recommendation systems, which seek to leverage the graph structure created by user-item interactions for elevated performance. The majority of them are designed for unsigned graphs, which fail to exploit negative interactions (e.g., dislikes, returns) from users, and hence, incur compromised effectiveness. To tap into such negative signals, in recent years, a number of efforts have been invested towards extending graph neural networks (GNNs) and Transformer models to signed graphs. Unfortunately, the former approaches produce sub-par results due to the lack of access to global information, whereas the latter achieve superior performance for recommendation but suffer from severe over-globalizing problems and substantial computational overhead. To bridge this gap, this paper presents SPGNN, which significantly unleashes the capabilities of GNNs and advances its performance for top-K recommendation in signed graphs through two non-trivial technical contributions. Firstly, we propose to upgrade the neighborhood aggregation scheme in GNNs with two novel notions of signed local proximity (SLP) and signed global proximity (SGP) based on weak balance theory, which can accurately capture sign-aware multi-scale relations between nodes in signed graphs. On top of that, SPGNN includes a theoretically-grounded module for effective feature init",
+  "doi": "10.1145/3770854.3780298",
+  "url": "https://www.semanticscholar.org/paper/69beccd6cd0ee695631e71be20bd69c91209984e",
+  "pdf": null,
+  "arxiv": null
+ },
+ {
+  "gid": 2027,
+  "venue": "KDD 2026",
+  "title": "HumanLLM: Towards Personalized Understanding and Simulation of Human Nature",
+  "abstract": "Motivated by the remarkable progress of large language models (LLMs) in objective tasks like mathematics and coding, there is growing interest in their potential to simulate human behavior\u2014a capability with profound implications for transforming social science research and customer-centric business insights. However, LLMs often lack a nuanced understanding of human cognition and behavior, limiting their effectiveness in social simulation and personalized applications. We posit that this limitation stems from a fundamental misalignment: standard LLM pretraining on vast, uncontextualized web data does not capture the continuous, situated context of an individual's decisions, thoughts, and behaviors over time. To bridge this gap, we introduce HumanLLM, a foundation model designed for personalized understanding and simulation of individuals. We first construct the Cognitive Genome Dataset, a large-scale corpus curated from real-world user data on platforms like Reddit, Twitter, Blogger, and Amazon. Through a rigorous, multi-stage pipeline involving data filtering, synthesis, and quality control, we automatically extract over 5.5 million user logs to distill rich profiles, behaviors, and thinking patterns. We then formulate diverse learning tasks and perform supervised fine-tuning to empower the model to predict a wide range of individualized human behaviors, thoughts, and experienc",
+  "doi": "10.1145/3770854.3780294",
+  "url": "https://www.semanticscholar.org/paper/6a1b0d8801a0c4c8e4161f0d272ec29707873c4b",
+  "pdf": null,
+  "arxiv": "2601.15793"
+ },
+ {
+  "gid": 2028,
+  "venue": "KDD 2026",
+  "title": "Q-Regularized Generative Auto-Bidding: From Suboptimal Trajectories to Optimal Policies",
+  "abstract": "With the rapid development of e-commerce, auto-bidding has become a key asset in optimizing advertising performance under diverse advertiser environments. The current approaches focus on reinforcement learning (RL) and generative models. These efforts imitate offline historical behaviors by utilizing a complex structure with expensive hyperparameter tuning. The suboptimal trajectories further exacerbate the difficulty of policy learning. To address these challenges, we proposes QGA, a novel Q-value regularized Generative Auto-bidding method. In QGA, we propose to plug a Q-value regularization with double Q-learning strategy into the Decision Transformer backbone. This design enables joint optimization of policy imitation and action-value maximization, allowing the learned bidding policy to both leverage experience from the dataset and alleviate the adverse impact of the suboptimal trajectories. Furthermore, to safely explore the policy space beyond the data distribution, we propose a Q-value guided dual-exploration mechanism, in which the DT model is conditioned on multiple return-to-go targets and locally perturbed actions. This entire exploration process is dynamically guided by the aforementioned Q-value module, which provides principled evaluation for each candidate action. Experiments on public benchmarks and simulation environments demonstrate that QGA consistently achiev",
+  "doi": "10.1145/3770854.3783950",
+  "url": "https://www.semanticscholar.org/paper/6b6f05c148428b6b44066c391c5e95502678290a",
+  "pdf": null,
+  "arxiv": "2601.02754"
+ },
+ {
+  "gid": 2029,
+  "venue": "KDD 2026",
+  "title": "Balanced Anomaly-guided Ego-graph Diffusion Model for Inductive Graph Anomaly Detection",
+  "abstract": "Graph anomaly detection (GAD) is crucial in applications like fraud detection and cybersecurity. Despite recent advancements using graph neural networks (GNNs), two major challenges persist. At the model level, most methods adopt a transductive learning paradigm, which assumes static graph structures, making them unsuitable for dynamic, evolving networks. At the data level, the extreme class imbalance, where anomalous nodes are rare, leads to biased models that fail to generalize to unseen anomalies. These challenges are interdependent: static transductive frameworks limit effective data augmentation, while imbalance exacerbates model distortion in inductive learning settings. To address these challenges, we propose a novel data-centric framework that integrates dynamic graph modeling with balanced anomaly synthesis. Our framework features: (1) a discrete ego-graph diffusion model, which captures the local topology of anomalies to generate ego-graphs aligned with anomalous structural distribution, and (2) a curriculum anomaly augmentation mechanism, which dynamically adjusts synthetic data generation during training, focusing on underrepresented anomaly patterns to improve detection and generalization. Experiments on five datasets demonstrate that the effectiveness of our framework.",
+  "doi": "10.1145/3770854.3780240",
+  "url": "https://www.semanticscholar.org/paper/6dd36a2ea995ac82bd628bd6c7ba5db13ba4c0b8",
+  "pdf": null,
+  "arxiv": "2602.05232"
+ },
+ {
+  "gid": 2030,
+  "venue": "KDD 2026",
+  "title": "Enhancing Multimodal Recommendation via Multimodal Representation Calibration in Spectral Domain",
+  "abstract": "Multimodal recommendation, which integrates user-item interactions with rich item multimodal features to infer user preferences, has emerged as one of the state-of-the-art recommendation paradigms. However, most existing multimodal recommendation methods focus solely on the multimodal fusion process of items, overlooking the impact of modality-specific noise characteristics and inter-modal distribution shifts on the fusion process. As a result, noise from specific modalities may be inadvertently amplified during the fusion of multimodal representations, thereby degrading the quality of fused representations and ultimately undermining recommendation accuracy. To address this issue, we propose a novel framework, DAMPS, which Denoises and cAlibrates multimodal representations in the spectral domain from the perspectives of both aMplitude and Phase Spectrum. Specifically, we first apply the Fast Fourier Transform to decompose multimodal representations into amplitude spectrum and phase spectrum components. We then propose the adaptive phase calibrator, which resolves the phase distribution shift between modalities through the optimal minimum variance unbiased estimate of phase offset and adaptive phase rotation. We further develop the amplitude variance-ratio filter, which suppresses modality-specific amplitude noise while preserving prominent modality-specific representations. Fin",
+  "doi": "10.1145/3770854.3780208",
+  "url": "https://www.semanticscholar.org/paper/70331fc19bf79d6f789cd072d09c1cefbf77da17",
+  "pdf": "https://doi.org/10.1145/3770854.3780208",
+  "arxiv": null
+ },
+ {
+  "gid": 2031,
+  "venue": "KDD 2026",
+  "title": "Minimizing Total Biharmonic Distance in Large Graphs via Link Recommendation",
+  "abstract": "The total biharmonic distance, which is the sum of the biharmonic distance between every pair of nodes in a network, is a key metric for evaluating network connectivity and robustness. In this paper, we study the problem of minimizing the total biharmonic distance by adding k nonexistent edges for a given graph G and budget k. The problem is computationally challenging. We show that the objective function of the problem is monotone but not supermodular. To solve this problem, we propose simple greedy algorithms with cubic time complexity. To mitigate the high time complexity of these greedy algorithms, we apply several techniques, including the projection method, the Laplacian solver, and convex hull approximation. These techniques reduce the time complexity of our proposed algorithms from cubic to nearly linear while providing error guarantees. Finally, extensive experiments on real datasets demonstrate both the efficiency and effectiveness of our proposed algorithms.",
+  "doi": "10.1145/3770854.3780204",
+  "url": "https://www.semanticscholar.org/paper/711aeb7520f09f45861c68f368185633892ec38c",
+  "pdf": null,
+  "arxiv": "2606.17703"
+ },
+ {
+  "gid": 2032,
+  "venue": "KDD 2026",
+  "title": "FedKDMR: Robust Federated Learning via Joint Knowledge Distillation & Model Recombination",
+  "abstract": "Federated Learning (FL) presents a compelling distributed learning paradigm that enables resource-constrained clients to collaboratively train machine learning models while preserving data privacy. However, inter-client data heterogeneity poses fundamental challenges to federated optimization efficacy. Although Knowledge Distillation (KD) effectively addresses model performance alignment under heterogeneity, its inherent constraints restrict client parameter exploration capacity, thus, inducing confinement to suboptimal basins. To reconcile this trade-off, we introduce FedKDMR, a novel FL paradigm unifying KD constraints with exploration via model recombination. FedKDMR imposes global model consistency and robustness in training through dynamic KD while sufficiently harnessing model recombination-induced perturbations for diverse parameter exploration. We establish convergence guarantees for strongly convex and smooth objectives. Extensive experiments on FL benchmark datasets demonstrate that FedKDMR achieves a superior accuracy-robustness trade-off against state-of-the-art methods when tackling non-independent and identically distributed and heterogeneous data in FL environments.",
+  "doi": "10.1145/3770854.3780160",
+  "url": "https://www.semanticscholar.org/paper/75792b84dd769fb889691a9ce8468f91f3e6b502",
+  "pdf": null,
+  "arxiv": null
+ },
+ {
+  "gid": 2033,
+  "venue": "KDD 2026",
+  "title": "Debiased Negative Mining Improves Out-of-distribution Detection with Pre-trained Vision-Language Models",
+  "abstract": "Aiming at identifying unexpected inputs from unknown classes, out-of-distribution (OOD) detection has emerged as a pivotal approach to enhancing the reliability of machine learning models. This paper focuses on the burgeoning paradigm of post-hoc OOD detection with pre-trained vision-language models (VLMs), where a popular pipeline is to detect OOD inputs by examining their affinities between ID labels and negative labels, i.e., those semantically different from ID labels. Due to the unavailability of target OOD labels, existing works predominantly rely on heuristic rules to mine negative labels from unlabeled wild corpus data. Despite the empirical success, we argue that the power of VLM-based OOD detection has yet to be fully unleashed since the notorious false negative problem is far from addressed in the literature. With this motivation, we are interested in addressing the challenge of mining true negative labels for OOD scoring. To this end, we develop a theoretical framework for correcting the sampling bias of negatives labels by indirectly approximating the distribution of negative labels. Perhaps surprisingly, we show that the debiased negative mining can be naturally converted into Monte-Carlo sampling based on ID labels and the unlabeled wild corpus data. Extensive experiments empirically manifest that our method establishes a new state-of-the-art in a variety of OOD ",
+  "doi": "10.1145/3770854.3780169",
+  "url": "https://www.semanticscholar.org/paper/76823e1e996eb4e48559cb8389318de91e834aa1",
+  "pdf": null,
+  "arxiv": "2605.23797"
+ },
+ {
+  "gid": 2034,
+  "venue": "KDD 2026",
+  "title": "HyFunc: Accelerating LLM-based Function Calls for Agentic AI through Hybrid-Model Cascade and Dynamic Templating",
+  "abstract": "While agentic AI systems rely on LLMs to translate user intent into structured function calls, this process is fraught with computational redundancy, leading to high inference latency that hinders real-time applications. This paper identifies and addresses three key redundancies: (1) the redundant processing of a large library of function descriptions for every request; (2) the redundant use of a large, slow model to generate an entire, often predictable, token sequence; and (3) the redundant generation of fixed, boilerplate parameter syntax. We introduce HyFunc, a novel framework that systematically eliminates these inefficiencies. HyFunc employs a hybrid-model cascade where a large model distills user intent into a single ''soft token.'' This token guides a lightweight retriever to select relevant functions and directs a smaller, prefix-tuned model to generate the final call, thus avoiding redundant context processing and full-sequence generation by the large model. To eliminate syntactic redundancy, our ''dynamic templating'' technique injects boilerplate parameter syntax on-the-fly within an extended vLLM engine. To avoid potential limitations in generalization, we evaluate HyFunc on an unseen benchmark dataset, BFCL. Experimental results demonstrate that HyFunc achieves an excellent balance between efficiency and performance. It achieves an inference latency of 0.828 secon",
+  "doi": "10.1145/3770854.3780283",
+  "url": "https://www.semanticscholar.org/paper/89cbd97c351c414acccd29237376faa902b796d6",
+  "pdf": null,
+  "arxiv": "2602.13665"
+ },
+ {
+  "gid": 2035,
+  "venue": "KDD 2026",
+  "title": "Effective Online 3D Bin Packing with Lookahead Parcels Using Monte Carlo Tree Search",
+  "abstract": "Online 3D Bin Packing (3D-BP) with robotic arms is crucial for reducing transportation and labor costs in modern logistics. While Deep Reinforcement Learning (DRL) has shown strong performance, it often fails to adapt to real-world short-term distribution shifts, which arise as different batches of goods arrive sequentially, causing performance drops. We argue that the short-term lookahead information available in modern logistics systems is key to mitigating this issue, especially during distribution shifts. We formulate online 3D-BP with lookahead parcels as a Model Predictive Control (MPC) problem and adapt the Monte Carlo Tree Search (MCTS) framework to solve it. Our framework employs a dynamic exploration prior that automatically balances a learned RL policy and a robust random policy based on the lookahead characteristics. Additionally, we design an auxiliary reward to penalize long-term spatial waste from individual placements. Extensive experiments on real-world datasets show that our method consistently outperforms state-of-the-art baselines, achieving over 10% gains under distributional shifts, 4% average improvement in online deployment, and up to more than 8% in the best case--demonstrating the effectiveness of our framework.",
+  "doi": "10.1145/3770854.3783946",
+  "url": "https://www.semanticscholar.org/paper/8b9e02ec4d2ada7821a4197a974d42b41bf655ef",
+  "pdf": null,
+  "arxiv": "2601.02649"
+ },
+ {
+  "gid": 2036,
+  "venue": "KDD 2026",
+  "title": "Unleashing the Potential of Neighbors: Diffusion-based Latent Neighbor Generation for Session-based Recommendation",
+  "abstract": "Session-based recommendation aims to predict the next item that anonymous users may be interested in, based on their current session interactions. Recent studies have demonstrated that retrieving neighbor sessions to augment the current session can effectively alleviate the data sparsity issue and improve recommendation performance. However, existing methods typically rely on explicitly observed session data, neglecting latent neighbors - not directly observed but potentially relevant within the interest space - thereby failing to fully exploit the potential of neighbor sessions in recommendation. To address the above limitation, we propose a novel model of diffusion-based latent neighbor generation for session-based recommendation, named DiffSBR. Specifically, DiffSBR leverages two diffusion modules, including retrieval-augmented diffusion and self-augmented diffusion, to generate high-quality latent neighbors. In the retrieval-augmented diffusion module, we leverage retrieved neighbors as guiding signals to constrain and reconstruct the distribution of latent neighbors. Meanwhile, we adopt a training strategy that enables the retriever to learn from the feedback provided by the generator. In the self-augmented diffusion module, we explicitly guide the generation of latent neighbors by injecting the current session's multi-modal signals through contrastive learning. After obta",
+  "doi": "10.1145/3770854.3780280",
+  "url": "https://www.semanticscholar.org/paper/8f02ca9bfd6569caddf2573767e2a43f7c46e7e5",
+  "pdf": null,
+  "arxiv": "2601.03903"
+ },
+ {
+  "gid": 2037,
+  "venue": "KDD 2026",
+  "title": "MergeRec: Model Merging for Data-Isolated Cross-Domain Sequential Recommendation",
+  "abstract": "Modern recommender systems trained on domain-specific data often struggle to generalize across multiple domains. Cross-domain sequential recommendation has emerged as a promising research direction to address this challenge; however, existing approaches face fundamental limitations, such as reliance on overlapping users or items across domains, or unrealistic assumptions that ignore privacy constraints. In this work, we propose a new framework, MergeRec, based on model merging under a new and realistic problem setting termed data-isolated cross-domain sequential recommendation, where raw user interaction data cannot be shared across domains. MergeRec consists of three key components: (1) merging initialization, (2) pseudo-user data construction, and (3) collaborative merging optimization. First, we initialize a merged model using training-free merging techniques. Next, we construct pseudo-user data by treating each item as a virtual sequence in each domain, enabling the synthesis of meaningful training samples without relying on real user interactions. Finally, we optimize domain-specific merging weights through a joint objective that combines a recommendation loss, which encourages the merged model to identify relevant items, and a distillation loss, which transfers collaborative filtering signals from the fine-tuned source models. Extensive experiments demonstrate that MergeR",
+  "doi": "10.1145/3770854.3780264",
+  "url": "https://www.semanticscholar.org/paper/9b112ef24108f75cade65efda4bf767fd4d6b185",
+  "pdf": null,
+  "arxiv": "2601.01753"
+ },
+ {
+  "gid": 2038,
+  "venue": "KDD 2026",
+  "title": "FaST: Efficient and Effective Long-Horizon Forecasting for Large-Scale Spatial-Temporal Graphs via Mixture-of-Experts",
+  "abstract": "Spatial-Temporal Graph (STG) forecasting on large-scale networks has garnered significant attention. However, existing models predominantly focus on short-horizon predictions and suffer from notorious computational costs and memory consumption when scaling to long-horizon predictions and large graphs. Targeting the above challenges, we present FaST, an effective and efficient framework based on heterogeneity-aware Mixture-of-Experts (MoEs) for long-horizon and large-scale STG forecasting, which unlocks oneweek-ahead (672 steps at a 15-minute granularity) prediction with thousands of nodes. FaST is underpinned by two key innovations. First, an adaptive graph agent attention mechanism is proposed to alleviate the computational burden inherent in conventional graph convolution and self-attention modules when applied to large-scale graphs. Second, we propose a new parallel MoE module that replaces traditional feed-forward networks with Gated Linear Units (GLUs), enabling an efficient and scalable parallel structure. Extensive experiments on real-world datasets demonstrate that FaST not only delivers superior long-horizon predictive accuracy but also achieves remarkable computational efficiency compared to state-of-the-art baselines. Source code is publicly available at: https://github.com/yijizhao/FaST.",
+  "doi": "10.1145/3770854.3780165",
+  "url": "https://www.semanticscholar.org/paper/a42b7c038e2d958c44656a8953b45489206d7e9f",
+  "pdf": "https://arxiv.org/pdf/2601.05174",
+  "arxiv": "2601.05174"
+ }
+]

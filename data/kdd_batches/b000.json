@@ -1,0 +1,132 @@
+[
+ {
+  "gid": 2000,
+  "venue": "KDD 2026",
+  "title": "CREAM: Continual Retrieval on Dynamic Streaming Corpora with Adaptive Soft Memory",
+  "abstract": "Information retrieval (IR) in dynamic data streams is a crucial task, as shifts in data distribution degrade the performance of AI-powered IR systems. To mitigate this issue, memory-based continual learning has been widely adopted for IR. However, existing methods rely on a fixed set of queries with ground-truth documents, which limits generalization to unseen data, making them impractical for real-world applications. To enable more effective learning with unseen topics of a new corpus without ground-truth labels, we propose CREAM, a self-supervised framework for memory-based continual retrieval. CREAM captures the evolving semantics of streaming queries and documents into dynamically structured soft memory and leverages it to adapt to both seen and unseen topics in an unsupervised setting. We realize this through three key techniques: fine-grained similarity estimation, regularized cluster prototyping, and stratified coreset sampling. Experiments on two benchmark datasets demonstrate that CREAM exhibits superior adaptability and retrieval accuracy, outperforming the strongest method in a label-free setting by 27.79% in Success@5 and 44.5% in Recall@10 on average, and achieving performance comparable to or even exceeding that of supervised methods.",
+  "doi": "10.1145/3770854.3780281",
+  "url": "https://www.semanticscholar.org/paper/006a9f5b8180244df4a69b4577b744bfc68624e4",
+  "pdf": null,
+  "arxiv": "2601.02708"
+ },
+ {
+  "gid": 2001,
+  "venue": "KDD 2026",
+  "title": "KAN-FIF: Spline-Parameterized Lightweight Physics-based Tropical Cyclone Estimation on Meteorological Satellite",
+  "abstract": "Tropical cyclones (TC) are among the most destructive natural disasters, causing catastrophic damage to coastal regions through extreme winds, heavy rainfall, and storm surges. Timely monitoring of tropical cyclones is crucial for reducing loss of life and property, yet it is hindered by the computational inefficiency and high parameter counts of existing methods on resource-constrained edge devices. Current physics-guided models suffer from linear feature interactions that fail to capture high-order polynomial relationships between TC attributes, leading to inflated model sizes and hardware incompatibility. To overcome these challenges, this study introduces the Kolmogorov\u2013Arnold Network-based Feature Interaction Framework (KAN-FIF), a lightweight multimodal architecture that integrates MLP and CNN layers with spline-parameterized KAN layers. For Maximum Sustained Wind (MSW) prediction, experiments demonstrate that the KAN-FIF framework achieves a 94.8% reduction in parameters (0.99MB vs 19MB) and 68.7% faster inference per sample (2.3ms vs 7.35ms) compared to baseline model Phy-CoCo, while maintaining superior accuracy with 32.5% lower MAE. The offline deployment experiment of the FY-4 series meteorological satellite processor on the Qingyun-1000 development board achieved a 14.41ms per-sample inference latency with the KAN-FIF framework, demonstrating promising feasibility f",
+  "doi": "10.1145/3770854.3783929",
+  "url": "https://www.semanticscholar.org/paper/00a198ba73b3dadd86037a50f4eb62c86a40d33a",
+  "pdf": null,
+  "arxiv": "2602.12117"
+ },
+ {
+  "gid": 2002,
+  "venue": "KDD 2026",
+  "title": "KFTD: Koopman-Fourier Time-Differentiable Network for Continuous Ocean Spatiotemporal Forecasting",
+  "abstract": "Accurate oceanic forecasting is critical for climate monitoring and disaster early-warning. However, ocean spatiotemporal forecasting encounters the double challenges of modeling complex dynamical systems and ensuring computational efficiency. We present Koopman\u2013Fourier Time-Differentiable (KFTD) Network, a time-continuous two-stage paradigm that decouples interpolation from prediction to achieve efficient and scalable spatiotemporal modeling. We map complex nonlinear dynamics into the Koopman linear space and exploit Fourier analysis to enable continuous-time interpolation at arbitrary sub-steps. A lightweight residual network consumes the high-fidelity intermediate states to yield the final forecast. Unlike diffusion models, KFTD eliminates multi-step noise sampling and directly evolves the system in continuous time, yielding a 4\u00d7 computational speed-up. We further introduce a D-PP Loss that supports arbitrary PDE constraints in an end-to-end manner, breaking the physical-consistency bottleneck of pure data-driven approaches. Empirical results on four ocean datasets confirm that our continuous-time framework reduces MSE by an average of 5.6% (up to 12.7% for SST) and improves efficiency over MCVD by 76.25%.",
+  "doi": "10.1145/3770854.3780278",
+  "url": "https://www.semanticscholar.org/paper/082cbf0ae49e5eee584befaa66e4f3e4cebc37b6",
+  "pdf": null,
+  "arxiv": "2606.17070"
+ },
+ {
+  "gid": 2003,
+  "venue": "KDD 2026",
+  "title": "SEW: Strengthening Robustness of Black-box DNN Watermarking via Specificity Enhancement",
+  "abstract": "To ensure the responsible distribution and use of open-source deep neural networks (DNNs), DNN watermarking has become a crucial technique to trace and verify unauthorized model replication or misuse. In practice, black-box watermarks manifest as specific predictive behaviors for specially crafted samples. However, due to the generalization nature of DNNs, the keys to extracting the watermark message are not unique, which would provide attackers with more opportunities. Advanced attack techniques can reverse-engineer approximate replacements for the original watermark keys, enabling subsequent watermark removal. In this paper, we explore black-box DNN watermarking specificity, which refers to the accuracy of a watermark's response to a key. Using this concept, we introduce Specificity-Enhanced Watermarking (SEW), a new method that improves specificity by reducing the association between the watermark and approximate keys. Through extensive evaluation using three popular watermarking benchmarks, we validate that enhancing specificity significantly contributes to strengthening robustness against removal attacks. SEW effectively defends against six state-of-the-art removal attacks, while maintaining model usability and watermark verification performance.",
+  "doi": "10.1145/3770854.3780272",
+  "url": "https://www.semanticscholar.org/paper/0abdaffef0027061a7eb873b188e26d0a73b3c99",
+  "pdf": null,
+  "arxiv": "2602.03377"
+ },
+ {
+  "gid": 2004,
+  "venue": "KDD 2026",
+  "title": "Fast Mining and Dynamic Time-to-Event Prediction over Multi-sensor Data Streams",
+  "abstract": "Given real-time sensor data streams obtained from machines, how can we continuously predict when a machine failure will occur? This work aims to continuously forecast the timing of future events by analyzing multi-sensor data streams. A key characteristic of real-world data streams is their dynamic nature, where the underlying patterns evolve over time. To address this, we present TimeCast, a dynamic prediction framework designed to adapt to these changes and provide accurate, real-time predictions of future event time. Our proposed method has the following properties: (a) Dynamic: it identifies the distinct time-evolving patterns (i.e., stages) and learns individual models for each, enabling us to make adaptive predictions based on pattern shifts. (b) Practical: it finds meaningful stages that capture time-varying interdependencies between multiple sensors and improve prediction performance; (c) Scalable: our algorithm scales linearly with the input size and enables online model updates on data streams. Extensive experiments on real datasets demonstrate that TimeCast provides higher prediction accuracy than state-of-the-art methods while finding dynamic changes in data streams with a great reduction in computational time.",
+  "doi": "10.1145/3770854.3780164",
+  "url": "https://www.semanticscholar.org/paper/0b1a463a59ee2b7b95a6eba9a1199e3a7cda7381",
+  "pdf": null,
+  "arxiv": "2601.04741"
+ },
+ {
+  "gid": 2005,
+  "venue": "KDD 2026",
+  "title": "EviCare: Enhancing Diagnosis Prediction with Deep Model-Guided Evidence for In-Context Reasoning",
+  "abstract": "Recent advances in large language models (LLMs) have enabled promising progress in diagnosis prediction from electronic health records (EHRs). However, existing LLM-based approaches tend to overfit to historically observed diagnoses, often overlooking novel yet clinically important conditions that are critical for early intervention. To address this, we propose EviCare, an in-context reasoning framework that integrates deep model guidance into LLM-based diagnosis prediction. Rather than prompting LLMs directly with raw EHR inputs, EviCare performs (1) deep model inference for candidate selection, (2) evidential prioritization for set-based EHRs, and (3) relational evidence construction for novel diagnosis prediction. These signals are then composed into an adaptive in-context prompt to guide LLM reasoning in an accurate and interpretable manner. Extensive experiments on two real-world EHR benchmarks (MIMIC-III and MIMIC-IV) demonstrate that EviCare achieves significant performance gains, which consistently outperforms both LLM-only and deep model-only baselines by an average of 20.65% across precision and accuracy metrics. The improvements are particularly notable in challenging novel diagnosis prediction, yielding average improvements of 30.97%.",
+  "doi": "10.1145/3770854.3780257",
+  "url": "https://www.semanticscholar.org/paper/0bf6fa5415f3ce41d4737c9847087cb1a0c7dcff",
+  "pdf": "https://doi.org/10.1145/3770854.3780257",
+  "arxiv": "2604.10455"
+ },
+ {
+  "gid": 2006,
+  "venue": "KDD 2026",
+  "title": "Exploring Recommender System Evaluation: A Multi-Modal LLM Agent Framework for A/B Testing",
+  "abstract": "diningIn recommender systems, online A/B testing is a crucial method for evaluating the performance of different models. However, conducting online A/B testing often presents significant challenges, including substantial economic costs, user experience degradation, and considerable time requirements. With the Large Language Models' powerful capacity, LLM-based agent shows great potential to replace traditional online A/B testing. Nonetheless, current agents fail to simulate the perception process and interaction patterns, due to the lack of real environments and visual perception capability. To address these challenges, we introduce a multi-modal user agent for A/B testing (A/B Agent). Specifically, we construct a recommendation sandbox environment for A/B testing, enabling multimodal and multi-page interactions that align with real user behavior on online platforms. The designed agent leverages multimodal information perception, fine-grained user preferences, and integrates profiles, action memory retrieval, and a fatigue system to simulate complex human decision-making. We validated the potential of the agent as an alternative to traditional A/B testing from three perspectives: model, data, and features. Furthermore, we found that the data generated by A/B Agent can effectively enhance the capabilities of recommendation models. Our code is publicly available at https://github",
+  "doi": "10.1145/3770854.3785688",
+  "url": "https://www.semanticscholar.org/paper/0ec205bf349b0b4cd73db6f40bd061784c100811",
+  "pdf": null,
+  "arxiv": "2601.04554"
+ },
+ {
+  "gid": 2007,
+  "venue": "KDD 2026",
+  "title": "Advanced Global Wildfire Activity Modeling with Hierarchical Graph ODE",
+  "abstract": "Wildfires, as an integral component of the Earth system, are governed by a complex interplay of atmospheric, oceanic, and terrestrial processes spanning a vast range of spatiotemporal scales. Modeling their global activity on large timescales is therefore a critical yet challenging task. While deep learning has recently achieved significant breakthroughs in global weather forecasting, its potential for global wildfire behavior prediction remains underexplored. In this work, we reframe this problem and introduce the Hierarchical Graph ODE (HiGO), a novel framework designed to learn the multi-scale, continuous-time dynamics of wildfires. Specifically, we represent the Earth system as a multi-level graph hierarchy and propose an adaptive filtering message passing mechanism for both intra- and inter-level information flow, enabling more effective feature extraction and fusion. Furthermore, we incorporate GNN-parameterized Neural ODE modules at multiple levels to explicitly learn the continuous dynamics inherent to each scale. Through extensive experiments on the SeasFire Cube dataset, we demonstrate that HiGO significantly outperforms state-of-the-art baselines on long-range wildfire forecasting. Moreover, its continuous-time predictions exhibit strong observational consistency, highlighting its potential for real-world applications.",
+  "doi": "10.1145/3770854.3780193",
+  "url": "https://www.semanticscholar.org/paper/118414814561d7694b6aa37812995de3670d3e56",
+  "pdf": null,
+  "arxiv": "2601.01501"
+ },
+ {
+  "gid": 2008,
+  "venue": "KDD 2026",
+  "title": "Improving Enzyme Prediction with Chemical Reaction Equations by Hypergraph-Enhanced Knowledge Graph Embeddings",
+  "abstract": "Predicting enzyme-substrate interactions has long been a fundamental problem in biochemistry and metabolic engineering. While existing methods could leverage databases of expert-curated enzyme-substrate pairs for models to learn from known pair interactions, the databases are often sparse, i.e., there are only limited and incomplete examples of such pairs, and also labor-intensive to maintain. This lack of sufficient training data significantly hinders the ability of traditional enzyme prediction models to generalize to unseen interactions. In this work, we try to exploit chemical reaction equations from domain-specific databases, given their easier accessibility and denser, more abundant data. However, interactions of multiple compounds, e.g., educts and products, with the same enzymes create complex relational data patterns that traditional models cannot easily capture. To tackle that, we represent chemical reaction equations as triples of (educt, enzyme, product) within a knowledge graph, such that we can take advantage of knowledge graph embedding (KGE) to infer missing enzyme-substrate pairs for graph completion. Particularly, in order to capture intricate relationships among compounds, we propose our knowledge-enhanced hypergraph model for enzyme prediction, i.e., Hyper-Enz, which integrates a hypergraph transformer with a KGE model to learn representations of the hyper-e",
+  "doi": "10.1145/3770854.3780178",
+  "url": "https://www.semanticscholar.org/paper/121cc7deca2d00c73e66dbebc90f78d8ea77e0e9",
+  "pdf": null,
+  "arxiv": "2601.05330"
+ },
+ {
+  "gid": 2009,
+  "venue": "KDD 2026",
+  "title": "Deep Hierarchical Knowledge Loss for Fault Intensity Diagnosis",
+  "abstract": "Fault intensity diagnosis (FID) plays a pivotal role in intelligent manufacturing while neglecting dependencies among target classes hinders its practical deployment. This paper introduces a novel and general framework with deep hierarchical knowledge loss (DHK) to achieve hierarchical consistent representation and prediction. We develop a novel hierarchical tree loss to enable a holistic mapping of same-attribute classes, leveraging tree-based positive and negative hierarchical knowledge constraints. We further design a focal hierarchical tree loss to enhance its extensibility and devise two adaptive weighting schemes based on tree height. In addition, we propose a group tree triplet loss with hierarchical dynamic margin by incorporating hierarchical group concepts and tree distance to model boundary structural knowledge across classes. The joint two losses significantly improve the recognition of subtle faults. Extensive experiments are performed on four real-world datasets from various industrial domains (three cavitation datasets from SAMSON AG and one publicly available dataset) for FID, all showing superior results and outperforming recent state-of-the-art FID methods.",
+  "doi": "10.1145/3770854.3780290",
+  "url": "https://www.semanticscholar.org/paper/150a5f0ee19c9e4b0e11dcfe09f1bde97dce8152",
+  "pdf": null,
+  "arxiv": "2604.16459"
+ },
+ {
+  "gid": 2010,
+  "venue": "KDD 2026",
+  "title": "Bayesian Robust Financial Trading with Adversarial Synthetic Market Data",
+  "abstract": "Algorithmic trading relies on machine learning models to make trading decisions. Despite strong in-sample performance, these models often degrade when confronted with evolving real-world market regimes, which can shift dramatically due to macroeconomic changes\u2014e.g., monetary policy updates or unanticipated fluctuations in participant behavior. We identify two core challenges that perpetuate this mismatch: (1) insufficient robustness in existing policy against uncertainties in high-level market fluctuations, and (2) the absence of a realistic and diverse simulation environment for training, leading to policy overfitting. To address these issues, we propose a Bayesian Robust Framework that systematically integrates a macro-conditioned generative model with robust policy learning. On the data side, to generate realistic and diverse data, we propose a macro-conditioned GAN-based generator that leverages macroeconomic indicators as primary control variables, synthesizing data with faithful temporal, cross-instrument, and macro correlations. On the policy side, to learn robust policy against market fluctuations, we cast the trading process as a two-player zero-sum Bayesian Markov game, wherein an adversarial agent simulates shifting regimes by perturbing macroeconomic indicators in the macro-conditioned generator, while the trading agent\u2014guided by a quantile belief network\u2014maintains ",
+  "doi": "10.1145/3770854.3780175",
+  "url": "https://www.semanticscholar.org/paper/1935d01cd1c9970cec7a4af9c6ec41f12a964e8f",
+  "pdf": null,
+  "arxiv": "2601.17008"
+ },
+ {
+  "gid": 2011,
+  "venue": "KDD 2026",
+  "title": "LitBench: A Graph-Centric Large Language Model Benchmarking Tool For Literature Tasks",
+  "abstract": "While large language models (LLMs) have become the de facto framework for literature-related tasks, they still struggle to function as domain-specific literature agents due to their inability to connect pieces of knowledge and reason across domain-specific contexts, terminologies, and nomenclatures. This challenge underscores the need for a tool that facilitates such domain-specific adaptation and enables rigorous benchmarking across literature tasks. To that end, we introduce LitBench, a benchmarking tool designed to enable the development and evaluation of domain-specific LLMs tailored to literature-related tasks. At its core, LitBench uses a data curation process that generates domain-specific literature sub-graphs and constructs training and evaluation datasets based on the textual attributes of the resulting nodes and edges. The tool is designed for flexibility, supporting the curation of literature graphs across any domain chosen by the user, whether high-level fields or specialized interdisciplinary areas. In addition to dataset curation, LitBench defines a comprehensive suite of literature tasks, ranging from node and edge level analyses to advanced applications such as related work generation. These tasks enable LLMs to internalize domain-specific knowledge and relationships embedded in the curated graph during training, while also supporting rigorous evaluation of mod",
+  "doi": "10.1145/3770854.3785679",
+  "url": "https://www.semanticscholar.org/paper/24425a9c777d2b633f9678ee057f9aed68f00e20",
+  "pdf": null,
+  "arxiv": "2603.00051"
+ },
+ {
+  "gid": 2012,
+  "venue": "KDD 2026",
+  "title": "GenHAR: Generalizing Cross-domain Human Activity Recognition for Last-mile Delivery",
+  "abstract": "Human Activity Recognition (HAR) has shown remarkable effectiveness in various applications, such as smart healthcare and intelligent manufacturing. However, a major challenge faced by HAR is the distribution shift across different sensor data domains, which often leads to decreased performance when deployed for real-world applications. To address this issue, this paper introduces GenHAR, a novel framework designed to mitigate the domain gap by learning domain-invariant sensor representations. GenHAR aims to enhance the generalization capabilities of HAR on target domains purely with data from the source domain. The key novelty of GenHAR lies in two aspects. Firstly, GenHAR tokenizes sensor data and learns correlations among frequency sensor channel dimensions to improve the robustness of HAR models. Secondly, GenHAR improves the efficiency via selective masking and an efficient attention mechanism. We conduct a systematic analysis of GenHAR by comparing it with state-of-the-art HAR methods on real-world human activity datasets. Results show that GenHAR outperforms state-of-the-art methods by 9.97% in accuracy, and reduces Floating Point Operations by 6.4 times. Moreover, we deploy GenHAR at a leading logistics company in 4 cities, and have detected 2.15 billion real-time activities. We release our code at: https://github.com/Sensor-Foundation-Model/GenHAR.",
+  "doi": "10.1145/3770854.3783921",
+  "url": "https://www.semanticscholar.org/paper/2d1e5b1d7593e99b9ee9c9c645fb2f130e51f278",
+  "pdf": null,
+  "arxiv": "2605.22086"
+ }
+]

@@ -1,0 +1,132 @@
+[
+ {
+  "gid": 2013,
+  "venue": "KDD 2026",
+  "title": "Live or Lie: Action-Aware Capsule Multiple Instance Learning for Risk Assessment in Live Streaming Platforms",
+  "abstract": "Live streaming has become a cornerstone of today's internet, enabling massive real-time social interactions. However, it faces severe risks arising from sparse, coordinated malicious behaviors among multiple participants, which are often concealed within normal activities and challenging to detect timely and accurately. In this work, we provide a pioneering study on risk assessment in live streaming rooms, characterized by weak supervision where only room-level labels are available. We formulate the task as a Multiple Instance Learning (MIL) problem, treating each room as a bag and defining structured user\u2013timeslot capsules as instances. These capsules represent subsequences of user actions within specific time windows, encapsulating localized behavioral patterns. Based on this formulation, we propose AC-MIL, an Action-aware Capsule MIL framework that models both individual behaviors and group-level coordination patterns. AC-MIL captures multi-granular semantics and behavioral cues through a serial and parallel architecture that jointly encodes temporal dynamics and cross-user dependencies. These signals are integrated for robust room-level risk prediction, while also offering interpretable evidence at the behavior segment level. Extensive experiments on large-scale industrial datasets from Douyin demonstrate that AC-MIL significantly outperforms MIL and sequential baselines, e",
+  "doi": "10.1145/3770854.3780246",
+  "url": "https://www.semanticscholar.org/paper/31d8ab00fe9006cc2e47017c58c960af55fcd55a",
+  "pdf": null,
+  "arxiv": "2602.03520"
+ },
+ {
+  "gid": 2014,
+  "venue": "KDD 2026",
+  "title": "From Memorization to Creation: Evaluating the Cognitive Depth of LLM?Generated Educational Questions",
+  "abstract": "While LLMs show promise in automating educational content creation, their ability to generate questions that stimulate higher-order thinking remains understudied. This work evaluates six widely used LLMs through a Bloom's Taxonomy lens, focusing on their capacity to transcend rote memorization and achieve cognitive leaps. Using a hybrid human-AI evaluation protocol, we generate and analyze 20,700 questions across computer science, K-12 math, and social-science domains. Key contributions include: (1) a fine-grained prompting strategy that reduces question repetitiveness by 24.45% for Qwen2.5-7B-Instruct, and increases the proportion of higher-order cognitive-level outputs by 11.53% for InternLM3-8B-Instruct; (2) quantitative metrics for cognitive shift intensity (CogShift) and category drift, revealing InternLM3's superior performance in multi-level transitions; (3) an interpretability analysis revealing metric-level correlations that enhance the transparency of Chain-of-Thought prompting. Our findings highlight the importance of cognitive-aware prompt design and provide benchmarks for deploying LLMs in personalized learning systems.",
+  "doi": "10.1145/3770854.3785686",
+  "url": "https://www.semanticscholar.org/paper/3482ea5477a858dd56fe6fb69b766fb29e2d06bc",
+  "pdf": null,
+  "arxiv": "2606.18257"
+ },
+ {
+  "gid": 2015,
+  "venue": "KDD 2026",
+  "title": "Four-Cycle Counting in Low-Degeneracy Graph Streams",
+  "abstract": "We study the problem of (1+\u03b5)-approximating the number of four-cycles in graphs given as arbitrary order edge streams. We propose two new algorithms based on sampling induced subgraphs. Our first contribution is a two-pass algorithm that uses \u00d5(\u03bam / \u221aT) space, where m is the number of edges, T is the number of four-cycles, and \u03ba is the graph's degeneracy. This algorithm improves upon existing theoretical bounds and is provably optimal for constant-degeneracy graphs, matching the known \u03a9(m/\u221aT) lower bound up to lower-order factors. Our second contribution is a one-pass algorithm that remains accurate when four-cycles are not highly concentrated on individual nodes, edges, or wedges; this structural property is common in sparse social and collaboration networks. We evaluate both algorithms on a variety of real-world graph streams. The two-pass algorithm consistently outperforms state-of-the-art methods, using substantially less space to achieve a desired accuracy. The one-pass algorithm is competitive when four cycles are evenly distributed, matching our theoretical analysis. Unlike several recent works, our algorithms perform well even on non-bipartite graphs such as social networks.",
+  "doi": "10.1145/3770854.3780199",
+  "url": "https://www.semanticscholar.org/paper/389e39c09787fe953861b5f7675e85cbfe01df42",
+  "pdf": null,
+  "arxiv": "2606.17732"
+ },
+ {
+  "gid": 2016,
+  "venue": "KDD 2026",
+  "title": "From Agnostic to Specific: Latent Preference Diffusion for Multi-Behavior Sequential Recommendation",
+  "abstract": "Multi-behavior sequential recommendation (MBSR) aims to learn the dynamic and heterogeneous interactions of users' multi-behavior sequences, so as to capture user preferences under target behavior for the next interacted item prediction. Unlike previous methods that adopt unidirectional modeling by mapping auxiliary behaviors to target behavior, recent concerns are shifting from behavior-fixed to behavior-specific recommendation. However, these methods still ignore the user's latent preference that underlying decision-making, leading to suboptimal solutions. Meanwhile, due to the asymmetric deterministic between items and behaviors, discriminative paradigm based on preference scoring is unsuitable to capture the uncertainty from low-entropy behaviors to high-entropy items, failing to provide efficient and diverse recommendation. To address these challenges, we propose FatsMB, a framework based diffusion model that guides preference generation From Behavior-Agnostic To Behavior-Specific in latent spaces, enabling diverse and accurate Multi-Behavior Sequential Recommendation. Specifically, we design a Multi-Behavior AutoEncoder (MBAE) to construct a unified user latent preference space, facilitating interaction and collaboration across Behaviors, within Behavior-aware RoPE (BaRoPE) employed for multiple information fusion. Subsequently, we conduct target behavior-specific prefere",
+  "doi": "10.1145/3770854.3780285",
+  "url": "https://www.semanticscholar.org/paper/3b2aff479b9632d1e13581e9633c4967a143ef06",
+  "pdf": null,
+  "arxiv": "2602.23132"
+ },
+ {
+  "gid": 2017,
+  "venue": "KDD 2026",
+  "title": "Hitcher: Efficient GPU-based Vector Search via Cluster-Centric Kernel and Hitch-Ride Ordering",
+  "abstract": "Similarity-based vector search, which retrieves the most similar vectors to a given query vector from a large vector dataset, underlies many applications such as search, recommendation, and Large Language Models (LLMs). Some systems run vector search on GPUs to enjoy GPU's high parallelism, but we observe that they are limited in query throughput and latency. In particular, their query-centric GPU kernel conducts computation independently for each query, failing to reuse data loaded to the GPU shared memory across queries and leading to a low GPU compute utilization. While their batch-based task reordering rearranges computation for queries in a batch to reduce CPU-GPU data transfer, but latency is prolonged since each query needs to wait for its slowest task. To tackle these problems, we propose Hitcher. Specifically, to reuse data across queries and improve GPU utilization, Hitcher implements a cluster-centric GPU kernel to batch computation on the same data for multiple queries. To reduce query latency, Hitcher adopts the hitch-ride ordering, which preserves the arrival order for query processing while batching computation across queries to improve efficiency. Hitcher can also offload computation tasks to the CPU to reduce CPU-GPU data transfer and utilize multiple GPUs. Experimental results show that Hitcher achieves up to 22\u00d7 lower P99 query latency and 9\u00d7 higher query thr",
+  "doi": "10.1145/3770854.3780212",
+  "url": "https://www.semanticscholar.org/paper/3b9a49f0982279b592260dbb80c05e55dcfe7403",
+  "pdf": null,
+  "arxiv": null
+ },
+ {
+  "gid": 2018,
+  "venue": "KDD 2026",
+  "title": "Learning Hierarchical Knowledge in Text-Rich Networks with Taxonomy-Informed Representation Learning",
+  "abstract": "Hierarchical knowledge structures are ubiquitous across real-world domains and play a vital role in organizing information from coarse to fine semantic levels. While such structures have been widely used in taxonomy systems, biomedical ontologies, and retrieval-augmented generation, their potential remains underexplored in the context of Text-Rich Networks (TRNs), where each node contains rich textual content and edges encode semantic relationships. Existing methods for learning on TRNs often focus on flat semantic modeling, overlooking the inherent hierarchical semantics embedded in textual documents. To this end, we propose TIER (Hierarchical Taxonomy-Informed Representation Learning on Text-Rich Networks), which first constructs an implicit hierarchical taxonomy and then integrates it into the learned node representations. Specifically, TIER employs similarity-guided contrastive learning to build a clustering-friendly embedding space, upon which it performs hierarchical K-Means followed by LLM-powered clustering refinement to enable semantically coherent taxonomy construction. Leveraging the resulting taxonomy, TIER introduces a cophenetic correlation coefficient-based regularization loss to align the learned embeddings with the hierarchical structure. By learning representations that respect both fine-grained and coarse-grained semantics, TIER enables more interpretable and",
+  "doi": "10.1145/3770854.3780260",
+  "url": "https://www.semanticscholar.org/paper/42fd45a57bdd86dc2e423c4f62ca203f717b16ab",
+  "pdf": null,
+  "arxiv": "2603.08159"
+ },
+ {
+  "gid": 2019,
+  "venue": "KDD 2026",
+  "title": "Incident-Guided Spatiotemporal Traffic Forecasting",
+  "abstract": "Recent years have witnessed the rapid development of deep-learning-based, graph-neural-network-based forecasting methods for modern intelligent transportation systems. However, most existing work focuses exclusively on capturing spatio-temporal dependencies from historical traffic data, while overlooking the fact that suddenly occurring transportation incidents, such as traffic accidents and adverse weather, serve as external disturbances that can substantially alter temporal patterns. We argue that this issue has become a major obstacle to modeling the dynamics of traffic systems and improving prediction accuracy, but the unpredictability of incidents makes it difficult to observe patterns from historical sequences. To address these challenges, this paper proposes a novel framework named the Incident-Guided Spatiotemporal Graph Neural Network (IGSTGNN). IGSTGNN explicitly models the incident's impact through two core components: an Incident-Context Spatial Fusion (ICSF) module to capture the initial heterogeneous spatial influence, and a Temporal Incident Impact Decay (TIID) module to model the subsequent dynamic dissipation. To facilitate research on the spatio-temporal impact of incidents on traffic flow, a large-scale dataset is constructed and released, featuring incident records that are time-aligned with traffic time series. On this new benchmark, the proposed IGSTGNN fr",
+  "doi": "10.1145/3770854.3780215",
+  "url": "https://www.semanticscholar.org/paper/4aaa1c41f4eb806e41ee13aa6bf6756762344a42",
+  "pdf": null,
+  "arxiv": "2602.02528"
+ },
+ {
+  "gid": 2020,
+  "venue": "KDD 2026",
+  "title": "Enriching Semantic Profiles into Knowledge Graph for Recommender Systems Using Large Language Models",
+  "abstract": "Rich and informative profiling to capture user preferences is essential for improving recommendation quality. However, there is still no consensus on how best to construct and utilize such profiles. To address this, we revisit recent profiling-based approaches in recommender systems along four dimensions: 1) knowledge base, 2) preference indicator, 3) impact range, and 4) subject. We argue that large language models (LLMs) are effective at extracting compressed rationales from diverse knowledge sources, while knowledge graphs (KGs) are better suited for propagating these profiles to extend their reach. Building on this insight, we propose a new recommendation model, called SPiKE. SPiKE consists of three core components: i) Entity profile generation, which uses LLMs to generate semantic profiles for all KG entities; ii) Profile-aware KG aggregation, which integrates these profiles into the KG; and iii) Pairwise profile preference matching, which aligns LLM- and KG-based representations during training. In experiments, we demonstrate that SPiKE consistently outperforms state-of-the-art KG- and LLM-based recommenders in real-world settings.",
+  "doi": "10.1145/3770854.3780324",
+  "url": "https://www.semanticscholar.org/paper/557ccc4e6ae350d46d37282f551a5836b22763b3",
+  "pdf": null,
+  "arxiv": "2601.08148"
+ },
+ {
+  "gid": 2021,
+  "venue": "KDD 2026",
+  "title": "Communication-efficient Federated Graph Classification via Generative Diffusion Modeling",
+  "abstract": "Graph Neural Networks (GNNs) unlock new ways of learning from graph-structured data, proving highly effective in capturing complex relationships and patterns. Federated GNNs (FGNNs) have emerged as a prominent distributed learning paradigm for training GNNs over decentralized data. However, FGNNs face two significant challenges: high communication overhead from multiple rounds of parameter exchanges and non-IID data characteristics across clients. To address these issues, we introduce CeFGC, a novel FGNN paradigm that facilitates efficient GNN training over non-IID data by limiting communication between the server and clients to three rounds only. The core idea of CeFGC is to leverage generative diffusion models to minimize direct client-server communication. Each client trains a generative diffusion model that captures its local graph distribution and shares this model with the server, which then redistributes it back to all clients. Using these generative models, clients generate synthetic graphs combined with their local graphs to train local GNN models. Finally, clients upload their model weights to the server for aggregation into a global GNN model. We theoretically analyze the I/O complexity of communication volume to show that CeFGC reduces to a constant of three communication rounds only. Extensive experiments on several real graph datasets demonstrate the effectiveness",
+  "doi": "10.1145/3770854.3780262",
+  "url": "https://www.semanticscholar.org/paper/5f06013ae15bb77642da9472efec93a2fdea525d",
+  "pdf": null,
+  "arxiv": "2601.15722"
+ },
+ {
+  "gid": 2022,
+  "venue": "KDD 2026",
+  "title": "Breaking Robustness Barriers in Cognitive Diagnosis: A One-Shot Neural Architecture Search Perspective",
+  "abstract": "With the advancement of network technologies, intelligent tutoring systems(ITS) have emerged to deliver increasingly precise and tailored personalized learning services. Cognitive diagnosis(CD) has emerged as a core research task in ITS, aiming to infer learners' mastery of specific knowledge concepts by modeling the mapping between learning behavior data and knowledge states. However, existing research prioritizes model performance enhancement while neglecting the pervasive noise contamination in observed response data, significantly hindering practical deployment. Furthermore, current cognitive diagnosis models(CDMs) rely heavily on researchers' domain expertise for structural design, which fails to exhaustively explore architectural possibilities, thus leaving model architectures' full potential untapped. To address this issue, we propose OSCD, an evolutionary multi-objective One-Shot neural architecture search method for Cognitive Diagnosis, designed to efficiently and robustly improve the model's capability in assessing learner proficiency. Specifically, OSCD operates through two distinct stages: training and searching. During the training stage, we construct a search space encompassing diverse architectural combinations and train a weight-sharing supernet represented via the complete binary tree topology, enabling comprehensive exploration of potential architectures beyon",
+  "doi": "10.1145/3770854.3780159",
+  "url": "https://www.semanticscholar.org/paper/61bfa2ff745530610935ce77bc70ccffcd15c376",
+  "pdf": null,
+  "arxiv": "2601.04918"
+ },
+ {
+  "gid": 2023,
+  "venue": "KDD 2026",
+  "title": "Effective and Robust Multimodal Medical Image Analysis",
+  "abstract": "Multimodal Fusion Learning ( MFL ), leveraging disparate data from various imaging modalities (e.g., MRI, CT, SPECT ), has shown great potential for addressing medical problems such as skin cancer and brain tumor prediction. However, existing MFL methods face three key limitations: a) they often specialize in specific modalities, and overlooks effective shared complementary information across diverse modalities, hence limiting their generalizability for multi-disease analysis; b) they rely on computationally expensive models, restricting their applicability in resource-limited settings; and c) they lack robustness against adversarial attacks, compromising reliability in medical AI applications. To address these limitations, we propose a novel Multi-Attention Integration Learning ( MAIL ) network, incorporating two key components: a) an efficient residual learning attention block for capturing refined modality-specific multi-scale patterns and b) an efficient multimodal cross-attention module for learning enriched complementary shared representations across diverse modalities. Furthermore, to ensure adversarial robustness, we extend MAIL network to design Robust-MAIL by incorporating random projection filters and modulated attention noise. Extensive evaluations on 20 public datasets show that both MAIL and Robust-MAIL outperform existing methods, achieving performance gains of u",
+  "doi": "10.1145/3770854.3780331",
+  "url": "https://www.semanticscholar.org/paper/62e6e39cbc592e3ac5e02a91bb4070c5afdc9063",
+  "pdf": null,
+  "arxiv": "2602.15346"
+ },
+ {
+  "gid": 2024,
+  "venue": "KDD 2026",
+  "title": "PSQE: A Theoretical-Practical Approach to Pseudo Seed Quality Enhancement for Unsupervised Multimodal Entity Alignment",
+  "abstract": "Multimodal Entity Alignment (MMEA) aims to identify equivalent entities across different data modalities, enabling structural data integration that in turn improves the performance of various large language model applications. To lift the requirement of labeled seed pairs that are difficult to obtain, recent methods shifted to an unsupervised paradigm using pseudo-alignment seeds. However, unsupervised entity alignment in multimodal settings remains underexplored, mainly because the incorporation of multimodal information often results in imbalanced coverage of pseudo-seeds within the knowledge graph. To overcome this, we propose PSQE (Pseudo-Seed Quality Enhancement) to improve the precision and graph coverage balance of pseudo seeds via multimodal information and clustering-resampling. Theoretical analysis reveals the impact of pseudo seeds on existing contrastive learning-based MMEA models. In particular, pseudo seeds can influence the attraction and the repulsion terms in contrastive learning at once, whereas imbalanced graph coverage causes models to prioritize high-density regions, thereby weakening their learning capability for entities in sparse regions. Experimental results validate our theoretical findings and show that PSQE as a plug-and-play module can improve the performance of baselines by considerable margins.",
+  "doi": "10.1145/3770854.3780249",
+  "url": "https://www.semanticscholar.org/paper/65cc5e08d629533cc9dd71e14f2e2e7bd0aec0fb",
+  "pdf": null,
+  "arxiv": "2602.22903"
+ },
+ {
+  "gid": 2025,
+  "venue": "KDD 2026",
+  "title": "When Deepfake Detection Meets Graph Neural Network: A Unified and Lightweight Framework",
+  "abstract": "The proliferation of generative video models has made detecting AI-generated and manipulated videos an urgent challenge. Existing detection approaches often fail to generalize across diverse manipulation types due to their reliance on isolated spatial, temporal, or spectral information, and typically require large models to perform well. This paper introduces SSTGNN, a lightweight Spatial-Spectral-Temporal Graph Neural Network framework that represents videos as structured graphs, enabling joint reasoning over spatial inconsistencies, temporal artifacts, and spectral distortions. SSTGNN incorporates learnable spectral filters and spatial-temporal differential modeling into a unified graph-based architecture, capturing subtle manipulation traces more effectively. Extensive experiments on diverse benchmark datasets demonstrate that SSTGNN not only achieves superior performance in both in-domain and cross-domain settings, but also offers strong efficiency and resource allocation. Remarkably, SSTGNN accomplishes these results with up to 42\u00d7 fewer parameters than state-of-the-art models, making it highly lightweight and resource-friendly for real-world deployment.",
+  "doi": "10.1145/3770854.3780219",
+  "url": "https://www.semanticscholar.org/paper/67c5bf4c2869691f2cb936b72fa433a25b2b6f30",
+  "pdf": null,
+  "arxiv": null
+ }
+]

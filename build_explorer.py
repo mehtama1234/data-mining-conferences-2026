@@ -39,7 +39,7 @@ h1{{font-family:var(--serif);font-size:26px;margin:0 0 4px;color:#fff}}
 .ct{{font-family:var(--serif);font-size:17px;color:#fff;line-height:1.3}}
 .cmeta{{font-family:var(--mono);font-size:11px;color:var(--dim);margin:5px 0 9px;display:flex;gap:8px;flex-wrap:wrap;align-items:center}}
 .vtag{{color:#0E1420;background:var(--accent);border-radius:5px;padding:1px 6px;font-weight:600}}
-.vtag.WSDM{{background:var(--viol)}}.vtag.SIGIR{{background:var(--amber)}}
+.vtag.WSDM{{background:var(--viol)}}.vtag.SIGIR{{background:var(--amber)}}.vtag.KDD{{background:#6FCF97}}
 .thtag{{color:var(--soft);border:1px solid var(--line);border-radius:5px;padding:1px 6px}}
 .mtag{{color:var(--faint)}}
 .pac{{display:grid;grid-template-columns:auto 1fr;gap:3px 10px;font-size:13.5px;margin-top:4px}}
@@ -62,13 +62,14 @@ h1{{font-family:var(--serif);font-size:26px;margin:0 0 4px;color:#fff}}
 <div class="wrap">
 <div class="top">
   <h1>Data-mining 2026 · paper explorer</h1>
-  <div class="sub"><a href="index.html">← the landscape</a> · {len(recs):,} papers from WWW · WSDM · SIGIR · each with a quick read + an expandable plain-language first-principles story</div>
+  <div class="sub"><a href="index.html">← the landscape</a> · {len(recs):,} papers from WWW · WSDM · SIGIR · KDD · each with a quick read + an expandable plain-language first-principles story</div>
   <div class="controls">
     <input id="q" placeholder="search titles, problems, methods…  (e.g. 'cold start', 'diffusion', 'privacy')" autocomplete="off">
     <span class="chip on" data-v="ALL">all</span>
     <span class="chip" data-v="WWW">WWW</span>
     <span class="chip" data-v="WSDM">WSDM</span>
     <span class="chip" data-v="SIGIR">SIGIR</span>
+    <span class="chip" data-v="KDD">KDD</span>
   </div>
   <div id="count"></div>
 </div>

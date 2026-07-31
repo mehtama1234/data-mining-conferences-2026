@@ -15,12 +15,13 @@ def bars():
     mx = max(t["n"] for t in T["themes"])
     out = ""
     for t in T["themes"]:
-        www = t["by_venue"].get("WWW 2026", 0); wsdm = t["by_venue"].get("WSDM 2026", 0); sig = t["by_venue"].get("SIGIR 2026", 0)
+        www = t["by_venue"].get("WWW 2026", 0); wsdm = t["by_venue"].get("WSDM 2026", 0); sig = t["by_venue"].get("SIGIR 2026", 0); kdd = t["by_venue"].get("KDD 2026", 0)
         out += (f"<div class='bar'><span class='bl'>{esc(t['theme'])}</span>"
                 f"<span class='bt'>"
                 f"<span class='bf w' style='width:{www/mx*100:.1f}%'></span>"
                 f"<span class='bf s' style='width:{wsdm/mx*100:.1f}%'></span>"
-                f"<span class='bf g' style='width:{sig/mx*100:.1f}%'></span></span>"
+                f"<span class='bf g' style='width:{sig/mx*100:.1f}%'></span>"
+                f"<span class='bf k' style='width:{kdd/mx*100:.1f}%'></span></span>"
                 f"<span class='bv'>{t['n']}<span class='bp'> · {t['pct']}%</span></span></div>")
     return out
 
@@ -57,7 +58,7 @@ section{{padding:42px 0;border-top:1px solid var(--line)}}
 .bar{{display:flex;align-items:center;gap:12px;margin:7px 0;font-family:var(--mono);font-size:12.5px}}
 .bar .bl{{width:220px;color:var(--soft);text-align:right;flex:0 0 auto}}
 .bar .bt{{flex:1;height:18px;background:rgba(150,170,205,.06);border-radius:5px;overflow:hidden;display:flex}}
-.bar .bf{{display:block;height:100%}}.bar .bf.w{{background:#4FA8B8}}.bar .bf.s{{background:#9B8CE0}}.bar .bf.g{{background:#E3A63A}}
+.bar .bf{{display:block;height:100%}}.bar .bf.w{{background:#4FA8B8}}.bar .bf.s{{background:#9B8CE0}}.bar .bf.g{{background:#E3A63A}}.bar .bf.k{{background:#6FCF97}}
 .bar .bv{{width:82px;color:var(--ink)}}.bar .bp{{color:var(--faint)}}
 @media(max-width:640px){{.bar .bl{{width:130px;font-size:11px}}}}
 .leg{{font-family:var(--mono);font-size:12px;color:var(--faint);margin-top:12px}}
@@ -75,17 +76,17 @@ section{{padding:42px 0;border-top:1px solid var(--line)}}
 </style>
 <div class="wrap">
 <header style="padding:60px 0 8px">
-  <div class="kick">Data-mining conferences 2026 · WWW · WSDM · SIGIR</div>
+  <div class="kick">Data-mining conferences 2026 · WWW · WSDM · SIGIR · KDD</div>
   <h1>What the data-mining world is working on in 2026.</h1>
-  <p class="dek">A theme map of <b>{N:,} papers</b> from the three 2026 data-mining / web / IR conferences whose proceedings are already open: <b>WWW / TheWebConf</b> ({T['venues'].get('WWW 2026',0)}), <b>WSDM</b> ({T['venues'].get('WSDM 2026',0)}) and <b>SIGIR</b> ({T['venues'].get('SIGIR 2026',0)}). Built over real abstracts, so the themes are grounded in what papers actually say — not just their titles.</p>
+  <p class="dek">A theme map of <b>{N:,} papers</b> from the 2026 data-mining / web / IR conferences: <b>WWW / TheWebConf</b> ({T['venues'].get('WWW 2026',0)}), <b>WSDM</b> ({T['venues'].get('WSDM 2026',0)}), <b>SIGIR</b> ({T['venues'].get('SIGIR 2026',0)}), and the first <b>KDD</b> ({T['venues'].get('KDD 2026',0)}) papers arriving ahead of its August conference. Built over real abstracts, so the themes are grounded in what papers actually say — not just their titles.</p>
   <div class="stat">
     <div><div class="sn">{N:,}</div><div class="sl">papers</div></div>
     <div><div class="sn">{T['with_abstract']*100//N}%</div><div class="sl">with abstracts</div></div>
     <div><div class="sn">{len(T['themes'])}</div><div class="sl">research themes</div></div>
-    <div><div class="sn">3</div><div class="sl">of the KDD family (more to come)</div></div>
+    <div><div class="sn">4</div><div class="sl">of the KDD family (more to come)</div></div>
   </div>
   <div class="note"><div class="nt">scope — the KDD family, and what's next</div>
-  <p><b>KDD 2026</b> itself isn't published yet (it's an August conference). These siblings <em>are</em> out and — unlike IEEE venues — carry {T['with_abstract']*100//N}% abstracts, so a grounded analysis is possible now. As the year goes on, <b>KDD, RecSys, CIKM, ICDM</b> publish and can join this same map. Two layers here: a deterministic theme landscape below, <b>and</b> a per-paper read where a language model pulled the problem · approach · contribution out of all {S['n_analyzed']:,} abstracts — <a href="explorer.html">explore it</a>, or see <a href="compare.html">how the three venues differ</a>.</p></div>
+  <p><b>KDD 2026</b> is an August conference, so its proceedings are still filling — the first <b>{T['venues'].get('KDD 2026',0)}</b> papers are here now (with full per-paper reads on the 50 that already carry abstracts), and the rest join as they publish. Its siblings <b>WWW / WSDM / SIGIR</b> are fully out and — unlike IEEE venues — carry {T['with_abstract']*100//N}% abstracts. Still to come as their proceedings open: <b>RecSys, CIKM, ICDM</b>. Two layers here: a deterministic theme landscape below, <b>and</b> a per-paper read where a language model pulled the problem · approach · contribution — plus a plain-language first-principles story — out of all {S['n_analyzed']:,} papers with abstracts — <a href="explorer.html">explore it</a>, or see <a href="compare.html">how the venues differ</a>.</p></div>
 </header>
 
 <section>
@@ -93,7 +94,7 @@ section{{padding:42px 0;border-top:1px solid var(--line)}}
   <h2>LLMs have swallowed the field</h2>
   <p>Every paper is matched to the research themes its title + abstract touch (a paper can span several). The single biggest story is unmissable: <b>{T['themes'][0]['pct']:.0f}% of papers touch large language models</b> — more than recommenders, graphs, and search, the classic pillars of this community, and it shows up across all three venues:</p>
   <div style="margin-top:14px">{bars()}</div>
-  <div class="leg"><span class="sw" style="background:#4FA8B8"></span>WWW / TheWebConf<span class="sw" style="background:#9B8CE0"></span>WSDM<span class="sw" style="background:#E3A63A"></span>SIGIR</div>
+  <div class="leg"><span class="sw" style="background:#4FA8B8"></span>WWW / TheWebConf<span class="sw" style="background:#9B8CE0"></span>WSDM<span class="sw" style="background:#E3A63A"></span>SIGIR<span class="sw" style="background:#6FCF97"></span>KDD <span style="opacity:.6">(early)</span></div>
   <div class="why"><h3>How to read this honestly</h3><p>Themes overlap — a paper on "an efficient LLM recommender" counts in three. "Efficiency &amp; Scalability" is a cross-cutting quality rather than a topic, which is why it ranks so high. The signal that matters: the classic data-mining pillars (recommenders, graphs, IR, social networks) are all still strong, but <em>every one of them now has an LLM version</em> — the LLM theme cuts across the whole conference.</p></div>
 </section>
 
