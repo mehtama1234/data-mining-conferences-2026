@@ -1,0 +1,153 @@
+{
+ "key": "probability",
+ "title": "Estimating chances from data",
+ "intro": "Much of the field is really estimating how likely something is \u2014 a click, a fraud, the next word \u2014 by learning those chances from mountains of past behaviour.",
+ "why": "It works because with enough independent observations the fraction of times something happened is a trustworthy estimate of how often it will happen again \u2014 and the more you've seen, the tighter that estimate becomes. It also means a few well-chosen random samples can stand in for a huge population, because their average reliably reflects the whole.",
+ "n_total": 70,
+ "papers": [
+  {
+   "title": "PerQA: A Benchmark for Temporally Sensitive Questions on Heterogeneous Personal Data",
+   "uses": "Answers questions about personal data by aggregating events over time, where many questions require filtering by dates and summing counts or patterns."
+  },
+  {
+   "title": "VarParser: Unleashing the Neglected Power of Variables for LLM-based Log Parsing",
+   "uses": "Parses logs by sampling and caching based on variable parts (IDs, numbers, paths), not just constant text, reducing the amount of text sent to language models."
+  },
+  {
+   "title": "Revisiting Graph-Level Anomaly Detection: From Partially to Fully Unsupervised Learning",
+   "uses": "Detects abnormal graphs by modeling uncertainty around predictions, allowing the system to down-weight ambiguous samples that might be anomalies during training."
+  },
+  {
+   "title": "Understanding Strategic Platform Entry and Seller Exploration: A Stackelberg Model",
+   "uses": "Model when a platform will enter a market to compete with sellers, balancing its own profit against information it learns over time."
+  },
+  {
+   "title": "Modeling Cascaded Delay Feedback for Online Net Conversion Rate Prediction: Benchmark, Insights and Solutions",
+   "uses": "Predict the net conversion rate (purchase and no refund) by modeling the two delays separately and learning patterns over time from continuous feedback."
+  },
+  {
+   "title": "Resisting Manipulative Bots in Meme Coin Copy Trading: A Multi-Agent Approach with Chain-of-Thought Reasoning",
+   "uses": "Use a reasoning model to estimate the probability that a copy-trade target is manipulated, combining signals across chat sentiment, trading patterns, and bot behavior."
+  },
+  {
+   "title": "EcoTune: Edge-Cloud Collaborative Model Adaptation for Budget-Constrained On-Device SLM Personalization",
+   "uses": "Select the most informative user interactions for cloud annotation using a multi-armed bandit, then adjust only the most critical model layers on-device."
+  },
+  {
+   "title": "Exploring the Domain Sensitivity of AI Chatbots in Correcting Misinformation",
+   "uses": "Train a chatbot to correct misinformation by learning correction strategies, then measure how well it reduces false belief across health, science, and politics domains."
+  },
+  {
+   "title": "Online Rounding and Pricing Schemes for k-Rental Problems",
+   "uses": "Solve the fractional allocation online, then round to integers using controlled randomness to preserve the cost guarantee."
+  },
+  {
+   "title": "Camel: Frame-Level Bandwidth Estimation for Low-Latency Live Streaming under Video Bitrate Undershooting",
+   "uses": "Estimate true available bandwidth by watching frame-by-frame network feedback, then weight the sending rate and burst pattern to match the frame bursts without overflowing the network."
+  },
+  {
+   "title": "Energy-Efficient and Dequantization-Free Quantization of LLMs: A Spiking Neural Network Approach to Salient Value Mitigation",
+   "uses": "Reduces how much energy a language model consumes by storing only a few important numbers in full precision while storing the rest as binary counts, avoiding expensive arithmetic during use."
+  },
+  {
+   "title": "Expectation-Maximization Driven Contrastive Disentanglement for Generalized Category Discovery",
+   "uses": "Discovers new categories by using a probabilistic model to soft-identify which samples belong to novel categories, then pulls similar samples close and pushes apart ambiguous ones."
+  },
+  {
+   "title": "llm-tuna - Hyperparameter Optimization for LLM Inference",
+   "uses": "Searches for optimal deployment settings (batch size, parallelism) by testing configurations intelligently across multiple hardware setups to maximize throughput."
+  },
+  {
+   "title": "Marketing Hosting: From Fixed to Endogenous Budgets",
+   "uses": "Optimizes marketing spending when the budget itself depends on how well campaigns perform, learning the reinvestment rate that balances reward with risk of running out of money."
+  },
+  {
+   "title": "MiniAMIE: Quick and Dirty Rule Mining on Knowledge Graphs",
+   "uses": "Approximates which rules in knowledge graphs are most useful by testing quick estimates instead of exact measurements, speeding up mining."
+  },
+  {
+   "title": "Meteor: High-Performance Control Message Delivery for Large-Scale Clouds",
+   "uses": "Routes control messages through either fast direct calls or slower queues, automatically switching between them based on which keeps delays lowest for each situation."
+  },
+  {
+   "title": "Industrialized Deception: The Collateral Effects of LLM-Generated Misinformation on Digital Ecosystems",
+   "uses": "Evaluates whether people can tell apart human news from AI-generated news, testing both detection and generation to understand how well AI fools readers and vice versa."
+  },
+  {
+   "title": "Users Pay Twice: The Hidden Energy Cost of Web Advertising",
+   "uses": "Measure CPU activity across millions of real web visits to estimate the energy cost that ads and tracking add to each page users browse."
+  },
+  {
+   "title": "Mind the Ambiguity: Aleatoric Uncertainty Quantification in LLMs for Safe Medical Question Answering",
+   "uses": "Teaching a system to notice when a user's question has multiple meanings and ask for clarification, by detecting ambiguity directly from the system's internal thought-patterns."
+  },
+  {
+   "title": "Coarse-Fine: A Novel VPA Strategy for Boosting Resource Utilization of Transient Offline Tasks",
+   "uses": "Adjusting computer resource requests for tasks by combining cluster-wide trends with sliding-window patterns specific to each task's recent history."
+  },
+  {
+   "title": "LaTune: Lightweight and Adaptive Configuration Tuning for LLM Inference on Edge Devices",
+   "uses": "Find which runtime settings matter most, reuse successful settings from past tuning runs, then quickly pick the best live configuration based on what system resources are available right now."
+  },
+  {
+   "title": "Ethical Decision-Making under Moral Uncertainty",
+   "uses": "Balance competing moral frameworks by assigning weights to each ethical principle, learn which principles work best by trying arms, and dynamically adjust weights based on observed outcomes."
+  },
+  {
+   "title": "Optimizing Multi-Turn Interactive Recommendation Agents via Generative Intrinsic Motivation",
+   "uses": "The system learns to act by assigning rewards based on three human drives (autonomy, competence, relatedness), then improves choices by descending toward better behavior."
+  },
+  {
+   "title": "Bridging Expert Reasoning and LLM Detection: A Knowledge-Driven Framework for Malicious Packages",
+   "uses": "The detector retrieves similar dangerous code examples from a knowledge base, then uses reasoning to assess whether new code's purpose matches its behavior."
+  },
+  {
+   "title": "AHBid: An Adaptable Hierarchical Bidding Framework for Cross-Channel Advertising",
+   "uses": "The system plans budget allocation across ad channels by sampling many plausible allocation paths from past patterns, then refining them in real-time as new outcomes arrive."
+  },
+  {
+   "title": "SLFM: Semi-Supervised Local Community Detection Based on Hyperbolic Flow Matching",
+   "uses": "The system finds a community around a seed user by learning a lists of numbers field that smoothly transforms a generic distribution into the target community's shape in curved space, starting from a refined seed."
+  },
+  {
+   "title": "CytoCrowd: A Multi-Annotator Benchmark Dataset for Cytology Image Analysis",
+   "uses": "Aggregate labels from multiple pathologists into a single quality judgment about each cell."
+  },
+  {
+   "title": "Bandits, LLMs, and Agentic Web",
+   "uses": "An AI agent chooses actions by treating each option as an arm in a bandit; it learns which choices earn rewards, explores uncertain ones, and converges to the best strategies."
+  },
+  {
+   "title": "G-SEIR: A Graph-Enhanced Epidemic Forecasting System for Dengue Intervention",
+   "uses": "Predict future dengue cases by running a learned disease-spread simulator on a spatio-temporal network, with parameters optimized to match past outbreak data."
+  },
+  {
+   "title": "Multilingual Reference Need Assessment System for Wikipedia",
+   "uses": "Trains a model on ten languages simultaneously to spot Wikipedia claims that lack citations, balancing accuracy against the cost to run it at production scale."
+  },
+  {
+   "title": "Benchmarking Temporal Web3 Intelligence: Lessons from the FinSurvival 2025 Challenge",
+   "uses": "Predict user transitions and survival in a blockchain platform using 16 survival prediction tasks on 21.8 million transactions, capturing temporal censoring and non-stationary patterns."
+  },
+  {
+   "title": "FSDI: Frequency-Shaped Diffusion For Time-Series Imputation",
+   "uses": "Replaces uniform noise scheduling with frequency-specific noise amounts matched to how energy is actually distributed across the frequency spectrum of time series data."
+  },
+  {
+   "title": "EdgeGen: Efficient LLM-Empowered Model Generation with Quantization-Aware NAS",
+   "uses": "Searches for neural architectures that perform well even after compression, by numeric fingerprints quantization into the search space and using tree-based random sampling to explore efficiently."
+  },
+  {
+   "title": "AC$2$L-GAD: Active Counterfactual Contrastive Learning for Graph Anomaly Detection",
+   "uses": "Learns which pairs of network nodes are truly anomalies by comparing how similar they are and what's unusual about them."
+  },
+  {
+   "title": "BANCO: Drift-Aware Batched Bandits for Adaptive Proximity Graph Pruning",
+   "uses": "Tries different strategies for removing graph edges and learns which works best as the data distribution changes over time."
+  },
+  {
+   "title": "Reinforcement Learning with Verbalized Probabilities for LLM Classification",
+   "uses": "Teach the language model to output word-based probability scores by rewarding it with feedback from expert math-based models trained on tabular data."
+  }
+ ]
+}

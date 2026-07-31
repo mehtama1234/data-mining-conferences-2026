@@ -1,0 +1,153 @@
+{
+ "key": "optimize",
+ "title": "Finding the least-wrong settings",
+ "intro": "Almost every learned system is tuned the same way: define a single number for how wrong it currently is, then adjust its internal settings to make that number as small as possible.",
+ "why": "It works because the slope of how-wrong tells you exactly which small adjustment reduces the error, so nudging that way over and over can only improve, and it settles where no small change helps. When the error surface is bowl-shaped that settling point is the best possible; even when it is rugged, this reliably reaches a good one.",
+ "n_total": 53,
+ "papers": [
+  {
+   "title": "Meta-Learning Driven Few-Shot Knowledge Transfer with Dual-Stage Adaptive Data Replay for Cross-Domain Recommendation",
+   "uses": "Learn flexible alignment rules between recommendation domains using few examples, then replay refined data to reduce transfer mistakes."
+  },
+  {
+   "title": "Better Negatives, Better Predictions: Negative Sample Selection Strategies for Enhancing Biomedical KG Edge Classification",
+   "uses": "Select negative examples strategically when training graph classifiers, choosing cases that meaningfully distinguish true relationships from false ones."
+  },
+  {
+   "title": "Network Dismantling via Reverse Dismantling: Static and Dynamic Algorithms",
+   "uses": "Finds the cheapest set of network nodes to remove that disconnects the giant connected component; efficiently recomputes results using tree-based index structures."
+  },
+  {
+   "title": "Learning-Based Optimization of Atomic Arbitrage in Decentralized Financial Systems",
+   "uses": "Trains an agent via reinforcement learning to select a three-pool arbitrage path and trade size to maximize profit under real constraints like gas and latency."
+  },
+  {
+   "title": "Sharpness-Consistent Cross-Domain Recommendation for Cold-Start Items",
+   "uses": "Optimize model parameters to find loss landscape minima that are flat and consistent across both cold-start and warm-start recommendation domains."
+  },
+  {
+   "title": "Orthogonal Meta-learning Boosted Bayesian Optimization for Uncertain Multi-Objective Recommendation",
+   "uses": "Optimize multiple competing recommendation objectives (accuracy, diversity, fairness) per user by learning which objectives matter to each person and their uncertain relationships."
+  },
+  {
+   "title": "Inference Cost Attacks for Retrieval-Augmented Large Language Models",
+   "uses": "Craft malicious documents that are semantically similar to user queries yet maximize words consumption during inference."
+  },
+  {
+   "title": "Automating Computational Reproducibility in Social Science: Comparing Prompt-Based and Agent-Based Approaches",
+   "uses": "Test whether AI repair systems can match ground-truth output by iteratively applying fixes until code execution succeeds."
+  },
+  {
+   "title": "Rethinking Graph Generalization through the Lens of Sharpness-Aware Minimization",
+   "uses": "Train networks in regions where small input changes cause small output changes, measured by the flatness of the loss landscape."
+  },
+  {
+   "title": "DARA: Few-shot Budget Allocation in Online Advertising via In-Context Decision Making with RL-Finetuned LLMs",
+   "uses": "Optimizes how to split a budget across ad placements to maximize winning impressions, learns from just a few examples by reasoning first then refining based on feedback."
+  },
+  {
+   "title": "LLMQuA: Practical Backdoor Injection on Large Language Model Quantization",
+   "uses": "Optimizes quantization parameters layer-by-layer to find settings that preserve normal words behavior while distorting weights to reprogram specific words into backdoor responses."
+  },
+  {
+   "title": "LoRA-E2: Effective and Efficient Low-rank Adaptation",
+   "uses": "Improves compact adaptation by initializing the small add-on modules matrices differently and using a better algorithm to train them, making adjust faster and more stable."
+  },
+  {
+   "title": "MASI: Memory-Adaptive Inference Framework for Spiking Neural Networks on Edge Devices",
+   "uses": "Adapts spiking systems that learn from examples inference on phones to available memory by slicing network layers smartly, scheduling timesteps to reduce memory fragmentation, and stopping early on confident predictions."
+  },
+  {
+   "title": "SAGE: Sustainable Agent-Guided Expert-tuning for Culturally Attuned Translation in Low-Resource Southeast Asia",
+   "uses": "Translates text for low-resource Southeast Asian languages by using a learning agent to select high-quality, culturally relevant training examples instead of training on all noisy data."
+  },
+  {
+   "title": "Temporal Challenges in Data-Driven Scenario-Building for Climate-Neutral Cities",
+   "uses": "Simulating urban systems forward in time to find which policy changes reduce emissions most effectively."
+  },
+  {
+   "title": "ICL-Evader: Zero-Query Black-Box Evasion Attacks on In-Context Learning and Their Defenses",
+   "uses": "Craft adversarial examples by exploiting how models process in-context prompts, then train defenses to harden prompts against these attacks."
+  },
+  {
+   "title": "Intelli-Planner: Towards Customized Urban Planning via Large Language Model Empowered Reinforcement Learning",
+   "uses": "Reinforce planning decisions that maximize satisfaction across stakeholders by learning a policy that maps land data and preferences to layouts."
+  },
+  {
+   "title": "WAB: Overcoming Memory, Network, and Security Walls in Native Agentic Browsers with WebAssembly",
+   "uses": "Runs agent code inside a WebAssembly sandbox that pre-fetches context into fast memory, batches multiple actions into single round-trips, and prevents unsafe operations through isolation."
+  },
+  {
+   "title": "SkyCL: Swift Continuous Learning with Kinship-Awareness for Multi-Drone Video Analytics under Drastic Drift",
+   "uses": "Detects when drone video changes drastically and retrains the model on fresh video, then reuses or adapts past models based on how similar they were to current performance."
+  },
+  {
+   "title": "Beyond Fine-Tuning: The Present and Future of Parameter-Efficient Fine-Tuning in Vision Transformers",
+   "uses": "Surveys efficient methods to adapt image classification models by updating only small subsets of parameters rather than retraining the entire network."
+  },
+  {
+   "title": "Alzo: Auto-Tuning with Reinforcement Learning for DAG-based Blockchains",
+   "uses": "Auto-tune a blockchain's performance by learning which parameter settings maximize throughput and minimize latency at each stage of the consensus protocol, adjusting continuously as workload changes."
+  },
+  {
+   "title": "Smaller but Better: Plasticity-Preserving Continual Learning for Embedded AI",
+   "uses": "Prunes network capacity while carefully preserving the ability to learn new tasks by expanding capacity temporarily at task boundaries then re-pruning."
+  },
+  {
+   "title": "Breaking the Scalability Barrier in Constrained Graph-Based Networked Control via Decision-Focused Learning",
+   "uses": "Learn actions for deciding production and transport on graphs by imitating expert decisions while respecting capacity limits."
+  },
+  {
+   "title": "Tuning Qwen2.5-VL to Improve Its Web Interaction Skills",
+   "uses": "Improve a vision-language model's web clicking accuracy by teaching it to verify element location and state after each action instead of assuming success."
+  },
+  {
+   "title": "Wiseswap: Elastic Datacenter Network-Aware Disaggregated Memory for Multi-Tenant Cloud",
+   "uses": "Routes data traffic through datacenter paths that have the least congestion and measures latency in real time to choose which memory locations to use and when to prioritize requests."
+  },
+  {
+   "title": "Mitigating Cumulative Privacy Risk in Continual Information Sharing: A Dynamic Stackelberg Game Approach",
+   "uses": "Model a user's privacy-sharing decisions over time as a game where both user and attacker learn from each other, optimize the user's strategy to minimize cumulative risk."
+  },
+  {
+   "title": "R2NS: Recall and Re-ranking of Negative Samples for Sequential Recommendation",
+   "uses": "Trains recommendation systems by progressively showing them harder negative items to contrast with liked items, improving discernment over time."
+  },
+  {
+   "title": "Orchestration-Free Customer Service Automation: A Privacy-Preserving and Flowchart-Guided Framework",
+   "uses": "Learns procedural flowcharts from service conversations and uses them to guide small models through customer service tasks step-by-step."
+  },
+  {
+   "title": "How Quantum Period Finding Breaks Rivest Shamir Adleman Algorithms",
+   "uses": "Emulates quantum computation step by step to show how quantum algorithms can find the repeating pattern in the RSA encryption system, breaking it."
+  },
+  {
+   "title": "Breath: Adaptive Protection Boundary in FEC Encoding for Mobile Real-Time Video Streaming",
+   "uses": "Dynamically adjust how many redundant copies of video frames to send based on network loss patterns."
+  },
+  {
+   "title": "Feedback Control for Small Budget Campaigns in Advertising",
+   "uses": "Adjust ad spend rate during an auction using feedback from actual spending to stay close to budget target."
+  },
+  {
+   "title": "BIND: A Bidirectionally Aligned Next-token Denoising Framework for Fast and Lightweight Deobfuscation of Harmful Web Text",
+   "uses": "Correct obfuscated harmful text by aligning characters bidirectionally and using a specialized focus to fix each position, trained to handle visual tricks and emoji substitution."
+  },
+  {
+   "title": "CEAT: Context-Emotion Adversarial Training Framework for Robust Emotion-Driven Fraud Detection",
+   "uses": "Train fraud detection robust to emotional manipulation by adversarially injecting realistic noise into emotion signals during training, drawn from actual patterns in user behavior."
+  },
+  {
+   "title": "ReFuGe: Feature Generation for Prediction Tasks on Relational Databases with LLM Agents",
+   "uses": "Generates relational features through schema reasoning and iterative validation, filtering infeasible combinations before testing."
+  },
+  {
+   "title": "AFE-Master: Enhancing LLM-Driven Autonomous Feature Engineering with Domain-Specific Language Parsing and Guided Local Search",
+   "uses": "Uses a language model to construct features expressed in a domain-specific language, then searches locally for small edits to features that reduce prediction error while preserving semantic structure."
+  },
+  {
+   "title": "XLingLearn: Balancing Alignment and Robustness for Zero-Shot Cross-Lingual Transfer",
+   "uses": "Improve language transfer by pushing apart overly clustered word meanings and aligning how languages weight their focus, reducing error on unseen data."
+  }
+ ]
+}

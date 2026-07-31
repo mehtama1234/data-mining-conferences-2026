@@ -1,0 +1,153 @@
+{
+ "key": "cause",
+ "title": "Separating cause from coincidence",
+ "intro": "Data is full of things that merely happen together, but to act well you need what actually causes an outcome \u2014 the lever you can pull, not the coincidence you happened to notice.",
+ "why": "It works because if you can compare like with like \u2014 the same kind of person with and without the one thing you changed \u2014 then any leftover difference in outcome must be due to that change, not to who they already were. That careful comparison is exactly what turns a correlation into a cause you can safely act on.",
+ "n_total": 269,
+ "papers": [
+  {
+   "title": "Reconstructing Training Data from Adapter-based Federated Large Language Models",
+   "uses": "Reconstructs training text from the slope that flow through compact small add-on modules, exploiting the unique leakage channels they create."
+  },
+  {
+   "title": "Too Much Sharing, Too Little Security: Authentication Cookie Theft At Scale",
+   "uses": "Detects when authentication cookies leak to compromised subdomains by simulating attacks and tracking which sensitive credentials flow across domain boundaries."
+  },
+  {
+   "title": "Conflict-Aware RAG: Multi-Stage Learning with Conflict Signals for Robust Retrieval-Augmented Generation",
+   "uses": "Trains a retrieval system to detect when sources conflict and to prefer answers supported across multiple sources over those relying on only one conflicting source."
+  },
+  {
+   "title": "An Improved Combinatorial Algorithm for Edge-Colored Clustering in Hypergraphs",
+   "uses": "Assign colors to nodes in a hypergraph so node colors match the colors of the edges connected to them."
+  },
+  {
+   "title": "Causal Pre-training Under the Fairness Lens: An Empirical Study of TabPFN",
+   "uses": "Predict whether someone will buy something fairly, learning from synthetic data created by causal rules, then test on real data with missing values."
+  },
+  {
+   "title": "TraceLLM: Evaluating and Exploring Large Language Models on Trace Analysis in Microservice-based Web Applications",
+   "uses": "adjust a language model to reason over system traces and predict faults by learning causal patterns between events in microservice logs."
+  },
+  {
+   "title": "Multi-Modal Enhanced Graph Transfer Learning for Digital Finance Fraud Detection",
+   "uses": "Align multi-modal fraud patterns (graph, temporal, text) across blockchain networks by learning shared representations that ignore domain-specific distribution shifts."
+  },
+  {
+   "title": "The Verification Crisis: Expert Perceptions of GenAI Disinformation and the Case for Reproducible Provenance",
+   "uses": "Establish reproducible benchmarks and data provenance standards that measure how well you can detect and track different types of synthetic media."
+  },
+  {
+   "title": "Decoding Web Memorization: A Semantic Membership Inference Attack on LLMs",
+   "uses": "Generate diverse rewrites of training data samples, extract hidden patterns from the model's focus layers, and train a classifier to distinguish members from non-members using similarity scores."
+  },
+  {
+   "title": "Disentangled Graph LLM for Molecule Graph Editing under Distribution Shifts",
+   "uses": "Disentangle molecule structure into independent factors, ensuring each factor stays consistent even when instructions are rephrased, then assign specialized experts to each factor."
+  },
+  {
+   "title": "PAOSC: Plug-and-play Attention Optimization for Semantic Consistency in LLMs",
+   "uses": "Identify low-value words using a learned scorer, then adjust focus to emphasize words that improve the model's semantic meaning and loss."
+  },
+  {
+   "title": "RMBRec: Robust Multi-Behavior Recommendation towards Target Behaviors",
+   "uses": "Maximize the information between auxiliary behaviors and target behavior while minimizing spread of error in predictions across different behavior types."
+  },
+  {
+   "title": "Bridging Semantic Understanding and Popularity Bias with LLMs",
+   "uses": "Decompose popularity bias into item-side and user-side causes, then score recommendations by how well they disentangle these causes from each other."
+  },
+  {
+   "title": "Towards Automated Brand-Safety Detection: A Novel Dataset and Comparative Analysis of Language Models",
+   "uses": "Train specialized models on labeled stories to recognize whether content fits different safety categories, rather than asking a general model to guess without seeing examples."
+  },
+  {
+   "title": "(wt) GC-DPG: Graph-Constrained Dual-Phase Generation for Safe and Verifiable Chinese Medical Question Answering",
+   "uses": "Plan which medical facts are safe to mention for a disease, then score the model's answer by whether it stays within the plan and doesn't invent facts not in the knowledge base."
+  },
+  {
+   "title": "ZK-V: Zero-Knowledge Verification for Trustworthy Autonomous Driving Simulation",
+   "uses": "Prove cryptographically that a simulation followed safety rules (no crashes, speed limits obeyed) without revealing the actual telemetry numbers, using a blockchain record no one can tamper with."
+  },
+  {
+   "title": "MultiFPT: Towards Multi-Attribute Fairness in Pre-Trained Graph Neural Networks via Prompt Tuning",
+   "uses": "Identify protected characteristics (gender, race, etc.) and adjust the model's internal representations so that those characteristics become statistically independent from predictions, using lightweight small add-on modules instead of retraining."
+  },
+  {
+   "title": "Social Bias Benchmarks for Large Language Models",
+   "uses": "Measure fairness bias in language models across languages and cultures by evaluating their predictions against curated benchmarks."
+  },
+  {
+   "title": "Collusion-Aware Set-level Learning Framework for Detecting Spamming Activities",
+   "uses": "Learns to score groups of accounts as potential fraud rings by optimizing to detect coordinated manipulation patterns in their collective behavior."
+  },
+  {
+   "title": "Unveiling and Mitigating Untargeted Poisoning Attacks on Federated Knowledge Graph Embedding",
+   "uses": "Attackers inject false data to corrupt learned entity representations in a system; defense detects outlier density in representation space to identify attackers."
+  },
+  {
+   "title": "Cross-Domain Fake News Detection on Unseen Domains via LLM-Based Domain-Aware User Modeling",
+   "uses": "Uses language models to extract high-level meaning from news and user behavior, then learns domain-aware patterns that transfer to unseen news domains."
+  },
+  {
+   "title": "Counterfactual Augmented Causal Reasoning for Aspect-Based Sentiment Analysis",
+   "uses": "Generates synthetic examples where correlations flip to teach the model which patterns are causal versus accidental, then filters to causal features only."
+  },
+  {
+   "title": "Beyond Detection: Autonomous Anomaly Remediation for MCP Against Tool Poisoning Attacks",
+   "uses": "Detect anomalies in tool behaviors by finding which operations are most likely root causes of failure, then mask those causes and re-run to verify the fix."
+  },
+  {
+   "title": "A USIM-less Identity Authentication System based on Zero-Knowledge Proofs",
+   "uses": "Prove your identity by showing membership in a secret group without revealing who you are or disclosing any personal information about yourself."
+  },
+  {
+   "title": "WAMO: Toward Secure Browser Inference via Web Model Obfuscation in WebAssembly",
+   "uses": "Convert systems that learn from examples models to hardened binary code that is difficult to reverse-engineer, making model weights and computation graphs hard to extract."
+  },
+  {
+   "title": "Risk-free Selfish Mining in Hybrid Predictability Model. A Case Study on Polkadot's NPoS",
+   "uses": "Score the expected profit a validator coalition gains from hiding blocks versus adopting the standard honest strategy."
+  },
+  {
+   "title": "ReGA: Zero-Overhead Graph Alignment for Structural Hallucination Detection Without Generation",
+   "uses": "Score how well the model's extracted graph structure matches the correct relationship directions between entities."
+  },
+  {
+   "title": "FedCND: Federated Graph-Level Clustering under Inter-Client Cluster Number Discrepancy",
+   "uses": "Federated clients cluster their graphs locally while decoupling public shared structure from private local patterns to align clusters despite mismatched cluster counts."
+  },
+  {
+   "title": "LAPS: A Lightweight Privilege-Allocation Prompting Framework for Source Localization",
+   "uses": "A lightweight pre-trained classifier learns to rank and localize rumor sources by scoring subgraph regions, then adapts via prompting rather than full retraining."
+  },
+  {
+   "title": "Bento: Fine-Grained Memory Isolation for COTS WebAssembly Binaries",
+   "uses": "Analyzes pointer patterns to partition memory into isolated regions, then rewrites the binary to map each region to separate memory instances without adding runtime checks."
+  },
+  {
+   "title": "Pattern-aware Illicit Account Detection based on User Behavior Sequences",
+   "uses": "Mines category-specific behavior patterns from sequences and contextualizes action semantics to distinguish illicit from benign accounts even when actions look identical."
+  },
+  {
+   "title": "Enhancing Content Moderation with LLMs: A Reddit Case Study on Evaluating and Refining Human Decisions",
+   "uses": "Score whether moderation decisions are correct by comparing to trained models, then diagnose which rules caused errors and generate clearer rules."
+  },
+  {
+   "title": "Prompt Scene Investigation: Uncovering the Evidence in LLMs",
+   "uses": "Record and replay model responses to detect when prompts cause unsafe outputs, building a chain of evidence that proves what the model did and when."
+  },
+  {
+   "title": "Inferential Question Answering",
+   "uses": "Given clue passages that hint at an answer without stating it, learn to connect hints across passages to reconstruct the answer, separating true logical inference from random coincidence."
+  },
+  {
+   "title": "To Search or Not to Search: Aligning the Decision Boundary of Deep Search Agents via Causal Intervention",
+   "uses": "Detect the moment when an agent has enough information to answer by comparing what happens if it keeps searching versus stops, then retrain it to know when to stop."
+  },
+  {
+   "title": "BiasEdit: A Training-Free Bias-Detect-and-Edit Framework for Learning Fair Visual Classifiers",
+   "uses": "Detects which image attributes are truly tied to class labels versus accidentally co-occurring, then estimates what unbiased data would look like by generating missing samples."
+  }
+ ]
+}

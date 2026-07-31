@@ -1,0 +1,153 @@
+{
+ "key": "information",
+ "title": "Measuring surprise and information",
+ "intro": "Underneath search and compression sits a way to measure how surprising an outcome is, and therefore how much information it carries \u2014 a rare event tells you a lot, a certain one tells you nothing.",
+ "why": "It works because information has a natural, hard-to-cheat measure: the more unlikely a message, the more it narrows down the possibilities, and the fewer bits you need on average to send common things and more for rare ones. Systems that spend effort in proportion to surprise put their attention exactly where the uncertainty \u2014 and the payoff \u2014 actually is.",
+ "n_total": 59,
+ "papers": [
+  {
+   "title": "D-Models and E-Models: Diversity-Stability Trade-offs in the Sampling Behavior of Large Language Models",
+   "uses": "Measure whether a language model's next-word probabilities match the true probabilities that matter for a task, revealing a trade-off between variety and stability."
+  },
+  {
+   "title": "MoE-LC: General-Purpose Lossless Compression for Multi-modal Data via Entropy-Aware Multi-Experts",
+   "uses": "Estimate how hard each batch of data is to compress, then assign more experts to hard batches and simpler experts to easy ones, routing each piece to the expert best suited to it."
+  },
+  {
+   "title": "Digital Skin, Digital Bias: Uncovering Tone-Based Biases in LLMs and Emoji Embeddings",
+   "uses": "Measure whether emojis with different skin tones sit close together in the model's inner representation space, and whether they carry different sentiment scores even when the base emoji is identical."
+  },
+  {
+   "title": "Rhythm of Opinion: Interpretable Hawkes-Graph Networks for Hierarchical Opinion Propagation",
+   "uses": "Model opinion propagation as a point process where opinions flow at rates determined by emotional context and hierarchical position."
+  },
+  {
+   "title": "Do You Think What I Think? A Qualitative Study for Maximising User Engagement through Latent Visual Properties",
+   "uses": "Identify visual design choices\u2014color, layout, symbolic encoding\u2014that do not directly represent data yet improve insight and engagement."
+  },
+  {
+   "title": "Toward Graph-Tokenizing Large Language Models with Reconstructive Graph Instruction Tuning",
+   "uses": "An AI language systems learns graph-to-text alignment by reconstructing graph structure from its internal words outputs, adding explicit graph supervision to language-only instruction tuning."
+  },
+  {
+   "title": "Early Recall Estimation and Stopping in Technology-Assisted Reviews via Ranker-Sampler Fusion",
+   "uses": "Combines a ranking model's scores with a probability sample of documents to estimate true recall without judging the entire corpus, enabling early stopping decisions."
+  },
+  {
+   "title": "Spectral Disentanglement and Enhancement: A Dual-domain Contrastive Framework for Representation Learning",
+   "uses": "Partition high-dimensional features into strong signals, weak signals, and noise using decomposition, then amplify the strong signals that carry task-relevant meaning."
+  },
+  {
+   "title": "Evaluating LLM Recommendations Under Stress",
+   "uses": "Test models on five tasks of rising difficulty and measure how much their accuracy drops, then compute a sensitivity score to rank robustness under stress."
+  },
+  {
+   "title": "Towards Better Evaluation Metrics for Text-to-Motion Generation",
+   "uses": "Match text descriptions to motion using optimal transport, then measure discrepancy without assuming a fixed shape of distribution, to evaluate generation quality."
+  },
+  {
+   "title": "A Prompt-Aware Structuring Framework for Reliable Reuse of AI-Generated Content in the Agentic Web",
+   "uses": "Attaches confidence scores and metadata recording how the content was generated, with verifiable credentials to estimate reliability when the same content is reused."
+  },
+  {
+   "title": "Blind-QEM: A Privacy-Preserving Framework for Quantum Error Mitigation via Zero-Knowledge Proofs",
+   "uses": "The system verifies quantum computation results using zero-knowledge proof protocols that confirm correctness without revealing the circuit's structure or proprietary noise models."
+  },
+  {
+   "title": "Active Retrieval-Augmented Generation with Conflict-Fused Uncertainty Quantification",
+   "uses": "Combine three uncertainty signals at each step to decide when to fetch external information, triggering retrieval for multi-hop reasoning."
+  },
+  {
+   "title": "Trust in One Round: Confidence Estimation for Large Language Models via Structural Signals",
+   "uses": "Score model confidence by analyzing patterns in the internal hidden states across multiple scales, without needing extra computations."
+  },
+  {
+   "title": "Data Degrades with Use",
+   "uses": "Measure how much information each data use leaks and account for cumulative privacy loss across repeated queries."
+  },
+  {
+   "title": "SMART: A Social Movement Analysis & Reasoning Tool with Case Studies on #MeToo and #BlackLivesMatter",
+   "uses": "Extract emotion distributions from social media posts and forecast their intensity and volume in future posts."
+  },
+  {
+   "title": "Understanding the Consequences of VTuber Reincarnation",
+   "uses": "Measure the quantitative impact of reincarnation on audience size, revenue, harassment, and industry ripple effects using 728K livestream sessions."
+  },
+  {
+   "title": "Prediction Guardian: A Distribution-based Real-time Anomaly Detection and Mitigation Framework for Online Advertising",
+   "uses": "Monitor the shape of ad-ranking prediction scores over time; when the distribution shifts (fewer high bids, more low bids, or suddenly extreme values), flag it and smooth outliers."
+  },
+  {
+   "title": "RobustReviewAI: A Robustness Evaluation System for AI-Powered Peer Review",
+   "uses": "Measures how a review system's decisions change when text, tables, and formulas are altered, revealing weak points."
+  },
+  {
+   "title": "Additively Competitive Secretaries",
+   "uses": "Minimize the worst-case gap between what an optimal decision-maker in hindsight could have achieved and what a decision-making policy achieves on average when hiring from a random-order stream."
+  },
+  {
+   "title": "AMID: Model-Agnostic Dataset Distillation by Adversarial Mutual Information Minimization",
+   "uses": "Create a shrunk dataset by minimizing mutual information between the synthetic data and the specific architecture used to build it, turning it into a two-player game where one side erases architecture-specific bias."
+  },
+  {
+   "title": "Beyond Engagement: A Human-Centered Evaluation Framework for LLM-Powered Recommender Systems",
+   "uses": "Evaluate recommendation systems not by engagement metrics alone, but by human-centered outcomes\u2014trust, transparency, agency, satisfaction\u2014to align ranking strategies with what users actually value."
+  },
+  {
+   "title": "Explaining Synergistic Effects in Social Recommendations",
+   "uses": "Explain social recommendations by identifying subgraphs where pieces of information amplify each other\u2014parts that together tell you more than they would separately\u2014and tracing paths through those subgraphs."
+  },
+  {
+   "title": "Struggling at the Start: Structural Causes of Decoding Difficulty in Code Generation",
+   "uses": "Measures how uncertain the model is about which words comes next, especially at line starts, then refines predictions by reducing that uncertainty."
+  },
+  {
+   "title": "ULoR: Uncertainty-Aware Leave-One-Out Refinement Framework for Diagnosis Prediction",
+   "uses": "Quantifies the model's uncertainty about each diagnosis, then for high-uncertainty ones, uses multiple-choice reasoning to confirm or replace the prediction."
+  },
+  {
+   "title": "SoftHateBench: Evaluating Moderation Models Against Reasoning-Driven, Policy-Compliant Hostility",
+   "uses": "Generate hostile text variants that keep the harmful stance constant but soften the language, then measure how many detectors miss the reframed version versus the overt one."
+  },
+  {
+   "title": "On the Effectiveness of Mempool-based Transaction Auditing",
+   "uses": "Compute the false-positive rate of detecting censorship by measuring when independent observers disagree on transaction presence; show that timing (transactions separated by 30+ seconds) dramatically reduces false alarms."
+  },
+  {
+   "title": "SoK: Zero-Knowledge Proof Systems \u2014 An Empirical and Theoretical Comparison of SNARKs and STARKs",
+   "uses": "Compares how fast two types of proofs (SNARKs and STARKs) generate, verify, and shrink themselves on real hardware, measuring which trade-offs suit which use cases."
+  },
+  {
+   "title": "NERdME: A Named Entity Recognition Dataset for Indexing Research Artifacts in Code Repositories",
+   "uses": "Label named entities in README files to teach models to recognize artifact names, dataset descriptions, and code implementation details."
+  },
+  {
+   "title": "Towards Automating Articles Screening Processes Using Chain-of-Thought Large Language Models",
+   "uses": "Use a reasoning-enabled AI language systems on structured text chunks, measure complexity via information rank, and filter multiple candidate summaries by voting to extract patient-intervention-outcome elements reliably."
+  },
+  {
+   "title": "(Everything You Never Knew You Needed To Know About) Rank-Biased Measurement For Web Search",
+   "uses": "Measure search result quality using a geometric decay down the ranked list, where top positions are much more important, quantifying the measurement's own uncertainty."
+  },
+  {
+   "title": "Multi-modal Bipartite Graph Structure Learning with Information Bottleneck for Micro-video Recommendation",
+   "uses": "Minimize information bottleneck within each modality and across modalities to extract minimal sufficient representations for recommendations."
+  },
+  {
+   "title": "Spiking Graph Predictive Coding for Reliable OOD Generalization",
+   "uses": "Detect when a graph model becomes unreliable by iteratively comparing predictions to actual graph behavior and exposing the internal errors that signal a distribution shift."
+  },
+  {
+   "title": "TRACE: Trajectory-Aware Comprehensive Evaluation for Deep Research Agents",
+   "uses": "Evaluate research agents not just by whether they got the answer right, but by measuring the quality and efficiency of their reasoning steps, with adjustable difficulty."
+  },
+  {
+   "title": "Smart Eye: LLM-Guided Proposer-Verifier Framework for Industrial-Scale Log Anomaly Detection",
+   "uses": "Select the most informative log patterns under a false-alarm budget, then grind them into rules that catch anomalies with minimal false alarms."
+  },
+  {
+   "title": "Predicting Expectancy Violations Using Eye-Tracking Features: A Machine Learning Approach",
+   "uses": "Predicts when users are surprised by search results using eye-movement patterns like how long they look and how often they refocus."
+  }
+ ]
+}

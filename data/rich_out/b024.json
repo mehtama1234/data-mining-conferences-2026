@@ -1,0 +1,107 @@
+{
+  "360": {
+    "bp": "Smart cities need machine learning models running on the edge—in base stations, drones, mobile devices—so decisions happen instantly without waiting to send data to distant servers. The catch is these edge devices can't share raw data (privacy, bandwidth), so they need to learn together even when they can't see each other's training data.",
+    "wh": "When edge and end devices have different model shapes (one is large, one is tiny), you can't just synchronize weights directly. Sending raw data leaks privacy and kills bandwidth. The edge server never gets to touch the end device's data at all, yet somehow both sides need to learn.",
+    "ap": "Instead of sharing data or whole models, the system exchanges only high-level summaries—prototypes, which are like class-wise fingerprints of learned features. The end device augments these prototypes by contrasting them and aligning them across the network. The edge server takes prototypes and mixes them with noise to create synthetic training signals for its own model.",
+    "ww": "Prototypes are compact (microscopically smaller than data or models) because they're just averaged feature vectors per class. By sharing just these summaries and letting both sides augment them locally, you get knowledge transfer without privacy leaks or massive bandwidth costs.",
+    "po": "Both edge and end models train faster with less communication overhead than existing methods, reaching higher accuracy even under limited resources, verified in real field experiments not just simulation."
+  },
+  "361": {
+    "bp": "City planning today is slow—planners spend months consulting stakeholders and running simulations. What if a system could generate many good plans quickly, tailored to what locals actually want, so planners spend time refining rather than starting from scratch?",
+    "wh": "Traditional optimization is rigid: you feed it rules and it finds one answer. Real planning is messy—stakeholders have competing values, the best plan depends on context, and you need designs people can actually buy into. Neither pure human expertise nor simple algorithms capture this.",
+    "ap": "The system uses a large language model to translate vague planning goals ('make the neighborhood walkable') into concrete zoning and layout decisions, guided by a reinforcement learning engine that learns what choices lead to good outcomes. A second stage lets simulated stakeholders score proposals, and their feedback reshapes what the system tries next.",
+    "ww": "LLMs understand language and context—they can read messy stakeholder preferences and real city data. Reinforcement learning learns which decisions compound well over time (placing parks near schools, not warehouses). Together they find plans that satisfy both objective metrics and human values.",
+    "po": "System generates customized urban plans that rival or beat traditional optimization while significantly raising stakeholder satisfaction and learning faster than hand-built methods."
+  },
+  "362": {
+    "bp": "Recognizing someone's true emotion from video is hard because faces alone lie—tone of voice, pace of speech, and expression all feed into what people actually feel. A real emotion detection system must listen and watch simultaneously.",
+    "wh": "Audio and visual signals have totally different structures—sound waves vs. pixel grids—so they don't naturally align. Simple approaches just mash them together at the end and miss how the audio shapes the face and vice versa. Real co-evolution happens layer by layer as both signals refine each other.",
+    "ap": "The system uses a State Space Model (a mathematical tool for sequential reasoning) to generate 'guidance prompts' at each layer of processing: audio hints to the vision system about where to focus, and vice versa. After encoding, a multi-stage alignment module first fixes the big structural differences (macro alignment using adversarial learning), then handles fine details (micro alignment per-sample).",
+    "ww": "By forcing audio and video to 'talk' at every processing layer, not just the end, their representations stay synchronized as they deepen. Adversarial alignment actively pushes mismatched features closer, while sample-level refinement handles individual peculiarities.",
+    "po": "System significantly outperforms existing approaches at detecting facial expressions from video, especially in noisy real-world conditions where modalities are misaligned."
+  },
+  "363": {
+    "bp": "Recommendation systems suggest products or content by finding similar users or items. Most use graph structures (users connected to items they rated), but whether those graphs actually flow information well—whether they have good connectivity—was barely studied.",
+    "wh": "Graphs can have bottlenecks: clusters of users weakly connected to other clusters, like islands. A graph with poor connectivity ('weak' in mathematical terms) means that a user's information can't flow far, so recommendations stay local and miss relevant items. Existing systems treat the graph as given and fixed.",
+    "ap": "The system identifies which edges (connections) are bottlenecks by analyzing the graph's mathematical structure. Then it learns to re-weight those edges—making bottleneck connections stronger while leaving good ones alone. A lightweight neural network makes these weight adjustments guided by a mathematical constraint that encourages overall connectivity.",
+    "ww": "Strong connectivity means any user's taste can influence any item's score. By fixing bottleneck edges, information flows faster and farther, so the system sees the full picture of user interests rather than siloed neighborhoods.",
+    "po": "Recommendation accuracy improves significantly, especially for harder recommendation scenarios, by making the underlying graph structure more connected."
+  },
+  "364": {
+    "bp": "AI systems now power ranking, recommendations, ads—most of what people see online. But if someone asks 'why did this appear?' there's often no answer. Imagine a receipt for every recommendation: what data was used, which model version, who checked it. That's the vision.",
+    "wh": "Platforms treat AI decisions as black boxes for competitive and privacy reasons. There's no standard way to prove a model version is what actually ran, no audit trail of which data went in, no way for third parties to verify the system wasn't gamed.",
+    "ap": "The system creates a decentralized transparency log (inspired by certificate transparency for HTTPS). Every inference generates a cryptographic receipt proving what model ran, what data was used, and what came out. These receipts get logged in a append-only ledger anyone can verify. Model metadata and lineage get registered and signed so switching versions is traceable.",
+    "ww": "Cryptographic receipts are tiny (logarithmic in the number of inferences). Their verification cost is microseconds per request. The decentralized log means no single company controls the audit trail, making tampering visible to everyone.",
+    "po": "Platforms can offer third-party auditing and transparency without leaking proprietary details, enabling regulatory compliance and public accountability for AI-mediated platforms."
+  },
+  "365": {
+    "bp": "Hateful memes are dangerous because the meaning comes from the combo of image and text—neither alone tells the story. But in practice images break (media links die), text gets corrupted, or data gets lost upstream. A deployed system needs to work anyway, not crash or fall back to separate models.",
+    "wh": "Fusion models (systems that combine modalities) are often brittle—they expect all inputs to be perfect. If an image is missing, standard approaches fail. Building a separate fallback system for each missing-modality case is expensive and error-prone.",
+    "ap": "Instead of fusing modalities at the end, project both image and text into a shared safety space (a learned representation everyone understands) using frozen pre-trained encoders plus tiny learned adapters. Then feed whatever modalities are available to a single classifier, always in the same way.",
+    "ww": "A shared space means the classifier speaks one language. Missing a modality is just an empty slot in an aggregation function—the system naturally handles it. Frozen encoders keep parameters small; only projectors are trained.",
+    "po": "System matches fusion-only performance with all modalities present while gracefully handling missing images or text without retraining or fallback logic, matching specialized single-modality models when needed."
+  },
+  "366": {
+    "bp": "Professional architects spend days on floor plans, constrained by codes and aesthetics. What if a designer could describe what they want in natural language and get multiple interactive 3D options to refine, each photorealistic and spatially correct?",
+    "wh": "Language is ambiguous ('make it open' could mean open-plan or glass walls). Simple text-to-layout methods demand very formal, precise input. They also can't let users tweak designs mid-process, and 2D floor plans don't let you visualize or immerse yourself in the space.",
+    "ap": "A multi-agent LLM system breaks the language description into sub-tasks (identify room types, set constraints, place fixtures). A web-based 3D editor lets users adjust the intermediate design and see feedback before rendering. Finally, a diffusion model with spatial controls generates photorealistic 3D renderings from chosen viewpoints.",
+    "ww": "Breaking language into sub-tasks makes it robust to vague input. Interactive 3D editing lets the user steer the system when it misunderstands. Photorealistic rendering (rather than abstract plans) helps users visualize and trust the design.",
+    "po": "System generates buildable layouts from conversational input, with immersive 3D renderings and full user control over intermediate design decisions."
+  },
+  "367": {
+    "bp": "Legal AI research is exploding—models analyzing contracts, predicting case outcomes, writing briefs. But there's no standard way to evaluate these systems. Each lab uses different benchmarks and metrics, making it hard to compare progress or spot which methods actually help lawyers.",
+    "wh": "Legal tasks are diverse (document classification, Q&A, contract review, case prediction) with different performance measures. A single framework has to handle this variety, run efficiently, and let researchers easily add new tasks without breaking existing ones.",
+    "ap": "LegalKit is a toolkit that integrates many legal benchmarks into one system with a shared configuration interface and web UI. It supports different acceleration backends (to run on different hardware) and checkpoints let you pause and resume experiments mid-way.",
+    "ww": "Unified infrastructure means researchers compare apples-to-apples. Web UI lowers barriers for non-ML experts. Checkpoint recovery matters for long legal evaluations. Modularity means new benchmarks slot in easily without redesigning the whole pipeline.",
+    "po": "Legal NLP research becomes reproducible and comparable across studies; researchers can focus on novel methods instead of building evaluation infrastructure from scratch."
+  },
+  "368": {
+    "bp": "Starlink satellites now outnumber all other satellites combined and beam internet to millions. Yet nobody outside SpaceX knows much about its internal network structure, where traffic flows, or what services are exposed. Transparency matters for security and policy.",
+    "wh": "Starlink keeps internal details private, and direct access to their systems is restricted. You can't just call them and ask 'how does your routing work.' But DNS records leak hints—servers accidentally reveal internal structure—and you can scan public IP ranges to spot patterns.",
+    "ap": "By analyzing leaked DNS data, researchers infer how Starlink's internal networks split into zones and what services sit where. Passive DNS shows user behavior (which services people use, traffic patterns). Active scanning of public IPs reveals which services are exposed and whether they have security holes.",
+    "ww": "DNS is a side channel—DNS servers sometimes leak the topology accidentally. Passive monitoring (just watching traffic, not interfering) reveals real usage patterns. Public IPs are fair game for security scanning under responsible disclosure principles.",
+    "po": "First large-scale characterization of Starlink's ground infrastructure, revealing architectural choices, user behavior, and security posture without proprietary information."
+  },
+  "369": {
+    "bp": "Chinese idioms are like colorful sayings in English ('raining cats and dogs')—the literal words (cats, dogs) don't explain the real meaning (heavy rain). Multimodal systems need to get this: the picture and text together should point to the idiom's true metaphorical sense, not just its surface words.",
+    "wh": "An idiom's literal words and true meaning can be opposite. 'Kill two birds with one stone' sounds violent but means efficiency. Worse, the same idiom means different things in different contexts. Systems that just match words to images miss the metaphor entirely.",
+    "ap": "The system builds a graph showing explicit relationships between literal and metaphorical meanings of each idiom. It also creates specialized sub-systems (experts) that understand different types of idioms—one for when literal and metaphorical meanings apply, one for when they diverge. Each expert focuses on its specialty; they vote to pick the best idiom.",
+    "ww": "Explicit semantic graphs make metaphors tangible rather than hidden. Specialized experts divide the labor, so the system doesn't try to solve all idiom types the same way. Voting combines their knowledge.",
+    "po": "System accurately selects idioms from image-text pairs, handling both the literal-to-metaphorical jump and context-dependent meanings better than systems that ignore metaphor."
+  },
+  "370": {
+    "bp": "Language models now augment their answers by fetching real data from knowledge bases before answering. This is safer than hallucination—if the data is trustworthy. But what if attackers slip false information into the knowledge base? Systems need defenses.",
+    "wh": "Graph-based knowledge systems reorganize raw text into structured graphs (entities, relationships) before retrieval. This should be safer than raw-text systems because structure filters noise. But attackers can also forge structure—fake relations, fake entities that look real—and mislead the model.",
+    "ap": "The attacker creates poisoned 'toxic events' (fake facts disguised as real ones) and plants them in the knowledge base. They also fake the history of how these facts evolved from real information, making false knowledge seem like it legitimately evolved from seed facts. In multi-target attacks, they link poisons so they reinforce each other.",
+    "ww": "Structured graphs look more trustworthy to models, so poisoned structure is more persuasive than raw text. Fake event evolution (showing false intermediate steps) makes invented facts seem like natural consequences of real knowledge.",
+    "po": "Demonstrates vulnerabilities in graph-based knowledge systems; shows attackers can poison knowledge graphs more effectively than raw-text systems, revealing a security gap in retrieval-augmented systems."
+  },
+  "371": {
+    "bp": "Graph neural networks learn from network structure (social graphs, citation graphs, molecule connections). Most treat the whole graph as one flat object. But real graphs hide internal organization—tight communities, bottleneck nodes—that matter for learning.",
+    "wh": "Treating a graph as flat misses its internal structure. Some nodes act as bridges between communities; some are local hubs. Simple augmentation (randomly removing nodes) treats all removals equally, but destroying a bridge is much worse than removing a hub.",
+    "ap": "Decompose the graph into tree-like structures (a classical graph theory tool) where local neighborhoods become 'bags.' Compute importance scores for each node and edge based on their role as bridges or hubs. Use these scores to make intelligent augmentation: preserve bridges, destroy isolated nodes, weaken global hubs. Also craft a new similarity loss that treats tree-based proximity differently from plain graph distance.",
+    "ww": "Decomposition reveals hidden structure. Importance scores target augmentation intelligently—removing what matters most (bridges) hurts learning worse than random, so preserving them matters. Tree-based similarity captures topology that edge-based distance alone misses.",
+    "po": "Graph learning (self-supervised and supervised) improves over state-of-the-art by respecting internal structure during augmentation and similarity computation."
+  },
+  "372": {
+    "bp": "VTubers—digital avatars with human performers—are a multi-billion-dollar entertainment industry. But the business model is punishing: agencies own the persona, the performer bears all reputational risk, and when they quit and restart ('reincarnation'), they lose audience, income, and sometimes face harassment.",
+    "wh": "Nobody has measured the cost of reincarnation at scale. Is it a minor blip or catastrophic? Without numbers, performers and agencies can't push for better contracts or industry reform.",
+    "ap": "Researchers analyzed 12 major reincarnation cases using 728K livestream sessions and 4.5 billion viewer interactions, tracking metrics like audience size, revenue, harassment, and industry impact before and after reincarnation.",
+    "ww": "Large-scale data reveals patterns individual cases might hide. Livestream metrics are objective (viewers can't lie), and social media interactions capture harassment quantitatively.",
+    "po": "First empirical study proving reincarnation causes severe career damage to performers—substantial audience loss, income drop, increased harassment—with implications for labor practices and industry sustainability."
+  },
+  "373": {
+    "bp": "Graph classification systems are trained on a fixed set of categories (e.g., 'toxic', 'safe'). But in the real world, new node types appear that the model never saw (novel classes). The system must either classify unknown nodes or reject them as 'unknown,' without retraining.",
+    "wh": "Standard graph learning maximizes performance on known classes but doesn't build clear boundaries between known and unknown. Novel class nodes cluster randomly among known classes instead of being recognized as outliers. Existing methods don't handle mixing known and novel classes well.",
+    "ap": "Novel 'negative Mixup' synthetically creates intermediate examples between known classes that push the model to learn clearer decision boundaries. Separate contrastive learning (training examples to be similar to their true class, different from others) maximizes spread between classes and compactness within classes, across multiple graph-processing layers.",
+    "ww": "Negative Mixup creates hard cases at class boundaries, forcing the decision boundary to be clear and sharp rather than fuzzy. Multi-layer contrastive learning ensures that structure (how nodes connect) is consistent with class identity at every depth, making unknown nodes stand out as poorly-connected-to-any-class.",
+    "po": "System reliably rejects novel class nodes while maintaining high accuracy on known classes, even when test data heavily mixes known and unknown categories."
+  },
+  "374": {
+    "bp": "Live streaming platforms need real-time moderation and sentiment detection—flagging hate speech or sudden mood shifts instantly. But video, audio, and text streams arrive asynchronously and late, so systems must decide with partial information.",
+    "wh": "Vision-language models (systems that understand images and text together) are accurate but slow—querying them on every frame kills latency. Lightweight models are fast but miss nuance. You can't pre-compute everything because streams are infinite.",
+    "ap": "Use a fast, lightweight streaming encoder for most frames. When a case is ambiguous or needs deeper understanding, route it to a heavyweight vision-language model. If context is insufficient (too early in a scene), defer the decision until more evidence arrives.",
+    "wh": "The lightweight encoder learns by aligning audio/visual cues with text (cross-modal contrastive training). Loss down-weights examples where the target segment barely overlaps the frame, since those cases are too noisy to learn from reliably.",
+    "po": "System achieves accuracy comparable to using vision-language models alone while calling the expensive model only occasionally, dramatically reducing latency and computation on live streams."
+  }
+}

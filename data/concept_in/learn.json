@@ -1,0 +1,153 @@
+{
+ "key": "learn",
+ "title": "Learning from examples and comparison",
+ "intro": "When the rule connecting input to output is too tangled to write down, you show the system many examples \u2014 or many pairs of what is similar and what is different \u2014 and let it settle on a rule that reproduces them.",
+ "why": "It works because of a bargain between simplicity and coverage: when the true pattern is far simpler than the data and the examples cover the territory, a rule forced to fit them all has little room left to be wrong on new cases. Learning by comparison works because 'pull similar things together, push different ones apart' is enough to recover the hidden structure without anyone labelling it.",
+ "n_total": 40,
+ "papers": [
+  {
+   "title": "COMA: A Collaborative Multi-Role Agent Framework for Automated Lesson Plan Generation",
+   "uses": "Generate lesson plans by orchestrating multiple agents with complementary expertise who iteratively refine structure, content, and pedagogy."
+  },
+  {
+   "title": "BaiJia: An Open Role-Playing Platform of Chinese Historical Characters",
+   "uses": "Train language models on historical character biographies to generate authentic role-playing dialogue."
+  },
+  {
+   "title": "TabTune: A Unified Library for Inference and Fine-Tuning Tabular Foundation Models",
+   "uses": "Standardize preprocessing and evaluation across multiple foundation models on structured tabular data."
+  },
+  {
+   "title": "Collaborative LLM Agents for End-to-End Software Development",
+   "uses": "Teach agents to plan, code, test, and review by having them learn from examples, feedback, and tool outputs, building up reliable workflows instead of one-shot generation."
+  },
+  {
+   "title": "Out-of-distribution Generalized Generative AI",
+   "uses": "Train image and language models to understand and generate across many modalities, then adapt them to new, unseen distributions by learning from new data without forgetting old knowledge."
+  },
+  {
+   "title": "LLM-Powered Structurer: Normalizing Natural Language to Information Delivery Specification for Industrial Data Exchange",
+   "uses": "Using a language model to translate a person's informal description of what information they need into formal machine-readable construction-industry data format."
+  },
+  {
+   "title": "Lang2Plan: An LLM-Powered Multi-Agent System for Building Layout Planning",
+   "uses": "Decompose natural language instructions into simpler sub-tasks using multiple agents, then generate realistic 3D layouts from the refined plan."
+  },
+  {
+   "title": "Semi-supervised Instruction Tuning for Large Language Models on Text-Attributed Graphs",
+   "uses": "adjust a language model on labeled node examples and unlabeled neighbors iteratively, using the model's predictions on unlabeled nodes to generate new training examples without expert annotation."
+  },
+  {
+   "title": "AdVersa: Adversarially-Robust and Practical Ad and Tracker Blocking in the Wild",
+   "uses": "Detect ads and trackers using learned features from code and URL that resist adversarial perturbation; maintain accuracy over time using low-cost pseudo-labeling without human re-labeling."
+  },
+  {
+   "title": "(Mis-)Informed Consent: Predatory Apps and the Exploitation of Populations with Limited Literacy",
+   "uses": "Measures how well apps disclose and explain permissions to low-literacy users, then tests if language model summaries and visual aids can bridge the comprehension gap."
+  },
+  {
+   "title": "coTherapist: A Behavior-Aligned Small Language Model Framework to Support Mental Healthcare Experts",
+   "uses": "adjust a small model on therapy examples so it learns to respond with therapist-like empathy and clinical accuracy."
+  },
+  {
+   "title": "Beyond Class Boundaries: Federated Visual Primitive Sharing with Text-Guided Adaptation",
+   "uses": "Devices share reusable visual patterns instead of complete class features, allowing personalized adaptation with less communication."
+  },
+  {
+   "title": "Glasses: Enabling Fast Environment-aware Few-Shot Learning via Device-Cloud Collaboration",
+   "uses": "Uses a small number of labeled examples and one unlabeled image of the target environment to adjust a pre-trained model's internal weights so it performs better on new tasks in that specific setting."
+  },
+  {
+   "title": "The 2nd Workshop on Social Science Meets Web Data: Reproducible and Reusable Computational Approaches (R2CASS)",
+   "uses": "Establishes shared methods and practices for researchers to reproduce computational social science findings from digital behavioral data."
+  },
+  {
+   "title": "CompTox Ontology: Leveraging Knowledge Graphs for PFAS Monitoring and Decision-Making",
+   "uses": "Organizes chemical compounds hierarchically with their identifiers and properties to enable reliable lookup and comparison of harmful substances."
+  },
+  {
+   "title": "Pattern Discovery with Wide-Lens Analysis and Sharp-Focus Validation",
+   "uses": "Zooms out to find clusters of similar patterns in unstructured data, then zooms in to verify which patterns are real and build consistent categories."
+  },
+  {
+   "title": "Class-Domain Incremental Learning on Graphs via Disentangled Knowledge Distillation",
+   "uses": "Split node features into task-specific patterns and task-agnostic background noise, then teach new classes while protecting old knowledge."
+  },
+  {
+   "title": "Hierarchical Prompt Contrastive Learning for Weakly Supervised Histopathology Segmentation",
+   "uses": "Learn to segment tissue regions by comparing image features to text descriptions and category prompts at multiple levels."
+  },
+  {
+   "title": "RaDAR: Relation-aware Diffusion-Asymmetric Graph Contrastive Learning for Recommendation",
+   "uses": "Generate diverse views of user-item interaction graphs using both generative models and learned edge refinement, then train by comparing views."
+  },
+  {
+   "title": "Adaptive Contrastive Learning in Sequential Recommendation based on Perturbation and Restoration Networks",
+   "uses": "Learn to adapt how you perturb and restore user sequences for comparison so augmentation preserves user intent."
+  },
+  {
+   "title": "PAGE: Progressive Anomaly Generation Network for Semi-supervised Graph Anomaly Detection",
+   "uses": "Generate artificial anomalies by step-wise corruption of node attributes and connections, then train to separate real anomalies from progressively degraded normal nodes."
+  },
+  {
+   "title": "MMTableBench: A Multi-level Multimodal Benchmark for Reasoning and Layout Complexity in Table QA",
+   "uses": "Test whether question answerers understand both the visual layout of tables and the logical steps needed to answer questions about them."
+  },
+  {
+   "title": "STIndex: A Context-Aware Multi-Dimensional Spatiotemporal Information Extraction System",
+   "uses": "Extract and organize information from news and documents by grounding it to specific times and places, with language models filling in the structure."
+  },
+  {
+   "title": "SHIELD: A Framework for Online Conversational AI System for Self-Regulated Learning at Emergency Communications Centers",
+   "uses": "Train an AI to simulate emergency calls by comparing trainee responses against right and wrong actions, then flag when they drift from good practice."
+  },
+  {
+   "title": "Understanding and Modeling Heterogeneous Search Behavior",
+   "uses": "Extract hidden search features from how different demographic groups formulate queries and interact, then use those features to explain and predict query behavior."
+  },
+  {
+   "title": "An Eye Tracking Study: Are AI Overviews Changing Search Behavior?",
+   "uses": "Track where people's eyes look on search result pages when generative summaries appear above traditional blue links, measuring engagement to understand changing focus."
+  },
+  {
+   "title": "One-for-All Community Search on Unseen Graphs",
+   "uses": "Learn a single graph representation model on source graphs that generalizes to unseen target graphs by aligning features across domains and using diffusion-based refinement."
+  },
+  {
+   "title": "SNBot: Modeling Self-Neighborhood Representation Discrepancy for Social Bot Detection",
+   "uses": "Detect social bots by learning to distinguish between a node's core identity and what its neighborhood looks like, rather than assuming they should match."
+  },
+  {
+   "title": "NERBench-Chhattisgarh: A Multi-Family NER Dataset for Low-Resource Indic Languages",
+   "uses": "Train multilingual models to recognize named entities in seven under-resourced tribal languages by learning shared features across related languages."
+  },
+  {
+   "title": "DeepResearch-9K: A Challenging Benchmark Dataset of Deep-Research Agent",
+   "uses": "Learns to find answers by practicing on chains of reasoning, starting with weak examples then improving through reward signals."
+  },
+  {
+   "title": "IIRSim Studio: A Dashboard for User Simulation",
+   "uses": "Builds a visual workshop where users design and run experiments simulating how people search, then share and reproduce their setup."
+  },
+  {
+   "title": "Mine over Yours: How Authorship Biases Evaluation in Generative Information Retrieval",
+   "uses": "Ask participants to rate information they created themselves versus identical information framed as someone else's creation."
+  },
+  {
+   "title": "",
+   "uses": "Test two agent personas\u2014one that mirrors user preferences back and one that offers social guidance\u2014and measure their effect on shopping engagement."
+  },
+  {
+   "title": "Beyond Unimodal Perspectives: Generative Retrieval with Multimodal Semantics",
+   "uses": "Generate item identifiers using text and images together by aligning semantic meanings across both modalities so they pull toward shared concepts."
+  },
+  {
+   "title": "Domain-Specific Reranking: When is Adaptation Worth the Cost?",
+   "uses": "A model trained on a few hundred labeled examples within a specialized domain performs as well as models trained on much larger domain-adaptive pretraining."
+  },
+  {
+   "title": "RAPO: Reason-Aware Preference Optimization for Factual Table Question Answering over Structured Data",
+   "uses": "Align an answer-generating system to produce factually correct responses by learning from examples where correct and incorrect answers are annotated with their reasoning."
+  }
+ ]
+}

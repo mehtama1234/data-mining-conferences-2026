@@ -1,0 +1,153 @@
+{
+ "key": "sequence",
+ "title": "Predicting what comes next",
+ "intro": "Behaviour and language arrive as ordered streams \u2014 the pages you visited, the words in a sentence \u2014 and the useful move is to predict the next item from what came before.",
+ "why": "It works because the recent past genuinely constrains the near future: what you clicked last shapes what you'll click next, the last few words shape the next word. So a system that captures those local dependencies can predict well without holding the entire history in mind at once.",
+ "n_total": 63,
+ "papers": [
+  {
+   "title": "Rise: A Retrieval-Augmented Generation Enhanced Immersive System for Education",
+   "uses": "Answer student questions and assess engagement by retrieving relevant educational content and personalized context from a learner's history."
+  },
+  {
+   "title": "ES-MemEval: Benchmarking Conversational Agents on Personalized Long-Term Emotional Support",
+   "uses": "Evaluate whether chatbots remember fragmented user disclosures across sessions, extract implicit needs, spot conflicts, and personalize support over time."
+  },
+  {
+   "title": "VK-LSVD: A Large-Scale Industrial Dataset for Short-Video Recommendation",
+   "uses": "Build recommendation models from a massive dataset of user interactions with short videos, training on sequential feedback to predict which video a user will watch next."
+  },
+  {
+   "title": "ONeRec: Towards Openness-Aware and Adaptive Proactive News Recommendation",
+   "uses": "Recommend intermediate articles that balance current interest alignment with gradual drift toward a target topic, weighted by the user's openness."
+  },
+  {
+   "title": "Statistical Analysis of 12V Power Load Uncertainty Using Conditional Probability for SDV Energy Management",
+   "uses": "Uses conditional probability of power load given the past 60 seconds of history to predict upcoming battery demand and reduce uncertainty."
+  },
+  {
+   "title": "Swen: A Cross-Platform Desktop Assistant for Instant and Personalized Large-Language-Model Interaction",
+   "uses": "Identify what the user wants\u2014translation, explanation, or summary\u2014then generate the matching response tailored to their background and preferences."
+  },
+  {
+   "title": "LLM-Enhanced Web-Centric Spatio-Temporal Intelligence: Methods, Applications, and Frontier Research",
+   "uses": "Predicts the next move or location in a trajectory by learning patterns from sequences of places and times, applying the learned patterns at location, trajectory, and region scales."
+  },
+  {
+   "title": "Accurate and Efficient Personalized Query Rewriting in Baidu Search",
+   "uses": "Rewrites a user's search query to better match their personal intent by training a fast model to reason like a language model but without the reasoning overhead."
+  },
+  {
+   "title": "Is More Context Always Better? Examining LLM Reasoning Capability for Time Interval Prediction",
+   "uses": "Compares how well language models predict the time until a user's next purchase versus statistical models that learned the time patterns directly."
+  },
+  {
+   "title": "Generative Archetype-Grounded Item Representations for Sequential Recommendation",
+   "uses": "Predict the next item a user will interact with by learning representations of items based on their ideal target audience and adjusting those representations to match actual user behavior."
+  },
+  {
+   "title": "MIGC-CMamba: Cross-Domain Mamba with Multi-Scale Imaging and Granular-Ball Computing for Traffic Flow Prediction",
+   "uses": "Converting traffic sensor readings into image-like patterns, then finding which places and time-scales matter most for predicting traffic flow a few hours ahead."
+  },
+  {
+   "title": "TRACE: Trajectory Recovery with State Propagation Diffusion for Urban Mobility",
+   "uses": "Reconstructing missing GPS points in sparse trajectories by iteratively denoising fragments while remembering intermediate results from starting guess steps."
+  },
+  {
+   "title": "Token-level Collaborative Alignment for LLM-based Generative Recommendation",
+   "uses": "Score recommendations by combining signals from users' past choices with signals from predicting the next words in text."
+  },
+  {
+   "title": "SEAR: LLM-Powered Sequential Recommendation via Fusion of Collaborative, Semantic, and Rating Information",
+   "uses": "Predict the next item by fusing three separate signals about collaborative patterns, semantic meaning, and past ratings, weighted by preference."
+  },
+  {
+   "title": "Dynamics of Human-AI Collective Knowledge on the Web: A Scalable Model and Insights for Sustainable Growth",
+   "uses": "Model how archive size, quality, human skill, model skill, and question volume co-evolve through inflows and feedback loops."
+  },
+  {
+   "title": "From Prediction to Understanding: Leveraging Reasoning in Large Language Model-based Recommendations",
+   "uses": "Trains the model to first generate written reasoning about why a user likes items, then predict the next item based on that reasoning."
+  },
+  {
+   "title": "Real-Time Trend Prediction via Continually-Aligned LLM Query Generation",
+   "uses": "Generate search queries from news posts using a continually-learning model, score them by engagement and author authority, and use preference learning to prevent forgetting during online updates."
+  },
+  {
+   "title": "Hyena Operator for Fast Sequential Recommendation",
+   "uses": "Model long user purchase sequences efficiently using polynomial basis functions for smooth long-term trends and gated convolutions for sudden behavioral bursts, avoiding quadratic cost."
+  },
+  {
+   "title": "GenCI: Generative Modeling of User Interest Shift via Cohort-based Intent Learning for CTR Prediction",
+   "uses": "Predict click-through rates by first generating clusters of immediate user intent, then using those clusters as context to score candidates, balancing long-term preference with current needs."
+  },
+  {
+   "title": "S2CDR: Smoothing-Sharpening Process Model for Cross-Domain Recommendation",
+   "uses": "Gradually corrupts user-item interaction records into noise-free blur, then recovers them to predict what new users will want across domains."
+  },
+  {
+   "title": "Suicide Risk Prediction via Comment-Influenced Mental State Trajectories",
+   "uses": "Tracks how a user's suicide risk evolves over time, learning whether comment support reduces risk and harmful comments increase it."
+  },
+  {
+   "title": "CitiLink-Summ: A Dataset of Discussion Subjects Summaries in European Portuguese Municipal Meeting Minutes",
+   "uses": "Trains sequence models to compress long meeting records into short summaries by learning which words appear before summaries."
+  },
+  {
+   "title": "Probe-and-Fetch: Dynamic KV Cache Pruning for Accelerated Long-Context Inference in Web-Scale AI Search",
+   "uses": "Predicts which parts of long documents the model will actually need to read, then loads only those parts instead of storing everything in memory."
+  },
+  {
+   "title": "Analysis of CEX-DEX Arbitrage Opportunities with Hidden Markov Models",
+   "uses": "Models cryptocurrency price changes as hidden states with transition probabilities, fitting parameters to blockchain data to predict profitable arbitrage moments."
+  },
+  {
+   "title": "Reinforcement Learning-Constrained Segmented User Modeling with Large Language Models for Recommendation",
+   "uses": "The model learns user preferences from long behavior sequences in segments, using future behavior as a reward signal to stay accurate."
+  },
+  {
+   "title": "Leveraging LLM and Multiscale Knowledge States to Improve Knowledge Tracing in Programming Tasks",
+   "uses": "The system learns multi-dimensional student knowledge by analyzing programming errors across test cases and predicting future problem success."
+  },
+  {
+   "title": "EEO-TFV: Escape-Explore Optimizer for Web-Scale Time-Series Forecasting and Vision Analysis",
+   "uses": "A new optimizer avoids getting stuck at bad points while training a model to predict future time series values and segment images."
+  },
+  {
+   "title": "SAGE: Global Semantic Alignment with LLMs for Long-Tail Sequential Recommendation",
+   "uses": "For tail users and items, use semantic similarities from language models to inherit features from popular head items and align sparse signals across similar users."
+  },
+  {
+   "title": "Time-TK: A Multi-Offset Temporal Interaction Framework Combining Transformer and Kolmogorov-Arnold Networks for Time Series Forecasting",
+   "uses": "Embeds time series by capturing dependencies that skip across multiple time steps rather than treating each moment independently, then feeds these richer patterns into a hybrid model that combines two different function-learning approaches."
+  },
+  {
+   "title": "HingeMem: Boundary Guided Long-Term Memory with Query Adaptive Retrieval for Scalable Dialogues",
+   "uses": "Segment dialogue memory by tracking boundaries where people, times, locations, or topics change, retrieve adaptively by estimating query type to decide depth, predict the next utterance from memory."
+  },
+  {
+   "title": "Mamba Hawkes Process for Event Sequence Modeling",
+   "uses": "Model event sequences using a selective state machine that learns time-varying transitions and uses input-dependent gating to capture long-term dependencies with linear complexity."
+  },
+  {
+   "title": "Closed-Loop Intelligence Architectures for Data-Driven Smart Cities",
+   "uses": "Predicts what problems will occur in a city, then feeds the predictions back into decision-making and real actions, using feedback to improve predictions."
+  },
+  {
+   "title": "Reasoning in Trees: Improving Retrieval-Augmented Generation for Multi-Hop Question Answering",
+   "uses": "Decompose complex questions into reasoning trees, then step through them by rewriting queries to find the right evidence."
+  },
+  {
+   "title": "Modeling Stage-wise Evolution of User Interests for News Recommendation",
+   "uses": "Split user interaction history into two time-scale views: long-term stable preferences and recent short-term trends, then weight and combine them to predict which news article to recommend."
+  },
+  {
+   "title": "RadioAR: Autoregressive Modeling for Accurate Radio Map Estimation",
+   "uses": "Estimate radio signal strength maps by breaking them into layers from coarse to fine, then predicting each finer layer one step at a time."
+  },
+  {
+   "title": "Graph Diffusion Evolution Model for Multi-Conditional Molecular Generation",
+   "uses": "Generate new molecules step-by-step, gradually adjusting molecular structure to match multiple desired properties at once."
+  }
+ ]
+}

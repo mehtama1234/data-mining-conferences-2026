@@ -1,0 +1,153 @@
+{
+ "key": "rank",
+ "title": "Ranking by a learned score",
+ "intro": "Search, recommendation, and advertising all come down to the same act: give every candidate a score for how well it fits the moment, then sort and show the top few.",
+ "why": "It works because you almost never need the exact scores \u2014 only their order. A rough score that merely gets the ordering right already floats the best results to the top, so the real problem is far easier than pinning down a true number for every item, and small scoring errors that don't change the order don't matter at all.",
+ "n_total": 145,
+ "papers": [
+  {
+   "title": "Beyond Item-Level Prediction: Fine-Grained CVR Modeling with Price SKU in E-Commerce Recommendation",
+   "uses": "Predict whether someone will buy at the fine-grained price level instead of just item level, grouping variants by price to keep signal without breaking the system."
+  },
+  {
+   "title": "Talos: Optimizing Top-K Accuracy in Recommender Systems",
+   "uses": "Learn a threshold that separates top-ranked items from the rest, then score and rank items against that threshold."
+  },
+  {
+   "title": "Learning to Alleviate Familiarity Bias in Video Recommendation",
+   "uses": "Learn personalized debiasing scores that downrank familiar content by estimating how much each user overfavors content they already know."
+  },
+  {
+   "title": "PruneRAG: Confidence-Guided Query Decomposition Trees for Efficient Retrieval-Augmented Generation",
+   "uses": "Build a tree of subquestions, score each node's confidence, then prune branches with low confidence and retrieve only entity-level anchors needed for reasoning."
+  },
+  {
+   "title": "Evolving Notions of Success on the Web: From Retrieval to Experience",
+   "uses": "Web success evolved from ranking documents by relevance to ranking experiences by user satisfaction over time."
+  },
+  {
+   "title": "RPO-RAG: Aligning Small LLMs with Relation-aware Preference Optimization for Knowledge Graph Question Answering",
+   "uses": "Retrieves reasoning paths from knowledge graphs and trains the model to rank them by semantic relevance, then reasons using only the ranked useful paths."
+  },
+  {
+   "title": "Personalized Parameter-Efficient Fine-Tuning of Foundation Models for Multimodal Recommendation",
+   "uses": "Split users into interest groups, assign each group its own tuning module so it learns to emphasize the item features each group cares about, then apply this personalized tuning when scoring items."
+  },
+  {
+   "title": "MetaKube: An Experience-Aware LLM Framework for Kubernetes Failure Diagnosis",
+   "uses": "Learns diagnostic patterns from past cases, scores how confident the model should be about each solution, and routes between fast pattern lookup and slower reasoning based on confidence."
+  },
+  {
+   "title": "Red-Teaming Privacy-Protective Perturbations: Blind Face Restoration as an Attack Strategy",
+   "uses": "Scores how successfully face restoration defeats privacy protections by tuning attack settings, measures image identity consistency as the key metric to attack."
+  },
+  {
+   "title": "GreenWebInspector: A Tool for Real-Time Web Energy Efficiency Assessment",
+   "uses": "Score webpage energy consumption by learning a pattern from webpage structure features that predicts how much device battery a page will drain, without measuring actual power during browsing."
+  },
+  {
+   "title": "A Taxonomy-Driven Cryptographic Dependency Inventory for Post-Quantum Migration in Decentralized Systems: Triage Rules and a Worked Example",
+   "uses": "Catalogs which cryptographic components in decentralized systems need post-quantum upgrades most urgently by ranking them by exposure, governance friction, and verification cost."
+  },
+  {
+   "title": "From Token to Item: Enhancing Large Language Models for Recommendation via Item-aware Attention Mechanism",
+   "uses": "Score each item's usefulness based on its internal content and how it relates to other items users have liked, then rank items by these scores."
+  },
+  {
+   "title": "Prototype-Aligned Federated Soft-Prompts for Continual Web Personalization",
+   "uses": "Maintain personalized short-term and server-shared long-term prompts that route queries to the most relevant user prototypes, balancing quick adaptation with stable long-term memory."
+  },
+  {
+   "title": "Dynamic Experts Synergy for Multi-Task Recommendation",
+   "uses": "Dynamically partition specialized experts into leaders and auxiliaries, then recycle auxiliary knowledge through utility, diversity, and task relatedness to strengthen recommendations across multiple goals."
+  },
+  {
+   "title": "Towards Responsible Recommendations: A Daily Updated Ranking Model for Content Issue Detection",
+   "uses": "Scoring videos daily for problematic content using behavior patterns plus author metadata plus fast algorithm outputs, updated each day to catch new issues immediately."
+  },
+  {
+   "title": "What Is Your AI Agent Buying? Evaluation, Biases, Model Dependence, & Emerging Implications of Agentic E-Commerce",
+   "uses": "The study measures what products AI shopping agents choose given different layouts, prices, and reviews, revealing how agents rank and weigh options differently than humans or each other."
+  },
+  {
+   "title": "FlowRAG: Continual Learning for Dynamic Retriever in Retrieval-Augmented Generation",
+   "uses": "Adjust the retrieval ranker to match both semantic relevance and the downstream language model's generation quality."
+  },
+  {
+   "title": "Detecting Miscitation on the Scholarly Web through LLM-Augmented Text-Rich Graph Learning",
+   "uses": "Use a language model to reason about citation chains, then distill those reasoning patterns into a graph systems that learn from examples for fast detection."
+  },
+  {
+   "title": "LegalKit: A Modular Toolkit for Efficient Legal AI Evaluation",
+   "uses": "Benchmark legal language models across diverse scenarios using a unified evaluation framework that standardizes task definitions and scoring."
+  },
+  {
+   "title": "CC-OR-Net: A Unified Framework for LTV Prediction through Structural Decoupling",
+   "uses": "Decompose the customer-value problem into an ordered ranking (low to high spender) and a precision-focused regression (adjust value within each tier), solving both simultaneously."
+  },
+  {
+   "title": "Following the TRAIL: Predicting and Explaining Tomorrow's Hits with a Fine-Tuned LLM",
+   "uses": "Uses pairs of items (one popular tomorrow, one not) to train a model to score how viral each item will become, then explains those scores in plain language."
+  },
+  {
+   "title": "Data-Driven Function Calling Improvements in Large Language Model for Online Financial QA",
+   "uses": "Trains a language model to match user questions to the right financial API by building a dataset from past queries and inventing variations to cover missing parameter types."
+  },
+  {
+   "title": "Towards Multi-Label Text Interpretation with Chain-of-Thought Prompting and Contextualized Knowledge",
+   "uses": "Learns which text segments and words belong to each label by following explicit reasoning chains, improving label assignment."
+  },
+  {
+   "title": "Explainable Graph Sparsification with Shapley Values",
+   "uses": "Uses importance scores (Shapley values) to identify which edges are least important and removes them without hurting accuracy."
+  },
+  {
+   "title": "DRMD: Explainable Depression Detection Based on Metaphorical Conceptual Mapping",
+   "uses": "Predict depression severity by scoring social media text according to metaphorical expressions and their psychological patterns."
+  },
+  {
+   "title": "URLBank: Data-Driven URL Discovery via Temporal Link Graphs",
+   "uses": "Rank candidate websites by how long their links persist and how often they publish new content, then greedily select the best ones that add the most new coverage."
+  },
+  {
+   "title": "TopKGAT: A Top-K Objective-Driven Architecture for Recommendation",
+   "uses": "Design a recommendation network whose forward pass directly optimizes the top-K ranking metric by using a smooth approximation of which items rank in the top K."
+  },
+  {
+   "title": "Docs2Synth: A Synthetic Data Tuned Retriever Framework for Documents Understanding",
+   "uses": "Trains a retriever to rank and extract the most relevant pages from domain documents, then uses them to ground a AI language systems's answers to questions."
+  },
+  {
+   "title": "Triple Modality Fusion: Aligning Visual, Textual, and Graph Data for LLM-based Multi-Behavior Recommender Systems",
+   "uses": "Score each item by combining a ranking built from historical user behaviors as a graph, visual features, and text features; weight each source by focus to balance their influence."
+  },
+  {
+   "title": "Temporal Information Retrieval And Question Answering in the Age of LLMs",
+   "uses": "Rank retrieved information by both topical relevance score AND validity over time; adapt retrieval when knowledge changes to reflect current rather than historical truth."
+  },
+  {
+   "title": "HyperRAG: Reasoning N-ary Facts over Hypergraphs for Retrieval Augmented Generation",
+   "uses": "Find the best multi-step reasoning path through n-ary facts by scoring and ranking candidate paths using both structural reasoning and guidance from the language model's internal knowledge."
+  },
+  {
+   "title": "AliBoostV2: CTR-Growth Balanced Boosting Framework in Billion-Scale Recommendation Platform",
+   "uses": "Boosts visibility of unpopular items by predicting which users will click them AND how much future natural growth they'll generate, then targets users where both scores are high."
+  },
+  {
+   "title": "A Large Language Model-based Agent for Automated Machine Learning Workflow Construction",
+   "uses": "Build machine learning workflows from natural language by breaking requests into hierarchical steps and scoring which tools best fit each step."
+  },
+  {
+   "title": "Breaking Cross-modal Alignment in Embodied Intelligence: A Multimodal Adversarial Attack Framework for Vision-Language-Action Models",
+   "uses": "Adversaries craft invisible image changes that disrupt alignment between vision, language, and action, causing wrong commands."
+  },
+  {
+   "title": "AlignCP: Noise-Aware Preference Alignment for LLMs via Confidence and Polarity Reweighting",
+   "uses": "Assign training weights to preference pairs based on a confidence score from the reward model and whether it agrees with human labels."
+  },
+  {
+   "title": "Calculating Narrative Tension for Ad Placement in Online Narrative Fiction",
+   "uses": "Train a language model classifier to label narrative paragraphs by tension level, then place ads in low-tension paragraphs."
+  }
+ ]
+}

@@ -1,0 +1,153 @@
+{
+ "key": "matching",
+ "title": "Matching and allocating who gets what",
+ "intro": "The web constantly has to decide who gets what \u2014 which ad, which item, which slot \u2014 often through auctions and assignments that must balance many parties at once.",
+ "why": "It works because these allocation problems have a well-defined best arrangement \u2014 the one creating the most total value while respecting everyone's limits \u2014 and there are honest rules (like charging each winner the right price) that make each party's own best move also the move that leads there. The math lines the incentives up with the outcome.",
+ "n_total": 315,
+ "papers": [
+  {
+   "title": "Neuro-Sym Supporter: A Thoughtful Emotion Support Agent Integrating Neural and Symbolic Policy Learning",
+   "uses": "Supports users by reasoning through emotional cues using logic-based rules, combining rational inference with empathetic understanding for stable, explainable decisions."
+  },
+  {
+   "title": "PLIKD: Prompt Learning with Instance-aware Knowledge Distillation for Web-scale Semantic Image Classification",
+   "uses": "Learns prompts for image classification that work on new classes by distilling knowledge from language models into the prompt, balancing multi-modal signals."
+  },
+  {
+   "title": "Diversifying Differentiable Graph Retrieval with Topic-Adaptive Multi-Intent Learning",
+   "uses": "Retrieves multiple complementary graph subsets by modeling hidden topics in queries, using end-to-end feedback to rank triples that actually help the final answer."
+  },
+  {
+   "title": "Long-Tailed Recognition of Evidential Experts for Graph-level Classification",
+   "uses": "Classifies long-tailed graphs using multiple expert models whose predictions are combined via belief functions that capture both their confidence and uncertainty."
+  },
+  {
+   "title": "AgenticShop: Benchmarking Agentic Product Curation for Personalized Web Shopping",
+   "uses": "Rank and select products that match what each shopper wants, given their preferences and behavior."
+  },
+  {
+   "title": "A Fact-Checking Framework with Denoising Evidence Retrieval and LLM-Based Debate Verification",
+   "uses": "Verify claims by retrieving good evidence, then having multiple viewpoints debate the claim, and distilling the consensus into a confidence score."
+  },
+  {
+   "title": "Rethinking MoE with Retrieval-Memory Synergy: Towards Efficient Expert Coordination",
+   "uses": "Route queries to the right experts by remembering which expert teams worked well before on similar questions, and blending those memories with current signals."
+  },
+  {
+   "title": "Xemis: Fair and Robust Privacy-Preserving Data Trading based on Distributed Noise Sharing",
+   "uses": "Trade data fairly by each owner adding noise to their data through a decentralized protocol, so no one reveals raw data but buyers get the signal they need."
+  },
+  {
+   "title": "OpenDecoder: Open Large Language Model Decoding to Incorporate Document Quality in RAG",
+   "uses": "Generate answers by using scores for how relevant the retrieved documents are, so the language model knows which pieces of information to trust most."
+  },
+  {
+   "title": "LiquidityPool: Game-Theoretic Analysis of Stakeholder Revenue in Ranking-Dependent DeFi",
+   "uses": "Analyze how fund size rankings in DeFi create competition equilibria where pooling resources shifts outcomes toward monopoly rather than fragmented competition."
+  },
+  {
+   "title": "UrbanMoE: A Sparse Multi-Modal Mixture-of-Experts Framework for Multi-Task Urban Region Profiling",
+   "uses": "Route different features to specialized sub-networks that predict multiple urban indicators simultaneously, weighting which network handles which region."
+  },
+  {
+   "title": "Thorki: Decoupling General and Personalized Knowledge with Collaborative Fusion for Personalized Federated Learning",
+   "uses": "Store personalized knowledge in a small model and general knowledge in a large model, then blend their predictions using a learned fusion network for each client."
+  },
+  {
+   "title": "Enhancing Ride-Hailing Forecasting at DiDi with Multi-View Geospatial Representation Learning from the Web",
+   "uses": "Pre-train geographic features from points-of-interest and mobility patterns, then adjust a language model with external events to forecast ride demand."
+  },
+  {
+   "title": "Same Last-Item Confusion Unveiled: A Unified Mitigation Framework for Graph Learning in Session-Based Recommendation",
+   "uses": "Build positive and negative pairs of sessions, compute a loss that pulls similar sessions close and pushes dissimilar ones apart, then use the result for next-item prediction."
+  },
+  {
+   "title": "LEDA: Latent Semantic Distribution Alignment for Multi-domain Graph Pre-training",
+   "uses": "Project diverse graph domains into a shared semantic space, then learn a distribution that guides how to train on all graphs together."
+  },
+  {
+   "title": "TrueLens: Video Fake News Detection with Dual Level Evidence Gathering and Consolidation",
+   "uses": "Retrieve similar real and fake videos as reference evidence, use contrasts between them to reason about the query, then fuse all multimodal signals into a binary fake-or-real verdict."
+  },
+  {
+   "title": "FeedGuard: Online Critic-Guided Reinforcement Learning with Privacy-Preserving Feedback for Recommendation",
+   "uses": "Learn what makes good recommendations by following feedback signals downhill while scrambling and blurring the feedback data itself so no one can read the individual signals."
+  },
+  {
+   "title": "Doc-Researcher: A Unified System for Multimodal Document Parsing and Deep Research",
+   "uses": "Break complex questions into smaller steps, gather evidence from charts, tables, and text across many documents, then combine all the partial answers into one final answer."
+  },
+  {
+   "title": "A Frequency-Aware Mixture of Heterogeneous Experts Framework for Knowledge Tracing",
+   "uses": "Use multiple different learning mechanisms (focus, convolution, recurrence, and selective state-space models), each sensitive to different time patterns, then combine their predictions weighted by which patterns dominate each student's sequence."
+  },
+  {
+   "title": "PolicySim: An LLM-Based Agent Social Simulation Sandbox for Proactive Policy Optimization",
+   "uses": "Simulate users and platform policies as agents in a virtual world, train the users to behave realistically from examples, then adjust policies to reduce harm by watching what happens in simulation before deploying."
+  },
+  {
+   "title": "Generalist Model for Structured Data: Foundations, Frontiers and Applications",
+   "uses": "Train large models on diverse structured data tasks simultaneously so they learn universal patterns that work across recommendation, forecasting, and user behavior prediction."
+  },
+  {
+   "title": "IACLR: Intention Alignment via Contrastive Learning for Bipartite Graph Recommendation",
+   "uses": "Enrich sparse user-item graphs by adding intent nodes that summarize shared behavioral patterns, then align users and items consistently across multiple views."
+  },
+  {
+   "title": "From Navigation to Intention: Reframing the Web Experience through Goal-Driven Interfaces",
+   "uses": "Map user goals in plain language to relevant UI components by scoring which functions best match the intent, then assemble them into a custom interface."
+  },
+  {
+   "title": "An 8-Way Taxonomy for Multimodal Disinformation and Detection Benchmark",
+   "uses": "Checks images, text, and their consistency separately as three binary decisions, then fuses them into one of eight explicit categories to classify disinformation type."
+  },
+  {
+   "title": "Beyond the Rules: Understanding the Design Logic of Internet Standards",
+   "uses": "Retrieves explanatory email discussions from IETF archives by matching relevance to the protocol decision, then synthesizes those scattered arguments into clear rationale."
+  },
+  {
+   "title": "Context-Aware Silhouette-Based Age Estimation for Child Sexual Abuse Material (CSAM) Detection",
+   "uses": "Learn to classify a person's age group from body outline alone by training two prediction tasks together and comparing similar pairs of people."
+  },
+  {
+   "title": "Aggregating Information and Preferences under Different Coordination Ability",
+   "uses": "Compute voting outcomes when agents hold private beliefs about an unknown truth, can coordinate in groups of size k or less, and must be characterized by equilibrium conditions."
+  },
+  {
+   "title": "Barter Exchange with Asymmetric Item Valuations",
+   "uses": "Reallocate items among agents by maximizing total profit subject to each agent receiving fair value, when each agent individually values items differently."
+  },
+  {
+   "title": "Sustained Vertex Cover on Temporal Graphs",
+   "uses": "Select vertices with limited lifespans to cover edges, where a vertex at time t covers edges until time t plus duration minus one."
+  },
+  {
+   "title": "AID: Hypothesis-Grounded Probing for Conversational Recommendation",
+   "uses": "Ask targeted clarification questions to eliminate competing interpretations of an ambiguous query."
+  },
+  {
+   "title": "OFA-MAS: One-for-All Multi-Agent System Topology Design based on Mixture-of-Experts Graph Generative Models",
+   "uses": "A single model learns to generate task-specific agent collaboration graphs by dynamically selecting relevant expert sub-networks based on task description."
+  },
+  {
+   "title": "FedRMamba: Federated Residual Mamba for Multivariate Time-Series Forecasting",
+   "uses": "A federated forecaster decomposes time-series into global low-frequency shared patterns and client-specific high-frequency patterns, then recombines them for prediction."
+  },
+  {
+   "title": "Data Pricing via Competitive Equilibrium",
+   "uses": "Determines fair prices for data by balancing supply and demand while allowing each data record to be sold to multiple buyers simultaneously."
+  },
+  {
+   "title": "Mixture of Orthogonal Decomposition for Semantically Generalisable Multimodal Deepfake Detection with Deepfake Manifold Disentanglement",
+   "uses": "A gated mixture model decomposes deepfakes into semantic content variations and forgery technique artifacts, learning separate branches for each to improve generalization."
+  },
+  {
+   "title": "Large Language Models-Enhanced Semantic Diffusion for User-Centric Recommendation",
+   "uses": "Blend user history, item properties, and what similar users liked into multiple views, then learn by comparing similar and different examples to recommend items."
+  },
+  {
+   "title": "IVQ-GNN: Mitigating Performance Gap from Graph Connection Pattern Inconsistency via Vector Quantization",
+   "uses": "Encode different connection patterns in a graph into a codebook, then mix these patterns in weights to adapt to rare and out-of-distribution patterns in node classification."
+  }
+ ]
+}

@@ -1,0 +1,153 @@
+{
+ "key": "attention",
+ "title": "Focusing on what's relevant",
+ "intro": "Not every part of an input matters equally, so the system learns to put its weight on the pieces relevant to the moment and quietly ignore the rest.",
+ "why": "It works because in most inputs the useful signal is sparse \u2014 a few words, a few past actions carry the meaning \u2014 so a method that learns to weight those few heavily and downplay the rest keeps the signal and throws away the noise, doing far more with the same data.",
+ "n_total": 85,
+ "papers": [
+  {
+   "title": "Structure-Semantic Synergized Deep Contrastive Graph Clustering",
+   "uses": "Clusters graph nodes by contrasting reliable structural neighbors against hard negatives, weighted by how much each node's connections and cross-view agreement reveal its true category."
+  },
+  {
+   "title": "pFedDKS: Detached Knowledge Sharing for Personalized Federated Learning",
+   "uses": "Learn a shared feature processor that each client can customize locally, by identifying which layers should be global and which should be personal."
+  },
+  {
+   "title": "BeeQoS: A Cloud-Native QoS System for Adaptive and Scalable Multi-Priority Bandwidth Guarantees",
+   "uses": "Dynamically measure real-time flow demand and reallocate bandwidth weights across priority tiers, adjusting per-packet shaping rules to minimize latency violations."
+  },
+  {
+   "title": "ToxiTwitch: Toward Emote-Aware Hybrid Moderation for Live Streaming Platforms",
+   "uses": "Generate feature representations of both text and emotes, then train a classifier that scores which combinations indicate toxic behavior."
+  },
+  {
+   "title": "Facilitating Generative Retrieval with Logical Denoising for Interpretable Conversational Search",
+   "uses": "Generate relevant documents for conversational search by denoising conversation context with logic, then learning which starting guess turns matter most for each turn."
+  },
+  {
+   "title": "Responsible Prompting on the Web: Governance, Mini-Evaluation, and Readiness with ChatGPT",
+   "uses": "Prompting uses structured instructions and examples to guide what the model generates, filtering risky outputs before deployment."
+  },
+  {
+   "title": "ToolBox-RL: Learning to Generalize Tool Use Across Massive Repositories",
+   "uses": "Learn which tools best match user intent by optimizing a reward signal from successful tool calls on diverse queries."
+  },
+  {
+   "title": "HAAF: Hierarchical Adaptation and Alignment of Foundation Models for Few-Shot Pathology Anomaly Detection",
+   "uses": "A cross-level mechanism first grounds text descriptions in visual context, then uses those descriptions to focus the visual encoder on anomalous regions."
+  },
+  {
+   "title": "Dual-level Reweighting for Positive-Unlabeled Graph Classification",
+   "uses": "Reweight graph substructures at two levels\u2014hop-level to focus on informative patterns, graph-level to suppress ambiguous unlabeled examples\u2014for classification with only positive and unlabeled data."
+  },
+  {
+   "title": "RAFed: Responsive Augmentation and Approximate Update Method for Federated Learning with Non-IID Data",
+   "uses": "Learn which data transformations help each client by tuning a policy that predicts how a transformation will help unseen local data, then apply personalized transformations to each client separately."
+  },
+  {
+   "title": "AdaQE-CG: Adaptive Query Expansion for Web-Scale Generative AI Model and Data Card Generation",
+   "uses": "Build model and data documentation cards by iteratively refining extraction queries to find richer information from papers, then filling gaps by borrowing relevant content from similar existing cards."
+  },
+  {
+   "title": "Amortized Predictability-aware Training Framework for Time Series Forecasting and Classification",
+   "uses": "Score each time-series sample by how predictable it is, weight the loss penalty higher for harder-to-learn samples, and refine this weighting across training iterations."
+  },
+  {
+   "title": "Privacy-Friendly Adaptation of Vision Transformers for Communication and Latency-Efficient Private Inference",
+   "uses": "Reduce the cost of secure computation for image analysis models by reusing feature representations across similar layers, approximating expensive components with cheaper stand-ins that stay accurate enough."
+  },
+  {
+   "title": "Prism: Towards Lowering User Cognitive Load in LLMs via Complex Intent Understanding",
+   "uses": "Break down ambiguous user goals into logical dependencies, then ask clarifying questions in an order that respects those dependencies."
+  },
+  {
+   "title": "SaGD: A Node-Level Differentially Private Graph Learning Framework with Sensitivity-Aware Gradient Descent",
+   "uses": "Weight the connections between users based on graph structure to control how much changing one user's data can shift the model."
+  },
+  {
+   "title": "FedBridge: Accelerating Edge-Assisted Federated Learning for Model-Heterogeneous Clients",
+   "uses": "Blend knowledge from multiple differently-shaped models through a shared fusion model on each edge server, using contrastive learning to align each fusion model with the global consensus."
+  },
+  {
+   "title": "CIDC: Cluster Identification-Guided Dual Correction for Robust Short Text Clustering",
+   "uses": "Guesses which category each cluster should represent, then corrects its own training labels whenever samples disagree with their cluster's category, re-centering clusters on reliable examples."
+  },
+  {
+   "title": "Multi-field Balance-aware Calibration of Predictions in Online Advertising",
+   "uses": "Balance prediction errors across different ad targeting fields by finding the best mix of weights that minimizes errors simultaneously on all fields\u2014never perfect on one but good on all."
+  },
+  {
+   "title": "SAMPLE: A Spatial/Channel-wise Attention GCN with MLP and Periodic Linear Encoding for Land Boundary Demarcation System",
+   "uses": "Predict fieldwork duration for land surveying by weighting spatial and tabular information differently per location, using periodic patterns and network-of-connections to capture what matters locally."
+  },
+  {
+   "title": "FedAKD: Federated Adaptive Knowledge Distillation via Global Knowledge Calibration and Decoupling",
+   "uses": "Calibrate distilled knowledge by weighting underrepresented classes more heavily on each local device."
+  },
+  {
+   "title": "Not All Information Brings Benefits: Personalization-Driven Agent Debate for Conversational Recommendation",
+   "uses": "For conversational recommendations, debate which historical conversations help and which hurt the current decision, then weight only the helpful ones into the preference model."
+  },
+  {
+   "title": "HAUTE: Harmonizing Action Units with Temporal-contextual Embeddings for Deepfake Detection",
+   "uses": "Detects deepfakes by learning temporal patterns in facial muscle movements and weighting which temporal and semantic features matter most for spotting synthesis artifacts."
+  },
+  {
+   "title": "MessageShift: Fine-Grained Data Augmentation for Graph Neural Networks",
+   "uses": "Strengthens systems that learn from examples for graphs by slightly shifting messages toward or away from neighbors\u2014sharpening distinctive ones and softening noisy ones\u2014during learning."
+  },
+  {
+   "title": "Dynamic Multi-period Experts for Online Time Series Forecasting",
+   "uses": "Maintain multiple expert models, each specialized to a historical periodic pattern; dynamically route each forecast to the expert whose pattern best matches the current condition, or to a stable baseline if no pattern matches."
+  },
+  {
+   "title": "Unveiling and Simulating Short-Video Addiction Behaviors via Economic Addiction Theory",
+   "uses": "Models short-video addiction by learning personalized patterns from behavioral data, then weights individual user trajectories to train a simulator that predicts how users consume content."
+  },
+  {
+   "title": "Lurkers, Interactors, Creators: Modeling Behavioral and Ideological Diversity on X",
+   "uses": "Segments social media users into behavioral profiles by clustering session-level activity patterns, then weights groups by engagement style to explain differences in content exposure."
+  },
+  {
+   "title": "Not All Candidates are Created Equal: A Heterogeneity-Aware Approach to Pre-ranking in Recommender Systems",
+   "uses": "Separates easy and hard items to rank, uses simple models for easy ones and stronger models for hard ones, balancing ranking accuracy with computational cost."
+  },
+  {
+   "title": "Unlocking the Multilingual Long-Tail Web: A Fused Macro-Micro Framework for Scalable Content Analysis",
+   "uses": "Tunes a language model by injecting language structure hints early, then uses error signals to dynamically adjust what the model learns at each training step."
+  },
+  {
+   "title": "Unveiling Backdoor Propagation in Graphs: Neuron-Centric Defense Mechanisms",
+   "uses": "Identify which internal features get activated by backdoor triggers, then unlearn and recover those features to remove poisoned behaviors."
+  },
+  {
+   "title": "Revisiting IPS-based Algorithms for Off-Policy Evaluation of Contextual Bandits",
+   "uses": "Evaluates whether a recommendation policy is good by reweighting historical logs so they represent what would have happened if the new policy had been used, using probability scores to correct for the original policy's choices."
+  },
+  {
+   "title": "Weighted Graph Clustering via Scale Contraction and Graph Structure Learning",
+   "uses": "Shrink a weighted graph by removing unimportant nodes, then use learned weights to soften noisy edges so they matter less in clustering."
+  },
+  {
+   "title": "CCAF: Coarse-to-fine Cross-Modal Alignment and Fusion for Multimodal Sentiment Analysis",
+   "uses": "Align sentiment clues across text, image, and audio both globally and locally, fuse them with adaptive gates, then use learned sentiment prototypes to remove redundant information."
+  },
+  {
+   "title": "SAGE-RAI: Design Patterns for Transparent RAG Systems",
+   "uses": "Shows users which sources a knowledge-retrieval system read before generating answers, making its reasoning transparent and verifiable."
+  },
+  {
+   "title": "Measuring and Enhancing Human Value Alignment in Zero-Shot Document-Level Claim Extraction",
+   "uses": "Extracts key claims from long documents by learning which claim types experts value using their annotations as examples."
+  },
+  {
+   "title": "WinFLoRA: Incentivizing Client-Adaptive Aggregation in Federated LoRA under Privacy Heterogeneity",
+   "uses": "Weights updates from each client based on estimated noise levels to improve a shared language model while respecting each client's privacy choices."
+  },
+  {
+   "title": "FairFS: Addressing Deep Feature Selection Biases for Recommender System",
+   "uses": "Measures which input features matter most to a recommendation model by correcting for biases that cause rankings to depend on only some layers, samples, or slope directions."
+  }
+ ]
+}

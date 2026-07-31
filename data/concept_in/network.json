@@ -1,0 +1,153 @@
+{
+ "key": "network",
+ "title": "Spreading information across a network",
+ "intro": "When the data is a web of connections \u2014 who follows whom, what's bought with what, which fact links to which \u2014 a thing's meaning comes largely from its neighbours, so you let evidence flow along the links.",
+ "why": "It works because in real networks connected things tend to be alike \u2014 friends share tastes, linked pages share topics \u2014 so a node can borrow evidence from its neighbours, and letting that evidence spread a few steps sharpens every guess using the crowd around it. It only fails when the links carry no real signal.",
+ "n_total": 58,
+ "papers": [
+  {
+   "title": "Social Event Prediction via Fourier Graph Learning",
+   "uses": "Predict future events in a social network by storing events as complex numbers that encode both what happened and when, then spreading that information across edges."
+  },
+  {
+   "title": "Concordia: Enabling Low-Conflict Distributed Transaction Scheduling in Sharding Blockchain via Cooperative Perception",
+   "uses": "Each shard predicts future cross-shard interactions using a graph algorithm, broadcasts low-dimensional signals, then prioritizes transactions by popularity."
+  },
+  {
+   "title": "How Graphs Can Help You Stay Informed in an Evolving World",
+   "uses": "Decide which web pages to recrawl using graph structure and learned probabilities, prioritizing updates that cascade to many downstream pages."
+  },
+  {
+   "title": "Cross-Type Semantic Alignment for Multi-Type Anomaly Detection in Heterogeneous Graphs",
+   "uses": "Detect anomalies in graphs with multiple node types by aligning semantic features across types and weighting their contributions to balance sparse and rich nodes."
+  },
+  {
+   "title": "DA-RAG: Dynamic Attributed Community Search for Retrieval-Augmented Generation",
+   "uses": "Dynamically extracts query-relevant subgraphs by finding attributed communities that match the question, then passes these self-complementary subgraphs to the AI language systems."
+  },
+  {
+   "title": "Heterophily-Agnostic Hypergraph Neural Networks with Riemannian Local Exchanger",
+   "uses": "Pass information through hypergraph bottlenecks using curved space geometry that locally adapts how tightly or loosely to let signals flow, so nearby nodes stay distinguishable even after many rounds of sharing."
+  },
+  {
+   "title": "Securing Your Place in the Review Network: A Dynamic Embeddedness-aware Graph Neural Network for Restaurant Survival Prediction",
+   "uses": "Predict restaurant survival by measuring how deeply each restaurant sits in its network of customers and peer restaurants, then track how that position changes over time."
+  },
+  {
+   "title": "Unsupervised Subgraph Anomaly Detection Based on Pattern Collaboration",
+   "uses": "Identifies suspicious groups in networks by learning which patterns appear repeatedly in normal subgraphs versus abnormal ones, using paths and cycles to sample candidate groups."
+  },
+  {
+   "title": "Using Psycholinguistic Features for Multiplex Community Detection in Temporal Social Networks",
+   "uses": "Detects communities in social networks by treating emotional language (grievances, moral framing) as separate communication channels layered atop who interacts with whom."
+  },
+  {
+   "title": "FS_GPlib: Breaking the Web-Scale Barrier \u2014 A Unified Acceleration Framework for Graph Propagation Models",
+   "uses": "Simulate how information or epidemics spread across a graph by batch-updating many nodes in parallel, partition the graph strategically to minimize data shuffling between computers, and run many independent random simulations to average results."
+  },
+  {
+   "title": "Towards Robust Detection of Chinese Toxic Variants via Dynamic Knowledge Graph\u2013LLM Reasoning",
+   "uses": "Build a knowledge graph linking canonical toxic words to their obfuscated variants using phonetic and visual similarity; traverse the graph to recognize hidden toxic expressions."
+  },
+  {
+   "title": "Line Graphs Are Here! Unlock a Simple Solution for Data Sparsity and Class Imbalance in Recommender System",
+   "uses": "Transform user-item recommendations into a line graph (where each node is an edge in the original graph), apply graph learning techniques to generate synthetic training examples, and feed augmented data back to the recommender."
+  },
+  {
+   "title": "Consensus Stability of Community Notes on X",
+   "uses": "Measure how shared-opinion contributors rate a fact-check note differently from opposite-opinion contributors after the note becomes visible, and predict note disappearance from polarization patterns."
+  },
+  {
+   "title": "Unicoon: Hypergraph-based Multi-Agent Simulation of Information Cocoons",
+   "uses": "Models how information and recommendations spread through social networks and user groups, tracking which content reaches which people and creating cohesive clusters."
+  },
+  {
+   "title": "SemaReg: Semantic Service Registry for Resilient IoTWorkflow Orchestration in Edge Computing Environments",
+   "uses": "Discovers services in distributed edge networks by matching a requested type against available semantic types using ontology rules, replicating that registry across devices."
+  },
+  {
+   "title": "Source Localization in Continuous-Time Propagation via Spectral ODE Modeling",
+   "uses": "Find the source of information spread by solving an inverse equation: given how information flowed over time in a network, learn what initial state and rates would produce that observed flow."
+  },
+  {
+   "title": "From Criteria to Ranking: Targeting-Aware Tripartite Graph Learning for Multi-Criteria Recommendation",
+   "uses": "Score items by spreading user preferences and criterion signals across a three-way graph of users, items, and evaluation criteria."
+  },
+  {
+   "title": "EIAN: Explicit Interaction-aware Attention Network for Interpretable Event Modeling",
+   "uses": "Predict the next event in a time sequence by explicitly modeling how each event type influences others, using separate channels for within-type patterns and cross-type influences."
+  },
+  {
+   "title": "Mining Citywide Dengue Spread Patterns in Singapore Through Hotspot Dynamics from Open Web Data",
+   "uses": "Learns how dengue transmissions spread between city neighborhoods by modeling how infection hotspots in one area influence neighboring regions over weeks."
+  },
+  {
+   "title": "DREAMS: A Social Exchange Theory-Informed Modeling of Misinformation Engagement on Social Media",
+   "uses": "Predicts how many people will engage with misinformation by treating each action as part of an evolving sequence shaped by emotional rewards and platform design."
+  },
+  {
+   "title": "Boltzmann Interaction Models with Gibbs Decision Policies in Multi-Agent Delivery Systems",
+   "uses": "Treats each drone as making probabilistic decisions based on local energy (cost, service balance, interference), with a temperature parameter tuning exploration."
+  },
+  {
+   "title": "Deep GraphRAG: A Balanced Approach to Hierarchical Retrieval and Adaptive Integration",
+   "uses": "Retrieve answers from huge graph structures by filtering down from broad communities to specific entities, scoring each stage to keep the best candidates."
+  },
+  {
+   "title": "DSTAG: A Semantic Tag-Enhanced Dual-Graph Convolutional Network for Temporal Knowledge Graph Completion",
+   "uses": "Enrich entities and relations with semantic tags, then spread information across connected graphs to fill missing facts about evolving relationships."
+  },
+  {
+   "title": "Multi-Source Information Driven Spatio-Temporal Hypergraph Learning for Traffic Forecasting",
+   "uses": "Model traffic flow by building hypergraphs capturing high-order spatial groupings and temporal correlations, then pass information through to predict future counts."
+  },
+  {
+   "title": "FraudShield: Knowledge Graph Empowered Defense for LLMs against Fraud Attacks",
+   "uses": "Build a knowledge graph linking fraudulent keywords to fraud tactics, then use it to highlight suspicious patterns and guide language models toward secure responses."
+  },
+  {
+   "title": "PIGCN: Physics-Inspired Graph Convolution Networks for Heterogeneous Social Event Detection",
+   "uses": "Model social event detection using wave-based message propagation and force-like attractions within events, repulsions between events, to cluster related messages."
+  },
+  {
+   "title": "Dual History Enhancement with Hybrid Hypergraph-Graph Networks for Temporal Knowledge Graph Reasoning",
+   "uses": "Captures both nearby relationships and distant multi-step connections between entities in a knowledge graph, then predicts future events by weighting the contribution of each type of connection based on a gating mechanism."
+  },
+  {
+   "title": "Credit and Power Co-evolution Modeling with Dynamic Graph Learning",
+   "uses": "Jointly predicts power consumption and credit risk by modeling how credit changes and power anomalies influence each other bidirectionally."
+  },
+  {
+   "title": "Federated Latent Factor Learning for Privacy-Preserving Spatio-Temporal Signal Recovery",
+   "uses": "Decompose missing sensor readings as products of hidden factors, learned in federated way where each sensor only sends slope updates, not raw data."
+  },
+  {
+   "title": "HyperDetector: Advanced Persistent Threat Detection via Hypergraph Neural Networks with Enhanced Global Perception",
+   "uses": "Detects attacks by scoring how multi-entity events spread and connect across system records, paying focus to distant relationships."
+  },
+  {
+   "title": "The First Workshop on Graph-enhanced LLMs for trustwOrthy Web data management (GLOW'26)",
+   "uses": "Combines knowledge graphs (structured relationship networks) with language models to reason over web data while maintaining explicit logical constraints and connections between facts."
+  },
+  {
+   "title": "A New Query Expansion Approach for Enhancing Information Retrieval via Agent-Mediated Dialogic Inquiry",
+   "uses": "Breaks down a user query into multiple sub-questions, generates pseudo-answers from different viewpoints, then filters and weights them by relevance to create a richer expanded query."
+  },
+  {
+   "title": "Knowledge-Graph Structure-Aware Conversational Entity Retrieval",
+   "uses": "Ranks candidate knowledge-graph entities using a neural architecture that models lexical and semantic relevance while propagating signals through the entity's neighborhood in the graph structure and conditioning on dialog context."
+  },
+  {
+   "title": "An Application for Development and Interactive Visual Engagement with the SHARECITY 200 Food Sharing Initiative (FSI) database in the CULTIVATE project",
+   "uses": "Find and map food-sharing groups by searching the web, refining queries with language rewriting, and updating the map as new groups emerge."
+  },
+  {
+   "title": "WEB&GRAPH 2026: Workshop on Web & Graphs, Responsible Intelligence, and Social Media",
+   "uses": "This is a workshop on reasoning over networks and graphs to detect misinformation and build trustworthy systems."
+  },
+  {
+   "title": "Cyberpsychology: Emotion as the Hidden Driver of Social Behavior in Online Networks",
+   "uses": "Track how emotions and moral sentiments spread through online networks, shaping polarization, trust, and collective behavior."
+  }
+ ]
+}

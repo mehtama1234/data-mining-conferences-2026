@@ -1,0 +1,153 @@
+{
+ "key": "similarity",
+ "title": "Turning meaning into nearness",
+ "intro": "A great deal of this field begins by placing every item \u2014 a word, a product, a person \u2014 as a point in a space, arranged so that things people treat as alike sit close together. Meaning becomes geometry.",
+ "why": "It works because once similar things are placed near each other, the vague question 'what is like this?' becomes the precise, cheap question 'what is nearby?' \u2014 and nearness is easy to measure and behaves sensibly. The deeper trick it exploits: relationships too tangled to define by hand turn into simple distances once the layout is learned well, and only a few directions in that space usually carry the real meaning.",
+ "n_total": 302,
+ "papers": [
+  {
+   "title": "Multi-view Semantic Contrastive Alignment for Multimodal Recommendation",
+   "uses": "Aligns user-item relationships learned from behavior against enriched item relationships learned from images, text, and links by maximizing their mutual consistency."
+  },
+  {
+   "title": "Embedding Enhancement via Fine-Tuned Language Models for Learner-Item Cognitive Modeling",
+   "uses": "Enhances student-item numeric fingerprints by using language model representations, aligning them to match the cognitive diagnostic task rather than the language model's original training goals."
+  },
+  {
+   "title": "UTAG: Leveraging LLM as a Unified Embedding Generator for Text-Attributed Graphs",
+   "uses": "Represents text-attributed graphs using a language model that was pretrained to transfer across domains, then dimensionally reduced to preserve both semantic and structural meaning."
+  },
+  {
+   "title": "Conditional Information Extraction with Diffusion Model on Fact-Condition Star Graph",
+   "uses": "Extract fact triples and their conditional constraints by progressively refining noisy guesses into clean quintuples."
+  },
+  {
+   "title": "RobustExplain: Evaluating Robustness of LLM-Based Explanation Agents for Recommendation",
+   "uses": "Test whether language-model explanations for product recommendations stay consistent and sensible when user behavior is slightly disturbed."
+  },
+  {
+   "title": "Accurate Trajectory Recovery in Underserved Areas via Location Inference from Web Crowdsourced Data",
+   "uses": "Build multi-scale spatial grids to reconstruct missing trajectory positions by sampling and refining details from coarse global patterns to fine local ones."
+  },
+  {
+   "title": "Topology-Aware Feature Sorting Enables Universal Modeling on Homophilic and Heterophilic Graphs",
+   "uses": "Sort features by their local topology pattern, then model both homophilic and heterophilic structures using dual-channel networks that handle features independently."
+  },
+  {
+   "title": "Bridging Time and Domains: A Time-aware Framework for Cross-Domain Sequential Recommendation",
+   "uses": "Predict the next item by decoupling user preferences over time from the items themselves, then weight cross-domain information by comparing temporal densities."
+  },
+  {
+   "title": "Macro-Micro Collaborative Learning for Logical Data Center Microservice Indicators Forecasting",
+   "uses": "Model microservice dependencies as a hierarchy and forecast each indicator using causal relationships between indicators within services, weighted by interaction strength."
+  },
+  {
+   "title": "Language Model Representations for Efficient Few-Shot Tabular Classification",
+   "uses": "Classify rows in unknown tables by converting them to fixed semantic representations, removing shared components, and learning a temperature parameter to calibrate confidence."
+  },
+  {
+   "title": "SketchMind: Understanding Abstract Sketches with MLLMs for Fine-Grained Sketch-Based Image Retrieval",
+   "uses": "Generate text descriptions of sketches, build a graph linking sketch to text, then use focus to selectively weight which descriptions help match each sketch to the right image."
+  },
+  {
+   "title": "TargetMR: Learning Modality Target for Multimodal Recommendation",
+   "uses": "Identify which objects in images and text are central to the item, then weight their representations more heavily so that core content dominates over decorative elements."
+  },
+  {
+   "title": "VSAL: A Vision Solver with Adaptive Layouts for Graph Property Detection",
+   "uses": "Automatically adjust how the graph is drawn for each instance so that structural properties stand out visually, then train a model to recognize those properties in the pictures."
+  },
+  {
+   "title": "Dir-GD: Directed Graph Distillation",
+   "uses": "Divide a huge directed graph into smaller independent communities, train models on each piece, then compress all the pieces back into one smaller synthetic graph that still preserves the structure and direction."
+  },
+  {
+   "title": "RAIE:Region-Aware Incremental Preference Editing with LoRA for LLM-based Recommendation",
+   "uses": "Divide user preferences into coherent regions in representation space, assign new user sequences to regions with confidence scores, then update only the region-specific small add-on modules for that user's changing tastes."
+  },
+  {
+   "title": "Sharpness-Aware Minimization for Generalized Embedding Learning in Federated Recommendation",
+   "uses": "Stabilize item numeric fingerprints during federated training by minimizing loss at points least likely to overfit when data distributions change."
+  },
+  {
+   "title": "Towards LLM-centric Affective Visual Customization via Efficient and Precise Emotion Manipulating",
+   "uses": "Edit image emotions by aligning semantic emotion changes while preserving emotion-neutral content through contrasting paired image versions."
+  },
+  {
+   "title": "ARCHER: Shooting Straight in Multimodal E-Commerce Search at Alibaba with Progressive Alignment",
+   "uses": "Combines images and product descriptions into a shared measurement space, refining similarity step-by-step from category match to specific product differences."
+  },
+  {
+   "title": "C-HyPOD: Causal Hyperbolic Representation Learning with Prototype Orthogonal Disentanglement for Graph Out-of-Distribution Recommendation",
+   "uses": "Learns separate features for different user interests using curved space geometry that naturally models hierarchies without requiring labeled environments."
+  },
+  {
+   "title": "The State of the Internet: Insights from Security Indicators",
+   "uses": "Measures deployment of foundational security practices across the Internet using standardized, non-invasive indicators that capture the Internet security baseline."
+  },
+  {
+   "title": "EmeraldApp: An AI-Driven Tool for Detecting Greenwashing in Sustainability Claims",
+   "uses": "Retrieve relevant evidence chunks from a database and a knowledge graph, then learn to classify claims as greenwashing or not by comparing the claim against evidence."
+  },
+  {
+   "title": "MCoT-MVS: Multi-level Vision Selection by Multi-modal Chain-of-Thought Reasoning for Composed Image Retrieval",
+   "uses": "Weight different parts of an image by importance to the user's intent, then align those weighted parts with target images in a shared space where similar images sit close together."
+  },
+  {
+   "title": "Node Role-Guided LLMs for Dynamic Graph Clustering",
+   "uses": "Represent nodes as two separate parts\u2014one capturing their structural role (hub, bridge, etc.) and another capturing their cluster membership\u2014then use learned role archetypes to explain why clusters formed."
+  },
+  {
+   "title": "ConceptFormer: Towards Graph-Native Grounding of Large Language Models via Latent Concept Injection",
+   "uses": "Create lists of numbers representations of real-world concepts by encoding graph structure directly, then inject these lists of numbers into a language model's internal space to ground it in structured knowledge."
+  },
+  {
+   "title": "Towards Robust Heterogeneous Graph Explanations under Structural Perturbations",
+   "uses": "Filter out noisy graph edges and learn robust hidden representations, then explain decisions by balancing how much of the true signal you keep versus how much you compress."
+  },
+  {
+   "title": "LongRanker: Efficient One-Pass Document Reranking with Long-Context Large Language Models",
+   "uses": "Rank all documents at once using a language model's full context window; use hierarchical position encoding to tell the model where each document is, and prune focus to skip irrelevant documents."
+  },
+  {
+   "title": "HL-CMR: Hypergraph Learning for Cross-Modal Retrieval",
+   "uses": "Map images and text to a shared space where groups of semantically similar samples sit close together, then retrieve across modalities."
+  },
+  {
+   "title": "Campaign-2-PT-RAG: LLM-Guided Semantic Product Type Attribution for Scalable Campaign Ranking",
+   "uses": "Uses learned semantic alignment to rank and assign product types to campaigns based on content interpretation."
+  },
+  {
+   "title": "Learning on Adaptive Manifolds for Graph Collaborative Filtering",
+   "uses": "Represents users and items on an adaptive curved surface where the local geometry adjusts to match graph topology, enabling similarity to be measured as shortest path distance."
+  },
+  {
+   "title": "OwlerLite: Scope- and Freshness-Aware Web Retrieval for LLM Assistants",
+   "uses": "Score web pages by relevance and freshness, then retrieve the top-scoring results that match the user's chosen scope."
+  },
+  {
+   "title": "Efficient High-Dimensional Time Series Forecasting with Transformers: A Channel Reordering Perspective",
+   "uses": "Reorder thousands of time-series channels into groups so that dependencies cluster locally, then separate local from global patterns to minimize prediction error."
+  },
+  {
+   "title": "Lifelong Sequential Recommendation with Adaptive Subsequence Compression and Contextual Fusion",
+   "uses": "Compress millions of user actions into shorter chunks, weight each chunk by how related it is to the item being recommended, then combine the weighted chunks to predict what the user will choose."
+  },
+  {
+   "title": "FedDiG: Frequency-Guided Diffusion Diversity for Generalizable Federated Time Series Classification",
+   "uses": "Learn frequency-domain features from edge devices, blend them at the server to create new spectral patterns that don't exist in any device, then use them to train a model that generalizes to new devices."
+  },
+  {
+   "title": "CiteLLM: An Agentic Platform for Trustworthy Scientific Reference Discovery",
+   "uses": "Scores candidate references by relevance and validates them by measuring how close their meaning is to the author's claims through paragraph-level matching."
+  },
+  {
+   "title": "The LOPE Method: Improving Consistent Property Extraction for Scientific Knowledge Graphs Using LLMs",
+   "uses": "Extracts property terms from text using optimized prompts, then scores each term by how close it sits to standardized vocabulary concepts, aligning to canonical definitions."
+  },
+  {
+   "title": "Conditional Diffusion Guided Knowledge Transfer for Multi-Domain Knowledge Graph Completion",
+   "uses": "Generates entity numeric fingerprints via diffusion that start from a general space and are guided by multi-domain graphs, scores how close the final numeric fingerprints preserve both domain-general and domain-specific signals."
+  }
+ ]
+}
