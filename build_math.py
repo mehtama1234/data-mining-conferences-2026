@@ -14,6 +14,8 @@ _rc = os.path.join(HERE, "data", "rich.json")
 RICH = json.load(open(_rc)) if os.path.exists(_rc) else {}
 _cr = os.path.join(HERE, "data", "concepts_rich.json")
 CONCEPTS = json.load(open(_cr)) if os.path.exists(_cr) else {}
+_sy = os.path.join(HERE, "data", "synth_out.json")
+SYNTH = json.load(open(_sy)) if os.path.exists(_sy) else {}
 analysis = json.load(open(os.path.join(HERE, "data", "analysis.json")))["papers"]
 def esc(s): return html.escape(str(s or ""))
 
@@ -106,6 +108,24 @@ def concept_html(c):
             f"{head}<div class='papers'>{rows}</div></section>")
 
 concepts_html = "".join(concept_html(c) for c in CG if groups[c["key"]])
+
+def _mb(s):  # escape, then render **bold** -> <b> and *italic* -> <i>
+    s = esc(s)
+    parts = s.split("**")
+    s = "".join(p if i % 2 == 0 else f"<b>{p}</b>" for i, p in enumerate(parts))
+    parts = s.split("*")
+    return "".join(p if i % 2 == 0 else f"<i>{p}</i>" for i, p in enumerate(parts))
+
+synth_block = ""
+if SYNTH.get("thread"):
+    synth_block = (
+        "<section class='synth'>"
+        "<div class='anum'>the whole field in one page</div>"
+        "<h2>A few ideas, one machine</h2>"
+        f"<p class='synth-thread'>{_mb(SYNTH['thread'])}</p>"
+        f"<div class='dotsbox'><div class='wt dt'>how the ideas fit together</div><p>{_mb(SYNTH['arc'])}</p></div>"
+        f"<p class='aha'>{_mb(SYNTH['punchline'])}</p>"
+        "</section>")
 NA = len(MATH)
 tc = Counter(t for v in MATH.values() for t in v["tags"])
 bars = "".join(f"<div class='bar'><span class='bl'>{esc(t)}</span><span class='bt'><span class='bf' style='width:{n/tc.most_common(1)[0][1]*100:.0f}%'></span></span><span class='bv'>{n}</span></div>" for t,n in tc.most_common())
@@ -131,6 +151,9 @@ h2{{font-family:var(--serif);font-size:29px;margin:0 0 12px;color:#fff}}
 .dotsbox .wt.dt{{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--viol);margin-bottom:6px}}.dotsbox p{{margin:0;font-size:15.5px;color:var(--ink)}}
 .picture{{font-size:15px;color:var(--soft);font-style:italic;margin:8px 0 4px;padding-left:14px;border-left:2px solid var(--amber)}}
 .picture .pl{{font-family:var(--mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--amber);font-style:normal;margin-right:8px}}
+.synth{{background:linear-gradient(180deg,rgba(79,168,184,.06),rgba(79,168,184,0));border:1px solid var(--line);border-radius:16px;padding:22px 24px;margin:8px 0 30px}}
+.synth h2{{margin:2px 0 12px}}
+.synth-thread{{font-size:17px;color:var(--ink);line-height:1.6}}
 .papers{{margin-top:16px}}
 .pr{{padding:10px 0;border-bottom:1px solid rgba(150,170,205,.06)}}
 .pt{{font-family:var(--serif);font-size:15.5px;color:#fff}}
@@ -159,6 +182,7 @@ h2{{font-family:var(--serif);font-size:29px;margin:0 0 12px;color:#fff}}
   <p>That is what all of this math is for. A search, a recommendation, a fraud check — each has to become a familiar mathematical question before a computer can answer it. Read the ideas below and you'll see the same handful recur across wildly different papers: turn meaning into nearness, rank by a rough score, estimate a chance from data, spread evidence across a network, focus on what's relevant, minimise how-wrong, and — increasingly — learn the rule from examples. And crucially, <em>why each one is trustworthy</em>, not just what it does.</p>
   <div style="margin-top:14px"><div style="font-family:var(--mono);font-size:11px;color:var(--faint);margin-bottom:8px">HOW OFTEN EACH IDEA APPEARS (across {NA} papers; a paper can use several)</div>{bars}</div>
 </header>
+{synth_block}
 {concepts_html}
 <section>
   <div class="anum">Connecting the dots</div>
