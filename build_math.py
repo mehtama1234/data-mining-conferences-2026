@@ -16,6 +16,10 @@ _cr = os.path.join(HERE, "data", "concepts_rich.json")
 CONCEPTS = json.load(open(_cr)) if os.path.exists(_cr) else {}
 _sy = os.path.join(HERE, "data", "synth_out.json")
 SYNTH = json.load(open(_sy)) if os.path.exists(_sy) else {}
+_fr = os.path.join(HERE, "data", "families_rich.json")
+FAMILIES = json.load(open(_fr)) if os.path.exists(_fr) else {}
+_fm = os.path.join(HERE, "data", "family_manifest.json")
+FAMILY_MANIFEST = json.load(open(_fm)) if os.path.exists(_fm) else {"families": []}
 analysis = json.load(open(os.path.join(HERE, "data", "analysis.json")))["papers"]
 def esc(s): return html.escape(str(s or ""))
 
@@ -113,6 +117,25 @@ def concept_html(c):
 
 concepts_html = "".join(concept_html(c) for c in CG if groups[c["key"]])
 
+def family_html(item):
+    key = item.get("key", "")
+    fam = FAMILIES.get(key, {})
+    if not fam:
+        return ""
+    return (
+        "<details class='fam'>"
+        f"<summary><span>{esc(item.get('theme', key))}</span></summary>"
+        f"<div class='familybox'><div class='wt ft'>the shared problem shape</div><p>{esc(fam.get('problem_shape'))}</p></div>"
+        f"<div class='mathbox'><div class='wt mt'>the mathematical principle</div><p>{esc(fam.get('mathematical_principle'))}</p></div>"
+        f"<div class='whybox'><div class='wt'>why this math matters</div><p>{esc(fam.get('why_math_matters'))}</p></div>"
+        f"<div class='dotsbox'><div class='wt dt'>how the papers in this family differ</div><p>{esc(fam.get('paper_family'))}</p></div>"
+        f"<div class='familybox'><div class='wt ft'>what changed in 2026</div><p>{esc(fam.get('what_changed'))}</p></div>"
+        f"<div class='whybox lim'><div class='wt'>limits and assumptions</div><p>{esc(fam.get('limits'))}</p></div>"
+        "</details>"
+    )
+
+families_html = "".join(family_html(f) for f in FAMILY_MANIFEST.get("families", []))
+
 def _mb(s):  # escape, then render **bold** -> <b> and *italic* -> <i>
     s = esc(s)
     parts = s.split("**")
@@ -159,6 +182,11 @@ h2{{font-family:var(--serif);font-size:29px;margin:0 0 12px;color:#fff}}
 .dotsbox .wt.dt{{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--viol);margin-bottom:6px}}.dotsbox p{{margin:0;font-size:15.5px;color:var(--ink)}}
 .picture{{font-size:15px;color:var(--soft);font-style:italic;margin:8px 0 4px;padding-left:14px;border-left:2px solid var(--amber)}}
 .picture .pl{{font-family:var(--mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--amber);font-style:normal;margin-right:8px}}
+.fam{{border:1px solid var(--line);border-radius:10px;margin:10px 0;background:rgba(150,170,205,.025);overflow:hidden}}
+.fam summary{{cursor:pointer;list-style:none;padding:12px 16px;font-family:var(--serif);font-size:18px;color:#fff}}
+.fam summary::-webkit-details-marker{{display:none}}.fam summary::before{{content:'▸ ';font-family:var(--mono);color:var(--accent)}}.fam[open] summary::before{{content:'▾ '}}
+.fam .whybox,.fam .mathbox,.fam .familybox,.fam .dotsbox{{margin:8px 14px 12px}}
+.fam .lim{{border-left-color:#A7B0BF}}
 .synth{{background:linear-gradient(180deg,rgba(79,168,184,.06),rgba(79,168,184,0));border:1px solid var(--line);border-radius:16px;padding:22px 24px;margin:8px 0 30px}}
 .synth h2{{margin:2px 0 12px}}
 .synth-thread{{font-size:17px;color:var(--ink);line-height:1.6}}
@@ -191,6 +219,12 @@ h2{{font-family:var(--serif);font-size:29px;margin:0 0 12px;color:#fff}}
   <div style="margin-top:14px"><div style="font-family:var(--mono);font-size:11px;color:var(--faint);margin-bottom:8px">HOW OFTEN EACH IDEA APPEARS (across {NA} papers; a paper can use several)</div>{bars}</div>
 </header>
 {synth_block}
+<section>
+  <div class="anum">{len(FAMILY_MANIFEST.get('families', []))} paper families</div>
+  <h2>The family map</h2>
+  <p class="intro">The concept list below explains the reusable mathematical tools. The family map explains why papers that look different on the surface belong together. Each family is organized around a shared pressure: what the system is trying to connect, rank, explain, protect, retrieve, generate, or control; what the naive method gets wrong; and which mathematical principle makes the family work.</p>
+  {families_html}
+</section>
 {concepts_html}
 <section>
   <div class="anum">Connecting the dots</div>
