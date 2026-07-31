@@ -1,0 +1,11 @@
+{
+ "batch": "b044",
+ "paper": {
+  "id": "cb8f1933a9aa94e9de51825c77e70e743dcef93f",
+  "venue": "WWW 2026",
+  "title": "R2NS: Recall and Re-ranking of Negative Samples for Sequential Recommendation",
+  "abstract": "Negative sampling plays a critical role in sequential recommendation, providing contrastive signals that enable the model to distinguish between preferred and non-preferred items. Existing methods commonly sample items with top prediction scores from a randomly selected candidate set as hard negatives. However, such methods suffer from: (1) early-stage training failure since introducing hard negatives too early; (2) the lack of a global item view due to scoring only a small candidate subset; and (3) the failure of fine-grained control of learning difficulty due to the fixed top-ranking strategy. To address the above challenges, we propose recall and re-ranking of negative samples for sequential recommendation, i.e., R2NS. The proposed method comprises three phases, including warm-start, global recall, and curriculum re-ranking. Firstly, in the warm-start phase, the recommender is trained with naive uniform negative sampling to establish fundamental capability and avoid introducing hard negatives too early. Then, in the global recall phase, candidate negatives are selected from the whole item space through an efficient max-index approximation method to introduce contrastive signals from a global perspective. Finally, in the curriculum re-ranking phase, a curriculum top-ranking strategy is introduced to dynamically adjust the difficulty of negative samples. Extensive experiments ",
+  "gid": 664,
+  "theme": "Sequential recommendation negative sampling"
+ }
+}

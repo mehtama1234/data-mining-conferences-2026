@@ -1,0 +1,11 @@
+{
+ "batch": "b067",
+ "paper": {
+  "id": "10.1145/3805712.3809640",
+  "venue": "SIGIR 2026",
+  "title": "Diagnosing Identifiability in Two-Tower Models for Unbiased Learning to Rank",
+  "abstract": "Two-tower models are a popular unbiased learning-to-rank (ULTR) approach for mitigating position bias in clicks. A major challenge in two-tower models is identifiability: whether relevance and position bias can be uniquely determined from clicks. Recent work shows that two-tower models can be identified when the same documents (or documents with similar features) are observed across positions. However, these conditions are defined in infinite data. In practice, we lack methods for diagnosing identifiability in real-world datasets with small sample sizes and limited positional variability. In this work, we present a practical identifiability diagnostic for two-tower models. We quantify whether individual bias parameters are uniquely determined by shifting them away from their optimal values, retraining parts of the model, and measuring whether click-prediction performance degrades significantly. Identified parameters exhibit measurable performance loss when shifted, while unidentified parameters can be freely adjusted without affecting model fit. Our method can distinguish between cases in which identifiability fails due to limitations in model assumptions or data collection and cases caused by a limited sample size. We demonstrate, through simulation, how non-deterministic logging policies, feature overlap, and increased sample size affect identifiability. Applying our method t",
+  "gid": 1017,
+  "theme": "Unbiased learning to rank"
+ }
+}

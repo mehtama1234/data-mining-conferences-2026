@@ -1,0 +1,11 @@
+{
+ "batch": "b005",
+ "paper": {
+  "id": "162a14f3fae0733bf89752e6383009fb4a17abab",
+  "venue": "WWW 2026",
+  "title": "Better Negatives, Better Predictions: Negative Sample Selection Strategies for Enhancing Biomedical KG Edge Classification",
+  "abstract": "The selection of negative samples plays a crucial role in a wide range of machine learning algorithms and is particularly critical in edge classification tasks, where this choice has a direct impact on predictive performance. In this paper, we propose a set of strategies for generating negative edges in large, heterogeneous biomedical knowledge graphs, tailored to different link prediction scenarios. In these graphs, the absence of an observed edge does not necessarily indicate the absence of a relationship; instead, it may simply reflect missing or undiscovered knowledge. Leveraging latent-space graph embeddings, we analyze the impact of different negative sample selection strategies that account for both node types and edge semantics. Our initial experiments on two biomedical knowledge graphs demonstrate substantial improvements in classification performance, independent of the underlying predictive model, highlighting the robustness and effectiveness of the proposed approach. Results show that our strategies for generating negative edges in a knowledge graph outperform random negative sampling, yielding statistically significant improvements in balanced accuracy. Code and data for reproducing experiments are available at https://github.com/SLIMlaboratory/glow26 and https://zenodo.org/records/18074722.",
+  "gid": 77,
+  "theme": "KG negative sampling"
+ }
+}

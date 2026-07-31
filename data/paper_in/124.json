@@ -1,0 +1,11 @@
+{
+ "batch": "b008",
+ "paper": {
+  "id": "244f5b69ab90d441ae29b6bbdca1d5fb24be48a9",
+  "venue": "WWW 2026",
+  "title": "BaiJia: An Open Role-Playing Platform of Chinese Historical Characters",
+  "abstract": "We develop an open large-scale role-playing agent platform, termed BaiJia, that comprises 19,281 role-playing agents of Chinese histori- cal characters. This platform is noteworthy for being the pioneering compilation of low-resource historical data that can be utilized in large language models (LLMs) to engage in AI-driven historical role-playing agents. BaiJia addresses the challenges in terms of fragmented historical textual records in different forms, integrat- ing various characters' information, including their biographical, literary, family relations, historical events, and so on. BaiJia's in- novative design offers an intriguing and engaging way to interact with Chinese historical characters, enhancing their understanding and appreciation of China's rich historical heritage. Comprehensive experiments demonstrate BaiJia platform's role-playing enhance- ments, achieving an average 10.2% improvement across six metrics compared with diverse foundational LLMs. The open agent plat- form can be accessed at baijia.online. The project is open-sourced at https://github.com/BAI-LAB/BaiJia. A video demonstration of the BaiJia platform is available at https://youtu.be/ItJv9gHwSOw.",
+  "gid": 124,
+  "theme": "LLM agents"
+ }
+}

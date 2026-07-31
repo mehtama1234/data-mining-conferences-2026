@@ -1,0 +1,11 @@
+{
+ "batch": "b031",
+ "paper": {
+  "id": "8d715cbd697145135ab080e65711c0ae994feb3b",
+  "venue": "WWW 2026",
+  "title": "FedAKD: Federated Adaptive Knowledge Distillation via Global Knowledge Calibration and Decoupling",
+  "abstract": "The rapid growth of Web, mobile, and Web of Things (WoT) applications increasingly relies on Federated Learning (FL) to enable privacy-preserving intelligence across distributed and heterogeneous devices. However, the global model in FL often suffers from performance degradation due to global knowledge forgetting caused by highly non-IID client data. While client-side Knowledge Distillation (KD) has emerged as a promising paradigm for transferring global knowledge to local models, existing approaches inadvertently distort global knowledge through local data priors, fundamentally limiting their effectiveness in real-world Web and mobile environments. We further find that this knowledge forgetting is asymmetric, with locally under-represented classes suffering significantly more severe performance degradation than over-represented ones. While the conventional KD inherently couples these two distinct kinds of knowledge, thereby hindering the targeted preservation of critical global knowledge for under-represented classes. To address these challenges, we propose Federated Adaptive Knowledge Distillation (FedAKD), a novel framework that adaptively calibrates and decouples global knowledge according to the local data distribution, enabling precise and flexible distillation across heterogeneous clients. Extensive experiments on benchmark datasets and diverse data heterogeneity setting",
+  "gid": 466,
+  "theme": "federated learning fairness"
+ }
+}

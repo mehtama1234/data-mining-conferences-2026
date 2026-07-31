@@ -1,0 +1,565 @@
+{
+ "key": "text-mining-nlp",
+ "theme": "Text Mining & NLP",
+ "n_papers": 133,
+ "pct": 6.9,
+ "by_venue": {
+  "WWW 2026": 73,
+  "WSDM 2026": 7,
+  "SIGIR 2026": 52,
+  "KDD 2026": 1
+ },
+ "theme_examples": [
+  {
+   "title": "PerQA: A Benchmark for Temporally Sensitive Questions on Heterogeneous Personal Data",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "Conflict-Aware RAG: Multi-Stage Learning with Conflict Signals for Robust Retrieval-Augmented Generation",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "Diversifying Differentiable Graph Retrieval with Topic-Adaptive Multi-Intent Learning",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "Resisting Manipulative Bots in Meme Coin Copy Trading: A Multi-Agent Approach with Chain-of-Thought Reasoning",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "SketchMind: Understanding Abstract Sketches with MLLMs for Fine-Grained Sketch-Based Image Retrieval",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "(wt) GC-DPG: Graph-Constrained Dual-Phase Generation for Safe and Verifiable Chinese Medical Question Answering",
+   "venue": "WWW 2026"
+  }
+ ],
+ "representative_papers": [
+  {
+   "title": "Towards Automated Brand-Safety Detection: A Novel Dataset and Comparative Analysis of Language Models",
+   "venue": "WWW 2026",
+   "problem": "Automated brand-safety detection lacks comprehensive datasets and evaluation",
+   "approach": "Novel text dataset from narrative fiction with LLM and fine-tuned model comparison",
+   "contribution": "First comprehensive brand-safety dataset; fine-tuned RoBERTa outperforms zero-shot LLMs",
+   "primary_theme": "Brand safety detection",
+   "methods": [
+    "nlp",
+    "fine-tuning",
+    "classification"
+   ]
+  },
+  {
+   "title": "Beyond the Rules: Understanding the Design Logic of Internet Standards",
+   "venue": "WWW 2026",
+   "problem": "Internet standards RFC design rationales buried in inaccessible IETF discussions",
+   "approach": "RAG framework retrieving rationale-rich context from IETF archives and email deliberations",
+   "contribution": "RFC design logic extraction enabling transparent standards and accurate implementations",
+   "primary_theme": "Internet standards extraction",
+   "methods": [
+    "rag",
+    "information-retrieval",
+    "nlp"
+   ]
+  },
+  {
+   "title": "Pattern-aware Illicit Account Detection based on User Behavior Sequences",
+   "venue": "WWW 2026",
+   "problem": "Illicit accounts mimic benign behavior; same actions serve different purposes in different contexts.",
+   "approach": "Dual-perspective pattern mining plus contextualized action semantic encoding.",
+   "contribution": "Captures behavioral regularities and contextual action variations for fraud detection.",
+   "primary_theme": "illicit account detection",
+   "methods": [
+    "sequence_mining",
+    "anomaly_detection",
+    "behavior_analysis"
+   ]
+  },
+  {
+   "title": "Is More Context Always Better? Examining LLM Reasoning Capability for Time Interval Prediction",
+   "venue": "WWW 2026",
+   "problem": "LLM temporal reasoning on structured behavioral data underexplored; unclear if more context improves predictions.",
+   "approach": "Systematic benchmark of state-of-the-art LLMs on time interval prediction against ML baselines.",
+   "contribution": "Shows LLMs underperform ML on temporal structure; moderate context helps but excess context degrades performance.",
+   "primary_theme": "LLM temporal reasoning",
+   "methods": [
+    "llm-benchmark",
+    "time-series",
+    "context-analysis"
+   ]
+  },
+  {
+   "title": "Towards Multi-Label Text Interpretation with Chain-of-Thought Prompting and Contextualized Knowledge",
+   "venue": "WWW 2026",
+   "problem": "Multi-label topic models fail to align text segments with correct labels and lack contextualized knowledge",
+   "approach": "Chain-of-Thought prompting with token-label visualization and topic mining for interpretation",
+   "contribution": "CPTM accurately identifies label-relevant tokens with improved segment and label interpretation",
+   "primary_theme": "Multi-label interpretation",
+   "methods": [
+    "cot",
+    "topic-model",
+    "interpretability"
+   ]
+  },
+  {
+   "title": "Distribution-Aligned Synthetic Text Generation via Tail-Aware Enhancement",
+   "venue": "WWW 2026",
+   "problem": "Iterative synthetic data reuse causes model collapse contracting learned distribution and eroding tail features",
+   "approach": "DASGen identifies underrepresented tail regions via embedding mining, uses discriminative diversity objective",
+   "contribution": "Achieves 98.54% tail coverage on Yelp with improved downstream accuracy via training-free approach",
+   "primary_theme": "Synthetic text tail enhancement",
+   "methods": [
+    "llm",
+    "synthetic-data",
+    "text-generation",
+    "diversity"
+   ]
+  },
+  {
+   "title": "Pedestrian-Centric Discriminative and Fine-grained Semantic Mining for Text-based Person Retrieval",
+   "venue": "WWW 2026",
+   "problem": "Intra-instance semantic asymmetry and inter-instance semantic ambiguity in text-based person image retrieval",
+   "approach": "Text-aware visual refinement with adaptive clustering; token-level alignment via optimal transport formulation",
+   "contribution": "Mitigates visual redundancy and improves instance discrimination through fine-grained semantic alignment",
+   "primary_theme": "Cross-modal retrieval",
+   "methods": [
+    "cross-modal",
+    "optimal-transport",
+    "attention-mechanisms"
+   ]
+  },
+  {
+   "title": "6th International Workshop on Computational Methods for Online Discourse Analysis (BeyondFacts'26)",
+   "venue": "WWW 2026",
+   "problem": "Online discourse analysis requires interdisciplinary methods for detecting misinformation and bias",
+   "approach": "Workshop bringing together NLP, social sciences, journalism, and computer science communities",
+   "contribution": "Advancing machine-based interpretation of societal debates using argument mining, stance detection, and fact verification",
+   "primary_theme": "Online discourse analysis",
+   "methods": [
+    "nlp",
+    "argument-mining",
+    "stance-detection"
+   ]
+  },
+  {
+   "title": "Rethinking Implicit Hate Speech Detection: Focusing on Latent Hate Components via Dual-Process Argumentation",
+   "venue": "WWW 2026",
+   "problem": "LLMs miss latent hate components in implicit hate speech despite surface text analysis",
+   "approach": "Dual-process framework mining latent hate components via critical miner and deliberative argumentation",
+   "contribution": "DuPL improves implicit hate detection accuracy by 3-8% through structured component-wise reasoning",
+   "primary_theme": "hate speech detection",
+   "methods": [
+    "llm",
+    "argumentation",
+    "text classification"
+   ]
+  },
+  {
+   "title": "How Social Media Peer Comments Influence Privacy Decisions in Photo Sharing: Context and Individual Differences Cause Comments to Backfire",
+   "venue": "WWW 2026",
+   "problem": "Peer influence on privacy decisions for photo sharing shows complex, sometimes counterintuitive effects",
+   "approach": "Experimental study examining peer comment effects on sensitive photo sharing across user misconduct history",
+   "contribution": "Identifies that nudges backfire for users with misconduct and mixed comments promote most sharing",
+   "primary_theme": "Social privacy behavior",
+   "methods": [
+    "experimental-design",
+    "peer-influence",
+    "behavioral-analysis"
+   ]
+  },
+  {
+   "title": "Towards Token-Level Text Anomaly Detection",
+   "venue": "WWW 2026",
+   "problem": "Text anomaly detection limited to document-level lacking fine-grained localization of which parts are anomalous",
+   "approach": "Unified detection framework operating at token and document levels with annotated benchmark datasets",
+   "contribution": "Token-level anomaly detection paradigm with localization capability outperforming baselines on spam/reviews/grammar errors",
+   "primary_theme": "Anomaly detection",
+   "methods": [
+    "text-mining",
+    "anomaly-detection",
+    "neural-networks"
+   ]
+  },
+  {
+   "title": "Question Answering Fit for Purpose: A Perspective From Natural Language Processing and User Modeling",
+   "venue": "SIGIR 2026",
+   "problem": "Question answering requires appropriate answers for complex information needs and intended audiences",
+   "approach": "Integrating NLP, user modeling, and IR with LLMs for context-aware answer generation",
+   "contribution": "Perspective on graceful human-machine interaction combining NLG, UM, and modern generative AI",
+   "primary_theme": "Question answering systems",
+   "methods": [
+    "natural language generation",
+    "user modeling",
+    "information retrieval"
+   ]
+  },
+  {
+   "title": "HCPRA: A Hierarchical Cognition-Perception-Reasoning Agent Framework for Emotion-Cause Pair Extraction in Conversations",
+   "venue": "SIGIR 2026",
+   "problem": "Emotion-cause extraction treats text as object, lacking speaker cognition and reasoning modeling",
+   "approach": "Hierarchical agent framework with speaker personality, memory, and multi-path reasoning",
+   "contribution": "Interpretable emotion-cause relationships via hierarchical cognition simulation",
+   "primary_theme": "Emotion-cause extraction",
+   "methods": [
+    "agent-framework",
+    "hybrid-memory",
+    "nlp"
+   ]
+  },
+  {
+   "title": "How Far Are We from Automatically Identifying Violations of the Data Minimization Principle in Privacy Policies?",
+   "venue": "SIGIR 2026",
+   "problem": "Privacy policies complex and unstructured, automated data minimization violation detection hard",
+   "approach": "Human-LLM collaborative framework with compliance baseline mining and fine-grained criteria",
+   "contribution": "Automatically verifies data minimization compliance through pattern-based and expert rules",
+   "primary_theme": "Privacy policy compliance",
+   "methods": [
+    "privacy",
+    "nlp",
+    "compliance",
+    "llm"
+   ]
+  },
+  {
+   "title": "BioCLEAR Benchmark for Biomedical Text Simplification",
+   "venue": "SIGIR 2026",
+   "problem": "General public avoids scientific literature due to perceived complexity; document-level simplification lacking",
+   "approach": "Construct BioCLEAR benchmark with aligned biomedical abstracts and plain-language summaries from Cochrane reviews",
+   "contribution": "Resource for document-level text simplification with discourse-level aspects; analysis of generative model submissions",
+   "primary_theme": "scientific text simplification",
+   "methods": [
+    "text-simplification",
+    "benchmark",
+    "generative-model",
+    "nlp"
+   ]
+  },
+  {
+   "title": "JFinTEB: Japanese Financial Text Embedding Benchmark",
+   "venue": "SIGIR 2026",
+   "problem": "Limited Japanese financial text embedding benchmarks and evaluation resources",
+   "approach": "Build comprehensive benchmark with diverse retrieval and classification tasks",
+   "contribution": "First specialized benchmark for Japanese financial embeddings with public datasets",
+   "primary_theme": "multilingual embeddings",
+   "methods": [
+    "embedding",
+    "benchmark",
+    "financial-nlp"
+   ]
+  },
+  {
+   "title": "Learning Evidence of Depression Symptoms via Prompt Induction",
+   "venue": "SIGIR 2026",
+   "problem": "Identifying depression symptoms in user-generated text automatically at scale",
+   "approach": "Symptom Induction: compress labeled examples into interpretable guidelines conditioning LLM classification",
+   "contribution": "SI achieves best F1 on BDI-Sen with large gains on infrequent symptoms; guidelines generalize across disorders",
+   "primary_theme": "Mental health NLP",
+   "methods": [
+    "llm",
+    "prompt",
+    "classification"
+   ]
+  },
+  {
+   "title": "Detectability and Evaluation Risks of LLM-Generated Answers in Low-Resource Swahili Agricultural Information Retrieval",
+   "venue": "SIGIR 2026",
+   "problem": "LLM-generated answers behavior unknown in low-resource Swahili agricultural QA; evaluation risks unclear",
+   "approach": "Analyze textual characteristics of LLM vs human Swahili maize answers; train classifier on TF-IDF features",
+   "contribution": "0.98 accuracy detecting LLM answers; systematic differences in length, lexical diversity, similarity patterns",
+   "primary_theme": "LLM answer detectability",
+   "methods": [
+    "classification",
+    "nlp-analysis",
+    "llm-generated-text",
+    "agricultural"
+   ]
+  },
+  {
+   "title": "Reconstructing Training Data from Adapter-based Federated Large Language Models",
+   "venue": "WWW 2026",
+   "problem": "Adapter-based federated LLMs assumed privacy-safe but vulnerable to gradient inversion attacks",
+   "approach": "Token presence inference from attention, sentence-level inversion in low-rank space, semantic coherence via constrained greedy decoding",
+   "contribution": "UTR attack reconstructs training text near-perfectly from adapter gradients even with large batches",
+   "primary_theme": "Federated LLM security",
+   "methods": [
+    "gradient inversion",
+    "attention analysis",
+    "language model priors"
+   ]
+  },
+  {
+   "title": "VarParser: Unleashing the Neglected Power of Variables for LLM-based Log Parsing",
+   "venue": "WWW 2026",
+   "problem": "LLM-based log parsing ignores variable parts, causing inefficient grouping, high costs, and lost visibility",
+   "approach": "Variable-centric strategy with contribution sampling, parsing cache, and adaptive in-context learning",
+   "contribution": "VarParser achieves efficient log parsing by leveraging variable information",
+   "primary_theme": "Log parsing",
+   "methods": [
+    "llm prompting",
+    "system log analysis",
+    "in-context learning"
+   ]
+  },
+  {
+   "title": "UTAG: Leveraging LLM as a Unified Embedding Generator for Text-Attributed Graphs",
+   "venue": "WWW 2026",
+   "problem": "LLM-enhanced TAG methods lack cross-domain transferability and incur high computational overhead",
+   "approach": "Dual-view contrastive pretraining with adaptive sample selection and graph-specific adaptation training",
+   "contribution": "UTAG leverages LLMs as unified embedding generators with cross-domain transferability",
+   "primary_theme": "Text-attributed graphs",
+   "methods": [
+    "contrastive learning",
+    "cross-domain pretraining",
+    "embedding generation"
+   ]
+  },
+  {
+   "title": "Multi-Modal Enhanced Graph Transfer Learning for Digital Finance Fraud Detection",
+   "venue": "WWW 2026",
+   "problem": "Blockchain fraud detection struggles with multi-modal dynamics, sparse graphs, and distributional shifts across networks",
+   "approach": "Multi-modal transfer learning framework integrating graph, temporal, and textual modalities for fraud knowledge transfer",
+   "contribution": "MOE-GTL enables robust fraud detection across blockchain networks leveraging multi-modal dependencies",
+   "primary_theme": "fraud detection transfer",
+   "methods": [
+    "transfer learning",
+    "graph learning",
+    "multi-modal"
+   ]
+  },
+  {
+   "title": "ToxiTwitch: Toward Emote-Aware Hybrid Moderation for Live Streaming Platforms",
+   "venue": "WWW 2026",
+   "problem": "Twitch moderation struggles with context-rich toxic behavior detection at scale with human limitation",
+   "approach": "Hybrid model combining LLM embeddings of text and emotes with random forest and SVM classifiers",
+   "contribution": "80% accuracy with emote-aware detection, 13% improvement over BERT on Twitch channels",
+   "primary_theme": "toxic behavior detection",
+   "methods": [
+    "llm",
+    "multi-modal",
+    "hybrid-ml"
+   ]
+  },
+  {
+   "title": "SketchMind: Understanding Abstract Sketches with MLLMs for Fine-Grained Sketch-Based Image Retrieval",
+   "venue": "WWW 2026",
+   "problem": "Fine-grained sketch-based image retrieval misses semantic abstraction and fine-grained visual understanding",
+   "approach": "Leverage MLLMs for VQA textual descriptions, construct graph with attention-based fusion and jigsaw matching",
+   "contribution": "Multi-scale cross-modal fusion enhances fine-grained alignment for abstract sketch understanding",
+   "primary_theme": "sketch-based image retrieval",
+   "methods": [
+    "mllm",
+    "graph-attention",
+    "multi-modal"
+   ]
+  },
+  {
+   "title": "TargetMR: Learning Modality Target for Multimodal Recommendation",
+   "venue": "WWW 2026",
+   "problem": "Multimodal recommenders fail to distinguish target from auxiliary content objects",
+   "approach": "Object disentangling via text parsing and image segmentation with LLM distillation",
+   "contribution": "TargetMR reduces semantic shift bias in multimodal item representations",
+   "primary_theme": "Multimodal recommendation",
+   "methods": [
+    "llm",
+    "image-segmentation",
+    "knowledge-distillation"
+   ]
+  },
+  {
+   "title": "Social Bias Benchmarks for Large Language Models",
+   "venue": "WWW 2026",
+   "problem": "Social biases in multilingual LLMs across diverse languages and cultural contexts",
+   "approach": "Systematic review of bias benchmarks across linguistic diversity and cultural awareness dimensions",
+   "contribution": "Catalogue of bias evaluation methodological gaps, challenges and mitigation solutions in multilingual settings",
+   "primary_theme": "Multilingual bias evaluation",
+   "methods": [
+    "benchmark",
+    "review",
+    "bias"
+   ]
+  },
+  {
+   "title": "Exploring the Domain Sensitivity of AI Chatbots in Correcting Misinformation",
+   "venue": "WWW 2026",
+   "problem": "Unknown domain sensitivity in AI chatbot effectiveness for misinformation correction",
+   "approach": "Experimental study evaluating chatbot performance across health, science, and political domains",
+   "contribution": "Domain-sensitive differences in chatbot efficacy reveal contextual factors for correction deployment",
+   "primary_theme": "Misinformation correction",
+   "methods": [
+    "chatbot",
+    "evaluation",
+    "empirical"
+   ]
+  },
+  {
+   "title": "Facilitating Generative Retrieval with Logical Denoising for Interpretable Conversational Search",
+   "venue": "WWW 2026",
+   "problem": "Noisy context and poor interpretability in conversational search systems",
+   "approach": "LLM-based logic-enhanced retrieval with curriculum learning and policy optimization",
+   "contribution": "LogiCGR improves robustness and interpretability of conversational search through logical denoising",
+   "primary_theme": "Conversational search",
+   "methods": [
+    "llm",
+    "retrieval",
+    "dialogue"
+   ]
+  },
+  {
+   "title": "From Navigation to Intention: Reframing the Web Experience through Goal-Driven Interfaces",
+   "venue": "WWW 2026",
+   "problem": "High cognitive load from menu-driven web navigation and complex graphical structures",
+   "approach": "Framework mapping NL goals to GUI components via LLMs for on-the-fly UI construction",
+   "contribution": "Mirage reduces task completion time and cognitive workload via goal-driven interfaces",
+   "primary_theme": "Goal-driven interfaces",
+   "methods": [
+    "llm",
+    "ui",
+    "nlp"
+   ]
+  },
+  {
+   "title": "An 8-Way Taxonomy for Multimodal Disinformation and Detection Benchmark",
+   "venue": "WWW 2026",
+   "problem": "Multimodal disinformation lacks comprehensive coverage of all cross-modal combinations",
+   "approach": "Tri-axis formulation with image veracity, text veracity, cross-modal consistency checks",
+   "contribution": "OctantFake 8-way dataset and OctantAgent LVLM-based framework for exhaustive detection",
+   "primary_theme": "Multimodal disinformation detection",
+   "methods": [
+    "multimodal",
+    "taxonomy",
+    "lvlm"
+   ]
+  },
+  {
+   "title": "Beyond Detection: Autonomous Anomaly Remediation for MCP Against Tool Poisoning Attacks",
+   "venue": "WWW 2026",
+   "problem": "LLM agents vulnerable to tool poisoning attacks via MCP context manipulation",
+   "approach": "Multi-checkpoint rollback with attention-mask-based anomaly detection and correction",
+   "contribution": "First automated anomaly detection and correction framework for MCP tool poisoning",
+   "primary_theme": "LLM security, tool poisoning",
+   "methods": [
+    "anomaly detection",
+    "rollback mechanism",
+    "attention masking"
+   ]
+  },
+  {
+   "title": "MCoT-MVS: Multi-level Vision Selection by Multi-modal Chain-of-Thought Reasoning for Composed Image Retrieval",
+   "venue": "WWW 2026",
+   "problem": "Composed image retrieval struggles with semantic cues from reference images under text modification",
+   "approach": "Multi-level vision selection guided by MLLM chain-of-thought reasoning",
+   "contribution": "State-of-the-art CIR via attention-aware multi-level features with hierarchical fusion",
+   "primary_theme": "Composed image retrieval",
+   "methods": [
+    "mllm",
+    "chain-of-thought",
+    "attention selection",
+    "hierarchical fusion"
+   ]
+  },
+  {
+   "title": "Context-Aware Silhouette-Based Age Estimation for Child Sexual Abuse Material (CSAM) Detection",
+   "venue": "WWW 2026",
+   "problem": "CSAM detection requires age classification without requiring visible face features",
+   "approach": "Multitask paired learning on silhouette and relative human features",
+   "contribution": "14%-21% error reduction in minor-adult classification via multitask and pair learning",
+   "primary_theme": "CSAM age estimation",
+   "methods": [
+    "multitask learning",
+    "pair learning",
+    "silhouette classification"
+   ]
+  },
+  {
+   "title": "ConceptFormer: Towards Graph-Native Grounding of Large Language Models via Latent Concept Injection",
+   "venue": "WWW 2026",
+   "problem": "RAG systems modify LLM architecture or lose knowledge via lossy KG textification",
+   "approach": "Inject concept vectors encapsulating KG topology into LLM embedding space",
+   "contribution": "Graph-native grounding increases factual recall by 272%-348% without model alteration",
+   "primary_theme": "Knowledge graph grounding",
+   "methods": [
+    "concept vectors",
+    "knowledge graph",
+    "embedding injection"
+   ]
+  },
+  {
+   "title": "LongRanker: Efficient One-Pass Document Reranking with Long-Context Large Language Models",
+   "venue": "WWW 2026",
+   "problem": "LLM listwise reranking limited by context length requiring sliding window strategy",
+   "approach": "Hierarchical positional encoding and top-k attention pruning for long contexts",
+   "contribution": "One-pass full document reranking with efficiency gains and reduced API costs",
+   "primary_theme": "Long-context ranking",
+   "methods": [
+    "positional encoding",
+    "attention pruning",
+    "llm reranking"
+   ]
+  },
+  {
+   "title": "Risk-free Selfish Mining in Hybrid Predictability Model. A Case Study on Polkadot's NPoS",
+   "venue": "WWW 2026",
+   "problem": "Selfish mining attacks risk unclear in Polkadot's hybrid predictability PoS model",
+   "approach": "Formal analysis of nominated PoS protocol with Byzantine validator collusion scenarios",
+   "contribution": "Demonstrates risk-free selfish mining for 33% Byzantine validators earning 7.09% extra rewards",
+   "primary_theme": "Blockchain security",
+   "methods": [
+    "proof-of-stake",
+    "selfish-mining",
+    "formal-analysis"
+   ]
+  },
+  {
+   "title": "Automating Computational Reproducibility in Social Science: Comparing Prompt-Based and Agent-Based Approaches",
+   "venue": "WWW 2026",
+   "problem": "Published computational research fails reproducibly due to dependencies and logic gaps",
+   "approach": "Compare prompt-based vs agent-based LLM workflows for automated repair of code failures",
+   "contribution": "Evaluated on 130 synthetic test cases; prompt success 31-79%, agent success on contextual logic",
+   "primary_theme": "Research reproducibility",
+   "methods": [
+    "llm",
+    "code-repair",
+    "agent-based"
+   ]
+  },
+  {
+   "title": "HAAF: Hierarchical Adaptation and Alignment of Foundation Models for Few-Shot Pathology Anomaly Detection",
+   "venue": "WWW 2026",
+   "problem": "Vision-Language models fail to resolve fine-grained pathology anomalies due to granularity mismatch.",
+   "approach": "Cross-Level Scaled Alignment grounds semantic prompts in ROI-specific visual contexts.",
+   "contribution": "Significantly outperforms SOTA in few-shot pathology detection on four benchmarks.",
+   "primary_theme": "vision-language pathology detection",
+   "methods": [
+    "vision_language",
+    "adaptation",
+    "few_shot"
+   ]
+  },
+  {
+   "title": "Toward Graph-Tokenizing Large Language Models with Reconstructive Graph Instruction Tuning",
+   "venue": "WWW 2026",
+   "problem": "Graph-Tokenizing LLMs achieve only implicit alignment; text-dominant bias underutilizes graph context.",
+   "approach": "Reconstructive graph instruction tuning that reconstructs graph information from LLM outputs.",
+   "contribution": "Explicit graph supervision improves alignment upper bound; better graph comprehension.",
+   "primary_theme": "LLM graph tokenization",
+   "methods": [
+    "llm",
+    "graph_representation",
+    "instruction_tuning"
+   ]
+  },
+  {
+   "title": "Swen: A Cross-Platform Desktop Assistant for Instant and Personalized Large-Language-Model Interaction",
+   "venue": "WWW 2026",
+   "problem": "Users must manually switch apps, copy-paste text, and craft prompts to interact with LLMs while reading",
+   "approach": "Desktop assistant with intent recognition and evolving user profile for context-aware responses",
+   "contribution": "Swen reduces knowledge lookup time by providing on-the-spot LLM assistance with automatic intent detection",
+   "primary_theme": "LLM interaction UX",
+   "methods": [
+    "llm",
+    "intent_recognition",
+    "personalization"
+   ]
+  }
+ ]
+}

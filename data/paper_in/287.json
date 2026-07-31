@@ -1,0 +1,11 @@
+{
+ "batch": "b019",
+ "paper": {
+  "id": "5336a3aad53743ffc365dec58227ac7e005a67cf",
+  "venue": "WWW 2026",
+  "title": "PWAVEP: Purifying Imperceptible Adversarial Perturbations in 3D Point Clouds via Spectral Graph Wavelets",
+  "abstract": "Recent progress in adversarial attacks on 3D point clouds, particularly in achieving spatial imperceptibility and high attack performance, presents significant challenges for defenders. Current defensive approaches remain cumbersome, often requiring invasive model modifications, expensive training procedures or auxiliary data access. To address these threats, in this paper, we propose a plug-and-play and non-invasive defense mechanism in the spectral domain, grounded in a theoretical and empirical analysis of the relationship between imperceptible perturbations and high-frequency spectral components. Building upon these insights, we introduce a novel purification framework, termed PWAVEP, which begins by computing a spectral graph wavelet domain saliency score and local sparsity score for each point. Guided by these values, PWAVEP adopts a hierarchical strategy, it eliminates the most salient points, which are identified as hardly recoverable adversarial outliers. Simultaneously, it applies a spectral filtering process to a broader set of moderately salient points. This process leverages a graph wavelet transform to attenuate high-frequency coefficients associated with the targeted points, thereby effectively suppressing adversarial noise. Extensive evaluations demonstrate that the proposed PWAVEP achieves superior accuracy and robustness compared to existing approaches, advanc",
+  "gid": 287,
+  "theme": "3D adversarial robustness"
+ }
+}

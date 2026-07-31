@@ -1,0 +1,11 @@
+{
+ "batch": "b027",
+ "paper": {
+  "id": "78ea77bfc15f154ca721d70c74230eb78e085b8d",
+  "venue": "WWW 2026",
+  "title": "RobustReviewAI: A Robustness Evaluation System for AI-Powered Peer Review",
+  "abstract": "With the rise of artificial intelligence, limited reviewing capacity cannot keep up with the rapidly growing number of papers to be reviewed. As a result, AI-based peer review systems have been adopted. However, existing robustness evaluation methods are limited by how perturbations are constructed. They only support text perturbations and cannot handle tables or formulas. As a result, the evaluation cannot fully cover all types of information. To address this gap, this paper proposes an AI review robustness evaluation system that integrates perturbation construction, evaluation, and automated generation into a closed-loop process, coupled with an intuitive interface to enhance evaluation efficiency. Based on this system, we reveal behavioral differences in AI-based peer review under various perturbations, highlighting robustness issues.",
+  "gid": 405,
+  "theme": "AI review robustness"
+ }
+}

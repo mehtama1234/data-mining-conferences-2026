@@ -1,0 +1,560 @@
+{
+ "key": "graph-learning-mining",
+ "theme": "Graph Learning & Mining",
+ "n_papers": 181,
+ "pct": 9.3,
+ "by_venue": {
+  "WWW 2026": 122,
+  "WSDM 2026": 19,
+  "SIGIR 2026": 25,
+  "KDD 2026": 15
+ },
+ "theme_examples": [
+  {
+   "title": "Diversifying Differentiable Graph Retrieval with Topic-Adaptive Multi-Intent Learning",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "Long-Tailed Recognition of Evidential Experts for Graph-level Classification",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "Social Event Prediction via Fourier Graph Learning",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "Topology-Aware Feature Sorting Enables Universal Modeling on Homophilic and Heterophilic Graphs",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "Delay-Aware Graph Neural Stochastic Differential Equations for Financial Time Series Modeling and Forecasting",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "Multi-Modal Enhanced Graph Transfer Learning for Digital Finance Fraud Detection",
+   "venue": "WWW 2026"
+  }
+ ],
+ "representative_papers": [
+  {
+   "title": "MiniAMIE: Quick and Dirty Rule Mining on Knowledge Graphs",
+   "venue": "WWW 2026",
+   "problem": "Efficient rule mining on large knowledge graphs is resource and time-consuming",
+   "approach": "Restricted language bias with fast approximations for key rule metrics",
+   "contribution": "Substantial speed-up while maintaining rule quality on KG rule mining",
+   "primary_theme": "Knowledge graph mining",
+   "methods": [
+    "rule-mining",
+    "approximation",
+    "graph"
+   ]
+  },
+  {
+   "title": "WEB&GRAPH 2026: Workshop on Web & Graphs, Responsible Intelligence, and Social Media",
+   "venue": "WSDM 2026",
+   "problem": "Graph systems lack adaptivity and trustworthiness at web scale; ensuring interpretability in graph analytics challenging",
+   "approach": "Workshop bringing together researchers for algorithmic and methodological advances in responsible graph reasoning",
+   "contribution": "WEB&GRAPH 2026 fosters interdisciplinary dialogue on reliable graph analytics, misinformation detection, provenance tracking",
+   "primary_theme": "graph analytics responsible AI",
+   "methods": [
+    "graph_neural_networks",
+    "web_data_mining"
+   ]
+  },
+  {
+   "title": "Efficient LLM Adaptation for Opinion Knowledge Graph Construction: Lessons from the Telecom Industry",
+   "venue": "SIGIR 2026",
+   "problem": "Adapting LLMs for structured opinion mining in telecom vertical, particularly for low-resource languages.",
+   "approach": "Systematic study of instruction-tuning trade-offs, data efficiency strategies across LLaMA-3, Qwen, Mistral.",
+   "contribution": "Counterintuitive findings on CPT benefits and data strategies for opinion knowledge graph construction.",
+   "primary_theme": "Opinion knowledge extraction",
+   "methods": [
+    "instruction-tuning",
+    "opinion-mining",
+    "vertical-adaptation"
+   ]
+  },
+  {
+   "title": "PatentMerit: A Holistic System for In-depth Technology Understanding",
+   "venue": "SIGIR 2026",
+   "problem": "Patent platforms provide surface-level bibliographic data; lack deep technology value analysis and trend forecasting",
+   "approach": "LLM-based system with network analysis, multidimensional classification, citation visualization, semantic analysis",
+   "contribution": "PatentMerit system enabling in-depth patent value assessment, disruptive tech identification, technology evolution tracking",
+   "primary_theme": "Patent analysis platform",
+   "methods": [
+    "llm",
+    "network-analysis",
+    "data-mining",
+    "semantic"
+   ]
+  },
+  {
+   "title": "Structure-Semantic Synergized Deep Contrastive Graph Clustering",
+   "venue": "WWW 2026",
+   "problem": "Graph clustering lacks integration of structural and semantic information with reliable sample selection",
+   "approach": "Structure-aware curriculum negative sampling and semantic confidence-guided contrastive learning with soft-alignment",
+   "contribution": "S3-DCGC achieves superior clustering performance via balanced structure-semantic synergy",
+   "primary_theme": "Graph clustering",
+   "methods": [
+    "contrastive learning",
+    "curriculum sampling",
+    "confidence scoring"
+   ]
+  },
+  {
+   "title": "Revisiting Graph-Level Anomaly Detection: From Partially to Fully Unsupervised Learning",
+   "venue": "WWW 2026",
+   "problem": "Graph anomaly detection assumes training data free of anomalies, unrealistic for real-world data",
+   "approach": "Uncertainty learning via Score/Graph-data Uncertainty Learning with EM-based optimization",
+   "contribution": "SUL/GUL frameworks enable fully unsupervised anomaly detection from mixed normal/anomalous data",
+   "primary_theme": "Graph anomaly detection",
+   "methods": [
+    "uncertainty learning",
+    "expectation maximization",
+    "anomaly detection"
+   ]
+  },
+  {
+   "title": "UTAG: Leveraging LLM as a Unified Embedding Generator for Text-Attributed Graphs",
+   "venue": "WWW 2026",
+   "problem": "LLM-enhanced TAG methods lack cross-domain transferability and incur high computational overhead",
+   "approach": "Dual-view contrastive pretraining with adaptive sample selection and graph-specific adaptation training",
+   "contribution": "UTAG leverages LLMs as unified embedding generators with cross-domain transferability",
+   "primary_theme": "Text-attributed graphs",
+   "methods": [
+    "contrastive learning",
+    "cross-domain pretraining",
+    "embedding generation"
+   ]
+  },
+  {
+   "title": "Diversifying Differentiable Graph Retrieval with Topic-Adaptive Multi-Intent Learning",
+   "venue": "WWW 2026",
+   "problem": "Knowledge graph QA uses single-intent retrieval missing complementary information and reasoning benefits",
+   "approach": "Topic-adaptive multi-intent learning with differentiable sampling and preference optimization feedback",
+   "contribution": "TARD diversifies graph retrieval via topic-based intents aligned with reasoning performance",
+   "primary_theme": "Knowledge graph QA",
+   "methods": [
+    "topic modeling",
+    "multi-intent learning",
+    "preference optimization"
+   ]
+  },
+  {
+   "title": "Long-Tailed Recognition of Evidential Experts for Graph-level Classification",
+   "venue": "WWW 2026",
+   "problem": "Graph classification biased toward head classes with imbalanced data and unreliable confidence estimates",
+   "approach": "Multi-expert framework leveraging Dempster-Shafer evidence theory with evidence-based routing",
+   "contribution": "GraphEVER provides reliable, robust long-tailed graph classification with uncertainty quantification",
+   "primary_theme": "Long-tailed graph classification",
+   "methods": [
+    "evidence theory",
+    "multi-expert learning",
+    "uncertainty estimation"
+   ]
+  },
+  {
+   "title": "An Improved Combinatorial Algorithm for Edge-Colored Clustering in Hypergraphs",
+   "venue": "WWW 2026",
+   "problem": "Edge-colored clustering in hypergraphs is NP-hard, existing approximation algorithms limited to factor 2",
+   "approach": "First combinatorial approximation algorithm for edge-colored clustering",
+   "contribution": "Better-than-2 approximation factor for edge-colored hypergraph clustering",
+   "primary_theme": "graph clustering",
+   "methods": [
+    "approximation-algorithm",
+    "combinatorial",
+    "hypergraph"
+   ]
+  },
+  {
+   "title": "Conditional Information Extraction with Diffusion Model on Fact-Condition Star Graph",
+   "venue": "WWW 2026",
+   "problem": "Conditional information extraction overlooks hierarchical dependencies and requires exploring all mention combinations",
+   "approach": "Diffusion model on fact-condition star graph with deterministic in-order matching strategy",
+   "contribution": "Improved conditional quintuple extraction via hierarchical graph structure and denoising",
+   "primary_theme": "conditional knowledge extraction",
+   "methods": [
+    "diffusion-model",
+    "knowledge-graph",
+    "information-extraction"
+   ]
+  },
+  {
+   "title": "Social Event Prediction via Fourier Graph Learning",
+   "venue": "WWW 2026",
+   "problem": "Event prediction via spatio-temporal GNNs has poor scalability and misses long-term dependencies",
+   "approach": "Fourier Graph Learning with frequency-domain analysis and complex-valued node/edge representations",
+   "contribution": "FGNN reduces computational complexity while capturing long-term dependencies for event prediction",
+   "primary_theme": "temporal event prediction",
+   "methods": [
+    "graph-neural-network",
+    "fourier-analysis",
+    "frequency-domain"
+   ]
+  },
+  {
+   "title": "Quantum-Safe, Efficient, and AI-Enhanced Blockchains for the Web: A Cooperative Tutorial on Quantum Computing, Blockchain Applications, and Data Standards",
+   "venue": "WWW 2026",
+   "problem": "Quantum computing vulnerabilities threaten classical cryptography securing blockchain and distributed consensus systems",
+   "approach": "Tutorial integrating quantum computing principles with post-quantum cryptography and blockchain architecture design",
+   "contribution": "Framework for quantum-safe, AI-enhanced blockchain systems emphasizing interdisciplinary collaboration",
+   "primary_theme": "quantum cryptography blockchain",
+   "methods": [
+    "post-quantum cryptography",
+    "quantum computing",
+    "blockchain security"
+   ]
+  },
+  {
+   "title": "Topology-Aware Feature Sorting Enables Universal Modeling on Homophilic and Heterophilic Graphs",
+   "venue": "WWW 2026",
+   "problem": "Graph Foundation Models assume homophily but fail on heterophilic graphs and underexploit heterophilic features",
+   "approach": "Feature-level topology-aware sorting with dual-channel GNN enabling unified heterophilic and homophilic modeling",
+   "contribution": "TFSGFM achieves universal graph foundation model generalization across varying structures and feature patterns",
+   "primary_theme": "graph foundation models",
+   "methods": [
+    "gnn",
+    "feature sorting",
+    "graph learning"
+   ]
+  },
+  {
+   "title": "Multi-Modal Enhanced Graph Transfer Learning for Digital Finance Fraud Detection",
+   "venue": "WWW 2026",
+   "problem": "Blockchain fraud detection struggles with multi-modal dynamics, sparse graphs, and distributional shifts across networks",
+   "approach": "Multi-modal transfer learning framework integrating graph, temporal, and textual modalities for fraud knowledge transfer",
+   "contribution": "MOE-GTL enables robust fraud detection across blockchain networks leveraging multi-modal dependencies",
+   "primary_theme": "fraud detection transfer",
+   "methods": [
+    "transfer learning",
+    "graph learning",
+    "multi-modal"
+   ]
+  },
+  {
+   "title": "Macro-Micro Collaborative Learning for Logical Data Center Microservice Indicators Forecasting",
+   "venue": "WWW 2026",
+   "problem": "Microservice indicator forecasting requires modeling both inter-service dependencies and intra-service causal relationships",
+   "approach": "Macro-micro framework with Indicator-Centric Embedding, heterogeneous graph convolution, and causal sparse attention",
+   "contribution": "MaMiClif enables accurate LDC microservice forecasting via collaborative macro-micro dependency learning",
+   "primary_theme": "forecasting microservices",
+   "methods": [
+    "graph convolution",
+    "causal attention",
+    "time series"
+   ]
+  },
+  {
+   "title": "Disentangled Graph LLM for Molecule Graph Editing under Distribution Shifts",
+   "venue": "WWW 2026",
+   "problem": "Molecule graph editing overlooks invariant structure-property relationships and fails under distribution shifts",
+   "approach": "Disentangle invariant and variant factors via graph projector with invariance loss and LoRA mixture-of-experts",
+   "contribution": "Handles molecule editing instructions under distribution shifts via factor disentanglement",
+   "primary_theme": "molecule graph generation",
+   "methods": [
+    "graph-llm",
+    "disentanglement",
+    "mixture-of-experts"
+   ]
+  },
+  {
+   "title": "SketchMind: Understanding Abstract Sketches with MLLMs for Fine-Grained Sketch-Based Image Retrieval",
+   "venue": "WWW 2026",
+   "problem": "Fine-grained sketch-based image retrieval misses semantic abstraction and fine-grained visual understanding",
+   "approach": "Leverage MLLMs for VQA textual descriptions, construct graph with attention-based fusion and jigsaw matching",
+   "contribution": "Multi-scale cross-modal fusion enhances fine-grained alignment for abstract sketch understanding",
+   "primary_theme": "sketch-based image retrieval",
+   "methods": [
+    "mllm",
+    "graph-attention",
+    "multi-modal"
+   ]
+  },
+  {
+   "title": "Same Last-Item Confusion Unveiled: A Unified Mitigation Framework for Graph Learning in Session-Based Recommendation",
+   "venue": "WWW 2026",
+   "problem": "GNN-based session recommendation struggles with same-last-item confusion and popularity bias",
+   "approach": "Unified framework using contrastive learning with novel negative sample strategy on session graphs",
+   "contribution": "Mitigates confusion and popularity bias, improves various GNN-based SBR methods significantly",
+   "primary_theme": "session-based recommendation",
+   "methods": [
+    "gnn",
+    "contrastive-learning",
+    "session-graph"
+   ]
+  },
+  {
+   "title": "LEDA: Latent Semantic Distribution Alignment for Multi-domain Graph Pre-training",
+   "venue": "WWW 2026",
+   "problem": "Universal graph pre-training faces simplistic data alignment and limited training guidance across domains",
+   "approach": "Dimension projection for adaptive feature alignment and variational semantic inference across domains",
+   "contribution": "Enables effective knowledge capture from diverse graph domains via shared latent distribution",
+   "primary_theme": "graph pre-training",
+   "methods": [
+    "pre-training",
+    "distribution-alignment",
+    "variational"
+   ]
+  },
+  {
+   "title": "VSAL: A Vision Solver with Adaptive Layouts for Graph Property Detection",
+   "venue": "WWW 2026",
+   "problem": "Vision-based graph property detection relies on fixed layouts limiting expressiveness",
+   "approach": "Vision framework with adaptive layout generator tailored to graph instances",
+   "contribution": "VSAL improves graph property detection via dynamic, informative visualizations",
+   "primary_theme": "Graph property detection",
+   "methods": [
+    "vision",
+    "graph-neural-networks",
+    "layout-generation"
+   ]
+  },
+  {
+   "title": "(wt) GC-DPG: Graph-Constrained Dual-Phase Generation for Safe and Verifiable Chinese Medical Question Answering",
+   "venue": "WWW 2026",
+   "problem": "LLMs hallucinate unverifiable and unsafe content in medical QA applications",
+   "approach": "Graph-constrained dual-phase generation coupling LLM with disease knowledge graph",
+   "contribution": "GC-DPG reduces hallucinations via answer planning and consistency checking",
+   "primary_theme": "Medical QA hallucination mitigation",
+   "methods": [
+    "llm",
+    "knowledge-graph",
+    "consistency-checking"
+   ]
+  },
+  {
+   "title": "Dir-GD: Directed Graph Distillation",
+   "venue": "WWW 2026",
+   "problem": "Existing graph distillation overlooks directional semantics in large-scale directed graphs",
+   "approach": "Distributed learning with community detection creating compact synthetic directed graphs",
+   "contribution": "Dir-GD preserves topology and directionality at 0.001 distillation ratio with 91% accuracy",
+   "primary_theme": "Graph distillation",
+   "methods": [
+    "graph-distillation",
+    "community-detection",
+    "distributed-learning"
+   ]
+  },
+  {
+   "title": "ZK-V: Zero-Knowledge Verification for Trustworthy Autonomous Driving Simulation",
+   "venue": "WWW 2026",
+   "problem": "Autonomous driving simulation lacks trustworthy verification protecting data integrity and privacy",
+   "approach": "Zero-knowledge proofs and blockchain for cryptographic constraint verification",
+   "contribution": "ZK-V enables privacy-preserving simulation verification without revealing telemetry data",
+   "primary_theme": "Autonomous driving verification",
+   "methods": [
+    "zero-knowledge-proofs",
+    "blockchain",
+    "cryptography"
+   ]
+  },
+  {
+   "title": "MultiFPT: Towards Multi-Attribute Fairness in Pre-Trained Graph Neural Networks via Prompt Tuning",
+   "venue": "WWW 2026",
+   "problem": "Pre-trained GNNs amplify biases against multiple demographic attributes simultaneously",
+   "approach": "Prompt tuning with fairness-aware prompts and HSIC-regularized lightweight adapter",
+   "contribution": "MultiFPT reduces multi-attribute bias ~30% without retraining pre-trained models",
+   "primary_theme": "Graph fairness",
+   "methods": [
+    "prompt-tuning",
+    "fairness",
+    "graph-neural-networks"
+   ]
+  },
+  {
+   "title": "Better Negatives, Better Predictions: Negative Sample Selection Strategies for Enhancing Biomedical KG Edge Classification",
+   "venue": "WWW 2026",
+   "problem": "Random negative sampling inefficiency in biomedical knowledge graph edge classification",
+   "approach": "Tailored negative sample selection strategies leveraging latent-space graph embeddings",
+   "contribution": "Node-type and edge-semantics aware strategies outperform random sampling with statistical significance",
+   "primary_theme": "KG negative sampling",
+   "methods": [
+    "embedding",
+    "knowledge-graph",
+    "sampling"
+   ]
+  },
+  {
+   "title": "How Graphs Can Help You Stay Informed in an Evolving World",
+   "venue": "WWW 2026",
+   "problem": "Inefficient knowledge propagation and updates in crawling dynamic data sources",
+   "approach": "Graph-structured models with reinforcement learning-based crawling algorithm",
+   "contribution": "RL-based approach outperforms traditional baselines on dynamic graph crawling tasks",
+   "primary_theme": "Dynamic graph crawling",
+   "methods": [
+    "graph",
+    "reinforcement-learning",
+    "crawling"
+   ]
+  },
+  {
+   "title": "Cross-Type Semantic Alignment for Multi-Type Anomaly Detection in Heterogeneous Graphs",
+   "venue": "WWW 2026",
+   "problem": "Semantic imbalance and conflicting objectives in heterogeneous graph anomaly detection",
+   "approach": "Cross-type semantic alignment with dynamic multi-task learning for varied node types",
+   "contribution": "CSA-MTHGAD achieves superior accuracy and robustness in heterogeneous graph anomaly detection",
+   "primary_theme": "Graph anomaly detection",
+   "methods": [
+    "gnn",
+    "anomaly-detection",
+    "multi-task"
+   ]
+  },
+  {
+   "title": "IACLR: Intention Alignment via Contrastive Learning for Bipartite Graph Recommendation",
+   "venue": "WWW 2026",
+   "problem": "Limited capture of diverse user-item relations in sparse bipartite recommendation graphs",
+   "approach": "Intent nodes augmenting bipartite graphs as intermediaries with contrastive learning alignment",
+   "contribution": "IACLR enriches structural connectivity and captures fine-grained user-item relationships robustly",
+   "primary_theme": "GNN recommendation",
+   "methods": [
+    "gnn",
+    "contrastive",
+    "recommendation"
+   ]
+  },
+  {
+   "title": "From Navigation to Intention: Reframing the Web Experience through Goal-Driven Interfaces",
+   "venue": "WWW 2026",
+   "problem": "High cognitive load from menu-driven web navigation and complex graphical structures",
+   "approach": "Framework mapping NL goals to GUI components via LLMs for on-the-fly UI construction",
+   "contribution": "Mirage reduces task completion time and cognitive workload via goal-driven interfaces",
+   "primary_theme": "Goal-driven interfaces",
+   "methods": [
+    "llm",
+    "ui",
+    "nlp"
+   ]
+  },
+  {
+   "title": "Unveiling and Mitigating Untargeted Poisoning Attacks on Federated Knowledge Graph Embedding",
+   "venue": "WWW 2026",
+   "problem": "Federated knowledge graph embedding vulnerable to untargeted poisoning attacks",
+   "approach": "Design data and embedding-level poisoning attacks with embedding-density anomaly detection defense",
+   "contribution": "First systematic investigation of FKGE poisoning with LDM defense restoring performance",
+   "primary_theme": "Federated KG security",
+   "methods": [
+    "poisoning",
+    "defense",
+    "anomaly-detection"
+   ]
+  },
+  {
+   "title": "C-HyPOD: Causal Hyperbolic Representation Learning with Prototype Orthogonal Disentanglement for Graph Out-of-Distribution Recommendation",
+   "venue": "WWW 2026",
+   "problem": "Graph recommenders vulnerable to spurious correlations in out-of-distribution scenarios",
+   "approach": "Hyperbolic geometry with prototype orthogonal disentanglement for hierarchical interest modeling",
+   "contribution": "C-HyPOD framework for geometric causal disentanglement in graph-based OOD recommendation",
+   "primary_theme": "OOD graph recommendation",
+   "methods": [
+    "hyperbolic-geometry",
+    "disentanglement",
+    "causal"
+   ]
+  },
+  {
+   "title": "RPO-RAG: Aligning Small LLMs with Relation-aware Preference Optimization for Knowledge Graph Question Answering",
+   "venue": "WWW 2026",
+   "problem": "KG-based RAG weakly aligned with reasoning objectives; limited to large LLMs",
+   "approach": "Relation-aware preference optimization with semantic path sampling and answer-centered prompting",
+   "contribution": "RPO-RAG enables small-LLM KG question-answering with improved knowledge leveraging",
+   "primary_theme": "Small LLM knowledge graphs",
+   "methods": [
+    "rag",
+    "preference-optimization",
+    "graph-reasoning"
+   ]
+  },
+  {
+   "title": "Network Dismantling via Reverse Dismantling: Static and Dynamic Algorithms",
+   "venue": "WWW 2026",
+   "problem": "Network dismantling requires efficient minimum-cost node removal for giant component destruction",
+   "approach": "IG+ heuristic based on reverse dismantling with tree-like indexes for dynamic updates",
+   "contribution": "Static and dynamic algorithms dismantling 10-million-scale networks in minutes",
+   "primary_theme": "Network dismantling algorithms",
+   "methods": [
+    "graph-algorithms",
+    "optimization",
+    "dynamic"
+   ]
+  },
+  {
+   "title": "EmeraldApp: An AI-Driven Tool for Detecting Greenwashing in Sustainability Claims",
+   "venue": "WWW 2026",
+   "problem": "Misleading environmental claims undermine sustainability reporting trustworthiness",
+   "approach": "Multi-pipeline RAG system with vector DB and knowledge graph retrieval",
+   "contribution": "EmeraldApp tool verifies sustainability claims with fact-based justifications",
+   "primary_theme": "Greenwashing detection",
+   "methods": [
+    "rag",
+    "knowledge graph",
+    "llm classification"
+   ]
+  },
+  {
+   "title": "Node Role-Guided LLMs for Dynamic Graph Clustering",
+   "venue": "WWW 2026",
+   "problem": "Dynamic graph clustering lacks interpretability and semantic explanations for cluster formation",
+   "approach": "Node role prototypes with hierarchical LLM reasoning for discrete semantic concepts",
+   "contribution": "Interpretable dynamic graph clustering with natural language explanations",
+   "primary_theme": "Graph clustering interpretability",
+   "methods": [
+    "llm reasoning",
+    "prototype learning",
+    "graph embeddings"
+   ]
+  },
+  {
+   "title": "ConceptFormer: Towards Graph-Native Grounding of Large Language Models via Latent Concept Injection",
+   "venue": "WWW 2026",
+   "problem": "RAG systems modify LLM architecture or lose knowledge via lossy KG textification",
+   "approach": "Inject concept vectors encapsulating KG topology into LLM embedding space",
+   "contribution": "Graph-native grounding increases factual recall by 272%-348% without model alteration",
+   "primary_theme": "Knowledge graph grounding",
+   "methods": [
+    "concept vectors",
+    "knowledge graph",
+    "embedding injection"
+   ]
+  },
+  {
+   "title": "Towards Robust Heterogeneous Graph Explanations under Structural Perturbations",
+   "venue": "WWW 2026",
+   "problem": "GNN explanations lack robustness under structural noise in heterogeneous graphs",
+   "approach": "Denoising variational inference with relation-aware heterogeneous semantics",
+   "contribution": "Robust explanations balancing fidelity and compactness under perturbations",
+   "primary_theme": "GNN explainability",
+   "methods": [
+    "variational inference",
+    "information bottleneck",
+    "denoising"
+   ]
+  },
+  {
+   "title": "WAMO: Toward Secure Browser Inference via Web Model Obfuscation in WebAssembly",
+   "venue": "WWW 2026",
+   "problem": "Browser-deployed AI models vulnerable to theft, reverse engineering, and tampering",
+   "approach": "WebAssembly obfuscation targeting weights, operators, and computation graphs",
+   "contribution": "71% complexity increase and 455% effort increase with <1% accuracy loss",
+   "primary_theme": "Model security, obfuscation",
+   "methods": [
+    "webassembly",
+    "obfuscation",
+    "model protection"
+   ]
+  },
+  {
+   "title": "Risk-free Selfish Mining in Hybrid Predictability Model. A Case Study on Polkadot's NPoS",
+   "venue": "WWW 2026",
+   "problem": "Selfish mining attacks risk unclear in Polkadot's hybrid predictability PoS model",
+   "approach": "Formal analysis of nominated PoS protocol with Byzantine validator collusion scenarios",
+   "contribution": "Demonstrates risk-free selfish mining for 33% Byzantine validators earning 7.09% extra rewards",
+   "primary_theme": "Blockchain security",
+   "methods": [
+    "proof-of-stake",
+    "selfish-mining",
+    "formal-analysis"
+   ]
+  }
+ ]
+}

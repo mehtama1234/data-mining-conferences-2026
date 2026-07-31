@@ -1,0 +1,11 @@
+{
+ "batch": "b052",
+ "paper": {
+  "id": "ebe58a0dc6d75b975ba12d56421bebd1b6a046a4",
+  "venue": "WWW 2026",
+  "title": "VOICY: A Privacy-Centric Modular Architecture for Zero-Shot Voice Cloning and Fine-Tuned Speech Synthesis",
+  "abstract": "Recent advancements in neural text-to-speech (TTS) have enabled high-fidelity voice cloning, allowing for the synthesis of realistic speech from minimal reference audio. However, the majority of state-of-the-art solutions rely on cloud-based inference via proprietary APIs, raising significant data privacy concerns regarding biometric data retention and misuse. This paper presents ''Voicy'' a locally executed, modular TTS platform capable of both Zero-Shot Voice Cloning and Domain-Adapted Fine-Tuning. Utilizing the Coqui XTTS-v2 architecture, the system allows users to synthesize speech from short reference clips (5\u201310 seconds) or train robust models on custom datasets (10\u201330 minutes) using Low-Rank Adaptation (LoRA). We propose a comprehensive architecture that integrates secure authentication, an automated dataset preprocessing pipeline leveraging OpenAI Whisper, and an embedded analytics engine for audio similarity evaluation. Experimental results on consumer-grade hardware (Alienware 17 R4) demonstrate a cosine similarity score exceeding 0.998 for fine-tuned models, validating the efficacy of local inference for professional-grade, privacy-preserving speech synthesis. Furthermore, we demonstrate the system's scalability via consistent inference latency and usability through a unified web interface, benchmarking favourably against existing local solutions in both efficiency a",
+  "gid": 781,
+  "theme": "Privacy-preserving speech synthesis"
+ }
+}

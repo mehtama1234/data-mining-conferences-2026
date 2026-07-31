@@ -1,0 +1,11 @@
+{
+ "batch": "b058",
+ "paper": {
+  "id": "19731a213cc3f1f2d8984ce31698d465860dbabe",
+  "venue": "WSDM 2026",
+  "title": "A New Query Expansion Approach for Enhancing Information Retrieval via Agent-Mediated Dialogic Inquiry",
+  "abstract": "Query expansion is widely used in Information Retrieval (IR) to improve search outcomes by supplementing initial queries with richer information. While recent Large Language Model (LLM) based methods generate pseudo-relevant content, they often yield narrow expansions that lack the diverse context needed to retrieve relevant information. In this paper, we propose AMD: a new Agent-Mediated Dialogic Framework that engages in a dialogic inquiry involving three specialized roles: (1) a Socratic Questioning Agent reformulates the initial query into three sub-questions, with each question inspired by a specific Socratic questioning dimension, (2) a Dialogic Answering Agent generates pseudo-answers, enriching the query representation with multiple perspectives, and (3) a Reflective Feedback Agent evaluates and refines these pseudo-answers, ensuring that only the most relevant and informative content is retained. By leveraging a multi-agent process, AMD effectively crafts richer query representations through inquiry and feedback refinement. Extensive experiments on benchmarks including BEIR and TREC demonstrate that our framework outperforms previous methods, offering a robust solution for retrieval tasks.",
+  "gid": 878,
+  "theme": "query expansion retrieval"
+ }
+}

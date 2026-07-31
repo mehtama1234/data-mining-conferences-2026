@@ -1,0 +1,11 @@
+{
+ "batch": "b004",
+ "paper": {
+  "id": "111f998b37cc214ff0e4b6b50aa3d42da4309ec0",
+  "venue": "WWW 2026",
+  "title": "TargetMR: Learning Modality Target for Multimodal Recommendation",
+  "abstract": "Rapid development of web services has led to an explosion of multimodal content, making multimodal recommender systems (MRSs) vital tools for mitigating information overload. Current MRSs have achieved remarkable progress by incorporating advanced technologies such as Graph Neural Networks (GNNs) and Large Language Models (LLMs). However, these studies still suffer from the semantic shift problem. Generally, item's multimodal content usually contain multiple objects, including target object (core content of item) and auxiliary objects (decorations of item). Existing MRSs overlooked this distinction, failing to prevent auxiliary objects from dominating the representation, leading to biased item representation. To address this issue, we propose a model-agnostic framework ''TargetMR''. Concretely, TargetMR comprises two core modules, including Object Disentangler and Object Identifier. The Object Disentangler decouples item text and image into multiple objects via text syntactic parsing and image segmentation. The Object Identifier performs knowledge distillation based on LLMs to efficiently identify the target text object. It then identifies the target image object through cross-modal semantic evaluation. Moreover, this module refines the representation of image target object by optimizing the semantic correlation. Owing to the model-agnostic design of TargetMR, it can be integra",
+  "gid": 63,
+  "theme": "Multimodal recommendation"
+ }
+}

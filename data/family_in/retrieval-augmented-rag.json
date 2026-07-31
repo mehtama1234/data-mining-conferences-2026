@@ -1,0 +1,569 @@
+{
+ "key": "retrieval-augmented-rag",
+ "theme": "Retrieval-Augmented (RAG)",
+ "n_papers": 182,
+ "pct": 9.4,
+ "by_venue": {
+  "WWW 2026": 67,
+  "WSDM 2026": 8,
+  "SIGIR 2026": 103,
+  "KDD 2026": 4
+ },
+ "theme_examples": [
+  {
+   "title": "Conflict-Aware RAG: Multi-Stage Learning with Conflict Signals for Robust Retrieval-Augmented Generation",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "Diversifying Differentiable Graph Retrieval with Topic-Adaptive Multi-Intent Learning",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "Rethinking MoE with Retrieval-Memory Synergy: Towards Efficient Expert Coordination",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "OpenDecoder: Open Large Language Model Decoding to Incorporate Document Quality in RAG",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "(wt) GC-DPG: Graph-Constrained Dual-Phase Generation for Safe and Verifiable Chinese Medical Question Answering",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "PruneRAG: Confidence-Guided Query Decomposition Trees for Efficient Retrieval-Augmented Generation",
+   "venue": "WWW 2026"
+  }
+ ],
+ "representative_papers": [
+  {
+   "title": "Conflict-Aware RAG: Multi-Stage Learning with Conflict Signals for Robust Retrieval-Augmented Generation",
+   "venue": "WWW 2026",
+   "problem": "RAG systems fail when integrating conflicting web-sourced information, leading to unreliable responses",
+   "approach": "Multi-stage optimization using conflict signal from generative probabilities with SFT, DPO, and reranking",
+   "contribution": "Conflict-Aware RAG robustly handles knowledge conflicts via preference optimization",
+   "primary_theme": "Robust retrieval-augmented generation",
+   "methods": [
+    "preference optimization",
+    "conflict detection",
+    "knowledge integration"
+   ]
+  },
+  {
+   "title": "OpenDecoder: Open Large Language Model Decoding to Incorporate Document Quality in RAG",
+   "venue": "WWW 2026",
+   "problem": "RAG systems assume equal relevance of retrieved documents; variable document quality not incorporated",
+   "approach": "OpenDecoder leverages explicit quality indicators (relevance, ranking, QPP scores) in LLM decoding",
+   "contribution": "RAG robustness improved through explicit document quality evaluation in generation",
+   "primary_theme": "retrieval-augmented generation",
+   "methods": [
+    "retrieval-augmented-generation",
+    "llm",
+    "document-quality"
+   ]
+  },
+  {
+   "title": "PruneRAG: Confidence-Guided Query Decomposition Trees for Efficient Retrieval-Augmented Generation",
+   "venue": "WWW 2026",
+   "problem": "Evidence forgetting and inefficiency in RAG systems during deep reasoning chains",
+   "approach": "Confidence-guided query decomposition tree with adaptive expansion and fine-grained retrieval",
+   "contribution": "PruneRAG reduces retrieval overhead while preserving evidence through multi-hop reasoning",
+   "primary_theme": "RAG efficiency",
+   "methods": [
+    "rag",
+    "query-decomposition",
+    "confidence"
+   ]
+  },
+  {
+   "title": "Rise: A Retrieval-Augmented Generation Enhanced Immersive System for Education",
+   "venue": "WWW 2026",
+   "problem": "Limited hardware resources and interactivity constraints in intelligent education systems",
+   "approach": "Lightweight RAG-enhanced immersive system integrating MCP and digital human technologies",
+   "contribution": "Rise enables adaptive, personalized learning with analytics and attention monitoring on devices",
+   "primary_theme": "Intelligent education",
+   "methods": [
+    "rag",
+    "education",
+    "web"
+   ]
+  },
+  {
+   "title": "Inference Cost Attacks for Retrieval-Augmented Large Language Models",
+   "venue": "WWW 2026",
+   "problem": "RAG-enhanced LLMs vulnerable to high inference costs through knowledge base poisoning",
+   "approach": "Inject malicious documents into knowledge bases via LLM agents and reinforcement learning",
+   "contribution": "CREEP framework with MA-GRPO algorithm for effective inference cost attacks on RAG systems",
+   "primary_theme": "LLM security",
+   "methods": [
+    "rag",
+    "adversarial-attack",
+    "reinforcement-learning"
+   ]
+  },
+  {
+   "title": "DA-RAG: Dynamic Attributed Community Search for Retrieval-Augmented Generation",
+   "venue": "WWW 2026",
+   "problem": "G-RAG underutilizes graph topology; static communities fail on dynamic complex queries.",
+   "approach": "Dynamic attributed community search extracts relevant subgraphs; chunk-layer graph index.",
+   "contribution": "Outperforms RAG methods by 40%; reduces index time and token overhead by 37-41%.",
+   "primary_theme": "graph-based RAG retrieval",
+   "methods": [
+    "rag",
+    "graph_search",
+    "community_detection"
+   ]
+  },
+  {
+   "title": "When to Trust: A Causality-Aware Calibration Framework for Accurate Knowledge Graph Retrieval-Augmented Generation",
+   "venue": "WWW 2026",
+   "problem": "KG-RAG models produce overconfident predictions with incomplete or unreliable retrieved subgraphs",
+   "approach": "Causality-aware calibration with counterfactual prompting and panel-based re-scoring mechanism",
+   "contribution": "Improves prediction calibration while maintaining accuracy via intervention-aware uncertainty estimation",
+   "primary_theme": "Knowledge graph RAG",
+   "methods": [
+    "causal-analysis",
+    "retrieval-augmented-generation",
+    "calibration"
+   ]
+  },
+  {
+   "title": "IRAG: Robust Multimodal Retrieval-Augmented Generation via Hazard Separation",
+   "venue": "WWW 2026",
+   "problem": "Multimodal RAG systems vulnerable to retrieval poisoning attacks affecting image-text fusion",
+   "approach": "Hazard separation framework isolating contamination via redundancy and consensus",
+   "contribution": "IRAG defense restores 15-30 percent answer accuracy under poisoning while reducing poisoned rate below 7 percent",
+   "primary_theme": "multimodal RAG security",
+   "methods": [
+    "adversarial-robustness",
+    "rag",
+    "multimodal"
+   ]
+  },
+  {
+   "title": "NeocorRAG: Less Irrelevant Information, More Explicit Evidence, and More Effective Recall via Evidence Chains",
+   "venue": "WWW 2026",
+   "problem": "RAG retrieval improvements do not consistently improve reasoning; quality-recall trade-off persists",
+   "approach": "Evidence chain mining with constrained decoding and activated search for holistic quality optimization",
+   "contribution": "NeocorRAG metric Recall Conversion Rate quantifies retrieval contribution; improves recall and reasoning",
+   "primary_theme": "retrieval augmented generation",
+   "methods": [
+    "rag",
+    "evidence-chains",
+    "retrieval-optimization"
+   ]
+  },
+  {
+   "title": "Cross-city Time Series Forecasting with Retrieval-Augmented Large Language Models",
+   "venue": "WWW 2026",
+   "problem": "Cross-city time series forecasting with data sparsity; irrelevant source knowledge hinders target performance",
+   "approach": "RAG-LLM framework with selective retriever filtering relevant patterns from data-rich cities as structured prompts",
+   "contribution": "xRAG4TS enables interpretable forecasting in data-scarce cities by selective knowledge transfer from source cities",
+   "primary_theme": "LLM time series forecasting",
+   "methods": [
+    "llm",
+    "retrieval-augmented",
+    "transfer-learning"
+   ]
+  },
+  {
+   "title": "Bridging Expert Reasoning and LLM Detection: A Knowledge-Driven Framework for Malicious Packages",
+   "venue": "WWW 2026",
+   "problem": "Open-source package detection relies on fragile handcrafted rules failing to capture evolving malicious behavior.",
+   "approach": "Retrieval-augmented generation framework integrating expert reasoning from threat intelligence knowledge base.",
+   "contribution": "IntelGuard achieves 99% accuracy detecting malicious packages including 54 previously unreported on PyPI.",
+   "primary_theme": "Supply chain security",
+   "methods": [
+    "rag",
+    "llm",
+    "threat intelligence"
+   ]
+  },
+  {
+   "title": "Active Retrieval-Augmented Generation with Conflict-Fused Uncertainty Quantification",
+   "venue": "WWW 2026",
+   "problem": "Active RAG methods retrieve too late and use single uncertainty signals for triggering retrieval.",
+   "approach": "Decompose questions into steps with multi-signal uncertainty quantification and conflict fusion.",
+   "contribution": "Conflict-fused uncertainty captures distributional uncertainty and cross-sample consensus.",
+   "primary_theme": "active retrieval-augmented generation",
+   "methods": [
+    "rag",
+    "uncertainty",
+    "multi-hop-reasoning"
+   ]
+  },
+  {
+   "title": "FlowRAG: Continual Learning for Dynamic Retriever in Retrieval-Augmented Generation",
+   "venue": "WWW 2026",
+   "problem": "Dense retrievers degrade with evolving corpora; continuous retraining is computationally expensive.",
+   "approach": "Layer-wise prompt embeddings and generator-guided loss for lightweight continual adaptation.",
+   "contribution": "FlowRAG updates 0.64% parameters, improving retrieval and generation in non-stationary corpora.",
+   "primary_theme": "Dynamic RAG retrieval",
+   "methods": [
+    "continual-learning",
+    "prompt-tuning",
+    "rag"
+   ]
+  },
+  {
+   "title": "KEPo: Knowledge Evolution Poison on Graph-based Retrieval-Augmented Generation",
+   "venue": "WWW 2026",
+   "problem": "GraphRAG systems vulnerable to poisoning attacks that manipulate knowledge graphs and LLM outputs",
+   "approach": "Knowledge evolution poison attacks forging event backgrounds and interconnected knowledge evolution paths",
+   "contribution": "KEPo exposes latent GraphRAG security vulnerabilities through poisoned KG manipulation",
+   "primary_theme": "GraphRAG adversarial robustness",
+   "methods": [
+    "attack",
+    "retrieval-augmented-generation",
+    "knowledge-graph"
+   ]
+  },
+  {
+   "title": "SeaRAG: Reducing Hallucination in Retrieval-Augmented Generation via Statement-Entity Adaptive Ranking",
+   "venue": "WWW 2026",
+   "problem": "RAG methods miss entity and statement level verification; dynamic control ignores combined aspects",
+   "approach": "Training-free adaptive RAG probing entities and statements via entropy-based uncertainty",
+   "contribution": "SeaRAG reduces hallucinations by 11.1 percent on TriviaQA while cutting retrieval frequency",
+   "primary_theme": "Hallucination detection",
+   "methods": [
+    "rag",
+    "llm",
+    "hallucination"
+   ]
+  },
+  {
+   "title": "Beyond Factual Queries: A Novel Predictive Retrieval-Augmented Generation",
+   "venue": "WWW 2026",
+   "problem": "RAG optimized for factual QA rather than predictive tasks requiring inference of unknown outcomes",
+   "approach": "PRAG adaptively integrates historical interaction similarity as prompt weights for personalized inference",
+   "contribution": "Significantly improves predictive recommendation by capturing user-specific preference signals",
+   "primary_theme": "Predictive RAG recommendation",
+   "methods": [
+    "rag",
+    "llm",
+    "recommendation",
+    "similarity-modeling"
+   ]
+  },
+  {
+   "title": "MGK-RAG: Multi-Granularity Knowledge Guided Retrieval-Augmented Generation for Radiology Report",
+   "venue": "WWW 2026",
+   "problem": "RAG for radiology ignores fine-grained hierarchical pathological knowledge in reports",
+   "approach": "Multi-granularity semantic similarity-guided contrastive learning and cross-attention fusion",
+   "contribution": "MGK-RAG improves radiology report factual accuracy via hierarchical semantic alignment",
+   "primary_theme": "medical report generation",
+   "methods": [
+    "rag",
+    "multimodal",
+    "contrastive-learning"
+   ]
+  },
+  {
+   "title": "Agent-Enhanced Heterogeneous Graph RAG for Academic Question Answering",
+   "venue": "WWW 2026",
+   "problem": "RAG systems lack adaptive retrieval, sufficiency evaluation, and graph verification for academic QA",
+   "approach": "Agentic heterogeneous graph RAG with query-aware retrieval, sufficiency-aware reranking, graph verification",
+   "contribution": "Multi-stage agent pipeline improves academic QA over strong LLM and graph-augmented baselines",
+   "primary_theme": "Graph retrieval QA",
+   "methods": [
+    "llm",
+    "agent reasoning",
+    "graph traversal"
+   ]
+  },
+  {
+   "title": "HyperRAG: Reasoning N-ary Facts over Hypergraphs for Retrieval Augmented Generation",
+   "venue": "WWW 2026",
+   "problem": "Binary knowledge graphs fragment complex n-ary facts; longer reasoning paths increase drift",
+   "approach": "HyperRAG: n-ary hypergraph retrieval with structural-semantic reasoning and LLM memory",
+   "contribution": "2.95% MRR and 1.23% Hits@10 gains on multi-hop QA via adaptive hypergraph traversal",
+   "primary_theme": "hypergraph retrieval augmentation",
+   "methods": [
+    "rag",
+    "hypergraph",
+    "llm"
+   ]
+  },
+  {
+   "title": "S-Path-RAG: Semantic-Aware Shortest-Path Retrieval Augmented Generation for Multi-Hop Knowledge Graph Question Answering",
+   "venue": "WWW 2026",
+   "problem": "Multi-hop KGQA struggles with token efficiency and semantic path selection in large knowledge graphs",
+   "approach": "Semantic-aware shortest-path RAG using hybrid weighted k-shortest paths with neural-Socratic dialogue loop",
+   "contribution": "S-Path-RAG achieves token-efficient topology-aware retrieval with interpretable path traces for multi-hop QA",
+   "primary_theme": "Knowledge graph QA",
+   "methods": [
+    "rag",
+    "knowledge-graph",
+    "contrastive",
+    "dialogue"
+   ]
+  },
+  {
+   "title": "CompactRAG: Reducing LLM Calls and Token Overhead in Multi-Hop Question Answering",
+   "venue": "WWW 2026",
+   "problem": "Multi-hop RAG inefficient: repeated LLM calls, high token consumption, unstable entity grounding across hops",
+   "approach": "Decouple corpus restructuring into atomic QA KB from reasoning; entity-consistent query decomposition with dense retrieval",
+   "contribution": "Only two total LLM calls regardless of hops; substantially reduces token consumption vs iterative RAG",
+   "primary_theme": "Retrieval augmented generation",
+   "methods": [
+    "rag",
+    "dense-retrieval",
+    "question-decomposition"
+   ]
+  },
+  {
+   "title": "RAG-GFM: Overcoming In-Memory Bottlenecks in Graph Foundation Models via Retrieval-Augmented Generation",
+   "venue": "WWW 2026",
+   "problem": "Graph foundation models limited by in-memory bottlenecks and lossy parameter compression",
+   "approach": "Retrieval-augmented generation with dual-modal unified retrieval and dual-view alignment",
+   "contribution": "RAG-GFM offloads knowledge from parameters improving scalability and interpretability",
+   "primary_theme": "Graph foundation models",
+   "methods": [
+    "retrieval-augmented-generation",
+    "foundation-models",
+    "graph-learning"
+   ]
+  },
+  {
+   "title": "Reasoning in Trees: Improving Retrieval-Augmented Generation for Multi-Hop Question Answering",
+   "venue": "WWW 2026",
+   "problem": "Multi-hop question answering via RAG suffers from inaccurate decomposition and error propagation",
+   "approach": "Reasoning Tree Guided RAG: explicit tree decomposition with consensus selection and bottom-up traversal",
+   "contribution": "Outperforms state-of-the-art by 7.0% F1 and 6.0% EM on complex QA",
+   "primary_theme": "Retrieval-augmented generation",
+   "methods": [
+    "rag",
+    "llm",
+    "question-answering",
+    "structured-reasoning"
+   ]
+  },
+  {
+   "title": "A Unified Framework for Context-Aware and Relation-Aware Graph Retrieval-Augmented Generation",
+   "venue": "WWW 2026",
+   "problem": "Graph RAG methods separate entity and chunk retrieval, missing emergent knowledge from synthesis",
+   "approach": "Hierarchical graph RAG with hybrid nodes, iterative clustering, LLM summaries, multi-level retrieval",
+   "contribution": "HyGRAG synthesizes contextual and relational information, enabling efficient dynamic knowledge updates",
+   "primary_theme": "Graph RAG",
+   "methods": [
+    "hierarchical graphs",
+    "clustering",
+    "retrieval"
+   ]
+  },
+  {
+   "title": "Rethinking Soft Compression in Retrieval-Augmented Generation: A Query-Conditioned Selector Perspective",
+   "venue": "WWW 2026",
+   "problem": "RAG scalability limited by excessive context and soft compression methods failing due to full-document encoding ignoring query",
+   "approach": "SeleCom decoder-only selector redefined as query-conditioned information filter trained with curriculum learning on synthetic QA",
+   "contribution": "Query-conditioned soft compression outperforms full-compression and rivals non-compression baselines while reducing latency",
+   "primary_theme": "Dense retrieval compression",
+   "methods": [
+    "rag",
+    "compression",
+    "query-conditioning"
+   ]
+  },
+  {
+   "title": "Rigorizing Retrieval-augmented Generation with Structured Knowledge Intelligence (6 Hrs)",
+   "venue": "WSDM 2026",
+   "problem": "RAG systems inadequately model heterogeneous structured knowledge and lack safety considerations",
+   "approach": "Structured perspective on RAG covering tabular, social network, and document tree designs",
+   "contribution": "Tutorial framework for structured RAGs with security attack/defense strategies across knowledge types",
+   "primary_theme": "retrieval-augmented generation",
+   "methods": [
+    "rag",
+    "knowledge graphs",
+    "structured data",
+    "information retrieval"
+   ]
+  },
+  {
+   "title": "MerFT: A Framework for Social Conflict Meme Exploration via Multimodal Retrieval-Augmented Fine-tuning",
+   "venue": "WSDM 2026",
+   "problem": "Harmful meme narratives circulate on social media without robust multimodal interpretation",
+   "approach": "Multimodal retrieval-augmented fine-tuning with distractor-aware chain-of-thought reasoning",
+   "contribution": "MerFT framework improves meme interpretation robustness against misleading distractors via RAG",
+   "primary_theme": "Multimodal content analysis",
+   "methods": [
+    "rag",
+    "llm",
+    "multimodal",
+    "chain-of-thought"
+   ]
+  },
+  {
+   "title": "Planning Before Retrieval: A Constrained Planner\u2013Executor Framework for Reliable and Efficient KG-Augmented Reasoning",
+   "venue": "WSDM 2026",
+   "problem": "KG-RAG systems lack interpretability and structured planning for reliable reasoning",
+   "approach": "Planner-executor framework formalizing retrieval as structured planning problem",
+   "contribution": "Controlled auditable reasoning integrating explicit planning into KG-RAG systems",
+   "primary_theme": "KG-augmented reasoning",
+   "methods": [
+    "planning",
+    "kg-rag",
+    "structured-retrieval"
+   ]
+  },
+  {
+   "title": "Leveraging Retrieval-Augmented Language Models for Accurate Item/Feature Selection in Conversational Recommender Systems",
+   "venue": "WSDM 2026",
+   "problem": "RALMs for CRS include irrelevant knowledge limiting recommendation and explanation quality",
+   "approach": "Multi-stage item/feature selection with Chain-of-Thought reasoning",
+   "contribution": "MOCHA framework improves recommendation accuracy with factually-correct explanations",
+   "primary_theme": "Conversational recommendation",
+   "methods": [
+    "ralm",
+    "cot",
+    "recommendation"
+   ]
+  },
+  {
+   "title": "Web-Mined Hypothesis Generation for Financial Markets: An Autonomous Backtesting Framework",
+   "venue": "WSDM 2026",
+   "problem": "Financial hypothesis generation is slow, subjective, lacking automation for web data",
+   "approach": "Knowledge graphs, retrieval-augmented generation, backtesting with optimization",
+   "contribution": "AutoHypo-Fin autonomously generates tested trading strategies outperforming traditional methods",
+   "primary_theme": "Financial hypothesis generation",
+   "methods": [
+    "kg",
+    "rag",
+    "backtesting"
+   ]
+  },
+  {
+   "title": "From Search to Ask to Act: The Evolution of Information Access in the Age of Large Models and Agents",
+   "venue": "SIGIR 2026",
+   "problem": "Information access needs to evolve from retrieval to reasoning, generation, and task execution",
+   "approach": "Retrieval-augmented generation and AI agents combining reasoning models with active search",
+   "contribution": "Framework exposes new IR problems in multi-step search, evidence refinement, and agent reasoning",
+   "primary_theme": "LLM retrieval augmentation",
+   "methods": [
+    "rag",
+    "ai agents",
+    "reasoning models"
+   ]
+  },
+  {
+   "title": "Incentivizing Retrieval-Augmented Generation via Inner Adaptive Context Selection",
+   "venue": "SIGIR 2026",
+   "problem": "RAG with multiple retrieved documents increases context length, causing latency and performance degradation",
+   "approach": "Inner adaptive context selection enabling LLMs to autonomously select relevant context during generation",
+   "contribution": "Improved generation quality with computational efficiency via autonomous context selection",
+   "primary_theme": "RAG context selection",
+   "methods": [
+    "retrieval-augmented-generation",
+    "llm",
+    "context-selection"
+   ]
+  },
+  {
+   "title": "Search for Coverage: Learning Coverage-Aware Retrieval with Augmented Sub-Question Answerability",
+   "venue": "SIGIR 2026",
+   "problem": "Ranking methods for long-form RAG must ensure comprehensive relevant nugget coverage",
+   "approach": "Dense bi-encoder with coverage-based contrastive and distillation objectives trained on synthetic coverage signals",
+   "contribution": "Achieves 10% nugget coverage improvement over baselines while maintaining relevance",
+   "primary_theme": "Coverage-aware retrieval",
+   "methods": [
+    "dense-retrieval",
+    "contrastive-learning",
+    "distillation"
+   ]
+  },
+  {
+   "title": "Chain of Evidence: Pixel-Level Visual Attribution for Iterative Retrieval-Augmented Generation",
+   "venue": "SIGIR 2026",
+   "problem": "iRAG systems parse text losing visual semantics, provide coarse-grained attribution in lengthy documents",
+   "approach": "Chain of Evidence leverages Vision-Language Models to reason over document screenshots with pixel-level attribution",
+   "contribution": "Precise bounding boxes and visual reasoning chains eliminate format-specific parsing overhead",
+   "primary_theme": "Visual retrieval augmentation",
+   "methods": [
+    "vision-language models",
+    "attribution",
+    "retrieval-augmented generation"
+   ]
+  },
+  {
+   "title": "Beyond Semantic Relevance: Counterfactual Risk Minimization for Robust Retrieval-Augmented Generation",
+   "venue": "SIGIR 2026",
+   "problem": "Standard RAG maximizes relevance which paradoxically promotes retrieval of biased evidence reinforcing hallucinations",
+   "approach": "CoRM-RAG uses cognitive perturbation protocol and Evidence Critic to align retrieval with decision safety",
+   "contribution": "Counterfactual risk minimization framework enables robust evidence selection despite adversarial biases",
+   "primary_theme": "Robust RAG",
+   "methods": [
+    "causal intervention",
+    "adversarial robustness",
+    "counterfactual reasoning"
+   ]
+  },
+  {
+   "title": "SRAG: A Lightweight and Specialized Retrieval-augmented Generation System at the Edge",
+   "venue": "SIGIR 2026",
+   "problem": "Edge RAG systems struggle with generic monolithic knowledge bases poorly suited to heterogeneous queries.",
+   "approach": "SRAG distributed system with domain-specialized knowledge bases and buffer-based knowledge migration across edge servers.",
+   "contribution": "Improved retrieval accuracy, generation quality, and storage efficiency with reduced latency in edge RAG deployment.",
+   "primary_theme": "Edge RAG systems",
+   "methods": [
+    "retrieval-augmented generation",
+    "distributed systems",
+    "edge computing",
+    "knowledge specialization"
+   ]
+  },
+  {
+   "title": "Mixture-of-Retrieval Experts for Reasoning-Guided Multimodal Knowledge Exploitation",
+   "venue": "SIGIR 2026",
+   "problem": "Fixed retrieval paradigms in MRAG fail to exploit knowledge of different experts through dynamic interaction.",
+   "approach": "MoRE framework with dynamic expert routing based on reasoning state and stepwise group relative policy optimization.",
+   "contribution": "Dynamic coordination of multiple retrieval experts achieving 7% performance gain in open-domain QA.",
+   "primary_theme": "Multimodal RAG routing",
+   "methods": [
+    "mixture of experts",
+    "reinforcement learning",
+    "retrieval-augmented generation",
+    "multimodal"
+   ]
+  },
+  {
+   "title": "Question-Adaptive Graph Learning for Multi-hop Retrieval Augmented Generation",
+   "venue": "SIGIR 2026",
+   "problem": "Multi-hop RAG struggles with complex semantic structures and irrelevant noise in retrieval.",
+   "approach": "Quest-GNN performs adaptive graph learning on Multi-L KG with question-guided message passing.",
+   "contribution": "Question-adaptive framework with synthesized pre-training data improves multi-hop retrieval.",
+   "primary_theme": "knowledge graph retrieval",
+   "methods": [
+    "graph-neural-network",
+    "retrieval-augmented",
+    "question-answering"
+   ]
+  },
+  {
+   "title": "FAIR-RAG: An End-to-End Framework for Mitigating Political Bias through Fair Retrieval-Augmented Generation",
+   "venue": "SIGIR 2026",
+   "problem": "RAG systems amplify political bias from web corpora into responses",
+   "approach": "Multi-LLM persona annotation, political-stance metadata, multi-stage fairness engine",
+   "contribution": "Framework achieving 97.51 Attention Weighted Rank Fairness with 82% improvement",
+   "primary_theme": "RAG political bias",
+   "methods": [
+    "rag",
+    "fairness",
+    "metadata",
+    "bias-mitigation"
+   ]
+  },
+  {
+   "title": "mKG-RAG: Leveraging Multimodal Knowledge Graphs in Retrieval-Augmented Generation for Knowledge-intensive VQA",
+   "venue": "SIGIR 2026",
+   "problem": "RAG-based VQA uses unstructured docs, overlooks semantic relations in knowledge",
+   "approach": "Multimodal knowledge graph construction with MLLM extraction and dual-stage retrieval",
+   "contribution": "Structured multimodal KG integration improves VQA through refined semantic knowledge",
+   "primary_theme": "Multimodal VQA RAG",
+   "methods": [
+    "rag",
+    "knowledge-graph",
+    "multimodal",
+    "retrieval"
+   ]
+  }
+ ]
+}

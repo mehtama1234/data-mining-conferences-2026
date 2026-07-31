@@ -1,0 +1,11 @@
+{
+ "batch": "b062",
+ "paper": {
+  "id": "924c31056f9f20ca7bcf08ebe200753161528997",
+  "venue": "WSDM 2026",
+  "title": "TaxoDiff: Improving Taxonomy Completion with Diffusion Guided Dynamic Negative Sampling",
+  "abstract": "Taxonomies offer a powerful data structure for organizing information hierarchically and support practical web applications. However, the rapid emergence of new entities renders the manual taxonomy curation both time-consuming and costly. Research efforts have been focused on automatically integrating new entities to an appropriate hypernym-hyponym pair in the existing taxonomy. Most recent approaches formulate taxonomy completion as a plausibility-scoring task over candidate query\u2013position pairs, optimized via contrastive learning (CL). However, these methods typically rely on static or randomly sampled negatives that are semantically trivial. To address this, we propose TaxoDiff, a diffusion-guided dynamic negative sampling approach that reformulates negative sampling as a dynamic generative process in the latent space and enables flexible control over the hardness of negative examples during training. Specifically, TaxoDiff leverages a conditional denoising diffusion model to synthesize negative examples with adjustable semantic hardness, generating both easy and hard negatives at different timesteps. Altogether, a dynamic mixture of easy and hard negatives enables the model to produce robust feature representations needed for accurate taxonomy completion. Experimental results on three benchmark datasets show that TaxoDiff achieves state-of-the-art taxonomy completion perfor",
+  "gid": 941,
+  "theme": "taxonomy completion"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "batch": "b006",
+ "paper": {
+  "id": "19e8bacce7741a3fab756311f447eeb05be57723",
+  "venue": "WWW 2026",
+  "title": "Evolving Notions of Success on the Web: From Retrieval to Experience",
+  "abstract": "The early Web was centered on documents, hyperlinks, and retrieval, with success largely defined in terms of efficient access to relevant information. As the Web expanded in scale, content, and modes of interaction, its focus gradually shifted toward users and their experiences, bringing attention, engagement, and satisfaction to the forefront. This shift marked a fundamental transformation in how Web systems are designed, evaluated, and reasoned about. This talk offers a historical perspective on how the Web's goals and success metrics evolved in response to content abundance, changing patterns of use, and rising user expectations. It traces how classical notions of relevance, rooted in information retrieval, broadened over time to encompass user intent, context, satisfaction, and trust. These evolving priorities influenced not only how information is ranked and surfaced, but also how online experiences are structured and sustained over time. The talk connects these conceptual shifts to the emergence of experience-oriented Web platforms, where success is increasingly measured through longer-term signals of value rather than isolated interactions. It also reflects on how recent advances in AI, particularly large-scale machine learning and generative models, are reinforcing and accelerating these trends by enabling more interactive, adaptive, and intent-aware experiences. The ta",
+  "gid": 91,
+  "theme": "Web evaluation evolution"
+ }
+}

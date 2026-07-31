@@ -1,0 +1,11 @@
+{
+ "batch": "b029",
+ "paper": {
+  "id": "8457823e98b0882b2d4fc73075bf87efddfaa82f",
+  "venue": "WWW 2026",
+  "title": "Super-Resolution of Urban Socioeconomic Indicators via Graph-Based Recommender Systems",
+  "abstract": "Detailed socioeconomic insights are essential for effective urban policy, yet traditional census data remains static, costly, and restricted to coarse spatial resolutions due to privacy constraints. To bridge this ''granularity gap'', we introduce a Socioeconomic Super-Resolution framework that infers fine-grained indicators from user-generated digital traces. % We propose a Spatial-GNN framework that learns business representations from user-business interaction graphs, explicitly enriching them with semantic categories and coarse geographical context. We show that these embeddings, trained solely on coarse aggregate labels (Postal Codes), capture sufficient latent signal to recover fine-grained attributes at the Census Block Group level. % Experiments on the Yelp dataset confirm that our approach effectively disaggregates urban data, with the learned embeddings naturally capturing spatial and socioeconomic homophily. This work bridges Recommender Systems and Urban Computing, offering a scalable methodology for high-resolution demographic inference.",
+  "gid": 440,
+  "theme": "Urban socioeconomic super-resolution"
+ }
+}

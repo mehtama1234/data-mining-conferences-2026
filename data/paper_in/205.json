@@ -1,0 +1,11 @@
+{
+ "batch": "b013",
+ "paper": {
+  "id": "3b649f5a8de8343a5052c478454d1236c699ac53",
+  "venue": "WWW 2026",
+  "title": "GALRec: Aligning Graph with Large Language Model for Sequential Recommendation",
+  "abstract": "In recent years, Large Language Models (LLMs) have achieved significant success across various domains due to their powerful generative capabilities and impressive comprehension abilities. Consequently, many researchers have sought to integrate LLMs with recommender systems to leverage the extensive world knowledge embedded in these generative models, addressing challenges such as data sparsity. However, most LLM-assisted recommenders primarily focus on item-specific features while neglecting the latent information arising from user-item interactions, resulting in suboptimal performance. A straightforward approach is to model these interactions as graphs for input, but the heterogeneous nature of the interaction and item feature spaces makes direct fusion challenging. To address this issue, we propose GALRec, a Graph-Augmented LLM Recommender that uses a novel tuning strategy, GAL-tuning, successfully incorporating collaborative information to LLM-based sequential recommender systems. This strategy contains a graph encoder to capture complex interaction data and integrate it with an LLM predictor. To further improve the performance of this two-part recommender, we introduce a mutual alignment method, GAL-alignment, incorporating graph-to-LLM and LLM-to-graph alignment, which optimizes the framework by minimizing the gap between graphs and LLMs. Experiments show that GALRec enha",
+  "gid": 205,
+  "theme": "LLM recommendation graph"
+ }
+}

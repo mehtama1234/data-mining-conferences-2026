@@ -1,0 +1,11 @@
+{
+ "batch": "b047",
+ "paper": {
+  "id": "d7ccc3883c9068b9347da79c80d8451f8cd1b708",
+  "venue": "WWW 2026",
+  "title": "Hierarchical Prompt Contrastive Learning for Weakly Supervised Histopathology Segmentation",
+  "abstract": "Weakly supervised histopathology segmentation is a hot topic in the computer vision community by generating pixel-level masks with image-level labels due to the expensive and time-intensive pixel-level annotations. The inter-class homogeneity and intra-class heterogeneity are challenging issues for histopathological image segmentation. Recent works addressing these issues mainly focus on learning intra-class similarity, resulting in the spurious features of each category being captured and the discriminative ability of feature representation for each category being decreased. In this paper, we propose a hierarchical prompt contrastive method for histopathological image segmentation with hierarchical text prompt contrastive loss and hierarchical class prompt contrastive loss. Specifically, for hierarchical text prompt contrastive loss, we align the features of different layers from the image encoder to the adaptive text prompt for each category by adding linear layers following a frozen text encoder. Then we can generate several classification activation maps to produce high-confidence pseudo segmentation masks, and they are aligned to text features for contrastive learning with the foundation model to generate more confident segmentation masks. While in hierarchical class prompt contrastive loss, the subclass prompts are obtained by dividing each category into several clusters.",
+  "gid": 711,
+  "theme": "Weakly-supervised medical segmentation"
+ }
+}

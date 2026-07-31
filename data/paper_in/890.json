@@ -1,0 +1,11 @@
+{
+ "batch": "b059",
+ "paper": {
+  "id": "2d0fdeee911257b24c794510a5f74491ea5fa0db",
+  "venue": "WSDM 2026",
+  "title": "XLingLearn: Balancing Alignment and Robustness for Zero-Shot Cross-Lingual Transfer",
+  "abstract": "Recent research aims to improve cross-lingual transfer learning in low-resource scenarios by optimizing the internal representations of multilingual models. However, previous methods typically rely on large-scale parallel corpora and overlook the subtle semantic differences between languages, leading to excessive clustering or collapse of local semantic units in the embedding space. This weakens the model's generalization ability on unseen data and its robustness under noisy conditions. To address this, we propose XLingLearn, a collaborative optimization framework that enhances cross-lingual transfer by expanding robust embedding regions and refining multilingual embedding space. Specifically, we design a distance-dispersion constraint strategy to push overly clustered semantic units apart to prevent semantic collapse, and introduce a direction-consistency constraint to prevent semantic bias. Additionally, we introduce an attention consistency module to stabilize the robust region. Finally, to mitigate the embedding space and context space mismatch caused by data augmentation, we introduce a debiasing-optimization regularization term, which enhances transfer efficiency and stability. Experimental results show that XLingLearn improves cross-lingual transfer performance across 17 target languages in the XNLI and PAWS-X tasks, enhancing generalization and robustness under low-reso",
+  "gid": 890,
+  "theme": "Cross-lingual transfer learning"
+ }
+}

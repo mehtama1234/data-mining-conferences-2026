@@ -1,0 +1,11 @@
+{
+ "batch": "b093",
+ "paper": {
+  "id": "10.1145/3805712.3808488",
+  "venue": "SIGIR 2026",
+  "title": "As It Was: Aligning LLM Search Evaluation with Historical User Preferences",
+  "abstract": "Large-scale search systems evolve faster than human quality assurance scales, especially for long-tail intents and multilingual queries. LLM-as-a-judge approaches are a scalable alternative for evaluating the relevance of search engine result pages (SERPs), but judgments based solely on semantic similarity or world knowledge can drift from actual user preferences, particularly for ambiguous queries. We introduce a behavior-grounded LLM judge that augments each SERP item with a lightweight, auditable behavioral prior in the form of a Query--Relevance--Impressions (QRI) card. Each card summarizes how users have historically interacted with similar queries and results, providing compact empirical evidence that the judge can cite to resolve ambiguity and make more consistent relevance judgments, while still relying on semantic reasoning. In a large-scale music search evaluation at Spotify, using relevance estimates derived from historical user interactions across 6,000 recomposed SERPs, the behavior-grounded judge achieves stronger alignment with user preferences, improving Spearman rank correlation by approximately +5% overall and yielding a +91% relative improvement on disagreement cases. On a multilingual human-judged dataset spanning five languages, grounding further increases correlation with human relevance judgments by +15%. Importantly, when evaluated against outcomes from ",
+  "gid": 1396,
+  "theme": "Search relevance evaluation"
+ }
+}

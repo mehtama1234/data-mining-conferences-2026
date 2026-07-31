@@ -1,0 +1,564 @@
+{
+ "key": "advertising-e-commerce",
+ "theme": "Advertising & E-commerce",
+ "n_papers": 152,
+ "pct": 7.8,
+ "by_venue": {
+  "WWW 2026": 66,
+  "WSDM 2026": 11,
+  "SIGIR 2026": 73,
+  "KDD 2026": 2
+ },
+ "theme_examples": [
+  {
+   "title": "AgenticShop: Benchmarking Agentic Product Curation for Personalized Web Shopping",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "Understanding Strategic Platform Entry and Seller Exploration: A Stackelberg Model",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "Safeguarding Children at Scale: Cost-Effective Multimodal LLM Detection of Inappropriate YouTube Advertising",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "Beyond Item-Level Prediction: Fine-Grained CVR Modeling with Price SKU in E-Commerce Recommendation",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "LiquidityPool: Game-Theoretic Analysis of Stakeholder Revenue in Ranking-Dependent DeFi",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "Towards Automated Brand-Safety Detection: A Novel Dataset and Comparative Analysis of Language Models",
+   "venue": "WWW 2026"
+  }
+ ],
+ "representative_papers": [
+  {
+   "title": "Modeling Cascaded Delay Feedback for Online Net Conversion Rate Prediction: Benchmark, Insights and Solutions",
+   "venue": "WWW 2026",
+   "problem": "Net conversion rate prediction lacks datasets and methods for cascaded delay feedback modeling",
+   "approach": "CASCADE dataset plus TESLA method modeling CVR and RFR separately with delay time features",
+   "contribution": "First open-source NetCVR dataset and cascaded modeling approach outperforming direct NetCVR prediction",
+   "primary_theme": "conversion rate prediction",
+   "methods": [
+    "recommendation-system",
+    "temporal-modeling",
+    "e-commerce"
+   ]
+  },
+  {
+   "title": "Beyond Item-Level Prediction: Fine-Grained CVR Modeling with Price SKU in E-Commerce Recommendation",
+   "venue": "WWW 2026",
+   "problem": "CVR prediction at item level misses fine-grained SKU signals and creates price inconsistency bias",
+   "approach": "Price SKU (PSKU) granularity with price-aware prediction and personalized pricing display",
+   "contribution": "PSKU4Rec improves CVR accuracy and price consistency with 6x sparsity reduction",
+   "primary_theme": "granular e-commerce recommendation",
+   "methods": [
+    "recommendation-system",
+    "cvr-prediction",
+    "e-commerce"
+   ]
+  },
+  {
+   "title": "ARCHER: Shooting Straight in Multimodal E-Commerce Search at Alibaba with Progressive Alignment",
+   "venue": "WWW 2026",
+   "problem": "E-commerce visual search fails when systems match visual similarity over semantic relevance",
+   "approach": "Three-stage progressive alignment from category understanding to product discrimination",
+   "contribution": "ARCHER framework with proto-align, cross-view learning for multimodal e-commerce retrieval",
+   "primary_theme": "Multimodal e-commerce search",
+   "methods": [
+    "multimodal",
+    "retrieval",
+    "semantic-alignment"
+   ]
+  },
+  {
+   "title": "Campaign-2-PT-RAG: LLM-Guided Semantic Product Type Attribution for Scalable Campaign Ranking",
+   "venue": "WWW 2026",
+   "problem": "Campaign language doesn't directly map to product purchases; lack of supervision for ranking.",
+   "approach": "LLM interprets campaigns, semantic search retrieves product types, structured classifier evaluates relevance.",
+   "contribution": "Reframes attribution into semantic alignment; generates 78-90% precise training labels at scale.",
+   "primary_theme": "e-commerce campaign ranking",
+   "methods": [
+    "llm",
+    "semantic_search",
+    "rag"
+   ]
+  },
+  {
+   "title": "DARA: Few-shot Budget Allocation in Online Advertising via In-Context Decision Making with RL-Finetuned LLMs",
+   "venue": "WWW 2026",
+   "problem": "Few-shot budget allocation in online advertising lacks numerical precision needed for optimization",
+   "approach": "Dual-phase framework combining in-context reasoning with fine-grained feedback-driven optimizer",
+   "contribution": "GRPO-Adaptive LLM post-training enhancing reasoning and numerical precision for AIGB tasks",
+   "primary_theme": "LLM ad bidding",
+   "methods": [
+    "llm",
+    "reinforcement-learning",
+    "in-context-learning"
+   ]
+  },
+  {
+   "title": "Anatomy of Generative Scam Campaigns in Online Advertising Ecosystems",
+   "venue": "WWW 2026",
+   "problem": "AI-enabled scam campaigns resist moderation through scale, rotation, and cloaking strategies",
+   "approach": "Campaign-level analysis of production templates, variants, auxiliary masking content",
+   "contribution": "Empirical characterization shows scams prioritize scale and resilience over fidelity",
+   "primary_theme": "Scam detection advertising",
+   "methods": [
+    "campaign_analysis",
+    "temporal_patterns",
+    "content_analysis"
+   ]
+  },
+  {
+   "title": "From Sold-Out to Sales Uplift: Causal Inference for Intelligent Inventory Management on Online Travel Platforms",
+   "venue": "WWW 2026",
+   "problem": "Online travel platforms lose revenue from inventory delays and supply strikes",
+   "approach": "Causality-driven network estimating platform-wide treatment effects",
+   "contribution": "10M+ RMB annual GMV increase with causal inventory management",
+   "primary_theme": "Causal inference e-commerce",
+   "methods": [
+    "causal-inference",
+    "neural-network",
+    "treatment-effect"
+   ]
+  },
+  {
+   "title": "Users Pay Twice: The Hidden Energy Cost of Web Advertising",
+   "venue": "WWW 2026",
+   "problem": "Web advertising's hidden energy cost to users remains unmeasured and understudied",
+   "approach": "Large-scale measurement of client-side CPU energy across 724k website visits via tracking",
+   "contribution": "Quantified energy overhead of ads tracking and real-time bidding at scale",
+   "primary_theme": "Web analytics",
+   "methods": [
+    "measurement",
+    "energy-analysis"
+   ]
+  },
+  {
+   "title": "GAM: A Generative Auto-Marketing Framework in Online E-commerce Platforms",
+   "venue": "WWW 2026",
+   "problem": "Auto-marketing requires joint bidding and coupon decisions under self-funding constraints in dynamic environments",
+   "approach": "Generative model with constraint-aware reward alignment using Group Relative Policy Optimization",
+   "contribution": "GAM framework balances business objectives and constraint satisfaction for e-commerce auto-marketing",
+   "primary_theme": "LLM e-commerce optimization",
+   "methods": [
+    "reinforcement-learning",
+    "llm",
+    "constraint-optimization"
+   ]
+  },
+  {
+   "title": "AHBid: An Adaptable Hierarchical Bidding Framework for Cross-Channel Advertising",
+   "venue": "WWW 2026",
+   "problem": "Multi-channel bid optimization lacks flexibility adapting to dynamics while capturing historical temporal dependencies.",
+   "approach": "Hierarchical framework integrating diffusion model planning with constraint enforcement and trajectory refinement.",
+   "contribution": "AHBid enables adaptive budget allocation across advertising channels via generative planning and real-time control.",
+   "primary_theme": "Online advertising bidding",
+   "methods": [
+    "diffusion models",
+    "reinforcement learning",
+    "constraint optimization"
+   ]
+  },
+  {
+   "title": "What Is Your AI Agent Buying? Evaluation, Biases, Model Dependence, & Emerging Implications of Agentic E-Commerce",
+   "venue": "WWW 2026",
+   "problem": "AI agent e-commerce behavior remains unexplored revealing potential market concentration and unfair competition.",
+   "approach": "ACES sandbox environment with programmable marketplace testing agent choices across randomized experiments.",
+   "contribution": "Reveals heterogeneous model position effects and attribute sensitivities raising regulatory and design concerns.",
+   "primary_theme": "Agentic e-commerce behavior",
+   "methods": [
+    "agent evaluation",
+    "empirical analysis",
+    "marketplace design"
+   ]
+  },
+  {
+   "title": "Prediction Guardian: A Distribution-based Real-time Anomaly Detection and Mitigation Framework for Online Advertising",
+   "venue": "WWW 2026",
+   "problem": "DLRM predictions face distribution shifts and silent data corruption from retraining and feature pipeline vulnerabilities.",
+   "approach": "Prediction Guardian monitors prediction distributions using Jensen-Shannon divergence to detect anomalies and apply targeted mitigations.",
+   "contribution": "Framework stabilizes DLRM predictions through real-time anomaly detection and automated mitigation across multiple corruption scenarios.",
+   "primary_theme": "anomaly detection",
+   "methods": [
+    "distribution-monitoring",
+    "neural-networks",
+    "anomaly-detection",
+    "adversarial"
+   ]
+  },
+  {
+   "title": "MCRec: Few-Shot Multimodal Cover Recommendation via User Interest Profiles",
+   "venue": "WWW 2026",
+   "problem": "Cold-start and sparsity in cover image recommendation for e-commerce items",
+   "approach": "Vision-Language Models with text-guided visual interest aggregation and textual inversion",
+   "contribution": "Few-shot multimodal cover selection outperforms baselines with 3.72 percent Recall@1 gains",
+   "primary_theme": "Multimodal recommendation",
+   "methods": [
+    "vlm",
+    "multimodal",
+    "vision-language"
+   ]
+  },
+  {
+   "title": "Thinking Broad, Acting Fast: Latent Reasoning Distillation from Multi-Perspective Chain-of-Thought for E-Commerce Relevance",
+   "venue": "WWW 2026",
+   "problem": "E-commerce relevance models struggle with long-tail queries; CoT distillation discards reasoning at inference",
+   "approach": "Multi-perspective CoT with knowledge distillation preserving reasoning structure for real-time serving",
+   "contribution": "Better exploits CoT semantics throughout optimization enabling deployment of reasoning-aware students",
+   "primary_theme": "Relevance modeling",
+   "methods": [
+    "cot",
+    "distillation",
+    "ecommerce"
+   ]
+  },
+  {
+   "title": "Multi-Branch Cooperation Networks for Enhanced Click-Through Rate Prediction in Large-Scale E-Commerce Search",
+   "venue": "WWW 2026",
+   "problem": "Complex feature interactions underutilized in single-branch CTR prediction models",
+   "approach": "Multi-branch cooperation with co-teaching and moderate differentiation strategy",
+   "contribution": "Enhanced CTR prediction through collaborative branches sharing learned representations",
+   "primary_theme": "click-through rate prediction",
+   "methods": [
+    "feature interaction",
+    "cooperative learning",
+    "multi-network"
+   ]
+  },
+  {
+   "title": "Multi-field Balance-aware Calibration of Predictions in Online Advertising",
+   "venue": "WWW 2026",
+   "problem": "Biased calibration due to field distribution differences in online advertising",
+   "approach": "Pareto frontier-based multi-objective optimization for multi-field personalized calibration",
+   "contribution": "Balanced prediction calibration across different field groups using Pareto efficiency",
+   "primary_theme": "prediction calibration advertising",
+   "methods": [
+    "multi-objective optimization",
+    "calibration",
+    "advertising"
+   ]
+  },
+  {
+   "title": "EDTF: A Plug-and-Play Learning Framework for Estimated Delivery Time Task",
+   "venue": "WWW 2026",
+   "problem": "Delivery time prediction architectures expensive; need process-level optimization over model-centric design",
+   "approach": "Composite learning framework transforms regression to ordinal classification; cross-view consistency",
+   "contribution": "Plug-and-play EDTF enhances diverse models via temporal order preservation and next-hop alignment",
+   "primary_theme": "Delivery time prediction",
+   "methods": [
+    "ordinal classification",
+    "self-supervised learning",
+    "e-commerce"
+   ]
+  },
+  {
+   "title": "SEER: Set Encoding for Efficient Representation in Large-Scale E-commerce",
+   "venue": "WWW 2026",
+   "problem": "LLMs degrade on large, repetitive item collections; attention saturation, noise increase",
+   "approach": "Set encoding via learned aggregation token and multi-task alignment strategy",
+   "contribution": "SEER maintains stable LLM performance on thousands of near-duplicate e-commerce items",
+   "primary_theme": "LLM set encoding",
+   "methods": [
+    "llm",
+    "adapter",
+    "set-aggregation"
+   ]
+  },
+  {
+   "title": "STCRank: Spatio-temporal Collaborative Ranking for Interactive Recommender System at Kuaishou E-shop",
+   "venue": "WWW 2026",
+   "problem": "E-commerce ranking systems face multi-objective conflicts and temporal greedy traps",
+   "approach": "Spatio-temporal collaborative ranking framework addressing spatial and sequential slot transitions",
+   "contribution": "STCRank mitigates objective overlaps in full-screen immersive e-commerce browsing interactions",
+   "primary_theme": "E-commerce ranking",
+   "methods": [
+    "ranking",
+    "multi-objective",
+    "temporal"
+   ]
+  },
+  {
+   "title": "Determinants and Effects of Buy Box Suppression on Amazon",
+   "venue": "WWW 2026",
+   "problem": "Buy Box suppression impact on sellers and competition in online marketplaces",
+   "approach": "High-frequency dataset tracking 17,754 Amazon products hourly for 8 weeks with competitor offers",
+   "contribution": "Quantifies suppression drivers and demonstrates severe seller impacts on search/ads while finding no competitor price effects",
+   "primary_theme": "E-commerce platform governance",
+   "methods": [
+    "empirical",
+    "dataset",
+    "marketplace"
+   ]
+  },
+  {
+   "title": "Multi-Behavior Sequential Modeling with Transition-Aware Graph Attention Network for E-Commerce Recommendation",
+   "venue": "WWW 2026",
+   "problem": "High computational cost of transformer-based multi-behavior sequential models limits scalability for long sequences",
+   "approach": "Transition-Aware Graph Attention with linear complexity via structured sparse graphs of item/category/neighbor transitions",
+   "contribution": "Linear-time multi-behavior modeling capturing behavioral transitions efficiently for large-scale e-commerce systems",
+   "primary_theme": "Graph recommendation",
+   "methods": [
+    "graph attention",
+    "sequential modeling",
+    "sparsity"
+   ]
+  },
+  {
+   "title": "Workshop on Emerging Trends in Web Advertising",
+   "venue": "WWW 2026",
+   "problem": "Workshop announcement on web advertising trends and emerging technologies",
+   "approach": "Platform for expert discussions across advertising, privacy, and data science",
+   "contribution": "Forum for cutting-edge research on ethical and privacy-first web advertising",
+   "primary_theme": "Web advertising workshop",
+   "methods": [
+    "workshop",
+    "survey"
+   ]
+  },
+  {
+   "title": "Feedback Control for Small Budget Campaigns in Advertising",
+   "venue": "WWW 2026",
+   "problem": "Ad budget pacing relies on ad-hoc tuning causing instability in spend control",
+   "approach": "Control-theoretic framework: bucketized hysteresis with proportional feedback",
+   "contribution": "Reduces pacing error 13% and lambda-volatility 54%; stable tracking of spend rates",
+   "primary_theme": "Advertising budget control",
+   "methods": [
+    "control-theory",
+    "optimization",
+    "advertising"
+   ]
+  },
+  {
+   "title": "Aligning Query Rewriting with Human Cognition and Preference in E-Commerce Search",
+   "venue": "WWW 2026",
+   "problem": "LLM-based query rewriting treats queries uniformly; rewrites deviate from human expectations due to difficulty unawareness",
+   "approach": "AWHCP introduces PIFR paradigm with multi-granularity alignment to human cognition and system preferences",
+   "contribution": "Achieves difficulty-aware rewriting via supervised fine-tuning and coarse-to-fine direct preference alignment",
+   "primary_theme": "E-commerce query rewriting",
+   "methods": [
+    "llm-fine-tuning",
+    "preference-alignment",
+    "semantic-alignment",
+    "e-commerce-search"
+   ]
+  },
+  {
+   "title": "Online Advertising with Spatial Interactions",
+   "venue": "WWW 2026",
+   "problem": "Online ad allocation ignores spatial externalities where ads compete for user attention",
+   "approach": "Metric-space framework modeling value as function of bid and neighboring ad configuration",
+   "contribution": "Polynomial-time constant approximation for nearest-neighbor model with truthful mechanism",
+   "primary_theme": "Online advertising allocation",
+   "methods": [
+    "auction",
+    "spatial-externalities",
+    "mechanism-design"
+   ]
+  },
+  {
+   "title": "Click-to-Ask: An AI Live Streaming Assistant with Offline Copywriting and Online Interactive QA",
+   "venue": "WWW 2026",
+   "problem": "Live streaming commerce requires efficient product promotion and real-time QA",
+   "approach": "Offline copywriting generation and online question recognition with event-level memory",
+   "contribution": "Click-to-Ask achieves 0.913 recognition and 0.876 response quality in live commerce",
+   "primary_theme": "live streaming assistant",
+   "methods": [
+    "nlp",
+    "llm",
+    "multimodal"
+   ]
+  },
+  {
+   "title": "Using Brand Knowledge Bases and LLM Agents to Enhance E-commerce Retailers' Catalog Quality",
+   "venue": "WSDM 2026",
+   "problem": "E-commerce catalogs suffer from quality issues despite data cleaning efforts, limiting customer experience.",
+   "approach": "Leverage brand knowledge bases and LLM agents to automatically enhance catalog quality concurrently.",
+   "contribution": "Unified method combining repair and matching of product entries outperforms separate approaches.",
+   "primary_theme": "e-commerce catalog quality",
+   "methods": [
+    "llm",
+    "agent",
+    "knowledge-base"
+   ]
+  },
+  {
+   "title": "Design and Evaluation of Whole-Page Experience Optimization for E-commerce Search",
+   "venue": "WSDM 2026",
+   "problem": "E-commerce search results pages evolved to non-linear layouts unsuitable for position-biased ranking",
+   "approach": "Causal framework optimizing 2D layout, relevance, visuals with long-term satisfaction metrics",
+   "contribution": "Whole-page optimization achieves 1.86% brand relevance gain and 0.05% revenue uplift via A/B test",
+   "primary_theme": "e-commerce search ranking",
+   "methods": [
+    "causal inference",
+    "ranking",
+    "layout optimization",
+    "long-term metrics"
+   ]
+  },
+  {
+   "title": "APPNet: Automatic Feature Partitioning-Based Parameter Personalized Network for Conversion Prediction in E-commerce",
+   "venue": "WSDM 2026",
+   "problem": "Conversion models fail to capture heterogeneous distributions; parameter personalization suffers from gradient conflicts",
+   "approach": "Automatic feature partitioning separates grouping features from prediction task features; personalized network adjusts DNN weights",
+   "contribution": "APPNet automatically partitions features to avoid gradient conflicts while enabling parameter personalization for conversion prediction",
+   "primary_theme": "conversion prediction personalization",
+   "methods": [
+    "feature_partitioning",
+    "neural_networks",
+    "parameter_personalization"
+   ]
+  },
+  {
+   "title": "REFLEX: Reinforcement Feedback Learning with Large Language Models for E-commerce Query Expansion",
+   "venue": "WSDM 2026",
+   "problem": "Query expansion in e-commerce fails on short queries, incomplete supervision, evolving catalogs without domain constraints",
+   "approach": "LLM training via search-engine-in-loop RL with catalog grounding and relevance-diversity reward",
+   "contribution": "REFLEX improves semantic coverage and retrieval effectiveness; online A/B confirms scalability gains",
+   "primary_theme": "E-commerce query expansion",
+   "methods": [
+    "llm",
+    "reinforcement_learning",
+    "search"
+   ]
+  },
+  {
+   "title": "TAR: Generative Auto-Bidding and Budget Pacing via Multi-Scale Trajectory Modeling",
+   "venue": "SIGIR 2026",
+   "problem": "Auto-bidding faces granularity mismatch: fine-grained decisions with coarse feedback signals",
+   "approach": "Generative trajectory modeling with coarse-to-fine multi-scale VQVAE compression",
+   "contribution": "TAR aligns planning resolution with feedback dynamics for stable advertising optimization",
+   "primary_theme": "Auto-bidding trajectory modeling",
+   "methods": [
+    "trajectory-generation",
+    "autoregressive-models",
+    "multi-scale-compression"
+   ]
+  },
+  {
+   "title": "Large-Scale Online Learning for Generative List Recommendation in E-commerce: An Environment Policy Optimization Approach",
+   "venue": "SIGIR 2026",
+   "problem": "Generative list recommendation lacks efficient online learning for dynamic e-commerce",
+   "approach": "Environment Policy Optimization exploiting evaluator gradients via NeuralSort relaxation",
+   "contribution": "End-to-end differentiable list generation with direct reward optimization",
+   "primary_theme": "Generative recommendation",
+   "methods": [
+    "policy-gradient",
+    "differentiable-sorting",
+    "reinforcement-learning"
+   ]
+  },
+  {
+   "title": "Demand-Calibrated Facet Diversification with Deployable Soft Quotas for E-Commerce Search",
+   "venue": "SIGIR 2026",
+   "problem": "E-commerce search rankers homogenize results, under-serving ambiguous or exploratory queries.",
+   "approach": "Demand-calibrated framework estimates cohort-level facet distribution from engagement data.",
+   "contribution": "Lightweight soft-quota adjustment improves revenue, engagement, and reduces abandonment.",
+   "primary_theme": "search diversification",
+   "methods": [
+    "ranking",
+    "diversification",
+    "e-commerce"
+   ]
+  },
+  {
+   "title": "WebMall - A Multi-Shop Benchmark for Evaluating Web Agents",
+   "venue": "SIGIR 2026",
+   "problem": "Existing offline e-commerce benchmarks handle only single shops, missing multi-shop complex retrieval",
+   "approach": "Multi-shop offline simulation with heterogeneous product data and complex comparison shopping tasks",
+   "contribution": "WebMall: first offline multi-shop benchmark for evaluating web agents on price and product comparisons",
+   "primary_theme": "web agent evaluation",
+   "methods": [
+    "web agent",
+    "benchmark",
+    "e-commerce"
+   ]
+  },
+  {
+   "title": "EVADE-Bench: Multimodal Benchmark for Evaluating and Enhancing Evasive Content Detection",
+   "venue": "SIGIR 2026",
+   "problem": "LLMs and VLMs vulnerable to evasive e-commerce content deliberately obfuscated",
+   "approach": "Expert-curated multimodal benchmark combining rule reasoning and obfuscation detection",
+   "contribution": "EVADE-Bench first unified evaluation for evasive content in six violation categories",
+   "primary_theme": "content moderation",
+   "methods": [
+    "benchmark",
+    "multimodal",
+    "evasion-detection"
+   ]
+  },
+  {
+   "title": "ZIPBid: Hierarchical Zero-shot Incremental Spend Planning for Auto-bidding",
+   "venue": "SIGIR 2026",
+   "problem": "Auto-bidding systems struggle with sparse conversions and long attribution latency feedback",
+   "approach": "Hierarchical LLM analysis for spend planning combined with Model Predictive Control",
+   "contribution": "Achieves +1.8% conversion improvement and campaign stability with sparse feedback",
+   "primary_theme": "online advertising",
+   "methods": [
+    "llm",
+    "optimization",
+    "control-systems"
+   ]
+  },
+  {
+   "title": "Booking Funnel and Substitution-Aware User Behavior Modeling for Demand Prediction and Joint Room Pricing",
+   "venue": "SIGIR 2026",
+   "problem": "Booking behavior cascades (click\u2192conversion) with intra-hotel substitution; existing models ignore structure",
+   "approach": "BFSNet: decompose into stages via neural network; mixing network captures substitution with monotonic constraints",
+   "contribution": "Stage-wise interpretable learning; incorporates economic substitution structure for demand prediction",
+   "primary_theme": "E-commerce demand prediction",
+   "methods": [
+    "neural-network",
+    "behavioral-modeling",
+    "demand-prediction"
+   ]
+  },
+  {
+   "title": "CoCo: Conformal Confidence Suppression to Optimize Search Results",
+   "venue": "SIGIR 2026",
+   "problem": "E-commerce search suppression disregards prediction uncertainty, causing over-suppression and degraded customer experience",
+   "approach": "Conformal confidence framework accounting for uncertainty in uplift-based modeling via causal effect learning",
+   "contribution": "CoCo suppressor achieves statistically significant revenue and profit improvements over baseline methods",
+   "primary_theme": "Causal recommendation ranking",
+   "methods": [
+    "causal-inference",
+    "conformal-prediction",
+    "uplift-modeling",
+    "e-commerce"
+   ]
+  },
+  {
+   "title": "How Trendyol Enables Trustworthy A/B Testing at E-Commerce Scale Through Integrated Statistical Methodologies",
+   "venue": "SIGIR 2026",
+   "problem": "A/B testing at scale prone to misleading conclusions from heterogeneous populations and interference",
+   "approach": "Persona-based stratification, power monitoring, and orthogonal assignment across experiments",
+   "contribution": "Statistical methodology reduces false positives and enables safe parallel experimentation at scale",
+   "primary_theme": "Trustworthy A/B testing",
+   "methods": [
+    "stratification",
+    "power_analysis",
+    "orthogonal_design",
+    "statistical_testing"
+   ]
+  },
+  {
+   "title": "MMRM: A Multiplex Multimodal Representation Model for Product Ranking in E-commerce Search",
+   "venue": "SIGIR 2026",
+   "problem": "E-commerce ranking underutilizes multimodal information by treating representations as static features",
+   "approach": "Unified framework aligning MLLMs with diverse collaborative signals via shared backbone with task-specific tokens",
+   "contribution": "MMRM generates multiplex item representations enabling efficient multitask ranking from single inference pass",
+   "primary_theme": "multimodal ranking",
+   "methods": [
+    "mllm",
+    "multitask-learning",
+    "multimodal",
+    "ecommerce"
+   ]
+  }
+ ]
+}

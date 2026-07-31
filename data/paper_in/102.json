@@ -1,0 +1,11 @@
+{
+ "batch": "b006",
+ "paper": {
+  "id": "1de61544cc685eb871988255ec05ef2816c556c7",
+  "venue": "WWW 2026",
+  "title": "ZABAPAD 2026: 1st Workshop on Zero-knowledge Proof and Blockchain for WEB 4.0: Advancing the Post-quantum and Decentralized Era",
+  "abstract": "ZABAPAD (Zero-knowledge proof And Blockchain for WEB 4.0: Advancing the Post-quantum And Decentralized Era) is a workshop focusing on zero-knowledge technologies, blockchain infrastructure, and post-quantum readiness for the emerging Web 4.0 ecosystem. This workshop emphasizes real-world deployments, empirical measurements, and interoperability across Web and non-Web domains. In particular, ZABAPAD explores the convergence of AIoT and ZKP\u2014redefining identity and trust models beyond SIM in mobile networks, IP in Web 2.0, and NFT in Web 3.0. As AIoT systems evolve toward decentralized, post-quantum infrastructures, ZKPbased authentication and AIoT SIM functionalities are emerging as key enablers of secure, privacy-preserving, and verifiable connectivity among intelligent devices, vehicles, and edge services. This theme extends to ZKML, Layer-2 proving/verification, TEE+ZK integration for verifiable compute, and post-quantum migration of identities, wallets, ledgers, and protocols. Expected outcomes include: (1) a practitioner-oriented adoption playbook, (2) an interoperability and standards checklist, (3) a curated set of reproducible benchmarks and datasets, and (4) a catalog of failure modes and mitigations for domains such as finance, mobility, healthcare, AIoT, public services, supply chain, and AI/ML. ZABAPAD complements the Web Conference and Web 4.0 communities by uniting ",
+  "gid": 102,
+  "theme": "Web 4.0 security workshop"
+ }
+}

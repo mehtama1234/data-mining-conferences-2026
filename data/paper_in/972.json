@@ -1,0 +1,11 @@
+{
+ "batch": "b064",
+ "paper": {
+  "id": "d980504603a731631005caa2aa8571167e34a034",
+  "venue": "WSDM 2026",
+  "title": "G-TRAC: Graph-textual Representations Alignment for Cold-start Recommendations",
+  "abstract": "The cold-start problem remains a significant challenge in recommendation systems, particularly for new users or unseen items with little to no historical data. Existing methods, including graph neural networks, often struggle in such scenarios. Inspired by the success of transformer models in natural language processing, we propose G-TRAC (Graph-Textual Representations Alignment for Cold-start Recommendations), a novel approach that integrates transformer-based textual modeling with graph neural networks. By effectively leveraging both textual and structural information, G-TRAC addresses cold-start challenges more effectively. Extensive experiments demonstrate its ability to enhance recommendation quality and generalize well across diverse scenarios.",
+  "gid": 972,
+  "theme": "Cold-start recommendation"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "batch": "b061",
+ "paper": {
+  "id": "778e4fcdfb68c63f876a512c47cc004aa7566416",
+  "venue": "WSDM 2026",
+  "title": "GNN Explainers 2.0: User-centric and Data-driven Insights",
+  "abstract": "Graph neural networks (GNNs) are deep learning models designed for graph-structured data that have achieved strong results across domains--social networks, knowledge graphs, bioinformatics, transportation, World Wide Web, and finance--on tasks such as node and graph classification, link prediction, entity resolution, question answering, recommendation, and fraud detection. Explaining the decisions of high-performing, yet ''black-box'' GNNs remains both challenging and essential. The initial five years have produced tremendous progress with many GNN explainers (e.g., GNNExplainer, PGExplainer, SubgraphX, PGMExplainer, GraphLime, GCFExplainer, CF2, GNN-LRP) that identify the influential nodes, edges, subgraphs, and features aiming to explain the output of GNNs. We refer to those works as GNN Explainers 1.0, since they provide one-time, final-output explanations and are focused on narrow tasks like node or graph classification, which limits their usefulness for broader, user-centered needs. Practical debugging and accountability require robust, multi-faceted, and GNN's layer-wise provenance so that data scientists can trace how inputs transform through layers and locate where errors occur. Non-technical stakeholders need explanations that are accessible, configurable, and queryable through familiar interfaces--structured queries, ad-hoc instructions, counterfactual evidence, or na",
+  "gid": 923,
+  "theme": "GNN explainability"
+ }
+}

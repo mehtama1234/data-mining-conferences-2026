@@ -1,0 +1,11 @@
+{
+ "batch": "b058",
+ "paper": {
+  "id": "1b1f9cd2e50ee91c8645c0f4539e8eaebba087c0",
+  "venue": "WSDM 2026",
+  "title": "Knowledge-Graph Structure-Aware Conversational Entity Retrieval",
+  "abstract": "Conversational information-seeking systems increasingly rely on neural architectures and large language models (LLMs), yet they remain limited in their ability to retrieve structured, contextually relevant knowledge from large-scale knowledge graphs (KGs). My doctoral research addresses this gap through the novel task of Conversational Entity Retrieval from a Knowledge Graph (CER-KG)\u2014the problem of identifying the correct KG entity in response to a context-dependent query within a multi-turn dialog. To support reproducible research, I introduced QBLink-KG, the first benchmark for CER-KG, adapted from conversational reading comprehension data. Building on this foundation, I proposed two neural ranking architectures: NACER, which aggregates lexical and semantic relevance signals from the local KG neighborhood, and DRAGON, which employs graph convolution and self-attention to model fine-grained, dialog-aware relationships across KG components. DRAGON achieves significant performance gains demonstrating the effectiveness of integrating graph-structured reasoning with conversational context modeling. Collectively, this research advances context-sensitive, structure-aware retrieval, bridging symbolic reasoning from KGs with neural representation learning for conversational information access.",
+  "gid": 881,
+  "theme": "conversational KG retrieval"
+ }
+}

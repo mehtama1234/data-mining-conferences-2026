@@ -1,0 +1,11 @@
+{
+ "batch": "b030",
+ "paper": {
+  "id": "874470e8fe941c587ae78a80de5fb2220b1be6c3",
+  "venue": "WWW 2026",
+  "title": "Beyond Engagement: A Human-Centered Evaluation Framework for LLM-Powered Recommender Systems",
+  "abstract": "Recommender systems are at the heart of how individuals are engaged with information, products, and opportunities across the web. Although some recent progress, including the inclusion of large language models (LLMs) within them, has improved personalization and interaction, nonetheless, most state-of-the-art recommender systems are assessed for their performance through metrics largely centered around engagement, such as clicks, dwell time, or conversions. However, such metrics commonly do not address what matters most from a human experience standpoint, such as trust, agency, transparency, and overall satisfaction. In this work, we develop a human-centered assessment framework for LLM-assisted recommenders that reorients evaluation practices in more long-term engagement-focused assessment contexts towards more human-aligned frameworks. To assess the utility of our framework, we develop a brief qualitative assessment of an LLM-assisted recommendation tool that investigates trade-offs between engagement-focused design choices versus more human centered ones through qualitative assessment. These design choices include factors like ranking strategies, diversity concerns, trust mechanisms, and transparency techniques. We thus explore these concepts in more depth within our qualitative assessment framework. Our analysis draws attention to persistent discrepancies between engagement",
+  "gid": 453,
+  "theme": "human-centered recommendation"
+ }
+}

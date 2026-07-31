@@ -1,0 +1,11 @@
+{
+ "batch": "b046",
+ "paper": {
+  "id": "d3cfead6c66979ceb32c3eb8acde1e78db73579c",
+  "venue": "WWW 2026",
+  "title": "No Evidence, No Problem: When Less is More for Out of Context Multimodal Misinformation Detection",
+  "abstract": "The proliferation of multimodal misinformation, particularly Out-of-Context (OOC) image-text mismatches, poses significant challenges for reliable information verification. Existing detection approaches often rely on unimodal signals, limiting their capacity to capture nuanced cross-modal inconsistencies. Although recent multimodal methods have improved performance, many depend on large-scale architectures or external web evidence, which hinders scalability and practical deployment. In this work, we introduce a lightweight and evidence-free framework for OOC misinformation detection that achieves competitive performance with high efficiency. Our approach enhances visual understanding by integrating semantic entity extraction and generated visual captions, which are fused with the accompanying textual caption and input to a prompt-tuned Flan-T5 model. Simultaneously, a fine-tuned CLIP model evaluates image-text alignment. The outputs of both models are combined via a validation-optimized weighted ensemble. Extensive experiments on the NewsCLIPpings dataset demonstrate that our method achieves state-of-the-art accuracy among evidence-free techniques, while offering low computational overhead and strong interpretability, making it well-suited for real-world applications.",
+  "gid": 699,
+  "theme": "Misinformation detection"
+ }
+}

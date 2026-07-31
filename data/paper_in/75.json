@@ -1,0 +1,11 @@
+{
+ "batch": "b005",
+ "paper": {
+  "id": "14f343e4294736d913b2d1c121243980f1297090",
+  "venue": "WWW 2026",
+  "title": "Social Bias Benchmarks for Large Language Models",
+  "abstract": "Pretrained multilingual models exhibit social biases similar to those observed in models trained on English-only data. This presentation is based on a systematic review of recent research that extends bias evaluation and mitigation beyond English, with a focus on multilingual and non-English contexts. We analyze existing benchmarks through the lenses of linguistic diversity, cultural awareness, and the evaluation metrics and mitigation strategies they employ. Our review highlights key gaps in prevailing methodological choices, while also cataloguing common challenges and solutions in adapting bias benchmarks across languages and cultures.",
+  "gid": 75,
+  "theme": "Multilingual bias evaluation"
+ }
+}

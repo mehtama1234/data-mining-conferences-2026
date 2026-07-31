@@ -1,0 +1,11 @@
+{
+ "batch": "b076",
+ "paper": {
+  "id": "10.1145/3805712.3808541",
+  "venue": "SIGIR 2026",
+  "title": "Towards a Relevance Posterior in Neural Information Access",
+  "abstract": "Modern information retrieval systems typically operationalise relevance as a query-conditional score computed at inference time. This design choice has become dominant such that alternative decompositions of relevance are rarely discussed, despite the long history of document and query priors in probabilistic retrieval and large-scale search. As neural ranking models grow more computationally expensive and retrieval pipelines expand to include multi-stage ranking, recommendation, and retrieval-augmented generation, this monolithic view of query-time scoring becomes increasingly limiting. We argue that modern information access systems are more naturally understood as performing approximate posterior inference, in which relevance is refined through a staged combination of query-dependent likelihoods and query-independent priors. We extend classical probabilistic retrieval formalisms to contemporary learned systems and show how explicit likelihood-prior decomposition exposes new opportunities to shift computation offline while disentangling document-level and interaction-level beliefs. We present empirical evidence that incorporating query-independent document utility can complement existing rankers and improve effectiveness with minimal query-time computation (solely score fusion). Concretely, a learned prior improves first-stage retrieval through rank fusion (up to \u0394 nDCG@10 \u2248 ",
+  "gid": 1146,
+  "theme": "Neural ranking inference"
+ }
+}

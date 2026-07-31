@@ -1,0 +1,565 @@
+{
+ "key": "time-series-spatiotemporal",
+ "theme": "Time Series & Spatiotemporal",
+ "n_papers": 173,
+ "pct": 8.9,
+ "by_venue": {
+  "WWW 2026": 110,
+  "WSDM 2026": 12,
+  "SIGIR 2026": 35,
+  "KDD 2026": 16
+ },
+ "theme_examples": [
+  {
+   "title": "TravelReasoner: Leveraging Large Reasoning Models to Address Mobility Data Gap",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "Social Event Prediction via Fourier Graph Learning",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "Modeling Cascaded Delay Feedback for Online Net Conversion Rate Prediction: Benchmark, Insights and Solutions",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "Accurate Trajectory Recovery in Underserved Areas via Location Inference from Web Crowdsourced Data",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "BeeQoS: A Cloud-Native QoS System for Adaptive and Scalable Multi-Priority Bandwidth Guarantees",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "Delay-Aware Graph Neural Stochastic Differential Equations for Financial Time Series Modeling and Forecasting",
+   "venue": "WWW 2026"
+  }
+ ],
+ "representative_papers": [
+  {
+   "title": "KFTD: Koopman-Fourier Time-Differentiable Network for Continuous Ocean Spatiotemporal Forecasting",
+   "venue": "KDD 2026",
+   "problem": "Ocean spatiotemporal forecasting must balance nonlinear dynamics with computational cost and continuous-time accuracy.",
+   "approach": "Map dynamics to linear Koopman space, use Fourier analysis for continuous interpolation, solve via residual networks.",
+   "contribution": "5.6% MSE reduction, 76% faster than diffusion methods, maintains physical constraints in latent space.",
+   "primary_theme": "Time series forecasting",
+   "methods": [
+    "neural ODE",
+    "koopman theory",
+    "fourier analysis"
+   ]
+  },
+  {
+   "title": "Incident-Guided Spatiotemporal Traffic Forecasting",
+   "venue": "KDD 2026",
+   "problem": "Traffic forecasting ignores sudden incidents (accidents, weather) that dramatically alter flow patterns unpredictably.",
+   "approach": "Incident-Guided Spatiotemporal GNN with modules for heterogeneous incident impact and decay dynamics.",
+   "contribution": "IGSTGNN with incident dataset significantly improves prediction accuracy during anomalous periods.",
+   "primary_theme": "Time series forecasting",
+   "methods": [
+    "graph neural networks",
+    "spatiotemporal modeling",
+    "incident detection",
+    "deep learning"
+   ]
+  },
+  {
+   "title": "Macro-Micro Collaborative Learning for Logical Data Center Microservice Indicators Forecasting",
+   "venue": "WWW 2026",
+   "problem": "Microservice indicator forecasting requires modeling both inter-service dependencies and intra-service causal relationships",
+   "approach": "Macro-micro framework with Indicator-Centric Embedding, heterogeneous graph convolution, and causal sparse attention",
+   "contribution": "MaMiClif enables accurate LDC microservice forecasting via collaborative macro-micro dependency learning",
+   "primary_theme": "forecasting microservices",
+   "methods": [
+    "graph convolution",
+    "causal attention",
+    "time series"
+   ]
+  },
+  {
+   "title": "FedRMamba: Federated Residual Mamba for Multivariate Time-Series Forecasting",
+   "venue": "WWW 2026",
+   "problem": "Federated forecasting faces heterogeneous variables and temporal correlations.",
+   "approach": "Residual Mamba blocks: global frequency-aware module plus local patch-wise module with gated fusion.",
+   "contribution": "Personalized federated framework separates low-frequency and high-frequency patterns.",
+   "primary_theme": "federated time series forecasting",
+   "methods": [
+    "federated_learning",
+    "mamba",
+    "time_series"
+   ]
+  },
+  {
+   "title": "Statistical Analysis of 12V Power Load Uncertainty Using Conditional Probability for SDV Energy Management",
+   "venue": "WWW 2026",
+   "problem": "Reactive battery systems fail to predict uncertain driver power load patterns.",
+   "approach": "Conditional probability using past 60 seconds history; LightGBM tracking model.",
+   "contribution": "Reduces prediction uncertainty variance by 41.7% in high-load regions.",
+   "primary_theme": "vehicle power load prediction",
+   "methods": [
+    "time_series",
+    "probabilistic_modeling",
+    "machine_learning"
+   ]
+  },
+  {
+   "title": "Efficient High-Dimensional Time Series Forecasting with Transformers: A Channel Reordering Perspective",
+   "venue": "WWW 2026",
+   "problem": "High-dimensional time series forecasting has quadratic complexity and entangles local-global dependencies",
+   "approach": "Channel reordering mechanism with group fusion Transformer separating local and global patterns",
+   "contribution": "CRAFT model reduces computational complexity and disentangles heterogeneous channel dependencies",
+   "primary_theme": "Time series forecasting",
+   "methods": [
+    "transformer",
+    "channel_reordering",
+    "attention"
+   ]
+  },
+  {
+   "title": "FedDiG: Frequency-Guided Diffusion Diversity for Generalizable Federated Time Series Classification",
+   "venue": "WWW 2026",
+   "problem": "Federated time-series classification struggles with source heterogeneity and OOD patterns",
+   "approach": "Frequency-guided diffusion for diversity generation across clients with cross-frequency sampling",
+   "contribution": "FedDiG outperforms baselines by synthesizing diverse spectral patterns for improved generalization",
+   "primary_theme": "Federated time-series",
+   "methods": [
+    "diffusion",
+    "federated",
+    "frequency",
+    "timeseries"
+   ]
+  },
+  {
+   "title": "Is More Context Always Better? Examining LLM Reasoning Capability for Time Interval Prediction",
+   "venue": "WWW 2026",
+   "problem": "LLM temporal reasoning on structured behavioral data underexplored; unclear if more context improves predictions.",
+   "approach": "Systematic benchmark of state-of-the-art LLMs on time interval prediction against ML baselines.",
+   "contribution": "Shows LLMs underperform ML on temporal structure; moderate context helps but excess context degrades performance.",
+   "primary_theme": "LLM temporal reasoning",
+   "methods": [
+    "llm-benchmark",
+    "time-series",
+    "context-analysis"
+   ]
+  },
+  {
+   "title": "Evolving Proxy Kills Drift: Data-Efficient Streaming Time Series Anomaly Detection",
+   "venue": "WWW 2026",
+   "problem": "Streaming time series anomaly detection with changing distributions; existing methods are static and memory-heavy.",
+   "approach": "DESS: evolving proxy generation, heterogeneous temporal feature extraction, parameter-efficient training.",
+   "contribution": "Achieves 17.53% improvement over baselines with 64.88% faster training on streaming anomaly detection.",
+   "primary_theme": "Streaming anomaly detection",
+   "methods": [
+    "time-series",
+    "proxy-generation",
+    "parameter-efficient"
+   ]
+  },
+  {
+   "title": "GFMixer: Decoupled Temporal Gradient and Fourier-Aware Attention for Time Series Forecasting",
+   "venue": "WWW 2026",
+   "problem": "Frequency-domain forecasters suffer from frequency bias and spectral degradation on multivariate time series.",
+   "approach": "GFMixer: dual-path architecture with Temporal Gradient Block capturing low-amplitude info and Fourier-Aware Attention Block.",
+   "contribution": "Achieves 37 first-place rankings on seven benchmarks; acts as plug-and-play module enhancing mainstream backbones.",
+   "primary_theme": "Time series forecasting",
+   "methods": [
+    "fourier-transform",
+    "attention-mechanism",
+    "temporal-modeling"
+   ]
+  },
+  {
+   "title": "Amortized Predictability-aware Training Framework for Time Series Forecasting and Classification",
+   "venue": "WWW 2026",
+   "problem": "Training instability from low-predictability time series samples affecting forecasting and classification",
+   "approach": "Hierarchical loss and amortization model to dynamically penalize low-predictability samples during training",
+   "contribution": "APTF framework improves time series forecasting and classification by focusing on high-predictability samples",
+   "primary_theme": "Time series forecasting",
+   "methods": [
+    "deep-learning",
+    "anomaly-detection",
+    "loss-weighting"
+   ]
+  },
+  {
+   "title": "Cross-city Time Series Forecasting with Retrieval-Augmented Large Language Models",
+   "venue": "WWW 2026",
+   "problem": "Cross-city time series forecasting with data sparsity; irrelevant source knowledge hinders target performance",
+   "approach": "RAG-LLM framework with selective retriever filtering relevant patterns from data-rich cities as structured prompts",
+   "contribution": "xRAG4TS enables interpretable forecasting in data-scarce cities by selective knowledge transfer from source cities",
+   "primary_theme": "LLM time series forecasting",
+   "methods": [
+    "llm",
+    "retrieval-augmented",
+    "transfer-learning"
+   ]
+  },
+  {
+   "title": "SMART: A Social Movement Analysis & Reasoning Tool with Case Studies on #MeToo and #BlackLivesMatter",
+   "venue": "WWW 2026",
+   "problem": "Journalists lack timely, actionable insights into social movement discourse around events.",
+   "approach": "Multi-source collection, emotion extraction, transformer-based emotion forecasting.",
+   "contribution": "SMART enables early detection of discourse shifts on #MeToo/#BlackLivesMatter around elections.",
+   "primary_theme": "Social movement analysis",
+   "methods": [
+    "emotion-extraction",
+    "time-series-forecasting",
+    "multimodal"
+   ]
+  },
+  {
+   "title": "Interpretable Dynamic Network Modeling of Tensor Time Series via Kronecker Time-Varying Graphical Lasso",
+   "venue": "WWW 2026",
+   "problem": "Tensor time series yield large, uninterpretable dynamic networks; estimation is computationally intensive.",
+   "approach": "Kronecker product factorization for mode-specific networks with streaming extension.",
+   "contribution": "KTVGL achieves higher accuracy with lower computation than baselines; scales to stream data.",
+   "primary_theme": "Dynamic network estimation",
+   "methods": [
+    "tensor-decomposition",
+    "graphical-lasso",
+    "time-series"
+   ]
+  },
+  {
+   "title": "Consensus Stability of Community Notes on X",
+   "venue": "WWW 2026",
+   "problem": "Community Notes helpful status unstable; rating dynamics after display unclear",
+   "approach": "Interrupted time series analysis of 35M ratings; study polarization effects",
+   "contribution": "Shows 30.2% notes lose helpful status; dissimilar raters drive polarization, note disappearance",
+   "primary_theme": "Misinformation detection",
+   "methods": [
+    "time-series-analysis",
+    "crowdsourcing",
+    "polarization"
+   ]
+  },
+  {
+   "title": "ECLAD: An Edge-Cloud Collaborative Agentic Framework for Interpretable Anomaly Detection in Predictive Maintenance",
+   "venue": "WWW 2026",
+   "problem": "Anomaly detection in predictive maintenance lacks interpretability; cloud-edge latency tradeoff",
+   "approach": "Hybrid edge-cloud framework with LLM-based interpretability agents for anomaly reports",
+   "contribution": "ECLAD provides real-time detection with natural-language explanations and evolving taxonomy",
+   "primary_theme": "Anomaly detection",
+   "methods": [
+    "edge-computing",
+    "llm",
+    "time-series"
+   ]
+  },
+  {
+   "title": "FSDI: Frequency-Shaped Diffusion For Time-Series Imputation",
+   "venue": "WWW 2026",
+   "problem": "Time series imputation in IoT/sensors struggles with spectral energy variance across frequency bins",
+   "approach": "FSDI replaces uniform variance schedule with data-driven frequency-domain schedule preserving energy",
+   "contribution": "Frequency-shaped diffusion improves imputation for web analytics, anomaly detection, A/B testing",
+   "primary_theme": "Frequency-aware time series imputation",
+   "methods": [
+    "diffusion-model",
+    "time-series",
+    "spectral-analysis",
+    "imputation"
+   ]
+  },
+  {
+   "title": "SAMPLE: A Spatial/Channel-wise Attention GCN with MLP and Periodic Linear Encoding for Land Boundary Demarcation System",
+   "venue": "WWW 2026",
+   "problem": "Manual forecasting and suboptimal task allocation in land boundary demarcation",
+   "approach": "GCN with periodic linear encoding, spatial-channel attention for web platform prediction",
+   "contribution": "88% reduction in time and labor costs via improved field-task scheduling accuracy",
+   "primary_theme": "spatial-temporal prediction",
+   "methods": [
+    "graph neural networks",
+    "spatial attention",
+    "time series"
+   ]
+  },
+  {
+   "title": "We Need a More Robust Classifier: Dual Causal Learning Empowers Domain-Incremental Time Series Classification",
+   "venue": "WWW 2026",
+   "problem": "Time series classifiers struggle with domain incremental learning and robustness",
+   "approach": "Dual-causal disentanglement framework with intervention mechanism for feature capture",
+   "contribution": "DualCD framework improves domain-incremental robustness by separating causal and spurious features",
+   "primary_theme": "Time series classification",
+   "methods": [
+    "causal inference",
+    "disentanglement",
+    "domain adaptation"
+   ]
+  },
+  {
+   "title": "Dynamic Multi-period Experts for Online Time Series Forecasting",
+   "venue": "WWW 2026",
+   "problem": "Online time series forecasting treats concept drift monolithically; misses recurring vs. emergent",
+   "approach": "Dynamic multi-period experts: specialized committee for recurring drift, general expert for emergent",
+   "contribution": "DynaME outperforms baselines by explicitly modeling dual drift types",
+   "primary_theme": "time series forecasting",
+   "methods": [
+    "ensemble-learning",
+    "concept-drift",
+    "expert-systems"
+   ]
+  },
+  {
+   "title": "TimeMar: Multi-Scale Autoregressive Modeling for Unconditional Time Series Generation",
+   "venue": "WWW 2026",
+   "problem": "Time series generation ignores multi-scale patterns and structural heterogeneity (trend/seasonal)",
+   "approach": "Multi-scale autoregressive with dual-path VQ-VAE for trend-seasonal disentanglement",
+   "contribution": "TimeMAR generates higher-quality long-term sequences with reduced parameters",
+   "primary_theme": "time series generation",
+   "methods": [
+    "autoregressive",
+    "vae",
+    "multi-scale"
+   ]
+  },
+  {
+   "title": "Modeling Point-to-Point Dependency for High-Dimensional Long-Term Series Forecasting",
+   "venue": "WWW 2026",
+   "problem": "Modeling point-to-point dependencies across dimensions; Transformer complexity O(N\u00b2) prevents efficient forecasting",
+   "approach": "Replace Self-Attention with global autocorrelation; Spectral Product Mechanism reduces complexity to O(N)",
+   "contribution": "O(N) complexity with global dependency modeling; outperforms transformers on high-dimensional long-term forecasting",
+   "primary_theme": "Time series forecasting",
+   "methods": [
+    "autocorrelation",
+    "spectral-product",
+    "efficient-transformer"
+   ]
+  },
+  {
+   "title": "ImVision: Adapting Pretrained Vision Models for Time-Series Imputation",
+   "venue": "WWW 2026",
+   "problem": "Missing values harm reliability; existing imputers computationally demanding and disrupt temporal order",
+   "approach": "Reframe imputation as image inpainting; convert sequences to Gramian Angular Field heatmaps; use pretrained vision",
+   "contribution": "Cross-modal efficiency; outperforms SOTAs on 8/10 settings; especially strong at high missing rates",
+   "primary_theme": "Time series imputation",
+   "methods": [
+    "vision-model",
+    "cross-modal",
+    "image-inpainting"
+   ]
+  },
+  {
+   "title": "EEO-TFV: Escape-Explore Optimizer for Web-Scale Time-Series Forecasting and Vision Analysis",
+   "venue": "WWW 2026",
+   "problem": "Transformer models suffer error accumulation in long sequences and fail on out-of-distribution web data",
+   "approach": "Lightweight Transformer with Escape-Explore optimizer avoiding sharp minima and saddle points",
+   "contribution": "Matched state-of-the-art performance across time-series and medical image tasks with better generalization",
+   "primary_theme": "Time-series forecasting",
+   "methods": [
+    "transformer",
+    "optimizer",
+    "deep-learning"
+   ]
+  },
+  {
+   "title": "Time-TK: A Multi-Offset Temporal Interaction Framework Combining Transformer and Kolmogorov-Arnold Networks for Time Series Forecasting",
+   "venue": "WWW 2026",
+   "problem": "Token embedding destroys multi-offset temporal correlations in time series forecasting",
+   "approach": "Multi-Offset Time Embedding with KAN-based architecture capturing fine-grained dependencies",
+   "contribution": "Fundamentally addresses information bottleneck in long sequence processing",
+   "primary_theme": "Time series forecasting",
+   "methods": [
+    "kan",
+    "time-embedding",
+    "transformer"
+   ]
+  },
+  {
+   "title": "Energy-Efficient Training-Free Zero-Inflation Correction for Rainfall Forecasting with Time-Series Foundation Models",
+   "venue": "WWW 2026",
+   "problem": "Time-series foundation models fail on zero-inflated rainfall due to continuous outputs",
+   "approach": "Training-free wrapper: empirical statistics, probability transforms, Pareto tail mapping",
+   "contribution": "Corrects zero inflation without retraining; <5ms overhead, carbon-neutral deployment",
+   "primary_theme": "Time-series calibration",
+   "methods": [
+    "calibration",
+    "foundation-models",
+    "zero-inflation",
+    "statistical"
+   ]
+  },
+  {
+   "title": "Automated Model Selection for Multivariate Time Series Forecasting",
+   "venue": "WWW 2026",
+   "problem": "MTSF model selection requires expensive training; no comprehensive dataset or scalable selection method",
+   "approach": "Transforms MTSF selection into classification using large model encodings and recursive temporal patterns",
+   "contribution": "AutoMTSF and ModelPile dataset enable efficient model selection across 41 datasets without extensive training",
+   "primary_theme": "MTSF model selection",
+   "methods": [
+    "automl",
+    "time series classification",
+    "large language models"
+   ]
+  },
+  {
+   "title": "Scalable Anomaly Detection for Temporal Web Streams via Approximate Nearest Neighbor Search",
+   "venue": "WWW 2026",
+   "problem": "Temporal Web streams require scalable anomaly detection handling high-dimensionality and imbalanced data",
+   "approach": "Hierarchical ANN index with statistical neighbor scoring and adaptive update for concept drift",
+   "contribution": "ANN-TS achieves superior accuracy on imbalanced high-dimensional data with reduced computational overhead",
+   "primary_theme": "stream anomaly detection",
+   "methods": [
+    "approximate nearest neighbor",
+    "time series",
+    "anomaly detection"
+   ]
+  },
+  {
+   "title": "Enhancing Large Language Models for Time-Series Forecasting via Vector-Injected In-Context Learning",
+   "venue": "WWW 2026",
+   "problem": "LLMs struggle with time-series forecasting due to domain mismatch between pretraining and TSF; fine-tuning adds computational overhead.",
+   "approach": "Vector-injected in-context learning (LVICL) injects learnable context vectors into frozen LLM layers to extract and apply example information.",
+   "contribution": "Improves LLM time-series forecasting performance without parameter fine-tuning, reducing computational overhead.",
+   "primary_theme": "LLM time-series forecasting",
+   "methods": [
+    "llm",
+    "in-context-learning",
+    "vector-injection"
+   ]
+  },
+  {
+   "title": "SEMixer: Semantics Enhanced MLP-Mixer for Multiscale Mixing and Long-term Time Series Forecasting",
+   "venue": "WWW 2026",
+   "problem": "Multiscale patterns and semantic gaps hinder efficient time series forecasting",
+   "approach": "Random Attention Mechanism and Multiscale Progressive Mixing Chain in MLP-Mixer",
+   "contribution": "Lightweight model achieving third place on 21GB real wireless network forecasting challenge",
+   "primary_theme": "Time series forecasting",
+   "methods": [
+    "mlp-mixer",
+    "multiscale",
+    "attention"
+   ]
+  },
+  {
+   "title": "Re-Diffusion: Modeling Latent Residuals with Diffusion for Time-Series Forecasting",
+   "venue": "WWW 2026",
+   "problem": "Diffusion models underperform on time-series forecasting with long-term prediction challenges",
+   "approach": "Latent diffusion generating backbone residuals to model error distributions",
+   "contribution": "10% improvement over state-of-art predictors through advanced residual estimation",
+   "primary_theme": "Diffusion forecasting",
+   "methods": [
+    "diffusion-models",
+    "latent-space",
+    "time-series"
+   ]
+  },
+  {
+   "title": "Temporal-Series-Aware Adaptive Positional Encoding for Transformer-based Sequential Recommendation",
+   "venue": "WWW 2026",
+   "problem": "Transformers rely on absolute position encoding insufficient for sequential recommendation capturing user interest evolution",
+   "approach": "Adaptive positional encoding modeling time intervals between interactions with CNN and attention mechanisms",
+   "contribution": "TSAPE integrates temporal-series awareness with conventional PE for improved sequential recommendation",
+   "primary_theme": "Sequential recommendation encoding",
+   "methods": [
+    "positional-encoding",
+    "transformer",
+    "temporal-modeling"
+   ]
+  },
+  {
+   "title": "DynaFLUX: Implicit Dynamics-Preserving Reinforcement Learning for Topology-Free Influence Maximization",
+   "venue": "WWW 2026",
+   "problem": "Influence maximization fails without network topology due to hidden, noisy or privacy-protected links",
+   "approach": "End-to-end generative framework learning latent dynamics from time series with RL seed selection policy",
+   "contribution": "DynaFLUX identifies influential spreaders using self-attention pointer and Monte Carlo diffusion rewards",
+   "primary_theme": "Influence maximization topology-free",
+   "methods": [
+    "reinforcement-learning",
+    "generative-model",
+    "pointer-networks"
+   ]
+  },
+  {
+   "title": "Shift-Resilient Diffusive Imputation for Variable Subset Forecasting",
+   "venue": "WWW 2026",
+   "problem": "Variable subset forecasting fails with distribution shift in incomplete time series",
+   "approach": "Divide-conquer decomposition into invariant and variant patterns for imputation",
+   "contribution": "SRDI handles inter-series and intra-series shift in variable subset forecasting",
+   "primary_theme": "time series forecasting",
+   "methods": [
+    "imputation",
+    "distribution shift",
+    "decomposition"
+   ]
+  },
+  {
+   "title": "LLM-GC: Advancing Granger Causal Discovery from Time Series with Multimodel Language Modeling",
+   "venue": "WSDM 2026",
+   "problem": "Granger causal discovery confined to raw time-series lacking contextual semantics and prone to overfitting",
+   "approach": "LLM-GC multimodal framework enriching temporal dynamics with semantic priors via cross-modal dual retrieval and shared causality augmenter",
+   "contribution": "First LLM-empowered Granger causality discovery outperforming state-of-the-art on synthetic and real-world benchmark datasets",
+   "primary_theme": "Causal time series discovery",
+   "methods": [
+    "causal-inference",
+    "time-series",
+    "llm"
+   ]
+  },
+  {
+   "title": "N41: Leveraging One Target and Neighboring Features to Improve Anomaly Detection Accuracy",
+   "venue": "WSDM 2026",
+   "problem": "Multivariate time-series anomaly detection distributes error across multiple outputs reducing focus",
+   "approach": "Single target feature with neighboring features capturing similar patterns for focused learning",
+   "contribution": "N41 achieves 1.7-7.5x higher F1 scores via single-target focused training on time-series",
+   "primary_theme": "time-series anomaly detection",
+   "methods": [
+    "anomaly detection",
+    "time-series",
+    "feature engineering",
+    "supervised learning"
+   ]
+  },
+  {
+   "title": "A Comprehensive Guide to Time-Series Anomaly Detection",
+   "venue": "WSDM 2026",
+   "problem": "Time series anomaly detection lacks comprehensive benchmarking and evaluation methods",
+   "approach": "Holistic tutorial covering algorithms, benchmarks, evaluation, and foundation models",
+   "contribution": "Interactive systems for method exploration, new taxonomy, benchmarking advancements survey",
+   "primary_theme": "Time-series anomaly detection",
+   "methods": [
+    "survey",
+    "benchmarking",
+    "foundation-models"
+   ]
+  },
+  {
+   "title": "Spectral Modeling of Periodic Phenomena in Scientific Data via Fourier\u2013Galerkin Representation",
+   "venue": "WSDM 2026",
+   "problem": "Modeling periodic phenomena in large-scale heterogeneous scientific datasets with phase shifts and misalignment",
+   "approach": "Fourier-Galerkin regression decomposing time series into trend and periodic residual with phase offsets",
+   "contribution": "FG-Linear model captures periodic behavior effectively with improved interpretability over deep learning baselines",
+   "primary_theme": "Time series modeling",
+   "methods": [
+    "fourier",
+    "regression",
+    "spectral"
+   ]
+  },
+  {
+   "title": "Confounder-Aware Causal Graph Learning Framework for Multivariate Time Series Analysis",
+   "venue": "WSDM 2026",
+   "problem": "Existing causal graph methods lack handling of unobserved confounders and dynamic relationships in MTS",
+   "approach": "Multi-granularity causal architecture with VAE-based confounder proxies and confounding bias index",
+   "contribution": "CACGL framework models unobserved confounders and time-varying causality in multivariate time series",
+   "primary_theme": "Causal discovery MTS",
+   "methods": [
+    "causal graph learning",
+    "variational autoencoder",
+    "multi-scale analysis"
+   ]
+  },
+  {
+   "title": "MANILA26: SIGIR 2026 Tutorial on Information Retrieval for Climate Change Impact",
+   "venue": "SIGIR 2026",
+   "problem": "IR systems fail on interdisciplinary climate evidence synthesis with geospatial, time-series, multi-modal data.",
+   "approach": "Agentic RAG architecture critique; failure mode diagnosis; unified evidence pipeline with provenance tracking.",
+   "contribution": "Research agenda for verifiable evidence synthesis integrating bibliographic, geospatial, multi-modal retrieval.",
+   "primary_theme": "Climate evidence retrieval",
+   "methods": [
+    "rag",
+    "multi-modal",
+    "provenance"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,11 @@
+{
+ "batch": "b011",
+ "paper": {
+  "id": "30474acf3d99d63c56279b347822269da25e2d5b",
+  "venue": "WWW 2026",
+  "title": "Prompt Scene Investigation: Uncovering the Evidence in LLMs",
+  "abstract": "Forensic science encompasses multiple specialized domains that reconstruct past events from traces, including digital forensics, which focuses on devices and networks. Large Language Models (LLMs) create a new kind of evidence, prompt\u2013response traces, that traditional digital forensics does not explicitly address. To fill this gap, we introduce Prompt Forensics, the systematic collection, reconstruction, and analysis of LLM interactions to assess safety and support incident response. Drawing inspiration from classical forensic procedures, we propose Prompt Scene Investigation (PSI), a framework comprising three key components: (i) Prompt Processing, which captures interaction traces as tamper-resistant Prompt IDs forming a digital chain of custody; (ii) Replay, which re-enacts model behaviour under controlled conditions; and (iii) Investigation, which detects adversarial prompting and safety violations, and produces diagnostic reports. Prompt Forensics supports auditing and regulatory compliance for AI systems by making LLM safety incidents observable, replayable, and accountable. Preliminary experiments comparing different small language models provide an initial validation of the PSI framework, making this work a proof of concept for Prompt Forensics as a practical auditing approach for LLM systems.",
+  "gid": 169,
+  "theme": "LLM forensics auditing"
+ }
+}

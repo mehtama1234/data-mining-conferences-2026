@@ -1,0 +1,11 @@
+{
+ "batch": "b044",
+ "paper": {
+  "id": "cbeaf5c8da6ed725a30e660af0e244cf4a19a731",
+  "venue": "WWW 2026",
+  "title": "Fairness at a Glance: Can We Audit Model Fairness Before Training Completes?",
+  "abstract": "Fairness auditing is crucial for ensuring the accountability of AI systems, but current auditing practices evaluate the fairness of models after full model training, forcing developers to complete numerous training runs before identifying those that meet fairness requirements. This post-hoc paradigm makes fairness assurance time-consuming and computationally costly. In this work, we explore whether model fairness can be estimated earlier\u2014either before training begins or during its early stages. Our analysis across multiple datasets shows that it is difficult to predict the final fairness based solely on pre-training configurations. Fortunately, once training starts, fairness trajectories exhibit consistent and predictable patterns, with early-stage fairness strongly correlated with final fairness. These findings suggest that fairness auditing can shift from purely post-hoc evaluation to early-stage assessment. By detecting and stopping unfair models early, our approach can save 73.8% of the training cost in the fairness audit workflow.",
+  "gid": 666,
+  "theme": "Model fairness auditing"
+ }
+}

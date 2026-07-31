@@ -1,0 +1,11 @@
+{
+ "batch": "b036",
+ "paper": {
+  "id": "a2f23c77e7f7ed2c2bbed42483aee26096c6f586",
+  "venue": "WWW 2026",
+  "title": "QChunker: Learning Question-Aware Text Chunking for Domain RAG via Multi-Agent Debate",
+  "abstract": "The effectiveness upper bound of retrieval-augmented generation (RAG) is fundamentally constrained by the semantic integrity and information granularity of text chunks in its knowledge base. Moreover, domain documents are characterized by dense terminology and strong contextual dependencies, which exacerbate the semantic fragmentation of text chunks, thereby making it difficult to efficiently utilize their key information. To address these challenges, this paper proposes QChunker, which restructures the RAG paradigm from retrieval-augmentation to understanding-retrieval-augmentation. Firstly, QChunker models the text chunking as a composite task of text segmentation and knowledge completion to ensure the logical coherence and integrity of text chunks. Drawing inspiration from Hal Gregersen's ''Questions Are the Answer'' theory, we design a multi-agent debate framework comprising four specialized components: a question outline generator, text segmenter, integrity reviewer, and knowledge completer. This framework operates on the principle that questions serve as catalysts for profound insights. Through this pipeline, we successfully construct a high-quality dataset of 45K entries and transfer this capability to small language models. Additionally, to handle long evaluation chains and low efficiency in existing chunking evaluation methods, which overly rely on downstream QA tasks,",
+  "gid": 542,
+  "theme": "RAG text chunking"
+ }
+}

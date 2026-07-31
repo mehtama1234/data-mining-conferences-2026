@@ -1,0 +1,11 @@
+{
+ "batch": "b098",
+ "paper": {
+  "id": "10.1145/3805712.3808648",
+  "venue": "SIGIR 2026",
+  "title": "The 10th Workshop on Search-Oriented Conversational Artificial Intelligence (SCAI'26)",
+  "abstract": "SCAI (https://scai.info) celebrates its 10th anniversary this year and we would like to invite our core research community to join us. Since our first workshop started back at ICTIR 2017 in Amsterdam, we came a long way and would like to use this opportunity to reflect on it together. With the advent of large language models, conversational AI has emerged as a primary paradigm for search-intensive tasks. However, despite the vast success of conversational AI, there are major shortcomings in existing solutions that offer promising opportunities for the next breakthroughs which we would like to promote further. The focus of this edition will be on the personalization of conversational search systems, with a featured session for the former TREC shared task \"Interactive Knowledge Assistance Track\" (iKAT) reintroduced this year at SCAI. In combination with a panel discussion, invited presentations and keynote talks from major industry representatives, a lively poster session, and a separate break-out session featuring hands-on evaluation of the top-notch conversational AI systems, we plan for a full-day dense and highly engaging workshop.",
+  "gid": 1481,
+  "theme": "Conversational search"
+ }
+}

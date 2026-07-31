@@ -1,0 +1,11 @@
+{
+ "batch": "b010",
+ "paper": {
+  "id": "2dcdd58ded6a3624345acc2a7980b6bf5af8bb78",
+  "venue": "WWW 2026",
+  "title": "Conversational Search: From Fundamentals to Frontiers in the Age of Agents",
+  "abstract": "Conversational search enables multi-turn interactions between users and systems to fulfill users' complex information needs. During this interaction, the system should understand the users' search intent within the conversational context and then return the relevant information through a flexible, dialogue-based interface. Large language models (LLMs) with capacities of instruction following, content generation, and reasoning, attract significant attention and advancements, providing new opportunities and challenges for building up conversational search systems. More recently, LLMs have begun to drive search systems towards agentic paradigms, acting as autonomous entities that can plan strategies, execute dynamic retrieval, and support a wide range of autonomous behaviours. This tutorial aims to connect fundamentals with recent agentic paradigms in conversational search. It is designed for students, researchers, and practitioners from both academia and industry. Participants will gain a comprehensive understanding of both the fundamental principles and the latest developments enabled by LLMs, equipping them with the knowledge to contribute to the next generation of conversational search systems.",
+  "gid": 161,
+  "theme": "Conversational search"
+ }
+}

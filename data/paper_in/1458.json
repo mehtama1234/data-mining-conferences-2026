@@ -1,0 +1,11 @@
+{
+ "batch": "b097",
+ "paper": {
+  "id": "10.1145/3805712.3808365",
+  "venue": "SIGIR 2026",
+  "title": "From Lab to Reality: An Eye-tracking Study of How Users are Influenced to Search in the Era of GenAI",
+  "abstract": "This work proposes two complementary eye tracking methodologies focused on understanding information access. The first study examines the earliest stage of search, the formation of an information need, and the formulation of a query. The second study presents participants with a pre-typed query on a Search Engine Results Page (SERP) containing GenAI content positioned above the traditional ten blue links. Across both studies, the planned analysis examines how user interactions differ from patterns reported in prior literature, and outlines future research directions aimed at deepening our understanding of search behavior in the era of GenAI. By linking visual attention to query behavior across traditional and GenAI-enhanced interfaces, this research contributes toward more intuitive and adaptive search systems that better support evolving information-seeking behavior. The design space for search engine interfaces is vast, but interaction techniques and user interfaces for information access with LLMs remain under-researched and poorly understood. Between 2020 and 2024, 750 preprints related to LLMs were published on arXiv in the field of Information Retrieval, with only 22 mentioning \"user interface\" in their abstracts [3]. This research will contribute to filling this gap by understanding user behavior, preferences, and cognitive effort in human-AI interactions. Specifically, ",
+  "gid": 1458,
+  "theme": "GenAI search UX"
+ }
+}

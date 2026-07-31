@@ -1,0 +1,11 @@
+{
+ "batch": "b003",
+ "paper": {
+  "id": "103484ef896c31b095351b0221a9e8190e91af10",
+  "venue": "WWW 2026",
+  "title": "TrueLens: Video Fake News Detection with Dual Level Evidence Gathering and Consolidation",
+  "abstract": "The proliferation of misinformation on video-sharing platforms demands robust detection of video fake news. Existing methods struggle to integrate external world knowledge with internal multimodal cues, limiting their generalization and robustness. In this work, we propose TrueLens, a new framework for video fake news detection that gathers and consolidates dual-level evidence \\zznotethrough three primary components, \\ie, External Precedent Retriever, Adversarial Contrastor, and Internal Evidential Logic Fusion. At the external level, the External Precedent Retriever first decomposes the query video into textual, visual, and audio queries while leveraging multimodal large language models (MLLMs) to enhance the overall semantic representation. It then applies an entropy-guided multimodal retrieval mechanism to identify the two most similar reference videos from a gallery of real and fake samples, \\ie, one real and one fake video. The Adversarial Contrastor integrates these references with the input video through contrastive attention, enhancing contextual reasoning. At the internal level, our Evidential Logic Fusion module aggregates multimodal signals from the Adversarial Contrastor to produce consistent, robust predictions. Extensive experiments on three benchmarks show that the proposed TrueLens consistently surpasses competitive baselines under both temporal and event settin",
+  "gid": 59,
+  "theme": "video fake news detection"
+ }
+}

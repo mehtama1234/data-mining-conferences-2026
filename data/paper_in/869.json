@@ -1,0 +1,11 @@
+{
+ "batch": "b057",
+ "paper": {
+  "id": "04ffa4a12dc5012efd1419c68bb52b2b0eed66f8",
+  "venue": "WSDM 2026",
+  "title": "LLM-GC: Advancing Granger Causal Discovery from Time Series with Multimodel Language Modeling",
+  "abstract": "Recent advances in neural Granger causal methods have shown promise in modeling temporal nonlinear dependencies. However, existing approaches remain confined to raw time-series data, inherently lacking contextual semantics and tending to overfit, which undermines their real-world applicability. To address these challenges, we propose LLM-GC, a novel LLM-empowered multimodal Granger causality discovery framework that enriches unimodal temporal dynamics with semantic priors and world knowledge distilled from large language models (LLMs). LLM-GC leverages dual-modality encoding to capture and align temporal and contextual dynamics by Cross-Modal Dual Retrieval while avoiding causal entanglement across modalities. To extract multimodal causal features, we introduce a causality-aware self-attention mechanism by simply inverting the conventional self-attention structure, enabling a shared causality augmenter to effectively highlight consistent causal patterns across modalities. LLM-GC is the first to bridge LLMs and Granger causality, and experiments on synthetic and real-world benchmark datasets demonstrate that LLM-GC outperforms existing state-of-the-art methods in Granger causal discovery.",
+  "gid": 869,
+  "theme": "Causal time series discovery"
+ }
+}

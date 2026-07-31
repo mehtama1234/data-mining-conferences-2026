@@ -1,0 +1,11 @@
+{
+ "batch": "b058",
+ "paper": {
+  "id": "11bd1e2c1c2ba645e178222234bab414bde24252",
+  "venue": "WSDM 2026",
+  "title": "Conversational Entity Retrieval from a Knowledge Graph using Aggregation of Fine-grained Relevance Signals with Graph Convolutions and Self-Attention",
+  "abstract": "The recently introduced task of Conversational Entity Retrieval from a Knowledge Graph (CER-KG) presents unique research challenges due to the complexity of the queries along with the necessity to consider KG structure and the context of an information-seeking dialog. This paper proposes a novel approach to CER-KG that first constructs a sub-graph around each candidate response entity, which includes its neighboring KG components, such as other entities, literals, categories and predicates, and then scores and ranks each candidate answer entity with Diverse Relevance signal Aggregation via Graph cONvolution (DRAGON), a novel learning-to-rank neural architecture for CER-KG. Unlike previous approaches to CER-KG, DRAGON directly takes a large number of fine-grained relevance signals as input and learns to effectively aggregate and transform those signals into the ranking scores of candidate response entities. In particular, a set of sparse and structured vectors of relevance features used as input to DRAGON measure lexical and semantic similarity between a query in the current turn or responses from the past turns of an information-seeking dialog and each node in the candidate response entity's sub-graph. DRAGON then propagates the relevance signals in feature vectors around the sub-graph using graph convolution layers and aggregates those signals into the candidate response entit",
+  "gid": 874,
+  "theme": "conversational entity retrieval"
+ }
+}

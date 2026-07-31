@@ -1,0 +1,11 @@
+{
+ "batch": "b076",
+ "paper": {
+  "id": "10.1145/3805712.3808537",
+  "venue": "SIGIR 2026",
+  "title": "Information Seeking Behavior in LLM-Based RAG: Mental Models and Missing Information",
+  "abstract": "Retrieval-augmented generation (RAG) systems are rapidly becoming a primary entry point to information, replacing ranked lists with synthesized, citation-backed answers. While recent work has focused on improving RAG architectures and measuring answer correctness, much less is known about how users conceptualize these systems and how such mental models reshape information seeking. In this Perspectives Paper, we argue that RAG interfaces compress the visible stages of the Information Search Process: exploration, comparison, and synthesis migrate inside the system, while the user sees only a conversational request-response loop. We ground this argument in a qualitative mixed-methods study of nine participants using an LLM-based ''chat with documents'' interface for exploratory, known-item, list-based, and absent-item tasks. Most participants did not describe the system in terms of selective retrieval and ranking. Instead, they imported an analyst-centric mental model, assuming exhaustive reading, persistent memory, and near-perfect recall. These assumptions systematically reconfigured behavior: participants engaged in minimal query reformulation, delegated sense-making to the system, rarely inspected sources, and treated ''not found'' responses as strong evidence of nonexistence. A minority of participants articulated IR-consistent models and exhibited more iterative, verificatio",
+  "gid": 1145,
+  "theme": "RAG user behavior"
+ }
+}

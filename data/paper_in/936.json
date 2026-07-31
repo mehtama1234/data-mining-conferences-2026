@@ -1,0 +1,11 @@
+{
+ "batch": "b062",
+ "paper": {
+  "id": "8b2313dda470f6d13b52d074a1e249c4a6b1f477",
+  "venue": "WSDM 2026",
+  "title": "Workshop on Benchmarking Causal Models (CausalBench)",
+  "abstract": "Recent advances in causal machine learning introduced a plethora of new causal discovery and causal inference models. Yet, these models exhibit different performances when they train on different data or different hardware/software platforms, making it challenging for users to select the appropriate setup pertinent to their specific problem instance. The situation is complicated by the fact that, until recently, the field lacked a unified, publicly available, and configurable benchmarks that support major causal inference tasks. We argue that the causal learning community can achieve the same by meticulously surveying the emerging field of vibrant research, systematically categorizing existing benchmarking efforts into technically meaningful groups, and discovering the areas where further efforts are in urgent need. A concerted effort towards benchmarking of causal learning can be extremely valuable for not only causal learning algorithm design but also for comparison and benchmarking of available solutions. This workshop aims to boost the advancement of research in causal learning by facilitating scientific collaboration in novel algorithms, datasets, and metrics and promotes scientific objectivity, reproducibility, fairness, and awareness of bias in causal learning research. Thus, CausalBench calls for papers on benchmarking data, algorithms, models, and metrics for causal le",
+  "gid": 936,
+  "theme": "causal learning benchmarks"
+ }
+}

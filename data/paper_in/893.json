@@ -1,0 +1,11 @@
+{
+ "batch": "b059",
+ "paper": {
+  "id": "300aa54224cd4384daf1ae6bcc49c7d2a5c07fd4",
+  "venue": "WSDM 2026",
+  "title": "Forget Me, Not My Friends! Object Unlearning Based on Scene Graphs",
+  "abstract": "Machine unlearning offers a practical technical means for fulfilling users' requests to remove personally identifiable information (PII) under ''right to be forgotten'' regulations such as GDPR and COPPA. Traditionally, unlearning is performed with the removal of entire data samples (sample unlearning) or whole features across the dataset (feature unlearning). However, when the removal request targets only certain parts of the PII, such as specific objects within a sample, these traditional unlearning approaches fall short of meeting such finer-grained unlearning requirements. To address this gap, we propose a scene graph-based object unlearning framework. This framework utilizes scene graphs, rich in semantic representation, transparently translate unlearning requests into actionable steps. The result, is the preservation of the overall semantic integrity of the generated image, bar the unlearned object. Furthermore, we develop three distinct approaches for object unlearning, grounded in the mainstream unlearning techniques of fine-tuning and model redaction. For validation, we evaluate the unlearned object's fidelity in outputs under the tasks of image reconstruction and image synthesis. Our proposed framework demonstrates improved object unlearning outcomes, with the preservation of unrequested samples in contrast to sample and feature learning methods. This work addresses c",
+  "gid": 893,
+  "theme": "Machine unlearning"
+ }
+}

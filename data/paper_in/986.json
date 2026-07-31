@@ -1,0 +1,11 @@
+{
+ "batch": "b065",
+ "paper": {
+  "id": "ef9b5d058372e1b2fcba99a442a91f3dd6b5e3cc",
+  "venue": "WSDM 2026",
+  "title": "TRACE: A Scalable and Extensible Framework for Auditing YouTube's Recommendation Algorithm",
+  "abstract": "Auditing large-scale recommender systems like YouTube remains a methodological challenge due to the trade-off between behavioral realism, scalability, and reproducibility. We present TRACE, an open-source framework that integrates Large Language Models to simulate context-aware, persona-driven user journeys. TRACE combines containerized browser automation, database-backed traceability, and asynchronous data enrichment to enable reproducible large-scale audits of YouTube's recommendation ecosystem. By decoupling experimental contexts from personas and supporting multiple behavioral modes, it allows researchers to model diverse user identities and explore how recommendation dynamics evolve over time. The framework's modular architecture, reproducible design, and web-based control interface facilitate transparent, comparative studies of algorithmic personalization and potential filter bubble formation. TRACE establishes a scalable foundation for empirically grounded, extensible, and ethically sound auditing of recommender systems.",
+  "gid": 986,
+  "theme": "Recommender system auditing"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "batch": "b075",
+ "paper": {
+  "id": "10.1145/3805712.3809680",
+  "venue": "SIGIR 2026",
+  "title": "mKG-RAG: Leveraging Multimodal Knowledge Graphs in Retrieval-Augmented Generation for Knowledge-intensive VQA",
+  "abstract": "Retrieval-Augmented Generation (RAG) has emerged as an effective paradigm for expanding the knowledge capacity of Multimodal Large Language Models (MLLMs) by incorporating external knowledge sources into the generation process, and has been widely adopted for knowledge-based Visual Question Answering (VQA). Despite impressive advancements, vanilla RAG-based VQA methods that rely on unstructured documents and overlook the structural relations among knowledge elements frequently introduce irrelevant or misleading content, degrading answer accuracy and reliability. To overcome these challenges, a promising solution is to integrate multimodal knowledge graphs (KGs) into RAG-based VQA frameworks, thereby enhancing generation through structured multimodal knowledge. To this end, this paper proposes mKG-RAG, a novel retrieval-augmented generation framework built upon multimodal KGs for knowledge-intensive VQA tasks. Specifically, mKG-RAG leverages MLLM-driven graph extraction and vision-text matching to distill semantically consistent, modality-complementary entities and relations from multimodal documents, constructing high-quality multimodal KGs as structured knowledge representations. Furthermore, a dual-stage retrieval strategy equipped with a query-aware multimodal retriever is introduced to improve retrieval efficiency while progressively refining precision. Comprehensive experi",
+  "gid": 1126,
+  "theme": "Multimodal VQA RAG"
+ }
+}

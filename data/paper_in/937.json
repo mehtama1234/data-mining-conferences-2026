@@ -1,0 +1,11 @@
+{
+ "batch": "b062",
+ "paper": {
+  "id": "8b977a2e21156534fca70defe696c27308ee93d0",
+  "venue": "WSDM 2026",
+  "title": "Scholar API: Search and Recommendations for Academic Search",
+  "abstract": "There has been considerable work on Academic Search. Academic Search is widely used; in addition to recommending papers to read, authors need to find papers they should cite, and program committees and funding agencies need to assign submissions to reviewers that are well-informed and sympathetic to the topic area. High-quality recommendations impact reviews, publication quality, and move a field into new directions. Academic Search is a huge topic. Many parties will offer potentially interesting partial solutions to different aspects of the larger problem. We present Scholar API (SAPI), a simple and easy to use API for mashing up solutions from different sources. SAPI is in- tended to make it easier for more people to mash up more solutions from more sources in creative ways. We describe the underlying data infrastructure and federation mechanism that enables convenient access to many different sources. An important feature is the ability to select from four embeddings: Specter, ProNE-s, SciNCL and a GNN. Most of these embeddings are based on deep neural networks (BERT encodings of abstracts, with fine-tuning on nearby documents in the citation graph), but ProNE-s is based on linear algebra (spectral clustering of citation graph). SAPI is built on top of existing Internet services and offers a flexible architecture. We demonstrate the utility of SAPI by implementing a baseline",
+  "gid": 937,
+  "theme": "academic search"
+ }
+}

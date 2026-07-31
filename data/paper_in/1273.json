@@ -1,0 +1,11 @@
+{
+ "batch": "b084",
+ "paper": {
+  "id": "10.1145/3805712.3809897",
+  "venue": "SIGIR 2026",
+  "title": "StAR: Adaptive Structure-Aware Reranking for Semantic-Structural Alignment in GraphRAG",
+  "abstract": "Retrieval-Augmented Generation (RAG) often struggles with multi-hop reasoning because Euclidean embeddings collapse hierarchical structure and let semantic similarity dominate ranking, leading to semantic\u2013structural misalignment. As a result, structurally irrelevant yet semantically similar candidates can outrank the evidence needed for multi-hop QA. We introduce StAR (Structure-Aware Reranking), a plug-and-play reranking module that injects hyperbolic structural similarity into GraphRAG ranking. StAR constructs tree-like representations of the query and candidate subgraphs, computes structure-aware similarity in hyperbolic space, and adaptively modulates structural contributions using a query-level alignment signal based on Spearman's ?. Experiments on four QA benchmarks show consistent gains, with the largest improvements on datasets with stronger hierarchical reasoning demands, while remaining robust on flatter retrieval settings. These results suggest that restoring structural faithfulness through hyperbolic structural scoring improves ranking consistency for multi-hop QA.",
+  "gid": 1273,
+  "theme": "graph-based retrieval"
+ }
+}

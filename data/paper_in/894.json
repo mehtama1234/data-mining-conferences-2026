@@ -1,0 +1,11 @@
+{
+ "batch": "b059",
+ "paper": {
+  "id": "31924a0de78321ec59e4427f6d6823a6d5cc6d17",
+  "venue": "WSDM 2026",
+  "title": "Federated Watermarking of Deep Neural Networks with Distributed Verification",
+  "abstract": "With the advancement of deep learning, DNNs have been widely deployed across diverse domains. Model-as-a-Service (MaaS) platforms allow enterprises to commercialize well-trained models, which are built through extensive data collection and substantial computational investment. Consequently, protecting these models from unauthorized use and intellectual property (IP) theft has become critical. While watermarking has emerged as a prominent IP protection technique, most existing approaches target centralized settings, leaving federated learning (FL) scenarios largely underexplored. To bridge this gap, we propose Federated Watermarking with Distributed Verification (FWDV), a novel framework tailored for FL. FWDV enables each client to independently verify watermark ownership and jointly defend the model against erasure attempts. To our knowledge, this is the first work to achieve both distributed verification and robustness against a broad spectrum of attacks. Extensive experiments demonstrate that FWDV embeds watermarks with minimal impact on model utility and resists removal through fine-tuning, pruning, and distillation.",
+  "gid": 894,
+  "theme": "Federated model protection"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "batch": "b060",
+ "paper": {
+  "id": "54c977f2fec814ab013e711c8e468ae68fd416d8",
+  "venue": "WSDM 2026",
+  "title": "Design and Evaluation of Whole-Page Experience Optimization for E-commerce Search",
+  "abstract": "E-commerce Search Results Pages (SRPs) are evolving from linear lists to complex, non-linear layouts, rendering traditional position-biased ranking models insufficient. Moreover, existing optimization frameworks typically maximize short-term signals (e.g., clicks, same-day revenue) because long-term satisfaction metrics (e.g., expected two-week revenue) involve delayed feedback and challenging long-horizon credit attribution. To bridge these gaps, we propose a novel Whole-Page Experience Optimization Framework. Unlike traditional list-wise rankers, our approach explicitly models the interplay between item relevance, 2D positional layout, and visual elements. We use a causal framework to develop metrics for measuring long-term user satisfaction based on quasi-experimental data. We validate our approach through industry-scale A/B testing, where the model demonstrated a 1.86% improvement in brand relevance (our primary customer experience metric) while simultaneously achieving a statistically significant revenue uplift of +0.05%.",
+  "gid": 907,
+  "theme": "e-commerce search ranking"
+ }
+}

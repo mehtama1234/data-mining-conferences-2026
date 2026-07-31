@@ -1,0 +1,11 @@
+{
+ "batch": "b032",
+ "paper": {
+  "id": "911fa5e882c00523214ed22b317f964692cf5256",
+  "venue": "WWW 2026",
+  "title": "Mitigating Cognitive Vulnerabilities in Code Generation via Multi-Agent Adversarial Debate",
+  "abstract": "Although Large Language Models (LLMs) have demonstrated significant proficiency in code generation, their monolithic and correlation-driven nature renders them susceptible to systematic cognitive biases, deficient counterfactual reasoning, and adversarial manipulation\u2014a characteristic we term cognitive vulnerability. Such vulnerabilities compromise the reliability and security of AI-assisted software development, potentially resulting in code that is not only functionally incorrect but also biased, insecure, and difficult to validate using conventional testing paradigms. While recent multi-agent systems enhance workflow efficiency via task decomposition, they do not fundamentally address these reasoning deficits. This highlights the need for a framework capable of proactively identifying and mitigating the cognitive flaws of an LLM during the reasoning process. To address this challenge, we introduce CodeForge, a multi-agent adversarial reasoning framework that reframes code generation as a cognitive crucible. This process involves a structured debate among three specialized agents\u2014an Optimist, a Pragmatist, and an Adversarial Skeptic\u2014who iteratively cross-examine and refine solution plans. Following convergence, an adversarial verification module systematically generates counterfactual perturbations to stress-test and enhance the final plan. Comprehensive evaluations on the Hu",
+  "gid": 484,
+  "theme": "code generation"
+ }
+}

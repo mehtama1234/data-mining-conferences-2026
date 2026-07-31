@@ -1,0 +1,11 @@
+{
+ "batch": "b025",
+ "paper": {
+  "id": "71355edb0ff745d295214714f5f2ccd5fe902acc",
+  "venue": "WWW 2026",
+  "title": "G-SEIR: A Graph-Enhanced Epidemic Forecasting System for Dengue Intervention",
+  "abstract": "Dengue fever poses significant public-health risks in tropical regions, with recent outbreaks in Tainan City underscoring the need for timely, fine-grained forecasting. We introduce Graph-SEIR (G-SEIR), an end-to-end epidemic forecasting system that integrates a learnable SEIR simulator with a spatio-temporal graph neural network. The system automatically collects and processes multi-source environmental, demographic, and entomological data and generates weekly forecasts for 37 districts and 752 villages. Experiments on the 2015 and 2023 outbreaks show that G-SEIR outperforms eleven baselines in Root Mean Squared Error and Mean Absolute Error. A web-based interface provides interactive, district-level risk visualization, enabling authorities to detect emerging hotspots and support early intervention. These capabilities position G-SEIR as a practical AI-driven decision-support module for smart-city governance in dengue-endemic regions, strengthening municipal capacity for proactive disease control and resource allocation.",
+  "gid": 382,
+  "theme": "epidemic forecasting"
+ }
+}

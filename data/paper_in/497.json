@@ -1,0 +1,11 @@
+{
+ "batch": "b033",
+ "paper": {
+  "id": "94e687be5a6564c6532facf31b953da8ce300185",
+  "venue": "WWW 2026",
+  "title": "From Code to Rubrics: A Multimodal Evaluation of LLM Systems for Automated Feedback Generation",
+  "abstract": "Large Language Models (LLMs) are being used to provide automated assessment and feedback on student programming assignments. However, most existing systems rely on single, unified prompting techniques that evaluate an entire rubric at once. Such approaches often overwhelm the model, reinforce biases, and result in inconsistent or generic feedback. As web-scale AI systems continue to expand, it is important to ensure that automated feedback generation systems remain reliable, accurate, and consistent. In this work, we study LLM-based feedback generation that considers multimodal data (e.g., student-written code, test cases, error traces, and rubric criteria). We compare a traditional single-prompt strategy with a multi-agent LLM architecture, where individual agents assess distinct aspects of the assessment criteria. Our experiments use several open-source models ranging from 20B to 70B parameters and an open-source dataset of 57 Python programming tasks containing student error code and associated test cases. We analyze differences in feedback precision, correctness, and consistency across architectures. We evaluate the effectiveness of using LLMs as judges and multi-judge strategies to obtain more specific and reliable feedback evaluations. Our results show that well-designed single-prompt setups often generate more actionable and personalized feedback than multi-agent approac",
+  "gid": 497,
+  "theme": "LLM feedback generation"
+ }
+}

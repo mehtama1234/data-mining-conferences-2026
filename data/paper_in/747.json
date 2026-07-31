@@ -1,0 +1,11 @@
+{
+ "batch": "b049",
+ "paper": {
+  "id": "e1af5e3df9fdb8b248e097bfec7901c8f47f1f96",
+  "venue": "WWW 2026",
+  "title": "Tabular Foundation Models are Strong Graph Anomaly Detectors",
+  "abstract": "Graph anomaly detection (GAD), which aims to identify abnormal nodes that deviate from the majority, has become increasingly important in high-stakes Web domains. However, existing GAD methods follow a ''one model per dataset'' paradigm, leading to high computational costs, substantial data demands, and poor generalization when transferred to new datasets. This calls for a foundation model that enables a ''one-for-all'' GAD solution capable of detecting anomalies across diverse graphs without retraining. Yet, achieving this is challenging due to the large structural and feature heterogeneity across domains. In this paper, we propose TFM4GAD, a simple yet effective framework that adapts tabular foundation models (TFMs) for graph anomaly detection. Our key insight is that the core challenges of foundation GAD, handling heterogeneous features, generalizing across domains, and operating with scarce labels, are the exact problems that modern TFMs are designed to solve via synthetic pre-training and powerful in-context learning. The primary challenge thus becomes structural: TFMs are agnostic to graph topology. TFM4GAD bridges this gap by ''flattening'' the graph, constructing an augmented feature table that enriches raw node features with Laplacian embeddings, local and global structural characteristics, and anomaly-sensitive neighborhood aggregations. This augmented table is proces",
+  "gid": 747,
+  "theme": "Foundation graph anomaly detection"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "batch": "b028",
+ "paper": {
+  "id": "81a9847990c44cd43feb39c2de71326fc2f7484f",
+  "venue": "WWW 2026",
+  "title": "Semi-supervised Instruction Tuning for Large Language Models on Text-Attributed Graphs",
+  "abstract": "The emergent reasoning capabilities of Large Language Models (LLMs) offer a transformative paradigm for analyzing text-attributed graphs\u2014the fundamental data structures underpinning social networks and digital communities. However, deploying LLMs for social good applications, such as detecting misinformation or moderating toxic communities, is frequently hindered by the scarcity of high-quality annotations. While instruction tuning is the prevailing method for adapting pre-trained LLMs to graph learning tasks like node classification, it requires a substantial volume of annotated (INSTRUCTION, OUTPUT) pairs deriving from labeled nodes. This requirement is particularly prohibitive in the social domain, where obtaining expert labels for sensitive or evolving content is costly and slow. Furthermore, standard graph instruction tuning fails to exploit the vast amount of unlabeled nodes, which contain latent correlations due to edge connections that are beneficial for downstream predictions. To bridge this gap, we propose a novel Semi-supervised Instruction Tuning pipeline for Graph Learning, named SIT-Graph. Notably, SIT-Graph is model-agnostic and can be seamlessly integrated into any graph instruction tuning method that utilizes LLMs as the predictor. SIT-Graph operates via an iterative self-training process. Initially, the model is fine-tuned using instruction pairs constructed s",
+  "gid": 432,
+  "theme": "Graph learning"
+ }
+}

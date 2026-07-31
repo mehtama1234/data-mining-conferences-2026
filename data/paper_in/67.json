@@ -1,0 +1,11 @@
+{
+ "batch": "b004",
+ "paper": {
+  "id": "123232277ce717f6ff3a8f07be5ba4b6515c527c",
+  "venue": "WWW 2026",
+  "title": "(wt) GC-DPG: Graph-Constrained Dual-Phase Generation for Safe and Verifiable Chinese Medical Question Answering",
+  "abstract": "Large language models (LLMs) have shown strong performance on open-domain question answering, but their tendency to hallucinate unverifiable or unsafe medical content limits their applicability in clinical decision support and patient education. In contrast, high-quality medical knowledge graphs (KGs) encode curated relations between diseases, symptoms, drugs, examinations, and diet. We propose GC-DPG (Graph-Constrained Dual-Phase Generation), a two-phase framework that tightly couples an LLM with a disease-centric KG for Chinese medical QA. In the first phase, GC-DPG performs graph-based answer planning : given a user question and a disease KG, it constructs a structured, disease-specific Answer Plan that enumerates which KG facts are permissible for each detected intent (e.g., symptoms, checks, drugs). In the second phase, GC-DPG performs graph-constrained generation and consistency checking : it converts the Answer Plan into a constrained prompt that explicitly restricts the LLM to the planned entities, then applies a bidirectional graph--answer consistency checker to compute a support ratio and detect plan-violating hallucinations. We instantiate GC-DPG on a large Chinese Disease KG and evaluate it on a disease-centric QA dataset. Empirical results show that GC-DPG substantially improves entity-level precision and reduces hallucinations compared to strong KG-RAG and LLM-onl",
+  "gid": 67,
+  "theme": "Medical QA hallucination mitigation"
+ }
+}

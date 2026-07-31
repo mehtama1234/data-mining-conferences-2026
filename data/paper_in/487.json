@@ -1,0 +1,11 @@
+{
+ "batch": "b032",
+ "paper": {
+  "id": "9284c978b8f1f1ffbbbde80070aaf90a5ce5c002",
+  "venue": "WWW 2026",
+  "title": "SemTech 2026: The 4th International Workshop on AI and Semantic Technologies for the Scientific, Technical, and Legal Web",
+  "abstract": "The rapid expansion of scientific, technical, and legal data on the Web, ranging from patents and technical reports to scholarly articles, presents significant challenges for large-scale semantic processing. These data sources are inherently heterogeneous and semi-structured, often embedding complex entities such as figures and tables that cannot directly be processed by machines. SemTech 2026 addresses these challenges by exploring the intersection of Semantic Web technologies, Natural Language Processing (NLP), and Large Language Models (LLMs). In particular, the workshop emphasizes research at the intersection of symbolic AI and LLMs, investigating how structured knowledge representations and reasoning can enhance the interpretability, robustness, and reliability of data-driven language models.",
+  "gid": 487,
+  "theme": "semantic web"
+ }
+}

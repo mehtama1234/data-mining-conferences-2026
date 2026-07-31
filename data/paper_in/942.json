@@ -1,0 +1,11 @@
+{
+ "batch": "b062",
+ "paper": {
+  "id": "92af309261db106b1150daaf6d3e9350e4b4e93c",
+  "venue": "WSDM 2026",
+  "title": "GSDiffRec: Enhancing Personalized Sequential Recommendation via Diffusion Augmentation and Guidance Optimization",
+  "abstract": "Sequential recommendation aims to predict the next user interaction by modeling historical behavior sequences. Recently diffusion models (DMs) have emerged as a promising generative approach due to their robustness and capacity for uncertainty modeling. However, existing diffusion-based recommendation approaches still encounter two major challenges: sample drift during the noise injection process, which compromises the stability of generation; and limited adaptability to noisy data, which hampers the effectiveness of personalized recommendations. To address these issues, we propose GSDiffRec, a novel generative sequential recommendation approach that integrates two core modules: (i) Semantic-Targeted Guidance Module (STG) built upon an enhanced Transformer backbone equipped with shaped attention and convolutional components to improve representational efficiency and modeling capacity; and (ii) Geodesic Diffusion Module (GDM) enforcing manifold constraints through geodesic random walks, thereby preserving geometric consistency and enhancing denoising stability throughout the diffusion process. Extensive experiments on two public Amazon datasets demonstrate that GSDiffRec significantly outperforms a wide range of competitive baselines. Further ablation studies validate the complementary contributions and effectiveness of the GDM and STG modules.",
+  "gid": 942,
+  "theme": "sequential recommendation"
+ }
+}

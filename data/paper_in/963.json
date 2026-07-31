@@ -1,0 +1,11 @@
+{
+ "batch": "b064",
+ "paper": {
+  "id": "c7342de3b518cc83b80bccea99c758ee465509bf",
+  "venue": "WSDM 2026",
+  "title": "Pre-training Language Model for Friend Recommendation: A Case Study of Large Social Graph",
+  "abstract": "Despite the demonstrated success of Pre-trained Language Models (PLM) in enhancing various recommendation tasks, their performance in friend recommendation systems, which are heavily influenced by complex social network dynamics, remains unproven. On the other hand, for social networks like Facebook, graph-based machine learning approaches in friend suggestion, like Graph Neural Networks (GNNs), struggle with the computational demands posed by social graphs. In is paper we investigate the application of PLM and GNN in the context of PYMK features within Facebook's social graph. We propose a representation learning scheme that captures both the local structure and semantic content within a second-degree connection space. Our approach leverages pre-trained transformer models with a feature aggregation scheme that enables efficient node representation learning in large social networks. We detail our model's architecture and discuss our training methods, accompanied by detailed experiments. Our model has improved the amount of friending on Facebook, facilitating new connections for users each day in online experiment.",
+  "gid": 963,
+  "theme": "Social friend recommendation"
+ }
+}

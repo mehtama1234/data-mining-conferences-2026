@@ -1,0 +1,11 @@
+{
+ "batch": "b029",
+ "paper": {
+  "id": "861fb9af2153ba6f23ab5f3ced91aeee21cd83f3",
+  "venue": "WWW 2026",
+  "title": "SemaReg: Semantic Service Registry for Resilient IoTWorkflow Orchestration in Edge Computing Environments",
+  "abstract": "Internet of Things (IoT) workflow orchestration at the edge is hindered by network partitions, service churn, and heterogeneous capability descriptions, which collectively degrade discovery and binding of workflow steps. Exact-match service registries often fail when the requested type is temporarily unavailable, even though semantically compatible subtypes exist and could satisfy the same functional requirement. This paper presents SemaReg, a semantic replicated registry that combines ontology-based type subsumption with gossip-based replication to sustain discovery under disruption. Each edge node is modeled as a Belief--Desire--Intention-eXtended (BDIx) agent within a Distributed AI (DAI) framework, where beliefs capture observed and predicted availability and QoS, desires encode objectives (success, latency, security), and deliberation commits the most relevant desires into active intents that drive workflow binding and trigger SemaReg queries when needed. We simulate a distributed edge infrastructure with 80 heterogeneous BDIx agents (sensor providers, inference engines, and message brokers) and 8 registry replicas synchronized via epidemic gossip. Discrete-event evaluation of a three-step IoT workflow shows that SemaReg achieves 90% workflow success at moderate partition levels, improving success by 43% over broadcast discovery. SemaReg also bounds communication overhead ",
+  "gid": 448,
+  "theme": "Edge service discovery resilience"
+ }
+}

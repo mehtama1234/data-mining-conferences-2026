@@ -1,0 +1,11 @@
+{
+ "batch": "b024",
+ "paper": {
+  "id": "6bc5774ae1ac0d21546dd37be3dcf46f661c2c60",
+  "venue": "WWW 2026",
+  "title": "UniSafe: Modality-Agnostic Hateful Content Detection via Shared-Space Projection",
+  "abstract": "Hateful content on social platforms is often conveyed through multimodal memes, where meaning emerges from image-text composition. While multimodal fusion models can be accurate, many are brittle when a modality is unavailable at inference (e.g., missing image due to broken media links, or missing text due to upstream extraction or logging failures), requiring separate fallback models or routing logic. We present the UniSafe framework, a modality-agnostic approach that projects image and text evidence into a shared safety embedding space using frozen foundation encoders and lightweight trainable projectors. The UniSafe framework applies a single classifier to an order-invariant aggregation of the available modalities, enabling inference on any non-empty subset without retraining. On the Hateful Memes benchmark (dev split), UniSafe matches late fusion (AUROC 0.6865 \u00b1 0.0026 vs. 0.6853 \u00b1 0.0016) while supporting missing-modality inference with the same checkpoint. Under modality failures, UniSafe is competitive with a fusion+fallback deployment (AUROC 0.6509 on image-only and 0.6489 on text-only). Ablations indicate that modality dropout is the primary driver of robustness, while the alignment regularizer is optional at this scale.",
+  "gid": 365,
+  "theme": "Modality-agnostic content safety"
+ }
+}

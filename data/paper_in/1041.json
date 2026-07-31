@@ -1,0 +1,11 @@
+{
+ "batch": "b069",
+ "paper": {
+  "id": "10.1145/3805712.3809754",
+  "venue": "SIGIR 2026",
+  "title": "Set-Based Cross-Domain Recommendation",
+  "abstract": "Cross-domain recommendation is a well-known technique for improving recommendations in a target domain, especially under sparse data or cold-start conditions. A common strategy is to train user embeddings separately in the source and target domains and learn a transfer function between them. In contrast, we propose SetCDR, which constructs more effective user representations in the target domain by directly incorporating each user's source and target history. We additionally introduce a lightweight domain indicator that preserves data\u2013domain relational information. These histories, composed of item\u2013rating pairs, are represented as variable-length sets and processed using a permutation-invariant neural architecture. This differs from conventional neural networks, which do not naturally handle unordered inputs, and is well suited to recommender systems where user history sizes vary greatly among users. The use of a permutation-invariant architecture ensures consistent embeddings regardless of input order, improving robustness to real-world variability and training efficiency. We demonstrate SetCDR in two forms: a simple sum-pooling method and an extended multihead attention\u2013based method that captures more complex dependencies within user histories. Moreover, because SetCDR operates directly on sets of user history records, it provides a natural way to examine how histories influe",
+  "gid": 1041,
+  "theme": "Cross-domain recommendation"
+ }
+}

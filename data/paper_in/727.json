@@ -1,0 +1,11 @@
+{
+ "batch": "b048",
+ "paper": {
+  "id": "dcdb243896acca862efc6144407df48d787f09cb",
+  "venue": "WWW 2026",
+  "title": "Scalable Anomaly Detection for Temporal Web Streams via Approximate Nearest Neighbor Search",
+  "abstract": "In the realm of temporal Web analytics, processing high-dimensional data streams at Internet scale presents significant hurdles, particularly concerning computational scalability and the handling of imbalanced data distributions. To address these challenges, this paper proposes a novel Approximate Nearest Neighbor-based Time Series anomaly detection model (ANN-TS). The proposed framework enhances detection efficiency and robustness through three key contributions: (1) constructing a hierarchical ANN index optimized for rapid querying of high-dimensional Web streams; (2) designing a statistical neighbor-based scoring mechanism to mitigate the impact of noise and data skew; and (3) introducing an adaptive update strategy to handle temporal dynamics and concept drift. We conduct comprehensive comparative experiments against nine state-of-the-art benchmark methods on six public datasets. The results demonstrate that ANN-TS achieves superior accuracy and recall, particularly excelling in high-dimensional and imbalanced scenarios while significantly reducing computational overhead. Furthermore, in long-term monitoring evaluations, the model exhibits exceptional stability and adaptability to evolving temporal patterns, confirming its practical applicability for real-world, large-scale Web infrastructure monitoring.",
+  "gid": 727,
+  "theme": "stream anomaly detection"
+ }
+}

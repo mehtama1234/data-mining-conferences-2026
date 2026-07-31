@@ -1,0 +1,11 @@
+{
+ "batch": "b061",
+ "paper": {
+  "id": "7e885ccba1b3f1891a3e39b181824111f771ef6f",
+  "venue": "WSDM 2026",
+  "title": "Prompt Tuning without Labeled Samples for Zero-Shot Node Classification in Text-Attributed Graphs",
+  "abstract": "Node classification is a fundamental problem in information retrieval with many real-world applications, such as community detection in social networks, grouping articles published online and product categorization in e-commerce. Zero-shot node classification in text-attributed graphs (TAGs) presents a significant challenge, particularly due to the absence of labeled data. In this paper, we propose a novel Zero-shot Prompt Tuning (ZPT) framework to address this problem by leveraging a Universal Bimodal Conditional Generator (UBCG). Our approach begins with pre-training a graph-language model to capture both the graph structure and the associated textual descriptions of each node. Following this, a conditional generative model is trained to learn the joint distribution of nodes in both graph and text modalities, enabling the generation of synthetic samples for each class based solely on the class name. These synthetic node and text embeddings are subsequently used to perform continuous prompt tuning, facilitating effective node classification in a zero-shot setting. Furthermore, we conduct extensive experiments on multiple benchmark datasets, demonstrating that our framework performs better than existing state-of-the-art baselines. We also provide ablation studies to validate the contribution of the bimodal generator.",
+  "gid": 929,
+  "theme": "Zero-shot node classification"
+ }
+}

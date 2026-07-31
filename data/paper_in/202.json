@@ -1,0 +1,11 @@
+{
+ "batch": "b013",
+ "paper": {
+  "id": "39e25d9832db32f2d1a912504cc2cf8976a2e1e6",
+  "venue": "WWW 2026",
+  "title": "LoRA-E2: Effective and Efficient Low-rank Adaptation",
+  "abstract": "Low-rank adaptation (LoRA) has emerged as an efficient fine-tuning technique for large language models, enabling parameter-efficient updates while maintaining task performance. However, LoRA suffers from two key issues: 1) inefficient feature learning when the width n (embedding dimension) is large, and 2) ineffective updates to the adapter matrix A due to the initialization of B as zero. We propose LoRA-E2, which utilizes a Gaussian initialization with variance \u0398(n-3/4 ) for A, and employs the Gauss-Seidel iteration to train B and A. We theoretically show that LoRA-E2 enables more stable and efficient feature learning with effective parameter updates over standard LoRA. Empirically, LoRA-E2 achieves consistent gains in both natural language understanding and generation tasks. On the GLUE benchmark with T5-base, it improves performance by 1\u201310% over LoRA. When fine-tuning LLaMA 2-7B on MetaMathQA with GSM8K as validation, LoRA-E2 surpasses LoRA by 1\u20132% and converges up to \u223c3\u00d7 faster. Code is available at https://github.com/whu-totemdb/LoRA-E2.",
+  "gid": 202,
+  "theme": "LLM fine-tuning adaptation"
+ }
+}

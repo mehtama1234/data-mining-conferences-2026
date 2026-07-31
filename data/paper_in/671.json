@@ -1,0 +1,11 @@
+{
+ "batch": "b044",
+ "paper": {
+  "id": "cdb03f6a1fdd54ae48ed677e0e6d3d6c8420c898",
+  "venue": "WWW 2026",
+  "title": "SAGE-RAI: Design Patterns for Transparent RAG Systems",
+  "abstract": "Retrieval-Augmented Generation (RAG) systems are increasingly deployed in web-based educational environments, yet transparency can be seen as a primarily ethical, and, too often, optional, concern, rather than foundational. This paper presents design patterns for building transparent RAG systems, derived from developing and deploying SAGE-RAI, an advanced multi-purpose RAG system, in an educational context. Through systematic evaluation combining quantitative rating data (n=26, mean rating=4.62/5) and qualitative interviews (n=4), we demonstrate that transparency serves dual pedagogical and ethical functions. Our empirical findings reveal high user satisfaction (92.3% rating 4-5 stars) while identifying critical tensions between AI assistance and learning independence. Our findings suggest that as RAG systems increasingly mediate access to web-based knowledge, transparency must evolve from an optional feature to an architectural requirement.",
+  "gid": 671,
+  "theme": "Transparent RAG systems"
+ }
+}

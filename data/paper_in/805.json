@@ -1,0 +1,11 @@
+{
+ "batch": "b053",
+ "paper": {
+  "id": "f1c1dfcab7b149f6e3b738075e61c03a1467ce03",
+  "venue": "WWW 2026",
+  "title": "Contextual Structure-Enhanced Selective Graph Convolutional Network",
+  "abstract": "Graph Neural Networks fundamentally rely on homophily assumptions where connected nodes are expected to share similar labels, consequently suffering severe performance degradation in heterophilic graphs due to the indiscriminate neighbor aggregation mechanism. Although recent solutions have attempted to incorporate higher-order neighborhoods or reweighting schemes, they often inadvertently amplify structural noise by introducing a larger proportion of dissimilar nodes than similar ones, while simultaneously failing to capture nuanced contextual patterns due to their inability to discern subtle local structural variations across subgraphs. To holistically address these intractable and co-existing challenges, we propose the Contextual Structure Enhanced Selective Graph Convolutional Network (CSS-GCN), a novel architecture that organically synergizes contextual structure modeling with adaptive neighbor selection. Specifically, our approach employs ego-network partitioning and group fairness constraints to effectively quantify domain-invariant structural patterns, thereby countering the contextual blindness often observed in conventional GNNs. Complementarily, we design a selective propagation mechanism unifying adaptive neighborhood distribution-based similarity computation with the gated fusion of three distinct information pathways: potential homophilic neighbors identified thro",
+  "gid": 805,
+  "theme": "Heterophilic graph learning"
+ }
+}

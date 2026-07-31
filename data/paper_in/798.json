@@ -1,0 +1,11 @@
+{
+ "batch": "b053",
+ "paper": {
+  "id": "ef86c59e8dec5d87a916988a619808853578e2cf",
+  "venue": "WWW 2026",
+  "title": "ORKG Properties Ontology Consolidated: LLM-Driven Refinement of Crowdsourced Knowledge for Machine-Actionability",
+  "abstract": "In the era of Generative AI, Scientific Knowledge Graphs (SKGs) have become instrumental for grounding Retrieval-Augmented Generation (RAG), especially for mitigating hallucinations. As a prominent example, the Open Research Knowledge Graph (ORKG) serves as a foundational element of emerging research data infrastructures. It distinguishes itself by modeling not only metadata but also the semantic content of research publications as fine-grained triples. However, the quality and utility of these triples heavily depend on the predicates defined in the ORKG ontology. Currently, the ontology suffers from quality degradation inherent to uncontrolled crowdsourcing, such as widely duplicated properties, inconsistent naming conventions, and ambiguous semantics, thereby inhibiting machine-actionability. In this paper, we introduce the Consolidated ORKG Properties Ontology (OPO-Consolidated), a consolidated schema designed to resolve these inconsistencies. We present a semi-automated workflow that combines Large Language Models (LLMs) with human engineering to systematically clean and restructure the existing property set. Our evaluation, utilizing an established Gold Standard dataset of 153 research papers, demonstrates that OPO-Consolidated substantially improves schema conciseness (by resolving synonymy and redundancy) and semantic consistency (by enforcing uniform naming conventions)",
+  "gid": 798,
+  "theme": "Knowledge graph curation"
+ }
+}

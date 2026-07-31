@@ -1,0 +1,11 @@
+{
+ "batch": "b012",
+ "paper": {
+  "id": "39003bf10d056692128759ffc2e716b3f3868a9f",
+  "venue": "WWW 2026",
+  "title": "Many Hands Make Light Work: Group-based Information Diffusion Prediction over Long-Context Cascades",
+  "abstract": "Information diffusion prediction aims to forecast the temporal spread of opinions and behaviors by identifying potential adopters. Existing methods typically treat information diffusion as a sequence of individual adoptions and rely on computationally expensive pairwise (one-to-one) influence computations, often restricting predictions to just the next adopter. This individual-level paradigm both misrepresents real-world collective (many-to-many) influences and suffers a critical efficiency trade-off: to remain feasible, such models must truncate long diffusion histories, thereby overlooking early initiators and opinion leaders. To overcome these limitations, we formalize a more practical task: Group-based Information Diffusion Prediction, and propose an effective and scalable GRID framework. Specifically, GRID first learns group-oriented graph embeddings via a task-regularized information bottleneck objective, which amplifies key influence pathways and produces reliable user embeddings for group identification. Built on these embeddings, the core GroupAttn module captures inter-group influence while reducing complexity from quadratic to linear in cascade length. This enables the modeling of ultra-long cascades (exceeding 10,000 users) without truncation while preserving representational fidelity within a provable error bound. Finally, a group-wise objective guides the model to",
+  "gid": 194,
+  "theme": "Information diffusion"
+ }
+}

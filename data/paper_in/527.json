@@ -1,0 +1,11 @@
+{
+ "batch": "b035",
+ "paper": {
+  "id": "9df71db0c9c6680410c3272314254bcc6250762b",
+  "venue": "WWW 2026",
+  "title": "Deception Factories: Industrial-Scale Cloaking in Harmful Synthetic Media",
+  "abstract": "Generative AI has drastically lowered the cost of producing and deploying deceptive online content. Scam and disinformation operations increasingly rely on synthetic and heavily manipulated media, yet most existing work still focuses on individual artifacts or detection methods rather than how real campaigns are structured and scaled. In this paper, we analyze a large collection of real-world fraudulent and disinformation campaigns built around AI-generated and manipulated media. We observe a wide range of campaign sizes, from small operations to campaigns reaching industrial scale. We find that scaling is not achieved by creating new semantic content, but primarily by mass-producing superficial variants of a small number of templates. We further show that large campaigns systematically rely on cloaking: a relatively stable core fraudulent payload is embedded in a much larger volume of auxiliary and decoy content, which dominates the overall campaign structure and becomes the main driver of volume as campaigns grow. Overall, our results highlight a shift from isolated deepfake artifacts to industrialized deception operations, where scale is achieved through automation, reuse, and structural manipulation of content. This perspective motivates defenses that target campaign-level behavior rather than individual files.",
+  "gid": 527,
+  "theme": "synthetic media abuse"
+ }
+}

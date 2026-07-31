@@ -1,0 +1,11 @@
+{
+ "batch": "b058",
+ "paper": {
+  "id": "1201f8b8b17e226fd7eab1ee996d5ad893674308",
+  "venue": "WSDM 2026",
+  "title": "From Perception to Share: Understanding Misinformation Through User Believability and Linguistic Ambivalence",
+  "abstract": "Misinformation on social media undermines informed discourse, yet most detection systems overlook how people actually judge credibility. This research bridges human perception and linguistic construction through two complementary analyses: large-scale measurement of user believability judgments in real social-media news discussions, and content-level modeling of linguistic ambivalence, the co-occurrence of conflicting emotional, cognitive, and temporal cues. Results show that perceived believability varies systematically with textual (verbs, proper nouns, interrogatives) and user features (personality proxies, writing complexity, emotional tone). Incorporating these explicit believability signals as edge features in graph neural networks substantially improves detection over content-only baselines. Complementary analyses reveal that domain specific ambivalence patterns\u2014emotion\u2013cognition tension in politics, sentiment mixing in entertainment, and present\u2013future framing in health\u2014serve as linguistic markers of deception. Together, these findings show that mitigating misinformation requires modeling both human credibility judgments and the linguistic conflicts that exploit them.",
+  "gid": 875,
+  "theme": "misinformation detection"
+ }
+}

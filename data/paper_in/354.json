@@ -1,0 +1,11 @@
+{
+ "batch": "b023",
+ "paper": {
+  "id": "683784f3cae38e625d80c34298a3d51501761583",
+  "venue": "WWW 2026",
+  "title": "Sparse Causal Latent Features for Robust Multimodal Learning under Distribution Shifts",
+  "abstract": "Multimodal learning systems often suffer from significant performance degradation when facing distribution shifts. The root cause is that these models learn features that exhibit spurious correlations with the labels. This paper introduces sparse causal latent features (SCLF), a framework that enforces robustness through explicit feature selection. It utilizes a gating mechanism to precisely select a small number of stable causal features, thereby enhancing the model's generalization ability in out-of-distribution scenarios. By integrating adversarial training, invariant risk minimization penalty, and feature stability scoring, SCLF can effectively identify and preserve causal features that remain stable across environments. Experimental results demonstrate that SCLF achieves an accuracy of 73.0%\\pm1.1% in strongly negatively correlated out-of-distribution environments, while maintaining an in-domain accuracy of 74.0%\\pm0.5%. These results highlight the potential of SCLF for reliable and trustworthy multimodal learning.",
+  "gid": 354,
+  "theme": "Robust multimodal learning"
+ }
+}

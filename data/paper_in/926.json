@@ -1,0 +1,11 @@
+{
+ "batch": "b061",
+ "paper": {
+  "id": "7c5696d9739d38268129f5d379b9dbca0d3d2a5e",
+  "venue": "WSDM 2026",
+  "title": "RPE4Rec: Enhancing Dynamic Node Retrieval with Efficient Relative Position Encoding for Recommendation Systems",
+  "abstract": "Dynamic recommendation systems must efficiently retrieve relevant items for users while adapting to evolving interactions. Traditional methods often struggle with scalability and computational costs when modeling item representations. A key challenge is capturing short-term co-occurrence patterns that reflect dynamic user preferences. In this work, we introduce RPE4Rec, a lightweight and efficient plugin module that enhances dynamic node retrieval by leveraging Relative Position Encoding (RPE). Our method employs a hashtable-based neighborhood memory to capture short-term co-occurrence signals while maintaining low space and time complexity. By incorporating RPE into mainstream recommendation models, RPE4Rec significantly improves item retrieval performance with minimal additional cost. Extensive experiments on multiple datasets demonstrate that our approach consistently augments mainstream recommendation models, substantially improving item retrieval performance with limited additional cost.",
+  "gid": 926,
+  "theme": "Dynamic recommendation retrieval"
+ }
+}

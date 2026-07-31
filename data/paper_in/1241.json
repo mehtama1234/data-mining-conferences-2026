@@ -1,0 +1,11 @@
+{
+ "batch": "b082",
+ "paper": {
+  "id": "10.1145/3805712.3809835",
+  "venue": "SIGIR 2026",
+  "title": "A Multi-Granularity Game-Theoretic Approach to Weakly Supervised Temporal Article Grounding",
+  "abstract": "Weakly Supervised temporal Article Grounding (WSAG) is an important task in the field of video understanding and retrieval, which aims to ground sentences from the article with the corresponding video clips (segments), using only video-text pairwise annotations during training. Existing methods typically rely on a proposal-based approach that utilizes contrastive learning to score candidate video clips. However, these approaches often face two main drawbacks: (1) They mainly focus on global video-level alignment with the article while neglecting the multi-level relationships between video clips and text hierarchy; (2) They overlook intra-modal feature learning, failing to adequately distinguish salient patterns. To address these issues, we propose a novel multi-granularity game-theoretic method, namely Hierarchical Cooperative Network (HCN), which models video clips and article units (i.e., at word, sentence, and paragraph layers) as players in a game. Specifically, our proposed method introduces two mechanisms: (1) Intra-modal feature cooperation: Within each modality, we encourage cooperation among the features to obtain a salient feature set as the effective representations, enabling a sharper distinction between semantically overlapping video clips and enhancing discriminative textual cues; (2) Layered cross-modal cooperation: For different semantic layers of the article, w",
+  "gid": 1241,
+  "theme": "temporal video grounding"
+ }
+}

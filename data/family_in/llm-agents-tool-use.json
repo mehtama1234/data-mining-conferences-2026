@@ -1,0 +1,565 @@
+{
+ "key": "llm-agents-tool-use",
+ "theme": "LLM Agents & Tool Use",
+ "n_papers": 212,
+ "pct": 10.9,
+ "by_venue": {
+  "WWW 2026": 119,
+  "WSDM 2026": 11,
+  "SIGIR 2026": 72,
+  "KDD 2026": 10
+ },
+ "theme_examples": [
+  {
+   "title": "Neuro-Sym Supporter: A Thoughtful Emotion Support Agent Integrating Neural and Symbolic Policy Learning",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "WebAndTheCity 12th International Smart City Workshop - Data-Driven Smart Cities",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "AgenticShop: Benchmarking Agentic Product Curation for Personalized Web Shopping",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "D-Models and E-Models: Diversity-Stability Trade-offs in the Sampling Behavior of Large Language Models",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "A Fact-Checking Framework with Denoising Evidence Retrieval and LLM-Based Debate Verification",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "RobustExplain: Evaluating Robustness of LLM-Based Explanation Agents for Recommendation",
+   "venue": "WWW 2026"
+  }
+ ],
+ "representative_papers": [
+  {
+   "title": "Beyond Detection: Autonomous Anomaly Remediation for MCP Against Tool Poisoning Attacks",
+   "venue": "WWW 2026",
+   "problem": "LLM agents vulnerable to tool poisoning attacks via MCP context manipulation",
+   "approach": "Multi-checkpoint rollback with attention-mask-based anomaly detection and correction",
+   "contribution": "First automated anomaly detection and correction framework for MCP tool poisoning",
+   "primary_theme": "LLM security, tool poisoning",
+   "methods": [
+    "anomaly detection",
+    "rollback mechanism",
+    "attention masking"
+   ]
+  },
+  {
+   "title": "DriftNavi: Talk through Your Data Drift with LLMs",
+   "venue": "WWW 2026",
+   "problem": "Users struggle to understand and adapt ML models when data distribution shifts",
+   "approach": "DriftNavi conversational tool using LLM reasoning agents for model-free drift analysis",
+   "contribution": "Interactive dialogue system enhancing user understanding of data drift detection and adaptation",
+   "primary_theme": "Data drift explanation",
+   "methods": [
+    "llm",
+    "conversational-ai",
+    "drift-detection"
+   ]
+  },
+  {
+   "title": "A Large Language Model-based Agent for Automated Machine Learning Workflow Construction",
+   "venue": "WWW 2026",
+   "problem": "Automating ML workflow construction from natural language task descriptions without manual code generation",
+   "approach": "Intent-driven task planning with hierarchical tool retrieval; code-free visual workflow generation framework",
+   "contribution": "MLPlatAgent outperforms existing LLM agents in task alignment and ML model performance",
+   "primary_theme": "Automated machine learning",
+   "methods": [
+    "llm-agent",
+    "workflow-generation",
+    "task-planning"
+   ]
+  },
+  {
+   "title": "Egocentric Co-Pilot: Web-Native Smart-Glasses Agents for Assistive Egocentric AI",
+   "venue": "WWW 2026",
+   "problem": "Web access requires screens and stable desks; assistive needs for low vision and mobile scenarios",
+   "approach": "Neuro-symbolic LLM orchestrating perception and web tools with hierarchical context compression",
+   "contribution": "Web-native egocentric framework enables always-on assistive AI over continuous first-person video",
+   "primary_theme": "assistive egocentric AI",
+   "methods": [
+    "llm",
+    "multimodal",
+    "web integration"
+   ]
+  },
+  {
+   "title": "TOOL-CURE: Tool Selection via Curriculum-Enhanced Reinforcement Learning with Sample Screening for LLMs",
+   "venue": "WSDM 2026",
+   "problem": "Tool selection for LLM agents with imbalanced, noisy, conflicting real-world training data",
+   "approach": "Curriculum learning with proficiency-scaled stages and sample screening for reinforcement learning",
+   "contribution": "TOOL-CURE improves LLM tool selection via curriculum and sample quality filtering over GRPO",
+   "primary_theme": "LLM agent tool use",
+   "methods": [
+    "reinforcement learning",
+    "curriculum learning",
+    "llm",
+    "tool selection"
+   ]
+  },
+  {
+   "title": "Tool-Star: Empowering Multi-Tool Collaborative Web Agent via Reinforcement Learning",
+   "venue": "SIGIR 2026",
+   "problem": "LLM-based agents struggle to orchestrate multiple external tools effectively",
+   "approach": "End-to-end agentic post-training with tool synthesis, supervised fine-tuning, and multi-tool RL",
+   "contribution": "Improved multi-tool collaborative reasoning via curriculum learning and hierarchical reward structures",
+   "primary_theme": "Multi-tool LLM agents",
+   "methods": [
+    "reinforcement-learning",
+    "llm",
+    "tool-use"
+   ]
+  },
+  {
+   "title": "DLLM-Searcher: Adapting Diffusion Language Model for Efficient Search Agents",
+   "venue": "SIGIR 2026",
+   "problem": "Diffusion LLMs have latency and weak reasoning/tool-calling for search agents",
+   "approach": "Agentic SFT and VRPO post-training with flexible parallel generation paradigm",
+   "contribution": "Improves dLLM reasoning and tool-calling for efficient ReAct-based search agents",
+   "primary_theme": "LLM search agents",
+   "methods": [
+    "llm",
+    "agent",
+    "fine-tuning",
+    "diffusion"
+   ]
+  },
+  {
+   "title": "Building a Production Shopping Agent at Scale",
+   "venue": "SIGIR 2026",
+   "problem": "Deploying conversational shopping agents at scale requires meeting strict accuracy, latency, reliability, and cost constraints.",
+   "approach": "Combine agentic reasoning with production-aware retrieval, tool orchestration, and system optimization.",
+   "contribution": "Production shopping agent at Amazon scale supporting discovery, QA, and agentic actions.",
+   "primary_theme": "Conversational agents",
+   "methods": [
+    "llm_agents",
+    "retrieval",
+    "tool_use"
+   ]
+  },
+  {
+   "title": "MCP Servers for Pyserini and RankLLM: Enabling Agentic Retrieval-Augmented Generation",
+   "venue": "SIGIR 2026",
+   "problem": "LLMs lack direct access to IR research tools and retrieval-reranking capabilities",
+   "approach": "MCP servers expose Pyserini and RankLLM as tools callable by LLM agents",
+   "contribution": "End-to-end agentic RAG workflows with sparse/dense retrieval and reranking",
+   "primary_theme": "IR-LLM integration",
+   "methods": [
+    "rag",
+    "agent",
+    "mcp"
+   ]
+  },
+  {
+   "title": "Neuro-Sym Supporter: A Thoughtful Emotion Support Agent Integrating Neural and Symbolic Policy Learning",
+   "venue": "WWW 2026",
+   "problem": "LLM emotion support agents rely on CoT prompting with limited interpretability and unstable reasoning",
+   "approach": "Hybrid neuro-symbolic framework combining symbolic reasoning and deep learning via differentiable logic-based framework",
+   "contribution": "Neuro-Sym Supporter balances logic and emotion for stable, interpretable emotional support",
+   "primary_theme": "Empathetic dialogue systems",
+   "methods": [
+    "symbolic reasoning",
+    "deep learning",
+    "logic programming"
+   ]
+  },
+  {
+   "title": "RobustExplain: Evaluating Robustness of LLM-Based Explanation Agents for Recommendation",
+   "venue": "WWW 2026",
+   "problem": "Robustness of LLM-generated explanations in recommender systems under user behavior noise is unexplored",
+   "approach": "RobustExplain framework measures robustness across five realistic perturbations and multi-dimensional metrics",
+   "contribution": "First robustness benchmarks for LLM explanation agents; current models show only moderate robustness",
+   "primary_theme": "LLM recommendation explanation",
+   "methods": [
+    "recommendation-system",
+    "llm",
+    "robustness-evaluation"
+   ]
+  },
+  {
+   "title": "GCAgent: Enhancing Group Chat Communication through Dialogue Agents System",
+   "venue": "WWW 2026",
+   "problem": "Group chat effectiveness hindered by inactivity and management challenges despite LLM dialogue agent advances",
+   "approach": "Multi-module LLM system with Agent Builder, Dialogue Manager, and Interface Plugins for coordinated group interactions",
+   "contribution": "GCAgent increases group message volume 28.80% in 350-day deployment with 4.68 avg satisfaction score",
+   "primary_theme": "LLM group chat",
+   "methods": [
+    "llm",
+    "dialogue management",
+    "multi-participant"
+   ]
+  },
+  {
+   "title": "COMA: A Collaborative Multi-Role Agent Framework for Automated Lesson Plan Generation",
+   "venue": "WWW 2026",
+   "problem": "Lesson plan creation time-consuming, inconsistent, and lacks real-time pedagogical adaptation to learner needs",
+   "approach": "Multi-role LLM agent framework with novice, veteran, and master agents iteratively refining lesson plans collaboratively",
+   "contribution": "COMA significantly outperforms baselines in automated LP generation across five subjects using expert metrics",
+   "primary_theme": "LLM lesson generation",
+   "methods": [
+    "llm",
+    "multi-agent",
+    "collaboration"
+   ]
+  },
+  {
+   "title": "PolicySim: An LLM-Based Agent Social Simulation Sandbox for Proactive Policy Optimization",
+   "venue": "WWW 2026",
+   "problem": "Platform intervention policies risk amplifying echo chambers but lack pre-deployment evaluation",
+   "approach": "LLM-based social simulation with SFT/DPO-refined agents and adaptive intervention module",
+   "contribution": "PolicySim enables proactive policy assessment before deployment via realistic simulation",
+   "primary_theme": "Policy simulation",
+   "methods": [
+    "llm-simulation",
+    "social-dynamics",
+    "preference-optimization"
+   ]
+  },
+  {
+   "title": "ES-MemEval: Benchmarking Conversational Agents on Personalized Long-Term Emotional Support",
+   "venue": "WWW 2026",
+   "problem": "Limited memory evaluation for LLMs in long-term emotional support conversational scenarios",
+   "approach": "Comprehensive benchmark evaluating five core memory capabilities across dialogue tasks",
+   "contribution": "ES-MemEval and EvoEmo dataset reveal explicit memory essential for personalization and hallucination reduction",
+   "primary_theme": "LLM long-term memory",
+   "methods": [
+    "benchmark",
+    "memory",
+    "dialogue"
+   ]
+  },
+  {
+   "title": "EmeraldApp: An AI-Driven Tool for Detecting Greenwashing in Sustainability Claims",
+   "venue": "WWW 2026",
+   "problem": "Misleading environmental claims undermine sustainability reporting trustworthiness",
+   "approach": "Multi-pipeline RAG system with vector DB and knowledge graph retrieval",
+   "contribution": "EmeraldApp tool verifies sustainability claims with fact-based justifications",
+   "primary_theme": "Greenwashing detection",
+   "methods": [
+    "rag",
+    "knowledge graph",
+    "llm classification"
+   ]
+  },
+  {
+   "title": "Inference Cost Attacks for Retrieval-Augmented Large Language Models",
+   "venue": "WWW 2026",
+   "problem": "RAG-enhanced LLMs vulnerable to high inference costs through knowledge base poisoning",
+   "approach": "Inject malicious documents into knowledge bases via LLM agents and reinforcement learning",
+   "contribution": "CREEP framework with MA-GRPO algorithm for effective inference cost attacks on RAG systems",
+   "primary_theme": "LLM security",
+   "methods": [
+    "rag",
+    "adversarial-attack",
+    "reinforcement-learning"
+   ]
+  },
+  {
+   "title": "BaiJia: An Open Role-Playing Platform of Chinese Historical Characters",
+   "venue": "WWW 2026",
+   "problem": "Limited role-playing agents for Chinese historical characters, fragmented data sources",
+   "approach": "Compile 19,281 LLM-based agents integrating biographical, literary, and relational data",
+   "contribution": "BaiJia platform achieving 10.2% improvement across six metrics for historical engagement",
+   "primary_theme": "LLM agents",
+   "methods": [
+    "llm",
+    "role-playing",
+    "knowledge-integration"
+   ]
+  },
+  {
+   "title": "ToolBox-RL: Learning to Generalize Tool Use Across Massive Repositories",
+   "venue": "WWW 2026",
+   "problem": "Retrieval-based tool selection struggles aligning user queries with tool documentation",
+   "approach": "Reinforcement learning unifying query rewriting, intent understanding, and large-scale retrieval",
+   "contribution": "ToolBox-RL achieves best accuracy on white/black-box tools with strong out-of-domain generalization",
+   "primary_theme": "LLM tool use",
+   "methods": [
+    "reinforcement-learning",
+    "tool-retrieval",
+    "query-rewriting"
+   ]
+  },
+  {
+   "title": "Conversational Search: From Fundamentals to Frontiers in the Age of Agents",
+   "venue": "WWW 2026",
+   "problem": "Conversational search needs to handle complex multi-turn intent and leverage LLM reasoning capabilities",
+   "approach": "LLM-driven agentic systems that plan strategies, execute retrieval, and support autonomous behaviors",
+   "contribution": "Tutorial connecting conversational search fundamentals with LLM-based agentic paradigms",
+   "primary_theme": "Conversational search",
+   "methods": [
+    "llm",
+    "agent",
+    "retrieval",
+    "dialogue"
+   ]
+  },
+  {
+   "title": "XInsight: Integrative Stage-Consistent Psychological Counseling Support Agents for Digital Well-Being",
+   "venue": "WWW 2026",
+   "problem": "LLM-driven psychological support chatbots remain opaque, single-stage, weakly grounded in therapy",
+   "approach": "Multi-agent framework aligned with Exploration-Insight-Action with Reason-Intervene-Reflect cycle",
+   "contribution": "XInsight-Bench with therapy-specific scales improves paradigm alignment and interpretability",
+   "primary_theme": "Psychological support agents",
+   "methods": [
+    "agents",
+    "llm",
+    "multiagent",
+    "therapy"
+   ]
+  },
+  {
+   "title": "DHOW-MiLLA: Joint Workshop on Diffusion of Harmful Content on Online Web and Countering Misinformation in the Age of LLMs and Agents",
+   "venue": "WWW 2026",
+   "problem": "Harmful content analysis fragmented across platforms, languages, topics; limited cross-platform counter-measure study.",
+   "approach": "Workshop unifying research on harmful content diffusion across platforms, languages, and content types.",
+   "contribution": "Brings together misinformation, hate speech, cyberbullying research under one framework with LLM/agent focus.",
+   "primary_theme": "Harmful content mitigation",
+   "methods": [
+    "content-moderation",
+    "misinformation-detection",
+    "cross-platform"
+   ]
+  },
+  {
+   "title": "TCR: A Trust-Aligned Text-Only Cross-Attention Ranker Distilling Multimodal LLM Reasoning for Recommendation Agents",
+   "venue": "WWW 2026",
+   "problem": "Vision-language models too slow for real-time recommendation despite semantic reasoning",
+   "approach": "Multi-teacher distillation into lightweight DeBERTa model with LoRA fine-tuning",
+   "contribution": "98.5% parameter reduction while maintaining ranking quality at production latency",
+   "primary_theme": "Model distillation",
+   "methods": [
+    "distillation",
+    "lora",
+    "dense-retrieval"
+   ]
+  },
+  {
+   "title": "LLM and Agents for Recommendation Systems (LARS)",
+   "venue": "WWW 2026",
+   "problem": "Multi-agent recommendation systems lack interpretability robustness and suitable evaluation metrics",
+   "approach": "Workshop framing principles for transparent agent architectures and coordination mechanisms",
+   "contribution": "Establishes evaluation frameworks for trustworthy multi-agent recommendation systems",
+   "primary_theme": "Multi-agent systems",
+   "methods": [
+    "multi-agent",
+    "mechanism-design"
+   ]
+  },
+  {
+   "title": "Collaborative LLM Agents for End-to-End Software Development",
+   "venue": "WWW 2026",
+   "problem": "Software development needs coordinated multi-agent systems replacing single-model code completion",
+   "approach": "Collaborative LLM agents with role specialization manager routing and spec-driven workflows",
+   "contribution": "Practical blueprint for designing reliable collaborative coding agents in production",
+   "primary_theme": "AI-assisted development",
+   "methods": [
+    "llm",
+    "multi-agent",
+    "code-generation"
+   ]
+  },
+  {
+   "title": "Bandits, LLMs, and Agentic Web",
+   "venue": "WWW 2026",
+   "problem": "LLM-based agents need adaptive decision-making frameworks for autonomous coordination and continuous learning in agentic ecosystems.",
+   "approach": "Tutorial on embedding multi-armed bandit algorithms into LLM agents balancing exploration-exploitation in autonomous systems.",
+   "contribution": "Practical MAB framework for agentic LLMs enabling personalized curation and multi-agent dialogue coordination.",
+   "primary_theme": "agentic learning",
+   "methods": [
+    "bandit",
+    "llm",
+    "reinforcement-learning",
+    "agent"
+   ]
+  },
+  {
+   "title": "ECLAD: An Edge-Cloud Collaborative Agentic Framework for Interpretable Anomaly Detection in Predictive Maintenance",
+   "venue": "WWW 2026",
+   "problem": "Anomaly detection in predictive maintenance lacks interpretability; cloud-edge latency tradeoff",
+   "approach": "Hybrid edge-cloud framework with LLM-based interpretability agents for anomaly reports",
+   "contribution": "ECLAD provides real-time detection with natural-language explanations and evolving taxonomy",
+   "primary_theme": "Anomaly detection",
+   "methods": [
+    "edge-computing",
+    "llm",
+    "time-series"
+   ]
+  },
+  {
+   "title": "(Mis-)Informed Consent: Predatory Apps and the Exploitation of Populations with Limited Literacy",
+   "venue": "WWW 2026",
+   "problem": "Predatory apps exploit limited-literacy users through obfuscated privacy disclosures and poor informed consent",
+   "approach": "Analyze app permissions dataset and test LLM-generated summaries and visual cues for clarity",
+   "contribution": "LLM-driven privacy-literacy tools can improve consent comprehension in emerging digital markets",
+   "primary_theme": "Privacy literacy accessibility",
+   "methods": [
+    "llm",
+    "privacy",
+    "user-study",
+    "nlp"
+   ]
+  },
+  {
+   "title": "WPIS: From In-the-Wild Web Images to Physics-Aware 3D Scene Graphs for Physical Reasoning",
+   "venue": "WWW 2026",
+   "problem": "Single-view web images lack physics-aware functional knowledge for lab agents",
+   "approach": "Physics-aware 3D scene graphs from web imagery with HOI subgraphs and liquid states",
+   "contribution": "40% improved LLM reasoning on feasibility and safety via structured scene representation",
+   "primary_theme": "scene understanding reasoning",
+   "methods": [
+    "scene graphs",
+    "physics reasoning",
+    "vision language"
+   ]
+  },
+  {
+   "title": "PeeriScope: A Multi-Faceted Framework for Evaluating Peer Review Quality",
+   "venue": "WWW 2026",
+   "problem": "Scholarly peer review quality lacks systematic, interpretable evaluation tools",
+   "approach": "Modular platform combining structured features, LLM assessments, supervised prediction",
+   "contribution": "PeeriScope enables reviewer self-assessment and large-scale auditing with API",
+   "primary_theme": "peer review quality",
+   "methods": [
+    "llm-assessment",
+    "quality-evaluation",
+    "prediction"
+   ]
+  },
+  {
+   "title": "Frugal Agents: Efficient Bio Reasoning via Long-Sequence Compression and Prompt-Gated Memory",
+   "venue": "WWW 2026",
+   "problem": "LLM agents expensive for long sequences like biological data without external compression",
+   "approach": "Long-Sequence Compression and Prompt-Gated Memory for token-efficient multi-agent",
+   "contribution": "Frugal agents reduce token usage while preserving semantic meaning for scalable AI",
+   "primary_theme": "efficient LLM agents",
+   "methods": [
+    "compression",
+    "llm-agent",
+    "memory-gating"
+   ]
+  },
+  {
+   "title": "Mitigating Cognitive Vulnerabilities in Code Generation via Multi-Agent Adversarial Debate",
+   "venue": "WWW 2026",
+   "problem": "LLMs for code generation are vulnerable to cognitive biases, poor counterfactual reasoning, and adversarial attacks",
+   "approach": "Multi-agent adversarial debate with Optimist, Pragmatist, and Skeptic agents refining solution plans",
+   "contribution": "CodeForge mitigates cognitive vulnerabilities through structured debate and counterfactual verification",
+   "primary_theme": "code generation",
+   "methods": [
+    "multi-agent",
+    "adversarial",
+    "reasoning"
+   ]
+  },
+  {
+   "title": "PromptX: A Cognitive Agent Platform with Long-term Memory",
+   "venue": "WWW 2026",
+   "problem": "LLMs lack long-term memory and personalized reasoning for practical industrial agent applications",
+   "approach": "Engram-based activation-diffusion memory networks with prompt markup language and HATEOAS orchestration",
+   "contribution": "PromptX validated across 15+ enterprises with 50K+ downloads, demonstrating production feasibility",
+   "primary_theme": "llm agents",
+   "methods": [
+    "memory networks",
+    "agent platform",
+    "reasoning"
+   ]
+  },
+  {
+   "title": "From Code to Rubrics: A Multimodal Evaluation of LLM Systems for Automated Feedback Generation",
+   "venue": "WWW 2026",
+   "problem": "Single-prompt LLM feedback systems overwhelm models and reinforce biases",
+   "approach": "Multi-agent LLM architecture where agents assess distinct rubric aspects",
+   "contribution": "Well-designed single-prompt setups often outperform multi-agent on feedback precision and consistency",
+   "primary_theme": "LLM feedback generation",
+   "methods": [
+    "llm",
+    "multi-agent",
+    "evaluation"
+   ]
+  },
+  {
+   "title": "Curiosity Driven Knowledge Retrieval for Mobile Agents",
+   "venue": "WWW 2026",
+   "problem": "Mobile agents lack knowledge about unseen environments limiting task generalization",
+   "approach": "Curiosity-driven retrieval augmenting agents with AppCards from documentation and code",
+   "contribution": "AppCards structured knowledge retrieval improves mobile agent success to 88.8% on AndroidWorld",
+   "primary_theme": "Mobile agent knowledge",
+   "methods": [
+    "retrieval",
+    "llm",
+    "knowledge-integration"
+   ]
+  },
+  {
+   "title": "When Rules Fall Short: Agent-Driven Discovery of Emerging Content Issues in Short Video Platforms",
+   "venue": "WWW 2026",
+   "problem": "Manual discovery of emerging content issues in short-video platforms is slow; policies lag behind new problems.",
+   "approach": "Multimodal LLM agents automatically recall videos with potential new issues; two-stage clustering discovers and categorizes them.",
+   "contribution": "Deployed agent-based issue discovery improves F1 by >20% and reduces problematic video views by ~15%.",
+   "primary_theme": "LLM content moderation",
+   "methods": [
+    "multimodal-llm",
+    "clustering",
+    "policy-generation"
+   ]
+  },
+  {
+   "title": "Smart Book Seeker: Agent-Augmented Retrieval System for Metadata-Sparse Libraries",
+   "venue": "WWW 2026",
+   "problem": "Metadata-sparse libraries lack rich search features, vocabulary mismatch, and user expertise assessment",
+   "approach": "Multi-agent collaborative system with user-needs, librarian, and user-proxy agents",
+   "contribution": "87% hit rate and 57% precision at top-5, 28%-90% improvement over keyword retrieval",
+   "primary_theme": "Book retrieval agents",
+   "methods": [
+    "multi-agent",
+    "llm",
+    "ranking"
+   ]
+  },
+  {
+   "title": "EcoThink: A Green Adaptive Inference Framework for Sustainable and Accessible Agents",
+   "venue": "WWW 2026",
+   "problem": "LLMs generate excessive computation-intensive reasoning for simple factoid queries, wasting energy",
+   "approach": "Distillation-based router dynamically assesses query complexity and routes appropriately",
+   "contribution": "EcoThink reduces inference energy 40.4% average (up to 81.9%) without performance loss",
+   "primary_theme": "Energy-efficient inference",
+   "methods": [
+    "distillation",
+    "routing",
+    "sustainable-ai"
+   ]
+  },
+  {
+   "title": "ReFuGe: Feature Generation for Prediction Tasks on Relational Databases with LLM Agents",
+   "venue": "WWW 2026",
+   "problem": "Generating informative relational features requires reasoning over complex schemas without supervision",
+   "approach": "Agentic LLM framework: schema-selection, feature-generation, and filtering agents iteratively",
+   "contribution": "ReFuGe substantially improves prediction performance on RDB benchmarks via learned features",
+   "primary_theme": "Relational feature generation",
+   "methods": [
+    "llm-agents",
+    "feature-engineering",
+    "relational-db"
+   ]
+  },
+  {
+   "title": "LLM and AI Agent: Golden Rule is All We Need",
+   "venue": "WWW 2026",
+   "problem": "Autonomous agents lack universal interpretable foundation for ethical alignment",
+   "approach": "Formalize Golden Rule in game theory to derive fairness, honesty, compassion",
+   "contribution": "Golden Rule enables cooperative behavior and moral reasoning in agent alignment",
+   "primary_theme": "agent alignment",
+   "methods": [
+    "game theory",
+    "ethical reasoning",
+    "reinforcement learning"
+   ]
+  }
+ ]
+}

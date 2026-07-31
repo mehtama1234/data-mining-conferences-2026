@@ -1,0 +1,11 @@
+{
+ "batch": "b059",
+ "paper": {
+  "id": "23b655cf7d598bac49345f92f05657bc6fb24c95",
+  "venue": "WSDM 2026",
+  "title": "SHIELD: A Framework for Online Conversational AI System for Self-Regulated Learning at Emergency Communications Centers",
+  "abstract": "Advancements in conversational artificial intelligence (AI) enable scalable, web-based training environments beyond traditional classroom settings to support learning. In emergency communication centers such as 9-1-1, trainees have limited opportunities to practice diverse call-handling scenarios, as it relies on role-play instruction and constrained instructor availability. We introduce SHIELD (Strengthening Human Intervention in Emergencies through Learning with Data and AI), a framework and online conversational AI system designed to support scenario-based training through interactive simulations, adaptive feedback, and learning analytics. SHIELD integrates AI-generated call simulations with data science techniques to capture fine-grained trainee interaction data, including decision-making behavior, response timing, and corrective actions. These logged interactions are analyzed to provide real-time metacognitive nudges during simulated calls and post-performance feedback through AI-assisted analytics. The framework is informed by principles of self-regulated learning to structure training across planning, execution, and reflection phases. This demo showcases SHIELD as a web-based prototype deployed for emergency call-taker training and discusses design insights from initial testing sessions conducted in collaboration with a public safety communications agency. The system als",
+  "gid": 886,
+  "theme": "Conversational AI training"
+ }
+}

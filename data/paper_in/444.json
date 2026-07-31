@@ -1,0 +1,11 @@
+{
+ "batch": "b029",
+ "paper": {
+  "id": "84b9630d43fb34a8de0cb01ec72c3b69168c8460",
+  "venue": "WWW 2026",
+  "title": "E2PL: Effective and Efficient Prompt Learning for Incomplete Multi-view Multi-Label Class Incremental Learning",
+  "abstract": "Multi-view multi-label classification (MvMLC) is indispensable for modern web applications aggregating information from diverse sources. However, real-world web-scale settings are rife with missing views and continuously emerging classes, which pose significant obstacles to robust learning. Prevailing methods are ill-equipped for this reality, as they either lack adaptability to new classes or incur exponential parameter growth when handling all possible missing-view patterns, severely limiting their scalability in web environments. To systematically address this gap, we formally introduce a novel task, termed incomplete multi-view multi-label class incremental learning (IMvMLCIL), which requires models to simultaneously address heterogeneous missing views and dynamic class expansion. To tackle this task, we propose E2PL, an Effective and Efficient Prompt Learning framework for IMvMLCIL. E2PL unifies two novel prompt designs: task-tailored prompts for class-incremental adaptation and missing-aware prompts for the flexible integration of arbitrary view-missing scenarios. To fundamentally address the exponential parameter explosion inherent in missing-aware prompts, we devise an efficient prototype tensorization module, which leverages atomic tensor decomposition to elegantly reduce the prompt parameter complexity from exponential to linear w.r.t. the number of views. We further ",
+  "gid": 444,
+  "theme": "Incremental multi-view multi-label learning"
+ }
+}

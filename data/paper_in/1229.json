@@ -1,0 +1,11 @@
+{
+ "batch": "b081",
+ "paper": {
+  "id": "10.1145/3805712.3809845",
+  "venue": "SIGIR 2026",
+  "title": "Booking Funnel and Substitution-Aware User Behavior Modeling for Demand Prediction and Joint Room Pricing",
+  "abstract": "User interactions on online travel platforms (OTPs) naturally follow a two-stage booking funnel, spanning hotel click from a multi-hotel listing page and booking conversion through room selection within the clicked hotel. Crucially, booking decisions are set-dependent: users select among multiple room types within the same hotel, where price changes of one option can shift demand to others. Two challenges arise in modeling such behavior: (i) the cascading booking-funnel behavior from hotel click to booking conversion, and (ii) intra-hotel substitution across room types. While accurate modeling of such behavior is essential for demand prediction and downstream optimization, existing methods typically ignore this structure by collapsing user behavior into a single stage and overlooking intra-hotel substitution effects, resulting in biased demand estimations and suboptimal decisions. In this paper, we propose BFSNet, a Booking Funnel and Substitution-aware neural network that decomposes booking demand into hotel click and booking conversion, enabling interpretable and stage-wise learning of user behavior. To capture the intra-hotel substitution effect, we introduce a mixing network-based substitution effect module that incorporates economic structural information by enforcing monotonic substitution relationships between the demand of a focal room and the prices of competing room t",
+  "gid": 1229,
+  "theme": "E-commerce demand prediction"
+ }
+}

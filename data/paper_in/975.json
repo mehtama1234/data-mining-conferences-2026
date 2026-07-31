@@ -1,0 +1,11 @@
+{
+ "batch": "b065",
+ "paper": {
+  "id": "dd0c496a43ff07e481ab83e4992a2965c9deb1b8",
+  "venue": "WSDM 2026",
+  "title": "Cold-Starting Podcast Ads and Promotions with Multi-Task Learning on Spotify",
+  "abstract": "We present a unified multi-objective model for targeting both advertisements and promotions within the Spotify podcast ecosystem. Our approach addresses key challenges in personalization and cold-start initialization, particularly for new advertising objectives. By leveraging transfer learning from large-scale ad and content interactions within a multi-task learning (MTL) framework, a single joint model can be fine-tuned or directly applied to new or low-data targeting tasks, including in-app promotions. This multi-objective design jointly optimizes podcast outcomes such as streams, clicks, and follows for both ads and promotions using a shared representation over user, content, context, and creative features, effectively supporting diverse business goals while improving user experience. Online A/B tests show up to a 22% reduction in effective Cost-Per-Stream (eCPS), particularly for less-streamed podcasts, and an 18-24% increase in podcast stream rates. Offline experiments and ablations highlight the contribution of ancillary objectives and feature groups to cold-start performance. Our experience shows that a unified modeling strategy improves maintainability, cold-start performance, and coverage, while breaking down historically siloed targeting pipelines. We discuss practical trade-offs of such joint models in a real-world advertising system.",
+  "gid": 975,
+  "theme": "Recommendation cold-start"
+ }
+}

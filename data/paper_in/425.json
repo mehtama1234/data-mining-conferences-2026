@@ -1,0 +1,11 @@
+{
+ "batch": "b028",
+ "paper": {
+  "id": "7f49bb6b8808319835bbb5ee6266c1b74b9c5b7a",
+  "venue": "WWW 2026",
+  "title": "ECLAD: An Edge-Cloud Collaborative Agentic Framework for Interpretable Anomaly Detection in Predictive Maintenance",
+  "abstract": "Modern industrial machinery generates massive multivariate sensor data, creating opportunities for predictive maintenance but also posing challenges for real-time anomaly detection and interpretability. Cloud-centric solutions suffer from bandwidth and latency limitations, while purely edge-centric models lack the capacity to deliver accurate and explainable results. We introduce ECLAD, an edge--cloud collaborative framework for interpretable anomaly detection in predictive maintenance. ECLAD combines lightweight edge anomaly screening, cloud-based verification using a higher-capacity sequence model, and LLM-based interpretability agents that generate natural-language diagnostic reports and maintain a self-evolving anomaly classification tree. This hybrid design preserves real-time responsiveness at the edge while leveraging cloud resources for high-precision and interpretable analysis. We demonstrate the end-to-end system through a web-based interface supporting interactive time-series exploration and anomaly category browsing. Code and demonstration video are available at: https://github.com/SongyuanSui/EdgeCloud-AD.",
+  "gid": 425,
+  "theme": "Anomaly detection"
+ }
+}

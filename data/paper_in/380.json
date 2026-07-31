@@ -1,0 +1,11 @@
+{
+ "batch": "b025",
+ "paper": {
+  "id": "7104b29922c63c2d0d57d4da0ca74256692b1080",
+  "venue": "WWW 2026",
+  "title": "Prediction Guardian: A Distribution-based Real-time Anomaly Detection and Mitigation Framework for Online Advertising",
+  "abstract": "Deep learning recommendation models (DLRMs) are integral to real-time ad ranking and delivery at massive scale. As foundation models become standard, the risk of prediction errors escalates. Frequent retraining of foundation models on fresh, multi-source data and continuous deployment to keep pace with shifting user behavior amplify exposure to silent data corruption during training. Additionally, real-time feature pipelines at inference time further increase vulnerability to upstream feature issues. These challenges make foundation models and student DLRMs prone to distribution shifts or outliers that can propagate downstream and lead to pricing inaccuracies. We present Prediction Guardian, an automated detection and mitigation framework designed to stabilize DLRM predictions by monitoring aggregate prediction distributions, which typically exhibit log-normal characteristics in healthy systems. By continuously comparing real-time distributions to historical baselines with robust metrics such as Jensen\u2013Shannon divergence, the system rapidly identifies anomalies and applies targeted mitigations\u2014including selective smoothing and zeroing out outliers\u2014to prevent downstream harm. Prediction Guardian was evaluated across three corruption scenarios, leftward shifts (underprediction), rightward shifts (over-prediction), and tail elevation shifts. The results demonstrate that Prediction",
+  "gid": 380,
+  "theme": "anomaly detection"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "batch": "b061",
+ "paper": {
+  "id": "693ae5237acec793c6b50081eb26f9502456d994",
+  "venue": "WSDM 2026",
+  "title": "Combining Structural and Textual Knowledge for Knowledge Graph Link Prediction via Large Language Models",
+  "abstract": "In recent years, large language models (LLMs) have emerged as powerful tools for link prediction in knowledge graphs (KGs) due to their strong capabilities in understanding and generation. However, many LLM-based methods still heavily rely on textual descriptions of KGs, limiting their ability to capture structural information and to model complex relational patterns. Although some methods integrate structural embeddings into LLMs, their ability to harness the complementary strengths of both modalities and dynamically prioritize candidate entities based on query context remains limited. In this paper, we propose ST-KGLP, a novel framework that improves link prediction by aligning structural knowledge with textual knowledge and employing query-aware adaptive weighting for candidate selection. Specifically, our proposed ST-KGLP employs a knowledge aligner to bridge the information gap between structural and textual knowledge, and then utilizes a query-aware adaptive weighting strategy that dynamically computes attention weights between query representations and candidate entities, enabling contextually relevant candidate re-ranking for more accurate prediction. Extensive experiments on various datasets show that our ST-KGLP outperforms state-of-the-art approaches, achieving average improvements of 3.81%, 11.52%, 2.22%, and 1.55% across four evaluation metrics. Our code and datase",
+  "gid": 919,
+  "theme": "Knowledge graph link prediction"
+ }
+}

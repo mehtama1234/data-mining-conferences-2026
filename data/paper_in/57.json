@@ -1,0 +1,11 @@
+{
+ "batch": "b003",
+ "paper": {
+  "id": "0f75c20c26e8608ccb327cf65a4bc5755b8ae05c",
+  "venue": "WWW 2026",
+  "title": "RMBRec: Robust Multi-Behavior Recommendation towards Target Behaviors",
+  "abstract": "Multi-behavior recommendation faces a critical challenge in practice: auxiliary behaviors (e.g., clicks and carts) are often noisy, weakly correlated, or semantically misaligned with the target behavior (e.g., purchase), which leads to biased preference learning and suboptimal performance. While existing methods attempt to fuse these heterogeneous signals, they inherently lack a principled mechanism to ensure robustness against such behavioral inconsistency. In this work, we propose Robust Multi-Behavior Recommendation towards Target Behaviors (RMBRec), a robust multi-behavior recommendation framework grounded in an information-theoretic robustness principle. We interpret robustness as a joint process of maximizing predictive information while minimizing its variance across heterogeneous behavioral environments. Under this perspective, the Representation Robustness Module (RRM) enhances local semantic consistency by maximizing the mutual information between users' auxiliary and target representations, whereas the Optimization Robustness Module (ORM) enforces global stability by minimizing the variance of predictive risks across behaviors, which serves as an efficient approximation to invariant risk minimization. This local\u2013global collaboration bridges representation purification and optimization invariance in a theoretically coherent manner. Extensive experiments on three real-",
+  "gid": 57,
+  "theme": "multi-behavior recommendation"
+ }
+}

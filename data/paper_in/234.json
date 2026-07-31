@@ -1,0 +1,11 @@
+{
+ "batch": "b015",
+ "paper": {
+  "id": "43ea754f6c6ffa5414b92c775797b09deb212909",
+  "venue": "WWW 2026",
+  "title": "HiFi-WF: Toward Realistic Website Fingerprinting with Multi-tab and Subpage Recognition",
+  "abstract": "Website Fingerprinting (WF) is an emerging traffic analysis technique that enables a passive adversary to infer which websites a user visits. However, most existing studies, whether in single-tab or multi-tab settings, rely on the unrealistic assumption that users only access website homepages, diverging significantly from real-world browsing behavior. Even recent works extending WF to subpages primarily focus on website-level identification, without distinguishing which specific subpages are visited, thereby limiting the attack's granularity and scope. In this paper, we propose HiFi-WF (Hierarchical Fine-grained Website Fingerprinting), a novel framework that breaks the homepage-only assumption and extends WF to multi-tab recognition and fine-grained subpage identification. We formulate the task as a hierarchical multi-label classification problem, jointly modeling the distinctions and correlations between homepages and subpages. To this end, HiFi-WF integrates a unified CNN-based extractor and layered encoder with a Feature Interaction Module based on multi-head cross-attention to capture inter-level dependencies. An Enhanced SubHead enforces hierarchical constraints to suppress invalid subpage predictions, while a cascaded channel\u2013spatial attention mechanism refines discriminative features for precise hierarchical identification. Experimental results demonstrate that HiFi-WF",
+  "gid": 234,
+  "theme": "Website fingerprinting attack"
+ }
+}

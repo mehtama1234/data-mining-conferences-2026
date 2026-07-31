@@ -1,0 +1,11 @@
+{
+ "batch": "b048",
+ "paper": {
+  "id": "dcabdafc9e5cfcb8dc798cba60a62cec038af46b",
+  "venue": "WWW 2026",
+  "title": "Task-Aligned Unlearning for Multimodal Large Language Models",
+  "abstract": "Multimodal large language models (MLLMs) are prone to memorizing and revealing sensitive personal information, raising concerns about privacy and safety. Existing MLLM unlearning methods typically rely on a single forgetting objective, which often leads to unbalanced forgetting across tasks, degraded generation quality, or unnecessary loss of general ability. We propose TAU, a multimodal unlearning framework that optimizes multiple task-aligned objectives corresponding to heterogeneous tasks in multimodal benchmarks. Although all training data are uniformly formatted as VQA-style triplets, MLLMs are evaluated through distinct task settings on MLLMU-Bench, including classification, free-form generation, and cloze-style completion. TAU decomposes unlearning into three task-aligned objectives that target different behaviors: reducing discriminative confidence for classification, inducing controlled refusal generation, and suppressing entity\u2013attribute recall under both image-conditioned and text-only prompts. These objectives are jointly optimized with a retain loss to effectively forget designated information while preserving non-target knowledge. Experiments on different MLLMs demonstrate that TAU achieves more balanced and effective unlearning across tasks.",
+  "gid": 726,
+  "theme": "multimodal unlearning"
+ }
+}

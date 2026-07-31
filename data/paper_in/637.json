@@ -1,0 +1,11 @@
+{
+ "batch": "b042",
+ "paper": {
+  "id": "c280b582838efce7a5553baf7a375f65400ef7cd",
+  "venue": "WWW 2026",
+  "title": "Towards AI That Understands the Human World",
+  "abstract": "AI has reached a turning point. Systems can now perceive, generate, and act in language and image across digital platforms at unprecedented scale. Yet as AI moves from tools to collaborators\u2014embedded in decision-making, institutions, and everyday life\u2014a new requirement becomes unavoidable: AI must understand the world the way humans inhabit it. This talk introduces Cognitive World Modeling as the next phase of AI development. It unifies physical world modeling\u2014time, space, causality, action\u2014with mental world modeling\u2014goals, beliefs, intentions, emotions, and social norms\u2014into a single, persistent representation of reality as experienced by humans. Together, these models allow AI systems not only to predict outcomes, but to reason about meaning, context, and consequence. Cognitive World Modeling moves AI beyond reactive toward systems that can plan, explain, adapt, and collaborate over time. Alignment and trust emerge not as post hoc constraints, but as properties of systems that maintain accurate, evolving models of both the external world and the humans within it.",
+  "gid": 637,
+  "theme": "Cognitive AI modeling"
+ }
+}

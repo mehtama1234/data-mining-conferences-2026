@@ -1,0 +1,11 @@
+{
+ "batch": "b020",
+ "paper": {
+  "id": "5bb2e5fc46ff4ea5c7e0d09be50dee13de318834",
+  "venue": "WWW 2026",
+  "title": "Privacy-Friendly Adaptation of Vision Transformers for Communication and Latency-Efficient Private Inference",
+  "abstract": "The advent of machine learning as a service (MLaaS) has necessitated secure multi-party computation (MPC)-based private inference (PI) to address the privacy concerns that arise when web servers offer query inference services to users. However, the formal privacy protection incurs substantial communication and latency overheads, particularly for large models such as vision transformers (ViTs). Existing methods either ignore the inherent attention dependencies or naively extend CNN optimizations to ViTs despite their structural discrepancies, resulting in sub-optimal performance. In this paper, we co-design the MPC and architectural properties of ViT and propose SecViT, an efficient and secure inference framework that automatically adapts ViTs into privacy-friendly counterparts with optimal attention configurations at different layers and tokens under MPC, balancing model capability and efficiency. SecViT features an MPC-efficient, layer-dependent and load-balancing attention representation adapter to facilitate feature reuse across multiple highly correlated layers without impacting accuracy. To further reduce the inference cost, SecViT also develops fine-grained composite attention and activation approximation algorithms to achieve superior accuracy-efficiency trade-offs. Experiments show that SecViT reduces communication by 6.0x and latency by 4.6x with iso-accuracy over MPCV",
+  "gid": 312,
+  "theme": "Private inference transformers"
+ }
+}

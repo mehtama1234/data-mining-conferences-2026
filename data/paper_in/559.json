@@ -1,0 +1,11 @@
+{
+ "batch": "b037",
+ "paper": {
+  "id": "a85902cd60326d4518f2a0b8d13d6ea11a600618",
+  "venue": "WWW 2026",
+  "title": "DyMRL: Dynamic Multispace Representation Learning for Multimodal Event Forecasting in Knowledge Graph",
+  "abstract": "Accurate representation of multimodal knowledge is crucial for event forecasting in real-world scenarios. However, existing studies have largely focused on static settings, overlooking the dynamic acquisition and fusion of multimodal knowledge. 1) At the knowledge acquisition level, how to learn time-sensitive information of different modalities, especially the dynamic structural modality. Existing dynamic learning methods are often limited to shallow structures across heterogeneous spaces or simple unispaces, making it difficult to capture deep relation-aware geometric features. 2) At the knowledge fusion level, how to learn evolving multimodal fusion features. Existing knowledge fusion methods based on static coattention struggle to capture the varying historical contributions of different modalities to future events. To this end, we propose DyMRL, a Dynamic Multispace Representation Learning approach to efficiently acquire and fuse multimodal temporal knowledge. 1) For the former issue, DyMRL integrates time-specific structural features from Euclidean, hyperbolic, and complex spaces into a relational message-passing framework to learn deep representations, reflecting human intelligences in associative thinking, high-order abstracting, and logical reasoning. Pretrained models endow DyMRL with time-sensitive visual and linguistic intelligences. 2) For the latter concern, DyMRL",
+  "gid": 559,
+  "theme": "multimodal event forecasting"
+ }
+}

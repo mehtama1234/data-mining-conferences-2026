@@ -1,0 +1,11 @@
+{
+ "batch": "b064",
+ "paper": {
+  "id": "d31723ba8d4b0309377c919e53f06417339f0fcc",
+  "venue": "WSDM 2026",
+  "title": "REFLEX: Reinforcement Feedback Learning with Large Language Models for E-commerce Query Expansion",
+  "abstract": "Query expansion is a fundamental component of e-commerce search, yet it remains challenging in production settings due to short and ambiguous user queries, incomplete historical supervision, and constantly evolving product catalogs. Traditional expansion methods based on semantic similarity or few-shot prompting fail to capture domain-specific constraints, while existing reinforcement learning (RL) approaches often optimize for narrow objectives without interacting with real search systems. We propose REinforcement Feedback Learning for e-commerce query EXpansion (REFLEX), a catalog-grounded framework that trains a large language model through search-engine-in-the-loop RL. REFLEX grounds its reasoning in the retrieval set from the initial query to ensure catalog compliance and optimizes expansion generation with real-time search engine feedback. A reward formulation jointly balances relevance alignment and retrieval breadth, enabling label-free training without relying on ground-truth expansions. Experiments on a large-scale industrial dataset demonstrate that REFLEX substantially improves semantic coverage and retrieval effectiveness over strong industrial baselines. Online A/B testing further confirms its scalability and production effectiveness, showing measurable gains in relevance, diversity, and user engagement.",
+  "gid": 969,
+  "theme": "E-commerce query expansion"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "batch": "b037",
+ "paper": {
+  "id": "a8d905f2e265fda3e1d5b937d512702efadb9fe5",
+  "venue": "WWW 2026",
+  "title": "SMART: Spatio-Temporal Attention-based Large Language Model for Real-Time Traffic Prediction",
+  "abstract": "Traffic prediction remains challenging due to the complex spatial and temporal dependencies inherent in road networks. Recently, large language models (LLMs) have shown strong potential for traffic forecasting; however, most existing methods primarily focus on temporal patterns and fail to capture non-sequential, proximity-driven spatial interactions. As a result, these models struggle to accurately represent dynamic traffic patterns. To address these limitations, this work introduces SMART, a spatio-temporal attention-based large language model for real-time traffic prediction. SMART integrates Partially Frozen Attention (PFA) to preserve pre-trained temporal reasoning while selectively adapting to evolving and dynamic traffic conditions. It further incorporates graph-based attention, which embeds adjacency information directly into the attention mask, enabling spatially connected nodes to interact regardless of sequence order and effectively addressing non-sequential spatial dependencies. To enhance robustness, DoRA-based fine-tuning is employed to enable efficient and stable adaptation of the attention layers. Experiments on real-world traffic datasets demonstrate that SMART effectively captures complex spatio-temporal patterns and consistently outperforms the state-of-the-art models.",
+  "gid": 560,
+  "theme": "LLM traffic prediction"
+ }
+}

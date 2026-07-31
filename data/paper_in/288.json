@@ -1,0 +1,11 @@
+{
+ "batch": "b019",
+ "paper": {
+  "id": "5348ff9fefd014fd26ea40d5123397756c09409e",
+  "venue": "WWW 2026",
+  "title": "On the Economic and Governance Mechanisms for the Agentic Web: A Global South Perspective",
+  "abstract": "The Agentic Web signals a transition from a Web organized around documents to one increasingly mediated by autonomous AI agents. This shift expands possibilities for interaction and automation, but it also disrupts the technical and economic foundations of the Web. Drawing on a multi-stakeholder workshop held in Brazil with 28 representatives from major technology companies, media groups, newspapers, academia, and government, this position paper examines these changes from a Global South situated knowledge perspective. We highlight three central tensions: the lack of standardized mechanisms to control AI-bots access to content; the growing mismatch between agent-based content consumption and current digital business models; and governance gaps that might amplify extractive dynamics. Current responses, such as broad bot blocking and legal disputes, show a deeper misalignment among the actors involved in the development of agentic Web. We argue that addressing this misalignment requires rebalancing incentives through transparent standards, inclusive governance, and multi-stakeholder coordination, so that the Agentic Web can evolve as an open and sustainable infrastructure.",
+  "gid": 288,
+  "theme": "Agentic Web governance"
+ }
+}

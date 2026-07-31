@@ -1,0 +1,11 @@
+{
+ "batch": "b071",
+ "paper": {
+  "id": "10.1145/3805712.3809595",
+  "venue": "SIGIR 2026",
+  "title": "OntoEL: Neuro-Symbolic Biomedical Entity Linking with Differentiable Fuzzy EL&#8869; Reasoning",
+  "abstract": "Current neural biomedical entity linking (BioEL) models treat ontologies as flat dictionaries, ignoring the rich terminological knowledge (TBox) that defines concept boundaries. Consequently, they struggle with contextual ambiguity, often retrieving logically inconsistent candidates based solely on surface similarity. We present OntoEL, a neuro-symbolic framework that shifts BioEL from surface-level matching to logic-grounded reasoning. OntoEL integrates differentiable fuzzy EL\u22a5 reasoning into the retrieval pipeline as a consistency-aware re-ranker, employing a hybrid strategy: structural TBox reasoning is delegated to classical polynomial-time reasoners, while the sigmoidal Reichenbach implication performs soft type-consistency evaluation, effectively resolving the \"implication bias\" gradient pathology in previous neuro-symbolic methods. By enforcing ontological axioms as differentiable soft constraints, OntoEL aligns neural representations with logical truth. Comprehensive experiments on three benchmarks (MedMentions, BC5CDR, and NCBI Disease) demonstrate state-of-the-art performance, surpassing strong baselines by up to 4.2% in Accuracy@1. On highly ambiguous mentions requiring ontological reasoning, our method corrects 71.2% of retrieval errors, proving the efficacy of incorporating logical semantics into neural retrieval.",
+  "gid": 1067,
+  "theme": "Neuro-symbolic entity linking"
+ }
+}

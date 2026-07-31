@@ -1,0 +1,11 @@
+{
+ "batch": "b048",
+ "paper": {
+  "id": "dbe11b3601b2f37e07f567ea088c54336549519d",
+  "venue": "WWW 2026",
+  "title": "Delayed Feedback Modeling for Post-Click Gross Merchandise Volume Prediction: Benchmark, Insights and Approaches",
+  "abstract": "The prediction objectives of online advertisement ranking models are evolving from probabilistic metrics like conversion rate (CVR) to numerical business metrics like post-click gross merchandise volume (GMV). Unlike the well-studied delayed feedback problem in CVR prediction, delayed feedback modeling for GMV prediction remains unexplored and poses greater challenges, as GMV is a continuous target, and a single click can lead to multiple purchases that cumulatively form the label. To bridge the research gap, we establish TRACE, a GMV prediction benchmark containing complete transaction sequences rising from each user click, which supports delayed feedback modeling in an online streaming manner. Our analysis and exploratory experiments on TRACE reveal two key insights: (1) the rapid evolution of the GMV label distribution necessitates modeling delayed feedback under online streaming training; (2) the label distribution of repurchase samples substantially differs from that of single-purchase samples, highlighting the need for separate modeling. Motivated by these findings, we propose RepurchasE-Aware Dual-branch prEdictoR (READER), a novel GMV modeling paradigm that selectively activates expert parameters according to repurchase predictions produced by a router. Moreover, READER dynamically calibrates the regression target to mitigate under-estimation caused by incomplete labels",
+  "gid": 723,
+  "theme": "GMV forecasting"
+ }
+}

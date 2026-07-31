@@ -1,0 +1,11 @@
+{
+ "batch": "b008",
+ "paper": {
+  "id": "251f8ef45a1881e6b0161181156f52095eaac2ae",
+  "venue": "WWW 2026",
+  "title": "ReGA: Zero-Overhead Graph Alignment for Structural Hallucination Detection Without Generation",
+  "abstract": "Large language models are increasingly deployed to query structured web data through retrieval-augmented generation over knowledge graphs. Yet even when retrieval succeeds, models routinely generate structurally inconsistent answers where correct entities are linked in wrong directions or correct roles are reversed. Classical graph isomorphism is brittle under paraphrase while neural judges based on text generation add latency, cost, and opacity. We introduce ReGA, a cascading framework that treats hallucination detection as semantic alignment plus structural verification rather than generation. For most cases, a hybrid pattern-based extractor converts text to graphs in sub-millisecond time, enabling real-time verification. Feature-based ReGA computes interpretable swap indicators in 14ms on CPU, achieving strong discrimination on functional hallucinations (AUC = 0.90) and role reversals (AUC = 0.80). On symmetric domains where simple features fail, Deep ReGA, a neural graph matcher trained via structural energy minimization, recovers directional discrimination (AUC = 0.85), reaching 0.98 in structured domains. On a controlled probe distinguishing ''Microsoft bought Activision'' from ''Activision bought Microsoft'', Deep ReGA assigns energy 0.00 to the correct direction versus 1.82 to the inverted one. We evaluate on 10,000 samples across five hallucination categories. While an",
+  "gid": 126,
+  "theme": "Hallucination detection"
+ }
+}

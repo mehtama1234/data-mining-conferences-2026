@@ -1,0 +1,11 @@
+{
+ "batch": "b050",
+ "paper": {
+  "id": "e2f8ee05e0cb4ddf16ba0a2cc80065a0ebbce4df",
+  "venue": "WWW 2026",
+  "title": "HGSA: Heterogeneity-Guided Sarcasm Adaptation for Video Sentiment Analysis via Polarity Disentanglement",
+  "abstract": "With the continuous evolution of social networks, social media comments have become increasingly semantically rich and diverse. Among these, sarcasm represents critical components of daily human expression and constitute a major bottleneck in the field of multimodal sentiment detection. Sarcasm is an intricate phenomenon, as the sentiment conveyed by sarcastic samples often contradicts or conflicts with their explicit informational content. Traditional solutions typically treat multimodal sentiment and sarcasm as a collective information source, utilizing fused sentiment features to extract and refine sarcasm information through various mechanisms. However, such approaches face an inherent challenge: the fusion of sentiment leads to the dilution and homogenization of opposing polarities, resulting in a pervasive ambiguity in semantic polarity. This study investigates the multimodal information interaction and The polarity distribution of the sarcasm feature. According to the observation, we propose the Heterogeneity-Guided Sarcasm Adaptation (HGSA) framework. The core of HGSA lies in the Modality-Specific Polarized Refinement (MSPR) mechanism. Critically departing from conventional fusion strategies, MSPR utilizes independent, unfused unimodal sentiment features as polarity guides to perform parallel polarity disentanglement on unified sarcasm features. This approach effectivel",
+  "gid": 751,
+  "theme": "Multimodal sentiment analysis"
+ }
+}

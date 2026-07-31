@@ -1,0 +1,11 @@
+{
+ "batch": "b059",
+ "paper": {
+  "id": "2def2dcd10ad7fbe17ae8370f3a406c7b629db97",
+  "venue": "WSDM 2026",
+  "title": "Towards Building an Enterprise World Model",
+  "abstract": "Enterprises face a dual challenge when deploying large language models (LLMs) in customer-facing environments. The first challenge is ensuring knowledge retrieval accuracy and alignment with legal compliance. The second is ensuring alignment with their brand identity while optimizing engagement outcomes. Generic LLMs are trained on public data and world knowledge but do not represent enterprise-specific behaviour. When LLMs are supported with context-aware retrieval methods, they can address the first challenge. The second challenge, however, requires careful fine-tuning. For an enterprise, the fine-tuning process is similar to hiring someone with public knowledge about business, but is not yet trained to act as an experienced employee. This talk presents a hybrid fine-tuning and context-orchestration framework, an important step towards constructing an enterprise world model that unifies structured, unstructured, and conversational data for compliant, brand-aligned LLMs.",
+  "gid": 891,
+  "theme": "Enterprise LLM adaptation"
+ }
+}

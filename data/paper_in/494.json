@@ -1,0 +1,11 @@
+{
+ "batch": "b032",
+ "paper": {
+  "id": "9484513128ec4e138fcf7a03fc38d3cee370c234",
+  "venue": "WWW 2026",
+  "title": "LLM-Enabled Participatory Platforms for People-Centric Smart Cities",
+  "abstract": "Existing digital participatory platforms are often constrained to basic consultation and voting workflows, limiting their ability to sustain large-scale, inclusive, and deliberative civic engagement in smart cities. This article addresses these limitations by proposing a novel human-in-the-loop architecture that leverages Large Language Models and 6G connectivity to enable richer co-creation in people-centric smart cities. The primary contribution of this work is the development of a socio-technical framework that delineates the boundaries of model autonomy across four critical participatory stages: proposal drafting, convergence, large-scale synthesis, and behavioral moderation. By grounding this framework in the requirements of transparency, accountability, and representational fairness, the study identifies specific design constraints needed to mitigate algorithmic and automation biases. Our analysis provides a roadmap for institutional adoption, demonstrating that for Large Language Models to preserve democratic legitimacy, their use must be explicitly bounded and open to contestation. These findings offer actionable insights for researchers and urban planners aiming to integrate generative artificial intelligence into robust, transparent, and inclusive 6G-enabled participatory ecosystems.",
+  "gid": 494,
+  "theme": "smart cities"
+ }
+}

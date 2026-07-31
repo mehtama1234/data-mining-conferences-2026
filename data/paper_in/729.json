@@ -1,0 +1,11 @@
+{
+ "batch": "b048",
+ "paper": {
+  "id": "de0bfcd2c74ed429c491a8c150fb4e67712b69fc",
+  "venue": "WWW 2026",
+  "title": "Diffusion-based Kriging Model with Graph-enhanced Attention",
+  "abstract": "In web-based systems, elements are commonly organized within a graph structure, with each node collecting essential spatio-temporal data. Examples include websites on the World Wide Web, traffic monitors in transportation networks, or sensors in the Internet of Things (IoT). However, sensors are typically deployed sparsely and unevenly, leaving the remaining nodes unobserved. The spatio-temporal kriging task, which infers values at unobserved nodes from observed ones, has thus attracted significant research interest. Due to limitations such as reliance on static graph structures and iterative Graph Convolution Network (GCN) frameworks, accurate kriging remains challenging. To address these issues, we propose a Diffusion-based Kriging Model with Graph-enhanced Attention (DKM-GA). Our approach first introduces a graph-enhanced attention mechanism that dynamically learns more accurate graph structures by combining predefined graph knowledge with global node value similarities. It is then integrated into a diffusion-based framework, which is tailored for the reliance of attention on known values. Therefore, the framework progressively refines the target values using correlated nodes, and the graph-enhanced attention selects more relevant neighbors based on the refined values. Furthermore, a node-based rescaling strategy is introduced to align the inference phase graphs to the train",
+  "gid": 729,
+  "theme": "spatio-temporal kriging"
+ }
+}

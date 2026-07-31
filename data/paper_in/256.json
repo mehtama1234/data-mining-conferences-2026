@@ -1,0 +1,11 @@
+{
+ "batch": "b017",
+ "paper": {
+  "id": "4985a8cb373d7a43c786a3b0e0519591e0d0ff89",
+  "venue": "WWW 2026",
+  "title": "An Agentic System for Automated Polymer Property Prediction in Low-Code Environments",
+  "abstract": "The polymer industry faces increasing complexity in material design and property characterization, often requiring advanced data handling skills that domain experts may lack. This work presents Poly-WorkFlowX, an integrated agentic system combining machine learning and low-code automation to bridge the gap between materials science and artificial intelligence. We propose an architecture where a conversational agent, powered by Large Language Models (LLMs), orchestrates data workflows based on natural language instructions. The system integrates a custom Multi-Task Learning model for polymer property prediction directly into the n8n low-code platform. This approach enables non-expert researchers to predict physico-chemical properties from molecular representations (PSMILES) and automatically generate reproducible data processing pipelines. We demonstrate the system's efficiency through a complexity analysis, highlighting the reduction in manual configuration steps required to deploy scientific workflows.",
+  "gid": 256,
+  "theme": "LLM workflow automation"
+ }
+}

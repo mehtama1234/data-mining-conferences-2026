@@ -1,0 +1,11 @@
+{
+ "batch": "b060",
+ "paper": {
+  "id": "60e80f3d43f092c303891e77bf03852487f6f6fe",
+  "venue": "WSDM 2026",
+  "title": "Large Language Model Judged Self-Training for Named Entity Recognition",
+  "abstract": "Self-training for Named Entity Recognition (NER) aims at identifying named entities and their types in the text using self-training to fully make use of the limited labeled data and a large amount of unlabeled data. The major challenge in self-training is confirmation bias where incorrect pseudo-labels increase errors. Many efforts have been made to address this challenge, but few labeled data limit their performance. In this paper, we introduce Large Language Model (LLM) into self-training to select high-quality pseudo-labels leveraging its rich knowledge and few-shot learning capability. Specifically, we design a comprehensive prompt to improve the judgment performance of LLM, where the prompt incorporates task rules mined by LLM itself to fully leverage labeled data. In addition, to reduce the impact of LLM's hallucinations, we adopt a collaborative pseudo-label selection based on combined confidence and calibration-guided probability smoothing. Our empirical study conducted on several NER datasets shows that our method outperforms state-of-the-art approaches. The code is available at https://github.com/cheniison/llm-judged-ST.",
+  "gid": 912,
+  "theme": "NER self-training"
+ }
+}

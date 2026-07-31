@@ -1,0 +1,11 @@
+{
+ "batch": "b080",
+ "paper": {
+  "id": "10.1145/3805712.3809980",
+  "venue": "SIGIR 2026",
+  "title": "The Matryoshka Hypencoder",
+  "abstract": "The Hypencoder is a recently-proposed retrieval approach that encodes queries as shallow neural networks (''Q-Nets'') that estimate relevance over pre-computed document embeddings. Inspired by Matryoshka Representation Learning, we show that the Hypencoder can be extended to support multiple sizes of Q-Nets, allowing trade-offs between effectiveness and efficiency when deployed. We find that this ''Matryoshka Hypencoder'' achieves comparable in-domain effectiveness with approximately 7\u00d7 fewer active parameters in-domain and half as many active parameters out-of-domain, which corresponds to a 1.6\u20133.4\u00d7 increase in scoring throughput. This work paves the way for practical deployment of Hypencoders. https://github.com/MajdAlkawaas/hypencoder-paper",
+  "gid": 1211,
+  "theme": "efficient retrieval"
+ }
+}

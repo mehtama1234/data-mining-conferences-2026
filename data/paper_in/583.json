@@ -1,0 +1,11 @@
+{
+ "batch": "b038",
+ "paper": {
+  "id": "ae9d50e5b09aba6c51c43175f0469b4bde9db636",
+  "venue": "WWW 2026",
+  "title": "Can Thinking Models Think to Detect Hateful Memes?",
+  "abstract": "Hateful memes often require compositional multimodal reasoning: the image and text may appear benign in isolation, yet their interaction conveys harmful intent. Although thinking-based multimodal large language models (MLLMs) have recently advanced vision\u2013language understanding, their capabilities remain underexplored for hateful meme analysis. We propose a reinforcement learning\u2013based post-training framework that improves reasoning in thinking-based MLLMs via task-specific rewards and a novel Group Relative Policy Optimization (GRPO) objective. Concretely, we (i) conduct a systematic empirical study of off-the-shelf MLLMs for hateful meme understanding, (ii) extend an existing hateful meme dataset by generating weakly/pseudo-supervised chain-of-thought (CoT) rationales via distillation, and (iii) introduce a GRPO-based objective that jointly optimizes meme classification and explanation quality to encourage fine-grained step-by-step reasoning. Experiments on the Hateful Memes benchmark show that our approach achieves state-of-the-art results, improving accuracy and F1 by approximately 1% and explanation quality by approximately 3%. We will publicly release our code, data extensions, and evaluation resources to support reproducibility.",
+  "gid": 583,
+  "theme": "multimodal hate detection"
+ }
+}

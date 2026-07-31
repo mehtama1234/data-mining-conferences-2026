@@ -1,0 +1,11 @@
+{
+ "batch": "b062",
+ "paper": {
+  "id": "8470c170e24b76cbf9fabb6a54c24eee18762248",
+  "venue": "WSDM 2026",
+  "title": "Joint Graph Learning for Robust Causal Inference over Knowledge Graphs",
+  "abstract": "Causal inference is critical for understanding cause-effect relationships in real-world domains. However, applying it over knowledge graphs (KGs) poses unique challenges due to two key issues: missing attributes caused by the Open-World Assumption and interference effects arising from complex relational dependencies among entities. Existing methods often assume fully observed data or fail to model inter-unit dependencies, leading to biased or unreliable effect estimates. We introduce BaLu, a joint graph learning framework that addresses both challenges through an end-to-end solution. BaLu reformulates the causal inference over KGs as two interconnected tasks: (1) attribute imputation as edge prediction between units (entities) and their attributes, and (2) treatment effect estimation as node prediction that accounts for interference through representation learning. BaLu employs Graph Neural Networks (GNNs) to capture attribute similarity and relational structure, enabling both accurate imputation and interference-aware message passing. Experiments on four benchmark datasets show that BaLu consistently outperforms state-of-the-art baselines\u2014even when enhanced with strong imputation techniques\u2014demonstrating robust performance in incomplete and relationally complex KGs. These results demonstrate that BaLu offers a principled and practical solution for robust causal inference in kn",
+  "gid": 933,
+  "theme": "causal inference graphs"
+ }
+}

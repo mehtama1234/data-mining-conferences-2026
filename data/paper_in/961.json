@@ -1,0 +1,11 @@
+{
+ "batch": "b064",
+ "paper": {
+  "id": "c3a999e7fa61f9793f063f923195de58c770446d",
+  "venue": "WSDM 2026",
+  "title": "Counteracting the Delayed Conversions in OCPC with Survival Analysis",
+  "abstract": "As an emerging advertising pricing method, optimized cost-per-click (OCPC) has attracted much research interest. In OCPC, the platform employs intelligent bidding strategies to optimize the advertising performance. Although widely adopted, existing bidding strategies overlook the delayed conversion phenomenon in OCPC, that is, the platform needs to wait for a period to receive the corresponding conversion signal after a click. Ignoring such delayed conversions causes the bidding strategies to overestimate the cost-per-action (average cost of a conversion, CPA), bid low, and finally hurt the platform's revenue. Moreover, the characteristics of the OCPC scenario make estimating the conversion probabilities for the delayed conversions more difficult. To address these issues, this paper proposes SurvBid (bidding with Survival Analysis) which aims to predict the convert probabilities for those delayed conversions in OCPC scenario. The CPA can then be accurately estimated and used to guide existing bidding methods to make more accurate bids. To meet the needs of different advertising platforms, we provide two versions of SurvBid, SurvBid-M (SurvBid with multitask survival model) and SurvBid-C (SurvBid with Cox survival model) with theoretical results to guide the model selection. Both online and offline experiments demonstrate that SurvBid can improve the platform's revenue and adver",
+  "gid": 961,
+  "theme": "Ads bidding optimization"
+ }
+}

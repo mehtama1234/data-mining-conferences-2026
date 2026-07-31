@@ -1,0 +1,11 @@
+{
+ "batch": "b000",
+ "paper": {
+  "id": "01bd817ebdc389941f6da2f2d5487f5aa8170047",
+  "venue": "WWW 2026",
+  "title": "VarParser: Unleashing the Neglected Power of Variables for LLM-based Log Parsing",
+  "abstract": "Logs serve as a primary source of information for engineers to diagnose failures in large-scale online service systems. Log parsing, which extracts structured events from massive unstructured log data, is a critical first step for downstream tasks like anomaly detection and failure diagnosis. With advances in large language models (LLMs), leveraging their strong text understanding capabilities has proven effective for accurate log parsing. However, existing LLM-based log parsers all focus on the constant part of logs, ignoring the potential contribution of the variable part to log parsing. This constant-centric strategy brings four key problems. First, inefficient log grouping and sampling with only constant information. Second, a relatively large number of LLM invocations due to constant-based cache, leading to low log parsing accuracy and efficiency. Third, a relatively large number of consumed constant tokens in prompts leads to high LLM invocation costs. At last, these methods only retain placeholders in the results, losing the system visibility brought by variable information in logs. Facing these problems, we propose a variable-centric log parsing strategy named VarParser. Through variable contribution sampling, variable-centric parsing cache, and adaptive variable-aware in-context learning, our approach can efficiently capture the variable parts of logs and leverage thei",
+  "gid": 9,
+  "theme": "Log parsing"
+ }
+}

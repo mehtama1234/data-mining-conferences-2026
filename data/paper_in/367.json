@@ -1,0 +1,11 @@
+{
+ "batch": "b024",
+ "paper": {
+  "id": "6dcf5c7fe3a4777e4cfed155e5fe36a90077619d",
+  "venue": "WWW 2026",
+  "title": "LegalKit: A Modular Toolkit for Efficient Legal AI Evaluation",
+  "abstract": "The rise of large language models (LLMs) has created unprecedented opportunities for legal AI research. However, progress has been hindered by the absence of standardized, lightweight, and extensible evaluation frameworks capable of supporting the growing diversity of legal tasks. We present LegalKit, https://github.com/DavidMiao1127/LegalKit, an efficient toolkit that unifies the evaluation of LLMs across a comprehensive spectrum of legal scenarios. LegalKit integrates heterogeneous benchmarks, and offers a flexible configuration system and a user-friendly web interface for interactive evaluation. Its compatibility with multiple acceleration backends and recoverable evaluation pipelines enables scalable experimentation. LegalKit lowers the barrier to rigorous legal NLP research by promoting transparency, reproducibility, and comparability across studies. Designed as community-oriented infrastructure, LegalKit aims to catalyze future extensions and foster collective progress toward trustworthy legal AI.",
+  "gid": 367,
+  "theme": "Legal AI evaluation"
+ }
+}

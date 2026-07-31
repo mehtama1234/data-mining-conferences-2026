@@ -1,0 +1,11 @@
+{
+ "batch": "b018",
+ "paper": {
+  "id": "4f361d8f0e2c65915dec94f0683633718815a466",
+  "venue": "WWW 2026",
+  "title": "TCR: A Trust-Aligned Text-Only Cross-Attention Ranker Distilling Multimodal LLM Reasoning for Recommendation Agents",
+  "abstract": "Large language and vision\u2013language models enable semantic reasoning but remain impractical for real-time recommendation and search systems. We present TCR (Text-Only Cross-Attention Ranker), a lightweight DeBERTa-based re-ranking agent distilled from multiple vision\u2013language large language models through multi-teacher soft-label fusion. TCR compresses multimodal reasoning into a compact text-only model fine-tuned with LoRA, achieving a 98.5 percent parameter reduction and maintaining production-grade latency while retaining near-teacher ranking quality on 4.4 million real-world query\u2013content pairs. By aligning model calibration and transparency with user-perceived trust, TCR bridges deep model reasoning and deployable, trust-aware recommendations for creative content and interactive search. This work demonstrates how multi-teacher distillation and parameter-efficient fine-tuning make human-aligned, low-latency recommendation systems feasible at production scale.",
+  "gid": 272,
+  "theme": "Model distillation"
+ }
+}

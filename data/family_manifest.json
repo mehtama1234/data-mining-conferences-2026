@@ -1,0 +1,92 @@
+{
+ "families": [
+  {
+   "theme": "LLMs & Language Models",
+   "key": "llms-language-models"
+  },
+  {
+   "theme": "Efficiency & Scalability",
+   "key": "efficiency-scalability"
+  },
+  {
+   "theme": "Information Retrieval & Search",
+   "key": "information-retrieval-search"
+  },
+  {
+   "theme": "Recommender Systems",
+   "key": "recommender-systems"
+  },
+  {
+   "theme": "Social Networks & Influence",
+   "key": "social-networks-influence"
+  },
+  {
+   "theme": "Self-Supervised & Contrastive",
+   "key": "self-supervised-contrastive"
+  },
+  {
+   "theme": "Generative & Diffusion",
+   "key": "generative-diffusion"
+  },
+  {
+   "theme": "LLM Agents & Tool Use",
+   "key": "llm-agents-tool-use"
+  },
+  {
+   "theme": "Multimodal & Vision-Language",
+   "key": "multimodal-vision-language"
+  },
+  {
+   "theme": "Explainability & Interpretability",
+   "key": "explainability-interpretability"
+  },
+  {
+   "theme": "Fairness, Bias & Responsible AI",
+   "key": "fairness-bias-responsible-ai"
+  },
+  {
+   "theme": "Retrieval-Augmented (RAG)",
+   "key": "retrieval-augmented-rag"
+  },
+  {
+   "theme": "Graph Learning & Mining",
+   "key": "graph-learning-mining"
+  },
+  {
+   "theme": "Time Series & Spatiotemporal",
+   "key": "time-series-spatiotemporal"
+  },
+  {
+   "theme": "Privacy, Federated & Security",
+   "key": "privacy-federated-security"
+  },
+  {
+   "theme": "Advertising & E-commerce",
+   "key": "advertising-e-commerce"
+  },
+  {
+   "theme": "Misinformation & Trust",
+   "key": "misinformation-trust"
+  },
+  {
+   "theme": "Text Mining & NLP",
+   "key": "text-mining-nlp"
+  },
+  {
+   "theme": "Knowledge Graphs",
+   "key": "knowledge-graphs"
+  },
+  {
+   "theme": "Reinforcement Learning",
+   "key": "reinforcement-learning"
+  },
+  {
+   "theme": "Causal Inference",
+   "key": "causal-inference"
+  },
+  {
+   "theme": "Fraud & Anomaly Detection",
+   "key": "fraud-anomaly-detection"
+  }
+ ]
+}

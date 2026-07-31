@@ -1,0 +1,11 @@
+{
+ "batch": "b030",
+ "paper": {
+  "id": "87a832b6d3f4c353d5764a440ff7658e630c5d6e",
+  "venue": "WWW 2026",
+  "title": "FedUMM: A General Framework for Federated Learning with Unified Multimodal Models",
+  "abstract": "Unified multimodal models (UMMs) are emerging as strong foundation models that can do both generation and understanding tasks in a single architecture. However, they are typically trained in centralized settings where all training and downstream datasets are gathered in a central server, limiting the deployment in privacy-sensitive and geographically distributed scenarios. In this paper, we present FedUMM, a general federated learning framework for UMMs under non-IID multimodal data with low communication cost. Built on NVIDIA FLARE, FedUMM instantiates federation for a BLIP3o backbone via parameter-efficient fine-tuning: clients train lightweight LoRA adapters while freezing the foundation models, and the server aggregates only adapter updates. We evaluate on VQA v2 and the GenEval compositional generation benchmarks under Dirichlet-controlled heterogeneity with up to 16 clients. Results show slight degradation as client count and heterogeneity increase, while remaining competitive with centralized training. We further analyze computation--communication trade-offs and demonstrate that adapter-only federation reduces per-round communication by over an order of magnitude compared to full fine-tuning, enabling practical federated UMM training. This work provides empirical experience for future research on privacy-preserving federated unified multimodal models.",
+  "gid": 456,
+  "theme": "federated multimodal learning"
+ }
+}

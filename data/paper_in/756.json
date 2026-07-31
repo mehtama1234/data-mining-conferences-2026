@@ -1,0 +1,11 @@
+{
+ "batch": "b050",
+ "paper": {
+  "id": "e40f10d5c7a5e5c9b872830b63a41245f1d1cd82",
+  "venue": "WWW 2026",
+  "title": "HomeRun: Performing Curveball Trades quasi in Streaming for Fast Null Modeling of Graphs, Hypergraphs, and Binary Matrices",
+  "abstract": "State-of-the-art algorithms for randomizing (or ''null-modeling'') graphs, hypergraphs, binary matrices, and market basket datasets are based on the Curveball trade, a procedure that takes two n-dimensional binary vectors (e.g., 1-hop neighborhood vectors, hyperedges, columns, transactions), and transforms them into two new vectors with the same L1 norm, bitwise-XOR, and bitwise-AND as the original ones. We present HomeRun, an algorithm to perform Curveball trades in an almost-streaming fashion. Previous approaches make multiple passes over the input vectors, and perform other operations with O(n) computational cost\\@. HomeRun instead performs a single linear scan over the data, and costs less than two passes. We achieve this speedup by framing a Curveball trade as a sampling procedure, and by using reservoir sampling and strict upper bounds to avoid having to compute the population and sample sizes. Our experimental evaluation on real and artificial datasets shows that HomeRun achieves a 2x speedup over existing algorithms.",
+  "gid": 756,
+  "theme": "Graph randomization"
+ }
+}

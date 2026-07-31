@@ -1,0 +1,11 @@
+{
+ "batch": "b065",
+ "paper": {
+  "id": "ee0f901386f0710fb9a1f5c95855feccca231d71",
+  "venue": "WSDM 2026",
+  "title": "Code LLMs Still Fall Short of Top Programmers: Evaluating Algorithmic Code Generation Through Computational Thinking",
+  "abstract": "Evaluating the coding capabilities of models through algorithmic code generation is challenging, as it requires deep problem understanding and complex algorithm design. Current benchmarks suffer from a narrow focus on final execution results (such as pass@k), neglecting the crucial reasoning and problem-solving processes inherent in code generation. To address this limitation, we introduce a multi-phase algorithmic code generation benchmark, MUPA, structured around human computational thinking. MUPA dissects the evaluation into four distinct phases: example understanding, algorithm selection, solution description, and code generation. This framework facilitates a comprehensive assessment by providing insights into the model's intermediate problem-solving steps, rather than just the final code. We manually curated 197 high-quality competitive programming problems from Codeforces. Utilizing an LLM-as-a-judge paradigm with specialized prompts, our rigorous evaluation of several existing code generation LLMs reveals significant across-the-board challenges. Notably, we establish a positive correlation, indicating that proficiency in an earlier phase directly impacts performance in subsequent phases, underscoring the interdependency of these algorithmic skills. The benchmark is publicly available at https://github.com/cheniison/MUPA.",
+  "gid": 984,
+  "theme": "Code generation evaluation"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "batch": "b061",
+ "paper": {
+  "id": "681a80a0ca1b0f9e9d0ae191197436bb2f8f758c",
+  "venue": "WSDM 2026",
+  "title": "Dynamic Metrics to Validate the Use of Machine-Learned Interatomic Potential for Dynamic Sampling",
+  "abstract": "Machine learning and data-driven approaches are increasingly being used to predict the energies and forces of chemical compounds and materials, enabling in silico design and the construction of digital twins. Machine-learning interatomic potentials (MLIPs), typically trained on large databases of quantum-mechanical calculations for small systems, are widely employed to sample configurations of realistic, large-scale atomistic systems. However, these models are usually evaluated only on static benchmark datasets, which does not reveal how their accuracy evolves along dynamical trajectories or under changes in chemical composition. Here, we introduce a simple and general validation protocol for a MLIP of an amorphous material that tracks prediction error along molecular-dynamics (MD) trajectories and across compositions. For the specific system under study, the designed protocol shows that the model exhibits consistently low energy errors, with no systematic drift over time and no loss of accuracy as composition varies. This type of diagnostic provides a compact complement to standard validation procedures and can be readily applied to other models and materials systems.",
+  "gid": 916,
+  "theme": "ML potential validation"
+ }
+}

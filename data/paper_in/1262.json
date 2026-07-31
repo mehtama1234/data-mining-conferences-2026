@@ -1,0 +1,11 @@
+{
+ "batch": "b084",
+ "paper": {
+  "id": "10.1145/3805712.3809896",
+  "venue": "SIGIR 2026",
+  "title": "Spectral Tempering for Embedding Compression in Dense Passage Retrieval",
+  "abstract": "Dimensionality reduction is critical for deploying dense retrieval systems at scale, yet mainstream post-hoc methods face a fundamental trade-off: principal component analysis (PCA) preserves dominant variance but underutilizes representational capacity, while whitening enforces isotropy at the cost of amplifying noise in the heavy-tailed eigenspectrum of retrieval embeddings. Intermediate spectral scaling methods unify these extremes by reweighting dimensions with a power coefficient \u03b3, but treat \u03b3 as a fixed hyperparameter that requires task-specific tuning. We show that the optimal scaling strength \u03b3 is not a global constant: it varies systematically with target dimensionality k and is governed by the signal-to-noise ratio (SNR) of the retained subspace. Based on this insight, we propose Spectral Tempering (SpecTemp), a learning-free method that derives an adaptive \u03b3(k) directly from the corpus eigenspectrum using local SNR analysis and knee-point normalization, requiring no labeled data or validation-based search. Extensive experiments demonstrate that Spectral Tempering consistently achieves near-oracle performance relative to grid-searched \u03b3*(k) while remaining fully learning-free and model-agnostic. Our code is publicly available at https://github.com/liyongkang123/SpecTemp.",
+  "gid": 1262,
+  "theme": "dense retrieval"
+ }
+}

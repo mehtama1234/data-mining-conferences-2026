@@ -1,0 +1,11 @@
+{
+ "batch": "b063",
+ "paper": {
+  "id": "b5f685d394bf3f39835739f574e423ac4fed0705",
+  "venue": "WSDM 2026",
+  "title": "Automated C Vulnerability Detection via Structure-Enhanced Graph Transformer and RBM",
+  "abstract": "Code vulnerability detection aims to identify potential risks in code to prevent malicious attacks. Previous sequence-based models mostly focus on capturing local syntactic patterns, but they fail to model the non-linear structural dependencies and intricate context found in real-world code. Recent graph-based methods integrate structural information such as abstract syntax trees (AST) and control flow graphs (CFG). However, they often rely on shallow features of code and struggle to capture rich contextual semantic relations, which limits the effectiveness of detection. To address the issues above, we propose a novel framework, named Vul-GRT. We firstly design an unsupervised-based joint feature extraction method, which integrates Graph Attention Networks (GAT) and Restricted Boltzmann Machines (RBM) with joint training to capture structural information and further mine latent features from code graphs. Then, we leverage code language models to incorporate node-level semantic information, which is fused with structural features to obtain comprehensive node representations. Moreover, we introduce a hybrid loss function that integrates both vulnerability detection and path tracking objectives, which enables the model to focus on path context during vulnerability localization, enhancing the traceability of identified vulnerabilities. In the training step, we utilize Graph Transfo",
+  "gid": 953,
+  "theme": "Code vulnerability detection"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "batch": "b078",
+ "paper": {
+  "id": "10.1145/3805712.3808582",
+  "venue": "SIGIR 2026",
+  "title": "F2-Gen: An Open-Source Web Platform for Scenario-Driven Financial Fraud Data Simulation",
+  "abstract": "Real bank-transaction data are rarely available to non-regulatory parties due to privacy and compliance constraints, while public substitutes often mismatch financial semantics, limiting the transferability and reproducibility of anomaly-detection research in financial settings. To address this, we release F2-Gen: an open-source, scenario-driven, configurable web platform that generates synthetic data covering both tabular transaction records and transaction graphs for modeling and evaluating financial-fraud behaviors. F2-Gen provides parameterized fraud scenarios, interactive visual analysis, automated screening to remove label-revealing fields, tutorials, and batch data export. Use cases include anomaly detection, graph learning, and teaching demonstrations; standard benchmarking is supported via a screened feature subset, ready-to-run baseline scripts, and sanity/controllability checks. Project page: https://sethgu.github.io/FinancialFraudDataGenerator/. Code: https://github.com/sethGu/FinancialFraudDataGenerator.",
+  "gid": 1182,
+  "theme": "synthetic financial fraud data"
+ }
+}

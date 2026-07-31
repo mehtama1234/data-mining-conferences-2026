@@ -1,0 +1,11 @@
+{
+ "batch": "b084",
+ "paper": {
+  "id": "10.1145/3805712.3809898",
+  "venue": "SIGIR 2026",
+  "title": "Targeted Parameter Selection for Rank-Biased Measurement",
+  "abstract": "The rank-biased family of measurements allows ordered rankings to be compared in a top-weighted manner, with the differential emphasis on early items derived from a decaying geometric distribution across positions in the ranking. In this short paper we consider a range of other weighting functions, including both infinite and finite inverse power law distributions. We show that the introduction of a second governing parameter provides a commensurate increase in flexibility, and describe principles and algorithmic techniques for selecting suitable parameters so as to achieve defined experimental goals. The result is greater flexibility of measurement, and tools that suit a wider range of experimental scenarios",
+  "gid": 1270,
+  "theme": "ranking evaluation"
+ }
+}

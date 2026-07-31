@@ -1,0 +1,11 @@
+{
+ "batch": "b051",
+ "paper": {
+  "id": "ea9673aa6443ed5ba4bdb275b70874eb483663d5",
+  "venue": "WWW 2026",
+  "title": "Foundations for the Agentic Web: Networked AI Agents in a Decentralized Architecture (NANDA)",
+  "abstract": "The agentic web, where billions of autonomous AI agents discover, communicate, and coordinate across organizational boundaries, requires new foundations spanning technical infrastructure, economic mechanisms, and societal coordination. Just as DNS and HTTP shaped the traditional web's evolution, the architectural decisions we make today for agent registries, protocols, and reputation systems will determine what forms of distributed intelligence emerge tomorrow. This lecture-style tutorial provides a comprehensive framework for understanding this network of AI Agents in a Decentralized Architecture (NANDA), across three development phases: Foundations (discovery, identity, protocols), Agentic Economy (pricing, reputation, markets), and Agentic Society (population dynamics, governance, coordination). Drawing on recent advances in registry architectures, protocol standards, and resolution mechanisms, this tutorial equips participants with conceptual frameworks and practical insights for designing infrastructure that enables safe, scalable, and sustainable agent ecosystems. The tutorial emphasizes forward-thinking perspectives on open challenges and research opportunities while building on web-native standards.",
+  "gid": 775,
+  "theme": "Agentic infrastructure"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "batch": "b066",
+ "paper": {
+  "id": "fa6efb319e10e5e8e9a4829a54ce72f1626d3ef5",
+  "venue": "WSDM 2026",
+  "title": "Confounder-Aware Causal Graph Learning Framework for Multivariate Time Series Analysis",
+  "abstract": "Multivariate Time Series (MTS) analysis based graph has gained traction due to complex nonlinear relationships and temporal dependencies among variables. To enhance the interpretability of observational MTS data, causal graph learning has become a mainstream approach. However, existing causal graph methods lack mechanisms to handle unobserved confounders and dynamic causal relationships, which limit their applicability in MTS scenarios. To overcome these limitations, we propose a novel framework, Confounder-Aware Causal Graph Learning (CACGL), which models unobserved confounders with multi-scale effects and captures time-varying causal relationships among variables. Firstly, CACGL employs a multi-granularity causal architecture combining coarse-grained graphs, which model variable-wise causality over entire sequences, with fine-grained graphs that capture cross-variable causal interactions within local segments, explicitly disentangling time-heterogeneous dependencies. Secondly, we design a hierarchical VAE-based module to construct exogeneity-constrained proxies for two unobserved confounders: persistent confounder and transient confounder adhering to causal sufficiency criteria. Third, a bias-aware optimization strategy is proposed to quantify unobserved confounding through the Confounding Bias Index (CBI), which transforms residual confounding effects into adversarial signal",
+  "gid": 991,
+  "theme": "Causal discovery MTS"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "batch": "b003",
+ "paper": {
+  "id": "0d26f04d59355e2755b7f4cb1d156409084df4d5",
+  "venue": "WWW 2026",
+  "title": "The Verification Crisis: Expert Perceptions of GenAI Disinformation and the Case for Reproducible Provenance",
+  "abstract": "The growth of Generative Artificial Intelligence (GenAI) has shifted disinformation production from manual fabrication to automated, large-scale manipulation. This article presents findings from the first wave of a longitudinal expert perception survey (N=21) involving AI researchers, policymakers, and disinformation specialists. It examines the perceived severity of multimodal threats -- text, image, audio, and video---and evaluates current mitigation strategies. Results indicate that while deepfake video presents immediate ''shock'' value, large-scale text generation poses a systemic risk of ''epistemic fragmentation'' and ''synthetic consensus,'' particularly in the political domain. The survey reveals skepticism about technical detection tools, with experts favoring provenance standards and regulatory frameworks despite implementation barriers. GenAI disinformation research requires reproducible methods. The current challenge is measurement: without standardized benchmarks and reproducibility checklists, tracking or countering synthetic media remains difficult. We propose treating information integrity as an infrastructure with rigor in data provenance and methodological reproducibility.",
+  "gid": 46,
+  "theme": "GenAI disinformation detection"
+ }
+}

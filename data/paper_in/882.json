@@ -1,0 +1,11 @@
+{
+ "batch": "b058",
+ "paper": {
+  "id": "1b94089d9639233688fb34d83ff58e5668d3c835",
+  "venue": "WSDM 2026",
+  "title": "Image-Guided Debiasing Distillation with Preference Alignment Across Multi-News Histories",
+  "abstract": "Textual data is a key signal for modeling relationships between news articles in recommendation systems. However, exaggerated and biased texts often hinder the accurate understanding of textual content, negatively affecting recommendation quality. Multimodal approaches have been proposed to address this issue by incorporating associated news images, but they often overlook the complementary role of visual information. To bridge this gap, we propose an Image-Guided Knowledge (IGKnow) distillation framework that transfers image-guided debiasing capability from a multimodal LLM into a text-only LLM. This design allows the distilled model to extract factual, debiased triples from text alone while preserving the benefits of multimodal learning. To further enhance stability, we introduce Triple-level Supervised Fine-Tuning (TriSFT), a permutation-invariant training for triple structures. Moreover, we refine the model through preference alignment to ensure objective, coherent knowledge extraction across news histories. We evaluate the extracted knowledge in sequential news recommendation and show that debiased triples improve recommendation performance.",
+  "gid": 882,
+  "theme": "multimodal news recommendation"
+ }
+}

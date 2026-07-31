@@ -1,0 +1,11 @@
+{
+ "batch": "b044",
+ "paper": {
+  "id": "cdfe8ea30637c06b8c630d46337ef3c39ec2e97d",
+  "venue": "WWW 2026",
+  "title": "Truth with a Twist: The Rhetoric of Persuasion in Professional vs. Community-Authored Fact-Checks",
+  "abstract": "This study presents the first large-scale comparison of persuasion techniques present in crowd- versus professionally-written debunks. Using extensive datasets from Community Notes (CNs), EUvsDisinfo, and the Database of Known Fakes (DBKF), we quantify the prevalence and types of persuasion techniques across these fact-checking ecosystems. Contrary to prior hypothesis that community-produced debunks rely more heavily on subjective or persuasive wording, we find no evidence that CNs contain a higher average number of persuasion techniques than professional fact-checks. We additionally identify systematic rhetorical differences between CNs and professional debunking efforts, reflecting differences in institutional norms and topical coverage. Finally, we examine how the crowd evaluates persuasive language in CNs and show that, although notes with more persuasive elements receive slightly higher overall helpfulness ratings, crowd raters are effective at penalising the use of particular problematic rhetorical means.",
+  "gid": 674,
+  "theme": "Fact-checking rhetoric comparison"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "batch": "b059",
+ "paper": {
+  "id": "2e4a8a5a17b82d22512db431aad84502af59848b",
+  "venue": "WSDM 2026",
+  "title": "A Two-Stage Anomaly-Aware Framework for Robust Traffic Forecasting with Memory-Guided GNNs",
+  "abstract": "Accurate traffic forecasting plays a critical role in modern transportation systems by enabling effective congestion management and route optimization. Although recent deep learning-based models have shown substantial progress in modeling complex spatiotemporal dependencies, most existing methods overlook the challenges posed by anomalous traffic conditions. To address this gap, we propose a two-stage anomaly-aware forecasting correction framework. The first stage employs an unsupervised auto-regressive anomaly detector that combines representation learning and spatiotemporal attention to capture normal traffic patterns and filter anomalous inputs through error thresholding. In the second stage, an anomaly optimization predictor leverages a memory module and a sparsity regularization learning strategy to enhance the representation of normal patterns and suppress noise. It models spatiotemporal dependencies using an information propagation layer composed of sequential small-kernel temporal convolutions and memory-guided graph convolutions. Extensive experiments on real-world traffic flow datasets demonstrate that our framework outperforms state-of-the-art models under anomalous conditions.",
+  "gid": 892,
+  "theme": "Traffic forecasting robustness"
+ }
+}

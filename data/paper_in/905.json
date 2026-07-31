@@ -1,0 +1,11 @@
+{
+ "batch": "b060",
+ "paper": {
+  "id": "532e429d3451042fb410b8980ebe1a3580a1620a",
+  "venue": "WSDM 2026",
+  "title": "DDIREC: Domain-Disentanglement on Item Representations for Cross-Domain Recommendation",
+  "abstract": "Recommender systems (RSs) often face data sparsity and cold-start issues. Cross-domain RSs (CDRSs) mitigate these by transferring knowledge between domains to help domains with sparse data. However, existing methods struggle to distinguish domain-independent information, which can appear shared but carry domain-specific meanings, leading to negative transfer. To address this, we propose DDIREC, a CDRS that categorizes words in item descriptions into domain-specific, domain-shared, and domain-independent by considering the skewness of items toward a particular domain within each topic. By constructing an item-topic-word graph and learning item representations with heterogeneous graph neural networks (HGNNs), DDIREC properly transfers knowledge while reducing negative transfer. Experiments show that DDIREC consistently outperforms baselines in both rating prediction and ranking.",
+  "gid": 905,
+  "theme": "cross-domain recommendation"
+ }
+}

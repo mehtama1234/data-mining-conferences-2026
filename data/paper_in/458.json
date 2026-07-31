@@ -1,0 +1,11 @@
+{
+ "batch": "b030",
+ "paper": {
+  "id": "8a2981d7e72a3664c93b0ef4c0b6297644f9100b",
+  "venue": "WWW 2026",
+  "title": "SAMPLE: A Spatial/Channel-wise Attention GCN with MLP and Periodic Linear Encoding for Land Boundary Demarcation System",
+  "abstract": "Defining legal property rights and supporting effective land management heavily rely on accurate land boundary demarcation, a key responsibility of the government in Taiwan. However, conventional processes are hindered by key human resource management challenges, such as inaccurate forecasting of fieldwork duration, suboptimal task allocation, inequitable workload distribution, and limited capacity for data-driven decision-making in resource planning. To overcome these limitations, we present SAMPLE (A Spatial/Channel-wise Attention Graph Convolutional Networks with Multi-layer Perceptron and Periodic Linear Encoding for Land Boundary Demarcation System), a web-based platform designed to enhance field-task scheduling and time-forecasting by integrating spatial and tabular data into a predictive modeling and visualization system. The system leverages a novel model architecture that combines Periodic Linear Encoding, Graph Convolutional Networks (GCN), spatial/channel-wise attention mechanisms, and Multi-Layer Perceptrons (MLP). Compared to baseline models such as XGBoost, TabPFN, TabNet, and GCN+MLP, our model achieves superior accuracy, as demonstrated through multiple experiments and ablation studies. In direct comparison with a conventional unstructured data pipeline, SAMPLE achieved up to a 88% reduction in time and labor costs, highlighting its efficiency and effectiveness.",
+  "gid": 458,
+  "theme": "spatial-temporal prediction"
+ }
+}

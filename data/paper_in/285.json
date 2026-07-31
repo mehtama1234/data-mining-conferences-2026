@@ -1,0 +1,11 @@
+{
+ "batch": "b019",
+ "paper": {
+  "id": "526c5c8bc4591365beb8c4c817f8afd69c8f3361",
+  "venue": "WWW 2026",
+  "title": "Temporal Challenges in Data-Driven Scenario-Building for Climate-Neutral Cities",
+  "abstract": "This position paper examines temporal challenges in data-driven urban and climate transitions. It argues for scenario-building to understand implications of current development and planning processes towards emission reduction, climate action, and increase of liveability of our cities. Temporal challenges arise for example out of data quality, data availability, or integration issues. These are present in domains such as digital twins, GIS, simulation and forecasting tools, participatory approaches, decision-support systems, and organisational and system workflows.",
+  "gid": 285,
+  "theme": "Urban climate data integration"
+ }
+}

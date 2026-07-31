@@ -1,0 +1,11 @@
+{
+ "batch": "b031",
+ "paper": {
+  "id": "8e76bdf8fc39d676fa117f760ce35291bf9ca6d8",
+  "venue": "WWW 2026",
+  "title": "Anomaly Detection of Interaction Behaviors in Streaming Graphs",
+  "abstract": "Timely detection of anomalous interactions between different entities is crucial for the security and stability of Web-related systems, which are often modeled as streaming graphs. A major issue in existing anomaly detection methods is the effectiveness and the corresponding interpretability. In this paper, we introduce a novel evaluation metric, namely Interaction Willingness, to measure the propensity for entity interactions. Based on this metric, we design two efficient anomaly detection algorithms, AnoD and AnoC, tailored for real-time detection of two prevalent types of anomalous interaction behaviors (dense-type and counter-type), respectively. Notably, we adopt and extend the High-Order Count-Min Sketch for the implicit storage of streaming graphs, and ensure that both the space cost and the time cost of AnoD and AnoC for processing each new streaming edge remain constant and user-controllable, with estimation guarantees. Experimental evaluations on 6 real-world datasets demonstrate that the proposed evaluation metric and the associated algorithms achieve superior detection performance with clear interpretability for detecting anomalous interactions.",
+  "gid": 472,
+  "theme": "graph anomaly detection"
+ }
+}

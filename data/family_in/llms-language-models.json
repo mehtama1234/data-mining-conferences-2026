@@ -1,0 +1,568 @@
+{
+ "key": "llms-language-models",
+ "theme": "LLMs & Language Models",
+ "n_papers": 742,
+ "pct": 38.3,
+ "by_venue": {
+  "WWW 2026": 385,
+  "WSDM 2026": 51,
+  "SIGIR 2026": 278,
+  "KDD 2026": 28
+ },
+ "theme_examples": [
+  {
+   "title": "Reconstructing Training Data from Adapter-based Federated Large Language Models",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "Neuro-Sym Supporter: A Thoughtful Emotion Support Agent Integrating Neural and Symbolic Policy Learning",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "PerQA: A Benchmark for Temporally Sensitive Questions on Heterogeneous Personal Data",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "Embedding Enhancement via Fine-Tuned Language Models for Learner-Item Cognitive Modeling",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "PLIKD: Prompt Learning with Instance-aware Knowledge Distillation for Web-scale Semantic Image Classification",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "Conflict-Aware RAG: Multi-Stage Learning with Conflict Signals for Robust Retrieval-Augmented Generation",
+   "venue": "WWW 2026"
+  }
+ ],
+ "representative_papers": [
+  {
+   "title": "Reconstructing Training Data from Adapter-based Federated Large Language Models",
+   "venue": "WWW 2026",
+   "problem": "Adapter-based federated LLMs assumed privacy-safe but vulnerable to gradient inversion attacks",
+   "approach": "Token presence inference from attention, sentence-level inversion in low-rank space, semantic coherence via constrained greedy decoding",
+   "contribution": "UTR attack reconstructs training text near-perfectly from adapter gradients even with large batches",
+   "primary_theme": "Federated LLM security",
+   "methods": [
+    "gradient inversion",
+    "attention analysis",
+    "language model priors"
+   ]
+  },
+  {
+   "title": "PLIKD: Prompt Learning with Instance-aware Knowledge Distillation for Web-scale Semantic Image Classification",
+   "venue": "WWW 2026",
+   "problem": "Prompt learning for web-scale image classification overfits base classes and fails under distribution shift",
+   "approach": "Instance-aware knowledge extraction from multimodal LLMs with dual-teacher knowledge distillation strategy",
+   "contribution": "PLIKD improves generalization to unseen classes via external knowledge distillation",
+   "primary_theme": "Vision-language classification",
+   "methods": [
+    "prompt learning",
+    "knowledge distillation",
+    "multimodal llm"
+   ]
+  },
+  {
+   "title": "TraceLLM: Evaluating and Exploring Large Language Models on Trace Analysis in Microservice-based Web Applications",
+   "venue": "WWW 2026",
+   "problem": "Trace analysis in microservice systems requires high manual overhead and lacks flexible, deployable LLM approaches",
+   "approach": "Fine-tuned LLM approach on TraceBench instruction-response benchmark for trace anomaly detection and diagnosis",
+   "contribution": "TraceLLM improves trace analysis accuracy 34.77% over open-source LLMs via targeted fine-tuning",
+   "primary_theme": "LLM trace analysis",
+   "methods": [
+    "llm",
+    "fine-tuning",
+    "trace analysis"
+   ]
+  },
+  {
+   "title": "Towards Automated Brand-Safety Detection: A Novel Dataset and Comparative Analysis of Language Models",
+   "venue": "WWW 2026",
+   "problem": "Automated brand-safety detection lacks comprehensive datasets and evaluation",
+   "approach": "Novel text dataset from narrative fiction with LLM and fine-tuned model comparison",
+   "contribution": "First comprehensive brand-safety dataset; fine-tuned RoBERTa outperforms zero-shot LLMs",
+   "primary_theme": "Brand safety detection",
+   "methods": [
+    "nlp",
+    "fine-tuning",
+    "classification"
+   ]
+  },
+  {
+   "title": "Social Bias Benchmarks for Large Language Models",
+   "venue": "WWW 2026",
+   "problem": "Social biases in multilingual LLMs across diverse languages and cultural contexts",
+   "approach": "Systematic review of bias benchmarks across linguistic diversity and cultural awareness dimensions",
+   "contribution": "Catalogue of bias evaluation methodological gaps, challenges and mitigation solutions in multilingual settings",
+   "primary_theme": "Multilingual bias evaluation",
+   "methods": [
+    "benchmark",
+    "review",
+    "bias"
+   ]
+  },
+  {
+   "title": "Node Role-Guided LLMs for Dynamic Graph Clustering",
+   "venue": "WWW 2026",
+   "problem": "Dynamic graph clustering lacks interpretability and semantic explanations for cluster formation",
+   "approach": "Node role prototypes with hierarchical LLM reasoning for discrete semantic concepts",
+   "contribution": "Interpretable dynamic graph clustering with natural language explanations",
+   "primary_theme": "Graph clustering interpretability",
+   "methods": [
+    "llm reasoning",
+    "prototype learning",
+    "graph embeddings"
+   ]
+  },
+  {
+   "title": "Inference Cost Attacks for Retrieval-Augmented Large Language Models",
+   "venue": "WWW 2026",
+   "problem": "RAG-enhanced LLMs vulnerable to high inference costs through knowledge base poisoning",
+   "approach": "Inject malicious documents into knowledge bases via LLM agents and reinforcement learning",
+   "contribution": "CREEP framework with MA-GRPO algorithm for effective inference cost attacks on RAG systems",
+   "primary_theme": "LLM security",
+   "methods": [
+    "rag",
+    "adversarial-attack",
+    "reinforcement-learning"
+   ]
+  },
+  {
+   "title": "Toward Graph-Tokenizing Large Language Models with Reconstructive Graph Instruction Tuning",
+   "venue": "WWW 2026",
+   "problem": "Graph-Tokenizing LLMs achieve only implicit alignment; text-dominant bias underutilizes graph context.",
+   "approach": "Reconstructive graph instruction tuning that reconstructs graph information from LLM outputs.",
+   "contribution": "Explicit graph supervision improves alignment upper bound; better graph comprehension.",
+   "primary_theme": "LLM graph tokenization",
+   "methods": [
+    "llm",
+    "graph_representation",
+    "instruction_tuning"
+   ]
+  },
+  {
+   "title": "Large Language Models-Enhanced Semantic Diffusion for User-Centric Recommendation",
+   "venue": "WWW 2026",
+   "problem": "Knowledge graphs lack user-side structural information due to scarcity and improper granularity for recommendations",
+   "approach": "LLMs infer user interests; diffusion models generate contrastive views with semantic transitions",
+   "contribution": "SEDIRec integrates user-side and item-side information via LLM-diffusion for sparse user recommendations",
+   "primary_theme": "Knowledge-aware recommendation",
+   "methods": [
+    "llm",
+    "diffusion",
+    "contrastive_learning",
+    "graph"
+   ]
+  },
+  {
+   "title": "Swen: A Cross-Platform Desktop Assistant for Instant and Personalized Large-Language-Model Interaction",
+   "venue": "WWW 2026",
+   "problem": "Users must manually switch apps, copy-paste text, and craft prompts to interact with LLMs while reading",
+   "approach": "Desktop assistant with intent recognition and evolving user profile for context-aware responses",
+   "contribution": "Swen reduces knowledge lookup time by providing on-the-spot LLM assistance with automatic intent detection",
+   "primary_theme": "LLM interaction UX",
+   "methods": [
+    "llm",
+    "intent_recognition",
+    "personalization"
+   ]
+  },
+  {
+   "title": "LLMQuA: Practical Backdoor Injection on Large Language Model Quantization",
+   "venue": "WWW 2026",
+   "problem": "Backdoor attacks on quantized LLMs face data scarcity, layer-wise restrictions, and lack of gradient access",
+   "approach": "Data-efficient knowledge editing with layer-local quantization parameter optimization and weight distortion",
+   "contribution": "Achieves 67.91% moderation evasion and 90% targeted refusal with minimal model utility degradation",
+   "primary_theme": "LLM quantization security",
+   "methods": [
+    "backdoor-attack",
+    "quantization",
+    "adversarial"
+   ]
+  },
+  {
+   "title": "DHOW-MiLLA: Joint Workshop on Diffusion of Harmful Content on Online Web and Countering Misinformation in the Age of LLMs and Agents",
+   "venue": "WWW 2026",
+   "problem": "Harmful content analysis fragmented across platforms, languages, topics; limited cross-platform counter-measure study.",
+   "approach": "Workshop unifying research on harmful content diffusion across platforms, languages, and content types.",
+   "contribution": "Brings together misinformation, hate speech, cyberbullying research under one framework with LLM/agent focus.",
+   "primary_theme": "Harmful content mitigation",
+   "methods": [
+    "content-moderation",
+    "misinformation-detection",
+    "cross-platform"
+   ]
+  },
+  {
+   "title": "SAGE: Sustainable Agent-Guided Expert-tuning for Culturally Attuned Translation in Low-Resource Southeast Asia",
+   "venue": "WWW 2026",
+   "problem": "Low-resource Southeast Asian languages lack data and energy-efficient translation methods",
+   "approach": "RL agent curating compact training sets from expert dialogues, fine-tuning with LoRA on open LLMs",
+   "contribution": "State-of-the-art translation for seven Southeast Asian languages prioritizing cultural relevance over scale",
+   "primary_theme": "Low-resource translation",
+   "methods": [
+    "llm",
+    "reinforcement_learning",
+    "lora"
+   ]
+  },
+  {
+   "title": "LLM-Powered Structurer: Normalizing Natural Language to Information Delivery Specification for Industrial Data Exchange",
+   "venue": "WWW 2026",
+   "problem": "Industry information standards XML-based formats difficult for non-expert users to adopt",
+   "approach": "SGSS framework using LLMs to normalize natural language to Information Delivery Specification XML",
+   "contribution": "LLM-driven accessibility bridge for industrial information exchange standards",
+   "primary_theme": "LLM semantic structuring",
+   "methods": [
+    "llm",
+    "semantic-parsing",
+    "schema-grounding"
+   ]
+  },
+  {
+   "title": "Large Language Model for OWL Proofs",
+   "venue": "WWW 2026",
+   "problem": "LLMs' capacity to generate faithful proofs from OWL ontologies remains underexplored; complexity impacts performance",
+   "approach": "Automated dataset construction and evaluation framework for proof extraction, simplification, and explanation",
+   "contribution": "Study reveals logical complexity dominates performance; identifies gaps in resilient reasoning under imperfect conditions",
+   "primary_theme": "LLM logical reasoning",
+   "methods": [
+    "llm",
+    "ontology-reasoning",
+    "evaluation-framework"
+   ]
+  },
+  {
+   "title": "Following the TRAIL: Predicting and Explaining Tomorrow's Hits with a Fine-Tuned LLM",
+   "venue": "WWW 2026",
+   "problem": "LLMs struggle extracting user preferences from sparse logs for real-time ranking",
+   "approach": "Fine-tuned LLM with contrastive learning on trend signals",
+   "contribution": "Joint prediction of popularity and faithful natural-language explanations",
+   "primary_theme": "LLM recommendation",
+   "methods": [
+    "llm",
+    "contrastive learning",
+    "trend forecasting"
+   ]
+  },
+  {
+   "title": "SemTech 2026: The 4th International Workshop on AI and Semantic Technologies for the Scientific, Technical, and Legal Web",
+   "venue": "WWW 2026",
+   "problem": "Scientific, technical, and legal web data are heterogeneous, semi-structured, with complex embedded entities",
+   "approach": "Combine Semantic Web, NLP, and LLMs to process and reason over structured knowledge representations",
+   "contribution": "SemTech workshop explores symbolic AI and LLM integration for robust, interpretable language models",
+   "primary_theme": "semantic web",
+   "methods": [
+    "semantic web",
+    "nlp",
+    "llm"
+   ]
+  },
+  {
+   "title": "PromptX: A Cognitive Agent Platform with Long-term Memory",
+   "venue": "WWW 2026",
+   "problem": "LLMs lack long-term memory and personalized reasoning for practical industrial agent applications",
+   "approach": "Engram-based activation-diffusion memory networks with prompt markup language and HATEOAS orchestration",
+   "contribution": "PromptX validated across 15+ enterprises with 50K+ downloads, demonstrating production feasibility",
+   "primary_theme": "llm agents",
+   "methods": [
+    "memory networks",
+    "agent platform",
+    "reasoning"
+   ]
+  },
+  {
+   "title": "VC-Soup: Value-Consistency Guided Multi-Value Alignment for Large Language Models",
+   "venue": "WWW 2026",
+   "problem": "Multi-value alignment of LLMs faces expensive separate model training and substantial value conflict degradation",
+   "approach": "Value-consistency guided data filtering and parameter merging framework leveraging linear mode connectivity",
+   "contribution": "VC-Soup achieves favorable multi-value alignment trade-offs via value-consistent learning without expensive retraining",
+   "primary_theme": "Value alignment",
+   "methods": [
+    "alignment",
+    "parameter-merging",
+    "reward-modeling",
+    "llm"
+   ]
+  },
+  {
+   "title": "Unlocking the Multilingual Long-Tail Web: A Fused Macro-Micro Framework for Scalable Content Analysis",
+   "venue": "WWW 2026",
+   "problem": "LLMs struggle with long-tail language content analysis and robustness at scale",
+   "approach": "Control-Tower Framework: micro-enhanced pretraining plus macro-optimized inference with MBR decoding",
+   "contribution": "Improves long-tail language performance by +2.18 XCOMET-XXL",
+   "primary_theme": "multilingual LLM optimization",
+   "methods": [
+    "llm",
+    "fine-tuning",
+    "pretraining",
+    "inference-optimization"
+   ]
+  },
+  {
+   "title": "Reinforcement Learning-Constrained Segmented User Modeling with Large Language Models for Recommendation",
+   "venue": "WWW 2026",
+   "problem": "LLMs for recommendation struggle with long sequences and hallucinate spurious preferences",
+   "approach": "Reinforcement learning-constrained segmented modeling with cascaded preference inference",
+   "contribution": "Rec2 suppresses hallucinations and aligns preferences using subsequent behavior as reward signal",
+   "primary_theme": "LLM recommendation",
+   "methods": [
+    "llm",
+    "reinforcement-learning",
+    "recommendation"
+   ]
+  },
+  {
+   "title": "SJBP: A Platform to Launch a Novel Jailbreak Attack on Large Language Models Based on Content's Spatial Distribution",
+   "venue": "WWW 2026",
+   "problem": "LLMs vulnerable to jailbreak attacks that bypass existing safety defenses",
+   "approach": "SpatialJB distributes harmful content across spatial dimensions to evade guardrails",
+   "contribution": "Achieves 95% attack success on GPT-4 with 7x improvement over base64 jailbreak technique",
+   "primary_theme": "LLM security and adversarial attacks",
+   "methods": [
+    "adversarial",
+    "jailbreak",
+    "spatial",
+    "defense"
+   ]
+  },
+  {
+   "title": "Task-Aligned Unlearning for Multimodal Large Language Models",
+   "venue": "WWW 2026",
+   "problem": "MLLM unlearning with single objective causes unbalanced forgetting and quality degradation",
+   "approach": "TAU framework optimizes multiple task-aligned objectives for classification, generation, and entity recall",
+   "contribution": "Balanced unlearning across heterogeneous tasks while preserving non-target knowledge in MLLMs",
+   "primary_theme": "multimodal unlearning",
+   "methods": [
+    "unlearning",
+    "multimodal models",
+    "adversarial training"
+   ]
+  },
+  {
+   "title": "Enhancing Large Language Models for Time-Series Forecasting via Vector-Injected In-Context Learning",
+   "venue": "WWW 2026",
+   "problem": "LLMs struggle with time-series forecasting due to domain mismatch between pretraining and TSF; fine-tuning adds computational overhead.",
+   "approach": "Vector-injected in-context learning (LVICL) injects learnable context vectors into frozen LLM layers to extract and apply example information.",
+   "contribution": "Improves LLM time-series forecasting performance without parameter fine-tuning, reducing computational overhead.",
+   "primary_theme": "LLM time-series forecasting",
+   "methods": [
+    "llm",
+    "in-context-learning",
+    "vector-injection"
+   ]
+  },
+  {
+   "title": "On-Device Large Language Models for Sequential Recommendation",
+   "venue": "WSDM 2026",
+   "problem": "LLMs for sequential recommendation lack efficient on-device deployment due to memory and computational overhead",
+   "approach": "Task-adaptive compression via SVD low-rank decomposition and tokenization normalization with progressive alignment",
+   "contribution": "OD-LLM enables efficient on-device LLM deployment for sequential recommendation without performance loss",
+   "primary_theme": "On-device LLM recommendation",
+   "methods": [
+    "compression",
+    "svd",
+    "sequential_modeling"
+   ]
+  },
+  {
+   "title": "Mitigating the Threshold Priming Effect in Large Language Model\u2013Based Relevance Judgments via Personality Simulation",
+   "venue": "WSDM 2026",
+   "problem": "LLMs susceptible to threshold priming in relevance labeling; personality effects unclear",
+   "approach": "Big Five personality profiles simulated in LLMs to probe priming susceptibility",
+   "contribution": "Personality prompting mitigates priming; High Openness and Low Neuroticism reduce bias",
+   "primary_theme": "LLM priming mitigation",
+   "methods": [
+    "personality-simulation",
+    "bias-mitigation",
+    "llm"
+   ]
+  },
+  {
+   "title": "Question Answering Fit for Purpose: A Perspective From Natural Language Processing and User Modeling",
+   "venue": "SIGIR 2026",
+   "problem": "Question answering requires appropriate answers for complex information needs and intended audiences",
+   "approach": "Integrating NLP, user modeling, and IR with LLMs for context-aware answer generation",
+   "contribution": "Perspective on graceful human-machine interaction combining NLG, UM, and modern generative AI",
+   "primary_theme": "Question answering systems",
+   "methods": [
+    "natural language generation",
+    "user modeling",
+    "information retrieval"
+   ]
+  },
+  {
+   "title": "NeuCon-ICE: Neuron-Level Controllable In-Context Editing for Multimodal Large Language Models",
+   "venue": "SIGIR 2026",
+   "problem": "Multimodal knowledge editing through in-context editing lacks controllability and relies on implicit contextualization without explicit guidance.",
+   "approach": "Neuron-level controllable in-context editing identifying multimodal contextual neurons and selectively injecting context-aware updates.",
+   "contribution": "NeuCon-ICE framework enabling controllable knowledge editing for MLLMs with neuron-level precision.",
+   "primary_theme": "Multimodal knowledge editing",
+   "methods": [
+    "neuron-level",
+    "knowledge-editing",
+    "in-context"
+   ]
+  },
+  {
+   "title": "Formalized Information Needs Improve Large-Language-Model Relevance Judgments",
+   "venue": "SIGIR 2026",
+   "problem": "LLM relevance assessors using query-only setups reduce evaluation reliability and agreement",
+   "approach": "Synthetically formalize information needs with LLMs into structured topics with descriptions",
+   "contribution": "Formalized topics improve inter-assessor and human-LLM agreement in relevance evaluation",
+   "primary_theme": "LLM evaluation methodology",
+   "methods": [
+    "llm",
+    "topic-formalization",
+    "evaluation"
+   ]
+  },
+  {
+   "title": "NeurPIU: Neurobiologically Inspired Personalized Intent Understanding in Large Language Models",
+   "venue": "SIGIR 2026",
+   "problem": "LLMs fail on vague evolving queries, ignore user mental states in personalized intent understanding",
+   "approach": "NeurPIU constructs intent neural network from brain mentalizing theory, uses spreading activation with temporal decay",
+   "contribution": "Neurobiologically inspired framework enables personalized diverse responses via cognitive prefix injection",
+   "primary_theme": "Intent understanding",
+   "methods": [
+    "neurobiology-inspired",
+    "cognitive modeling",
+    "lora adaptation"
+   ]
+  },
+  {
+   "title": "Verbalizing LightGCN: Direct Learning of Textual Representations from User-Item Interaction Graph via LLMs",
+   "venue": "SIGIR 2026",
+   "problem": "Traditional CF embeddings are opaque to pretrained LLMs; semantic and collaborative signals remain disconnected.",
+   "approach": "VerbaLightGCN encodes collaborative signals as text and uses chain-of-thought prompting for LightGCN aggregation.",
+   "contribution": "LLM-based recommendation unifying semantic understanding and collaborative signals in fully language-native form.",
+   "primary_theme": "LLM-based collaborative filtering",
+   "methods": [
+    "large language models",
+    "collaborative filtering",
+    "chain-of-thought",
+    "recommendation"
+   ]
+  },
+  {
+   "title": "SciCheck: Reasoning Distillation for Biomedical Claim Verification",
+   "venue": "SIGIR 2026",
+   "problem": "Medical claim verification requires gold evidence during inference and expensive compute-intensive scaling.",
+   "approach": "SciCheck combines web evidence retrieval with reasoning distillation from LLM traces filtered for correct answers.",
+   "contribution": "Efficient biomedical claim verification outperforming proprietary LLMs with lower computational cost.",
+   "primary_theme": "Biomedical claim verification",
+   "methods": [
+    "reasoning distillation",
+    "evidence retrieval",
+    "fact verification",
+    "small language models"
+   ]
+  },
+  {
+   "title": "DLLM-Searcher: Adapting Diffusion Language Model for Efficient Search Agents",
+   "venue": "SIGIR 2026",
+   "problem": "Diffusion LLMs have latency and weak reasoning/tool-calling for search agents",
+   "approach": "Agentic SFT and VRPO post-training with flexible parallel generation paradigm",
+   "contribution": "Improves dLLM reasoning and tool-calling for efficient ReAct-based search agents",
+   "primary_theme": "LLM search agents",
+   "methods": [
+    "llm",
+    "agent",
+    "fine-tuning",
+    "diffusion"
+   ]
+  },
+  {
+   "title": "TM-Bench: Benchmarking Large Language Models on Low-Resource Traditional Mongolian",
+   "venue": "SIGIR 2026",
+   "problem": "LLMs lack systematic evaluation framework for Traditional Mongolian; performance severely limited on low-resource language",
+   "approach": "TM-Bench hybrid construction via translation-based adaptation, expert authoring, and semi-automated synthesis",
+   "contribution": "First comprehensive Traditional Mongolian benchmark with 18K instances across five tasks; reveals severe semantic collapse on generation",
+   "primary_theme": "low-resource language benchmark",
+   "methods": [
+    "benchmark",
+    "llm-evaluation",
+    "multilingual",
+    "low-resource"
+   ]
+  },
+  {
+   "title": "From Single- to Cross-Document: Benchmarking Multi-Granularity Event Analysis of Large Language Models",
+   "venue": "SIGIR 2026",
+   "problem": "LLM event analysis lacks comprehensive evaluation across document granularity levels",
+   "approach": "Multi-granularity benchmark with LLM-driven self-correcting annotation pipeline",
+   "contribution": "MiGUE-Bench assesses LLMs on atomic to cross-document event tasks",
+   "primary_theme": "event extraction",
+   "methods": [
+    "benchmark",
+    "llm",
+    "information-extraction"
+   ]
+  },
+  {
+   "title": "Does LLM Relevance Labelling Work for Arabic?",
+   "venue": "SIGIR 2026",
+   "problem": "LLM relevance labeling effectiveness unexplored for Arabic and other non-English languages",
+   "approach": "Evaluate LLM-generated Arabic relevance labels on system ordering and test collection",
+   "contribution": "Shows LLMs viable for Arabic IR evaluation with caveats on high-performing manual systems",
+   "primary_theme": "multilingual ir",
+   "methods": [
+    "llm",
+    "evaluation",
+    "multilingual"
+   ]
+  },
+  {
+   "title": "Attend to Fragments: How Key Information Affects Large Language Models for Factual Inconsistency Detection",
+   "venue": "SIGIR 2026",
+   "problem": "LLMs frequently fail to identify relevant information for factual inconsistency detection",
+   "approach": "Benchmark KIFI annotating key information with token permutation identifying untrustworthy decisions",
+   "contribution": "Token-based filtering improves inconsistency detection correlation by 1.3% on TRUE",
+   "primary_theme": "factual consistency detection",
+   "methods": [
+    "nlp",
+    "benchmark",
+    "token-permutation"
+   ]
+  },
+  {
+   "title": "Pretraining Exposure Explains Popularity Judgments in Large Language Models",
+   "venue": "SIGIR 2026",
+   "problem": "Popularity bias in LLMs unclear whether from real-world popularity or pretraining exposure statistics",
+   "approach": "Direct large-scale analysis of OLMo models using complete Dolma corpus exposure statistics",
+   "contribution": "Pretraining exposure strongly correlates with popularity; LLM judgments align more with exposure than Wikipedia",
+   "primary_theme": "popularity bias",
+   "methods": [
+    "corpus analysis",
+    "entity ranking",
+    "llm calibration"
+   ]
+  },
+  {
+   "title": "Efficient LLM Adaptation for Opinion Knowledge Graph Construction: Lessons from the Telecom Industry",
+   "venue": "SIGIR 2026",
+   "problem": "Adapting LLMs for structured opinion mining in telecom vertical, particularly for low-resource languages.",
+   "approach": "Systematic study of instruction-tuning trade-offs, data efficiency strategies across LLaMA-3, Qwen, Mistral.",
+   "contribution": "Counterintuitive findings on CPT benefits and data strategies for opinion knowledge graph construction.",
+   "primary_theme": "Opinion knowledge extraction",
+   "methods": [
+    "instruction-tuning",
+    "opinion-mining",
+    "vertical-adaptation"
+   ]
+  },
+  {
+   "title": "Code-Based English Models Reveal Surprising Performance on Chinese QA Pair Extraction Task",
+   "venue": "SIGIR 2026",
+   "problem": "Automated QA extraction from unstructured text lacks efficiency and consistency across languages",
+   "approach": "Code-based LLMs with expanded Chinese vocabulary for cross-lingual QA pair extraction",
+   "contribution": "Code Llama-M outperforms Chinese-specialized models with lower hallucination on Chinese text",
+   "primary_theme": "LLM QA extraction",
+   "methods": [
+    "llm",
+    "code-based-model",
+    "cross-lingual"
+   ]
+  }
+ ]
+}

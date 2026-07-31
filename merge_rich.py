@@ -1,10 +1,16 @@
 """Merge rich_out/*.json (keyed by gid) into data/rich.json. Reports coverage.
-Falls back to a delimiter regex when an agent emits an unescaped inner quote,
-which is safe because the 5 fields always appear in fixed order (bp,wh,ap,ww,po)."""
+Accepts the older five-field paper cards and the newer deep ten-field essays.
+Falls back to delimiter regex rescue for older malformed five-field batches."""
 import json, os, glob, re
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-OUT = os.path.join(HERE, "data", "rich_out")
+OUT_DIRS = [
+    os.path.join(HERE, "data", "rich_out"),
+    os.path.join(HERE, "data", "kdd_out"),
+]
+
+FIELDS = ("bp", "wh", "naive", "ap", "mech", "math", "dots", "ww", "po", "limits")
+LEGACY_FIELDS = ("bp", "wh", "ap", "ww", "po")
 
 BLOCK = re.compile(
     r'"(\d+)"\s*:\s*\{\s*"bp"\s*:\s*"(.*?)"\s*,\s*"wh"\s*:\s*"(.*?)"\s*,'
@@ -15,6 +21,7 @@ LEAK = re.compile(r'"\s*,\s*"(?:bp|wh|ap|ww|po)"\s*:\s*"')
 def clean(s):
     s = s.replace('\\"', '"').replace("\\n", " ")
     s = LEAK.split(s)[0]                       # drop any leaked field-delimiter litter
+    s = s.replace("**", "").replace("*", "")
     return re.sub(r"\s+", " ", s).strip().rstrip('"').strip()
 
 def rescue(text):
@@ -26,7 +33,8 @@ def rescue(text):
 
 rich = {}
 bad = []
-for f in sorted(glob.glob(os.path.join(OUT, "b*.json"))):
+for out_dir in OUT_DIRS:
+  for f in sorted(glob.glob(os.path.join(out_dir, "b*.json"))):
     raw = open(f).read()
     try:
         d = json.load(raw and __import__("io").StringIO(raw))
@@ -36,7 +44,8 @@ for f in sorted(glob.glob(os.path.join(OUT, "b*.json"))):
             bad.append(os.path.basename(f)); continue
     for gid, v in d.items():
         if isinstance(v, dict) and v.get("bp"):
-            rich[str(gid)] = {k: clean(v.get(k) or "") for k in ("bp", "wh", "ap", "ww", "po")}
+            keys = FIELDS if any(k in v for k in ("naive", "mech", "math", "dots", "limits")) else LEGACY_FIELDS
+            rich[str(gid)] = {k: clean(v.get(k) or "") for k in keys}
 
 json.dump(rich, open(os.path.join(HERE, "data", "rich.json"), "w"), indent=1)
 A = json.load(open(os.path.join(HERE, "data", "analysis.json")))["papers"]

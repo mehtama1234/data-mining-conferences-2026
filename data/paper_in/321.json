@@ -1,0 +1,11 @@
+{
+ "batch": "b021",
+ "paper": {
+  "id": "5e96c13f9d996c85897b37708b06c125bd9c055a",
+  "venue": "WWW 2026",
+  "title": "AHBid: An Adaptable Hierarchical Bidding Framework for Cross-Channel Advertising",
+  "abstract": "In online advertising, the inherent complexity and dynamic nature of advertising environments necessitate the use of auto-bidding services to assist advertisers in bid optimization. The complexity escalates in multi-channel scenarios, where effective allocation of budgets and constraints across channels with distinct behavioral patterns becomes critical for optimizing return on investment. Current approaches predominantly employ either optimization-based strategies or reinforcement learning (RL) techniques. However, optimization-based methods lack the flexibility to adapt to dynamic market conditions, while RL-based approaches struggle to capture essential historical dependencies and observational patterns within the constraints of Markov Decision Process (MDP) frameworks. To address these limitations, we propose AHBid, an Adaptable Hierarchical Bidding framework that integrates generative planning with real-time control. The framework employs a high-level generative planner utilizing diffusion models to dynamically allocate budgets and constraints through effective capture of historical context and temporal patterns. We introduce a constraint enforcement mechanism to ensure compliance with specified constraints, complemented by a trajectory refinement mechanism that enhances adaptability to environmental changes through historical data utilization. The system further incorpora",
+  "gid": 321,
+  "theme": "Online advertising bidding"
+ }
+}

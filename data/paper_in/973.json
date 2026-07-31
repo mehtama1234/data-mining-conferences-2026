@@ -1,0 +1,11 @@
+{
+ "batch": "b064",
+ "paper": {
+  "id": "db3ed14bfec6bbaa0fa0e371b47519b3b35c5b21",
+  "venue": "WSDM 2026",
+  "title": "Enhanced Cold-Start Sequential Recommendation with Causal Diffusion Preference Modeling",
+  "abstract": "Sequential recommendation has achieved remarkable success across various application domains due to its ability to capture dynamic user preferences. Therefore, its effectiveness significantly diminishes in user cold-start scenarios, where new users have limited or no interaction history. Current solutions typically design specialized model architectures to infer cold-start user preferences from auxiliary information, such as user attributes or social networks. However, such methods overlook compatibility with advanced sequential recommender models, preventing the efficient extraction of sequential features. To address this limitation, we propose CDMRec, a Causal Diffusion Preference Model for user cold-start sequential recommendation. CDMRec generates diffusion-based preference representations for cold-start users, which can be directly utilized by existing sequential recommendation models. The framework first constructs a Preference-Dominant Sequence (PDS) by isolating interactions most indicative of user interests, mitigating noise from irrelevant behaviors. Then, leveraging causal inference, CDMRec identifies key causal variables from PDS to condition the diffusion process, enabling the generation of personalized behavioral preferences. Extensive experiments on three public datasets demonstrate that CDMRec can be seamlessly integrated into mainstream sequential recommender m",
+  "gid": 973,
+  "theme": "Sequential cold-start"
+ }
+}

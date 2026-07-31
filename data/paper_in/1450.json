@@ -1,0 +1,11 @@
+{
+ "batch": "b096",
+ "paper": {
+  "id": "10.1145/3805712.3808534",
+  "venue": "SIGIR 2026",
+  "title": "Local Information Access in Marathi: Evaluating LLM-Native Web Retrieval in a Low-Resource Environment",
+  "abstract": "Web-augmented large language models (LLMs) promise end-to-end retrieval agents for time-sensitive information access, yet their reliability in low-resource environments remains unclear. We introduce MarathiWeb, a benchmark for evaluating LLM-native web retrieval in Marathi that separates translated global queries from natively authored, local information needs. We evaluate two frontier LLMs with built-in web search against a controlled Google-based retrieval baseline, and analyse retrieval depth, failure modes, and cost-accuracy trade-offs. Despite high tool invocation rates, accuracy drops sharply in Marathi, most severely for local queries, with the dominant failures arising from evidence integration rather than missing sources. We further find that shallow retrieval (one web call) is consistently the most accurate and cost-efficient strategy, while deeper multi-step search degrades performance. MarathiWeb exposes persistent gaps in local-language information access and provides an open benchmark for low-resource retrieval research.",
+  "gid": 1450,
+  "theme": "Low-resource web retrieval"
+ }
+}

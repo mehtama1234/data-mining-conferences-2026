@@ -1,0 +1,11 @@
+{
+ "batch": "b019",
+ "paper": {
+  "id": "54845e4da87b318b104d2d3bd281cd5d3b3aeaa2",
+  "venue": "WWW 2026",
+  "title": "MIGC-CMamba: Cross-Domain Mamba with Multi-Scale Imaging and Granular-Ball Computing for Traffic Flow Prediction",
+  "abstract": "With the increasing relevance of web mining and content analysis in uncovering mobility patterns from large-scale online data, traffic flow prediction plays a crucial role in proactive urban planning and enhancing the responsiveness of intelligent transportation systems. However, existing traffic flow prediction methods often fail to explicitly capture correlations in continuous multivariate sequences that are naturally suited for trend and periodic pattern extraction by vision models and rely on fixed spatial graphs that neglect the cognitive advantages of granular-ball structures, which limits their ability to model interactions and strengthen spatiotemporal dependencies. To address these challenges, this paper proposes a Cross-domain Mamba framework that integrates Multi-scale Imaging and Granular-ball Computing for traffic flow prediction (MIGC-CMamba). First, a multi-scale sequence imaging method is presented, which converts the original time series into image modality and leverages MambaVision to capture both local and global dependencies. Second, a multi-granularity spatial graph is constructed via granular-ball clustering, which balances global trend representation and local detail preservation. Third, a cross-domain enhancement mechanism adaptively integrates temporal and spatial domains, strengthening spatiotemporal dependencies. Lastly, extensive experiments demonstr",
+  "gid": 293,
+  "theme": "Spatiotemporal traffic forecasting"
+ }
+}

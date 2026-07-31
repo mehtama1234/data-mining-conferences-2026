@@ -1,0 +1,11 @@
+{
+ "batch": "b063",
+ "paper": {
+  "id": "ba8994d3d3a1ed1d13d75cff34b7e5bb6eb8d8c1",
+  "venue": "WSDM 2026",
+  "title": "Web-Mined Hypothesis Generation for Financial Markets: An Autonomous Backtesting Framework",
+  "abstract": "Financial markets are increasingly influenced by vast amounts of unstructured web data such as regulatory filings and social media, making it challenging to extract actionable insights. Traditional approaches to hypothesis generation rely heavily on expert knowledge and are often slow, subjective, and inefficient. There is a pressing need for automated systems that can mine financial data at scale, generate hypotheses, and validate them in real-time. We introduce AutoHypo-Fin, an autonomous framework for generating and backtesting financial hypotheses using web-mined data. By combining information extraction, knowledge graphs, retrieval-augmented generation, and backtesting with optimization, our framework autonomously generates, tests, and refines trading strategies. Through experiments from 2019 to 2024, we demonstrate that our framework outperforms traditional strategies in risk-adjusted returns, hit rate, and drawdown control. Ablation studies confirm the importance of each system component. AutoHypo-Fin offers a scalable, fully automated solution for financial hypothesis generation and testing, enhancing decision-making in quantitative finance.",
+  "gid": 958,
+  "theme": "Financial hypothesis generation"
+ }
+}

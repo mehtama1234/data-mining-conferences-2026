@@ -1,0 +1,11 @@
+{
+ "batch": "b059",
+ "paper": {
+  "id": "3d4b1cdd7d3d52566c8579fe199bd1ceaf4df60f",
+  "venue": "WSDM 2026",
+  "title": "Hybrid Dual-Semantics Modeling for Enhancing Large Language Model Based Recommendation",
+  "abstract": "The blossoming of large language models (LLMs) has greatly shifted the paradigm of Sequential Recommender System (SRS). Numerous studies have attempted to integrate ID-based collaborative signals and text information for effectively capturing both ID semantics and text semantics to enhance LLM-based recommendation. However, existing fusion methods suffer from challenges like fusion noise and the semantic gap. To address these issues, we propose Hybrid Dual-Semantics Modeling for enhancing LLM-based Recommendation (HDRec), an effective hybrid fusion method based on a design of dual low-rank adaptation (LoRA). HDRec employs two LoRAs processes on a shared LLM decoder, with each process handling information from one of the two semantics. We further implement a dedicated fusion mechanism exclusively at the inference stage, allowing the robust textual representation to serve as the primary signal, which is adaptively enhanced by unique collaborative signals from ID semantics, ensuring stable and accurate final predictions. To mitigate gradient conflicts caused by the dual LoRA processes, we introduce the alternating training of dual low-rank adaptation strategy. This method effectively resolves gradient conflicts and enables successful optimization of HDRec. Extensive experiments show that HDRec outperforms existing non-LLM-based and LLM-based state-of-the-art methods. The implement",
+  "gid": 898,
+  "theme": "LLM-based recommendation"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "batch": "b062",
+ "paper": {
+  "id": "85132412be9c258cb4383939790bd3b5a3937dd1",
+  "venue": "WSDM 2026",
+  "title": "Dual Conditional Diffusion for Sequential Recommendation",
+  "abstract": "Recent advancements in diffusion models have shown promising results in sequential recommendation (SR). Existing approaches predominantly rely on implicit conditional diffusion models, which compress user behaviors into a single representation during the forward diffusion process. While effective to some extent, this oversimplification often leads to the loss of sequential and contextual information, which is critical for understanding user behavior. Moreover, explicit information, such as user-item interactions or sequential patterns, remains underutilized, despite its potential to directly guide the recommendation process and improve precision. However, combining implicit and explicit information is non-trivial, as it requires dynamically integrating these complementary signals while avoiding noise and irrelevant patterns within user behaviors. To address these challenges, we propose Dual Conditional Diffusion Models for Sequential Recommendation (DCRec), which effectively integrates implicit and explicit information by embedding dual conditions into both the forward and reverse diffusion processes. This allows the model to retain valuable sequential and contextual information while leveraging explicit user-item interactions to guide the recommendation process. Specifically, we introduce the Dual Conditional Diffusion Transformer (DCDT), which dynamically integrate both impli",
+  "gid": 935,
+  "theme": "sequential recommendation"
+ }
+}

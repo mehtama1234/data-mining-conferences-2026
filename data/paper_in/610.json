@@ -1,0 +1,11 @@
+{
+ "batch": "b040",
+ "paper": {
+  "id": "b7e158af610b6babcc434afdc406dc61796f2eb8",
+  "venue": "WWW 2026",
+  "title": "A Contrastive Learning and Prompt-Driven Framework for Low-Resource User Geolocation",
+  "abstract": "Social media user geolocation is a fundamental yet challenging problem due to the scarcity of geotagged data and the heterogeneity of online user information. To address these challenges, we propose FewUser, a contrastive learning and prompt-driven framework for few-shot social media user geolocation. FewUser aligns user and location representations through a dual-objective framework that jointly optimizes contrastive and matching losses with hard negative mining, enabling robust geolocation under limited supervision. The model comprises a user representation module that fuses heterogeneous social media inputs via a pre-trained language model (PLM) and a lightweight user encoder, and a geographical prompting module that employs hard, soft, and semi-soft prompts to bridge PLM semantics with location-specific knowledge. To facilitate few-shot and cross-platform evaluation, we construct two new datasets, TwiU and FliU, featuring rich and standardized user- and post-level metadata. Extensive experiments on TwiU, FliU, and two public benchmarks demonstrate that FewUser consistently outperforms competitive baselines in various few-shot settings.",
+  "gid": 610,
+  "theme": "User geolocation"
+ }
+}

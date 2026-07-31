@@ -1,0 +1,11 @@
+{
+ "batch": "b063",
+ "paper": {
+  "id": "b9db9511562f1bd8c260786b1462b486c0dfdbc8",
+  "venue": "WSDM 2026",
+  "title": "Stealing Black-box Hyperdimensional Computing Models Without Data",
+  "abstract": "Hyperdimensional computing (HDC) is an emerging bio-inspired machine learning scheme for its balance between accuracy and efficiency. Similar to other machine learning models, a trained HDC model is a valuable intellectual property (IP) and subject to model stealing attacks. In this paper, we propose StealHD to functionally steal the HDC model under the strict and challenging ''data-free and black-box'' scenario, where the attacker can only query input to HDC models and observe corresponding output without knowing what data are used to train the model or the parameters in the model. Inspired by the characteristics of HDC algorithm, we leverage three noise back-ends and eight different augmentations to generate a surrogate dataset for attack following those patterns. We then feed the input to the victim model as queries to obtain the output similarities, based on which we train a surrogate HDC model to mimic the performance of the victim model. Experimental results on three datasets show that StealHD can effectively steal an HDC model under a strict data-free black-box scenario.",
+  "gid": 956,
+  "theme": "Model stealing attacks"
+ }
+}

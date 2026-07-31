@@ -1,0 +1,11 @@
+{
+ "batch": "b097",
+ "paper": {
+  "id": "10.1145/3805712.3808358",
+  "venue": "SIGIR 2026",
+  "title": "How Should Multimodal Information Be Chunked for Complex Question Answering?",
+  "abstract": "Effective question answering over heterogeneous documents requires not only powerful reasoning models but also careful decisions about how evidence is structured and retrieved. In many real-world settings, information is inherently multimodal: a researcher assessing a scientific finding must reason jointly over paragraphs, figures, and result tables; a financial analyst combines textual summaries with tabular data; and a clinician interprets diagnostic imaging alongside patient records. Yet the question of how to decompose such heterogeneous documents into meaningful, retrievable units of evidence remains largely unexplored. In text-only settings, the shift from document-level to passage-level retrieval has demonstrated that retrieval unit granularity is a consequential design choice, with finer-grained units consistently improving both retrieval precision and downstream question answering (QA) performance. However, this line of research has matured almost exclusively in unimodal settings. Current approaches to multimodal retrieval, whether based on joint embedding spaces or modality conversion pipelines, largely inherit the same assumption: that retrieval units are determined by document structure rather than by the informational needs of the query. Multimodal large language models (MLLMs) have demonstrated strong cross-modal reasoning capabilities, but operate over fixed cont",
+  "gid": 1466,
+  "theme": "Multimodal QA chunking"
+ }
+}

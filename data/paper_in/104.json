@@ -1,0 +1,11 @@
+{
+ "batch": "b006",
+ "paper": {
+  "id": "1e61869829c3344452f9c26d834ead0b2b2b6d0e",
+  "venue": "WWW 2026",
+  "title": "Learning-Based Optimization of Atomic Arbitrage in Decentralized Financial Systems",
+  "abstract": "Maximal Extractable Value (MEV) in decentralized finance (DeFi) enables searchers to profit from transaction ordering and arbitrage opportunities across Automated Market Makers (AMMs). Among MEV strategies, atomic triangular arbitrage is widely deployed due to its deterministic execution within a single transaction. However, executing profitable arbitrage under realistic constraints, such as limited wallet balance, pool liquidity, gas costs, and blockchain latency, remains a challenging optimization problem. In this work, we formulate atomic triangular arbitrage as a constrained optimization problem that jointly selects an ordered three-pool path and trade amount to maximize net profit. To solve this non-convex problem, we propose a Deep Reinforcement Learning approach based on Proximal Policy Optimization (PPO). Experimental results show that while exhaustive grid search attains the highest returns, it requires a significantly high amount of inference time, making it infeasible for on-chain execution. In contrast, the proposed PPO agent achieves millisecond-level inference latency while generating consistent positive profit. These findings highlight a fundamental speed\u2013profit trade-off in MEV extraction and demonstrate that PPO provides an effective and practical solution for atomic triangular arbitrage in DeFi.",
+  "gid": 104,
+  "theme": "DeFi arbitrage optimization"
+ }
+}

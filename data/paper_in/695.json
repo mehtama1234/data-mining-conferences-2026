@@ -1,0 +1,11 @@
+{
+ "batch": "b046",
+ "paper": {
+  "id": "d2aa55cacc9e48cbdad36f434fc85e843dbe3d69",
+  "venue": "WWW 2026",
+  "title": "How Quantum Period Finding Breaks Rivest Shamir Adleman Algorithms",
+  "abstract": "The Rivest Shamir Adleman (RSA) algorithm underpins much of modern digital security. It protects messages, passwords, and web services. However, advances in quantum computing pose a long-term threat to RSA, as quantum algorithms can exploit its mathematical structure. In this paper, we analyze how quantum computation can undermine the RSA algorithm using an explainable, dictionary-based quantum emulation framework. In this approach, each quantum state is represented as dict[k] = a, where k is a bitstring and a is a complex amplitude, enabling transparent tracking of quantum state evolution. We emulate key quantum gates through updated rules. The Hadamard gate creates superposition by splitting dictionary keys; phase gates modify amplitudes via complex rotations; and controlled-X and Toffoli gates perform conditional bit flips. These operations are consistent with standard quantum gate behaviour while remaining easy to analyse. We defined RSA variables such as prime_p, prime_q, modulus_n, public_key_e, private_key_d, cipher_c, input_x, and period_r. We demonstrated how quantum processes can identify periodic structure, factor the modulus, and recover the private key. By revealing the full attack path, this research provides an interpretable view of quantum threats to the RSA algorithm. The proposed framework supports a useful understanding of quantum security risks. It also high",
+  "gid": 695,
+  "theme": "Quantum cryptography"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "batch": "b044",
+ "paper": {
+  "id": "cb6ef2cd84b7859f77b34b3e9155decfa76bc998",
+  "venue": "WWW 2026",
+  "title": "Unstructured to Structured: Building Knowledge Graphs from Documents for Web Applications",
+  "abstract": "The Web is overflowing with unstructured content, ranging from scientific papers, enterprise documents to social media posts. Unlocking the knowledge hidden in these sources is critical for next-generation Web intelligence, enabling semantic search, advanced reasoning, and deep collaboration with Large Language Models (LLMs). This tutorial presents a comprehensive overview of methods for transforming unstructured Web content into structured Knowledge Graphs (KGs), addressing key challenges in information extraction across multiple dimensions, including entities and relations, events, spatio-temporal indices, visual layouts, and metadata. We then discuss methods for constructing and curating high-quality, multi-perspective KGs at scale. Participants will gain a systematic understanding of state-of-the-art methods, including recent advances in document analysis, document-to-KG approaches, and hybrid systems combining LLMs with structured knowledge, such as LLM-driven knowledge graph construction from unstructured documents, RAG over enterprise knowledge bases, KG-augmented LLMs for grounded reasoning, and neuro-symbolic reasoning pipelines. We will cover the paradigm shift of knowledge graph construction from supervised deep learning models to LLM-assisted knowledge engineering while highlighting open challenges such as scalability, factual consistency, and evaluation. We will de",
+  "gid": 663,
+  "theme": "Knowledge graph construction"
+ }
+}

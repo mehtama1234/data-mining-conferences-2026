@@ -1,0 +1,11 @@
+{
+ "batch": "b023",
+ "paper": {
+  "id": "67fedb3c8075343ad7934499c804c082a29a4101",
+  "venue": "WWW 2026",
+  "title": "IntraAI: Bridging Human-AI Understanding Through Intelligent Interface Design",
+  "abstract": "The rapid proliferation of Generative AI and LLM-based chatbots necessitates interfaces that go beyond simple utility to foster user autonomy and understanding. Current ''black box'' interactions often obscure critical model behaviors, such as situational awareness and strategic conformity, hindering the development of interaction literacy. This paper presents IntraAI, an intelligent interface system designed to bridge this transparency gap through interactive visualization and reflective analysis. IntraAI is organized around three core design principles: Accessible AI for All, Adaptive Learning and Growth, and Trust and Collective Understanding. By making hidden alignment signals and reasoning patterns visible, the platform empowers users to interpret complex model behaviors and build calibrated trust. Through its modular and user-centric design, IntraAI demonstrates how intelligent interfaces can transform passive consumption into active, critical human-AI collaboration. The system is available at https://github.com/wad3birch/Intra_AI.",
+  "gid": 353,
+  "theme": "AI interface transparency"
+ }
+}

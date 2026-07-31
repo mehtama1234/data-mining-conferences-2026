@@ -1,0 +1,11 @@
+{
+ "batch": "b040",
+ "paper": {
+  "id": "b8f3c0ea45bc833eaaadd1a134de47c6e574489f",
+  "venue": "WWW 2026",
+  "title": "Leveraging LLM and Multiscale Knowledge States to Improve Knowledge Tracing in Programming Tasks",
+  "abstract": "Knowledge Tracing (KT) is a core task in intelligent tutoring systems, designed to model the dynamic evolution of students' knowledge states by predicting their performance on specific problems. However, existing KT models, primarily developed for traditional subject domains, exhibit poor generalization to programming tasks due to several distinct challenges. First, student responses in programming tasks are characterized by high uncertainty. Second, programming tasks typically provide continuous scores based on the proportion of passed test cases, in contrast to the binary correctness assumed by traditional KT models, with these test-case-based scores often being noisy. Third, most KT models rely exclusively on the understanding of knowledge concepts for performance prediction, whereas success in programming tasks is heavily contingent upon logical reasoning and problem-specific comprehension. To address these issues, we propose an LLM-driven Interaction Enrichment Framework (MIE) to mitigate high uncertainty and problematic labeling, and introduce the Multi-Level Programming Knowledge Tracing (MLPKT) model to capture students' knowledge states across multiple dimensions. MLPKT conducts multi-layer analysis of student submissions to identify the root causes of errors and assign semantically meaningful fine-grained labels. Additionally, we propose a three-level, three-phase KT ",
+  "gid": 614,
+  "theme": "Programming knowledge tracing"
+ }
+}

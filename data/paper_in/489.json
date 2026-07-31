@@ -1,0 +1,11 @@
+{
+ "batch": "b032",
+ "paper": {
+  "id": "929476d0311da8bf550573cb89cbeb2ffa782faf",
+  "venue": "WWW 2026",
+  "title": "Not All Information Brings Benefits: Personalization-Driven Agent Debate for Conversational Recommendation",
+  "abstract": "Conversational recommender systems (CRSs) aim to provide real-time recommendations through dynamic interactions between users and the system. Recent studies have revealed the value of personalized information derived from users' historical dialogue records in refining user preferences. However, existing methods often utilize the entire historical dialogue of a user indiscriminately, leading to the issue of cognitive negative transfer, wherein historical dialogue sessions impede rather than facilitate current decision-making. This ultimately degrades the performance of conversational recommendations. To address this issue, inspired by the behavioral decision theory, this paper proposes a novel model, Personalization-Driven Agent Debate for Conversational Recommendation, named EyeCRS. EyeCRS is comprised of two core components: (i) The Multi-Agent Debate Module employs supporting and opposing agents to simulate a human-like debate process, thereby enabling a rigorous evaluation of whether historical dialogue sessions may introduce cognitive negative transfer into the recommender. (ii) The Parametric Injection Module, subsequently, parameterizes the historical dialogues that are validated as positive and injects them into the intrinsic parameter space of the downstream recommender, thereby effectively enhancing the model's ability to internalize and utilize personalized knowledge.",
+  "gid": 489,
+  "theme": "conversational recommendation"
+ }
+}

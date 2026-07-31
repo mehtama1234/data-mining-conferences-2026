@@ -1,0 +1,11 @@
+{
+ "batch": "b093",
+ "paper": {
+  "id": "10.1145/3805712.3808439",
+  "venue": "SIGIR 2026",
+  "title": "Learning to Trust: Dynamic Utilization of Retrieval-Augmented Generation for E-commerce Search Relevance",
+  "abstract": "Accurately estimating query-item relevance is vital for e-commerce ranking and conversion. While Large Language Models (LLMs) excel at reasoning, they often lack specialized knowledge required for long-tail or fast-evolving queries, necessitating Retrieval-Augmented Generation (RAG). However, production environments face three critical challenges: (1) external context is inherently noisy and inconsistent; (2) extreme latency budgets prohibit multi-stage processing or refinement; and (3) the model must simultaneously assess relevance and context-trust within a unified inference pass. We propose DyKnow-RAG, a reinforcement learning framework that teaches LLMs to learn to trust through dynamic utilization of external knowledge. Built on Group Relative Policy Optimization (GRPO), DyKnow-RAG utilizes a dual-group rollout strategy (parametric-only vs. with-context) and a posterior-driven inter-group advantage scaling mechanism. This enables the model to optimize context utilization without human process labels or extra inference overhead. Our pipeline further integrates structured Chain-of-Thought (CoT) and an uncertainty-prioritized RL pool to stabilize training. Offline evaluations show significant Macro-F1 and Accuracy gains, particularly on noise-sensitive query slices. Importantly, DyKnow-RAG has been deployed in Taobao's production system, serving hundreds of millions of active",
+  "gid": 1404,
+  "theme": "Retrieval-augmented relevance"
+ }
+}

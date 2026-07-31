@@ -1,0 +1,11 @@
+{
+ "batch": "b064",
+ "paper": {
+  "id": "cd5b6e7838a6b9956ccc0ee714aae8cef722ede3",
+  "venue": "WSDM 2026",
+  "title": "Calibration in Dynamic Recommender Systems",
+  "abstract": "Recommender systems are expected to provide information based on the user's preference. Nonetheless, in fact, recommendations may mainly represent the user's main interests and narrow out their lesser interests because recommender systems are mostly optimized towards accuracy. To address this issue, Calibration is introduced to recommender systems, ensuring recommendations presenting the corresponding proportions of user's interests. Though previous research extended calibration beyond the original formation, most research is based on static recommender system settings, where user preference is static and recommender system is one-shot without systematic dynamics, like the feedback loop effect. My thesis aims to further extend our understanding towards calibration in a user-centered dynamic recommender system by 1) proposing adaptive calibration aware of dynamic user preferences with two dynamic types, 2) conducting synthetic analysis to investigate calibration's benefits and limitations from a long-term perspective, and 3) gaining user centered perceptions on calibration with a user study. This research aims to provide a more realistic and thorough view of calibration in dynamic recommender systems.",
+  "gid": 964,
+  "theme": "Calibration dynamics"
+ }
+}

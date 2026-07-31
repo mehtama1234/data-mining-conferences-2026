@@ -1,0 +1,11 @@
+{
+ "batch": "b079",
+ "paper": {
+  "id": "10.1145/3805712.3808588",
+  "venue": "SIGIR 2026",
+  "title": "Content-Based Dataset Knowledge Graphs for Dataset Search",
+  "abstract": "Dataset search remains hindered by a reliance on sparse, incomplete metadata that overlooks semantic connections in the data itself. We introduce CoDaKG, the first content-enriched dataset knowledge graph aligned with the NTCIR benchmark. Unlike metadata-only methods, CoDaKG systematically extracts relationships from both metadata and heterogeneous data files. We also release an open-source Python toolkit for easily building CoDaKG instances for any dataset collection. Experiments demonstrate that CoDaKG's enriched signals exhibit a positive trend in ad hoc retrieval and yield significant improvements in graph-based re-ranking of datasets. All resources are publicly available.",
+  "gid": 1198,
+  "theme": "dataset search"
+ }
+}

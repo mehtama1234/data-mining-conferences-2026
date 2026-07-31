@@ -1,0 +1,11 @@
+{
+ "batch": "b054",
+ "paper": {
+  "id": "f47262994a8cf3b97e4b11c1ad1717cdd57180e4",
+  "venue": "WWW 2026",
+  "title": "Temporal-Series-Aware Adaptive Positional Encoding for Transformer-based Sequential Recommendation",
+  "abstract": "With the rapid proliferation of short-video platforms and content-driven social networks, sequential recommendation models capable of accurately capturing user interests have become increasingly crucial. Among these, Transformer-based sequential recommendation models have gained widespread adoption due to their superior ability. The positional encoding (PE) in Transformer architectures serves to incorporate positional information into sequences. However, relying solely on original absolute positional information may be insufficient for sequential recommendation models. In contrast, the dwell time after interactions (i.e., the time intervals between consecutive user interactions) provides a more accurate reflection of users' emotional responses and evolving interests. Despite its significance, this aspect has often been overlooked in existing works. To fully utilize this information, our work introduces an adaptive PE method, termed TSAPE (Temporal-Series-Aware Positional Encoding). This approach introduces an innovative modeling of the sequence of time intervals between user interactions, rather than the numerical values of the intervals themselves, thereby capturing real-time feedback on user interests and integrating it with conventional PE mechanisms. Furthermore, we employ multiple layers of one-dimensional convolutional networks and attention mechanisms to endow the featur",
+  "gid": 817,
+  "theme": "Sequential recommendation encoding"
+ }
+}

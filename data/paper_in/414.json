@@ -1,0 +1,11 @@
+{
+ "batch": "b027",
+ "paper": {
+  "id": "7ac3307dfa6e15f61a500848febdf1b54e6395d7",
+  "venue": "WWW 2026",
+  "title": "Explainable Graph Sparsification with Shapley Values",
+  "abstract": "We consider the problem of graph sparsification while preserving the test accuracy of Graph Neural Networks (GNNs). Prior work in this area is often motivated by the Lottery Ticket Hypothesis, which aims to prune redundant edges. However, these sparsification approaches typically operate as black boxes and provide no justification for which edges are removed. In contrast, edge importance scores obtained from GNN explanation methods provide a principled and interpretable basis for sparsification. In particular, we show that Shapley value\u2013based explainers such as GNNShap enable effective sparsification, allowing up to 80% of edges to be removed without degrading model accuracy. We show that Shapley values are well-suited for this task due to their robustness in identifying less influential edges, resulting in sparse yet faithful subgraphs that are efficient for downstream applications.",
+  "gid": 414,
+  "theme": "Graph sparsification"
+ }
+}

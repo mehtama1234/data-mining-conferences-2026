@@ -1,0 +1,11 @@
+{
+ "batch": "b057",
+ "paper": {
+  "id": "01763d898b7950b01660349da30d10163d6b5232",
+  "venue": "WSDM 2026",
+  "title": "Unsupervised Dense Retrieval with Conterfactual Contrastive Learning",
+  "abstract": "Efficiently retrieving a concise set of candidates from a large doc- ument corpus remains a pivotal challenge in Information Retrieval (IR). Neural retrieval models, particularly dense retrieval models built with transformers and pretrained language models, have been popular due to their superior performance. However, criticisms have also been raised on their lack of explainability and vulnerability to adversarial attacks. In response to these challenges, we propose to improve the robustness of dense retrieval models by enhancing their sensitivity of fine-grained relevance signals. A model achieving sensitivity in this context should exhibit high variances when doc- uments' key passages determining their relevance to queries have been modified, while maintaining low variances for other changes in irrelevant passages. This sensitivity allows a dense retrieval model to produce robust results with respect to attacks that try to promote documents without actually increasing their relevance. It also makes it possible to analyze which part of a document is actually relevant to a query, and thus improve the explainability of the retrieval model. Motivated by causality and counterfactual analysis, we propose a se- ries of counterfactual regularization methods based on game theory and unsupervised learning with counterfactual passages. Specifically, we first introduce a cooperative game",
+  "gid": 866,
+  "theme": "Robust dense retrieval"
+ }
+}

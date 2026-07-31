@@ -1,0 +1,11 @@
+{
+ "batch": "b046",
+ "paper": {
+  "id": "d15536422c3d6aacf62027040c54fd528a4e76e8",
+  "venue": "WWW 2026",
+  "title": "The 2nd Workshop on Social Science Meets Web Data: Reproducible and Reusable Computational Approaches (R2CASS)",
+  "abstract": "The R2CASS workshop advances computational reproducibility in social science, often relying on digital behavioral data from social media platforms. It makes the workshop relevant to computer scientists, social scientists, behavioral analysts, and digital policy makers to unite, discuss, and suggest improvements for making computational social science research more credible, reproducible, and impactful. The 2nd edition of the workshop builds on the 1st edition of R2CASS at ICWSM in Denmark, assessing the available resources as guidelines and practices, checklists and templates along with the services that facilitate their adoption. The workshop presents Methods Hub as a case for realizing these efforts by utilizing the available resources and integrating with the aligned services. Acknowledging the contributions of the 1st R2CASS edition in shaping and improving Methods Hub as a community-driven platform, we plan to continue with the brainstorming and discussion-based format for the workshop. The participants will engage in a collaborative hands-on session to perform a computational reproducibility task on social science use cases on the Methods Hub platform. It will set the stage to gather feedback and discuss the pains and gains of lowering the computational reproducibility barriers, enhancing scalability and transparency in offering easy-to-adopt solutions. By linking the met",
+  "gid": 690,
+  "theme": "Reproducibility social science"
+ }
+}

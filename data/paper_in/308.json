@@ -1,0 +1,11 @@
+{
+ "batch": "b020",
+ "paper": {
+  "id": "5aabc7d9945dd415f813d22dda426b2796ff95e3",
+  "venue": "WWW 2026",
+  "title": "Ethical Decision-Making under Moral Uncertainty",
+  "abstract": "Decision-making under uncertainty is central to many real-world applications. The multi-armed bandit (MAB) framework offers an effective model for balancing exploration and exploitation in such environments. In practice, decisions must frequently balance between conflicting moral principles, introducing moral uncertainty, where it is unclear which ethical framework (e.g., utilitarianism, deontological ethics) should be prioritized. This paper proposes a novel algorithm that incorporates moral uncertainty into the MAB framework. The algorithm extends the Upper Confidence Bound (UCB) approach by assigning dynamic moral weights to competing ethical frameworks, allowing it to adapt as it learns from outcomes. We derive theoretical results, including upper limits of regret, and discuss the performance of the algorithm under different levels of moral uncertainty. Our results show that the proposed algorithm successfully balances ethical considerations and performance, offering a flexible solution for decision-making under moral uncertainty in a range of applications.",
+  "gid": 308,
+  "theme": "Ethical decision-making"
+ }
+}

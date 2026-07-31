@@ -1,0 +1,11 @@
+{
+ "batch": "b059",
+ "paper": {
+  "id": "203097d7d9099f6b27472038a2fc56beee7789cd",
+  "venue": "WSDM 2026",
+  "title": "Waterlogformer: A Multimodal Model for Waterlogging Prediction",
+  "abstract": "Accurate prediction of waterlogging depth (WD) is a critical task for urban emergency management and smart-city development. Traditional hydrological forecasting models rely heavily on high-precision weather and terrain data, and struggle to adapt to dynamic rainfall patterns. Recently, deep learning-based methods have shown promising results in capturing complex dynamic patterns. However, these data-driven models face challenges in modeling hydrological mechanisms and effectively fusing multimodal data. To address these limitations, we propose Waterlogformer, a multimodal model for WD prediction. Waterlogformer employs a dual-branch architecture to jointly model WD and rainfall time series alongside static geospatial features. It computes cumulative rainfall based on terrain to incorporate water flow accumulation mechanisms, thereby effectively capturing the impact of rainfall on WD. Furthermore, a Multimodal Fusion Prediction Module fuses multimodal data, enhanced by spatial contrastive learning to improve the model's understanding of geographic relationships. Experiment results on a real-world dataset demonstrate the superior performance of Waterlogformer. The source code is available at https://github.com/decisionintelligence/Waterlogformer.",
+  "gid": 885,
+  "theme": "Spatiotemporal forecasting"
+ }
+}

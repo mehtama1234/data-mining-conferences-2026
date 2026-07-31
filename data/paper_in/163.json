@@ -1,0 +1,11 @@
+{
+ "batch": "b010",
+ "paper": {
+  "id": "2e401f64ee6afcc776cbfdc8f6b7b3e06d276976",
+  "venue": "WWW 2026",
+  "title": "Privacy-Aware Machine Unlearning with SISA for Reinforcement Learning\u2013Based Ransomware Detection",
+  "abstract": "Ransomware detection systems increasingly rely on behavior-based machine learning to address evolving attack strategies. However, emerging privacy compliance, data governance, and responsible AI deployment demand not only accurate detection but also the ability to efficiently remove the influence of specific training samples without retraining the models from scratch. In this study, we present a privacy-aware machine unlearning evaluation framework for reinforcement learning (RL)-based ransomware detection built on Sharded, Isolated, Sliced, and Aggregated (SISA) training. The framework enables efficient data deletion by retraining only the affected model shards rather than the entire detector, substantially reducing the retraining cost while preserving detection performance. We conduct a controlled comparative study using value-based RL agents, including Deep Q-Network (DQN) and Double Deep Q-Network (DDQN), under identical experimental settings with a cost-sensitive reward design and 5-fold stratified cross-validation on Windows~11 behavioral ransomware telemetry. Detection confidence is evaluated using a continuous Q-score margin, enabling ROC--AUC analysis beyond binary predictions. For unlearning, the dataset is partitioned into five shards with majority-vote aggregation, and a fast-unlearning path is evaluated by deleting 5% of the samples from a single shard and retraini",
+  "gid": 163,
+  "theme": "Machine unlearning"
+ }
+}

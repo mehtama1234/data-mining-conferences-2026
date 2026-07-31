@@ -1,0 +1,11 @@
+{
+ "batch": "b006",
+ "paper": {
+  "id": "1ccf001d7d5b0a3307eb29f2eb39686fc1d44236",
+  "venue": "WWW 2026",
+  "title": "The State of the Internet: Insights from Security Indicators",
+  "abstract": "The Internet is undergoing constant transformation, driven by emerging paradigms such as Web3 and Artificial Intelligence. Despite these developments, the secure operation of Internet services remains a fundamental prerequisite for ensuring confidentiality, integrity, and availability. In practice, however, many services continue to lack even basic, well-established security measures. In this paper, we propose a set of baseline security indicators that capture the deployment of foundational security measures across multiple layers of the Internet stack. All indicators are widely standardized, operationally mature, and can be analyzed non-intrusively. As a case study, we apply our tool Katti to the German Internet landscape, covering the population of known .de domains. The preliminary results provide a systematic overview of the deployment of security measures. Our findings reveal substantial heterogeneity across security indicators, with a significant fraction of domains fail to implement foundational security measures. We argue that, alongside innovation-driven trends, sustained attention to the implementation of basic security measures is certainly essential for the long-term resilience of the Internet.",
+  "gid": 98,
+  "theme": "Internet security indicators"
+ }
+}

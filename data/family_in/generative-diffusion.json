@@ -1,0 +1,573 @@
+{
+ "key": "generative-diffusion",
+ "theme": "Generative & Diffusion",
+ "n_papers": 225,
+ "pct": 11.6,
+ "by_venue": {
+  "WWW 2026": 98,
+  "WSDM 2026": 20,
+  "SIGIR 2026": 94,
+  "KDD 2026": 13
+ },
+ "theme_examples": [
+  {
+   "title": "Conflict-Aware RAG: Multi-Stage Learning with Conflict Signals for Robust Retrieval-Augmented Generation",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "Conditional Information Extraction with Diffusion Model on Fact-Condition Star Graph",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "The Verification Crisis: Expert Perceptions of GenAI Disinformation and the Case for Reproducible Provenance",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "Facilitating Generative Retrieval with Logical Denoising for Interpretable Conversational Search",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "Evolving Notions of Success on the Web: From Retrieval to Experience",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "OMGRec: One-time Matching-based Generative Rerank with Permutation-level Modeling in E-commerce",
+   "venue": "WWW 2026"
+  }
+ ],
+ "representative_papers": [
+  {
+   "title": "Out-of-distribution Generalized Generative AI",
+   "venue": "WWW 2026",
+   "problem": "Generative AI models fail under out-of-distribution shifts in deployment environments",
+   "approach": "Generalizable post-training techniques for OOD adaptation with unified multi-modal frameworks",
+   "contribution": "Tutorial on OOD generalization for MLLMs and diffusion models across understanding and generation",
+   "primary_theme": "Generalization",
+   "methods": [
+    "generative-ai",
+    "multimodal",
+    "domain-adaptation"
+   ]
+  },
+  {
+   "title": "AHBid: An Adaptable Hierarchical Bidding Framework for Cross-Channel Advertising",
+   "venue": "WWW 2026",
+   "problem": "Multi-channel bid optimization lacks flexibility adapting to dynamics while capturing historical temporal dependencies.",
+   "approach": "Hierarchical framework integrating diffusion model planning with constraint enforcement and trajectory refinement.",
+   "contribution": "AHBid enables adaptive budget allocation across advertising channels via generative planning and real-time control.",
+   "primary_theme": "Online advertising bidding",
+   "methods": [
+    "diffusion models",
+    "reinforcement learning",
+    "constraint optimization"
+   ]
+  },
+  {
+   "title": "Lang2Plan: An LLM-Powered Multi-Agent System for Building Layout Planning",
+   "venue": "WWW 2026",
+   "problem": "NL-guided layout planning requires strict input quality, lacks interactive refinement and immersive visualization",
+   "approach": "Multi-agent LLM decomposition with web-based 3D editor and ControlNet-guided diffusion rendering",
+   "contribution": "Lang2Plan enables robust layout generation from imperfect input with interactive 3D adjustment",
+   "primary_theme": "LLM-powered layout design",
+   "methods": [
+    "llm",
+    "multi-agent",
+    "generative-model"
+   ]
+  },
+  {
+   "title": "AWMA-MoE: Attention-Guided Watermark Adapter with MoE for Latent Diffusion Models",
+   "venue": "WWW 2026",
+   "problem": "Image watermarking introduces quality degradation; existing methods prioritize robustness over generation quality",
+   "approach": "Attention-guided adapter with spatially varying watermark strengths; mixture-of-experts for quality improvement",
+   "contribution": "Reduces image distortion while maintaining watermark robustness; balances post-hoc and in-generation methods",
+   "primary_theme": "Generative model watermarking",
+   "methods": [
+    "diffusion-model",
+    "mixture-of-experts",
+    "attention-adapter"
+   ]
+  },
+  {
+   "title": "RaDAR: Relation-aware Diffusion-Asymmetric Graph Contrastive Learning for Recommendation",
+   "venue": "WWW 2026",
+   "problem": "Graph contrastive learning for recommendations distorted by random edge perturbations",
+   "approach": "Dual augmentation: graph generative model and relation-aware denoising with diffusion",
+   "contribution": "Asymmetric contrastive learning outperforms baselines under noisy and sparse conditions",
+   "primary_theme": "Graph contrastive recommendation",
+   "methods": [
+    "gnn",
+    "contrastive",
+    "diffusion",
+    "denoising"
+   ]
+  },
+  {
+   "title": "Graph Diffusion Evolution Model for Multi-Conditional Molecular Generation",
+   "venue": "WWW 2026",
+   "problem": "Multi-condition molecular generation misses joint distribution of conditions during generation",
+   "approach": "Chain-like Markov evolution process gradually adjusting molecular structure with two-stage training",
+   "contribution": "Improved molecular property control and condition adherence on polymer and small molecule datasets",
+   "primary_theme": "Molecular generation",
+   "methods": [
+    "diffusion",
+    "markov",
+    "generative"
+   ]
+  },
+  {
+   "title": "STG-DGR: Fraud Detection on Streaming Transaction Graphs with Diffusion-based Generative Replay",
+   "venue": "WWW 2026",
+   "problem": "Graph continual learning on streaming transactions faces catastrophic forgetting of fraud patterns; storage constraints limit replay capacity.",
+   "approach": "Diffusion-based generative replay generates synthetic STG samples via hierarchical denoising; CSP and DSG handle heterogeneity and dependencies.",
+   "contribution": "STG-DGR retains learned fraud patterns without storing real samples; effective on four streaming fraud datasets.",
+   "primary_theme": "Graph continual learning fraud detection",
+   "methods": [
+    "diffusion",
+    "gnn",
+    "continual-learning"
+   ]
+  },
+  {
+   "title": "DynaFLUX: Implicit Dynamics-Preserving Reinforcement Learning for Topology-Free Influence Maximization",
+   "venue": "WWW 2026",
+   "problem": "Influence maximization fails without network topology due to hidden, noisy or privacy-protected links",
+   "approach": "End-to-end generative framework learning latent dynamics from time series with RL seed selection policy",
+   "contribution": "DynaFLUX identifies influential spreaders using self-attention pointer and Monte Carlo diffusion rewards",
+   "primary_theme": "Influence maximization topology-free",
+   "methods": [
+    "reinforcement-learning",
+    "generative-model",
+    "pointer-networks"
+   ]
+  },
+  {
+   "title": "GSDiffRec: Enhancing Personalized Sequential Recommendation via Diffusion Augmentation and Guidance Optimization",
+   "venue": "WSDM 2026",
+   "problem": "Sequential recommendation faces sample drift in diffusion models; limited adaptability to noisy data",
+   "approach": "Geodesic Diffusion Module with manifold constraints; Semantic-Targeted Guidance with shaped attention",
+   "contribution": "GSDiffRec improves generative sequential recommendation via geodesic walks and enhanced transformer guidance",
+   "primary_theme": "sequential recommendation",
+   "methods": [
+    "diffusion_models",
+    "recommendation",
+    "transformer"
+   ]
+  },
+  {
+   "title": "From Agnostic to Specific: Latent Preference Diffusion for Multi-Behavior Sequential Recommendation",
+   "venue": "KDD 2026",
+   "problem": "Multi-behavior recommendations ignore latent user preferences and suffer from low-entropy behaviors to high-entropy items asymmetry.",
+   "approach": "Generative diffusion model from agnostic to behavior-specific latent preferences via multimodal autoencoders and RoPE.",
+   "contribution": "FatsMB framework learns diverse, accurate recommendations on multi-behavior sequences.",
+   "primary_theme": "Recommender systems",
+   "methods": [
+    "diffusion models",
+    "autoencoder",
+    "multi-behavior learning",
+    "generative modeling"
+   ]
+  },
+  {
+   "title": "Communication-efficient Federated Graph Classification via Generative Diffusion Modeling",
+   "venue": "KDD 2026",
+   "problem": "Federated GNNs face high communication costs and non-IID data across decentralized clients.",
+   "approach": "Generative diffusion models on each client capture local graph distributions, shared with server, then generate synthetic graphs.",
+   "contribution": "CeFGC reduces communication to three rounds via generative models, handling non-IID data and proving constant-round complexity.",
+   "primary_theme": "Federated learning",
+   "methods": [
+    "federated learning",
+    "diffusion models",
+    "graph neural networks",
+    "generative modeling"
+   ]
+  },
+  {
+   "title": "AbFlow: End-to-end Paratope-Centric Antibody Design by Interaction Enhanced Flow Matching",
+   "venue": "KDD 2026",
+   "problem": "Antibody design lacks generative frameworks for full-atom structures that exploit antigen-specific geometric information for local binding interfaces.",
+   "approach": "Use flow-matching with equivariant surface encoders to end-to-end design antibodies, leveraging antigen interaction data to refine CDR-H3 and global structure.",
+   "contribution": "AbFlow generates high-quality antibodies with improved binding affinity by incorporating antigen surface geometry into diffusion-based design.",
+   "primary_theme": "Molecular design",
+   "methods": [
+    "flow matching",
+    "optimal transport",
+    "equivariant neural networks",
+    "generative modeling"
+   ]
+  },
+  {
+   "title": "Conflict-Aware RAG: Multi-Stage Learning with Conflict Signals for Robust Retrieval-Augmented Generation",
+   "venue": "WWW 2026",
+   "problem": "RAG systems fail when integrating conflicting web-sourced information, leading to unreliable responses",
+   "approach": "Multi-stage optimization using conflict signal from generative probabilities with SFT, DPO, and reranking",
+   "contribution": "Conflict-Aware RAG robustly handles knowledge conflicts via preference optimization",
+   "primary_theme": "Robust retrieval-augmented generation",
+   "methods": [
+    "preference optimization",
+    "conflict detection",
+    "knowledge integration"
+   ]
+  },
+  {
+   "title": "Conditional Information Extraction with Diffusion Model on Fact-Condition Star Graph",
+   "venue": "WWW 2026",
+   "problem": "Conditional information extraction overlooks hierarchical dependencies and requires exploring all mention combinations",
+   "approach": "Diffusion model on fact-condition star graph with deterministic in-order matching strategy",
+   "contribution": "Improved conditional quintuple extraction via hierarchical graph structure and denoising",
+   "primary_theme": "conditional knowledge extraction",
+   "methods": [
+    "diffusion-model",
+    "knowledge-graph",
+    "information-extraction"
+   ]
+  },
+  {
+   "title": "Facilitating Generative Retrieval with Logical Denoising for Interpretable Conversational Search",
+   "venue": "WWW 2026",
+   "problem": "Noisy context and poor interpretability in conversational search systems",
+   "approach": "LLM-based logic-enhanced retrieval with curriculum learning and policy optimization",
+   "contribution": "LogiCGR improves robustness and interpretability of conversational search through logical denoising",
+   "primary_theme": "Conversational search",
+   "methods": [
+    "llm",
+    "retrieval",
+    "dialogue"
+   ]
+  },
+  {
+   "title": "OFA-MAS: One-for-All Multi-Agent System Topology Design based on Mixture-of-Experts Graph Generative Models",
+   "venue": "WWW 2026",
+   "problem": "Current MAS design is task-specific; poor generalization to unseen domains.",
+   "approach": "Universal one-for-all model using Task-Aware Graph State Encoder and Mixture-of-Experts.",
+   "contribution": "Single model generates adaptive collaboration graphs for any task via MoE-driven topology prediction.",
+   "primary_theme": "multi-agent system design",
+   "methods": [
+    "moe",
+    "graph_generation",
+    "gnn"
+   ]
+  },
+  {
+   "title": "Large Language Models-Enhanced Semantic Diffusion for User-Centric Recommendation",
+   "venue": "WWW 2026",
+   "problem": "Knowledge graphs lack user-side structural information due to scarcity and improper granularity for recommendations",
+   "approach": "LLMs infer user interests; diffusion models generate contrastive views with semantic transitions",
+   "contribution": "SEDIRec integrates user-side and item-side information via LLM-diffusion for sparse user recommendations",
+   "primary_theme": "Knowledge-aware recommendation",
+   "methods": [
+    "llm",
+    "diffusion",
+    "contrastive_learning",
+    "graph"
+   ]
+  },
+  {
+   "title": "Multi-view Hierarchical Graph Contrastive Learning based on Asynchronous Asymmetric Structure",
+   "venue": "WWW 2026",
+   "problem": "Contrastive learning lacks feature diversity, multi-level semantics, and balance between tolerance and consistency",
+   "approach": "Multi-view hierarchical graph contrastive learning with diffusion matrix and asynchronous asymmetric structure",
+   "contribution": "Three-level contrastive loss framework for node, subgraph, global graph classification",
+   "primary_theme": "Graph contrastive learning",
+   "methods": [
+    "contrastive",
+    "graph",
+    "diffusion",
+    "hierarchical"
+   ]
+  },
+  {
+   "title": "FedDiG: Frequency-Guided Diffusion Diversity for Generalizable Federated Time Series Classification",
+   "venue": "WWW 2026",
+   "problem": "Federated time-series classification struggles with source heterogeneity and OOD patterns",
+   "approach": "Frequency-guided diffusion for diversity generation across clients with cross-frequency sampling",
+   "contribution": "FedDiG outperforms baselines by synthesizing diverse spectral patterns for improved generalization",
+   "primary_theme": "Federated time-series",
+   "methods": [
+    "diffusion",
+    "federated",
+    "frequency",
+    "timeseries"
+   ]
+  },
+  {
+   "title": "Conditional Diffusion Guided Knowledge Transfer for Multi-Domain Knowledge Graph Completion",
+   "venue": "WWW 2026",
+   "problem": "Multi-domain knowledge graph completion loses domain-specific information when enforcing consistency constraints",
+   "approach": "Generation-based paradigm using conditional diffusion models guided by support knowledge graphs",
+   "contribution": "Generates domain-general embeddings while preserving domain-specific information across KGs",
+   "primary_theme": "Knowledge graph completion",
+   "methods": [
+    "diffusion-models",
+    "knowledge-graphs",
+    "conditional-generation"
+   ]
+  },
+  {
+   "title": "Many Hands Make Light Work: Group-based Information Diffusion Prediction over Long-Context Cascades",
+   "venue": "WWW 2026",
+   "problem": "Individual-level diffusion prediction is computationally expensive and truncates long cascade histories",
+   "approach": "Group-based prediction framework with task-regularized information bottleneck and inter-group attention",
+   "contribution": "Reduces complexity from quadratic to linear enabling modeling of cascades exceeding 10,000 users",
+   "primary_theme": "Information diffusion",
+   "methods": [
+    "group-analysis",
+    "information-bottleneck",
+    "graph-attention"
+   ]
+  },
+  {
+   "title": "Anatomy of Generative Scam Campaigns in Online Advertising Ecosystems",
+   "venue": "WWW 2026",
+   "problem": "AI-enabled scam campaigns resist moderation through scale, rotation, and cloaking strategies",
+   "approach": "Campaign-level analysis of production templates, variants, auxiliary masking content",
+   "contribution": "Empirical characterization shows scams prioritize scale and resilience over fidelity",
+   "primary_theme": "Scam detection advertising",
+   "methods": [
+    "campaign_analysis",
+    "temporal_patterns",
+    "content_analysis"
+   ]
+  },
+  {
+   "title": "DiSCoQR: Diffusion-Driven Semantic Compression for Robust Image Steganography in Standard QR Codes",
+   "venue": "WWW 2026",
+   "problem": "Covert visual transmission requires robust compression and seamless QR code integration",
+   "approach": "Diffusion models with semantic compression into standard-compliant QR code binary regions",
+   "contribution": "DiSCoQR achieves 400:1 compression while maintaining semantic equivalence and QR functionality",
+   "primary_theme": "Steganography compression",
+   "methods": [
+    "diffusion_model",
+    "compression",
+    "steganography",
+    "semantic_analysis"
+   ]
+  },
+  {
+   "title": "AdaQE-CG: Adaptive Query Expansion for Web-Scale Generative AI Model and Data Card Generation",
+   "venue": "WWW 2026",
+   "problem": "Automated GAI model and data card generation faces static templates, info scarcity, and no benchmarks",
+   "approach": "Adaptive query expansion with context-aware extraction and cross-card knowledge transfer",
+   "contribution": "MetaGAI-Bench benchmark and AdaQE-CG framework for transparent AI system documentation",
+   "primary_theme": "AI model documentation",
+   "methods": [
+    "information-extraction",
+    "query-expansion",
+    "knowledge-transfer"
+   ]
+  },
+  {
+   "title": "DHOW-MiLLA: Joint Workshop on Diffusion of Harmful Content on Online Web and Countering Misinformation in the Age of LLMs and Agents",
+   "venue": "WWW 2026",
+   "problem": "Harmful content analysis fragmented across platforms, languages, topics; limited cross-platform counter-measure study.",
+   "approach": "Workshop unifying research on harmful content diffusion across platforms, languages, and content types.",
+   "contribution": "Brings together misinformation, hate speech, cyberbullying research under one framework with LLM/agent focus.",
+   "primary_theme": "Harmful content mitigation",
+   "methods": [
+    "content-moderation",
+    "misinformation-detection",
+    "cross-platform"
+   ]
+  },
+  {
+   "title": "Industrialized Deception: The Collateral Effects of LLM-Generated Misinformation on Digital Ecosystems",
+   "venue": "WWW 2026",
+   "problem": "AI-generated misinformation impacts information quality and detection capability",
+   "approach": "JudgeGPT platform and RogueGPT stimulus engine for perception study",
+   "contribution": "Detection capabilities improved but generation-detection arms race continues",
+   "primary_theme": "LLM misinformation",
+   "methods": [
+    "content-detection",
+    "evaluation-platform",
+    "generative-ai"
+   ]
+  },
+  {
+   "title": "Beyond the Flat Sequence: Hierarchical and Preference-Aware Generative Recommendations",
+   "venue": "WWW 2026",
+   "problem": "Generative recommenders ignore temporal hierarchy and introduce attention noise in sparse histories",
+   "approach": "Two-stage framework with masked item modeling and preference-guided sparse attention",
+   "contribution": "Hierarchical and preference-aware approach improving efficiency and signal-to-noise in recommendation",
+   "primary_theme": "Generative recommendation",
+   "methods": [
+    "masked_language_model",
+    "attention",
+    "hierarchical"
+   ]
+  },
+  {
+   "title": "Fine-Grained Visual Understanding for Multimodal and Trustworthy AI",
+   "venue": "WWW 2026",
+   "problem": "Fine-grained visual understanding datasets lack scale, coverage, and multimodal integration for trustworthiness",
+   "approach": "Comprehensive survey covering FGVC datasets, transformer architectures, generative augmentation, multimodal fusion",
+   "contribution": "Research roadmap for FGVC addressing robustness, explainability, data efficiency, and real-world deployment",
+   "primary_theme": "Fine-grained visual categorization",
+   "methods": [
+    "vision_transformer",
+    "data_augmentation",
+    "multimodal"
+   ]
+  },
+  {
+   "title": "Generative Archetype-Grounded Item Representations for Sequential Recommendation",
+   "venue": "WWW 2026",
+   "problem": "Item representations ignore target audiences and gap between semantics and user behavior",
+   "approach": "LLM-inferred archetype representations with behavioral calibration objective",
+   "contribution": "Generative archetype-grounded representations improving sequential recommendation quality",
+   "primary_theme": "Sequential recommendation",
+   "methods": [
+    "llm",
+    "embedding",
+    "sequential-modeling"
+   ]
+  },
+  {
+   "title": "TRACE: Trajectory Recovery with State Propagation Diffusion for Urban Mobility",
+   "venue": "WWW 2026",
+   "problem": "Sparse GPS trajectories with low sampling rates limit location-based service quality",
+   "approach": "TRACE diffusion model with state propagation mechanism for dense trajectory reconstruction",
+   "contribution": "Achieves 26% accuracy improvement in recovering dense, continuous urban mobility trajectories",
+   "primary_theme": "Trajectory reconstruction",
+   "methods": [
+    "diffusion-model",
+    "state-propagation",
+    "spatiotemporal-modeling"
+   ]
+  },
+  {
+   "title": "GAM: A Generative Auto-Marketing Framework in Online E-commerce Platforms",
+   "venue": "WWW 2026",
+   "problem": "Auto-marketing requires joint bidding and coupon decisions under self-funding constraints in dynamic environments",
+   "approach": "Generative model with constraint-aware reward alignment using Group Relative Policy Optimization",
+   "contribution": "GAM framework balances business objectives and constraint satisfaction for e-commerce auto-marketing",
+   "primary_theme": "LLM e-commerce optimization",
+   "methods": [
+    "reinforcement-learning",
+    "llm",
+    "constraint-optimization"
+   ]
+  },
+  {
+   "title": "Optimizing Multi-Turn Interactive Recommendation Agents via Generative Intrinsic Motivation",
+   "venue": "WWW 2026",
+   "problem": "Multi-turn interactive recommendation agents lack effective credit assignment and efficient exploration in sparse reward environments.",
+   "approach": "Generative intrinsic motivation framework modeling autonomy, competence, and relatedness drives for preference optimization.",
+   "contribution": "GIMO enables fine-grained credit assignment and hint-guided exploration for multi-skill interactive recommendation agent training.",
+   "primary_theme": "Interactive recommendation agents",
+   "methods": [
+    "reinforcement learning",
+    "intrinsic motivation",
+    "preference optimization"
+   ]
+  },
+  {
+   "title": "SLFM: Semi-Supervised Local Community Detection Based on Hyperbolic Flow Matching",
+   "venue": "WWW 2026",
+   "problem": "Semi-supervised local community detection suffers accumulated errors and initial seed sensitivity misguiding expansion.",
+   "approach": "Hyperbolic flow matching recasting generation as probability transport with geometric-aware seed selection.",
+   "contribution": "SLFM with hyperbolic flow transporter generates robust community anchors improving detection accuracy.",
+   "primary_theme": "Community detection networks",
+   "methods": [
+    "hyperbolic geometry",
+    "flow matching",
+    "generative models"
+   ]
+  },
+  {
+   "title": "Token-level Collaborative Alignment for LLM-based Generative Recommendation",
+   "venue": "WWW 2026",
+   "problem": "LLM-based recommenders fail to integrate collaborative filtering signals during generation optimization.",
+   "approach": "Token-level collaborative tokenizer projects CF logits into token space with soft label alignment.",
+   "contribution": "TCA4Rec framework enables explicit optimization-level CF integration with LLM generation.",
+   "primary_theme": "LLM recommendation",
+   "methods": [
+    "llm",
+    "collaborative-filtering",
+    "soft-labels"
+   ]
+  },
+  {
+   "title": "RARD: Rationale-First Blockwise Autoregressive Diffusion in Rationale?Dominated Graph Generation",
+   "venue": "WWW 2026",
+   "problem": "Graph generation often fails to preserve task-critical rationale substructures",
+   "approach": "Persistent homology filtration guides autoregressive diffusion generation",
+   "contribution": "Rationale-first blockwise generation with theoretical topological ordering",
+   "primary_theme": "Graph generation",
+   "methods": [
+    "diffusion",
+    "persistent homology",
+    "autoregressive",
+    "topology"
+   ]
+  },
+  {
+   "title": "Multimodal Graph Conditioned Diffusion Model for Video Captioning",
+   "venue": "WWW 2026",
+   "problem": "Video captioning ignores semantic correlations between visual and textual modalities",
+   "approach": "Multimodal graph conditioned diffusion with latent concept anchors bridging modalities",
+   "contribution": "MGCDVc jointly models cross-modal relationships; soft pruning refines semantic structure",
+   "primary_theme": "Video captioning",
+   "methods": [
+    "diffusion-model",
+    "graph-neural-network",
+    "multimodal"
+   ]
+  },
+  {
+   "title": "Unicoon: Hypergraph-based Multi-Agent Simulation of Information Cocoons",
+   "venue": "WWW 2026",
+   "problem": "Social networks and recommender systems' coevolving dynamics in information cocoons remain unexplored",
+   "approach": "Hypergraph-based LLM multi-agent simulation capturing heterogeneous information diffusion patterns",
+   "contribution": "First unified framework revealing synergistic interplay creates distinct polarization patterns",
+   "primary_theme": "Information cocoons simulation",
+   "methods": [
+    "llm",
+    "multi-agent",
+    "hypergraph",
+    "simulation"
+   ]
+  },
+  {
+   "title": "MAF-GAN: Modality-Aware Fusion GAN for Multimodal Fake News Detection",
+   "venue": "WWW 2026",
+   "problem": "Multimodal fake news detection limited by scarce labeled data and inconsistent semantic fusion",
+   "approach": "MAF-GAN generates text-image with detection awareness via projection head, generator, discriminator",
+   "contribution": "Outperforms baselines in accuracy, F1, and FID for data-constrained and cross-domain fake detection",
+   "primary_theme": "Multimodal fake news detection",
+   "methods": [
+    "gan",
+    "multimodal",
+    "generative-model",
+    "fake-detection"
+   ]
+  },
+  {
+   "title": "FSDI: Frequency-Shaped Diffusion For Time-Series Imputation",
+   "venue": "WWW 2026",
+   "problem": "Time series imputation in IoT/sensors struggles with spectral energy variance across frequency bins",
+   "approach": "FSDI replaces uniform variance schedule with data-driven frequency-domain schedule preserving energy",
+   "contribution": "Frequency-shaped diffusion improves imputation for web analytics, anomaly detection, A/B testing",
+   "primary_theme": "Frequency-aware time series imputation",
+   "methods": [
+    "diffusion-model",
+    "time-series",
+    "spectral-analysis",
+    "imputation"
+   ]
+  },
+  {
+   "title": "DOS: Dual-Flow Orthogonal Semantic IDs for Recommendation in Meituan",
+   "venue": "WWW 2026",
+   "problem": "Semantic IDs for generative recommendation lack contextual awareness and efficient quantization",
+   "approach": "DOS dual-flow framework with orthogonal residual quantization aligns codebook to generation space",
+   "contribution": "Deployed in Meituan serving hundreds of millions; improves semantic preservation and recommendations",
+   "primary_theme": "Semantic ID recommendation",
+   "methods": [
+    "llm",
+    "semantic-embedding",
+    "quantization",
+    "recommendation"
+   ]
+  }
+ ]
+}

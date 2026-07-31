@@ -1,0 +1,11 @@
+{
+ "batch": "b052",
+ "paper": {
+  "id": "ecb1968d62f534fe25f467fc492acc420cce837e",
+  "venue": "WWW 2026",
+  "title": "GeoPBR: Multimodal-Guided PBR Material Generation from a Single View",
+  "abstract": "Existing 3D texture generation methods largely follow text-driven paradigms; however, the inherent semantic ambiguity of natural language makes precise control over material appearance fundamentally challenging. In addition, most approaches output RGB textures that bake in static illumination and shadows, resulting in a mismatch with the physical consistency required for dynamic relighting. These limitations indicate that single-modality guidance and RGB-only representations are insufficient for controllable material synthesis. To address this, we propose a multimodal collaborative generation framework that integrates image, text, and geometric constraints. Reference images provide non-verbalizable high-frequency texture cues beyond textual descriptions, while geometric priors serve as structural anchors for spatially consistent texture synthesis. Furthermore, the generated RGB appearance is decoupled into industry-standard PBR maps, including albedo, metallic, and roughness, enabling relightable 3D assets in dynamic Web environments. Overall, our framework aims to reduce semantic uncertainty in material generation and improve the practical usability and stability of generated assets under varying lighting conditions.",
+  "gid": 786,
+  "theme": "Multimodal 3D material generation"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "batch": "b018",
+ "paper": {
+  "id": "4fb324c13914f22fe21963b745b2d4889df6b858",
+  "venue": "WWW 2026",
+  "title": "LLM and Agents for Recommendation Systems (LARS)",
+  "abstract": "Digital marketplaces spanning e-commerce, content platforms, and service ecosystems are undergoing a fundamental shift from centralized recommendation algorithms to autonomous multi-agent coordination. Intelligent agents now plan, negotiate, and interact emergently across product discovery, personalized recommendations, fulfillment optimization, and conversational commerce. Industry deployment of these agents is accelerating. However, this shift surfaces critical challenges. Current frameworks lack interpretability for emergent coordination when multiple agents interact. Robustness guarantees fail when cascading failures propagate across multi-agent systems. Most critically, evaluation remains anchored in short-term metrics click-through rates, conversions, session engagement that cannot capture coordination quality, long-horizon trust, fairness across populations, or multi-stakeholder alignment beyond immediate revenue. This workshop brings together researchers and practitioners from recommender systems, information retrieval, multi-agent learning, mechanism design, and platform operations to establish principles for transparent, robust, and trustworthy agent-based systems. We invite contributions on agent architectures, coordination mechanisms, evaluation frameworks, trust and safety, and real-world deployment experiences that advance how autonomous agents can enhance rather ",
+  "gid": 276,
+  "theme": "Multi-agent systems"
+ }
+}

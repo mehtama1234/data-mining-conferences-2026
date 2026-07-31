@@ -1,0 +1,11 @@
+{
+ "batch": "b053",
+ "paper": {
+  "id": "f1149d892e1c85095f0c46ee783fd4ab35d1e41b",
+  "venue": "WWW 2026",
+  "title": "Exploring Sequential Dynamics on Temporal Graphs via Composite Filtering",
+  "abstract": "Real-world temporal graphs are largely driven by sequential dynamics, and edge repetitions are rare. This characteristic has spotlighted a key limitation of existing temporal graph neural networks (T-GNNs): on such graphs, state-of-the-art T-GNNs often achieve less than 70% MRR on link prediction. Two factors drive this shortfall: (1) Memory modules and neighbor co-occurrence encodings in existing T-GNNs often fail since they rely on memorizing exact neighbor identities and on the co-occurrence assumption. (2) Existing T-GNNs are sensitive to abrupt events, which are common in sequential settings that can exceed ten million updates, thereby compromising generalization. To tackle the challenges of sequential dynamics, we propose SeqFilter, a simple yet robust neural network that functions as a composite filter for link prediction on temporal graphs. SeqFilter comprises two modules: a node rhythm memory and a frequency-selective structure encoder. The node rhythm memory shifts the focus from who interacts to when, modeling absolute timestamps with recency awareness to capture each node's interaction rhythm. To model temporal structures in complex sequential dynamics, we propose a frequency-selective structure encoder that amplifies or suppresses specific frequencies in the neighbor spectrum, enabling the effective modeling of local structure correlations. Theoretically, this enco",
+  "gid": 803,
+  "theme": "Temporal graph learning"
+ }
+}

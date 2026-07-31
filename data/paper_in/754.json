@@ -1,0 +1,11 @@
+{
+ "batch": "b050",
+ "paper": {
+  "id": "e32e867da5da96bea54ff205fff886a6edfa0f82",
+  "venue": "WWW 2026",
+  "title": "Trustworthy Foundation Models for Web Intelligence: Causal Perspectives and Challenges",
+  "abstract": "Foundation Models (FMs) are increasingly underpinning critical Web applications, from search and recommendation systems to social media analytics. Ensuring the trustworthiness of these models\u2014covering aspects like fairness, transparency, causality, and robustness\u2014is paramount, especially when trained on heterogeneous, dynamic, and massive web-scale data. This workshop provides a focused, cross-disciplinary forum to explore the emerging challenges in this space, with a specific emphasis on Causal Reasoning as a principled framework for enhancement and evaluation.",
+  "gid": 754,
+  "theme": "Foundation model trustworthiness"
+ }
+}

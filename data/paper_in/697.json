@@ -1,0 +1,11 @@
+{
+ "batch": "b046",
+ "paper": {
+  "id": "d2cfafcf3bbdae8e54e2e410ece3f48424601281",
+  "venue": "WWW 2026",
+  "title": "Closed-Loop Intelligence Architectures for Data-Driven Smart Cities",
+  "abstract": "Data-driven smart cities increasingly rely on predictive analytics and digital platforms to manage complex and dynamic urban challenges. However, predictive intelligence is often developed in isolation and remains weakly connected to operational decision-making and coordinated action, limiting its effectiveness in time-critical contexts. This paper presents a closed-loop intelligence architecture for smart cities that integrates predictive digital twins, web-based data and service platforms, and reliable communication mechanisms into a continuous operational cycle. The proposed architecture connects data collection and AI/ML-based prediction with decision-support tools and coordinated action, enabling predictive insights to be operationalised and continuously refined through feedback from real-world interventions. By closing the loop between sensing, analytics, decision support, and action, the approach supports a transition from reactive to preventive, resilient, and human-centric smart city operation.",
+  "gid": 697,
+  "theme": "Smart cities operations"
+ }
+}

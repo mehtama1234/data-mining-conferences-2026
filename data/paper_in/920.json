@@ -1,0 +1,11 @@
+{
+ "batch": "b061",
+ "paper": {
+  "id": "69a955917ba63d452d69dd06c2ff306397639b4f",
+  "venue": "WSDM 2026",
+  "title": "Building Human-Aligned AI through Representation Augmentation and Structuring",
+  "abstract": "When outcomes hinge on human actions or interpretations, achieving effective and trustworthy AI performance requires systems that can reason about human behavior, communication, and social context. Building such human-aligned intelligence demands AI that not only processes data but also comprehends the richness of human expression and the structure of human interactions. To achieve this, this research develops methods for augmenting and structuring data representations across modalities to capture what humans express through language, visuals, and behavior, and across graphs to represent how humans and information are connected within social and semantic networks. In addition, this research introduces alignment evaluation frameworks that assess whether models can reason consistently across cultural, linguistic, and professional contexts.",
+  "gid": 920,
+  "theme": "Human-aligned AI"
+ }
+}

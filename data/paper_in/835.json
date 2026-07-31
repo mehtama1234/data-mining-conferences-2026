@@ -1,0 +1,11 @@
+{
+ "batch": "b055",
+ "paper": {
+  "id": "f945c4944763e0c079c952a8422063d07ec007ec",
+  "venue": "WWW 2026",
+  "title": "Semi-Supervised Fake News Detection with Mixture of Experts",
+  "abstract": "Single-expert fake news detectors, such as Graph Neural Networks (GNNs) and Large Language Models (LLMs), increasingly struggle to counter the diversifying camouflage tactics of modern adversaries, which range from semantic (e.g., mimicking writing styles) to structural (e.g., manipulating propagation paths). To address this, existing methods attempt to build a hybrid model by sequentially incorporating GNNs and LLMs; however, such hybridization blurs the distinction between experts and prevents critical cross-validation. In addition, existing methods rely heavily on vast labeled data, which is costly to acquire, particularly for fake news samples. In this paper, we propose a Semi-supervised Mixture of Experts framework for Fake news detection, namely S2MOE-F. The core idea of S2MOE-F is to establish a robust defense against multifaceted camouflage by cross-validating the complementary judgments of two independent experts, GNN and LLM. On the one hand, S2MOE-F drives experts' judgments by using a One-Class Classification (OCC) objective, which constrains true news within a compact hypersphere and identifies samples outside this boundary as fake, reducing reliance on scarce fake news labels. On the other hand, S2MOE-F generates high-confidence pseudo-labels based on consensus or divergence between experts to exploit abundant unlabeled data. In addition, we propose a novel reinfo",
+  "gid": 835,
+  "theme": "Fake news detection MoE"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "batch": "b093",
+ "paper": {
+  "id": "10.1145/3805712.3808468",
+  "venue": "SIGIR 2026",
+  "title": "TRACE: Term-level Reasoning And Chain-of-thought Enhanced distillation for E-commerce Multi-modal Relevance Learning",
+  "abstract": "In large-scale e-commerce search, accurately modeling multi-modal relevance is paramount for matching user intent\u2014especially given the growing influence of visual content on shopping decisions. However, existing methods often fail to perform fine-grained reasoning. For instance, they struggle when a product title is irrelevant due to marketing language, but its image is highly relevant to the query. Furthermore, they cannot effectively disambiguate which specific query terms are satisfied by the visual versus the textual modality. While Large Language Models (LLMs) excel at such reasoning, their high computational overhead makes direct online deployment infeasible. To bridge this gap, we propose TRACE (Term-level Reasoning And Chain-of-thought Enhanced distillation), a framework designed for deploying advanced reasoning capabilities at scale. TRACE operates in two stages. First, it enhances an LLM's multi-modal reasoning by employing Group Relative Policy Optimization (GRPO) guided by a term-level Chain-of-Thought (CoT) reward function, enabling it to generate detailed, step-by-step relevance judgments. Second, it efficiently transfers this fine-grained reasoning to a lightweight, deployable model using a novel term-level knowledge distillation strategy that inherits reasoning ability. Offline evaluations show significant improvements across different datasets. More critically,",
+  "gid": 1402,
+  "theme": "Multi-modal relevance learning"
+ }
+}

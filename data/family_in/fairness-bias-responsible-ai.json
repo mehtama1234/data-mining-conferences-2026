@@ -1,0 +1,568 @@
+{
+ "key": "fairness-bias-responsible-ai",
+ "theme": "Fairness, Bias & Responsible AI",
+ "n_papers": 199,
+ "pct": 10.3,
+ "by_venue": {
+  "WWW 2026": 118,
+  "WSDM 2026": 21,
+  "SIGIR 2026": 56,
+  "KDD 2026": 4
+ },
+ "theme_examples": [
+  {
+   "title": "Too Much Sharing, Too Little Security: Authentication Cookie Theft At Scale",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "Causal Pre-training Under the Fairness Lens: An Empirical Study of TabPFN",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "Modeling Cascaded Delay Feedback for Online Net Conversion Rate Prediction: Benchmark, Insights and Solutions",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "Beyond Item-Level Prediction: Fine-Grained CVR Modeling with Price SKU in E-Commerce Recommendation",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "Xemis: Fair and Robust Privacy-Preserving Data Trading based on Distributed Noise Sharing",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "Quantum-Safe, Efficient, and AI-Enhanced Blockchains for the Web: A Cooperative Tutorial on Quantum Computing, Blockchain Applications, and Data Standards",
+   "venue": "WWW 2026"
+  }
+ ],
+ "representative_papers": [
+  {
+   "title": "Bridging Semantic Understanding and Popularity Bias with LLMs",
+   "venue": "WWW 2026",
+   "problem": "Popularity bias in recommender systems limits niche content visibility",
+   "approach": "LLM-based framework decomposing bias into item-side and user-side components",
+   "contribution": "FairLRM improves fairness and recommendation accuracy via semantic bias interpretation",
+   "primary_theme": "LLM recommendation fairness",
+   "methods": [
+    "llm",
+    "debiasing",
+    "recommendation"
+   ]
+  },
+  {
+   "title": "MultiFPT: Towards Multi-Attribute Fairness in Pre-Trained Graph Neural Networks via Prompt Tuning",
+   "venue": "WWW 2026",
+   "problem": "Pre-trained GNNs amplify biases against multiple demographic attributes simultaneously",
+   "approach": "Prompt tuning with fairness-aware prompts and HSIC-regularized lightweight adapter",
+   "contribution": "MultiFPT reduces multi-attribute bias ~30% without retraining pre-trained models",
+   "primary_theme": "Graph fairness",
+   "methods": [
+    "prompt-tuning",
+    "fairness",
+    "graph-neural-networks"
+   ]
+  },
+  {
+   "title": "BiasEdit: A Training-Free Bias-Detect-and-Edit Framework for Learning Fair Visual Classifiers",
+   "venue": "WWW 2026",
+   "problem": "Web-sourced visual data contains spurious correlations and social biases harming classifier fairness",
+   "approach": "Automatic bias detection via statistical dependence analysis and text-guided image editing",
+   "contribution": "Training-free framework generating debiased datasets without manual annotations or synthetic mixing",
+   "primary_theme": "Fair visual classifiers",
+   "methods": [
+    "bias-detection",
+    "image-editing",
+    "statistical-analysis"
+   ]
+  },
+  {
+   "title": "Towards a Responsible Web: Economic Perspectives on Fairness in Information Retrieval",
+   "venue": "WWW 2026",
+   "problem": "Fairness in IR lacks structured framework; theories fragmented across domains",
+   "approach": "Economic perspective organizing fairness in IR via macro/micro, demand/supply, time horizons",
+   "contribution": "Unified economic cube framework for fairness algorithms and real-world IR applications",
+   "primary_theme": "Fairness in retrieval",
+   "methods": [
+    "economics",
+    "fairness-metrics",
+    "market-modeling"
+   ]
+  },
+  {
+   "title": "The Double-Edged Sword of Knowledge Transfer: Diagnosing and Curing Fairness Pathologies in Cross-Domain Recommendation",
+   "venue": "WWW 2026",
+   "problem": "Cross-domain recommendation transfers existing biases and unevenly allocates benefits",
+   "approach": "CDFA framework adaptively integrates unlabeled data and info-theoretic redistribution",
+   "contribution": "Reduces unfairness in CDR while maintaining/improving overall recommendation performance",
+   "primary_theme": "cross-domain fairness",
+   "methods": [
+    "fairness",
+    "knowledge-transfer",
+    "information-theory"
+   ]
+  },
+  {
+   "title": "ARC: A Tool to Rate AI Models for Robustness Through a Causal Lens for Enabling Trustworthy Model Selection",
+   "venue": "WWW 2026",
+   "problem": "AI model robustness assessment lacks tool support for bias and data drift",
+   "approach": "Interactive web tool using causality-based metrics for model evaluation",
+   "contribution": "Model-agnostic evaluation framework supporting multiple task domains",
+   "primary_theme": "Model robustness assessment",
+   "methods": [
+    "causal_inference",
+    "fairness",
+    "interactive_tool"
+   ]
+  },
+  {
+   "title": "Fair Geolocation Extraction from Humanitarian Documents Using Large Language Models",
+   "venue": "WWW 2026",
+   "problem": "Automated geolocation extraction reproduces geographic and socioeconomic biases affecting crisis response equity",
+   "approach": "Two-step LLM framework combining few-shot NER with agent-based geocoding for ambiguous toponym resolution",
+   "contribution": "LLM-based methods improve precision and fairness of geolocation extraction for underrepresented regions",
+   "primary_theme": "Geolocation fairness",
+   "methods": [
+    "llm",
+    "ner",
+    "fairness",
+    "geocoding"
+   ]
+  },
+  {
+   "title": "FairGE: Fairness-Aware Graph Encoding in Incomplete Social Networks",
+   "venue": "WWW 2026",
+   "problem": "Fairness constraints in graph transformers on incomplete social networks; missing attributes risk privacy and bias issues",
+   "approach": "Spectral graph theory encoding fairness via principal eigenvector without reconstructing sensitive attributes",
+   "contribution": "16% improvement in statistical parity and equality of opportunity through fairness-aware graph encoding without data generation",
+   "primary_theme": "Graph fairness",
+   "methods": [
+    "spectral methods",
+    "fairness",
+    "graph transformer"
+   ]
+  },
+  {
+   "title": "FairFS: Addressing Deep Feature Selection Biases for Recommender System",
+   "venue": "WWW 2026",
+   "problem": "Feature importance estimation in deep learning shows layer, baseline, and approximation biases leading to inaccurate selection",
+   "approach": "FairFS regularizing importance across all layers with smooth baselines near decision boundaries and aggregated approximation",
+   "contribution": "Fair and accurate feature selection mitigating three bias sources for improved online performance in recommender systems",
+   "primary_theme": "Feature selection fairness",
+   "methods": [
+    "feature selection",
+    "regularization",
+    "deep learning"
+   ]
+  },
+  {
+   "title": "Towards Fair Large Language Model-based Recommender Systems without Costly Retraining",
+   "venue": "WWW 2026",
+   "problem": "LLM-based recommenders perpetuate training data bias; existing debiasing requires expensive retraining",
+   "approach": "FUDLR reformulates debiasing as efficient machine unlearning with bias-agnostic mask and influence estimation",
+   "contribution": "Improves fairness without retraining; adapts to diverse or co-existing biases via different fairness metrics",
+   "primary_theme": "LLM recommendation fairness",
+   "methods": [
+    "machine-unlearning",
+    "debiasing",
+    "fairness-metrics",
+    "inference-time"
+   ]
+  },
+  {
+   "title": "When to Invoke: Refining LLM Fairness with Toxicity Assessment",
+   "venue": "WWW 2026",
+   "problem": "LLMs produce inconsistent toxicity judgements for implicit hate speech; biases persist after standard training",
+   "approach": "FairToT is inference-time framework identifying demographic variation cases; applies prompt-guided reassessment",
+   "contribution": "Reduces group-level disparities while maintaining toxicity prediction stability without parameter modification",
+   "primary_theme": "LLM toxicity fairness",
+   "methods": [
+    "fairness-metrics",
+    "prompt-engineering",
+    "inference-time",
+    "bias-detection"
+   ]
+  },
+  {
+   "title": "From Insight to Intervention: Interpretable Neuron Steering for Controlling Popularity Bias in Recommender Systems",
+   "venue": "WWW 2026",
+   "problem": "Popularity bias in recommender systems lacks transparency in mitigation mechanisms",
+   "approach": "Sparse autoencoder enabling neuron-level interpretability for identifying popularity signals",
+   "contribution": "Post-hoc steering enhances fairness with minimal accuracy impact and fine-grained control",
+   "primary_theme": "Recommendation fairness",
+   "methods": [
+    "interpretability",
+    "sparse-autoencoder",
+    "neuron-steering"
+   ]
+  },
+  {
+   "title": "From Native Memes to Global Moderation: Cross-Cultural Evaluation of Vision\u2013Language Models for Hateful Meme Detection",
+   "venue": "WWW 2026",
+   "problem": "Vision-language models trained on Western data exhibit cross-cultural bias in hateful meme detection; fairness varies by culture.",
+   "approach": "Systematic evaluation framework tests zero-shot vs. one-shot learning, native vs. English prompts; analyzes translation effects.",
+   "contribution": "Native-language prompting and one-shot learning mitigate Western bias; reveals actionable strategies for globally robust moderation.",
+   "primary_theme": "Cross-cultural VLM robustness",
+   "methods": [
+    "vision-language-model",
+    "fairness",
+    "multilingual-evaluation"
+   ]
+  },
+  {
+   "title": "Emergence of Structural Disparities in the Web of Scientific Citations",
+   "venue": "WWW 2026",
+   "problem": "Scientific citations show gender and institutional prestige disparities affecting recognition",
+   "approach": "Citation network growth model incorporating homophily, preferential attachment, underrepresentation",
+   "contribution": "Model reveals disparities from biased citation preferences, not underrepresentation alone",
+   "primary_theme": "Citation bias analysis",
+   "methods": [
+    "network-analysis",
+    "modeling",
+    "fairness"
+   ]
+  },
+  {
+   "title": "Debias Once for All: A Data-Centric Strategy for Fair Machine Learning",
+   "venue": "WSDM 2026",
+   "problem": "Training data encodes historical biases leading to disparate outcomes for underrepresented groups",
+   "approach": "FairData synthesizes fair dataset via gradient-matching and group fairness regularization",
+   "contribution": "Data-centric fairness approach reduces disparities across architectures without model changes",
+   "primary_theme": "Fair machine learning",
+   "methods": [
+    "fairness",
+    "data-centric",
+    "gradient-matching",
+    "synthesis"
+   ]
+  },
+  {
+   "title": "Self-Paced Fair Ranking with Loss as a Proxy for Bias",
+   "venue": "WSDM 2026",
+   "problem": "Neural rankers reflect societal biases from training data without demographic labels",
+   "approach": "Self-paced learning curriculum using model loss as bias proxy",
+   "contribution": "Model-agnostic method reduces gender bias without protected attributes while maintaining ranking performance",
+   "primary_theme": "Fairness in ranking",
+   "methods": [
+    "self-paced learning",
+    "curriculum learning",
+    "bias mitigation"
+   ]
+  },
+  {
+   "title": "FAIR-RAG: An End-to-End Framework for Mitigating Political Bias through Fair Retrieval-Augmented Generation",
+   "venue": "SIGIR 2026",
+   "problem": "RAG systems amplify political bias from web corpora into responses",
+   "approach": "Multi-LLM persona annotation, political-stance metadata, multi-stage fairness engine",
+   "contribution": "Framework achieving 97.51 Attention Weighted Rank Fairness with 82% improvement",
+   "primary_theme": "RAG political bias",
+   "methods": [
+    "rag",
+    "fairness",
+    "metadata",
+    "bias-mitigation"
+   ]
+  },
+  {
+   "title": "FairSpec: Expert Specialization for Fair LLM-based Recommendation",
+   "venue": "SIGIR 2026",
+   "problem": "LLM-based recommenders generate unfair recommendations due to bias in pre-training",
+   "approach": "Parameter-Efficient MoE with fairness experts and Fairness-Aware DPO training",
+   "contribution": "Improves fairness while maintaining recommendation quality via specialist architecture",
+   "primary_theme": "Fair LLM recommendation",
+   "methods": [
+    "recommendation",
+    "fairness",
+    "llm",
+    "mixture-of-experts"
+   ]
+  },
+  {
+   "title": "Refairmulate: A Large-Scale Dataset for Gender-Fair Query Reformulations",
+   "venue": "SIGIR 2026",
+   "problem": "Query reformulation methods ignore fairness despite biases in training data and ranking algorithms",
+   "approach": "Multi-objective optimization jointly balancing retrieval effectiveness and gender bias reduction",
+   "contribution": "Refairmulate: 643K gender-fair query pairs organized by effectiveness and fairness tradeoffs",
+   "primary_theme": "fairness-aware retrieval",
+   "methods": [
+    "query reformulation",
+    "fairness",
+    "dense retrieval"
+   ]
+  },
+  {
+   "title": "OpeNTF2: Fairness-aware Graph Neural Team Formation",
+   "venue": "SIGIR 2026",
+   "problem": "Team formation systems lack fairness mechanisms and don't model temporal dynamics of expert skills",
+   "approach": "Graph neural networks on expert-skill collaboration graphs with fairness-aware rerankers and temporal training",
+   "contribution": "OpeNTF2: unified framework integrating fairness, GNN modeling, sequential prediction, and temporal dynamics",
+   "primary_theme": "fairness-aware team formation",
+   "methods": [
+    "graph neural network",
+    "fairness debiasing",
+    "link prediction"
+   ]
+  },
+  {
+   "title": "Trustworthy Personalized Retrieval in the LLM Era: Fairness, Bias Awareness, Privacy, and Multimodality",
+   "venue": "SIGIR 2026",
+   "problem": "LLM-powered personalization introduces bias, fairness risks, privacy leaks, and transparency failures in ranking.",
+   "approach": "Unified retrieval-centric framework: bias measurement, fairness mitigation, privacy-aware design, multimodal RAG audit.",
+   "contribution": "Evaluation protocols and auditing blueprints for end-to-end trustworthy IR/Rec pipelines with LLMs.",
+   "primary_theme": "Trustworthy personalization",
+   "methods": [
+    "llm",
+    "fairness",
+    "privacy"
+   ]
+  },
+  {
+   "title": "Long-Tailed Recognition of Evidential Experts for Graph-level Classification",
+   "venue": "WWW 2026",
+   "problem": "Graph classification biased toward head classes with imbalanced data and unreliable confidence estimates",
+   "approach": "Multi-expert framework leveraging Dempster-Shafer evidence theory with evidence-based routing",
+   "contribution": "GraphEVER provides reliable, robust long-tailed graph classification with uncertainty quantification",
+   "primary_theme": "Long-tailed graph classification",
+   "methods": [
+    "evidence theory",
+    "multi-expert learning",
+    "uncertainty estimation"
+   ]
+  },
+  {
+   "title": "Causal Pre-training Under the Fairness Lens: An Empirical Study of TabPFN",
+   "venue": "WWW 2026",
+   "problem": "Fairness properties of causal pre-trained foundation models for tabular data remain underexplored",
+   "approach": "Comprehensive empirical evaluation of TabPFN across fairness, performance, and robustness metrics",
+   "contribution": "Causal pre-training helpful but insufficient for algorithmic fairness; fairness interventions needed",
+   "primary_theme": "fairness machine learning",
+   "methods": [
+    "causal-model",
+    "foundation-model",
+    "fairness-evaluation"
+   ]
+  },
+  {
+   "title": "Beyond Item-Level Prediction: Fine-Grained CVR Modeling with Price SKU in E-Commerce Recommendation",
+   "venue": "WWW 2026",
+   "problem": "CVR prediction at item level misses fine-grained SKU signals and creates price inconsistency bias",
+   "approach": "Price SKU (PSKU) granularity with price-aware prediction and personalized pricing display",
+   "contribution": "PSKU4Rec improves CVR accuracy and price consistency with 6x sparsity reduction",
+   "primary_theme": "granular e-commerce recommendation",
+   "methods": [
+    "recommendation-system",
+    "cvr-prediction",
+    "e-commerce"
+   ]
+  },
+  {
+   "title": "Xemis: Fair and Robust Privacy-Preserving Data Trading based on Distributed Noise Sharing",
+   "venue": "WWW 2026",
+   "problem": "Privacy-preserving data trading lacks trustworthy noise calibration and Byzantine robustness",
+   "approach": "Decentralized multi-party computation with batched distributed noise sharing protocol (b-DNS)",
+   "contribution": "Xemis enables Byzantine-robust data trading with 12.7x faster and 43.6x bandwidth savings",
+   "primary_theme": "privacy-preserving data trading",
+   "methods": [
+    "differential-privacy",
+    "mpc",
+    "fairness"
+   ]
+  },
+  {
+   "title": "Learning to Alleviate Familiarity Bias in Video Recommendation",
+   "venue": "WWW 2026",
+   "problem": "Video recommendation systems suffer from familiarity bias reducing exposure to emerging creators and diverse content",
+   "approach": "Personalized debiasing factors estimated via discrete/continuous interaction features in post-ranking stage",
+   "contribution": "LAFB deployed on YouTube increases novel watch-time and creator diversity while maintaining engagement",
+   "primary_theme": "bias mitigation recommendation",
+   "methods": [
+    "debiasing",
+    "post-ranking",
+    "familiarity bias"
+   ]
+  },
+  {
+   "title": "Same Last-Item Confusion Unveiled: A Unified Mitigation Framework for Graph Learning in Session-Based Recommendation",
+   "venue": "WWW 2026",
+   "problem": "GNN-based session recommendation struggles with same-last-item confusion and popularity bias",
+   "approach": "Unified framework using contrastive learning with novel negative sample strategy on session graphs",
+   "contribution": "Mitigates confusion and popularity bias, improves various GNN-based SBR methods significantly",
+   "primary_theme": "session-based recommendation",
+   "methods": [
+    "gnn",
+    "contrastive-learning",
+    "session-graph"
+   ]
+  },
+  {
+   "title": "TargetMR: Learning Modality Target for Multimodal Recommendation",
+   "venue": "WWW 2026",
+   "problem": "Multimodal recommenders fail to distinguish target from auxiliary content objects",
+   "approach": "Object disentangling via text parsing and image segmentation with LLM distillation",
+   "contribution": "TargetMR reduces semantic shift bias in multimodal item representations",
+   "primary_theme": "Multimodal recommendation",
+   "methods": [
+    "llm",
+    "image-segmentation",
+    "knowledge-distillation"
+   ]
+  },
+  {
+   "title": "A Frequency-Aware Mixture of Heterogeneous Experts Framework for Knowledge Tracing",
+   "venue": "WWW 2026",
+   "problem": "Knowledge tracing models use single encoder with fixed biases missing frequency diversity",
+   "approach": "Mixture-of-experts combining self-attention, Mamba, CNN, LSTM with frequency-aware routing",
+   "contribution": "FA-KT outperforms 20 baselines via dynamic expert combination for diverse learning patterns",
+   "primary_theme": "Knowledge tracing",
+   "methods": [
+    "mixture-of-experts",
+    "frequency-analysis",
+    "neural-routing"
+   ]
+  },
+  {
+   "title": "Digital Skin, Digital Bias: Uncovering Tone-Based Biases in LLMs and Emoji Embeddings",
+   "venue": "WWW 2026",
+   "problem": "LLMs and emoji embeddings exhibit systemic biases in skin-tone emoji representations",
+   "approach": "Large-scale comparative study analyzing sentiment, semantic consistency, and representation similarity",
+   "contribution": "First systematic evaluation revealing skewed sentiment and inconsistent meanings across skin tones",
+   "primary_theme": "Bias in embeddings",
+   "methods": [
+    "embedding-analysis",
+    "bias-detection",
+    "sentiment-analysis"
+   ]
+  },
+  {
+   "title": "Social Bias Benchmarks for Large Language Models",
+   "venue": "WWW 2026",
+   "problem": "Social biases in multilingual LLMs across diverse languages and cultural contexts",
+   "approach": "Systematic review of bias benchmarks across linguistic diversity and cultural awareness dimensions",
+   "contribution": "Catalogue of bias evaluation methodological gaps, challenges and mitigation solutions in multilingual settings",
+   "primary_theme": "Multilingual bias evaluation",
+   "methods": [
+    "benchmark",
+    "review",
+    "bias"
+   ]
+  },
+  {
+   "title": "Responsible Prompting on the Web: Governance, Mini-Evaluation, and Readiness with ChatGPT",
+   "venue": "WWW 2026",
+   "problem": "AI-generated outputs lack safety guardrails for web deployment with sensitive data",
+   "approach": "Workflow combining prompt engineering techniques with mini-evaluation and red-team testing",
+   "contribution": "Deployment readiness rubric for responsible LLM use covering PII, moderation, and accessibility",
+   "primary_theme": "LLM safety and governance",
+   "methods": [
+    "prompting",
+    "evaluation",
+    "guardrails"
+   ]
+  },
+  {
+   "title": "TabTune: A Unified Library for Inference and Fine-Tuning Tabular Foundation Models",
+   "venue": "WWW 2026",
+   "problem": "Tabular foundation models have inconsistent APIs and preprocessing across implementations",
+   "approach": "Unified library standardizing interfaces, preprocessing, fine-tuning modes, and evaluation metrics",
+   "contribution": "TabTune enables quick-start, benchmarking, and responsible evaluation for tabular TFMs",
+   "primary_theme": "Tabular models",
+   "methods": [
+    "foundation-models",
+    "unified-library",
+    "benchmarking"
+   ]
+  },
+  {
+   "title": "Toward Graph-Tokenizing Large Language Models with Reconstructive Graph Instruction Tuning",
+   "venue": "WWW 2026",
+   "problem": "Graph-Tokenizing LLMs achieve only implicit alignment; text-dominant bias underutilizes graph context.",
+   "approach": "Reconstructive graph instruction tuning that reconstructs graph information from LLM outputs.",
+   "contribution": "Explicit graph supervision improves alignment upper bound; better graph comprehension.",
+   "primary_theme": "LLM graph tokenization",
+   "methods": [
+    "llm",
+    "graph_representation",
+    "instruction_tuning"
+   ]
+  },
+  {
+   "title": "Towards Better Evaluation Metrics for Text-to-Motion Generation",
+   "venue": "WWW 2026",
+   "problem": "FID biased by Gaussian assumption and R-Precision lacks global awareness for motion generation evaluation",
+   "approach": "OTMS via optimal transport and MMMD with enhanced MoCLIP encoder for unbiased evaluation",
+   "contribution": "Novel metrics align with human judgment better than FID/R-Precision for text-to-motion evaluation",
+   "primary_theme": "Motion generation metrics",
+   "methods": [
+    "optimal_transport",
+    "metric_learning",
+    "clip"
+   ]
+  },
+  {
+   "title": "A Long-term Value Prediction Framework In Video Ranking",
+   "venue": "WWW 2026",
+   "problem": "Modeling long-term value in short-video ranking with position bias and attribution ambiguity",
+   "approach": "Position-aware Debias Quantile module, multi-dimensional attribution, cross-temporal author modeling",
+   "contribution": "Framework addressing position bias, attribution, temporal constraints for billion-scale video ranking",
+   "primary_theme": "Video ranking LTV",
+   "methods": [
+    "quantile",
+    "attribution",
+    "debiasing",
+    "temporal"
+   ]
+  },
+  {
+   "title": "Dynamic Min-Max Multi-Dimensional Reinforcement Backdoor Attacks and Orchestrated Closed-Loop Defense in Fairness-Aware Web Federated Finance",
+   "venue": "WWW 2026",
+   "problem": "Federated fraud detection lacks robustness to backdoor attacks and handles extreme data scarcity",
+   "approach": "Privacy-enhanced representation fusion, contrastive learning, dynamic Min-Max adversarial game",
+   "contribution": "CLARF framework with closed-loop defense against reinforcement learning backdoor attacks",
+   "primary_theme": "Fraud detection federated",
+   "methods": [
+    "federated_learning",
+    "contrastive",
+    "adversarial",
+    "reinforcement_learning"
+   ]
+  },
+  {
+   "title": "Expectation-Maximization Driven Contrastive Disentanglement for Generalized Category Discovery",
+   "venue": "WWW 2026",
+   "problem": "Generalized category discovery suffers from bias toward known categories and lacks novel supervision",
+   "approach": "Expectation-Maximization disentanglement with dual contrastive constraints",
+   "contribution": "EMCD framework explicitly disentangles novel and known categories for open-world classification",
+   "primary_theme": "Category discovery clustering",
+   "methods": [
+    "contrastive_learning",
+    "expectation_maximization",
+    "pseudo_labels"
+   ]
+  },
+  {
+   "title": "Fair k-Center Clustering on Massive Social Network Data Streams",
+   "venue": "WWW 2026",
+   "problem": "Fair k-center clustering on streaming social networks must respect group representation fairness constraints",
+   "approach": "One-pass streaming algorithm with fairness-aware center selection in Euclidean space",
+   "contribution": "Approximation ratio 4.46 in Euclidean space improving on general metrics ratio of 5+epsilon",
+   "primary_theme": "fair clustering",
+   "methods": [
+    "clustering",
+    "fairness",
+    "streaming"
+   ]
+  },
+  {
+   "title": "GFMixer: Decoupled Temporal Gradient and Fourier-Aware Attention for Time Series Forecasting",
+   "venue": "WWW 2026",
+   "problem": "Frequency-domain forecasters suffer from frequency bias and spectral degradation on multivariate time series.",
+   "approach": "GFMixer: dual-path architecture with Temporal Gradient Block capturing low-amplitude info and Fourier-Aware Attention Block.",
+   "contribution": "Achieves 37 first-place rankings on seven benchmarks; acts as plug-and-play module enhancing mainstream backbones.",
+   "primary_theme": "Time series forecasting",
+   "methods": [
+    "fourier-transform",
+    "attention-mechanism",
+    "temporal-modeling"
+   ]
+  }
+ ]
+}

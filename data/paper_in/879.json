@@ -1,0 +1,11 @@
+{
+ "batch": "b058",
+ "paper": {
+  "id": "1a1bedf11c2e8e65135310dccf4e0a906931cd6c",
+  "venue": "WSDM 2026",
+  "title": "The Future of Personalized Universal Assistant",
+  "abstract": "We've moved way beyond the old days of building discovery, recommendation, decision support, and other AI tools using traditional ML and pattern recognition techniques. The future of universal personal assistance for discovery and learning is upon us. How will multimodality image, video, and audio understanding, and reasoning abilities of large foundation models change how we build these systems? I will shed some initial light on this topic by discussing 3 trends: First, the move to a single multimodal large model with reasoning abilities; Second, the fundamental research on personalization and user alignment; Third, the combination of System 1 and System 2 cognitive abilities into a single universal assistant.",
+  "gid": 879,
+  "theme": "universal assistant design"
+ }
+}

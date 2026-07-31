@@ -1,0 +1,11 @@
+{
+ "batch": "b007",
+ "paper": {
+  "id": "1e7f5af9207045cde06c8e1708be5dad7096c795",
+  "venue": "WWW 2026",
+  "title": "Beyond Detection: Autonomous Anomaly Remediation for MCP Against Tool Poisoning Attacks",
+  "abstract": "LLM-powered agents are evolving from passive recommenders into autonomous executors, leveraging tools via the Model Context Protocol (MCP) for web automation. However, this paradigm introduces a new vulnerability: tool poisoning attacks that manipulate the MCP context can corrupt an agent's reasoning. Existing methods focus on anomaly detection and lack autonomous correction mechanisms, hindering their real-world deployment. In this paper, we introduce MCPFixGen, to the best of our knowledge, the first framework to provide automated anomaly detection and correction. We tackle three fundamental challenges: (1) when to initiate anomaly inspection with minimal overhead, (2) what features effectively characterize abnormality, and (3) how to automatically execute remedial actions. MCPFixGen achieves this through a novel multi-checkpoint rollback mechanism for anomaly management. MCPFixGen proposes a multi-checkpoint rollback anomaly management mechanism. Strategically places checkpoints at high-risk operations based on the tools-calling risk distribution. Then it identifies unanticipated tool behaviors by leveraging the correlation between attention activation values and tool calls. Finally, it introduces an attention-mask-based backtracking and correction mechanism. By masking the root cause of the anomaly, the LLM is prompted to re-infer, facilitating efficient and low-cost anomal",
+  "gid": 105,
+  "theme": "LLM security, tool poisoning"
+ }
+}

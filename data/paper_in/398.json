@@ -1,0 +1,11 @@
+{
+ "batch": "b026",
+ "paper": {
+  "id": "74aec0665c948c64072682901b7e95e7b71286e4",
+  "venue": "WWW 2026",
+  "title": "WAB: Overcoming Memory, Network, and Security Walls in Native Agentic Browsers with WebAssembly",
+  "abstract": "In the era of the agentic web, autonomous web agents are increasingly expected to execute multi-step workflows within the browser, achieving interactive latency while keeping sensitive user context local. We call a browser built for this setting a native agentic browser, which treats agent execution as a first-class workload. In practice, native agent execution within browsers repeatedly hits three runtime walls. (1) A memory wall: agents need low-tail-latency access to evolving semantic context, but browser memory and persistent storage are constrained and heterogeneous. (2) A network wall: stepwise tool invocation turns long-horizon workflows into RTT-amplified pipelines whose end-to-end latency and variance compound with each step. (3) A security wall: untrusted content and prompt injection can steer agents toward high-impact side effects without enforceable least-privilege boundaries. To tackle them, we explore WebAssembly (Wasm) as a promising solution because Wasm offers a portable execution target, a sandboxed execution environment, and efficient performance for compute-intensive kernels. Specifically, we design and implement WAB as a proof of concept, which integrates three mechanisms. (i) Context: in-browser semantic retrieval over tiered storage, loading context within Wasm memory on demand; (ii) Actions: a Wasm-based execution module that batches multiple action step",
+  "gid": 398,
+  "theme": "Agentic browser architecture"
+ }
+}

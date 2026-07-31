@@ -1,0 +1,11 @@
+{
+ "batch": "b004",
+ "paper": {
+  "id": "14793e52e86d5ed86534896e2a699c92d723dc37",
+  "venue": "WWW 2026",
+  "title": "MultiFPT: Towards Multi-Attribute Fairness in Pre-Trained Graph Neural Networks via Prompt Tuning",
+  "abstract": "Pre-trained Graph Neural Networks (GNNs) have demonstrated remarkable performance in graph mining tasks, yet they often amplify societal biases against protected demographic groups. Existing fairness-aware approaches primarily address discrimination based on a single sensitive attribute (e.g., gender or race), overlooking real-world scenarios where individuals possess multiple overlapping demographic characteristics, leading to unfair treatment of underrepresented subgroups. Moreover, incorporating extra fairness constraints into pre-trained GNNs usually requires full model retraining, which is computationally expensive and often impractical. To address these limitations, we propose a novel Multi-attribute Fairness-aware Prompt Tuning framework named MultiFPT. Our approach operates in two key stages: in the graph prompt learning stage, MultiFPT injects fairness-aware structural and feature prompts into pre-trained GNN inputs; in the adapter tuning stage, a lightweight adapter regularized by the Hilbert\u2013Schmidt Independence Criterion (HSIC) enforces statistical independence between node representations and multiple sensitive attributes. Experiments on real-world datasets demonstrate that MultiFPT significantly improves multi-attribute fairness, reducing bias by approximately 30% on average in node classification while maintaining competitive predictive performance compared to st",
+  "gid": 73,
+  "theme": "Graph fairness"
+ }
+}

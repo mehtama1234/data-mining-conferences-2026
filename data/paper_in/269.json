@@ -1,0 +1,11 @@
+{
+ "batch": "b017",
+ "paper": {
+  "id": "4e5420088ce8b9be69520fc6c9bca9e9d4080f51",
+  "venue": "WWW 2026",
+  "title": "Fine-Grained Visual Understanding for Multimodal and Trustworthy AI",
+  "abstract": "Fine-Grained (FG) and Ultra-Fine-Grained (UFG) Visual Understanding has recently become an important problem in AI research, because of its considerable ability to distinguish objects visually very similar but semantically different. This paper aims to offer a viewpoint-based overview and taxonomy on the state of the art of the FGVC tasks, covering existing FGVC datasets as well as approaches, and identify possible pros and cons for FGVC datasets in terms of scalability, cost basis of annotating, domain coverage and generalization. We also review how recent trends, with transformer-based vision architecture, advanced data augmentation (in particular generative augmentation), and the multimodal integration of vision, language/metadata are pushing towards the practical need for FGVC and Ultra-Fine-Grained Visual Categorization (UFGVC) necessary in building multimodal and trustworthy AI systems. In our study, we detect a number of standing challenges: lack of public ultra-fine-grained datasets, high annotation complexity, non-trivial long-tail/rare class learning setting and inadequate exploitation on multimodal and semantic context. Finally, we present a prospective research roadmap on multimodal visual understanding covering robustness under long-tailed distributions, explainability, data efficient learning and deployment to real-world applications. Motivated by previous advance",
+  "gid": 269,
+  "theme": "Fine-grained visual categorization"
+ }
+}

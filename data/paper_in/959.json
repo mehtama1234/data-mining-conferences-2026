@@ -1,0 +1,11 @@
+{
+ "batch": "b063",
+ "paper": {
+  "id": "bb2c738767d5223d36968ee759349a2ea65cb227",
+  "venue": "WSDM 2026",
+  "title": "Assembling Your Personal AI Council in Yupp to Provide Multiple Perspectives",
+  "abstract": "Yupp is a consumer product that provides users with responses from multiple AI models in side-by-side comparisons, allowing them to seek diverse perspectives from many models at once. Through various incentive mechanisms, we encourage users to provide feedback on the response they prefer, which is then aggregated into a leaderboard that ranks models along many dimensions. While much progress in AI has been driven by benchmark datasets, gathering ''vibes'' from diverse populations for real-world use cases is also highly valuable. Looking further ahead, we envision a future where AIs collaborate and compete in multi-party dialogues. To this end, we discuss attempts to translate innovations from the research lab into an engaging consumer product.",
+  "gid": 959,
+  "theme": "Multi-model AI platforms"
+ }
+}

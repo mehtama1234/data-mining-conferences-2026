@@ -1,0 +1,11 @@
+{
+ "batch": "b046",
+ "paper": {
+  "id": "d45cbf57fde906c40a8f9a9f6a4ca54224db2fee",
+  "venue": "WWW 2026",
+  "title": "Viet Medi Species 2026: A Web-Accessible Multilingual Dataset for Vietnamese Medicinal Biodiversity",
+  "abstract": "While online biodiversity platforms have made species data more accessible, they may not be particularly useful for those who do not speak English or for those specific to a particular region. In Vietnam, there is a wealth of knowledge about medicinal plants, but that knowledge is scattered, there is little consistency in the way plants are named, and it is poorly connected to the larger global systems for biodiversity. In this paper, we introduce Viet Medi Species 2026, a massive multilingual image dataset tailored for medicinal plants in Vietnam. Using a large-scale extraction method, the scientific names of the plants listed in the Vietnamese Medicinal Plant Catalogue were matched with the GBIF (The Global Biodiversity Information Facility) taxonomic backbone and the Vietnamese vernacular names of the species were gathered. We validated the images that were collected and compiled 310647 images of 4799 species from multiple kingdoms using a completely reproducible asynchronous pipeline. The dataset captures valuable metadata that is tied to Vietnamese culture and still connects to GBIF ID numbers. We also provide an online Explorer that allows access to and searching for images in Vietnamese. We hope this work provides a reusable template for integrating these undocumented languages into global datasets of biodiversity, and thus facilitates further research into identifying m",
+  "gid": 701,
+  "theme": "Biodiversity dataset"
+ }
+}

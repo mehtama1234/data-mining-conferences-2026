@@ -1,0 +1,11 @@
+{
+ "batch": "b005",
+ "paper": {
+  "id": "179aceb2f26839c87a6c48854def7bf60138b147",
+  "venue": "WWW 2026",
+  "title": "Exploring the Domain Sensitivity of AI Chatbots in Correcting Misinformation",
+  "abstract": "Misinformation arises when individuals confidently maintain incorrect factual beliefs. The issue affects social systems and is highly challenging to rectify. AI-based chatbots have been increasingly proposed as scalable corrective tools. While prior research has primarily focused on enhancing chatbot effectiveness through design features such as anthropomorphism or expertise cues, less is known about how chatbot effectiveness varies across different misinformation domains of health, science, and politics. We conducted an experimental study in which participants were exposed to misinformation from three domains (health, science, and politics) and received corrective responses from a constant AI chatbot. A mixed design with a 2 (group: experimental vs. control) \u00d7 3 (domain: health, science, political) interaction was employed, involving N = 259 participants. Results indicated that the chatbot was more effective in reducing belief in health and science misinformation than in political misinformation, with significant domain-based differences in corrective impact. These findings highlight the domain-sensitive nature of AI-based misinformation interventions and underscore the importance of contextual factors when deploying automated correction tools.",
+  "gid": 80,
+  "theme": "Misinformation correction"
+ }
+}

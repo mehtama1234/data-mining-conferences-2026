@@ -1,0 +1,11 @@
+{
+ "batch": "b050",
+ "paper": {
+  "id": "e598fc7d8ce8a43af4b6125c45b97c51da22bd3e",
+  "venue": "WWW 2026",
+  "title": "STIndex: A Context-Aware Multi-Dimensional Spatiotemporal Information Extraction System",
+  "abstract": "Extracting structured knowledge from unstructured data still faces practical limitations: entity and event extraction pipelines remain brittle, knowledge graph construction requires costly ontology engineering, and cross-domain generalization is rarely production-ready. In contrast, space and time provide universal contextual anchors that naturally align heterogeneous information and benefit downstream tasks such as retrieval and reasoning. We introduce STIndex, an end-to-end system that structures unstructured content into a multidimensional spatiotemporal data warehouse. Users define domain-specific analysis dimensions with configurable hierarchies, while large language models perform context-aware extraction and grounding. STIndex integrates document-level memory, geocoding correction, and quality validation, and offers an interactive analytics dashboard for visualization, clustering, burst detection, and entity network analysis. In evaluation on a public health benchmark, STIndex improves spatiotemporal entity extraction F1 by 4.37% (GPT-4o-mini) and 3.60% (Qwen3-8B). A live demonstration and open-source code are available at https://stindex.ai4wa.com/dashboard.",
+  "gid": 761,
+  "theme": "Spatiotemporal extraction"
+ }
+}

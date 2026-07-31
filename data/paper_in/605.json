@@ -1,0 +1,11 @@
+{
+ "batch": "b040",
+ "paper": {
+  "id": "b5b52a7849745ec63af7544c48bfa985d1316208",
+  "venue": "WWW 2026",
+  "title": "An Edge Computing Framework for Deep Learning-Based Anomaly Detection in Satellite-Linked Autonomous Vehicles",
+  "abstract": "Modern satellite-linked autonomous vehicles require real-time anomaly detection to address multi-layer cyber threats across CAN Bus, V2X communication, and sensor systems. Existing cloud-based approaches fail due to 500-600ms satellite latencies incompatible with safety-critical requirements. We present MARIS-ADS, a constraint-aware multi-modal anomaly detection framework for edge deployment. The system employs attention-based fusion of 41 CAN, 37 V2X, and 28 sensor features, applying entropy-based selection (ARS) to reduce dimensionality 83% while achieving 99.3% accuracy. Constraint validation enforcing SAE J2735, ISO 11898, and vehicle dynamics constraints filters 82% of adversarial attacks as protocol-invalid or physically impossible. Evaluation demonstrates 96.8% FGSM, 94.2% PGD, and 91.7% C&W robust accuracy with 0.31ms inference on resource-constrained TCUs. Cross-modal attack detection achieves 97.3% accuracy versus 12-34% for single-modality approaches, with comprehensive validation across CICIoV2024, CAN-Intrusion, and BurST-ADMA datasets confirming practical deployment viability for 6G vehicular networks.",
+  "gid": 605,
+  "theme": "Vehicular anomaly detection"
+ }
+}

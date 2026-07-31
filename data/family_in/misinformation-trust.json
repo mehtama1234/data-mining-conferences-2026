@@ -1,0 +1,560 @@
+{
+ "key": "misinformation-trust",
+ "theme": "Misinformation & Trust",
+ "n_papers": 140,
+ "pct": 7.2,
+ "by_venue": {
+  "WWW 2026": 105,
+  "WSDM 2026": 9,
+  "SIGIR 2026": 24,
+  "KDD 2026": 2
+ },
+ "theme_examples": [
+  {
+   "title": "A Fact-Checking Framework with Denoising Evidence Retrieval and LLM-Based Debate Verification",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "RobustExplain: Evaluating Robustness of LLM-Based Explanation Agents for Recommendation",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "Quantum-Safe, Efficient, and AI-Enhanced Blockchains for the Web: A Cooperative Tutorial on Quantum Computing, Blockchain Applications, and Data Standards",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "The Verification Crisis: Expert Perceptions of GenAI Disinformation and the Case for Reproducible Provenance",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "ToxiTwitch: Toward Emote-Aware Hybrid Moderation for Live Streaming Platforms",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "TrueLens: Video Fake News Detection with Dual Level Evidence Gathering and Consolidation",
+   "venue": "WWW 2026"
+  }
+ ],
+ "representative_papers": [
+  {
+   "title": "From Manipulation to Mistrust: Explaining Diverse Micro-Video Misinformation for Robust Debunking in the Wild",
+   "venue": "WWW 2026",
+   "problem": "Micro-video misinformation detection lacks coverage of diverse manipulation types and fine-grained attribution",
+   "approach": "Multi-agent reasoning framework integrating multimodal understanding with retrieved evidence for attribution",
+   "contribution": "WildFakeBench benchmark with 10k videos; FakeAgent outperforms MLLMs on diverse misinformation types",
+   "primary_theme": "Video misinformation",
+   "methods": [
+    "multimodal",
+    "multi-agent",
+    "evidence retrieval"
+   ]
+  },
+  {
+   "title": "WEB&GRAPH 2026: Workshop on Web & Graphs, Responsible Intelligence, and Social Media",
+   "venue": "WSDM 2026",
+   "problem": "Graph systems lack adaptivity and trustworthiness at web scale; ensuring interpretability in graph analytics challenging",
+   "approach": "Workshop bringing together researchers for algorithmic and methodological advances in responsible graph reasoning",
+   "contribution": "WEB&GRAPH 2026 fosters interdisciplinary dialogue on reliable graph analytics, misinformation detection, provenance tracking",
+   "primary_theme": "graph analytics responsible AI",
+   "methods": [
+    "graph_neural_networks",
+    "web_data_mining"
+   ]
+  },
+  {
+   "title": "Xemis: Fair and Robust Privacy-Preserving Data Trading based on Distributed Noise Sharing",
+   "venue": "WWW 2026",
+   "problem": "Privacy-preserving data trading lacks trustworthy noise calibration and Byzantine robustness",
+   "approach": "Decentralized multi-party computation with batched distributed noise sharing protocol (b-DNS)",
+   "contribution": "Xemis enables Byzantine-robust data trading with 12.7x faster and 43.6x bandwidth savings",
+   "primary_theme": "privacy-preserving data trading",
+   "methods": [
+    "differential-privacy",
+    "mpc",
+    "fairness"
+   ]
+  },
+  {
+   "title": "ZK-V: Zero-Knowledge Verification for Trustworthy Autonomous Driving Simulation",
+   "venue": "WWW 2026",
+   "problem": "Autonomous driving simulation lacks trustworthy verification protecting data integrity and privacy",
+   "approach": "Zero-knowledge proofs and blockchain for cryptographic constraint verification",
+   "contribution": "ZK-V enables privacy-preserving simulation verification without revealing telemetry data",
+   "primary_theme": "Autonomous driving verification",
+   "methods": [
+    "zero-knowledge-proofs",
+    "blockchain",
+    "cryptography"
+   ]
+  },
+  {
+   "title": "Exploring the Domain Sensitivity of AI Chatbots in Correcting Misinformation",
+   "venue": "WWW 2026",
+   "problem": "Unknown domain sensitivity in AI chatbot effectiveness for misinformation correction",
+   "approach": "Experimental study evaluating chatbot performance across health, science, and political domains",
+   "contribution": "Domain-sensitive differences in chatbot efficacy reveal contextual factors for correction deployment",
+   "primary_theme": "Misinformation correction",
+   "methods": [
+    "chatbot",
+    "evaluation",
+    "empirical"
+   ]
+  },
+  {
+   "title": "ZABAPAD 2026: 1st Workshop on Zero-knowledge Proof and Blockchain for WEB 4.0: Advancing the Post-quantum and Decentralized Era",
+   "venue": "WWW 2026",
+   "problem": "Web 4.0 needs post-quantum security, decentralization, and trustworthy AIoT identity models",
+   "approach": "Workshop exploring ZKP, blockchain, post-quantum readiness with practitioner playbooks",
+   "contribution": "Interoperability standards, benchmarks, failure mode catalog for Web 4.0 infrastructure",
+   "primary_theme": "Web 4.0 security workshop",
+   "methods": [
+    "zkp",
+    "blockchain",
+    "post-quantum"
+   ]
+  },
+  {
+   "title": "EmeraldApp: An AI-Driven Tool for Detecting Greenwashing in Sustainability Claims",
+   "venue": "WWW 2026",
+   "problem": "Misleading environmental claims undermine sustainability reporting trustworthiness",
+   "approach": "Multi-pipeline RAG system with vector DB and knowledge graph retrieval",
+   "contribution": "EmeraldApp tool verifies sustainability claims with fact-based justifications",
+   "primary_theme": "Greenwashing detection",
+   "methods": [
+    "rag",
+    "knowledge graph",
+    "llm classification"
+   ]
+  },
+  {
+   "title": "IConMoE: Modeling Intents of Misinformation using Concept Activation Vector-based Mixture of Experts",
+   "venue": "WWW 2026",
+   "problem": "Existing misinformation detection struggles to model multiple coexisting intents within claims",
+   "approach": "Concept activation vector-based mixture-of-experts for unsupervised intent modeling",
+   "contribution": "iConMoE outperforms baselines without additional LLM inferences for end-to-end veracity prediction",
+   "primary_theme": "Misinformation detection",
+   "methods": [
+    "moe",
+    "concept-activation",
+    "veracity",
+    "unsupervised"
+   ]
+  },
+  {
+   "title": "CiteLLM: An Agentic Platform for Trustworthy Scientific Reference Discovery",
+   "venue": "WWW 2026",
+   "problem": "LLMs generate untrustworthy references and hallucinations in scholarly content",
+   "approach": "Agentic platform embedding LLM utilities in LaTeX with trusted repository retrieval and semantic validation",
+   "contribution": "Hallucination-free reference discovery grounded in academic repositories with paragraph-level semantic matching",
+   "primary_theme": "Trustworthy scholarly AI",
+   "methods": [
+    "llm",
+    "retrieval",
+    "semantic-matching"
+   ]
+  },
+  {
+   "title": "Trustless Feedback: Preserving Privacy and Integrity in Crowdsourced RLHF via Zero-Knowledge Proofs",
+   "venue": "WWW 2026",
+   "problem": "Privacy regulations and IP concerns prevent expert feedback sharing for RLHF in high-stakes domains",
+   "approach": "Zero-Knowledge Proofs protocol validating preference labels without revealing sensitive input data",
+   "contribution": "Guarantees 100% rejection of invalid data while maintaining computational integrity and privacy",
+   "primary_theme": "Private RLHF",
+   "methods": [
+    "zero-knowledge-proofs",
+    "cryptography",
+    "privacy"
+   ]
+  },
+  {
+   "title": "When to Trust: A Causality-Aware Calibration Framework for Accurate Knowledge Graph Retrieval-Augmented Generation",
+   "venue": "WWW 2026",
+   "problem": "KG-RAG models produce overconfident predictions with incomplete or unreliable retrieved subgraphs",
+   "approach": "Causality-aware calibration with counterfactual prompting and panel-based re-scoring mechanism",
+   "contribution": "Improves prediction calibration while maintaining accuracy via intervention-aware uncertainty estimation",
+   "primary_theme": "Knowledge graph RAG",
+   "methods": [
+    "causal-analysis",
+    "retrieval-augmented-generation",
+    "calibration"
+   ]
+  },
+  {
+   "title": "International Workshop on Trustworthy Multimodal Learning for Social Media Analysis",
+   "venue": "WWW 2026",
+   "problem": "Social media multimodal content analysis lacks unified evaluation of performance and safety for real-world deployment.",
+   "approach": "Workshop bringing together researchers on multimodal LMM fusion and safety evaluation across multiple platforms.",
+   "contribution": "Unified framework for analyzing harmful content with LMMs; focus on instruction following, hallucinations, jailbreak risks.",
+   "primary_theme": "Multimodal social media safety",
+   "methods": [
+    "multimodal-learning",
+    "llm-evaluation",
+    "content-safety"
+   ]
+  },
+  {
+   "title": "DHOW-MiLLA: Joint Workshop on Diffusion of Harmful Content on Online Web and Countering Misinformation in the Age of LLMs and Agents",
+   "venue": "WWW 2026",
+   "problem": "Harmful content analysis fragmented across platforms, languages, topics; limited cross-platform counter-measure study.",
+   "approach": "Workshop unifying research on harmful content diffusion across platforms, languages, and content types.",
+   "contribution": "Brings together misinformation, hate speech, cyberbullying research under one framework with LLM/agent focus.",
+   "primary_theme": "Harmful content mitigation",
+   "methods": [
+    "content-moderation",
+    "misinformation-detection",
+    "cross-platform"
+   ]
+  },
+  {
+   "title": "Industrialized Deception: The Collateral Effects of LLM-Generated Misinformation on Digital Ecosystems",
+   "venue": "WWW 2026",
+   "problem": "AI-generated misinformation impacts information quality and detection capability",
+   "approach": "JudgeGPT platform and RogueGPT stimulus engine for perception study",
+   "contribution": "Detection capabilities improved but generation-detection arms race continues",
+   "primary_theme": "LLM misinformation",
+   "methods": [
+    "content-detection",
+    "evaluation-platform",
+    "generative-ai"
+   ]
+  },
+  {
+   "title": "Fine-Grained Visual Understanding for Multimodal and Trustworthy AI",
+   "venue": "WWW 2026",
+   "problem": "Fine-grained visual understanding datasets lack scale, coverage, and multimodal integration for trustworthiness",
+   "approach": "Comprehensive survey covering FGVC datasets, transformer architectures, generative augmentation, multimodal fusion",
+   "contribution": "Research roadmap for FGVC addressing robustness, explainability, data efficiency, and real-world deployment",
+   "primary_theme": "Fine-grained visual categorization",
+   "methods": [
+    "vision_transformer",
+    "data_augmentation",
+    "multimodal"
+   ]
+  },
+  {
+   "title": "TCR: A Trust-Aligned Text-Only Cross-Attention Ranker Distilling Multimodal LLM Reasoning for Recommendation Agents",
+   "venue": "WWW 2026",
+   "problem": "Vision-language models too slow for real-time recommendation despite semantic reasoning",
+   "approach": "Multi-teacher distillation into lightweight DeBERTa model with LoRA fine-tuning",
+   "contribution": "98.5% parameter reduction while maintaining ranking quality at production latency",
+   "primary_theme": "Model distillation",
+   "methods": [
+    "distillation",
+    "lora",
+    "dense-retrieval"
+   ]
+  },
+  {
+   "title": "LLM and Agents for Recommendation Systems (LARS)",
+   "venue": "WWW 2026",
+   "problem": "Multi-agent recommendation systems lack interpretability robustness and suitable evaluation metrics",
+   "approach": "Workshop framing principles for transparent agent architectures and coordination mechanisms",
+   "contribution": "Establishes evaluation frameworks for trustworthy multi-agent recommendation systems",
+   "primary_theme": "Multi-agent systems",
+   "methods": [
+    "multi-agent",
+    "mechanism-design"
+   ]
+  },
+  {
+   "title": "AiOfAi: 4th Workshop on Adverse Impacts and Collateral Effects of Artificial Intelligence Technologies",
+   "venue": "WWW 2026",
+   "problem": "AI technologies enable both constructive innovation and destructive threats in digital ecosystems",
+   "approach": "Workshop examining dual-edged nature of AI including security, threat modeling, access control",
+   "contribution": "Framework for addressing AI's societal impact on trust, privacy, ethics, and security",
+   "primary_theme": "AI safety and ethics",
+   "methods": [
+    "threat-modeling",
+    "security-analysis"
+   ]
+  },
+  {
+   "title": "Trust in One Round: Confidence Estimation for Large Language Models via Structural Signals",
+   "venue": "WWW 2026",
+   "problem": "Standard confidence estimators brittle under distribution shift and domain-specialized text.",
+   "approach": "Structural Confidence uses multi-scale hidden-state trajectory signals for single-pass estimation.",
+   "contribution": "Model-agnostic framework with spectral and shape descriptors captures internal stability patterns.",
+   "primary_theme": "LLM confidence estimation",
+   "methods": [
+    "llm",
+    "uncertainty",
+    "spectral-analysis"
+   ]
+  },
+  {
+   "title": "IntraAI: Bridging Human-AI Understanding Through Intelligent Interface Design",
+   "venue": "WWW 2026",
+   "problem": "Black-box AI interfaces obscure model behaviors, hindering user autonomy and trust.",
+   "approach": "Interactive visualization of alignment signals and reasoning patterns via modular design.",
+   "contribution": "IntraAI transforms passive consumption into active human-AI collaboration through transparency.",
+   "primary_theme": "AI interface transparency",
+   "methods": [
+    "interactive-visualization",
+    "interface-design",
+    "interpretability"
+   ]
+  },
+  {
+   "title": "Decentralised Trust Layers for the Web: Towards Transparent AI-Powered Platforms",
+   "venue": "WWW 2026",
+   "problem": "AI-mediated web experiences lack independent verification of model behavior and data provenance",
+   "approach": "Decentralized trust layer with transparency logs, model lineage registry, and privacy-preserving inference receipts",
+   "contribution": "DTL protocol enables verifiable model accountability with microsecond-scale cryptographic overhead",
+   "primary_theme": "Decentralized AI transparency",
+   "methods": [
+    "blockchain",
+    "audit",
+    "cryptography"
+   ]
+  },
+  {
+   "title": "WAB: Overcoming Memory, Network, and Security Walls in Native Agentic Browsers with WebAssembly",
+   "venue": "WWW 2026",
+   "problem": "Native agentic browsers hit memory, network, and security walls for multi-step workflows",
+   "approach": "WebAssembly integration for in-browser context, batched actions, and sandboxing",
+   "contribution": "WAB proof-of-concept reducing latency and securing untrusted agent execution",
+   "primary_theme": "Agentic browser architecture",
+   "methods": [
+    "webassembly",
+    "semantic retrieval",
+    "sandboxing"
+   ]
+  },
+  {
+   "title": "Consensus Stability of Community Notes on X",
+   "venue": "WWW 2026",
+   "problem": "Community Notes helpful status unstable; rating dynamics after display unclear",
+   "approach": "Interrupted time series analysis of 35M ratings; study polarization effects",
+   "contribution": "Shows 30.2% notes lose helpful status; dissimilar raters drive polarization, note disappearance",
+   "primary_theme": "Misinformation detection",
+   "methods": [
+    "time-series-analysis",
+    "crowdsourcing",
+    "polarization"
+   ]
+  },
+  {
+   "title": "Beyond Engagement: A Human-Centered Evaluation Framework for LLM-Powered Recommender Systems",
+   "venue": "WWW 2026",
+   "problem": "Engagement metrics misaligned with human values in LLM recommenders",
+   "approach": "Human-centered evaluation framework assessing trust, agency, transparency, satisfaction",
+   "contribution": "Reoriented assessment practices toward human-aligned metrics beyond engagement",
+   "primary_theme": "human-centered recommendation",
+   "methods": [
+    "qualitative evaluation",
+    "llm recommendation",
+    "human-centered"
+   ]
+  },
+  {
+   "title": "Fact-Checking Strategies in Web: Lateral Navigation in the Browser Boosts Health Misinformation Detection Even Under Confirmation Bias",
+   "venue": "WWW 2026",
+   "problem": "Unclear how fact-checking strategies affect health misinformation detection accuracy",
+   "approach": "Large-scale experiment measuring lateral vs vertical reading via behavioral signals",
+   "contribution": "Lateral reading significantly improves detection accuracy independent of confirmation bias",
+   "primary_theme": "misinformation detection verification",
+   "methods": [
+    "experimental study",
+    "behavioral signals",
+    "fact-checking"
+   ]
+  },
+  {
+   "title": "ARC: A Tool to Rate AI Models for Robustness Through a Causal Lens for Enabling Trustworthy Model Selection",
+   "venue": "WWW 2026",
+   "problem": "AI model robustness assessment lacks tool support for bias and data drift",
+   "approach": "Interactive web tool using causality-based metrics for model evaluation",
+   "contribution": "Model-agnostic evaluation framework supporting multiple task domains",
+   "primary_theme": "Model robustness assessment",
+   "methods": [
+    "causal_inference",
+    "fairness",
+    "interactive_tool"
+   ]
+  },
+  {
+   "title": "DREAMS: A Social Exchange Theory-Informed Modeling of Misinformation Engagement on Social Media",
+   "venue": "WWW 2026",
+   "problem": "Predicting misinformation engagement on social media with heterogeneous mechanisms and platform dynamics",
+   "approach": "Social exchange theory-guided neural framework modeling engagement as sequence-to-sequence adaptation",
+   "contribution": "43.6% MAPE improvement on cross-platform misinformation engagement prediction",
+   "primary_theme": "misinformation engagement prediction",
+   "methods": [
+    "neural",
+    "social-exchange-theory",
+    "sequence-to-sequence"
+   ]
+  },
+  {
+   "title": "coTherapist: A Behavior-Aligned Small Language Model Framework to Support Mental Healthcare Experts",
+   "venue": "WWW 2026",
+   "problem": "Mental healthcare workforce shortages limit access; AI tools lack clinical grounding and trustworthiness",
+   "approach": "Small LM framework with domain-specific fine-tuning, retrieval augmentation, agentic reasoning",
+   "contribution": "SLM demonstrating expert-like therapeutic competencies validated by domain experts for mental health support",
+   "primary_theme": "clinical AI mental health",
+   "methods": [
+    "small-language-model",
+    "retrieval-augmentation",
+    "agentic-reasoning",
+    "fine-tuning"
+   ]
+  },
+  {
+   "title": "Decentralized Video Provenance at the Edge: Blockchain-Assisted Integrity for Security Camera Streams",
+   "venue": "WWW 2026",
+   "problem": "Deepfakes and manipulated video undermine trust in security footage",
+   "approach": "Blockchain logging via BSC and decentralized storage via IPFS",
+   "contribution": "Practical tamper-evident registration for security video integrity",
+   "primary_theme": "video provenance blockchain",
+   "methods": [
+    "blockchain",
+    "ipfs",
+    "cryptography",
+    "video"
+   ]
+  },
+  {
+   "title": "Augmented Intelligence in Technology-Assisted Review Systems (ALTARS 2026)",
+   "venue": "WWW 2026",
+   "problem": "Workshop position paper on TAR challenges in Web-scale heterogeneous, dynamic, multilingual information environments",
+   "approach": "Interdisciplinary discussion on intelligent retrieval, human-in-the-loop learning, explainable AI, and LLM integration",
+   "contribution": "Research directions for transparent, fair, and adaptive Web-scale technology-assisted review systems",
+   "primary_theme": "Technology-assisted review",
+   "methods": [
+    "ir",
+    "nlp",
+    "trustworthy-ai"
+   ]
+  },
+  {
+   "title": "6th International Workshop on Computational Methods for Online Discourse Analysis (BeyondFacts'26)",
+   "venue": "WWW 2026",
+   "problem": "Online discourse analysis requires interdisciplinary methods for detecting misinformation and bias",
+   "approach": "Workshop bringing together NLP, social sciences, journalism, and computer science communities",
+   "contribution": "Advancing machine-based interpretation of societal debates using argument mining, stance detection, and fact verification",
+   "primary_theme": "Online discourse analysis",
+   "methods": [
+    "nlp",
+    "argument-mining",
+    "stance-detection"
+   ]
+  },
+  {
+   "title": "Truth with a Twist: The Rhetoric of Persuasion in Professional vs. Community-Authored Fact-Checks",
+   "venue": "WWW 2026",
+   "problem": "Understanding rhetorical differences between community and professional fact-checking debunks",
+   "approach": "Large-scale comparison across Community Notes, EUvsDisinfo, and DBKF datasets measuring persuasion techniques",
+   "contribution": "Finds no evidence CNs use more persuasion than professional fact-checks; identifies systematic rhetorical differences",
+   "primary_theme": "Fact-checking rhetoric comparison",
+   "methods": [
+    "misinformation",
+    "crowd",
+    "rhetoric"
+   ]
+  },
+  {
+   "title": "Evaluating Trustworthiness in Reactive Web Architectures: A Structured Framework and Comparative Analysis",
+   "venue": "WWW 2026",
+   "problem": "LLM-assisted recommenders optimized for engagement ignore trust, agency, and transparency for humans",
+   "approach": "Human-centered assessment framework examining trade-offs between engagement and human-aligned design choices",
+   "contribution": "Framework shifting evaluation from engagement metrics toward trust, transparency, and user satisfaction",
+   "primary_theme": "trustworthy recommendation",
+   "methods": [
+    "llm",
+    "evaluation",
+    "human-centered"
+   ]
+  },
+  {
+   "title": "No Evidence, No Problem: When Less is More for Out of Context Multimodal Misinformation Detection",
+   "venue": "WWW 2026",
+   "problem": "Out-of-context multimodal misinformation detection requires efficient evidence-free methods suitable for real-world deployment",
+   "approach": "Lightweight framework combining entity extraction, visual captions, CLIP alignment, and Flan-T5 with weighted ensemble",
+   "contribution": "State-of-the-art OOC detection without external evidence; low computational overhead and high interpretability for practical use",
+   "primary_theme": "Misinformation detection",
+   "methods": [
+    "multimodal",
+    "clip",
+    "ensemble"
+   ]
+  },
+  {
+   "title": "Trustworthy Foundation Models for Web Intelligence: Causal Perspectives and Challenges",
+   "venue": "WWW 2026",
+   "problem": "Foundation models deployed in web systems lack trustworthiness frameworks for fairness/robustness",
+   "approach": "Workshop exploring causal reasoning as principled framework for trustworthiness",
+   "contribution": "Cross-disciplinary forum advancing causal perspectives on FM trustworthiness",
+   "primary_theme": "Foundation model trustworthiness",
+   "methods": [
+    "causal",
+    "fairness",
+    "transparency"
+   ]
+  },
+  {
+   "title": "Proactive Misinformation Forecasting via Incremental Topic Detection and Sentiment Polarization",
+   "venue": "WWW 2026",
+   "problem": "Misinformation prediction on social media lacks early warning signals from topic evolution",
+   "approach": "Incremental clustering with burst detection and topic-specific sentiment classification",
+   "contribution": "Polarization-aware features yield 11.9% F1 improvement and one-month lead-time forecasting",
+   "primary_theme": "Misinformation forecasting",
+   "methods": [
+    "topic-detection",
+    "sentiment",
+    "clustering"
+   ]
+  },
+  {
+   "title": "PAMAS: Self-Adaptive Multi-Agent System with Perspective Aggregation for Misinformation Detection",
+   "venue": "WWW 2026",
+   "problem": "Multi-agent misinformation detection suffers from information drowning; truthful content overwhelms deceptive cues",
+   "approach": "Hierarchical perspective-aware aggregation with Auditors, Coordinators, Decision-Maker, evolving memory",
+   "contribution": "PAMAS framework alleviates information drowning via anomaly highlighting and dynamic topology optimization",
+   "primary_theme": "Multi-agent misinformation",
+   "methods": [
+    "multi-agent",
+    "anomaly detection",
+    "aggregation"
+   ]
+  },
+  {
+   "title": "Verifiable Federated Representation Learning for Cross-domain Sequential Recommendation",
+   "venue": "WWW 2026",
+   "problem": "Federated cross-domain sequential recommendation faces heterogeneous interactions and weak trust assumptions enabling misreporting and negative transfer.",
+   "approach": "VeriFRL separates shared and exclusive representations via variational encoder; contribution evaluation module quantifies client/feature influences.",
+   "contribution": "Privacy-preserving federated CDSR with verifiability, interpretability, and negative transfer detection using representation disentanglement.",
+   "primary_theme": "Verifiable federated recommendation",
+   "methods": [
+    "federated-learning",
+    "representation-learning",
+    "sequential-recommendation"
+   ]
+  },
+  {
+   "title": "Concept-Grounded Detection of Vaccine Misinformation in Multimodal Content Using Interpretable Vision-Language Models",
+   "venue": "WWW 2026",
+   "problem": "Image-based vaccine misinformation detection is underexplored; direct LVLM classification lacks interpretability and transparency.",
+   "approach": "Hybrid neuro-symbolic framework trains classical ML on LVLM-extracted binary concept features for stance prediction.",
+   "contribution": "Concept-grounded detection improves accuracy by 10-17% while enabling explicit inspection of visual and rhetorical cues.",
+   "primary_theme": "Interpretable multimodal misinformation detection",
+   "methods": [
+    "vision-language-model",
+    "concept-grounding",
+    "neuro-symbolic"
+   ]
+  },
+  {
+   "title": "NANDA: Resolution, Discovery, and Governance for the Agentic Web",
+   "venue": "WWW 2026",
+   "problem": "AI agents lack trust, discovery, and governance mechanisms at internet scale",
+   "approach": "Decentralized framework extending DNS, ICANN, certificate authority concepts to agents",
+   "contribution": "Control plane for agent resolvability, certification, and safe composability across boundaries",
+   "primary_theme": "Agent governance infrastructure",
+   "methods": [
+    "architecture",
+    "trust",
+    "decentralized"
+   ]
+  }
+ ]
+}

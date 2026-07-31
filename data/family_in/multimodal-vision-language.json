@@ -1,0 +1,571 @@
+{
+ "key": "multimodal-vision-language",
+ "theme": "Multimodal & Vision-Language",
+ "n_papers": 204,
+ "pct": 10.5,
+ "by_venue": {
+  "WWW 2026": 117,
+  "WSDM 2026": 11,
+  "SIGIR 2026": 65,
+  "KDD 2026": 11
+ },
+ "theme_examples": [
+  {
+   "title": "Multi-view Semantic Contrastive Alignment for Multimodal Recommendation",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "PLIKD: Prompt Learning with Instance-aware Knowledge Distillation for Web-scale Semantic Image Classification",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "Safeguarding Children at Scale: Cost-Effective Multimodal LLM Detection of Inappropriate YouTube Advertising",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "The Verification Crisis: Expert Perceptions of GenAI Disinformation and the Case for Reproducible Provenance",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "ToxiTwitch: Toward Emote-Aware Hybrid Moderation for Live Streaming Platforms",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "SketchMind: Understanding Abstract Sketches with MLLMs for Fine-Grained Sketch-Based Image Retrieval",
+   "venue": "WWW 2026"
+  }
+ ],
+ "representative_papers": [
+  {
+   "title": "PLIKD: Prompt Learning with Instance-aware Knowledge Distillation for Web-scale Semantic Image Classification",
+   "venue": "WWW 2026",
+   "problem": "Prompt learning for web-scale image classification overfits base classes and fails under distribution shift",
+   "approach": "Instance-aware knowledge extraction from multimodal LLMs with dual-teacher knowledge distillation strategy",
+   "contribution": "PLIKD improves generalization to unseen classes via external knowledge distillation",
+   "primary_theme": "Vision-language classification",
+   "methods": [
+    "prompt learning",
+    "knowledge distillation",
+    "multimodal llm"
+   ]
+  },
+  {
+   "title": "TCR: A Trust-Aligned Text-Only Cross-Attention Ranker Distilling Multimodal LLM Reasoning for Recommendation Agents",
+   "venue": "WWW 2026",
+   "problem": "Vision-language models too slow for real-time recommendation despite semantic reasoning",
+   "approach": "Multi-teacher distillation into lightweight DeBERTa model with LoRA fine-tuning",
+   "contribution": "98.5% parameter reduction while maintaining ranking quality at production latency",
+   "primary_theme": "Model distillation",
+   "methods": [
+    "distillation",
+    "lora",
+    "dense-retrieval"
+   ]
+  },
+  {
+   "title": "Multimodal Content Analysis for Social Good",
+   "venue": "WWW 2026",
+   "problem": "Multimodal content moderation lacks robust transparent ethically-grounded understanding of diverse media types.",
+   "approach": "Interdisciplinary workshop integrating NLP, vision, ML, and AI ethics for agentic VLM systems.",
+   "contribution": "MM4SG 2026 advances socially responsible multimodal intelligence for scalable content reasoning and moderation.",
+   "primary_theme": "Multimodal content moderation",
+   "methods": [
+    "vision-language models",
+    "content analysis",
+    "ai ethics"
+   ]
+  },
+  {
+   "title": "Moral Outrage Shapes Commitments Beyond Attention: Multimodal Moral Emotions on YouTube in Korea and the US",
+   "venue": "WWW 2026",
+   "problem": "How media moral rhetoric shapes audience engagement across cultures on social platforms.",
+   "approach": "Multimodal moral emotion classifier using vision-language model on 400K YouTube videos.",
+   "contribution": "Moral outrage increases engagement across cultures with effects strengthening from views to comments.",
+   "primary_theme": "social media emotions",
+   "methods": [
+    "multimodal",
+    "nlp",
+    "social-media"
+   ]
+  },
+  {
+   "title": "StreamSense: Streaming Social Task Detection with Selective Vision\u2013Language Model Routing",
+   "venue": "WWW 2026",
+   "problem": "Live streaming platforms need real-time social task detection from partial asynchronous multimodal signals",
+   "approach": "Lightweight streaming encoder with selective VLM routing, cross-modal contrastive loss, IoU-weighted training",
+   "contribution": "StreamSense reduces latency and compute by selective escalation while maintaining high accuracy",
+   "primary_theme": "Streaming social task detection",
+   "methods": [
+    "streaming",
+    "multimodal",
+    "vlm"
+   ]
+  },
+  {
+   "title": "MCRec: Few-Shot Multimodal Cover Recommendation via User Interest Profiles",
+   "venue": "WWW 2026",
+   "problem": "Cold-start and sparsity in cover image recommendation for e-commerce items",
+   "approach": "Vision-Language Models with text-guided visual interest aggregation and textual inversion",
+   "contribution": "Few-shot multimodal cover selection outperforms baselines with 3.72 percent Recall@1 gains",
+   "primary_theme": "Multimodal recommendation",
+   "methods": [
+    "vlm",
+    "multimodal",
+    "vision-language"
+   ]
+  },
+  {
+   "title": "Rethinking Object Detection and Tracking",
+   "venue": "WWW 2026",
+   "problem": "Object detection and tracking fragmented across closed-set task-isolated pipelines",
+   "approach": "Consolidated survey of 100+ works across 2D/3D/multimodal settings",
+   "contribution": "Cross-task patterns identifying convergence toward unified formulations",
+   "primary_theme": "Vision perception systems",
+   "methods": [
+    "survey",
+    "detection",
+    "tracking",
+    "vision_language"
+   ]
+  },
+  {
+   "title": "Scaling Collaborative Filtering with Multimodal Contrastive Fine-tuning",
+   "venue": "WWW 2026",
+   "problem": "Scaling collaborative filtering lacks understanding of heterogeneous dataset integration for cold-start and cross-domain scenarios",
+   "approach": "Multimodal framework reformulating user-item interactions as visual representations for vision-language models with prompt-based ranking",
+   "contribution": "RecCLIP achieves power-law scaling trends with improved cold-start and cross-domain transfer performance",
+   "primary_theme": "Multimodal recommendation",
+   "methods": [
+    "vlm",
+    "contrastive",
+    "recommendation",
+    "cross-domain"
+   ]
+  },
+  {
+   "title": "Breaking Cross-modal Alignment in Embodied Intelligence: A Multimodal Adversarial Attack Framework for Vision-Language-Action Models",
+   "venue": "WWW 2026",
+   "problem": "Vision-language-action models vulnerable to adversarial attacks disrupting cross-modal alignment",
+   "approach": "Multimodal adversarial attack framework injecting perturbations into task-relevant image regions",
+   "contribution": "MAVLA demonstrates 70% task success drop at 40% perturbation, revealing VLA security risks",
+   "primary_theme": "Adversarial VLA attacks",
+   "methods": [
+    "adversarial",
+    "multimodal",
+    "vision-language"
+   ]
+  },
+  {
+   "title": "VL-KGE: Vision\u2013Language Models Meet Knowledge Graph Embeddings",
+   "venue": "WWW 2026",
+   "problem": "Multimodal KGE constrained by weak cross-modal alignment and isolation of modalities",
+   "approach": "Integrate vision-language models for cross-modal alignment with structured relational modeling",
+   "contribution": "VL-KGE improves link prediction over unimodal/multimodal baselines on diverse KGs",
+   "primary_theme": "Knowledge graph embeddings",
+   "methods": [
+    "vision-language-models",
+    "knowledge-graphs",
+    "embedding-learning"
+   ]
+  },
+  {
+   "title": "Concept-Grounded Detection of Vaccine Misinformation in Multimodal Content Using Interpretable Vision-Language Models",
+   "venue": "WWW 2026",
+   "problem": "Image-based vaccine misinformation detection is underexplored; direct LVLM classification lacks interpretability and transparency.",
+   "approach": "Hybrid neuro-symbolic framework trains classical ML on LVLM-extracted binary concept features for stance prediction.",
+   "contribution": "Concept-grounded detection improves accuracy by 10-17% while enabling explicit inspection of visual and rhetorical cues.",
+   "primary_theme": "Interpretable multimodal misinformation detection",
+   "methods": [
+    "vision-language-model",
+    "concept-grounding",
+    "neuro-symbolic"
+   ]
+  },
+  {
+   "title": "The Alignment Gap: A Benchmark Demonstrating the Lack of Cross-Lingual Mapping in Dialect-Specialized Language Models - The Case of Ehugbo",
+   "venue": "SIGIR 2026",
+   "problem": "Cross-lingual IR for low-resource dialects unexplored; African-centric models underperform despite linguistic familiarity",
+   "approach": "Introduce Ehugbo IR benchmark from parallel multimodal Bible corpus; diagnostic analysis of alignment gaps in models",
+   "contribution": "Reveals alignment gap: global models achieve 85% vs African-models' <5% retrieval despite less language exposure; language invariance via translation supervision",
+   "primary_theme": "low-resource dialect IR",
+   "methods": [
+    "cross-lingual-ir",
+    "multilingual",
+    "benchmark",
+    "diagnostic-analysis"
+   ]
+  },
+  {
+   "title": "Structural and Disentangled Adaptation of Large Vision Language Models for Multimodal Recommendation",
+   "venue": "SIGIR 2026",
+   "problem": "Large Vision-Language Models misaligned to recommendation domain; gradient conflicts during fine-tuning",
+   "approach": "Lightweight SDA framework with cross-modal structural alignment and modality-disentangled adaptation",
+   "contribution": "Average gains of 6.15% Hit@10 and 8.64% NDCG@10; 12.83-18.70% on long-tail items",
+   "primary_theme": "Multimodal recommendation adaptation",
+   "methods": [
+    "lvlm",
+    "adapter",
+    "recommendation",
+    "multimodal"
+   ]
+  },
+  {
+   "title": "Vistar: Enhancing the Perception Capability of LLMs under Imprecise IMU-Text Alignment",
+   "venue": "KDD 2026",
+   "problem": "IMU sensor data (accelerometer, gyroscope) is hard to interpret for language models; manual IMU-text alignment is impractical due to semantic gap.",
+   "approach": "Use cross-modal contrastive learning (anchored by vision) offline, then retrieval-augmented generation online to bridge IMU and language.",
+   "contribution": "Vistar improves IMU-to-text retrieval by up to 57.45% over baselines via aligned multimodal encoders.",
+   "primary_theme": "Multimodal learning",
+   "methods": [
+    "contrastive learning",
+    "retrieval augmented generation",
+    "self-supervised learning",
+    "cross-modal alignment"
+   ]
+  },
+  {
+   "title": "Campaign-2-PT-RAG: LLM-Guided Semantic Product Type Attribution for Scalable Campaign Ranking",
+   "venue": "WWW 2026",
+   "problem": "Campaign language doesn't directly map to product purchases; lack of supervision for ranking.",
+   "approach": "LLM interprets campaigns, semantic search retrieves product types, structured classifier evaluates relevance.",
+   "contribution": "Reframes attribution into semantic alignment; generates 78-90% precise training labels at scale.",
+   "primary_theme": "e-commerce campaign ranking",
+   "methods": [
+    "llm",
+    "semantic_search",
+    "rag"
+   ]
+  },
+  {
+   "title": "HAAF: Hierarchical Adaptation and Alignment of Foundation Models for Few-Shot Pathology Anomaly Detection",
+   "venue": "WWW 2026",
+   "problem": "Vision-Language models fail to resolve fine-grained pathology anomalies due to granularity mismatch.",
+   "approach": "Cross-Level Scaled Alignment grounds semantic prompts in ROI-specific visual contexts.",
+   "contribution": "Significantly outperforms SOTA in few-shot pathology detection on four benchmarks.",
+   "primary_theme": "vision-language pathology detection",
+   "methods": [
+    "vision_language",
+    "adaptation",
+    "few_shot"
+   ]
+  },
+  {
+   "title": "Toward Graph-Tokenizing Large Language Models with Reconstructive Graph Instruction Tuning",
+   "venue": "WWW 2026",
+   "problem": "Graph-Tokenizing LLMs achieve only implicit alignment; text-dominant bias underutilizes graph context.",
+   "approach": "Reconstructive graph instruction tuning that reconstructs graph information from LLM outputs.",
+   "contribution": "Explicit graph supervision improves alignment upper bound; better graph comprehension.",
+   "primary_theme": "LLM graph tokenization",
+   "methods": [
+    "llm",
+    "graph_representation",
+    "instruction_tuning"
+   ]
+  },
+  {
+   "title": "Cross-Modal Rationale Transfer for Explainable Humanitarian Classification on Social Media",
+   "venue": "WWW 2026",
+   "problem": "Crisis image classification lacks explainability and requires separate annotation for images",
+   "approach": "Cross-modal rationale transfer from text to image using visual language transformer",
+   "contribution": "Multimodal framework boosts Macro-F1 by 2-35% while extracting text and image rationales",
+   "primary_theme": "Explainable multimodal classification",
+   "methods": [
+    "multimodal",
+    "rationale_extraction",
+    "cross_modal",
+    "transformer"
+   ]
+  },
+  {
+   "title": "Task-Aware Cloud-End Offloading for Vision-Language Model Serving via Dynamic Modality-Specific Adapter Scheduling",
+   "venue": "WWW 2026",
+   "problem": "Cloud-centric VLM serving suffers from high latency, cost, and network dependency; on-device deployment constrained by memory.",
+   "approach": "Task-aware end-cloud offloading with adapter scheduling; small end-side VLM with LoRA enhancement and adaptive router.",
+   "contribution": "Achieves 76.3% cost reduction and 42.9% latency improvement while maintaining multi-task VLM accuracy.",
+   "primary_theme": "VLM inference optimization",
+   "methods": [
+    "distillation",
+    "lora",
+    "edge-computing",
+    "routing"
+   ]
+  },
+  {
+   "title": "Fine-Grained Visual Understanding for Multimodal and Trustworthy AI",
+   "venue": "WWW 2026",
+   "problem": "Fine-grained visual understanding datasets lack scale, coverage, and multimodal integration for trustworthiness",
+   "approach": "Comprehensive survey covering FGVC datasets, transformer architectures, generative augmentation, multimodal fusion",
+   "contribution": "Research roadmap for FGVC addressing robustness, explainability, data efficiency, and real-world deployment",
+   "primary_theme": "Fine-grained visual categorization",
+   "methods": [
+    "vision_transformer",
+    "data_augmentation",
+    "multimodal"
+   ]
+  },
+  {
+   "title": "Weakly Supervised Multimodal Claim Verification with Entity-Graph Inference",
+   "venue": "WWW 2026",
+   "problem": "Claims across modalities lack verification; weak signals abundant but labels scarce",
+   "approach": "Weakly supervised multimodal framework with entity-graph inference",
+   "contribution": "Consistent probabilistic claim verification from heterogeneous weak signals",
+   "primary_theme": "Claim verification",
+   "methods": [
+    "weak supervision",
+    "multimodal",
+    "graph inference",
+    "calibration"
+   ]
+  },
+  {
+   "title": "PLM: Point-Language Maps for Zero-shot Object Goal Navigation",
+   "venue": "WWW 2026",
+   "problem": "Object goal navigation requires expensive 3D scene representations; existing methods demand high training costs",
+   "approach": "Point-Language Maps leveraging pre-trained 3D vision-language models for zero-shot reasoning",
+   "contribution": "Achieves 2.0-29.6 percent improvement in navigation success without training",
+   "primary_theme": "Vision-language navigation",
+   "methods": [
+    "vlm",
+    "zero-shot",
+    "3d"
+   ]
+  },
+  {
+   "title": "WPIS: From In-the-Wild Web Images to Physics-Aware 3D Scene Graphs for Physical Reasoning",
+   "venue": "WWW 2026",
+   "problem": "Single-view web images lack physics-aware functional knowledge for lab agents",
+   "approach": "Physics-aware 3D scene graphs from web imagery with HOI subgraphs and liquid states",
+   "contribution": "40% improved LLM reasoning on feasibility and safety via structured scene representation",
+   "primary_theme": "scene understanding reasoning",
+   "methods": [
+    "scene graphs",
+    "physics reasoning",
+    "vision language"
+   ]
+  },
+  {
+   "title": "Augmenting Cross-View Geo-Localization with Spatial Semantics from Vision Foundation Models",
+   "venue": "WWW 2026",
+   "problem": "Cross-view geo-localization lacks interpretability and struggles with cross-view alignment",
+   "approach": "Auxiliary spatial semantic alignment task using vision foundation models and BEV transformation",
+   "contribution": "Fuses spatial structure with visual semantics for improved CVGL performance and interpretability",
+   "primary_theme": "Geo-localization matching",
+   "methods": [
+    "vision transformers",
+    "multimodal learning",
+    "spatial alignment"
+   ]
+  },
+  {
+   "title": "Analyzing the Impact of Image Novelty and Text Emotion on Meme Engagement: Evidence from Roe vs. Wade Verdict",
+   "venue": "WWW 2026",
+   "problem": "Limited scalable evidence on meme engagement drivers in sociopolitical contexts",
+   "approach": "Multimodal framework using ViT embeddings for novelty clustering and sentiment analysis",
+   "contribution": "Shows image novelty and textual emotion differently influence engagement; crowd protests boost reach",
+   "primary_theme": "Meme engagement analysis",
+   "methods": [
+    "multimodal learning",
+    "sentiment analysis",
+    "vision transformers"
+   ]
+  },
+  {
+   "title": "Docs2Synth: A Synthetic Data Tuned Retriever Framework for Documents Understanding",
+   "venue": "WWW 2026",
+   "problem": "Document understanding lacks annotations and struggles with hallucination",
+   "approach": "Synthetic QA generation with retrieval-guided inference for VLPMs",
+   "contribution": "Reduces hallucination and improves response consistency across VRDU benchmarks",
+   "primary_theme": "Document understanding",
+   "methods": [
+    "synthetic_data",
+    "retrieval",
+    "mllm",
+    "vision_language"
+   ]
+  },
+  {
+   "title": "Tuning Qwen2.5-VL to Improve Its Web Interaction Skills",
+   "venue": "WWW 2026",
+   "problem": "VLMs struggle with element localization, cursor tracking, and overoptimistic action success assumptions in web tasks",
+   "approach": "Two-stage fine-tuning: hover detection, then single-action execution with state verification before planning next",
+   "contribution": "Increases web interaction success from 86% to 94% via improved localization, cursor tracking, planning",
+   "primary_theme": "Vision language agents",
+   "methods": [
+    "fine-tuning",
+    "vision-language",
+    "web-automation"
+   ]
+  },
+  {
+   "title": "Task-Aligned Unlearning for Multimodal Large Language Models",
+   "venue": "WWW 2026",
+   "problem": "MLLM unlearning with single objective causes unbalanced forgetting and quality degradation",
+   "approach": "TAU framework optimizes multiple task-aligned objectives for classification, generation, and entity recall",
+   "contribution": "Balanced unlearning across heterogeneous tasks while preserving non-target knowledge in MLLMs",
+   "primary_theme": "multimodal unlearning",
+   "methods": [
+    "unlearning",
+    "multimodal models",
+    "adversarial training"
+   ]
+  },
+  {
+   "title": "Egocentric Co-Pilot: Web-Native Smart-Glasses Agents for Assistive Egocentric AI",
+   "venue": "WWW 2026",
+   "problem": "Web access requires screens and stable desks; assistive needs for low vision and mobile scenarios",
+   "approach": "Neuro-symbolic LLM orchestrating perception and web tools with hierarchical context compression",
+   "contribution": "Web-native egocentric framework enables always-on assistive AI over continuous first-person video",
+   "primary_theme": "assistive egocentric AI",
+   "methods": [
+    "llm",
+    "multimodal",
+    "web integration"
+   ]
+  },
+  {
+   "title": "VisionST: Coordinating Cross-modal Traffic Prediction with Interactive Geo-image Encoding",
+   "venue": "WWW 2026",
+   "problem": "Single-modality traffic prediction misses comprehensive patterns from diverse factors like road networks and social events",
+   "approach": "VisionST coordinates cross-modal prediction via visual semantic extraction and pattern-guided aggregation from geo-images",
+   "contribution": "Leverages satellite imagery to capture visual, spatial, temporal relations for improved traffic prediction",
+   "primary_theme": "Multi-modal traffic prediction",
+   "methods": [
+    "vision-language",
+    "cross-modal",
+    "spatial-temporal",
+    "semantic-extraction"
+   ]
+  },
+  {
+   "title": "From Native Memes to Global Moderation: Cross-Cultural Evaluation of Vision\u2013Language Models for Hateful Meme Detection",
+   "venue": "WWW 2026",
+   "problem": "Vision-language models trained on Western data exhibit cross-cultural bias in hateful meme detection; fairness varies by culture.",
+   "approach": "Systematic evaluation framework tests zero-shot vs. one-shot learning, native vs. English prompts; analyzes translation effects.",
+   "contribution": "Native-language prompting and one-shot learning mitigate Western bias; reveals actionable strategies for globally robust moderation.",
+   "primary_theme": "Cross-cultural VLM robustness",
+   "methods": [
+    "vision-language-model",
+    "fairness",
+    "multilingual-evaluation"
+   ]
+  },
+  {
+   "title": "Navigating Truth in Multimodal Fact-checking via Retrieval- and Reasoning-Enhanced Large Language Models",
+   "venue": "WWW 2026",
+   "problem": "MLLM-based fact-checking fails to exploit visual evidence and lacks context-aware reasoning",
+   "approach": "FACTCOMPASS combines semantic-aware retrieval with reasoning-enhanced RL and knowledge integration",
+   "contribution": "Enhanced evidence utilization and deep reasoning via reinforced fine-tuning strategy",
+   "primary_theme": "Multimodal fact-checking",
+   "methods": [
+    "mllm",
+    "retrieval",
+    "reinforcement-learning"
+   ]
+  },
+  {
+   "title": "LLM-GC: Advancing Granger Causal Discovery from Time Series with Multimodel Language Modeling",
+   "venue": "WSDM 2026",
+   "problem": "Granger causal discovery confined to raw time-series lacking contextual semantics and prone to overfitting",
+   "approach": "LLM-GC multimodal framework enriching temporal dynamics with semantic priors via cross-modal dual retrieval and shared causality augmenter",
+   "contribution": "First LLM-empowered Granger causality discovery outperforming state-of-the-art on synthetic and real-world benchmark datasets",
+   "primary_theme": "Causal time series discovery",
+   "methods": [
+    "causal-inference",
+    "time-series",
+    "llm"
+   ]
+  },
+  {
+   "title": "Combining Structural and Textual Knowledge for Knowledge Graph Link Prediction via Large Language Models",
+   "venue": "WSDM 2026",
+   "problem": "KG link prediction relies heavily on textual knowledge, missing structural information",
+   "approach": "ST-KGLP aligns structural and textual knowledge with query-aware adaptive weighting",
+   "contribution": "Bridging structural-textual gap via knowledge aligner improves link prediction 3-11%",
+   "primary_theme": "Knowledge graph link prediction",
+   "methods": [
+    "knowledge-graph",
+    "llm",
+    "multimodal",
+    "embedding"
+   ]
+  },
+  {
+   "title": "REFLEX: Reinforcement Feedback Learning with Large Language Models for E-commerce Query Expansion",
+   "venue": "WSDM 2026",
+   "problem": "Query expansion in e-commerce fails on short queries, incomplete supervision, evolving catalogs without domain constraints",
+   "approach": "LLM training via search-engine-in-loop RL with catalog grounding and relevance-diversity reward",
+   "contribution": "REFLEX improves semantic coverage and retrieval effectiveness; online A/B confirms scalability gains",
+   "primary_theme": "E-commerce query expansion",
+   "methods": [
+    "llm",
+    "reinforcement_learning",
+    "search"
+   ]
+  },
+  {
+   "title": "NeuCon-ICE: Neuron-Level Controllable In-Context Editing for Multimodal Large Language Models",
+   "venue": "SIGIR 2026",
+   "problem": "Multimodal knowledge editing through in-context editing lacks controllability and relies on implicit contextualization without explicit guidance.",
+   "approach": "Neuron-level controllable in-context editing identifying multimodal contextual neurons and selectively injecting context-aware updates.",
+   "contribution": "NeuCon-ICE framework enabling controllable knowledge editing for MLLMs with neuron-level precision.",
+   "primary_theme": "Multimodal knowledge editing",
+   "methods": [
+    "neuron-level",
+    "knowledge-editing",
+    "in-context"
+   ]
+  },
+  {
+   "title": "Struct-Align:  Zero-Shot Text-to-3D Scene Retrieval via Locality-Aware Structural Alignment",
+   "venue": "SIGIR 2026",
+   "problem": "Text-to-3D scene retrieval requires paired training data and fails on open-vocabulary queries",
+   "approach": "Zero-shot framework converts scenes and text to shared textual representation, uses locality-aware structural matching",
+   "contribution": "Struct-Align eliminates training data requirement via foundation models and schema-aligned text representation",
+   "primary_theme": "3D scene retrieval",
+   "methods": [
+    "zero-shot learning",
+    "structural alignment",
+    "vision-language models"
+   ]
+  },
+  {
+   "title": "Chain of Evidence: Pixel-Level Visual Attribution for Iterative Retrieval-Augmented Generation",
+   "venue": "SIGIR 2026",
+   "problem": "iRAG systems parse text losing visual semantics, provide coarse-grained attribution in lengthy documents",
+   "approach": "Chain of Evidence leverages Vision-Language Models to reason over document screenshots with pixel-level attribution",
+   "contribution": "Precise bounding boxes and visual reasoning chains eliminate format-specific parsing overhead",
+   "primary_theme": "Visual retrieval augmentation",
+   "methods": [
+    "vision-language models",
+    "attribution",
+    "retrieval-augmented generation"
+   ]
+  },
+  {
+   "title": "Mitigating Evidence Suppression: Bi-level Active Evidence Injection for Educational Video Understanding",
+   "venue": "SIGIR 2026",
+   "problem": "Large vision-language models suppress task-critical tokens in educational video QA despite visual evidence",
+   "approach": "BAEI employs Injection Policy Network optimized via GRPO to dynamically select and strengthen evidence tokens",
+   "contribution": "Decoding-time intervention improves factual alignment by addressing evidence suppression systematically",
+   "primary_theme": "Educational video QA",
+   "methods": [
+    "vision-language models",
+    "evidence injection",
+    "reinforcement learning"
+   ]
+  },
+  {
+   "title": "Multi-modal Relational Item Representation Learning for Inferring Substitutable and Complementary Items",
+   "venue": "SIGIR 2026",
+   "problem": "Item relationship inference hampered by noisy behavior signals and sparse item coverage",
+   "approach": "Multi-modal self-supervised framework with denoising and LLM-assisted supervision",
+   "contribution": "26-39% improvement in substitutable/complementary item inference across datasets",
+   "primary_theme": "Item relationship learning",
+   "methods": [
+    "self-supervised",
+    "multimodal",
+    "llm"
+   ]
+  }
+ ]
+}

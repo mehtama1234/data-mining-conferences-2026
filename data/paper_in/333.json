@@ -1,0 +1,11 @@
+{
+ "batch": "b022",
+ "paper": {
+  "id": "62e503111eaf909419d906e9e74e6fad8599b5e9",
+  "venue": "WWW 2026",
+  "title": "From Lexical and Semantic to Predictive Search: Evolution or Involution?",
+  "abstract": "We cover the evolution of web search from lexical and semantic search to the generative AI-powered chatbots predicting knowledge that are common today. For that we need to deep dive into the technical mechanics of vector models; content, link and usage features; entities; embeddings; large language models; and neural information retrieval, including dense retrieval and retrieval augmented generation (RAG). To understand the impact of these new tools we need to look at bigger philosophical AI questions: What are we losing when we let machines ''guess'' for us? Are we widening the digital divide? Are we getting a little too lazy? And we will lose cognitive skills? Should we respect content authorship? We end with predictive search, that is, predicting answers using large language models. Should we use these models as search engines? Should we trust their answers? And should we use them as relevancy judges?",
+  "gid": 333,
+  "theme": "search evolution"
+ }
+}

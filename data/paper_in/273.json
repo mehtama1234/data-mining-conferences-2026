@@ -1,0 +1,11 @@
+{
+ "batch": "b018",
+ "paper": {
+  "id": "4f6ad377689059cb798953400a81f0b83587f6ed",
+  "venue": "WWW 2026",
+  "title": "SLS: A Scalable Logic Subgraph Framework for Temporal Web Analytics and Hybrid Search",
+  "abstract": "Approximate nearest neighbor search has witnessed remarkable advancements in achieving high-performance retrieval. However, practical Web scale data analytics encompasses not only unstructured feature vectors but also structured constraints such as temporal attributes. When expanding to hybrid queries that combine both, existing methods still face two challenges. Firstly, several methods employ imprecise filtering which consequently degrades retrieval accuracy. Secondly, to avoid potential omissions, some methods have to perform redundant searches over massive datasets, thereby deteriorating efficiency. To address these issues, we propose a novel hybrid query method called Semantic Logic Subgraph. Concretely, we present a dataset subdivision strategy based on attributes or time intervals to ensure data consistency within subsets, eliminating degradation in retrieval accuracy. We then build a graph index on each subset to cope with diverse retrieval needs while limiting the search scope, ensuring efficiency in large scale data processing. Finally, we introduce a novel logical hybrid query mechanism to strengthen the generality of hybrid queries. Experimental results on nine benchmark datasets demonstrate that our method outperforms seven baseline methods in terms of robustness and speed.",
+  "gid": 273,
+  "theme": "Hybrid search"
+ }
+}

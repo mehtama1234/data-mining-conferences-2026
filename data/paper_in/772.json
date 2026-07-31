@@ -1,0 +1,11 @@
+{
+ "batch": "b051",
+ "paper": {
+  "id": "e908aec6810eeeb8d6c6889072861d97192fbe2e",
+  "venue": "WWW 2026",
+  "title": "Anonymous Linear Bandits for Multi-User Systems",
+  "abstract": "We provide the first anonymity-preserving algorithm for a centralized decision maker in linear bandit-based multi-user systems. Our algorithm employs successive elimination techniques for linear bandits to build an assignment multi-graph (from users to arms) along with a greedy matching algorithm that efficiently allocates the arms to users. We provide lower and upper bounds for this problem, showing that our algorithm is regret optimal up to a \u221a(CK) factor.",
+  "gid": 772,
+  "theme": "Bandit algorithms"
+ }
+}

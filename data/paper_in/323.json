@@ -1,0 +1,11 @@
+{
+ "batch": "b021",
+ "paper": {
+  "id": "5f3d6234678b2c199752c070e2c2706abd3e8917",
+  "venue": "WWW 2026",
+  "title": "Welcome from the History of the Web Track Chairs",
+  "abstract": "The History of the Web track highlights how key historical decisions, institutional incentives, and socio-technical shifts have shaped the Web's evolution, and how those choices continue to influence the systems we build and rely on today. This year's program traces a connected trajectory from early information retrieval and ranking, through the rise of user experience, engagement, and platform dynamics, to the Semantic Web's vision of machine-understandable data and knowledge graphs. It then brings that historical arc into direct conversation with the current wave of large language models and agentic AI, showing how contemporary AI capabilities are deeply entangled with the Web as both infrastructure and archive: a source of training data, a medium for evaluation, and a space where social impact is felt. Across talks and the panel, the program emphasizes recurring ideas and persistent tensions, such as relevance versus reliability, openness versus governance, scale versus accountability, and shows how historical perspective can sharpen our understanding of what is genuinely new, what is cyclical, and what remains unresolved. Ultimately, the track positions history as an analytical lens for guiding more responsible, informed, and durable choices in future Web research and innovation.",
+  "gid": 323,
+  "theme": "Web history AI evolution"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "batch": "b022",
+ "paper": {
+  "id": "641e2ddf77a80f468b52dedf17d059a627ac2377",
+  "venue": "WWW 2026",
+  "title": "Prism: Towards Lowering User Cognitive Load in LLMs via Complex Intent Understanding",
+  "abstract": "Large Language Models are rapidly emerging as web-native interfaces to social platforms. On the social web, users frequently have ambiguous and dynamic goals, making complex intent understanding\u2014rather than single-turn execution\u2014the cornerstone of effective human-LLM collaboration. Existing approaches attempt to clarify user intents through sequential or parallel questioning, yet they fall short of addressing the core challenge: modeling the logical dependencies among clarification questions. Inspired by the Cognitive Load Theory, we propose Prism, a novel framework for complex intent understanding that enables logically coherent and efficient intent clarification. Prism comprises four tailored modules: a complex intent decomposition module, which decomposes user intents into smaller, well-structured elements and identifies logical dependencies among them; a logical clarification generation module, which organizes clarification questions based on these dependencies to ensure coherent, low-friction interactions; an intent-aware reward module, which evaluates the quality of clarification trajectories via an intent-aware reward function and leverages Monte Carlo Sample to simulate user-LLM interactions for large-scale, high-quality training data generation; and a self-evolved intent tuning module, which iteratively refines the LLM's logical clarification capability through data-dr",
+  "gid": 337,
+  "theme": "LLM intent understanding"
+ }
+}

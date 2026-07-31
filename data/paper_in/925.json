@@ -1,0 +1,11 @@
+{
+ "batch": "b061",
+ "paper": {
+  "id": "7b69333d620a106493e2d144c4f2cf30be98158b",
+  "venue": "WSDM 2026",
+  "title": "Sequential Recommendation with Generative Intent Prediction Utilizing User Search-Behavior",
+  "abstract": "Sequential recommendation systems often struggle to accurately predict user preferences when limited to historical browsing data. We present a novel approach that combines recommendation systems with search engine methodologies, introducing a generative intent prediction model that leverages both item view histories and historical search queries. The model is enhanced by incorporating user interaction data from search engine result pages (SERP), leading to more accurate query predictions aligned with actual user behavior. By integrating this intent prediction model into sequential recommendation frameworks through a query expansion-inspired approach, we demonstrate significant performance improvements over traditional methods, particularly in challenging scenarios where conventional approaches fall short.",
+  "gid": 925,
+  "theme": "Sequential recommendation"
+ }
+}

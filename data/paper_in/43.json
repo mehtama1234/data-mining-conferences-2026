@@ -1,0 +1,11 @@
+{
+ "batch": "b002",
+ "paper": {
+  "id": "0cb12d516c5f7aa2f74c4d883f20b070bc4c894e",
+  "venue": "WWW 2026",
+  "title": "Language Model Representations for Efficient Few-Shot Tabular Classification",
+  "abstract": "The Web is a rich source of structured data in the form of tables, from product catalogs and knowledge bases to scientific datasets. However, the heterogeneity of the structure and semantics of these tables makes it challenging to build a unified method that can effectively leverage the information they contain. Meanwhile, Large language models (LLMs) are becoming an increasingly integral component of web infrastructure for tasks like semantic search. This raises a crucial question: can we leverage these already-deployed LLMs to classify structured data in web-native tables (e.g., product catalogs, knowledge base exports, scientific data portals), avoiding the need for specialized models or extensive retraining? This work investigates a lightweight paradigm, Table Representation with Language Model (TaRL), for few-shot tabular classification that directly utilizes semantic embeddings of individual table rows. We first show that naive application of these embeddings underperforms compared to specialized tabular models. We then demonstrate that their potentials can be unlocked with two key techniques: removing the common component from all embeddings and calibrating the softmax temperature. We show that a simple meta-learner, trained on handcrafted features, can learn to predict an appropriate temperature. This approach achieves performance comparable to state-of-the-art models i",
+  "gid": 43,
+  "theme": "tabular classification LLM"
+ }
+}

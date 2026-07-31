@@ -1,0 +1,11 @@
+{
+ "batch": "b067",
+ "paper": {
+  "id": "10.1145/3805712.3809539",
+  "venue": "SIGIR 2026",
+  "title": "CATS: Cluster-Aware Thompson Sampling for Negative Mining in Sequential Recommendation",
+  "abstract": "Modern sequential recommendation systems often rely on negative sampling to efficiently train models over vast item corpora. However, common strategies such as uniform, popularity-based sampling, or hard-negative mining, often yield uninformative negatives, introduce popularity bias, or suffer from false negatives that hinder model learning. While several studies focus on identifying true negatives, none explore latent item representations to mitigate false negatives issue. We propose CATS (Cluster-Aware Thompson Sampling),an adaptive negative sampling method that balances exploration and exploitation by leveraging unsupervised item clustering and adaptive multi-armed bandit principles. The key insight behind CATS is that false negatives tend to lie in the same cluster as the positive item, whereas true hard negatives are more likely found in nearest clusters. CATS leverages this by adaptively sampling negatives from the positive item's cluster, its neighboring clusters, and the rest of the item space, and decaying the sampling probability from the positive item's cluster over time, reducing the risk of accumulating false negatives during training. Evaluation using state-of-the-art sequential models (SASRec, BERT4Rec, BSARec) and three benchmark datasets (MovieLens-1M, Amazon Beauty and BeerAdvocate) demonstrates that CATS consistently outperforms standard and advanced sampling",
+  "gid": 1011,
+  "theme": "Negative sampling"
+ }
+}

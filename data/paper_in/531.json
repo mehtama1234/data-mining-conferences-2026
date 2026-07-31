@@ -1,0 +1,11 @@
+{
+ "batch": "b035",
+ "paper": {
+  "id": "9fab9b17acf9e745aceca0a9fa521914e1d0bd49",
+  "venue": "WWW 2026",
+  "title": "Triple Modality Fusion: Aligning Visual, Textual, and Graph Data for LLM-based Multi-Behavior Recommender Systems",
+  "abstract": "Large language models (LLMs) and Vision Language Models (VLMs) have recently transformed recommender systems by leveraging textual and visual information to capture user behaviors and item characteristics for recommendation. However, relying solely on these modalities overlooks the rich relational data that underpins user\u2013item interactions. In this paper, we present Triple Modality Fusion (TMF), an end-to-end framework that seamlessly integrates visual, textual, and user behavior graph data into an LLM-based recommender system. TMF encodes multi-behavior signals as graph embeddings along with textual and visual embeddings. A modality fusion module is built with self-attention and cross-attention mechanisms to project disparate modality representations into a unified embedding space. We fine-tune an LLM-based recommender with the token-aware prompt designed for multi-behavior recommendations and convert user behavior sequences into natural language prompts. Extensive evaluations on three benchmark datasets demonstrate that TMF significantly outperforms state-of-the-art models, delivering robust recommendation quality. TMF has been deployed in the Walmart recommendation production environment to generate item candidates for marketing campaigns, reaching 19.7% and 25.5% improvement in Electronics and Sports categories.",
+  "gid": 531,
+  "theme": "multimodal recommendation"
+ }
+}

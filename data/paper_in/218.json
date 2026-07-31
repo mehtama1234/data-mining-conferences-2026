@@ -1,0 +1,11 @@
+{
+ "batch": "b014",
+ "paper": {
+  "id": "40b4e23e84708686027d5fa08f8e707968f9c659",
+  "venue": "WWW 2026",
+  "title": "GreenWebInspector: A Tool for Real-Time Web Energy Efficiency Assessment",
+  "abstract": "Mobile devices now account for over 60% of global web traffic, making the energy consumption of web applications a critical concern for both user experience and environmental sustainability. While existing tools focus primarily on performance metrics, energy consumption doesn't always correlate with performance. We present GreenWebInspector, a tool that provides real-time energy tier predictions and actionable insights for any website using static design features. Unlike performance-based approaches, our tool leverages device-independent features extracted from web page structure and content, achieving 9.7% higher accuracy than performance-score-based methods. The extension allows developers, researchers, and environmentally conscious users to instantly assess and understand the energy footprint of web applications during the design and browsing phases.",
+  "gid": 218,
+  "theme": "web energy efficiency"
+ }
+}

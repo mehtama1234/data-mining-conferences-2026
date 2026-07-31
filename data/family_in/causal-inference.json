@@ -1,0 +1,563 @@
+{
+ "key": "causal-inference",
+ "theme": "Causal Inference",
+ "n_papers": 87,
+ "pct": 4.5,
+ "by_venue": {
+  "WWW 2026": 42,
+  "WSDM 2026": 14,
+  "SIGIR 2026": 30,
+  "KDD 2026": 1
+ },
+ "theme_examples": [
+  {
+   "title": "Causal Pre-training Under the Fairness Lens: An Empirical Study of TabPFN",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "Macro-Micro Collaborative Learning for Logical Data Center Microservice Indicators Forecasting",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "Bridging Semantic Understanding and Popularity Bias with LLMs",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "Dir-GD: Directed Graph Distillation",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "C-HyPOD: Causal Hyperbolic Representation Learning with Prototype Orthogonal Disentanglement for Graph Out-of-Distribution Recommendation",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "Counterfactual Augmented Causal Reasoning for Aspect-Based Sentiment Analysis",
+   "venue": "WWW 2026"
+  }
+ ],
+ "representative_papers": [
+  {
+   "title": "MuVaC: A Variational Causal Framework for Multimodal Sarcasm Understanding in Dialogues",
+   "venue": "WWW 2026",
+   "problem": "Sarcasm understanding requires joint detection and explanation but causal dependencies are overlooked",
+   "approach": "Variational causal inference framework modeling sarcasm via structural causal models",
+   "contribution": "Joint multimodal sarcasm detection and explanation with consistency enforcement between tasks",
+   "primary_theme": "Multimodal sarcasm detection",
+   "methods": [
+    "causal-inference",
+    "multimodal",
+    "variational"
+   ]
+  },
+  {
+   "title": "From Sold-Out to Sales Uplift: Causal Inference for Intelligent Inventory Management on Online Travel Platforms",
+   "venue": "WWW 2026",
+   "problem": "Online travel platforms lose revenue from inventory delays and supply strikes",
+   "approach": "Causality-driven network estimating platform-wide treatment effects",
+   "contribution": "10M+ RMB annual GMV increase with causal inventory management",
+   "primary_theme": "Causal inference e-commerce",
+   "methods": [
+    "causal-inference",
+    "neural-network",
+    "treatment-effect"
+   ]
+  },
+  {
+   "title": "Unsupervised Multi-Source Causal Feature Selection",
+   "venue": "WWW 2026",
+   "problem": "Multi-source feature selection ignores causal relationships and source bias",
+   "approach": "Adversarial balancing with causal reweighting and shared-source separation",
+   "contribution": "Improved feature selection via causal reasoning across heterogeneous sources",
+   "primary_theme": "Causal feature selection",
+   "methods": [
+    "causal-inference",
+    "feature-selection",
+    "domain-adaptation"
+   ]
+  },
+  {
+   "title": "CausalSKyHop: Knowledge-Aware Causal Explanation of Dynamic GNNs via Higher-Order Semantic Reasoning",
+   "venue": "WWW 2026",
+   "problem": "Dynamic GNNs cannot explain predictions grounded in structured knowledge or higher-order patterns",
+   "approach": "Semantic knowledge-aware framework using higher-order structural causal models and contrastive learning",
+   "contribution": "Interpretable causal subgraphs capturing dynamic flow of knowledge through evolving semantic contexts",
+   "primary_theme": "Explainable dynamic graph",
+   "methods": [
+    "gnn",
+    "causal_inference",
+    "knowledge_graph"
+   ]
+  },
+  {
+   "title": "Invariant Learning on Heterogeneous Graphs via Subgraph Environment Inference",
+   "venue": "WWW 2026",
+   "problem": "Heterogeneous graph GNNs fail to generalize under distribution shifts in Web applications",
+   "approach": "InvHG framework inferring latent subgraph environments and learning invariant representations",
+   "contribution": "Causal framework enabling OOD generalization on heterogeneous graphs via expert fusion",
+   "primary_theme": "Heterogeneous graph OOD",
+   "methods": [
+    "gnn",
+    "causality",
+    "invariant-learning"
+   ]
+  },
+  {
+   "title": "CIFAD: Causal-Invariant Subspace Learning for Few-Shot Anomaly Detection on Dynamic Relational Graphs",
+   "venue": "WWW 2026",
+   "problem": "Few-shot anomaly detection on dynamic graphs struggles with noise separation and limited label dependence",
+   "approach": "Causal-invariant subspace learning with sparse attention encoder and active annotation via influence functions",
+   "contribution": "CIFAD improves few-shot anomaly detection by disentangling causal signals from environmental noise",
+   "primary_theme": "Anomaly detection graphs",
+   "methods": [
+    "causal-inference",
+    "active-learning",
+    "graph-neural-network"
+   ]
+  },
+  {
+   "title": "Sparse Causal Latent Features for Robust Multimodal Learning under Distribution Shifts",
+   "venue": "WWW 2026",
+   "problem": "Multimodal models learn spurious correlations, degrading performance under distribution shift.",
+   "approach": "Gating mechanism selecting causal features via adversarial training and stability scoring.",
+   "contribution": "SCLF achieves robust OOD performance (73%) while maintaining in-domain accuracy (74%).",
+   "primary_theme": "Robust multimodal learning",
+   "methods": [
+    "causal-inference",
+    "adversarial-training",
+    "feature-selection"
+   ]
+  },
+  {
+   "title": "Eroding the Truth-Default: A Causal Analysis of Human Susceptibility to Foundation Model Hallucinations and Disinformation in the Wild",
+   "venue": "WWW 2026",
+   "problem": "Humans struggle to distinguish synthetic foundation model outputs from authentic organic content",
+   "approach": "Structural Causal Models decouple authenticity from attribution to identify detection mechanisms",
+   "contribution": "Fake news familiarity mediates detection; fluency trap renders GPT-4 indistinguishable from humans",
+   "primary_theme": "AI hallucination detection",
+   "methods": [
+    "causal-inference",
+    "scm",
+    "user-study",
+    "llm"
+   ]
+  },
+  {
+   "title": "We Need a More Robust Classifier: Dual Causal Learning Empowers Domain-Incremental Time Series Classification",
+   "venue": "WWW 2026",
+   "problem": "Time series classifiers struggle with domain incremental learning and robustness",
+   "approach": "Dual-causal disentanglement framework with intervention mechanism for feature capture",
+   "contribution": "DualCD framework improves domain-incremental robustness by separating causal and spurious features",
+   "primary_theme": "Time series classification",
+   "methods": [
+    "causal inference",
+    "disentanglement",
+    "domain adaptation"
+   ]
+  },
+  {
+   "title": "ARC: A Tool to Rate AI Models for Robustness Through a Causal Lens for Enabling Trustworthy Model Selection",
+   "venue": "WWW 2026",
+   "problem": "AI model robustness assessment lacks tool support for bias and data drift",
+   "approach": "Interactive web tool using causality-based metrics for model evaluation",
+   "contribution": "Model-agnostic evaluation framework supporting multiple task domains",
+   "primary_theme": "Model robustness assessment",
+   "methods": [
+    "causal_inference",
+    "fairness",
+    "interactive_tool"
+   ]
+  },
+  {
+   "title": "Traceable Latent Variable Discovery Based on Multi-Agent Collaboration",
+   "venue": "WWW 2026",
+   "problem": "Causal discovery lacks latent confounder handling; overlooks latent variable semantics",
+   "approach": "Multi-agent LLM collaboration modeled as Bayesian Nash Equilibrium game",
+   "contribution": "TLVD integrates data-driven causal graphs with LLM semantic inference for latent discovery",
+   "primary_theme": "causal discovery",
+   "methods": [
+    "causal-inference",
+    "llm",
+    "game-theory"
+   ]
+  },
+  {
+   "title": "Modeling Endogenous Logic: Causal Neuro-Symbolic Reasoning Model for Explainable Multi-Behavior Recommendation",
+   "venue": "WWW 2026",
+   "problem": "Multi-behavior recommendation lacks explainability and suffers from confounding bias",
+   "approach": "Neuro-symbolic reasoning with causal inference and hierarchical preference propagation",
+   "contribution": "Explainable recommendations via causal mediators and logic rules",
+   "primary_theme": "explainable recommendation",
+   "methods": [
+    "neuro-symbolic",
+    "causal-inference",
+    "graph"
+   ]
+  },
+  {
+   "title": "Concept Relationship Embedding-Based Interactive Web Application for Explainable Medical Diagnosis",
+   "venue": "WWW 2026",
+   "problem": "Deep learning black-box nature limits clinical interpretability; methods ignore concept relationships and causality",
+   "approach": "Concept Relationship Embedding Model extracting subregional concepts, encoding as interaction graph, causal inference",
+   "contribution": "State-of-the-art on concept recognition and disease classification; improved robustness, label efficiency, interpretability",
+   "primary_theme": "Explainable medical AI",
+   "methods": [
+    "concept-learning",
+    "causal-inference",
+    "graph-based"
+   ]
+  },
+  {
+   "title": "MCLMR: A Model-Agnostic Causal Learning Framework for Multi-Behavior Recommendation",
+   "venue": "WWW 2026",
+   "problem": "Multi-behavior recommendation lacks causal modeling of confounding and behavior alignment",
+   "approach": "Causal graph with interventions; MoE aggregation and bias-aware contrastive learning",
+   "contribution": "MCLMR improves multi-behavior recommendation across baselines via causal framework",
+   "primary_theme": "recommendation systems",
+   "methods": [
+    "causal inference",
+    "mixture of experts",
+    "contrastive learning"
+   ]
+  },
+  {
+   "title": "Causality with Knowledge Graphs: Semantics and Inference",
+   "venue": "WSDM 2026",
+   "problem": "Causal frameworks designed for flat data fail on knowledge graphs with semantic unawareness and data incompleteness",
+   "approach": "Semantics-aware frameworks integrating causal reasoning with ontological semantics and logical entailment over KGs",
+   "contribution": "End-to-end pipeline CauseKG/SemMatch/HyKG-CF/BaLu enabling causal discovery, inference, counterfactual prediction on KGs",
+   "primary_theme": "Causal knowledge graphs",
+   "methods": [
+    "knowledge-graphs",
+    "causal-inference",
+    "semantics"
+   ]
+  },
+  {
+   "title": "LLM-GC: Advancing Granger Causal Discovery from Time Series with Multimodel Language Modeling",
+   "venue": "WSDM 2026",
+   "problem": "Granger causal discovery confined to raw time-series lacking contextual semantics and prone to overfitting",
+   "approach": "LLM-GC multimodal framework enriching temporal dynamics with semantic priors via cross-modal dual retrieval and shared causality augmenter",
+   "contribution": "First LLM-empowered Granger causality discovery outperforming state-of-the-art on synthetic and real-world benchmark datasets",
+   "primary_theme": "Causal time series discovery",
+   "methods": [
+    "causal-inference",
+    "time-series",
+    "llm"
+   ]
+  },
+  {
+   "title": "Design and Evaluation of Whole-Page Experience Optimization for E-commerce Search",
+   "venue": "WSDM 2026",
+   "problem": "E-commerce search results pages evolved to non-linear layouts unsuitable for position-biased ranking",
+   "approach": "Causal framework optimizing 2D layout, relevance, visuals with long-term satisfaction metrics",
+   "contribution": "Whole-page optimization achieves 1.86% brand relevance gain and 0.05% revenue uplift via A/B test",
+   "primary_theme": "e-commerce search ranking",
+   "methods": [
+    "causal inference",
+    "ranking",
+    "layout optimization",
+    "long-term metrics"
+   ]
+  },
+  {
+   "title": "Identifiable Disentangled Representation Learning for Causal Inference under Network Interference",
+   "venue": "WSDM 2026",
+   "problem": "Network-based causal inference misses heterogeneous latent factors causing bias and spillover effects",
+   "approach": "Disentangled VAE learning instrumental, confounding, adjustment factors with causal regularization",
+   "contribution": "NDiVAE enables identifiable factor learning and tighter generalization bounds for networked ITE estimation",
+   "primary_theme": "causal inference networks",
+   "methods": [
+    "variational autoencoder",
+    "causal inference",
+    "representation learning",
+    "graphical models"
+   ]
+  },
+  {
+   "title": "KnowFC: Navigating Knowledge Conflicts in Large Language Model-based Fact-Checking",
+   "venue": "WSDM 2026",
+   "problem": "LLM fact-checking conflicts when external evidence contradicts internal knowledge; models overconfident in incorrect beliefs",
+   "approach": "Confidence calibration identifies knowledge boundaries; causal mediation mitigates internal knowledge interference",
+   "contribution": "KnowFC adaptively retrieves evidence and uses causal intervention to navigate knowledge conflicts in fact-checking",
+   "primary_theme": "LLM fact-checking",
+   "methods": [
+    "llm",
+    "causal_inference",
+    "fact_checking"
+   ]
+  },
+  {
+   "title": "Joint Graph Learning for Robust Causal Inference over Knowledge Graphs",
+   "venue": "WSDM 2026",
+   "problem": "Causal inference over KGs challenged by missing attributes and relational interference; existing methods assume full observation",
+   "approach": "Joint graph learning with GNNs: attribute imputation as edge prediction, effect estimation with interference modeling",
+   "contribution": "BaLu framework enables robust causal inference on incomplete KGs by handling both missing attributes and relational interference",
+   "primary_theme": "causal inference graphs",
+   "methods": [
+    "gnn",
+    "causal_inference",
+    "knowledge_graphs"
+   ]
+  },
+  {
+   "title": "Workshop on Benchmarking Causal Models (CausalBench)",
+   "venue": "WSDM 2026",
+   "problem": "Causal learning lacks unified benchmarks; inconsistent performance across different data and hardware platforms",
+   "approach": "Survey and systematize existing causal benchmarking efforts; identify gaps and organize into meaningful categories",
+   "contribution": "CausalBench workshop promotes reproducible causal learning research through standardized benchmarks and metrics",
+   "primary_theme": "causal learning benchmarks",
+   "methods": [
+    "benchmarking",
+    "causal_inference"
+   ]
+  },
+  {
+   "title": "Enhanced Cold-Start Sequential Recommendation with Causal Diffusion Preference Modeling",
+   "venue": "WSDM 2026",
+   "problem": "Sequential recommendation fails for cold-start users with limited history; existing methods lack compatibility with advanced models",
+   "approach": "Causal diffusion generates preference representations via Preference-Dominant Sequence and causal inference",
+   "contribution": "CDMRec integrates seamlessly into mainstream sequential recommenders for effective cold-start learning",
+   "primary_theme": "Sequential cold-start",
+   "methods": [
+    "diffusion",
+    "causal_inference",
+    "sequential"
+   ]
+  },
+  {
+   "title": "Optimizing Marketing Subsidies via Counterfactual Learning with Asymmetric Reward Function",
+   "venue": "SIGIR 2026",
+   "problem": "Subsidy allocation optimization requires better boundary decisions beyond treatment effect estimation",
+   "approach": "Two-stage counterfactual learning: coarse threshold estimation via order information, refined asymmetric loss",
+   "contribution": "CoLA method with Sharpe ratio prioritization achieves significant gains in subsidy allocation efficiency",
+   "primary_theme": "Counterfactual optimization",
+   "methods": [
+    "counterfactual learning",
+    "asymmetric loss",
+    "causal inference"
+   ]
+  },
+  {
+   "title": "Inductive Subgraphs as Shortcuts: Causal Disentanglement for Heterophilic Graph Learning",
+   "venue": "SIGIR 2026",
+   "problem": "GNNs fail on heterophilic graphs due to spurious inductive subgraph shortcuts",
+   "approach": "Causal inference to identify and block non-causal paths through subgraph disentanglement",
+   "contribution": "CD-GNN framework improving robustness via causal subgraph isolation",
+   "primary_theme": "Heterophilic graph learning",
+   "methods": [
+    "gnn",
+    "causal-inference",
+    "debiasing"
+   ]
+  },
+  {
+   "title": "Mitigating Bias in Large Language Model Based Question Answering through Causal Front Door Prompting",
+   "venue": "SIGIR 2026",
+   "problem": "LLM-based QA generates biased answers due to demographic associations in pre-training.",
+   "approach": "CFDP applies causal front-door intervention on chain-of-thought reasoning traces.",
+   "contribution": "Reduces demographic bias without sacrificing accuracy on BBQ and Stereotype benchmarks.",
+   "primary_theme": "bias mitigation",
+   "methods": [
+    "llm",
+    "causal-inference",
+    "question-answering"
+   ]
+  },
+  {
+   "title": "CoCo: Conformal Confidence Suppression to Optimize Search Results",
+   "venue": "SIGIR 2026",
+   "problem": "E-commerce search suppression disregards prediction uncertainty, causing over-suppression and degraded customer experience",
+   "approach": "Conformal confidence framework accounting for uncertainty in uplift-based modeling via causal effect learning",
+   "contribution": "CoCo suppressor achieves statistically significant revenue and profit improvements over baseline methods",
+   "primary_theme": "Causal recommendation ranking",
+   "methods": [
+    "causal-inference",
+    "conformal-prediction",
+    "uplift-modeling",
+    "e-commerce"
+   ]
+  },
+  {
+   "title": "Precision at Scale: An End-to-End Graph-based Framework for Mitigating Network Interference in TikTok A/B Tests",
+   "venue": "SIGIR 2026",
+   "problem": "Network interference in large-scale A/B tests violates SUTVA and distorts measured results on social platforms.",
+   "approach": "Learned Interference Graph with dynamic patterns, scalable community partitioning, and sensitivity-enhanced estimation via CUPED.",
+   "contribution": "Production framework reducing interference by 68.8% and correcting treatment effect from +1.44% to +2.08%.",
+   "primary_theme": "A/B testing interference",
+   "methods": [
+    "graph_clustering",
+    "causal_inference",
+    "cuped"
+   ]
+  },
+  {
+   "title": "Reconstructing Training Data from Adapter-based Federated Large Language Models",
+   "venue": "WWW 2026",
+   "problem": "Adapter-based federated LLMs assumed privacy-safe but vulnerable to gradient inversion attacks",
+   "approach": "Token presence inference from attention, sentence-level inversion in low-rank space, semantic coherence via constrained greedy decoding",
+   "contribution": "UTR attack reconstructs training text near-perfectly from adapter gradients even with large batches",
+   "primary_theme": "Federated LLM security",
+   "methods": [
+    "gradient inversion",
+    "attention analysis",
+    "language model priors"
+   ]
+  },
+  {
+   "title": "Causal Pre-training Under the Fairness Lens: An Empirical Study of TabPFN",
+   "venue": "WWW 2026",
+   "problem": "Fairness properties of causal pre-trained foundation models for tabular data remain underexplored",
+   "approach": "Comprehensive empirical evaluation of TabPFN across fairness, performance, and robustness metrics",
+   "contribution": "Causal pre-training helpful but insufficient for algorithmic fairness; fairness interventions needed",
+   "primary_theme": "fairness machine learning",
+   "methods": [
+    "causal-model",
+    "foundation-model",
+    "fairness-evaluation"
+   ]
+  },
+  {
+   "title": "Accurate Trajectory Recovery in Underserved Areas via Location Inference from Web Crowdsourced Data",
+   "venue": "WWW 2026",
+   "problem": "Sparse GPS and missing road networks in underserved regions severely degrade trajectory quality and recovery",
+   "approach": "Multi-scale implicit grid-based offset maps with coarse-to-fine mechanism for region-aware trajectory encoding",
+   "contribution": "RHTR model achieves state-of-the-art trajectory recovery in roadless, sparse-data scenarios via grid hierarchies",
+   "primary_theme": "trajectory recovery inference",
+   "methods": [
+    "grid-based encoding",
+    "multi-scale representation",
+    "coarse-to-fine"
+   ]
+  },
+  {
+   "title": "Macro-Micro Collaborative Learning for Logical Data Center Microservice Indicators Forecasting",
+   "venue": "WWW 2026",
+   "problem": "Microservice indicator forecasting requires modeling both inter-service dependencies and intra-service causal relationships",
+   "approach": "Macro-micro framework with Indicator-Centric Embedding, heterogeneous graph convolution, and causal sparse attention",
+   "contribution": "MaMiClif enables accurate LDC microservice forecasting via collaborative macro-micro dependency learning",
+   "primary_theme": "forecasting microservices",
+   "methods": [
+    "graph convolution",
+    "causal attention",
+    "time series"
+   ]
+  },
+  {
+   "title": "Decoding Web Memorization: A Semantic Membership Inference Attack on LLMs",
+   "venue": "WWW 2026",
+   "problem": "Membership inference attacks fail against semantically preserved but structurally altered training samples",
+   "approach": "Generate adversarial semantic samples, extract multi-layer attention features, train contrastive classifier",
+   "contribution": "Significantly outperforms existing MIA methods by leveraging semantic perturbations and attention patterns",
+   "primary_theme": "LLM privacy attacks",
+   "methods": [
+    "membership-inference",
+    "contrastive-learning",
+    "adversarial"
+   ]
+  },
+  {
+   "title": "PAOSC: Plug-and-play Attention Optimization for Semantic Consistency in LLMs",
+   "venue": "WWW 2026",
+   "problem": "LLM attention mechanisms overemphasize low-value tokens and disrupt semantic consistency during inference",
+   "approach": "Plug-and-play model using generator-discriminator with policy gradient to dynamically optimize attention",
+   "contribution": "Up to 9.68% F1 improvement, eliminates 18% low-value tokens while maintaining semantic consistency",
+   "primary_theme": "LLM inference optimization",
+   "methods": [
+    "attention-optimization",
+    "policy-gradient",
+    "plug-and-play"
+   ]
+  },
+  {
+   "title": "LEDA: Latent Semantic Distribution Alignment for Multi-domain Graph Pre-training",
+   "venue": "WWW 2026",
+   "problem": "Universal graph pre-training faces simplistic data alignment and limited training guidance across domains",
+   "approach": "Dimension projection for adaptive feature alignment and variational semantic inference across domains",
+   "contribution": "Enables effective knowledge capture from diverse graph domains via shared latent distribution",
+   "primary_theme": "graph pre-training",
+   "methods": [
+    "pre-training",
+    "distribution-alignment",
+    "variational"
+   ]
+  },
+  {
+   "title": "C-HyPOD: Causal Hyperbolic Representation Learning with Prototype Orthogonal Disentanglement for Graph Out-of-Distribution Recommendation",
+   "venue": "WWW 2026",
+   "problem": "Graph recommenders vulnerable to spurious correlations in out-of-distribution scenarios",
+   "approach": "Hyperbolic geometry with prototype orthogonal disentanglement for hierarchical interest modeling",
+   "contribution": "C-HyPOD framework for geometric causal disentanglement in graph-based OOD recommendation",
+   "primary_theme": "OOD graph recommendation",
+   "methods": [
+    "hyperbolic-geometry",
+    "disentanglement",
+    "causal"
+   ]
+  },
+  {
+   "title": "Counterfactual Augmented Causal Reasoning for Aspect-Based Sentiment Analysis",
+   "venue": "WWW 2026",
+   "problem": "Deep models for aspect sentiment analysis capture spurious correlations not causal features",
+   "approach": "Counterfactual data augmentation with chain-of-thought guided by multi-level causal attention",
+   "contribution": "CECR framework reducing spurious correlations via counterfactual reasoning for ABSA",
+   "primary_theme": "Aspect sentiment analysis",
+   "methods": [
+    "counterfactual",
+    "causal",
+    "augmentation"
+   ]
+  },
+  {
+   "title": "Towards Robust Heterogeneous Graph Explanations under Structural Perturbations",
+   "venue": "WWW 2026",
+   "problem": "GNN explanations lack robustness under structural noise in heterogeneous graphs",
+   "approach": "Denoising variational inference with relation-aware heterogeneous semantics",
+   "contribution": "Robust explanations balancing fidelity and compactness under perturbations",
+   "primary_theme": "GNN explainability",
+   "methods": [
+    "variational inference",
+    "information bottleneck",
+    "denoising"
+   ]
+  },
+  {
+   "title": "WAMO: Toward Secure Browser Inference via Web Model Obfuscation in WebAssembly",
+   "venue": "WWW 2026",
+   "problem": "Browser-deployed AI models vulnerable to theft, reverse engineering, and tampering",
+   "approach": "WebAssembly obfuscation targeting weights, operators, and computation graphs",
+   "contribution": "71% complexity increase and 455% effort increase with <1% accuracy loss",
+   "primary_theme": "Model security, obfuscation",
+   "methods": [
+    "webassembly",
+    "obfuscation",
+    "model protection"
+   ]
+  },
+  {
+   "title": "Inference Cost Attacks for Retrieval-Augmented Large Language Models",
+   "venue": "WWW 2026",
+   "problem": "RAG-enhanced LLMs vulnerable to high inference costs through knowledge base poisoning",
+   "approach": "Inject malicious documents into knowledge bases via LLM agents and reinforcement learning",
+   "contribution": "CREEP framework with MA-GRPO algorithm for effective inference cost attacks on RAG systems",
+   "primary_theme": "LLM security",
+   "methods": [
+    "rag",
+    "adversarial-attack",
+    "reinforcement-learning"
+   ]
+  },
+  {
+   "title": "TabTune: A Unified Library for Inference and Fine-Tuning Tabular Foundation Models",
+   "venue": "WWW 2026",
+   "problem": "Tabular foundation models have inconsistent APIs and preprocessing across implementations",
+   "approach": "Unified library standardizing interfaces, preprocessing, fine-tuning modes, and evaluation metrics",
+   "contribution": "TabTune enables quick-start, benchmarking, and responsible evaluation for tabular TFMs",
+   "primary_theme": "Tabular models",
+   "methods": [
+    "foundation-models",
+    "unified-library",
+    "benchmarking"
+   ]
+  }
+ ]
+}

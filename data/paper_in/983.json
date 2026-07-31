@@ -1,0 +1,11 @@
+{
+ "batch": "b065",
+ "paper": {
+  "id": "e9ab6d7e6ed85f294c9eba211649ba90b6b87eeb",
+  "venue": "WSDM 2026",
+  "title": "Credibility Drift Attacks: LLM Crafted Adversarial Manipulations That Flip News Believability",
+  "abstract": "Large language models (LLMs) have dramatically reduced the cost and hardships of producing fluent and persuasive text, a capability that can also be repurposed to generate more or less convincing news. In this paper, we examine how subtle edits infused with LLM can systematically change the perceived believability of a news item. We introduce, for the first time, LLM-crafted targeted, low-visibility transformations to political news stories, preserving the core writing input, while altering credibility cues, to measure how adversarial changes shift human perception of believability. In contrast to prior work on fully synthetic forgeries or blunt paraphrases, our adversarial attack scenarios focus on subtle, context-aware credibility drift, involving small edits that alter causal assertions, remove qualifying facts, or introduce opposing evidence. These minimal modifications not only evade casual human scrutiny as reported in the literature, but also produce measurable shifts in perceived credibility as we show in our experimental evaluation.",
+  "gid": 983,
+  "theme": "Misinformation generation"
+ }
+}

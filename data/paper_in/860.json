@@ -1,0 +1,11 @@
+{
+ "batch": "b057",
+ "paper": {
+  "id": "fe2c17d6d04de76037603acbe7bf41c4d60c63d4",
+  "venue": "WWW 2026",
+  "title": "Towards Efficient and Interpretable Medical Concept Representation via Ontology-driven Residual Vector Quantization",
+  "abstract": "Medical concepts, the core entities in Electronic Health Records (EHRs), provide essential inputs for clinical decision-making systems. However, most existing healthcare models still rely on massive concept-specific embedding tables, resulting in substantial memory overhead. Recent studies compress medical concepts into discrete code sequences for memory efficiency, but their flat semantic quantization fails to explicitly encode the hierarchical structure of medical ontologies, thereby limiting clinical interpretability. To this end, we propose MedRQ, an ontology-driven residual vector quantization framework that aligns discrete codes with multi-level clinical ontologies. By incorporating hierarchical supervision into the quantization process, MedRQ generates compact and ontology-consistent concept representations that generalize seamlessly across healthcare prediction tasks. Experiments on two real-world EHR datasets demonstrate that MedRQ significantly outperforms state-of-the-art baselines while reducing memory usage.",
+  "gid": 860,
+  "theme": "Medical knowledge representation"
+ }
+}

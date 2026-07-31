@@ -1,0 +1,11 @@
+{
+ "batch": "b070",
+ "paper": {
+  "id": "10.1145/3805712.3809562",
+  "venue": "SIGIR 2026",
+  "title": "Fourier Kolmogorov-Arnold Network and Hypergraph Enhanced Contrastive Learning for Recommendation",
+  "abstract": "Recommendation plays a crucial role in the modern Web ecosystem, powering personalized services across e-commerce, social platforms, and online content networks. To model complex user\u2013item interactions in such Web environments, Graph Neural Networks (GNNs) have become a popular and effective approach due to their ability to capture relational dependencies. However, existing GNN-based methods face some challenges, such as limited capacity for nonlinear representation, inability to capture global structural information, and susceptibility to noise in user interaction data. Although self-supervised learning methods have been introduced to address these issues, these methods often overlook the intricate dependencies between users and items and fail to effectively utilize high-order global information. To address these challenges, we propose Fourier Kolmogorov-Arnold Network and Hypergraph Enhanced Contrastive Learning (FHCL) for recommendation. Our method constructs two complementary views: a graph generative view and a denoising view. In the graph generative view, we use the Fourier Kolmogorov-Arnold Network (Fourier KAN) to enhance the nonlinear representation capabilities by decomposing complex user-item interactions. Subsequently, we employ Variational Graph Auto-Encoders (VGAE) to reconstruct the graph structure, extracting meaningful structural information while mitigating th",
+  "gid": 1062,
+  "theme": "GNN recommendation"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "batch": "b001",
+ "paper": {
+  "id": "06326a9eebebd5edc60e5e207efe477a6d1f3453",
+  "venue": "WWW 2026",
+  "title": "Modeling Cascaded Delay Feedback for Online Net Conversion Rate Prediction: Benchmark, Insights and Solutions",
+  "abstract": "In industrial recommender systems, conversion rate (CVR) is often used for traffic allocation, but fails to fully reflect recommendation effectiveness as it does not account for refund rate (RFR). Thus, net conversion rate (NetCVR), the probability that a clicked item is purchased and not refunded, is proposed to better show true user satisfaction and business value. Unlike CVR, NetCVR prediction involves a more complex multi-stage cascaded delay feedback phenomenon. The two cascaded delays Click->Conversion and Conversion->Refund in NetCVR have opposite effects. Therefore, traditional CVR methods cannot be directly applied. At present, the lack of relevant open-source datasets and online continuous training schemes poses a challenge. To address these, we first introduce CAscadal Sequences of Conversion And Delayed rEfund (CASCADE), the first large-scale open dataset derived from Taobao app for online continuous NetCVR prediction. We further analyze CASCADE and derive three key insights: (1) NetCVR exhibits clear temporal patterns necessitating online continuous modeling; (2) Cascaded modeling CVR and RFR for NetCVR outperforms directly modeling NetCVR; and (3) delay time, which correlated with both CVR and RFR, is an important feature for NetCVR prediction. Based on these insights, we propose neT convErsion caScaded modeLing and debiAsing method (TESLA). This continuous method",
+  "gid": 23,
+  "theme": "conversion rate prediction"
+ }
+}

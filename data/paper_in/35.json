@@ -1,0 +1,11 @@
+{
+ "batch": "b002",
+ "paper": {
+  "id": "09dd175a9fa3352b70de95ae4a643c675f30b107",
+  "venue": "WWW 2026",
+  "title": "Learning to Alleviate Familiarity Bias in Video Recommendation",
+  "abstract": "Modern video recommendation systems aim to optimize user engagement and platform objectives, yet often face structural exposure imbalances caused by behavioral biases. In this work, we focus on the post-ranking stage and present LAFB (Learning to Alleviate Familiarity Bias), a lightweight and model-agnostic framework designed to mitigate familiarity bias in recommendation outputs. LAFB models user\u2013content familiarity using discrete and continuous interaction features, and estimates personalized debiasing factors to adjust user rating prediction scores, thereby reducing the dominance of familiar content in the final ranking. We conduct large-scale offline evaluations and online A/B testing in a real-world recommendation system, under a unified serving stack that also compares LAFB with deployable popularity-oriented remedies. Results show that LAFB increases novel watch-time share and improves exposure for emerging creators and overall content diversity, while maintaining stable overall watch time and short-term satisfaction. LAFB has already been launched in the post-ranking stage of YouTube's recommendation system, demonstrating its effectiveness in real-world applications.",
+  "gid": 35,
+  "theme": "bias mitigation recommendation"
+ }
+}

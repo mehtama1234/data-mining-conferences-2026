@@ -1,0 +1,11 @@
+{
+ "batch": "b023",
+ "paper": {
+  "id": "675c03349b11da1fc5fa4994e9852df133155252",
+  "venue": "WWW 2026",
+  "title": "Data Degrades with Use",
+  "abstract": "We often treat data as an infinitely reusable resource: a single dataset can support many analyses, train multiple models, and be shared widely without apparent cost. This talk argues that in important ways, data is not endlessly reusable. Instead, in certain contexts, data behaves like a consumable resource that degrades with use. The clearest example arises in the presence of privacy concerns. Fundamental results show that any informative public analysis of personal data inevitably leaks some information about the underlying individuals, and that these privacy losses accumulate across repeated uses of the same or overlapping datasets [1]. If some level of privacy is to be preserved, this imposes intrinsic limits on how many times data can be used. In joint work under submission, we connect this perspective to the mosaic effect from legal scholarship, arguing that privacy risks arise not only from combining data pieces, but also from combining seemingly innocuous data uses [6]. This view suggests regulatory and technical approaches that treat data use itself as a rival good [4]. Data can also degrade with use even when privacy is not at stake. A line of work on adaptive data analysis shows that repeatedly querying the same dataset can lead to overfitting: results that appear valid on the dataset but fail to generalize to the underlying distribution, even when the dataset is ve",
+  "gid": 347,
+  "theme": "Data privacy degradation"
+ }
+}

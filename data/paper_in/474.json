@@ -1,0 +1,11 @@
+{
+ "batch": "b031",
+ "paper": {
+  "id": "8ee733fede8f20acc3c5577b158ece7dccf55917",
+  "venue": "WWW 2026",
+  "title": "Bridging the Semantic Gap: A Homonym-Aware Ontology Platform for Cybersecurity Interoperability",
+  "abstract": "The cybersecurity domain exhibits a substantial semantic gap between the operational reality of threat detection and the available static compliance standards (e.g., ISO 27001, NIST SP 800-53). In addition, a disconnect is evident between high-level business goals to protect assets (e.g., Security Services such as Confidentiality) and low-level technical root causes (e.g., Vulnerabilities such as Buffer Overflow). Our previous Systematic Literature Review (SLR) has identified numerous existing ontologies. A persistent structural deficiency is identified: the lack of a dynamic, interoperable platform that supports safe, continuous mapping among Security Services, Security Mechanisms, Attacks, Exploited Vulnerabilities, Attackers, and Assets, with continuous community evaluation. Existing solutions limit practitioners to static, read-only standards for achieving security services, resulting in a lack of agility and a semantic void between the how and the why. This paper proposes a wiki-style, agile, and homonym-aware editing prototype system, which can lead to a novel hybrid cybersecurity ontology with a management and visualisation platform to bridge this semantic gap. We implement the Golden Chain of knowledge identified in prior SLRs (Security Services ? Security Mechanisms ? Attacks ? Vulnerabilities ? Attackers ? Assets) through three core technical contributions: (a) A Conc",
+  "gid": 474,
+  "theme": "cybersecurity ontology"
+ }
+}

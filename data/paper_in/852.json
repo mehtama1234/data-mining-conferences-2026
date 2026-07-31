@@ -1,0 +1,11 @@
+{
+ "batch": "b056",
+ "paper": {
+  "id": "fca8f6782562829edbb2f52423b46d6514abe4bf",
+  "venue": "WWW 2026",
+  "title": "LLM and AI Agent: Golden Rule is All We Need",
+  "abstract": "We propose that treating others as one would wish to be treated (the Golden Rule), can serve as universal foundation for moral reasoning. We first formalize this principle within game-theoretic frameworks and show that it enables the derivation of core ethical values such as fairness, honesty, and compassion. We demonstrate that adherence to the Golden Rule promotes cooperative behavior and social equilibria. In this work, we have modeled how the rule can accommodate diverse moral perspectives and cultural variation. We also explored its usefulness in ethical decision-making within a reinforcement learning system, and we argue that the Golden Rule offers an interpretable foundation for aligning autonomous agents with human values.",
+  "gid": 852,
+  "theme": "agent alignment"
+ }
+}

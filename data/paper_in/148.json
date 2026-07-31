@@ -1,0 +1,11 @@
+{
+ "batch": "b009",
+ "paper": {
+  "id": "2aebf479db8da5a6a3312afaa9bcfcd4b14bb0f4",
+  "venue": "WWW 2026",
+  "title": "Statistical Analysis of 12V Power Load Uncertainty Using Conditional Probability for SDV Energy Management",
+  "abstract": "As Software Defined Vehicle (SDV) technology advances, the surge in in-vehicle electrical loads has revealed the limitations of existing reactive battery management systems. This study statistically analyzes the utility of past power usage history to address the uncertainty of driver patterns in power load prediction for 12V battery optimization. Analyzing heater and air conditioner loads using the public VED dataset, we confirmed that using the past 60 seconds of history as an input for conditional probability distribution reduces prediction uncertainty (variance) by up to 41.7% in high-load regions. Validation using a LightGBM model demonstrated that the proposed method exhibits superior tracking performance compared to existing methods during rapid load fluctuations.",
+  "gid": 148,
+  "theme": "vehicle power load prediction"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "batch": "b089",
+ "paper": {
+  "id": "10.1145/3805712.3808484",
+  "venue": "SIGIR 2026",
+  "title": "All the News That Fits in Bits: Learned Rotation-Aware Binary Projections for Efficient News Retrieval at NDTV",
+  "abstract": "Embedding-based retrieval powers recommendation and discovery features across modern news platforms, yet serving dense float vectors at scale introduces substantial latency and memory costs. We present a two-stage retrieval pipeline deployed at NDTV, one of India's largest news organizations, that replaces exhaustive float search with a fast binary shortlist followed by a lightweight float rerank. At the core of our approach is a learned binary projection trained with a contrastive objective to preserve the neighbor structure of the original embedding space. We evaluate the pipeline on a corpus of 47,300 news articles across three embedding models (Gemma, Nomic, Qwen) and two production-motivated retrieval scenarios: a top-20 recommendation task requiring \\geq 98% recall, and a top-5 precision-critical task demanding near-perfect accuracy. Our results show that even moderate bit-widths (1024 bits) recover \u2265 95% of float-exact neighbors, while our recommended operating point of 3072 bits achieves 98% top-20 recall through a 50-candidate shortlist and near-perfect (\u2265 99.9%) top-5 recall through a 200-candidate shortlist. Notably, RaBitQ-style scalar corrections---widely adopted in the literature---consistently failed to improve and often degraded retrieval quality for both learned and raw binary codes. At million-scale (1M documents), the binary shortlist delivers 4--6\u00d7 speedup a",
+  "gid": 1347,
+  "theme": "binary retrieval"
+ }
+}

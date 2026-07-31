@@ -1,0 +1,11 @@
+{
+ "batch": "b017",
+ "paper": {
+  "id": "4c66f6344594d0fcc2cb09ec919e545c6e36f94d",
+  "venue": "WWW 2026",
+  "title": "CausalSKyHop: Knowledge-Aware Causal Explanation of Dynamic GNNs via Higher-Order Semantic Reasoning",
+  "abstract": "Dynamic Graph Neural Networks (DyGNNs) are widely used to model web-scale semantic-rich graph data (e.g., social networks, knowledge graphs), but their inability to explain predictions ground-ed in structured knowledge remains a challenge, especially when predictions rely on complex higher-order substructures. We propose CausalSKyHop, a semantic- and knowledge-aware framework that explains DyGNNs by uncovering causal higher-order patterns in evolving knowledge structures. To model the semantic fabric of the graph, CausalSKyHop incorporates a Higher-Order Structural Causal Model to capture multi-node knowledge dependencies, and uses contrastive learning to isolate semantically-meaningful causal relationships from spurious ones. A dynamic correlation module further separates persistent knowledge from evolving semantic contexts. Through knowledge-infused, structure-aware variational graph autoencoders, our method produces interpretable causal subgraphs that capture the dynamic flow of knowledge and semantics. Experimental evaluations on multiple web and knowledge-rich graph benchmarks demonstrate that CausalSKyHop consistently outperforms state-of-the-art explainable DyGNNs, achieving notable improvements in both explanation fidelity and downstream prediction accuracy. A detailed case study further illustrates how our method uncovers stable, semantically coherent causal pathways\u2014i",
+  "gid": 261,
+  "theme": "Explainable dynamic graph"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "batch": "b007",
+ "paper": {
+  "id": "22944b85a91b89c6156641fc00a3e9b3b126a46b",
+  "venue": "WWW 2026",
+  "title": "Orthogonal Meta-learning Boosted Bayesian Optimization for Uncertain Multi-Objective Recommendation",
+  "abstract": "Recommender systems (RSs) have become integral to our digital experiences, shaping how we access and engage with information in various domains. While early research focuses primarily on improving recommendation accuracy, this singular focus has led to unintended consequences such as echo chambers and limited user experiences. Drawing parallels with autonomous driving, we introduce a novel framework that defines five distinct levels of autonomy for RSs, ranging from simple rule-based accuracy-objective RSs to personalized behavior-based uncertain multi-objective RSs (i.e., users may have diverse needs on, e.g., accuracy, diversity and fairness ). Accordingly, we propose to automatically identify and optimize multiple objectives based on individual user needs, thus functioning as more ethical and intelligent user-centric assistants. To address the challenges in exploring such uncertainty in RSs, we present a novel Bayesian optimization (BO) method to capture users' personalized preferences for different objectives and the uncertain relationships among objectives. Moreover, to improve the efficiency and effectiveness of BO learning, we design a novel orthogonal meta-learning paradigm, speeding up the optimization process by exploiting shared knowledge across similar tasks and reducing conflicts among objectives by exploring their orthogonal information. Finally, we empirically de",
+  "gid": 116,
+  "theme": "Multi-objective recommendation"
+ }
+}

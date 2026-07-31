@@ -1,0 +1,11 @@
+{
+ "batch": "b088",
+ "paper": {
+  "id": "10.1145/3805712.3808494",
+  "venue": "SIGIR 2026",
+  "title": "From Doxa to Logos in Scientific Peer Review",
+  "abstract": "Peer review is central to scientific decision-making, yet it is rarely evaluated or audited at scale. Growing submission volumes and the increasing use of large language models (LLMs) in drafting reviews have introduced new challenges for transparency, accountability, and quality control. Today, peer reviews are often produced through hybrid human--AI workflows, where a reviewer may develop the core evaluative ideas while using an LLM to refine wording, restructure arguments, or improve fluency. This shift raises new questions beyond authorship detection alone: Are reviews constructive? Are reviewer claims grounded in the submitted paper? How can we quantify collaboration between human reasoning and AI-assisted writing, and distinguish whether the intellectual contribution or the surface text originates from humans or models? In this industry talk, we present Reviewerly's retrieval-centered infrastructure for auditing peer review at scale. We describe three deployed systems: Peeriscope, which evaluates review quality across multiple interpretable dimensions; Peerispect, which uses retrieval-augmented generation (RAG) to verify whether reviewer claims are supported by evidence in the manuscript; and PeerPrism, which analyzes hybrid human--AI authorship by disentangling the origin of ideas from the origin of text in peer reviews, enabling measurement of how human reasoning and AI",
+  "gid": 1330,
+  "theme": "Peer review analysis"
+ }
+}

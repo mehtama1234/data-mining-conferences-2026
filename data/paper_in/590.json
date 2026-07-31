@@ -1,0 +1,11 @@
+{
+ "batch": "b039",
+ "paper": {
+  "id": "b0e53c1d419ecaf885536a061dc57ed9abf7ded2",
+  "venue": "WWW 2026",
+  "title": "ImVision: Adapting Pretrained Vision Models for Time-Series Imputation",
+  "abstract": "Time-series data are crucial for decision-making across domains such as healthcare, energy, and sensor networks. However, missing values can harm model reliability, making the handling of incomplete records critical for robust analytics. Despite recent advances, state-of-the-art imputers are often computationally demanding, require extensive training, and may disrupt temporal order. We introduce ImVision, a cross-modal framework that reframes time-series imputation as image inpainting. Sequences are converted into Gramian Angular Field (GAF) heatmaps, and a pretrained vision model fills in the missing pixels. The pipeline maps temporal gaps to spatial masks and leverages pretrained inpainting backbones with minimal task-specific training. We evaluate ImVision on the Beijing Air Quality and ETT-h1 datasets under various missing rates and patterns. Experiments show that ImVision outperforms state-of-the-art models in standardized MAE on 8 out of 10 settings, especially at high missing rates. ImVision thus offers a resource-efficient strategy for reusing vision models to impute time-series data in real-world scenarios.",
+  "gid": 590,
+  "theme": "Time series imputation"
+ }
+}

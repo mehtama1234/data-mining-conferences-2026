@@ -1,0 +1,565 @@
+{
+ "key": "information-retrieval-search",
+ "theme": "Information Retrieval & Search",
+ "n_papers": 465,
+ "pct": 24.0,
+ "by_venue": {
+  "WWW 2026": 138,
+  "WSDM 2026": 26,
+  "SIGIR 2026": 297,
+  "KDD 2026": 4
+ },
+ "theme_examples": [
+  {
+   "title": "Conflict-Aware RAG: Multi-Stage Learning with Conflict Signals for Robust Retrieval-Augmented Generation",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "Diversifying Differentiable Graph Retrieval with Topic-Adaptive Multi-Intent Learning",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "D-Models and E-Models: Diversity-Stability Trade-offs in the Sampling Behavior of Large Language Models",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "Modeling Cascaded Delay Feedback for Online Net Conversion Rate Prediction: Benchmark, Insights and Solutions",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "RobustExplain: Evaluating Robustness of LLM-Based Explanation Agents for Recommendation",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "OpenDecoder: Open Large Language Model Decoding to Incorporate Document Quality in RAG",
+   "venue": "WWW 2026"
+  }
+ ],
+ "representative_papers": [
+  {
+   "title": "NeocorRAG: Less Irrelevant Information, More Explicit Evidence, and More Effective Recall via Evidence Chains",
+   "venue": "WWW 2026",
+   "problem": "RAG retrieval improvements do not consistently improve reasoning; quality-recall trade-off persists",
+   "approach": "Evidence chain mining with constrained decoding and activated search for holistic quality optimization",
+   "contribution": "NeocorRAG metric Recall Conversion Rate quantifies retrieval contribution; improves recall and reasoning",
+   "primary_theme": "retrieval augmented generation",
+   "methods": [
+    "rag",
+    "evidence-chains",
+    "retrieval-optimization"
+   ]
+  },
+  {
+   "title": "Unveiling the Resilience of LLM-Enhanced Search Engines against Black-Hat SEO Manipulation",
+   "venue": "WWW 2026",
+   "problem": "Security implications of LLM-enhanced search engines against black-hat SEO attacks remain unexplored despite their widespread deployment.",
+   "approach": "SEO-Bench comprises 1K real-world black-hat websites testing 10 LLMSEs for vulnerability to LLMSEO attack strategies.",
+   "contribution": "First security analysis shows LLMSEs mitigate 99.78% traditional SEO attacks but vulnerable to rewritten-query and segmented-text attacks.",
+   "primary_theme": "search engine security",
+   "methods": [
+    "security-evaluation",
+    "seo",
+    "llm",
+    "information-retrieval"
+   ]
+  },
+  {
+   "title": "Uncertainty-Aware Web-Conditioned Scientific Fact-Checking",
+   "venue": "WWW 2026",
+   "problem": "Scientific fact-checking systems hallucinate and apply inconsistent reasoning under latency constraints",
+   "approach": "Atomic predicate decomposition with calibrated uncertainty-gated web search",
+   "contribution": "Selective web corroboration reduces external search while improving accuracy",
+   "primary_theme": "fact verification",
+   "methods": [
+    "nlp",
+    "information-retrieval",
+    "knowledge-grounding"
+   ]
+  },
+  {
+   "title": "Augmented Intelligence in Technology-Assisted Review Systems (ALTARS 2026)",
+   "venue": "WWW 2026",
+   "problem": "Workshop position paper on TAR challenges in Web-scale heterogeneous, dynamic, multilingual information environments",
+   "approach": "Interdisciplinary discussion on intelligent retrieval, human-in-the-loop learning, explainable AI, and LLM integration",
+   "contribution": "Research directions for transparent, fair, and adaptive Web-scale technology-assisted review systems",
+   "primary_theme": "Technology-assisted review",
+   "methods": [
+    "ir",
+    "nlp",
+    "trustworthy-ai"
+   ]
+  },
+  {
+   "title": "(Everything You Never Knew You Needed To Know About) Rank-Biased Measurement For Web Search",
+   "venue": "WWW 2026",
+   "problem": "Measuring quality of ranked lists in web search requires robust top-weighted metrics",
+   "approach": "Rank-biased precision via parameterized geometric distribution for top-k weighting",
+   "contribution": "Enables quantifiable uncertainty in rankings when ground-truth annotations incomplete",
+   "primary_theme": "Search ranking evaluation",
+   "methods": [
+    "ranking-metrics",
+    "information-retrieval"
+   ]
+  },
+  {
+   "title": "16th Temporal Web Analytics Workshop (TempWeb)",
+   "venue": "WWW 2026",
+   "problem": "Workshop on temporal web analytics covering infrastructure, methods for aggregating and analyzing Web data at scale",
+   "approach": "Coverage of temporal information extraction, retrieval, Web archiving, large-scale data analysis topics",
+   "contribution": "Hub connecting researchers across temporal IE/IR, Web mining, Web archiving, temporal benchmarks, applications",
+   "primary_theme": "Temporal web analytics",
+   "methods": [
+    "temporal",
+    "web-mining",
+    "ir"
+   ]
+  },
+  {
+   "title": "WSDM CUP 2026: Multilingual Retrieval",
+   "venue": "WSDM 2026",
+   "problem": "Multilingual retrieval is underdeveloped despite importance for cross-lingual information systems",
+   "approach": "Benchmark task requiring systems to search multilingual collections using English queries",
+   "contribution": "WSDM Cup 2026 multilingual retrieval challenge establishes evaluation framework for multilingual search",
+   "primary_theme": "Multilingual retrieval",
+   "methods": [
+    "multilingual",
+    "retrieval",
+    "benchmark",
+    "cross-lingual"
+   ]
+  },
+  {
+   "title": "From Search to Ask to Act: The Evolution of Information Access in the Age of Large Models and Agents",
+   "venue": "SIGIR 2026",
+   "problem": "Information access needs to evolve from retrieval to reasoning, generation, and task execution",
+   "approach": "Retrieval-augmented generation and AI agents combining reasoning models with active search",
+   "contribution": "Framework exposes new IR problems in multi-step search, evidence refinement, and agent reasoning",
+   "primary_theme": "LLM retrieval augmentation",
+   "methods": [
+    "rag",
+    "ai agents",
+    "reasoning models"
+   ]
+  },
+  {
+   "title": "How Variability Influences Podcast Search: Queries, Transcriptions, and Judges",
+   "venue": "SIGIR 2026",
+   "problem": "Podcast search effectiveness unclear from how variations in queries, transcriptions, and judges influence ranking.",
+   "approach": "Comprehensive analysis across 5,745 query variations, 17 ranking systems, multiple transcripts, and LLM-based relevance judges.",
+   "contribution": "Large-scale empirical study of 1.8M judged pairs revealing podcast search effectiveness across system and representation variations.",
+   "primary_theme": "Podcast search analysis",
+   "methods": [
+    "information retrieval",
+    "speech recognition",
+    "evaluation",
+    "large-scale analysis"
+   ]
+  },
+  {
+   "title": "Privacy Preserving Information Retrieval: Defining Privacy Research Pillars for a Future Research Agenda",
+   "venue": "SIGIR 2026",
+   "problem": "IR systems lack comprehensive privacy frameworks for user data protection in retrieval and generation.",
+   "approach": "Proposes PPIR research agenda with privacy pillars addressing data leakage and access protection.",
+   "contribution": "Framework defining privacy research directions and unsolved problems in IR.",
+   "primary_theme": "Privacy-preserving IR",
+   "methods": [
+    "privacy framework",
+    "literature analysis",
+    "expert consultation"
+   ]
+  },
+  {
+   "title": "A Sensitivity-Aware Test Collection for Search Among Personal Information",
+   "venue": "SIGIR 2026",
+   "problem": "Search systems need to retrieve relevant documents without exposing sensitive personal information",
+   "approach": "Crowdsourced queries and judgments with LLM-extended assessments on Enron emails with sensitivity labels",
+   "contribution": "Sensitivity-aware search test collection enabling evaluation of retrieval with privacy constraints",
+   "primary_theme": "sensitive information retrieval",
+   "methods": [
+    "sensitivity classification",
+    "test collection",
+    "privacy"
+   ]
+  },
+  {
+   "title": "WeatherArchive: A Benchmark for Retrieval-Augmented Reasoning over Historical Weather Archives",
+   "venue": "SIGIR 2026",
+   "problem": "Historical weather archives with OCR noise and archaic language lack structure for climate research",
+   "approach": "RAG benchmark with retrieval over archival news and LLM vulnerability-resilience classification",
+   "contribution": "First large-scale benchmark evaluating dense/sparse retrievers on historical weather narratives",
+   "primary_theme": "archival rag",
+   "methods": [
+    "benchmark",
+    "rag",
+    "information-retrieval"
+   ]
+  },
+  {
+   "title": "SimEval-IR: A Unified Toolkit and Benchmark Suite for Evaluating User Simulators and Search Sessions",
+   "venue": "SIGIR 2026",
+   "problem": "Behavioral realism and system-ranking validity of user simulators lack standardized evaluation",
+   "approach": "Unified toolkit with canonical session schema and benchmarks across four simulator families",
+   "contribution": "Finds human-likeness measures poorly predict system ranking validity; proposes better metrics",
+   "primary_theme": "simulator evaluation",
+   "methods": [
+    "benchmark",
+    "user-simulation",
+    "information-retrieval"
+   ]
+  },
+  {
+   "title": "Modalities of Expert Search: How Users Transition Between Names and Topics",
+   "venue": "SIGIR 2026",
+   "problem": "Expert search systems underexplored for user transitions between name and topic modalities",
+   "approach": "Analyze half-million queries with lexicon-based mode classification and session dynamics",
+   "contribution": "Shows mode switching is partially success-driven with distinct session-level patterns",
+   "primary_theme": "expert finding",
+   "methods": [
+    "user-study",
+    "information-retrieval",
+    "expertise"
+   ]
+  },
+  {
+   "title": "Improving Ad-hoc Search Effectiveness for Conversational Information Retrieval via Model Merging",
+   "venue": "SIGIR 2026",
+   "problem": "Fine-tuning conversational retrievers suffers catastrophic forgetting of ad-hoc retrieval performance",
+   "approach": "Apply parameter-wise model merging strategies to combine ad-hoc and conversational models",
+   "contribution": "Model merging enables training-free unified retriever, achieves 15% NDCG@3 gain under zero-shot",
+   "primary_theme": "Conversational retrieval",
+   "methods": [
+    "model merging",
+    "retrieval",
+    "zero-shot"
+   ]
+  },
+  {
+   "title": "MathMex-PDF: Towards Accessible Visual Mathematics",
+   "venue": "SIGIR 2026",
+   "problem": "Math-heavy PDFs lack unified visual mathematics extraction and formula search",
+   "approach": "PDF reader integrating math detection, expression grounding, multimodal retrieval",
+   "contribution": "MathMex-PDF enables click-to-search reverse formula lookup and hybrid querying",
+   "primary_theme": "Mathematical information retrieval",
+   "methods": [
+    "retrieval",
+    "formula",
+    "multimodal"
+   ]
+  },
+  {
+   "title": "Towards Building a Standard Benchmark for Low-Resource Nepali Information Retrieval",
+   "venue": "SIGIR 2026",
+   "problem": "Nepali IR lacks standardized benchmark despite 26M speakers; no test collection for monolingual, cross-lingual, code-mixed retrieval",
+   "approach": "Create first Nepali IR benchmark supporting monolingual, cross-lingual, code-mixed retrieval with relevance judgments",
+   "contribution": "Standardized Nepali IR dataset enabling morphology-aware and code-mixed retrieval research",
+   "primary_theme": "Low-resource IR benchmark",
+   "methods": [
+    "benchmark",
+    "multilingual",
+    "code-mixed",
+    "morphology"
+   ]
+  },
+  {
+   "title": "Local Information Access in Marathi: Evaluating LLM-Native Web Retrieval in a Low-Resource Environment",
+   "venue": "SIGIR 2026",
+   "problem": "LLM web retrieval reliability unclear in low-resource Marathi for local information needs",
+   "approach": "MarathiWeb benchmark separating translated global from natively authored local queries; evaluate frontier LLMs",
+   "contribution": "Benchmark exposing persistent gaps in local-language retrieval; shallow search outperforms multi-step approach",
+   "primary_theme": "Low-resource web retrieval",
+   "methods": [
+    "benchmark",
+    "web-search",
+    "llm",
+    "local-language"
+   ]
+  },
+  {
+   "title": "Offline-First Information Retrieval for Curriculum-Aligned STEM Resources in Low-Resource Namibian Schools",
+   "venue": "SIGIR 2026",
+   "problem": "Namibian schools lack connectivity for STEM learning; cloud-based IR assumes always-on internet.",
+   "approach": "Offline-first IR prototype with local curriculum-aligned STEM repository, BM25 ranking, faceted search.",
+   "contribution": "Framework for resource-scarce environments; evaluation design for limited logging and classroom evidence.",
+   "primary_theme": "Offline IR design",
+   "methods": [
+    "ir",
+    "offline",
+    "education",
+    "retrieval"
+   ]
+  },
+  {
+   "title": "Evaluating Proactivity in Conversational Search through Anticipatory Retrieval",
+   "venue": "SIGIR 2026",
+   "problem": "Conversational search remains reactive, unable to anticipate evolving user information needs.",
+   "approach": "Proactive conversational search inferring implicit intent and surfacing recommendations.",
+   "contribution": "Paradigm shift to anticipatory retrieval reducing user effort across multi-turn interactions.",
+   "primary_theme": "Proactive conversation search",
+   "methods": [
+    "conversational-search",
+    "proactive",
+    "intent-anticipation",
+    "ranking"
+   ]
+  },
+  {
+   "title": "MANILA26: SIGIR 2026 Tutorial on Information Retrieval for Climate Change Impact",
+   "venue": "SIGIR 2026",
+   "problem": "IR systems fail on interdisciplinary climate evidence synthesis with geospatial, time-series, multi-modal data.",
+   "approach": "Agentic RAG architecture critique; failure mode diagnosis; unified evidence pipeline with provenance tracking.",
+   "contribution": "Research agenda for verifiable evidence synthesis integrating bibliographic, geospatial, multi-modal retrieval.",
+   "primary_theme": "Climate evidence retrieval",
+   "methods": [
+    "rag",
+    "multi-modal",
+    "provenance"
+   ]
+  },
+  {
+   "title": "ReNeuIR at SIGIR 2026: The Fifth Workshop on Reaching Efficiency in Neural Information Retrieval",
+   "venue": "SIGIR 2026",
+   "problem": "Neural IR efficiency obstacles block first-stage deployment at scale; measurement and evaluation standards lacking.",
+   "approach": "Community forum for efficiency evaluation; shared task framework; standardized benchmarks and reproducibility.",
+   "contribution": "Efficiency benchmarking framework; incentive structures for cost-efficiency in IR research and deployment.",
+   "primary_theme": "Neural IR efficiency",
+   "methods": [
+    "neural",
+    "efficiency",
+    "benchmark"
+   ]
+  },
+  {
+   "title": "VulGen: Workshop on Vulnerabilities in Generative Systems for Information Retrieval",
+   "venue": "SIGIR 2026",
+   "problem": "Generative systems pose vulnerabilities including adversarial attacks, biases, and negative behavioral impacts in IR",
+   "approach": "Workshop-driven community synthesis across IR and cybersecurity disciplines",
+   "contribution": "Landscape mapping of vulnerabilities in generative IR systems and future research directions",
+   "primary_theme": "generative system vulnerabilities",
+   "methods": [
+    "vulnerability",
+    "adversarial",
+    "bias"
+   ]
+  },
+  {
+   "title": "Conflict-Aware RAG: Multi-Stage Learning with Conflict Signals for Robust Retrieval-Augmented Generation",
+   "venue": "WWW 2026",
+   "problem": "RAG systems fail when integrating conflicting web-sourced information, leading to unreliable responses",
+   "approach": "Multi-stage optimization using conflict signal from generative probabilities with SFT, DPO, and reranking",
+   "contribution": "Conflict-Aware RAG robustly handles knowledge conflicts via preference optimization",
+   "primary_theme": "Robust retrieval-augmented generation",
+   "methods": [
+    "preference optimization",
+    "conflict detection",
+    "knowledge integration"
+   ]
+  },
+  {
+   "title": "Diversifying Differentiable Graph Retrieval with Topic-Adaptive Multi-Intent Learning",
+   "venue": "WWW 2026",
+   "problem": "Knowledge graph QA uses single-intent retrieval missing complementary information and reasoning benefits",
+   "approach": "Topic-adaptive multi-intent learning with differentiable sampling and preference optimization feedback",
+   "contribution": "TARD diversifies graph retrieval via topic-based intents aligned with reasoning performance",
+   "primary_theme": "Knowledge graph QA",
+   "methods": [
+    "topic modeling",
+    "multi-intent learning",
+    "preference optimization"
+   ]
+  },
+  {
+   "title": "Doc-Researcher: A Unified System for Multimodal Document Parsing and Deep Research",
+   "venue": "WWW 2026",
+   "problem": "Deep research systems ignore vast knowledge in multimodal documents with tables, figures, equations",
+   "approach": "Unified multimodal parsing, hybrid retrieval, and multi-agent workflows",
+   "contribution": "Doc-Researcher enables complex reasoning across documents and modalities with M4DocBench",
+   "primary_theme": "Multimodal document research",
+   "methods": [
+    "multimodal-parsing",
+    "multi-agent",
+    "retrieval"
+   ]
+  },
+  {
+   "title": "Facilitating Generative Retrieval with Logical Denoising for Interpretable Conversational Search",
+   "venue": "WWW 2026",
+   "problem": "Noisy context and poor interpretability in conversational search systems",
+   "approach": "LLM-based logic-enhanced retrieval with curriculum learning and policy optimization",
+   "contribution": "LogiCGR improves robustness and interpretability of conversational search through logical denoising",
+   "primary_theme": "Conversational search",
+   "methods": [
+    "llm",
+    "retrieval",
+    "dialogue"
+   ]
+  },
+  {
+   "title": "ARCHER: Shooting Straight in Multimodal E-Commerce Search at Alibaba with Progressive Alignment",
+   "venue": "WWW 2026",
+   "problem": "E-commerce visual search fails when systems match visual similarity over semantic relevance",
+   "approach": "Three-stage progressive alignment from category understanding to product discrimination",
+   "contribution": "ARCHER framework with proto-align, cross-view learning for multimodal e-commerce retrieval",
+   "primary_theme": "Multimodal e-commerce search",
+   "methods": [
+    "multimodal",
+    "retrieval",
+    "semantic-alignment"
+   ]
+  },
+  {
+   "title": "Beyond the Rules: Understanding the Design Logic of Internet Standards",
+   "venue": "WWW 2026",
+   "problem": "Internet standards RFC design rationales buried in inaccessible IETF discussions",
+   "approach": "RAG framework retrieving rationale-rich context from IETF archives and email deliberations",
+   "contribution": "RFC design logic extraction enabling transparent standards and accurate implementations",
+   "primary_theme": "Internet standards extraction",
+   "methods": [
+    "rag",
+    "information-retrieval",
+    "nlp"
+   ]
+  },
+  {
+   "title": "DA-RAG: Dynamic Attributed Community Search for Retrieval-Augmented Generation",
+   "venue": "WWW 2026",
+   "problem": "G-RAG underutilizes graph topology; static communities fail on dynamic complex queries.",
+   "approach": "Dynamic attributed community search extracts relevant subgraphs; chunk-layer graph index.",
+   "contribution": "Outperforms RAG methods by 40%; reduces index time and token overhead by 37-41%.",
+   "primary_theme": "graph-based RAG retrieval",
+   "methods": [
+    "rag",
+    "graph_search",
+    "community_detection"
+   ]
+  },
+  {
+   "title": "Conversational Search: From Fundamentals to Frontiers in the Age of Agents",
+   "venue": "WWW 2026",
+   "problem": "Conversational search needs to handle complex multi-turn intent and leverage LLM reasoning capabilities",
+   "approach": "LLM-driven agentic systems that plan strategies, execute retrieval, and support autonomous behaviors",
+   "contribution": "Tutorial connecting conversational search fundamentals with LLM-based agentic paradigms",
+   "primary_theme": "Conversational search",
+   "methods": [
+    "llm",
+    "agent",
+    "retrieval",
+    "dialogue"
+   ]
+  },
+  {
+   "title": "ARuleCon: Agentic Security Rule Conversion",
+   "venue": "WWW 2026",
+   "problem": "Cross-platform SIEM rule conversion requires deep domain knowledge despite vendor documentation availability",
+   "approach": "Agentic RAG with vendor-neutral IR and Python consistency checking for autonomous rule conversion",
+   "contribution": "ARuleCon enables reliable vendor-agnostic security rule conversion without manual intervention",
+   "primary_theme": "security rule conversion",
+   "methods": [
+    "rag",
+    "information-retrieval",
+    "security"
+   ]
+  },
+  {
+   "title": "Rethinking the Hidden Risk of Reranking: Achieving Risk-aware Reranking with Information Gain for RAG with LLMs",
+   "venue": "WWW 2026",
+   "problem": "Rerankers improve groundtruth docs but increase harmful docs in results; shifts in document distributions unclear.",
+   "approach": "Risk-aware reranking for RAG; balances retrieval quality gains against harmful document risks.",
+   "contribution": "Identifies counterintuitive reranker behavior; proposes method mitigating harmful document promotion risk.",
+   "primary_theme": "RAG document ranking",
+   "methods": [
+    "reranking",
+    "risk-aware",
+    "document-filtering"
+   ]
+  },
+  {
+   "title": "DHOW-MiLLA: Joint Workshop on Diffusion of Harmful Content on Online Web and Countering Misinformation in the Age of LLMs and Agents",
+   "venue": "WWW 2026",
+   "problem": "Harmful content analysis fragmented across platforms, languages, topics; limited cross-platform counter-measure study.",
+   "approach": "Workshop unifying research on harmful content diffusion across platforms, languages, and content types.",
+   "contribution": "Brings together misinformation, hate speech, cyberbullying research under one framework with LLM/agent focus.",
+   "primary_theme": "Harmful content mitigation",
+   "methods": [
+    "content-moderation",
+    "misinformation-detection",
+    "cross-platform"
+   ]
+  },
+  {
+   "title": "WebGeoInfer: Structure-Free Multi-Stage Framework for Geolocation Inference from Exposed Device Web Interfaces",
+   "venue": "WWW 2026",
+   "problem": "Web interfaces of remote devices leak geographic location information, posing security risks",
+   "approach": "Multi-stage framework using page clustering, differential analysis, search engines, and LLMs",
+   "contribution": "First large-scale proof of geolocation inference threat affecting 5,435 devices across 94 countries",
+   "primary_theme": "Web security geolocation",
+   "methods": [
+    "clustering",
+    "llm",
+    "differential_analysis"
+   ]
+  },
+  {
+   "title": "Welcome from the History of the Web Track Chairs",
+   "venue": "WWW 2026",
+   "problem": "Historical Web decisions continue influencing modern systems yet connections to contemporary AI remain underexamined.",
+   "approach": "Historical arc from information retrieval through platforms to semantic web and agentic AI systems.",
+   "contribution": "Positions history as analytical lens revealing recurring tensions guiding responsible future Web innovation.",
+   "primary_theme": "Web history AI evolution",
+   "methods": [
+    "historical analysis"
+   ]
+  },
+  {
+   "title": "From Lexical and Semantic to Predictive Search: Evolution or Involution?",
+   "venue": "WWW 2026",
+   "problem": "Evolution from lexical to semantic to predictive search raises philosophical questions about knowledge loss.",
+   "approach": "Comprehensive review spanning vector models, embeddings, LLMs, dense retrieval, RAG.",
+   "contribution": "Framework for evaluating trade-offs in predictive search vs. traditional search paradigms.",
+   "primary_theme": "search evolution",
+   "methods": [
+    "rag",
+    "dense-retrieval",
+    "llm"
+   ]
+  },
+  {
+   "title": "Towards a Responsible Web: Economic Perspectives on Fairness in Information Retrieval",
+   "venue": "WWW 2026",
+   "problem": "Fairness in IR lacks structured framework; theories fragmented across domains",
+   "approach": "Economic perspective organizing fairness in IR via macro/micro, demand/supply, time horizons",
+   "contribution": "Unified economic cube framework for fairness algorithms and real-world IR applications",
+   "primary_theme": "Fairness in retrieval",
+   "methods": [
+    "economics",
+    "fairness-metrics",
+    "market-modeling"
+   ]
+  },
+  {
+   "title": "Saliency-Guided Embedding Alignment for Query-to-Document Legal Case Retrieval",
+   "venue": "WWW 2026",
+   "problem": "Query-to-document mismatch in legal case retrieval due to length disparity",
+   "approach": "Saliency-guided segment selection with inverse cloze task and semantic alignment",
+   "contribution": "Significant retrieval accuracy gains through chunk saliency assessment and two-stage fine-tuning",
+   "primary_theme": "legal information retrieval",
+   "methods": [
+    "dense retrieval",
+    "semantic alignment",
+    "segment selection"
+   ]
+  },
+  {
+   "title": "URLBank: Data-Driven URL Discovery via Temporal Link Graphs",
+   "venue": "WWW 2026",
+   "problem": "Web-scale crawling relies on manual seed management, inefficiently oversampling redundant and missing high-yield seeds",
+   "approach": "Label-free controller infers seed selection from temporal crawl telemetry using marginal gain optimization",
+   "contribution": "URLBank achieves higher coverage and efficiency with fewer seeds in production deployment",
+   "primary_theme": "web crawling",
+   "methods": [
+    "temporal signals",
+    "optimization",
+    "information retrieval"
+   ]
+  }
+ ]
+}

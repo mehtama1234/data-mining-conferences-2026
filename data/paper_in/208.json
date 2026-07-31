@@ -1,0 +1,11 @@
+{
+ "batch": "b013",
+ "paper": {
+  "id": "3c49d0ddaa5bc1812e63098a9c7c1c1f391179d2",
+  "venue": "WWW 2026",
+  "title": "Understanding Post-Exploit Laundering Behavior on Ethereum",
+  "abstract": "Money laundering enables malicious actors to integrate illegal profits into the legitimate economy and has long been a central concern in financial regulation. Blockchain systems introduce new channels for laundering through decentralized, pseudonymous, and cross-border asset transfers. In this context, blockchain exploiters often rely on laundering to conceal fund origins and enable cash-out. While prior work has focused on detecting suspicious accounts or transactions, the behavioral patterns underlying laundering practices remain underexplored. This paper provides a behavioral perspective on post-exploit laundering on Ethereum. We use on-chain tracing to reconstruct token flows originating from exploiter-controlled addresses. We then define a set of behavioral metrics covering financial trajectories, temporal dynamics, structural topology, and value dispersion. Our empirical study reveals recurring patterns, including rapid fund movement, shallow transfer structures, and broad dispersion. These patterns exhibit measurable regularities, suggesting that behavioral dynamics could be leveraged to enhance existing laundering detection frameworks.",
+  "gid": 208,
+  "theme": "Blockchain security money-laundering"
+ }
+}

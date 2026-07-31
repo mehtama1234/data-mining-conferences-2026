@@ -1,0 +1,11 @@
+{
+ "batch": "b036",
+ "paper": {
+  "id": "a24d9954d515f93e46ea1c620391580c73eafab7",
+  "venue": "WWW 2026",
+  "title": "Scaling Collaborative Filtering with Multimodal Contrastive Fine-tuning",
+  "abstract": "Scaling laws have enabled large language models(LLMs) to achieve remarkable performance and strong generalization across diverse language understanding tasks, including few-shot, in-context, and zero-shot learning. While prior studies in large-scale collaborative filtering(CF) have revealed clear relationships between model performance and scaling factors such as data size and model capacity, little attention has been given to how heterogeneous datasets can be synergistically combined for recommender systems(RS). In particular, it remains unclear whether systematically integrating diverse recommendation datasets can yield scaling behaviors analogous to those observed in LLMs, while simultaneously addressing challenges such as cold-start recommendation and cross-domain transfer. In this paper, we present RecCLIP, a multimodal framework that reformulates user--item interactions as visual representations compatible with vision--language models(VLMs). RecCLIP compresses interaction signals and employs prompt-based ranking to enable unified representation across heterogeneous data sources. Extensive experiments reveal consistent power-law scaling trends with respect to data size, and demonstrate that RecCLIP achieves superior performance in both cold-start and cross-domain transfer scenarios. Our findings underscore the importance of data-centric design in recommender systems and pr",
+  "gid": 540,
+  "theme": "Multimodal recommendation"
+ }
+}

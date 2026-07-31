@@ -1,0 +1,11 @@
+{
+ "batch": "b032",
+ "paper": {
+  "id": "9264341be7d2032e720c9a85a1876a5a8c4299a6",
+  "venue": "WWW 2026",
+  "title": "ContiGuard: A Framework for Continual Toxicity Detection Against Evolving Evasive Perturbations",
+  "abstract": "Toxicity detection mitigates the dissemination of toxic content (e.g., hateful comments, posts, and messages within online social actions) to safeguard a healthy online social environment. However, malicious users persistently develop evasive perturbations to disguise toxic content and evade detectors. Traditional detectors or methods are static over time and are inadequate in addressing these evolving evasion tactics. Thus, continual learning emerges as a logical approach to dynamically update detection ability against evolving perturbations. Nevertheless, disparities across perturbations hinder the detector's continual learning on perturbed text. More importantly, perturbation-induced noises distort semantics to degrade comprehension and also impair critical feature learning to render detection sensitive to perturbations. These amplify the challenge of continual learning against evolving perturbations. In this work, we present ContiGuard, the first framework tailored for continual learning of the detector on time-evolving perturbed text (termed continual toxicity detection) to enable the detector to continually update capability and maintain sustained resilience against evolving perturbations. Specifically, to boost the comprehension, we present an LLM powered semantic enriching strategy, where we dynamically incorporate possible meaning and toxicity-related clues excavated b",
+  "gid": 486,
+  "theme": "toxicity detection"
+ }
+}

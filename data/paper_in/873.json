@@ -1,0 +1,11 @@
+{
+ "batch": "b058",
+ "paper": {
+  "id": "110ba8cd7fd24c842bc2b65fd3751cac7a1a0a8b",
+  "venue": "WSDM 2026",
+  "title": "Crowdsourced Collection and Visualization of Urban Mood via a Multisensory Interactive System",
+  "abstract": "The emergence of Mobility as a Service (MaaS) highlights the need for personalized and exploration-oriented recommendation that account for users' subjective preferences and multisensory experiences. However, existing approaches lack real-world sensory and contextual data to support such personalization. To address this gap, we developed FreePOST, a location-based information collection system that enables users to submit photos together with multisensory and location impressions tied to specific places. In a field study spanning over three months in Kyoto, 69 participants contributed more than 8,000 posts. The collected data were visualized in real time via a web application with an interactive map interface. Because the sensory tags assigned to locations may depend not only on the characteristics of the place itself but also on the personality traits of the participants, we also collected personality and behavioral data using the Big Five Inventory and the Brief Sensation Seeking Scale. Our results demonstrate the ability to effectively capture Kyoto's sensory landscapes and context-aware experiential features, providing a valuable foundation for integrating subjective and multisensory data into future personalized search and recommendation in MaaS contexts. This demo will showcase FreePOST's core functions of multisensory data submission and interactive map visualization.",
+  "gid": 873,
+  "theme": "multisensory location recommendation"
+ }
+}

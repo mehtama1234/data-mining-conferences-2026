@@ -1,0 +1,11 @@
+{
+ "batch": "b033",
+ "paper": {
+  "id": "98774a748eb52814f30eb2fc7115100cb72ee7c5",
+  "venue": "WWW 2026",
+  "title": "Iterative Semantic Reasoning from Individual to Group Interests for Generative Recommendation with LLMs",
+  "abstract": "Recommendation systems aim to learn user interests from historical behaviors and deliver relevant items. Recent methods leverage large language models (LLMs) to construct and integrate semantic representations of users and items for capturing user interests. However, user behavior theories suggest that truly understanding user interests requires not only semantic integration but also semantic reasoning from explicit individual interests to implicit group interests. To this end, we propose an Iterative Semantic Reasoning Framework (ISRF) for generative recommendation. ISRF leverages LLMs to bridge explicit individual interests and implicit group interests in three steps. First, we perform multi-step bidirectional reasoning over item attributes to infer semantic item features and build a semantic interaction graph capturing users' explicit interests. Second, we generate semantic user features based on the semantic item features and construct a similarity-based user graph to infer the implicit interests of similar user groups. Third, we adopt an iterative batch optimization strategy, where individual explicit interests directly guide the refinement of group implicit interests, while group implicit interests indirectly enhance individual modeling. This iterative process ensures consistent and progressive interest reasoning, enabling more accurate and comprehensive user interest lea",
+  "gid": 507,
+  "theme": "LLM recommendation"
+ }
+}

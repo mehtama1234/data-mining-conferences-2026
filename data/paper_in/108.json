@@ -1,0 +1,11 @@
+{
+ "batch": "b007",
+ "paper": {
+  "id": "1f555b74281e888c4fad6de252f3ccd534b1349e",
+  "venue": "WWW 2026",
+  "title": "Context-Aware Silhouette-Based Age Estimation for Child Sexual Abuse Material (CSAM) Detection",
+  "abstract": "Experts in the Association of Internet Hotline Providers (INHOPE) work to quickly identify and remove Child Sexual Abuse Material (CSAM) from the Internet. A key factor in report classification is determining the age group of individuals in the material. We introduce a Multitask Paired Learning approach for silhouette-based age classification in CSAM detection. Unlike existing methods, our approach does not require face visibility and leverages both individual and relative human features within a photo. We tested seven architecture variants using 10-fold cross-validation on real reported materials. Results show that multitask learning reduces the error rate by 3%-9% for minor-adult classification. Further improvements are reported by the application of Pair Learning, achieving a total reduction of 14%-21%. Our method is statistically significant and improves both binary and 3-class age classification, providing a valuable tool to support expert assessments.",
+  "gid": 108,
+  "theme": "CSAM age estimation"
+ }
+}

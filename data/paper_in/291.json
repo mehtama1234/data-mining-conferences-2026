@@ -1,0 +1,11 @@
+{
+ "batch": "b019",
+ "paper": {
+  "id": "53fc0242b26000597fafc0d532268f3bbdf87710",
+  "venue": "WWW 2026",
+  "title": "LLM-Powered Structurer: Normalizing Natural Language to Information Delivery Specification for Industrial Data Exchange",
+  "abstract": "In the architecture and construction industries, efficient information exchange is crucial, yet standards like Industry Foundation Classes and Information Delivery Specification pose challenges due to XML-based format, which is cumbersome for human users and requires extensive standards knowledge and abstract entity definitions. Existing tools exacerbate this with high learning curves, hindering widespread adoption. To address this, we introduce our demonstration named Schema-Grounded Semantic Structurer (SGSS), an innovative LLM-driven framework that normalizes natural language industry information requirements directly into valid IDS XML, leveraging large language models' semantic understanding to bridge human-friendly inputs with structured standards. The proposed SGSS framework improves the accessibility of industrial information requirements exchanges across global construction workflows, thereby unlocking the full potential of automated information exchange in the industry.",
+  "gid": 291,
+  "theme": "LLM semantic structuring"
+ }
+}

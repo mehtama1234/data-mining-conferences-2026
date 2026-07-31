@@ -1,0 +1,11 @@
+{
+ "batch": "b037",
+ "paper": {
+  "id": "a988aab4f4be92b8246f123d5989bc862759aa9d",
+  "venue": "WWW 2026",
+  "title": "Unifying Graph Out-of-Distribution Generalization and Detection through Spectral Contrastive Invariant learning",
+  "abstract": "Graph representation learning encounters great difficulties under distribution shifts. This challenge has aroused considerable interest in graph out-of-distribution (OOD) generalization and detection, which can effectively handle covariate and semantic shifts, respectively. However, real-world graph tasks often involve complex unlabeled wild data with both covariate and semantic shifts, motivating a critical question: can we design a unified framework for joint graph OOD generalization and detection? Invariant graph learning, which extracts stable relationships between features and labels, offers a promising candidate for joint OOD generalization and detection, but faces three critical challenges (1) how to model invariant subgraphs with unlabeled data, (2) how to ensure graph representations benefit both tasks, and (3) how to integrate labeled and unlabeled data under proper invariance principles. To solve these challenges, we introduce Unified Graph Out-Of-Distribution generalization and detection framework (UniGOOD) with three tailored components. Specifically, to capture subgraphs without relying on labels, we first propose the distributional invariant subgraph generator to model subgraph conditional distributions. Next, to enable generalization and reliable detection, we propose the cross-invariant-subgraph spectral contrastive learning module to learn invariant representa",
+  "gid": 561,
+  "theme": "graph OOD detection"
+ }
+}

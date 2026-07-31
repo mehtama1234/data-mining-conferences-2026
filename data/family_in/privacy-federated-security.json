@@ -1,0 +1,562 @@
+{
+ "key": "privacy-federated-security",
+ "theme": "Privacy, Federated & Security",
+ "n_papers": 168,
+ "pct": 8.7,
+ "by_venue": {
+  "WWW 2026": 131,
+  "WSDM 2026": 6,
+  "SIGIR 2026": 19,
+  "KDD 2026": 12
+ },
+ "theme_examples": [
+  {
+   "title": "Reconstructing Training Data from Adapter-based Federated Large Language Models",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "Too Much Sharing, Too Little Security: Authentication Cookie Theft At Scale",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "Fast or Secure? Push the Limit of Privacy Leakage Threat via Charging Side-Channel Attacks",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "pFedDKS: Detached Knowledge Sharing for Personalized Federated Learning",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "Xemis: Fair and Robust Privacy-Preserving Data Trading based on Distributed Noise Sharing",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "Quantum-Safe, Efficient, and AI-Enhanced Blockchains for the Web: A Cooperative Tutorial on Quantum Computing, Blockchain Applications, and Data Standards",
+   "venue": "WWW 2026"
+  }
+ ],
+ "representative_papers": [
+  {
+   "title": "Reconstructing Training Data from Adapter-based Federated Large Language Models",
+   "venue": "WWW 2026",
+   "problem": "Adapter-based federated LLMs assumed privacy-safe but vulnerable to gradient inversion attacks",
+   "approach": "Token presence inference from attention, sentence-level inversion in low-rank space, semantic coherence via constrained greedy decoding",
+   "contribution": "UTR attack reconstructs training text near-perfectly from adapter gradients even with large batches",
+   "primary_theme": "Federated LLM security",
+   "methods": [
+    "gradient inversion",
+    "attention analysis",
+    "language model priors"
+   ]
+  },
+  {
+   "title": "FeedGuard: Online Critic-Guided Reinforcement Learning with Privacy-Preserving Feedback for Recommendation",
+   "venue": "WWW 2026",
+   "problem": "RL recommendation systems struggle with privacy-preserving feedback collection",
+   "approach": "Critic-guided RL with split federated learning and differential privacy",
+   "contribution": "FeedGuard enables privacy-protected online adaptation with formal DP guarantees",
+   "primary_theme": "Privacy-preserving recommendation",
+   "methods": [
+    "reinforcement-learning",
+    "differential-privacy",
+    "federated-learning"
+   ]
+  },
+  {
+   "title": "Unveiling and Mitigating Untargeted Poisoning Attacks on Federated Knowledge Graph Embedding",
+   "venue": "WWW 2026",
+   "problem": "Federated knowledge graph embedding vulnerable to untargeted poisoning attacks",
+   "approach": "Design data and embedding-level poisoning attacks with embedding-density anomaly detection defense",
+   "contribution": "First systematic investigation of FKGE poisoning with LDM defense restoring performance",
+   "primary_theme": "Federated KG security",
+   "methods": [
+    "poisoning",
+    "defense",
+    "anomaly-detection"
+   ]
+  },
+  {
+   "title": "FedCND: Federated Graph-Level Clustering under Inter-Client Cluster Number Discrepancy",
+   "venue": "WWW 2026",
+   "problem": "Federated clustering assumes uniform cluster counts; misalignment under data heterogeneity.",
+   "approach": "Decouples graph into public and private patterns; aggregates cluster-level prototypes by affinity.",
+   "contribution": "Privacy-preserving prototype alignment across clients with heterogeneous cluster numbers.",
+   "primary_theme": "federated graph clustering",
+   "methods": [
+    "federated_learning",
+    "gnn",
+    "clustering"
+   ]
+  },
+  {
+   "title": "Dynamic Min-Max Multi-Dimensional Reinforcement Backdoor Attacks and Orchestrated Closed-Loop Defense in Fairness-Aware Web Federated Finance",
+   "venue": "WWW 2026",
+   "problem": "Federated fraud detection lacks robustness to backdoor attacks and handles extreme data scarcity",
+   "approach": "Privacy-enhanced representation fusion, contrastive learning, dynamic Min-Max adversarial game",
+   "contribution": "CLARF framework with closed-loop defense against reinforcement learning backdoor attacks",
+   "primary_theme": "Fraud detection federated",
+   "methods": [
+    "federated_learning",
+    "contrastive",
+    "adversarial",
+    "reinforcement_learning"
+   ]
+  },
+  {
+   "title": "RAFed: Responsive Augmentation and Approximate Update Method for Federated Learning with Non-IID Data",
+   "venue": "WWW 2026",
+   "problem": "Non-IID data distributions in federated learning degrade blind augmentation policies severely",
+   "approach": "Responsive augmentation with dynamic adaptive personalized policy search and approximate updates",
+   "contribution": "RAFed achieves superior accuracy with lower communication costs and privacy preservation on heterogeneous clients",
+   "primary_theme": "federated learning",
+   "methods": [
+    "data-augmentation",
+    "federated-learning",
+    "policy-gradient"
+   ]
+  },
+  {
+   "title": "Missingness-aware Federated Contrastive Learning on Semantic Graphs",
+   "venue": "WWW 2026",
+   "problem": "Decentralized semantic graphs suffer dual incompleteness with privacy constraints preventing centralized learning",
+   "approach": "Missingness-aware federated contrastive learning with topology estimation and graph reconstruction",
+   "contribution": "FedCL outperforms baselines on incomplete citation and web graphs through private reconstruction",
+   "primary_theme": "federated semantic graphs",
+   "methods": [
+    "federated-learning",
+    "contrastive-learning",
+    "graph"
+   ]
+  },
+  {
+   "title": "Prototype-Aligned Federated Soft-Prompts for Continual Web Personalization",
+   "venue": "WWW 2026",
+   "problem": "Continual personalization struggles with non-stationarity privacy constraints and stability-plasticity",
+   "approach": "Dual-timescale soft prompts with server-side prototype library via federated aggregation",
+   "contribution": "Privacy-aware continual personalization with improved NDCG and reduced catastrophic forgetting",
+   "primary_theme": "Federated learning",
+   "methods": [
+    "federated-learning",
+    "prompt-tuning",
+    "privacy"
+   ]
+  },
+  {
+   "title": "AiOfAi: 4th Workshop on Adverse Impacts and Collateral Effects of Artificial Intelligence Technologies",
+   "venue": "WWW 2026",
+   "problem": "AI technologies enable both constructive innovation and destructive threats in digital ecosystems",
+   "approach": "Workshop examining dual-edged nature of AI including security, threat modeling, access control",
+   "contribution": "Framework for addressing AI's societal impact on trust, privacy, ethics, and security",
+   "primary_theme": "AI safety and ethics",
+   "methods": [
+    "threat-modeling",
+    "security-analysis"
+   ]
+  },
+  {
+   "title": "Blind-QEM: A Privacy-Preserving Framework for Quantum Error Mitigation via Zero-Knowledge Proofs",
+   "venue": "WWW 2026",
+   "problem": "Quantum error mitigation requires circuit visibility creating privacy-utility dilemma for cloud quantum services.",
+   "approach": "Zero-knowledge proofs with receipt-based binding mechanism verifying policy compliance without circuit disclosure.",
+   "contribution": "Blind-QEM enables privacy-preserving outsourced quantum error mitigation via aggregate noise statistics.",
+   "primary_theme": "Quantum privacy security",
+   "methods": [
+    "zero-knowledge proofs",
+    "cryptography",
+    "quantum computing"
+   ]
+  },
+  {
+   "title": "Prototype Augmentation-based Edge-end Heterogeneous Collaborative Learning",
+   "venue": "WWW 2026",
+   "problem": "Edge-end heterogeneous collaborative learning hampered by communication overhead and data privacy constraints",
+   "approach": "Prototype augmentation with local contrast and global alignment, virtual data generation via noise mixing",
+   "contribution": "PAECL framework reduces communication while training heterogeneous edge-end models without edge server data",
+   "primary_theme": "Edge-end collaborative learning",
+   "methods": [
+    "federated",
+    "prototype",
+    "contrastive"
+   ]
+  },
+  {
+   "title": "FedUMM: A General Framework for Federated Learning with Unified Multimodal Models",
+   "venue": "WWW 2026",
+   "problem": "Privacy and communication overhead in federated learning for multimodal models",
+   "approach": "Parameter-efficient LoRA adapters with low-communication aggregation strategy",
+   "contribution": "Practical federated UMM training with order-of-magnitude communication reduction",
+   "primary_theme": "federated multimodal learning",
+   "methods": [
+    "federated learning",
+    "lora",
+    "multimodal"
+   ]
+  },
+  {
+   "title": "MF3: Multimodal Federated Learning with Dual-Path Mamba-Transformer for Metro Flow Prediction",
+   "venue": "WWW 2026",
+   "problem": "Metro flow prediction with multimodal fragmentation and privacy concerns",
+   "approach": "Dual-path Mamba-Transformer with blockchain federated reputation",
+   "contribution": "Superior prediction accuracy on real metro datasets with privacy protection",
+   "primary_theme": "Federated spatiotemporal prediction",
+   "methods": [
+    "federated_learning",
+    "mamba",
+    "transformer",
+    "blockchain"
+   ]
+  },
+  {
+   "title": "Doxing-as-a-Service: Demystifying the Chinese Online Doxing Ecosystem",
+   "venue": "WWW 2026",
+   "problem": "Doxing evolved into commodified service model with unclear ecosystem structure",
+   "approach": "Analyzed Telegram channels: 25,972 messages from 100 major DaaS operators",
+   "contribution": "First systematic study of Chinese DaaS ecosystem and supply chain",
+   "primary_theme": "cybersecurity threat analysis",
+   "methods": [
+    "data-mining",
+    "ecosystem-analysis",
+    "privacy-violation"
+   ]
+  },
+  {
+   "title": "Economics Model for Federated LLM Training via Blockchain",
+   "venue": "WWW 2026",
+   "problem": "Centralized LLM training faces high computation costs and data privacy constraints limiting collaboration",
+   "approach": "Federated learning with blockchain-based game-theoretic incentive mechanism using Shapley value contribution assessment",
+   "contribution": "Fair contribution evaluation, reduced free-riding, stable participant engagement via decentralized framework",
+   "primary_theme": "federated LLM training",
+   "methods": [
+    "federated-learning",
+    "blockchain",
+    "game-theory"
+   ]
+  },
+  {
+   "title": "Federated Latent Factor Learning for Privacy-Preserving Spatio-Temporal Signal Recovery",
+   "venue": "WWW 2026",
+   "problem": "Latent factor learning for WSN recovery requires centralized data storage violating privacy preservation",
+   "approach": "Federated latent factor learning uploading only gradients with spatio-temporal correlation regularization",
+   "contribution": "Accurate missing data recovery while preserving raw data privacy via federated sensor-level framework",
+   "primary_theme": "federated signal recovery",
+   "methods": [
+    "federated-learning",
+    "factorization",
+    "spatio-temporal"
+   ]
+  },
+  {
+   "title": "WinFLoRA: Incentivizing Client-Adaptive Aggregation in Federated LoRA under Privacy Heterogeneity",
+   "venue": "WWW 2026",
+   "problem": "Privacy heterogeneity in federated LoRA: misaligned incentives when clients apply varying differential privacy levels",
+   "approach": "Noise-aware aggregation weighting mechanism that rewards lower-noise contributions in federated adaptation",
+   "contribution": "52.58% accuracy improvement and 2.56x client utility gains through heterogeneous privacy-aware federated LoRA",
+   "primary_theme": "Federated learning privacy",
+   "methods": [
+    "federated learning",
+    "lora",
+    "differential privacy"
+   ]
+  },
+  {
+   "title": "DIARY: Differentially Private Recovery with Adaptive Privacy Budgets in Federated Unlearning",
+   "venue": "WWW 2026",
+   "problem": "Federated unlearning faces gradient inversion attacks and dual privacy threats from recovery phases",
+   "approach": "Adaptive privacy budget allocation, FIND anomaly detection module, selective storage and rollback",
+   "contribution": "DIARY balances privacy-utility tradeoff in federated recovery with reduced overhead",
+   "primary_theme": "Federated unlearning",
+   "methods": [
+    "differential privacy",
+    "anomaly detection",
+    "federated learning"
+   ]
+  },
+  {
+   "title": "Verifiable Federated Representation Learning for Cross-domain Sequential Recommendation",
+   "venue": "WWW 2026",
+   "problem": "Federated cross-domain sequential recommendation faces heterogeneous interactions and weak trust assumptions enabling misreporting and negative transfer.",
+   "approach": "VeriFRL separates shared and exclusive representations via variational encoder; contribution evaluation module quantifies client/feature influences.",
+   "contribution": "Privacy-preserving federated CDSR with verifiability, interpretability, and negative transfer detection using representation disentanglement.",
+   "primary_theme": "Verifiable federated recommendation",
+   "methods": [
+    "federated-learning",
+    "representation-learning",
+    "sequential-recommendation"
+   ]
+  },
+  {
+   "title": "Fed-S2: Adversarially Disentangled Federated Multimodal RAG for Safety-Critical Long-Tail Fault Diagnosis",
+   "venue": "WWW 2026",
+   "problem": "Long-tail fault detection in heterogeneous multimodal data with privacy compliance and gradient starvation challenges",
+   "approach": "Fed-S2 privacy-preserving federated multimodal RAG with semantic-shielding, adversarial disentanglement, zero-shot inference",
+   "contribution": "Long-tail fault identification improved from 38.5% to 84.2%; zero-shot achieves 68.5% accuracy while reducing communication 93%",
+   "primary_theme": "Federated multimodal learning",
+   "methods": [
+    "federated-learning",
+    "multimodal",
+    "rag"
+   ]
+  },
+  {
+   "title": "Too Much Sharing, Too Little Security: Authentication Cookie Theft At Scale",
+   "venue": "WWW 2026",
+   "problem": "Authentication cookies shared across subdomains create critical session hijacking vulnerability at scale",
+   "approach": "Non-intrusive detection simulating hijacked subdomains and darknet leak filtering for evidence collection",
+   "contribution": "CookieDrift analysis reveals 57.98% of major domains vulnerable to cookie theft",
+   "primary_theme": "Web security",
+   "methods": [
+    "vulnerability assessment",
+    "darknet analysis",
+    "cookie forensics"
+   ]
+  },
+  {
+   "title": "pFedDKS: Detached Knowledge Sharing for Personalized Federated Learning",
+   "venue": "WWW 2026",
+   "problem": "Partial knowledge sharing in federated learning lacks theoretical understanding of feature extractor sharing",
+   "approach": "Neural collapse theory shows partial feature extractor sharing needed with detached knowledge prototypes",
+   "contribution": "pFedDKS method uses detached knowledge to enhance personalized representations in federated learning",
+   "primary_theme": "personalized federated learning",
+   "methods": [
+    "federated-learning",
+    "knowledge-sharing",
+    "personalization"
+   ]
+  },
+  {
+   "title": "Xemis: Fair and Robust Privacy-Preserving Data Trading based on Distributed Noise Sharing",
+   "venue": "WWW 2026",
+   "problem": "Privacy-preserving data trading lacks trustworthy noise calibration and Byzantine robustness",
+   "approach": "Decentralized multi-party computation with batched distributed noise sharing protocol (b-DNS)",
+   "contribution": "Xemis enables Byzantine-robust data trading with 12.7x faster and 43.6x bandwidth savings",
+   "primary_theme": "privacy-preserving data trading",
+   "methods": [
+    "differential-privacy",
+    "mpc",
+    "fairness"
+   ]
+  },
+  {
+   "title": "Quantum-Safe, Efficient, and AI-Enhanced Blockchains for the Web: A Cooperative Tutorial on Quantum Computing, Blockchain Applications, and Data Standards",
+   "venue": "WWW 2026",
+   "problem": "Quantum computing vulnerabilities threaten classical cryptography securing blockchain and distributed consensus systems",
+   "approach": "Tutorial integrating quantum computing principles with post-quantum cryptography and blockchain architecture design",
+   "contribution": "Framework for quantum-safe, AI-enhanced blockchain systems emphasizing interdisciplinary collaboration",
+   "primary_theme": "quantum cryptography blockchain",
+   "methods": [
+    "post-quantum cryptography",
+    "quantum computing",
+    "blockchain security"
+   ]
+  },
+  {
+   "title": "Thorki: Decoupling General and Personalized Knowledge with Collaborative Fusion for Personalized Federated Learning",
+   "venue": "WWW 2026",
+   "problem": "Federated learning couples general and personalized knowledge, limiting effective knowledge aggregation",
+   "approach": "Decouple knowledge via separate small and large models with fusion network for adaptive combination",
+   "contribution": "Achieves 19% accuracy improvement and 10x time-to-accuracy speedup over state-of-the-art FL systems",
+   "primary_theme": "federated learning personalization",
+   "methods": [
+    "federated-learning",
+    "knowledge-decoupling",
+    "model-fusion"
+   ]
+  },
+  {
+   "title": "Decoding Web Memorization: A Semantic Membership Inference Attack on LLMs",
+   "venue": "WWW 2026",
+   "problem": "Membership inference attacks fail against semantically preserved but structurally altered training samples",
+   "approach": "Generate adversarial semantic samples, extract multi-layer attention features, train contrastive classifier",
+   "contribution": "Significantly outperforms existing MIA methods by leveraging semantic perturbations and attention patterns",
+   "primary_theme": "LLM privacy attacks",
+   "methods": [
+    "membership-inference",
+    "contrastive-learning",
+    "adversarial"
+   ]
+  },
+  {
+   "title": "ZK-V: Zero-Knowledge Verification for Trustworthy Autonomous Driving Simulation",
+   "venue": "WWW 2026",
+   "problem": "Autonomous driving simulation lacks trustworthy verification protecting data integrity and privacy",
+   "approach": "Zero-knowledge proofs and blockchain for cryptographic constraint verification",
+   "contribution": "ZK-V enables privacy-preserving simulation verification without revealing telemetry data",
+   "primary_theme": "Autonomous driving verification",
+   "methods": [
+    "zero-knowledge-proofs",
+    "blockchain",
+    "cryptography"
+   ]
+  },
+  {
+   "title": "Sharpness-Aware Minimization for Generalized Embedding Learning in Federated Recommendation",
+   "venue": "WWW 2026",
+   "problem": "Unstable generalized embedding learning in federated recommender systems with heterogeneous data",
+   "approach": "Sharpness-aware minimization for stable item embedding learning across federated clients",
+   "contribution": "FedRecGEL framework stabilizes embedding training under cross-device heterogeneity and sparsity",
+   "primary_theme": "Federated recommendation",
+   "methods": [
+    "federated-learning",
+    "embedding",
+    "sam"
+   ]
+  },
+  {
+   "title": "The State of the Internet: Insights from Security Indicators",
+   "venue": "WWW 2026",
+   "problem": "Many Internet services lack deployment of basic foundational security measures",
+   "approach": "Baseline security indicators across internet stack applied to German .de domain landscape",
+   "contribution": "Systematic overview of security measure deployment revealing heterogeneity and gaps",
+   "primary_theme": "Internet security indicators",
+   "methods": [
+    "measurement",
+    "security-audit",
+    "analysis"
+   ]
+  },
+  {
+   "title": "ZABAPAD 2026: 1st Workshop on Zero-knowledge Proof and Blockchain for WEB 4.0: Advancing the Post-quantum and Decentralized Era",
+   "venue": "WWW 2026",
+   "problem": "Web 4.0 needs post-quantum security, decentralization, and trustworthy AIoT identity models",
+   "approach": "Workshop exploring ZKP, blockchain, post-quantum readiness with practitioner playbooks",
+   "contribution": "Interoperability standards, benchmarks, failure mode catalog for Web 4.0 infrastructure",
+   "primary_theme": "Web 4.0 security workshop",
+   "methods": [
+    "zkp",
+    "blockchain",
+    "post-quantum"
+   ]
+  },
+  {
+   "title": "Beyond Detection: Autonomous Anomaly Remediation for MCP Against Tool Poisoning Attacks",
+   "venue": "WWW 2026",
+   "problem": "LLM agents vulnerable to tool poisoning attacks via MCP context manipulation",
+   "approach": "Multi-checkpoint rollback with attention-mask-based anomaly detection and correction",
+   "contribution": "First automated anomaly detection and correction framework for MCP tool poisoning",
+   "primary_theme": "LLM security, tool poisoning",
+   "methods": [
+    "anomaly detection",
+    "rollback mechanism",
+    "attention masking"
+   ]
+  },
+  {
+   "title": "A USIM-less Identity Authentication System based on Zero-Knowledge Proofs",
+   "venue": "WWW 2026",
+   "problem": "SIM-based authentication vulnerable to large-scale data breaches and privacy leakage",
+   "approach": "Zero-knowledge proofs with Merkle tree membership and Groth16 proving system",
+   "contribution": "Practical privacy-preserving USIM-less authentication via decentralized ZKPs",
+   "primary_theme": "Zero-knowledge authentication",
+   "methods": [
+    "zero-knowledge proofs",
+    "merkle tree",
+    "smart contracts"
+   ]
+  },
+  {
+   "title": "WAMO: Toward Secure Browser Inference via Web Model Obfuscation in WebAssembly",
+   "venue": "WWW 2026",
+   "problem": "Browser-deployed AI models vulnerable to theft, reverse engineering, and tampering",
+   "approach": "WebAssembly obfuscation targeting weights, operators, and computation graphs",
+   "contribution": "71% complexity increase and 455% effort increase with <1% accuracy loss",
+   "primary_theme": "Model security, obfuscation",
+   "methods": [
+    "webassembly",
+    "obfuscation",
+    "model protection"
+   ]
+  },
+  {
+   "title": "Risk-free Selfish Mining in Hybrid Predictability Model. A Case Study on Polkadot's NPoS",
+   "venue": "WWW 2026",
+   "problem": "Selfish mining attacks risk unclear in Polkadot's hybrid predictability PoS model",
+   "approach": "Formal analysis of nominated PoS protocol with Byzantine validator collusion scenarios",
+   "contribution": "Demonstrates risk-free selfish mining for 33% Byzantine validators earning 7.09% extra rewards",
+   "primary_theme": "Blockchain security",
+   "methods": [
+    "proof-of-stake",
+    "selfish-mining",
+    "formal-analysis"
+   ]
+  },
+  {
+   "title": "Inference Cost Attacks for Retrieval-Augmented Large Language Models",
+   "venue": "WWW 2026",
+   "problem": "RAG-enhanced LLMs vulnerable to high inference costs through knowledge base poisoning",
+   "approach": "Inject malicious documents into knowledge bases via LLM agents and reinforcement learning",
+   "contribution": "CREEP framework with MA-GRPO algorithm for effective inference cost attacks on RAG systems",
+   "primary_theme": "LLM security",
+   "methods": [
+    "rag",
+    "adversarial-attack",
+    "reinforcement-learning"
+   ]
+  },
+  {
+   "title": "FedRMamba: Federated Residual Mamba for Multivariate Time-Series Forecasting",
+   "venue": "WWW 2026",
+   "problem": "Federated forecasting faces heterogeneous variables and temporal correlations.",
+   "approach": "Residual Mamba blocks: global frequency-aware module plus local patch-wise module with gated fusion.",
+   "contribution": "Personalized federated framework separates low-frequency and high-frequency patterns.",
+   "primary_theme": "federated time series forecasting",
+   "methods": [
+    "federated_learning",
+    "mamba",
+    "time_series"
+   ]
+  },
+  {
+   "title": "Bento: Fine-Grained Memory Isolation for COTS WebAssembly Binaries",
+   "venue": "WWW 2026",
+   "problem": "COTS WebAssembly modules vulnerable to memory attacks; existing defenses require source code.",
+   "approach": "Static binary rewriter using pointer analysis to partition and isolate memory regions.",
+   "contribution": "Multi-memory isolation without new instructions; 3% runtime and 1% startup overhead.",
+   "primary_theme": "WebAssembly security",
+   "methods": [
+    "binary_analysis",
+    "static_instrumentation",
+    "security"
+   ]
+  },
+  {
+   "title": "Privacy-Aware Machine Unlearning with SISA for Reinforcement Learning\u2013Based Ransomware Detection",
+   "venue": "WWW 2026",
+   "problem": "Ransomware detectors need privacy-compliant data deletion without full model retraining",
+   "approach": "SISA training partitions data into shards; unlearning retrains only affected shards",
+   "contribution": "Privacy-aware RL detector reduces unlearning cost while preserving ransomware detection performance",
+   "primary_theme": "Machine unlearning",
+   "methods": [
+    "reinforcement_learning",
+    "unlearning",
+    "sisa_training"
+   ]
+  },
+  {
+   "title": "FedDiG: Frequency-Guided Diffusion Diversity for Generalizable Federated Time Series Classification",
+   "venue": "WWW 2026",
+   "problem": "Federated time-series classification struggles with source heterogeneity and OOD patterns",
+   "approach": "Frequency-guided diffusion for diversity generation across clients with cross-frequency sampling",
+   "contribution": "FedDiG outperforms baselines by synthesizing diverse spectral patterns for improved generalization",
+   "primary_theme": "Federated time-series",
+   "methods": [
+    "diffusion",
+    "federated",
+    "frequency",
+    "timeseries"
+   ]
+  },
+  {
+   "title": "Red-Teaming Privacy-Protective Perturbations: Blind Face Restoration as an Attack Strategy",
+   "venue": "WWW 2026",
+   "problem": "Privacy-protective perturbations against image forgery attacks are vulnerable to blind face restoration",
+   "approach": "Theoretical analysis and empirical validation of blind face restoration as red-teaming attack",
+   "contribution": "Shows BFR outperforms existing red-teaming methods with greater robustness and efficiency",
+   "primary_theme": "Privacy-protective perturbations",
+   "methods": [
+    "adversarial",
+    "face-restoration",
+    "perturbation"
+   ]
+  }
+ ]
+}

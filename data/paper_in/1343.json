@@ -1,0 +1,11 @@
+{
+ "batch": "b089",
+ "paper": {
+  "id": "10.1145/3805712.3808417",
+  "venue": "SIGIR 2026",
+  "title": "RedGR: Unified Generative Retrieval for Recommendation in REDnote",
+  "abstract": "Recently, the generative retrieval paradigm has emerged as a transformative framework that significantly enhances the efficiency of large-scale industrial recommendation systems. This innovative approach systematically maps items to meaningful semantic identifiers (SIDs) and employs advanced sequence generation techniques to construct high-quality candidate sets, thereby enabling more accurate modeling of users' evolving interests and behavioral patterns. Nevertheless, two critical challenges remain inadequately addressed in current research: (1) Existing methodologies predominantly focus on modeling a single task such as predicting users' click behavior, while overlooking other tasks including predicting users' dwell-time and engagement behaviors, which are very important for video/content recommendation at the same time. The independent modeling of each task inevitably results in substantial computational overhead, thereby raising the pivotal question of whether the sophisticated multi-task learning capabilities inherent in LLMs can be effectively leveraged to achieve unified and efficient multi-task learning for generative retrieval. (2) The mapping mechanism from SIDs to concrete items requires substantial refinement to ensure precise and reliable retrieval performance. To tackle these issues, we propose RedGR, a generative retrieval model that unifies the modeling of multi",
+  "gid": 1343,
+  "theme": "generative retrieval"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "batch": "b017",
+ "paper": {
+  "id": "4b39494de94513e3f34a8d846ffd0c088a8feebe",
+  "venue": "WWW 2026",
+  "title": "Talking-Head Generation in Practice",
+  "abstract": "Talking-head generation has progressed rapidly in recent years, driven by advances in vision, speech, and generative modeling. Yet despite this momentum, the field lacks a clear, consolidated understanding of how its research themes, datasets, and evaluation practices have evolved. To address this gap, we curate a comprehensive corpus of over 100 influential works and derive a coherent semantic taxonomy that reveals the main directions shaping the area, including speech-to-motion representation, style- and emotion-aware animation, and high-fidelity diffusion models. Building on this taxonomy, we present the first longitudinal analysis of datasets and metrics used in talking-head generation from 2021 to 2025. Our findings uncover distinct trends: increasing dependence on audio-visual and emotion-rich datasets, and a rapid rise in newly proposed evaluation metrics, especially those targeting expression naturalness, audio-visual synchronization, and landmark accuracy or driving-signal alignment. These patterns indicate a shift in the community's priorities from frame-level realism toward semantic alignment, temporal coherence, and perceptual quality. By unifying methodological structure with quantitative historical insights, this survey offers concrete guidance for developing future talking-head systems, choosing appropriate benchmarks, and designing meaningful evaluation protocol",
+  "gid": 258,
+  "theme": "Talking-head generation survey"
+ }
+}

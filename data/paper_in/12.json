@@ -1,0 +1,11 @@
+{
+ "batch": "b000",
+ "paper": {
+  "id": "02379e15ff6f4f7791cab81d164f9b8ea358ac6b",
+  "venue": "WWW 2026",
+  "title": "Diversifying Differentiable Graph Retrieval with Topic-Adaptive Multi-Intent Learning",
+  "abstract": "Knowledge Graph Question Answering (KGQA) leverages struc- tured knowledge graphs for reliable reasoning. Graph-based Retrieval- Augmented Generation (RAG) addresses the incompleteness and hallucination issues of Large Language Models (LLMs) by retrieving query-relevant subgraphs. However, existing approaches rely on single-intent semantic retrieval, compressing queries into single representations and optimizing each query independently. This leads to narrow triple selection that omits complementary information. While multi-intent retrieval diversification addresses this limitation, it faces critical challenges: (1) semantic diversification does not guarantee reasoning performance, and (2) co-selection frequency across intents does not ensure reasoning benefit. We propose Topic-Adaptive Retrieval Diversification (TARD), based on end-to-end optimization via generation feedback. TARD adaptively extracts multiple topic-based intents through neural topic modeling and employs a Gumbel-Softmax differentiable sampling to enable joint optimization. Supervised fine-tuning aligns the topic-adaptive multi-intent selector and triple scorer with reasoning performance to achieve beneficial consensus patterns. Adaptive direct preference optimization trains the generator to utilize relevant consensus while ignoring uninformative patterns. Experiments on WebQSP and CWQ show that TARD outperform",
+  "gid": 12,
+  "theme": "Knowledge graph QA"
+ }
+}

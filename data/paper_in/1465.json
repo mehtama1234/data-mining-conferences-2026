@@ -1,0 +1,11 @@
+{
+ "batch": "b097",
+ "paper": {
+  "id": "10.1145/3805712.3808355",
+  "venue": "SIGIR 2026",
+  "title": "Towards Structurally Robust Cross-Device Federated Recommendation",
+  "abstract": "Federated recommendation (FedRec) allows training recommender systems without collecting user data centrally[3]. However, in these settings, particularly in cross-device scenarios where each client corresponds to a single user, only local interaction histories are available. Consequently, the learning process relies on partial, fragmented, and sparse signals. This, in turn, makes collaboration between users indirect, with only a subset of users participating in each training round. In practice, this means the model is trained on incomplete and potentially biased data. Standard Federated Learning (FL) methods assume that simply averaging updates is enough, but in this setting, that is not sufficient to recover meaningful collaborative patterns. This thesis studies the following question: \"How do federated constraints influence the propagation of collaborative signals in recommendation systems, and how can key mechanisms be redesigned to improve performance, fairness, and cross-domain transfer under realistic cross-device conditions? \" To address this question, the thesis is structured around four interconnected research directions: Similarity-aware aggregation for personalized representations: Standard federated aggregation usually combines client updates uniformly or by data size, even when user representations reflect very different behavioral contexts. This can dilute useful ",
+  "gid": 1465,
+  "theme": "Federated recommendation"
+ }
+}

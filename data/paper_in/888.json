@@ -1,0 +1,11 @@
+{
+ "batch": "b059",
+ "paper": {
+  "id": "2b200e74adf434651f02f4c8097d694efcc7b490",
+  "venue": "WSDM 2026",
+  "title": "An Application for Development and Interactive Visual Engagement with the SHARECITY 200 Food Sharing Initiative (FSI) database in the CULTIVATE project",
+  "abstract": "Food Sharing Initiatives (FSIs) are a vital but often hidden part of urban life. The EU CULTIVATE project has developed the SHARECITY 200 database and an interactive graphical exploration application to make these practices visible across 200 cities. In this demonstration, we present the CULTIVATE system, which automates the discovery, classification, and updating of FSIs from online sources, but our interactive tool enables audiences to engage directly with the results through an interactive geo-spatial map. Our demonstration combines multilingual query construction with LLM-based rewriting, web searching, automated FSI classification with final expert verification, scheduled re-crawls to sustain accuracy and user navigation of the database through our graphical Food Sharing Map. The methods used in this system can easily be adapted for the exploration of online information in other domains.",
+  "gid": 888,
+  "theme": "Information discovery application"
+ }
+}

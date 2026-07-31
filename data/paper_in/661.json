@@ -1,0 +1,11 @@
+{
+ "batch": "b044",
+ "paper": {
+  "id": "caedfdb7a9d435c872a2a10f047c586e1255b123",
+  "venue": "WWW 2026",
+  "title": "SJBP: A Platform to Launch a Novel Jailbreak Attack on Large Language Models Based on Content's Spatial Distribution",
+  "abstract": "Attackers craft malicious prompts to induce large language models (LLMs) to generate content that violates legal or ethical norms, posing serious security risks as LLMs are increasingly integrated into web applications. Prior jailbreak attacks mainly rely on obfuscating prompt intent (e.g., role-playing), but recent safety alignment has made LLMs more robust to such strategies. In this paper, we introduce SpatialJB, a novel spatial jailbreak targeting LLMs embedded in web applications. By distributing harmful content across space, SpatialJB bypasses existing safety defenses. Extensive evaluations across commercial LLMs show that SpatialJB achieves 95% attack success rate on GPT-4, representing a 7 times higher than widely used black-box jailbreak techniques like Base64. Furthermore, Current guardrails catch under 12% of spatial attacks, underscoring SpatialJB's stealthiness. To address this emerging threat, we develop a post-defense mechanism, SpatialD, which analyzes spatial characteristics in model outputs to identify harmful content. Our demonstration further guides users in launching SpatialJB on multiple commercial LLMs (e.g., Qwen, GPT) within realistic web-based settings, illustrating its behavior and broad applicability. Our Demo video can be accessed at: https://1drv.ms/v/s!ApaP6YaJA87pgk-Rk7ZCvPeYcIZa?e=J8kbg0.",
+  "gid": 661,
+  "theme": "LLM security and adversarial attacks"
+ }
+}

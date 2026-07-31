@@ -1,0 +1,11 @@
+{
+ "batch": "b033",
+ "paper": {
+  "id": "94abf0db592a398fbf2e1c078ff5d514b2daa610",
+  "venue": "WWW 2026",
+  "title": "Struggling at the Start: Structural Causes of Decoding Difficulty in Code Generation",
+  "abstract": "Large Language Models (LLMs) demonstrate strong performance in code generation, yet generation errors remain prevalent. Prior analyses primarily focus on final outputs and aggregate performance metrics, with limited examination of the decoding process that gives rise to these outputs. To address this, we conduct a systematic token-level comparison between natural language and code generation, and identify consistent differences in their decoding behaviors. We find that decoding difficulty in code is not uniformly distributed, but is concentrated at structurally critical positions, particularly at line-initial tokens. Based on these observations, we propose an interpretation in which decoding difficulty is associated with increased predictive uncertainty at high-level structural decision points during generation. To probe this interpretation, we introduce a lightweight prompt-level intervention that provides structural guidance, enabling a controlled diagnostic analysis without modifying LLMs or decoding strategies. Experiments on HumanEval and MBPP show that this intervention consistently reduces predictive entropy at line-initial positions, highlighting the localized nature of decoding difficulty and motivating future work on structure-aware code generation.",
+  "gid": 495,
+  "theme": "LLM code generation"
+ }
+}

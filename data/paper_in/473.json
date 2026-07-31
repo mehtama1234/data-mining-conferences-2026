@@ -1,0 +1,11 @@
+{
+ "batch": "b031",
+ "paper": {
+  "id": "8ec0f18f32d680e46c748f5137cde31ccf3ed677",
+  "venue": "WWW 2026",
+  "title": "Frugal Agents: Efficient Bio Reasoning via Long-Sequence Compression and Prompt-Gated Memory",
+  "abstract": "Large language model (LLM)-based agents are increasingly capable across a range of tasks, but their practical usage becomes prohibitively expensive as input sequence length grows. This challenge becomes even more severe in multimodal settings, where inputs may include not only natural language but also long, domain-specific sequences, such as biological data, or financial time series, that are not directly interpretable by the model. Passing these sequences to the LLM increases token counts and compute costs without meaningful gain, limiting access to such systems for broader communities. In many cases, these inputs require external tools to extract useful representations before being used by the agent. We address this challenge with a token-efficient multi-agent framework designed to reduce resource consumption and enable more affordable, scalable usage of agentic AI. Our approach introduces two core components. First, a Long-Sequence Compression (LSC) layer replaces raw input sequences with compact, semantically meaningful representations, significantly lowering token usage. Second, a Prompt-based Gate-Guided Memory (PGM) mechanism, inspired by gated recurrent networks, selectively retains relevant intermediate states and context across agent steps based on the current prompt. Integrated into a modular multi-agent architecture, LSC and PGM together reduce redundant context pr",
+  "gid": 473,
+  "theme": "efficient LLM agents"
+ }
+}

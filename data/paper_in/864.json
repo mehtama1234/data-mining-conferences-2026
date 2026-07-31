@@ -1,0 +1,11 @@
+{
+ "batch": "b057",
+ "paper": {
+  "id": "ff967dcf6885c8442f4198bbfa2f59c308290e36",
+  "venue": "WWW 2026",
+  "title": "16th Temporal Web Analytics Workshop (TempWeb)",
+  "abstract": "In 2026 TempWeb celebrated its 24th anniversary hosted in conjunction with The Web Conference in Dubai. Coming to a place in modern Arabia where the world ''connects'' and tradition meets tomorrow has a lot in common with the ''spirit'' of TempWeb: investigating the Web as an interconnecting ecosystem along its temporal dimension. As such, TempWeb is - like Dubai - a ''hub'' that connects researchers and practitioners from around the globe and across various domains that study core computer science aspects as well as application scenarios. For that purpose, TempWeb covers contributions, e.g., in studies on infrastructures, scalable methods, and innovative software for aggregating, querying, and analyzing heterogeneous data at Web scale. Topics therefore include but are not limited to research in the domains of temporal IE/IR, Web mining, Web archiving and large scale data analysis. As a result, TempWeb has developed over time to a ''hub'' of frequent and returning contributors from academia and industry where research on the temporal Web ''connects''. In its 16th edition, TempWeb covers once again the full spectrum of research topics ranging from Web evolution via temporal benchmarks up to suicide risk prediction.",
+  "gid": 864,
+  "theme": "Temporal web analytics"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "batch": "b076",
+ "paper": {
+  "id": "10.1145/3805712.3809664",
+  "venue": "SIGIR 2026",
+  "title": "Good Ranks Follow Good Answers: Unsupervised Answer-Driven Reranking for Multimodal Document QA",
+  "abstract": "Multimodal Document Question Answering (MDQA) systems commonly follow a retrieve-then-answer paradigm; however, the retrieval stage often introduces substantial noise, making an effective reranking component indispensable. Existing reranker training frameworks in MDQA rely predominantly on proxy supervision derived from human annotations or large language model (LLM) outputs, which are frequently noisy and, more critically, misaligned with downstream answer quality. To overcome this limitation, we propose AD-Reranker, a novel framework that shifts reranker training from proxy imitation to answer-driven utility optimization. Specifically, we reformulate the reranker as an environment-grounded agent that interacts with a downstream reader, modeled as a deterministic environment. We further design a composite reward function that integrates answer correctness, thereby explicitly incentivizing ranking strategies aligned with downstream task performance. To optimize the agent, we adopt Group Relative Policy Optimization (GRPO), enabling stable and effective group-wise policy learning. Empirical results demonstrate that AD-Reranker achieves superior reranking quality and an optimal accuracy-efficiency trade-off. When integrated into standard MDQA pipelines, AD-Reranker improves accuracy by 1.9%\u20135.0% while reducing the reader's context token consumption by 15%\u201352%, providing strong ev",
+  "gid": 1142,
+  "theme": "Document QA reranking"
+ }
+}

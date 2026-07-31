@@ -1,0 +1,11 @@
+{
+ "batch": "b034",
+ "paper": {
+  "id": "9aac77e875a6fff55c537192f8b031d472429e94",
+  "venue": "WWW 2026",
+  "title": "ARC: A Tool to Rate AI Models for Robustness Through a Causal Lens for Enabling Trustworthy Model Selection",
+  "abstract": "AI models are widely used in web applications and data-driven services that rely on continuously collected and evolving online data. Their decisions can be affected by bias, noise, and shifts in the underlying data. This paper presents ARC, an interactive web-based tool for rating AI models for robustness using causality-based methods. ARC quantifies robustness, encompassing fairness and stability, through causal metrics that measure how predictions vary with perturbations and protected attributes, and allows users to explore trade-offs between robustness and accuracy. The tool is model-agnostic and task-independent: users can upload their own datasets or select from four supported domains, including binary classification, sentiment analysis, group recommendation, and time-series forecasting, and evaluate multiple models under a shared causal setup. ARC helps developers assess models trained or deployed on web data and supports informed model selection. The demonstration video is available at: https://youtu.be/v4AD8n2vNU",
+  "gid": 515,
+  "theme": "Model robustness assessment"
+ }
+}

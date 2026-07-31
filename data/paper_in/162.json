@@ -1,0 +1,11 @@
+{
+ "batch": "b010",
+ "paper": {
+  "id": "2e0b40876b6159826eb5ea8645ed2dbc5720bc70",
+  "venue": "WWW 2026",
+  "title": "Towards Understanding Professional AI Assistant Use: Human-in-the-Loop Topic Modeling of Multi-turn Conversations",
+  "abstract": "Understanding what people use AI assistants for in the workplace is essential for assessing their impact and informing future design. We present a novel framework HILTON: Human-In-the-Loop Topic mOdeling of multi-turn coNversations that combines the summarization capabilities of large language models (LLMs) with unsupervised, non-parametric clustering. The framework first summarizes multi-turn conversations between users and AI assistants, then clusters these summaries into coherent topics, which are further organized hierarchically, and dynamically updated as new data arrives. To ensure quality and practical relevance, we employ a human-in-the-loop process: annotators post-process discovered clusters and provide feedback, which is then used to refine topics and create evaluation data for future iterations. We further train a lightweight statistical classifier that enables efficient topic inference for unseen conversations, making the pipeline suitable for real-world deployment. Our results show that our approach produces coherent topic structures suitable for workplace analytics of AI assistants. We open-source our code for the application.",
+  "gid": 162,
+  "theme": "Topic modeling"
+ }
+}

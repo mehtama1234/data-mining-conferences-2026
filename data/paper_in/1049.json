@@ -1,0 +1,11 @@
+{
+ "batch": "b069",
+ "paper": {
+  "id": "10.1145/3805712.3809728",
+  "venue": "SIGIR 2026",
+  "title": "An Action-Aware Generative Sequence Modeling for Short Video Recommendation",
+  "abstract": "With the rapid development of the Internet, users have increasingly higher expectations for the recommendation accuracy of online content consumption platforms (e.g., short video platforms). However, short videos often contain diverse segments, and users may not hold the same attitude toward all of them (e.g., music enthusiasts may not enjoy all songs in a medley). Traditional binary-classification recommendation models, which treat a video as a single holistic entity, face limitations in accurately capturing such nuanced preferences. Considering that user consumption is a temporal process, this paper demonstrates that the timing of user actions can represent diverse intentions through statistical analysis and examination of action patterns. Based on this insight, we propose a novel modeling paradigm: Action-Aware Gen erative Sequence Network (A2Gen ), which refines user actions (e.g., Like and Follow, etc.) along the temporal dimension and chains them into sequences for unified processing and prediction. First, we introduce the Context-aware Attention Module (CAM) to model action sequences enriched with item-specific contextual features. Building upon this, we develop the Hierarchical Sequence Encoder (HSE) to learn temporal action patterns from users' historical actions. Finally, through leveraging CAM, we design a module for action sequence generation: the Action-seq Autoreg",
+  "gid": 1049,
+  "theme": "Short video recommendation"
+ }
+}

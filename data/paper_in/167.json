@@ -1,0 +1,11 @@
+{
+ "batch": "b011",
+ "paper": {
+  "id": "2fb6a8f7cc7dad3ccfbc008bd75e956a1d22c085",
+  "venue": "WWW 2026",
+  "title": "Camel: Frame-Level Bandwidth Estimation for Low-Latency Live Streaming under Video Bitrate Undershooting",
+  "abstract": "Low-latency live streaming (LLS) has emerged as a popular web application, with many platforms adopting real-time protocols such as WebRTC to minimize end-to-end latency. However, we observe a counter-intuitive phenomenon: even when the actual encoded bitrate does not fully utilize the available bandwidth, stalling events remain frequent. This insufficient bandwidth utilization arises from the intrinsic temporal variations of real-time video encoding, which cause conventional packet-level congestion control algorithms to misestimate available bandwidth. When a high-bitrate frame is suddenly produced, sending at the wrong rate can either trigger packet loss or increase queueing delay, resulting in playback stalls. To address these issues, we present Camel, a novel frame-level congestion control algorithm (CCA) tailored for LLS. Our insight is to use frame-level network feedback to capture the true network capacity, immune to the irregular sending pattern caused by encoding. Camel comprises three key modules: the Bandwidth and Delay Estimator and the Congestion Detector, which jointly determine the average sending rate, and the Bursting Length Controller, which governs the emission pattern to prevent packet loss. We evaluate Camel on both large-scale real-world deployments and controlled simulations. In the real-world platform with 250M users and 2B sessions across 150+ countries",
+  "gid": 167,
+  "theme": "Network congestion control"
+ }
+}

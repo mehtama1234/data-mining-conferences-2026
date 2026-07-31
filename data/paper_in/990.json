@@ -1,0 +1,11 @@
+{
+ "batch": "b066",
+ "paper": {
+  "id": "f83e2e6874281b42a140c93658b2039432bf78cb",
+  "venue": "WSDM 2026",
+  "title": "Self-Paced Fair Ranking with Loss as a Proxy for Bias",
+  "abstract": "Neural rankers often reflect societal biases (e.g., gender) present in training data. Existing methods typically require protected-attribute labels or model modifications. We introduce a simple, model-agnostic approach that uses the model's loss as a bias proxy within a self-paced learning curriculum. By prioritizing lower-loss examples and gradually incorporating harder ones, our method reduces reliance on biased data without demographic annotations. We theoretically show a monotonic decrease in the gender loss gap and empirically demonstrate reduced bias with comparable or improved ranking performance on MS MARCO, outperforming strong baselines.",
+  "gid": 990,
+  "theme": "Fairness in ranking"
+ }
+}

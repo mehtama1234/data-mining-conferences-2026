@@ -1,0 +1,11 @@
+{
+ "batch": "b064",
+ "paper": {
+  "id": "d239877b394e9ab8e5c7174b5da8f94d4ad7a690",
+  "venue": "WSDM 2026",
+  "title": "Revisiting IPS in Recommendation Models: Unveiling Its Impact on Model Performance",
+  "abstract": "In neural network-based recommendation models, numerous studies have adopted inverse propensity scoring (IPS) as a principal approach, namely, minimizing unbiased risk. IPS is commonly employed to address selection bias inherent in user-item interactions and to improve model generalization performance. In this study, we critically examine whether minimizing the unbiased risk obtained via IPS genuinely contributes to improvements in recommendation performance. To this end, we first analyze the mechanism through which IPS influences model behavior, particularly focusing on its role beyond bias correction. Under the data generation assumptions commonly adopted in prior work, we demonstrate that the effectiveness of IPS is more closely associated with enriching embedding space by multi-task learning, rather than the unbiasedness of the risk function. This observation suggests that IPS may serve as a regularization mechanism that indirectly enhances model expressiveness. Furthermore, our experimental results reveal that the reweighting process of IPS can, in certain scenarios, lead to a degradation in recommendation performance. These findings highlight the limitations of IPS when used solely for unbiased risk minimization. In light of this, we show that multi-task learning proves beneficial in effectively managing this complexity, thereby offering a more robust approach to improvin",
+  "gid": 968,
+  "theme": "Recommendation bias correction"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "batch": "b009",
+ "paper": {
+  "id": "29989fcbe9e47ba9fd07b3c7b5ea5c903a9cdf74",
+  "venue": "WWW 2026",
+  "title": "Early Recall Estimation and Stopping in Technology-Assisted Reviews via Ranker-Sampler Fusion",
+  "abstract": "Technology-Assisted Review (TAR) workflows iteratively prioritize documents for expert screening to achieve high recall (e.g., 0.90--0.95) under limited time and budget. A persistent challenge is deciding when to stop: true recall is unknown during live screening unless all documents are judged, while additional sampling to estimate recall can be prohibitively costly at low prevalence. This paper develops a step-by-step statistical framework to estimate recall early by fusing (i) information from a ranking model and (ii) a small probability sample of documents. We present two complementary estimators: a Bayesian prevalence estimator that treats the ranker as an informative prior updated by a random sample, and a model-assisted estimator (generalized regression estimator with a Horvitz-Thompson residual correction) that combines calibrated ranker probabilities with design-based sampling adjustments. We then derive practical stopping rules based on conservative (lower-bound) recall estimates, and outline a future evaluation plan on established constrained high-recall benchmarks.",
+  "gid": 143,
+  "theme": "technology-assisted review"
+ }
+}

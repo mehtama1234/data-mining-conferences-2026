@@ -1,0 +1,11 @@
+{
+ "batch": "b004",
+ "paper": {
+  "id": "1126d53bcab17c229f0c2b02ba9cf8c94e971242",
+  "venue": "WWW 2026",
+  "title": "Doc-Researcher: A Unified System for Multimodal Document Parsing and Deep Research",
+  "abstract": "Deep Research systems have revolutionized how LLMs solve complex questions through iterative reasoning and evidence gathering. However, current systems remain fundamentally constrained to textual web data, overlooking the vast knowledge embedded in multimodal documents: scientific papers, technical reports, and financial documents where critical information exists in figures, tables, charts, and equations. Processing such documents demands sophisticated parsing to preserve visual semantics, intelligent chunking to maintain structural coherence, and adaptive retrieval across modalities, which are capabilities absent in existing systems. In response, we present Doc-Researcher, a unified system that bridges this gap through three integrated components: (i) deep multimodal parsing that preserves layout structure and visual semantics while creating multi-granular representations from chunk to document level, (ii) systematic retrieval architecture supporting text-only, vision-only, and hybrid paradigms with dynamic granularity selection, and (iii) iterative multi-agent workflows that decompose complex queries, progressively accumulate evidence, and synthesize comprehensive answers across documents and modalities. To enable rigorous evaluation, we introduce M4DocBench, the first benchmark for Multi-modal, Multi-hop, Multi-document, and Multi-turn deep research. Featuring 158 expert-an",
+  "gid": 64,
+  "theme": "Multimodal document research"
+ }
+}

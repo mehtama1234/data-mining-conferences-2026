@@ -1,0 +1,11 @@
+{
+ "batch": "b002",
+ "paper": {
+  "id": "0c6415272456ad17238a2d63ccc5e5139257987b",
+  "venue": "WWW 2026",
+  "title": "Macro-Micro Collaborative Learning for Logical Data Center Microservice Indicators Forecasting",
+  "abstract": "As microservice architecture is evolving toward Logical Data Center (LDC), accurate forecasting of the microservices indicators can support reasonable resource allocation, thereby ensuring the availability and reliability of cloud service. From a macro perspective, due to the architecture hierarchy, microservices exhibit: 1) collaborative relationships derived from shared functionalities, 2) backup relationships between replicas, and 3) dynamic correlation driven by cooperation. From a micro perspective, there exist causal relationships among indicators within a microservice. That is, workload will first impact system consumption, such as CPU and memory usage, then affect service quality like system latency. Based on these insights, we propose MaMiClif, a macro-micro collaborative learning framework for LDC microservice indicators forecasting. MaMiClif constructs Macro Graph and Micro Matrix to model the microservices dependencies and the causality of indicators. To learn fine-grained indicator dependencies, Indicator-Centric Embedding is leveraged to generate representations for indicator series. We use Heterogeneous Graph Convolution to update workload representations based on the Macro Graph, and adopt Causal Sparse Self-attention to integrate causal strength into the self-attention calculation, enabling a comprehensive exploration of dependencies among indicators. Experimen",
+  "gid": 41,
+  "theme": "forecasting microservices"
+ }
+}

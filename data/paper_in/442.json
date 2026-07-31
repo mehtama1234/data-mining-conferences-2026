@@ -1,0 +1,11 @@
+{
+ "batch": "b029",
+ "paper": {
+  "id": "847cdffdbaa3d6298f466d8f697522b7d7af6c20",
+  "venue": "WWW 2026",
+  "title": "MAF-GAN: Modality-Aware Fusion GAN for Multimodal Fake News Detection",
+  "abstract": "Fake news detection has become a critical research focus due to its significant societal impact and potential to mislead the public. Fake news often appears in multimodal form, combining text and images. Existing multimodal detection models rely heavily on large, high-quality labeled datasets, which are often scarce, noisy, and imbalanced. Although generative models can augment limited datasets, most lack classification awareness and offer limited control over semantic consistency between modalities. This study introduces an advanced framework, MAF-GAN, that leverages a multimodal text-image generation approach with detection capabilities to detect fake news. The framework incorporates three key components: a Projection Head, a Generator, and a Discriminator. A comprehensive evaluation on four public datasets demonstrates the effectiveness of MAF-GAN. The model consistently outperforms state-of-the-art baselines in both accuracy and F1-score, and achieves competitive Fr\u00e9chet Inception Distance (FID) scores. The experimental results highlight the potential of generation-aware multimodal fusion to enhance fake news detection in data-constrained and cross-domain scenarios.",
+  "gid": 442,
+  "theme": "Multimodal fake news detection"
+ }
+}

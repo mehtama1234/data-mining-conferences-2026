@@ -1,0 +1,11 @@
+{
+ "batch": "b027",
+ "paper": {
+  "id": "7b832482ea69a7205b7f4c0c24dcb85744fc0327",
+  "venue": "WWW 2026",
+  "title": "PLM: Point-Language Maps for Zero-shot Object Goal Navigation",
+  "abstract": "Object Goal Navigation requires agents to locate targets in unknown 3D environments through user instructions. Under this circumstance, 3D-aware agents can enhance navigation performance via fine-grained spatial understanding. However, off-the-shelf methods demand high-dimensional 3D scene representations to learn this capability, incurring substantial training costs. To address this, we propose Point-Language Maps (PLM ) --- a 3D-aware zero-shot framework achieving physical-semantic joint reasoning without training. Our core innovation lies in appreciating pre-trained 3D vision-language models (VLMs) to encode environmental point clouds and textual instructions into a unified semantic-geometric space, thereby constructing a language-conditioned 3D potential map. By combining this map with the cost-utility method, PLM can achieve efficient exploration in a zero-shot manner while maintaining 3D semantic awareness. Experiments on three mainstream datasets demonstrate that PLM : (I) exhibits a significant improvement in navigation success rate compared with baseline methods (e.g., an improvement of 2.0%~29.6% on HM3D); (II) shows competitiveness in navigation efficiency with the best performing method; (III) manifests adapter-style compatibility with various 3D VLMs.",
+  "gid": 417,
+  "theme": "Vision-language navigation"
+ }
+}

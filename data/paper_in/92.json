@@ -1,0 +1,11 @@
+{
+ "batch": "b006",
+ "paper": {
+  "id": "1a9aacf55da0a854967efb4284a6a6d18534be6f",
+  "venue": "WWW 2026",
+  "title": "ARCHER: Shooting Straight in Multimodal E-Commerce Search at Alibaba with Progressive Alignment",
+  "abstract": "In the rapidly evolving landscape of e-commerce, visual search has become a cornerstone of user experience, enabling customers to find products using images rather than traditional text queries. However, a comprehensive analysis reveals a persistent challenge: nearly half of retrieval failures stem from systems that prioritize superficial visual similarity over semantic relevance, resulting in frustrating user experiences where searches return visually similar but functionally different products. This limitation becomes particularly acute in Business-to-Business environments, where incorrect product recommendations can have significant operational and safety implications. In this paper, we propose a novel solution, Adaptive Retrieval with Category-aware Hierarchical sEmantic Refinement (ARCHER), which presents a novel multimodal retrieval framework that addresses these challenges through progressive semantic alignment. Unlike existing approaches that treat all visual similarities equally, ARCHER employs a sophisticated three-stage learning strategy that systematically builds from coarse-grained category understanding to fine-grained product discrimination. The framework begins with Proto-Align Enhancement to establish foundational visual-textual correspondences, progresses through Cross-View Learning to develop robust viewpoint-invariant representations, and culminates with Mar",
+  "gid": 92,
+  "theme": "Multimodal e-commerce search"
+ }
+}

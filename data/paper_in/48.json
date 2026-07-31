@@ -1,0 +1,11 @@
+{
+ "batch": "b003",
+ "paper": {
+  "id": "0d4e5496bdd5e6b6db94f5a2ca5e46e5ed23c16b",
+  "venue": "WWW 2026",
+  "title": "ToxiTwitch: Toward Emote-Aware Hybrid Moderation for Live Streaming Platforms",
+  "abstract": "The rapid growth of live-streaming platforms such as Twitch has introduced complex challenges in moderating toxic behavior. Traditional moderation approaches, such as human annotation and keyword-based filtering, have demonstrated utility, but human moderators on Twitch constantly struggle to scale effectively in the fast-paced, high-volume, and context-rich chat environment of the platform while also facing harassment themselves. Recent advances in large language models (LLMs), such as DeepSeek-R1-Distill and Llama-3-8B-Instruct, offer new opportunities for toxicity detection, especially in understanding nuanced, multimodal communication involving emotes. In this work, we present an exploratory comparison of toxicity detection approaches tailored to Twitch. Our analysis reveals that incorporating emotes substantially improves the detection of toxic behavior. To this end, we introduce ToxiTwitch, a hybrid model that combines LLM-generated embeddings of text and emotes with traditional machine learning classifiers, including Random Forest and SVM. In our case study, the proposed hybrid approach reaches up to 80% accuracy under channel-specific training (with 13% improvement over BERT and F1-score of 76%). This work is an exploratory study intended to surface challenges and limits of emote-aware toxicity detection on Twitch.",
+  "gid": 48,
+  "theme": "toxic behavior detection"
+ }
+}

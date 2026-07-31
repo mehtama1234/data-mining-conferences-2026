@@ -1,0 +1,11 @@
+{
+ "batch": "b013",
+ "paper": {
+  "id": "3c03dd1a30fcfd5dc700522d706a954fce62fbc1",
+  "venue": "WWW 2026",
+  "title": "Sumo x PyPSA: Interactive Web Demo of Real-Time Urban Power-Traffic Co-Simulation with Vehicle-to-Grid",
+  "abstract": "We demonstrate Sumo\u00d7PyPSA, an interactive browser-based web platform for exploring real-time bidirectional coupling between urban power grids and traffic networks. Users may interact with a live visualization of Manhattan's infrastructure\u20148 substations, 15 transmission lines, 3,481 traffic signals, and dynamic vehicle traffic\u2014to trigger cascading blackouts, deploy emergency Vehicle-to-Grid (V2G) responses, and observe bidirectional dynamics. The demonstration enables hands-on experimentation with four scenarios: (1) summer heatwave causing cascading failures across multiple substations, (2) automated V2G emergency response preventing blackouts by routing vehicles to provide 400 kW grid support, (3) manual substation failure with operator-controlled recovery, and (4) custom scenario creation. The browser-based interface runs on commodity hardware, accessible from any device without specialized software installation, and is implemented using standard web technologies (Flask, WebSocket, and Mapbox GL JS). Validated against real Manhattan data (OpenStreetMap, NYC DOT, DOE CBECS), the platform demonstrates that complex infrastructure co-simulation can be made accessible to policymakers, educators, and researchers through intuitive web technologies.",
+  "gid": 207,
+  "theme": "Infrastructure simulation web"
+ }
+}

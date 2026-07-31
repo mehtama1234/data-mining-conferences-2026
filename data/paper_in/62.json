@@ -1,0 +1,11 @@
+{
+ "batch": "b004",
+ "paper": {
+  "id": "110c52b0b314c18f189f1ff8d83696166309889b",
+  "venue": "WWW 2026",
+  "title": "Towards Automated Brand-Safety Detection: A Novel Dataset and Comparative Analysis of Language Models",
+  "abstract": "Brand safety has become increasingly critical in digital advertising, as inappropriate content associations can significantly impact brand reputation and advertising effectiveness. Automated detection systems are crucial for scalable content evaluation, yet existing solutions face challenges in text analysis, with limited comprehensive datasets and systematic evaluations for brand-safety detection. We present the first comprehensive text dataset specifically designed for brand-safety detection in narrative fiction, comprising 51 stories (435 chapters) from Wattpad, annotated across 9 standard safety categories. We evaluate multiple approaches for automated detection, comparing zero-shot inference using ChatGPT and GPT-3 against fine-tuned implementations in RoBERTa and GPT-3. Our experiments reveal that while zero-shot approaches show promise for explicit content categories, they struggle with nuanced safety concerns. Fine-tuned models demonstrate superior performance, notably RoBERTa which maintains robust performance. Our analysis highlights category-specific challenges and the importance of specialized training data for reliable brand-safety detection. This work provides both a valuable resource for researchers and practical insights for implementing automated brand-safety systems.",
+  "gid": 62,
+  "theme": "Brand safety detection"
+ }
+}

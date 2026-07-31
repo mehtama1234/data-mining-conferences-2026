@@ -1,0 +1,11 @@
+{
+ "batch": "b035",
+ "paper": {
+  "id": "a16871a25e2c769d77e4f892e223d9c71ab764bd",
+  "venue": "WWW 2026",
+  "title": "Temporal Information Retrieval And Question Answering in the Age of LLMs",
+  "abstract": "Time plays a crucial role in how we retrieve, interpret, and reason over information. As knowledge on the Web continuously evolves, information retrieval (IR) and question answering (QA) systems must recognize not only what is relevant but also when it is valid. This tutorial provides a comprehensive overview of Temporal Information Retrieval (TIR) and Temporal Question Answering (TQA), two closely related fields that address temporal relevance, reasoning, and adaptation in information access. We trace the evolution of temporal methods from early rule-based and probabilistic approaches to modern transformer and large language model (LLM) architectures, highlighting how temporal modeling, reasoning, and retrieval-augmented generation (RAG) are reshaping the field. Participants learn the fundamental principles of temporal IR/QA, explore pre-LLM and neural methods, and examine recent advances in temporal RAG and temporal reasoning over evolving knowledge. The tutorial concludes with open challenges and future directions for building temporally robust and adaptive AI systems. By bridging classical IR concepts with modern LLM-based reasoning, this tutorial offers a timely and unified perspective on temporal information access for the evolving Web.",
+  "gid": 536,
+  "theme": "temporal information retrieval"
+ }
+}

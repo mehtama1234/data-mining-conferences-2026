@@ -1,0 +1,11 @@
+{
+ "batch": "b034",
+ "paper": {
+  "id": "9ad9fb476a363265f2fa0121cd74208df4d44ddf",
+  "venue": "WWW 2026",
+  "title": "Suicide Risk Prediction via Comment-Influenced Mental State Trajectories",
+  "abstract": "Suicide risk expressed on social media evolves over time as a mental state trajectory. This trajectory is influenced by both users' own posts and the social feedback they receive. Most existing methods focus mainly on user-generated content or treat all comments as a single signal. As a result, they fail to capture the heterogeneous psychological effects of different types of social feedback. In addition, temporal models often overfit to persistent user-dependent patterns and generalize poorly to unseen users. To address these issues, we propose a comment-influenced temporal framework for subsequent suicide risk prediction. The framework separates social feedback into supportive and harmful comments and aligns them with protective and risk factors of users, respectively. This design enables robust modeling of heterogeneous feedback effects. We further introduce a user-dependent temporal patterns disentanglement mechanism based on adversarial learning to reduce reliance on user's temporal signatures. Our experimental results show that the proposed approach consistently outperforms existing methods in suicide risk prediction.",
+  "gid": 517,
+  "theme": "Mental health prediction"
+ }
+}

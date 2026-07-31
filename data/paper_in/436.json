@@ -1,0 +1,11 @@
+{
+ "batch": "b029",
+ "paper": {
+  "id": "835f305627fbe5beb09186187105bb4e223ab139",
+  "venue": "WWW 2026",
+  "title": "When Reasoning Leaks Membership: Membership Inference Attack on Black-box Large Reasoning Models",
+  "abstract": "Large Reasoning Models (LRMs) have rapidly gained prominence for their strong performance in solving complex tasks. Many modern black-box LRMs expose the intermediate reasoning traces through APIs to improve transparency (e.g., Gemini-2.5 and Claude-sonnet). Despite their benefits, we find that these traces can leak membership signals, creating a new privacy threat even without access to token logits used in prior attacks. In this work, we initiate the first systematic exploration of Membership Inference Attacks (MIAs) on black-box LRMs. Our preliminary analysis shows that LRMs produce confident, recall-like reasoning traces on familiar training member samples but more hesitant, inference-like reasoning traces on non-members. The representations of these traces are continuously distributed in the semantic latent space, spanning from familiar to unfamiliar samples. Building on this observation, we propose BlackSpectrum, the first membership inference attack framework targeting the black-box LRMs. The key idea is to construct a recall\u2013inference axis in the semantic latent space, based on representations derived from the exposed traces. By locating where a query sample falls along this axis, the attacker can obtain a membership score and predict how likely it is to be a member of the training data. Additionally, to address the limitations of outdated datasets unsuited to modern LR",
+  "gid": 436,
+  "theme": "Membership inference attacks"
+ }
+}

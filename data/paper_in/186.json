@@ -1,0 +1,11 @@
+{
+ "batch": "b012",
+ "paper": {
+  "id": "36298fd707cb9218438599cbde8c8726323be909",
+  "venue": "WWW 2026",
+  "title": "A Prompt-Aware Structuring Framework for Reliable Reuse of AI-Generated Content in the Agentic Web",
+  "abstract": "The evolution of Large Language Models (LLMs) and the software agents built on them (AI agents) marks a turning point in the transition from a human-centric Web to an ''Agentic Web'' driven by AI agents. However, for AI-Generated Content (AIGC), which is expected to dominate the Web, there is currently no mechanism for agents to verify its reliability, reproducibility, or license compliance during generation. This lack of transparency risks causing chained hallucinations and compliance violations through the reuse of AIGC. Consequently, a framework to manage the provenance and generation conditions of AIGC is essential. In this paper, we present a framework that automatically attaches structured metadata to AIGC at generation time, including modularized prompts, contexts, thoughts, model information, hyperparameters, and confidence. The metadata is enveloped together with verifiable credentials to support the reliable assessment and reuse of AIGC. This framework enables efficient curation of structured AIGC and facilitates its safe use for applications such as fine-tuning and knowledge distillation.",
+  "gid": 186,
+  "theme": "AIGC provenance"
+ }
+}

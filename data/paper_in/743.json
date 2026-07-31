@@ -1,0 +1,11 @@
+{
+ "batch": "b049",
+ "paper": {
+  "id": "e111611f15aebb9bfe9a27d48f3bc2036bdfdfcb",
+  "venue": "WWW 2026",
+  "title": "Hadamard-Aware Bit-wise PIM Architecture via Butterfly Adder-Tree Reuse",
+  "abstract": "In recently papers, LLM models replace matrix multiplications with the matmul-free, and prior work has explored decentralized architecture like Processing-in-Memory (PIM) optimizations tailored to such bit-wise computation. However, quantized neural networks may suffer accuracy degradation when inputs concentrate around a standard-normal distribution, where quantization bins become unevenly utilized and many values effectively collapse into a limited set of representable levels. BitNetv2 addresses this issue by applying the Hadamard Transform to flatten the input statistics, improving quantization behavior. In this work, we observe that the Hadamard recursion can be interpreted as a sequence of linear combinations with low-precision weights W \u2208 {-1,0,1}, revealing a structural commonality with BitLinear's bit-wise accumulation. Using this insight, we propose a BitNetv2-oriented PIM accelerator that implements the Hadamard Transform using a butterfly-shaped adder-tree circuit and reuses part of the same circuit as the accumulation tree for BitLinear. By unifying the reduction datapath across Hadamard and BitLinear, our design aims at integrating Hadamard transform into PIM efficiently while reducing data-movement overheads.",
+  "gid": 743,
+  "theme": "Quantized neural accelerators"
+ }
+}

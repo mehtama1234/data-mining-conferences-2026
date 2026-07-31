@@ -1,0 +1,11 @@
+{
+ "batch": "b063",
+ "paper": {
+  "id": "a171502e6071e145223717276a2a744e953782a8",
+  "venue": "WSDM 2026",
+  "title": "EvioSum: An Evidence-Guided Generation Framework for Faithful and Interpretable Opinion Summarization",
+  "abstract": "The faithful and interpretable opinion summarization aims to generate a summary that captures the diverse opinions expressed in a document set while providing explanations for the divergences between these opinions. In this paper, we propose an evidence-guided framework to enhance opinion coverage and provide divergence explanations. It first generates the majority opinion as an initial summary and partitions the source documents into multiple evidence sets based on their relevance to the majority opinion. Then, a summary extension strategy is employed to expand the initial summary by incorporating different opinions from these sets. The framework also employs a submodular optimization algorithm to select evidence from different evidence sets in order to reflect the divergences between opinions. Experiments on two benchmark datasets demonstrate that our method outperforms multiple baselines in terms of both the lexical and semantic consistency with reference summaries, while having low computational overhead.Ablation studies confirm that both the document partition and summary extension mechanisms contribute to the model performance.The LLM-based and human evaluation results also show that our method can identify more comprehensive evidence that better captures opinion divergences.",
+  "gid": 945,
+  "theme": "Opinion summarization"
+ }
+}

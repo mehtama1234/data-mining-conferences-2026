@@ -1,0 +1,11 @@
+{
+ "batch": "b050",
+ "paper": {
+  "id": "e5803603beeaf53be88235f2c970a6303a4238be",
+  "venue": "WWW 2026",
+  "title": "Proactive Misinformation Forecasting via Incremental Topic Detection and Sentiment Polarization",
+  "abstract": "The unprecedented scale and velocity of unverified content on online social media platforms (OSMPs) threatens public discourse, emergency response, and democratic processes. This paper operationalizes a socio-cognitive hypothesis, that polarization and confirmation bias create ''fertile ground'' for misinformation, into an engineering framework for proactive topic risk forecasting. We introduce a semi-supervised pipeline that continuously tracks topics in a tweet stream and measures topic-specific sentiment divergence as an early warning signal. Our core methodology integrates: (i) Incremental Clustering with Burst Detection (ICBD), an online clustering algorithm that adapts to topic drift via exponentially weighted centroid updates and identifies volatility through a statistical burst detector; and (ii) a Topic-specific Sentiment Classifier (TSC) that conditions sentiment inference on topic context, reducing ambiguity in polarizing language. The resulting polarization metrics is used as a predictive feature in ensemble veracity models. On two large-scale COVID-19 Twitter collections, adding polarization-aware features yields consistent gains across baselines and reaches an F1-score of 0.879 with XGBoost. Beyond accuracy, we demonstrate a one-month lead-time forecasting protocol where polarization features improve F1 by 11.9%, validating their suitability for preemptive moderat",
+  "gid": 760,
+  "theme": "Misinformation forecasting"
+ }
+}

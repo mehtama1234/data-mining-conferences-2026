@@ -1,0 +1,11 @@
+{
+ "batch": "b060",
+ "paper": {
+  "id": "5a75c068008e4ea012dd156d861af34ea4b5ab57",
+  "venue": "WSDM 2026",
+  "title": "Identifiable Disentangled Representation Learning for Causal Inference under Network Interference",
+  "abstract": "Estimating individual treatment effects (ITE) from networked observational data is a fundamental but challenging task. Network connections not only introduce complex confounding bias but also generate spillover effects, making causal inference in such settings particularly difficult. To tackle these challenges, existing methods often attempt to learn confounders from all observed variables to predict potential outcomes. However, this approach overlooks heterogeneous latent factors that differentially influence treatment assignment and outcomes, which may prevent accurate identification of the confounders and reduce the effectiveness of bias correction. To overcome these limitations, we propose the Network Disentangled Identifiable Variational Autoencoder (NDiVAE), a structured framework that learns three distinct latent factors for each unit, including instrumental, confounding, and adjustment factors. NDiVAE further incorporates graph-based neighborhood information to learn aggregated factor representations, applies sample reweighting to mitigate confounding bias, and enforces causal regularization to ensure precise disentanglement of latent factors. We establish theoretical guarantees through the identifiability of these latent factors and derive a generalization error bound for ITE estimation. Extensive experiments on synthetic and semi-synthetic datasets demonstrate that ND",
+  "gid": 909,
+  "theme": "causal inference networks"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "batch": "b056",
+ "paper": {
+  "id": "fccaa12a8bb2bae406c759703523458eb04d39c0",
+  "venue": "WWW 2026",
+  "title": "EmoTg: Modeling Social Response to Telegram Posts Using LLM and NLP Features",
+  "abstract": "This paper presents a pipeline for analyzing Telegram posts and predicting audience reactions in the absence of comment data. Raw messages were processed using both NLP methods and GPT-based structured prompts to extract linguistic, stylistic, semantic, and emotional features. Comment-level responses were independently annotated using a dedicated prompt to generate thread-level labels capturing sentiment, toxicity, stance, humor, and conflict. These labels were then used as targets in a post-to-comment inference task formulated as a multi-task classification problem. XGBoost models achieved up to 0.85 accuracy for emotional attributes (cuteness, conflict) and 0.71 for toxic comment prediction, confirming that post content contains reliable signals of potential audience behavior. SHAP-based explainability showed that LLM-derived features are interpretable and behaviorally meaningful. Overall, the approach demonstrates that content dynamics in comment threads can be anticipated from post features alone, enabling proactive moderation, risk assessment, and socially aware AI support for online communication.",
+  "gid": 853,
+  "theme": "social response prediction"
+ }
+}

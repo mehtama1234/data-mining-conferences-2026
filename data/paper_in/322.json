@@ -1,0 +1,11 @@
+{
+ "batch": "b021",
+ "paper": {
+  "id": "5ed82e56a0b2cba8e8017f40e8b82885cf03e06c",
+  "venue": "WWW 2026",
+  "title": "Big Data and AI in Smart City Negotiations: A Literature Review",
+  "abstract": "This is a work in progress, which includes a literature review that examines the most cited studies on the use of big data and artificial intelligence (AI) in negotiations and public policy, drawing on sources indexed in Scopus, Web of Science, and ScienceDirect. Spanning disciplines including urban planning, environmental governance, health policy, media studies, behavioral science, organizational studies, and computer science, the reviewed literature highlights the growing integration of large-scale datasets, algorithmic tools, and AI systems into policy design and negotiation processes. The findings indicate that big data and AI not only support decision-making but increasingly shape negotiation dynamics by redefining uncertainty, feasibility, and legitimacy, while also altering power relations among negotiating actors. Four interrelated themes emerge from the literature: (1) the role of big data in structuring negotiation spaces, (2) the influence of algorithms on public discourse and agenda-setting, (3) the use of AI tools in decision-making and negotiated outcomes, and (4) the continuing role of human agency amid algorithmic mediation. Across these themes, evidence suggests that analytical capacity functions as a source of structural bargaining power, often pre-configuring options before deliberation begins. At the same time, algorithmic curation of information shapes pub",
+  "gid": 322,
+  "theme": "Data AI policy negotiation"
+ }
+}

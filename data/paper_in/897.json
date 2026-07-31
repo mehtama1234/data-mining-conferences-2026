@@ -1,0 +1,11 @@
+{
+ "batch": "b059",
+ "paper": {
+  "id": "3ada3254c8182711e7624f32331147afa9074e3f",
+  "venue": "WSDM 2026",
+  "title": "Decoupling User Features for User Cold-Start App Recommendation: Static Attributes versus Behavioral Sequences",
+  "abstract": "In app recommendation, user cold-start remains a fundamental challenge in recommender systems. Existing approaches primarily focus on efficiently leveraging limited data or transferring knowledge from active users to alleviate the user cold-start problem, yet they often overlook the influence of feature interactions on user cold-start. We group features according to their semantic types and identify an interesting phenomenon: user attribute features and behavioral sequence features interfere with each other, thereby constraining the model's ability to represent cold-start users effectively. We attribute this issue to differences in the latent space distributions and learning complexities of the two feature types, which hinder the model from accurately capturing cold-start users' interests. To address this challenge, we propose the AFIM architecture, which decouples the learning of user attribute and behavior sequential features. AFIM leverages a lightweight attention module to explicitly capture user interests from behavioral sequences, thereby reducing the learning burden on downstream recommendation networks. Additionally, it incorporates feature decoupling and dynamic fusion modules to mitigate learning bias arising from heterogeneous feature spaces. Extensive experiments on two public datasets and two industrial datasets demonstrate that AFIM consistently outperforms SOTA b",
+  "gid": 897,
+  "theme": "Cold-start recommendation"
+ }
+}

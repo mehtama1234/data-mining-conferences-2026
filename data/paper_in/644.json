@@ -1,0 +1,11 @@
+{
+ "batch": "b042",
+ "paper": {
+  "id": "c4b8bb3a3cef95a3d333192c0786b6585fed7727",
+  "venue": "WWW 2026",
+  "title": "Bridging Explicit and Implicit Intent: Unified Interest Generative Method for Joint Search-Recommendation Modeling",
+  "abstract": "Search and Recommendation (S&R) are core information access channels on modern multi-scenario platforms. Existing joint S&R models face two critical challenges: (1) cross-scenario interest inconsistency, failing to unify explicit search intent (queries) and implicit recommendation intent (behavioral interactions) into coherent user interest representations; (2) severe S&R trade-off, where enhancing one task degrades the other due to static knowledge sharing and unbalanced feature utilization. To address these issues, we propose MinSAR , a novel framework focusing on cross-S&R user interest consistency. It integrates two key innovations: a Unified Interest Generation (UIG) module using Vector Quantized-Variational Autoencoder (VQ-VAE) to fuse long-term user preferences (via a user-specific memory network) and dynamic short-term contextual behaviors, generating compact cross-scenario latent representations that bridge explicit and implicit intents. Additionally, an Interest-Guided Attention Expert Network replaces static multi-task gating with intent-aware weight allocation. Guided by UIG's unified interest, it dynamically balances cross-S&R shared knowledge and task-specific expertise (semantic matching for search, collaborative filtering for recommendation), mitigating inter-task conflicts. Extensive experiments on two real-world datasets (KuaiSAR and Amazon Kindle Store) again",
+  "gid": 644,
+  "theme": "Search and recommendation joint modeling"
+ }
+}

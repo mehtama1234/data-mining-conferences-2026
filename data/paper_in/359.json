@@ -1,0 +1,11 @@
+{
+ "batch": "b023",
+ "paper": {
+  "id": "6939dada6a95d6e244b33e6d50d07c9d5f873ef1",
+  "venue": "WWW 2026",
+  "title": "MiningWeb Evolution: A Dataset of DOM Changes Across Websites",
+  "abstract": "Continuous evolution in web applications leads to frequent structural modifications, presenting significant challenges for software maintenance and empirical analysis. Yet large-scale datasets that capture real-world, structural web evolution remain limited. This paper introduce a longitudinal, archive-derived structural dataset of the landing pages for 223 popular websites, collected from the Internet Archive's Wayback Machine. For each site, up to 1,000 time-ordered versions were collected at a minimum interval of one day. Each version's HTML was parsed into a structural representation that records, for every node, its absolute XPath position (from the document root) together with the exact capture timestamp; this yields a consistent, content-agnostic view of layout and hierarchy across time. In total the dataset contains over 246 million DOM node positions, providing a robust foundation for studies on change patterns, predictive modelling of web evolution, and benchmarking maintenance tools. By releasing this resource to the research community, we facilitate reproducible experimentation and enable novel, data-driven investigations into the long-term evolution of web applications.",
+  "gid": 359,
+  "theme": "Web evolution dataset"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "batch": "b031",
+ "paper": {
+  "id": "8dfddccec3e5ac3cf3ede7dfbc6637bf6563a275",
+  "venue": "WWW 2026",
+  "title": "PeeriScope: A Multi-Faceted Framework for Evaluating Peer Review Quality",
+  "abstract": "The increasing scale and variability of peer review in scholarly venues has created an urgent need for systematic, interpretable, and extensible tools to assess review quality. We present PeeriScope, a modular platform that integrates structured features, rubric-guided large language model assessments, and supervised prediction to evaluate peer review quality along multiple dimensions. Designed for openness and integration, PeeriScope provides both a public interface and a documented API, supporting practical deployment and research extensibility. The demonstration illustrates its use for reviewer self-assessment, editorial triage, and large-scale auditing, and it enables the continued development of quality evaluation methods within scientific peer review. PeeriScope is available both as a live demo (https://app.reviewer.ly/app/peeriscope) and via API services (https://github.com/Reviewerly-Inc/Peeriscope).",
+  "gid": 469,
+  "theme": "peer review quality"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "batch": "b030",
+ "paper": {
+  "id": "8d07f73bab4d9dc8288144c02a2b59525f6366bd",
+  "venue": "WWW 2026",
+  "title": "FedRGL: Federated Riemannian Graph Learning in Mixed-Curvature Spaces with Ricci-Gated Convolution",
+  "abstract": "Federated Graph Learning (FGL) has emerged as an efficient paradigm to address the pronounced data heterogeneity common in real-world decentralized graph datasets, attracting significant interest from both academia and industry. Existing FGL methods often degrade the global model's performance due to a fundamental mismatch between the model's fixed-geometry embedding space and the diverse geometric structures of client data. To address this issue, we propose a novel framework for Personalized Federated Riemannian Graph Learning, namely FedRGL. FedRGL introduces a personalized mixed-curvature product space for each heterogeneous client, mapping local graph data into a tailored geometric space composed of Euclidean, hyperbolic, and spherical manifolds. Furthermore, it leverages a Ricci-Gated Graph Convolutional Network to dynamically adapt its message-passing mechanism to the local topology of each graph. Extensive experiments across diverse geometric heterogeneity settings demonstrate that FedRGL significantly outperforms state-of-the-art FGL methods in terms of model accuracy and generalization.",
+  "gid": 464,
+  "theme": "federated graph learning"
+ }
+}

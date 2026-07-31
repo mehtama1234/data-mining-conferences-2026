@@ -1,0 +1,11 @@
+{
+ "batch": "b009",
+ "paper": {
+  "id": "277c4e424353da5dcd6b0539156511f55a7084a6",
+  "venue": "WWW 2026",
+  "title": "Campaign-2-PT-RAG: LLM-Guided Semantic Product Type Attribution for Scalable Campaign Ranking",
+  "abstract": "E-commerce campaign ranking models require large-scale training labels indicating which users purchased due to campaign influence. However, generating these labels is challenging because campaigns use creative, thematic language that does not directly map to product purchases. Without clear product-level attribution, supervised learning for campaign optimization remains limited. We present Campaign-2-PT-RAG, a scalable label generation framework that constructs user--campaign purchase labels by inferring which product types (PTs) each campaign promotes. The framework first interprets campaign content using large language models (LLMs) to capture implicit intent, then retrieves candidate PTs through semantic search over the platform taxonomy. A structured LLM-based classifier evaluates each PT's relevance, producing a campaign-specific product coverage set. User purchases matching these PTs generate positive training labels for downstream ranking models. This approach reframes the ambiguous attribution problem into a tractable semantic alignment task, enabling scalable and consistent supervision for downstream tasks such as campaign ranking optimization in production e-commerce environments. Experiments on internal and synthetic datasets, validated against expert-annotated campaign\u2013PT mappings, show that our LLM-assisted approach generates high-quality labels with 78--90% precis",
+  "gid": 135,
+  "theme": "e-commerce campaign ranking"
+ }
+}

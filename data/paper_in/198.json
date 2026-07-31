@@ -1,0 +1,11 @@
+{
+ "batch": "b013",
+ "paper": {
+  "id": "3986a358e90269e33064b567ac9d26c019e9b193",
+  "venue": "WWW 2026",
+  "title": "Cross-Modal Rationale Transfer for Explainable Humanitarian Classification on Social Media",
+  "abstract": "Advances in social media data dissemination enable the provision of real-time information during a crisis. The information comes from different classes, such as infrastructure damages, persons missing or stranded in the affected zone, etc. Existing methods attempted to classify text and images into various humanitarian categories, but their decision-making process remains largely opaque, which affects their deployment in real-life applications. Recent work has sought to improve transparency by extracting textual rationales from tweets to explain predicted classes. However, such explainable classification methods have mostly focused on text, rather than crisis-related images. In this paper, we propose an interpretable-by-design multimodal classification framework. Our method first learns the joint representation of text and image using a visual language transformer model and extracts text rationales. Next, it extracts the image rationales via the mapping with text rationales. Our approach demonstrates how to learn rationales in one modality from another through cross-modal rationale transfer, which saves annotation effort. Finally, tweets are classified based on extracted rationales. Experiments are conducted over CrisisMMD benchmark dataset, and results show that our proposed method boosts the classification Macro-F1 by 2-35% while extracting accurate text tokens and image patc",
+  "gid": 198,
+  "theme": "Explainable multimodal classification"
+ }
+}

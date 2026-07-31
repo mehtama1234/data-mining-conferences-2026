@@ -1,0 +1,11 @@
+{
+ "batch": "b032",
+ "paper": {
+  "id": "93aaf9274ec766122706bf7bc65ea11453197377",
+  "venue": "WWW 2026",
+  "title": "PromptX: A Cognitive Agent Platform with Long-term Memory",
+  "abstract": "While large language models (LLMs) demonstrate impressive contextual understanding, their limitations in long-term memory and personalized reasoning constrain their practical impact in industrial settings. To address these gaps, we introduce PromptX, a cognitive platform that enables AI agents to construct structured memory and develop their reasoning over time. PromptX integrates three core technologies: (1) A new prompt markup language to define agent personas and memory organization; (2) Engram-based activation-diffusion memory networks that unify raw experiences with conceptual sequences, enabling associative retrieval through graph network propagation; (3) a protocol-driven orchestration layer enabling dynamic tool discovery and coordination, inspired by HATEOAS principles from web-engineering. During five months of real-world deployment across a range of 15+ enterprises in 6 industries,, PromptX has been validated in multiple industry domains (e.g., software engineering, education, healthcare), accumulating 50K+ downloads and 3K+ GitHub stars and evidencing practical feasibility and commercial value in production workflows. Our demo and initial product are available at https://promptx.deepractice.ai/. The source code and documentation are available online at https://github.com/Deepractice/PromptX. The supplementary materials are also available online . https://drive.googl",
+  "gid": 491,
+  "theme": "llm agents"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "batch": "b003",
+ "paper": {
+  "id": "0dd6a4207a680deb872571cb03b0da4cacc2e2d8",
+  "venue": "WWW 2026",
+  "title": "Disentangled Graph LLM for Molecule Graph Editing under Distribution Shifts",
+  "abstract": "Molecule graph editing has become a powerful paradigm for optimizing chemical compounds in drug discovery. Existing methods overlook the invariant structure-property relationships, and rely on variable correlations that shift across different instructions, thereby failing to generalize to out-of-distribution (O.O.D.) scenarios. To overcome the weakness of existing work, in this paper we propose to capture and utilize the invariant factors in order to achieve generalizable molecule graph editing under distribution shifts. However, this problem remains challenging, given that the invariant and variant factors are deeply entangled within the editing models. To tackle this challenge, we propose MoFE, a disentangled graph large language model for molecule graph editing that handles editing instructions under distribution shifts via disentangling invariant factors that govern editing-relevant properties. Specifically, we propose a disentangled graph projector with invariance loss that encodes molecular graphs into disentangled latent factors, with an invariance loss that ensures consistency across paraphrased prompts with the same objective. Then, we enhance the LLM with a factor-aware LoRA mixture-of-experts, where each expert is associated with a distinct latent factor. Additionally, we introduce a factor disentanglement loss weighting strategy that adaptively assigns higher weight",
+  "gid": 51,
+  "theme": "molecule graph generation"
+ }
+}

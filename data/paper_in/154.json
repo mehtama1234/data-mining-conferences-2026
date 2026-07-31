@@ -1,0 +1,11 @@
+{
+ "batch": "b010",
+ "paper": {
+  "id": "2b9ad48d36623632250c843dff3f0e78fcf9fc04",
+  "venue": "WWW 2026",
+  "title": "Swen: A Cross-Platform Desktop Assistant for Instant and Personalized Large-Language-Model Interaction",
+  "abstract": "Large Language Models (LLMs) have become indispensable tools for knowledge acquisition and text interpretation in everyday learning and work. However, in current usage, users must repeatedly switch between applications, copy or paste text, and manually craft prompts whenever they encounter unfamiliar content. Such fragmented interaction greatly reduces the overall efficiency and disrupts natural reading and learning workflows. We present Swen, a cross-platform desktop assistant designed to provide instant, personalized LLMs assistance directly within any desktop environment. After configuring the desired LLM API and defining a shortcut key, users can simply select any piece of text on their screen and press the shortcut to summon an on-screen window with on-the-spot explanations. Swen automatically performs intent recognition\u2014identifying whether the user's goal is translation, concept explanation, or text summarization and generates the response accordingly. The system further maintains an evolving user profile that records background information and answer preferences, enabling increasingly personalized and context-aware responses over time. Swen could reduce the average time spent on knowledge lookup and comprehension tasks significantly, compared to conventional prompt-based workflows. This demonstrates the system's effectiveness in transforming LLM interaction from a disrup",
+  "gid": 154,
+  "theme": "LLM interaction UX"
+ }
+}

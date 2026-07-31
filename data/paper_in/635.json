@@ -1,0 +1,11 @@
+{
+ "batch": "b042",
+ "paper": {
+  "id": "c1424d8d9b64f11d0cf90a123e93e7a31283bbe7",
+  "venue": "WWW 2026",
+  "title": "DMAP: Human-Aligned Structural Document Map for Multimodal Document Understanding",
+  "abstract": "Existing multimodal document question-answering (QA) systems predominantly rely on flat semantic retrieval, representing documents as a set of disconnected text chunks and largely neglecting their intrinsic hierarchical and relational structures. Such flattening disrupts logical and spatial dependencies\u2014such as section organization, figure-text correspondence, and cross-reference relations\u2014that humans naturally exploit for comprehension. To address this limitation, we introduce a document-level structural Document MAP (DMAP), which explicitly encodes both hierarchical organization and inter-element relationships within multimodal documents. Specifically, we design a Structured-Semantic Understanding Agent to construct DMAP by organizing textual content together with figures, tables, charts, etc into a human-aligned hierarchical schema that captures both semantic and layout dependencies. Building upon this representation, a Reflective Reasoning Agent performs structure-aware and evidence-driven reasoning, dynamically assessing the sufficiency of retrieved context and iteratively refining answers through targeted interactions with DMAP. Extensive experiments on MMDocQA benchmarks demonstrate that DMAP yields document-specific structural representations aligned with human interpretive patterns, substantially enhancing retrieval precision, reasoning consistency, and multimodal comp",
+  "gid": 635,
+  "theme": "Multimodal document understanding"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "batch": "b053",
+ "paper": {
+  "id": "ee7c999aac9934fd14f7034b85fcd7d03d90e007",
+  "venue": "WWW 2026",
+  "title": "NANDA: Resolution, Discovery, and Governance for the Agentic Web",
+  "abstract": "As AI agents become autonomous, mobile, and long-lived across devices, edge, and cloud, the core challenge shifts from agent design to trust, discovery, and governance at internet scale. NANDA (Networked AI Agents in Decentralized Architecture) addresses this challenge by introducing a systems-level framework for the Agentic Web, inspired by how DNS, ICANN, and certificate authorities enabled global trust for the web itself. NANDA is not about creating individual agents, nor about defining protocols for agent-to-agent communication. Instead, it focuses on agent resolvability, certification, attestation, and discovery, enabling agents to be verifiable, policy-compliant, and safely composable across administrative and network boundaries. By extending concepts such as naming, root of trust, and delegated authority into the agentic domain, NANDA provides the missing control plane for large-scale autonomous systems. This session explores how NANDA is working on Horizon-2 and Horizon-3 technologies envisioned for the agentic web\u2014where intelligence is distributed, trust is programmable, and coordination emerges across networks without centralized control.",
+  "gid": 795,
+  "theme": "Agent governance infrastructure"
+ }
+}

@@ -1,0 +1,561 @@
+{
+ "key": "efficiency-scalability",
+ "theme": "Efficiency & Scalability",
+ "n_papers": 657,
+ "pct": 33.9,
+ "by_venue": {
+  "WWW 2026": 347,
+  "WSDM 2026": 34,
+  "SIGIR 2026": 242,
+  "KDD 2026": 34
+ },
+ "theme_examples": [
+  {
+   "title": "Reconstructing Training Data from Adapter-based Federated Large Language Models",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "PLIKD: Prompt Learning with Instance-aware Knowledge Distillation for Web-scale Semantic Image Classification",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "VarParser: Unleashing the Neglected Power of Variables for LLM-based Log Parsing",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "Diversifying Differentiable Graph Retrieval with Topic-Adaptive Multi-Intent Learning",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "A Fact-Checking Framework with Denoising Evidence Retrieval and LLM-Based Debate Verification",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "Social Event Prediction via Fourier Graph Learning",
+   "venue": "WWW 2026"
+  }
+ ],
+ "representative_papers": [
+  {
+   "title": "Efficient Learning of Sparse Representations from Interactions",
+   "venue": "WWW 2026",
+   "problem": "Dense embeddings create scalability-expressiveness trade-off in large-scale production recommendation.",
+   "approach": "Learn high-dimensional sparse embedding layers with inverted-index structure.",
+   "contribution": "10x embedding reduction with no accuracy loss, 100x with 2.5% loss on ELSA.",
+   "primary_theme": "sparse embeddings",
+   "methods": [
+    "recommendation",
+    "sparse-learning",
+    "efficiency"
+   ]
+  },
+  {
+   "title": "Beyond Fine-Tuning: The Present and Future of Parameter-Efficient Fine-Tuning in Vision Transformers",
+   "venue": "WWW 2026",
+   "problem": "Vision Transformers' high computational cost of full fine-tuning limits practical deployment across tasks",
+   "approach": "Survey PEFT techniques categorized into additive, reparameterization, selective, hybrid, and inference-efficient methods",
+   "contribution": "Structured taxonomy and analysis of trade-offs between accuracy, efficiency, and scalability for ViT PEFT",
+   "primary_theme": "Parameter-efficient vision transformers",
+   "methods": [
+    "peft",
+    "vision-transformer",
+    "fine-tuning",
+    "survey"
+   ]
+  },
+  {
+   "title": "Breaking the Scalability Barrier in Constrained Graph-Based Networked Control via Decision-Focused Learning",
+   "venue": "WWW 2026",
+   "problem": "Graph control systems lack feasibility guarantees and scalability to large-scale networks with constraints",
+   "approach": "Two-stage policy integrating constrained optimization with neural networks via decision-focused imitation learning",
+   "contribution": "Achieves 60x sample efficiency on small systems; enables training on large systems where existing methods fail",
+   "primary_theme": "Graph constraint learning",
+   "methods": [
+    "neural-network",
+    "constrained-optimization",
+    "imitation-learning",
+    "decision-focused"
+   ]
+  },
+  {
+   "title": "RPE4Rec: Enhancing Dynamic Node Retrieval with Efficient Relative Position Encoding for Recommendation Systems",
+   "venue": "WSDM 2026",
+   "problem": "Dynamic recommendation retrieval struggles with scalability and capturing co-occurrence patterns",
+   "approach": "RPE4Rec applies Relative Position Encoding via hashtable-based neighborhood memory",
+   "contribution": "Lightweight plugin improves item retrieval while maintaining low space-time complexity",
+   "primary_theme": "Dynamic recommendation retrieval",
+   "methods": [
+    "recommendation",
+    "retrieval",
+    "encoding",
+    "efficiency"
+   ]
+  },
+  {
+   "title": "Social Event Prediction via Fourier Graph Learning",
+   "venue": "WWW 2026",
+   "problem": "Event prediction via spatio-temporal GNNs has poor scalability and misses long-term dependencies",
+   "approach": "Fourier Graph Learning with frequency-domain analysis and complex-valued node/edge representations",
+   "contribution": "FGNN reduces computational complexity while capturing long-term dependencies for event prediction",
+   "primary_theme": "temporal event prediction",
+   "methods": [
+    "graph-neural-network",
+    "fourier-analysis",
+    "frequency-domain"
+   ]
+  },
+  {
+   "title": "BeeQoS: A Cloud-Native QoS System for Adaptive and Scalable Multi-Priority Bandwidth Guarantees",
+   "venue": "WWW 2026",
+   "problem": "Legacy QoS shapers lack adaptability and scalability for dynamic multi-tenant cloud network priorities",
+   "approach": "eBPF data plane with demand-aware control plane for fine-grained adaptive bandwidth allocation and Kubernetes integration",
+   "contribution": "BeeQoS achieves 1K+ flows with 14.6% throughput gain and 72.4% latency reduction over baselines",
+   "primary_theme": "cloud QoS system",
+   "methods": [
+    "ebpf",
+    "adaptive control",
+    "bandwidth shaping"
+   ]
+  },
+  {
+   "title": "Better Negatives, Better Predictions: Negative Sample Selection Strategies for Enhancing Biomedical KG Edge Classification",
+   "venue": "WWW 2026",
+   "problem": "Random negative sampling inefficiency in biomedical knowledge graph edge classification",
+   "approach": "Tailored negative sample selection strategies leveraging latent-space graph embeddings",
+   "contribution": "Node-type and edge-semantics aware strategies outperform random sampling with statistical significance",
+   "primary_theme": "KG negative sampling",
+   "methods": [
+    "embedding",
+    "knowledge-graph",
+    "sampling"
+   ]
+  },
+  {
+   "title": "PruneRAG: Confidence-Guided Query Decomposition Trees for Efficient Retrieval-Augmented Generation",
+   "venue": "WWW 2026",
+   "problem": "Evidence forgetting and inefficiency in RAG systems during deep reasoning chains",
+   "approach": "Confidence-guided query decomposition tree with adaptive expansion and fine-grained retrieval",
+   "contribution": "PruneRAG reduces retrieval overhead while preserving evidence through multi-hop reasoning",
+   "primary_theme": "RAG efficiency",
+   "methods": [
+    "rag",
+    "query-decomposition",
+    "confidence"
+   ]
+  },
+  {
+   "title": "Evolving Notions of Success on the Web: From Retrieval to Experience",
+   "venue": "WWW 2026",
+   "problem": "Web success metrics evolved from retrieval efficiency to user experience and satisfaction",
+   "approach": "Historical analysis of shifts in Web goals and evaluation metrics over time",
+   "contribution": "Conceptual framework connecting relevance evolution to AI-driven experience platforms",
+   "primary_theme": "Web evaluation evolution",
+   "methods": [
+    "analysis",
+    "history"
+   ]
+  },
+  {
+   "title": "LongRanker: Efficient One-Pass Document Reranking with Long-Context Large Language Models",
+   "venue": "WWW 2026",
+   "problem": "LLM listwise reranking limited by context length requiring sliding window strategy",
+   "approach": "Hierarchical positional encoding and top-k attention pruning for long contexts",
+   "contribution": "One-pass full document reranking with efficiency gains and reduced API costs",
+   "primary_theme": "Long-context ranking",
+   "methods": [
+    "positional encoding",
+    "attention pruning",
+    "llm reranking"
+   ]
+  },
+  {
+   "title": "Red-Teaming Privacy-Protective Perturbations: Blind Face Restoration as an Attack Strategy",
+   "venue": "WWW 2026",
+   "problem": "Privacy-protective perturbations against image forgery attacks are vulnerable to blind face restoration",
+   "approach": "Theoretical analysis and empirical validation of blind face restoration as red-teaming attack",
+   "contribution": "Shows BFR outperforms existing red-teaming methods with greater robustness and efficiency",
+   "primary_theme": "Privacy-protective perturbations",
+   "methods": [
+    "adversarial",
+    "face-restoration",
+    "perturbation"
+   ]
+  },
+  {
+   "title": "GreenWebInspector: A Tool for Real-Time Web Energy Efficiency Assessment",
+   "venue": "WWW 2026",
+   "problem": "Web energy consumption assessment lacks device-independent static feature analysis tools",
+   "approach": "Real-time energy tier predictions using static design features independent of performance metrics",
+   "contribution": "GreenWebInspector achieves 9.7 percent higher accuracy than performance-based approaches",
+   "primary_theme": "web energy efficiency",
+   "methods": [
+    "energy-analysis",
+    "web-design",
+    "sustainability"
+   ]
+  },
+  {
+   "title": "Beyond the Flat Sequence: Hierarchical and Preference-Aware Generative Recommendations",
+   "venue": "WWW 2026",
+   "problem": "Generative recommenders ignore temporal hierarchy and introduce attention noise in sparse histories",
+   "approach": "Two-stage framework with masked item modeling and preference-guided sparse attention",
+   "contribution": "Hierarchical and preference-aware approach improving efficiency and signal-to-noise in recommendation",
+   "primary_theme": "Generative recommendation",
+   "methods": [
+    "masked_language_model",
+    "attention",
+    "hierarchical"
+   ]
+  },
+  {
+   "title": "Towards Practical LLM Unlearning: Efficient, Modular, and Retain-Free",
+   "venue": "WWW 2026",
+   "problem": "Existing LLM unlearning requires extensive parameter modifications and retain sets, lacking scalability",
+   "approach": "Fine-tune only output embedding layer to reshape semantic-lexical mapping, blocking unwanted concepts",
+   "contribution": "Lightweight modular framework enabling sequential unlearning without retain sets for live services",
+   "primary_theme": "LLM unlearning privacy",
+   "methods": [
+    "embedding_tuning",
+    "semantic_redirection",
+    "lightweight"
+   ]
+  },
+  {
+   "title": "Fine-Grained Visual Understanding for Multimodal and Trustworthy AI",
+   "venue": "WWW 2026",
+   "problem": "Fine-grained visual understanding datasets lack scale, coverage, and multimodal integration for trustworthiness",
+   "approach": "Comprehensive survey covering FGVC datasets, transformer architectures, generative augmentation, multimodal fusion",
+   "contribution": "Research roadmap for FGVC addressing robustness, explainability, data efficiency, and real-world deployment",
+   "primary_theme": "Fine-grained visual categorization",
+   "methods": [
+    "vision_transformer",
+    "data_augmentation",
+    "multimodal"
+   ]
+  },
+  {
+   "title": "LLM-augmented Hybrid Recommendation System for Structured Classification of Customs Commodity Descriptions",
+   "venue": "WWW 2026",
+   "problem": "Customs commodity classification from unstructured text requires domain expertise and scalability",
+   "approach": "Mixtral MoE model with LoRA fine-tuning, deterministic post-processing, rule-based validation",
+   "contribution": "Sparse MoE achieves 98.1% valid JSON output with recommendation system for decision support",
+   "primary_theme": "Domain-adapted information extraction",
+   "methods": [
+    "mixture-of-experts",
+    "lora",
+    "structured-extraction"
+   ]
+  },
+  {
+   "title": "A Dual-Channel Contrastive Learning Framework for Anomaly Detection in Dynamic Graph Structures",
+   "venue": "WWW 2026",
+   "problem": "Dynamic graph anomaly detection lacks dynamic information capture and selective feature preservation over time",
+   "approach": "Memory enhancement and multi-scale similarity scoring with time-aware shapelet-based graph construction",
+   "contribution": "DyConAD improves dynamic graph anomaly detection accuracy and efficiency on real-world datasets",
+   "primary_theme": "Dynamic graph anomaly",
+   "methods": [
+    "graph-neural-network",
+    "contrastive-learning",
+    "anomaly-detection"
+   ]
+  },
+  {
+   "title": "KMLP: A Scalable Hybrid Architecture for Web-Scale Tabular Data Modeling",
+   "venue": "WWW 2026",
+   "problem": "Web-scale tabular data modeling faces scalability bottlenecks from feature complexity and manual engineering",
+   "approach": "Hybrid KAN-gMLP architecture combining learnable activations for feature transformation plus interaction capture",
+   "contribution": "KMLP achieves SOTA on web-scale tabular benchmarks with automated feature representation learning",
+   "primary_theme": "Tabular deep learning",
+   "methods": [
+    "deep-learning",
+    "feature-engineering",
+    "hybrid-architecture"
+   ]
+  },
+  {
+   "title": "Allocating Chores with Restricted Additive Costs: Achieving EFX, MMS, and Efficiency Simultaneously",
+   "venue": "WWW 2026",
+   "problem": "Fair allocation of items with restricted additive costs balances EFX, MMS guarantees with computational efficiency.",
+   "approach": "Algorithm computing allocations satisfying EFX and MMS fairness with two-approximation social cost.",
+   "contribution": "Achieves optimal two-approximation for fair efficient chore allocation under restricted additive costs.",
+   "primary_theme": "Fair resource allocation",
+   "methods": [
+    "fair division",
+    "approximation algorithms"
+   ]
+  },
+  {
+   "title": "Scalable and Provable Biclique-Preserving Clustering: The Power of Counting-based Approaches",
+   "venue": "WWW 2026",
+   "problem": "Biclique-preserving clustering overlooks higher-order structure and requires expensive enumeration.",
+   "approach": "Edge-centric reweighting with counting-based approximation and graph reduction strategies.",
+   "contribution": "ECRC provides provable approximation guarantees with improved scalability over enumeration.",
+   "primary_theme": "Bipartite graph clustering",
+   "methods": [
+    "graph-clustering",
+    "approximation-algorithm",
+    "counting-based"
+   ]
+  },
+  {
+   "title": "PULSE: Socially-Aware User Representation Modeling Toward Parameter-Efficient Graph Collaborative Filtering",
+   "venue": "WWW 2026",
+   "problem": "GCF and social recommendation require explicit embeddings with high parameter overhead",
+   "approach": "Construct user representations from social signals without per-user embeddings",
+   "contribution": "50% parameter reduction achieving state-of-the-art across sparsity levels",
+   "primary_theme": "Parameter-efficient recommendation",
+   "methods": [
+    "gnn",
+    "social graph",
+    "parameter efficiency"
+   ]
+  },
+  {
+   "title": "Are LLM Web Search Engines Sustainable? A Web-Measurement Study of Real-Time Fetching",
+   "venue": "WWW 2026",
+   "problem": "LLM answer engines creating redundant network traffic via repeated real-time fetching",
+   "approach": "Measurement study of ChatGPT and Claude tracing network behavior across 1000 queries",
+   "contribution": "Quantified sustainability concerns motivating caching and cooperative efficiency",
+   "primary_theme": "LLM search sustainability",
+   "methods": [
+    "measurement study",
+    "network analysis",
+    "sustainability"
+   ]
+  },
+  {
+   "title": "Multi-field Balance-aware Calibration of Predictions in Online Advertising",
+   "venue": "WWW 2026",
+   "problem": "Biased calibration due to field distribution differences in online advertising",
+   "approach": "Pareto frontier-based multi-objective optimization for multi-field personalized calibration",
+   "contribution": "Balanced prediction calibration across different field groups using Pareto efficiency",
+   "primary_theme": "prediction calibration advertising",
+   "methods": [
+    "multi-objective optimization",
+    "calibration",
+    "advertising"
+   ]
+  },
+  {
+   "title": "URLBank: Data-Driven URL Discovery via Temporal Link Graphs",
+   "venue": "WWW 2026",
+   "problem": "Web-scale crawling relies on manual seed management, inefficiently oversampling redundant and missing high-yield seeds",
+   "approach": "Label-free controller infers seed selection from temporal crawl telemetry using marginal gain optimization",
+   "contribution": "URLBank achieves higher coverage and efficiency with fewer seeds in production deployment",
+   "primary_theme": "web crawling",
+   "methods": [
+    "temporal signals",
+    "optimization",
+    "information retrieval"
+   ]
+  },
+  {
+   "title": "EdgeGen: Efficient LLM-Empowered Model Generation with Quantization-Aware NAS",
+   "venue": "WWW 2026",
+   "problem": "NAS methods ignore quantization and lack efficient model evaluation on resource-constrained devices",
+   "approach": "Multi-beam MCTS with quantization-aware search space and constraint validation",
+   "contribution": "EdgeGen discovers larger quantized models meeting constraints; improves WoT model efficiency",
+   "primary_theme": "Neural architecture search",
+   "methods": [
+    "neural architecture search",
+    "quantization",
+    "monte carlo tree search"
+   ]
+  },
+  {
+   "title": "BANCO: Drift-Aware Batched Bandits for Adaptive Proximity Graph Pruning",
+   "venue": "WWW 2026",
+   "problem": "Adaptive proximity graph pruning with temporal drift and spatial heterogeneity",
+   "approach": "Drift-aware batched bandit algorithm with contextual features",
+   "contribution": "Sublinear regret bound maintaining ANN search efficiency under evolving workloads",
+   "primary_theme": "Adaptive retrieval optimization",
+   "methods": [
+    "bandits",
+    "graph_pruning",
+    "drift_detection"
+   ]
+  },
+  {
+   "title": "STARK: Structure-Aware and Adaptive Representation Learning for Continual Knowledge Graph Embedding",
+   "venue": "WWW 2026",
+   "problem": "Continual KG embedding with structural diversity and update efficiency",
+   "approach": "Structural novelty prioritization and adaptive TransE loss",
+   "contribution": "Higher accuracy and efficiency on time-persistent KG embedding benchmarks",
+   "primary_theme": "Knowledge graph embedding",
+   "methods": [
+    "embedding",
+    "graph_learning",
+    "incremental_learning"
+   ]
+  },
+  {
+   "title": "S-Path-RAG: Semantic-Aware Shortest-Path Retrieval Augmented Generation for Multi-Hop Knowledge Graph Question Answering",
+   "venue": "WWW 2026",
+   "problem": "Multi-hop KGQA struggles with token efficiency and semantic path selection in large knowledge graphs",
+   "approach": "Semantic-aware shortest-path RAG using hybrid weighted k-shortest paths with neural-Socratic dialogue loop",
+   "contribution": "S-Path-RAG achieves token-efficient topology-aware retrieval with interpretable path traces for multi-hop QA",
+   "primary_theme": "Knowledge graph QA",
+   "methods": [
+    "rag",
+    "knowledge-graph",
+    "contrastive",
+    "dialogue"
+   ]
+  },
+  {
+   "title": "Not All Candidates are Created Equal: A Heterogeneity-Aware Approach to Pre-ranking in Recommender Systems",
+   "venue": "WWW 2026",
+   "problem": "Pre-ranking suffers gradient conflicts from heterogeneous samples; uniform complexity allocation is inefficient",
+   "approach": "Adaptive pre-ranking disentangling easy and hard samples with conflict-sensitive sampling and tailored loss",
+   "contribution": "Heterogeneity-aware framework reducing computational cost while maintaining ranking accuracy",
+   "primary_theme": "recommender systems pre-ranking",
+   "methods": [
+    "adaptive-sampling",
+    "gradient-conflict",
+    "computational-efficiency"
+   ]
+  },
+  {
+   "title": "ImVision: Adapting Pretrained Vision Models for Time-Series Imputation",
+   "venue": "WWW 2026",
+   "problem": "Missing values harm reliability; existing imputers computationally demanding and disrupt temporal order",
+   "approach": "Reframe imputation as image inpainting; convert sequences to Gramian Angular Field heatmaps; use pretrained vision",
+   "contribution": "Cross-modal efficiency; outperforms SOTAs on 8/10 settings; especially strong at high missing rates",
+   "primary_theme": "Time series imputation",
+   "methods": [
+    "vision-model",
+    "cross-modal",
+    "image-inpainting"
+   ]
+  },
+  {
+   "title": "Concept Relationship Embedding-Based Interactive Web Application for Explainable Medical Diagnosis",
+   "venue": "WWW 2026",
+   "problem": "Deep learning black-box nature limits clinical interpretability; methods ignore concept relationships and causality",
+   "approach": "Concept Relationship Embedding Model extracting subregional concepts, encoding as interaction graph, causal inference",
+   "contribution": "State-of-the-art on concept recognition and disease classification; improved robustness, label efficiency, interpretability",
+   "primary_theme": "Explainable medical AI",
+   "methods": [
+    "concept-learning",
+    "causal-inference",
+    "graph-based"
+   ]
+  },
+  {
+   "title": "Practical Group Steiner Tree Algorithms for Web Applications with Many Groups",
+   "venue": "WWW 2026",
+   "problem": "Existing GSTP algorithms optimize for large n but fail with large g (10\u2075 groups); impractical for KG summarization",
+   "approach": "Novel approximation algorithms exhibiting scalability for both n and g via algorithmic redesign",
+   "contribution": "Orders of magnitude speedup vs comparable algorithms; enables large-group applications like knowledge graph summarization",
+   "primary_theme": "Graph algorithms",
+   "methods": [
+    "approximation-algorithm",
+    "graph-optimization"
+   ]
+  },
+  {
+   "title": "ShadowClone: Scalable Decentralized Identity with Cross-Domain Anonymity and Accountable Traceability",
+   "venue": "WWW 2026",
+   "problem": "Multi-domain DID systems face scalability bottlenecks, weak cross-domain anonymity, and inefficient traceability",
+   "approach": "Sharding architecture with domain-hiding protocols and accountable ring signatures for cross-domain anonymity",
+   "contribution": "Scalable decentralized identity with strong cross-domain anonymity and efficient malicious user traceability",
+   "primary_theme": "Decentralized identity",
+   "methods": [
+    "cryptography",
+    "blockchain",
+    "privacy"
+   ]
+  },
+  {
+   "title": "E2SGNN: Reconciling Expression and Efficiency in Spiking Graph Neural Network",
+   "venue": "WWW 2026",
+   "problem": "Spiking neural networks sacrifice efficiency gains by integrating real-valued operations for expressiveness",
+   "approach": "Dual-scale modulated spiking backbone with latency-dynamic optimization",
+   "contribution": "Reconciles expression and efficiency while maintaining low-latency addition-only advantages",
+   "primary_theme": "Spiking graph neural networks",
+   "methods": [
+    "spiking",
+    "graph-neural-networks",
+    "efficiency"
+   ]
+  },
+  {
+   "title": "Mitigating Homophily Disparity in Graph Anomaly Detection: A Scalable and Adaptive Approach",
+   "venue": "WWW 2026",
+   "problem": "GNNs struggle with homophily disparity and scalability in graph anomaly detection",
+   "approach": "Precomputed multi-hop embeddings with Chebyshev filters and adaptive fusion coefficients",
+   "contribution": "SAGAD achieves linear complexity with asymptotic separability guarantees for anomaly detection",
+   "primary_theme": "Graph anomaly detection",
+   "methods": [
+    "gnn",
+    "spectral-filtering",
+    "adaptive-fusion"
+   ]
+  },
+  {
+   "title": "Weighted Graph Clustering via Scale Contraction and Graph Structure Learning",
+   "venue": "WWW 2026",
+   "problem": "Graph clustering methods underutilize edge weights and struggle with noisy weights",
+   "approach": "Contractile graph contraction and edge-weight-aware attention to identify noisy connections",
+   "contribution": "Jointly optimize clustering and weights while reducing graph scale for efficiency",
+   "primary_theme": "Weighted graph clustering",
+   "methods": [
+    "graph-contraction",
+    "attention-network",
+    "noise-mitigation"
+   ]
+  },
+  {
+   "title": "RAG-GFM: Overcoming In-Memory Bottlenecks in Graph Foundation Models via Retrieval-Augmented Generation",
+   "venue": "WWW 2026",
+   "problem": "Graph foundation models limited by in-memory bottlenecks and lossy parameter compression",
+   "approach": "Retrieval-augmented generation with dual-modal unified retrieval and dual-view alignment",
+   "contribution": "RAG-GFM offloads knowledge from parameters improving scalability and interpretability",
+   "primary_theme": "Graph foundation models",
+   "methods": [
+    "retrieval-augmented-generation",
+    "foundation-models",
+    "graph-learning"
+   ]
+  },
+  {
+   "title": "Mamba Hawkes Process for Event Sequence Modeling",
+   "venue": "WWW 2026",
+   "problem": "Event sequence modeling limited by parametric constraints and computational inefficiency",
+   "approach": "Mamba state-space model integrated with temporal point processes for linear complexity",
+   "contribution": "MHP/A-MHP generalizes Hawkes processes with adaptive time-scaling for event interactions",
+   "primary_theme": "Event sequence modeling",
+   "methods": [
+    "state-space-models",
+    "temporal-point-processes",
+    "gating-mechanisms"
+   ]
+  },
+  {
+   "title": "Multi-task Inference of Diffusion Networks",
+   "venue": "WWW 2026",
+   "problem": "Limited observation data per network makes traditional isolated diffusion network inference ineffective",
+   "approach": "Iterative multi-task inference exploiting similarity across networks with monotonicity and convergence guarantees",
+   "contribution": "Superior inference accuracy and computational efficiency by jointly inferring similar networks with limited data",
+   "primary_theme": "diffusion network",
+   "methods": [
+    "graph",
+    "multi-task",
+    "optimization"
+   ]
+  },
+  {
+   "title": "Multi-Behavior Sequential Modeling with Transition-Aware Graph Attention Network for E-Commerce Recommendation",
+   "venue": "WWW 2026",
+   "problem": "High computational cost of transformer-based multi-behavior sequential models limits scalability for long sequences",
+   "approach": "Transition-Aware Graph Attention with linear complexity via structured sparse graphs of item/category/neighbor transitions",
+   "contribution": "Linear-time multi-behavior modeling capturing behavioral transitions efficiently for large-scale e-commerce systems",
+   "primary_theme": "Graph recommendation",
+   "methods": [
+    "graph attention",
+    "sequential modeling",
+    "sparsity"
+   ]
+  }
+ ]
+}

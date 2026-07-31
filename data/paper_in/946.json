@@ -1,0 +1,11 @@
+{
+ "batch": "b063",
+ "paper": {
+  "id": "a186f7ecf0989c77aa8b268a8d0babd1ed134331",
+  "venue": "WSDM 2026",
+  "title": "A Comprehensive Guide to Time-Series Anomaly Detection",
+  "abstract": "Anomaly detection is a fundamental data analytics task across scientific fields and industries. In recent years, an increasing interest has been shown in the application of anomaly detection techniques to time series. In this tutorial, we take a holistic view of anomaly detection in time series and comprehensively cover detection algorithms ranging from the 1980s to the most current state-of-the-art techniques. Importantly, the scope of this tutorial extends beyond algorithmic discussion, delving into the latest advancements in benchmarking and evaluation measures for this area. In particular, our interactive systems enable the exploration of methods and benchmarking results, thereby promoting user comprehension. Furthermore, this tutorial extensively explores automated solutions for unsupervised model selection, introduces a new taxonomy, and engages with the challenges and recent findings, particularly the difficulty for these solutions to outperform simple random choice. Driven by the limited generalizability of current detection algorithms, we review recent applications of foundation models for anomaly detection to motivate further research in the area.",
+  "gid": 946,
+  "theme": "Time-series anomaly detection"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "batch": "b062",
+ "paper": {
+  "id": "90a3af6d18091ee0cfcfa125b5ea53f19b028c70",
+  "venue": "WSDM 2026",
+  "title": "EpicCBR: Item-Relation-Enhanced Dual-Scenario Contrastive Learning for Cold-Start Bundle Recommendation",
+  "abstract": "Bundle recommendation aims to recommend a set of items to users for overall consumption. Existing bundle recommendation models primarily depend on observed user-bundle interactions, limiting exploration of newly-emerged bundles that are constantly created. It pose a critical representation challenge for current bundle methods, as they usually treat each bundle as an independent instance, while neglecting to fully leverage the user-item (UI) and bundle-item (BI) relations over popular items. To alleviate it, in this paper we propose a multi-view contrastive learning framework for cold-start bundle recommendation, named EpicCBR. Specifically, it precisely mine and utilize the item relations to construct user profiles, identifying users likely to engage with bundles. Additionally, a popularity-based method that characterizes the features of new bundles through historical bundle information and user preferences is proposed. To build a framework that demonstrates robustness in both cold-start and warm-start scenarios, a multi-view graph contrastive learning framework capable of integrating these diverse scenarios is introduced to ensure the model's generalization capability. Extensive experiments conducted on three popular benchmarks showed that EpicCBR outperforms state-of-the-art by a large margin (up to 387%), sufficiently demonstrating the superiority of the proposed method in c",
+  "gid": 940,
+  "theme": "bundle recommendation"
+ }
+}

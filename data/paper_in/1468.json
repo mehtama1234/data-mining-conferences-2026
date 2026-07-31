@@ -1,0 +1,11 @@
+{
+ "batch": "b097",
+ "paper": {
+  "id": "10.1145/3805712.3808362",
+  "venue": "SIGIR 2026",
+  "title": "Characterising the Effects of Social Conformity on Information Seeking in Mixed Human-AI Environments",
+  "abstract": "LLM-based AI agents are increasingly integrated into online information environments such as social media and discussion threads, transforming how users assess information trustworthiness [2]. In these spaces, AI agents act as active participants that generate answers, summaries, and explanations, influencing trustworthiness judgements, as both informational authorities and social actors. While prior work has examined how users evaluate trustworthiness of online information in human-only or agent-only settings [3], there is limited understanding of how these judgements are formed in mixed human-AI groups, where human and AI-generated cues jointly shape how information is interpreted and acted upon. A key mechanism underlying how users assess information trustworthiness is social conformity, whereby individuals tend to adjust their own judgements to align with the majority view, which in turn shapes their subsequent engagement behaviours [3]. While prior work in human-only or agent-only groups has identified contextual (e.g., majority\u2013minority group difference, majority opinion, task objectivity) and personal (e.g., self-confidence, demographics, and trust-related dispositions) determinants of conformity [1], their role in mixed environments remains unclear. This is particularly crucial as AI-specific factors i.e., presence, position, and persona of agents can alter conformity d",
+  "gid": 1468,
+  "theme": "Human-AI information trust"
+ }
+}

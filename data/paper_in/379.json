@@ -1,0 +1,11 @@
+{
+ "batch": "b025",
+ "paper": {
+  "id": "70d77f57768fdbe31da5397e91e59816d224b254",
+  "venue": "WWW 2026",
+  "title": "Bandits, LLMs, and Agentic Web",
+  "abstract": "This tutorial provides a comprehensive guide on leveraging multi-armed bandit (MAB) algorithms to enhance Large Language Models (LLMs) within the Agentic Web\u2014an ecosystem where LLMs act autonomously, coordinate with other agents, make decisions, and adapt continuously based on feedback. As the web becomes increasingly populated by intelligent systems, adaptive, decentralized, and agentic language generation platforms are essential. MAB algorithms, which balance exploration and exploitation under uncertainty, offer a powerful framework for enabling such autonomous decision-making at scale. The tutorial introduces core MAB concepts, including the exploration-exploitation trade-off and strategies like epsilon-greedy, UCB (Upper Confidence Bound), and Thompson Sampling. It then details how to embed MAB mechanisms into LLM-based agents, treating text generation choices, content selection, or interaction strategies as arms in a bandit problem. Key practical considerations\u2014reward design, exploration policies, scalability, and the emergence of agentic behavior\u2014are examined in the context of networked, multi-agent interactions. Through real-world case studies, the tutorial illustrates the impact of MAB-augmented, agentic LLMs in the Agentic Web: coordinating multi-agent dialogue, dynamically curating personalized content, and optimizing recommendation strategies. These approaches demons",
+  "gid": 379,
+  "theme": "agentic learning"
+ }
+}

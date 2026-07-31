@@ -1,0 +1,11 @@
+{
+ "batch": "b049",
+ "paper": {
+  "id": "dfd205c27723f560bf0f8e517552fdd3402365c6",
+  "venue": "WWW 2026",
+  "title": "TGSBM: Transformer-Guided Stochastic Block Model for Link Prediction",
+  "abstract": "Link prediction is a cornerstone of the Web ecosystem, powering applications from recommendation and search to knowledge graph completion and collaboration forecasting. However, large-scale networks present unique challenges: they contain hundreds of thousands of nodes and edges with heterogeneous and overlapping community structures that evolve over time. Existing approaches face notable limitations: traditional graph neural networks struggle to capture global structural dependencies, while recent graph transformers achieve strong performance but incur quadratic complexity and lack interpretable latent structure. We propose TGSBM (Transformer-Guided Stochastic Block Model), a framework that integrates the principled generative structure of Overlapping Stochastic Block Models with the representational power of sparse Graph Transformers. TGSBM comprises three main components: (i) expander-augmented sparse attention that enables near-linear complexity and efficient global mixing, (ii) a neural variational encoder that infers structured posteriors over community memberships and strengths, and (iii) a neural edge decoder that reconstructs links via OSBM's generative process, preserving interpretability. Experiments across diverse benchmarks demonstrate competitive performance (mean rank 1.6 under HeaRT protocol), superior scalability (up to 6\u00d7 faster training), and interpretable co",
+  "gid": 735,
+  "theme": "Graph link prediction"
+ }
+}

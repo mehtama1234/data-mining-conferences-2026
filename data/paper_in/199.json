@@ -1,0 +1,11 @@
+{
+ "batch": "b013",
+ "paper": {
+  "id": "39bba247761334aef0485710d0060c03c77d5af8",
+  "venue": "WWW 2026",
+  "title": "Energy-Efficient and Dequantization-Free Quantization of LLMs: A Spiking Neural Network Approach to Salient Value Mitigation",
+  "abstract": "In the era of large language models (LLMs), weight-activation quantization helps fit models on edge device by reducing memory and compute bit-widths. However, three challenges persist for energy constrained hardware: (1) even after quantization, multiply-accumulate (MAC) operations remain unavoidable and continue to dominate energy consumption; (2) dequantization (or per-tensor/ channel rescaling) introduces extra arithmetic and data movement, increasing latency and energy; (3) uniform parameters bit widths clip salient values\u2014while intra-channel mixed precision is generally impractical on current matrix hardware and memory. In contrast, brain-inspired Spiking Neural Networks (SNNs), owing to their binary spike-based information representation and the Integrate-and-Fire (IF) paradigm, naturally support mixed-precision storage and energy-efficient computation by replacing complex MACs with temporal Accumulate (ACCs). Motivated by this property, we propose SpikeQuant, which selectively applies mixed-precision quantization to activations with salient values and re-encodes them into binary spike counts, thereby enabling dynamic mixed storage of different bitwidths. Furthermore, by embedding the quantization scale into the threshold of the IF mechanism, our approach performs energy-efficient linear transformations on weights and activations while avoiding explicit dequantization. Ex",
+  "gid": 199,
+  "theme": "LLM quantization edge"
+ }
+}

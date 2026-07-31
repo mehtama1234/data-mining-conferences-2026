@@ -1,0 +1,11 @@
+{
+ "batch": "b025",
+ "paper": {
+  "id": "6ff364d37a29b69dd9ed6ee03a0e1aa0996c8a9c",
+  "venue": "WWW 2026",
+  "title": "Beyond Single Pass, Looping Through Time: KG-IRAG with Iterative Knowledge Retrieval",
+  "abstract": "Retrieval-augmented generation (RAG) has improved large language models (LLMs) on knowledge-intensive tasks, yet most systems assume static facts and struggle when answers depend on serialized and dynamic data, like time--e.g., ordering events, aligning facts to valid intervals, or planning actions under evolving conditions. This paper presents Knowledge-Graph Iterative Retrieval-Augmented Generation (KG-iRAG), a framework specialized for temporal reasoning. KG-iRAG couples a time-aware planner with a knowledge graph (KG) to iteratively fetch and compose evidence along a temporal axis. Concretely, it (i) represents events and facts with explicit timestamps and validity intervals; (ii) propagates temporal constraints through iterative retrieval using operators; and (iii) verifies temporal consistency while refining intermediate hypotheses, enabling step-by-step deduction for queries that mix knowledge retrieval with inference. Across public temporal QA benchmarks, KG-iRAG consistently improves accuracy and calibration over strong RAG baselines while reducing unnecessary retrieval through targeted, constraint-guided steps. To stress-test real-time decision queries, three application-oriented datasets (weatherQA-Irish, ~ weatherQA-Sydney, and~ trafficQA-TFNSW) are additionally constructed and tested alongside existing temporal benchmarks. The results demonstrate that injecting tem",
+  "gid": 376,
+  "theme": "temporal reasoning"
+ }
+}

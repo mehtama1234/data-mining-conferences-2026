@@ -1,0 +1,11 @@
+{
+ "batch": "b007",
+ "paper": {
+  "id": "1f96650dacf9a6132e7fe68d670aeef82b6971f1",
+  "venue": "WWW 2026",
+  "title": "A USIM-less Identity Authentication System based on Zero-Knowledge Proofs",
+  "abstract": "A USIM-less identity authentication system is presented that leverages Zero-Knowledge Proofs (ZKPs) to achieve secure, privacy-preserving verification without relying on conventional SIM cards. This work proposes a practically deployable authentication architecture for mobile networks that addresses the structural vulnerabilities exposed by recent large-scale SIM data breaches. The system enables user authentication through a self-generated key pair and a Merkle Tree-based membership proof, thereby eliminating the need to disclose personal information. Computational efficiency is ensured by adopting the Groth16 proving system in combination with the Poseidon hash function. The proposed design is implemented using Circom circuit construction and Solidity-based smart contracts, and its feasibility is validated on a testnet environment. Experimental results demonstrate that the system effectively addresses the limitations of traditional SIM-based authentication while preserving privacy, enabling certificate-less operation, and supporting decentralized architecture. This work introduces a novel, practical alternative for secure identity authentication in mobile communication networks, offering significant value in environments where SIM information is vulnerable to exposure.",
+  "gid": 109,
+  "theme": "Zero-knowledge authentication"
+ }
+}

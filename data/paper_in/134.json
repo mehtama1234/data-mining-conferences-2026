@@ -1,0 +1,11 @@
+{
+ "batch": "b008",
+ "paper": {
+  "id": "276cdc1f438bfa81a281a55a13a2bb9b9111a2ea",
+  "venue": "WWW 2026",
+  "title": "Do You Think What I Think? A Qualitative Study for Maximising User Engagement through Latent Visual Properties",
+  "abstract": "Designing creative and reflective data visualisations offers the potential to move beyond static representations by incorporating latent visual properties (LVP) that stimulate insight, creativity, and decision-making. While traditional visualisations emphasize clarity and precision, they often overlook visual characteristics that are not directly visible in raw data but play an essential role in user engagement and sense-making. This study investigates how such LVP emerge and can be leveraged during the visualisation design process. We conducted a qualitative study combining a hands-on visualisation workshop and expert interviews to examine how participants interpret, reflect on, and redesign visualisations within a transdisciplinary context. The workshop involved nine participants working on a retail discount-optimization task, where they explored visualisation practices, identified LVP, and evaluated related design principles. Follow-up interviews with six domain experts validated the relevance and applicability of the resulting property-mapping strategies, including ignorance mapping (cognitive load awareness), creative unblocking (dynamic filtering and interactivity), and symbolic representation (emotive colour encoding and empathy mapping). Our findings reveal that leveraging LVP enhances user engagement, supports sense-making, and fosters creative problem-solving in data-",
+  "gid": 134,
+  "theme": "Data visualization"
+ }
+}

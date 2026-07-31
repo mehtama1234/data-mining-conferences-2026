@@ -1,0 +1,11 @@
+{
+ "batch": "b058",
+ "paper": {
+  "id": "069ecc7373f89b349920eb4e175c3abc4913b465",
+  "venue": "WSDM 2026",
+  "title": "Using Brand Knowledge Bases and LLM Agents to Enhance E-commerce Retailers' Catalog Quality",
+  "abstract": "For e-commerce retailers, high-quality product catalogs are vital to customer experience. Yet, despite lots of data cleaning efforts, catalog quality, especially in large catalogs, remains suboptimal. This paper shows how to use unstructured brand knowledge base data as a reference and a large language model agent to automatically enhance an e-commerce retailer's catalog quality. Unlike prior methods that usually repair and match product entries separately, our method does both concurrently. Our evaluation results show its effectiveness.",
+  "gid": 870,
+  "theme": "e-commerce catalog quality"
+ }
+}

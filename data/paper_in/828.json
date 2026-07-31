@@ -1,0 +1,11 @@
+{
+ "batch": "b055",
+ "paper": {
+  "id": "f6a77d4f36fd3bdda3744ca9bfeb081909e00c6c",
+  "venue": "WWW 2026",
+  "title": "From Generation to Detection: Leveraging Empirically Derived Linguistic Hints for LLM-Based Fake News Detection",
+  "abstract": "The rapid advancement and widespread use of Large Language Models (LLMs) have raised concerns about their potential to generate persuasive and deceptive content at scale. As LLM-generated text becomes increasingly indistinguishable from human writing, identifying linguistic features in LLM-generated fake news is critical for both the detection and mitigation of fake news. This research examines linguistic differences between real news and LLM-generated fake news headlines across four dimensions: toxicity, sentiment, moral framing, and lexical similarity. Using prompt engineering, we created five datasets of AI-generated fake news headlines (approximately 22,000 each) and compared them with a dataset of real news headlines of the same size. Our analysis shows that LLM-generated fake news are more toxic, negative, and subjective, and rely more heavily on authority-based language. To verify the effectiveness of these linguistic features, we conducted classification experiments using two state-of-the-art LLMs (GPT-4o-mini and GPT-5-mini) under zero-shot, few-shot, and linguistically guided conditions. Our results show that while zero-shot performance is modest (GPT-4o-mini mean F1 = 67.89%, GPT-5-mini mean F1 = 58.47%), both few-shot and linguistic hint approaches achieve consistent and robust improvements over zero-shot, with mean F1 scores in a similar range (approximately 70%), ",
+  "gid": 828,
+  "theme": "LLM fake news detection"
+ }
+}

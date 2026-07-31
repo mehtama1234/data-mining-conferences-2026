@@ -1,0 +1,11 @@
+{
+ "batch": "b026",
+ "paper": {
+  "id": "73743a555acb1455e09b2ba3e3fe65ae42b9b276",
+  "venue": "WWW 2026",
+  "title": "Weakly Supervised Multimodal Claim Verification with Entity-Graph Inference",
+  "abstract": "Claim verification across text, metadata, and signals derived from images is critical for trust, safety, and compliance on large platforms. In practice, high-quality labels are scarce, while many cheap but noisy signals such as lexicons, heuristics, legacy flags, and partial records are widely available. Existing approaches often assume large supervised datasets, focus on a single modality, or ignore relationships between items and entities, which leads to unstable decisions and poorly calibrated probabilities. We present a weakly supervised, multimodal framework that turns heterogeneous weak signals into probabilistic labels, trains lightweight text and tabular models, and uses entity-graph inference to keep decisions consistent at the project and organisation level. We instantiate the framework on real-estate listings and verify ''brand new'' new development (ND) claims against renovation or existing stock. Our demo shows the full pipeline from labeling functions to calibrated ND scores on a map, an entity-graph view, and Australian Bureau of Statistics (ABS) population overlays so that analysts can explore signals, model behaviour, and suspicious projects in an interactive way.",
+  "gid": 390,
+  "theme": "Claim verification"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "batch": "b039",
+ "paper": {
+  "id": "b15ef907675cf8167147198e9287a18d86d0bd0c",
+  "venue": "WWW 2026",
+  "title": "A Large Language Model-based Agent for Automated Machine Learning Workflow Construction",
+  "abstract": "In this demonstration, we present MLPlatAgent, a large language model (LLM)-based agent that uses a natural language-to-workflow paradigm to take task descriptions as input and construct code-free visual workflows based on machine learning (ML) platforms. MLPlatAgent emphasizes intent-driven task planning, hierarchical tool retrieval, and workflow generation based on function calls to enhance the accuracy of task alignment, tool selection, and workflow construction, rather than improving the accuracy of ML code generation through reasoning or knowledge enhancement. We showcase two scenarios for the usability of MLPlatAgent in real-world applications. We also present preliminary experimental results to validate that MLPlatAgent outperforms existing LLM-based agents in satisfying user requirements and achieving higher ML model performance. A demo video is available at https://youtu.be/aN-5xPOluyU.",
+  "gid": 591,
+  "theme": "Automated machine learning"
+ }
+}

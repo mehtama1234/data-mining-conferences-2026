@@ -1,0 +1,11 @@
+{
+ "batch": "b091",
+ "paper": {
+  "id": "10.1145/3805712.3808435",
+  "venue": "SIGIR 2026",
+  "title": "When Search Is Not Enough: Ranking Content for Query-Less Browse Surfaces",
+  "abstract": "Adobe Express is a content creation platform that enables users to easily create and customize visual content. Browse categories, such as Flyers, play a critical role in content discovery, serving as influential entry points where users explore templates without issuing explicit search queries. These browse categories are organized into collections, which represent curated and themed groups of content. Effectively ranking content within these collections is crucial. A simple formulation of using a collection name or category label as a search query may not adequately capture all aspects of a collection. We developed a machine learned browse ranker based on browse session data. Through offline experiments, online A/B testing, and production deployment, our results demonstrate that machine-learned browse ranking produces rankings that differ from collection-name-as-query approaches and that these differences result in measurable improvements to user engagement and product success metrics.",
+  "gid": 1374,
+  "theme": "Browse ranking"
+ }
+}

@@ -1,0 +1,567 @@
+{
+ "key": "recommender-systems",
+ "theme": "Recommender Systems",
+ "n_papers": 452,
+ "pct": 23.3,
+ "by_venue": {
+  "WWW 2026": 169,
+  "WSDM 2026": 44,
+  "SIGIR 2026": 223,
+  "KDD 2026": 16
+ },
+ "theme_examples": [
+  {
+   "title": "Multi-view Semantic Contrastive Alignment for Multimodal Recommendation",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "PLIKD: Prompt Learning with Instance-aware Knowledge Distillation for Web-scale Semantic Image Classification",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "AgenticShop: Benchmarking Agentic Product Curation for Personalized Web Shopping",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "D-Models and E-Models: Diversity-Stability Trade-offs in the Sampling Behavior of Large Language Models",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "Modeling Cascaded Delay Feedback for Online Net Conversion Rate Prediction: Benchmark, Insights and Solutions",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "RobustExplain: Evaluating Robustness of LLM-Based Explanation Agents for Recommendation",
+   "venue": "WWW 2026"
+  }
+ ],
+ "representative_papers": [
+  {
+   "title": "RobustExplain: Evaluating Robustness of LLM-Based Explanation Agents for Recommendation",
+   "venue": "WWW 2026",
+   "problem": "Robustness of LLM-generated explanations in recommender systems under user behavior noise is unexplored",
+   "approach": "RobustExplain framework measures robustness across five realistic perturbations and multi-dimensional metrics",
+   "contribution": "First robustness benchmarks for LLM explanation agents; current models show only moderate robustness",
+   "primary_theme": "LLM recommendation explanation",
+   "methods": [
+    "recommendation-system",
+    "llm",
+    "robustness-evaluation"
+   ]
+  },
+  {
+   "title": "Talos: Optimizing Top-K Accuracy in Recommender Systems",
+   "venue": "WWW 2026",
+   "problem": "Top-K recommendation accuracy optimization hampered by ranking computational overhead and distribution shifts",
+   "approach": "Quantile-based loss function replacing ranking operations with score-threshold comparisons via sampling-based regression",
+   "contribution": "Talos loss enables efficient Top-K accuracy optimization with robustness against distribution shifts",
+   "primary_theme": "recommender optimization",
+   "methods": [
+    "quantile",
+    "loss function",
+    "sampling regression"
+   ]
+  },
+  {
+   "title": "Bridging Semantic Understanding and Popularity Bias with LLMs",
+   "venue": "WWW 2026",
+   "problem": "Popularity bias in recommender systems limits niche content visibility",
+   "approach": "LLM-based framework decomposing bias into item-side and user-side components",
+   "contribution": "FairLRM improves fairness and recommendation accuracy via semantic bias interpretation",
+   "primary_theme": "LLM recommendation fairness",
+   "methods": [
+    "llm",
+    "debiasing",
+    "recommendation"
+   ]
+  },
+  {
+   "title": "TargetMR: Learning Modality Target for Multimodal Recommendation",
+   "venue": "WWW 2026",
+   "problem": "Multimodal recommenders fail to distinguish target from auxiliary content objects",
+   "approach": "Object disentangling via text parsing and image segmentation with LLM distillation",
+   "contribution": "TargetMR reduces semantic shift bias in multimodal item representations",
+   "primary_theme": "Multimodal recommendation",
+   "methods": [
+    "llm",
+    "image-segmentation",
+    "knowledge-distillation"
+   ]
+  },
+  {
+   "title": "RAIE:Region-Aware Incremental Preference Editing with LoRA for LLM-based Recommendation",
+   "venue": "WWW 2026",
+   "problem": "LLM recommenders struggle with non-stationary preferences and catastrophic forgetting on updates",
+   "approach": "Region-aware incremental editing with LoRA modules for localized preference updates",
+   "contribution": "RAIE enables stable preference drift adaptation via region-level edits without retraining",
+   "primary_theme": "Incremental LLM recommendation",
+   "methods": [
+    "lora",
+    "recommendation",
+    "incremental-learning"
+   ]
+  },
+  {
+   "title": "Sharpness-Aware Minimization for Generalized Embedding Learning in Federated Recommendation",
+   "venue": "WWW 2026",
+   "problem": "Unstable generalized embedding learning in federated recommender systems with heterogeneous data",
+   "approach": "Sharpness-aware minimization for stable item embedding learning across federated clients",
+   "contribution": "FedRecGEL framework stabilizes embedding training under cross-device heterogeneity and sparsity",
+   "primary_theme": "Federated recommendation",
+   "methods": [
+    "federated-learning",
+    "embedding",
+    "sam"
+   ]
+  },
+  {
+   "title": "C-HyPOD: Causal Hyperbolic Representation Learning with Prototype Orthogonal Disentanglement for Graph Out-of-Distribution Recommendation",
+   "venue": "WWW 2026",
+   "problem": "Graph recommenders vulnerable to spurious correlations in out-of-distribution scenarios",
+   "approach": "Hyperbolic geometry with prototype orthogonal disentanglement for hierarchical interest modeling",
+   "contribution": "C-HyPOD framework for geometric causal disentanglement in graph-based OOD recommendation",
+   "primary_theme": "OOD graph recommendation",
+   "methods": [
+    "hyperbolic-geometry",
+    "disentanglement",
+    "causal"
+   ]
+  },
+  {
+   "title": "Orthogonal Meta-learning Boosted Bayesian Optimization for Uncertain Multi-Objective Recommendation",
+   "venue": "WWW 2026",
+   "problem": "Recommender systems optimize single objectives causing echo chambers and limited experiences",
+   "approach": "Orthogonal meta-learning boosted Bayesian optimization for personalized objectives",
+   "contribution": "Multi-objective optimization framework identifying user-specific recommendation needs",
+   "primary_theme": "Multi-objective recommendation",
+   "methods": [
+    "bayesian optimization",
+    "meta-learning",
+    "multi-objective optimization"
+   ]
+  },
+  {
+   "title": "GALRec: Aligning Graph with Large Language Model for Sequential Recommendation",
+   "venue": "WWW 2026",
+   "problem": "LLM recommenders neglect user-item interaction graphs, struggling with heterogeneous feature spaces",
+   "approach": "Graph encoder with mutual alignment between graph and LLM predictor via GAL-tuning",
+   "contribution": "GALRec integrates collaborative information to improve LLM-based sequential recommendation",
+   "primary_theme": "LLM recommendation graph",
+   "methods": [
+    "llm",
+    "graph_neural_network",
+    "recommendation",
+    "alignment"
+   ]
+  },
+  {
+   "title": "Retracing and Restoring: Chronological Context Preservation for Effective Dynamic Recommendation",
+   "venue": "WWW 2026",
+   "problem": "Dynamic recommenders overwrite historical signals; chronological context of past interactions not preserved.",
+   "approach": "TraceRec: retraces historical paths via reverse chronological walks; restores embeddings to interaction-time context.",
+   "contribution": "Achieves up to 17.05% improvement in Recall@10 on dynamic recommendation datasets.",
+   "primary_theme": "Dynamic recommendation systems",
+   "methods": [
+    "temporal-modeling",
+    "embedding-restoration",
+    "random-walk"
+   ]
+  },
+  {
+   "title": "Unleashing the Potential of Sparse Attention on Long-term Behaviors for CTR Prediction",
+   "venue": "WWW 2026",
+   "problem": "Standard attention is computationally expensive for long user behavior sequences",
+   "approach": "Personalized chunking with three-branch sparse attention mechanism",
+   "contribution": "Efficient CTR prediction modeling long-term user behaviors",
+   "primary_theme": "CTR prediction",
+   "methods": [
+    "sparse-attention",
+    "recommender-systems",
+    "sequence-modeling"
+   ]
+  },
+  {
+   "title": "Beyond the Flat Sequence: Hierarchical and Preference-Aware Generative Recommendations",
+   "venue": "WWW 2026",
+   "problem": "Generative recommenders ignore temporal hierarchy and introduce attention noise in sparse histories",
+   "approach": "Two-stage framework with masked item modeling and preference-guided sparse attention",
+   "contribution": "Hierarchical and preference-aware approach improving efficiency and signal-to-noise in recommendation",
+   "primary_theme": "Generative recommendation",
+   "methods": [
+    "masked_language_model",
+    "attention",
+    "hierarchical"
+   ]
+  },
+  {
+   "title": "AlphaFree: Recommendation Free from Users, IDs, and GNNs",
+   "venue": "WWW 2026",
+   "problem": "Recommenders rely on user embeddings, ID-based features, and GNNs incurring memory, cold-start issues",
+   "approach": "Replace user embeddings with on-the-fly preferences, raw IDs with language representations, GNNs with contrastive learning",
+   "contribution": "Lightweight recommendation achieving up to 40% improvement while reducing GPU memory by up to 69 percent",
+   "primary_theme": "Lightweight recommendation",
+   "methods": [
+    "llm",
+    "contrastive_learning",
+    "augmentation"
+   ]
+  },
+  {
+   "title": "Taming the Long Tail: Efficient Item-wise Sharpness-Aware Minimization for LLM-based Recommender Systems",
+   "venue": "WWW 2026",
+   "problem": "LLM-based recommenders face dual long-tail problem: pretraining prior and skewed recommendation data distributions",
+   "approach": "Item-wise sharpness-aware minimization with efficient penalty design adaptively regularizing loss landscape",
+   "contribution": "EISAM improves tail-item performance in LLM recommenders with bounded generalization guarantee",
+   "primary_theme": "LLM recommendation systems",
+   "methods": [
+    "llm",
+    "optimization",
+    "recommender-systems"
+   ]
+  },
+  {
+   "title": "Token-level Collaborative Alignment for LLM-based Generative Recommendation",
+   "venue": "WWW 2026",
+   "problem": "LLM-based recommenders fail to integrate collaborative filtering signals during generation optimization.",
+   "approach": "Token-level collaborative tokenizer projects CF logits into token space with soft label alignment.",
+   "contribution": "TCA4Rec framework enables explicit optimization-level CF integration with LLM generation.",
+   "primary_theme": "LLM recommendation",
+   "methods": [
+    "llm",
+    "collaborative-filtering",
+    "soft-labels"
+   ]
+  },
+  {
+   "title": "Line Graphs Are Here! Unlock a Simple Solution for Data Sparsity and Class Imbalance in Recommender System",
+   "venue": "WWW 2026",
+   "problem": "Data sparsity and class imbalance persist as core challenges limiting recommender system development and performance.",
+   "approach": "LGDA transforms user-item bipartite graph to line graph, reformulating sparsity and imbalance as node classification problems.",
+   "contribution": "Plug-and-play augmentation strategy improves recommendation performance and robustness across four real-world datasets.",
+   "primary_theme": "recommendation robustness",
+   "methods": [
+    "graph-learning",
+    "data-augmentation",
+    "recommendation",
+    "imbalance"
+   ]
+  },
+  {
+   "title": "Dynamic Routing-Based Adaptive Multi-LLM Collaboration: A Unified Recommendation Framework with Decision Knowledge Complementation",
+   "venue": "WWW 2026",
+   "problem": "Single LLM-based recommenders lack adaptability; different LLMs have complementary strengths across scenarios",
+   "approach": "Dynamic routing selects suitable LLMs via learnable prototypes and decision knowledge complementation",
+   "contribution": "AMLrec combines LLM-as-recommender and LLM+recommender paradigms without fine-tuning",
+   "primary_theme": "Multi-LLM recommendation",
+   "methods": [
+    "llm",
+    "routing",
+    "multi-model"
+   ]
+  },
+  {
+   "title": "Unicoon: Hypergraph-based Multi-Agent Simulation of Information Cocoons",
+   "venue": "WWW 2026",
+   "problem": "Social networks and recommender systems' coevolving dynamics in information cocoons remain unexplored",
+   "approach": "Hypergraph-based LLM multi-agent simulation capturing heterogeneous information diffusion patterns",
+   "contribution": "First unified framework revealing synergistic interplay creates distinct polarization patterns",
+   "primary_theme": "Information cocoons simulation",
+   "methods": [
+    "llm",
+    "multi-agent",
+    "hypergraph",
+    "simulation"
+   ]
+  },
+  {
+   "title": "Super-Resolution of Urban Socioeconomic Indicators via Graph-Based Recommender Systems",
+   "venue": "WWW 2026",
+   "problem": "Census data lacks fine-grained socioeconomic resolution due to privacy constraints and high curation costs",
+   "approach": "Spatial-GNN learns business embeddings from user-business graphs to infer block-group indicators",
+   "contribution": "Bridges recommender systems and urban computing for scalable high-resolution demographic inference",
+   "primary_theme": "Urban socioeconomic super-resolution",
+   "methods": [
+    "gnn",
+    "recommender-systems",
+    "embedding",
+    "urban-computing"
+   ]
+  },
+  {
+   "title": "Beyond Engagement: A Human-Centered Evaluation Framework for LLM-Powered Recommender Systems",
+   "venue": "WWW 2026",
+   "problem": "Engagement metrics misaligned with human values in LLM recommenders",
+   "approach": "Human-centered evaluation framework assessing trust, agency, transparency, satisfaction",
+   "contribution": "Reoriented assessment practices toward human-aligned metrics beyond engagement",
+   "primary_theme": "human-centered recommendation",
+   "methods": [
+    "qualitative evaluation",
+    "llm recommendation",
+    "human-centered"
+   ]
+  },
+  {
+   "title": "Not All Information Brings Benefits: Personalization-Driven Agent Debate for Conversational Recommendation",
+   "venue": "WWW 2026",
+   "problem": "Conversational recommenders indiscriminately use entire historical dialogues, causing cognitive negative transfer",
+   "approach": "Multi-agent debate to validate historical sessions, then parametrically inject positive dialogues",
+   "contribution": "EyeCRS prevents negative transfer and improves conversational recommendation performance",
+   "primary_theme": "conversational recommendation",
+   "methods": [
+    "multi-agent",
+    "dialogue",
+    "recommendation"
+   ]
+  },
+  {
+   "title": "Hyena Operator for Fast Sequential Recommendation",
+   "venue": "WWW 2026",
+   "problem": "Attention-based sequential recommenders achieve high accuracy but suffer from quadratic complexity on long sequences",
+   "approach": "HyenaRec uses Legendre polynomial kernels and gated convolutions for linear-time temporal modeling",
+   "contribution": "HyenaRec achieves faster training with up to 6x speedup while maintaining ranking accuracy",
+   "primary_theme": "sequential recommendation",
+   "methods": [
+    "hyena operator",
+    "polynomial kernel",
+    "convolution"
+   ]
+  },
+  {
+   "title": "Triple Modality Fusion: Aligning Visual, Textual, and Graph Data for LLM-based Multi-Behavior Recommender Systems",
+   "venue": "WWW 2026",
+   "problem": "Recommender systems underutilize graph relational data when using LLMs and VLMs",
+   "approach": "Triple Modality Fusion: graph embeddings, textual, visual with attention-based projection",
+   "contribution": "TMF deployed at Walmart: 19.7% improvement in Electronics, 25.5% in Sports",
+   "primary_theme": "multimodal recommendation",
+   "methods": [
+    "llm",
+    "graph-embedding",
+    "multimodal-fusion"
+   ]
+  },
+  {
+   "title": "Not All Candidates are Created Equal: A Heterogeneity-Aware Approach to Pre-ranking in Recommender Systems",
+   "venue": "WWW 2026",
+   "problem": "Pre-ranking suffers gradient conflicts from heterogeneous samples; uniform complexity allocation is inefficient",
+   "approach": "Adaptive pre-ranking disentangling easy and hard samples with conflict-sensitive sampling and tailored loss",
+   "contribution": "Heterogeneity-aware framework reducing computational cost while maintaining ranking accuracy",
+   "primary_theme": "recommender systems pre-ranking",
+   "methods": [
+    "adaptive-sampling",
+    "gradient-conflict",
+    "computational-efficiency"
+   ]
+  },
+  {
+   "title": "STCRank: Spatio-temporal Collaborative Ranking for Interactive Recommender System at Kuaishou E-shop",
+   "venue": "WWW 2026",
+   "problem": "E-commerce ranking systems face multi-objective conflicts and temporal greedy traps",
+   "approach": "Spatio-temporal collaborative ranking framework addressing spatial and sequential slot transitions",
+   "contribution": "STCRank mitigates objective overlaps in full-screen immersive e-commerce browsing interactions",
+   "primary_theme": "E-commerce ranking",
+   "methods": [
+    "ranking",
+    "multi-objective",
+    "temporal"
+   ]
+  },
+  {
+   "title": "Auditing Textual Context in Sequence-Aware Explainable Recommendation",
+   "venue": "WWW 2026",
+   "problem": "Sequence-aware recommenders produce repetitive explanations from sparse historical data",
+   "approach": "Text aggregation and fusion strategies integrating item opinions into user embeddings",
+   "contribution": "Systematic analysis identifies optimal techniques for leveraging textual information in explanations",
+   "primary_theme": "Explainable recommendation",
+   "methods": [
+    "recommendation",
+    "text-fusion",
+    "explanation"
+   ]
+  },
+  {
+   "title": "Evaluating Trustworthiness in Reactive Web Architectures: A Structured Framework and Comparative Analysis",
+   "venue": "WWW 2026",
+   "problem": "LLM-assisted recommenders optimized for engagement ignore trust, agency, and transparency for humans",
+   "approach": "Human-centered assessment framework examining trade-offs between engagement and human-aligned design choices",
+   "contribution": "Framework shifting evaluation from engagement metrics toward trust, transparency, and user satisfaction",
+   "primary_theme": "trustworthy recommendation",
+   "methods": [
+    "llm",
+    "evaluation",
+    "human-centered"
+   ]
+  },
+  {
+   "title": "FairFS: Addressing Deep Feature Selection Biases for Recommender System",
+   "venue": "WWW 2026",
+   "problem": "Feature importance estimation in deep learning shows layer, baseline, and approximation biases leading to inaccurate selection",
+   "approach": "FairFS regularizing importance across all layers with smooth baselines near decision boundaries and aggregated approximation",
+   "contribution": "Fair and accurate feature selection mitigating three bias sources for improved online performance in recommender systems",
+   "primary_theme": "Feature selection fairness",
+   "methods": [
+    "feature selection",
+    "regularization",
+    "deep learning"
+   ]
+  },
+  {
+   "title": "Towards Fair Large Language Model-based Recommender Systems without Costly Retraining",
+   "venue": "WWW 2026",
+   "problem": "LLM-based recommenders perpetuate training data bias; existing debiasing requires expensive retraining",
+   "approach": "FUDLR reformulates debiasing as efficient machine unlearning with bias-agnostic mask and influence estimation",
+   "contribution": "Improves fairness without retraining; adapts to diverse or co-existing biases via different fairness metrics",
+   "primary_theme": "LLM recommendation fairness",
+   "methods": [
+    "machine-unlearning",
+    "debiasing",
+    "fairness-metrics",
+    "inference-time"
+   ]
+  },
+  {
+   "title": "From Insight to Intervention: Interpretable Neuron Steering for Controlling Popularity Bias in Recommender Systems",
+   "venue": "WWW 2026",
+   "problem": "Popularity bias in recommender systems lacks transparency in mitigation mechanisms",
+   "approach": "Sparse autoencoder enabling neuron-level interpretability for identifying popularity signals",
+   "contribution": "Post-hoc steering enhances fairness with minimal accuracy impact and fine-grained control",
+   "primary_theme": "Recommendation fairness",
+   "methods": [
+    "interpretability",
+    "sparse-autoencoder",
+    "neuron-steering"
+   ]
+  },
+  {
+   "title": "Does This Button Work? Investigating YouTube's Ineffective User Controls",
+   "venue": "WWW 2026",
+   "problem": "YouTube's recommendation controls are ineffective; user feedback prevents fewer than half similar content",
+   "approach": "Large-scale audit of 567M recommendations from 22k users; randomized control signals tested",
+   "contribution": "Reveals substantial gap between user expectations and platform behavior; design recommendations provided",
+   "primary_theme": "Platform accountability",
+   "methods": [
+    "experimental audit",
+    "recommender systems",
+    "user controls"
+   ]
+  },
+  {
+   "title": "Post-Training Fairness Control: A Single-Train Framework for Dynamic Fairness in Recommendation",
+   "venue": "WWW 2026",
+   "problem": "Fairness-aware recommenders fix fairness at training time; retraining for changing stakeholder fairness requirements is prohibitive.",
+   "approach": "Cofair single-train framework uses fairness-conditioned adapter modules to produce embeddings for varied fairness levels.",
+   "contribution": "Post-training dynamic fairness control without retraining; monotonic fairness improvements guaranteed at user level.",
+   "primary_theme": "Dynamic fairness control recommendation",
+   "methods": [
+    "fairness",
+    "adapter-modules",
+    "post-training-control"
+   ]
+  },
+  {
+   "title": "Third Workshop on Generative AI for Recommender Systems and Personalization",
+   "venue": "WSDM 2026",
+   "problem": "Gap between generative models research and adoption in personalized recommender systems.",
+   "approach": "Workshop bridging academic research and industry adoption of generative models in recommendation.",
+   "contribution": "Forum fostering dialogue on generative models, recommendation, and personalized experiences.",
+   "primary_theme": "generative recommendation workshop",
+   "methods": [
+    "workshop",
+    "generative-models",
+    "recommendation"
+   ]
+  },
+  {
+   "title": "Adaptive Continual Learning with User-Incremental Forward Compatibility for Meta-Augmented Cold-Start Recommenders",
+   "venue": "WSDM 2026",
+   "problem": "User cold-start with non-stationary preferences in streaming recommendation environments",
+   "approach": "Meta-augmented continual learning with dual-view forward compatibility and prototype-aware exemplar selection",
+   "contribution": "IncMCR framework preventing meta-knowledge erosion while adapting to incremental user preferences",
+   "primary_theme": "continual learning recommendation",
+   "methods": [
+    "meta-learning",
+    "incremental learning",
+    "cold-start",
+    "preference adaptation"
+   ]
+  },
+  {
+   "title": "Accelerating Generative Recommendation via Simple Categorical User Sequence Compression",
+   "venue": "WSDM 2026",
+   "problem": "Generative recommenders with long sequences incur prohibitive real-time computational costs",
+   "approach": "Categorical feature-based user sequence compression preserving interests while reducing computation",
+   "contribution": "CAUSE achieves 6x cost reduction and 39% accuracy improvement over HSTU at comparable cost",
+   "primary_theme": "generative recommendation",
+   "methods": [
+    "sequence compression",
+    "generative models",
+    "recommendation",
+    "efficiency"
+   ]
+  },
+  {
+   "title": "Leveraging Retrieval-Augmented Language Models for Accurate Item/Feature Selection in Conversational Recommender Systems",
+   "venue": "WSDM 2026",
+   "problem": "RALMs for CRS include irrelevant knowledge limiting recommendation and explanation quality",
+   "approach": "Multi-stage item/feature selection with Chain-of-Thought reasoning",
+   "contribution": "MOCHA framework improves recommendation accuracy with factually-correct explanations",
+   "primary_theme": "Conversational recommendation",
+   "methods": [
+    "ralm",
+    "cot",
+    "recommendation"
+   ]
+  },
+  {
+   "title": "When Modalities Go Missing: Early Fusion for Multimodal Recommendation",
+   "venue": "WSDM 2026",
+   "problem": "Late fusion multimodal recommenders are fragile when modalities are missing",
+   "approach": "Early fusion framework leveraging pretrained models, missing-aware aggregation, GCN propagation",
+   "contribution": "EFMRec handles modality incompleteness robustly without reconstruction or auxiliary losses",
+   "primary_theme": "Multimodal recommendation",
+   "methods": [
+    "early-fusion",
+    "multimodal",
+    "gcn"
+   ]
+  },
+  {
+   "title": "Precision vs. Discovery: An Adaptive Agent Navigating the Cold-Start Trade-off",
+   "venue": "WSDM 2026",
+   "problem": "Monolithic recommenders serve cold-start and warm-start users poorly with one approach",
+   "approach": "Multi-agent system delegating to BPR for warm-start, SBERT semantic search for cold-start",
+   "contribution": "MARS adaptively balances precision vs discovery, 20x faster cold-start with higher novelty",
+   "primary_theme": "Cold-start recommendation",
+   "methods": [
+    "multi-agent",
+    "bpr",
+    "semantic-search"
+   ]
+  },
+  {
+   "title": "Calibration in Dynamic Recommender Systems",
+   "venue": "WSDM 2026",
+   "problem": "Calibration in dynamic recommender systems lacks consideration of feedback loops and dynamic user preferences",
+   "approach": "Adaptive calibration aware of dynamic user preferences with long-term synthetic analysis and user study",
+   "contribution": "More realistic understanding of calibration benefits and limitations in user-centered dynamic systems",
+   "primary_theme": "Calibration dynamics",
+   "methods": [
+    "calibration",
+    "adaptive",
+    "synthetic_analysis"
+   ]
+  },
+  {
+   "title": "Enhanced Cold-Start Sequential Recommendation with Causal Diffusion Preference Modeling",
+   "venue": "WSDM 2026",
+   "problem": "Sequential recommendation fails for cold-start users with limited history; existing methods lack compatibility with advanced models",
+   "approach": "Causal diffusion generates preference representations via Preference-Dominant Sequence and causal inference",
+   "contribution": "CDMRec integrates seamlessly into mainstream sequential recommenders for effective cold-start learning",
+   "primary_theme": "Sequential cold-start",
+   "methods": [
+    "diffusion",
+    "causal_inference",
+    "sequential"
+   ]
+  }
+ ]
+}

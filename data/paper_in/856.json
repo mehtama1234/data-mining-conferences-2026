@@ -1,0 +1,11 @@
+{
+ "batch": "b057",
+ "paper": {
+  "id": "fd514aded31eca7a4eedeceeaf312a9d827c08bf",
+  "venue": "WWW 2026",
+  "title": "The First Workshop on Graph-enhanced LLMs for trustwOrthy Web data management (GLOW'26)",
+  "abstract": "The widespread adoption of Large Language Models (LLMs) is reshaping how Web data is accessed, interpreted, and managed at scale. By enabling natural language interaction and flexible reasoning over heterogeneous information sources, LLMs introduce new opportunities for Web data management, while also raising fundamental challenges related to reliability, factual accuracy, explainability, and accountability, especially when mediating access to structured and semi-structured Web data. Graph-based representations, such as knowledge graphs and property graphs, offer a complementary foundation by providing explicit structure, semantics, and relational context. Integrating graph-based models with LLMs enables more grounded reasoning processes and supports validation, transparency, and reliability in Web-scale systems, reflecting a broader shift toward hybrid neural\u2013symbolic approaches. The Graph-enhanced LLMs for Trustworthy Web Data Management (GLOW) workshop focuses on the systematic investigation of graph-enhanced LLM approaches for Web data management, emphasizing architectural, methodological, and system-level perspectives. By addressing trustworthiness and explainability within Web-scale data infrastructures, GLOW contributes to the development of frameworks for accountable and reliable Web-based intelligent systems.",
+  "gid": 856,
+  "theme": "Graph-LLM integration"
+ }
+}

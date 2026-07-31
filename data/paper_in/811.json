@@ -1,0 +1,11 @@
+{
+ "batch": "b054",
+ "paper": {
+  "id": "f2b5e747d24ae07e06956598cb6d7c965c4b7ebc",
+  "venue": "WWW 2026",
+  "title": "SEP-Attack: A Simple and Effective Paradigm for Transfer-Based Textual Adversarial Attack",
+  "abstract": "Despite the strong performance of deep neural networks in modern Web and language applications, they remain vulnerable to adversarial attacks, especially transferable attacks that generate adversarial examples using surrogate models without accessing the victim model. Transferable attacks in the text domain are still under-explored, with only a few studies addressing this challenging issue, often with suboptimal results due to equal treatment of submodels or inaccurate estimation of importance scores. To address these challenges, we propose a simple yet effective paradigm for transfer-based textual adversarial attack, named SEP-Attack. Specifically, we employ the Determinantal Point Process (DPP) to generate diverse surrogate ensemble weights, representing the transferability of submodels. Using these weights, we introduce a new metric to evaluate prediction confidence scores, which in turn are used to calculate word importance scores and generate adversarial candidates. Finally, we quantify the transferability score for each candidate and select the top ones as the final transferable adversarial examples. Experiments conducted on four datasets and two real-world APIs validate the efficacy of SEP-Attack, significantly outperforming state-of-the-art baselines.",
+  "gid": 811,
+  "theme": "Adversarial text attacks"
+ }
+}

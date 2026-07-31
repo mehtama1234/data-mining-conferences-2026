@@ -1,0 +1,11 @@
+{
+ "batch": "b017",
+ "paper": {
+  "id": "4d7eb583b8f383ad7ae768eab0e4cc66279ab682",
+  "venue": "WWW 2026",
+  "title": "Communication-Efficient Federated Learning for Post-Flood Risk Assessment Using UAV Swarms",
+  "abstract": "Accurate semantic segmentation is crucial for rapid risk and severity assessment following flash flood disasters. However, in drone networks deployed for disaster recovery, bandwidth constraints mean the backhaul transmission of massive imagery required for centralized processing is highly prone to causing network congestion. Federated Learning, a decentralized collaborative paradigm that permits drones to process data locally, offers an ideal pathway to address this challenge. Nonetheless, existing FL methods are plagued by the dilemma of excessive communication overhead and insufficient segmentation performance. Therefore, this paper proposes a Communication-Efficient Federated Distillation (CEFD) framework. The core of this framework lies in the design of a lightweight, multi-level knowledge representation. It discards the transmission of bulky parameters, opting instead for the efficient exchange of high-level semantic logits and key intermediate features that have undergone feature-space dimensionality reduction. On the server side, adaptive weighted aggregation is then utilized to construct a robust global knowledge model. Experimental results show that CEFD achieved high segmentation performance on the LSD dataset, attaining an mIoU of 0.6226, a Mean Recall of 0.6532, an Accuracy of 0.9794, and an MAE of 0.0400, while reducing communication overhead by approximately 99.5",
+  "gid": 266,
+  "theme": "Federated learning segmentation"
+ }
+}

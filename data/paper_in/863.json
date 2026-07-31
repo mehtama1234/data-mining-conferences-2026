@@ -1,0 +1,11 @@
+{
+ "batch": "b057",
+ "paper": {
+  "id": "ff5096a95fb282b03405f61275602bffe614bd98",
+  "venue": "WWW 2026",
+  "title": "Fed-S2: Adversarially Disentangled Federated Multimodal RAG for Safety-Critical Long-Tail Fault Diagnosis",
+  "abstract": "Democratizing AI for smaller-scale entities is crucial, yet their critical infrastructure faces a triad of challenges: long-tail fault detection in heterogeneous data, multimodal gaps, and strict privacy compliance. Traditional Federated Learning (FL) struggles with ''gradient starvation'' on scarce samples and is vulnerable to inversion attacks. To address these, we propose Fed-S2, a privacy-preserving framework based on Adversarially Disentangled Federated Multimodal Retrieval-Augmented Generation (RAG). Fed-S2 replaces parameter synchronization with a global knowledge graph constructed from lightweight embeddings sanitized via ''Semantic-Shielding.'' Our contributions include: (1) A Resolution-Agnostic Semantic Projector utilizing adaptive spectral pooling for frequency-domain signal alignment; (2) A Min-Max Adversarial Game formulated under the Information Bottleneck principle to theoretically bound inversion risks; and (3) Retrieval-based Zero-Shot Inference leveraging a frozen Meta Llama-3.1 for cross-modal reasoning. On cross-domain benchmarks (CWRU, XJTU-SY, MFPT), Fed-S2 improves long-tail fault identification from 38.5% to 84.2%. In zero-shot scenarios, it achieves 68.5% accuracy where traditional FL fails (0%), demonstrating superior generalization while reducing communication overhead by 93%.",
+  "gid": 863,
+  "theme": "Federated multimodal learning"
+ }
+}

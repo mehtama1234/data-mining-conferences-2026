@@ -1,0 +1,11 @@
+{
+ "batch": "b019",
+ "paper": {
+  "id": "55a9f72ef2cda14cde9ab075fcda3149acd2ba5c",
+  "venue": "WWW 2026",
+  "title": "LLM-augmented Hybrid Recommendation System for Structured Classification of Customs Commodity Descriptions",
+  "abstract": "This paper presents a pipeline for structured information extraction and commodity classification from unstructured customs declaration texts using a sparse Mixture-of-Experts large language model with deterministic post-processing and rule-based validation, and integrates the extracted outputs into an interactive recommendation system that supports customs officers in classification and decision-making tasks. A Mixtral-8\u00d77B decoder-only architecture is adapted to the customs domain using Low-Rank Adaptation, enabling parameter-efficient fine-tuning while processing long inputs of up to 32k tokens. On a corpus of 847 Russian-language customs product descriptions, the model produces syntactically valid JSON outputs in 98.1% of cases, with deterministic post-processing reducing the invalid rate to 1.06%. Fine-tuning with LoRA on the original dataset yields validation losses in the range 0.015\u20130.025, while training on an augmented dataset of approximately 106 records reduces validation loss to below 0.002, at the cost of increased training time. Inference benchmarks show that the sparse MoE model, activating 2 of 8 experts per token, achieves higher scores than dense baselines under comparable inference budgets, with gains of approximately 10\u201315 percentage points on reasoning-oriented tasks. The results also identify limitations related to semantic correctness, numeric and unit in",
+  "gid": 297,
+  "theme": "Domain-adapted information extraction"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "batch": "b053",
+ "paper": {
+  "id": "f0ff5ef402504c1bda3e015bfdbdefa0c5e00b23",
+  "venue": "WWW 2026",
+  "title": "Room Matters: Dynamic Room-level Collaboration Information Modeling for Live Streaming Recommendation",
+  "abstract": "Live streaming platforms have recently gained popularity due to their immediacy and entertainment value, highlighting the need for streaming recommender systems that can adapt to the dynamic nature of evolving content, real-time interactions, and changing user interests. The ''live room'' plays a central role in modeling this dynamic environment, as it not only connects users with streamers but also serves as a key channel for collecting fine-grained user feedback. More specifically, the frequent interactions of users within a live room provide detailed dynamic collaboration information, reflecting the streamer's real-time topic and users' dynamic interests. However, existing studies have not thoroughly investigated the dynamics of room-level collaborative information. In this paper, we address this gap by emphasizing two perspectives: the evolving tripartite interaction information among rooms, streamers, and users, and the real-time intra-room collaboration information. We propose DCGLive, a Dynamic Collaboration-aware Graph learning approach for Live streaming recommendation. Specifically, we first construct two dynamic bipartite graphs to perceive the evolving tripartite interaction and generate real-time representations of streamers, rooms, and users. To account for the dynamic nature of live streaming, we design a set of non-parametric, collaboration-aware indicators that",
+  "gid": 802,
+  "theme": "Streaming recommendation"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "batch": "b064",
+ "paper": {
+  "id": "c4bfb2daaaab850c27f13fed12de37338a5ff904",
+  "venue": "WSDM 2026",
+  "title": "RankGraph-Context: Empowering Different Industrial Recommendation System Stages",
+  "abstract": "Industrial recommendation systems increasingly operate across heterogeneous products, user journeys, and feedback loops, yet most systems still optimize each stage\u2014data curation, model training, and inference\u2014largely in isolation. We present RankGraph-Context, different from a graph neural network model, which is a knowledgeable and agile graph-centric context framework that unifies these stages by (i) catching implicit relational signals during data construction, (ii) conditioning training on structured relational context, and (iii) adapting at inference time through post-training or test-time learning. Across several production-scale scenarios, RankGraph-Context delivers consistent improvements on cold-start retrieval, long-tail coverage, and cross-surface data curation, while enabling safe online adaptation through test-time updates. We detail the framework, instantiate it on multiple surfaces and use cases, and report offline and online results, showing that RankGraph-Context can empower different recommendation system stages with affordable engineering overhead.",
+  "gid": 962,
+  "theme": "Recommendation framework"
+ }
+}

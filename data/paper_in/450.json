@@ -1,0 +1,11 @@
+{
+ "batch": "b030",
+ "paper": {
+  "id": "8641681bfdbe3303045d1c37c2121976a49ce947",
+  "venue": "WWW 2026",
+  "title": "Saliency-Guided Embedding Alignment for Query-to-Document Legal Case Retrieval",
+  "abstract": "Legal Case Retrieval (LCR) aims to find relevant cases given a query. Most existing approaches use a Document-to-Document (D2D) paradigm, treating a full legal document as the query. In real scenarios, however, users provide short descriptions, forming a Query-to-Document (Q2D) paradigm where D2D-trained embeddings struggle due to length mismatch. To address this, we propose a Q2D-oriented framework that improves short-query and long-document matching through segment selection and semi-supervised training. We introduce a Chunk Saliency Assessor (CSA) to identify legal document segments most relevant to a query. Building on this, we design a two-stage fine-tuning strategy: (1) Legal Inverse Cloze Task (LICT) to strengthen understanding of legal structures, and (2) Legal Content-Aligned Embedding Tuning (LCAET) to align query and document semantics. Experiments across multiple crime categories, with category-specific fine-tuning, show significant improvements in retrieval accuracy. Ablation results demonstrate the effectiveness of our alignment mechanism, demonstrating precise identification of query-relevant segments and bridging the semantic gap.",
+  "gid": 450,
+  "theme": "legal information retrieval"
+ }
+}

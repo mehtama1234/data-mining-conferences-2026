@@ -1,0 +1,11 @@
+{
+ "batch": "b062",
+ "paper": {
+  "id": "802d2551e93ea47b5f7975185fc23c226161e040",
+  "venue": "WSDM 2026",
+  "title": "On Causal and Anticausal LLM-based Data Synthesis",
+  "abstract": "While Large Language Models (LLMs) have been increasingly used to generate synthetic data for various downstream tasks, researchers overlook the causal direction in the data synthesis process. A natural causal direction should contain two steps: diverse raw data are generated first, and subsequently annotated for downstream tasks. However, most LLM-based methods adopt an anticausal direction: embedding label information in the prompt to force LLMs to generate targeted data. This reversal raises a critical question: How does the direction of data synthesis impact the quality and utility of the synthetic data? In this work, we empirically study the impact of causal and anticausal data synthesis. To do so, we first design simple yet effective prompting strategies to control the causal direction of LLM-based data synthesis. Using GPT-5 as the data generator, we construct synthetic datasets for three distinct machine learning tasks. We then fine-tune BERT-base and LLaMA-3.2-1B models on these datasets and evaluate them against human-curated benchmarks. Our experiments reveal consistent patterns: (1) models trained on anticausal synthetic data suffer larger performance drops across all tasks and model families --- Accuracy declines range from 13.7%-59.1% for BERT and 4.9%-54.3% for LLaMA, and (2) distributional analysis shows that anticausal synthetic datasets deviate further from hu",
+  "gid": 931,
+  "theme": "LLM data synthesis"
+ }
+}

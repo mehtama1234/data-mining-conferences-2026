@@ -1,0 +1,11 @@
+{
+ "batch": "b065",
+ "paper": {
+  "id": "e910fccf441d7eff3781315f1de606d60cc80f8b",
+  "venue": "WSDM 2026",
+  "title": "RankID: A Unified Semantic ID Learned through Multi-Stage Semantic Alignment of Multimodal Features",
+  "abstract": "Semantic ID (SID) serves as a key foundation for various generative recommendation systems. To enable the unified generation of SIDs across heterogeneous multimodal features, we propose SEALNet (SEmantic ALignment NETwork), a general framework that learns to align and integrate the semantics of diverse input features. Building upon this framework, we develop a family of RankIDs that are task-specific SIDs tailored for large-scale recommendation systems. Two representative implementations are presented: RankID-Graph, which enriches a content understanding feature with creator-level co-engagement information, and RankID-LLM, which integrates the semantic information from multiple features into a single SID.",
+  "gid": 981,
+  "theme": "Semantic embedding recommendation"
+ }
+}

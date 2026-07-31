@@ -1,0 +1,11 @@
+{
+ "batch": "b024",
+ "paper": {
+  "id": "6cc96e36b6ca471dccdd65fece8cd19ace5c4f70",
+  "venue": "WWW 2026",
+  "title": "Lang2Plan: An LLM-Powered Multi-Agent System for Building Layout Planning",
+  "abstract": "Natural language\u2013guided layout design has recently attracted increasing attention, as it can improve design efficiency and lower the expertise barrier for non-professional users. Recent methods leverage LLMs to translate user instructions into layout results. While effective in principle, these methods impose strict requirements on the quality and formality of natural language input, lack support for user intervention during the design process, and present results only in 2D or fixed-view layouts without immersive visualization. To address these limitations, we present a building layout planning system (Lang2Plan ) that integrates multi-agent reasoning, interactive 3D editing, and controllable generative rendering. Specifically, an LLM-powered multi-agent framework decomposes natural language instructions into simpler sub-tasks, enabling robust and fault-tolerant layout generation from imperfect input. Second, we introduce a web-based 3D interface that allows users to interactively adjust intermediate design before final rendering, significantly improving controllability and user satisfaction. Third, we employ ControlNet-guided diffusion models to generate realistic 3D renderings from user-selected viewpoints, going beyond conventional fixed 2D plans. We implement these components into a unified system that transforms natural language descriptions into high-quality 3D layout pl",
+  "gid": 366,
+  "theme": "LLM-powered layout design"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "batch": "b020",
+ "paper": {
+  "id": "57fec871b1002d9bef81e2e1ee4efa2b39e4ba5f",
+  "venue": "WWW 2026",
+  "title": "FalconScope: Effective and Efficient Detection of Hidden Web Interfaces in IoT Devices",
+  "abstract": "Hidden web interfaces in Internet of Things (IoT) devices pose significant security threats by unintentionally exposing inadequately protected functionalities, enabling attackers to bypass authentication, alter configurations, leak sensitive data, or execute arbitrary commands. Despite recent advancements, current detection approaches suffer from two critical challenges: 1) inadequately model the complex internal routing mechanisms of IoT firmware, leading to incomplete interface enumeration and substantial false negatives; and 2) inefficiently generate probing requests and verify unauthorized access due to limited semantic understanding of interface communication protocols. To overcome these challenges, we introduce FalconScope, a novel system combining precise firmware routing modeling and Large Language Model (LLM)-driven semantic analysis to detect hidden web interfaces effectively and efficiently. FalconScope achieves this through two key innovations: 1) a static analysis technique precisely reconstructs the device's internal routing mechanisms, enabling comprehensive enumeration of Routing Unique Identifiers and their corresponding backend handlers; and 2) an LLM-powered semantic engine automatically generates syntactically and semantically valid HTTP requests to efficiently trigger backend logic, coupled with semantic validation of device responses to accurately confirm ",
+  "gid": 304,
+  "theme": "IoT security detection"
+ }
+}

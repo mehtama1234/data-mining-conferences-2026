@@ -1,0 +1,11 @@
+{
+ "batch": "b036",
+ "paper": {
+  "id": "a376870ab331e7c2ac33d073300ef3e7fde8b7e7",
+  "venue": "WWW 2026",
+  "title": "DualMind: Towards Understanding Cognitive-Affective Cascades in Public Opinion Dissemination via Multi-Agent Simulation",
+  "abstract": "Forecasting public opinion during PR crises is challenging, as existing frameworks often overlook the interaction between transient affective responses and persistent cognitive beliefs. To address this, we propose DualMind, an LLM-driven multi-agent platform designed to model this dual-component interplay. We evaluate the system on 15 real-world crises occurring post-August 2024 using social media data as ground truth. Empirical results demonstrate that DualMind faithfully reconstructs opinion trajectories, significantly outperforming state-of-the-art baselines. This work offers a high-fidelity tool for proactive crisis management. Code is available at https://github.com/EonHao/DualMind.",
+  "gid": 544,
+  "theme": "Opinion dynamics"
+ }
+}

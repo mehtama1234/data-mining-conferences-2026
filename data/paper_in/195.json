@@ -1,0 +1,11 @@
+{
+ "batch": "b013",
+ "paper": {
+  "id": "391a8dfff327cff6f2b07c599acfb69b198afd9a",
+  "venue": "WWW 2026",
+  "title": "A Long-term Value Prediction Framework In Video Ranking",
+  "abstract": "Accurately modeling long-term value (LTV) at the ranking stage of short-video recommendation systems remains a practical challenge. Though production systems and recent research have begun exploring delayed feedback and extended user engagement, modeling LTV with fine-grained attribution and robust positional normalization for billion-scale platforms is underdeveloped. In this work, we present a practical ranking-stage LTV framework that systematically addresses three core challenges: position bias, attribution ambiguity, and temporal limitations. First, to address position bias in sequential video feeds, we introduce a Position-aware Debias Quantile (PDQ) module that normalizes engagement signals using quantile-based distributions, enabling position-robust LTV estimation without requiring architectural changes. Second, we propose a multi-dimensional attribution module that learns continuous strengths across contextual, behavioral, and content-related signals, moving beyond static rule sets to capture nuanced influences among videos. Explicit noise filtering is incorporated via a customized hybrid loss, improving causal clarity in LTV attribution. Third, our cross-temporal author modeling module constructs censoring-aware, day-level long-term value targets, capturing creator-driven re-engagement over extended time windows. While our framework currently focuses on the author dim",
+  "gid": 195,
+  "theme": "Video ranking LTV"
+ }
+}

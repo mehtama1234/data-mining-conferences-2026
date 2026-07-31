@@ -1,0 +1,565 @@
+{
+ "key": "knowledge-graphs",
+ "theme": "Knowledge Graphs",
+ "n_papers": 123,
+ "pct": 6.3,
+ "by_venue": {
+  "WWW 2026": 72,
+  "WSDM 2026": 14,
+  "SIGIR 2026": 29,
+  "KDD 2026": 8
+ },
+ "theme_examples": [
+  {
+   "title": "Diversifying Differentiable Graph Retrieval with Topic-Adaptive Multi-Intent Learning",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "Conditional Information Extraction with Diffusion Model on Fact-Condition Star Graph",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "Language Model Representations for Efficient Few-Shot Tabular Classification",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "(wt) GC-DPG: Graph-Constrained Dual-Phase Generation for Safe and Verifiable Chinese Medical Question Answering",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "Better Negatives, Better Predictions: Negative Sample Selection Strategies for Enhancing Biomedical KG Edge Classification",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "Unveiling and Mitigating Untargeted Poisoning Attacks on Federated Knowledge Graph Embedding",
+   "venue": "WWW 2026"
+  }
+ ],
+ "representative_papers": [
+  {
+   "title": "Multi-Modal Enhanced Graph Transfer Learning for Digital Finance Fraud Detection",
+   "venue": "WWW 2026",
+   "problem": "Blockchain fraud detection struggles with multi-modal dynamics, sparse graphs, and distributional shifts across networks",
+   "approach": "Multi-modal transfer learning framework integrating graph, temporal, and textual modalities for fraud knowledge transfer",
+   "contribution": "MOE-GTL enables robust fraud detection across blockchain networks leveraging multi-modal dependencies",
+   "primary_theme": "fraud detection transfer",
+   "methods": [
+    "transfer learning",
+    "graph learning",
+    "multi-modal"
+   ]
+  },
+  {
+   "title": "How Graphs Can Help You Stay Informed in an Evolving World",
+   "venue": "WWW 2026",
+   "problem": "Inefficient knowledge propagation and updates in crawling dynamic data sources",
+   "approach": "Graph-structured models with reinforcement learning-based crawling algorithm",
+   "contribution": "RL-based approach outperforms traditional baselines on dynamic graph crawling tasks",
+   "primary_theme": "Dynamic graph crawling",
+   "methods": [
+    "graph",
+    "reinforcement-learning",
+    "crawling"
+   ]
+  },
+  {
+   "title": "RPO-RAG: Aligning Small LLMs with Relation-aware Preference Optimization for Knowledge Graph Question Answering",
+   "venue": "WWW 2026",
+   "problem": "KG-based RAG weakly aligned with reasoning objectives; limited to large LLMs",
+   "approach": "Relation-aware preference optimization with semantic path sampling and answer-centered prompting",
+   "contribution": "RPO-RAG enables small-LLM KG question-answering with improved knowledge leveraging",
+   "primary_theme": "Small LLM knowledge graphs",
+   "methods": [
+    "rag",
+    "preference-optimization",
+    "graph-reasoning"
+   ]
+  },
+  {
+   "title": "AID: Hypothesis-Grounded Probing for Conversational Recommendation",
+   "venue": "WWW 2026",
+   "problem": "Users lack visibility into system knowledge, forming ambiguous queries with multiple interpretations",
+   "approach": "Multi-agent framework with KG reasoning over hypothesis subgraphs for targeted clarification",
+   "contribution": "AID treats clarification as structured decision, probing only when interpretations remain plausible",
+   "primary_theme": "Conversational recommendation",
+   "methods": [
+    "knowledge-graph",
+    "multi-agent",
+    "hypothesis-reasoning"
+   ]
+  },
+  {
+   "title": "Large Language Models-Enhanced Semantic Diffusion for User-Centric Recommendation",
+   "venue": "WWW 2026",
+   "problem": "Knowledge graphs lack user-side structural information due to scarcity and improper granularity for recommendations",
+   "approach": "LLMs infer user interests; diffusion models generate contrastive views with semantic transitions",
+   "contribution": "SEDIRec integrates user-side and item-side information via LLM-diffusion for sparse user recommendations",
+   "primary_theme": "Knowledge-aware recommendation",
+   "methods": [
+    "llm",
+    "diffusion",
+    "contrastive_learning",
+    "graph"
+   ]
+  },
+  {
+   "title": "The LOPE Method: Improving Consistent Property Extraction for Scientific Knowledge Graphs Using LLMs",
+   "venue": "WWW 2026",
+   "problem": "Automated scientific knowledge graph creation lacks semantic depth and consistency of manual approaches",
+   "approach": "LLM-driven property extraction with semantically optimized prompting and vector-based ontology matching",
+   "contribution": "Improves semantic consistency of extracted properties enabling better downstream scientific analysis",
+   "primary_theme": "Knowledge graph extraction",
+   "methods": [
+    "llm",
+    "ontology-matching",
+    "knowledge-graphs"
+   ]
+  },
+  {
+   "title": "Conditional Diffusion Guided Knowledge Transfer for Multi-Domain Knowledge Graph Completion",
+   "venue": "WWW 2026",
+   "problem": "Multi-domain knowledge graph completion loses domain-specific information when enforcing consistency constraints",
+   "approach": "Generation-based paradigm using conditional diffusion models guided by support knowledge graphs",
+   "contribution": "Generates domain-general embeddings while preserving domain-specific information across KGs",
+   "primary_theme": "Knowledge graph completion",
+   "methods": [
+    "diffusion-models",
+    "knowledge-graphs",
+    "conditional-generation"
+   ]
+  },
+  {
+   "title": "When to Trust: A Causality-Aware Calibration Framework for Accurate Knowledge Graph Retrieval-Augmented Generation",
+   "venue": "WWW 2026",
+   "problem": "KG-RAG models produce overconfident predictions with incomplete or unreliable retrieved subgraphs",
+   "approach": "Causality-aware calibration with counterfactual prompting and panel-based re-scoring mechanism",
+   "contribution": "Improves prediction calibration while maintaining accuracy via intervention-aware uncertainty estimation",
+   "primary_theme": "Knowledge graph RAG",
+   "methods": [
+    "causal-analysis",
+    "retrieval-augmented-generation",
+    "calibration"
+   ]
+  },
+  {
+   "title": "MiniAMIE: Quick and Dirty Rule Mining on Knowledge Graphs",
+   "venue": "WWW 2026",
+   "problem": "Efficient rule mining on large knowledge graphs is resource and time-consuming",
+   "approach": "Restricted language bias with fast approximations for key rule metrics",
+   "contribution": "Substantial speed-up while maintaining rule quality on KG rule mining",
+   "primary_theme": "Knowledge graph mining",
+   "methods": [
+    "rule-mining",
+    "approximation",
+    "graph"
+   ]
+  },
+  {
+   "title": "CausalSKyHop: Knowledge-Aware Causal Explanation of Dynamic GNNs via Higher-Order Semantic Reasoning",
+   "venue": "WWW 2026",
+   "problem": "Dynamic GNNs cannot explain predictions grounded in structured knowledge or higher-order patterns",
+   "approach": "Semantic knowledge-aware framework using higher-order structural causal models and contrastive learning",
+   "contribution": "Interpretable causal subgraphs capturing dynamic flow of knowledge through evolving semantic contexts",
+   "primary_theme": "Explainable dynamic graph",
+   "methods": [
+    "gnn",
+    "causal_inference",
+    "knowledge_graph"
+   ]
+  },
+  {
+   "title": "Relation-Aware Multimodal Analogical Reasoning with Modality Fingerprints and Adaptive Gating",
+   "venue": "WWW 2026",
+   "problem": "Multimodal KG analogical reasoning lacks modal-relevance awareness and consistency enforcement across modalities",
+   "approach": "Dual-path framework with modality fingerprints and adaptive gating to contextualize multimodal fusion",
+   "contribution": "RMAR with MCNetAnalogy dataset improves relation induction and tail completion for abstract entities",
+   "primary_theme": "Multimodal knowledge graphs",
+   "methods": [
+    "graph-embedding",
+    "multimodal",
+    "transformer"
+   ]
+  },
+  {
+   "title": "Towards Foundation Models for MMKG: Multi-Task Inductive Generalization via Task-Aware Routing",
+   "venue": "WWW 2026",
+   "problem": "Existing MMKG methods lack universality and transferability across diverse tasks and graphs.",
+   "approach": "Task-aware routing network dynamically integrates multimodal representations for multiple tasks.",
+   "contribution": "MtaIMKG unifies multi-task inductive inference for unseen MMKGs with heterogeneity handling.",
+   "primary_theme": "multimodal knowledge graphs",
+   "methods": [
+    "routing",
+    "multi-task",
+    "multimodal"
+   ]
+  },
+  {
+   "title": "KEPo: Knowledge Evolution Poison on Graph-based Retrieval-Augmented Generation",
+   "venue": "WWW 2026",
+   "problem": "GraphRAG systems vulnerable to poisoning attacks that manipulate knowledge graphs and LLM outputs",
+   "approach": "Knowledge evolution poison attacks forging event backgrounds and interconnected knowledge evolution paths",
+   "contribution": "KEPo exposes latent GraphRAG security vulnerabilities through poisoned KG manipulation",
+   "primary_theme": "GraphRAG adversarial robustness",
+   "methods": [
+    "attack",
+    "retrieval-augmented-generation",
+    "knowledge-graph"
+   ]
+  },
+  {
+   "title": "Multi-Granularity Multi-Modal Knowledge Graph Representation Learning via Subgraph-Aware Adaptive Fusion and Hierarchical Relation Modeling",
+   "venue": "WWW 2026",
+   "problem": "Static fusion and insufficient relational semantics in multimodal knowledge graphs",
+   "approach": "Adaptive multi-granularity fusion via subgraph-aware attention and hierarchical relation modeling",
+   "contribution": "Improved MMKG representation through structure-aware fusion and relation-aware attention",
+   "primary_theme": "multimodal knowledge graphs",
+   "methods": [
+    "graph attention",
+    "multimodal fusion",
+    "knowledge graphs"
+   ]
+  },
+  {
+   "title": "WPIS: From In-the-Wild Web Images to Physics-Aware 3D Scene Graphs for Physical Reasoning",
+   "venue": "WWW 2026",
+   "problem": "Single-view web images lack physics-aware functional knowledge for lab agents",
+   "approach": "Physics-aware 3D scene graphs from web imagery with HOI subgraphs and liquid states",
+   "contribution": "40% improved LLM reasoning on feasibility and safety via structured scene representation",
+   "primary_theme": "scene understanding reasoning",
+   "methods": [
+    "scene graphs",
+    "physics reasoning",
+    "vision language"
+   ]
+  },
+  {
+   "title": "A Simplex Approach to Synthetic Knowledge Graph Generation",
+   "venue": "WWW 2026",
+   "problem": "Knowledge graph benchmarking lacks large realistic synthetic graphs with higher-order structural properties",
+   "approach": "Simplex-based generator analyzing d-dimensional simplices in input graphs to generate synthetic graphs",
+   "contribution": "SimplexKG outperforms baselines in structural fidelity and triple-store benchmarking across datasets",
+   "primary_theme": "knowledge graph generation",
+   "methods": [
+    "simplex",
+    "synthetic data",
+    "graph structure"
+   ]
+  },
+  {
+   "title": "HyperRAG: Reasoning N-ary Facts over Hypergraphs for Retrieval Augmented Generation",
+   "venue": "WWW 2026",
+   "problem": "Binary knowledge graphs fragment complex n-ary facts; longer reasoning paths increase drift",
+   "approach": "HyperRAG: n-ary hypergraph retrieval with structural-semantic reasoning and LLM memory",
+   "contribution": "2.95% MRR and 1.23% Hits@10 gains on multi-hop QA via adaptive hypergraph traversal",
+   "primary_theme": "hypergraph retrieval augmentation",
+   "methods": [
+    "rag",
+    "hypergraph",
+    "llm"
+   ]
+  },
+  {
+   "title": "S-Path-RAG: Semantic-Aware Shortest-Path Retrieval Augmented Generation for Multi-Hop Knowledge Graph Question Answering",
+   "venue": "WWW 2026",
+   "problem": "Multi-hop KGQA struggles with token efficiency and semantic path selection in large knowledge graphs",
+   "approach": "Semantic-aware shortest-path RAG using hybrid weighted k-shortest paths with neural-Socratic dialogue loop",
+   "contribution": "S-Path-RAG achieves token-efficient topology-aware retrieval with interpretable path traces for multi-hop QA",
+   "primary_theme": "Knowledge graph QA",
+   "methods": [
+    "rag",
+    "knowledge-graph",
+    "contrastive",
+    "dialogue"
+   ]
+  },
+  {
+   "title": "A Framework for Continual Knowledge Graph Embedding",
+   "venue": "WWW 2026",
+   "problem": "Knowledge graph embeddings need updating as new facts arrive without forgetting old knowledge",
+   "approach": "Continual learning extension to PyKEEN with informed initialization and forgetting metrics",
+   "contribution": "Framework enables continual KGE updates for dynamic graphs with knowledge acquisition tracking",
+   "primary_theme": "Knowledge graph learning",
+   "methods": [
+    "knowledge-graphs",
+    "continual-learning",
+    "embeddings"
+   ]
+  },
+  {
+   "title": "DSTAG: A Semantic Tag-Enhanced Dual-Graph Convolutional Network for Temporal Knowledge Graph Completion",
+   "venue": "WWW 2026",
+   "problem": "TKGC methods overlook semantic information and higher-order interactions in evolving knowledge graphs",
+   "approach": "Dual-graph CNN with LLM-generated semantic multi-tags and relation-entity interaction modeling",
+   "contribution": "Enhanced TKGC via semantic enrichment and higher-order dependency capture in temporal graphs",
+   "primary_theme": "Knowledge graph completion",
+   "methods": [
+    "gnn",
+    "llm",
+    "knowledge-graph"
+   ]
+  },
+  {
+   "title": "MetriKG: Profiling Static and Evolving Knowledge Graphs",
+   "venue": "WWW 2026",
+   "problem": "Schema-level dynamics in evolving knowledge graphs underexplored",
+   "approach": "Web app computing multi-dimensional metrics at data and schema levels",
+   "contribution": "Systematic profiling and temporal monitoring of KG structural and semantic properties",
+   "primary_theme": "Knowledge graph profiling",
+   "methods": [
+    "metric-computation",
+    "rdf",
+    "sparql"
+   ]
+  },
+  {
+   "title": "VL-KGE: Vision\u2013Language Models Meet Knowledge Graph Embeddings",
+   "venue": "WWW 2026",
+   "problem": "Multimodal KGE constrained by weak cross-modal alignment and isolation of modalities",
+   "approach": "Integrate vision-language models for cross-modal alignment with structured relational modeling",
+   "contribution": "VL-KGE improves link prediction over unimodal/multimodal baselines on diverse KGs",
+   "primary_theme": "Knowledge graph embeddings",
+   "methods": [
+    "vision-language-models",
+    "knowledge-graphs",
+    "embedding-learning"
+   ]
+  },
+  {
+   "title": "Unstructured to Structured: Building Knowledge Graphs from Documents for Web Applications",
+   "venue": "WWW 2026",
+   "problem": "Extracting structured knowledge from unstructured web content for semantic search and reasoning",
+   "approach": "Tutorial on LLM-assisted knowledge engineering with hybrid neuro-symbolic reasoning pipelines",
+   "contribution": "Comprehensive overview of document-to-KG methods addressing entities/relations/events/spatio-temporal/metadata extraction",
+   "primary_theme": "Knowledge graph construction",
+   "methods": [
+    "llm",
+    "information-extraction",
+    "knowledge-graph"
+   ]
+  },
+  {
+   "title": "Grasp: Refining Semantic Graphs into Purified Knowledge for Cross-Modal Communication",
+   "venue": "WWW 2026",
+   "problem": "Semantic communication fails under noise and missing modalities due to surface-level feature optimization",
+   "approach": "Knowledge-centric framework with GNN-based three-way disentanglement and shared vector-quantization codebook",
+   "contribution": "Robust cross-modal semantic reconstruction under low SNR and missing modalities via knowledge purification",
+   "primary_theme": "semantic communication",
+   "methods": [
+    "gnn",
+    "contrastive",
+    "mutual-information"
+   ]
+  },
+  {
+   "title": "CompTox Ontology: Leveraging Knowledge Graphs for PFAS Monitoring and Decision-Making",
+   "venue": "WWW 2026",
+   "problem": "Lack of semantically structured representations for PFAS contaminants hinders integrated monitoring and analysis",
+   "approach": "Expert-guided knowledge graph ontology with KNARM methodology organizing PFAS hierarchically with physicochemical properties",
+   "contribution": "CompTox ontology enabling PFAS data integration with authoritative identifiers and standardized environmental fate annotations",
+   "primary_theme": "Knowledge graph chemistry",
+   "methods": [
+    "ontology",
+    "knowledge graph",
+    "semantic"
+   ]
+  },
+  {
+   "title": "Class-Domain Incremental Learning on Graphs via Disentangled Knowledge Distillation",
+   "venue": "WWW 2026",
+   "problem": "Graph models struggle with simultaneous class and domain shifts in evolving data",
+   "approach": "Disentangle representations into domain-invariant and domain-specific factors via distillation",
+   "contribution": "Outperforms 11 baselines; mitigates catastrophic forgetting on incremental graphs",
+   "primary_theme": "Graph incremental learning",
+   "methods": [
+    "gnn",
+    "distillation",
+    "continual-learning",
+    "representation"
+   ]
+  },
+  {
+   "title": "Diffusion-based Kriging Model with Graph-enhanced Attention",
+   "venue": "WWW 2026",
+   "problem": "Spatio-temporal kriging on sparse graphs limited by static structures and iterative GCN frameworks",
+   "approach": "Diffusion-based kriging with graph-enhanced attention that learns dynamic graph structures iteratively",
+   "contribution": "DKM-GA combines graph knowledge with node similarity for progressive value refinement and better kriging",
+   "primary_theme": "spatio-temporal kriging",
+   "methods": [
+    "diffusion models",
+    "graph attention",
+    "graph neural networks"
+   ]
+  },
+  {
+   "title": "Knowledge Graph Editing Model for Enhancing Recommendation Systems",
+   "venue": "WWW 2026",
+   "problem": "KGs contain noise, redundancy, and task-irrelevant associations degrading recommendation accuracy",
+   "approach": "Diffusion-based filtering and attention-based task-specific triplet reconstruction for KG refinement",
+   "contribution": "Framework produces cleaner KGs and better user-item representations outperforming strong baselines",
+   "primary_theme": "knowledge graph recommendation",
+   "methods": [
+    "diffusion models",
+    "knowledge graphs",
+    "recommendation"
+   ]
+  },
+  {
+   "title": "A Unified Framework for Context-Aware and Relation-Aware Graph Retrieval-Augmented Generation",
+   "venue": "WWW 2026",
+   "problem": "Graph RAG methods separate entity and chunk retrieval, missing emergent knowledge from synthesis",
+   "approach": "Hierarchical graph RAG with hybrid nodes, iterative clustering, LLM summaries, multi-level retrieval",
+   "contribution": "HyGRAG synthesizes contextual and relational information, enabling efficient dynamic knowledge updates",
+   "primary_theme": "Graph RAG",
+   "methods": [
+    "hierarchical graphs",
+    "clustering",
+    "retrieval"
+   ]
+  },
+  {
+   "title": "The First Workshop on Graph-enhanced LLMs for trustwOrthy Web data management (GLOW'26)",
+   "venue": "WWW 2026",
+   "problem": "Workshop paper introducing challenges in integrating LLMs with graph representations for trustworthy Web data management",
+   "approach": "Graph-enhanced LLMs combining knowledge graphs/property graphs with LLM reasoning for structured data interpretation",
+   "contribution": "Framework for hybrid neural-symbolic approaches ensuring validation, transparency, reliability in Web-scale systems",
+   "primary_theme": "Graph-LLM integration",
+   "methods": [
+    "knowledge-graphs",
+    "llm",
+    "web-data"
+   ]
+  },
+  {
+   "title": "Causality with Knowledge Graphs: Semantics and Inference",
+   "venue": "WSDM 2026",
+   "problem": "Causal frameworks designed for flat data fail on knowledge graphs with semantic unawareness and data incompleteness",
+   "approach": "Semantics-aware frameworks integrating causal reasoning with ontological semantics and logical entailment over KGs",
+   "contribution": "End-to-end pipeline CauseKG/SemMatch/HyKG-CF/BaLu enabling causal discovery, inference, counterfactual prediction on KGs",
+   "primary_theme": "Causal knowledge graphs",
+   "methods": [
+    "knowledge-graphs",
+    "causal-inference",
+    "semantics"
+   ]
+  },
+  {
+   "title": "DagFC: Dependency-Aware Fact-Checking via Claim-Constructed Knowledge Graphs and Large Language Models",
+   "venue": "WSDM 2026",
+   "problem": "Complex claim verification neglects dependencies between sub-claims, reducing accuracy.",
+   "approach": "Construct KGs from claims to guide decomposition and build dependent verification sub-tasks.",
+   "contribution": "Dependency-aware task scheduling captures sub-claim relationships for improved fact-checking.",
+   "primary_theme": "fact-checking verification",
+   "methods": [
+    "llm",
+    "knowledge-graph",
+    "multi-hop"
+   ]
+  },
+  {
+   "title": "Conversational Entity Retrieval from a Knowledge Graph using Aggregation of Fine-grained Relevance Signals with Graph Convolutions and Self-Attention",
+   "venue": "WSDM 2026",
+   "problem": "Complex query context and KG structure challenge conversational entity retrieval from knowledge graphs.",
+   "approach": "DRAGON learns to aggregate fine-grained relevance signals via graph convolution and attention.",
+   "contribution": "Novel learning-to-rank architecture effectively scores candidate entities using sparse relevance features.",
+   "primary_theme": "conversational entity retrieval",
+   "methods": [
+    "graph-convolution",
+    "attention",
+    "learning-to-rank"
+   ]
+  },
+  {
+   "title": "DDIREC: Domain-Disentanglement on Item Representations for Cross-Domain Recommendation",
+   "venue": "WSDM 2026",
+   "problem": "Cross-domain recommendation suffers negative transfer when domain-specific meanings appear shared",
+   "approach": "Domain-disentangled item representations using heterogeneous graph neural networks and word categorization",
+   "contribution": "DDIREC reduces negative transfer by distinguishing domain-specific vs shared item semantics",
+   "primary_theme": "cross-domain recommendation",
+   "methods": [
+    "graph neural networks",
+    "domain adaptation",
+    "transfer learning",
+    "knowledge graphs"
+   ]
+  },
+  {
+   "title": "Rigorizing Retrieval-augmented Generation with Structured Knowledge Intelligence (6 Hrs)",
+   "venue": "WSDM 2026",
+   "problem": "RAG systems inadequately model heterogeneous structured knowledge and lack safety considerations",
+   "approach": "Structured perspective on RAG covering tabular, social network, and document tree designs",
+   "contribution": "Tutorial framework for structured RAGs with security attack/defense strategies across knowledge types",
+   "primary_theme": "retrieval-augmented generation",
+   "methods": [
+    "rag",
+    "knowledge graphs",
+    "structured data",
+    "information retrieval"
+   ]
+  },
+  {
+   "title": "Joint Graph Learning for Robust Causal Inference over Knowledge Graphs",
+   "venue": "WSDM 2026",
+   "problem": "Causal inference over KGs challenged by missing attributes and relational interference; existing methods assume full observation",
+   "approach": "Joint graph learning with GNNs: attribute imputation as edge prediction, effect estimation with interference modeling",
+   "contribution": "BaLu framework enables robust causal inference on incomplete KGs by handling both missing attributes and relational interference",
+   "primary_theme": "causal inference graphs",
+   "methods": [
+    "gnn",
+    "causal_inference",
+    "knowledge_graphs"
+   ]
+  },
+  {
+   "title": "Web-Mined Hypothesis Generation for Financial Markets: An Autonomous Backtesting Framework",
+   "venue": "WSDM 2026",
+   "problem": "Financial hypothesis generation is slow, subjective, lacking automation for web data",
+   "approach": "Knowledge graphs, retrieval-augmented generation, backtesting with optimization",
+   "contribution": "AutoHypo-Fin autonomously generates tested trading strategies outperforming traditional methods",
+   "primary_theme": "Financial hypothesis generation",
+   "methods": [
+    "kg",
+    "rag",
+    "backtesting"
+   ]
+  },
+  {
+   "title": "A Spectral Heterogeneous Diffusion Framework for Knowledge-aware Recommendation",
+   "venue": "WSDM 2026",
+   "problem": "Knowledge graphs suffer from noisy and incomplete knowledge impacting recommendation systems",
+   "approach": "Spectral heterogeneous diffusion model capturing recommendation-oriented distribution in knowledge graphs",
+   "contribution": "Data-centric diffusion framework improves KG quality and knowledge-aware recommendation performance",
+   "primary_theme": "Knowledge-aware recommendation",
+   "methods": [
+    "diffusion models",
+    "knowledge graphs",
+    "denoising"
+   ]
+  },
+  {
+   "title": "GCA-KBQA: A Step-Wise Logical Form Generation Approach for KBQA with Knowledge-Assisted Calibration",
+   "venue": "SIGIR 2026",
+   "problem": "LLM-based KBQA struggles with complete logical form generation due to complexity and non-executability",
+   "approach": "Step-wise generation with hop-wise decomposition and knowledge-assisted calibration for LFs",
+   "contribution": "GCA-KBQA framework constructs complete logical forms reducing non-executability in knowledge-based QA",
+   "primary_theme": "KBQA semantic parsing",
+   "methods": [
+    "semantic parsing",
+    "llm",
+    "knowledge graphs"
+   ]
+  },
+  {
+   "title": "Corpus-Centric Learning for Zero-Shot Table Retrieval",
+   "venue": "SIGIR 2026",
+   "problem": "Table retrieval in zero-shot settings lacks supervised QA data and struggles with structure-semantics gap and implicit queries.",
+   "approach": "Unified hybrid representation integrating table structure with knowledge graphs using hybrid neural-symbolic retrieval combining dense and symbolic matching.",
+   "contribution": "Zero-shot table retrieval framework achieving high precision and recall without supervised QA data.",
+   "primary_theme": "Zero-shot table retrieval",
+   "methods": [
+    "neural-symbolic",
+    "hybrid-retrieval",
+    "knowledge-graph"
+   ]
+  }
+ ]
+}

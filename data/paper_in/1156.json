@@ -1,0 +1,11 @@
+{
+ "batch": "b077",
+ "paper": {
+  "id": "10.1145/3805712.3808558",
+  "venue": "SIGIR 2026",
+  "title": "Where Relevance Emerges: A Layer-Wise Study of Internal Attention for Zero-Shot Re-Ranking",
+  "abstract": "Zero-shot document re-ranking with Large Language Models (LLMs) has evolved from Pointwise methods to Listwise and Setwise approaches that optimize computational efficiency. Despite their success, these methods predominantly rely on generative scoring or output logits, which face bottlenecks in inference latency and result consistency. In-Context Re-ranking (ICR) has recently been proposed as an O(1) alternative method. ICR extracts internal attention signals directly, avoiding the overhead of text generation. However, existing ICR methods simply aggregate signals across all layers; layer-wise contributions and their consistency across architectures have been left unexplored. Furthermore, no unified study has compared internal attention with traditional generative and likelihood-based mechanisms across diverse ranking frameworks under consistent conditions. In this paper, we conduct an orthogonal evaluation of generation, likelihood, and internal attention mechanisms across multiple ranking frameworks. We further identify a universal ''bell-curve'' distribution of relevance signals across transformer layers, which motivates the proposed Selective-ICR strategy that reduces inference latency by 30%--50% without compromising effectiveness. Finally, evaluation on the reasoning-intensive BRIGHT benchmark shows that precisely capturing high-quality in-context attention signals fundam",
+  "gid": 1156,
+  "theme": "LLM re-ranking efficiency"
+ }
+}

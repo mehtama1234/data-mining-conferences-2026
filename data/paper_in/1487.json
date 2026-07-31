@@ -1,0 +1,11 @@
+{
+ "batch": "b099",
+ "paper": {
+  "id": "10.1145/3805712.3808652",
+  "venue": "SIGIR 2026",
+  "title": "LLM-UP: SIGIR 2026 Workshop on LLM-powered User Profiling for Search and Recommendation",
+  "abstract": "The rapid advancement of large language models (LLMs) has opened new possibilities for understanding users in search and recommendation. While traditional behavior-based or feature-driven user models rely primarily on explicit interactions or handcrafted representations, LLMs introduce a fundamentally different paradigm: LLM-powered user profiling, where user preferences, intents, and contextual attributes can be extracted, summarized, or reasoned about directly through natural language. This shift unlocks powerful new paths to achieve personalization but also raises pressing questions related to modeling fidelity, temporal dynamics, evaluation methodology, privacy, and responsible deployment. The LLM-UP workshop aims to bring together researchers and practitioners to systematize emerging progress in LLM-powered user profiling, identify open challenges, and explore opportunities for integrating such techniques into search and recommendation pipelines. The LLM-UP workshop adopts an interactive structure featuring lightning talks, panel discussions, and paper presentations to foster active engagement, cross-disciplinary dialogue, and community-driven agenda setting for this rapidly evolving field.",
+  "gid": 1487,
+  "theme": "LLM user profiling"
+ }
+}

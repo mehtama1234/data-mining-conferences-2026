@@ -1,0 +1,11 @@
+{
+ "batch": "b060",
+ "paper": {
+  "id": "41298cb1e4cf1467dbaa2df51fd916f0c0c76bb5",
+  "venue": "WSDM 2026",
+  "title": "Adaptive Continual Learning with User-Incremental Forward Compatibility for Meta-Augmented Cold-Start Recommenders",
+  "abstract": "User cold-start remains a long-standing challenge to recommendation systems due to the scarce interactions of new users. By enabling user-adaptive model customization, meta-augmented cold-start recommenders have shown significant capacity for fast adaptation to few-shot interaction records. Despite demonstrating promising generalization for new users, non-stationarity of user preference dynamics necessitates continuous model adaptation of cold-start recommenders under dynamic streaming environments. Our work focuses on User-Incremental Learning (User-IL) paradigm, specifically investigating how to effectively assimilate novel preferences of new users arriving in continual periods while preserving common preference patterns extracted for cold-start recommendation. By comparison with visual class-incremental learning, we highlight the essential necessity of forward compatibility in user-incremental learning. To this end, we propose an adaptive incremental learning approach for meta-augmented cold-start recommenders, namely IncMCR, and improve meta-knowledge evolution with dual-view forward compatibility adaptation. To combat meta-knowledge erosion, we design complementary-oriented meta-task replay with prototype-aware exemplar selection. Then, to strengthen the sensitivity of preference assimilation at each incremental retraining period, we design a novelty-sensitive meta-updater",
+  "gid": 900,
+  "theme": "continual learning recommendation"
+ }
+}

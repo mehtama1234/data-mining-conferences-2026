@@ -1,0 +1,11 @@
+{
+ "batch": "b024",
+ "paper": {
+  "id": "69cf8fcafb9b26b842636c0745f6341c8c4370cc",
+  "venue": "WWW 2026",
+  "title": "Prototype Augmentation-based Edge-end Heterogeneous Collaborative Learning",
+  "abstract": "Collaborative learning between edge servers (e.g., base stations) and end devices (e.g., drones) enables simultaneous model training in web applications through knowledge sharing. The resulting models effectively reduce service latency. However, existing approaches either assume isomorphic models on edge servers and end devices or incur substantial transmission overhead when training. Moreover, edge servers are often unable to access data from end devices on time due to long-distance constraints or strict data privacy regulations. This paper proposes a Prototype Augmentation-based Edge-end Collaborative Learning method (PAECL). It simultaneously trains heterogeneous edge and end models in the absence of data on edge servers by transmitting only augmented class-wise feature vectors (prototypes), significantly reducing communication overhead compared to sharing models, data, or logits. Specifically, on end devices, prototype-implied latent knowledge is augmented via local prototype contrast and global prototype alignment. On edge servers, prototypes are further augmented to produce bounded virtual vectors by mixing them with random noise, and the augmented prototypes are then delivered to generative models to provide data during edge model training. Through simulations and field experiments, PAECL achieves the highest accuracy for edge and end models under limited training resour",
+  "gid": 360,
+  "theme": "Edge-end collaborative learning"
+ }
+}

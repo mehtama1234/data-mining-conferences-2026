@@ -1,0 +1,11 @@
+{
+ "batch": "b014",
+ "paper": {
+  "id": "3dc0eac84804e2a7ca7a398f1afd2964dcdc35b8",
+  "venue": "WWW 2026",
+  "title": "Community-Preserving Temporal Graph Backboning via Joint Spectral Analysis of Laplacians",
+  "abstract": "The analysis of temporal networks at scale poses significant computational and energy challenges, particularly when networks exhibit high redundancy over time. Processing each snapshot independently often leads to unnecessary complexity and wasted resources. We propose a method for structure-preserving temporal graph reduction based on the joint spectral analysis of Laplacians. By performing an approximate joint diagonalization of temporal graph Laplacians, we identify a common spectral basis capturing the dominant recurrent structural patterns. Selecting only the most stable modes allows us to extract a temporal spectral backbone that preserves the main community structure while significantly reducing graph density. This approach would enable energy-efficient processing of temporal networks, supporting Green AI objectives by reducing storage, computation, and processing costs, and is broadly applicable to evolving networks in web, social, and other complex systems.",
+  "gid": 211,
+  "theme": "temporal graph reduction"
+ }
+}

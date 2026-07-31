@@ -1,0 +1,11 @@
+{
+ "batch": "b016",
+ "paper": {
+  "id": "48253c061ca22b504d5235718fd0933fdf9595dc",
+  "venue": "WWW 2026",
+  "title": "A Taxonomy-Driven Cryptographic Dependency Inventory for Post-Quantum Migration in Decentralized Systems: Triage Rules and a Worked Example",
+  "abstract": "Advances in quantum computing pressure widely deployed public- key primitives (e.g., RSA, ECDSA, (EC)DH), turning post-quantum cryptography (PQC) migration from an algorithm swap into a system deployment and interoperability challenge. Decentralized systems\u2014including blockchains and Layer-2 protocols\u2014add fric- tion via governance-driven upgrades, monetized verification, and long-lived public logs. We propose a compact migration framework: (1) a component taxonomy, (2) a cryptographic dependency inventory (CDI) schema, and (3) rule-based priority assignment (P0\u2013P3) derived directly from CDI fields. A worked example (wallet signing, node-to-node secure channels, state commitments) illustrates how a shared inventory artifact yields actionable migration priorities without new experiments. Proof-system stacks follow the same schema but are left as an optional extension beyond this extended abstract.",
+  "gid": 245,
+  "theme": "Cryptography migration"
+ }
+}

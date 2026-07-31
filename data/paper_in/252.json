@@ -1,0 +1,11 @@
+{
+ "batch": "b016",
+ "paper": {
+  "id": "492fa7e61531600816af0700c472abebd92ae8ee",
+  "venue": "WWW 2026",
+  "title": "The More You Say, the More You Risk: Ethical Concerns in Large Language Model Reasoning Frameworks",
+  "abstract": "The reasoning abilities of Large Language Models (LLMs) have been a key research focus. Various prompt-based frameworks have been proposed to enhance reasoning, including Chain-of-Thought, Self-Reflection, and Multi-Agent Debating. This paper investigates the fairness risks associated with these reasoning techniques. We evaluate multiple LLMs on several fairness and stereotype benchmarks and demonstrate that while these techniques improve reasoning capabilities, they also raise safety concerns. Our experiments show that all the aforementioned prompting frameworks can undermine model alignment, and this holds true across different languages.",
+  "gid": 252,
+  "theme": "LLM alignment safety"
+ }
+}

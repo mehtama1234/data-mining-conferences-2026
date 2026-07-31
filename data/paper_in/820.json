@@ -1,0 +1,11 @@
+{
+ "batch": "b054",
+ "paper": {
+  "id": "f4d9cafa2990e1202be8f9a7ab0ac130d95a662b",
+  "venue": "WWW 2026",
+  "title": "The 1st International Workshop on Foundations and Architectures for the Agentic Web",
+  "abstract": "The Agentic Web is emerging as billions of AI agents discover, communicate, and coordinate across the open Web, shifting from isolated models to Web-integrated entities. This workshop explores the state of the art, open challenges, and emerging research directions in the foundations and architectures of the Agentic Web. It provides a forum for researchers and practitioners to examine interoperable architectures, protocols, and standards enabling AI agents to operate as first-class Web entities. Beyond technical interoperability, it also adresses economic and societal mechanisms including reputation, governance, accountability, and large-scale coordination.",
+  "gid": 820,
+  "theme": "Agentic web foundations"
+ }
+}

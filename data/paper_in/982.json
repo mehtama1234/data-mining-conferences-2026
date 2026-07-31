@@ -1,0 +1,11 @@
+{
+ "batch": "b065",
+ "paper": {
+  "id": "e979ee6fab6bc6453d87d088dcb5460887293e5c",
+  "venue": "WSDM 2026",
+  "title": "A New Attack Surface: XAI-guided Adversarial Comment Generation with LLMs to Attack Fake News Detectors",
+  "abstract": "The swift proliferation of false information on social media presents significant risks to public confidence and the stability of democracy, which motivates the development of machine learning and deep learning-based fake news detectors. While these systems can effectively analyze news content and user interactions, they remain vulnerable to adversarial attacks. Prior research has focused mainly on modifying article text or retrieving generic user comments, leaving comment-based attack strategies underexplored. Existing comment-based attacks often rely on generating synthetic text that can be unrealistic or retrieving existing comments without strategic guidance that ignores feature importance. In this work, we introduce a novel attack surface that combines model interpretability with generative language models. Our approach uses SHAP (SHapley Additive exPlanations) to identify influential tokens driving fake or real classifications and prompts a large language model (LLM) to generate contextually credible human-like comments that utilize influential tokens. The generated comments are then appended to the article, evaluated against multiple state?of?the?art detectors (dEFEND, TextCNN, and RoBERTa), and compared against existing comment-based attacks such as MALCOM, CopyCat, and retrieval?based methods. Our XAI-guided LLM-based approach is competitive compared to existing genera",
+  "gid": 982,
+  "theme": "Adversarial fake news"
+ }
+}

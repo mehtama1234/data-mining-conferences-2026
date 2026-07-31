@@ -1,0 +1,11 @@
+{
+ "batch": "b063",
+ "paper": {
+  "id": "aea112841eb89920ab8f8013eef5d77c5fd7c75c",
+  "venue": "WSDM 2026",
+  "title": "Leveraging Retrieval-Augmented Language Models for Accurate Item/Feature Selection in Conversational Recommender Systems",
+  "abstract": "Conversational recommender systems (CRSs) aim to provide personalized item recommendations along with explanations based on the conversations with users. While advancements in language models (LMs) have facilitated CRSs, limitations remain when LMs lack sufficient knowledge about item features that are essential for accurate recommendations and appropriate explanations. To alleviate this issue, retrieval-augmented language models (RALMs) have been introduced; however, they introduce a new challenge: the inclusion of less-relevant knowledge in retrieved passages. To address this limitation, we propose a novel CRS framework, MOCHA, which enhances RALMs through a multi-stage item/feature selection with Chain-of-Thought (CoT) reasoning. Specifically, MOCHA systematically identifies relevant knowledge by first selecting the item to recommend and then selecting its features to explain; each selection is performed via CoT reasoning. Experimental results on two public CRS datasets demonstrate that MOCHA significantly improves the recommendation accuracy, and provides informative and factually-correct explanations for the recommended items.",
+  "gid": 949,
+  "theme": "Conversational recommendation"
+ }
+}

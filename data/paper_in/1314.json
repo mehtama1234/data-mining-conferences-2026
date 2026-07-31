@@ -1,0 +1,11 @@
+{
+ "batch": "b087",
+ "paper": {
+  "id": "10.1145/3805712.3809946",
+  "venue": "SIGIR 2026",
+  "title": "M-DaQ: Retrieving Samples with Multilingual Diversity and Quality for Instruction Fine-Tuning Datasets",
+  "abstract": "Multilingual instruction fine-tuning (IFT) empowers large language models to generalize across diverse linguistic and cultural contexts; however, high-quality, systematically curated multilingual IFT datasets remain scarce. To address this gap, we propose M-DaQ (Multilingual Diversity and Quality), a diversity-aware sampling framework that jointly optimizes instruction-response quality and cross-lingual semantic diversity. M-DaQ leverages a fine-tuned Quality Scoring Model alongside a maximal marginal relevance-inspired selection strategy to construct balanced, high-fidelity training data. Furthermore, we present the first systematic investigation of the Superficial Alignment Hypothesis in multilingual settings. Extensive evaluations across 18 languages demonstrate that models trained on M-DaQ-curated data achieve average win rates exceeding 60% against strong baselines on Alpaca-Eval and MT-Bench. Complementary human evaluations corroborate these gains, highlighting significant improvements in cultural relevance, contextual appropriateness, and instruction-following capability. The code are publicly released to facilitate reproducibility and future research. https://github.com/zhaocorey/M-DaQ",
+  "gid": 1314,
+  "theme": "multilingual IFT"
+ }
+}

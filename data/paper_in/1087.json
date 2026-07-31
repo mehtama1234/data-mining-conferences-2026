@@ -1,0 +1,11 @@
+{
+ "batch": "b072",
+ "paper": {
+  "id": "10.1145/3805712.3809678",
+  "venue": "SIGIR 2026",
+  "title": "Mining Informative Interests via Latent Cross Reasoning for Search Enhanced Recommendation",
+  "abstract": "Search and recommendation (S&R) are fundamental components of modern commercial platforms, enabling users to access and explore information efficiently. User behaviors in these scenarios reflect different aspects of user intent, providing an opportunity for joint modeling of S&R. However, effectively leveraging search logs to enhance recommendation remains a challenging task. Existing methods often encode S&R histories either jointly or separately; however, they tend to regard all search signals as equally informative, thereby neglecting that many search behaviors can be irrelevant or even detrimental to recommendation performance. In practice, however, search histories frequently contain noisy or outdated behaviors that may introduce spurious correlations and degrade recommendation performance. Motivated by the human decision-making process, where one first identifies recommendation intent and then selectively reasons about relevant search signals, we propose LCR-SER, a latent cross reasoning method for search-enhanced recommendation. LCR-SER first encodes the user's S&R history into a unified latent representation that captures users' global interests. It then performs iterative reasoning in the latent space to dynamically identify informative search signals that are most relevant to the recommendation. To further guide this reasoning process, we introduce contrastive learnin",
+  "gid": 1087,
+  "theme": "Search-enhanced recommendation"
+ }
+}

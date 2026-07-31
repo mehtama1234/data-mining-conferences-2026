@@ -1,0 +1,11 @@
+{
+ "batch": "b043",
+ "paper": {
+  "id": "c6f8a921883c0df73f5d87289fb05aeb5918ee7e",
+  "venue": "WWW 2026",
+  "title": "Mitigating Cumulative Privacy Risk in Continual Information Sharing: A Dynamic Stackelberg Game Approach",
+  "abstract": "Privacy leakage on Web-based platform has become a critical challenge as users continually share personal information through online social networks, health tracking platforms, and other Web services. Information recipients and third-party can progressively aggregate shared content across the Web, enabling increasingly accurate profiling of individuals. However, existing studies typically treat each disclosure as independent, overlooking the cumulative privacy risks that arise in continual information sharing. In addition, the subjective cognition of both users and adversaries in Web environments, where users and adversaries can dynamically adapt based on observable actions, remains underexplored. To address these challenges, we propose a dynamic Stackelberg game model for continual information sharing scenarios, where user's sequential privacy decisions are optimized to balance privacy protection and data utility. The model explicitly captures the cognitive behaviors of both the user and the adversary, allowing their subjective perceptions to shape the Stackelberg equilibrium. Building on this formulation, we develop a reinforcement learning-based algorithm to derive approximately optimal strategies for mitigating privacy leakage in the context of continual information sharing. Experiments on real-world datasets demonstrate that our method significantly reduces cumulative priv",
+  "gid": 649,
+  "theme": "Privacy in data sharing"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "batch": "b042",
+ "paper": {
+  "id": "bf13c8f0af6d244c6baedebcddc4f28e3adc981c",
+  "venue": "WWW 2026",
+  "title": "MetriKG: Profiling Static and Evolving Knowledge Graphs",
+  "abstract": "Knowledge graphs (KGs) are a foundational technology for representing and integrating information across heterogeneous domains. As some KGs evolve, understanding how their structural and semantic properties change over time is crucial for ensuring quality, consistency, and interpretability. Existing methods for KG evaluation often focus on static graphs or analyze evolution solely at the data level, leaving schema-level dynamics underexplored. To address this gap, we introduce MetriKG, a web-based application that computes a comprehensive set of metrics for both static and evolving KGs. MetriKG enables users to evaluate KGs provided as RDF files or through SPARQL endpoints, allowing for multi-dimensional analysis of aspects such as cohesion, connectivity, and inheritance depth. By supporting metric computation at both data and schema levels, MetriKG allows for systematic profiling, classification, and temporal monitoring of KGs. MetriKG is open-source and publicly available.",
+  "gid": 630,
+  "theme": "Knowledge graph profiling"
+ }
+}

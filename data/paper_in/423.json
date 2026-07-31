@@ -1,0 +1,11 @@
+{
+ "batch": "b028",
+ "paper": {
+  "id": "7da314f6d359dbb867e1eb05000ed98518f0d498",
+  "venue": "WWW 2026",
+  "title": "Towards a Responsible Web: Economic Perspectives on Fairness in Information Retrieval",
+  "abstract": "Fairness is a crucial aspect of a responsible Web, as systematic algorithms may discriminate against certain groups and harm the overall web ecosystem. To address this issue, numerous fairness-aware information retrieval (IR) models and evaluation metrics have been proposed. However, the inherent complexity of both fairness and IR systems makes it difficult to systematically summarize the progress achieved so far. This complexity calls for a more structured and novel perspective to re-examine and guide future directions in fairness-aware IR research. The field of economics has a long history of studying fairness, providing a rich theoretical and empirical foundation. Similarly, the Web ecosystem can be viewed as a specialized economic market, where a system-oriented perspective enables the integration of IR fairness into a broader and more structured framework. In this tutorial, we begin by drawing parallels between the components of IR systems and those of economic markets, illustrating how IR systems can be understood as a form of economic system. Next, we organize fairness algorithms within an economic cube, where each dimension represents a distinct fairness taxonomy: macro vs. micro, demand vs. supply, and short-term vs. long-term. Finally, we demonstrate how this economic framework can be applied to most fairness algorithms and a variety of real-world IR applications. Unl",
+  "gid": 423,
+  "theme": "Fairness in retrieval"
+ }
+}

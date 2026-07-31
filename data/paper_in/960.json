@@ -1,0 +1,11 @@
+{
+ "batch": "b064",
+ "paper": {
+  "id": "c172681dad404ef63a48621ef0a5c8a3c148fcaf",
+  "venue": "WSDM 2026",
+  "title": "Spectral Modeling of Periodic Phenomena in Scientific Data via Fourier\u2013Galerkin Representation",
+  "abstract": "Periodic phenomena are ubiquitous across various scientific domains, such as climatic cycles. However, identifying and modeling these periodic behaviors in large-scale, heterogeneous scientific datasets pose significant challenges due to the inherent complexity and variability of phase shifts and signal misalignment. In this work, we propose a Fourier\u2013Galerkin (FG) regression model that decomposes the time series into a linear trend and a periodic residual, using a FG basis for the residual. Our core model, FG-Linear, captures periodic behavior effectively by learning a linear combination of cosine and sine components, while addressing phase non-uniqueness with phase offsets for each frequency. We also introduce a deep spectral variant (FG-Deep), which incorporates a neural network to model non-linearities in the spectral features. Experimental results on the NOAA Global Summary of the Year climate dataset show that FG-Linear outperforms trend-only models and deep learning baselines, achieving the lowest test MSE. While FG-Deep provides flexibility, its performance is similar to FG-Linear on this small and regular dataset, demonstrating the efficiency and interpretability of the linear FG approach.",
+  "gid": 960,
+  "theme": "Time series modeling"
+ }
+}

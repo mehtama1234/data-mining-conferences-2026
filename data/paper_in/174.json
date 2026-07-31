@@ -1,0 +1,11 @@
+{
+ "batch": "b011",
+ "paper": {
+  "id": "31dbba1669032476a97d19b37b694fbf91e51e3a",
+  "venue": "WWW 2026",
+  "title": "FedDiG: Frequency-Guided Diffusion Diversity for Generalizable Federated Time Series Classification",
+  "abstract": "Federated domain generalization (FDG) for time-series classification (TSC) poses a critical challenge for modern intelligent web services, which rely on edge-collected time-series signals from diverse mobile applications and web devices (e.g., wearables sensors) to support decision-making. The source heterogeneity and temporal dynamics give rise to out-of-distribution (OOD) patterns, which hinder the model's ability to generalize to previously unseen users and devices. In this work, we propose Federated Generalization via Diversity Generation (FedDiG), a diffusion-based FDG framework that captures intra-client distribution shifts from a frequency-domain perspective and employs cross-frequency sampling to synthesize time-series data with diverse spectral patterns. Specifically, FedDiG first performs frequency-proxy representation learning on clients to serve as diffusion conditions. The server then aggregates client-side frequency proxies to construct a global proxy pool and applies class-wise mixup to create novel frequency features. These features guide a global diffusion model to produce diverse data, enabling the simulation of previously unseen patterns and thereby enhancing model training. Extensive experiments on four cross-domain time-series benchmarks demonstrate that FedDiG significantly outperforms state-of-the-art federated learning and FDG baselines, particularly und",
+  "gid": 174,
+  "theme": "Federated time-series"
+ }
+}

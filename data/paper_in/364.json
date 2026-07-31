@@ -1,0 +1,11 @@
+{
+ "batch": "b024",
+ "paper": {
+  "id": "6acf2262c0a7c88445b0904ba20782f0d7a1c59e",
+  "venue": "WWW 2026",
+  "title": "Decentralised Trust Layers for the Web: Towards Transparent AI-Powered Platforms",
+  "abstract": "Artificial Intelligence (AI) increasingly mediates web experiences\u2014 ranking, recommendation, advertising, and moderation\u2014yet independent verification of AI behaviour and data provenance remains rare. We present a Decentralised Trust Layer (DTL) that turns transparency from policy into protocol. DTL anchors provenance claims, binds deployed model versions to signed metadata, and produces privacy-preserving inference receipts in an append-only transparency log inspired by certificate transparency. We formalise a threat model, provide a deployable protocol suite (provenance anchoring, model lineage registry, inference transparency, and decentralised audit sampling), and specify a fully reproducible evaluation protocol. To remain faithful to what can be executed without proprietary dependencies, our measurements focus on cryptographic and logging overheads and proof verification costs; results indicate microsecond-scale per-request costs for receipt generation and logarithmic proof sizes consistent with transparency-log theory. We discuss governance, privacy, and regulatory alignment and outline how DTL can be integrated into existing web standards and platform architectures.",
+  "gid": 364,
+  "theme": "Decentralized AI transparency"
+ }
+}

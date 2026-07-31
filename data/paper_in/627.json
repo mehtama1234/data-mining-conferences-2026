@@ -1,0 +1,11 @@
+{
+ "batch": "b041",
+ "paper": {
+  "id": "bea7b8c74dcc72aec56238dc73353c428e57ef34",
+  "venue": "WWW 2026",
+  "title": "ShadowClone: Scalable Decentralized Identity with Cross-Domain Anonymity and Accountable Traceability",
+  "abstract": "Decentralized identity (DID) is a key infrastructure for Web3, granting users sovereign control over their private identity data. While existing DID systems like FADID-TT (WWW'25) realize anonymity and traceability within a single domain, the Web3 ecosystem is a multiverse of independent domains like DeFi, GameFi, and DAO. This multi-domain reality presents critical issues for current DID solutions. First, most existing solutions are built on the monolithic committee architecture, facing severe scalability bottlenecks as the committee size grows. Second, most existing solutions cannot offer strong cross-domain anonymity, where frequent cross-domain interaction inevitably exposes the user's privacy. Third, existing methods for tracing the identities of malicious users are inefficient. To address these issues, we propose ShadowClone, a DID system that offers strong scalability, cross-domain anonymity, and efficient accountable traceability. Firstly, we introduce a sharding architecture that partitions the global system into multiple independent domain committees, enhancing system scalability. Moreover, we realize strong cross-domain anonymity, a new and stronger privacy guarantee for multi-domain DID systems. We design a domain-hiding presentation protocol based on an accountable ring signature scheme. A user can prove membership in a trusted set of domains without revealing home",
+  "gid": 627,
+  "theme": "Decentralized identity"
+ }
+}

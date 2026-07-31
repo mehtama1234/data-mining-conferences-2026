@@ -1,0 +1,11 @@
+{
+ "batch": "b083",
+ "paper": {
+  "id": "10.1145/3805712.3809879",
+  "venue": "SIGIR 2026",
+  "title": "Named Entity-Driven Graph Smoothing to Enhance Pretrained Document Embeddings in Clustering Tasks",
+  "abstract": "Named Entity Recognition (NER) extracts structured semantic elements, such as persons, organizations, or biomedical concepts, that enhance document understanding. Rather than replacing pretrained document embeddings, we refine them by injecting entity-level relational information. By constructing a document graph based on named-entity similarity, we apply spectral filtering to smooth the embedding matrix, yielding entity-aware representations compatible with any clustering algorithm. This framework is model-agnostic and lightweight. Furthermore, it can distill a set of high-confidence Must-Link (ML) constraints, pairs of documents that should be assigned to the same cluster, to guide constrained clustering. Experimental results on benchmark datasets demonstrate that our approach significantly improves clustering performance, highlighting the value of entity-aware smoothing over standard pretrained representations.",
+  "gid": 1252,
+  "theme": "Entity-enhanced clustering"
+ }
+}

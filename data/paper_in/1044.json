@@ -1,0 +1,11 @@
+{
+ "batch": "b069",
+ "paper": {
+  "id": "10.1145/3805712.3809685",
+  "venue": "SIGIR 2026",
+  "title": "Multi-Perspective Driven Expected Location Preferences for Next POI Recommendations",
+  "abstract": "Next point-of-interest (POI) recommendation aims to predict users' next destinations from their mobility trajectories. Nevertheless, accurately capturing user preferences from check-in data remains challenging, as user behaviors are shaped by complex contextual factors and varying visit intentions. Despite substantial progress, existing methods still face two critical limitations. (i) They typically assume that all check-in behaviors faithfully reflect users' intrinsic preferences, overlooking behaviors driven by external contextual factors (e.g., work requirements) that misalign with users' authentic preference space, limiting the ability to understand dynamic user behavior patterns. (ii) Some of the POIs that users check in at may just be the closest available options to their expected visit intentions, rather than places they genuinely prefer. Existing methods neglect users' expected intentions, leading to inaccurate identification of users' authentic preferences. In this paper, we propose a novel next POI recommendation method (MPDC) that leverages Multi-Perspective modeling and Diffusion-based Contrastive learning. From the behavior-aware perspective, a behavior-aware graph prompt module mitigates external contextual influences via bidirectional sequence modeling and a preference filter, while capturing visit preferences. From the spatial-aware perspective, a spatial-aware",
+  "gid": 1044,
+  "theme": "POI recommendation"
+ }
+}

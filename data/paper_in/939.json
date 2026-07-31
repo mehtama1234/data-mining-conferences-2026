@@ -1,0 +1,11 @@
+{
+ "batch": "b062",
+ "paper": {
+  "id": "9007ee479fe07fc5cbb6e4d1a800d97f69c10cdf",
+  "venue": "WSDM 2026",
+  "title": "WEB&GRAPH 2026: Workshop on Web & Graphs, Responsible Intelligence, and Social Media",
+  "abstract": "Graphs are a fundamental abstraction for modeling structured and interconnected web data, encompassing hyperlinks, social networks, knowledge graphs, and user\u2013item interactions. Recent advances in graph neural networks, graph transformers, and large language models have opened up new opportunities for integrating symbolic, relational, and textual reasoning. Yet, ensuring adaptivity, interpretability, and trustworthiness in web-scale graph systems remains a grand challenge. The WEB&GRAPH 2026 (First Workshop on Web & Graphs, Responsible Intelligence, and Social Media) aims to bring together researchers and practitioners from web search, data mining, artificial intelligence, and social sciences to discuss algorithmic, theoretical, and methodological advances for reliable and human-aligned graph analytics. The workshop focuses on the algorithmic foundations and the applied aspects of graph reasoning for evolving networks, misinformation detection, provenance tracking, and human\u2013AI collaboration. By fostering interdisciplinary dialogue, WEB&GRAPH 2026 will help the next generation of intelligent, explainable, and socially aware graph-based web systems.",
+  "gid": 939,
+  "theme": "graph analytics responsible AI"
+ }
+}

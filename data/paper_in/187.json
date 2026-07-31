@@ -1,0 +1,11 @@
+{
+ "batch": "b012",
+ "paper": {
+  "id": "36ee1b7f5c33ac8a6025aabd56fe3e830f6eea44",
+  "venue": "WWW 2026",
+  "title": "Robust Graph Learning on the Web: Challenges, Methods, and Applications",
+  "abstract": "Graph learning is transforming web intelligence, powering applications from recommender systems to anomaly detection. However, most existing approaches implicitly assume ideal conditions where training and testing data are accurate, complete, and free from manipulation. In reality, web environments rarely exhibit such stability. Dynamic user behavior, incomplete or outdated content, adversarial interference, and sudden distribution shifts can all erode the reliability of even state-of-the-art models, leading to biased or unsafe outcomes. This tutorial provides a comprehensive survey of emerging strategies for robust graph learning on the web. We first present a structured taxonomy of the principal robustness threats specific to web contexts. Next, we categorize current robust graph learning approaches, spanning data-level preprocessing to model-level adaptation and generalization, and discuss representative models in detail. We then showcase real-world case studies illustrating how robustness challenges emerge and how targeted methods can mitigate them in the web system. This tutorial offers researchers, engineers, and platform developers actionable strategies to safeguard graph-based AI in dynamic, high-impact web environments.",
+  "gid": 187,
+  "theme": "Robust graph learning"
+ }
+}

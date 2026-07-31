@@ -1,0 +1,11 @@
+{
+ "batch": "b083",
+ "paper": {
+  "id": "10.1145/3805712.3809950",
+  "venue": "SIGIR 2026",
+  "title": "MuPP: Multi-Preference Padding for Sequential Recommendation",
+  "abstract": "Sequential recommendation (SR) systems aim to provide personalized suggestions by analyzing users' historical behavior. However, SR faces significant challenges due to data sparsity that arises from insufficient user interaction data. To address the sparsity in behavior sequences, existing research has applied padding techniques and developed various augmentation methods to enhance recommendation performance. Despite these improvements, SR models still face challenges from data sparsity, especially for users with highly sparse interaction histories. Recent studies have explored augmenting behavior sequences or filling padded portions with repeated identical items. However, the former approach demands high computational resources due to redundant generation of user representations, while the latter reinforces redundant item embeddings, which limits the expressiveness of user preferences and reduces representational diversity by repeatedly inserting identical items. To overcome these limitations, we propose a novel padding method called Multi-Preference Padding (MuPP). Specifically, we employ a Multi-Preference Layer to generate diverse sub-preference representations from each item in the user's sequence to fill padded sequences. By generating representations that explicitly capture items' diverse sub-preferences, our approach alleviates representational redundancy caused by repe",
+  "gid": 1250,
+  "theme": "Sequential recommendation"
+ }
+}

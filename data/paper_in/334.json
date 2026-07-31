@@ -1,0 +1,11 @@
+{
+ "batch": "b022",
+ "paper": {
+  "id": "638679e41a1621ebb3f18c89ad3de58694ccd107",
+  "venue": "WWW 2026",
+  "title": "Active Retrieval-Augmented Generation with Conflict-Fused Uncertainty Quantification",
+  "abstract": "Active retrieval-augmented generation (RAG) triggers external knowledge retrieval during generation based on model-side uncertainty signals to support knowledge-intensive, multi-hop reasoning. However, existing methods often retrieve only after producing a complete answer, failing to surface and fill information gaps in time; moreover, relying on a single internal signal as the trigger cannot adequately capture the multifaceted nature of uncertainty. We therefore propose a conflict-aware active RAG framework. We first decompose complex questions into a sequence of step-level sub-problems. At each step, we quantify local distributional uncertainty via a sliding-window peak token entropy, and estimate cross-sample consensus via the variation ratio computed over multiple Monte Carlo samples. After calibrating both signals onto a probabilistic scale, we quantify their conflict using a symmetric, bounded divergence over Bernoulli parameters, and fuse the three quantities into a single uncertainty score that gates retrieval. Experiments demonstrate the effectiveness of our framework.",
+  "gid": 334,
+  "theme": "active retrieval-augmented generation"
+ }
+}

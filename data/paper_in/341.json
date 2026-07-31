@@ -1,0 +1,11 @@
+{
+ "batch": "b022",
+ "paper": {
+  "id": "663ecc67ba9926c7a1c2980175ba8d2882be1ebd",
+  "venue": "WWW 2026",
+  "title": "All-but-one MMS Allocation for Chores",
+  "abstract": "We study the problem of fairly allocating m indivisible chores among n agents with additive cost functions. While the maximin share (MMS) is a prominent fairness criterion in theory, exact MMS allocations do not always exist. This has motivated relaxation that guarantees MMS fairness for only a subset of agents, aiming to maximize the number of satisfied agents. However, for chore allocation, guaranteeing most agents their full MMS is trivial but highly unsatisfactory, e.g., overburdening a single agent, which is undesirable in real-world platforms aiming for user retention and satisfaction. To address this, we propose a stronger and more practical notion called \u03b1-approximate all-but-one MMS (\u03b1-AMMS), which guarantees that n-1 agents receive their full MMS value, while the remaining agent receives an \u03b1-approximation. This model reflects common platform design goals, where satisfying the vast majority of users is critical, and near-fairness for the rest is acceptable. We show that there exist \u03b1-AMMS allocations, with \u03b1 = 9/8 for three agents; \u03b1 = 4/3 for four agents; and \u03b1 = (n+1)2/4n for n \u2265 5 agents.",
+  "gid": 341,
+  "theme": "fair allocation"
+ }
+}

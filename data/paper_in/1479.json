@@ -1,0 +1,11 @@
+{
+ "batch": "b098",
+ "paper": {
+  "id": "10.1145/3805712.3808650",
+  "venue": "SIGIR 2026",
+  "title": "SIGIR 2026 Workshop on eCommerce (ECOM26)",
+  "abstract": "The eCommerce search and recommendations space is a unique, dynamic domain within information retrieval (IR), characterized by multimodality and industry-driven challenges. While the basic task of fulfilling a user's information need aligns with web search, the methodologies employed are distinct. On eCommerce platforms, the data available for retrieval and ranking differs significantly, as do the success signals (e.g.\\ adding items to a cart, purchasing). The special theme of ECOM26 is User Interaction and Experience: Agentic-driven Trends. Our focus for 2026 is on fostering deeper engagement through interactive discussions, exploring crucial topics such as shifts in user interaction paradigms, and addressing emerging topics such as evaluation metrics for LLMs, multimodality, and the interplay between organic and sponsored search. With our discussion-heavy format and structured facilitation, we aim to spark conversation among all participants, beyond that of the usual interactions between presenters and audience questions.",
+  "gid": 1479,
+  "theme": "E-commerce search"
+ }
+}

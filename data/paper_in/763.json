@@ -1,0 +1,11 @@
+{
+ "batch": "b050",
+ "paper": {
+  "id": "e62d9683dc14c0598ac9ef099163bf85fed6bc1d",
+  "venue": "WWW 2026",
+  "title": "[PromptEng] Third International Workshop on Prompt Engineering for Pre-Trained Language Models",
+  "abstract": "The recent achievements and availability of Large Language Models have paved the road to a new range of applications and use-cases. Pre-trained language models are now being involved at-scale in many fields where they were previously absent.%until now absent from. More specifically, the progress made by causal generative models has opened the door to using them through textual instructions aka. prompts. Unfortunately, %the performances of these prompts are the prompt effectiveness is highly dependent on the exact phrasing used and therefore practitioners need to adopt fail-retry strategies. Based on the success of the past editions, this third international workshop on prompt engineering gathers practitioners (both from Academia and Industry) to exchange about good practices, optimizations, results, and novel paradigms about the design of efficient and safe prompts.",
+  "gid": 763,
+  "theme": "Prompt engineering"
+ }
+}

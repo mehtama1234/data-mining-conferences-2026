@@ -1,0 +1,11 @@
+{
+ "batch": "b065",
+ "paper": {
+  "id": "dff34bf6a175a4c8c0bca87efa9dda0ecbc78a3d",
+  "venue": "WSDM 2026",
+  "title": "SoftHist: Teaching Graph Injection Attackers to Camouflage with Memory",
+  "abstract": "Graph Neural Networks (GNNs) have achieved notable success in a wide range of applications. However, their vulnerability to adversarial attacks, particularly graph injection attacks (GIAs), raises serious concerns for their deployment in security-sensitive domains. Existing GIA methods, despite their demonstrated effectiveness, face several inherent limitations. They typically require training surrogate models to approximate the victim model's behavior, which may lead to performance degradation when the surrogate mismatches the target model. Furthermore, the discrete nature of graph data poses challenges for generating effective adversarial features, often resulting in suboptimal solutions. Most critically, these methods show markedly reduced effectiveness when deployed against defended GNN models, limiting real-world applicability. To address these challenges, we introduce SoftHist, a novel gradient-free reinforcement learning framework for black-box graph injection attacks. Our approach incorporates a softened embedding mechanism to avoid suboptimal feature generation, ensuring stable and stealthy node injection. Moreover, we design a topology-aware edge sampler and a defense-aware policy learner with adaptive history reuse optimized for misclassification maximization. These innovations collectively balance attack effectiveness, stealthiness, and robustness against defensive ",
+  "gid": 978,
+  "theme": "Adversarial graph attacks"
+ }
+}

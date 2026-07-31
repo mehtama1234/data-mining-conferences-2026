@@ -1,0 +1,11 @@
+{
+ "batch": "b090",
+ "paper": {
+  "id": "10.1145/3805712.3808470",
+  "venue": "SIGIR 2026",
+  "title": "Effective Offline LLM and DNN based Matching, Filtering and Ranking for Search Ads Retrieval in E-Commerce",
+  "abstract": "For search Ads retrieval in e-Commerce, when a customer inputs a query, from tens of millions of Ads products, the system needs to quickly retrieve a limited number of candidates that can not only meet the customer's search intension but also have high conversion probability. This constructs challenges for both retrieval efficiency and retrieval quality on the perspective of relevance and engagement. To alleviate these challenges, traditional solutions usually adopt a cascading architecture including the recall, pre-ranking, ranking and re-ranking stages. These methods are helpful, however, due to the hard limit of online customer request processing latency, only a small ratio of relevant candidates can be retrieved and the quality of pre-ranking is limited. Different from the online cascading architecture, we propose an effective offline-based solution: for each query, we first use multi-path recall, such as BERT-based embedding to retrieve a much larger number of candidates. Then, a carefully designed LLM-based relevance model is used to filter out the irrelevant candidates. Finally, we use powerful DNN models to rank the left candidates, and only a small number of best candidates are passed to the online system for real-time usage. In the online system, we keep a single ranking stage and use the most powerful models only. Compared to the online cascading architecture, our pr",
+  "gid": 1358,
+  "theme": "Ads retrieval pipeline"
+ }
+}

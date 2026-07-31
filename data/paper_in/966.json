@@ -1,0 +1,11 @@
+{
+ "batch": "b064",
+ "paper": {
+  "id": "d03a0d4bd663666efa8233385b1e111744ab452c",
+  "venue": "WSDM 2026",
+  "title": "DiffNBR: Spatio-Temporal Diffusion with Information Bottleneck for Next-Basket Recommendation",
+  "abstract": "Next Basket Recommendation (NBR) predicts unordered item sets for users' next purchases, crucial for grocery shopping and online retail scenarios. However, existing NBR methods face two critical challenges: (1) They neglect the threshold-meeting phenomenon, such as common add-to-cart behaviors where users intentionally include seemingly irrelevant items to meet promotional or free shipping price thresholds, which is a widespread phenomenon in reality but has not been a dedicated research focus in the recommendation domain; (2) Even though many works study repetitive and exploratory recommendations, they still lack a theoretically analyzable mechanism to directionally decouple these patterns. This may limit the model's performance. To address these issues, we propose DiffNBR, the first diffusion-model-based framework for NBR. DiffNBR employs two denoising diffusion probabilistic models (DDPMs) to jointly learn users' purchasing behaviors in in spatial and temporal dimensions, modeling the latent compositional strategies the dynamic evolution behind phenomena like threshold-meeting. Moreover, we integrate the information bottleneck theory to enforce directional decoupling between repetition and exploration by explicitly regulating information flows. Specifically, our framework constrains the model's generative representation to focus on learning the exploratory patterns, while th",
+  "gid": 966,
+  "theme": "Next basket recommendation"
+ }
+}

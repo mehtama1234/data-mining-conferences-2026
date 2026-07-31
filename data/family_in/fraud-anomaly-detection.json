@@ -1,0 +1,569 @@
+{
+ "key": "fraud-anomaly-detection",
+ "theme": "Fraud & Anomaly Detection",
+ "n_papers": 72,
+ "pct": 3.7,
+ "by_venue": {
+  "WWW 2026": 59,
+  "WSDM 2026": 3,
+  "SIGIR 2026": 6,
+  "KDD 2026": 4
+ },
+ "theme_examples": [
+  {
+   "title": "VarParser: Unleashing the Neglected Power of Variables for LLM-based Log Parsing",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "Revisiting Graph-Level Anomaly Detection: From Partially to Fully Unsupervised Learning",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "Multi-Modal Enhanced Graph Transfer Learning for Digital Finance Fraud Detection",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "Dir-GD: Directed Graph Distillation",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "Cross-Type Semantic Alignment for Multi-Type Anomaly Detection in Heterogeneous Graphs",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "Collusion-Aware Set-level Learning Framework for Detecting Spamming Activities",
+   "venue": "WWW 2026"
+  }
+ ],
+ "representative_papers": [
+  {
+   "title": "Pattern-aware Illicit Account Detection based on User Behavior Sequences",
+   "venue": "WWW 2026",
+   "problem": "Illicit accounts mimic benign behavior; same actions serve different purposes in different contexts.",
+   "approach": "Dual-perspective pattern mining plus contextualized action semantic encoding.",
+   "contribution": "Captures behavioral regularities and contextual action variations for fraud detection.",
+   "primary_theme": "illicit account detection",
+   "methods": [
+    "sequence_mining",
+    "anomaly_detection",
+    "behavior_analysis"
+   ]
+  },
+  {
+   "title": "F2-Gen: An Open-Source Web Platform for Scenario-Driven Financial Fraud Data Simulation",
+   "venue": "SIGIR 2026",
+   "problem": "Real bank-transaction data unavailable; public fraud datasets mismatch financial semantics, limiting reproducibility",
+   "approach": "F2-Gen open-source web platform generates synthetic financial data with parameterized fraud scenarios and transaction graphs",
+   "contribution": "Configurable scenario-driven generator with visual analysis and automated sensitive-field screening for anomaly detection research",
+   "primary_theme": "synthetic financial fraud data",
+   "methods": [
+    "synthetic-data",
+    "fraud-detection",
+    "anomaly-detection",
+    "financial-ir"
+   ]
+  },
+  {
+   "title": "Revisiting Graph-Level Anomaly Detection: From Partially to Fully Unsupervised Learning",
+   "venue": "WWW 2026",
+   "problem": "Graph anomaly detection assumes training data free of anomalies, unrealistic for real-world data",
+   "approach": "Uncertainty learning via Score/Graph-data Uncertainty Learning with EM-based optimization",
+   "contribution": "SUL/GUL frameworks enable fully unsupervised anomaly detection from mixed normal/anomalous data",
+   "primary_theme": "Graph anomaly detection",
+   "methods": [
+    "uncertainty learning",
+    "expectation maximization",
+    "anomaly detection"
+   ]
+  },
+  {
+   "title": "TraceLLM: Evaluating and Exploring Large Language Models on Trace Analysis in Microservice-based Web Applications",
+   "venue": "WWW 2026",
+   "problem": "Trace analysis in microservice systems requires high manual overhead and lacks flexible, deployable LLM approaches",
+   "approach": "Fine-tuned LLM approach on TraceBench instruction-response benchmark for trace anomaly detection and diagnosis",
+   "contribution": "TraceLLM improves trace analysis accuracy 34.77% over open-source LLMs via targeted fine-tuning",
+   "primary_theme": "LLM trace analysis",
+   "methods": [
+    "llm",
+    "fine-tuning",
+    "trace analysis"
+   ]
+  },
+  {
+   "title": "Multi-Modal Enhanced Graph Transfer Learning for Digital Finance Fraud Detection",
+   "venue": "WWW 2026",
+   "problem": "Blockchain fraud detection struggles with multi-modal dynamics, sparse graphs, and distributional shifts across networks",
+   "approach": "Multi-modal transfer learning framework integrating graph, temporal, and textual modalities for fraud knowledge transfer",
+   "contribution": "MOE-GTL enables robust fraud detection across blockchain networks leveraging multi-modal dependencies",
+   "primary_theme": "fraud detection transfer",
+   "methods": [
+    "transfer learning",
+    "graph learning",
+    "multi-modal"
+   ]
+  },
+  {
+   "title": "Cross-Type Semantic Alignment for Multi-Type Anomaly Detection in Heterogeneous Graphs",
+   "venue": "WWW 2026",
+   "problem": "Semantic imbalance and conflicting objectives in heterogeneous graph anomaly detection",
+   "approach": "Cross-type semantic alignment with dynamic multi-task learning for varied node types",
+   "contribution": "CSA-MTHGAD achieves superior accuracy and robustness in heterogeneous graph anomaly detection",
+   "primary_theme": "Graph anomaly detection",
+   "methods": [
+    "gnn",
+    "anomaly-detection",
+    "multi-task"
+   ]
+  },
+  {
+   "title": "Unveiling and Mitigating Untargeted Poisoning Attacks on Federated Knowledge Graph Embedding",
+   "venue": "WWW 2026",
+   "problem": "Federated knowledge graph embedding vulnerable to untargeted poisoning attacks",
+   "approach": "Design data and embedding-level poisoning attacks with embedding-density anomaly detection defense",
+   "contribution": "First systematic investigation of FKGE poisoning with LDM defense restoring performance",
+   "primary_theme": "Federated KG security",
+   "methods": [
+    "poisoning",
+    "defense",
+    "anomaly-detection"
+   ]
+  },
+  {
+   "title": "Beyond Detection: Autonomous Anomaly Remediation for MCP Against Tool Poisoning Attacks",
+   "venue": "WWW 2026",
+   "problem": "LLM agents vulnerable to tool poisoning attacks via MCP context manipulation",
+   "approach": "Multi-checkpoint rollback with attention-mask-based anomaly detection and correction",
+   "contribution": "First automated anomaly detection and correction framework for MCP tool poisoning",
+   "primary_theme": "LLM security, tool poisoning",
+   "methods": [
+    "anomaly detection",
+    "rollback mechanism",
+    "attention masking"
+   ]
+  },
+  {
+   "title": "HAAF: Hierarchical Adaptation and Alignment of Foundation Models for Few-Shot Pathology Anomaly Detection",
+   "venue": "WWW 2026",
+   "problem": "Vision-Language models fail to resolve fine-grained pathology anomalies due to granularity mismatch.",
+   "approach": "Cross-Level Scaled Alignment grounds semantic prompts in ROI-specific visual contexts.",
+   "contribution": "Significantly outperforms SOTA in few-shot pathology detection on four benchmarks.",
+   "primary_theme": "vision-language pathology detection",
+   "methods": [
+    "vision_language",
+    "adaptation",
+    "few_shot"
+   ]
+  },
+  {
+   "title": "Dynamic Min-Max Multi-Dimensional Reinforcement Backdoor Attacks and Orchestrated Closed-Loop Defense in Fairness-Aware Web Federated Finance",
+   "venue": "WWW 2026",
+   "problem": "Federated fraud detection lacks robustness to backdoor attacks and handles extreme data scarcity",
+   "approach": "Privacy-enhanced representation fusion, contrastive learning, dynamic Min-Max adversarial game",
+   "contribution": "CLARF framework with closed-loop defense against reinforcement learning backdoor attacks",
+   "primary_theme": "Fraud detection federated",
+   "methods": [
+    "federated_learning",
+    "contrastive",
+    "adversarial",
+    "reinforcement_learning"
+   ]
+  },
+  {
+   "title": "Understanding Post-Exploit Laundering Behavior on Ethereum",
+   "venue": "WWW 2026",
+   "problem": "Blockchain exploit laundering patterns lack systematic behavioral analysis for detection",
+   "approach": "On-chain tracing with behavioral metrics covering trajectories, temporal dynamics, topology",
+   "contribution": "Recurring patterns identified including rapid movement and shallow transfer structures",
+   "primary_theme": "Blockchain security money-laundering",
+   "methods": [
+    "graph_analysis",
+    "temporal_analysis",
+    "anomaly_detection"
+   ]
+  },
+  {
+   "title": "Evolving Proxy Kills Drift: Data-Efficient Streaming Time Series Anomaly Detection",
+   "venue": "WWW 2026",
+   "problem": "Streaming time series anomaly detection with changing distributions; existing methods are static and memory-heavy.",
+   "approach": "DESS: evolving proxy generation, heterogeneous temporal feature extraction, parameter-efficient training.",
+   "contribution": "Achieves 17.53% improvement over baselines with 64.88% faster training on streaming anomaly detection.",
+   "primary_theme": "Streaming anomaly detection",
+   "methods": [
+    "time-series",
+    "proxy-generation",
+    "parameter-efficient"
+   ]
+  },
+  {
+   "title": "Unsupervised Subgraph Anomaly Detection Based on Pattern Collaboration",
+   "venue": "WWW 2026",
+   "problem": "Detecting anomalous subgraph groups in graphs without supervision",
+   "approach": "Graph autoencoder with pattern collaboration contrastive learning",
+   "contribution": "Superior anomaly detection via pattern-collaboration embeddings",
+   "primary_theme": "Subgraph anomaly detection",
+   "methods": [
+    "autoencoder",
+    "contrastive-learning",
+    "graph-neural-network"
+   ]
+  },
+  {
+   "title": "Amortized Predictability-aware Training Framework for Time Series Forecasting and Classification",
+   "venue": "WWW 2026",
+   "problem": "Training instability from low-predictability time series samples affecting forecasting and classification",
+   "approach": "Hierarchical loss and amortization model to dynamically penalize low-predictability samples during training",
+   "contribution": "APTF framework improves time series forecasting and classification by focusing on high-predictability samples",
+   "primary_theme": "Time series forecasting",
+   "methods": [
+    "deep-learning",
+    "anomaly-detection",
+    "loss-weighting"
+   ]
+  },
+  {
+   "title": "A Dual-Channel Contrastive Learning Framework for Anomaly Detection in Dynamic Graph Structures",
+   "venue": "WWW 2026",
+   "problem": "Dynamic graph anomaly detection lacks dynamic information capture and selective feature preservation over time",
+   "approach": "Memory enhancement and multi-scale similarity scoring with time-aware shapelet-based graph construction",
+   "contribution": "DyConAD improves dynamic graph anomaly detection accuracy and efficiency on real-world datasets",
+   "primary_theme": "Dynamic graph anomaly",
+   "methods": [
+    "graph-neural-network",
+    "contrastive-learning",
+    "anomaly-detection"
+   ]
+  },
+  {
+   "title": "CIFAD: Causal-Invariant Subspace Learning for Few-Shot Anomaly Detection on Dynamic Relational Graphs",
+   "venue": "WWW 2026",
+   "problem": "Few-shot anomaly detection on dynamic graphs struggles with noise separation and limited label dependence",
+   "approach": "Causal-invariant subspace learning with sparse attention encoder and active annotation via influence functions",
+   "contribution": "CIFAD improves few-shot anomaly detection by disentangling causal signals from environmental noise",
+   "primary_theme": "Anomaly detection graphs",
+   "methods": [
+    "causal-inference",
+    "active-learning",
+    "graph-neural-network"
+   ]
+  },
+  {
+   "title": "Prediction Guardian: A Distribution-based Real-time Anomaly Detection and Mitigation Framework for Online Advertising",
+   "venue": "WWW 2026",
+   "problem": "DLRM predictions face distribution shifts and silent data corruption from retraining and feature pipeline vulnerabilities.",
+   "approach": "Prediction Guardian monitors prediction distributions using Jensen-Shannon divergence to detect anomalies and apply targeted mitigations.",
+   "contribution": "Framework stabilizes DLRM predictions through real-time anomaly detection and automated mitigation across multiple corruption scenarios.",
+   "primary_theme": "anomaly detection",
+   "methods": [
+    "distribution-monitoring",
+    "neural-networks",
+    "anomaly-detection",
+    "adversarial"
+   ]
+  },
+  {
+   "title": "DyLogNet: A Dynamic Multi-Relational Graph Framework for Log Anomaly Detection",
+   "venue": "WWW 2026",
+   "problem": "System logs have irregular intervals and bursts; single-view methods miss multi-relational log nature",
+   "approach": "Dynamic multi-relational graph with cross-layer attention and cross-snapshot memory injection",
+   "contribution": "DyLogNet outperforms LSTM/Transformer baselines on public log anomaly detection datasets",
+   "primary_theme": "Log anomaly detection",
+   "methods": [
+    "gnn",
+    "attention",
+    "temporal"
+   ]
+  },
+  {
+   "title": "ECLAD: An Edge-Cloud Collaborative Agentic Framework for Interpretable Anomaly Detection in Predictive Maintenance",
+   "venue": "WWW 2026",
+   "problem": "Anomaly detection in predictive maintenance lacks interpretability; cloud-edge latency tradeoff",
+   "approach": "Hybrid edge-cloud framework with LLM-based interpretability agents for anomaly reports",
+   "contribution": "ECLAD provides real-time detection with natural-language explanations and evolving taxonomy",
+   "primary_theme": "Anomaly detection",
+   "methods": [
+    "edge-computing",
+    "llm",
+    "time-series"
+   ]
+  },
+  {
+   "title": "FSDI: Frequency-Shaped Diffusion For Time-Series Imputation",
+   "venue": "WWW 2026",
+   "problem": "Time series imputation in IoT/sensors struggles with spectral energy variance across frequency bins",
+   "approach": "FSDI replaces uniform variance schedule with data-driven frequency-domain schedule preserving energy",
+   "contribution": "Frequency-shaped diffusion improves imputation for web analytics, anomaly detection, A/B testing",
+   "primary_theme": "Frequency-aware time series imputation",
+   "methods": [
+    "diffusion-model",
+    "time-series",
+    "spectral-analysis",
+    "imputation"
+   ]
+  },
+  {
+   "title": "Anomaly Detection of Interaction Behaviors in Streaming Graphs",
+   "venue": "WWW 2026",
+   "problem": "Streaming graph anomaly detection lacks effectiveness and interpretability",
+   "approach": "Interaction Willingness metric with Count-Min Sketch for efficient real-time detection",
+   "contribution": "AnoD and AnoC algorithms with constant space-time cost and clear interpretability",
+   "primary_theme": "graph anomaly detection",
+   "methods": [
+    "streaming-graph",
+    "anomaly-detection",
+    "sketch-algorithm"
+   ]
+  },
+  {
+   "title": "AC$2$L-GAD: Active Counterfactual Contrastive Learning for Graph Anomaly Detection",
+   "venue": "WWW 2026",
+   "problem": "Graph anomaly detection with label scarcity and extreme class imbalance",
+   "approach": "Active counterfactual contrastive learning with information-theoretic selection",
+   "contribution": "65% computational reduction while maintaining detection quality on benchmark datasets",
+   "primary_theme": "Graph anomaly detection",
+   "methods": [
+    "contrastive",
+    "counterfactual",
+    "active_learning",
+    "gnn"
+   ]
+  },
+  {
+   "title": "Deception Factories: Industrial-Scale Cloaking in Harmful Synthetic Media",
+   "venue": "WWW 2026",
+   "problem": "Deceptive AI-generated campaigns scale without semantic diversity, via structural manipulation",
+   "approach": "Analysis of real-world fraudulent campaigns to understand cloaking and template reuse",
+   "contribution": "Identifies industrialized deception: scale through automation and decoy content cloaking",
+   "primary_theme": "synthetic media abuse",
+   "methods": [
+    "campaign-analysis",
+    "fraud-detection"
+   ]
+  },
+  {
+   "title": "A Graph Foundation Model for Unified Anomaly Detection",
+   "venue": "WWW 2026",
+   "problem": "Graph anomaly detection lacks generalization across domains and multi-level detection without labeled data",
+   "approach": "Graph foundation model with adversarial anomaly synthesis and frozen backbone fine-tuning",
+   "contribution": "Unified unsupervised anomaly detection across domains at node, edge, and subgraph levels",
+   "primary_theme": "graph anomaly detection",
+   "methods": [
+    "graph-foundation-model",
+    "adversarial-generation",
+    "unsupervised"
+   ]
+  },
+  {
+   "title": "Bridging Cognitive Neuroscience and Graph Intelligence: Hippocampus-Inspired Multi-View Hypergraph Learning for Web Finance Fraud",
+   "venue": "WWW 2026",
+   "problem": "GNN-based fraud detection fails on long-tailed distributions and camouflaged fraudulent transactions",
+   "approach": "Hippocampus-inspired multi-view hypergraph learning with cross-view inconsistency and novelty detection",
+   "contribution": "Detection of camouflaged web finance fraud via neuroscience-inspired behavioral inconsistency modeling",
+   "primary_theme": "graph fraud detection",
+   "methods": [
+    "hypergraph",
+    "neuroscience-inspired",
+    "multi-view",
+    "novelty-detection"
+   ]
+  },
+  {
+   "title": "Knowledge-Enhanced Multimodal Fake News Detection: Semantic Visual and Priority Fusion",
+   "venue": "WWW 2026",
+   "problem": "Multimodal fake news detection lacks semantic knowledge of cross-modal forgery and global anomaly patterns",
+   "approach": "Semantic-driven visual enhancement with dual-fusion and modality-priority progressive fusion strategy",
+   "contribution": "Improved fake news detection via robust cross-modal semantic interaction of local and global features",
+   "primary_theme": "multimodal fake news detection",
+   "methods": [
+    "cross-attention",
+    "semantic-fusion",
+    "dual-feature-extraction"
+   ]
+  },
+  {
+   "title": "Integrated Mixture of Neighborhood and Community Experts for Graph-Based Fraud Detection",
+   "venue": "WWW 2026",
+   "problem": "GNNs struggle with homophily-heterophily mixture in fraud graphs; overlook mesoscopic community structures",
+   "approach": "Mixture of neighborhood and community experts capturing local inconsistency and global structural irregularity",
+   "contribution": "Integrates complementary perspectives for detecting suspicious patterns and feature propagation discrepancies",
+   "primary_theme": "Graph fraud detection",
+   "methods": [
+    "gnn",
+    "mixture-of-experts",
+    "graph-analysis"
+   ]
+  },
+  {
+   "title": "An Edge Computing Framework for Deep Learning-Based Anomaly Detection in Satellite-Linked Autonomous Vehicles",
+   "venue": "WWW 2026",
+   "problem": "Satellite-linked vehicles require real-time anomaly detection under latency constraints",
+   "approach": "Edge-deployed attention-based multimodal fusion with constraint validation and entropy selection",
+   "contribution": "MARIS-ADS achieves 99.3% accuracy with 0.31ms inference on resource-constrained hardware",
+   "primary_theme": "Vehicular anomaly detection",
+   "methods": [
+    "multimodal",
+    "attention",
+    "anomaly-detection"
+   ]
+  },
+  {
+   "title": "ProvGuard: Logic-Aware Multi-View Contrastive Learning for Robust and Efficient Host Threat Detection",
+   "venue": "WWW 2026",
+   "problem": "Provenance-based intrusion detection vulnerable to graph manipulation attacks evading detection systems",
+   "approach": "Logic-aware multi-view contrastive learning with semantically-valid noise injection preserving causal semantics",
+   "contribution": "Robust anomaly detection resisting graph manipulation while maintaining accuracy via logic-aware representation learning",
+   "primary_theme": "Intrusion detection",
+   "methods": [
+    "anomaly-detection",
+    "contrastive",
+    "security"
+   ]
+  },
+  {
+   "title": "Mitigating Homophily Disparity in Graph Anomaly Detection: A Scalable and Adaptive Approach",
+   "venue": "WWW 2026",
+   "problem": "GNNs struggle with homophily disparity and scalability in graph anomaly detection",
+   "approach": "Precomputed multi-hop embeddings with Chebyshev filters and adaptive fusion coefficients",
+   "contribution": "SAGAD achieves linear complexity with asymptotic separability guarantees for anomaly detection",
+   "primary_theme": "Graph anomaly detection",
+   "methods": [
+    "gnn",
+    "spectral-filtering",
+    "adaptive-fusion"
+   ]
+  },
+  {
+   "title": "PAGE: Progressive Anomaly Generation Network for Semi-supervised Graph Anomaly Detection",
+   "venue": "WWW 2026",
+   "problem": "Detecting complex anomalies in graphs with limited labeled normal nodes",
+   "approach": "Progressive attribute-structure perturbation with anomaly severity constraints",
+   "contribution": "PAGE model improves complex anomaly detection via progressive generation and severity quantification",
+   "primary_theme": "graph anomaly detection",
+   "methods": [
+    "anomaly generation",
+    "graph neural networks",
+    "semi-supervised"
+   ]
+  },
+  {
+   "title": "Scalable Anomaly Detection for Temporal Web Streams via Approximate Nearest Neighbor Search",
+   "venue": "WWW 2026",
+   "problem": "Temporal Web streams require scalable anomaly detection handling high-dimensionality and imbalanced data",
+   "approach": "Hierarchical ANN index with statistical neighbor scoring and adaptive update for concept drift",
+   "contribution": "ANN-TS achieves superior accuracy on imbalanced high-dimensional data with reduced computational overhead",
+   "primary_theme": "stream anomaly detection",
+   "methods": [
+    "approximate nearest neighbor",
+    "time series",
+    "anomaly detection"
+   ]
+  },
+  {
+   "title": "CEAT: Context-Emotion Adversarial Training Framework for Robust Emotion-Driven Fraud Detection",
+   "venue": "WWW 2026",
+   "problem": "Multimodal fraud detection vulnerable to emotion-based adversarial attacks across modalities",
+   "approach": "Transformer with context-aware perturbation mechanism injecting noise into emotional latent space",
+   "contribution": "CEAT robustly detects fraud against context-consistent cross-modal emotion-based attacks",
+   "primary_theme": "adversarial fraud detection",
+   "methods": [
+    "transformer",
+    "multimodal",
+    "adversarial training"
+   ]
+  },
+  {
+   "title": "Multi-Aspect Mining and Anomaly Detection for Heterogeneous Tensor Streams",
+   "venue": "WWW 2026",
+   "problem": "Existing tensor decomposition methods cannot handle heterogeneous streams with both categorical and continuous attributes",
+   "approach": "HeteroComp uses Gaussian process priors to model unknown distributions and detect group anomalies in tensor streams",
+   "contribution": "Enables continuous monitoring of heterogeneous tensor streams and group-level anomaly detection like DoS attacks",
+   "primary_theme": "Tensor anomaly detection",
+   "methods": [
+    "tensor-decomposition",
+    "gaussian-process",
+    "stream-analysis",
+    "anomaly-detection"
+   ]
+  },
+  {
+   "title": "Generalizable Graph-level Anomaly Detection via Prompted Anomaly Expansion and Normality Extraction",
+   "venue": "WWW 2026",
+   "problem": "Limited labeled anomalous graphs fail to capture real-world abnormality diversity; spurious substructures confuse detection",
+   "approach": "G-GLAD uses prompt-based anomaly expansion and information-bottleneck subgraph extraction for normality",
+   "contribution": "Improves generalization to unseen anomalies; filters spurious motifs for robust detection on ten datasets",
+   "primary_theme": "Graph anomaly detection",
+   "methods": [
+    "prompt-learning",
+    "information-bottleneck",
+    "graph-representation",
+    "anomaly-expansion"
+   ]
+  },
+  {
+   "title": "Tabular Foundation Models are Strong Graph Anomaly Detectors",
+   "venue": "WWW 2026",
+   "problem": "Graph anomaly detection requires retraining per dataset; struggles with structural heterogeneity across domains",
+   "approach": "TFM4GAD adapts tabular foundation models by flattening graphs with Laplacian embeddings and structural aggregations",
+   "contribution": "Enables one-for-all GAD solution generalizing across diverse graphs without retraining via foundation model",
+   "primary_theme": "Foundation graph anomaly detection",
+   "methods": [
+    "foundation-model",
+    "graph-flattening",
+    "structural-embedding",
+    "in-context-learning"
+   ]
+  },
+  {
+   "title": "DeepSVU: Towards In-depth Security-oriented Video Understanding via Unified Physical-world Regularized MoE",
+   "venue": "WWW 2026",
+   "problem": "Video anomaly detection lacks capability to explain and evaluate threat causes; struggles with multi-scale context modeling",
+   "approach": "UPRM framework with unified physical-world MoE blocks and trade-off regularizer for coarse-to-fine threat analysis",
+   "contribution": "Enables in-depth security video understanding identifying, locating, attributing and evaluating threat causes",
+   "primary_theme": "Video anomaly understanding",
+   "methods": [
+    "mixture-of-experts",
+    "video-analysis",
+    "anomaly-attribution",
+    "multimodal-understanding"
+   ]
+  },
+  {
+   "title": "DIARY: Differentially Private Recovery with Adaptive Privacy Budgets in Federated Unlearning",
+   "venue": "WWW 2026",
+   "problem": "Federated unlearning faces gradient inversion attacks and dual privacy threats from recovery phases",
+   "approach": "Adaptive privacy budget allocation, FIND anomaly detection module, selective storage and rollback",
+   "contribution": "DIARY balances privacy-utility tradeoff in federated recovery with reduced overhead",
+   "primary_theme": "Federated unlearning",
+   "methods": [
+    "differential privacy",
+    "anomaly detection",
+    "federated learning"
+   ]
+  },
+  {
+   "title": "PAMAS: Self-Adaptive Multi-Agent System with Perspective Aggregation for Misinformation Detection",
+   "venue": "WWW 2026",
+   "problem": "Multi-agent misinformation detection suffers from information drowning; truthful content overwhelms deceptive cues",
+   "approach": "Hierarchical perspective-aware aggregation with Auditors, Coordinators, Decision-Maker, evolving memory",
+   "contribution": "PAMAS framework alleviates information drowning via anomaly highlighting and dynamic topology optimization",
+   "primary_theme": "Multi-agent misinformation",
+   "methods": [
+    "multi-agent",
+    "anomaly detection",
+    "aggregation"
+   ]
+  },
+  {
+   "title": "Smart Eye: LLM-Guided Proposer-Verifier Framework for Industrial-Scale Log Anomaly Detection",
+   "venue": "WWW 2026",
+   "problem": "Log anomaly detection needs fidelity to lexical cues, human-auditable explanations, and low inference latency at scale.",
+   "approach": "Two-stage LLM-guided framework: LLM proposes patterns via budgeted maximum coverage; deterministic verifier refines into regex.",
+   "contribution": "Industrial-grade log anomaly detection with F1 0.9877 on Huawei Cloud; deployable on commodity CPUs.",
+   "primary_theme": "LLM-guided log anomaly detection",
+   "methods": [
+    "llm",
+    "pattern-mining",
+    "regular-expressions"
+   ]
+  }
+ ]
+}

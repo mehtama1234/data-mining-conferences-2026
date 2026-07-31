@@ -1,0 +1,11 @@
+{
+ "batch": "b064",
+ "paper": {
+  "id": "dc5daba232ed43225449ae4589edce1ff64c138d",
+  "venue": "WSDM 2026",
+  "title": "GenAI4SM: Generative AI for Streaming Media",
+  "abstract": "Streaming media has become a popular medium for consumers of all ages, with people spending several hours a day streaming videos, games, music, audiobooks or podcasts across devices. Most global streaming services have introduced Generative Artificial Intelligence (GenAI) into their operations to personalize consumer experience, improve content, and further enhance the value proposition of streaming services. Despite the rapid growth, there is a need to bridge the gap between academic research and industry requirements and build connections between researchers and practitioners in the field. This workshop aims to provide a unique forum for practitioners and researchers interested in GenAI to get together, exchange ideas and get a pulse for the state of the art in research and burning issues in the industry.",
+  "gid": 974,
+  "theme": "GenAI streaming media"
+ }
+}

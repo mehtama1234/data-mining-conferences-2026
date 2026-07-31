@@ -1,0 +1,11 @@
+{
+ "batch": "b066",
+ "paper": {
+  "id": "fb03417805f8cbe480130d223fa334f2e61fc3d0",
+  "venue": "WSDM 2026",
+  "title": "A Spectral Heterogeneous Diffusion Framework for Knowledge-aware Recommendation",
+  "abstract": "Knowledge-aware recommendation leverages rich item-related factual information in Knowledge Graphs (KGs) to enhance recommendation systems. However, most existing methods focus on developing complex models to extract information from a given KG. They essentially follow a model-centric paradigm, overlooking data quality problems. In practice, KG data exhibits two principal quality problems, namely the noisy knowledge problem and the incomplete knowledge problem, which severely impair the performance of downstream models. To address these problems, we adopt a data-centric paradigm to improve the quality of KG data. Inspired by diffusion models' superior denoising and generation ability by fitting true data distributions, we propose a novel spectral heterogeneous diffusion framework for knowledge-aware recommendation. This framework tailors a diffusion model to capture the recommendation-oriented heterogeneous distribution in the original KG and then converts the fitted distribution into a high-quality KG. Specifically, we design a spectral heterogeneous diffusion model that integrates recommendation prior knowledge to capture task-relevant distribution and aligns its diffusion process with the features of heterogeneous graphs to model heterogeneity. Furthermore, we propose a continuous-discrete mode adapter that transforms the learned continuous distribution into a high-quality d",
+  "gid": 992,
+  "theme": "Knowledge-aware recommendation"
+ }
+}

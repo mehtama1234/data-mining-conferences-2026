@@ -1,0 +1,11 @@
+{
+ "batch": "b019",
+ "paper": {
+  "id": "54f8da0fb1c8da9bac1b552c2dda098a4af7b29f",
+  "venue": "WWW 2026",
+  "title": "DriftNavi: Talk through Your Data Drift with LLMs",
+  "abstract": "Data drift is a pervasive issue in real-world machine learning applications. While models often perform well on in-distribution data, their performance can degrade significantly when deployed in new environments where the input distribution has shifted. But how can users with varying knowledge backgrounds effectively track and interpret these changes? We present DriftNavi, a lightweight conversational tool powered by LLMs that enables personalized, structured, model-free analysis of dataset drift. DriftNavi integrates a reasoning agent that guides users through the full drift detection pipeline, detect, explain, and adapt, in an interactive dialogue. The tool not only helps users navigate drift, but also enhances their understanding of the process. We conduct case studies on stroke prediction dataset to validate the tool's effectiveness. The code and demo video is publicly available at https://github.com/Jo-wang/CIRES-DriftNavi here.",
+  "gid": 296,
+  "theme": "Data drift explanation"
+ }
+}

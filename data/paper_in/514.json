@@ -1,0 +1,11 @@
+{
+ "batch": "b034",
+ "paper": {
+  "id": "9aa626b23feee2229dfadcea12dedbe4657c9b85",
+  "venue": "WWW 2026",
+  "title": "Rethinking Object Detection and Tracking",
+  "abstract": "Recent years have witnessed a profound transformation in object detection and tracking, driven by advances in transformers, diffusion models, multimodal learning, and large-scale pretraining. Beyond performance gains, the field is undergoing a conceptual shift, from closed-set, task-isolated pipelines toward open-world, multi-task, and semantically grounded visual perception systems. This survey provides a review of very recent object detection and tracking research, systematically analyzing more than one hundred representative works across 2D, 3D, multi-view, multimodal, and vision-language settings. By consolidating models, datasets, evaluation protocols, and targeted challenges, we expose cross-task patterns that are often overlooked in existing surveys. Our analysis shows several emerging trends: the convergence of detection and tracking into unified formulations, the growing role of generative and diffusion-based temporal modeling, the rise of open-vocabulary and language-conditioned tracking, and the increasing importance of uncertainty modeling and multimodal fusion in 3D and adverse environments. In addition, we provide a quantitative analysis of dataset usage, evaluation metrics, and challenge prevalence over time, highlighting how benchmark choices and metric design shape research directions. The survey concludes by identifying open problems and underexplored intersec",
+  "gid": 514,
+  "theme": "Vision perception systems"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "batch": "b061",
+ "paper": {
+  "id": "7c898028f8d8ea8514b8f15927f4864dcd78b935",
+  "venue": "WSDM 2026",
+  "title": "Adaptive and Reinforcement-Guided Contrastive Hypergraph Distillation",
+  "abstract": "Hypergraph-based distillation methods have been proposed to mitigate the high computational cost of Hypergraph Neural Networks (HGNNs) in modeling high-order relationships. However, most existing methods use static and uniform distillation strategies for all nodes and hyperedges, ignoring their individual characteristics. In addition, they neglect the student model's capability to independently extract useful internal features. As a result, they are not effective in transferring higher-order structural knowledge from the teacher. To overcome these limitations, we propose ARCHER, an Adaptive and Reinforcement-Guided Contrastive HypER graph Distillation framework that enables a lightweight MLP student model to outperform its HGNN teacher model. First, we design an adaptive strategy that leverages node- and hyperedge-level confidence to mediate error guidance from the teacher model. Second, we introduce a contrastive learning module that guides the student to learn from both the teacher's outputs and its own internal representations, producing more expressive embeddings. Finally, we propose a multi-armed bandit-based reinforcement learning module that dynamically balances multiple loss objectives during training. Experiments on six benchmark datasets demonstrate that our method outperforms existing hypergraph distillation methods.",
+  "gid": 927,
+  "theme": "Hypergraph neural network distillation"
+ }
+}

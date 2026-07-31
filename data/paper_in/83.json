@@ -1,0 +1,11 @@
+{
+ "batch": "b005",
+ "paper": {
+  "id": "18499f1e53bab28d3e84b0c2194f68d55666d077",
+  "venue": "WWW 2026",
+  "title": "Rise: A Retrieval-Augmented Generation Enhanced Immersive System for Education",
+  "abstract": "The rapid development of intelligent education has created new opportunities, yet many existing systems still struggle with limited hardware resources, constrained interactivity, and insufficient immersion. To address these challenges, we propose Rise (Retrieval-Augmented Generation Enhanced Immersive System for Education), a lightweight web-based intelligent learning system capable of delivering adaptive and interactive educational experiences even under strict device constraints. RISE integrates Retrieval-Augmented Generation (RAG), Model Context Protocol (MCP), and Digital Human (DH) technologies to provide high-quality, personalized educational experiences. Deployed on a lightweight web platform, it ensures accessibility even under hardware constraints and offers key functions including learning analytics, interactive Q&A, immersive classrooms, and attention monitoring. Beyond its technical contributions, RISE demonstrates strong social and educational value. Enabling immersive cultural and contextual learning experiences, it helps students from geographically or economically constrained regions access diverse educational resources. Overall, RISE represents a practical step toward next-generation intelligent education that unites technological advancement with social impact.",
+  "gid": 83,
+  "theme": "Intelligent education"
+ }
+}

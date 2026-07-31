@@ -1,0 +1,11 @@
+{
+ "batch": "b012",
+ "paper": {
+  "id": "37d71a5044b9958760153fd3d2d5419daa121354",
+  "venue": "WWW 2026",
+  "title": "The LOPE Method: Improving Consistent Property Extraction for Scientific Knowledge Graphs Using LLMs",
+  "abstract": "In the era of Generative AI, Scientific Knowledge Graphs (SKGs) have gained substantial importance as they provide a structured data foundation for fact grounding and scientific verification. They have become a cornerstone for Retrieval-Augmented Generation (RAG) and help detect and mitigate hallucinations of Large Language Models (LLMs), one of the major challenges for creating reliable outputs. However, creating comprehensive, content-rich SKGs remains a significant challenge, as current automated methods often fail to capture the semantic depth required to describe research contributions accurately. Conversely, manual crowdsourcing approaches are often time-consuming and error-prone, leading to semantic inconsistencies in the data. To address these limitations, we present the LOPE (LLM-driven Ontology-based Property Extraction) method. Our automated approach advances LLM-based property extraction by combining semantically optimized prompting with a high-performance open-weight model and a vector-based ontology matching step. By aligning extracted terms to a standardized vocabulary, our solution improves semantic consistency compared to existing crowdsourcing approaches, thereby increasing the machine actionability and interoperability of the resulting SKG for downstream scientific analysis. The paper concludes with an evaluation using a validated LLM judge, demonstrating tha",
+  "gid": 189,
+  "theme": "Knowledge graph extraction"
+ }
+}

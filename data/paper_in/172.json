@@ -1,0 +1,11 @@
+{
+ "batch": "b011",
+ "paper": {
+  "id": "31b7af3b962f93ce2dad56f4d0b341d9e53333d9",
+  "venue": "WWW 2026",
+  "title": "To Search or Not to Search: Aligning the Decision Boundary of Deep Search Agents via Causal Intervention",
+  "abstract": "Deep search agents, which autonomously iterate through multi-turn web-based reasoning, represent a promising paradigm for complex information-seeking tasks. However, current agents suffer from critical inefficiency: they conduct excessive searches as they cannot accurately judge when to stop searching and start answering. This stems from outcome-centric training that prioritize final results over the search process itself. We identify the root cause as misaligned decision boundaries, the threshold determining when accumulated information suffices to answer. This causes over-search (redundant searching despite sufficient knowledge) and under-search (premature termination yielding incorrect answers). To address these errors, we propose a comprehensive framework comprising two key components. First, we introduce causal intervention-based diagnosis that identifies boundary errors by comparing factual and counterfactual trajectories at each decision point. Second, we develop Decision Boundary Alignment for Deep Search agents (DAS), which constructs preference datasets from causal feedback and aligns policies via preference optimization. Experiments on public datasets demonstrate that decision boundary errors are pervasive across state-of-the-art agents. Our DAS method effectively calibrates these boundaries, mitigating both over-search and under-search to achieve substantial gains i",
+  "gid": 172,
+  "theme": "Search agent optimization"
+ }
+}

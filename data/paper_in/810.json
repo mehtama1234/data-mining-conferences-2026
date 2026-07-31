@@ -1,0 +1,11 @@
+{
+ "batch": "b054",
+ "paper": {
+  "id": "f2aeb6b3c7e9022f0fcb2916567a69d3c34f1f49",
+  "venue": "WWW 2026",
+  "title": "HyperDetector: Advanced Persistent Threat Detection via Hypergraph Neural Networks with Enhanced Global Perception",
+  "abstract": "Advanced Persistent Threats (APTs) represent sophisticated cyberattacks that evade detection through stealthy, multistage operations, posing severe risks to critical infrastructure and organizational security. Due to their ability to effectively capture contextual information of attack behaviors, provenance graphs have emerged as a promising approach for APT detection. However, traditional binary edges in provenance graphs fail to represent the collaborative nature of APT attacks, where multiple entities coordinate in single operations, and local graph structures cannot capture the long-range dependencies across attack stages. To address these challenges, we propose HyperDetector, a novel hypergraph-based method for APT detection. First, we introduce hypergraph representation for provenance data, where hyperedges naturally connect multiple entities involved in system events, preserving the higher-order relational structures that characterize APT behaviors. Second, we employ block self-attention mechanisms that enable global reasoning across distant hypergraph regions, effectively linking dispersed attack indicators throughout the system. Through the synergistic integration of these approaches, HyperDetector achieves comprehensive understanding of both localized multi-entity collaborative behaviors and system-wide attack propagation patterns. Extensive evaluations across multipl",
+  "gid": 810,
+  "theme": "APT detection hypergraphs"
+ }
+}

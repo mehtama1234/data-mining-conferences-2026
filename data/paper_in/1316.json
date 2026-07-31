@@ -1,0 +1,11 @@
+{
+ "batch": "b087",
+ "paper": {
+  "id": "10.1145/3805712.3809870",
+  "venue": "SIGIR 2026",
+  "title": "Latent Retrieval Augmented Generation",
+  "abstract": "Retrieval-augmented generation (RAG) has emerged as a promising solution to enhance the reliability of large language models (LLMs) with external knowledge. Existing RAG methods operate in explicit representation spaces: in-context methods inject knowledge through text tokens in the input, while parametric methods like Parametric RAG encode documents into model parameters. Although effective, these approaches face inherent limitations. In-context injection suffers from quadratic computational complexity with context length and degraded performance in complex reasoning tasks. Parametric injection, while reducing inference costs, requires substantial storage overhead and computationally expensive offline preprocessing. More fundamentally, both paradigms rely on explicit discrete representations tokens or parameters that may introduce information bottlenecks and hinder seamless knowledge integration. To address these challenges, we introduce Latent RAG, a novel paradigm that performs knowledge injection entirely within the continuous latent space. Our approach encodes documents into ultra-compact latent representations through an offline compression phase, and directly fuses them with the LLM's hidden states via a learned injection mechanism during inference. By operating in the semantic latent space rather than explicit token or parameter spaces, Latent RAG enables more natural k",
+  "gid": 1316,
+  "theme": "retrieval augmentation"
+ }
+}

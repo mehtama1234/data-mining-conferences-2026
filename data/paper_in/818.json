@@ -1,0 +1,11 @@
+{
+ "batch": "b054",
+ "paper": {
+  "id": "f47b85ac220c47f003c919c97d24a98e09ff4c46",
+  "venue": "WWW 2026",
+  "title": "How Human Experts Educate Specialized LLMs: Filling Knowledge Gaps in KG-Augmented Generation through Hallucination Detection",
+  "abstract": "The integration of Domain Knowledge Graphs (DKG) into Retrieval-Augmented Generation has emerged as a promising approach for constructing Specialized Large Language Models (spLLMs).On account of the scarcity of high-quality DKGs, existing approaches employ an evolutionary framework, wherein the DKG is continuously evolved alongside its utilization for enhancing the LLM. Yet, these methods face two key limitations: 1) heavy reliance on costly expert knowledge, and 2) neglect of the connection between the LLM's inherent knowledge and external expert knowledge. To address these issues, this paper introduces Epistemic Cognition-enhanced Specialized LLMs (EC-spLLM), a novel evolutionary framework that instills epistemic cognition into the LLM to systematically exploit both its internal knowledge and expert knowledge. At the core of EC-spLLM lies the Hallucination Detection-based Epistemic Cognition (HDEC) mechanism, which assesses the reliability of LLM-generated responses using the LLM's self cognition and hallucination detection. This assessment ability enables EC-spLLM to selectively adopt either the expert-provided golden answer or a reliable LLM-generated answer during DKG evolution, thereby reducing dependence on experts and bridging internal and external knowledge sources to enhance performance. We conducted extensive experiments on five datasets spanning five domain, e.g., e",
+  "gid": 818,
+  "theme": "Knowledge graph augmented LLM"
+ }
+}

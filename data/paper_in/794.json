@@ -1,0 +1,11 @@
+{
+ "batch": "b052",
+ "paper": {
+  "id": "ee6e285933d09753ad4035230ae808509368c54b",
+  "venue": "WWW 2026",
+  "title": "Concept-Grounded Detection of Vaccine Misinformation in Multimodal Content Using Interpretable Vision-Language Models",
+  "abstract": "Vaccine misinformation poses a persistent public health challenge, particularly in visual formats such as memes and infographics that combine text, imagery, and rhetorical cues. While textual misinformation has been widely studied, image-based vaccine misinformation remains comparatively underexplored due to the difficulty of interpreting multimodal signals at scale. In this work, we evaluate how effectively multimodal Large Vision-Language Models (LVLMs) can (i) directly classify vaccination stance from images and (ii) extract interpretable concept-level representations that support more reliable and transparent prediction. Using the VaxMeme dataset of 10,244 annotated images, we compare direct zero-shot LVLM inference against a hybrid framework in which classical machine learning models are trained on LVLM-extracted binary concept features. Our results show that grounding stance prediction in structured concept representations consistently outperforms direct LVLM classification, yielding accuracy improvements of approximately 10--17% while enabling explicit inspection of the visual and rhetorical cues driving model decisions. These findings highlight the value of concept-grounded, neuro-symbolic approaches for interpretable multimodal misinformation detection.",
+  "gid": 794,
+  "theme": "Interpretable multimodal misinformation detection"
+ }
+}

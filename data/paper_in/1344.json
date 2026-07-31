@@ -1,0 +1,11 @@
+{
+ "batch": "b089",
+ "paper": {
+  "id": "10.1145/3805712.3808498",
+  "venue": "SIGIR 2026",
+  "title": "LLM-Informed Bayesian Content Exploration in Ultra-Recency Recommendation",
+  "abstract": "Cold-start content discovery is a challenge in recommender systems\u2014one that intensifies on modern social platforms. Ultra-recency environments operate in an extreme cold-start regime where most recommended content is newly created and must be evaluated within hours. Rapid content turnover limits the usefulness of historical signals, while sparse early interactions and limited exposure budgets make quality estimation noisy. In this setting, efficient exploration can improve user experience while surfacing emerging creators and trends for long-term platform health. We propose an approach that uses large language models (LLMs) to provide exposure-independent semantic priors for cold-start exploration in such environments. We repurpose LLMs as Bayesian prior constructors: the LLM assesses semantic quality and engagement potential from content alone, before any user interaction occurs, producing an informed prior for early exploration. This prior is integrated into an Upper Confidence Bound (UCB) policy, where it guides early impression allocation and naturally decays as observed data accumulates. The framework combines semantic understanding with uncertainty-aware exploration to enable scalable and efficient cold-start discovery. We apply this item-centric approach within a reranking layer, where a personalized base ranker serves as a relevance gate and impression pacing controls e",
+  "gid": 1344,
+  "theme": "cold-start exploration"
+ }
+}

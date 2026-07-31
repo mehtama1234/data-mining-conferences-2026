@@ -1,0 +1,11 @@
+{
+ "batch": "b021",
+ "paper": {
+  "id": "605b58d1aa58327db3eeb86a3f84c34287ede8b1",
+  "venue": "WWW 2026",
+  "title": "What Is Your AI Agent Buying? Evaluation, Biases, Model Dependence, & Emerging Implications of Agentic E-Commerce",
+  "abstract": "Online marketplaces will be transformed by autonomous AI agents acting on behalf of consumers. Rather than humans browsing and clicking, AI agents can parse webpages or interact through APIs to evaluate products, and transact. This raises a fundamental question: what do AI agents buy\u2014and why? We develop ACES, a sandbox environment that pairs a platform-agnostic agent with a fully programmable mock marketplace to study this. We first explore aggregate choices, revealing that modal choices can differ across models, with AI agents sometimes concentrating on a few products, raising competition questions. We then analyze the current drivers of choices through randomized experiments on product positions and listing attributes. Models show sizeable and heterogeneous position effects: all favor the top row, yet different models prefer different columns, undermining the assumption of a universal ''top'' rank. They penalize sponsored tags, reward endorsements, and sensitivities to price, ratings, and reviews are directionally as expected, but vary sharply across models. Our findings reveal how AI agents behave in e-commerce, and surface concrete monitoring, seller strategy, platform design, and regulatory questions.",
+  "gid": 326,
+  "theme": "Agentic e-commerce behavior"
+ }
+}

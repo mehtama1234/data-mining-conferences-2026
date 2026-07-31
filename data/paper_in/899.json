@@ -1,0 +1,11 @@
+{
+ "batch": "b059",
+ "paper": {
+  "id": "3eed2e4905975aafa61c5f2601ae5de4c041ca6f",
+  "venue": "WSDM 2026",
+  "title": "WSDM CUP 2026: Multilingual Retrieval",
+  "abstract": "Multilingual retrieval has become a core functionality in information systems, such as retrieval-augmented generation, since the retrieved document can be post-processed by a large language model into a form that the users can easily consume. Whether the user can directly read the source documents becomes less vital to the search process. However, ad hoc retrieval has primarily been developed in English, limiting the capability of these complex systems to retrieve information across different languages. To address this challenge, we introduce a multilingual retrieval task at WSDM Cup 2026 that requires systems to search a multilingual collection using English queries.",
+  "gid": 899,
+  "theme": "Multilingual retrieval"
+ }
+}

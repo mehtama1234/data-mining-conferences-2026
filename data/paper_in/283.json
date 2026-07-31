@@ -1,0 +1,11 @@
+{
+ "batch": "b018",
+ "paper": {
+  "id": "52188dd7a08118a2bdee74a6872e0ca70e0ae833",
+  "venue": "WWW 2026",
+  "title": "Out-of-distribution Generalized Generative AI",
+  "abstract": "This tutorial aims to disseminate and promote recent research advancements in multi-modal generative AI, focusing on two dominant families of techniques: multi-modal large language models (MLLMs) for multi-modal understanding and diffusion-based models for visual generation. We provide a systematic overview of these models, covering their probabilistic formulations, architectural designs, and mechanisms for multi-modal interaction. We then formalize out-of-distribution (OOD) environments in post-training as settings where the data distribution encountered at inference differs from that used during model adaptation, leading to a mismatch between training-time optimality and deployment-time requirements. Such OOD conditions arise from distribution shifts, the emergence of novel concepts, and increasingly complex application scenarios, and pose fundamental challenges to the generalization of generative models. This tutorial explores recent solutions and future directions to address these challenges from two complementary perspectives: (i) generalizable post-training techniques that enable adaptation to OOD environments, and (ii) unified frameworks that support both understanding and generation for complex multi-modal tasks in OOD environments.",
+  "gid": 283,
+  "theme": "Generalization"
+ }
+}

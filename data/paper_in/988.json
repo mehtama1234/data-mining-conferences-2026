@@ -1,0 +1,11 @@
+{
+ "batch": "b065",
+ "paper": {
+  "id": "f46a1cb6abfe867cfc8b049ded425d1a15e7be73",
+  "venue": "WSDM 2026",
+  "title": "LLM Agent-based Shilling Attack on Recommender Systems",
+  "abstract": "With the growing ubiquity of recommender systems (RSs), malicious manipulation through shilling attacks, where fake user profiles are injected to alter system outputs, poses increasing threats to system integrity. Existing attack methods often rely on simplified heuristics, require internal RS data, and most overlook user reviews, limiting their stealthiness, realism, and potential impact. Recently, LLM-based user agents are gaining traction in the RS community for their capabilities to simulate human behaviors like rating and review generation. In this context, we propose AgentSA, a low-knowledge shilling attack framework that employs such agents to manipulate recommendations through adversarial yet human-like interactions. We design targeted mechanisms to guide profile construction, memory retrieval, and action generation (including reviews) to maximize manipulation impact while maintaining behavioral camouflage. We evaluate the impact of these agents on various types of RSs and demonstrate that AgentSA consistently outperforms existing low-knowledge attack methods in both effectiveness and stealth. Our findings uncover a concerning new class of threats enabled by LLM-based agents, underscoring the pressing need to bolster RS security against such emerging risks.",
+  "gid": 988,
+  "theme": "Recommender system attacks"
+ }
+}

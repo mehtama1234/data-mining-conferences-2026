@@ -1,0 +1,11 @@
+{
+ "batch": "b016",
+ "paper": {
+  "id": "48347a9e01aa4faffb350cd2c652d4ad53cdb46b",
+  "venue": "WWW 2026",
+  "title": "Using Psycholinguistic Features for Multiplex Community Detection in Temporal Social Networks",
+  "abstract": "Based on three real-world datasets from the \\#BlackLivesMatter movement, Brexit, and the Christchurch terrorist attack, we derive overlapping temporal snapshots and compare pure interaction networks to two multiplex networks, respectively. In particular, our multiplex networks introduce expressions of grievances and moral framings as additional network layers. For each temporal snapshot, we then apply the multiplex version of Leiden community detection and analyze how the additional network layers influence (i) fragmentation (community count, singleton rate, and size concentration) as well as (ii) temporal persistence across non-overlapping time windows. We found that adding psycholinguistic attribute layers results in more cohesive partitions that can provide deeper insights into social media communication patterns. Therefore, our findings indicate that psycholinguistic features (such as grievances and moral framings) which can be derived from text messages should be treated as an explicit modeling decision for temporal community detection, they should be reported and tested for robustness under alternative modeling choices.",
+  "gid": 247,
+  "theme": "Social network analysis"
+ }
+}

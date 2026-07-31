@@ -1,0 +1,11 @@
+{
+ "batch": "b043",
+ "paper": {
+  "id": "c93bda41c79f574f97665d8455ea1d4709d8bcb4",
+  "venue": "WWW 2026",
+  "title": "Towards Automating Articles Screening Processes Using Chain-of-Thought Large Language Models",
+  "abstract": "The rapid expansion of the biomedical literature has made manual screening for meta-analyses increasingly hard. While automation attempts exist, they often rely on active-learning powered binary classification, which is still time intensive; or simple summarization, frequently struggling with factual consistency and completeness of the information reported. This work presents a novel pipeline using Reasoning-Large Language Models (Chain-of-Thought) to automate the summarization of informative elements from full-text biomedical documents, focusing on PIO elements (Patient/Population, Intervention, and Outcome) in a human-in-the-loop scenario. PDF documents are segmented into structured XML semantic chunks. Then, the pipeline employs a Large Language Model, where several prompts are adaptively used based on the semantic complexity of the chunks, measured using Effective Rank. Consensus-based filtering mechanisms are then used to synthesize multiple candidate responses into a single, high-fidelity summary. We evaluated the pipeline on the EBM-NLP dataset using multiple LLMs. Results demonstrate that an 8B parameter model, when integrated into our pipeline, achieves (BERTScores) semantic precision exceeding 0.88 and (BERTScores) semantic recall exceeding 0.91, rivaling much larger models. A subsequent human evaluation by expert researchers confirmed the high factuality and complete",
+  "gid": 652,
+  "theme": "Biomedical text summarization"
+ }
+}

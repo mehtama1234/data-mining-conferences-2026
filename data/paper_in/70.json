@@ -1,0 +1,11 @@
+{
+ "batch": "b004",
+ "paper": {
+  "id": "13faad8eb669b31ee33c4407176698d0d837a735",
+  "venue": "WWW 2026",
+  "title": "ZK-V: Zero-Knowledge Verification for Trustworthy Autonomous Driving Simulation",
+  "abstract": "As autonomous driving technology advances towards Level 4 and 5, virtual simulation has become an indispensable tool for safety validation. However, a critical ''trust gap'' exists between developers and regulators; submitting raw simulation logs poses risks of data tampering (integrity issues) and intellectual property leakage (privacy issues). To address this, we propose ZK-V, a universal, privacy-preserving verification framework designed to interface with various autonomous driving simulators. By leveraging Zero-Knowledge Proofs and blockchain technology, ZK-V allows a Prover to cryptographically demonstrate that a simulation run adhered to specific safety constraints such as collision avoidance and speed limits without revealing the underlying telemetry data. This paper outlines the simulation-agnostic system architecture and constraint logic, offering a scalable solution for decentralized, trust-free certification in the Web 4.0 mobility era.",
+  "gid": 70,
+  "theme": "Autonomous driving verification"
+ }
+}

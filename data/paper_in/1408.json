@@ -1,0 +1,11 @@
+{
+ "batch": "b093",
+ "paper": {
+  "id": "10.1145/3805712.3808450",
+  "venue": "SIGIR 2026",
+  "title": "Efficient LLM Adaptation for Opinion Knowledge Graph Construction: Lessons from the Telecom Industry",
+  "abstract": "Deploying Large Language Models (LLMs) to build real-time public opinion analysis platforms is critical for enterprises to drive strategic decisions, monitor competitor dynamics, and manage brand reputation crises. However, adapting these models for vertical domains, such as extracting structured insights from customer feedback, requires balancing performance with prohibitive training costs, which is particularly challenging for low-resource languages like Traditional Chinese. In this work, partnered with Chunghwa Telecom, the largest telecommunications operator in Taiwan, we present a systematic study on adapting open-source LLMs (LLaMA-3, Qwen and Mistral) for structured opinion mining. Our goal is to transform noisy, multi-turn forum discussions into Opinion Knowledge Graphs (OKGs) to support downstream retrieval, competitor analysis, and real-time customer service monitoring. We investigate critical engineering trade-offs in the instruction-tuning pipeline, focusing on data efficiency and training strategies. Our experiments yield several counterintuitive findings valuable for industrial practitioners: (1) Cost-Efficiency: Contrary to common practices, we find that Continual Pretraining (CPT) offers limited benefits when starting with strong instruction-tuned baselines, suggesting practitioners can skip this resource-intensive step. (2) Data Strategy: We demonstrate that pa",
+  "gid": 1408,
+  "theme": "Opinion knowledge extraction"
+ }
+}

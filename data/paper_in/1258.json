@@ -1,0 +1,11 @@
+{
+ "batch": "b083",
+ "paper": {
+  "id": "10.1145/3805712.3809894",
+  "venue": "SIGIR 2026",
+  "title": "Semantic Recall for Vector Search",
+  "abstract": "We introduce Semantic Recall, a novel metric to assess the quality of approximate nearest neighbor search algorithms by considering only semantically relevant objects that are theoretically retrievable via exact nearest neighbor search. Unlike traditional recall, semantic recall does not penalize algorithms for failing to retrieve objects that are semantically irrelevant to the query, even if those objects are among their nearest neighbors. We demonstrate that semantic recall is particularly useful for assessing retrieval quality on queries that have few relevant results among their nearest neighbors---a scenario we uncover to be common within embedding datasets. Additionally, we introduce Tolerant Recall, a proxy metric that approximates semantic recall when semantically relevant objects cannot be identified. We empirically show that our metrics are more effective indicators of retrieval quality, and that optimizing search algorithms for these metrics can lead to improved cost-quality tradeoffs.",
+  "gid": 1258,
+  "theme": "Vector search evaluation"
+ }
+}

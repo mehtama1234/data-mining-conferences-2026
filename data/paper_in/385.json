@@ -1,0 +1,11 @@
+{
+ "batch": "b025",
+ "paper": {
+  "id": "72ae9003377d7624e5cd0c68d688df2e6e9f6ba8",
+  "venue": "WWW 2026",
+  "title": "Line Graphs Are Here! Unlock a Simple Solution for Data Sparsity and Class Imbalance in Recommender System",
+  "abstract": "The persistent challenges of data sparsity and class imbalance have long limited the development of recommender systems. Fortunately, line graph theory offers a novel perspective to overcome these issues. By transforming the user-item interaction bipartite graph into a line graph, the problems of data sparsity and class imbalance are elegantly reformulated as those of insufficient labeled nodes and imbalanced label distribution in the line graph domain. This reformulation allows us to directly apply mature techniques from node classification and imbalanced graph learning to address these core challenges. Inspired by this insight, we propose a Line Graph Data Augmentation (LGDA) strategy, which features two distinct characteristics. Firstly, it is a plug-and-play module that resolves data sparsity and imbalance without modifying the underlying recommendation framework. Secondly, it employs a targeted augmentation and confidence filtering mechanism to generate high-quality, balanced augmented data. Extensive experiments on four real-world datasets validate that LGDA effectively alleviates data sparsity and class imbalance, leading to significant improvements in both recommendation performance and system robustness.",
+  "gid": 385,
+  "theme": "recommendation robustness"
+ }
+}

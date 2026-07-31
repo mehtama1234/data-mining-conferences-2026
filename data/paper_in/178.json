@@ -1,0 +1,11 @@
+{
+ "batch": "b011",
+ "paper": {
+  "id": "3398c5ad0f362d32aa758cb1c1cff3b98550b141",
+  "venue": "WWW 2026",
+  "title": "Multi-Source Unsupervised Graph Domain Adaptation via Concise Propagation\u2013Transformation Pipeline",
+  "abstract": "Unsupervised graph domain adaptation (UGDA) aims to transfer knowledge from a labeled source graph to an unlabeled target graph, addressing the performance degradation caused by distributional shifts in node attributes and graph structures across domains. Despite recent progress, existing UGDA approaches still face two key challenges: (C1) Data-level: Most methods rely on a single source domain, overlooking the complementary knowledge that could be leveraged from multiple sources. (C2) Model-level: Many UGDA models emphasize complex, handcrafted Graph neural network (GNN) architectures, while simpler yet effective designs with propagation (P) & transformation (T) pipeline remain underexplored. To address these challenges, in this paper, we propose a novel approach, which leverages Concise Propagation\u2013Transformation pipeline for multi-source unsupervised Graph Domain Adaptation, dubbed as CPT-GDA, to better capture complementary knowledge from multiple sources in an efficient manner. Specifically, the proposed CPT-GDA adopts a dual-branch GNN architecture with different depths of propagation but the same P-T patterns, which enables the model to efficiently learn node representations to mitigate domain discrepancy. Meanwhile, to facilitate effective knowledge transfer across graphs, we derive three optimization objectives: (1) the classifier loss to learn discriminative represent",
+  "gid": 178,
+  "theme": "Graph domain adaptation"
+ }
+}

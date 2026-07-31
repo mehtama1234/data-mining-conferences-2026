@@ -1,0 +1,11 @@
+{
+ "batch": "b061",
+ "paper": {
+  "id": "66469392e63e2070da561cb4ffc449f178878ff4",
+  "venue": "WSDM 2026",
+  "title": "MerFT: A Framework for Social Conflict Meme Exploration via Multimodal Retrieval-Augmented Fine-tuning",
+  "abstract": "Social media widely circulates harmful and conflict-laden narratives, and internet memes are a key multimodal vehicle for such content. We present RoMQD, a multimodal dataset purpose-built for distractor-aware meme interpretation, and MerFT (Meme Exploration via Multimodal Retrieval-Augmented Fine-tuning), a training framework that integrates images, captions, and associated documents within RAG pipelines. MerFT couples citation-aware chain-of-thought with a document-aligned loss to ground answers in oracle evidence while discounting semantically similar but misleading distractors. We evaluate MerFT under multiple input configurations (Base, Caption, Both) while systematically varying distractor frequency. The model shows graceful degradation as noise increases, with Both (image+caption) inputs yielding the most reliable behavior. On RoMQD, MerFT improves over RAG baselines (e.g., +7.7 F1 with Qwen2.5-VL) and delivers larger gains on categories requiring nuanced cultural grounding, such as satire/irony and image\u2013text integration. A clustering-based strategy for constructing challenging distractor pools further enhances robustness, and MerFT remains complementary to modern rerankers. These results demonstrate the feasibility of retrieval-robust multimodal reasoning for meme-based socio-cultural conflict analysis and provide practical guidance for building dependable content anal",
+  "gid": 915,
+  "theme": "Multimodal content analysis"
+ }
+}

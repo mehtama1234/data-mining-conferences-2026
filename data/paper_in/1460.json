@@ -1,0 +1,11 @@
+{
+ "batch": "b097",
+ "paper": {
+  "id": "10.1145/3805712.3808361",
+  "venue": "SIGIR 2026",
+  "title": "Evaluating Proactivity in Conversational Search through Anticipatory Retrieval",
+  "abstract": "Over the years, conversational search has transformed how users engage in information seeking through multi-turn dialogues. Traditional conversational search systems are primarily reactive, responding to explicit user-issued queries at each turn [2, 10]. In contrast, modern conversational search treats information seeking as a dynamic process in which users refine goals, explore alternatives, and make decisions across turns [7, 9]. However, most conversational search systems remain fundamentally reactive. They support search by clarifying ambiguous queries [4], maintaining conversational context [5], retrieving relevant documents across turns [6], and generating responses [3], but they rely on explicitly expressed user queries. As search tasks grow more complex, users' information needs are often incomplete, evolving, and not fully articulated. In such settings, users may not know what to ask next or what information is missing. This limitation motivates a shift from reactive systems to proactive ones. This paradigm, known as proactive conversational search (PCS), aims to anticipate users' future information needs [1] by inferring implicit intent from the natural flow of conversation, and to proactively surface relevant recommendations that the user may not have explicitly considered, ultimately reducing user effort over the course of the search process. Importantly, the goal i",
+  "gid": 1460,
+  "theme": "Proactive conversation search"
+ }
+}

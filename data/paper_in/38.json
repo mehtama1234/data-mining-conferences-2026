@@ -1,0 +1,11 @@
+{
+ "batch": "b002",
+ "paper": {
+  "id": "0b2bc6c3ee09d444054e669172e0472d7dc8de47",
+  "venue": "WWW 2026",
+  "title": "TraceLLM: Evaluating and Exploring Large Language Models on Trace Analysis in Microservice-based Web Applications",
+  "abstract": "Trace analysis is essential for understanding system behaviors, detecting anomalies, and diagnosing faults in complex microservice-based web applications. Existing trace analysis approaches face several challenges in industrial microservice-based systems, including high manual overhead, limited functionality, unfriendly interaction mechanisms, and difficulties in deployment and integration. The strong capabilities of large language models (LLMs) in natural language understanding, reasoning, and multi-task generalization provide new opportunities for a more intelligent and flexible trace analysis approach. However, the trace analysis capabilities of LLMs remain underexplored and underdeveloped. To bridge this gap, we conduct the first comprehensive evaluation on the trace analysis capabilities of LLMs. In particular, we construct the first instruction&response benchmark dataset for trace analysis, named TraceBench. It involves a wide range of trace analysis tasks, allowing us to systematically evaluate the capabilities of LLMs in this area. Experimental results show that LLMs have potential in handling trace analysis tasks, but there leaves room for improvement. To this end, we propose TraceLLM, an approach that significantly enhances the capabilities of LLMs via fine-tuning, outperforming the open-source LLMs by 34.77% on average in terms of accuracy, and outperforming the clos",
+  "gid": 38,
+  "theme": "LLM trace analysis"
+ }
+}

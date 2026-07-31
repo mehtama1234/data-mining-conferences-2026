@@ -1,0 +1,11 @@
+{
+ "batch": "b061",
+ "paper": {
+  "id": "6829725d3501d66af3dc54461a4ae1529d4c7cf1",
+  "venue": "WSDM 2026",
+  "title": "Bootstrapping in the Loop: Multi-hop Question Answering via Alternating Decomposition and Retrieval",
+  "abstract": "Multi-hop question answering (QA) typically involves retrieving multiple relevant passages as evidence, which a reader then uses to derive the final answer. Existing methods often decompose complex questions into subquestions, leveraging large language models for step-by-step inference. However, these approaches fail to address the interdependence between retrieval and decomposition, resulting in suboptimal performance: Incomplete or inaccurate evidence can lead to poorly crafted subquestions, which, in turn, amplify the retrieval of irrelevant information and impede the reasoning process. To tackle this, we introduce BidLoop, a multi-step reasoning framework that explicitly models Bid irectional Loop between decomposition and retrieval. BidLoop employs four specialized modules: the Planner, Evaluator, Retriever, and Reader. In each reasoning round, the Planner generates a new subquestion based on prior evidence and subquestion-answer pairs. The Evaluator assesses whether the gathered evidence is sufficient to produce the final answer or if further reasoning is needed. Guided by the Planner's subquestion, the Retriever fetches relevant evidence, while the Reader answers the subquestion, adding new evidence for the next round. Our approach excels in generalization, performing strongly on unseen datasets without training on them. Extensive experiments across diverse multi-hop QA ",
+  "gid": 917,
+  "theme": "Multi-hop question answering"
+ }
+}

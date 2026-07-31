@@ -1,0 +1,11 @@
+{
+ "batch": "b064",
+ "paper": {
+  "id": "d09f2741a73a07465c937c3a0f88050cdf1f47a9",
+  "venue": "WSDM 2026",
+  "title": "Constructing Commonsense Knowledge Graph for Persona Consistency",
+  "abstract": "Ensuring consistent persona in interactive AI systems presents a significant challenge, especially in diverse application scenarios ranging from virtual assistants to customer service bots. Such capability is often constrained by the system's understanding of direct and explicit persona conflicts. Traditional approaches primarily focus on detecting discrepancies between machine responses and its predefined profile, or the contextual inconsistencies between the responses at the semantic level rather than the persona level. Due to the lack of a comprehensive persona-specific Commonsense Knowledge Graph, some indirect and implicit persona inconsistencies between machine responses can hardly be identified. In this paper, we build the first persona commonsense knowledge graph (PersonaKG), based on which we then construct a large-scale persona consistency dialogue dataset (PersonaCOM) containing both explicit and implicit persona conflicts between machine responses. With the guidance of the persona commonsense knowledge, we propose a Recognize-Rewrite framework (R2) which first recognizes the responses that are inconsistent in persona with the previous responses, and then rewrites them into consistent ones. The empirical study demonstrates that utilizing R2 method on PersonaCOM with PersonaKG results in a significant improvement of 12.20% in automatic metrics and 10.09% in manual eva",
+  "gid": 967,
+  "theme": "Persona consistency"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "batch": "b048",
+ "paper": {
+  "id": "de671841999dc6ee37d144a699b12744672b0b54",
+  "venue": "WWW 2026",
+  "title": "Knowledge Graph Editing Model for Enhancing Recommendation Systems",
+  "abstract": "Knowledge Graphs (KGs) play a pivotal role in enhancing recommendation systems by providing structured, semantically rich relationships between items and entities. However, real-world KGs often contain noisy, redundant, or task-irrelevant associations that may obscure meaningful patterns and negatively impact recommendation accuracy. To address this challenge, we propose a knowledge editing recommendation framework that refines KGs through two complementary components. The first component, Knowledge Filtering, employs diffusion models to denoise KG structures while preserving their semantic integrity. The second component, Task-Specific Triplet Reconstruction, identifies and enhances task-relevant triples through attention-based scoring and masked self-supervised reconstruction. Extensive experiments conducted on three publicly available datasets demonstrate that our framework consistently outperforms strong baselines, confirming the effectiveness of our approach in producing cleaner KGs and better user-item representations.",
+  "gid": 731,
+  "theme": "knowledge graph recommendation"
+ }
+}

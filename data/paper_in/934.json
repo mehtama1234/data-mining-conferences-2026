@@ -1,0 +1,11 @@
+{
+ "batch": "b062",
+ "paper": {
+  "id": "84832658ae227c127cc45c863e6acf49805dc37a",
+  "venue": "WSDM 2026",
+  "title": "Phishing Detection in Web Domains: new intelligent tool leveraging the effectiveness of emerging Generative models",
+  "abstract": "The rapid growth of online services has heightened concerns about user protection from cyber threats, particularly phishing, which poses significant risks to cyber-social security. To this end, we propose a novel tool for phishing detection called U-Proof. Our tool uses both state-of-the-art LLMs and traditional ML models to detect phishing websites. In particular, we evaluate the phishing detection capabilities of different LLMs and compare them with several ML models to analyze the impact of different model architectures on the identification of phishing websites. For a comprehensive experimental evaluation, we use a combination of public and custom datasets. These include active phishing websites from September 2024, as well as URLs from banks and postal services. Furthermore, the tool includes explanations to enhance user awareness of phishing tactics, supporting broader educational efforts to reduce risks.",
+  "gid": 934,
+  "theme": "phishing detection"
+ }
+}

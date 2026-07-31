@@ -1,0 +1,11 @@
+{
+ "batch": "b030",
+ "paper": {
+  "id": "8b91d03174c3cc450e3f24be7f2723490a2c46e1",
+  "venue": "WWW 2026",
+  "title": "Fact-Checking Strategies in Web: Lateral Navigation in the Browser Boosts Health Misinformation Detection Even Under Confirmation Bias",
+  "abstract": "Health misinformation poses serious public health risks, yet little is known about how ordinary users verify such content in real time. In this study, we investigate how behavioral fact-checking strategies, specifically, lateral reading (consulting multiple external sources) versus vertical reading (spending more time on fewer sources), affect accuracy in detecting health-related misinformation. We conducted a large-scale online experiment with 1,842 participants using a designed for the experiment purposes standalone web platform that logs respondents' behavioral signals (tab/window switches and time spent outside the experimental interface). This design enables indirect measurement of fact-checking in an ecologically valid setting. Using linear mixed-effects models with semiparametric bootstrap confidence intervals, we find that lateral reading significantly improves accuracy (\u03b2 = 0.09, 95% CI [0.079, 0.181], p = 0.001), while vertical reading has no effect (\u03b2 = -0.01, p = 0.332). Crucially, confirmation bias, operationalized as alignment between statement valence and user attitude, does not moderate this relationship (p = 0.876). This suggests that lateral reading remains effective even when users encounter ideologically congruent misinformation. Our results demonstrate that simple, scalable behavioral cues like tab-switch frequency can serve as reliable indicators of verifi",
+  "gid": 462,
+  "theme": "misinformation detection verification"
+ }
+}

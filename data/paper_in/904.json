@@ -1,0 +1,11 @@
+{
+ "batch": "b060",
+ "paper": {
+  "id": "4b5e74a52564ba031af0cb61efa3e7a6b99027aa",
+  "venue": "WSDM 2026",
+  "title": "Beyond Existing Retrievals: Cross-Scenario Incremental Sample Learning Framework",
+  "abstract": "The parallelized multi-retrieval architecture has been widely adopted in large-scale recommender systems for its computational efficiency and comprehensive coverage of user interests. Many retrieval methods typically integrate additional cross-scenario samples to enhance the overall performance ceiling. However, those model designs neglect the fact that a part of the cross-scenario samples have already been retrieved by existing models within a system, leading to diminishing marginal utility in delivering incremental performance gains. In this paper, we propose a novel retrieval framework IncRec, specifically for cross-scenario incremental sample learning. The innovations of IncRec can be highlighted as two aspects. Firstly, we construct extreme cross-scenario incremental samples that are not retrieved by any existing model. And we design an incremental sample learning framework which focuses on capturing incremental representation to improve the overall retrieval performance. Secondly, we introduce a consistency-aware alignment module to further make the model prefer incremental samples with high exposure probability. Extensive offline and online A/B tests validate the superiority of our framework over state-of-the-art retrieval methods. In particular, we deploy IncRec in the Taobao homepage recommendation, achieving a 1% increase in online transaction count, demonstrating its",
+  "gid": 904,
+  "theme": "multi-retrieval recommendation"
+ }
+}

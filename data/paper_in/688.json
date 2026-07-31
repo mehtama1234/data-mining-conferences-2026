@@ -1,0 +1,11 @@
+{
+ "batch": "b045",
+ "paper": {
+  "id": "d10f0fb292c049e5d9fc9383a82ec432e375e61a",
+  "venue": "WWW 2026",
+  "title": "Calculating Narrative Tension for Ad Placement in Online Narrative Fiction",
+  "abstract": "We outline a scheme for advertisement placement in online narrative text using a classifier that labels paragraphs for ''narrative tension.'' We discuss the theoretical research on narrative tension and present preliminary findings on the use of large language models (LLMs) to construct such a classifier.",
+  "gid": 688,
+  "theme": "narrative ad placement"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "batch": "b063",
+ "paper": {
+  "id": "a279b45760b85d07e2150a3bdcc4e2d51da0fc7e",
+  "venue": "WSDM 2026",
+  "title": "Planning Before Retrieval: A Constrained Planner\u2013Executor Framework for Reliable and Efficient KG-Augmented Reasoning",
+  "abstract": "Large language models (LLMs) excel at open-domain reasoning but often generate inconsistent or unverifiable answers. Retrieval-augmented generation (RAG) improves factual grounding, yet current KG-RAG systems rely on heuristic retrieval and lack interpretability. This dissertation proposes a planner\u2013executor framework that formalizes retrieval as a structured planning problem. The planner analyzes a question, identifies relational constraints, and infers the underlying KG topology to generate an optimized retrieval plan. The executor follows this plan on Wikidata with bounded exploration, early stopping, and re-planning when constraints fail. This design enables controlled, auditable reasoning that balances completeness and efficiency. Evaluation will focus on retrieval faithfulness, reasoning accuracy, and computational cost using Wikidata-based QA benchmarks. Additional studies will examine constraint prioritization, query topology, and cross-model plan transfer between large and small LLMs. By integrating explicit planning into KG-RAG, we aim to develop scalable and interpretable reasoning systems that combine the structure of symbolic search with the adaptability of neural generation.",
+  "gid": 947,
+  "theme": "KG-augmented reasoning"
+ }
+}

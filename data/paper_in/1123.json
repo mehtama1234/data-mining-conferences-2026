@@ -1,0 +1,11 @@
+{
+ "batch": "b074",
+ "paper": {
+  "id": "10.1145/3805712.3809679",
+  "venue": "SIGIR 2026",
+  "title": "Mitigating Bias in Large Language Model Based Question Answering through Causal Front Door Prompting",
+  "abstract": "Large language models (LLMs) are widely used for question answering (QA) but can generate biased or stereotype-driven answers due to demographic associations learned during pre-training. Existing mitigation strategies often rely on model access or fine-tuning, which limits their applicability to closed-source LLMs. We propose a Causal Front Door Prompting framework (CFDP) that reduces demographic influence by intervening on the chain of thought reasoning, which is treated as an observable mediator. CFDP samples and clusters multiple reasoning traces and estimates answer probabilities through weighted aggregation. Experiments on two widely used bias-sensitive QA benchmarks, BBQ and Stereotype, across major LLMs show that CFDP consistently improves fairness metrics without sacrificing QA accuracy. Ablation and sensitivity analyses confirm the value of each component, indicating that causal intervention on reasoning provides an effective and practical approach for bias mitigation in LLM-based QA.",
+  "gid": 1123,
+  "theme": "bias mitigation"
+ }
+}

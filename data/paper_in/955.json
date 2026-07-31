@@ -1,0 +1,11 @@
+{
+ "batch": "b063",
+ "paper": {
+  "id": "b6de31e970b8d779c30f248b31c129e19f4e29b1",
+  "venue": "WSDM 2026",
+  "title": "Mixture of Adaptive Retrieval Experts for Veracity Assessment in the Human\u2013LLM Mixed Generation Paradigm",
+  "abstract": "The growing prevalence of false information originating from human\u2013LLM mixed generation sources presents new challenges for veracity assessment, as different generation sources (e.g., human or LLM) exhibit distinct semantic patterns and retrieval needs. In particular, LLM-generated false information is often more fluent, persuasive, and difficult to detect than traditional human-written content. Existing retrieval-augmented generation (RAG) methods for veracity assessment often use a uniform retrieval strategy for all inputs, limiting their flexibility in adapting to varying content characteristics. Current adaptive RAG methods primarily focus on general input difficulty or model confidence, overlooking the distinct semantic characteristics and retrieval needs of different generation sources. We propose MoARE, a Mixture of Adaptive Retrieval Experts framework that dynamically determines whether to retrieve and how much evidence to retrieve for each post. MoARE leverages a Mixture-of-Experts (MoE) network trained via reinforcement learning to balance veracity assessment accuracy and time cost\u2014without requiring knowledge of the input's generation source. Experiments on recent human\u2013LLM mixed datasets demonstrate that MoARE outperforms state-of-the-art RAG baselines, achieving higher accuracy with lower time cost.",
+  "gid": 955,
+  "theme": "Veracity assessment"
+ }
+}

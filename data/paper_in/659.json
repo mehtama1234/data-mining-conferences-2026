@@ -1,0 +1,11 @@
+{
+ "batch": "b043",
+ "paper": {
+  "id": "ca7983b1a95b7008dc72c3cb1a86211ff11b24df",
+  "venue": "WWW 2026",
+  "title": "Mamba Hawkes Process for Event Sequence Modeling",
+  "abstract": "Modeling asynchronous event sequences is crucial in numerous real-world applications such as healthcare monitoring, financial transaction analysis, and so on. Traditional temporal point processes, including Hawkes Processes, often fail to capture complex dependencies due to their parametric limitations. While neural approaches like RNNs and Transformers have improved flexibility, they struggle with computational inefficiency, and attention saturation. In this paper, we introduce the Mamba Hawkes Process (MHP), the first framework to integrate selective state space model (Mamba) with temporal point processes. MHP leverages time-varying state transitions and input-dependent gating to efficiently encode event history and capture long-term dependencies with linear complexity. Importantly, we provide theoretical guarantees showing that MHP generalizes both classical multi-exponential Hawkes processes and exponential-decay gated RNNs, underscoring its expressive power and theoretical soundness. To address the inherent constraints of pure state space models in handling heterogeneous event interactions, we further develop Adaptive Mamba Hawkes Process (A-MHP) that incorporates two novel mechanisms: a Time-Scaling Mechanism that adaptively weights time intervals based on event type and history, and a Dual-Channel State Transition that adaptively processes event content and temporal dyna",
+  "gid": 659,
+  "theme": "Event sequence modeling"
+ }
+}

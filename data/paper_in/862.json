@@ -1,0 +1,11 @@
+{
+ "batch": "b057",
+ "paper": {
+  "id": "feb2b97bc56c432004da70ad3ae2a8b790ae900c",
+  "venue": "WWW 2026",
+  "title": "1st Workshop on Applied AI and Multimodal Visualization Technologies (AAIMVT 2026)",
+  "abstract": "The 1st Workshop on Applied AI and Multimodal Visualization Technologies (AAIMVT 2026) was held in conjunction with The ACM Web Conference 2026 in Dubai, UAE. This workshop addresses the growing need for integrating applied artificial intelligence (AI) with multimodal visualization technologies in web-based environments. As AI systems increasingly operate over heterogeneous inputs, including text, images, audio, video, and sensor data, visualization and interactive web interfaces become essential for explainability, interpretability, trust, and actionable decision support. This workshop combined peer-reviewed paper presentations with structured brainstorming sessions to accelerate interdisciplinary exchange and to identify concrete, web-driven research directions for multimodal AI and visualization. The accepted papers illustrate both methodological advances and applied impact across different domains. Contributions include (i) a privacy-preserving voice-cloning and speech-synthesis platform with a unified web interface, (ii) a homonym-aware ''living'' cybersecurity ontology platform designed to bridge governance and operational semantics via web-based knowledge management and visualization, (iii) a robust harmful-meme detection under missing modalities using shared representation learning, and (iv) a vision-language region understanding to reconstruct static infographics into ",
+  "gid": 862,
+  "theme": "Multimodal AI visualization"
+ }
+}

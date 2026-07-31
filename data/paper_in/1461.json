@@ -1,0 +1,11 @@
+{
+ "batch": "b097",
+ "paper": {
+  "id": "10.1145/3805712.3808364",
+  "venue": "SIGIR 2026",
+  "title": "Adaptive Personalisation for Effective Conversational Search Systems",
+  "abstract": "Conversational Information Seeking (CIS) requires systems to maintain context across turns, resolve referential ambiguities, and adapt to evolving user intent [6]. Beyond contextual understanding, truly effective CIS demands personalisation: adapting retrieval and responses to each user's unique background and preferences [2]. However, two fundamental limitations constrain current systems. First, existing conversational search pipelines apply a single static workflow to every query, lacking the adaptability to decide when personalisation helps and when it degrades retrieval precision. Second, personalisation in standard benchmarks typically relies on clean, hand-authored oracle user profiles, ignoring the reality that real-world user context is buried within noisy, long-term interaction logs. This research addresses both limitations by proposing a novel modular, agentic framework, realised through a suite of specialised agents that are coordinated by a dynamic orchestration mechanism. The first completed contribution (RQ1) addresses the granularity of personalisation during query reformulation. We introduced a new set of human annotations for the iKAT 2023 test collection to capture the specific personalisation requirements of queries. Leveraging this data, we developed an adaptive framework with a query-level classifier that determines whether the retrieval quality of a given ",
+  "gid": 1461,
+  "theme": "Adaptive conversational IR"
+ }
+}

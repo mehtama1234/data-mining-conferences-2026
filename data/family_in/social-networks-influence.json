@@ -1,0 +1,565 @@
+{
+ "key": "social-networks-influence",
+ "theme": "Social Networks & Influence",
+ "n_papers": 283,
+ "pct": 14.6,
+ "by_venue": {
+  "WWW 2026": 170,
+  "WSDM 2026": 32,
+  "SIGIR 2026": 71,
+  "KDD 2026": 10
+ },
+ "theme_examples": [
+  {
+   "title": "Multi-view Semantic Contrastive Alignment for Multimodal Recommendation",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "PerQA: A Benchmark for Temporally Sensitive Questions on Heterogeneous Personal Data",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "Revisiting Graph-Level Anomaly Detection: From Partially to Fully Unsupervised Learning",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "WebAndTheCity 12th International Smart City Workshop - Data-Driven Smart Cities",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "A Fact-Checking Framework with Denoising Evidence Retrieval and LLM-Based Debate Verification",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "RobustExplain: Evaluating Robustness of LLM-Based Explanation Agents for Recommendation",
+   "venue": "WWW 2026"
+  }
+ ],
+ "representative_papers": [
+  {
+   "title": "Fair k-Center Clustering on Massive Social Network Data Streams",
+   "venue": "WWW 2026",
+   "problem": "Fair k-center clustering on streaming social networks must respect group representation fairness constraints",
+   "approach": "One-pass streaming algorithm with fairness-aware center selection in Euclidean space",
+   "contribution": "Approximation ratio 4.46 in Euclidean space improving on general metrics ratio of 5+epsilon",
+   "primary_theme": "fair clustering",
+   "methods": [
+    "clustering",
+    "fairness",
+    "streaming"
+   ]
+  },
+  {
+   "title": "Graph Aggregation Beyond Homophily Assumption: a more meaningful way to model networks",
+   "venue": "WWW 2026",
+   "problem": "Graph aggregation assumes homophily; heterophily edges treated as noise; unclear how to handle both meaningfully.",
+   "approach": "Graph Weighted Aggregation (GWA) using Ricci Curvature to measure node influence; combines features, topology, labels.",
+   "contribution": "Outperforms state-of-the-art on benchmark datasets by addressing homophily and heterophily jointly.",
+   "primary_theme": "Graph neural networks",
+   "methods": [
+    "graph-aggregation",
+    "ricci-curvature",
+    "heterophily"
+   ]
+  },
+  {
+   "title": "Using Psycholinguistic Features for Multiplex Community Detection in Temporal Social Networks",
+   "venue": "WWW 2026",
+   "problem": "Temporal community detection misses psycholinguistic patterns in social networks",
+   "approach": "Multiplex networks adding grievance and moral framing layers",
+   "contribution": "More cohesive partitions revealing deeper social media patterns",
+   "primary_theme": "Social network analysis",
+   "methods": [
+    "community-detection",
+    "multiplex-networks",
+    "nlp-features"
+   ]
+  },
+  {
+   "title": "TIME 2026: 2nd International Workshop on Transformative Insights in Multi-faceted Evaluation",
+   "venue": "WWW 2026",
+   "problem": "Workshop call for papers on evaluating models and datasets in web mining, social networks, and ethics domains.",
+   "approach": "TIME workshop invites survey, evaluation, and review papers providing critical analysis from diverse perspectives.",
+   "contribution": "Workshop provides reference guides for researchers, enhances accessibility for newcomers, and fosters interdisciplinary exchange.",
+   "primary_theme": "workshop evaluation",
+   "methods": [
+    "survey",
+    "evaluation",
+    "web-mining",
+    "ethics"
+   ]
+  },
+  {
+   "title": "Unicoon: Hypergraph-based Multi-Agent Simulation of Information Cocoons",
+   "venue": "WWW 2026",
+   "problem": "Social networks and recommender systems' coevolving dynamics in information cocoons remain unexplored",
+   "approach": "Hypergraph-based LLM multi-agent simulation capturing heterogeneous information diffusion patterns",
+   "contribution": "First unified framework revealing synergistic interplay creates distinct polarization patterns",
+   "primary_theme": "Information cocoons simulation",
+   "methods": [
+    "llm",
+    "multi-agent",
+    "hypergraph",
+    "simulation"
+   ]
+  },
+  {
+   "title": "Explaining Synergistic Effects in Social Recommendations",
+   "venue": "WWW 2026",
+   "problem": "Opacity of synergistic effects across social networks hinders explainability",
+   "approach": "Information gain optimization to identify subgraphs embodying synergistic effects",
+   "contribution": "Subgraph-based explanations revealing synergistic effects in social recommendations",
+   "primary_theme": "explainable social recommendation",
+   "methods": [
+    "graph explanation",
+    "information gain",
+    "social networks"
+   ]
+  },
+  {
+   "title": "Suicide Risk Prediction via Comment-Influenced Mental State Trajectories",
+   "venue": "WWW 2026",
+   "problem": "Suicide risk prediction ignores heterogeneous psychological effects of social feedback",
+   "approach": "Comment-influenced temporal framework with adversarial pattern disentanglement",
+   "contribution": "Outperforms existing methods by separating supportive and harmful comment effects",
+   "primary_theme": "Mental health prediction",
+   "methods": [
+    "temporal_modeling",
+    "adversarial_learning",
+    "text_analysis"
+   ]
+  },
+  {
+   "title": "PIGCN: Physics-Inspired Graph Convolution Networks for Heterogeneous Social Event Detection",
+   "venue": "WWW 2026",
+   "problem": "GCN-based social event detection assumes single-pass heat propagation missing multi-wave oscillatory diffusion",
+   "approach": "Physics-inspired GCN with Helmholtz filter for spectral waves and physical interaction forces for edge adjustment",
+   "contribution": "Enhanced event detection via wave-particle duality capturing oscillatory diffusion and message interactions",
+   "primary_theme": "Event detection",
+   "methods": [
+    "gnn",
+    "nlp",
+    "social-media"
+   ]
+  },
+  {
+   "title": "FairGE: Fairness-Aware Graph Encoding in Incomplete Social Networks",
+   "venue": "WWW 2026",
+   "problem": "Fairness constraints in graph transformers on incomplete social networks; missing attributes risk privacy and bias issues",
+   "approach": "Spectral graph theory encoding fairness via principal eigenvector without reconstructing sensitive attributes",
+   "contribution": "16% improvement in statistical parity and equality of opportunity through fairness-aware graph encoding without data generation",
+   "primary_theme": "Graph fairness",
+   "methods": [
+    "spectral methods",
+    "fairness",
+    "graph transformer"
+   ]
+  },
+  {
+   "title": "How Social Media Peer Comments Influence Privacy Decisions in Photo Sharing: Context and Individual Differences Cause Comments to Backfire",
+   "venue": "WWW 2026",
+   "problem": "Peer influence on privacy decisions for photo sharing shows complex, sometimes counterintuitive effects",
+   "approach": "Experimental study examining peer comment effects on sensitive photo sharing across user misconduct history",
+   "contribution": "Identifies that nudges backfire for users with misconduct and mixed comments promote most sharing",
+   "primary_theme": "Social privacy behavior",
+   "methods": [
+    "experimental-design",
+    "peer-influence",
+    "behavioral-analysis"
+   ]
+  },
+  {
+   "title": "VisionST: Coordinating Cross-modal Traffic Prediction with Interactive Geo-image Encoding",
+   "venue": "WWW 2026",
+   "problem": "Single-modality traffic prediction misses comprehensive patterns from diverse factors like road networks and social events",
+   "approach": "VisionST coordinates cross-modal prediction via visual semantic extraction and pattern-guided aggregation from geo-images",
+   "contribution": "Leverages satellite imagery to capture visual, spatial, temporal relations for improved traffic prediction",
+   "primary_theme": "Multi-modal traffic prediction",
+   "methods": [
+    "vision-language",
+    "cross-modal",
+    "spatial-temporal",
+    "semantic-extraction"
+   ]
+  },
+  {
+   "title": "Fairness in Opinion-Formation Dynamics",
+   "venue": "WWW 2026",
+   "problem": "Opinion formation models are widely studied but fairness of influence distribution across groups remains unexplored.",
+   "approach": "Friedkin-Johnsen model with minimal interventions adjusting stubbornness to distribute influence fairly; closed-form influence expressions.",
+   "contribution": "Efficient algorithms for fair opinion distribution; demonstrates stubbornness role in social network fairness.",
+   "primary_theme": "Social network opinion fairness",
+   "methods": [
+    "opinion-dynamics",
+    "graph-fairness",
+    "optimization"
+   ]
+  },
+  {
+   "title": "DynaFLUX: Implicit Dynamics-Preserving Reinforcement Learning for Topology-Free Influence Maximization",
+   "venue": "WWW 2026",
+   "problem": "Influence maximization fails without network topology due to hidden, noisy or privacy-protected links",
+   "approach": "End-to-end generative framework learning latent dynamics from time series with RL seed selection policy",
+   "contribution": "DynaFLUX identifies influential spreaders using self-attention pointer and Monte Carlo diffusion rewards",
+   "primary_theme": "Influence maximization topology-free",
+   "methods": [
+    "reinforcement-learning",
+    "generative-model",
+    "pointer-networks"
+   ]
+  },
+  {
+   "title": "ScotRec: Social Chain-of-Thought LLM Reasoning for Recommendation",
+   "venue": "WWW 2026",
+   "problem": "LLMs exhibit confirmation bias favoring existing user views, reducing recommendation diversity",
+   "approach": "Social chain-of-thought with sentiment-aware profiles and human evaluation operations",
+   "contribution": "SCoTRec alleviates confirmation bias via social sentiment reasoning and interpersonal influence",
+   "primary_theme": "LLM recommendation bias",
+   "methods": [
+    "llm",
+    "reasoning",
+    "recommendation"
+   ]
+  },
+  {
+   "title": "FairGU: Fairness-aware Graph Unlearning in Social Networks",
+   "venue": "WWW 2026",
+   "problem": "Graph unlearning degrades fairness; sensitive attributes exposed after node removal",
+   "approach": "Fairness-aware module with data protection strategies in unlearning framework",
+   "contribution": "FairGU balances utility and fairness during graph unlearning better than baselines",
+   "primary_theme": "graph fairness",
+   "methods": [
+    "graph unlearning",
+    "fairness",
+    "privacy"
+   ]
+  },
+  {
+   "title": "WEB&GRAPH 2026: Workshop on Web & Graphs, Responsible Intelligence, and Social Media",
+   "venue": "WSDM 2026",
+   "problem": "Graph systems lack adaptivity and trustworthiness at web scale; ensuring interpretability in graph analytics challenging",
+   "approach": "Workshop bringing together researchers for algorithmic and methodological advances in responsible graph reasoning",
+   "contribution": "WEB&GRAPH 2026 fosters interdisciplinary dialogue on reliable graph analytics, misinformation detection, provenance tracking",
+   "primary_theme": "graph analytics responsible AI",
+   "methods": [
+    "graph_neural_networks",
+    "web_data_mining"
+   ]
+  },
+  {
+   "title": "Cyberpsychology: Emotion as the Hidden Driver of Social Behavior in Online Networks",
+   "venue": "WSDM 2026",
+   "problem": "Emotion role in digital communication under-explored; emotional dynamics in social media not well understood",
+   "approach": "NLP tools detect emotions and moral sentiments; analyze emotional contagion and affective polarization patterns",
+   "contribution": "Shows emotions organize attention and drive collective behavior; emotional dynamics underlie polarization phenomena",
+   "primary_theme": "social media emotion analysis",
+   "methods": [
+    "nlp",
+    "social_network_analysis"
+   ]
+  },
+  {
+   "title": "Pre-training Language Model for Friend Recommendation: A Case Study of Large Social Graph",
+   "venue": "WSDM 2026",
+   "problem": "PLM effectiveness unproven for friend recommendation; GNNs struggle with computational demands on large social graphs",
+   "approach": "Pre-trained transformer models with feature aggregation for second-degree connection node representation learning",
+   "contribution": "Improved friending on Facebook by capturing local structure and semantic content in social networks",
+   "primary_theme": "Social friend recommendation",
+   "methods": [
+    "plm",
+    "gnn",
+    "transformer"
+   ]
+  },
+  {
+   "title": "SNBot: Modeling Self-Neighborhood Representation Discrepancy for Social Bot Detection",
+   "venue": "SIGIR 2026",
+   "problem": "Graph-based bot detection assumes neighborhood consistency, fails on sparse directed heterophilic graphs",
+   "approach": "SNBot explicitly models self-neighborhood discrepancy via bidirectional aggregation on augmented graphs",
+   "contribution": "Framework produces discriminative representations by preserving self-neighborhood representation gaps",
+   "primary_theme": "Bot detection",
+   "methods": [
+    "graph neural networks",
+    "anomaly detection",
+    "representation learning"
+   ]
+  },
+  {
+   "title": "NBA-Net: Next-Behavior-Aware Network for Intent Recommendation",
+   "venue": "SIGIR 2026",
+   "problem": "Intent recommendation relies only on historical behaviors ignoring influence of next-behavior",
+   "approach": "Next-behavior generation and guidance modules with forward deduction and reverse tracing",
+   "contribution": "5.6% relative CTR improvement via proactive next-behavior-aware intent prediction",
+   "primary_theme": "Intent recommendation",
+   "methods": [
+    "behavior-prediction",
+    "neural-networks",
+    "user-modeling"
+   ]
+  },
+  {
+   "title": "Characterising the Effects of Social Conformity on Information Seeking in Mixed Human-AI Environments",
+   "venue": "SIGIR 2026",
+   "problem": "Social conformity effects on trustworthiness in mixed human-AI environments remain poorly understood.",
+   "approach": "Study conformity mechanisms and AI-specific factors (presence, position, persona) in mixed groups.",
+   "contribution": "Characterizes how AI agents as social actors influence information trustworthiness judgments.",
+   "primary_theme": "Human-AI information trust",
+   "methods": [
+    "social-conformity",
+    "trustworthiness",
+    "user-study",
+    "human-ai-interaction"
+   ]
+  },
+  {
+   "title": "Four-Cycle Counting in Low-Degeneracy Graph Streams",
+   "venue": "KDD 2026",
+   "problem": "Efficiently counting four-cycles in massive streaming graphs is hard; prior bounds don't leverage graph sparsity.",
+   "approach": "Two streaming algorithms using induced subgraph sampling, tailored to degeneracy and cycle distribution.",
+   "contribution": "Two-pass algorithm achieves optimal bounds for sparse graphs; one-pass works on real sparse/social networks.",
+   "primary_theme": "Graph algorithms and streaming",
+   "methods": [
+    "sampling",
+    "streaming algorithms",
+    "degeneracy",
+    "approximation theory"
+   ]
+  },
+  {
+   "title": "Social Event Prediction via Fourier Graph Learning",
+   "venue": "WWW 2026",
+   "problem": "Event prediction via spatio-temporal GNNs has poor scalability and misses long-term dependencies",
+   "approach": "Fourier Graph Learning with frequency-domain analysis and complex-valued node/edge representations",
+   "contribution": "FGNN reduces computational complexity while capturing long-term dependencies for event prediction",
+   "primary_theme": "temporal event prediction",
+   "methods": [
+    "graph-neural-network",
+    "fourier-analysis",
+    "frequency-domain"
+   ]
+  },
+  {
+   "title": "Accurate Trajectory Recovery in Underserved Areas via Location Inference from Web Crowdsourced Data",
+   "venue": "WWW 2026",
+   "problem": "Sparse GPS and missing road networks in underserved regions severely degrade trajectory quality and recovery",
+   "approach": "Multi-scale implicit grid-based offset maps with coarse-to-fine mechanism for region-aware trajectory encoding",
+   "contribution": "RHTR model achieves state-of-the-art trajectory recovery in roadless, sparse-data scenarios via grid hierarchies",
+   "primary_theme": "trajectory recovery inference",
+   "methods": [
+    "grid-based encoding",
+    "multi-scale representation",
+    "coarse-to-fine"
+   ]
+  },
+  {
+   "title": "LiquidityPool: Game-Theoretic Analysis of Stakeholder Revenue in Ranking-Dependent DeFi",
+   "venue": "WWW 2026",
+   "problem": "Ranking-dependent DeFi protocols disadvantage small-volume stakeholders due to fund-size competitive barriers",
+   "approach": "Game-theoretic analysis via multi-leader multi-follower Stackelberg competition on fund aggregation protocol",
+   "contribution": "LiquidityPool pool enables collective participation; monopoly structure achieves better social welfare than fragmentation",
+   "primary_theme": "DeFi game theory",
+   "methods": [
+    "stackelberg game",
+    "game theory",
+    "fund pooling"
+   ]
+  },
+  {
+   "title": "Multi-Modal Enhanced Graph Transfer Learning for Digital Finance Fraud Detection",
+   "venue": "WWW 2026",
+   "problem": "Blockchain fraud detection struggles with multi-modal dynamics, sparse graphs, and distributional shifts across networks",
+   "approach": "Multi-modal transfer learning framework integrating graph, temporal, and textual modalities for fraud knowledge transfer",
+   "contribution": "MOE-GTL enables robust fraud detection across blockchain networks leveraging multi-modal dependencies",
+   "primary_theme": "fraud detection transfer",
+   "methods": [
+    "transfer learning",
+    "graph learning",
+    "multi-modal"
+   ]
+  },
+  {
+   "title": "UrbanMoE: A Sparse Multi-Modal Mixture-of-Experts Framework for Multi-Task Urban Region Profiling",
+   "venue": "WWW 2026",
+   "problem": "Multi-task urban region profiling lacks standardized benchmarks and single-task approaches miss interdependent correlations",
+   "approach": "Sparse mixture-of-experts framework dynamically routing multi-modal features to specialized sub-networks",
+   "contribution": "First multi-modal multi-expert framework for simultaneous diverse urban indicator prediction with benchmark",
+   "primary_theme": "multi-task urban region profiling",
+   "methods": [
+    "mixture-of-experts",
+    "multi-modal",
+    "multi-task"
+   ]
+  },
+  {
+   "title": "VSAL: A Vision Solver with Adaptive Layouts for Graph Property Detection",
+   "venue": "WWW 2026",
+   "problem": "Vision-based graph property detection relies on fixed layouts limiting expressiveness",
+   "approach": "Vision framework with adaptive layout generator tailored to graph instances",
+   "contribution": "VSAL improves graph property detection via dynamic, informative visualizations",
+   "primary_theme": "Graph property detection",
+   "methods": [
+    "vision",
+    "graph-neural-networks",
+    "layout-generation"
+   ]
+  },
+  {
+   "title": "PolicySim: An LLM-Based Agent Social Simulation Sandbox for Proactive Policy Optimization",
+   "venue": "WWW 2026",
+   "problem": "Platform intervention policies risk amplifying echo chambers but lack pre-deployment evaluation",
+   "approach": "LLM-based social simulation with SFT/DPO-refined agents and adaptive intervention module",
+   "contribution": "PolicySim enables proactive policy assessment before deployment via realistic simulation",
+   "primary_theme": "Policy simulation",
+   "methods": [
+    "llm-simulation",
+    "social-dynamics",
+    "preference-optimization"
+   ]
+  },
+  {
+   "title": "MultiFPT: Towards Multi-Attribute Fairness in Pre-Trained Graph Neural Networks via Prompt Tuning",
+   "venue": "WWW 2026",
+   "problem": "Pre-trained GNNs amplify biases against multiple demographic attributes simultaneously",
+   "approach": "Prompt tuning with fairness-aware prompts and HSIC-regularized lightweight adapter",
+   "contribution": "MultiFPT reduces multi-attribute bias ~30% without retraining pre-trained models",
+   "primary_theme": "Graph fairness",
+   "methods": [
+    "prompt-tuning",
+    "fairness",
+    "graph-neural-networks"
+   ]
+  },
+  {
+   "title": "Social Bias Benchmarks for Large Language Models",
+   "venue": "WWW 2026",
+   "problem": "Social biases in multilingual LLMs across diverse languages and cultural contexts",
+   "approach": "Systematic review of bias benchmarks across linguistic diversity and cultural awareness dimensions",
+   "contribution": "Catalogue of bias evaluation methodological gaps, challenges and mitigation solutions in multilingual settings",
+   "primary_theme": "Multilingual bias evaluation",
+   "methods": [
+    "benchmark",
+    "review",
+    "bias"
+   ]
+  },
+  {
+   "title": "Network Dismantling via Reverse Dismantling: Static and Dynamic Algorithms",
+   "venue": "WWW 2026",
+   "problem": "Network dismantling requires efficient minimum-cost node removal for giant component destruction",
+   "approach": "IG+ heuristic based on reverse dismantling with tree-like indexes for dynamic updates",
+   "contribution": "Static and dynamic algorithms dismantling 10-million-scale networks in minutes",
+   "primary_theme": "Network dismantling algorithms",
+   "methods": [
+    "graph-algorithms",
+    "optimization",
+    "dynamic"
+   ]
+  },
+  {
+   "title": "Sustained Vertex Cover on Temporal Graphs",
+   "venue": "WWW 2026",
+   "problem": "Vertex cover on temporal graphs with lifespan constraints lacks systematic study",
+   "approach": "Approximation, online, and parameterized algorithms for sustained vertex cover problem",
+   "contribution": "Tight approximation ratios, quadratic kernel, verified on temporal networks",
+   "primary_theme": "Graph algorithms",
+   "methods": [
+    "approximation-algorithm",
+    "online-algorithm",
+    "parameterized-complexity"
+   ]
+  },
+  {
+   "title": "Automating Computational Reproducibility in Social Science: Comparing Prompt-Based and Agent-Based Approaches",
+   "venue": "WWW 2026",
+   "problem": "Published computational research fails reproducibly due to dependencies and logic gaps",
+   "approach": "Compare prompt-based vs agent-based LLM workflows for automated repair of code failures",
+   "contribution": "Evaluated on 130 synthetic test cases; prompt success 31-79%, agent success on contextual logic",
+   "primary_theme": "Research reproducibility",
+   "methods": [
+    "llm",
+    "code-repair",
+    "agent-based"
+   ]
+  },
+  {
+   "title": "Rhythm of Opinion: Interpretable Hawkes-Graph Networks for Hierarchical Opinion Propagation",
+   "venue": "WWW 2026",
+   "problem": "Opinion propagation research lacks interpretable frameworks revealing underlying dynamics",
+   "approach": "Hawkes processes with GNNs on VISTA dataset with fine-grained hierarchical sentiment annotations",
+   "contribution": "Reveals three mechanistic patterns: differential emotional, asymmetric hierarchical, temporal memory",
+   "primary_theme": "Opinion dynamics",
+   "methods": [
+    "hawkes-process",
+    "gnn",
+    "interpretable-modeling"
+   ]
+  },
+  {
+   "title": "IVQ-GNN: Mitigating Performance Gap from Graph Connection Pattern Inconsistency via Vector Quantization",
+   "venue": "WWW 2026",
+   "problem": "GNNs suffer from heterophily with uneven connection pattern distribution and train-test performance gaps",
+   "approach": "Vector quantization encodes patterns; self-attention combines orthogonal bases for pattern expansion",
+   "contribution": "IVQ-GNN adapts to rare and out-of-distribution patterns by disentangling heterophilic structures",
+   "primary_theme": "Graph neural networks",
+   "methods": [
+    "gnn",
+    "vector_quantization",
+    "attention"
+   ]
+  },
+  {
+   "title": "From Social Media to Psychological Scale: An Adaptive Framework with Two-Hop Retrieval for Depression Screening",
+   "venue": "WWW 2026",
+   "problem": "Depression screening from social media is constrained by fixed models, data scarcity, and LLM variability",
+   "approach": "Two-hop retrieval identifies relevant posts; Mixture of Routers selects optimal reasoning strategies",
+   "contribution": "AdaDepression adaptively routes between strategies and LLMs for explainable depression screening",
+   "primary_theme": "Mental health screening",
+   "methods": [
+    "llm",
+    "retrieval",
+    "routing",
+    "moe"
+   ]
+  },
+  {
+   "title": "DynaMoLTV: A Cross-Game Dynamic Mixture Model with Weighted Sub-Distributions for Player Lifetime Value Prediction",
+   "venue": "WWW 2026",
+   "problem": "Player LTV prediction faces data sparsity and complex distributions: zero-inflation, multimodal, cross-game",
+   "approach": "Zero-inflated mixture of lognormal loss with game experts and hierarchical payment classifier",
+   "contribution": "DynaMoLTV models complex LTV distributions and leverages cross-game data for player value prediction",
+   "primary_theme": "User lifetime value",
+   "methods": [
+    "mixture_model",
+    "expert_networks",
+    "classification"
+   ]
+  },
+  {
+   "title": "Improving the Accuracy of Community Detection on Signed Networks via Community Refinement and Contrastive Learning",
+   "venue": "WWW 2026",
+   "problem": "Community detection on signed networks yields inconsistent communities from noisy or conflicting signs",
+   "approach": "Model-agnostic post-processing with iterative structural/boundary refinement and contrastive learning",
+   "contribution": "ReCon consistently enhances community detection accuracy across diverse methods and networks",
+   "primary_theme": "Signed network analysis",
+   "methods": [
+    "contrastive",
+    "graph",
+    "clustering",
+    "refinement"
+   ]
+  },
+  {
+   "title": "BiasEdit: A Training-Free Bias-Detect-and-Edit Framework for Learning Fair Visual Classifiers",
+   "venue": "WWW 2026",
+   "problem": "Web-sourced visual data contains spurious correlations and social biases harming classifier fairness",
+   "approach": "Automatic bias detection via statistical dependence analysis and text-guided image editing",
+   "contribution": "Training-free framework generating debiased datasets without manual annotations or synthetic mixing",
+   "primary_theme": "Fair visual classifiers",
+   "methods": [
+    "bias-detection",
+    "image-editing",
+    "statistical-analysis"
+   ]
+  }
+ ]
+}

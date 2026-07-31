@@ -1,0 +1,11 @@
+{
+ "batch": "b012",
+ "paper": {
+  "id": "35ca38c3b639e930045117ffb614ea4a9bb39d65",
+  "venue": "WWW 2026",
+  "title": "Red-Teaming Privacy-Protective Perturbations: Blind Face Restoration as an Attack Strategy",
+  "abstract": "The rapid growth of individual image generation on online platforms enables users to create personalized visual content on the Web, but also raises serious concerns about users' privacy and portrait rights. A malicious forgery attacker can exploit the technique to generate a forged individual image without the consent of the image owner. To counter this threat, researchers have developed privacy-protective perturbation techniques that degrade the quality and identity consistency of generated images to mitigate the risk of forgery attacks. Recent studies have employed red-teaming algorithms to attack these protective perturbations to highlight their vulnerabilities. In this work, we theoretically analyze why Blind Face Restoration (BFR) algorithms are suited for red-teaming privacy-protective perturbations. We also empirically demonstrate that BFR not only achieves stronger attack performance than existing red-teaming methods, but also exhibits greater robustness to PGD setting variations and significantly higher computational efficiency compared to purification-based approaches. We further propose a protective perturbation simulation scheme that leverages the trainability of BFR models to enhance attack performance under challenging PGD settings, thereby highlighting the advantage of the trainable BFR models over existing non-trainable red-teaming methods. We conduct adaptive t",
+  "gid": 184,
+  "theme": "Privacy-protective perturbations"
+ }
+}

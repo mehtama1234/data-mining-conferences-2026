@@ -1,0 +1,11 @@
+{
+ "batch": "b014",
+ "paper": {
+  "id": "4176bc6de9b4e5cd04649810ecb8f3d2301fc05a",
+  "venue": "WWW 2026",
+  "title": "Robust Harmful Meme Detection under Missing Modalities via Shared Representation Learning",
+  "abstract": "Internet memes are powerful tools for communication, capable of spreading political, psychological, and sociocultural ideas. However, they can be harmful and can be used to disseminate hate toward targeted individuals or groups. Although previous studies have focused on designing new detection methods, these often rely on modal-complete data, such as text and images. In real-world settings, however, modalities like text may be missing due to issues like poor OCR quality, making existing methods sensitive to missing information and leading to performance deterioration. To address this gap, in this paper, we present the first-of-its-kind work to comprehensively investigate the behavior of harmful meme detection methods in the presence of modal-incomplete data. Specifically, we propose a new baseline method that learns a shared representation for multiple modalities by projecting them independently. These shared representations can then be leveraged when data is modal-incomplete. Experimental results on two benchmark datasets demonstrate that our method outperforms existing approaches when text is missing. Moreover, these results suggest that our method allows for better integration of visual features, reducing dependence on text and improving robustness in scenarios where textual information is missing. Our work represents a significant step forward in enabling the real-world app",
+  "gid": 221,
+  "theme": "multimodal meme detection"
+ }
+}

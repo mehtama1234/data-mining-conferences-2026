@@ -1,0 +1,11 @@
+{
+ "batch": "b071",
+ "paper": {
+  "id": "10.1145/3805712.3809556",
+  "venue": "SIGIR 2026",
+  "title": "Do Simulated Users Need to Remember? Analyzing the Impact of Memory Models in Conversational Search Evaluation",
+  "abstract": "Conversational search systems are typically evaluated using a fixed reference collection of conversations or through user studies with a live system. However, fixed-reference conversations can cover only a few plausible conversations, and user studies are costly, time-consuming, and often hard to reproduce. A promising alternative that avoids coverage and cost issues is user simulation, in which a computer program takes on the role of a user and interacts with the system under evaluation. But the complexity of human search behavior raises the question of how ''realistic'' the simulations actually need to be for reliable evaluations of conversational search systems. In this paper, we ask: Do simulated users need to remember? While real users may learn and forget information during conversational search sessions, which inspired previous research to also model memory capabilities in simulations, it remains unclear whether this actually influences the results of system evaluations. To investigate the impact of memory modeling, we analyze conversations of simulated users and of humans with four conversational search systems. Our results suggest that incorporating long-term memory into simulators can help reproduce system effectiveness rankings obtained from human conversations, whereas incorporating short-term memory can diminish the reproduction. We also find that simulators are ge",
+  "gid": 1072,
+  "theme": "Conversational search evaluation"
+ }
+}

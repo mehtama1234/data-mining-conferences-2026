@@ -1,0 +1,11 @@
+{
+ "batch": "b060",
+ "paper": {
+  "id": "44ad3af29c1a9a3a8e98c8a8d328c233ba106cf6",
+  "venue": "WSDM 2026",
+  "title": "TOOL-CURE: Tool Selection via Curriculum-Enhanced Reinforcement Learning with Sample Screening for LLMs",
+  "abstract": "Large language models (LLMs) are increasingly deployed as intelligent agents capable of executing complex real-world tasks through external tool interactions, but effective tool selection remains challenging due to the inherent limitations of real-world training data. These datasets suffer from severe tool imbalance following long-tail distributions, data scarcity for specialized tools, logic conflicts between user queries and available tools, rapidly evolving toolsets, and the presence of subpar samples including partially correct and dirty examples. Existing supervised fine-tuning (SFT) approaches struggle with these multifaceted challenges as they require abundant high-quality data, treat all labeled examples as ground truth regardless of quality, and lack the flexibility to generalize beyond specific query-tool pairings seen during training. While reinforcement learning (RL) offers a promising alternative through outcome-based learning, vanilla approaches like Group Relative Policy Optimization (GRPO) suffer from training instability due to conflicting reward signals and inefficient learning from weak signals. To address these issues, we propose TOOL-CURE, a novel method with two key improvements to GRPO: Proficiency-Scaled Curriculum Learning (PSCL), which organizes training into a two-stage curriculum that builds foundational skills on easier samples before progressing to",
+  "gid": 901,
+  "theme": "LLM agent tool use"
+ }
+}

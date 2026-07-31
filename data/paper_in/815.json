@@ -1,0 +1,11 @@
+{
+ "batch": "b054",
+ "paper": {
+  "id": "f325137cd609a0c452590824e4c491e60e44cb18",
+  "venue": "WWW 2026",
+  "title": "Blockchain-Enabled, W3C Standards-Compliant Decentralized Zero-Knowledge Proof Framework for Mobile Identity Authentication",
+  "abstract": "The proliferation of centralized carrier-based authentication systems has exposed critical vulnerabilities in the preservation of privacy and personal data protection. Current implementations in Korea, such as PASS and KakaoTalk identity services, rely on centralized architectures that create single points of failure and require excessive disclosure of personal information. The large-scale security breach of SK Telecom's USIM infrastructure in 2025, affecting 23 million subscribers, highlights the urgent need for a paradigm shift in identity authentication.?This paper proposes a decentralized identity authentication system leveraging W3C Decentralized Identifiers (DIDs) and Verifiable Credentials (VCs), combined with Zero-Knowledge Proofs (ZKPs). Our framework integrates Schnorr signatures with Sigma-protocol-based ZKPs to enable privacy-preserving authentication without revealing private keys. A three-layer architecture\u2014comprising cryptographic, identity, and credential layers\u2014ensures strong cryptographic guarantees based on the discrete logarithm problem over the secp256k1 curve, while eliminating reliance on centralized infrastructure. Performance evaluation shows that signature generation occurs in under 10 ms and verification in under 15 ms, meeting real-time authentication requirements while delivering formal privacy guarantees that are absent in conventional systems.",
+  "gid": 815,
+  "theme": "Decentralized identity authentication"
+ }
+}

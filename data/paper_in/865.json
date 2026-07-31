@@ -1,0 +1,11 @@
+{
+ "batch": "b057",
+ "paper": {
+  "id": "ffb5f8d4345d34fd24f167e5a53a8f3ad6a40021",
+  "venue": "WWW 2026",
+  "title": "AFE-Master: Enhancing LLM-Driven Autonomous Feature Engineering with Domain-Specific Language Parsing and Guided Local Search",
+  "abstract": "Autonomous Feature Engineering (AFE) is critical for improving predictive performance on tabular data by relieving humans from manual feature crafting. However, traditional AFE lacks the semantic guidance needed to fully exploit domain knowledge. Although large language models (LLMs) can, in principle, emulate experts, existing approaches typically operate in an open code space that directly generates and rewrites entire features; without a compositional structural representation and invariant constraints, edits are coarse and non-local, making it hard to distill interpretable features with high information content and rich hierarchical structure. We propose AFE-Master, a novel LLM-driven AFE framework that shifts feature construction from black-box evolution to structural and semantically rigorous search. AFE-Master uses a domain-specific language (DSL) to explicitly represent feature transformations and parses them into abstract syntax trees (ASTs), enabling the LLM to understand and manipulate feature structures with clear semantics. On this interpretable representation, we employ guided local search (GLS) over syntactic and semantic neighborhoods, making small, checkable edits that efficiently and controllably discover information-dense, hierarchically structured features. Experiments spanning Kaggle and OpenML benchmarks as well as multiple tabular models (XGBoost, MLP, an",
+  "gid": 865,
+  "theme": "Automatic feature engineering"
+ }
+}

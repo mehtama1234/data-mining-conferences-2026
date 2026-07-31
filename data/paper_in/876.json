@@ -1,0 +1,11 @@
+{
+ "batch": "b058",
+ "paper": {
+  "id": "12b22c9105e1d04326e3bcc0bd8b4725f7ac7e36",
+  "venue": "WSDM 2026",
+  "title": "DGNet: Enhancing Parallel CTR Prediction Models via Decoupled Gated Network: Enhancing Parallel CTR Prediction Models via Decoupled Gated Network",
+  "abstract": "Click-through rate (CTR) prediction is a cornerstone of modern recommender systems and online advertising platforms. Parallel CTR models utilize multiple sub-networks to capture diverse feature interactions and achieve advanced performance. However, these models face two key limitations: (1) reliance on shared, static feature embeddings limits their ability to capture distinct interaction signals across parallel sub-networks; and (2) although effective for modeling high-order interactions, the conventional layer-by-layer interaction paradigm propagates and amplifies noise cumulatively, thereby reducing model robustness. To address these challenges, we propose Decoupled Gated Network (DGNet), a novel framework that introduces two key components: Decoupled Embedding Generator (DEG) adaptively generates sub-network-specific embeddings from original representations, enhancing interaction specificity. Gated Fusion Module (GateF) dynamically extracts layer-wise complementary information from decoupled embeddings to mitigate cumulative interaction noise. DGNet and its two components are model-agnostic and can be seamlessly integrated into existing parallel CTR models. Extensive experiments show that DGNet consistently improves the performance of various parallel CTR models, yielding statistically significant performance boosting. Meanwhile, visualization and quantitative analyses prov",
+  "gid": 876,
+  "theme": "click-through rate prediction"
+ }
+}

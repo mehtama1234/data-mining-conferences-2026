@@ -1,0 +1,11 @@
+{
+ "batch": "b031",
+ "paper": {
+  "id": "8d69e536fd4c9a8f5bf28321c60bd116cc0ebcaf",
+  "venue": "WWW 2026",
+  "title": "Hidden-in-Plain-Text: A Benchmark for Social-Web Indirect Prompt Injection in RAG",
+  "abstract": "Retrieval-augmented generation (RAG) systems increasingly ground responses in user-generated Web content, expanding both usefulness and attack surface. Two web-native threats are especially concerning: indirect prompt injection and retrieval poisoning, where malicious instructions or biased content survive ingestion and influence retrieval or generation. We introduce OpenRAG-Soc, a compact, reproducible benchmark and harness for evaluating web-facing RAG pipelines under these threats as a discrete data package. The suite pairs a social corpus with interchangeable sparse and dense retrievers and deployable mitigations, including HTML/Markdown sanitization, Unicode normalization, and attribution-gated answering. OpenRAG-Soc standardizes end-to-end evaluation from ingestion to generation and reports attack success at answer time, rank shifts in both sparse and dense retrievers, as well as utility and latency. It targets practitioners who need fast, realistic tests to measure risk and harden RAG deployments.",
+  "gid": 465,
+  "theme": "RAG security"
+ }
+}

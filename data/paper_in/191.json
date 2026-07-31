@@ -1,0 +1,11 @@
+{
+ "batch": "b012",
+ "paper": {
+  "id": "3805dd5466aecf264154ce6ee2447a9772b3eb44",
+  "venue": "WWW 2026",
+  "title": "LLM-Enhanced Web-Centric Spatio-Temporal Intelligence: Methods, Applications, and Frontier Research",
+  "abstract": "Spatio-temporal (ST) data, including geo-social media check-ins, location-based services (LBS), and transportation records, offers unprecedented opportunities for analyzing human mobility and urban dynamics. The emergence of Foundation Models and Large Language Models (LLMs) has initiated a profound paradigm shift in this field, moving from traditional, task-specific deep learning toward universal, generalizable intelligence. This lecture-style tutorial provides a timely and comprehensive overview of LLM-Enhanced Web-Centric Spatio-Temporal Intelligence, systematically presenting the methods, applications, and frontier research in the LLM era. Our tutorial is innovatively organized according to three levels of ST analysis: Location-level intelligence focuses on examining spatial activities within specific geographic locations. Trajectory-level intelligence delves into understanding individual movement behaviors through the analysis of spatio-temporal sequences. Region-level intelligence broadens the scope to include large-scale spatial patterns and flows across regions. The tutorial aims to provide the participants with a comprehensive roadmap of the current state and future potential of applying LLMs and FMs to Web-centric spatio-temporal data, making it an invaluable resource for this evolving field. The video teaser is available at https://shorturl.at/vvlFJ.",
+  "gid": 191,
+  "theme": "LLM spatio-temporal"
+ }
+}

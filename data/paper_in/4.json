@@ -1,0 +1,11 @@
+{
+ "batch": "b000",
+ "paper": {
+  "id": "008c41a6347b2dfb036398d97a67592d428ab687",
+  "venue": "WWW 2026",
+  "title": "PerQA: A Benchmark for Temporally Sensitive Questions on Heterogeneous Personal Data",
+  "abstract": "This work presents a benchmark, named PerQA, for question answering over personal data and text, spanning calendar entries, workouts, purchases, mail, social media and more. The benchmark data is judiciously constructed from synthetic personas, and the questions are generated using iterative LLM prompting. Questions in PerQA are often of analytic nature, calling for aggregation over many events in the user's life, and a large fraction includes temporal conditions. A user study with local students confirms that the generated questions are indeed realistic information needs. Experiments with a suite of question-answering methods show both the difficulty of the benchmark and the progress that smart designs can achieve.",
+  "gid": 4,
+  "theme": "Personal data QA"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "batch": "b045",
+ "paper": {
+  "id": "d09cae1dbfcf58783bb439afd48c87af88a57251",
+  "venue": "WWW 2026",
+  "title": "Economics Model for Federated LLM Training via Blockchain",
+  "abstract": "This article introduces a decentralized economic framework to support collaborative training of Large Language Models (LLMs), mitigating the escalating computational expenses and data privacy constraints characteristic of centralized AI development. Federated Federated learning (FL) is employed to enable privacy-preserving, distributed model training, while blockchain technologies are leveraged to provide transparency, accountability, and trust among mutually untrusted stakeholders. From an economic standpoint, the central objective is the design of a fair, incentive-compatible, and cost-efficient mechanism that sustains long-term participation in federated LLM training. The proposed framework integrates game-theoretic modeling with smart contracts to quantify participant contributions and determine corresponding rewards. A Shapley value\u2013based contribution assessment scheme is adopted to promote allocative fairness, discourage free-riding behavior, and align individual incentives with improvements in the global model's performance. In addition, a tokenized incentive layer is introduced to enable decentralized governance and verifiable, programmatic reward distribution. Preliminary simulation results suggest enhanced fairness in contribution evaluation, increased stability of participant engagement, and reduced concentration of computational and financial burdens, thereby demons",
+  "gid": 685,
+  "theme": "federated LLM training"
+ }
+}

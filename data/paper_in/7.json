@@ -1,0 +1,11 @@
+{
+ "batch": "b000",
+ "paper": {
+  "id": "015119caa97539a3071de540d27287599ea30452",
+  "venue": "WWW 2026",
+  "title": "Too Much Sharing, Too Little Security: Authentication Cookie Theft At Scale",
+  "abstract": "Web browsers store cookies to save a user's authentication status. Sharing these authentication cookies across subdomains, a common practice for user convenience, creates a critical session hijacking vulnerability. When cookies for a parent domain are sent to all subdomains, an attacker who compromises any single subdomain can intercept them. Using these stolen cookies, the attacker can impersonate users across all other services hosted on the domain. We conduct the first ethical, large-scale evaluation of authentication cookie leakage to compromised subdomains caused by insecure cookie scoping, a vulnerability we call ''CookieDrift''. We develop a novel, non-intrusive, and ethical method to detect CookieDrift by simulating a hijacked subdomain and recording all leaked cookies. From a list of over 2,500 popular domains with accounts, 57.98% (1,472) are vulnerable to cookie theft. Of these, 45.45% (669 domains) are immediately exploitable through subdomain takeover attacks. We find evidence of active, real-world hijacks affecting 186 domains and discover authentication cookies from these domains in darknet leaks using ''CookieDelta'', a new filtering technique we developed to isolate authentication-relevant cookie names. We investigate root causes of insecure cookie sharing by reviewing RFCs and major authentication frameworks and conclude: Defaults are secure, but examples enco",
+  "gid": 7,
+  "theme": "Web security"
+ }
+}

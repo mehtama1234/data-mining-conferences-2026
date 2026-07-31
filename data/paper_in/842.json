@@ -1,0 +1,11 @@
+{
+ "batch": "b056",
+ "paper": {
+  "id": "fa0d04533a84c7a207072e1cec647a6af1a16fcd",
+  "venue": "WWW 2026",
+  "title": "Shift-Resilient Diffusive Imputation for Variable Subset Forecasting",
+  "abstract": "As an important task in modern web technologies, multivariate time series forecasting drives many core functionalities. However, in realistic web-scale environments, sensor failures, privacy filtering, sampling, and instrumentation churn frequently yield missing variables, making training sets complete while test sets contain only a small subset of variables. The challenge lies in utilizing incomplete data for forecasting, which is known as Variable Subset Forecasting (VSF). Distribution shift is inherent to time series and remains in VSF, including inter-series shift as changes in cross-series correlations and intra-series shift as substantial distribution differences within the same series across different time windows. Existing VSF approaches typically impute missing variables and then forecast on the completed series, yet they overlook these shifts and thus underperform in realistic web-scale scenarios. To address these challenges, we propose Shift Resilient Diffusive Imputation (SRDI), a framework tailored to VSF and robust to distribution shift. Specifically, SRDI integrates a divide-conquer strategy with the denoising process, which decomposes the input into invariant patterns and variant patterns, representing the temporally stable parts of inter-series correlation and the highly fluctuating parts, respectively. By extracting spatiotemporal features from each part separ",
+  "gid": 842,
+  "theme": "time series forecasting"
+ }
+}

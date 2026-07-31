@@ -1,0 +1,11 @@
+{
+ "batch": "b016",
+ "paper": {
+  "id": "494e74d2cc2b01dff35f8391f7d149082b2b15cc",
+  "venue": "WWW 2026",
+  "title": "FL@FM-TheWebConf'26: The 3rd International Workshop on Federated Foundation Models for the Web",
+  "abstract": "In the evolving landscape of machine learning research, two significant developments have emerged to prominence: foundation models and federated learning. The FL@FM-TheWebConf'26 work- shop provides an exciting forum for researchers and practitioners to discuss promising works and chart potential trajectories forward for this emerging field.",
+  "gid": 254,
+  "theme": "Workshop announcement"
+ }
+}

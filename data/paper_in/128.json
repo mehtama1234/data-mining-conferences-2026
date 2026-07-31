@@ -1,0 +1,11 @@
+{
+ "batch": "b008",
+ "paper": {
+  "id": "2606352f28121411092ab1ba43c3174ba6f458dd",
+  "venue": "WWW 2026",
+  "title": "TabTune: A Unified Library for Inference and Fine-Tuning Tabular Foundation Models",
+  "abstract": "Tabular foundation models (TFMs) have become powerful solutions for structured data problems, but their inconsistent APIs and preprocessing steps remain major obstacles for practitioners. We introduce TabTune, a unified library that provides a simple interface for multiple leading tabular foundation models. TabTune reduces fragmentation across existing tools by standardizing preprocessing, supporting inference and multiple fine-tuning modes, offering a broad suite of evaluation metrics, and enabling benchmarking through a single API. Our interactive Web-based demo highlights three primary use cases: (1) quick-start examples for running models with minimal code, (2) comparative benchmarking, and (3) advanced responsible evaluation using fairness and calibration metrics. Target applications such as churn prediction, fraud detection, and behavioral modeling illustrate how TabTune streamlines the practical adoption of TFMs in large-scale Web systems.",
+  "gid": 128,
+  "theme": "Tabular models"
+ }
+}

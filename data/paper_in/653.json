@@ -1,0 +1,11 @@
+{
+ "batch": "b043",
+ "paper": {
+  "id": "c94206daec6865d9333bc51809f8f301a40db7cd",
+  "venue": "WWW 2026",
+  "title": "Measuring Privacy Risks and Tradeoffs in Financial Synthetic Data Generation",
+  "abstract": "We explore the privacy-utility tradeoff of synthetic data generation schemes on tabular financial datasets, a domain characterized by high regulatory risk and severe class imbalance. We consider representative tabular data generators, including autoencoders, generative adversarial networks, diffusion, and copula synthesizers. To address the challenges of the financial domain, we provide novel privacy-preserving implementations of GAN and autoencoder synthesizers. We evaluate whether and how well the generators simultaneously achieve data quality, downstream utility, and privacy, with comparison across balanced and imbalanced input datasets. Our results offer insight into the distinct challenges of generating synthetic data from datasets that exhibit severe class imbalance and mixed-type attributes.",
+  "gid": 653,
+  "theme": "Synthetic data generation"
+ }
+}

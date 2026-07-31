@@ -1,0 +1,11 @@
+{
+ "batch": "b010",
+ "paper": {
+  "id": "2d4099476ba7192a44cbde10b5d17f4ce39ab4ac",
+  "venue": "WWW 2026",
+  "title": "DynaMoLTV: A Cross-Game Dynamic Mixture Model with Weighted Sub-Distributions for Player Lifetime Value Prediction",
+  "abstract": "Online game advertising is a prominent class of Web-mediated interactive services, where understanding and predicting player Lifetime Value (LTV) is a core scientific challenge in Web-scale user modeling, personalization, and digital economy optimization. However, the LTV prediction task poses severe challenges to traditional methods, which include data sparsity and complex distribution characteristics (such as zero-inflation, long tail, multimodal distribution, and cross-game). Existing methods struggle to capture the realistic and complex LTV distributions and exhibit limitations in leveraging cross-game data. We propose the first cross-game dynamic mixture framework with weighted sub-distributions for LTV prediction, DynaMoLTV. DynaMoLTV primarily models complex distributions via a zero-inflated mixture of lognormal (ZIMLN) loss, incorporates a game expert for cross-game data adaptation, employs a hierarchical payment classifier to capture consumption pattern variations, and integrates coarse and fine-grained losses to balance high-value user identification with LTV prediction accuracy. We conduct comprehensive experiments. The results demonstrate that DynaMoLTV achieves the best performance compared to five state-of-the-art baselines across metrics, including paid user identification, high-value user recall and LTV prediction accuracy. Specifically on three gaming datasets,",
+  "gid": 158,
+  "theme": "User lifetime value"
+ }
+}

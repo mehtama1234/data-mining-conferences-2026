@@ -1,0 +1,11 @@
+{
+ "batch": "b055",
+ "paper": {
+  "id": "f9776b3988b904af8ffdfa13d19e21735ab3a1fd",
+  "venue": "WWW 2026",
+  "title": "ScotRec: Social Chain-of-Thought LLM Reasoning for Recommendation",
+  "abstract": "Large language models (LLMs) have emerged as a promising paradigm for recommender systems, due to their powerful capabilities in global knowledge integration and reasoning. However, LLMs are inherently prone to confirmation bias -- the tendency to favor information that reinforces users' existing views -- which leads to an overemphasis on previously shown viewpoints and ignores diverse user beliefs for recommendations. To address this issue, in this paper, we propose SCoTRec, a social chain-of-thought reasoning framework for recommendation. SCoTRec first constructs sentiment-aware user profiles by extracting sentiment terms from user reviews. It then incorporates users' social sentiment information into the social chain-of-thought reasoning units to improve recommendations. In particular, we categorize the social chain-of-thought into sentiment-based pathways and apply human evaluation operations -- backtracking, discarding, retaining, and aggregating -- to simulate nuanced sentiment cognition and interpersonal influence, effectively alleviating confirmation bias. Extensive experiments on four benchmark datasets demonstrate the effectiveness of SCoTRec in alleviating confirmation bias and improving recommendations.",
+  "gid": 839,
+  "theme": "LLM recommendation bias"
+ }
+}

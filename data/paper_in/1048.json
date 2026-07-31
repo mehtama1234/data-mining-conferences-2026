@@ -1,0 +1,11 @@
+{
+ "batch": "b069",
+ "paper": {
+  "id": "10.1145/3805712.3809744",
+  "venue": "SIGIR 2026",
+  "title": "Hierarchical Cluster-based Open-World Graph Active Learning",
+  "abstract": "Existing works in graph active learning (GAL) mostly assume a closed-world setting where all classes are known in advance, while in practice, we need to deal with the open-world setting where novel classes are encountered during learning. Apart from selecting informative nodes for refining the current classifier, the open-world GAL algorithms are also expected to discover novel classes. Motivated by the observation that identifying an informative region can be easier than finding the most informative example, we propose a novel hierarchical cluster-based algorithm for open-world GAL. Our algorithm performs clustering in the feature space to identify an informative region which either contains informative examples for known classes or novel classes, then performs a novel semi-supervised sub-clustering on the selected cluster to identify the most informative example. To facilitate the discovery of informative regions, we introduce a cluster-based self-distillation loss between ego and final embeddings to learn well-clustered node embeddings that are more likely to align with the classes. We also introduce a novel cluster informativeness score for the clusters, which measures not only how uncertain the cluster is (similar to standard active learning algorithms), but whether the cluster is likely to contain novel classes. Our semi-supervised sub-clustering algorithm partitions the ",
+  "gid": 1048,
+  "theme": "Graph active learning"
+ }
+}

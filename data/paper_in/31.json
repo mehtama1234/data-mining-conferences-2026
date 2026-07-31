@@ -1,0 +1,11 @@
+{
+ "batch": "b002",
+ "paper": {
+  "id": "0859f6cd141b5ba5282f9b258389f407a03d315e",
+  "venue": "WWW 2026",
+  "title": "Quantum-Safe, Efficient, and AI-Enhanced Blockchains for the Web: A Cooperative Tutorial on Quantum Computing, Blockchain Applications, and Data Standards",
+  "abstract": "The 2025 Nobel Prize in Physics recognized groundbreaking advances in quantum information science, underscoring the transformative potential of quantum technologies for computation and communication. As these developments accelerate, they simultaneously pose profound challenges to classical cryptographic foundations\u2014particularly the public-key algorithms securing blockchain systems, digital signatures, and distributed consensus. However, despite the clear urgency to address quantum-induced vulnerabilities, the translation of theoretical quantum computing breakthroughs from laboratory research into robust, real-world applications for blockchain security remains limited. Building on this momentum, our tutorial explores how quantum computing and blockchain can jointly redefine the trust, efficiency, and intelligence of next-generation Web systems. We introduce the principles of quantum computing and their implications for secure, scalable blockchain architectures, emphasizing post-quantum and quantum-assisted cryptography. The tutorial situates these technologies within broader contexts of privacy, human\u2013computer interaction, and ethical data governance, highlighting how interdisciplinary collaboration across computer science, economics, and human-centered computing can enable a more trustworthy Web. We further discuss how quantum techniques can enhance computational efficiency, r",
+  "gid": 31,
+  "theme": "quantum cryptography blockchain"
+ }
+}

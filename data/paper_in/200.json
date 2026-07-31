@@ -1,0 +1,11 @@
+{
+ "batch": "b013",
+ "paper": {
+  "id": "39c52ce72fc049d90d4bb999a386d8c7d86d3299",
+  "venue": "WWW 2026",
+  "title": "Accurate and Efficient Personalized Query Rewriting in Baidu Search",
+  "abstract": "Traditional search engines return uniform results for identical queries, overlooking users' personalized intents. While personalized search has been extensively studied, research on query rewriting for personalized intents has been constrained by traditional approaches like statistical co-occurrence and synonym expansion. Current work primarily addresses multi-turn dialogue scenarios in Conversational AI rather than exploring applications in large-scale search engines. This typically stems from the absence of real search scenario data and the difficulty of inferring users' intents through personalized reasoning. While Large Language Models (LLMs) combined with Chain-of-Thought (CoT) capabilities provide possibilities for personalized reasoning, CoT introduces additional reasoning overhead that is difficult to accept in online scenarios requiring low latency. To address this, this paper proposes PicQue (Personalized Efficient Query Rewrite), a personalized query rewriting model training pipeline aimed at achieving high accuracy with low latency. PicQue contains a two-stage training that first employs a novel Hybrid Supervised Fine-Tuning strategy to retain the model's reasoning capabilities while allowing the decoding process to skip CoT, thereby obtaining CoT's accuracy gains without increasing latency. Building on this foundation, PicQue conducts second-stage reinforcement lea",
+  "gid": 200,
+  "theme": "Personalized search ranking"
+ }
+}

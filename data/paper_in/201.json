@@ -1,0 +1,11 @@
+{
+ "batch": "b013",
+ "paper": {
+  "id": "39c55b9a9814e5594a8c9cba36cc71f7756899e9",
+  "venue": "WWW 2026",
+  "title": "Anatomy of Generative Scam Campaigns in Online Advertising Ecosystems",
+  "abstract": "This paper presents an empirical, campaign-level analysis of AI-enabled scam advertising in a large online advertising ecosystem. We reconstruct and analyze campaigns as multi-layered production and deployment systems composed of narratives, templates, variants, and cloaking-based delivery strategies. We show that these campaigns rely on a small number of stable persuasion schemes and production templates, which are scaled through massive generation of near-duplicate variants and sustained through temporal rotation and auxiliary cloaking content. Audio, in particular synthetic speech, plays the dominant narrative role, while the visual layer spans a wide spectrum of formats, from simple montage-based compositions to hybrid and fully synthetic constructions. Instead of maximizing fidelity, campaigns prioritize scale, rotation, and resilience against moderation. A defining operational feature is the systematic use of auxiliary content that masks core scam creatives and sustains campaign presence over time. We further observe strong temporal deployment patterns and bursty publishing behavior, indicating structured production and deployment workflows. Taken together, our results show that effective mitigation cannot rely on asset-level detection alone, but must operate at the level of campaign structure, production templates, and deployment dynamics.",
+  "gid": 201,
+  "theme": "Scam detection advertising"
+ }
+}

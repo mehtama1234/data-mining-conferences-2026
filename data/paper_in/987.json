@@ -1,0 +1,11 @@
+{
+ "batch": "b065",
+ "paper": {
+  "id": "f0545211e319640ef3cd0ee2ca5823f97566afba",
+  "venue": "WSDM 2026",
+  "title": "Diffusion Models for Risk-Aware Portfolio Optimization",
+  "abstract": "Given a user's risk preference and historical data, how can we generate diverse and high-quality portfolios for risk-aware portfolio optimization? Portfolio optimization is a core financial problem that balances returns and risks by determining asset allocations. While deterministic deep learning approaches can be directly optimized for a single solution, they offer limited flexibility to handle users' risk preferences. In contrast, stochastic methods typically rely on multi-stage processes, which complicate training and do not strictly align with the ultimate goal of generating optimal portfolios. In this paper, we propose Diffolio (Diffusion Models for Risk-Aware Portfolio Optimization), a novel diffusion-based framework that directly learns a pseudo-optimal portfolio distribution, addressing the drawbacks of (i) deterministic models lacking flexibility and (ii) stochastic models that are complex and misaligned with the true portfolio optimization objective. Instead of forecasting entire future time series, Diffolio directly samples portfolios, immediately adapting to user-specified risk levels through a dedicated risk guidance mechanism embedded in the denoising diffusion process. Empirical results on multiple real-world market datasets show that Diffolio significantly outperforms existing baselines in terms of return, risk control, and overall reliability. In particular, Di",
+  "gid": 987,
+  "theme": "Portfolio optimization"
+ }
+}

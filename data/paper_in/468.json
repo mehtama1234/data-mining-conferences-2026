@@ -1,0 +1,11 @@
+{
+ "batch": "b031",
+ "paper": {
+  "id": "8dde4860b29dd4c7a7890f47cea8e72dab76499b",
+  "venue": "WWW 2026",
+  "title": "A Toolset for Modelling Non-Mediated Governance",
+  "abstract": "This discussion paper summarizes the visionary concepts non-mediated Governance (nm-Gov) and Liquid Democracy and describes a diagraming technique used to model use-cases to better understand how data in nm-Gov can be translated to concrete government action.",
+  "gid": 468,
+  "theme": "governance modeling"
+ }
+}

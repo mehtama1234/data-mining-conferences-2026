@@ -1,0 +1,11 @@
+{
+ "batch": "b065",
+ "paper": {
+  "id": "eedcc60737244975e24931ff1b83360ecdc61ef6",
+  "venue": "WSDM 2026",
+  "title": "Mitigating the Threshold Priming Effect in Large Language Model\u2013Based Relevance Judgments via Personality Simulation",
+  "abstract": "Recent research has explored LLMs as scalable tools for relevance labeling, but studies indicate they are susceptible to priming effects, where prior relevance judgments influence later ones. Although psychological theories link personality traits to such biases, it is unclear whether simulated personalities in LLMs exhibit similar effects. We investigate how Big Five personality profiles in LLMs influence priming in relevance labeling, using multiple LLMs on TREC 2021 and 2022 Deep Learning Track datasets. Our results show that certain profiles, such as High Openness and Low Neuroticism, consistently reduce priming susceptibility. Additionally, the most effective personality in mitigating priming may vary across models and task types. Based on these findings, we propose personality prompting as a method to mitigate threshold priming, connecting psychological evidence with LLM-based evaluation practices.",
+  "gid": 985,
+  "theme": "LLM priming mitigation"
+ }
+}

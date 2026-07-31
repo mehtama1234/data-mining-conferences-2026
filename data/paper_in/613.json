@@ -1,0 +1,11 @@
+{
+ "batch": "b040",
+ "paper": {
+  "id": "b8a0f2a33137f978fe0c893fcff41cb83504da50",
+  "venue": "WWW 2026",
+  "title": "A Framework for Continual Knowledge Graph Embedding",
+  "abstract": "Knowledge Graph Embeddings (KGEs) are widely used to support downstream tasks over Knowledge Graphs (KGs) by representing entities and relations in a low-dimensional vector space. However, real-world KGs are not static, as new facts are continuously added, requiring old embeddings to be updated and new embeddings to be learned without forgetting previously acquired information. Existing KGE libraries focus on the static KG scenario. Moreover, while recent works on Continual Knowledge Graph Embedding (CKGE) propose strategies to address this problem, they rely on standalone frameworks and only support simple KGE models, such as TransE, limiting their potential. We extended the KGE library PyKEEN to enable continual learning in KGs. Our extension (i) expands any unimodal KGE model in PyKEEN with new entities and relations, (ii) introduces an informed initialization method to improve the addition of new embeddings, (iii) incorporates CKGE-oriented evaluation metrics to assess both performance and knowledge forgetting and acquisition, and (iv) offers an intuitive training function with dashboard support, enabling easy experimentation and tracking of the evolution of embeddings across updates. A repository containing the scripts, an interactive notebook tutorial, and an accompanying video are available.",
+  "gid": 613,
+  "theme": "Knowledge graph learning"
+ }
+}

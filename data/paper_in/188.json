@@ -1,0 +1,11 @@
+{
+ "batch": "b012",
+ "paper": {
+  "id": "37a70364c018dbf15e025e31f1c3f2ce9e846b9b",
+  "venue": "WWW 2026",
+  "title": "Trustless Feedback: Preserving Privacy and Integrity in Crowdsourced RLHF via Zero-Knowledge Proofs",
+  "abstract": "Reinforcement Learning from Human Feedback (RLHF) is essential for aligning Large Language Models (LLMs) with human intent. However, in high-stakes domains such as healthcare and precision engineering, expert contributors are often reluctant to share raw data due to strict privacy regulations and intellectual property concerns. Existing decentralized approaches, while preserving privacy, fail to guarantee the computational integrity of the feedback, leaving models vulnerable to data poisoning and lazy annotation. In this work, we propose Trustless Feedback, a novel protocol that leverages Zero-Knowledge Proofs (ZK-SNARKs) to verify the validity of preference labels without revealing the underlying sensitive inputs. We formalize the expert evaluation process as an arithmetic circuit enforcing both hard safety constraints (e.g., drug interactions, geometric collisions) and soft utility scores. We demonstrate the feasibility of our approach through a prototype implementation for engineering design validation, showing that our protocol can mathematically guarantee 100% rejection of invalid data while maintaining tractable proof generation times.",
+  "gid": 188,
+  "theme": "Private RLHF"
+ }
+}

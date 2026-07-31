@@ -1,0 +1,11 @@
+{
+ "batch": "b038",
+ "paper": {
+  "id": "ade48b8f898ec53f65a3b0bef93bc9dfbc06004d",
+  "venue": "WWW 2026",
+  "title": "Boltzmann Interaction Models with Gibbs Decision Policies in Multi-Agent Delivery Systems",
+  "abstract": "This paper introduces the Boltzmann Interaction Multi-Drone Coordination (BIMDC) framework, a thermodynamically grounded approach to decentralized coordination in data-driven smart city environments. We consider urban drone fleets as self-organizing cyber-physical agents that make stochastic local decisions based on energy functions encoding travel cost, service imbalance, and interagent interference. Agent behavior follows a Gibbs policy, where a temperature parameter T regulates the exploration\u2013exploitation trade-off and gives rise to distinct coordination regimes. Using a mean-field formulation, we connect local interaction energies to macroscopic order parameters, enabling analytical insight into cityscale fleet behavior. Experiments in a simulated urban delivery scenario (L=50, M=12, N \u2264 24) reveal clear temperature\u2013density dependencies: highly coordinated service allocation at low T(\u03a6\u22480.99), degraded coordination at intermediate T \u2248 1.5 (\u03a6\u22480.7\u20130.8), and partial recovery at higher temperatures. The resulting phase diagram \u03a6(T, p) provides a principled tool for adaptive fleet management,capacity planning, and analysis in smart city logistics.",
+  "gid": 580,
+  "theme": "multi-agent logistics"
+ }
+}

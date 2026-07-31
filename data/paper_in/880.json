@@ -1,0 +1,11 @@
+{
+ "batch": "b058",
+ "paper": {
+  "id": "1a56b0599927a7dd136dd030d041cfeb7e9af64d",
+  "venue": "WSDM 2026",
+  "title": "Metadata Meets LLMs: Constructing Knowledge-Rich Citation Networks with CoT-Enhanced Representations",
+  "abstract": "Recent advances in large language models (LLMs), such as GPT and Llama, have driven significant progress in natural language processing and diverse AI applications. In this paper, we explore how LLMs can enhance the construction of heterogeneous citation networks by integrating rich contextual information derived from LLMs. We propose a metadata-driven augmentation that generates concise factual descriptions for sparse fields in citation metadata, including keywords, venues, and author affiliations. These contexts are encoded with DeBERTa and integrated as node features in a knowledge-enriched heterogeneous network. Additionally, to mitigate LLM hallucinations, we employed Chain-of-Thought (CoT)-based prompting and evaluated the quality of the generated context. Experimental results demonstrate that our LLM-powered context augmentation improves author classification by 2.0%-4.5% and author clustering by 8.9%-18.1%, outperforming traditional feature engineering methods. The dataset and source code are available at https://github.com/inthwan/Metadata-Meets-LLMs.",
+  "gid": 880,
+  "theme": "citation network enrichment"
+ }
+}

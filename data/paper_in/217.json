@@ -1,0 +1,11 @@
+{
+ "batch": "b014",
+ "paper": {
+  "id": "402d96b1a24e9fe50ea2046a1185cdb2ebbc48f1",
+  "venue": "WWW 2026",
+  "title": "Incorporating Graph-Constrained RAG Pipeline for Medicine data",
+  "abstract": "Recent advancements in LLMs have transformed the research from a normal document-based search engine to a semantic-based contextual question-answering service. Understanding of relationships between the input query and related information is a crucial phase in this knowledge-extensive task. The aim of this paper is to engineer a knowledge graph-based LLM for scientific knowledge retrieval that adheres to fluent results with zero hallucinations. The proposed architecture incorporates the graph-constrained RAG pipeline, which is utilized as a natural language interface, whereas the knowledge graph is the mediator of facts and claims. We evaluated the proposed system on a curated dataset of samples, achieving retrieval precision of 71% with accurate types of KG nodes. We discovered the hybrid system outperforms an individual LLM for all evaluation metrics.",
+  "gid": 217,
+  "theme": "knowledge graph RAG"
+ }
+}

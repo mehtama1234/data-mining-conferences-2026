@@ -1,0 +1,11 @@
+{
+ "batch": "b060",
+ "paper": {
+  "id": "451af0863cb52e31ddebeb4ae98aa8213bf7734f",
+  "venue": "WSDM 2026",
+  "title": "Label-Free Contrastive Learning for Open-World Multimodal Social Event Detection",
+  "abstract": "Multimodal content on social media contains abundant cues about real-world events, and its automatic detection is critical for public safety and social governance. However, Multimodal Social Event Detection in the open world faces two major challenges: (1) They depend on supervised event labels or structured information; however, social media data in open-world settings often lack both, making it challenging for such methods to adapt to the dynamic nature of social media. (2) They rely on predefined label sets, i.e., the total number of events must generally be specified during the detection process. In contrast, in the open world, the total number of events is inherently difficult to estimate. To tackle these challenges, this paper proposes LFEvent, a label-free contrastive learning framework for Multimodal Social Event Detection. To address the first challenge, we design a label-free multimodal contrastive learning strategy that relies solely on positive samples. Specifically, we design a multimodal large language model-based semantic enhancement strategy. Leveraging carefully crafted prompts, it enriches raw image-text pairs across three dimensions -- event theme, event type, and image description -- to construct robust positive samples. Subsequently, a dedicated Siamese Network enables self-supervised cross-modal alignment and representation learning. To address the second ",
+  "gid": 902,
+  "theme": "multimodal event detection"
+ }
+}

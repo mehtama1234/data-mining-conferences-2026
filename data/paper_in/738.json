@@ -1,0 +1,11 @@
+{
+ "batch": "b049",
+ "paper": {
+  "id": "e04aecc42bf31a2fd7c249f035f178307b8675ac",
+  "venue": "WWW 2026",
+  "title": "From Code to Executable Method: Making Your Code Both Methods Hub and MyBinder Ready",
+  "abstract": "Reproducible and reusable computational methods are a cornerstone of open social science. The GESIS Methods Hub promotes this goal by combining well-documented methodological contributions with executable examples enabled by Jupyter4NFDI and MyBinder. However, turning an existing analysis, notebook, or code repository into a Methods Hub and binder-ready resource requires more than ''putting it on GitHub''. This 1.5-hour hands-on tutorial introduces participants to the practical steps and design principles needed to make their work executable, reproducible, and shareable via the Methods Hub. Participants will learn how MyBinder works under the hood, how to structure a method repository for reproducible execution, how to specify computational environments, and how to avoid common pitfalls that prevent Binder builds from succeeding. By the end of the session, participants will be able to transform an existing method into a self-contained, one-click executable resource suitable for publication in the GESIS Methods Hub, and will leave with concrete checklists and templates to apply to their own work.",
+  "gid": 738,
+  "theme": "Reproducible research"
+ }
+}

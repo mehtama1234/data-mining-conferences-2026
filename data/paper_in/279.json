@@ -1,0 +1,11 @@
+{
+ "batch": "b018",
+ "paper": {
+  "id": "507e2188a4c4c480afa3e626190eb57f1d5d9e1e",
+  "venue": "WWW 2026",
+  "title": "Collaborative LLM Agents for End-to-End Software Development",
+  "abstract": "This tutorial explores the next generation of AI-powered software development, where large language models (LLMs) function as collaborative agents that plan, code, test, and review alongside human developers. Using GitHub Copilot,Mistral Codec and Kiro as running exemplars, we synthesize the latest advances in multi-agent coordination, reflective collaboration, long-term memory and context maintenance, and tool-integrated verification. We show how role-specialized agent teams, manager\u2013tool routing, and spec-driven development are replacing single-model code completion with structured, repeatable workflows that close the loop from generation to assurance, while addressing critical concerns around evaluation rigor, security guardrails, and safe deployment. Attendees will leave with a practical blueprint for designing and evaluating collaborative coding agents in real engineering environments. The tutorial blends concepts and live demonstrations, covering task decomposition, memory and retrieval, autonomous debugging with runtime feedback, and seamless integration into IDEs, version control, and CI/CD pipelines. We distill proven ''do and don't'' patterns for reliability, security, cost, and scalability, and map open research challenges to concrete experimental setups and metrics. The result is a concise, research-ready guide for building agentic systems that deliver measurable pr",
+  "gid": 279,
+  "theme": "AI-assisted development"
+ }
+}

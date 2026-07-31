@@ -1,0 +1,11 @@
+{
+ "batch": "b095",
+ "paper": {
+  "id": "10.1145/3805712.3808371",
+  "venue": "SIGIR 2026",
+  "title": "SOMIN: Agentic AI for Automating Professional Visibility and Countering Content Homogenization",
+  "abstract": "In the evolving digital economy, professional visibility on networks such as LinkedIn has become a critical determinant of career trajectory, influence, and the emerging metric of ''LLM discoverability''. For the general public and the research community alike, the ability to translate technical expertise into engaging market narratives is essential for professional survival. However, the vast majority of individuals lack the marketing acumen required to maintain a high-frequency, high-quality public presence. While the democratization of LLMs appears to offer a solution, these systems inherently suffer from probability maximization mechanisms that drive outputs toward the statistical mean. Consequently, standard automated systems frequently result in ''lexical homogenization'', where generated content becomes repetitive, generic, and devoid of the unique perspective necessary for effective personal branding. This technological limitation leads to poor content performance and fails to distinguish individual professionals from the noise of AI-generated text. To address this deficit, we introduce SOMIN, an Agentic AI-ready marketing ideation and generation platform designed to bridge the gap between individual professional expertise and effective public communication. Moving beyond general-purpose AI, SOMIN employs Dynamic Retrieval Augmented Generation (DRAG). This process ancho",
+  "gid": 1426,
+  "theme": "Agentic content generation"
+ }
+}

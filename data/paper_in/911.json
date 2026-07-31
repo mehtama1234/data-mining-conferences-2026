@@ -1,0 +1,11 @@
+{
+ "batch": "b060",
+ "paper": {
+  "id": "5e36e42744f133de50544c3719c2ade56553f91d",
+  "venue": "WSDM 2026",
+  "title": "Identify-Conceptualize-Align: A Schema-Adaptive Framework for Unified Entity Recognition and Event Detection",
+  "abstract": "Large Language Models (LLMs) have demonstrated strong adaptation to unseen tasks. However, their performance in Information Extraction (IE) under unseen schemas remains limited. Actually, IE requires both general abilities for understanding natural language and semantic concepts, and specialized abilities for aligning extracted information to various human-defined schemas. Training an LLM jointly on multiple schemas, or adapting it to a specific schema, often results in performance drops on datasets with other schemas, especially when conflicts arise between schemas. We refer to this phenomenon as the schema alignment tax in this paper. To alleviate this, we propose a schema-adaptive three-phase framework, Identify\u2013Conceptualize\u2013Align (ICA), which enables LLMs to focus on general abilities such as identifying entity and trigger spans and assigning corresponding concepts to them, while delegating schema-specific alignment to lightweight models. Specifically, in the Identification phase, we train an LLM to identify entity and trigger spans on multiple datasets, with cross-dataset annotation to boost span recall. In the Conceptualization phase, the LLM is used to assign semantic concepts to each span. In the Alignment phase, we train different lightweight alignment models to map these concepts to different human-defined schemas. The first two phases are fully reusable across tasks",
+  "gid": 911,
+  "theme": "information extraction LLM"
+ }
+}

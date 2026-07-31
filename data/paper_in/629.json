@@ -1,0 +1,11 @@
+{
+ "batch": "b041",
+ "paper": {
+  "id": "bef25d4cd8725aaecbbeada65de0c2dc08a1cab0",
+  "venue": "WWW 2026",
+  "title": "Augmented Intelligence in Technology-Assisted Review Systems (ALTARS 2026)",
+  "abstract": "The ALTARS 2026 workshop explores recent advances and open challenges in Technology-Assisted Review (TAR) systems and their application to large-scale, high-recall retrieval across the Web. TAR systems, originally designed for domains such as legal discovery and systematic literature review, are now increasingly relevant to Web environments characterized by heterogeneous, dynamic, and multilingual information. As the Web continues to expand through user-generated and AI-produced content, ensuring transparency, reliability, and fairness in automated review processes has become a central research challenge. This workshop aims to bring together researchers and practitioners from information retrieval, Web science, artificial intelligence, and data governance to discuss how TAR methodologies can support trustworthy and scalable information access. Topics include intelligent retrieval, human-in-the-loop learning, explainable and responsible AI, and the integration of large language models and knowledge graphs in review workflows. Through paper presentations, keynotes, and interactive sessions, ALTARS 2026 seeks to foster interdisciplinary collaboration and to identify future directions for developing transparent, fair, and adaptive Web-scale review systems.",
+  "gid": 629,
+  "theme": "Technology-assisted review"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "batch": "b048",
+ "paper": {
+  "id": "dca7d2253ed3c2f518fb9d7a9100e714bd4d175f",
+  "venue": "WWW 2026",
+  "title": "Automated Model Selection for Multivariate Time Series Forecasting",
+  "abstract": "Accurate multivariate time series forecasting (MTSF) is critical for intelligent web services in Web of Things. When confronted with unseen multivariate time series (MTS), the industry typically invests significant time and resources in training multiple models to identify the optimal model for deployment. This paper proposes a novel, efficient, and scalable MTSF model selection method that directly selects suitable MTSF methods based on data characteristics without extensive model training. Model selection is a core component of AutoML, which has made significant progress in recent years. However, existing methods incur high operational costs and cannot be directly applied to MTSF tasks. Moreover, there is a lack of a comprehensive and cohesive public time series library for MTSF model selection. To address these challenges, we compile the first large heterogeneous labeled MTSF model selection dataset, called the ModelPile, which covers 41 mainstream datasets across 11 domains. We then propose AutoMTSF, a large model-enabled model selection method that transforms the MTSF model selection problem into a time series classification problem and utilizes the ModelPile to unlock large-scale multi-dataset training. AutoMTSF first uses the pre-trained large model to encode raw MTS. Given the coarse-grained limitations of large model encoding, Recursive Temporal Pattern Feature (RTPF) ",
+  "gid": 725,
+  "theme": "MTSF model selection"
+ }
+}

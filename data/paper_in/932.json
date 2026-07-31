@@ -1,0 +1,11 @@
+{
+ "batch": "b062",
+ "paper": {
+  "id": "829be4191fb55a672704e91262fdf6d6d94ed850",
+  "venue": "WSDM 2026",
+  "title": "KnowFC: Navigating Knowledge Conflicts in Large Language Model-based Fact-Checking",
+  "abstract": "When fact-checking methods based on large language models (LLMs) use external evidence to validate claims, knowledge conflicts often arise. These conflicts typically stem from inconsistencies between the external evidence and LLMs' internal pre-existing knowledge. Such an inconsistency could lead LLMs to draw incorrect answers when validating claims, especially when they are overly confident in their internal incorrect knowledge. Previous works on LLM-based fact-checking have overlooked this issue. This paper, for the first time, proposes a framework (namely KnowFC) to navigate this issue. Our key insight is dividing and adaptively utilizing the knowledge that LLMs know and do not know, thereby avoiding conflicts while enhancing the correctness and efficiency of fact-checking. Specifically, in KnowFC, we propose an adaptive retrieval method, where we train an LLM using a reinforcement learning algorithm coupled with the Dunning-Kruger effect-inspired reward mechanism to identify its knowledge boundaries through confidence calibration, thereby realizing adaptive evidence retrieval. Besides, we propose a reliable and debiased fact verification method, where we organize and construct reasoning graphs using retrieved evidence to verify claims, followed by a causal intervention method using causal mediation analysis to mitigate internal knowledge interference. Experimental results o",
+  "gid": 932,
+  "theme": "LLM fact-checking"
+ }
+}

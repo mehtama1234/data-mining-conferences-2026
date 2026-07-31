@@ -1,0 +1,11 @@
+{
+ "batch": "b015",
+ "paper": {
+  "id": "44692dc496c8014c37e6fbec040fbb63e9fef2e5",
+  "venue": "WWW 2026",
+  "title": "DHOW-MiLLA: Joint Workshop on Diffusion of Harmful Content on Online Web and Countering Misinformation in the Age of LLMs and Agents",
+  "abstract": "With the advancement of digital technologies and gadgets, online content has become easily accessible. At the same time, harmful content also spread widely. There are different harmful content types present on various platforms in multiple languages. The topic of harmful content is broad and covers multiple research directions. Users of platforms are affected by all of them. In research, the different forms are mostly analysed separately, e.g. misinformation, cyber-bullying and hate speech. Most research has been conducted for only one platform, for a monolingual situation or on a particular issue. Counter-measures like blocking are down-ranking can make harmful content spreaders to switch platforms and languages to continuously reach a user base. Harmful content does not only appear on social media but also on news media. Spreader share harmful content in posts, news articles, comments and hyperlinks. There is a great need to study harmful content across platforms, languages, and topics. We brought the research on harmful content under one umbrella such that different approaches and novel methods can be shared. The workshop covers the currently ongoing issues of war and elections. We propose the workshop, DHOW: Diffusion of Harmful Content on Online Web, which brings together the research on different topics of harmful content. We expect to discuss innovative research work and",
+  "gid": 236,
+  "theme": "Harmful content mitigation"
+ }
+}

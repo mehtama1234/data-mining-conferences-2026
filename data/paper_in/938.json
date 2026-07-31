@@ -1,0 +1,11 @@
+{
+ "batch": "b062",
+ "paper": {
+  "id": "8effcdde6007db08ffefd52d08a2f17c567d82a4",
+  "venue": "WSDM 2026",
+  "title": "CelebCaption: A Benchmark Dataset for Identity-Sensitive Unlearning in Image Captioning",
+  "abstract": "Machine unlearning seeks to remove the influence of selected training examples without retraining the model from scratch. Recent work has extended this goal to vision\u2013language models, yet existing datasets are not suited for judging whether a sample's influence has truly been erased from learned image\u2013text pairs. Current algorithms often introduce false information into sentences generated after unlearning, which compromises utility. We first establish three criteria that an image caption unlearning method should meet: Specificity Reduction, Identity Removal, and Performance Preservation. Guided by these criteria, we present CelebCaption, an image\u2013text dataset of 15,000 photographs covering 150 well-known individuals, each linked to four captions that vary in detail (detailed versus summary) and in the presence of the subject's name. This design enables controlled, quantitative assessment of the proposed unlearning objectives. We benchmark several representative unlearning algorithms on CelebCaption using both caption quality scores and membership inference attack accuracy as quantitative unlearning metrics, and observe that current methods fail to achieve their privacy objectives. Our unlearning criteria and dataset provide a focused, reproducible testbed for advancing privacy-aware image captioning. The CelebCaption dataset is publicly available at https://github.com/DASH-Lab",
+  "gid": 938,
+  "theme": "machine unlearning"
+ }
+}

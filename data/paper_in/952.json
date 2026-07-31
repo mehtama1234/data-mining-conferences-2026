@@ -1,0 +1,11 @@
+{
+ "batch": "b063",
+ "paper": {
+  "id": "b1bfccc0ad7f27c06d714f24ee31270949793419",
+  "venue": "WSDM 2026",
+  "title": "When Modalities Go Missing: Early Fusion for Multimodal Recommendation",
+  "abstract": "Existing multimodal recommenders largely rely on late fusion, where modalities are separately encoded and aligned before fusion. Such designs work well with complete content but become fragile in practice: modalities are often missing, alignment breaks down, and imputation adds complexity with limited benefit. We propose EFMRec, a missing-aware early-fusion framework that follows a relaxed principle of leveraging modalities when available and ignoring them when absent. By exploiting pretrained multimodal models, EFMRec projects available modalities into a shared semantic space and aggregates them through a missing-aware early fusion, producing unified representations without reconstruction or auxiliary losses. These representations are further propagated via a GCN-based architecture and integrated with a collaborative filtering backbone to jointly model multimodal and collaborative signals. Experiments on three benchmarks demonstrate that EFMRec consistently outperforms strong baselines under both full- and missing-modality settings, highlighting its robustness to modality incompleteness.",
+  "gid": 952,
+  "theme": "Multimodal recommendation"
+ }
+}

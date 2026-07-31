@@ -1,0 +1,11 @@
+{
+ "batch": "b021",
+ "paper": {
+  "id": "5c9b67d31573d1d74a0a304815fa017d3b0e9363",
+  "venue": "WWW 2026",
+  "title": "SPCA: Stream Parser Confusion Attack for Web Application Firewall Evasion in HTTP/2",
+  "abstract": "Web Application Firewalls (WAFs) are widely deployed as a primary defense mechanism against injection-based web attacks by inspecting HTTP traffic for malicious patterns. However, structural inconsistencies in HTTP/2 stream parsing introduce a protocol-level attack surface that remains insufficiently examined. We propose the Stream Parser Confusion Attack (SPCA), a novel evasion technique that exploits discrepancies between WAFs and backend HTTP/2 servers in processing stream dependencies and priorities. SPCA operates without altering payload content, relying solely on RFC-compliant manipulation of stream priority weights and dependency trees to deliver unmodified malicious inputs past WAF inspection. To evaluate the feasibility and generality of SPCA, we design three well-defined stream topologies\u2014skewed, k-ary, and unbalanced\u2014each capturing unique structural traits observed in real-world HTTP/2 scheduling patterns. Each topology's dataset consists of 500 structurally distinct requests, derived by embedding 100 malicious test cases across five distinct priority levels. We transmit these requests against 13 commercial and open-source WAFs and 20 backend web frameworks in a black-box setting. Each topology individually achieves a bypass success rate of 49.66% for the skewed tree, 44.62% for the k-ary tree, and 46.38% for the unbalanced tree. Under the concurrent attack with thre",
+  "gid": 316,
+  "theme": "WAF evasion security"
+ }
+}

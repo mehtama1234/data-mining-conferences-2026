@@ -1,0 +1,11 @@
+{
+ "batch": "b041",
+ "paper": {
+  "id": "bd3b478e5a2e5b809b2e8e6a8706be05a46f0639",
+  "venue": "WWW 2026",
+  "title": "The Agentic Insider: Redefining Insider Threats Beyond Human Actors in Autonomous AI Systems",
+  "abstract": "As organizations increasingly deploy AI agents and autonomous systems, traditional definitions of insider threat require fundamental rethinking. Historically, insider threat has focused on human actors\u2014employees, contractors, or partners\u2014who misuse authorized access. In the Agentic Enterprise, however, autonomous AI agents operate with delegated authority, persistent memory, and decision-making capabilities, enabling actions within organizational trust boundaries without continuous human oversight. This position paper argues that insider threat mitigation approaches rooted in anthropocentric assumptions of intent, trust, and accountability are no longer sufficient in environments shaped by generative and agentic AI. Conventional methods emphasize human behavior and were not designed to observe, baseline, or interpret AI-driven activity, leaving security teams unable to detect role drift, manipulation, or emergent misuse by autonomous agents. Drawing on real-world incidents and established insider threat definitions, we propose a reframed classification of insider threats for autonomous systems and identify key governance and detection challenges. We conclude by outlining research directions in agent observability, interaction monitoring, auditability, memory isolation, and governance mechanisms required for next-generation insider threat programs.",
+  "gid": 622,
+  "theme": "AI agent security"
+ }
+}

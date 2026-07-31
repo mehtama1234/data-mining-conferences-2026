@@ -1,0 +1,11 @@
+{
+ "batch": "b040",
+ "paper": {
+  "id": "b347fef1c42dafcff1755badf04b9ceb81468a5d",
+  "venue": "WWW 2026",
+  "title": "An Interpretable Agentic Framework for Multimodal Hate Video Analysis with Explicit Evidence Attribution",
+  "abstract": "The proliferation of harmful and toxic content in social media videos poses significant risks to users and online communities. While many state-of-the-art approaches rely on supervised classifiers trained on large benchmark datasets, such models are often evaluated primarily on predictive performance and provide limited transparency for deployment scenarios where explanation and auditability are required. We present an evidence-centric multimodal video analysis system that treats visual, audio, textual, and contextual signals as independent sources of evidence rather than fused features. The system extracts object detections and on-screen text from video frames, speech transcripts from audio, and toxicity scores and named entities from text, while contextual information is obtained from a fixed offline retrieval corpus. All signals are stored in a shared evidence structure and prioritized using a deterministic ranking mechanism that emphasizes semantic contribution, explicitly models cross-modal agreement and conflict, and represents modality absence by marking non-contributory signals as null. Final decisions are produced through a robust orchestration layer that supports a fully deterministic baseline and an optional constrained large language model-based reasoner with fallback guarantees. We evaluate the system on HateMM, ImpliHateVid, and a manually annotated YTHate dataset",
+  "gid": 601,
+  "theme": "Multimodal hate detection"
+ }
+}

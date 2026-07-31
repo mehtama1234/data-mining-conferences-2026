@@ -1,0 +1,11 @@
+{
+ "batch": "b063",
+ "paper": {
+  "id": "a58aeb1e14bd1dcdeae0fae0bcd5cbc51d35d725",
+  "venue": "WSDM 2026",
+  "title": "Addressing Aggregation-Induced Information Loss in Graph Neural Networks",
+  "abstract": "Graph Neural Networks (GNNs) have shown remarkable capability in modeling complex relational data, yet their effectiveness is constrained by subtle but critical limitations in the message-passing paradigm. We identify a fundamental issue -- termed aggregation collapse -- arising from the aggregation step that combines representations of central and neighboring nodes with varying sizes. This bottleneck manifests in two forms of inherent information loss: (i) feature information loss, occurring when value distributions in learned representations become concentrated and indistinguishable after aggregation, and (ii) structure information loss, where variable node degrees are obscured by aggregation functions. To address these challenges, we propose complementary solutions: (i) nonlinear feature mapping and distribution re-scaler, which diversify input feature distributions prior to aggregation to preserve valuable feature-level details, and (ii) post-aggregation structural encoding, which retains essential structure information. Our methods are theoretically grounded, easy to implement, and broadly applicable to existing GNN models. Empirical evaluations demonstrate that our techniques successfully alleviate aggregation collapse, leading to improved performance and scalability in GNNs.",
+  "gid": 948,
+  "theme": "Graph neural networks"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "batch": "b006",
+ "paper": {
+  "id": "1dee730ed9cf04f31c9aeef67a81a1f2e2242f55",
+  "venue": "WWW 2026",
+  "title": "Beyond the Rules: Understanding the Design Logic of Internet Standards",
+  "abstract": "RFCs form the backbone of Internet protocols, yet the reasoning behind their design\u2014shaped by years of debate, trade-offs, and practical compromises within IETF working groups (WGs)\u2014remains buried in informal discussions and inaccessible to most. These rationales are known only to protocol authors, leaving learners with limited understanding and implementers prone to misinterpreting ambiguous specifications. To address this gap, we present a Retrieval-Augmented Generation (RAG) framework tailored for RFC design rationale extraction and generation. Our system retrieves rationale-rich context from extensive IETF email archives and WG deliberations, then generates clear explanations of the motivations and constraints behind protocol design decisions. By making this knowledge explicit, our work marks a milestone toward transparent Internet standards, enabling deeper understanding and more accurate implementations. Our tailored retriever improves targeted email discovery, especially at larger search scales, while returning much shorter contexts to reduce token cost for RAG.",
+  "gid": 103,
+  "theme": "Internet standards extraction"
+ }
+}

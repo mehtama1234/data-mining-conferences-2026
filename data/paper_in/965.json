@@ -1,0 +1,11 @@
+{
+ "batch": "b064",
+ "paper": {
+  "id": "cecfcfb2818a48e6b00e273477519a732076277b",
+  "venue": "WSDM 2026",
+  "title": "Continual Learning on Evolving Graphs via Mutual Information Maximization across Dynamic Node Embeddings",
+  "abstract": "Many real-world graphs evolve over time with new nodes and relationships being added or removed periodically. Continual learning (CL) on such evolving graphs is a challenging and underexplored topic in the literature. Specifically, the challenge in this problem setting pertains to the non-stationary data distribution of evolving graphs and the necessity for learning agent to accommodate new information without forgetting the previously acquired knowledge, formally referred to as catastrophic forgetting (CF). To address this, we propose a novel CL approach that mitigates CF by maximizing the mutual information between node representations (or embeddings) learned at consecutive time periods. Different from existing CL techniques that mainly operate over the parameter space, the proposed technique focuses on addressing the issue of CF in the embedding space. Experimental results show that the proposed approach consistently outperforms the baseline CL algorithms on multiple real-world graph datasets.",
+  "gid": 965,
+  "theme": "Continual graph learning"
+ }
+}

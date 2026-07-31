@@ -1,0 +1,11 @@
+{
+ "batch": "b026",
+ "paper": {
+  "id": "73a2d515f81b93aa6f927a544b442a037933f86d",
+  "venue": "WWW 2026",
+  "title": "Multimodal Deployment Risks in Manufacturing AI: A Survey of Boundary Failures, Taxonomy, and Governance in Industry 5.0",
+  "abstract": "Manufacturing AI systems increasingly rely on heterogeneous and interacting signals---from physical sensors and visual inspection streams to cyber/operational logs and human--machine interaction cues. In such multimodal settings, deployment risks rarely arise from a single model or dataset; instead, they emerge at cross-modal boundaries where signals are delayed, misaligned, or inconsistently interpreted across the socio-technical pipeline. We conduct a structured review of peer-reviewed studies, industrial reports, and international standards (2010--2025), synthesising evidence from over 80 relevant sources. Our analysis shows that safety, reliability, and accountability failures are often amplified by multimodal coupling (e.g., sensor--vision conflicts, log--control inconsistencies, and human-in-the-loop misunderstandings). Based on the synthesis above, we organise the identified deployment risks into a multimodal-aware taxonomy comprising five interrelated layers: data, model, system, organisational, and governance/ethical. Rather than treating these layers in isolation, the taxonomy explicitly links risk categories to mitigation approaches that operate across modalities, including technical controls, human-centred operational practices, and standards-driven governance mechanisms (e.g., NIST AI RMF, ISO/IEC~23894, ISO/IEC~42001). In addition, the review highlights several un",
+  "gid": 393,
+  "theme": "Manufacturing AI governance"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "batch": "b015",
+ "paper": {
+  "id": "43c76b4ac8c75f4d40599eea4f693ec085aaa4a4",
+  "venue": "WWW 2026",
+  "title": "International Workshop on Trustworthy Multimodal Learning for Social Media Analysis",
+  "abstract": "With the rapid proliferation of social media platforms, the web has become a large repository of multimodal content, including text, images, audio, and video. However, the scale and noise of social media data also make multimodal fusion and processing challenging. To address these issues, the International Workshop on Multimodal Deep Learning for Social Media Analysis (IMDL) aims to bring together researchers, practitioners, and industry experts to discuss the latest advancements, challenges, and future directions in analyzing multimodal social media content using Large Multimodal Models (LMMs), as well as to rigorously evaluate their performance and safety for real-world deployment on web platforms. This workshop emphasizes two themes: (i) multimodal social media analysis with LMMs, focusing on multimodal fusion and information alignment; and (ii) performance and safety evaluation for real-world deployment, covering instruction following and generation quality as well as risks such as hallucinations and ''jailbreak'' attacks. This edition received 14 submissions from 7 countries (China, Singapore, the United States, India, the United Arab Emirates, Canada, and Russia). We accepted 10 papers (acceptance rate: 71.4%), including 7 workshop full papers and 3 workshop short papers.",
+  "gid": 232,
+  "theme": "Multimodal social media safety"
+ }
+}

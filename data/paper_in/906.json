@@ -1,0 +1,11 @@
+{
+ "batch": "b060",
+ "paper": {
+  "id": "53b32bd270626ff9cac706b708c3bc631bbbd369",
+  "venue": "WSDM 2026",
+  "title": "Efficient Monte Carlo Algorithms for Approximating Katz Centrality on Large Graphs",
+  "abstract": "Katz centrality is an important metric for measuring the relative importance of nodes in a graph, commonly used in social networks. This measure is prohibitively expensive to compute exactly, as it requires up to cubic-time complexity. Although several approximation methods exist, most fail to exploit parallelism, limiting their scalability to large graphs. To address this limitation, we propose two highly parallelizable Monte Carlo algorithms based on random walks named MC-Katz and MC-KatzP, which approximate the truncated Katz centrality and its original form, respectively. Empirical results on nine real-world datasets show that they achieve low mean relative error and high accuracy in ranking the most influential nodes in the networks, while delivering two to three orders of magnitude speedups over the baselines.",
+  "gid": 906,
+  "theme": "graph centrality approximation"
+ }
+}

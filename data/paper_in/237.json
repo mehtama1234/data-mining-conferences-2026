@@ -1,0 +1,11 @@
+{
+ "batch": "b015",
+ "paper": {
+  "id": "446b9082b1907eeca2be14598c7c21a02a99b8be",
+  "venue": "WWW 2026",
+  "title": "Graph Aggregation Beyond Homophily Assumption: a more meaningful way to model networks",
+  "abstract": "Data aggregation on Homophily/Heterophily networks has caused lots of discussions. Existing solutions are all based on Homophily assumption that Heterophily edges are considered as noisy data and need to be eliminated. In this paper, we propose Graph Weighted Aggregation (GWA) method and use Ricci Curvature as the force of influence between adjacent nodes. Three attributes: (1) node features, (2) network topology and (3) label information, are combined together to formulate an aggregation strategy. GWA algorithm outperforms the state-of-the-art algorithms on benchmark datasets.",
+  "gid": 237,
+  "theme": "Graph neural networks"
+ }
+}

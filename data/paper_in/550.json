@@ -1,0 +1,11 @@
+{
+ "batch": "b036",
+ "paper": {
+  "id": "a6a267c1a820cc1e78b56e388303e31c6d575f40",
+  "venue": "WWW 2026",
+  "title": "D\u00e9j\u00e0 Vu of Strange Stickers! Enhancing Out-of-Distribution Robustness in Sticker Retrieval via Cross-Modal Intent Alignment",
+  "abstract": "The rapid growth of digital communication has increased the demand for sticker retrieval systems that can match expressive stickers to users' communicative needs. In practice, however, sticker retrieval encounters significant out-of-distribution (OOD) challenges arising from unseen queries and stickers, driven by the diversity of user expression habits and sticker visual representations. These OOD issues often lead to irrelevant or inappropriate retrieval results, undermining the user experience. Drawing on symbolic interactionism in cognition, we propose XAlign-SR, a method that enhances OOD robustness by aligning abstract expressive intent between queries and stickers across modalities. To support this study, we construct OOD benchmarks from sticker datasets that simulate realistic query\u2013sticker scenarios. Experiments demonstrate that our approach significantly outperforms state-of-the-art baselines.",
+  "gid": 550,
+  "theme": "Multimodal retrieval"
+ }
+}

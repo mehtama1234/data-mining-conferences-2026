@@ -1,0 +1,11 @@
+{
+ "batch": "b025",
+ "paper": {
+  "id": "72aeb18e431e84f50fda0a60400d005b224c3f89",
+  "venue": "WWW 2026",
+  "title": "TIME 2026: 2nd International Workshop on Transformative Insights in Multi-faceted Evaluation",
+  "abstract": "TIME brings together domain experts and research students to share insights, practical guidance, and evaluations on key topics, including social network analysis, graph algorithms, web mining, semantics and knowledge, security, privacy, fairness, and ethics on the web. We invite survey, evaluation, or review papers that critically analyze models and datasets from diverse perspectives. These papers serve as essential resources by (i) providing quick reference guides for researchers and practitioners, (ii) enhancing accessibility for newcomers, and (iii) distilling key insights into actionable knowledge. Complementing these contributions, invited talks from experts and industry leaders will offer practical perspectives, fostering cross-domain collaboration in web technologies. Through thought-provoking discussions and networking opportunities, the workshop bridges research and real-world applications, setting a new standard for interdisciplinary exchange in the field.",
+  "gid": 386,
+  "theme": "workshop evaluation"
+ }
+}

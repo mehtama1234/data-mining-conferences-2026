@@ -1,0 +1,11 @@
+{
+ "batch": "b059",
+ "paper": {
+  "id": "2c95ad0576065e546f4eb1a71092356c45dad98c",
+  "venue": "WSDM 2026",
+  "title": "Explaining the 'Unexplainable' Large Language Models",
+  "abstract": "The integration of Large Language Models (LLMs) into critical societal and scientific functions has intensified the urgent demand for transparency, reliability, and trust. While post-hoc attribution methods and Chain-of-Thought reasoning currently serve as the dominant approaches to explainability, growing evidence shows that they are often unreliable, producing brittle, misleading, or illusory explanations that fail to reflect true model behavior. This tutorial aims to unpack why these limitations arise. We first establish the theoretical intractability of complete mechanistic explanations for modern LLMs and clarify the intrinsic barriers to achieving full transparency in overparameterized models. We then pivot to a principled alternative: user-centric explainability, with a focus on concept-based interpretability and controlled data attribution. We review the theoretical foundations of these methods and survey their modern extensions that enable comprehensive explanation, inference-time intervention, and model editability. Finally, we demonstrate how such approaches support effective human--AI collaboration in high-stakes scientific and decision-critical applications. By synthesizing foundational theory, critical analysis of existing methods, and emerging techniques, this tutorial offers a coherent framework for developing the next generation of explainable and trustworthy A",
+  "gid": 889,
+  "theme": "LLM interpretability"
+ }
+}

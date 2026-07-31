@@ -1,0 +1,11 @@
+{
+ "batch": "b061",
+ "paper": {
+  "id": "7da5f1fd26518a32a2ad81c46d591be47e5e9a69",
+  "venue": "WSDM 2026",
+  "title": "Debias Once for All: A Data-Centric Strategy for Fair Machine Learning",
+  "abstract": "The increasing use of deep neural networks (DNNs) in high-stakes domains such as hiring, healthcare, and finance has heightened concerns about algorithmic fairness. Because training data can encode historical and societal biases, learned models may exhibit disparate outcomes for underrepresented groups. Prior work is largely model-centric, improving fairness via specialized loss functions or architectural modifications, which can introduce additional training overhead and hinder deployment in modular or rapidly evolving pipelines. We instead study a data-centric alternative: constructing a fair training dataset that promotes equitable behavior without changing the model architecture. We propose FairData, which synthesizes a fair dataset by optimizing a gradient-matching objective that aligns the training dynamics of a randomly initialized model on the synthetic data with those on the original data, while explicitly regularizing for group fairness. The resulting dataset is model-agnostic, lightweight, and remains in the original input space, enabling straightforward reuse across downstream models. Experiments on four benchmark datasets show that FairData consistently reduces group disparities across diverse architectures while maintaining competitive predictive performance, suggesting fairness-aware dataset optimization as a practical complement to model-specific fairness techni",
+  "gid": 928,
+  "theme": "Fair machine learning"
+ }
+}

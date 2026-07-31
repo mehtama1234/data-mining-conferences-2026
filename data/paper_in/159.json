@@ -1,0 +1,11 @@
+{
+ "batch": "b010",
+ "paper": {
+  "id": "2d5ed8f70f439401e00bcaad5327d4c688fbe1f4",
+  "venue": "WWW 2026",
+  "title": "Evaluating LLM Recommendations Under Stress",
+  "abstract": "Large Language Models (LLMs) are increasingly deployed in high-stakes settings where errors are costly and decisions must be made under time pressure, ambiguity, and strict constraints. However, most existing benchmarks evaluate model performance under relaxed conditions and fail to capture how LLM behavior degrades under stress. This paper presents a structured framework for stress-testing LLM robustness across five real-world scenarios with increasing difficulty. We evaluate three widely used models\u2014ChatGPT (GPT-5.1), Gemini 3, and Claude 4.5 Sonnet\u2014using a 45-item rubric assessing accuracy, safety, logical consistency, and constraint adherence. To quantify robustness, we introduce a Stress Sensitivity Index (SSI) that measures performance degradation as task difficulty increases. Our results show that ChatGPT remains largely stable under stress, Gemini exhibits moderate degradation, and Claude displays substantial sensitivity, particularly in constraint-following tasks. These findings highlight the importance of stress-oriented evaluation for understanding LLM reliability prior to their deployment in real-world, high-stress human environments.",
+  "gid": 159,
+  "theme": "LLM evaluation"
+ }
+}

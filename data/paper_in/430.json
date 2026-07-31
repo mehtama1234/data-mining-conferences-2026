@@ -1,0 +1,11 @@
+{
+ "batch": "b028",
+ "paper": {
+  "id": "80bfd0b79ce2e0320eb09b6b7bca7d8ad6006194",
+  "venue": "WWW 2026",
+  "title": "Roamify: An Interactive Browser Extension for Real-Time LLM-Based Travel Itinerary Generation",
+  "abstract": "We present Roamify, a browser-embedded demonstration system for real-time, web-conditioned travel itinerary generation. Roamify converts live travel blogs and articles into structured multi-day itineraries by integrating large-scale Web scraping, neural summarisation, explicit preference modelling, and in-browser LLM generation. The system continuously retrieves fresh attraction data, summarises it using a finetuned T5 model, and composes coherent itineraries through LLaMA 3, guided by user-controlled sliders that encode historical, natural, cultural, and amusement preferences. Unlike static trip planning tools or chatbot-only assistants, Roamify enables interactive, controllable, and dynamically updated itinerary creation directly within the Chrome environment. This demo showcases a complete Web intelligence pipeline, from live data acquisition to human-in-the-loop LLM prompting, operating entirely on the client side for transparency and low-latency interaction.",
+  "gid": 430,
+  "theme": "Travel recommendation"
+ }
+}

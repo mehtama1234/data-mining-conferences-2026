@@ -1,0 +1,11 @@
+{
+ "batch": "b041",
+ "paper": {
+  "id": "baabefa3d5fd68e814da417e488480ecc2fe6aaf",
+  "venue": "WWW 2026",
+  "title": "DSTAG: A Semantic Tag-Enhanced Dual-Graph Convolutional Network for Temporal Knowledge Graph Completion",
+  "abstract": "Temporal Knowledge Graph Completion (TKGC) aims to predict missing entities or relations based on historical facts, thereby facilitating the understanding of dynamic system evolution and supporting downstream reasoning tasks. However, existing methods predominantly focus on modeling sequential and structural dependencies, often overlooking the rich semantic information embedded in entities and relations, as well as the higher-order interactions among them, which limits their ability to handle complex, evolving scenarios effectively. To address these limitations, we propose DSTAG, a novel TKGC approach based on a semantic tag-enhanced dual-graph convolutional network. Our method leverages large language models to generate contextualized semantic multi-tags for both entities and relations (e.g., ''political event,'' ''economic activity''), thereby enriching their semantic representations. Furthermore, we introduce a semantic tag representation mechanism that captures higher-order dependencies during the aggregation and propagation of semantic tag information across graphs. DSTAG adopts a dual-graph convolutional network architecture, where the relation graph convolution extracts semantic features between temporal relationships and injects this information into the entity graph convolution, enabling joint modeling of entities and relations. We evaluate DSTAG on three widely used T",
+  "gid": 616,
+  "theme": "Knowledge graph completion"
+ }
+}

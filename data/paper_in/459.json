@@ -1,0 +1,11 @@
+{
+ "batch": "b030",
+ "paper": {
+  "id": "8a457a30d14fac4942a75da63ab17e0a9800360d",
+  "venue": "WWW 2026",
+  "title": "WPIS: From In-the-Wild Web Images to Physics-Aware 3D Scene Graphs for Physical Reasoning",
+  "abstract": "Intelligent agents operating in biomedical laboratories need physics-aware understanding beyond simple geometry or semantics. In-the-wild web images capture authentic lab interactions, yet methods designed for instrumented 3D capture and reconstruction struggle to turn this resource into functional knowledge. Consequently, current autonomous laboratory systems lack a queryable representation of affordances for precise object and liquid handling tasks. We pose a web-native question: how to convert single-view, uncalibrated web images into a structured, physics-aware scene representation. We introduce WPIS (Web- and Physics-Informed Scene-understanding), a pipeline that compiles Physics-aware 3D Scene Graphs (P-3DSGs) from web imagery by fusing open-vocabulary instance/mask cues with relative geometry, augmenting nodes with real-valued liquid states and fine-grained hand\u2013object interaction (HOI) subgraphs, and attaching concise natural-language functional relations\u2014without intrinsics, multi-view, or CAD priors. We release WebLab-3DSG, a 1,000-scene knowledge base pairing each RGB image with its P-3DSG JSON, relative depth, and a single-image point-cloud proxy. In an expert study, grounding an LLM in a P-3DSG improves answer quality by 40% over a strong VLM that reasons directly from RGB, with the largest gains on feasibility, HOI alignment, and safety constraints. WPIS offers a r",
+  "gid": 459,
+  "theme": "scene understanding reasoning"
+ }
+}

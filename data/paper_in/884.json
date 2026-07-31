@@ -1,0 +1,11 @@
+{
+ "batch": "b058",
+ "paper": {
+  "id": "1e364efd781e0c4d681fc4413377d8876f25cf34",
+  "venue": "WSDM 2026",
+  "title": "Adapting to Evolving Data: Test-Time Expert Aggregation for Imbalanced Tabular Regression",
+  "abstract": "Many critical web applications, from e-commerce price prediction to user engagement forecasting, rely on regression models trained on tabular data. These models often face a dual challenge: the inherent imbalance in continuous target values and, more critically, the unpredictable distribution shifts that occur when the model is deployed online. While data imbalance in classification is well-studied, its intersection with regression tasks in dynamic, real-world settings is underexplored. Existing methods for imbalanced regression often assume that the test data distribution is known and stable, an assumption that rarely holds true for live web systems and can lead to significant performance degradation. To address this gap, we propose a novel framework featuring two key innovations: (i) a Region-Aware Mixture of Experts that leverages a Gaussian Mixture Model to identify distinct data sub-populations. This allows us to synthesize targeted training data and train specialized experts, each tailored to a specific data region. (ii) a Test-Time Self-Supervised Expert Aggregation mechanism. This is the core of our adaptation strategy, dynamically adjusting the weights of each expert based on the features of incoming test instances. This enables our model to adapt on-the-fly to varying test distributions without costly retraining. We evaluated our method on four real-world tabular regr",
+  "gid": 884,
+  "theme": "imbalanced tabular regression"
+ }
+}

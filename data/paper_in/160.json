@@ -1,0 +1,11 @@
+{
+ "batch": "b010",
+ "paper": {
+  "id": "2d85e01b812fcaedf1042acb081fe705074aa01c",
+  "venue": "WWW 2026",
+  "title": "Towards Better Evaluation Metrics for Text-to-Motion Generation",
+  "abstract": "A reliable evaluation metric is essential for guiding positive developments within a research field. In the domain of text-to-motion generation, the traditional evaluation metrics such as Fr\u00e9chet Inception Distance (FID) and R-Precision suffer from inherent limitations. Specifically, FID is biased by its Gaussian assumption, while R-Precision lacks global awareness. Current work often overemphasizes improvements on these unreliable metrics to indicate model superiority. To address these challenges, we propose two novel evaluation metrics: Optimal Transport Matching Score (OTMS) and MoCLIP-based Maximum Mean Discrepancy (MMMD). OTMS formulates text-motion matching as an optimal transport process, enabling a global perspective. MMMD leverages our enhanced MoCLIP encoder and Gaussian-RBF-based Maximum Mean Discrepancy, providing an unbiased evaluation without restrictive distribution assumptions. Extensive experiments and analysis demonstrate that our proposed metrics align closely with human perceptual judgments and provide efficient, comprehensive, and reliable evaluations for text-driven motion generation tasks.",
+  "gid": 160,
+  "theme": "Motion generation metrics"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "batch": "b065",
+ "paper": {
+  "id": "dd77a8757e4b452066aa021da9f0625363c457cf",
+  "venue": "WSDM 2026",
+  "title": "Uncertainty Quantification for Dynamical Networks",
+  "abstract": "Dynamical networks are essential for understanding how network structures interact with dynamic processes over them. For example, in adaptive social networks, individuals' opinions influence and are influenced by their connections, leading to co-evolutionary patterns. Similarly, in neuroscience, the plasticity of neural networks dynamically reshapes their structure in response to activity. The topology of these networks profoundly impacts behavior, making their analysis critical in understanding stability, synchronization, or cascading failures.Uncertainty quantification (UQ) in dynamical networks addresses the challenges posed by incomplete or noisy knowledge of network structure, parameters, and external influences. For instance, fluctuating edge weights, evolving node connections, or stochastic interactions introduce uncertainties that affect predictions. In epidemiology, unknown contact patterns or varying transmission rates can significantly impact outbreak modeling, while in power systems, uncertainties in demand and renewable energy integration challenge reliability assessments. UQ systematically evaluates these uncertainties, offering techniques to quantify their effects and develop robust predictions. This 3-hour tutorial bridges the study of dynamical networks with the systematic framework of UQ, providing a comprehensive understanding of their interplay and practical",
+  "gid": 976,
+  "theme": "Uncertainty quantification networks"
+ }
+}

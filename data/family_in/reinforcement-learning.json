@@ -1,0 +1,568 @@
+{
+ "key": "reinforcement-learning",
+ "theme": "Reinforcement Learning",
+ "n_papers": 110,
+ "pct": 5.7,
+ "by_venue": {
+  "WWW 2026": 57,
+  "WSDM 2026": 7,
+  "SIGIR 2026": 41,
+  "KDD 2026": 5
+ },
+ "theme_examples": [
+  {
+   "title": "Understanding Strategic Platform Entry and Seller Exploration: A Stackelberg Model",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "PAOSC: Plug-and-play Attention Optimization for Semantic Consistency in LLMs",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "EcoTune: Edge-Cloud Collaborative Model Adaptation for Budget-Constrained On-Device SLM Personalization",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "FeedGuard: Online Critic-Guided Reinforcement Learning with Privacy-Preserving Feedback for Recommendation",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "PolicySim: An LLM-Based Agent Social Simulation Sandbox for Proactive Policy Optimization",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "How Graphs Can Help You Stay Informed in an Evolving World",
+   "venue": "WWW 2026"
+  }
+ ],
+ "representative_papers": [
+  {
+   "title": "Understanding Strategic Platform Entry and Seller Exploration: A Stackelberg Model",
+   "venue": "WWW 2026",
+   "problem": "Platform entry behavior and seller innovation incentives in multi-sided marketplaces remain theoretically unexplored",
+   "approach": "Stackelberg model with Gittins-index policy for single seller, deep RL for multi-seller equilibrium",
+   "contribution": "Theoretical and computational framework explaining platform entry strategy and seller exploration incentives",
+   "primary_theme": "platform economics",
+   "methods": [
+    "game-theory",
+    "reinforcement-learning",
+    "stackelberg"
+   ]
+  },
+  {
+   "title": "FeedGuard: Online Critic-Guided Reinforcement Learning with Privacy-Preserving Feedback for Recommendation",
+   "venue": "WWW 2026",
+   "problem": "RL recommendation systems struggle with privacy-preserving feedback collection",
+   "approach": "Critic-guided RL with split federated learning and differential privacy",
+   "contribution": "FeedGuard enables privacy-protected online adaptation with formal DP guarantees",
+   "primary_theme": "Privacy-preserving recommendation",
+   "methods": [
+    "reinforcement-learning",
+    "differential-privacy",
+    "federated-learning"
+   ]
+  },
+  {
+   "title": "How Graphs Can Help You Stay Informed in an Evolving World",
+   "venue": "WWW 2026",
+   "problem": "Inefficient knowledge propagation and updates in crawling dynamic data sources",
+   "approach": "Graph-structured models with reinforcement learning-based crawling algorithm",
+   "contribution": "RL-based approach outperforms traditional baselines on dynamic graph crawling tasks",
+   "primary_theme": "Dynamic graph crawling",
+   "methods": [
+    "graph",
+    "reinforcement-learning",
+    "crawling"
+   ]
+  },
+  {
+   "title": "Learning-Based Optimization of Atomic Arbitrage in Decentralized Financial Systems",
+   "venue": "WWW 2026",
+   "problem": "Atomic arbitrage in DeFi faces speed-profit trade-off under realistic constraints",
+   "approach": "Deep reinforcement learning with PPO for constrained path selection and trade optimization",
+   "contribution": "PPO agent achieving millisecond-latency profitable arbitrage in atomic transactions",
+   "primary_theme": "DeFi arbitrage optimization",
+   "methods": [
+    "reinforcement-learning",
+    "optimization",
+    "defi"
+   ]
+  },
+  {
+   "title": "Inference Cost Attacks for Retrieval-Augmented Large Language Models",
+   "venue": "WWW 2026",
+   "problem": "RAG-enhanced LLMs vulnerable to high inference costs through knowledge base poisoning",
+   "approach": "Inject malicious documents into knowledge bases via LLM agents and reinforcement learning",
+   "contribution": "CREEP framework with MA-GRPO algorithm for effective inference cost attacks on RAG systems",
+   "primary_theme": "LLM security",
+   "methods": [
+    "rag",
+    "adversarial-attack",
+    "reinforcement-learning"
+   ]
+  },
+  {
+   "title": "ToolBox-RL: Learning to Generalize Tool Use Across Massive Repositories",
+   "venue": "WWW 2026",
+   "problem": "Retrieval-based tool selection struggles aligning user queries with tool documentation",
+   "approach": "Reinforcement learning unifying query rewriting, intent understanding, and large-scale retrieval",
+   "contribution": "ToolBox-RL achieves best accuracy on white/black-box tools with strong out-of-domain generalization",
+   "primary_theme": "LLM tool use",
+   "methods": [
+    "reinforcement-learning",
+    "tool-retrieval",
+    "query-rewriting"
+   ]
+  },
+  {
+   "title": "Privacy-Aware Machine Unlearning with SISA for Reinforcement Learning\u2013Based Ransomware Detection",
+   "venue": "WWW 2026",
+   "problem": "Ransomware detectors need privacy-compliant data deletion without full model retraining",
+   "approach": "SISA training partitions data into shards; unlearning retrains only affected shards",
+   "contribution": "Privacy-aware RL detector reduces unlearning cost while preserving ransomware detection performance",
+   "primary_theme": "Machine unlearning",
+   "methods": [
+    "reinforcement_learning",
+    "unlearning",
+    "sisa_training"
+   ]
+  },
+  {
+   "title": "DARA: Few-shot Budget Allocation in Online Advertising via In-Context Decision Making with RL-Finetuned LLMs",
+   "venue": "WWW 2026",
+   "problem": "Few-shot budget allocation in online advertising lacks numerical precision needed for optimization",
+   "approach": "Dual-phase framework combining in-context reasoning with fine-grained feedback-driven optimizer",
+   "contribution": "GRPO-Adaptive LLM post-training enhancing reasoning and numerical precision for AIGB tasks",
+   "primary_theme": "LLM ad bidding",
+   "methods": [
+    "llm",
+    "reinforcement-learning",
+    "in-context-learning"
+   ]
+  },
+  {
+   "title": "Dynamic Min-Max Multi-Dimensional Reinforcement Backdoor Attacks and Orchestrated Closed-Loop Defense in Fairness-Aware Web Federated Finance",
+   "venue": "WWW 2026",
+   "problem": "Federated fraud detection lacks robustness to backdoor attacks and handles extreme data scarcity",
+   "approach": "Privacy-enhanced representation fusion, contrastive learning, dynamic Min-Max adversarial game",
+   "contribution": "CLARF framework with closed-loop defense against reinforcement learning backdoor attacks",
+   "primary_theme": "Fraud detection federated",
+   "methods": [
+    "federated_learning",
+    "contrastive",
+    "adversarial",
+    "reinforcement_learning"
+   ]
+  },
+  {
+   "title": "Accurate and Efficient Personalized Query Rewriting in Baidu Search",
+   "venue": "WWW 2026",
+   "problem": "Query rewriting for personalized search requires low-latency inference without CoT overhead",
+   "approach": "Hybrid Supervised Fine-Tuning strategy with two-stage reinforcement learning training",
+   "contribution": "PicQue achieves personalized query rewriting with CoT accuracy and low online latency",
+   "primary_theme": "Personalized search ranking",
+   "methods": [
+    "llm",
+    "fine_tuning",
+    "reinforcement_learning",
+    "query_rewriting"
+   ]
+  },
+  {
+   "title": "Marketing Hosting: From Fixed to Endogenous Budgets",
+   "venue": "WWW 2026",
+   "problem": "Multi-channel marketing assumes fixed exogenous budget; real systems need performance-adaptive endogenous budgets.",
+   "approach": "Bandits with Endogenous Knapsacks (BwEK); primal-dual algorithm with risk-aware per-round constraints.",
+   "contribution": "First high-probability safety guarantees for path-dependent risk of ruin; optimal reinvestment rate learning.",
+   "primary_theme": "Adaptive marketing optimization",
+   "methods": [
+    "bandit-algorithm",
+    "risk-aware",
+    "reinforcement-learning"
+   ]
+  },
+  {
+   "title": "SAGE: Sustainable Agent-Guided Expert-tuning for Culturally Attuned Translation in Low-Resource Southeast Asia",
+   "venue": "WWW 2026",
+   "problem": "Low-resource Southeast Asian languages lack data and energy-efficient translation methods",
+   "approach": "RL agent curating compact training sets from expert dialogues, fine-tuning with LoRA on open LLMs",
+   "contribution": "State-of-the-art translation for seven Southeast Asian languages prioritizing cultural relevance over scale",
+   "primary_theme": "Low-resource translation",
+   "methods": [
+    "llm",
+    "reinforcement_learning",
+    "lora"
+   ]
+  },
+  {
+   "title": "Ethical Decision-Making under Moral Uncertainty",
+   "venue": "WWW 2026",
+   "problem": "Multi-armed bandit decision-making lacks framework for balancing conflicting moral principles under uncertainty",
+   "approach": "UCB extension with dynamic moral weights across ethical frameworks adapting to learned outcomes",
+   "contribution": "Algorithm balances ethical considerations and performance under moral uncertainty with bounded regret",
+   "primary_theme": "Ethical decision-making",
+   "methods": [
+    "multi-armed-bandit",
+    "reinforcement-learning",
+    "optimization"
+   ]
+  },
+  {
+   "title": "ReSuMe: Retriever-Summarizer Mutual Enhancement via Reinforcement Learning",
+   "venue": "WWW 2026",
+   "problem": "Dense retrieval models trained on full documents face distribution shift when operating on synthetic summaries",
+   "approach": "Joint fine-tuning with GRPO for retrieval-oriented summaries and contrastive updates on retriever",
+   "contribution": "ReSuMe achieves 13.2% MRR and 6.7% recall gains via retriever-summarizer co-optimization",
+   "primary_theme": "Dense retrieval optimization",
+   "methods": [
+    "reinforcement-learning",
+    "contrastive-learning",
+    "document-summarization"
+   ]
+  },
+  {
+   "title": "GAM: A Generative Auto-Marketing Framework in Online E-commerce Platforms",
+   "venue": "WWW 2026",
+   "problem": "Auto-marketing requires joint bidding and coupon decisions under self-funding constraints in dynamic environments",
+   "approach": "Generative model with constraint-aware reward alignment using Group Relative Policy Optimization",
+   "contribution": "GAM framework balances business objectives and constraint satisfaction for e-commerce auto-marketing",
+   "primary_theme": "LLM e-commerce optimization",
+   "methods": [
+    "reinforcement-learning",
+    "llm",
+    "constraint-optimization"
+   ]
+  },
+  {
+   "title": "Optimizing Multi-Turn Interactive Recommendation Agents via Generative Intrinsic Motivation",
+   "venue": "WWW 2026",
+   "problem": "Multi-turn interactive recommendation agents lack effective credit assignment and efficient exploration in sparse reward environments.",
+   "approach": "Generative intrinsic motivation framework modeling autonomy, competence, and relatedness drives for preference optimization.",
+   "contribution": "GIMO enables fine-grained credit assignment and hint-guided exploration for multi-skill interactive recommendation agent training.",
+   "primary_theme": "Interactive recommendation agents",
+   "methods": [
+    "reinforcement learning",
+    "intrinsic motivation",
+    "preference optimization"
+   ]
+  },
+  {
+   "title": "AHBid: An Adaptable Hierarchical Bidding Framework for Cross-Channel Advertising",
+   "venue": "WWW 2026",
+   "problem": "Multi-channel bid optimization lacks flexibility adapting to dynamics while capturing historical temporal dependencies.",
+   "approach": "Hierarchical framework integrating diffusion model planning with constraint enforcement and trajectory refinement.",
+   "contribution": "AHBid enables adaptive budget allocation across advertising channels via generative planning and real-time control.",
+   "primary_theme": "Online advertising bidding",
+   "methods": [
+    "diffusion models",
+    "reinforcement learning",
+    "constraint optimization"
+   ]
+  },
+  {
+   "title": "Prism: Towards Lowering User Cognitive Load in LLMs via Complex Intent Understanding",
+   "venue": "WWW 2026",
+   "problem": "Complex user intents on social web require coherent clarification modeling logical dependencies.",
+   "approach": "Prism decomposes intents, generates logically-organized clarification questions, trains via simulation.",
+   "contribution": "Cognitive-load-aware framework reduces friction in multi-turn intent clarification.",
+   "primary_theme": "LLM intent understanding",
+   "methods": [
+    "llm",
+    "intent-decomposition",
+    "reinforcement-learning"
+   ]
+  },
+  {
+   "title": "Intelli-Planner: Towards Customized Urban Planning via Large Language Model Empowered Reinforcement Learning",
+   "venue": "WWW 2026",
+   "problem": "Urban planning relies on slow human experts or limits stakeholder involvement in deep learning approaches",
+   "approach": "Multi-agent DRL with LLM-based stakeholder satisfaction evaluation and knowledge enhancement module",
+   "contribution": "Intelli-Planner achieves better stakeholder satisfaction and convergence versus traditional and state-of-the-art methods",
+   "primary_theme": "LLM-empowered planning",
+   "methods": [
+    "llm",
+    "reinforcement-learning",
+    "multi-agent"
+   ]
+  },
+  {
+   "title": "Bandits, LLMs, and Agentic Web",
+   "venue": "WWW 2026",
+   "problem": "LLM-based agents need adaptive decision-making frameworks for autonomous coordination and continuous learning in agentic ecosystems.",
+   "approach": "Tutorial on embedding multi-armed bandit algorithms into LLM agents balancing exploration-exploitation in autonomous systems.",
+   "contribution": "Practical MAB framework for agentic LLMs enabling personalized curation and multi-agent dialogue coordination.",
+   "primary_theme": "agentic learning",
+   "methods": [
+    "bandit",
+    "llm",
+    "reinforcement-learning",
+    "agent"
+   ]
+  },
+  {
+   "title": "Alzo: Auto-Tuning with Reinforcement Learning for DAG-based Blockchains",
+   "venue": "WWW 2026",
+   "problem": "Manual parameter tuning fails to adapt DAG blockchains to dynamic workloads",
+   "approach": "Hierarchical reinforcement learning for stage-level control with shadow-control safety",
+   "contribution": "Real-time auto-tuning achieving higher throughput and lower latency across variable loads",
+   "primary_theme": "blockchain optimization learning",
+   "methods": [
+    "reinforcement learning",
+    "blockchain",
+    "auto-tuning"
+   ]
+  },
+  {
+   "title": "Reinforcement Learning with Verbalized Probabilities for LLM Classification",
+   "venue": "WWW 2026",
+   "problem": "LLMs lack calibrated multi-class probability distributions for high-stakes applications",
+   "approach": "Reinforcement learning with verbalized probability distributions and CoT reasoning",
+   "contribution": "RLVP framework surpasses task-specific baselines on 55% of tasks; few-shot generalization",
+   "primary_theme": "LLM calibration",
+   "methods": [
+    "llm",
+    "reinforcement-learning",
+    "chain-of-thought"
+   ]
+  },
+  {
+   "title": "Unveiling and Simulating Short-Video Addiction Behaviors via Economic Addiction Theory",
+   "venue": "WWW 2026",
+   "problem": "Short-video addiction lacks large-scale behavioral analysis despite access to platform behavior data",
+   "approach": "Economic addiction theory combined with recommendation system behaviors using mean-to-adapted policy optimization",
+   "contribution": "AddictSim simulator learns personalized addiction patterns showing effectiveness of diversity-aware algorithms",
+   "primary_theme": "Addiction behavior",
+   "methods": [
+    "addiction-theory",
+    "reinforcement-learning",
+    "simulation",
+    "user-modeling"
+   ]
+  },
+  {
+   "title": "Can Thinking Models Think to Detect Hateful Memes?",
+   "venue": "WWW 2026",
+   "problem": "Hateful memes require multimodal compositional reasoning; MLLMs underexplored for this task",
+   "approach": "RL-based post-training with GRPO objective and pseudo-supervised chain-of-thought",
+   "contribution": "State-of-the-art hateful meme detection with improved explanation quality",
+   "primary_theme": "multimodal hate detection",
+   "methods": [
+    "multimodal",
+    "reinforcement-learning",
+    "classification"
+   ]
+  },
+  {
+   "title": "Deep GraphRAG: A Balanced Approach to Hierarchical Retrieval and Adaptive Integration",
+   "venue": "WWW 2026",
+   "problem": "GraphRAG trade-off between comprehensive global search and efficient local search; lacks robust multi-stage re-ranking",
+   "approach": "Three-stage hierarchical retrieval with inter-community filtering and beam search-optimized dynamic re-ranking",
+   "contribution": "Balanced framework integrating macroscopic and microscopic graph relations with reinforcement learning optimization",
+   "primary_theme": "Graph retrieval augmentation",
+   "methods": [
+    "hierarchical-retrieval",
+    "graph-rag",
+    "rl-optimization",
+    "beam-search"
+   ]
+  },
+  {
+   "title": "Reinforcement Learning-Constrained Segmented User Modeling with Large Language Models for Recommendation",
+   "venue": "WWW 2026",
+   "problem": "LLMs for recommendation struggle with long sequences and hallucinate spurious preferences",
+   "approach": "Reinforcement learning-constrained segmented modeling with cascaded preference inference",
+   "contribution": "Rec2 suppresses hallucinations and aligns preferences using subsequent behavior as reward signal",
+   "primary_theme": "LLM recommendation",
+   "methods": [
+    "llm",
+    "reinforcement-learning",
+    "recommendation"
+   ]
+  },
+  {
+   "title": "Mitigating Cumulative Privacy Risk in Continual Information Sharing: A Dynamic Stackelberg Game Approach",
+   "venue": "WWW 2026",
+   "problem": "Cumulative privacy risk overlooked in continual information sharing on web platforms",
+   "approach": "Dynamic Stackelberg game modeling sequential decisions with user/adversary cognitive behaviors",
+   "contribution": "RL-based algorithm derives optimal strategies for mitigating cumulative privacy leakage",
+   "primary_theme": "Privacy in data sharing",
+   "methods": [
+    "game-theory",
+    "reinforcement-learning",
+    "privacy-protection"
+   ]
+  },
+  {
+   "title": "Toward Generalized Web Agent Training: A Deep Dive into Entropy-Balanced Reinforcement Learning",
+   "venue": "WWW 2026",
+   "problem": "Agentic RL training collapses from excessive entropy reliance despite benefits for multi-turn web agents",
+   "approach": "Entropy-balanced rollout and policy optimization with dynamic budget allocation and gradient rescaling",
+   "contribution": "Consistent improvements across 14 datasets by balancing entropy while maintaining sampling diversity",
+   "primary_theme": "reinforcement learning",
+   "methods": [
+    "rl",
+    "entropy",
+    "policy-optimization"
+   ]
+  },
+  {
+   "title": "Unbiased Multimodal Reranking for Long-Tail Short-Video Search",
+   "venue": "WWW 2026",
+   "problem": "Short-video search amplifies low-quality content for long-tail queries due to sparse user behavior",
+   "approach": "LLM-driven multimodal reranking with preference optimization and RL page-level guidance",
+   "contribution": "Online A/B test shows improvements in user experience and consumption metrics",
+   "primary_theme": "LLM-based video ranking",
+   "methods": [
+    "llm",
+    "reranking",
+    "multimodal",
+    "reinforcement-learning"
+   ]
+  },
+  {
+   "title": "Triple-R: Iterative Query Rewriting and Refinement for Retrieval-Augmented Fake News Detection",
+   "venue": "WWW 2026",
+   "problem": "Retrieval-augmented fake news detection overlooks gap between news text and needed verification evidence.",
+   "approach": "Triple-R uses trainable query rewriter optimized via RL to iteratively refine search queries for relevant evidence retrieval.",
+   "contribution": "Improved fake news detection by optimizing retrieval queries rather than retriever or verifier modules alone.",
+   "primary_theme": "Retrieval-augmented fake news detection",
+   "methods": [
+    "retrieval-augmented-generation",
+    "reinforcement-learning",
+    "query-rewriting"
+   ]
+  },
+  {
+   "title": "DynaFLUX: Implicit Dynamics-Preserving Reinforcement Learning for Topology-Free Influence Maximization",
+   "venue": "WWW 2026",
+   "problem": "Influence maximization fails without network topology due to hidden, noisy or privacy-protected links",
+   "approach": "End-to-end generative framework learning latent dynamics from time series with RL seed selection policy",
+   "contribution": "DynaFLUX identifies influential spreaders using self-attention pointer and Monte Carlo diffusion rewards",
+   "primary_theme": "Influence maximization topology-free",
+   "methods": [
+    "reinforcement-learning",
+    "generative-model",
+    "pointer-networks"
+   ]
+  },
+  {
+   "title": "Navigating Truth in Multimodal Fact-checking via Retrieval- and Reasoning-Enhanced Large Language Models",
+   "venue": "WWW 2026",
+   "problem": "MLLM-based fact-checking fails to exploit visual evidence and lacks context-aware reasoning",
+   "approach": "FACTCOMPASS combines semantic-aware retrieval with reasoning-enhanced RL and knowledge integration",
+   "contribution": "Enhanced evidence utilization and deep reasoning via reinforced fine-tuning strategy",
+   "primary_theme": "Multimodal fact-checking",
+   "methods": [
+    "mllm",
+    "retrieval",
+    "reinforcement-learning"
+   ]
+  },
+  {
+   "title": "LLM and AI Agent: Golden Rule is All We Need",
+   "venue": "WWW 2026",
+   "problem": "Autonomous agents lack universal interpretable foundation for ethical alignment",
+   "approach": "Formalize Golden Rule in game theory to derive fairness, honesty, compassion",
+   "contribution": "Golden Rule enables cooperative behavior and moral reasoning in agent alignment",
+   "primary_theme": "agent alignment",
+   "methods": [
+    "game theory",
+    "ethical reasoning",
+    "reinforcement learning"
+   ]
+  },
+  {
+   "title": "TOOL-CURE: Tool Selection via Curriculum-Enhanced Reinforcement Learning with Sample Screening for LLMs",
+   "venue": "WSDM 2026",
+   "problem": "Tool selection for LLM agents with imbalanced, noisy, conflicting real-world training data",
+   "approach": "Curriculum learning with proficiency-scaled stages and sample screening for reinforcement learning",
+   "contribution": "TOOL-CURE improves LLM tool selection via curriculum and sample quality filtering over GRPO",
+   "primary_theme": "LLM agent tool use",
+   "methods": [
+    "reinforcement learning",
+    "curriculum learning",
+    "llm",
+    "tool selection"
+   ]
+  },
+  {
+   "title": "Adaptive and Reinforcement-Guided Contrastive Hypergraph Distillation",
+   "venue": "WSDM 2026",
+   "problem": "Hypergraph distillation uses static strategies ignoring node characteristics and student capability",
+   "approach": "ARCHER with adaptive confidence, contrastive learning, and reinforcement-guided balancing",
+   "contribution": "Lightweight MLP student outperforms HGNN teacher via adaptive distillation",
+   "primary_theme": "Hypergraph neural network distillation",
+   "methods": [
+    "distillation",
+    "hypergraph",
+    "contrastive-learning",
+    "reinforcement-learning"
+   ]
+  },
+  {
+   "title": "Mixture of Adaptive Retrieval Experts for Veracity Assessment in the Human\u2013LLM Mixed Generation Paradigm",
+   "venue": "WSDM 2026",
+   "problem": "RAG for veracity assessment uses uniform strategies ignoring distinct source characteristics",
+   "approach": "MoE network via RL dynamically determining retrieval amount for each post",
+   "contribution": "MoARE adapts to human-LLM mixed content without source knowledge, higher accuracy lower cost",
+   "primary_theme": "Veracity assessment",
+   "methods": [
+    "rag",
+    "mixture-of-experts",
+    "reinforcement-learning"
+   ]
+  },
+  {
+   "title": "REFLEX: Reinforcement Feedback Learning with Large Language Models for E-commerce Query Expansion",
+   "venue": "WSDM 2026",
+   "problem": "Query expansion in e-commerce fails on short queries, incomplete supervision, evolving catalogs without domain constraints",
+   "approach": "LLM training via search-engine-in-loop RL with catalog grounding and relevance-diversity reward",
+   "contribution": "REFLEX improves semantic coverage and retrieval effectiveness; online A/B confirms scalability gains",
+   "primary_theme": "E-commerce query expansion",
+   "methods": [
+    "llm",
+    "reinforcement_learning",
+    "search"
+   ]
+  },
+  {
+   "title": "SoftHist: Teaching Graph Injection Attackers to Camouflage with Memory",
+   "venue": "WSDM 2026",
+   "problem": "GNNs vulnerable to adversarial injection attacks; existing methods ineffective against defenses",
+   "approach": "Gradient-free reinforcement learning with softened embeddings and topology-aware sampling",
+   "contribution": "SoftHist balances attack effectiveness, stealthiness, and robustness against defended models",
+   "primary_theme": "Adversarial graph attacks",
+   "methods": [
+    "reinforcement-learning",
+    "adversarial",
+    "graph-injection"
+   ]
+  },
+  {
+   "title": "Rule Mining and Learning for Structured Knowledge Retrieval",
+   "venue": "WSDM 2026",
+   "problem": "Structured retrieval rules rarely predefined; difficult to identify implicit relational patterns",
+   "approach": "Bi-level optimization coupling rule discovery with retrieval learning via reinforcement learning",
+   "contribution": "Framework automatically mining rules from feedback, matching manually-specified rule performance",
+   "primary_theme": "Knowledge base retrieval",
+   "methods": [
+    "reinforcement-learning",
+    "rule-mining",
+    "bi-level-optimization"
+   ]
+  },
+  {
+   "title": "Beyond the Single Path: Divergent Reasoning for LLM-based Recommendation",
+   "venue": "SIGIR 2026",
+   "problem": "LLM-based recommendation suffers reasoning path collapse limiting accuracy and diversity",
+   "approach": "Divergent reasoning with Monte Carlo dropout and directional perturbation for path diversity",
+   "contribution": "DivReason model expands reasoning exploration and aggregates high-quality paths for improved recommendations",
+   "primary_theme": "LLM recommendation reasoning",
+   "methods": [
+    "llm",
+    "reasoning paths",
+    "reinforcement learning"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,11 @@
+{
+ "batch": "b047",
+ "paper": {
+  "id": "d867f4ce9d0ebedb11c155210ca3ce7d18d28990",
+  "venue": "WWW 2026",
+  "title": "Feedback Control for Small Budget Campaigns in Advertising",
+  "abstract": "Budget pacing is critical in online advertising to align spend with campaign goals under dynamic auctions. Existing pacing methods often rely on ad-hoc parameter tuning, which can be unstable and inefficient. We propose a principled controller that combines bucketized hysteresis with proportional feedback to provide stable and adaptive spend control. Our method provides a framework and analysis for parameter selection that enables accurate tracking of desired spend rates across campaigns. Experiments in real-world auctions demonstrate significant improvements in pacing accuracy and delivery consistency, reducing pacing error by 13% and \u0142ambda-volatility by 54% compared to baseline method. By bridging control theory with advertising systems, our approach offers a scalable and reliable solution for budget pacing, with particular benefits for small-budget campaigns.",
+  "gid": 716,
+  "theme": "Advertising budget control"
+ }
+}

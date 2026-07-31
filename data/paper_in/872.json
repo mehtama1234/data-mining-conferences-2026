@@ -1,0 +1,11 @@
+{
+ "batch": "b058",
+ "paper": {
+  "id": "1003ea32772d5ebd1e15a2eb33edea6f7bd8fa27",
+  "venue": "WSDM 2026",
+  "title": "DagFC: Dependency-Aware Fact-Checking via Claim-Constructed Knowledge Graphs and Large Language Models",
+  "abstract": "Fact-checking, also referred to as fact verification, is essential for evaluating the accuracy of claims and curbing the dissemination and influence of misinformation. Recent advancements in Large Language Models (LLMs) have enabled their use in automated fact-checking systems. These approaches frequently adopt prompting techniques within a ''divide-and-conquer'' framework, where complex claims are broken down into simpler sub-claims that are individually verified to reduce the overall complexity of the task. These existing works often neglect the dependency between sub-claims and verify them in isolation. For complex claims, particularly those requiring multi-hop reasoning, the interconnections between sub-claims are crucial, as verifying each one independently often fails to capture the full context and reasoning needed for accurate verification. To address this, we propose DagFC, a novel LLM-based framework that performs Dependency-Aware Task Generation, Scheduling and Processing for Fact-Checking. DagFC constructs Knowledge Graphs (KGs) from claims to guide the decomposition of fact-checking problems and build dependent verification sub-tasks that capture the interrelations between sub-claims. This dependency-aware approach ensures more coherent and accurate verification by integrating intermediate results. Additionally, DagFC leverages LLMs throughout the verification proc",
+  "gid": 872,
+  "theme": "fact-checking verification"
+ }
+}

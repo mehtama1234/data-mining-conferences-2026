@@ -1,0 +1,11 @@
+{
+ "batch": "b097",
+ "paper": {
+  "id": "10.1145/3805712.3808357",
+  "venue": "SIGIR 2026",
+  "title": "Faithful LLM-Assisted Question Answering for Technical and Academic Search",
+  "abstract": "Technology scouting and competitive intelligence increasingly rely on rapid access to scientific and technical evidence. Large language models (LLMs) are reshaping question answering by enabling users to express exploratory and evolving information needs in natural language. However, their usefulness is limited by hallucinations, weak calibration, poor abstention when evidence is missing, and the cost of keeping knowledge up to date. In such settings, the key question is whether LLM-generated answers can be trusted for decision support, that is, whether they are faithful to available evidence, transparent about uncertainty, and easy to verify. Recent work shows that hallucinations remain pervasive, while retrieval-augmented generation (RAG) has become the main strategy for grounding answers in external evidence. Yet even strong RAG systems often cite unsupported claims or generate plausible but fabricated references, especially under poor retrieval conditions. In response, prior work has examined citation faithfulness, decomposed generations into checkable units, and proposed factuality verification models and benchmarks. Still, the literature underexplores how to filter and validate evidence when sources are sparse, conflicting, or rapidly changing, as is common in technical and academic search. This thesis addresses that gap by studying faithful LLM-assisted question answerin",
+  "gid": 1462,
+  "theme": "Faithful LLM QA"
+ }
+}

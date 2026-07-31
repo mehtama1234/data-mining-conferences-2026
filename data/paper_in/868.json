@@ -1,0 +1,11 @@
+{
+ "batch": "b057",
+ "paper": {
+  "id": "0448b3a37cc09f3ea19f61566b55d616195e8dc4",
+  "venue": "WSDM 2026",
+  "title": "Can LLMs Uphold Research Integrity? Evaluating the Role of LLMs in Peer Review Quality",
+  "abstract": "While large language models (LLMs) have been widely studied in scholarly workflows, e.g., for citation recommendation and literature summarization and more, their role in supporting research integrity remains underexplored. In this talk, we share our experience building and deploying two real-world systems that audit peer reviews and verify their factual grounding at scale. We evaluate the capabilities and limitations of LLMs in two key tasks: (1) assessing review quality along dimensions like specificity and tone, and (2) verifying whether reviewer claims are supported by the submitted paper. Using expert-annotated benchmarks, we compare static metrics, ML baselines, zero-shot LLMs, and fine-tuned models to assess alignment with human judgment. The talk will highlight methodological choices, deployment lessons, and empirical insights into where LLMs succeed and where hybrid approaches with interpretable ML and retrieval perform more reliably. We conclude with reflections on what infrastructure is needed to make use LLMs as a robust foundation for research integrity at scale.",
+  "gid": 868,
+  "theme": "Research integrity systems"
+ }
+}

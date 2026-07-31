@@ -1,0 +1,11 @@
+{
+ "batch": "b064",
+ "paper": {
+  "id": "d3bbc17833f60ab46f1c88e774aaa8b7c0cbe850",
+  "venue": "WSDM 2026",
+  "title": "On-Device Large Language Models for Sequential Recommendation",
+  "abstract": "On-device recommendation is critical for a number of real-world applications, especially in scenarios that have agreements on execution latency, user privacy, and robust functionality when internet connectivity is unstable or even impossible. While large language models (LLMs) can now provide exceptional capabilities that model user behavior for sequential recommendation tasks, their substantial memory footprint and computational overhead make the deployment on resource-constrained devices a high risk proposition. In this paper, we propose OD-LLM, the first task-adaptive compression framework explicitly designed to provide efficient and accurate on-device deployment of LLMs for sequential recommendation tasks. OD-LLM uniquely integrates two complementary compression strategies: a low-rank structural compression algorithm which uses Singular Value Decomposition (SVD) to significantly reduce parameter redundancy in the model, and a novel tokenization normalization technique that better complements the low-rank decomposition process being used. Additionally, to minimize any potential performance degradation when using higher compression ratios, a novel progressive alignment algorithm is used to iteratively refine the parameters required layerwise in the target model. Empirical evaluations conducted on sequential recommendation benchmarks show that OD-LLM exhibits no loss in effect",
+  "gid": 970,
+  "theme": "On-device LLM recommendation"
+ }
+}

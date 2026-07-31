@@ -1,0 +1,11 @@
+{
+ "batch": "b059",
+ "paper": {
+  "id": "39717ddab63be4066f6fa410ff39085eba97604e",
+  "venue": "WSDM 2026",
+  "title": "Multi-Agent System for Adversarial Robustness and Originality Attribution in Short-Form Videos",
+  "abstract": "The explosive proliferation of Short-Form Video (SFV) has created a high-velocity ecosystem that defies traditional analysis. Recommendation and discovery systems now face two critical adversarial behaviors at scale: Modality Misalignment, where creators insert distinctive text, images, or hidden audio/video clips with hidden agendas to manipulate algorithmic distribution, and Content Theft, where viral content is slightly tweaked and reposted as original to capture monetization. While monolithic Multi-Modal Large Language Models (MLLMs) offer strong zero-shot capabilities, they are increasingly insufficient for this production reality; their high computational cost, tendency for Object and Cross-Modal Hallucination, and lack of external context make them ill-suited for detecting fine-grained manipulation. This work details a foundational Multi-Agent System (MAS) architecture designed to solve these problems by decomposing video understanding into three specialized roles: a Perceiver Agent for granular signal acquisition and representation; a Retriever Agent that utilizes hybrid, adaptive retrieval strategies; and a Reviewer Agent\u2014a high reasoning orchestration model that iteratively adjudicates originality. We present an industrial blueprint for scaling this architecture, utilizing metadata-driven filtering, Semantic Caching, and Token Frugality to prune candidate pools from b",
+  "gid": 896,
+  "theme": "Video content verification"
+ }
+}

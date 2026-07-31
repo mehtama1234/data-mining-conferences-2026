@@ -1,0 +1,11 @@
+{
+ "batch": "b031",
+ "paper": {
+  "id": "8dbe7af7d9570c913dbebe35c061cd31a68c56cb",
+  "venue": "WWW 2026",
+  "title": "From Criteria to Ranking: Targeting-Aware Tripartite Graph Learning for Multi-Criteria Recommendation",
+  "abstract": "Multi-criteria recommender systems (MCRSs) are becoming increasingly important in the Web ecosystem, where platforms such as e-commerce sites and review portals allow users to evaluate items from multiple perspectives. By leveraging criterion-level ratings rather than relying solely on overall scores, MCRSs can enhance personalization and more accurately capture user preferences. However, existing multi-criteria recommendation methods often fail to explicitly model user-specific preferences across criteria or to incorporate item\u2013criterion signals into representation learning. To solve these problems, we propose TaTriGR, a Targeting-Aware Tripartite Graph Recommender, which jointly models user\u2013item\u2013criterion interactions in a unified tripartite graph and integrates user-specific criterion weights through targeting mechanisms. Specifically, TaTriGR encodes user\u2013criterion targeting through personalized weights, while incorporating item\u2013criterion performance as an additional channel to enrich item semantics. A lightweight propagation mechanism then diffuses information across the tripartite structure, and a formal score decomposition shows that predictions satisfy fundamental multi-criteria decision making (MCDM) properties. To further reinforce targeting, TaTriGR introduces two auxiliary objectives: Ideal Point Distillation and Lexicographic Consistency, which encourage criterion-",
+  "gid": 467,
+  "theme": "multi-criteria recommendation"
+ }
+}

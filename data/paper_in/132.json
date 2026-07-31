@@ -1,0 +1,11 @@
+{
+ "batch": "b008",
+ "paper": {
+  "id": "26e45fe8ccc7267964bf268ccd5a50db37b1b57e",
+  "venue": "WWW 2026",
+  "title": "AID: Hypothesis-Grounded Probing for Conversational Recommendation",
+  "abstract": "In many enterprise settings, state-of-the-art conversational recommendation systems often underperform, not due to limitations in their underlying architectures, but because users lack the ability to formulate effective queries. This information asymmetry, that is, users lacking visibility into what knowledge exists in the system, leads them to ask structurally ambiguous queries that map to multiple interpretations, contributing to generic responses that often fail to address users' actual needs. To solve this, we propose Assisted Intelligent Dialogue (AID), a knowledge-graph conditioned, multi-agent framework that treats clarification as a structured decision problem. In our setting, the recommended items are ranked solution bundles: the smallest set of documents and steps needed to resolve the user's issue, while keeping the number of turns and probes low. Our key insight is that ambiguity is often structural, and not always linguistic. For instance, a query like ''my application is slow'' may map to distinct graph regions (resource contention, bandwidth constraints, configuration errors), each requiring different diagnostic paths. In such scenarios, AID reasons over these competing hypothesis subgraphs, probing only when multiple interpretations remain plausible, with targeted questions designed to collapse the hypothesis space efficiently. The framework orchestrates four sp",
+  "gid": 132,
+  "theme": "Conversational recommendation"
+ }
+}

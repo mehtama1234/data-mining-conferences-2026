@@ -1,0 +1,11 @@
+{
+ "batch": "b065",
+ "paper": {
+  "id": "e51bb851567ba83193dd6e1407c8c03abc10d5ba",
+  "venue": "WSDM 2026",
+  "title": "Rule Mining and Learning for Structured Knowledge Retrieval",
+  "abstract": "Real-world knowledge is typically encoded in structured forms, and effective retrieval for downstream tasks often depends on implicit structural patterns (e.g., paper to author to paper for co-authorship discovery, or symptom to drug to prescription for treatment selection). However, such structured retrieval rules are rarely predefined, making them difficult to identify and use, and posing fundamental challenges to faithful structured knowledge retrieval. To address this gap, we draw inspiration from humans' ability to abstract relational patterns through experience and propose a unified framework for automatic rule mining and learning. Our approach discovers structured retrieval rules directly from downstream feedback while jointly optimizing rule-based scoring functions. It adopts a bi-level optimization scheme, in which an upper-level reinforcement learning module selects high-utility rules, and a lower-level retrieval learning module refines scoring functions guided by these rules. By iteratively coupling rule discovery with retrieval optimization, our framework achieves comparable retrieval performance, matching or surpassing ones that rely on manually specified rules.",
+  "gid": 979,
+  "theme": "Knowledge base retrieval"
+ }
+}

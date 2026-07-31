@@ -1,0 +1,11 @@
+{
+ "batch": "b064",
+ "paper": {
+  "id": "d4f1566527eb1354ac61ffd0851e4dc56b6f2ae6",
+  "venue": "WSDM 2026",
+  "title": "Bridge Breaking for Graph Neural Networks",
+  "abstract": "Graph Neural Networks (GNNs) have demonstrated remarkable success in modeling graph-structured data, particularly under the assumption of homophily, where connected nodes share similar attributes or class labels. However, many real-world networks exhibit heterophily, leading to the suboptimal performance of conventional GNNs. While existing heterophily-aware models primarily address feature and class differences between central and neighboring nodes, we identify a critical yet underexplored challenge: class disparities in the neighborhoods of bridge nodes\u2014nodes that connect disparate classes. Through theoretical analysis, we demonstrate how neighborhood differences around bridge nodes increase classification difficulty. To tackle this, we propose Bridge Breaking Graph Neural Network (BBGNN), a novel approach that explicitly mitigates performance degradation in these critical regions. We introduce a bridge ratio metric to identify bridge nodes without requiring label information and design a bridge-breaking aggregation mechanism to counteract excessive smoothing in these regions. Extensive experiments across multiple benchmark datasets validate the effectiveness of BBGNN, significantly improving GNN performance in bridge node regions.",
+  "gid": 971,
+  "theme": "Heterophilic graph learning"
+ }
+}

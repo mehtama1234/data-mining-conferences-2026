@@ -1,0 +1,11 @@
+{
+ "batch": "b051",
+ "paper": {
+  "id": "eafa960dd1ac920b9d9c7c6f85d541e647f0cf0b",
+  "venue": "WWW 2026",
+  "title": "Breaking the Single-Reference-Vector Barrier in Approximate Nearest Neighbor Search",
+  "abstract": "Approximate nearest neighbor (ANN) searches are commonly employed in various machine learning applications, such as recommendation systems, but traditional ANN searches typically involve only a single reference vector in a query. To broaden the capabilities of ANN search and support multi-reference-vector queries, thereby enabling a wider range of machine learning applications, we introduce all/any-k ANN search. They aim to find vectors that are similar to all or any of the multi-reference vectors in a query, respectively. To effectively and efficiently support all/any-k ANN search, we first propose distance metrics to evaluate the ranking of vectors among those in the dataset for exact all/any-k NN. Building on this, we introduce search algorithms and prove they can search according to the proposed distance metrics on graph indexes designed for traditional ANN. Additionally, we further introduce two-stage search algorithms for all/any-k ANN search to further enhance their search performance. We conduct extensive experiments on real-world datasets to validate the efficiency and effectiveness of our proposed algorithms compared to existing approaches.",
+  "gid": 778,
+  "theme": "Nearest neighbor search"
+ }
+}

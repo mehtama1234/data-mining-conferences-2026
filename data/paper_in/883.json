@@ -1,0 +1,11 @@
+{
+ "batch": "b058",
+ "paper": {
+  "id": "1c168032d25046e6a304aa3ba40d04ce7f03b11b",
+  "venue": "WSDM 2026",
+  "title": "Third Workshop on Generative AI for Recommender Systems and Personalization",
+  "abstract": "Building personalized recommender systems and search experiences is a cornerstone of the modern data mining and applied machine learning (ML) community. Modern online platforms have a confluence of data including user-item interaction graphs, user and item-associated semantics (text, visual content, etc.), and metadata. Recent advancements in generative models and semantic encoders via large language models (LLMs), visual and audio encoders have significantly impacted research in relevant domains, enabling new directions in knowledge discovery and ability of models to better incorporate semantic context. These techniques are quickly advancing in the academic sphere, and adoption in industrial environments is growing. These advances force large questions about the future of search, recommendation and personalized experiences in the future. This workshop bridges the research gap between the use of generative models and recommendation for personalized systems. We will focus on topics spanning the interplay between such models and conventional personalized systems. Building upon the momentum of previous successful forums, we seek to engage a diverse audience from academia and industry, fostering a dialogue that incorporates fresh insights and anticipates over 100 attendees, including key stakeholders in the field.",
+  "gid": 883,
+  "theme": "generative recommendation workshop"
+ }
+}

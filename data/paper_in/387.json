@@ -1,0 +1,11 @@
+{
+ "batch": "b025",
+ "paper": {
+  "id": "72d00c53c3c5557329104fa2f050ec369b72a1b8",
+  "venue": "WWW 2026",
+  "title": "Feasibility of Cryptography In a Blockchain-Enhanced ICS Security",
+  "abstract": "Blockchain-homomorphic encryption (BC+HE) hybrids are increasingly promoted for Industrial Control System (ICS) security, yet their deployment at network edges violates fundamental real-time constraints. This paper demonstrates that BC+HE architectures introduce latencies of 51\u2013440 ms in small networks (5\u201350 nodes), exceeding safety-critical loop requirements of \u226410 ms [21][22] by factors of 5\u201344\u00d7. Through a Latency Collision Matrix analysis spanning Purdue Model Levels 0\u20135, the paper shows that probabilistic blockchain consensus (non-deterministic jitter) and homomorphic encryption overhead (>100 ms compute-bound) create an architectural incompatibility: edge devices require >100k readings/sec with zero jitter, while BC+HE delivers significanlty less (< 1,000 TPS) with high variance. Offloading cryptography to SCADA gateways (Level 2) fails to resolve the problem, instead creating a ''dead zone'' bottleneck and exposing Level 2\u20133 inter-layer vulnerabilities. This paper proposes a Resource-Constrained Security Framework that decouples security layers: lattice-based lightweight cryptography (LBC) for Level 0-1 sensor-to-controller authentication (TLatticeAuth << Tsafety ), where the authentication time TLatticeAuth is significantly less than the safety margin Tsafety while reserving BC+HE for non-real-time enterprise layers (Levels 4\u20135). Lattice primitives (LWE, Ring-LWE) offer ",
+  "gid": 387,
+  "theme": "ICS security"
+ }
+}

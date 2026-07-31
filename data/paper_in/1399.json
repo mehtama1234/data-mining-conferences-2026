@@ -1,0 +1,11 @@
+{
+ "batch": "b093",
+ "paper": {
+  "id": "10.1145/3805712.3808444",
+  "venue": "SIGIR 2026",
+  "title": "STAR: Staged Training with Aligned Reinforcement Learning and Multi-Faceted Distillation for Interpretable E-commerce Relevance",
+  "abstract": "E-commerce search relevance modeling faces a critical dilemma: traditional models falter with complex queries, while Large Language Models (LLMs), despite their superior reasoning, suffer from the prohibitive latency of auto-regressive Chain-of-Thought (CoT) generation, rendering them infeasible for production. Knowledge distillation offers a promising solution, yet current methods force an undesirable trade-off: sacrificing the very interpretability that makes LLMs powerful, or relying on expensive, unscalable human-annotated rationales. To address this, we propose STAR\u2014Staged Training with Aligned Reinforcement Learning and Multi-Faceted Distillation, a progressive framework that follows a reasoning, ranking, and transfer pipeline to imbue dense models with both high performance and interpretability. First, STAR aligns a teacher LLM's reasoning with task objectives using a novel multi-granularity reward in Group Relative Policy Optimization (GRPO), leveraging only binary labels. Next, it refines the teacher's ability for calibrated scoring via token-level supervision, enabling efficient ranking through a single forward pass without any additional layers. Finally, this ''white-box'' knowledge is transferred to a compact student via multi-faceted distillation that preserves both reasoning logic and ranking behavior. Offline experiments demonstrate that our 0.6B student model ri",
+  "gid": 1399,
+  "theme": "E-commerce relevance distillation"
+ }
+}

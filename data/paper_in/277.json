@@ -1,0 +1,11 @@
+{
+ "batch": "b018",
+ "paper": {
+  "id": "504e96895725f27e2d183f4223285bd088929dca",
+  "venue": "WWW 2026",
+  "title": "Train Large-Use Small: Optimizing within the Theoretical Limits of Embedding-based Retrieval",
+  "abstract": "Technology-Assisted Review (TAR) systems are becoming indispensable in specialized domains that demand extensive document retrieval with high precision. The use of Large Language Models (LLMs) has significantly expanded the potential of TAR systems, for handling huge document corpora to extract relevant candidates for such systems. Semantic similarity or relevance using high-dimensional dense vector representations of input text from large models forms a core component in Information Retrieval tasks. Recent studies on the theoretical limitations of such single-vector embedding based retrieval approaches have showcased significantly poor performance of state-of-the-art models even on small retrieval-oriented datasets with relatively simple queries. In this work, we explore whether the theoretical limitation is solely responsible for the performance degradation of large models, or is it also affected by the curse-of-dimensionality. To this end, we showcase that simple dimensionality reduction techniques can significantly boost the retrieval performance of models by around 7%. Even within the theoretical constraints, we show that meta-embedding technique can further improve performance by 2% - thereby reducing the gap between the performances of single-vector models compared to multi-vector ones. In line with existing literature, we observe that larger models tend to fare much bet",
+  "gid": 277,
+  "theme": "Dense retrieval"
+ }
+}

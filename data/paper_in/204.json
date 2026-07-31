@@ -1,0 +1,11 @@
+{
+ "batch": "b013",
+ "paper": {
+  "id": "3a936eeec90f4117a26e6029988615f0bd9dfcef",
+  "venue": "WWW 2026",
+  "title": "DEMO: Ontology-Based Automated Security Analysis for AI Systems and Applications",
+  "abstract": "As AI systems are increasingly integrated into critical and high assurance domains, security analysts must correlate vulnerability findings with mitigation knowledge drawn from sources such as MITRE ATLAS, OWASP, NIST, ISO, ENISA, and the NVD. In practice, this correlation remains largely manual, as mitigation information is fragmented across multiple sources and security analysis tools produce heterogeneous, tool-specific outputs, making AI vulnerability analysis time-consuming, error-prone, and difficult to scale. This paper presents AI SecOnto, an ontology-based automated security analysis framework that enables systematic correlation of detected AI vulnerabilities with attack techniques and mitigations for AI systems deployed in MLOps pipelines. AI SecOnto ingests vulnerability findings from security analysis tools and represents them in a unified, machine-interpretable ontology formalized in OWL 2. An operational prototype demonstrates how ontology-driven automation supports query-driven vulnerability assessment and structured mitigation analysis through a realistic MLOps scenario.",
+  "gid": 204,
+  "theme": "AI security vulnerability"
+ }
+}

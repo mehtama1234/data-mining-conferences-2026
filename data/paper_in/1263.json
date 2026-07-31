@@ -1,0 +1,11 @@
+{
+ "batch": "b084",
+ "paper": {
+  "id": "10.1145/3805712.3809916",
+  "venue": "SIGIR 2026",
+  "title": "Auditing Query Drift: Do Users Actually Benefit from Pseudo-Relevance Feedback?",
+  "abstract": "Pseudo-Relevance Feedback (PRF) aims to improve performance, but it can suffer from query drift, creating asymmetric impacts across queries. Current Selective PRF (sPRF) strategies attempt to mitigate this by predicting when PRF will help, but they rely on offline metrics that may not reflect actual user preferences. To bridge this gap, we propose a participatory auditing strategy that evaluates PRF's real-world impact through natural user interactions. Specifically, we design a 3\u00d73 grid interface using Latin square ordering to mitigate position bias, and deploy Team Draft Interleaving (TDI) to collect implicit user preferences without disrupting normal search behaviour. We conduct two user studies: in our first user study, we find that only 20.9% of queries benefit from PRF, while 25.6% result in a degraded user experience. Our second study demonstrates that avoiding harmful PRF yields a 68.5% relative improvement, nearly twice the 37.0% gained from amplifying beneficial PRF, highlighting that harm avoidance is more valuable than benefit amplification. Our findings highlight the necessity for reliable sPRF and suggest that future sPRF research could benefit from incorporating interaction-aware participatory auditing when developing sPRF approaches.",
+  "gid": 1263,
+  "theme": "query reformulation"
+ }
+}

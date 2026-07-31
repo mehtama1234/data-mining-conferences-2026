@@ -1,0 +1,11 @@
+{
+ "batch": "b021",
+ "paper": {
+  "id": "5f766a2cca60717a892777afabf8b229a7b49f4f",
+  "venue": "WWW 2026",
+  "title": "Blind-QEM: A Privacy-Preserving Framework for Quantum Error Mitigation via Zero-Knowledge Proofs",
+  "abstract": "As quantum computing moves to a cloud-based service model, a privacy\u2013utility dilemma arises: effective Quantum Error Mitigation (QEM) requires circuit visibility, yet circuits and noise models are often proprietary. We propose Blind-QEM, a privacy-preserving framework that enables outsourced mitigation without revealing circuit topology. Using Zero-Knowledge Proofs (ZKPs) and a receipt-based binding mechanism anchored by QPU-signed execution logs, Blind-QEM verifies policy compliance and cryptographically links results to committed circuits. This allows Service Providers to perform global incoherent noise cancellation and readout mitigation using only verified aggregate statistics, ensuring mutual protection of user IP and SP models.",
+  "gid": 324,
+  "theme": "Quantum privacy security"
+ }
+}

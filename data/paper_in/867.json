@@ -1,0 +1,11 @@
+{
+ "batch": "b057",
+ "paper": {
+  "id": "030e42c1b172655123c7b43abe21b45350521cd5",
+  "venue": "WSDM 2026",
+  "title": "Causality with Knowledge Graphs: Semantics and Inference",
+  "abstract": "Causality provides the foundation for understanding cause\u2013effect relationships and supporting actionable decision making across domains such as healthcare, economics, and industrial production. However, most causal frameworks are designed for flat, fully observed, and independent data, whereas knowledge graphs (KGs) represent heterogeneous entities and multi-relational links enriched with ontologies and logical constraints under the Open World Assumption. These characteristics introduce unique challenges for causal analysis\u2014semantic unawareness leading to inaccurate estimation, data incompleteness violating causal assumptions, and relational dependencies causing interference between entities. This thesis addresses these challenges by proposing a series of semantics-aware frameworks that integrate causal reasoning with knowledge representation. Leveraging ontological semantics, logical entailment, and relational structure, the proposed approach enables causal discovery, causal inference, and counterfactual prediction directly over KGs. Through the development of CauseKG, SemMatch, HyKG-CF, and BaLu, we establish an end-to-end pipeline that unifies causal knowledge learning, formal modeling, and query-based reasoning\u2014paving the way for trustworthy and interpretable causal intelligence on knowledge graphs.",
+  "gid": 867,
+  "theme": "Causal knowledge graphs"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "batch": "b027",
+ "paper": {
+  "id": "7a245ed95c3aae103933846db769f839cd7ce1a0",
+  "venue": "WWW 2026",
+  "title": "Spatial-Temporal Inference of Indoor RSSI and CQI for 3D Coverage Mapping using Dynamic Graph Attention Networks",
+  "abstract": "The reliability of indoor 5G connectivity remains a critical bottleneck in modern urban infrastructure, predominantly due to the complex attenuation caused by architectural elements in high-rise environments. While Unmanned Aerial Vehicles (UAVs) offer a versatile platform for external Radio Frequency (RF) sensing, deriving an accurate internal signal landscape from sparse exterior measurements presents a significant inversion problem. To address this, we introduce a novel framework leveraging Dynamic Graph Attention Network (DGAT) to reconstruct indoor 5G signal quality. Deviating from traditional Euclidean-based connectivity models, our approach infers a latent connectivity structure governed by feature affinity, thereby capturing the non-linear propagation characteristics inherent to complex buildings. This learned topology supports a deep residual propagation encoder, which feeds into a bifurcated decoding mechanism specifically optimized for the divergent physical behaviors of Received Signal Strength Indicator (RSSI) and Channel Quality Indicator (CQI). Furthermore, prediction variance is mitigated through a meta-ensemble fusion layer. Experimental validation on a multi-level 5G dataset confirms that the proposed architecture significantly outperforms existing location-aware baselines, achieving a reduction in Root Mean Square Error (RMSE) of 76% for RSSI and 89% for CQI,",
+  "gid": 413,
+  "theme": "Signal prediction"
+ }
+}

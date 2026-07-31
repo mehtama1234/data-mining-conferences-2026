@@ -1,0 +1,11 @@
+{
+ "batch": "b020",
+ "paper": {
+  "id": "5a50f83df6854d186fdde9b38b0a1a81018695ec",
+  "venue": "WWW 2026",
+  "title": "CIFAD: Causal-Invariant Subspace Learning for Few-Shot Anomaly Detection on Dynamic Relational Graphs",
+  "abstract": "Abnormal user detection has been a critical and widely studied research problem in social networks since these users can create significant risks to platform security and privacy leakage. Currently, graph-based models are commonly used for exploring the structured social network data and temporally dynamic user interactions, leading to significant advances in dynamic heterogeneous graph-based abnormal user detection. However, most existing approaches are correlation-driven and lack the ability to separate stable patterns from transient noise. Furthermore, these methods are highly dependent on inherent labels and fail to detect common few-shot anomalies in social networks. To address these issues, we propose CIFAD, a Causal-Invariant Few-shot Anomaly Detection method that improves few-shot anomaly detection with an active annotation strategy. Specifically, CIFAD first integrates a sparse lagged attention encoder to model multi-relational temporal interactions. Furthermore, it introduces causal-invariant subspace decomposition to disentangle stable causal signals from dynamic environmental noise and improve generalization. Finally, it designs an active annotation strategy based on influence functions and coverage optimization to maximize the utility of limited labels in a closed-loop process. Extensive experiments on multiple real-world social network datasets demonstrate that ou",
+  "gid": 307,
+  "theme": "Anomaly detection graphs"
+ }
+}

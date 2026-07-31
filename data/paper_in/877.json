@@ -1,0 +1,11 @@
+{
+ "batch": "b058",
+ "paper": {
+  "id": "1360be33fa6e57d9a6b88c30880f0cc65e545f30",
+  "venue": "WSDM 2026",
+  "title": "From Data to Model in Bias: A Statistical Analysis of Political Bias in the C4 Corpus and Its Impact on LLMs",
+  "abstract": "While political biases in Large Language Models (LLMs) have been consistently reported, the underlying question of whether such biases stem from systematic distributions in pretraining data remains insufficiently examined. Existing work has largely focused on post-hoc bias mitigation, with limited content-level analysis in large-scale web corpora. This study presents the first comprehensive statistical analysis of political bias in a large-scale web corpus, C4, a widely used web corpus that underpins major LLMs such as T5, PaLM, and LaMDA. We analyze 15 politically sensitive topics using a multi-perspective, persona-based LLM annotation framework, combined with rigorous statistical validation through equivalence testing and multiple testing correction. Our findings reveal clear patterns of left-leaning and supportive bias in C4 across two dimensions: political orientation and topic-specific stance. In particular, strong progressive leanings are observed in social and cultural domains (e.g., gender equality, LGBTQ rights, abortion rights), while economic topics exhibit relatively balanced distributions. To explore data-to-model bias transfer, we conduct experiments examining correlations between corpus-level bias and LLM responses, and evaluate the effect of fine-tuning on model behavior. The results provide evidence that political bias in web corpora can propagate into model ou",
+  "gid": 877,
+  "theme": "LLM bias analysis"
+ }
+}

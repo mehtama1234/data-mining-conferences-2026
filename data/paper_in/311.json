@@ -1,0 +1,11 @@
+{
+ "batch": "b020",
+ "paper": {
+  "id": "5b987d970300dbcf47464f58594c4311ec591825",
+  "venue": "WWW 2026",
+  "title": "KMLP: A Scalable Hybrid Architecture for Web-Scale Tabular Data Modeling",
+  "abstract": "Predictive modeling on web-scale tabular data presents significant scalability challenges for industrial applications, often involving billions of instances and hundreds of heterogeneous numerical features. The inherent complexities of these features\u2014characterized by anisotropy, heavy-tailed distributions, and non-stationarity\u2014not only impose bottlenecks on the training efficiency and scalability of mainstream models like Gradient Boosting Decision Trees (GBDTs), but also compel practitioners into laborious, inefficient, and expert-dependent manual feature engineering. To systematically address this challenge, we introduce KMLP, a novel hybrid deep architecture. KMLP synergistically integrates a shallow Kolmogorov-Arnold Network (KAN) as a front-end with a Gated Multilayer Perceptron (gMLP) as the backbone. The KAN front-end leverages its learnable activation functions to automatically model complex non-linear transformations for each input feature in an end-to-end manner, thereby automating feature representation learning. Subsequently, the gMLP backbone efficiently captures high-order interactions among these refined representations. Extensive experiments on multiple public benchmarks and an ultra-large-scale industrial web dataset with billions of samples demonstrate that KMLP achieves state-of-the-art (SOTA) performance. Crucially, our findings reveal that KMLP's performanc",
+  "gid": 311,
+  "theme": "Tabular deep learning"
+ }
+}

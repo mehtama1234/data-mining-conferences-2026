@@ -1,0 +1,11 @@
+{
+ "batch": "b038",
+ "paper": {
+  "id": "aeb0ed7830a5e709044e5a8ec966ce0e61676eef",
+  "venue": "WWW 2026",
+  "title": "On the Historic Roots of Agentic AI in Semantic Web Services",
+  "abstract": "In our short talk, we point out that (1) the Semantic Web vision already provided some of the underlying ideas of today's endeavours around agentic AI, and (2) that abstractions, approaches and methods developed in the Web Services and Semantic Web Services communities can be beneficially applied to agentic AI. At the same time, we argue that looking back to history reveals certain still unresolved challenges.",
+  "gid": 584,
+  "theme": "agentic AI foundations"
+ }
+}

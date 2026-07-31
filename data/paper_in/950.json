@@ -1,0 +1,11 @@
+{
+ "batch": "b063",
+ "paper": {
+  "id": "b082d0529556b5d93a0670e506d339e12498532c",
+  "venue": "WSDM 2026",
+  "title": "Efficient Vector-Based Label Propagation for Massive Low-Rank Graphs",
+  "abstract": "Label Propagation (LP) is a classic method in semi-supervised learning, where labels diffuse across graph edges until convergence. Its main obstacle on large dense graphs is scalability: classical LP requires an n x n adjacency, with quadratic memory and runtime costs. We focus on the common class of low-rank graphs, where the adjacency has the form VV\u22a4 for an embedding matrix V \u2208 \u211d> n x d. Such graphs arise naturally in applications including similarity graphs from embeddings, recommender systems, kernel methods, and dense affinity graphs in vision and biology. We introduce VLP (Vector-Based Label Propagation), which operates entirely in the embedding space without explicit edges. VLP reduces memory from O (n2) to O (nd), runs efficiently on GPUs, and is mathematically equivalent to classical LP. We further give the first convergence proof of LP in this low-rank setting. VLP makes label propagation feasible for graphs with millions of nodes, far beyond the reach of traditional methods.",
+  "gid": 950,
+  "theme": "Semi-supervised learning"
+ }
+}

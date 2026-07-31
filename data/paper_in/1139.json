@@ -1,0 +1,11 @@
+{
+ "batch": "b075",
+ "paper": {
+  "id": "10.1145/3805712.3809572",
+  "venue": "SIGIR 2026",
+  "title": "How Far Are We from Automatically Identifying Violations of the Data Minimization Principle in Privacy Policies?",
+  "abstract": "Data protection laws and regulations require service providers to disclose data practices in privacy policies, specifying what personal information is processed and for what purposes. For compliance, these data practices must adhere to the data minimization principle, limiting the processing of personal information to what is directly relevant and necessary for the service purposes. However, data minimization is context-dependent, making violations difficult to define and quantify in privacy policies. Meanwhile, privacy policies are semantically complex and unstructured, hindering accurate extraction of fine-grained data practices and large-scale automated evaluation. To address these issues, we propose DataMini, a human--LLM collaborative evaluation framework for identifying violations of the data minimization principle in privacy policies. First, DataMini categorizes data minimization violations into two dimensions: inherent violations and contextual violations, establishing fine-grained evaluation criteria. Second, we construct a compliance baseline by mining high-frequency patterns from large-scale privacy policies and integrating expert knowledge to derive compliance mappings for human--LLM collaborative evaluation. Finally, the compliance baseline can automatically verify data practices that satisfy the data minimization principle, enabling the framework to focus exclusiv",
+  "gid": 1139,
+  "theme": "Privacy policy compliance"
+ }
+}

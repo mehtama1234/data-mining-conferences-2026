@@ -1,0 +1,11 @@
+{
+ "batch": "b039",
+ "paper": {
+  "id": "b2945cfb4cde120378f1f83bca367b1a9c66fdfe",
+  "venue": "WWW 2026",
+  "title": "How to Measure Node Importance in the Agentic Web",
+  "abstract": "The rapid progress of large language models is giving rise to an agentic web, a paradigm in which autonomous agents, rather than humans, become the primary actors of the internet. In such systems, identifying which agents play a central role is a fundamental problem, as importance metrics govern the spread of information, influence, and other network processes [1]. Classical centrality measures, such as PageRank and betweenness centrality, were developed for human-centric networks and may fail to capture the utility-driven dynamics of agentic systems. We propose a game-theoretic perspective in which agents seek to maximize informational utility while minimizing communication costs under progressive information degradation. Within this framework, we introduce Information Spreading Betweenness Centrality (ISBC), a directed and distance-aware measure that models cumulative information decay along shortest paths. We validate ISBC through a controlled synthetic experiment simulating LLM-mediated information propagation on news data annotated with semantic highlights. The results show that ISBC identifies vertices that are more effective in terms of both information throughput and semantic preservation than those selected by PageRank or classical betweenness centrality. These findings highlight the need for centrality measures tailored to the dynamics of autonomous agent communicatio",
+  "gid": 599,
+  "theme": "Agent network analysis"
+ }
+}

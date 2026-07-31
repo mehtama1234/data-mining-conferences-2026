@@ -1,0 +1,11 @@
+{
+ "batch": "b055",
+ "paper": {
+  "id": "f7e87e563c5fec0a0f2bb71c7093a5c27df91140",
+  "venue": "WWW 2026",
+  "title": "Smart Book Seeker: Agent-Augmented Retrieval System for Metadata-Sparse Libraries",
+  "abstract": "Many libraries catalog books with titles alone, lacking rich metadata such as subject headings or abstracts. This metadata sparsity creates a cascade of retrieval challenges: users struggle to formulate effective queries without knowing exact titles, vocabulary mismatch causes relevant books to be missed, and users often lack domain expertise to evaluate whether retrieved results truly match their needs. To address these limitations, we propose the Smart Book Seeker Agent-Augmented Retrieval System for Metadata-Sparse Libraries (SBS-AARS), a novel multi-agent collaborative architecture comprising three coordinated components. First, a User-Needs Agent clarifies ambiguous search requirements through interactive dialogue. Second, a Librarian Agent formulates and executes keyword-based retrieval to obtain candidate books. Third, a User Agent acts as a domain-knowledge-equipped proxy that collaborates with the Librarian Agent through multi-turn discussions to evaluate and select optimal results\u2014the key innovation that compensates for users' frequent lack of expertise in assessing retrieval outcomes. Experimental evaluation on 20,000 Chinese books demonstrates substantial improvements over baseline methods: our system achieves 87% hit rate and 57% precision at top-5 results, representing 28% and 90% relative improvements over traditional keyword-based retrieval, while maintaining 55",
+  "gid": 830,
+  "theme": "Book retrieval agents"
+ }
+}

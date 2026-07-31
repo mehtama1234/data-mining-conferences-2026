@@ -1,0 +1,11 @@
+{
+ "batch": "b049",
+ "paper": {
+  "id": "dff63fa671507c801b46ad0f48ec8304c3596da4",
+  "venue": "WWW 2026",
+  "title": "Multi-Aspect Mining and Anomaly Detection for Heterogeneous Tensor Streams",
+  "abstract": "Analysis and anomaly detection in event tensor streams consisting of timestamps and multiple attributes\u2014such as communication logs (time, IP address, packet length)\u2014are essential tasks in data mining. While existing tensor decomposition and anomaly detection methods provide useful insights, they face the following two limitations. (i) They cannot handle heterogeneous tensor streams, which comprises both categorical attributes (e.g., IP address) and continuous attributes (e.g., packet length). They typically require either discretizing continuous attributes or treating categorical attributes as continuous, both of which distort the underlying statistical properties of the data. Furthermore, incorrect assumptions about the distribution family of continuous attributes often degrade the model's performance. (ii) They discretize timestamps, failing to track the temporal dynamics of streams (e.g., trends, abnormal events), which makes them ineffective for detecting anomalies at the group level, referred to as ''group anomalies'' (e.g, DoS attacks). To address these challenges, we propose HeteroComp, a method for continuously summarizing heterogeneous tensor streams into ''components'' representing latent groups in each attribute and their temporal dynamics, and detecting group anomalies. Our method employs Gaussian process priors to model unknown distributions of continuous attribute",
+  "gid": 737,
+  "theme": "Tensor anomaly detection"
+ }
+}

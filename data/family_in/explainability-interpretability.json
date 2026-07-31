@@ -1,0 +1,566 @@
+{
+ "key": "explainability-interpretability",
+ "theme": "Explainability & Interpretability",
+ "n_papers": 203,
+ "pct": 10.5,
+ "by_venue": {
+  "WWW 2026": 134,
+  "WSDM 2026": 17,
+  "SIGIR 2026": 47,
+  "KDD 2026": 5
+ },
+ "theme_examples": [
+  {
+   "title": "Neuro-Sym Supporter: A Thoughtful Emotion Support Agent Integrating Neural and Symbolic Policy Learning",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "Social Event Prediction via Fourier Graph Learning",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "Quantum-Safe, Efficient, and AI-Enhanced Blockchains for the Web: A Cooperative Tutorial on Quantum Computing, Blockchain Applications, and Data Standards",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "Facilitating Generative Retrieval with Logical Denoising for Interpretable Conversational Search",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "From Navigation to Intention: Reframing the Web Experience through Goal-Driven Interfaces",
+   "venue": "WWW 2026"
+  },
+  {
+   "title": "RPO-RAG: Aligning Small LLMs with Relation-aware Preference Optimization for Knowledge Graph Question Answering",
+   "venue": "WWW 2026"
+  }
+ ],
+ "representative_papers": [
+  {
+   "title": "Age Classification in Child Sexual Abuse Materials",
+   "venue": "WWW 2026",
+   "problem": "Age classification in CSAM detection requires interpretable models; DNNs lack explainability despite good performance.",
+   "approach": "Fusion classifier integrating three expert-deemed criteria: face, body proportions, sexual characteristics.",
+   "contribution": "Achieves 0.807 F1-score on youngest age group with greater adversarial robustness than end-to-end models.",
+   "primary_theme": "CSAM detection safety",
+   "methods": [
+    "fusion",
+    "interpretability",
+    "adversarial-robustness"
+   ]
+  },
+  {
+   "title": "From Prediction to Understanding: Leveraging Reasoning in Large Language Model-based Recommendations",
+   "venue": "WWW 2026",
+   "problem": "LLM recommendations lack explainability; implicit reasoning prevents leveraging full LLM reasoning abilities",
+   "approach": "RE2 generates explicit reasoning before recommendations via pattern imitation and internalization",
+   "contribution": "Explicit reasoning enhances both recommendation quality and interpretability simultaneously",
+   "primary_theme": "Explainable LLM recommendation",
+   "methods": [
+    "llm",
+    "reasoning",
+    "interpretability"
+   ]
+  },
+  {
+   "title": "Explainable Graph Sparsification with Shapley Values",
+   "venue": "WWW 2026",
+   "problem": "Graph sparsification methods operate as black boxes providing no justification for edge removal decisions",
+   "approach": "Shapley value-based explainers like GNNShap for principled interpretable edge importance scoring",
+   "contribution": "Enables removal of up to 80 percent edges while maintaining model accuracy preserving interpretability",
+   "primary_theme": "Graph sparsification",
+   "methods": [
+    "shapley",
+    "gnn",
+    "explainability"
+   ]
+  },
+  {
+   "title": "SGExplainer: Balanced Path-based Signed Graph Neural Network Explanation for Link Sign Prediction",
+   "venue": "WWW 2026",
+   "problem": "Signed Graph Neural Networks lack faithful explainability; existing methods ignore sign interactions and produce disconnected subgraphs",
+   "approach": "Balanced path-based explanation framework leveraging signed graph theory with path-enforcing mask learning",
+   "contribution": "SGExplainer providing intuitive, faithful explanations for link sign prediction through balanced paths with high interpretability",
+   "primary_theme": "Graph explainability",
+   "methods": [
+    "graph neural networks",
+    "explainability",
+    "signed graphs"
+   ]
+  },
+  {
+   "title": "1st Workshop on Applied AI and Multimodal Visualization Technologies (AAIMVT 2026)",
+   "venue": "WWW 2026",
+   "problem": "Workshop on integrating AI with multimodal visualization for explainability and interpretability in web environments",
+   "approach": "Peer-reviewed papers combining AI methods with multimodal visualization for different applied domains",
+   "contribution": "Contributions include voice-cloning platform, cybersecurity ontology, harmful-meme detection, infographic reconstruction",
+   "primary_theme": "Multimodal AI visualization",
+   "methods": [
+    "multimodal",
+    "visualization",
+    "web"
+   ]
+  },
+  {
+   "title": "Explaining the 'Unexplainable' Large Language Models",
+   "venue": "WSDM 2026",
+   "problem": "Post-hoc LLM explanations are unreliable, brittle, and fail to reflect true model behavior",
+   "approach": "User-centric explainability via concept-based interpretability and controlled data attribution",
+   "contribution": "Tutorial framework for next-generation trustworthy AI combining theory and emerging techniques",
+   "primary_theme": "LLM interpretability",
+   "methods": [
+    "interpretability",
+    "concept-based",
+    "attribution",
+    "human-ai"
+   ]
+  },
+  {
+   "title": "GNN Explainers 2.0: User-centric and Data-driven Insights",
+   "venue": "WSDM 2026",
+   "problem": "GNN explainers provide one-time final-output explanations lacking layer-wise provenance",
+   "approach": "GNN Explainers 2.0 with user-centric, multi-faceted, and layer-wise explanation framework",
+   "contribution": "Robust debugging and accountability through queryable, configurable explanations",
+   "primary_theme": "GNN explainability",
+   "methods": [
+    "explainability",
+    "gnn",
+    "interpretability",
+    "debugging"
+   ]
+  },
+  {
+   "title": "Neuro-Sym Supporter: A Thoughtful Emotion Support Agent Integrating Neural and Symbolic Policy Learning",
+   "venue": "WWW 2026",
+   "problem": "LLM emotion support agents rely on CoT prompting with limited interpretability and unstable reasoning",
+   "approach": "Hybrid neuro-symbolic framework combining symbolic reasoning and deep learning via differentiable logic-based framework",
+   "contribution": "Neuro-Sym Supporter balances logic and emotion for stable, interpretable emotional support",
+   "primary_theme": "Empathetic dialogue systems",
+   "methods": [
+    "symbolic reasoning",
+    "deep learning",
+    "logic programming"
+   ]
+  },
+  {
+   "title": "Facilitating Generative Retrieval with Logical Denoising for Interpretable Conversational Search",
+   "venue": "WWW 2026",
+   "problem": "Noisy context and poor interpretability in conversational search systems",
+   "approach": "LLM-based logic-enhanced retrieval with curriculum learning and policy optimization",
+   "contribution": "LogiCGR improves robustness and interpretability of conversational search through logical denoising",
+   "primary_theme": "Conversational search",
+   "methods": [
+    "llm",
+    "retrieval",
+    "dialogue"
+   ]
+  },
+  {
+   "title": "Node Role-Guided LLMs for Dynamic Graph Clustering",
+   "venue": "WWW 2026",
+   "problem": "Dynamic graph clustering lacks interpretability and semantic explanations for cluster formation",
+   "approach": "Node role prototypes with hierarchical LLM reasoning for discrete semantic concepts",
+   "contribution": "Interpretable dynamic graph clustering with natural language explanations",
+   "primary_theme": "Graph clustering interpretability",
+   "methods": [
+    "llm reasoning",
+    "prototype learning",
+    "graph embeddings"
+   ]
+  },
+  {
+   "title": "Towards Robust Heterogeneous Graph Explanations under Structural Perturbations",
+   "venue": "WWW 2026",
+   "problem": "GNN explanations lack robustness under structural noise in heterogeneous graphs",
+   "approach": "Denoising variational inference with relation-aware heterogeneous semantics",
+   "contribution": "Robust explanations balancing fidelity and compactness under perturbations",
+   "primary_theme": "GNN explainability",
+   "methods": [
+    "variational inference",
+    "information bottleneck",
+    "denoising"
+   ]
+  },
+  {
+   "title": "XInsight: Integrative Stage-Consistent Psychological Counseling Support Agents for Digital Well-Being",
+   "venue": "WWW 2026",
+   "problem": "LLM-driven psychological support chatbots remain opaque, single-stage, weakly grounded in therapy",
+   "approach": "Multi-agent framework aligned with Exploration-Insight-Action with Reason-Intervene-Reflect cycle",
+   "contribution": "XInsight-Bench with therapy-specific scales improves paradigm alignment and interpretability",
+   "primary_theme": "Psychological support agents",
+   "methods": [
+    "agents",
+    "llm",
+    "multiagent",
+    "therapy"
+   ]
+  },
+  {
+   "title": "Cross-Modal Rationale Transfer for Explainable Humanitarian Classification on Social Media",
+   "venue": "WWW 2026",
+   "problem": "Crisis image classification lacks explainability and requires separate annotation for images",
+   "approach": "Cross-modal rationale transfer from text to image using visual language transformer",
+   "contribution": "Multimodal framework boosts Macro-F1 by 2-35% while extracting text and image rationales",
+   "primary_theme": "Explainable multimodal classification",
+   "methods": [
+    "multimodal",
+    "rationale_extraction",
+    "cross_modal",
+    "transformer"
+   ]
+  },
+  {
+   "title": "Fine-Grained Visual Understanding for Multimodal and Trustworthy AI",
+   "venue": "WWW 2026",
+   "problem": "Fine-grained visual understanding datasets lack scale, coverage, and multimodal integration for trustworthiness",
+   "approach": "Comprehensive survey covering FGVC datasets, transformer architectures, generative augmentation, multimodal fusion",
+   "contribution": "Research roadmap for FGVC addressing robustness, explainability, data efficiency, and real-world deployment",
+   "primary_theme": "Fine-grained visual categorization",
+   "methods": [
+    "vision_transformer",
+    "data_augmentation",
+    "multimodal"
+   ]
+  },
+  {
+   "title": "LLM and Agents for Recommendation Systems (LARS)",
+   "venue": "WWW 2026",
+   "problem": "Multi-agent recommendation systems lack interpretability robustness and suitable evaluation metrics",
+   "approach": "Workshop framing principles for transparent agent architectures and coordination mechanisms",
+   "contribution": "Establishes evaluation frameworks for trustworthy multi-agent recommendation systems",
+   "primary_theme": "Multi-agent systems",
+   "methods": [
+    "multi-agent",
+    "mechanism-design"
+   ]
+  },
+  {
+   "title": "PRISM: LLM-Guided Semantic Clustering for High-Precision Topics",
+   "venue": "WWW 2026",
+   "problem": "Topic modeling requires rich LLM representations but incurs high cost and interpretability loss.",
+   "approach": "Distill LLM supervision into sentence encoder via sparse labeling and thresholded clustering.",
+   "contribution": "PRISM improves topic separability on narrow domains with minimal LLM queries.",
+   "primary_theme": "LLM semantic clustering",
+   "methods": [
+    "knowledge-distillation",
+    "topic-modeling",
+    "llm"
+   ]
+  },
+  {
+   "title": "IntraAI: Bridging Human-AI Understanding Through Intelligent Interface Design",
+   "venue": "WWW 2026",
+   "problem": "Black-box AI interfaces obscure model behaviors, hindering user autonomy and trust.",
+   "approach": "Interactive visualization of alignment signals and reasoning patterns via modular design.",
+   "contribution": "IntraAI transforms passive consumption into active human-AI collaboration through transparency.",
+   "primary_theme": "AI interface transparency",
+   "methods": [
+    "interactive-visualization",
+    "interface-design",
+    "interpretability"
+   ]
+  },
+  {
+   "title": "They Said Memes Were Harmless --- We Found the Ones That Hurt: Decoding Jokes, Symbols, and Cultural References",
+   "venue": "WWW 2026",
+   "problem": "Harmful memes evade detection via implicit cultural symbolism and cross-modal incongruence",
+   "approach": "Three-stage framework enriching representations with knowledge bases and LoRA adapters",
+   "contribution": "17% F1 improvement with interpretable explanations addressing cultural blindness",
+   "primary_theme": "Meme abuse detection",
+   "methods": [
+    "multimodal",
+    "knowledge graph",
+    "lora",
+    "interpretability"
+   ]
+  },
+  {
+   "title": "Towards Multi-Label Text Interpretation with Chain-of-Thought Prompting and Contextualized Knowledge",
+   "venue": "WWW 2026",
+   "problem": "Multi-label topic models fail to align text segments with correct labels and lack contextualized knowledge",
+   "approach": "Chain-of-Thought prompting with token-label visualization and topic mining for interpretation",
+   "contribution": "CPTM accurately identifies label-relevant tokens with improved segment and label interpretation",
+   "primary_theme": "Multi-label interpretation",
+   "methods": [
+    "cot",
+    "topic-model",
+    "interpretability"
+   ]
+  },
+  {
+   "title": "ECLAD: An Edge-Cloud Collaborative Agentic Framework for Interpretable Anomaly Detection in Predictive Maintenance",
+   "venue": "WWW 2026",
+   "problem": "Anomaly detection in predictive maintenance lacks interpretability; cloud-edge latency tradeoff",
+   "approach": "Hybrid edge-cloud framework with LLM-based interpretability agents for anomaly reports",
+   "contribution": "ECLAD provides real-time detection with natural-language explanations and evolving taxonomy",
+   "primary_theme": "Anomaly detection",
+   "methods": [
+    "edge-computing",
+    "llm",
+    "time-series"
+   ]
+  },
+  {
+   "title": "Explaining Synergistic Effects in Social Recommendations",
+   "venue": "WWW 2026",
+   "problem": "Opacity of synergistic effects across social networks hinders explainability",
+   "approach": "Information gain optimization to identify subgraphs embodying synergistic effects",
+   "contribution": "Subgraph-based explanations revealing synergistic effects in social recommendations",
+   "primary_theme": "explainable social recommendation",
+   "methods": [
+    "graph explanation",
+    "information gain",
+    "social networks"
+   ]
+  },
+  {
+   "title": "Anomaly Detection of Interaction Behaviors in Streaming Graphs",
+   "venue": "WWW 2026",
+   "problem": "Streaming graph anomaly detection lacks effectiveness and interpretability",
+   "approach": "Interaction Willingness metric with Count-Min Sketch for efficient real-time detection",
+   "contribution": "AnoD and AnoC algorithms with constant space-time cost and clear interpretability",
+   "primary_theme": "graph anomaly detection",
+   "methods": [
+    "streaming-graph",
+    "anomaly-detection",
+    "sketch-algorithm"
+   ]
+  },
+  {
+   "title": "EIAN: Explicit Interaction-aware Attention Network for Interpretable Event Modeling",
+   "venue": "WWW 2026",
+   "problem": "Neural point processes perform implicit modeling lacking transparency in event interaction patterns",
+   "approach": "EIAN explicitly captures intra-type and cross-type event interactions via attention mechanisms",
+   "contribution": "EIAN improves predictive performance and provides deeper interpretability in event sequences",
+   "primary_theme": "event modeling",
+   "methods": [
+    "attention",
+    "point process",
+    "temporal encoding"
+   ]
+  },
+  {
+   "title": "Augmenting Cross-View Geo-Localization with Spatial Semantics from Vision Foundation Models",
+   "venue": "WWW 2026",
+   "problem": "Cross-view geo-localization lacks interpretability and struggles with cross-view alignment",
+   "approach": "Auxiliary spatial semantic alignment task using vision foundation models and BEV transformation",
+   "contribution": "Fuses spatial structure with visual semantics for improved CVGL performance and interpretability",
+   "primary_theme": "Geo-localization matching",
+   "methods": [
+    "vision transformers",
+    "multimodal learning",
+    "spatial alignment"
+   ]
+  },
+  {
+   "title": "Multimodal Topic Discovery in Web Media via von Mises-Fisher Mixture Neural Topic Models",
+   "venue": "WWW 2026",
+   "problem": "Neural topic models fail on multimodal web content; posterior collapse limits interpretability",
+   "approach": "MM-vNTM models text/image in shared hyperspherical space using von Mises-Fisher distributions",
+   "contribution": "Captures directional similarity in vMF space; outperforms unimodal/multimodal baselines on web data",
+   "primary_theme": "Multimodal topic discovery",
+   "methods": [
+    "topic modeling",
+    "multimodal learning",
+    "probabilistic models"
+   ]
+  },
+  {
+   "title": "LBM: Hierarchical Large Auto-Bidding Model via Reasoning and Acting",
+   "venue": "WWW 2026",
+   "problem": "Auto-bidding black-box training lacks interpretability and struggles to adapt in dynamic auctions",
+   "approach": "Hierarchical LLM framework with reasoning (LBM-Think) and action generation (LBM-Act) layers",
+   "contribution": "LLM-guided auto-bidding with improved interpretability and generalization in dynamic ad environments",
+   "primary_theme": "LLM auto-bidding",
+   "methods": [
+    "llm",
+    "reasoning-acting",
+    "dual-embedding"
+   ]
+  },
+  {
+   "title": "Modeling Endogenous Logic: Causal Neuro-Symbolic Reasoning Model for Explainable Multi-Behavior Recommendation",
+   "venue": "WWW 2026",
+   "problem": "Multi-behavior recommendation lacks explainability and suffers from confounding bias",
+   "approach": "Neuro-symbolic reasoning with causal inference and hierarchical preference propagation",
+   "contribution": "Explainable recommendations via causal mediators and logic rules",
+   "primary_theme": "explainable recommendation",
+   "methods": [
+    "neuro-symbolic",
+    "causal-inference",
+    "graph"
+   ]
+  },
+  {
+   "title": "Concept Relationship Embedding-Based Interactive Web Application for Explainable Medical Diagnosis",
+   "venue": "WWW 2026",
+   "problem": "Deep learning black-box nature limits clinical interpretability; methods ignore concept relationships and causality",
+   "approach": "Concept Relationship Embedding Model extracting subregional concepts, encoding as interaction graph, causal inference",
+   "contribution": "State-of-the-art on concept recognition and disease classification; improved robustness, label efficiency, interpretability",
+   "primary_theme": "Explainable medical AI",
+   "methods": [
+    "concept-learning",
+    "causal-inference",
+    "graph-based"
+   ]
+  },
+  {
+   "title": "An Interpretable Agentic Framework for Multimodal Hate Video Analysis with Explicit Evidence Attribution",
+   "venue": "WWW 2026",
+   "problem": "Hate video detection lacks transparency and explainability for deployment",
+   "approach": "Evidence-centric multimodal analysis with deterministic ranking and LLM-based reasoning",
+   "contribution": "Interpretable framework with explicit cross-modal evidence attribution for toxic content detection",
+   "primary_theme": "Multimodal hate detection",
+   "methods": [
+    "multimodal",
+    "llm",
+    "evidence-attribution"
+   ]
+  },
+  {
+   "title": "SQL-Checker: Error Detection and Labeling for Text-to-SQL with Interpretability Analysis",
+   "venue": "WWW 2026",
+   "problem": "Generated SQL contains semantic/syntax errors; detection methods lack interpretability",
+   "approach": "Data synthesis framework distills high-quality error examples; distilled model detects errors",
+   "contribution": "SQL-Checker enables interpretable error detection with macro-level cause analysis labeling",
+   "primary_theme": "Text-to-SQL error detection",
+   "methods": [
+    "llm",
+    "data-synthesis",
+    "error-labeling"
+   ]
+  },
+  {
+   "title": "RAG-GFM: Overcoming In-Memory Bottlenecks in Graph Foundation Models via Retrieval-Augmented Generation",
+   "venue": "WWW 2026",
+   "problem": "Graph foundation models limited by in-memory bottlenecks and lossy parameter compression",
+   "approach": "Retrieval-augmented generation with dual-modal unified retrieval and dual-view alignment",
+   "contribution": "RAG-GFM offloads knowledge from parameters improving scalability and interpretability",
+   "primary_theme": "Graph foundation models",
+   "methods": [
+    "retrieval-augmented-generation",
+    "foundation-models",
+    "graph-learning"
+   ]
+  },
+  {
+   "title": "No Evidence, No Problem: When Less is More for Out of Context Multimodal Misinformation Detection",
+   "venue": "WWW 2026",
+   "problem": "Out-of-context multimodal misinformation detection requires efficient evidence-free methods suitable for real-world deployment",
+   "approach": "Lightweight framework combining entity extraction, visual captions, CLIP alignment, and Flan-T5 with weighted ensemble",
+   "contribution": "State-of-the-art OOC detection without external evidence; low computational overhead and high interpretability for practical use",
+   "primary_theme": "Misinformation detection",
+   "methods": [
+    "multimodal",
+    "clip",
+    "ensemble"
+   ]
+  },
+  {
+   "title": "Spiking Graph Predictive Coding for Reliable OOD Generalization",
+   "venue": "WWW 2026",
+   "problem": "GNNs lack interpretable uncertainty estimation for OOD shifts affecting web applications",
+   "approach": "Iterative error-driven spiking graph states expose internal mismatches for uncertainty estimation",
+   "contribution": "SIGHT enhances accuracy, uncertainty estimation, and interpretability under diverse OOD scenarios",
+   "primary_theme": "graph OOD generalization",
+   "methods": [
+    "graph neural networks",
+    "uncertainty quantification",
+    "predictive coding"
+   ]
+  },
+  {
+   "title": "TGSBM: Transformer-Guided Stochastic Block Model for Link Prediction",
+   "venue": "WWW 2026",
+   "problem": "Large-scale networks with heterogeneous communities present scalability and interpretability challenges for link prediction",
+   "approach": "Integrate Overlapping Stochastic Block Models with sparse Graph Transformers using expander-augmented attention",
+   "contribution": "Achieves competitive performance with 6x faster training and interpretable co-membership inference on heterogeneous networks",
+   "primary_theme": "Graph link prediction",
+   "methods": [
+    "transformer",
+    "stochastic-block-model",
+    "neural-variational-encoder",
+    "sparse-attention"
+   ]
+  },
+  {
+   "title": "From Insight to Intervention: Interpretable Neuron Steering for Controlling Popularity Bias in Recommender Systems",
+   "venue": "WWW 2026",
+   "problem": "Popularity bias in recommender systems lacks transparency in mitigation mechanisms",
+   "approach": "Sparse autoencoder enabling neuron-level interpretability for identifying popularity signals",
+   "contribution": "Post-hoc steering enhances fairness with minimal accuracy impact and fine-grained control",
+   "primary_theme": "Recommendation fairness",
+   "methods": [
+    "interpretability",
+    "sparse-autoencoder",
+    "neuron-steering"
+   ]
+  },
+  {
+   "title": "Verifiable Federated Representation Learning for Cross-domain Sequential Recommendation",
+   "venue": "WWW 2026",
+   "problem": "Federated cross-domain sequential recommendation faces heterogeneous interactions and weak trust assumptions enabling misreporting and negative transfer.",
+   "approach": "VeriFRL separates shared and exclusive representations via variational encoder; contribution evaluation module quantifies client/feature influences.",
+   "contribution": "Privacy-preserving federated CDSR with verifiability, interpretability, and negative transfer detection using representation disentanglement.",
+   "primary_theme": "Verifiable federated recommendation",
+   "methods": [
+    "federated-learning",
+    "representation-learning",
+    "sequential-recommendation"
+   ]
+  },
+  {
+   "title": "Concept-Grounded Detection of Vaccine Misinformation in Multimodal Content Using Interpretable Vision-Language Models",
+   "venue": "WWW 2026",
+   "problem": "Image-based vaccine misinformation detection is underexplored; direct LVLM classification lacks interpretability and transparency.",
+   "approach": "Hybrid neuro-symbolic framework trains classical ML on LVLM-extracted binary concept features for stance prediction.",
+   "contribution": "Concept-grounded detection improves accuracy by 10-17% while enabling explicit inspection of visual and rhetorical cues.",
+   "primary_theme": "Interpretable multimodal misinformation detection",
+   "methods": [
+    "vision-language-model",
+    "concept-grounding",
+    "neuro-symbolic"
+   ]
+  },
+  {
+   "title": "Identification of Influential Node Group in Attributed Graph through Explaining Graph Neural Network",
+   "venue": "WWW 2026",
+   "problem": "Influence maximization neglects node attributes despite their importance in attributed graphs",
+   "approach": "GGUN uses perturbation-based GNN explanation fusing structure and attributes via relaxation",
+   "contribution": "Identifies influential node groups considering both topology and node attributes simultaneously",
+   "primary_theme": "Graph influence maximization",
+   "methods": [
+    "gnn",
+    "explainability",
+    "optimization"
+   ]
+  },
+  {
+   "title": "Unsupervised Dense Retrieval with Conterfactual Contrastive Learning",
+   "venue": "WSDM 2026",
+   "problem": "Dense retrieval models lack explainability and robustness to adversarial attacks promoting irrelevant documents",
+   "approach": "Counterfactual regularization using game theory and unsupervised learning with counterfactual passages for fine-grained sensitivity",
+   "contribution": "Robust dense retrieval sensitive to key passages while maintaining low variance on irrelevant changes improving explainability",
+   "primary_theme": "Robust dense retrieval",
+   "methods": [
+    "dense-retrieval",
+    "contrastive-learning",
+    "counterfactual"
+   ]
+  },
+  {
+   "title": "LLM-Guided Beam Search for Decision Graph Optimization with Dynamic Prompting",
+   "venue": "WSDM 2026",
+   "problem": "Decision trees for regression fail to capture complex feature interactions with binary splits",
+   "approach": "LLM-guided beam search optimizes DAGs with dynamic prompting for semantic coherence",
+   "contribution": "GraphBeam-LLM achieves 6.7-14.5% MSE reduction over baselines with improved interpretability",
+   "primary_theme": "Decision graph optimization",
+   "methods": [
+    "llm",
+    "beam-search",
+    "dag",
+    "dynamic-prompting"
+   ]
+  }
+ ]
+}

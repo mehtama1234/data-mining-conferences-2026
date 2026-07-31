@@ -1,0 +1,11 @@
+{
+ "batch": "b034",
+ "paper": {
+  "id": "995fd92b8f2ed08fd9ba29cd8b4b90115e1c165d",
+  "venue": "WWW 2026",
+  "title": "MF3: Multimodal Federated Learning with Dual-Path Mamba-Transformer for Metro Flow Prediction",
+  "abstract": "Metro flow prediction is a critical application in smart city and Web of Things infrastructures, essential for optimizing urban mobility. However, building such predictive systems faces three key challenges: (1) the fragmentation of multimodal spatiotemporal data, (2) the inefficiency of existing models in capturing long-range dependencies, and (3) the data silos and privacy concerns inherent in distributed station infrastructures. To address these challenges, a multimodal federated learning framework named MF3 (Mamba-Transformer-Federated Metro Flow Prediction) is proposed. First, a multimodal alignment (MA) module is designed, where cross-modal alignment attention bridges visual and spatiotemporal features, thereby enhancing feature complementarity and alignment. Second, a dual-path Mamba-Transformer (DMT) module is designed, in which Mamba's linear long-range memory and the Transformer's global perception operate in parallel, reducing information loss. Third, a blockchain-based federated reputation (BFR) module is established to perform personalized federated learning, thereby enhancing privacy protection. Finally, extensive experiments on real metro datasets from Hangzhou and Shanghai demonstrate that MF3 achieves superior performance in terms of prediction accuracy. In summary, the proposed MF3 framework provides a new feasible paradigm for metro flow prediction, supportin",
+  "gid": 512,
+  "theme": "Federated spatiotemporal prediction"
+ }
+}

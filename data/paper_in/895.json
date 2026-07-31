@@ -1,0 +1,11 @@
+{
+ "batch": "b059",
+ "paper": {
+  "id": "32bc2ad80215f541918e5ffff14771af0ac9f79f",
+  "venue": "WSDM 2026",
+  "title": "Urban Traffic Network Layout Optimization with Guided Discrete Diffusion Models",
+  "abstract": "Effective design of traffic network layouts is crucial for large urban areas to effectively manage traffic congestion, emergency vehicle routing, and balanced economic development. However, the current decision-making procedure for traffic network layout design heavily relies on past experiences of domain experts, which is highly likely to be sub-optimal due to the large search space and heterogeneity across different cities. Thanks to the recent advances in high-fidelity traffic simulators, one can test various layouts in a simulated environment instead of the physical world and select the best-performing layout among them. However, large-scale traffic simulation is time-consuming, and the selected layout may not be directly deployable due to various regulations and real-world constraints. While several approaches have been proposed to solve the traffic network layout optimization problem via mathematical programming or metaheuristics such as genetic algorithms, these methods rely on unrealistic assumptions and struggle to find effective layouts in high-dimensional spaces. To this end, we propose a novel framework that leverages diffusion models to design effective traffic network layouts given a traffic pattern. Specifically, our framework consists of four stages: (1) Collect a dataset with the randomly generated layouts, (2) Train a discrete diffusion model and a prediction ",
+  "gid": 895,
+  "theme": "Urban network optimization"
+ }
+}

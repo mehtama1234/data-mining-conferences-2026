@@ -1,0 +1,11 @@
+{
+ "batch": "b000",
+ "paper": {
+  "id": "02417c75f97502f2616495ba60cc9a04e7a13eb1",
+  "venue": "WWW 2026",
+  "title": "WebAndTheCity 12th International Smart City Workshop - Data-Driven Smart Cities",
+  "abstract": "This is the 12th edition of the workshop series labeled ''Web and the City \u2013 The Web and Smart Cities'', which is the successor of the series of workshops that started in Florence in 2015 and has continued taking place every year in conjunction with the WWW conference series. Each year, the focus of the workshop is actualized, and this year, the workshop focuses on data-driven smart cities. In the era of IoT, AI, and agentic AI, integration, the citiverse (metaverse for people-centric cities), cities are being transformed into urban environments that use data as a foundational asset to improve decision-making, optimize services, and enhance citizen well-being. At the same time, data is processed using various techniques and methods, which influence the outcomes. This workshop aims to explore how the Web supports this transformation and how technologies can improve smart cities.",
+  "gid": 13,
+  "theme": "Smart cities"
+ }
+}

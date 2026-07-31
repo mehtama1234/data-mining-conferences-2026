@@ -1,0 +1,11 @@
+{
+ "batch": "b001",
+ "paper": {
+  "id": "02f15abb6994c11bd18fcddc4d2df21a7122eaf3",
+  "venue": "WWW 2026",
+  "title": "An Improved Combinatorial Algorithm for Edge-Colored Clustering in Hypergraphs",
+  "abstract": "Many web-based datasets are characterized by multiway interactions of different categories, and can be modeled as edge-colored hypergraphs. We focus on clustering such datasets using the NP-hard edge-colored clustering problem, where the goal is to assign colors to nodes in such a way that node colors tend to match edge colors. A key focus in prior work has been to develop approximation algorithms for the problem that are combinatorial and easier to scale. In this paper, we present the first combinatorial approximation algorithm with an approximation factor better than 2.",
+  "gid": 16,
+  "theme": "graph clustering"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "batch": "b060",
+ "paper": {
+  "id": "5d2167344a1dcb087f816d3a5aa15bbe04a4cd4a",
+  "venue": "WSDM 2026",
+  "title": "N41: Leveraging One Target and Neighboring Features to Improve Anomaly Detection Accuracy",
+  "abstract": "We propose a novel approach termed ''neighbors for one target (N41). Code is available at https://github.com/wshw4ng/N41, '' which improves anomaly detection accuracy for multivariate time-series data. N41 redefines both the output and input of any detection model by ''single target feature'' and ''its neighboring features,'' respectively. Using a single target feature improves accuracy by allowing the model to focus solely on minimizing the training error (loss function) for that specific feature. In contrast, defining multiple features as outputs distributes the training error across them, potentially leading to less effective error reduction for some features. Incorporating neighboring features with patterns similar to the target feature further enhances accuracy by including relevant features. Evaluation on the real-world HAI22.04 dataset demonstrated that N41 achieved F1 scores 1.7 to 7.5 times higher than those of existing methods.",
+  "gid": 910,
+  "theme": "time-series anomaly detection"
+ }
+}

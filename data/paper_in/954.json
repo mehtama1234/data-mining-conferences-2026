@@ -1,0 +1,11 @@
+{
+ "batch": "b063",
+ "paper": {
+  "id": "b641de4697160d2001a58ef4852c9f87134970c0",
+  "venue": "WSDM 2026",
+  "title": "Precision vs. Discovery: An Adaptive Agent Navigating the Cold-Start Trade-off",
+  "abstract": "Monolithic recommender systems struggle to serve a diverse user base, often failing new 'cold-start' users while excelling for established 'warm-start' users. This paper introduces MARS (Multi-Agent Recommender System), a novel hybrid system where a central Manager Agent orchestrates recommendation tasks based on user context. MARS adaptively delegates requests to either a high-performing Bayesian Personalized Ranking (BPR) model for established users or a Sentence-BERT (SBERT) semantic search model for new users. Our experiments on the MovieLens 20M dataset demonstrate the agent's orchestration logic is effective, perfectly matching the strong BPR baseline for warm-start users across all metrics. For cold-start users, we quantitatively prove a critical ''Precision vs. Discovery'' trade-off: while a popularity-based baseline achieves significantly higher precision (0.3068 vs 0.0115), the MARS semantic pathway functions as a true discovery engine, delivering recommendations with over 10x higher novelty (14.40 vs 1.24). Furthermore, we demonstrate that the MARS cold-start path is over 20 times faster, delivering a significant latency advantage for new users. This work contributes a robust, adaptive architecture, a key design pattern for building agentic systems, and a rigorous, quantitative benchmark of the trade-offs between precision and discovery in modern recommender systems.",
+  "gid": 954,
+  "theme": "Cold-start recommendation"
+ }
+}

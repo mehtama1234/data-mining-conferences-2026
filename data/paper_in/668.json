@@ -1,0 +1,11 @@
+{
+ "batch": "b044",
+ "paper": {
+  "id": "cc8e13af510b1ca32ff7e6b6b348855379c09ac4",
+  "venue": "WWW 2026",
+  "title": "6th International Workshop on Computational Methods for Online Discourse Analysis (BeyondFacts'26)",
+  "abstract": "This workshop focuses on the convergence of computational and interdisciplinary methods for analyzing online discourse, such as claims, arguments, and opinions on contentious issues. As mis- and disinformation, bias, and echo chambers continue to grow, NLP-based techniques\u2014including argument mining, stance detection, and fact verification\u2014have become increasingly important. At the same time, these tasks depend on strong conceptual foundations that span communication studies, computational linguistics, and computer science. BeyondFacts aims to bring together researchers from a wide range of communities\u2014such as the social sciences, political science, computational journalism, and computer science\u2014to advance the machine-based interpretation and analysis of societal debates using methods from web mining, AI, and NLP.",
+  "gid": 668,
+  "theme": "Online discourse analysis"
+ }
+}

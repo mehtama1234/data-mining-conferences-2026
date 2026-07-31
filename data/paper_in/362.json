@@ -1,0 +1,11 @@
+{
+ "batch": "b024",
+ "paper": {
+  "id": "6a77e4c8212f494c57b7ed9831797e3fc03d4715",
+  "venue": "WWW 2026",
+  "title": "BHGap: A Deep Iterative Prompting and Multi-stage Alignment Framework for Dynamic Facial Expression Recognition",
+  "abstract": "Dynamic Facial Expression Recognition (DFER), as a crucial part of affective computing, has broad applications in many areas such as human-computer interaction and social media content analysis. Effectively integrating multimodal information, particularly audio-visual signals, remains the core challenge. However, existing approaches are generally constrained by two major challenges: (1) shallow and static fusion mechanisms, which fail to capture the dynamic co-evolution of audio-visual features during deep interaction; (2) implicit and coarse alignment strategies, which are insufficient to bridge the modality gap caused by heterogeneous feature distributions. To address these issues, we propose a novel framework, BHGap, which integrates deep iterative prompt generation with multi-stage feature alignment and fusion. The key idea is to reformulate audio-visual collaboration from a one-shot fusion event into a continuous, reciprocal generation process that spans every layer of frozen backbone encoders. Specifically, we design a State Space Model (SSM)-based cross-modal prompt generator that dynamically produces ''guidance prompts'' for the counterpart modality at each encoding layer, thereby enabling deep and fine-grained feature co-evolution. Beyond encoding, we further introduce a coarse-to-fine multi-stage alignment module: at the macro level, low-rank adversarial alignment is ",
+  "gid": 362,
+  "theme": "Multimodal expression recognition"
+ }
+}

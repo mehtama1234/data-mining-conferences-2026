@@ -1,0 +1,11 @@
+{
+ "batch": "b027",
+ "paper": {
+  "id": "79bbe686678e1cad576ebc14b19c45374de28625",
+  "venue": "WWW 2026",
+  "title": "From Prediction to Understanding: Leveraging Reasoning in Large Language Model-based Recommendations",
+  "abstract": "Recently, large language models (LLMs) have shown great promise in sequential recommendation. Existing methods typically transform users' historical interactions into textual sequences and then feed these sequences into LLMs to generate recommended items. However, since the output of LLMs is limited to recommendations, the models must analyze user interactions and infer user preferences implicitly. This implicit approach constrains the expressive reasoning abilities of LLMs. Moreover, as the output of LLMs consists solely of recommended items, the resulting recommendations lack explainability. To address these issues, we propose RE2, which enables LLMs to explicitly generate reasoning content before providing recommendations. Making the reasoning process explicit helps elicit the reasoning abilities of LLMs and simultaneously enhances the explainability of recommendation results. RE2 consists of three steps: (1) Reasoning Collection, which collects reasoning data by guiding LLMs to generate both reasoning content and recommended items for each interaction sequence. (2) Pattern Imitation, which leverages the collected data to train LLMs via supervised fine-tuning to imitate the pattern of first generating reasoning content and then providing recommendations. (3) Pattern Internalization, which further internalizes this reasoning-and-recommendation pattern and enhances both recomm",
+  "gid": 410,
+  "theme": "Explainable LLM recommendation"
+ }
+}

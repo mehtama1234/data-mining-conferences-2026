@@ -1,0 +1,11 @@
+{
+ "batch": "b065",
+ "paper": {
+  "id": "f4a2dcd72c93ad2fd6e2decbf7a5e11e83ae822d",
+  "venue": "WSDM 2026",
+  "title": "ARROW: Adaptive Reasoning for LLM-based Recommendation with Explainability",
+  "abstract": "The integration of Large Language Models (LLMs) has led to substantial advancements in recommender systems (RS) by leveraging their vast knowledge and reasoning abilities. However, the semantic gap between the linguistic knowledge of LLMs and the collaborative patterns in RS hinders their effective fusion. This issue results in a fundamental limitation where models, despite achieving high prediction accuracy, are unable to provide coherent rationales justifying their recommendations. In this paper, we propose ARROW (Adaptive Reasoning for LLM-based RecommendatiOn With explainability), a novel framework that effectively elicits the intrinsic reasoning capabilities of LLMs to bridge this semantic gap. ARROW is carefully designed to guide the model in generating an explicit reasoning process for its recommendation decisions using chain-of-thought prompting. Furthermore, we introduce the Adaptive Reasoning Modulator, which quantifies the uncertainty of the reasoning process and adaptively adjusts its weight to maximize the model's reasoning efficacy. Our extensive experiments demonstrate that ARROW achieves significant performance improvements over strong baseline models while providing human-interpretable explanations. Our code is available at https://github.com/yunwooseong/ARROW.",
+  "gid": 989,
+  "theme": "LLM recommendation explainability"
+ }
+}

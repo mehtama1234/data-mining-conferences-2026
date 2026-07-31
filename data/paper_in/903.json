@@ -1,0 +1,11 @@
+{
+ "batch": "b060",
+ "paper": {
+  "id": "4a14421bb21b1c6bfdba2ebb5db497dabc871b39",
+  "venue": "WSDM 2026",
+  "title": "TemporalExpertNet: Cross-Temporal Knowledge Reuse for Promotion-Aware CVR Prediction",
+  "abstract": "Major promotional events such as Black Friday and 618 Shopping Day cause drastic, heterogeneous shifts in user and advertiser behavior, posing persistent challenges for conversion rate (CVR) models trained on daily data. Existing methods often lack the flexibility to capture this periodic variability, resulting in poor modeling of diverse behavioral patterns. To address these challenges, we propose TemporalExpertNet(TEN), a cross-temporal transfer learning framework for industrial-scale CVR prediction during promotion cycles. TEN decomposes the model into a stable representation encoder and a promotion-sensitive expert, enabling reusable temporal knowledge transfer. Specifically, we propose BridgeNet to address the mismatch between historical knowledge and current features through temporal representation alignment. We further introduce TemporalExpertGate (TEG) to perform sample-aware expert fusion, enabling fine-grained prediction adjustment and adaptive knowledge reuse across promotion periods. By using a two-stage training strategy, TEN achieves stable alignment and adaptive expert fusion for robust prediction under shifting promotional distributions. TEN was deployed on a large-scale short-video ads platform during the 618 preheating phase, improving conversion rate by 7.52% and platform RPM by 4.27% with only 0.23% model size and 1.8% latency overhead. It was therefore full",
+  "gid": 903,
+  "theme": "temporal CTR prediction"
+ }
+}

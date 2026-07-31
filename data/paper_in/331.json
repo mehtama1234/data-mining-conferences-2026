@@ -1,0 +1,11 @@
+{
+ "batch": "b022",
+ "paper": {
+  "id": "628e1d5c1edec26f0ae10d21ac542c25c19a217c",
+  "venue": "WWW 2026",
+  "title": "Towards Foundation Models for MMKG: Multi-Task Inductive Generalization via Task-Aware Routing",
+  "abstract": "Multimodal knowledge graphs (MMKG) extend the representational capacity of conventional knowledge graphs by integrating multimodal contexts. However, despite increasing attention on core tasks\u2014multimodal link prediction (MMLP), multimodal entity alignment (MMEA), and multimodal entity linking (MMEL)\u2014most existing approaches remain confined to meticulously tailored, task-specific and graph-specific paradigms, limiting their practicality in dynamic environments where tasks co-exist and new knowledge graphs continually emerge. In this work, we propose the first unified multi-task inductive inference framework for \\MMKG (MtaIMKG) that can handle multiple core tasks, with universality and transferability to any unseen MMKG, by tackling inherent heterogeneities: i) Feature Heterogeneity: Bridging the semantic gaps in feature representations across domains. ii) Structural Heterogeneity: Overcoming structural divergence in topology across graphs. iii) Task Heterogeneity: Reconciling conflicting objectives and inductive biases across tasks. To address the above challenges, we center on reconciling divergent representation preferences across tasks, delivering only task-pertinent information instead of engaging in indiscriminate aggregation. Specifically, we introduce a task-aware routing network that dynamically integrates and routes multimodal representations, assesses their contributio",
+  "gid": 331,
+  "theme": "multimodal knowledge graphs"
+ }
+}

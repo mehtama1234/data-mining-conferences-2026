@@ -1,0 +1,11 @@
+{
+ "batch": "b061",
+ "paper": {
+  "id": "77df2c4790fcc5fcbcc4365c98fcfceb326c8131",
+  "venue": "WSDM 2026",
+  "title": "Transfer Learning via User-Item Graph Convolution for Enhanced Cross-Domain Recommendation",
+  "abstract": "In cross-domain recommendation, the cold-start recommendation problem often arises in scenarios where users have interacted with items in a source domain but not in a target domain. A key challenge in this cross-domain recommendation setting is how to effectively transfer user preferences from the source domain to the target domain. Most existing transfer learning models address this challenge but typically require extensive computations and incremental operations, which limit their scalability and efficiency. To overcome these limitations, we propose a novel similarity-based framework, called Similarity-based Transfer Graph Convolution Network (SimTranGCN), designed specifically for cold-start users. Our approach combines item-KNN, deep learning, and graph convolutional models such as LightGCN. SimTranGCN first constructs a similarity matrix across domains, and then uses this matrix to infer user preferences in the target domain based on their interactions in the source domain. Empirical experiments demonstrate that SimTranGCN is highly competitive against existing methods, achieving state-of-the-art performance on two paired domain transfer tasks.",
+  "gid": 924,
+  "theme": "Cross-domain recommendation"
+ }
+}

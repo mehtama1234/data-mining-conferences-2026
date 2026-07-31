@@ -1,0 +1,11 @@
+{
+ "batch": "b059",
+ "paper": {
+  "id": "2943d1a7e4bf6010a56e879962dd40bf52cdb5f0",
+  "venue": "WSDM 2026",
+  "title": "LLM-Guided Beam Search for Decision Graph Optimization with Dynamic Prompting",
+  "abstract": "Decision tree optimization for regression tasks faces challenges in capturing complex feature interactions due to restrictive binary splits, leading to suboptimal predictive performance. Conventional methods such as greedy algorithms or genetic programming, struggle with scalability and semantic coherence in large search spaces. We propose GraphBeam-LLM, a novel framework that integrates large language models (LLMs) with beam search to optimize directed acyclic graphs (DAGs), augmented by a dynamic prompting mechanism. By replacing binary trees with multi-path graphs, our approach enhances expressiveness, while LLM-guided extensions ensure semantically meaningful conditions. Dynamic prompting adapts search goals across iterations, balancing diversity and performance. Experiments on regression datasets, including abalone, wine, and cholesterol, demonstrate that GraphBeam-LLM achieves state-of-the-art mean squared error (MSE) reductions of 6.7% to 14.5% compared to baselines like CART and LLEGO, with improved interpretability and robustness, validating its efficacy in addressing complex regression tasks.",
+  "gid": 887,
+  "theme": "Decision graph optimization"
+ }
+}

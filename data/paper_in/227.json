@@ -1,0 +1,11 @@
+{
+ "batch": "b015",
+ "paper": {
+  "id": "4337acbeceaf750a128e21458fccb6542e1710bf",
+  "venue": "WWW 2026",
+  "title": "Age Classification in Child Sexual Abuse Materials",
+  "abstract": "Age classification plays a crucial role in the detection of Child Sexual Abuse Materials (CSAM). While deep neural network (DNN) solutions are commonly employed for this task, their black-box nature often results in a lack of explainability. In this study, we propose three novel methods for age classification to enhance applicability, interpretability, and performance. Specifically, we introduce a Fusion Age Classifier that integrates three criteria: face, body proportions, and sexual characteristics deemed critical by experts, mirroring the human decision-making process. Our research evaluates these methods using real-world CSAM cases collected by a special point of contact for reporting suspected child sexual abuse content by Internet users. The best of the proposed methods demonstrates promising results, achieving a weighted F1-score of 0.807 for classifying the youngest age group across three age groups (prepubescent, pubescent, and adult), thus highlighting its potential efficacy in real-world applications. Moreover, our fusion methodologies demonstrated greater adversarial robustness against the investigated black-box evasion attack than end-to-end models.",
+  "gid": 227,
+  "theme": "CSAM detection safety"
+ }
+}

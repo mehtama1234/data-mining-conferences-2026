@@ -1,0 +1,11 @@
+{
+ "batch": "b058",
+ "paper": {
+  "id": "0809b547b081c57b01bd7b8866c3ccfbcfe46fa5",
+  "venue": "WSDM 2026",
+  "title": "SAGERec: Sampling and Gating for Enhanced Long-Tail Item Recommendations",
+  "abstract": "Recommendation systems are an integral part of daily life, influencing how people interact with and access information. The content recommended to users shapes their perceptions, making it crucial to eliminate biases that could negatively impact those perceptions. One such bias is the popularity bias which causes the long-tail item recommendation problem, where systems tend to favor popular items while overlooking less popular yet relevant ones. To address this issue and improve recommendations for long-tail items, we propose SAGERec which learns user representations by leveraging both user features and the representations of the most informative items they have interacted with. Since identifying these informative items in latent space is challenging, we employ a trainable sampler that learns to select them effectively. Furthermore, we incorporate two expert models that sample items and aggregate them differently and fuse their outputs through a tail-aware gating network. Extensive experiments demonstrate that SAGERec significantly outperforms state-of-the-art baselines across three publicly available datasets, highlighting its effectiveness in addressing the long-tail item recommendation problem. The source code is available at: https://github.com/alshabae/SAGERec.",
+  "gid": 871,
+  "theme": "long-tail recommendation"
+ }
+}

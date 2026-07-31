@@ -1,0 +1,11 @@
+{
+ "batch": "b062",
+ "paper": {
+  "id": "9ffaa8ca0f1abbae90c73d1b44e358dc677fec4f",
+  "venue": "WSDM 2026",
+  "title": "Cyberpsychology: Emotion as the Hidden Driver of Social Behavior in Online Networks",
+  "abstract": "Emotions shape every aspect of social life, yet their role in digital communication has been under-explored. Research on social media has largely focused on how people share and consume information online, while comparatively less attention has been paid to how emotions organize attention, shape identity, and drive collective behavior. This talk advocates the idea of social media platforms as emotional ecosystems, where affect is not merely expressed but also spreads between people, interacts with beliefs and psychological states, and transforms social dynamics of entire populations. Advances in natural language processing have given us tools to detect discrete emotions and moral sentiments from online text. These tools helped reveal that online platforms do more than transmit emotion: they enable emotional contagion, whereby exposure to others' emotions shapes users' own emotional expressions, beliefs, sense of identity, and feelings of trust and belonging. The talk shows how these emotional dynamics underlie a range of emergent social phenomena. In the political domain, emotional dynamics contribute to affective polarization, characterized by in-group favoritism and out-group animosity. The talk shows that interactions with ideological out-groups contain more anger, disgust, and toxic language, while in-group interactions express more joy and shared fear, reinforcing group co",
+  "gid": 943,
+  "theme": "social media emotion analysis"
+ }
+}

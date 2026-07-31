@@ -1,0 +1,11 @@
+{
+ "batch": "b046",
+ "paper": {
+  "id": "d47d4362c976e95daeb0b2d27b6fc0ef0bd17aba",
+  "venue": "WWW 2026",
+  "title": "Pattern Discovery with Wide-Lens Analysis and Sharp-Focus Validation",
+  "abstract": "Given an unfamiliar dataset without ground truth annotations or established taxonomies, how do we systematically discover meaningful patterns? Even with large language models providing initial categorization suggestions, it remains challenging to capture patterns and standardize them into consistent representations across unstructured data. This persistent challenge highlights the need for systematic discovery approaches. We present Pattern Insights Explorer, a modularized framework that facilitates pattern discovery through complementary wide-lens analysis and sharp-focus validation. Our multi-granularity approach follows the natural rhythm of discovery through iterative zoom-out and zoom-in perspectives: wide-lens views first reveal where promising patterns cluster across data landscapes, then sharp-focus examination validates whether our extraction methods precisely identify meaningful patterns. Through iterative refinement between these perspectives, the framework evolves rough sketches into validated taxonomic structures without requiring any external ground truth. Pattern Insights Explorer bridges the fundamental gap between having rough pattern awareness and building precise discovery systems.",
+  "gid": 702,
+  "theme": "Pattern discovery"
+ }
+}

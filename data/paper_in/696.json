@@ -1,0 +1,11 @@
+{
+ "batch": "b046",
+ "paper": {
+  "id": "d2b1cdb5f95e969713ce95b9b41db47e5b1aedfc",
+  "venue": "WWW 2026",
+  "title": "Assessing the Reliability of Persona-Conditioned LLMs as Synthetic Survey Respondents",
+  "abstract": "Using persona-conditioned LLMs as synthetic survey respondents has become a common practice in computational social science and agent-based simulations. Yet, it remains unclear whether multi-attribute persona prompting improves LLM reliability or instead introduces distortions. Here we contribute to this assessment by leveraging a large dataset of U.S. microdata from the World Values Survey. Concretely, we evaluate two open-weight chat models and a random-guesser baseline across more than 70K respondent\u2013item instances. We find that persona prompting does not yield a clear aggregate improvement in survey alignment and, in many cases, significantly degrades performance. Persona effects are highly heterogeneous as most items exhibit minimal change, while a small subset of questions and underrepresented subgroups experience disproportionate distortions. Our findings highlight a key adverse impact of current persona-based simulation practices: demographic conditioning can redistribute error in ways that undermine subgroup fidelity and risk misleading downstream analyses.",
+  "gid": 696,
+  "theme": "LLM survey simulation"
+ }
+}

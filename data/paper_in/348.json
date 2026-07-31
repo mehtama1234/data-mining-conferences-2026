@@ -1,0 +1,11 @@
+{
+ "batch": "b023",
+ "paper": {
+  "id": "6770db59ad044878da1d760ab019209f1a81bc62",
+  "venue": "WWW 2026",
+  "title": "SaGD: A Node-Level Differentially Private Graph Learning Framework with Sensitivity-Aware Gradient Descent",
+  "abstract": "Learning from graph-structured data is fundamental to many Web applications, such as recommendation systems and social network analysis. While neural networks achieve state-of-the-art performance in these tasks, training them on sensitive graph data poses privacy risks. Node-level differential privacy (node-DP) provides strong protection for individual users represented as nodes; however, achieving node-DP is challenging due to the intricate dependencies among interconnected nodes. These dependencies, in turn, complicate node-level sensitivity analysis, which is a key step in differentially private learning. To bound the sensitivity, existing approaches typically (i) rely on black-box per-sample gradient clipping, which often overestimates sensitivity and introduces an excessive amount of DP noise; and (ii) prune edges from nodes with high degrees, which leads to erroneous privacy proofs. In this work, we introduce SaGD, a rigorous node-DP framework for graph learning. Our framework consists of two stages: (i) message propagation over the original graph, where we weight edges to control sensitivity without edge pruning, enabling tight, closed-form sensitivity bounds; and (ii) neural network training on the propagated messages using perturbed gradients with explicit mathematical derivations of sensitivity, without relying on gradient clipping. This sensitivity-aware design allow",
+  "gid": 348,
+  "theme": "Graph differential privacy"
+ }
+}

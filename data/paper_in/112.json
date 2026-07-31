@@ -1,0 +1,11 @@
+{
+ "batch": "b007",
+ "paper": {
+  "id": "21f2aa94871c4ec17f2b8f81d1f9df52861d9723",
+  "venue": "WWW 2026",
+  "title": "ConceptFormer: Towards Graph-Native Grounding of Large Language Models via Latent Concept Injection",
+  "abstract": "Retrieval Augmented Generation (RAG) has enjoyed increased attention in the recent past, yet recent advancements in Large Language Models (LLMs) have highlighted the difficulty of ensuring trustworthiness and factuality. Current RAG methodologies often modify the internal architecture of pre-trained language models (PLMs) or rely on textifying knowledge graphs (KGs), which results in lossy linearization and context saturation. This paper introduces ConceptFormer, a neuro-symbolic approach to ground LLMs in structured knowledge from the Web of Data (e.g., Wikidata), without altering their internal structure or relying on textual input of KGs. ConceptFormer operates in the LLM embedding vector space, creating and injecting concept vectors that encapsulate the topological structure of the KG nodes directly. Trained in conjunction with a frozen LLM, ConceptFormer generates a comprehensive lookup table that maps KG nodes to their respective concept vectors. The approach aims to enhance the factual reliability of LLMs by enabling them to process these concept vectors natively, thus enriching them with structured world knowledge in a graph-native manner. Our experiments demonstrate that the addition of concept vectors to GPT-2 0.1B substantially increases its factual recall ability (Hit@10) by up to 272% when tested on sentences from Wikipedia and up to 348% on synthetically generated",
+  "gid": 112,
+  "theme": "Knowledge graph grounding"
+ }
+}

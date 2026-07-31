@@ -1,0 +1,11 @@
+{
+ "batch": "b061",
+ "paper": {
+  "id": "68ec617ac66bb6cade59564509c5e1ec810d3440",
+  "venue": "WSDM 2026",
+  "title": "Taming Non-Stationary Knowledge Growth: Dynamic Global Memory Framework for Lifelong Knowledge Graph Embedding",
+  "abstract": "Dynamic knowledge graphs exhibit non-stationary growth characterized by three key features: heterogeneous structural connectivity, variable growth frequency and magnitude, and scale-semantic imbalance. Existing lifelong knowledge graph embedding methods, based on the assumption of stationary growth, hardly consider all these features, resulting in unsatisfactory embedding performance. Specifically, heterogeneous connectivity leads to inefficient knowledge transfer and embedding initialization bias; frequent, large growths cause catastrophic forgetting and embedding space drift; fixed strategies fail to prioritize high-value knowledge, thereby degrading long-term retention. To tackle these issues, we propose DyGM (Dynamic Global Memory Framework), a novel framework integrating three core components. The connectivity-aware structuring module leverages topological metrics, to enable reliable structural ordering and knowledge transfer. The cross-snapshot relay module preserves long-term knowledge through instance-level replay and feature-level distillation. The dynamic weight balancing mechanism adaptively adjusts the importance of historical and new knowledge, to prioritize core information during training and ensure stable retention of core structural-semantic dependencies. We construct two non-stationary KG datasets and conduct extensive experiments on both stationary and non-st",
+  "gid": 918,
+  "theme": "Lifelong knowledge graph embedding"
+ }
+}

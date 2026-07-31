@@ -1,0 +1,11 @@
+{
+ "batch": "b044",
+ "paper": {
+  "id": "cd771a6e21bdbff52df612d0fb45324dc604c865",
+  "venue": "WWW 2026",
+  "title": "Credit and Power Co-evolution Modeling with Dynamic Graph Learning",
+  "abstract": "Accurate enterprise power consumption forecasting is not only a core component of optimized green energy management but also a key support for promoting the coordinated development of a sustainable society and the digital economy. The temporal fluctuations in power consumption reflect an enterprise's production activity and operational resilience, while credit assessment combined with Web data reveals a two-way coupling relationship between it and energy use: credit changes influence financing and power consumption strategies, while energy anomalies may become early signals of credit risk. However, existing methods still have shortcomings in modeling the co-evolution of Web data and power data. Most models only focus on static or unidirectional correlations, making it difficult to capture the dynamic feedback between credit risk and power consumption; traditional multi-task learning frameworks often rely on parameter sharing or simple attention mechanisms, lacking consistency constraints across time scales and network structures. To address this, this paper proposes CPDGL, a credit-electricity co-evolution framework based on dynamic graph learning, which simultaneously performs power forecasting and credit risk assessment within a unified multi-task system. Its co-evolution path interaction module explicitly models the feedback loop between credit dynamics and power behavior, l",
+  "gid": 670,
+  "theme": "Credit power co-evolution forecasting"
+ }
+}

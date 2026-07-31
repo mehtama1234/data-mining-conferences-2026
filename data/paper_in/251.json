@@ -1,0 +1,11 @@
+{
+ "batch": "b016",
+ "paper": {
+  "id": "4917d25ad30aec7e08f46a89624d576d5cf2f153",
+  "venue": "WWW 2026",
+  "title": "Unsupervised Multi-Source Causal Feature Selection",
+  "abstract": "Multi-source feature selection (MSFS) aims to identify informative features from data collected across multiple sources, where each source contains distinct samples but shares a common feature space. Despite the growing interest in this setting, most existing unsupervised feature selection methods designed for single-source data and are therefore suboptimal for multi-source scenarios that exhibit sample heterogeneity, as they fail to capture shared underlying structures across sources. Moreover, current approaches primarily focus on statistical correlations while overlooking the underlying causal relationships between features. Consequently, the selection process is susceptible to confounding factors and source-specific biases, which can induce spurious associations and degrade feature selection performance. To address these challenges, we propose a novel MSFS approach, called Unsupervised Multi-source Causal Feature Selection (UMCFS). Specifically, UMCFS employs adversarial balancing to learn domain-invariant sample weights and enables causal reweighting that mitigates confounding-induced spurious correlations without label supervision. Furthermore, it explicitly separates shared global feature importance from source-specific deviations to enhance the reliability of feature evaluation across heterogeneous sources. Extensive experimental results demonstrate that UMCFS consisten",
+  "gid": 251,
+  "theme": "Causal feature selection"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "batch": "b062",
+ "paper": {
+  "id": "7ed665409c6ab27a3d624dfae8b00f1970fe854f",
+  "venue": "WSDM 2026",
+  "title": "APPNet: Automatic Feature Partitioning-Based Parameter Personalized Network for Conversion Prediction in E-commerce",
+  "abstract": "Traditional conversion rate prediction models suffer from suboptimal performance due to sharing the same network parameters for all instances, failing to capture heterogeneous underlying distributions across instances. Recent parameter personalized network based models address this by grouping instances and adjust parameters for each group. However, existing parameter personalization methods face challenges: (1) taking prior information features as grouping condition for model parameter personalization leads to suboptimal performance due to human's limited understanding of data distribution, or (2) using all the features for both parameter generation module and deep neural network (DNN) of conversion prediction tasks causes gradient conflicts during backpropagation. A better approach is to automatically select features as grouping condition based on data distribution through iterative learning. Therefore, we propose Automatic Feature Partitioning-Based Parameter Personalized Network (APPNet), which consists of two components: Automatic Feature Partitioning (AFP) and Parameter Personalized Network (PPNet). The AFP module automatically partitions all the features into two parts: one part for DNN of conversion prediction tasks, and the other part for PPNet module to generate weights to adjust DNN parameters of conversion prediction tasks. Specifically, we implemented two versions ",
+  "gid": 930,
+  "theme": "conversion prediction personalization"
+ }
+}

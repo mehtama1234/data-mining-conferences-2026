@@ -1,0 +1,11 @@
+{
+ "batch": "b020",
+ "paper": {
+  "id": "5a0b3d228f40f76e7329a5ed484fd0b1e0d6bea0",
+  "venue": "WWW 2026",
+  "title": "FS_GPlib: Breaking the Web-Scale Barrier \u2014 A Unified Acceleration Framework for Graph Propagation Models",
+  "abstract": "Propagation models are essential for modeling and simulating dynamic processes such as epidemics and information diffusion. However, existing tools struggle to scale to large-scale graphs that emerge across social networks, epidemic networks and so on, due to limited algorithmic efficiency, weak scalability, and high communication overhead. We present FS_GPlib, a unified library that enables efficient, high-fidelity propagation modeling on Web-scale graphs. FS_GPlib introduces a dual-acceleration framework: it combines micro-level synchronous message-passing updates with macro-level batched Monte Carlo simulation, leveraging high-dimensional tensor operations for parallel execution. To further enhance scalability, it supports distributed simulation via a novel target-node-based graph partitioning strategy that minimizes communication overhead while maintaining load balance. Theoretically, we show that under ideal assumptions, the runtime of simulations converges approximately to a constant. Extensive experiments demonstrate up to 35,000\u00d7 speedup over standard libraries such as NDlib and execution of a full Monte Carlo simulation on a Web-scale (billion-edge) graph in 11 seconds while maintaining high simulation fidelity. FS_GPlib supports 29 propagation models\u2014including epidemic and opinion dynamics and dynamic network models\u2014and offers a lightweight Python API compatible with ",
+  "gid": 306,
+  "theme": "Graph propagation simulation"
+ }
+}

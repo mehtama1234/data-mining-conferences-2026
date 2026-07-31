@@ -1,0 +1,11 @@
+{
+ "batch": "b029",
+ "paper": {
+  "id": "861fda5ec03d0a5e3d72dd17e32ddcabac466213",
+  "venue": "WWW 2026",
+  "title": "Beyond Fine-Tuning: The Present and Future of Parameter-Efficient Fine-Tuning in Vision Transformers",
+  "abstract": "The advent of Vision Transformers (ViTs) has significantly advanced computer vision, particularly image classification, through large-scale pretraining on massive datasets. However, the high computational and memory costs of full fine-tuning remain a major bottleneck for practical deployment across diverse downstream tasks. Parameter-Efficient Fine-Tuning (PEFT) has emerged as a promising paradigm to address this challenge by adapting models through updates to only a small subset of parameters while preserving the benefits of pretrained representations. In this survey, we present a focused review of PEFT techniques for ViTs in image classification. We introduce a structured taxonomy that categorizes existing approaches into additive-based, reparameterization-based, selective, hybrid, and inference-efficient tuning methods, highlighting their core design principles, strengths, and limitations. We further analyze evaluation protocols, benchmark results, and trade-offs between accuracy, efficiency, and scalability. Finally, we identify open challenges and outline promising directions for future research toward more robust, efficient, and deployable PEFT frameworks for vision. Our appendix is available https://openreview.net/pdf?id=HCDyt0Z5vE here.",
+  "gid": 449,
+  "theme": "Parameter-efficient vision transformers"
+ }
+}

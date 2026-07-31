@@ -1,0 +1,11 @@
+{
+ "batch": "b001",
+ "paper": {
+  "id": "06f6ed7d7ecf1d7fc1dab4be7d647ae6f3df9f7f",
+  "venue": "WWW 2026",
+  "title": "RobustExplain: Evaluating Robustness of LLM-Based Explanation Agents for Recommendation",
+  "abstract": "Large Language Models (LLMs) are increasingly used to generate natural-language explanations in recommender systems, acting as explanation agents that reason over user behavior histories. While prior work has focused on explanation fluency and relevance under fixed inputs, the robustness of LLM-generated explanations to realistic user behavior noise remains largely unexplored. In real-world web platforms, interaction histories are inherently noisy due to accidental clicks, temporal inconsistencies, missing values, and evolving preferences, raising concerns about explanation stability and user trust. We present RobustExplain, the first systematic evaluation framework for measuring the robustness of LLM-generated recommendation explanations. RobustExplain introduces five realistic user behavior perturbations evaluated across multiple severity levels and a multi-dimensional robustness metric capturing semantic, keyword, structural, and length consistency. Our goal is to establish a principled, task-level evaluation framework and initial robustness baselines, rather than to provide a comprehensive leaderboard across all available LLMs. Experiments on four representative LLMs (7B\u201370B) show that current models exhibit only moderate robustness, with larger models achieving up to 8% higher stability. Our results establish the first robustness benchmarks for explanation agents and highl",
+  "gid": 25,
+  "theme": "LLM recommendation explanation"
+ }
+}

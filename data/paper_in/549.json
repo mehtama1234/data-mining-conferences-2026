@@ -1,0 +1,11 @@
+{
+ "batch": "b036",
+ "paper": {
+  "id": "a5bc7a901802d9b8eae68824ab4b9ed6a37536e1",
+  "venue": "WWW 2026",
+  "title": "Can Large Language Models Govern Themselves? A Technical, Ethical, and Governance Perspective",
+  "abstract": "The rapid deployment of Large Language Models (LLMs) in increasingly autonomous roles has raised fundamental questions about governance, accountability, and control. A recurring question is whether LLMs can govern themselves. This paper examines self-governance in LLMs from technical, ethical, and philosophical perspectives. We propose an operational definition of self-governance grounded in self-monitoring, self-regulation, and internal value alignment. We analyze architectural mechanisms that enable partial self-governance, such as internal feedback loops, embedded constraints, and meta-learning. We argue that while LLMs can implement forms of operational self-regulation, they cannot achieve full normative self-governance due to limitations in moral agency, value grounding, and accountability. We conclude that LLM self-governance should be understood as a complement to, rather than a replacement for, human-centered governance frameworks.",
+  "gid": 549,
+  "theme": "LLM governance"
+ }
+}

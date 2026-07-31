@@ -1,0 +1,11 @@
+{
+ "batch": "b065",
+ "paper": {
+  "id": "df23440ec80dc335bfda41b9e0d5b2d37e1edf02",
+  "venue": "WSDM 2026",
+  "title": "Towards Multifaceted Graph Condensation in Discrete Realm",
+  "abstract": "Graph neural networks (GNNs) have been extensively utilized in various fields due to their efficient and strong capability in processing graph-structured data. However, as the scale of real-world graphs continues to grow, processing large-scale graphs with GNNs has become increasingly storage-intensive and time-consuming. Graph condensation, which aims to synthesize a smaller yet informative substitute graph, has emerged as a promising solution. Most existing approaches, however, primarily focus on feature condensation while paying less attention to faithfully reconstructing structural information. Moreover, the condensed representations are typically dense, which not only limits storage and computational efficiency but also risks retaining noise and redundancy. To address these limitations, we propose DGC, a Discrete Graph Condensation framework, where numerous nodes in the original graph can be represented by the discrete codes in the codebook while maintaining the original structure information. Specifically, we leverage high-order proximity between nodes to capture the original graph's structure and transfer it to the condensed graph via low-rank approximation. Meanwhile, node features are discretized and compressed through a vector quantized variational autoencoder, effectively reducing redundancy and enhancing storage efficiency while retaining critical information. Exten",
+  "gid": 977,
+  "theme": "Graph neural networks compression"
+ }
+}

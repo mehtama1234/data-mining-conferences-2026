@@ -1,0 +1,11 @@
+{
+ "batch": "b006",
+ "paper": {
+  "id": "197262ab7221383ce8f464b934db7513d9fe1720",
+  "venue": "WWW 2026",
+  "title": "Responsible Prompting on the Web: Governance, Mini-Evaluation, and Readiness with ChatGPT",
+  "abstract": "This tutorial is designed for practitioners who want AI output to stand up to real-world Web constraints. In a browser-only setting with ChatGPT (free tier), it teaches a clear, repeatable workflow for three common tasks: PII-safe summarization, meta-/FAQ generation for researcher profiles, and moderation of user-generated content (UGC). Coverage includes the core prompting techniques from the deck: zero-shot vs. few-shot, chain-of-thought (hidden reasoning), role prompts, output formatting and constraint setting, multi-turn prompt chaining, proactive clarification, and reverse prompting. Participants begin with baseline prompts, add guardrails, and run a mini-evaluation with a small gold set and red-team probes, emphasizing privacy and consent, logging minimization, accessibility, and publish or no-publish thresholds so outputs are deployable and defensible. To illustrate tool-augmented prompting, the session includes publishing an n8n endpoint and, where available, demonstrating invocation from ChatGPT Developer Mode or MCP to produce grounded cited answers. The use of the deep research mode and the agent mode in ChatGPT will also be explained, including how to frame instructions for source quality, action log, and safety. All participants leave with prompt cards, a scoring rubric, and a concise deployment readiness one-pager documenting metrics, failure modes, and limitation",
+  "gid": 90,
+  "theme": "LLM safety and governance"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "batch": "b056",
+ "paper": {
+  "id": "fba62b3aa04345a49fb0873211206bf24375e539",
+  "venue": "WWW 2026",
+  "title": "Mixture of Sequence: Theme-Aware Mixture-of-Experts for Long-Sequence Recommendation",
+  "abstract": "Sequential recommendation has emerged as a rapidly growing research area in click-through rate prediction due to its ability to capture dynamic user interests from historical interaction sequences. A key challenge, however, lies in modeling long sequences, where users often exhibit pronounced interest shifts, thereby introducing substantial irrelevant or even misleading information into the prediction process. Our empirical analysis corroborates this challenge and further uncovers a recurring behavioral pattern in long sequences, which we term the session hopping phenomenon: while user interests remain stable within a short temporal span, referred to as a session, they often exhibit drastic shifts across sessions and may reappear after multiple sessions. To address this challenge, we propose the Mixture of Sequence (MoS) framework, a model-agnostic MoE approach that achieves accurate predictions by extracting theme-specific and multi-scale subsequences from noisy raw user sequences. First, MoS employs a theme-aware routing mechanism to adaptively learn the latent themes of user sequences and organizes these sequences into multiple coherent subsequences. Each subsequence contains only sessions aligned with a specific theme, thereby effectively filtering out irrelevant or even misleading information introduced by user interest shifts in session hopping. In addition, to alleviate ",
+  "gid": 848,
+  "theme": "sequential recommendation"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "batch": "b008",
+ "paper": {
+  "id": "24f6a8e9e4752b94fe139a9d0fc969b4f62e5944",
+  "venue": "WWW 2026",
+  "title": "Automating Computational Reproducibility in Social Science: Comparing Prompt-Based and Agent-Based Approaches",
+  "abstract": "Reproducing computational research is often treated as a straightforward matter of re-running shared code on shared data. In practice, published analyses frequently fail even when materials are available, due to missing dependencies, brittle paths, version mismatches, and\u2014more challenging\u2014gaps in analytical logic. We investigate whether large language models (LLMs) and agentic AI systems can automate the routine but labor-intensive work of repairing such failures, thereby lowering the practical barrier to computational verification. We evaluate two automated repair paradigms in a controlled setting derived from five fully reproducible R-based social science studies. Starting from ground-truth executions, we inject realistic failure modes spanning execution-level issues, contextual code fixes, and structural logic omissions, and package them into 130 synthetic test cases. We then run (i) a prompt-based workflow that iteratively queries LLMs with structured prompts at increasing levels of contextual richness, and (ii) an agent-based workflow in which coding agents inspect project files, apply targeted edits, and re-run analyses until completion or a time limit. Repairs are only counted as successful if the resulting outputs match the ground-truth outputs, not merely if the code executes. Across prompt-based runs, reproduction success varies substantially (31\u201379%), shaped by both ",
+  "gid": 125,
+  "theme": "Research reproducibility"
+ }
+}

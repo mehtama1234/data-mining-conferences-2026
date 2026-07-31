@@ -1,0 +1,11 @@
+{
+ "batch": "b005",
+ "paper": {
+  "id": "185731d28d0a45467bc2d1af2959a385c1da4565",
+  "venue": "WWW 2026",
+  "title": "Generalist Model for Structured Data: Foundations, Frontiers and Applications",
+  "abstract": "Structured data constitutes one of the most ubiquitous data modalities in web-scale and enterprise applications, supporting tasks such as recommendation, forecasting, and user behavior analysis. Conventional modeling paradigms\u2014ranging from generalized linear models and gradient boosting to deep structured networks\u2014have provided strong baselines for predictive analytics and decision support. However, the recent emergence of foundation models and in-context learning (ICL) has sparked a new paradigm for structured modeling, moving from dataset-specific training toward universal, adaptable inference. Emerging structured foundation models illustrate how large-scale pretraining, synthetic data generation, and ICL-based inference can extend foundation-model principles to structured data. These developments open new possibilities for multi-task learning, zero-shot inference, and knowledge transfer across diverse structured settings. Yet, the space of structured foundation models remains largely unexplored, with open questions surrounding data generation, multi-task setting, pretraining objectives, and evaluation standards. This tutorial will provide a structured overview of both conventional modeling and recent ICL-based approaches. Participants will gain a comprehensive understanding of established methods, current advances in foundation models, and open research challenges. In partic",
+  "gid": 84,
+  "theme": "Structured foundation models"
+ }
+}

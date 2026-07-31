@@ -1,0 +1,11 @@
+{
+ "batch": "b096",
+ "paper": {
+  "id": "10.1145/3805712.3808524",
+  "venue": "SIGIR 2026",
+  "title": "Detectability and Evaluation Risks of LLM-Generated Answers in Low-Resource Swahili Agricultural Information Retrieval",
+  "abstract": "The deployment of information retrieval (IR) systems in agriculture remains particularly challenging in low-resource environments, where limited access to expert knowledge, data resources, and digital infrastructure constrains effective information access. Recent advances in large language models (LLMs) have enabled conversational interfaces that generate direct answers to user queries, increasingly functioning as retrieval outputs in IR systems. However, little is known about how such generated answers behave in low-resource language settings. This study examines Swahili maize-related question answering as a low-resource agricultural IR task and investigates whether LLM-generated responses are detectably different from human-authored answers. Using a dataset of 127 questions with responses from human experts, ChatGPT, and Gemini, we analyze textual characteristics including answer length, lexical diversity, and TF-IDF cosine similarity. A multi-class TF-IDF and logistic regression classifier is then used to evaluate source detectability. Results show that LLM-generated answers are systematically longer, less lexically diverse, and exhibit moderate similarity to human responses. The classifier achieves 0.98 accuracy, indicating that generated responses exhibit consistent and learnable patterns. These findings highlight detectability as a useful diagnostic signal for evaluating ",
+  "gid": 1452,
+  "theme": "LLM answer detectability"
+ }
+}

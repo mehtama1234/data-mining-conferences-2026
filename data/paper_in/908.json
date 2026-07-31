@@ -1,0 +1,11 @@
+{
+ "batch": "b060",
+ "paper": {
+  "id": "58c0f2499e2ba37d42b44ad28f7c8725bc6eba8e",
+  "venue": "WSDM 2026",
+  "title": "Accelerating Generative Recommendation via Simple Categorical User Sequence Compression",
+  "abstract": "Although generative recommenders demonstrate improved performance with longer sequences, their real-time deployment is hindered by substantial computational costs. To address this challenge, we propose a simple yet effective method for compressing long-term user histories by leveraging inherent item categorical features, thereby preserving user interests while enhancing efficiency. Experiments on two large-scale datasets demonstrate that, compared to the influential HSTU model, our approach achieves up to a 6\u00d7 reduction in computational cost and up to 39% higher accuracy at comparable cost (i.e., similar sequence length). The source code will be available at https://github.com/Genemmender/CAUSE.",
+  "gid": 908,
+  "theme": "generative recommendation"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "batch": "b095",
+ "paper": {
+  "id": "10.1145/3805712.3808372",
+  "venue": "SIGIR 2026",
+  "title": "Labadain Chat: A Conversational Agent for the Tetun Language",
+  "abstract": "Large language model (LLM)-based conversational assistants are designed for general-purpose conversation tasks and are primarily optimized for high-resource languages. Although these systems support some low-resource languages (LRLs), their responses often fall short of user expectations. Consequently, speakers of LRLs remain marginalized and unable to fully benefit from advances in LLMs. These challenges underscore the need for targeted, language-specific solutions that can effectively serve underrepresented language communities. This study presents Labadain Chat, a conversational agent for Tetun, a low-resource language spoken by over 932,000 people in Timor-Leste. We adapt existing LLMs to Tetun using language-specific prompting strategies and report on the system's architecture, features, applications, and utility for the Tetun-speaking community. Results from the user study show a high task success rate for Labadain Chat (91%, with substantial inter-annotator agreement, Cohen's \u03ba=0.67) and high user satisfaction (4.30 out of 5, with Cohen's weighted \u03ba=0.75), demonstrating the effectiveness of language-specific LLM customization for Tetun. Overall, this study provides a practical pathway toward promoting equitable access to AI-powered information services for the Tetun-speaking community and suggests an adaptable methodology that can be applied to other under-resourced lang",
+  "gid": 1425,
+  "theme": "Low-resource language AI"
+ }
+}

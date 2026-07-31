@@ -22,8 +22,10 @@ def esc(s): return html.escape(str(s or ""))
 def story_html(gid):
     r = RICH.get(str(gid))
     if not r: return ""
-    parts = [("bp","the big picture"),("wh","why it's hard"),("ap","what they do"),
-             ("ww","why it works"),("po","the payoff")]
+    parts = [("bp","the big picture"),("wh","why it's hard"),("naive","the naive solution"),
+             ("ap","the core idea"),("mech","how the mechanism runs"),
+             ("math","mathematical concepts"),("dots","connecting the dots"),
+             ("ww","why it works"),("po","the payoff"),("limits","limits and assumptions")]
     secs = "".join(f"<div class='sec {k}'><span class='lbl'>{lbl}</span><p>{esc(r.get(k))}</p></div>"
                    for k,lbl in parts if r.get(k))
     return f"<details class='story'><summary>the full first-principles story</summary>{secs}</details>"
@@ -99,6 +101,8 @@ def concept_html(c):
     if cr and cr.get("idea"):
         head = (f"<p class='intro'>{esc(cr['idea'])}</p>"
                 f"<div class='whybox'><div class='wt'>Why it works — the principle</div><p>{esc(cr.get('why') or c['why'])}</p></div>"
+                + (f"<div class='mathbox'><div class='wt mt'>The mathematical principle</div><p>{esc(cr['math'])}</p></div>" if cr.get('math') else "")
+                + (f"<div class='familybox'><div class='wt ft'>The paper family</div><p>{esc(cr['family'])}</p></div>" if cr.get('family') else "")
                 + (f"<div class='dotsbox'><div class='wt dt'>Connecting the dots across these {len(ps)} papers</div><p>{esc(cr['dots'])}</p></div>" if cr.get('dots') else "")
                 + (f"<div class='picture'><span class='pl'>picture it</span> {esc(cr['picture'])}</div>" if cr.get('picture') else ""))
     else:
@@ -147,6 +151,10 @@ h2{{font-family:var(--serif);font-size:29px;margin:0 0 12px;color:#fff}}
 .intro{{font-size:16.5px}}
 .whybox{{background:var(--bg2);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:12px;padding:14px 18px;margin:6px 0 4px}}
 .whybox .wt{{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);margin-bottom:6px}}.whybox p{{margin:0;font-size:15.5px;color:var(--ink)}}
+.mathbox{{background:var(--bg2);border:1px solid var(--line);border-left:3px solid #D8BE5F;border-radius:12px;padding:14px 18px;margin:6px 0 4px}}
+.mathbox .wt.mt{{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#D8BE5F;margin-bottom:6px}}.mathbox p{{margin:0;font-size:15.5px;color:var(--ink)}}
+.familybox{{background:var(--bg2);border:1px solid var(--line);border-left:3px solid #7EC7D8;border-radius:12px;padding:14px 18px;margin:6px 0 4px}}
+.familybox .wt.ft{{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:#7EC7D8;margin-bottom:6px}}.familybox p{{margin:0;font-size:15.5px;color:var(--ink)}}
 .dotsbox{{background:var(--bg2);border:1px solid var(--line);border-left:3px solid var(--viol);border-radius:12px;padding:14px 18px;margin:6px 0 4px}}
 .dotsbox .wt.dt{{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--viol);margin-bottom:6px}}.dotsbox p{{margin:0;font-size:15.5px;color:var(--ink)}}
 .picture{{font-size:15px;color:var(--soft);font-style:italic;margin:8px 0 4px;padding-left:14px;border-left:2px solid var(--amber)}}
@@ -165,7 +173,7 @@ h2{{font-family:var(--serif);font-size:29px;margin:0 0 12px;color:#fff}}
 .story{{margin:5px 0 0 82px}}.story>summary{{font-family:var(--mono);font-size:10.5px;letter-spacing:.03em;color:var(--accent);cursor:pointer;list-style:none}}.story>summary::-webkit-details-marker{{display:none}}.story>summary::before{{content:'▸ ';color:var(--faint)}}.story[open]>summary::before{{content:'▾ '}}
 .story .sec{{margin:8px 0;padding-left:12px;border-left:1px solid var(--line)}}
 .story .sec .lbl{{font-family:var(--mono);font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;display:block;margin-bottom:2px}}
-.story .sec.bp .lbl{{color:var(--accent)}}.story .sec.wh .lbl{{color:var(--rose)}}.story .sec.ap .lbl{{color:var(--viol)}}.story .sec.ww .lbl{{color:var(--amber)}}.story .sec.po .lbl{{color:#6FCF97}}
+.story .sec.bp .lbl{{color:var(--accent)}}.story .sec.wh .lbl{{color:var(--rose)}}.story .sec.naive .lbl{{color:#D38D63}}.story .sec.ap .lbl{{color:var(--viol)}}.story .sec.mech .lbl{{color:#7EC7D8}}.story .sec.math .lbl{{color:#D8BE5F}}.story .sec.dots .lbl{{color:#B69CF0}}.story .sec.ww .lbl{{color:var(--amber)}}.story .sec.po .lbl{{color:#6FCF97}}.story .sec.limits .lbl{{color:#A7B0BF}}
 .story .sec p{{margin:0;color:var(--ink);font-size:13.5px;line-height:1.6}}
 .bar{{display:flex;align-items:center;gap:12px;margin:5px 0;font-family:var(--mono);font-size:12px}}
 .bl{{width:300px;color:var(--soft);text-align:right;flex:0 0 auto}}.bt{{flex:1;height:14px;background:rgba(150,170,205,.06);border-radius:4px;overflow:hidden}}.bf{{display:block;height:100%;background:#4FA8B8}}.bv{{width:40px;color:var(--ink)}}

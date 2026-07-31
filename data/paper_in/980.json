@@ -1,0 +1,11 @@
+{
+ "batch": "b065",
+ "paper": {
+  "id": "e5c6ff8c7094f3d1db517450aff6d9758e33bb91",
+  "venue": "WSDM 2026",
+  "title": "DDGCL: Dual Diffusion-based Graph Contrastive Learning for Recommendation",
+  "abstract": "Contrastive learning has emerged as a promising paradigm by inherently generating self-supervised signals and uncovering latent patterns from interaction data to enhance recommendation performance. However, most current graph contrastive learning-based recommendation methods rely on random augmentation strategies,which may disrupt graph structural information and compromise model robustness. In addition, long-tail items suffer from insufficient exposure, making it difficult to learn high-quality feature rep- resentations, ultimately degrading recommendation effectiveness.To overcome these limitations, this paper presents DDGCL, a dual diffusion-based graph contrastive learning method. A contrastive view optimization module is designed, which employs singular value decomposition to perform low-rank approximation on the interaction graph, efficiently extracting global structural features while accelerating the diffusion process. The diffusion model then performs noise addition and denoising on this basis to generate contrastive views that preserve graph structural information. In addition, a method for embedding augmentation designed for long-tail items is proposed. This module utilizes a conditional diffusion model, where global graph information serves as conditional con- straints to guide the denoising process of long-tail items, thereby improving their representation learning",
+  "gid": 980,
+  "theme": "Graph contrastive recommendation"
+ }
+}

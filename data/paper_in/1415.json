@@ -1,0 +1,11 @@
+{
+ "batch": "b094",
+ "paper": {
+  "id": "10.1145/3805712.3808456",
+  "venue": "SIGIR 2026",
+  "title": "LiBRA: Enhancing Live-streaming Recommendation with Bigraph-based Capacity-aware Ranking Approach",
+  "abstract": "Live-streaming recommendation systems effectively match viewers' interests with relevant streamer content by ranking streamer candidates based on predicted relevance scores. However, existing works aggressively push popular streamers' content to match viewers' past interests, resulting in uneven traffic allocation. This creates a dual dilemma: viewers tend to concentrate on popular streamers, leading to reduced quality of experience due to streamers' limited capacity, while non-popular streamers suffer from traffic starvation. This paper formulates the viewer-streamer match problem as a capacity-aware optimal subgraph problem on the viewer-streamer bipartite graph, and proposes a novel capacity-aware ranking approach for live-streaming recommendation systems with explicit consideration of streamers' limited service capacity. Initially, we perform reinforcement learning to estimate the streamer capacity. Then, a novel graph algorithm FIMWS is introduced to solve the capacity-aware viewer-streamer match problem from a globally optimal perspective, with its theoretical optimality formally proven. The outcome of the proposed graph algorithm is finally distilled via deep models for point-wise online ranking. Currently, this capacity-aware ranking approach has been successfully deployed in TikTok Live. Extensive experiments on TikTok Live show that the proposed approach can significa",
+  "gid": 1415,
+  "theme": "live-streaming recommendation"
+ }
+}

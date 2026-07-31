@@ -1,0 +1,11 @@
+{
+ "batch": "b068",
+ "paper": {
+  "id": "10.1145/3805712.3809698",
+  "venue": "SIGIR 2026",
+  "title": "RULER: Robust Unified LLM-based Efficient Retrieval for Legal Information",
+  "abstract": "Legal information retrieval demands high precision, yet traditional ''Retrieve-then-Rerank'' pipelines with two separate models suffer from cascading error propagation and knowledge disconnects between stages. To address these issues, we propose RULER, a Robust Unified LLM-based Efficient Retrieval that integrates efficient Bi-Encoder retrieval and high-precision Cross-Encoder reranking within a parameter-sharing architecture. To mitigate the Phantom Hits problem that irrelevant documents are assigned unreasonably high confidence, we introduce a Distribution-Robust Data Construction strategy that explicitly simulates pure-negative candidate groups. This is coupled with a Dynamic Margin Ranking Objective and Maximum Entropy Regularization, which collectively enforce uncertainty on irrelevant samples and enhance robustness. Extensive experiments on the JuDGE and LeCaRDv2 benchmarks demonstrate that RULER achieves state-of-the-art performance, outperforming all independent retrievers in retrieval tasks and surpassing competing unified architectures\u2014where retriever and reranker parameters are shared\u2014in high-precision reranking.",
+  "gid": 1024,
+  "theme": "Legal information retrieval"
+ }
+}

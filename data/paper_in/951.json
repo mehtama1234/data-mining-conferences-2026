@@ -1,0 +1,11 @@
+{
+ "batch": "b063",
+ "paper": {
+  "id": "b0eeca4ebe39945d91f7a678f904395767bc1112",
+  "venue": "WSDM 2026",
+  "title": "Personalization in the Era of Super(?)-intelligence",
+  "abstract": "For decades, the WSDM community has viewed personalization through the lens of collaborative filtering and predictive behavioral models. Today, we are witnessing a fundamental shift where AI systems promise to not just predict user intent, but to actively reason, plan, and create on our behalf. Instead of merely reinforcing our existing habits, these new approaches promise to surface insights we are blind to, guiding us toward discoveries that advance our personal journeys in new and unexpected ways. But are we truly on the verge of super-intelligent personalization? In this talk, I will trace the evolution of AI-driven personalization over the past few years -- from simple data augmenters for our traditional recommendation pipelines, to recursive self-improvement of LLM-powered models, to complex personalized reasoning agents. Looking forward, I will identify opportunities and challenges to this vision of super-intelligent personalization, drawing on recent findings in multi-modal and speech foundation models.",
+  "gid": 951,
+  "theme": "LLM personalization"
+ }
+}

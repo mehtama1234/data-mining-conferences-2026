@@ -1,0 +1,11 @@
+{
+ "batch": "b074",
+ "paper": {
+  "id": "10.1145/3805712.3809624",
+  "venue": "SIGIR 2026",
+  "title": "When and How to Ask: Dynamic Preference Elicitation Strategies for Conversational Recommendation",
+  "abstract": "Conversational Recommender Systems (CRSs) are interactive systems that use multi-turn natural language dialogue to understand evolving user preferences and provide personalized recommendations. To achieve this goal, CRSs rely on preference elicitation strategies to actively gather informative preference cues from users; however, the timing and selection of these strategies during a conversation remain largely unexplored. While many existing studies emphasize eliciting explicit item attributes and tend to adopt relatively static elicitation strategies, the use of item-based preference elicitation and how it varies across different dialogue stages remains less explored. In this work, we conduct a systematic investigation of preference elicitation strategies from a stage-aware perspective. We provide empirical evidence that optimal preference elicitation strategies are stage-dependent and context-sensitive: attribute-based inquiries are effective in early stages, while item-based strategies become superior as preferences refine. To support this paradigm, we introduce InPE, a dataset enriched with fine-grained annotations for elicitation necessity and strategy selection. With this dataset, we propose COPE (COnversational Preference Elicitation via Mixture of Experts), a novel architecture for strategy modeling. Extensive offline evaluation on our dataset indicates that context-awar",
+  "gid": 1111,
+  "theme": "conversational recommendation"
+ }
+}

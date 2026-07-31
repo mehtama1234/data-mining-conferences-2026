@@ -1,0 +1,11 @@
+{
+ "batch": "b021",
+ "paper": {
+  "id": "618461639155126ec90e494d5a474ceb896dd4b1",
+  "venue": "WWW 2026",
+  "title": "Multimodal Content Analysis for Social Good",
+  "abstract": "The fourth edition of the International Workshop on Multimedia Content Analysis for Social Good (MM4SG 2026) was held alongside the prestigious Web Conference 2026. Building on the momentum of prior editions, the workshop continued to address the critical challenge of analyzing and moderating multimodal content across digital platforms. In an era where diverse multimodal media, including memes, text-embedded images, synthetic and manipulated content, and cross-platform narratives can rapidly shape public opinion and influence societal discourse, the need for robust, transparent, and ethically grounded content understanding has become increasingly urgent. MM4SG 2026 provided a dedicated forum for interdisciplinary collaboration, bringing together researchers and practitioners from natural language processing, computer vision, machine learning, computational social science, and AI ethics to advance the state of the art in socially responsible multimodal intelligence. A major theme of this edition was the growing role of agentic multimodal systems and large vision-language models (VLMs), including emerging agentic LVLM paradigms, for scalable reasoning, moderation, and decision-making in real-world settings.",
+  "gid": 329,
+  "theme": "Multimodal content moderation"
+ }
+}

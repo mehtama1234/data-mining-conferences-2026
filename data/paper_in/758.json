@@ -1,0 +1,11 @@
+{
+ "batch": "b050",
+ "paper": {
+  "id": "e5050a4c1a310bce69ce10f9c8a2a281e4974d8c",
+  "venue": "WWW 2026",
+  "title": "RadioAR: Autoregressive Modeling for Accurate Radio Map Estimation",
+  "abstract": "Radio map estimation (RME) is a key enabler for environment-aware wireless systems, supporting tasks such as coverage planning, interference management, and context-aware resource allocation. Accurate RME is challenging because radio maps exhibit both smooth, large-scale variations (e.g., path loss and shadowing) and rapidly changing, high-frequency details induced by multipath propagation. This paper presents RadioAR, a multi-scale autoregressive framework that predicts radio maps from coarse to fine resolutions. We design a radio-map tokenizer based on residual Laplacian pyramid decomposition and continuous tokens, which preserves subtle signal variations while avoiding the quantization artifacts introduced by discrete tokenizers. On top of the tokenizer, RadioAR employs a conditional transformer to progressively refine token maps under building and transmitter conditions. Experiments on RadioMapSeer (IRT4) show that RadioAR achieves better accuracy than representative convolutional, transformer, GAN, diffusion, and Mamba baselines, while maintaining inference latency compatible with real-time deployment.",
+  "gid": 758,
+  "theme": "Radio map estimation"
+ }
+}

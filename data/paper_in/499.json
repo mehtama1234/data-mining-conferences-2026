@@ -1,0 +1,11 @@
+{
+ "batch": "b033",
+ "paper": {
+  "id": "9529fa75fe6b29d23e5914f1e5b6f14579f565cb",
+  "venue": "WWW 2026",
+  "title": "Analyzing the Impact of Image Novelty and Text Emotion on Meme Engagement: Evidence from Roe vs. Wade Verdict",
+  "abstract": "Memes are a prominent form of multimodal communication that shape public discourse around socially consequential events, yet scalable evidence on how their visual and textual attributes jointly influence engagement remains limited. This paper investigates meme engagement during the 2022 U.S. Supreme Court decision overturning Roe v. Wade. Using over 1 million tweets, we identify 68,803 memes through optical character recognition and multimodal filtering. We introduce a scalable multimodal framework that leverages Vision Transformer (ViT) embeddings to cluster memes by visual content and quantify image novelty, while textual emotion is extracted using sentiment analysis of accompanying tweets. Our results show that memes depicting crowd protests receive significantly higher engagement, whereas memes featuring politicians or judges perform worse. Image novelty positively influences engagement and moderates category-level effects, demonstrating the importance of visual distinctiveness. We further find that textual emotion plays a nuanced role, amplifying engagement for some meme types while suppressing it for others. Overall, this work highlights how multimodal ML techniques can uncover engagement dynamics in politically and socially sensitive online content.",
+  "gid": 499,
+  "theme": "Meme engagement analysis"
+ }
+}

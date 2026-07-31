@@ -1,0 +1,11 @@
+{
+ "batch": "b040",
+ "paper": {
+  "id": "b69d63bdacb777303fc4d3f409e355fd115e75e5",
+  "venue": "WWW 2026",
+  "title": "STCRank: Spatio-temporal Collaborative Ranking for Interactive Recommender System at Kuaishou E-shop",
+  "abstract": "As a popular e-commerce platform, Kuaishou E-shop provides precise personalized product recommendations to tens of millions of users every day. To better respond real-time user feedback, we have deployed an interactive recommender system (IRS) alongside our core homepage recommender system. This IRS \\footnotemark is triggered by user click on homepage, and generates a series of highly relevant recommendations based on the clicked item to meet focused browsing demands. Different from traditional e-commerce RecSys, the full-screen UI and immersive swiping down functionality present two distinct challenges for regular ranking system. First, there exists explicit interference (overlap or conflicts) between ranking objectives, i.e., conversion, view and swipe down. This is because there are intrinsic behavioral co-occurrences under the premise of immersive browsing and swiping down functionality. Second, the ranking system is prone to temporal greedy traps in sequential recommendation slot transitions, which is caused by full-screen UI design. To alleviate these challenges, we propose a novel Spatio-temporal collaborative ranking (STCRank) framework to achieve collaboration between multi-objectives within one slot (spatial) and between multiple sequential recommondation slots. In multi-objective collaboration (MOC) module, we push Pareto frontier by mitigating the objective overlaps",
+  "gid": 607,
+  "theme": "E-commerce ranking"
+ }
+}

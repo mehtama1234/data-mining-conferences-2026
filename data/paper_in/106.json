@@ -1,0 +1,11 @@
+{
+ "batch": "b007",
+ "paper": {
+  "id": "1e82eddf7af2b71da48e161053f07dbf2b790c2e",
+  "venue": "WWW 2026",
+  "title": "EmeraldApp: An AI-Driven Tool for Detecting Greenwashing in Sustainability Claims",
+  "abstract": "Greenwashing, i.e., presenting misleading environmental claims, undermines the trustworthiness of sustainability reporting. We present EmeraldApp, a tool designed to verify corporate sustainability claims. EmeraldApp classifies claims as greenwashing, not greenwashing, or abstains, and generates fact-based justifications. The tool supports different LLM pipelines: EM-RAG, which retrieves evidence from EmeraldDB, a vector database of ESG (Environmental, Social, Governance) report chunks; EM-KGRAG, which retrieves evidence from EmeraldGraph, a domain-specific knowledge graph; EM-HYBRID, which combines the other two retrieval pipelines; and EM-NR, without retrieval capabilities. EmeraldApp supports quick claim checks for end users, while advanced configuration enables pipeline comparison and deeper inspection of factual evidence and justification. Previously checked claims are stored in ClaimsDB and are accessible through the EmeraldApp to improve auditability and transparency.",
+  "gid": 106,
+  "theme": "Greenwashing detection"
+ }
+}

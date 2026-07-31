@@ -1,0 +1,11 @@
+{
+ "batch": "b029",
+ "paper": {
+  "id": "85bf3334e44b10b48a7ee7ea03e7e322662d97fa",
+  "venue": "WWW 2026",
+  "title": "Beyond Factual Queries: A Novel Predictive Retrieval-Augmented Generation",
+  "abstract": "Retrieval-augmented generation (RAG) has proven effective at mitigating limitations of large language models (LLMs), including outdated knowledge, semantic gaps, and hallucinations. However, existing RAG techniques are primarily optimised for factual question answering\u2014where answers can be directly retrieved\u2014rather than for predictive tasks that require inferring unknown outcomes, such as user preferences in recommendations. To address this gap, we propose PRAG, a RAG framework tailored for predictive settings. PRAG computes the semantic similarity between a user's historical interactions and target information, and adaptively integrates this similarity as prompt weights, thereby enhancing the LLM's ability to model personalised, semantics-informed preferences. PRAG integrates seamlessly into LLM-based applications; instantiated in recommender systems, it explicitly captures user-specific preference signals via semantic similarity modelling. Experiments using two LLM backbones and four real-world datasets show that PRAG significantly improves predictive recommendation performance.",
+  "gid": 446,
+  "theme": "Predictive RAG recommendation"
+ }
+}

@@ -1,0 +1,11 @@
+{
+ "batch": "b039",
+ "paper": {
+  "id": "b1661c42b83328f328e3c73ecdc760771eb45b26",
+  "venue": "WWW 2026",
+  "title": "Evidential Mixture-of-Experts for Sentiment Regression",
+  "abstract": "Multimodal sentiment analysis aims to understand human emotions by integrating text, audio, and visual information. Existing methods often struggle with noisy or missing modalities and rarely account for the reliability of each modality. In this paper, we propose E-MoE, an evidence-aware mixture-of-experts framework that models sentiment prediction as an evidential inference problem. Specifically, we first employ modality-specific experts to estimate positive and negative evidences for each modality, capturing both sentiment tendencies and uncertainty. Then, an uncertainty-driven fusion mechanism aggregates these evidences, assigning higher weight to reliable modalities while mitigating the impact of noisy or missing inputs. Finally, the aggregated evidences parameterize a Beta distribution from which the final sentiment prediction is derived. Extensive experiments on CMU-MOSI and CMU-MOSEI demonstrate that E-MoE outperforms state-of-the-art approaches, effectively integrating heterogeneous modalities while providing interpretable and robust sentiment predictions.",
+  "gid": 592,
+  "theme": "Multimodal sentiment analysis"
+ }
+}

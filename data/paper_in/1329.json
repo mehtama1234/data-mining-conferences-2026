@@ -1,0 +1,11 @@
+{
+ "batch": "b088",
+ "paper": {
+  "id": "10.1145/3805712.3808500",
+  "venue": "SIGIR 2026",
+  "title": "Beyond Semantic Similarity: Explicit Intent Modeling for Query-Product Matching",
+  "abstract": "Buyer intent in e-commerce is multi-faceted and is expressed through explicit attributes\u2014such as brand, size, color, and material, rather than through general topical relevance. However, many state-of-the-art scalable query-product matching systems rely on aggregate representations, scoring a single query embedding against a single item embedding. While efficient, this aggregation frequently fails to satisfy individual attribute intent: items can be semantically related, yet violate key aspects specified in the query. In contrast, fine-grained interaction methods can better capture aspect-level constraints, but are typically too expensive due to increased run-time computation and storage costs. We propose an aspect-aware ranking framework that retrieves and resolves aspects in queries and performs fine-grained semantic affinity match against aspects in products to compute an aggregate query-product level aspect affinity score. The proposed approach integrates (i) query aspect resolution (canonicalization) using structured aspect data, (ii) a model to learn granular aspect affinity signal capturing individual aspect-level understanding; and iii) an efficient design for online serving, significantly cutting cost associated with inference speed and storage. This design preserves the scalability of two-tower retrieval while substantially improving explicit intent satisfaction. Expe",
+  "gid": 1329,
+  "theme": "Attribute-aware product matching"
+ }
+}
