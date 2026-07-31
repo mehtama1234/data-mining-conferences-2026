@@ -1,16 +1,20 @@
 import json, os, html
 HERE = os.path.dirname(os.path.abspath(__file__))
 A = json.load(open(os.path.join(HERE, "data", "analysis.json")))
+RP = os.path.join(HERE, "data", "rich.json")
+RICH = json.load(open(RP)) if os.path.exists(RP) else {}
 def esc(s): return html.escape(str(s or ""))
 
 # compact records for client-side search
 recs = []
 for p in A["papers"]:
+    r = RICH.get(str(p["gid"]))
     recs.append({
         "t": p["title"], "v": p["venue"].split()[0],
         "th": p.get("primary_theme") or "", "m": p.get("methods") or [],
         "pr": p.get("problem") or "", "ap": p.get("approach") or "", "co": p.get("contribution") or "",
         "u": p.get("url") or (("https://doi.org/" + p["doi"]) if p.get("doi") else ""),
+        "rc": r or None,
     })
 DATA = json.dumps(recs, ensure_ascii=False)
 
@@ -42,12 +46,23 @@ h1{{font-family:var(--serif);font-size:26px;margin:0 0 4px;color:#fff}}
 .pac .k{{font-family:var(--mono);font-size:10.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--dim);padding-top:2px}}
 .pac .k.pr{{color:var(--rose)}}.pac .k.ap{{color:var(--accent)}}.pac .k.co{{color:var(--amber)}}
 .pac .val{{color:var(--soft)}}
+.story{{margin-top:10px;border-top:1px solid var(--line);padding-top:2px}}
+.story>summary{{font-family:var(--mono);font-size:11px;letter-spacing:.04em;color:var(--accent);cursor:pointer;padding:7px 0;list-style:none}}
+.story>summary::-webkit-details-marker{{display:none}}
+.story>summary::before{{content:"▸ ";color:var(--accent)}}
+.story[open]>summary::before{{content:"▾ "}}
+.story[open]>summary{{color:var(--dim)}}
+.sec{{margin:11px 0}}
+.sec .lbl{{font-family:var(--mono);font-size:10px;letter-spacing:.08em;text-transform:uppercase;display:block;margin-bottom:3px}}
+.sec.bp .lbl{{color:var(--accent)}}.sec.wh .lbl{{color:var(--rose)}}.sec.ap .lbl{{color:var(--viol)}}
+.sec.ww .lbl{{color:var(--amber)}}.sec.po .lbl{{color:#6FCF97}}
+.sec p{{margin:0;color:var(--ink);font-size:14px;line-height:1.62}}
 .more{{text-align:center;margin:20px 0}}.more button{{font-family:var(--mono);font-size:13px;color:var(--accent);background:none;border:1px solid var(--line);border-radius:9px;padding:8px 20px;cursor:pointer}}
 </style>
 <div class="wrap">
 <div class="top">
   <h1>Data-mining 2026 · paper explorer</h1>
-  <div class="sub"><a href="index.html">← the landscape</a> · {len(recs):,} papers from WWW · WSDM · SIGIR, each read by an LLM for its problem, approach &amp; contribution</div>
+  <div class="sub"><a href="index.html">← the landscape</a> · {len(recs):,} papers from WWW · WSDM · SIGIR · each with a quick read + an expandable plain-language first-principles story</div>
   <div class="controls">
     <input id="q" placeholder="search titles, problems, methods…  (e.g. 'cold start', 'diffusion', 'privacy')" autocomplete="off">
     <span class="chip on" data-v="ALL">all</span>
@@ -65,6 +80,17 @@ const DATA = {DATA};
 let venue = "ALL", query = "", shown = 0, filtered = DATA, PAGE = 40;
 const list = document.getElementById("list"), countEl = document.getElementById("count"), moreBtn = document.getElementById("more");
 function esc(s){{return (s||"").replace(/[&<>]/g, c=>({{'&':'&amp;','<':'&lt;','>':'&gt;'}}[c]));}}
+function sec(cls,lbl,txt){{ return txt?`<div class="sec ${{cls}}"><span class="lbl">${{lbl}}</span><p>${{esc(txt)}}</p></div>`:""; }}
+function story(rc){{
+  if(!rc) return "";
+  return `<details class="story"><summary>read the full first-principles story</summary>
+    ${{sec("bp","the big picture",rc.bp)}}
+    ${{sec("wh","why it's hard",rc.wh)}}
+    ${{sec("ap","what they do",rc.ap)}}
+    ${{sec("ww","why it works",rc.ww)}}
+    ${{sec("po","the payoff",rc.po)}}
+  </details>`;
+}}
 function card(r){{
   const m = (r.m||[]).slice(0,5).map(x=>esc(x)).join(" · ");
   return `<div class="card">
@@ -74,14 +100,15 @@ function card(r){{
       <span class="k pr">problem</span><span class="val">${{esc(r.pr)}}</span>
       <span class="k ap">approach</span><span class="val">${{esc(r.ap)}}</span>
       <span class="k co">gives</span><span class="val">${{esc(r.co)}}</span>
-    </div></div>`;
+    </div>${{story(r.rc)}}</div>`;
 }}
 function apply(){{
   const q = query.toLowerCase().split(/\\s+/).filter(Boolean);
   filtered = DATA.filter(r=>{{
     if(venue!=="ALL" && r.v!==venue) return false;
     if(!q.length) return true;
-    const hay = (r.t+" "+r.th+" "+r.pr+" "+r.ap+" "+r.co+" "+(r.m||[]).join(" ")).toLowerCase();
+    const rc = r.rc?(r.rc.bp+" "+r.rc.wh+" "+r.rc.ap+" "+r.rc.ww+" "+r.rc.po):"";
+    const hay = (r.t+" "+r.th+" "+r.pr+" "+r.ap+" "+r.co+" "+(r.m||[]).join(" ")+" "+rc).toLowerCase();
     return q.every(w=>hay.includes(w));
   }});
   shown = 0; list.innerHTML = "";
