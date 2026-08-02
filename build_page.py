@@ -116,7 +116,7 @@ section{{padding:42px 0;border-top:1px solid var(--line)}}
   <div class="eye">Go deeper · every paper, read</div>
   <h2>Explore all {S['n_analyzed']:,} papers by what they contribute</h2>
   <p>An LLM read each of the {S['n_analyzed']:,} papers with an abstract and pulled out its <b>problem</b>, its <b>approach</b>, and what it <b>contributes</b> — in one line each. Search and filter the whole set: type a topic, a method, a phrase; filter by venue.</p>
-  <p style="margin-top:6px"><a href="explorer.html" style="display:inline-block;font-family:var(--mono);font-size:14px;color:#0E1420;background:var(--accent);border-radius:9px;padding:10px 22px;text-decoration:none;font-weight:600">→ open the paper explorer</a>  <a href="deep.html" style="display:inline-block;font-family:var(--mono);font-size:14px;color:var(--accent);border:1px solid var(--line);border-radius:9px;padding:10px 22px;text-decoration:none;margin-left:8px">→ the deep read</a>  <a href="math.html" style="display:inline-block;font-family:var(--mono);font-size:14px;color:var(--accent);border:1px solid var(--line);border-radius:9px;padding:10px 22px;text-decoration:none;margin-left:8px">→ the mathematics &amp; why it works</a> <a href="deep.html" style="display:inline-block;font-family:var(--mono);font-size:14px;color:#0E1420;background:var(--accent);border-radius:9px;padding:10px 22px;text-decoration:none;font-weight:600">→ the deep read: the field as one story</a></p>
+  <p style="margin-top:6px"><a href="course.html" style="display:inline-block;font-family:var(--mono);font-size:14px;color:#0E1420;background:var(--accent);border-radius:9px;padding:10px 22px;text-decoration:none;font-weight:600">→ start with the plain course spine</a>  <a href="explorer.html" style="display:inline-block;font-family:var(--mono);font-size:14px;color:var(--accent);border:1px solid var(--line);border-radius:9px;padding:10px 22px;text-decoration:none;margin-left:8px">→ open the paper explorer</a>  <a href="deep.html" style="display:inline-block;font-family:var(--mono);font-size:14px;color:var(--accent);border:1px solid var(--line);border-radius:9px;padding:10px 22px;text-decoration:none;margin-left:8px">→ the deep read</a>  <a href="math.html" style="display:inline-block;font-family:var(--mono);font-size:14px;color:var(--accent);border:1px solid var(--line);border-radius:9px;padding:10px 22px;text-decoration:none;margin-left:8px">→ the mathematics &amp; why it works</a></p>
 </section>
 
 <section>
@@ -126,5 +126,10 @@ section{{padding:42px 0;border-top:1px solid var(--line)}}
 </section>
 </div>
 """
-open(os.path.join(HERE, "site", "index.html"), "w", encoding="utf-8").write(P)
-print("wrote site/index.html ·", len(P)//1024, "KB · FFFD:", P.count("�"))
+for rel in ("index.html", os.path.join("site", "index.html")):
+    path = os.path.join(HERE, rel)
+    parent = os.path.dirname(path)
+    if parent:
+        os.makedirs(parent, exist_ok=True)
+    open(path, "w", encoding="utf-8").write(P)
+print("wrote index.html and site/index.html ·", len(P)//1024, "KB · FFFD:", P.count("�"))

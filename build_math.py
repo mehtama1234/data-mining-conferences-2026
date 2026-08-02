@@ -216,6 +216,7 @@ h2{{font-family:var(--serif);font-size:29px;margin:0 0 12px;color:#fff}}
   <p class="dek">Search, recommendation, graphs, language, trust — the data-mining field looks like many problems. Underneath, nearly all of it runs on a short list of mathematical ideas. This is that list — and for each, not just <em>what</em> it is but <b>why it actually works</b>: the principle that makes it sound. Every 2026 paper is placed under the idea it leans on, with a plain note on the math it uses and why that math holds.</p>
   <p class="lead">How do you turn a person's want, and a web too vast to read, into numbers a computer can score, compare, and be right about?</p>
   <p>That is what all of this math is for. A search, a recommendation, a fraud check — each has to become a familiar mathematical question before a computer can answer it. Read the ideas below and you'll see the same handful recur across wildly different papers: turn meaning into nearness, rank by a rough score, estimate a chance from data, spread evidence across a network, focus on what's relevant, minimise how-wrong, and — increasingly — learn the rule from examples. And crucially, <em>why each one is trustworthy</em>, not just what it does.</p>
+  <p><a href="course.html">Start with the plain course spine</a> for a slower essay on why retrieval, ranking, recommendation, trust, and evaluation matter across SIGIR, the web, agents, medicine, law, science, education, and business.</p>
   <div style="margin-top:14px"><div style="font-family:var(--mono);font-size:11px;color:var(--faint);margin-bottom:8px">HOW OFTEN EACH IDEA APPEARS (across {NA} papers; a paper can use several)</div>{bars}</div>
 </header>
 {synth_block}
@@ -236,5 +237,10 @@ h2{{font-family:var(--serif);font-size:29px;margin:0 0 12px;color:#fff}}
 </section>
 </div>
 """
-open(os.path.join(HERE, "site", "math.html"), "w", encoding="utf-8").write(P)
-print("wrote site/math.html ·", len(P)//1024, "KB · placed:", len(placed), "of", NA, "· FFFD:", P.count("�"))
+for rel in ("math.html", os.path.join("site", "math.html")):
+    path = os.path.join(HERE, rel)
+    parent = os.path.dirname(path)
+    if parent:
+        os.makedirs(parent, exist_ok=True)
+    open(path, "w", encoding="utf-8").write(P)
+print("wrote math.html and site/math.html ·", len(P)//1024, "KB · placed:", len(placed), "of", NA, "· FFFD:", P.count("�"))

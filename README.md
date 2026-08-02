@@ -6,6 +6,8 @@ conferences whose proceedings are open (WWW/TheWebConf, WSDM, SIGIR).
 **Live:** https://mehtama1234.github.io/data-mining-conferences-2026/
 
 - **index.html** — the theme landscape (by venue) + LLM-tagged technique bars
+- **course.html** — a long, plain-language course spine for WWW, WSDM, SIGIR, and KDD:
+  search, ranking, recommendation, trust, evaluation, and why these ideas matter outside the field
 - **explorer.html** — searchable explorer of analyzed papers, each with problem/approach/contribution
 - **compare.html** — how WWW vs WSDM vs SIGIR differ (over-indexing)
 - **deep.html** — a first-principles "deep read": the field as one journey (organize → find →

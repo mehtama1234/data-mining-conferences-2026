@@ -229,6 +229,7 @@ h2{{font-family:var(--serif);font-size:30px;margin:0 0 14px;color:#fff}}
   <p class="dek">All {len(analysis)} technical papers of WWW, WSDM and SIGIR 2026, arranged not as a list of topics but as one story — the journey the field takes to connect a person to information, from organizing the raw chaos, through search and recommendation, to language models that read and answer, all while guarding against fraud, bias, and lies, and making it all run for billions at once.</p>
   <p class="lead">How do you connect a person to the right information — and, increasingly, the right <em>answer</em> — out of a web too vast to read and too unreliable to trust?</p>
   <p>That's the whole of data mining and web information systems on one line. Everything below is a piece of the answer. The field has six jobs: first it must <em>organize</em> what exists into something machine-readable; then it must handle the daily acts of <em>search</em> and <em>recommendation</em>; increasingly it <em>understands</em> and <em>answers</em> in natural language; it has to <em>guard</em> against abuse, fraud, bias, and misinformation; and it must do all of this <em>at scale</em>. Six stages, one pipeline — and this year, a single new thread (large language models, in all their forms) running through nearly every one.</p>
+  <p><a href="course.html">Start with the plain course spine</a> if you want the whole thing as one slower everyday essay before reading paper by paper.</p>
   <div class="toc">{toc}</div>
 </header>
 {acts_rendered}
@@ -242,6 +243,11 @@ h2{{font-family:var(--serif);font-size:30px;margin:0 0 14px;color:#fff}}
 </section>
 </div>
 """
-open(os.path.join(HERE, "site", "deep.html"), "w", encoding="utf-8").write(P)
+for rel in ("deep.html", os.path.join("site", "deep.html")):
+    path = os.path.join(HERE, rel)
+    parent = os.path.dirname(path)
+    if parent:
+        os.makedirs(parent, exist_ok=True)
+    open(path, "w", encoding="utf-8").write(P)
 placed_n = len(placed) + len(leftover)
-print("wrote site/deep.html ·", len(P)//1024, "KB · placed:", placed_n, "of", len(analysis), "· FFFD:", P.count(chr(0xFFFD)))
+print("wrote deep.html and site/deep.html ·", len(P)//1024, "KB · placed:", placed_n, "of", len(analysis), "· FFFD:", P.count(chr(0xFFFD)))

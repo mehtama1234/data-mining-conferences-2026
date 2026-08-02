@@ -76,7 +76,7 @@ h1{{font-family:var(--serif);font-size:clamp(30px,5.5vw,48px);line-height:1.06;m
   <div class="kick">Data-mining conferences 2026 · cross-venue</div>
   <h1>Three venues, three characters.</h1>
   <p class="dek">WWW, WSDM and SIGIR all draw from the same data-mining world, but each has a distinct personality. To find it we don't count raw topics (WWW is simply the biggest) — we measure what each venue <b>over-indexes on</b>: the topics and techniques that appear at a higher rate there than across the three combined. The <b>×</b> numbers are that lift.</p>
-  <div class="sub"><a href="index.html">← the landscape</a> · <a href="explorer.html">the paper explorer</a></div>
+  <div class="sub"><a href="index.html">← the landscape</a> · <a href="course.html">plain course spine</a> · <a href="explorer.html">the paper explorer</a></div>
   <div class="cols">{col("WWW 2026")}{col("WSDM 2026")}{col("SIGIR 2026")}</div>
 
   <div class="synth">
@@ -88,5 +88,10 @@ h1{{font-family:var(--serif);font-size:clamp(30px,5.5vw,48px);line-height:1.06;m
   </div>
 </div>
 """
-open(os.path.join(HERE, "site", "compare.html"), "w", encoding="utf-8").write(HTML)
-print("wrote site/compare.html ·", len(HTML)//1024, "KB · FFFD:", HTML.count("�"))
+for rel in ("compare.html", os.path.join("site", "compare.html")):
+    path = os.path.join(HERE, rel)
+    parent = os.path.dirname(path)
+    if parent:
+        os.makedirs(parent, exist_ok=True)
+    open(path, "w", encoding="utf-8").write(HTML)
+print("wrote compare.html and site/compare.html ·", len(HTML)//1024, "KB · FFFD:", HTML.count("�"))
